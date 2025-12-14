@@ -15,8 +15,8 @@ const BETA = '0'; //changeme 设置为 '1' 以使用测试环境
 const SCRIPT_NAME = BETA === '1' ? 'beta/script.exe' : 'script.exe';
 const AGENT_NAME = BETA === '1' ? 'beta/agent.exe' : 'agent.exe';
 
-// tiktok-agent 项目路径(相对于当前项目)
-const AGENT_PROJECT_PATH = path.resolve(__dirname, '../../tiktok-agent');
+// tikmatrix-agent 项目路径(相对于当前项目)
+const AGENT_PROJECT_PATH = path.resolve(__dirname, '../../tikmatrix-agent');
 
 // Get version from command line arguments
 let version = process.argv.find(arg => arg.startsWith('--version='))?.split('=')[1];

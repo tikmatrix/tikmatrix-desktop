@@ -46,10 +46,10 @@ jobs:
     if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout tiktok-agent private repository
+      - name: Checkout tikmatrix-agent private repository
         uses: actions/checkout@v3
         with:
-          repository: tikmatrix/tiktok-agent
+          repository: tikmatrix/tikmatrix-agent
           token: ${{ secrets.AGENT_REPO_TOKEN }}
           ref: ${{ inputs.branch }}
 
@@ -77,13 +77,13 @@ jobs:
         target: [x86_64-pc-windows-msvc]
 
     steps:
-      - name: Checkout tiktok-agent private repository
+      - name: Checkout tikmatrix-agent private repository
         uses: actions/checkout@v3
         with:
-          repository: tikmatrix/tiktok-agent
+          repository: tikmatrix/tikmatrix-agent
           token: ${{ secrets.AGENT_REPO_TOKEN }}
           ref: ${{ inputs.branch }}
-          path: tiktok-agent
+          path: tikmatrix-agent
 
       - name: Cache Rust dependencies
         uses: actions/cache@v3
@@ -91,8 +91,8 @@ jobs:
           path: |
             ~\.cargo\registry
             ~\.cargo\git
-            tiktok-agent\target\${{ matrix.target }}
-          key: ${{ runner.os }}-agent-cargo-${{ matrix.target }}-${{ hashFiles('tiktok-agent/**/Cargo.lock') }}
+            tikmatrix-agent\target\${{ matrix.target }}
+          key: ${{ runner.os }}-agent-cargo-${{ matrix.target }}-${{ hashFiles('tikmatrix-agent/**/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-agent-cargo-${{ matrix.target }}-
 
@@ -104,34 +104,34 @@ jobs:
 
       - name: Build all
         if: ${{ inputs.build_target == 'all' }}
-        working-directory: tiktok-agent
+        working-directory: tikmatrix-agent
         run: cargo build --release --target ${{ matrix.target }}
 
       - name: Build agent only
         if: ${{ inputs.build_target == 'agent' }}
-        working-directory: tiktok-agent
+        working-directory: tikmatrix-agent
         run: cargo build --release --target ${{ matrix.target }} --bin agent
 
       - name: Build script only
         if: ${{ inputs.build_target == 'script' }}
-        working-directory: tiktok-agent
+        working-directory: tikmatrix-agent
         run: cargo build --release --target ${{ matrix.target }} --bin script
 
       - name: Prepare bin directory
         run: |
-          New-Item -ItemType Directory -Force -Path ./tiktok-agent/target/${{ matrix.target }}/release/bin
+          New-Item -ItemType Directory -Force -Path ./tikmatrix-agent/target/${{ matrix.target }}/release/bin
 
           $buildTarget = "${{ inputs.build_target }}"
 
           if ($buildTarget -eq "all" -or $buildTarget -eq "agent") {
-            if (Test-Path "./tiktok-agent/target/${{ matrix.target }}/release/agent.exe") {
-              Copy-Item ./tiktok-agent/target/${{ matrix.target }}/release/agent.exe ./tiktok-agent/target/${{ matrix.target }}/release/bin/
+            if (Test-Path "./tikmatrix-agent/target/${{ matrix.target }}/release/agent.exe") {
+              Copy-Item ./tikmatrix-agent/target/${{ matrix.target }}/release/agent.exe ./tikmatrix-agent/target/${{ matrix.target }}/release/bin/
             }
           }
 
           if ($buildTarget -eq "all" -or $buildTarget -eq "script") {
-            if (Test-Path "./tiktok-agent/target/${{ matrix.target }}/release/script.exe") {
-              Copy-Item ./tiktok-agent/target/${{ matrix.target }}/release/script.exe ./tiktok-agent/target/${{ matrix.target }}/release/bin/
+            if (Test-Path "./tikmatrix-agent/target/${{ matrix.target }}/release/script.exe") {
+              Copy-Item ./tikmatrix-agent/target/${{ matrix.target }}/release/script.exe ./tikmatrix-agent/target/${{ matrix.target }}/release/bin/
             }
           }
         shell: pwsh
@@ -143,7 +143,7 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: .\tiktok-agent\target\${{ matrix.target }}\release\bin
+          source-dir: .\tikmatrix-agent\target\${{ matrix.target }}\release\bin
           destination-dir: ${{ matrix.target }}
 
       - name: Update Library Version

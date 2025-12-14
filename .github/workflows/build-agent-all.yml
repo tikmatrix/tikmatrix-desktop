@@ -38,10 +38,10 @@ jobs:
   create-tag:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout tiktok-agent private repository
+      - name: Checkout tikmatrix-agent private repository
         uses: actions/checkout@v3
         with:
-          repository: tikmatrix/tiktok-agent
+          repository: tikmatrix/tikmatrix-agent
           token: ${{ secrets.AGENT_REPO_TOKEN }}
           ref: ${{ inputs.branch }}
 
