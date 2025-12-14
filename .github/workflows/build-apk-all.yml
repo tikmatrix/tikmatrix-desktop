@@ -1,4 +1,4 @@
-name: Build Android APK (remote repo build)
+name: Build Android APK (Test APK + APK)
 run-name: ${{ github.actor }} is building Android APK from tikmatrix-android 🚀
 on:
   workflow_dispatch:
