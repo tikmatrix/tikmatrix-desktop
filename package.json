@@ -1,5 +1,5 @@
 {
-  "name": "tiktok-matrix",
+  "name": "tikmatrix-desktop",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -39,7 +39,7 @@
     "jmuxer": "^2.0.5",
     "odometer_countup": "^1.0.4",
     "qrcode": "^1.5.4",
-    "tiktok-matrix": "file:",
+    "tikmatrix-desktop": "file:",
     "vue": "^3.3.4",
     "vue-3-slider-component": "^1.0.2",
     "vue-draggable-resizable": "^3.0.0",
