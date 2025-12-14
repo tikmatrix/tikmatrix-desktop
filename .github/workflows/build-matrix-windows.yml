@@ -140,37 +140,37 @@ jobs:
           node scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=igmatrix --app-name=IgMatrix
 
       # TikZenX whitelabel build and upload steps
-      - name: Build TikZenX whitelabel package
-        run: |
-          node scripts/build-whitelabel.js TikZenX
+      # - name: Build TikZenX whitelabel package
+      #   run: |
+      #     node scripts/build-whitelabel.js TikZenX
 
-      - name: Upload TikZenX package to R2
-        uses: ryand56/r2-upload-action@v1.4
-        with:
-          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
-          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
-          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
-          r2-bucket: matrix
-          source-dir: ./src-tauri/target/release/bundle/msi
-          destination-dir: ./
+      # - name: Upload TikZenX package to R2
+      #   uses: ryand56/r2-upload-action@v1.4
+      #   with:
+      #     r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+      #     r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+      #     r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+      #     r2-bucket: matrix
+      #     source-dir: ./src-tauri/target/release/bundle/msi
+      #     destination-dir: ./
 
-      - name: Update TikZenX version
-        env:
-          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
-          API_KEY: ${{ secrets.API_KEY }}
-        run: |
-          node scripts/update-version.js --app=tikzenx --app-name=TikZenX
+      # - name: Update TikZenX version
+      #   env:
+      #     TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+      #     API_KEY: ${{ secrets.API_KEY }}
+      #   run: |
+      #     node scripts/update-version.js --app=tikzenx --app-name=TikZenX
 
-      - name: Clear uploaded files
-        run: |
-          Remove-Item -Path .\src-tauri\target\release\bundle\msi\* -Force -Recurse
+      # - name: Clear uploaded files
+      #   run: |
+      #     Remove-Item -Path .\src-tauri\target\release\bundle\msi\* -Force -Recurse
 
-      - name: Update TikZenX download url
-        env:
-          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
-          API_KEY: ${{ secrets.API_KEY }}
-        run: |
-          node scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=tikzenx --app-name=TikZenX
+      # - name: Update TikZenX download url
+      #   env:
+      #     TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+      #     API_KEY: ${{ secrets.API_KEY }}
+      #   run: |
+      #     node scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=tikzenx --app-name=TikZenX
 
       # Build and upload distributor packages
       - name: Build distributor packages
