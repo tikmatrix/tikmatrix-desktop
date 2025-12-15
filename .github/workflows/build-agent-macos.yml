@@ -193,6 +193,14 @@ jobs:
             local PLATFORM=$2
             local TARGET=$3
 
+            # Calculate MD5 for the binary
+            local MD5=""
+            local BIN_PATH="./tikmatrix-agent/target/$TARGET/release/bin/$NAME"
+            if [ -f "$BIN_PATH" ]; then
+              MD5=$(md5 -q "$BIN_PATH" 2>/dev/null || md5sum "$BIN_PATH" | cut -d' ' -f1)
+              echo "$NAME MD5 ($PLATFORM): $MD5"
+            fi
+
             local UPDATE_DATA=$(cat <<EOF
           {
             "oldName": "$NAME",
@@ -201,7 +209,8 @@ jobs:
             "downloadUrl": "https://r2.niostack.com/$TARGET/$NAME",
             "platform": "$PLATFORM",
             "version": "$VERSION",
-            "app": "TikMatrix"
+            "app": "TikMatrix",
+            "md5": "$MD5"
           }
           EOF
             )

@@ -157,6 +157,13 @@ jobs:
 
           # Update agent library
           if ($BUILD_TARGET -eq "all" -or $BUILD_TARGET -eq "agent") {
+            # Calculate MD5 for agent
+            $AGENT_MD5 = ""
+            if (Test-Path "./tikmatrix-agent/target/${{ matrix.target }}/release/bin/agent.exe") {
+              $AGENT_MD5 = (Get-FileHash -Path "./tikmatrix-agent/target/${{ matrix.target }}/release/bin/agent.exe" -Algorithm MD5).Hash.ToLower()
+              Write-Host "Agent MD5: $AGENT_MD5"
+            }
+
             $AGENT_UPDATE_DATA = @"
             {
               "oldName": "agent",
@@ -165,7 +172,8 @@ jobs:
               "downloadUrl": "https://r2.niostack.com/${{ matrix.target }}/agent.exe",
               "platform": "$PLATFORM",
               "version": "$VERSION",
-              "app": "TikMatrix"
+              "app": "TikMatrix",
+              "md5": "$AGENT_MD5"
             }
           "@
 
@@ -186,6 +194,13 @@ jobs:
 
           # Update script library
           if ($BUILD_TARGET -eq "all" -or $BUILD_TARGET -eq "script") {
+            # Calculate MD5 for script
+            $SCRIPT_MD5 = ""
+            if (Test-Path "./tikmatrix-agent/target/${{ matrix.target }}/release/bin/script.exe") {
+              $SCRIPT_MD5 = (Get-FileHash -Path "./tikmatrix-agent/target/${{ matrix.target }}/release/bin/script.exe" -Algorithm MD5).Hash.ToLower()
+              Write-Host "Script MD5: $SCRIPT_MD5"
+            }
+
             $SCRIPT_UPDATE_DATA = @"
             {
               "oldName": "script",
@@ -194,7 +209,8 @@ jobs:
               "downloadUrl": "https://r2.niostack.com/${{ matrix.target }}/script.exe",
               "platform": "$PLATFORM",
               "version": "$VERSION",
-              "app": "TikMatrix"
+              "app": "TikMatrix",
+              "md5": "$SCRIPT_MD5"
             }
           "@
 
