@@ -31,15 +31,6 @@ pub struct HttpResponse {
     pub body: String,
 }
 
-/// HTTP response with binary data support
-#[derive(Serialize, Deserialize, Debug)]
-pub struct HttpBinaryResponse {
-    pub status: u16,
-    pub headers: std::collections::HashMap<String, String>,
-    /// Base64 encoded binary data
-    pub data: String,
-}
-
 /// Generic HTTP request handler with intelligent proxy selection
 #[tauri::command]
 pub async fn http_request(
