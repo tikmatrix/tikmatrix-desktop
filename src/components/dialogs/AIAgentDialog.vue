@@ -237,7 +237,7 @@ export default {
             };
         },
 
-        async runScript(enable_multi_account, rotate_proxy, selectedDevices) {
+        async runScript(enable_multi_account = false, rotate_proxy = false) {
             // Validate inputs
             if (!this.goal || !this.goal.trim()) {
                 alert(this.$t('goalRequired'));
@@ -249,24 +249,17 @@ export default {
                 return false;
             }
 
-            // Save settings before running
-            await this.saveComponentSettings();
-
-            // Create tasks for selected devices
-            const scriptArgs = this.getScriptArgs();
-
-            for (const realSerial of selectedDevices) {
-                try {
-                    await this.$service.run_script('aiAgent', realSerial, scriptArgs, {
-                        enable_multi_account,
-                        rotate_proxy
-                    });
-                } catch (error) {
-                    console.error('Failed to start AI Agent task:', error);
+            await this.$emiter('run_now_by_account', {
+                name: 'aiAgent', args: {
+                    start_time: this.startOption === 'scheduled' ? this.scheduledTime : '',
+                    min_duration: Number(this.min_duration),
+                    max_duration: Number(this.max_duration),
+                    enable_multi_account: enable_multi_account,
+                    rotate_proxy: rotate_proxy,
                 }
-            }
-
+            })
             return true;
+
         }
     }
 };
