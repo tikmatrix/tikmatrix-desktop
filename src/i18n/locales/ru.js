@@ -1173,6 +1173,7 @@ export default {
   taskArgs: 'Аргументы задания',
   taskCreated: 'Задача создана',
   taskDuration: 'Продолжительность задания',
+  taskElapsedTime: 'Прошедшее время',
   taskExecutionOrder: 'Порядок выполнения задач',
   taskFailedTip: 'Устранение неполадок при сбое задачи',
   taskGoal: 'Цель задачи',

@@ -21,7 +21,9 @@
                 <th>{{ $t('id') }}</th>
                 <th>{{ $t('scriptName') }}</th>
                 <th>{{ $t('startTime') }}</th>
+                <th>{{ $t('taskElapsedTime') }}</th>
                 <th>{{ $t('status') }}</th>
+                <th>{{ $t('source') }}</th>
                 <th>{{ $t('retryCount') }}</th>
                 <th>{{ $t('username') }}</th>
                 <th>{{ $t('device') }}</th>
@@ -36,10 +38,16 @@
                   <span class="badge badge-ghost badge-md">{{ task.start_time }}</span>
                 </td>
                 <td>
+                  <span class="badge badge-ghost badge-md">{{ getTaskElapsedTime(task) }}</span>
+                </td>
+                <td>
                   <div class="badge badge-neutral badge-md" v-if="task.status == '0'">{{ $t('waiting') }}</div>
                   <div class="badge badge-primary badge-md" v-else-if="task.status == '1'">{{ $t('execing') }}</div>
                   <div class="badge badge-success badge-md" v-else-if="task.status == '2'">{{ $t('success') }}</div>
                   <div class="badge badge-error badge-md" v-else-if="task.status == '3'">{{ $t('failed') }}</div>
+                </td>
+                <td>
+                  <span class="badge badge-ghost badge-md">{{ task.source || 'ui' }}</span>
                 </td>
                 <td>
                   <span class="badge badge-info badge-md">{{ task.retry_count || 0 }}</span>
@@ -114,7 +122,9 @@ export default {
       tasks: [],
       currentDevice: null,
       searchStatus: '',
-      maxRetryCount: 3
+      maxRetryCount: 3,
+      currentTime: Date.now(),
+      updateTimer: null
     }
   },
   computed: {
@@ -146,6 +156,50 @@ export default {
         return obj && obj[key] !== undefined ? obj[key] : '';
       } catch (e) {
         return '';
+      }
+    },
+    getTaskElapsedTime(task) {
+      // If task has not started yet, return empty
+      if (!task.start_time || task.status == '0') {
+        return '-';
+      }
+
+      try {
+        // Parse start_time (format: "2024-12-16 15:30:00")
+        const startTime = new Date(task.start_time.replace(' ', 'T')).getTime();
+        
+        let endTime;
+        // If task is running (status == '1'), use current time
+        if (task.status == '1') {
+          endTime = this.currentTime;
+        } else if (task.end_time) {
+          // Use end_time for completed tasks
+          endTime = new Date(task.end_time.replace(' ', 'T')).getTime();
+        } else {
+          // No end_time available for completed task
+          return '-';
+        }
+
+        // Calculate duration in seconds
+        const durationMs = endTime - startTime;
+        if (durationMs < 0) {
+          return '-';
+        }
+
+        const seconds = Math.floor(durationMs / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+
+        if (hours > 0) {
+          return `${hours}h ${minutes % 60}m`;
+        } else if (minutes > 0) {
+          return `${minutes}m ${seconds % 60}s`;
+        } else {
+          return `${seconds}s`;
+        }
+      } catch (e) {
+        console.error('Error calculating task elapsed time:', e);
+        return '-';
       }
     },
 
@@ -271,6 +325,17 @@ export default {
   async mounted() {
     this.loadMaxRetryCount();
     this.get_tasks()
+    // Update current time every second for real-time duration calculation
+    this.updateTimer = setInterval(() => {
+      this.currentTime = Date.now();
+    }, 1000);
+  },
+  beforeUnmount() {
+    // Clean up timer
+    if (this.updateTimer) {
+      clearInterval(this.updateTimer);
+      this.updateTimer = null;
+    }
   }
 }
 </script>

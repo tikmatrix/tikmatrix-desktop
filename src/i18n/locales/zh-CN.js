@@ -1173,6 +1173,7 @@ export default {
   taskArgs: '任务参数',
   taskCreated: '任务创建成功',
   taskDuration: '任务时长',
+  taskElapsedTime: '耗时',
   taskExecutionOrder: '任务执行顺序',
   taskFailedTip: '任务失败排查',
   taskGoal: '任务目标',
