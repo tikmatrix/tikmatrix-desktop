@@ -169,7 +169,7 @@ export default {
           const durationSeconds = Math.floor((end - start) / 1000);
           return formatDuration(durationSeconds);
         } catch (e) {
-          console.error('Error calculating duration from timestamps:', e);
+          console.error(`Error calculating duration from timestamps for task ${task.id}:`, e);
         }
       }
 
@@ -180,7 +180,7 @@ export default {
           const durationSeconds = Math.floor((this.currentTime - start) / 1000);
           return formatDuration(durationSeconds);
         } catch (e) {
-          console.error('Error calculating real-time duration:', e);
+          console.error(`Error calculating real-time duration for task ${task.id}:`, e);
         }
       }
 
