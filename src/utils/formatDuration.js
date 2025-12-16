@@ -4,7 +4,7 @@
  * @returns {string} Formatted duration string (HH:MM:SS)
  */
 export function formatDuration(seconds) {
-  if (seconds == null || isNaN(seconds) || seconds < 0) {
+  if (seconds === null || seconds === undefined || isNaN(seconds) || seconds < 0) {
     return '00:00:00';
   }
 

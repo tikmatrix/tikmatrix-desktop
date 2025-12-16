@@ -157,7 +157,7 @@ export default {
     },
     getTaskDuration(task) {
       // Priority 1: Use duration_seconds if available
-      if (task.duration_seconds != null && task.duration_seconds >= 0) {
+      if (task.duration_seconds !== null && task.duration_seconds !== undefined && task.duration_seconds >= 0) {
         return formatDuration(task.duration_seconds);
       }
 
