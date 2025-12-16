@@ -41,17 +41,8 @@
         {{ $t('deletePost') }}
     </button>
 
-    <!-- <button class="btn btn-md btn-primary  ml-1 mb-1" v-if="whitelabelConfig.targetApp === 'tiktok'"
-        @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'boostUsers' } })">
-        <font-awesome-icon icon="fa fa-user-plus" class="h-3 w-3 text-success" />
-        {{ $t('boostUsers') }}
-    </button> -->
-    <!-- <button class="btn btn-md btn-primary  ml-1 mb-1"
-        @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'boostPosts' } })">
-        <font-awesome-icon icon="fa-solid fa-thumbs-up" class="h-3 w-3 text-success" />
-        {{ $t('boostPosts') }}
-    </button> -->
-    <button class="btn btn-md btn-primary  ml-1 mb-1" v-if="whitelabelConfig.targetApp === 'tiktok'"
+
+    <button class="btn btn-md btn-primary  ml-1 mb-1"
         @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'boostComments' } })">
         <font-awesome-icon icon="fa-solid fa-comment-dots" class="h-3 w-3 text-success" />
         {{ $t('boostComments') }}
@@ -61,16 +52,7 @@
         <font-awesome-icon icon="fa-solid fa-video" class="h-3 w-3 text-success" />
         {{ $t('boostLives') }}
     </button>
-    <!-- <button class="btn btn-md btn-primary  ml-1 mb-1"
-        @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'massDM' } })">
-        <font-awesome-icon icon="fa-solid fa-message" class="h-3 w-3" />
-        {{ $t('massDM') }}
-    </button>
-    <button class="btn btn-md btn-primary  ml-1 mb-1"
-        @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'massComment' } })">
-        <font-awesome-icon icon="fa-solid fa-comment" class="h-3 w-3" />
-        {{ $t('massComment') }}
-    </button> -->
+
     <button class="btn btn-md btn-primary  ml-1 mb-1"
         @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'scrapeUsers' } })">
         <font-awesome-icon icon="fas fa-spider" class="h-3 w-3 mr-1" />
