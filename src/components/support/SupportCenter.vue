@@ -394,12 +394,6 @@ const MEDIA_FILTERS = [
   }
 ]
 
-const SUPPORT_CACHE_PREFIX = 'supportCenter'
-const TICKET_LIST_CACHE_PREFIX = `${SUPPORT_CACHE_PREFIX}:tickets`
-const TICKET_DETAIL_CACHE_PREFIX = `${SUPPORT_CACHE_PREFIX}:detail`
-const TICKET_LIST_CACHE_TTL = 5 * 60 * 1000 // 5 分钟
-const TICKET_DETAIL_CACHE_TTL = 10 * 60 * 1000 // 10 分钟
-
 export default {
   name: 'SupportCenter',
   components: { SupportForm },
@@ -457,9 +451,7 @@ export default {
       attachmentPreviewCache: {},
       attachmentPreviewKeyHandler: null,
       agentBaseUrl: '',
-      agentBaseUrlPromise: null,
-      lastTicketListCacheKey: null,
-      lastTicketDetailCacheKey: null
+      agentBaseUrlPromise: null
     }
   },
   computed: {
@@ -618,117 +610,6 @@ export default {
       })
       this.listeners = []
     },
-    getCacheStorage() {
-      try {
-        if (typeof window !== 'undefined' && window.localStorage) {
-          return window.localStorage
-        }
-      } catch (error) {
-        console.warn('support cache storage unavailable', error)
-      }
-      return null
-    },
-    readCacheEntry(key, ttl) {
-      if (!key) {
-        return null
-      }
-      const storage = this.getCacheStorage()
-      if (!storage) {
-        return null
-      }
-      try {
-        const raw = storage.getItem(key)
-        if (!raw) {
-          return null
-        }
-        const parsed = JSON.parse(raw)
-        const timestamp = Number(parsed?.timestamp) || 0
-        if (ttl && timestamp && Date.now() - timestamp > ttl) {
-          storage.removeItem(key)
-          return null
-        }
-        return parsed?.value ?? null
-      } catch (error) {
-        console.warn('support cache read failed', { key, error })
-        try {
-          storage.removeItem(key)
-        } catch (_) {
-          /* ignore */
-        }
-        return null
-      }
-    },
-    writeCacheEntry(key, value) {
-      if (!key) {
-        return
-      }
-      const storage = this.getCacheStorage()
-      if (!storage) {
-        return
-      }
-      if (value === undefined) {
-        try {
-          storage.removeItem(key)
-        } catch (error) {
-          console.warn('support cache remove failed', { key, error })
-        }
-        return
-      }
-      try {
-        storage.setItem(
-          key,
-          JSON.stringify({
-            timestamp: Date.now(),
-            value
-          })
-        )
-      } catch (error) {
-        console.warn('support cache write failed', { key, error })
-      }
-    },
-    buildTicketListCacheKey(page = this.page, pageSize = this.pageSize) {
-      return `${TICKET_LIST_CACHE_PREFIX}:${page}:${pageSize}`
-    },
-    readTicketListCache(page = this.page, pageSize = this.pageSize) {
-      const key = this.buildTicketListCacheKey(page, pageSize)
-      return {
-        key,
-        payload: this.readCacheEntry(key, TICKET_LIST_CACHE_TTL)
-      }
-    },
-    writeTicketListCache(data, page = this.page, pageSize = this.pageSize) {
-      const key = this.buildTicketListCacheKey(page, pageSize)
-      this.writeCacheEntry(key, data)
-      return key
-    },
-    buildTicketDetailCacheKey(params = {}) {
-      const ticketNo = (params.ticket_no || params.ticketNo || '').toString().trim()
-      const ticketId = (params.id || params.ticket_id || params.ticketId || params.ticketID || '').toString().trim()
-      const identifier = ticketNo || ticketId
-      if (!identifier) {
-        return null
-      }
-      const suffix = ticketNo && ticketId ? `${ticketNo}:${ticketId}` : identifier
-      return `${TICKET_DETAIL_CACHE_PREFIX}:${suffix}`
-    },
-    readTicketDetailCache(params = {}) {
-      const key = this.buildTicketDetailCacheKey(params)
-      if (!key) {
-        return { key: null, payload: null }
-      }
-      return {
-        key,
-        payload: this.readCacheEntry(key, TICKET_DETAIL_CACHE_TTL)
-      }
-    },
-    writeTicketDetailCache(params = {}, detail) {
-      const key = this.buildTicketDetailCacheKey(params)
-      if (!key) {
-        return null
-      }
-      this.writeCacheEntry(key, detail)
-      return key
-    },
     applyUnreadFlags() {
       if (!Array.isArray(this.tickets)) {
         return
@@ -803,7 +684,7 @@ export default {
       const limit = Number(data.limit ?? payload?.limit ?? this.pageSize) || this.pageSize
       return { items, total, page, limit }
     },
-    async applyTicketListPayload(payload, options = {}) {
+    async applyTicketListPayload(payload) {
       if (!payload) {
         this.tickets = []
         this.total = 0
@@ -817,9 +698,6 @@ export default {
         if (Number.isFinite(payload.limit) && payload.limit > 0) {
           this.pageSize = payload.limit
         }
-      }
-      if (options.cacheKey) {
-        this.lastTicketListCacheKey = options.cacheKey
       }
       this.applyUnreadFlags()
     },
@@ -840,28 +718,19 @@ export default {
       }
     },
     async fetchTickets() {
-      const { key: cacheKey, payload: cachedPayload } = this.readTicketListCache()
-      const shouldHydrateCache = Boolean(cachedPayload) && this.lastTicketListCacheKey !== cacheKey
-      if (shouldHydrateCache) {
-        await this.applyTicketListPayload(cachedPayload, { cacheKey })
-      }
-      this.loading = !shouldHydrateCache
+      this.loading = true
       try {
         const res = await this.$service.support_fetch_tickets({
           page: this.page,
           limit: this.pageSize
         })
         const normalized = this.normalizeTicketListPayload(res)
-        const appliedKey = this.writeTicketListCache(normalized, normalized.page, normalized.limit)
-        await this.applyTicketListPayload(normalized, { cacheKey: appliedKey })
+        await this.applyTicketListPayload(normalized)
       } catch (error) {
         console.error('support fetchTickets error', error)
-        if (!shouldHydrateCache) {
-          this.tickets = []
-          this.total = 0
-          this.applyUnreadFlags()
-          this.lastTicketListCacheKey = null
-        }
+        this.tickets = []
+        this.total = 0
+        this.applyUnreadFlags()
       } finally {
         this.loading = false
       }
