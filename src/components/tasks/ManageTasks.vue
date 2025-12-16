@@ -21,6 +21,7 @@
                 <th>{{ $t('id') }}</th>
                 <th>{{ $t('scriptName') }}</th>
                 <th>{{ $t('startTime') }}</th>
+                <th>{{ $t('taskDuration') }}</th>
                 <th>{{ $t('status') }}</th>
                 <th>{{ $t('retryCount') }}</th>
                 <th>{{ $t('username') }}</th>
@@ -34,6 +35,9 @@
                 <td><span class="badge badge-ghost badge-md">{{ task.script_name }}</span></td>
                 <td>
                   <span class="badge badge-ghost badge-md">{{ task.start_time }}</span>
+                </td>
+                <td>
+                  <span class="badge badge-ghost badge-md">{{ getTaskDuration(task) }}</span>
                 </td>
                 <td>
                   <div class="badge badge-neutral badge-md" v-if="task.status == '0'">{{ $t('waiting') }}</div>
@@ -96,6 +100,7 @@
 <script>
 import MyButton from '../Button.vue'
 import Pagination from '../Pagination.vue'
+import { formatDuration } from '@/utils/formatDuration.js'
 
 export default {
   name: 'app',
@@ -114,7 +119,9 @@ export default {
       tasks: [],
       currentDevice: null,
       searchStatus: '',
-      maxRetryCount: 3
+      maxRetryCount: 3,
+      timers: {},
+      currentTime: Date.now()
     }
   },
   computed: {
@@ -146,6 +153,49 @@ export default {
         return obj && obj[key] !== undefined ? obj[key] : '';
       } catch (e) {
         return '';
+      }
+    },
+    getTaskDuration(task) {
+      // Priority 1: Use duration_seconds if available
+      if (task.duration_seconds != null && task.duration_seconds >= 0) {
+        return formatDuration(task.duration_seconds);
+      }
+
+      // Priority 2: Calculate from started_at and finished_at
+      if (task.started_at && task.finished_at) {
+        try {
+          const start = new Date(task.started_at).getTime();
+          const end = new Date(task.finished_at).getTime();
+          const durationSeconds = Math.floor((end - start) / 1000);
+          return formatDuration(durationSeconds);
+        } catch (e) {
+          console.error('Error calculating duration from timestamps:', e);
+        }
+      }
+
+      // Priority 3: Real-time calculation for running tasks
+      if (task.status === '1' && task.started_at) {
+        try {
+          const start = new Date(task.started_at).getTime();
+          const durationSeconds = Math.floor((this.currentTime - start) / 1000);
+          return formatDuration(durationSeconds);
+        } catch (e) {
+          console.error('Error calculating real-time duration:', e);
+        }
+      }
+
+      return '--:--:--';
+    },
+    startTimer() {
+      // Update current time every second for running tasks
+      this.timers.mainTimer = setInterval(() => {
+        this.currentTime = Date.now();
+      }, 1000);
+    },
+    stopTimer() {
+      if (this.timers.mainTimer) {
+        clearInterval(this.timers.mainTimer);
+        this.timers.mainTimer = null;
       }
     },
 
@@ -270,7 +320,11 @@ export default {
   },
   async mounted() {
     this.loadMaxRetryCount();
-    this.get_tasks()
+    this.get_tasks();
+    this.startTimer();
+  },
+  beforeUnmount() {
+    this.stopTimer();
   }
 }
 </script>
