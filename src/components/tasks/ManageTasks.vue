@@ -135,6 +135,9 @@ export default {
       }
       return tasks
     },
+    hasRunningTasks() {
+      return this.tasks.some(task => task.status == '1');
+    }
 
   },
   methods: {
@@ -160,6 +163,9 @@ export default {
     },
     parseTaskTime(timeStr) {
       // Parse time string format: "2024-12-16 15:30:00" to timestamp
+      if (!timeStr || typeof timeStr !== 'string') {
+        return NaN;
+      }
       return new Date(timeStr.replace(' ', 'T')).getTime();
     },
     getTaskElapsedTime(task) {
@@ -170,6 +176,9 @@ export default {
 
       try {
         const startTime = this.parseTaskTime(task.start_time);
+        if (isNaN(startTime)) {
+          return '-';
+        }
         
         let endTime;
         // If task is running (status == '1'), use current time
@@ -178,6 +187,9 @@ export default {
         } else if (task.end_time) {
           // Use end_time for completed tasks
           endTime = this.parseTaskTime(task.end_time);
+          if (isNaN(endTime)) {
+            return '-';
+          }
         } else {
           // No end_time available for completed task
           return '-';
@@ -185,7 +197,7 @@ export default {
 
         // Calculate duration in seconds
         const durationMs = endTime - startTime;
-        if (durationMs < 0) {
+        if (durationMs < 0 || isNaN(durationMs)) {
           return '-';
         }
 
@@ -328,9 +340,12 @@ export default {
   async mounted() {
     this.loadMaxRetryCount();
     this.get_tasks();
-    // Update current time every second for real-time duration calculation
+    // Update current time every second for real-time duration calculation of running tasks
     this.updateTimer = setInterval(() => {
-      this.currentTime = Date.now();
+      // Only update if there are running tasks to avoid unnecessary reactivity
+      if (this.hasRunningTasks) {
+        this.currentTime = Date.now();
+      }
     }, 1000);
   },
   beforeUnmount() {
