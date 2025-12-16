@@ -42,7 +42,7 @@
     </button>
 
 
-    <button class="btn btn-md btn-primary  ml-1 mb-1"
+    <button class="btn btn-md btn-primary  ml-1 mb-1" v-if="whitelabelConfig.targetApp === 'tiktok'"
         @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'boostComments' } })">
         <font-awesome-icon icon="fa-solid fa-comment-dots" class="h-3 w-3 text-success" />
         {{ $t('boostComments') }}
