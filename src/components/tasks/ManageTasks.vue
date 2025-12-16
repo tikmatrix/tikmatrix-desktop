@@ -158,6 +158,10 @@ export default {
         return '';
       }
     },
+    parseTaskTime(timeStr) {
+      // Parse time string format: "2024-12-16 15:30:00" to timestamp
+      return new Date(timeStr.replace(' ', 'T')).getTime();
+    },
     getTaskElapsedTime(task) {
       // If task has not started yet, return empty
       if (!task.start_time || task.status == '0') {
@@ -165,8 +169,7 @@ export default {
       }
 
       try {
-        // Parse start_time (format: "2024-12-16 15:30:00")
-        const startTime = new Date(task.start_time.replace(' ', 'T')).getTime();
+        const startTime = this.parseTaskTime(task.start_time);
         
         let endTime;
         // If task is running (status == '1'), use current time
@@ -174,7 +177,7 @@ export default {
           endTime = this.currentTime;
         } else if (task.end_time) {
           // Use end_time for completed tasks
-          endTime = new Date(task.end_time.replace(' ', 'T')).getTime();
+          endTime = this.parseTaskTime(task.end_time);
         } else {
           // No end_time available for completed task
           return '-';
@@ -324,7 +327,7 @@ export default {
   },
   async mounted() {
     this.loadMaxRetryCount();
-    this.get_tasks()
+    this.get_tasks();
     // Update current time every second for real-time duration calculation
     this.updateTimer = setInterval(() => {
       this.currentTime = Date.now();
