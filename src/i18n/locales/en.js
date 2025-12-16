@@ -1173,6 +1173,7 @@ export default {
   taskArgs: 'Task Args',
   taskCreated: 'Task Created',
   taskDuration: 'Task Duration',
+  taskElapsedTime: 'Elapsed Time',
   taskExecutionOrder: 'Task Execution Order',
   taskFailedTip: 'Task Failure Troubleshooting',
   taskGoal: 'Task Goal',
