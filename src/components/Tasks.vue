@@ -32,11 +32,11 @@
         <button class="btn btn-md btn-primary mt-1 ml-1 mb-1" @click="$emiter('stop_task')">
             <font-awesome-icon icon="fa fa-stop" class="h-3 w-3 text-error" />{{ $t('stopTask') }}
         </button>
-        
+
         <button class="btn btn-md btn-outline btn-primary mt-1 ml-1 mb-1" @click="openTaskSettings">
             <font-awesome-icon icon="cog" class="h-3 w-3" />{{ $t('taskSettings') }}
         </button>
-        
+
         <a class="link link-primary flex items-center gap-2 text-md leading-snug max-w-full md:max-w-md whitespace-normal wrap-break-word"
             :href="whitelabelConfig.officialWebsite + '/docs/troubleshooting/task_failed'" target="_blank">
             <font-awesome-icon icon="fas fa-question-circle" class="h-5 w-5 shrink-0" />
@@ -95,27 +95,11 @@ export default {
             this.isCountingTasks = true;
             this.$service.count_task_by_status().then((res) => {
                 const counts = {};
-                let needRetryAll = false;
                 for (let item of res.data) {
                     counts[item.status] = item.count;
-                    if (this.autoRetry && item.status === 3 && item.count > 0) {
-                        needRetryAll = true;
-                    }
                 }
                 this.taskCounts = counts;
-                if (needRetryAll) {
-                    this.$service
-                        .retry_all_failed_tasks()
-                        .then(() => {
-                            console.log('retry_all_failed_tasks');
-                            this.countTasks();
-                        })
-                        .finally(() => {
-                            this.isCountingTasks = false;
-                        });
-                } else {
-                    this.isCountingTasks = false;
-                }
+                this.isCountingTasks = false;
             }).catch((error) => {
                 console.error('countTasks error:', error);
                 this.isCountingTasks = false;
