@@ -34,15 +34,7 @@
             true-value="1" false-value="0" @change="update_settings" />
         </div>
 
-        <!-- 随机顺序 -->
-        <div class="flex items-start justify-between py-3 border-b border-base-200">
-          <div class="flex-1">
-            <label class="text-md font-medium text-base-content">{{ $t('randomOrder') }}</label>
-            <p class="text-md text-base-content/60 mt-1">{{ $t('randomOrderTips') }}</p>
-          </div>
-          <input type="checkbox" class="toggle toggle-primary toggle-md mt-1" v-model="localSettings.random_order"
-            :true-value="true" :false-value="false" @change="update_settings" />
-        </div>
+        <!-- 随机顺序配置已迁移到任务设置组件 TaskSettings.vue -->
 
         <!-- 大屏幕模式 已迁移到投屏设置组件 ScreenCastSettings.vue -->
 
