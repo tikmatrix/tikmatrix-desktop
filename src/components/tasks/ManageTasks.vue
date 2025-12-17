@@ -3,8 +3,12 @@
     <Pagination :items="filter_tasks" :searchKeys="['id', 'device_index', 'script_name']"
       :searchTermPlaceholder="$t('searchTaskPlaceholder')" @refresh="get_tasks">
       <template v-slot:buttons>
-        <MyButton @click="retry_all_failed" label="retryAllFaied" icon="fa fa-repeat" />
-        <MyButton @click="clearAll" label="clearAll" icon="fa fa-trash" />
+        <button class="btn btn-md btn-info ml-2" @click="retry_all_failed">
+          <font-awesome-icon icon="fa fa-repeat"></font-awesome-icon>{{ $t('retryAllFaied') }}
+        </button>
+        <button class="btn btn-md btn-warning ml-2" @click="clearAll">
+          <font-awesome-icon icon="fa fa-trash"></font-awesome-icon>{{ $t('clearAll') }}
+        </button>
         <select v-model="searchStatus" class="select select-md w-32 select-bordered ml-2">
           <option value="">{{ $t('allStatus') }}</option>
           <option value="0">{{ $t('waiting') }}</option>
@@ -60,7 +64,7 @@
                 </td>
                 <td>
                   <div class="space-x-4">
-                    <button class="btn btn-md btn-primary rounded" @click="retry(task)" :disabled="!canRetry(task)"
+                    <button class="btn btn-md btn-info rounded" @click="retry(task)" :disabled="!canRetry(task)"
                       :title="retryTooltip(task)">{{
                         $t('retry') }}</button>
                     <button class="btn btn-md btn-error rounded" @click="deleteTask(task)">{{
@@ -102,13 +106,11 @@
   </div>
 </template>
 <script>
-import MyButton from '../Button.vue'
 import Pagination from '../Pagination.vue'
 
 export default {
   name: 'app',
   components: {
-    MyButton,
     Pagination
   },
   props: {
