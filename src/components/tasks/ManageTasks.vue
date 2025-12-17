@@ -33,7 +33,7 @@
             <tbody>
               <tr v-for="(task, index) in slotProps.items" :key="index">
                 <td>{{ task.id }}</td>
-                <td><span class="badge badge-ghost badge-md">{{ task.script_name }}</span></td>
+                <td><span class="badge badge-ghost badge-md">{{ $t(task.script_name) }}</span></td>
                 <td>
                   <span class="badge badge-ghost badge-md">{{ task.start_time }}</span>
                 </td>
@@ -179,7 +179,7 @@ export default {
         if (isNaN(startTime)) {
           return '-';
         }
-        
+
         let endTime;
         // If task is running (status == '1'), use current time
         if (task.status == '1') {

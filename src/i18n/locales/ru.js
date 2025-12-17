@@ -1318,4 +1318,16 @@ export default {
   yearlyDiscount: 'Ежегодно(Сэкономьте {percent}%)',
   yearlyPlans: 'Годовые планы',
   youSave: 'Вы экономите {amount}',
+  // Script names from agent/src/bin/script.rs
+  install: 'Установить',
+  match_accounts: 'Сопоставление аккаунтов',
+  scrape_user: 'Сбор информации о пользователе',
+  delete_post: 'Удалить публикацию',
+  boost_live: 'Продвижение трансляции',
+  super_marketing: 'Супер маркетинг',
+  account_warmup: 'Прогрев аккаунта',
+  follow_back: 'Подписка в ответ',
+  unfollow: 'Отписаться',
+  switch_account: 'Сменить аккаунт',
+  boost_comment: 'Продвижение комментария',
 };

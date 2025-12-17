@@ -1318,4 +1318,16 @@ export default {
   yearlyDiscount: 'Yearly(Save {percent}%)',
   yearlyPlans: 'Yearly Plans',
   youSave: 'Save {amount}',
+  // Script names from agent/src/bin/script.rs
+  install: 'Install',
+  match_accounts: 'Match Accounts',
+  scrape_user: 'Scrape User',
+  delete_post: 'Delete Post',
+  boost_live: 'Boost Live',
+  super_marketing: 'Super Marketing',
+  account_warmup: 'Account Warmup',
+  follow_back: 'Follow Back',
+  unfollow: 'Unfollow',
+  switch_account: 'Switch Account',
+  boost_comment: 'Boost Comment',
 };

@@ -1318,4 +1318,16 @@ export default {
   yearlyDiscount: '年度（立省 {percent}%）',
   yearlyPlans: '年度套餐',
   youSave: '节省 {amount}',
+  // Script names from agent/src/bin/script.rs
+  install: '安装',
+  match_accounts: '匹配账号',
+  scrape_user: '抓取用户',
+  delete_post: '删除帖子',
+  boost_live: '提升直播',
+  super_marketing: '超级营销',
+  account_warmup: '账号预热',
+  follow_back: '回关',
+  unfollow: '取消关注',
+  switch_account: '切换账号',
+  boost_comment: '提升评论',
 };
