@@ -41,7 +41,7 @@
         <div class="bg-base-200/70 rounded-2xl shadow-md border border-base-300/60">
           <div class="flex flex-wrap items-center gap-2 p-2">
             <label class="flex items-center gap-1.5 cursor-pointer select-none text-primary text-md font-medium">
-              <input type="checkbox" class="checkbox checkbox-md ring-1" @change="selectAll(0)"
+              <input type="checkbox" class="checkbox checkbox-md ring-1" @change="selectAll(0, $event)"
                 :checked="isSelectAll(0)" />
               <span class="whitespace-nowrap">{{ $t('allDevices') }} ({{ groupDeviceCount(0) }})</span>
             </label>
@@ -80,7 +80,7 @@
             v-for="item in sortedGroups" :key="item.id">
             <div class="flex flex-wrap items-center gap-2 p-2 border-b border-base-300/50">
               <label class="flex items-center gap-1.5 cursor-pointer select-none text-primary text-md font-medium">
-                <input type="checkbox" class="checkbox checkbox-md ring-1" @change="selectAll(item.id)"
+                <input type="checkbox" class="checkbox checkbox-md ring-1" @change="selectAll(item.id, $event)"
                   :checked="isSelectAll(item.id)" />
                 <span class="whitespace-nowrap">{{ item.name }} ({{ groupDeviceCount(item.id) }})</span>
               </label>
@@ -455,17 +455,31 @@ export default {
     selectionCount(id) {
       return this.selections[id]?.length ?? 0
     },
-    async selectAll(id) {
-      if (!this.isSelectAll(id)) {
-        if (id === 0) {
-          this.selection = this.devices.map(device => device.real_serial)
-        } else {
-          this.selection = this.devices
+    async selectAll(id, event) {
+      const isCtrlPressed = event?.ctrlKey || event?.metaKey // metaKey for Mac
+      const groupDeviceSerials = id === 0
+        ? this.devices.map(device => device.real_serial)
+        : this.devices
             .filter(device => device.group_id === id)
             .map(device => device.real_serial)
+      
+      if (isCtrlPressed) {
+        // Multi-select mode with Ctrl key
+        if (this.isSelectAll(id)) {
+          // Remove all devices from this group from selection
+          this.selection = this.selection.filter(serial => !groupDeviceSerials.includes(serial))
+        } else {
+          // Add all devices from this group to selection
+          const newSerials = groupDeviceSerials.filter(serial => !this.selection.includes(serial))
+          this.selection = [...this.selection, ...newSerials]
         }
       } else {
-        this.selection = []
+        // Single-select mode (original behavior)
+        if (!this.isSelectAll(id)) {
+          this.selection = groupDeviceSerials
+        } else {
+          this.selection = []
+        }
       }
       this.refreshSelections()
     },
