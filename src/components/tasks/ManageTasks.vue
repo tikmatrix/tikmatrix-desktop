@@ -27,6 +27,7 @@
                 <th>{{ $t('startTime') }}</th>
                 <th>{{ $t('taskElapsedTime') }}</th>
                 <th>{{ $t('status') }}</th>
+                <th>{{ $t('remark') }}</th>
                 <th>{{ $t('source') }}</th>
                 <th>{{ $t('retryCount') }}</th>
                 <th>{{ $t('username') }}</th>
@@ -49,6 +50,16 @@
                   <div class="badge badge-primary badge-md" v-else-if="task.status == '1'">{{ $t('execing') }}</div>
                   <div class="badge badge-success badge-md" v-else-if="task.status == '2'">{{ $t('success') }}</div>
                   <div class="badge badge-error badge-md" v-else-if="task.status == '3'">{{ $t('failed') }}</div>
+                </td>
+                <td>
+                  <div class="flex items-center gap-1">
+                    <a class="link link-primary text-sm font-medium truncate max-w-[100px]" :title="task.remark">{{
+                      task.remark }}</a>
+                    <button class="btn btn-ghost btn-sm p-0 h-5 min-h-0 w-5" @click="copy(task.remark)"
+                      :title="$t('copy')">
+                      <font-awesome-icon icon="fas fa-copy" class="h-3 w-3 text-base-content/50 hover:text-primary" />
+                    </button>
+                  </div>
                 </td>
                 <td>
                   <span class="badge badge-ghost badge-md">{{ task.source || 'ui' }}</span>
@@ -106,7 +117,8 @@
   </div>
 </template>
 <script>
-import Pagination from '../Pagination.vue'
+import Pagination from '../Pagination.vue';
+import { writeText } from '@tauri-apps/api/clipboard';
 
 export default {
   name: 'app',
@@ -143,6 +155,14 @@ export default {
 
   },
   methods: {
+    async copy(text) {
+      await writeText(text)
+      await this.$emiter('NOTIFY', {
+        type: 'success',
+        message: this.$t('copied'),
+        timeout: 2000
+      });
+    },
     async loadMaxRetryCount() {
       try {
         const res = await this.$service.get_settings();
