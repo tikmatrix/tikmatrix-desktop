@@ -123,6 +123,11 @@ jobs:
 
           $buildTarget = "${{ inputs.build_target }}"
 
+          # Ensure bin folder is clean to avoid uploading stale binaries
+          if (Test-Path "./tikmatrix-agent/target/${{ matrix.target }}/release/bin/*") {
+            Remove-Item -Force -Recurse ./tikmatrix-agent/target/${{ matrix.target }}/release/bin/*
+          }
+
           if ($buildTarget -eq "all" -or $buildTarget -eq "agent") {
             if (Test-Path "./tikmatrix-agent/target/${{ matrix.target }}/release/agent.exe") {
               Copy-Item ./tikmatrix-agent/target/${{ matrix.target }}/release/agent.exe ./tikmatrix-agent/target/${{ matrix.target }}/release/bin/

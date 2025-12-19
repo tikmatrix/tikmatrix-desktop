@@ -137,6 +137,10 @@ jobs:
 
           # Prepare ARM64 binaries
           mkdir -p ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin
+          # Ensure bin folder is clean to avoid uploading stale binaries
+          if [ -d ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin ]; then
+            rm -f ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin/* || true
+          fi
           if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "agent" ]]; then
             if [ -f "./tikmatrix-agent/target/aarch64-apple-darwin/release/agent" ]; then
               cp ./tikmatrix-agent/target/aarch64-apple-darwin/release/agent ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin/
@@ -150,6 +154,10 @@ jobs:
 
           # Prepare x86_64 binaries
           mkdir -p ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin
+          # Ensure bin folder is clean to avoid uploading stale binaries
+          if [ -d ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin ]; then
+            rm -f ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin/* || true
+          fi
           if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "agent" ]]; then
             if [ -f "./tikmatrix-agent/target/x86_64-apple-darwin/release/agent" ]; then
               cp ./tikmatrix-agent/target/x86_64-apple-darwin/release/agent ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin/
