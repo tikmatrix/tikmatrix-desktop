@@ -76,13 +76,20 @@
         {{ $t('superMarketing') }}
     </button>
 
-    <!-- AI 智能代理脚本 
-    <button class="btn btn-md btn-accent ml-1 mb-1"
+    <!-- AI 智能代理脚本（需激活码解锁） -->
+    <button v-if="isFeatureUnlocked('aiAgent')" class="btn btn-md btn-accent ml-1 mb-1"
         @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'aiAgent' } })">
         <font-awesome-icon icon="fa-solid fa-robot" class="h-3 w-3 mr-1" />
         {{ $t('aiAgent') }}
     </button>
-    -->
+
+    <!-- 测试脚本（需激活码解锁） -->
+    <button v-if="isFeatureUnlocked('testScript')" class="btn btn-md btn-warning ml-1 mb-1" @click="$emiter('run_now_by_account', {
+        name: 'test', args: {}
+    })">
+        <font-awesome-icon icon="fa-solid fa-flask-vial" class="h-3 w-3 mr-1" />
+        {{ $t('testScript') }}
+    </button>
 </template>
 <script>
 import { getUnlockedFeatures } from '@/utils/features.js';

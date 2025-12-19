@@ -53,6 +53,7 @@ export default {
   aiAgentGoalHint: 'Describe what you want to achieve. Be specific about the app, actions, and expected outcome.',
   aiAgentGoalPlaceholder: 'e.g., Open TikTok and search for "cats", then like the first 3 videos',
   aiAgentSystemPromptHint: 'Leave empty to use the default prompt. Advanced users can customize AI behavior here.',
+  testScript: 'Test Script',
   aiMade: 'AI Made',
   alipayPayment: 'Alipay',
   all: 'All',
