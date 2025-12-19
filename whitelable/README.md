@@ -19,21 +19,13 @@
 4. 官网域名: officialWebsite
     * src\config\whitelabel.js 中的 DEFAULT_WHITELABEL_CONFIG.officialWebsite 需要配置为 {officialWebsite}
 
-5. API 域名
-    * src\config\whitelabel.js 中的 DEFAULT_WHITELABEL_CONFIG.apiDomain 需要配置为 {apiDomain}
-    * src-tauri\src\main.rs 中的 setup_env 函数最后一行添加
-
-      ```rust
-      std::env::set_var("MOSS_URL", "{apiDomain}/moss");
-      ```
-
-6. 客服邮箱
+5. 客服邮箱
     * src\config\whitelabel.js 中的 DEFAULT_WHITELABEL_CONFIG.emailSupport 需要配置为 {emailSupport}
 
-7. 客服telegram
+6. 客服telegram
     * src\config\whitelabel.js 中的 DEFAULT_WHITELABEL_CONFIG.telegramSupport 需要配置为 {telegramSupport}
 
-8. 客服whatsapp
+7. 客服whatsapp
     * src\config\whitelabel.js 中的 DEFAULT_WHITELABEL_CONFIG.whatsappSupport 需要配置为 {whatsappSupport}
 
 ## 自动化打包脚本

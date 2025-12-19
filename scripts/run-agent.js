@@ -25,7 +25,6 @@ console.log(`🚀 Starting ${appName} Agent...`);
 // Set environment variables
 function setEnvironment() {
     process.env.MATRIX_APP_NAME = appName;
-    process.env.MOSS_URL = 'http://localhost:8787/moss';
     process.env.LOG_LEVEL = 'info';
 
     if (isWindows) {
@@ -41,7 +40,6 @@ function setEnvironment() {
     console.log(`📝 Environment:`);
     console.log(`   MATRIX_APP_NAME: ${process.env.MATRIX_APP_NAME}`);
     console.log(`   MATRIX_APP_WORK_DIR: ${process.env.MATRIX_APP_WORK_DIR}`);
-    console.log(`   MOSS_URL: ${process.env.MOSS_URL}`);
     console.log(`   LOG_LEVEL: ${process.env.LOG_LEVEL}`);
 }
 

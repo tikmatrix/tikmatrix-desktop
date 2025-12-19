@@ -65,11 +65,6 @@ fn setup_env(working_dir: &str, version: String) {
         std::env::set_var("MATRIX_APP_WORK_DIR", working_dir);
         std::env::set_var("MATRIX_APP_NAME", "TikMatrix".to_string());
         std::env::set_var("MATRIX_APP_VERSION", version.clone());
-        if cfg!(debug_assertions) {
-            std::env::set_var("MOSS_URL", "http://localhost:8787/moss");
-        } else {
-            std::env::set_var("MOSS_URL", "https://api.niostack.com/moss");
-        }
     };
     // Log proxy configuration for debugging
     proxy_config::log_proxy_config();

@@ -50,7 +50,6 @@ const rawConfig = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
 const targetApp = mustHave(rawConfig.targetApp, 'targetApp');
 const appName = mustHave(rawConfig.appName, 'appName');
 const officialWebsite = mustHave(rawConfig.officialWebsite, 'officialWebsite');
-const apiDomain = normalizeDomain(mustHave(rawConfig.apiDomain, 'apiDomain'));
 const enablePay = rawConfig.enablePay !== false; // 默认为 true
 const enableSupportEntry = rawConfig.enableSupportEntry !== false; // 默认为 true
 if (!enablePay) {
@@ -72,7 +71,6 @@ if (!appId) {
     throw new Error('无法根据 appName 生成有效的 appId，请在 config.json 中显式设置 appId');
 }
 const updaterEndpoint = `https://api.niostack.com/front-api/check_update?app=${appId}`;
-const mossUrl = `${apiDomain}/moss`;
 
 if (verbose) {
     console.log('📋 白标配置:');
@@ -80,9 +78,7 @@ if (verbose) {
     console.log(`   • 应用名: ${appName}`);
     console.log(`   • 应用 ID: ${appId}`);
     console.log(`   • 官网: ${officialWebsite}`);
-    console.log(`   • API: ${apiDomain}`);
     console.log(`   • 更新地址: ${updaterEndpoint}`);
-    console.log(`   • MOSS: ${mossUrl}`);
     console.log(`   • 支持入口: ${enableSupportEntry ? '启用' : '禁用'}`);
 }
 
@@ -171,7 +167,6 @@ function updateWhitelabelConfig() {
 
     content = replaceConfigString(content, 'appName', appName);
     content = replaceConfigString(content, 'officialWebsite', officialWebsite);
-    content = replaceConfigString(content, 'apiDomain', apiDomain);
     content = replaceConfigBoolean(content, 'enablePay', enablePay);
     content = replaceConfigBoolean(content, 'enableSupportEntry', enableSupportEntry);
     content = replaceConfigString(content, 'targetApp', targetApp);
@@ -187,7 +182,7 @@ function updateMainRs() {
     backupTextFile(mainRsPath);
     let content = fs.readFileSync(mainRsPath, 'utf-8');
 
-    // 将 MOSS_URL 和 MATRIX_APP_NAME 在 `setup_env` 函数的末尾设置，
+    // 将 MATRIX_APP_NAME 在 `setup_env` 函数的末尾设置，
     // 使用正则定位 `setup_env` 函数的开头并在其闭合前插入变量设置。
     const setupEnvRegex = /(fn setup_env\([^)]*\)\s*\{[\s\S]*?)\n\}/;
     if (!setupEnvRegex.test(content)) {
@@ -197,7 +192,7 @@ function updateMainRs() {
     const MATRIX_APP_NAME = targetApp === 'tiktok' ? 'TikMatrix' : 'IgMatrix';
     content = content.replace(
         setupEnvRegex,
-        `$1\n    std::env::set_var("MOSS_URL", "${escapeRust(mossUrl)}");\n    std::env::set_var("MATRIX_APP_NAME", "${escapeRust(MATRIX_APP_NAME)}");\n}`
+        `$1\n    std::env::set_var("MATRIX_APP_NAME", "${escapeRust(MATRIX_APP_NAME)}");\n}`
     );
 
     fs.writeFileSync(mainRsPath, content, 'utf-8');
@@ -426,13 +421,7 @@ function sanitizeAppId(value) {
         .replace(/[^a-z0-9.-]/g, '');
 }
 
-function normalizeDomain(value) {
-    const trimmed = value.trim().replace(/\/+$/, '');
-    if (!/^https?:\/\//i.test(trimmed)) {
-        throw new Error(`API 域名必须包含协议(http/https): ${value}`);
-    }
-    return trimmed;
-}
+
 
 function escapeJs(value) {
     return value.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
