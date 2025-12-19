@@ -2324,9 +2324,7 @@ export default {
       this.metadata = parsedTicketMetadata || parsedDetailMetadata || {}
       this.devicesDetail = this.normalizeDetailDevices(detail)
       this.messages = this.normalizeDetailMessages(detail)
-      if (options.cacheKey) {
-        this.lastTicketDetailCacheKey = options.cacheKey
-      }
+
       if (this.reply.includeLogs) {
         this.clearReplyPreparation()
         this.scheduleReplyLogPreparation()
@@ -2371,27 +2369,18 @@ export default {
         return
       }
 
-      const { key: cacheKey, payload: cachedDetail } = this.readTicketDetailCache(params)
-      const shouldHydrateCache = Boolean(cachedDetail) && this.lastTicketDetailCacheKey !== cacheKey
-      if (shouldHydrateCache) {
-        this.applyTicketDetailPayload(cachedDetail, { cacheKey, fallbackTicket: ticket })
-      }
-      this.detailLoading = !shouldHydrateCache
+      this.detailLoading = true
       try {
         const res = await this.$service.support_ticket_detail(params)
         const detail = res?.data || res || {}
-        const appliedKey = this.writeTicketDetailCache(params, detail) || cacheKey
-        this.applyTicketDetailPayload(detail, { cacheKey: appliedKey, fallbackTicket: ticket })
+        this.applyTicketDetailPayload(detail, { fallbackTicket: ticket })
       } catch (error) {
         console.error('support loadTicketDetail error', error)
         this.notify('error', this.$t('supportDetailLoadFailed'))
-        if (!shouldHydrateCache) {
-          this.ticketDetail = null
-          this.metadata = {}
-          this.devicesDetail = []
-          this.messages = []
-          this.lastTicketDetailCacheKey = null
-        }
+        this.ticketDetail = null
+        this.metadata = {}
+        this.devicesDetail = []
+        this.messages = []
       } finally {
         this.detailLoading = false
       }
@@ -2447,7 +2436,6 @@ export default {
       this.metadata = {}
       this.devicesDetail = []
       this.messages = []
-      this.lastTicketDetailCacheKey = null
       if (this.highlightTimerHandle) {
         clearTimeout(this.highlightTimerHandle)
         this.highlightTimerHandle = null
