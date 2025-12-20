@@ -54,6 +54,7 @@ export default {
   aiAgentGoalPlaceholder: 'e.g., Open TikTok and search for "cats", then like the first 3 videos',
   aiAgentSystemPromptHint: 'Leave empty to use the default prompt. Advanced users can customize AI behavior here.',
   testScript: 'Test Script',
+  testScriptWarning: 'The test script is used to verify compatibility between the phone and our automation engine; only after the test script runs successfully can other automation scripts run reliably.',
   aiMade: 'AI Made',
   alipayPayment: 'Alipay',
   all: 'All',

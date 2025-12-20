@@ -68,6 +68,7 @@
     <BoostLivesDialog v-if="script.name === 'boostLives'" ref="currentDialog" />
     <MassCommentDialog v-if="script.name === 'massComment'" ref="currentDialog" />
     <SwitchAccountDialog v-if="script.name === 'switchAccount'" ref="currentDialog" />
+    <TestScriptDialog v-if="script.name === 'test'" ref="currentDialog" />
     <SuperMarketingDialog v-if="script.name === 'superMarketing'" ref="currentDialog" />
     <AIAgentDialog v-if="script.name === 'aiAgent'" ref="currentDialog" />
 
@@ -98,6 +99,7 @@ import MatchAccounts from './MatchAccounts.vue'
 import MassCommentDialog from './MassCommentDialog.vue'
 import BoostLivesDialog from './BoostLivesDialog.vue'
 import SwitchAccountDialog from './SwitchAccountDialog.vue'
+import TestScriptDialog from './TestScriptDialog.vue'
 import SuperMarketingDialog from './SuperMarketingDialog.vue'
 import AIAgentDialog from './AIAgentDialog.vue'
 import { beforeRunScriptSettings } from '@/utils/settingsManager';
@@ -156,6 +158,7 @@ export default {
     MassCommentDialog,
     BoostLivesDialog,
     SwitchAccountDialog,
+    TestScriptDialog,
     SuperMarketingDialog,
     AIAgentDialog
   },

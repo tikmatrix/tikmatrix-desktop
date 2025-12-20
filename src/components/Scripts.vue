@@ -84,9 +84,8 @@
     </button>
 
     <!-- 测试脚本（需激活码解锁） -->
-    <button v-if="isFeatureUnlocked('testScript')" class="btn btn-md btn-warning ml-1 mb-1" @click="$emiter('run_now_by_account', {
-        name: 'test', args: {}
-    })">
+    <button class="btn btn-md btn-warning ml-1 mb-1"
+        @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'test' } })">
         <font-awesome-icon icon="fa-solid fa-flask-vial" class="h-3 w-3 mr-1" />
         {{ $t('testScript') }}
     </button>

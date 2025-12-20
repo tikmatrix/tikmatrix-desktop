@@ -54,6 +54,7 @@ export default {
   aiAgentGoalPlaceholder: '例如：打开抖音搜索"猫咪"，然后给前3个视频点赞',
   aiAgentSystemPromptHint: '留空使用默认提示词。高级用户可在此自定义 AI 行为。',
   testScript: '测试脚本',
+  testScriptWarning: '测试脚本用于测试手机和我们自动化引擎的兼容性，只有测试脚本运行成功才可以稳定地运行其他自动化脚本。',
   aiMade: 'AI 制作',
   alipayPayment: '支付宝',
   all: '全部',
