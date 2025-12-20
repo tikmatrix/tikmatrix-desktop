@@ -37,7 +37,7 @@
           {{ $t('noDevicesSelected') }}
         </div>
       </div>
-      <div v-if="licenseLimit !== null" class="mt-2 text-md" :class="licenseHintClass">
+      <div v-if="licenseLimit !== null && script.name !== 'test'" class="mt-2 text-md" :class="licenseHintClass">
         <span>{{ $t('licenseConcurrencyLimitLabel', { count: licenseLimit }) }}</span>
         <span v-if="licenseLimit === 0" class="ml-1">
           {{ $t('licenseConcurrencyLimitInactiveHint') }}
@@ -230,6 +230,8 @@ export default {
     }
   },
   async mounted() {
+    // test 脚本不受 license 限制，避免不必要的请求
+    if (this.script && this.script.name === 'test') return
     await this.fetchLicenseLimit()
   }
 }
