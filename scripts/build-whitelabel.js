@@ -52,6 +52,9 @@ const appName = mustHave(rawConfig.appName, 'appName');
 const officialWebsite = mustHave(rawConfig.officialWebsite, 'officialWebsite');
 const enablePay = rawConfig.enablePay !== false; // 默认为 true
 const enableSupportEntry = rawConfig.enableSupportEntry !== false; // 默认为 true
+const showOfficialWebsite = rawConfig.showOfficialWebsite !== false; // 默认为 true
+const showLogo = rawConfig.showLogo !== false; // 默认为 true
+const showBranding = rawConfig.showBranding !== false; // 默认为 true
 if (!enablePay) {
     console.warn('⚠️ 警告: 支付功能被禁用 (enablePay=false)');
 }
@@ -81,6 +84,9 @@ if (verbose) {
     console.log(`   • 官网: ${officialWebsite}`);
     console.log(`   • 更新地址: ${updaterEndpoint}`);
     console.log(`   • 支持入口: ${enableSupportEntry ? '启用' : '禁用'}`);
+    console.log(`   • 显示官网链接: ${showOfficialWebsite ? '是' : '否'}`);
+    console.log(`   • 显示 Logo: ${showLogo ? '是' : '否'}`);
+    console.log(`   • 显示品牌配置: ${showBranding ? '是' : '否'}`);
 }
 
 const backups = new Map();
@@ -170,6 +176,9 @@ function updateWhitelabelConfig() {
     content = replaceConfigString(content, 'officialWebsite', officialWebsite);
     content = replaceConfigBoolean(content, 'enablePay', enablePay);
     content = replaceConfigBoolean(content, 'enableSupportEntry', enableSupportEntry);
+    content = replaceConfigBoolean(content, 'showOfficialWebsite', showOfficialWebsite);
+    content = replaceConfigBoolean(content, 'showLogo', showLogo);
+    content = replaceConfigBoolean(content, 'showBranding', showBranding);
     content = replaceConfigString(content, 'targetApp', targetApp);
     content = replaceConfigString(content, 'emailSupport', emailSupport);
     content = replaceConfigString(content, 'telegramSupport', telegramSupport);

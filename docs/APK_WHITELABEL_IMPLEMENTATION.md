@@ -10,7 +10,7 @@
 
 - ✅ 删除所有配置文件中的 `appId` 字段
 - ✅ `appId` 统一从 `appName` 自动生成（转小写并移除空格和特殊字符）
-- ✅ 示例：`"IgMatrix"` → `"igmatrix"`，`"AGA Cloud"` → `"agacloud"`
+- ✅ 示例：`"IgMatrix"` → `"igmatrix"`
 
 ### 2. 创建 APK 白标构建脚本
 
@@ -33,8 +33,6 @@
 # 构建 IgMatrix APK
 npm run build:whitelabel-apk:IgMatrix
 
-# 构建 AGACloud APK
-npm run build:whitelabel-apk:AGACloud
 
 # 或直接运行脚本
 node scripts/build-whitelabel-apk.js <品牌目录> --verbose
@@ -69,8 +67,6 @@ node scripts/build-whitelabel-apk.js <品牌目录> --verbose
 修改的配置文件：
 
 - `whitelable/IgMatrix/config.json` - 删除 `appId` 字段
-- `whitelable/AGACloud/config.json` - 删除 `appId` 字段
-- `whitelable/TikZenX/config.json` - 删除 `appId` 字段
 
 ### 6. 添加 npm 脚本
 
@@ -81,7 +77,6 @@ node scripts/build-whitelabel-apk.js <品牌目录> --verbose
 ```json
 {
   "build:whitelabel-apk:IgMatrix": "node scripts/build-whitelabel-apk.js IgMatrix --verbose",
-  "build:whitelabel-apk:AGACloud": "node scripts/build-whitelabel-apk.js AGACloud --verbose",
   "build:whitelabel-apk": "node scripts/build-whitelabel-apk.js"
 }
 ```
@@ -104,8 +99,6 @@ node scripts/build-whitelabel-apk.js <品牌目录> --verbose
 |------|---------|-------|------|
 | TikMatrix | TikMatrix | tikmatrix | com.github.tikmatrix |
 | IgMatrix | IgMatrix | igmatrix | com.github.igmatrix |
-| AGA Cloud | AGA Cloud | agacloud | com.github.agacloud |
-| TikZenX | TikZenX | tikzenx | com.github.tikzenx |
 
 ## APK 文件命名
 
@@ -116,8 +109,6 @@ node scripts/build-whitelabel-apk.js <品牌目录> --verbose
 
 - `com.github.igmatrix.apk`
 - `com.github.igmatrix.test.apk`
-- `com.github.agacloud.apk`
-- `com.github.agacloud.test.apk`
 
 ## Agent 集成
 

@@ -10,12 +10,6 @@ whitelable/
 ├── IgMatrix/             # IgMatrix 白标配置
 │   ├── config.json       # 配置文件
 │   └── app-icon.png      # 应用图标
-├── AGACloud/             # AGA Cloud 白标配置
-│   ├── config.json
-│   └── app-icon.png
-└── TikZenX/              # TikZenX 白标配置
-    ├── config.json
-    └── app-icon.png
 ```
 
 ## 配置文件格式
@@ -42,7 +36,6 @@ whitelable/
 - **appName** (必填): 应用名称，显示在应用标题栏和系统中
   - 会自动转换为 `appId`：转小写并移除所有空格和特殊字符
   - 示例：`"IgMatrix"` → appId: `"igmatrix"`
-  - 示例：`"AGA Cloud"` → appId: `"agacloud"`
 
 - **officialWebsite** (可选): 官方网站 URL
   - 用于应用内的链接跳转
@@ -84,8 +77,6 @@ whitelable/
 示例：
 
 - IgMatrix → appId: `igmatrix` → 包名: `com.github.igmatrix`
-- AGA Cloud → appId: `agacloud` → 包名: `com.github.agacloud`
-- TikZenX → appId: `tikzenx` → 包名: `com.github.tikzenx`
 
 APK 文件命名：
 
@@ -100,8 +91,6 @@ APK 文件命名：
 # 构建 IgMatrix 白标
 npm run build:whitelabel:IgMatrix
 
-# 构建 AGACloud 白标
-npm run build:whitelabel:AGACloud
 
 # 或者指定品牌目录
 node scripts/build-whitelabel.js <品牌目录>
@@ -118,9 +107,6 @@ node scripts/build-whitelabel.js <品牌目录>
 ```bash
 # 构建 IgMatrix APK
 npm run build:whitelabel-apk:IgMatrix
-
-# 构建 AGACloud APK
-npm run build:whitelabel-apk:AGACloud
 
 # 或者指定品牌目录
 node scripts/build-whitelabel-apk.js <品牌目录> --verbose
