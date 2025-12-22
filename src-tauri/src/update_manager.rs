@@ -144,7 +144,7 @@ pub async fn check_libs_update(
     let client = client_builder
         .build()
         .map_err(|e| format!("Failed to create HTTP client: {}", e))?;
-
+    // curl https://api.niostack.com/front-api/check_libs?beta=0 -H "User-Agent: windows" -H "X-App-Id: AGA TikTok"
     let response = client
         .get(&url)
         .header("User-Agent", platform)

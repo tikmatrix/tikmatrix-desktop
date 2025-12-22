@@ -62,7 +62,7 @@
         {{ $t('initAppAgent') }}
     </button>
     <button class="btn btn-md btn-primary  ml-1 mb-1"
-        @click="$emiter('adbEventData', { args: ['shell', 'am', 'start', '-n', 'com.github.tikmatrix/.MainActivity'] })">
+        @click="$emiter('adbEventData', { args: ['shell', 'am', 'start', '-n', agent_package_name + '/.MainActivity'] })">
         <font-awesome-icon icon="fa fa-play" class="h-3 w-3 text-success" />
         {{ $t('openAppAgent') }}
     </button>
@@ -139,6 +139,7 @@ export default {
             proxy_host: 'localhost',
             proxy_port: '8080',
             uninstall_package: '',
+            agent_package_name: '',
             unlocked: [],
             whitelabelConfig: cloneDefaultWhiteLabelConfig(),
         }
@@ -212,6 +213,16 @@ export default {
         }
         if (Array.isArray(features)) {
             this.unlocked = features;
+        }
+
+        // Prefer package name provided by agent (saved from login); fallback to settings.packagename
+        try {
+            const apkPkg = await getItem('apk_package_name');
+            if (apkPkg) {
+                this.agent_package_name = apkPkg;
+            }
+        } catch (e) {
+            // ignore
         }
 
         //featureUnlocked

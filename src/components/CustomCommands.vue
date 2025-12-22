@@ -131,10 +131,7 @@ export default {
                     name: 'Enable TCP',
                     args: ['tcpip', '5555']
                 },
-                {
-                    name: 'Enable Fast Input',
-                    args: ['shell', 'ime', 'set', 'com.github.tikmatrix/.FastInputIME']
-                },
+                // package-specific preset will be built dynamically in loadCommands()
                 {
                     name: 'Open Gallery',
                     args: ['shell', 'am', 'start', '-a', 'android.intent.action.VIEW', '-t', 'image/*']
@@ -164,9 +161,46 @@ export default {
                 this.commands = savedCommands;
             }
 
+            // 构建预置命令，优先使用 agent 存储的 apk_package_name，否则使用 settings.packagename，最后回退到默认
+            let mainPkg = await getItem('apk_package_name');
+            if (!mainPkg) {
+                mainPkg = 'com.github.tikmatrix';
+            }
+
+            const dynamicPresets = [
+                {
+                    name: 'Home',
+                    args: ['shell', 'input', 'keyevent', '3']
+                },
+                {
+                    name: 'Back',
+                    args: ['shell', 'input', 'keyevent', '4']
+                },
+                {
+                    name: 'Enable TCP',
+                    args: ['tcpip', '5555']
+                },
+                {
+                    name: 'Enable Fast Input',
+                    args: ['shell', 'ime', 'set', `${mainPkg}/.FastInputIME`]
+                },
+                {
+                    name: 'Open Gallery',
+                    args: ['shell', 'am', 'start', '-a', 'android.intent.action.VIEW', '-t', 'image/*']
+                },
+                {
+                    name: 'Open Settings',
+                    args: ['shell', 'am', 'start', '-a', 'android.settings.SETTINGS']
+                },
+                {
+                    name: 'Open NekoBox ',
+                    args: ['shell', 'am', 'start', '-n', 'moe.nb4a/io.nekohasekai.sagernet.ui.MainActivity']
+                }
+            ];
+
             // 如果预置命令尚未加载，则添加它们
             if (!presetsLoaded) {
-                this.commands = [...this.commands, ...this.presetCommands];
+                this.commands = [...this.commands, ...dynamicPresets];
                 await setItem('tikmatrix_presets_loaded', 'true');
                 await this.saveCommands();
             }
