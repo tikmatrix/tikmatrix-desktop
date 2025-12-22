@@ -18,7 +18,7 @@
       </button>
     </div>
     <!-- 官网 -->
-    <a v-if="whitelabelConfig.officialWebsite"
+    <a v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite"
       class="flex items-center space-x-1 text-md text-info ml-2 hover:underline"
       :href="whitelabelConfig.officialWebsite + '/docs/intro'" target="_blank">
       <font-awesome-icon icon="fa-solid fa-file-lines" class="h-4 w-4" />
@@ -272,7 +272,8 @@
 
   <!-- Agent错误弹窗 -->
   <AgentErrorDialog ref="agentErrorDialog" :process-name="agentProcessName" :error-type="agentErrorType"
-    :official-website="whitelabelConfig && whitelabelConfig.officialWebsite" @exit-app="closeApp" />
+    :official-website="whitelabelConfig && whitelabelConfig.officialWebsite"
+    :show-official-website="whitelabelConfig && whitelabelConfig.showOfficialWebsite" @exit-app="closeApp" />
 
   <!-- 更新对话框 -->
   <UpdateDialog ref="updateDialog" :current-version="version" :new-version="tauriUpdateInfo?.version || ''"

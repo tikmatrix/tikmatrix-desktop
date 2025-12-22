@@ -99,7 +99,7 @@
         </div>
 
         <!-- API文档 -->
-        <div class="flex items-center justify-between py-3">
+        <div v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite" class="flex items-center justify-between py-3">
           <div class="flex-1">
             <label class="text-md font-medium text-base-content">{{ $t('apiDocumentation') }}</label>
             <p class="text-md text-base-content/60 mt-1">{{ $t('apiDocumentationTips') }}</p>

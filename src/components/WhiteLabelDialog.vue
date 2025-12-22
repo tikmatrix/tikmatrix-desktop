@@ -23,8 +23,19 @@
                         :placeholder="$t('enterApplicationName')" />
                 </div>
 
-                <!-- Logo上传 -->
+                <!-- Logo显示开关 -->
                 <div class="form-control">
+                    <label class="label cursor-pointer">
+                        <div class="flex flex-col">
+                            <span class="label-text font-medium">{{ $t('showLogo') }}</span>
+                            <span class="label-text-alt text-base-content/60">{{ $t('showLogoTips') }}</span>
+                        </div>
+                        <input type="checkbox" v-model="localConfig.showLogo" class="toggle toggle-primary" />
+                    </label>
+                </div>
+
+                <!-- Logo上传 -->
+                <div class="form-control" v-if="localConfig.showLogo">
                     <label class="label">
                         <span class="label-text">{{ $t('mainLogo') }}</span>
                     </label>
@@ -45,14 +56,37 @@
 
             <!-- 品牌设置 -->
             <div v-show="activeTab === 'branding'" class="space-y-4">
+                <!-- 官网链接显示开关 -->
                 <div class="form-control">
+                    <label class="label cursor-pointer">
+                        <div class="flex flex-col">
+                            <span class="label-text font-medium">{{ $t('showOfficialWebsite') }}</span>
+                            <span class="label-text-alt text-base-content/60">{{ $t('showOfficialWebsiteTips') }}</span>
+                        </div>
+                        <input type="checkbox" v-model="localConfig.showOfficialWebsite" class="toggle toggle-primary" />
+                    </label>
+                </div>
+
+                <div class="form-control" v-if="localConfig.showOfficialWebsite">
                     <label class="label">
                         <span class="label-text">{{ $t('officialWebsite') }}</span>
                     </label>
                     <input type="url" v-model="localConfig.officialWebsite" class="input input-bordered"
                         :placeholder="$t('enterOfficialWebsite')" />
                 </div>
+
+                <!-- 品牌配置显示开关 -->
                 <div class="form-control">
+                    <label class="label cursor-pointer">
+                        <div class="flex flex-col">
+                            <span class="label-text font-medium">{{ $t('showBranding') }}</span>
+                            <span class="label-text-alt text-base-content/60">{{ $t('showBrandingTips') }}</span>
+                        </div>
+                        <input type="checkbox" v-model="localConfig.showBranding" class="toggle toggle-primary" />
+                    </label>
+                </div>
+
+                <div class="form-control" v-if="localConfig.showBranding">
                     <label class="label">
                         <span class="label-text">{{ $t('emailSupport') }}</span>
                     </label>
@@ -60,14 +94,14 @@
                         :placeholder="$t('enterSupportEmail')" />
                 </div>
 
-                <div class="form-control">
+                <div class="form-control" v-if="localConfig.showBranding">
                     <label class="label">
                         <span class="label-text">{{ $t('telegramSupport') }}</span>
                     </label>
                     <input type="url" v-model="localConfig.branding.telegramSupport" class="input input-bordered"
                         :placeholder="$t('enterTelegramUrl')" />
                 </div>
-                <div class="form-control">
+                <div class="form-control" v-if="localConfig.showBranding">
                     <label class="label">
                         <span class="label-text">{{ $t('whatsappSupport') }}</span>
                     </label>

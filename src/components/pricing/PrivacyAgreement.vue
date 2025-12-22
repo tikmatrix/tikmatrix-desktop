@@ -8,15 +8,17 @@
                         class="checkbox checkbox-primary checkbox-md" />
                     <span class="label-text text-md">
                         {{ $t('iAgreeWith') }}
-                        <a :href="whitelabelConfig.officialWebsite + '/privacy-policy'" target="_blank"
+                        <a v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite" :href="whitelabelConfig.officialWebsite + '/privacy-policy'" target="_blank"
                             class="link link-primary font-medium hover:link-hover transition-all duration-200">
                             {{ $t('privacyPolicy') }}
                         </a>
+                        <span v-else>{{ $t('privacyPolicy') }}</span>
                         {{ $t('and') }}
-                        <a :href="whitelabelConfig.officialWebsite + '/terms-of-service'" target="_blank"
+                        <a v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite" :href="whitelabelConfig.officialWebsite + '/terms-of-service'" target="_blank"
                             class="link link-primary font-medium hover:link-hover transition-all duration-200">
                             {{ $t('termsOfService') }}
                         </a>
+                        <span v-else>{{ $t('termsOfService') }}</span>
                     </span>
                 </label>
             </div>

@@ -6,7 +6,7 @@
             <p class="py-4" v-else-if="errorType === 'timeout'">{{ $t('agentStartTimeout') }}</p>
             <p class="py-4" v-else-if="errorType === 'notfound'">{{ $t('agentNotFound') }}</p>
             <p class="py-4" v-else-if="errorType === 'runtime'">{{ $t('agentRuntimeMissing') }}</p>
-            <div v-if="errorType === 'runtime'"
+            <div v-if="errorType === 'runtime' && shouldShowLinks"
                 class="rounded-lg bg-base-200/70 px-4 py-3 text-sm text-base-content/80">
                 <p class="font-medium text-base-content">{{ $t('agentRuntimeHelp') }}</p>
                 <a class="link link-primary wrap-break-word" :href="runtimeHelpLink" target="_blank"
@@ -14,7 +14,7 @@
                     {{ $t('agentRuntimeLinkText') }}
                 </a>
             </div>
-            <div v-else class="rounded-lg bg-base-200/70 px-4 py-3 text-sm text-base-content/80">
+            <div v-else-if="shouldShowLinks" class="rounded-lg bg-base-200/70 px-4 py-3 text-sm text-base-content/80">
                 <p class="font-medium text-base-content">{{ $t('agentTroubleshootHelp') }}</p>
                 <a class="link link-primary wrap-break-word" :href="troubleshootLink" target="_blank"
                     rel="noopener noreferrer">
@@ -49,6 +49,10 @@ export default {
         officialWebsite: {
             type: String,
             default: ''
+        },
+        showOfficialWebsite: {
+            type: Boolean,
+            default: true
         }
     },
     computed: {
@@ -56,6 +60,9 @@ export default {
             const site = (this.officialWebsite || '').trim();
             if (!site) return 'https://tikmatrix.com';
             return site.replace(/\/+$/g, '');
+        },
+        shouldShowLinks() {
+            return this.showOfficialWebsite && this.officialWebsite;
         },
         troubleshootLink() {
             return `${this.baseWebsite}/docs/troubleshooting/software-startup-error`;
