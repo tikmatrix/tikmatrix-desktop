@@ -103,8 +103,9 @@ async function copyBinaries() {
     console.log('📦 Copying binaries...');
 
     const releaseDir = join(agentDir, 'target', debugMode ? 'debug' : 'release');
-    const tikmatrixTargetDir = debugMode ? "com.tikmatrix.dev" : "com.tikmatrix";
-    const igmatrixTargetDir = debugMode ? "com.igmatrix.dev" : "com.igmatrix";
+    const tikmatrixTargetDir = "com.tikmatrix";
+    const igmatrixTargetDir = "com.igmatrix";
+    const agatiktokTargetDir = "com.agatiktok";
 
     // helper: try copy with retries
     async function copyWithRetry(src, dest, makeExecutable = false) {
@@ -121,6 +122,7 @@ async function copyBinaries() {
                 }
 
                 copyFileSync(src, dest);
+                console.log(`✅ Copied ${src} to ${dest}`);
                 if (makeExecutable) {
                     try { chmodSync(dest, 0o755); } catch (e) { /* ignore */ }
                 }
@@ -138,22 +140,23 @@ async function copyBinaries() {
         const appDataDir = process.env.APPDATA || join(homedir(), 'AppData', 'Roaming');
         const tikmatrixBin = join(appDataDir, tikmatrixTargetDir, 'bin');
         const igmatrixBin = join(appDataDir, igmatrixTargetDir, 'bin');
+        const agatiktokBin = join(appDataDir, agatiktokTargetDir, 'bin');
 
         // Create directories if they don't exist
         mkdirSync(tikmatrixBin, { recursive: true });
         mkdirSync(igmatrixBin, { recursive: true });
-
+        mkdirSync(agatiktokBin, { recursive: true });
         // Copy agent.exe
         const agentSrc = join(releaseDir, 'agent.exe');
         await copyWithRetry(agentSrc, join(tikmatrixBin, 'agent.exe'));
         await copyWithRetry(agentSrc, join(igmatrixBin, 'agent.exe'));
-        console.log('✅ agent.exe copied to', tikmatrixBin, 'and', igmatrixBin);
+        await copyWithRetry(agentSrc, join(agatiktokBin, 'agent.exe'));
 
         // Copy script.exe
         const scriptSrc = join(releaseDir, 'script.exe');
         await copyWithRetry(scriptSrc, join(tikmatrixBin, 'script.exe'));
         await copyWithRetry(scriptSrc, join(igmatrixBin, 'script.exe'));
-        console.log('✅ script.exe copied to', tikmatrixBin, 'and', igmatrixBin);
+        await copyWithRetry(scriptSrc, join(agatiktokBin, 'script.exe'));
 
     } else {
         // macOS/Linux paths
@@ -165,17 +168,19 @@ async function copyBinaries() {
         // Copy agent
         const tikmatrixAgentDir = join(appSupportDir, tikmatrixTargetDir, 'bin');
         const igmatrixAgentDir = join(appSupportDir, igmatrixTargetDir, 'bin');
+        const agatiktokAgentDir = join(appSupportDir, agatiktokTargetDir, 'bin');
         mkdirSync(tikmatrixAgentDir, { recursive: true });
         mkdirSync(igmatrixAgentDir, { recursive: true });
+        mkdirSync(agatiktokAgentDir, { recursive: true });
         const agentSrc = join(releaseDir, 'agent');
         await copyWithRetry(agentSrc, join(tikmatrixAgentDir, 'agent'), true);
         await copyWithRetry(agentSrc, join(igmatrixAgentDir, 'agent'), true);
-        console.log('✅ agent copied to', tikmatrixAgentDir, 'and', igmatrixAgentDir);
+        await copyWithRetry(agentSrc, join(agatiktokAgentDir, 'agent'), true);
         // Copy script
         const scriptSrc = join(releaseDir, 'script');
         await copyWithRetry(scriptSrc, join(tikmatrixAgentDir, 'script'), true);
         await copyWithRetry(scriptSrc, join(igmatrixAgentDir, 'script'), true);
-        console.log('✅ script copied to', tikmatrixAgentDir, 'and', igmatrixAgentDir);
+        await copyWithRetry(scriptSrc, join(agatiktokAgentDir, 'script'), true);
     }
 }
 
