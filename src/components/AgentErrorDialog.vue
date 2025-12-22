@@ -45,12 +45,23 @@ export default {
         errorType: {
             type: String,
             default: 'port' // 'port' | 'timeout' | 'notfound' | 'runtime'
+        },
+        officialWebsite: {
+            type: String,
+            default: ''
         }
     },
-    data() {
-        return {
-            troubleshootLink: 'https://tikmatrix.com/docs/troubleshooting/software-startup-error',
-            runtimeHelpLink: 'https://tikmatrix.com/docs/troubleshooting/software-startup-error#step-2-check-microsoft-visual-c-redistributable'
+    computed: {
+        baseWebsite() {
+            const site = (this.officialWebsite || '').trim();
+            if (!site) return 'https://tikmatrix.com';
+            return site.replace(/\/+$/g, '');
+        },
+        troubleshootLink() {
+            return `${this.baseWebsite}/docs/troubleshooting/software-startup-error`;
+        },
+        runtimeHelpLink() {
+            return `${this.troubleshootLink}#step-2-check-microsoft-visual-c-redistributable`;
         }
     },
     methods: {

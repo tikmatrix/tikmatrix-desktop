@@ -272,7 +272,7 @@
 
   <!-- Agent错误弹窗 -->
   <AgentErrorDialog ref="agentErrorDialog" :process-name="agentProcessName" :error-type="agentErrorType"
-    @exit-app="closeApp" />
+    :official-website="whitelabelConfig && whitelabelConfig.officialWebsite" @exit-app="closeApp" />
 
   <!-- 更新对话框 -->
   <UpdateDialog ref="updateDialog" :current-version="version" :new-version="tauriUpdateInfo?.version || ''"

@@ -9,9 +9,8 @@ use tauri::{AppHandle, Manager};
 #[cfg(target_os = "windows")]
 use std::os::windows::process::CommandExt;
 
-#[cfg(target_os = "windows")]
-const VC_REDIST_GUIDE_URL: &str =
-    "https://tikmatrix.com/docs/troubleshooting/software-startup-error#step-2-check-microsoft-visual-c-redistributable";
+// NOTE: VC_REDIST_GUIDE_URL should not be hardcoded here anymore.
+// Frontend will construct the full guide URL based on the configured `officialWebsite`.
 
 // Global state for agent monitor
 lazy_static::lazy_static! {
@@ -304,10 +303,8 @@ pub fn start_agent_process(app_handle: &AppHandle) -> Result<AgentStartResult, S
     #[cfg(target_os = "windows")]
     {
         if !has_vc_runtime() {
-            let message = format!(
-                "missing_vc_runtime: Microsoft Visual C++ Redistributable is not installed. Please follow the guide: {}",
-                VC_REDIST_GUIDE_URL
-            );
+            // Don't include full guide URL here; frontend will construct link from officialWebsite
+            let message = "missing_vc_runtime: Microsoft Visual C++ Redistributable is not installed. Please follow the troubleshooting guide.".to_string();
             log::warn!("{}", message);
             return Ok(AgentStartResult {
                 success: false,
