@@ -8,6 +8,7 @@
     "build:agent": "node scripts/build-agent.js",
     "build:agent-debug": "node scripts/build-agent.js --debug",
     "build:whitelabel:IgMatrix": "node scripts/build-whitelabel.js IgMatrix",
+    "build:whitelabel:AGACloud": "node scripts/build-whitelabel.js AGACloud",
     "build:whitelabel": "node scripts/build-whitelabel.js",
     "tikmatrix-agent": "npm run build:agent-debug && node scripts/run-agent.js tikmatrix",
     "dev": "vite --mode dev",

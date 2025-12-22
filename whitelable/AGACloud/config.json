@@ -1,0 +1,12 @@
+{
+    "appName": "AGA Cloud",
+    "appId": "agacloud",
+    "emailSupport": "",
+    "telegramSupport": "",
+    "whatsappSupport": "",
+    "iconFile": "app-icon.png",
+    "enablePay": false,
+    "enableSupportEntry": false,
+    "showAppNameInTitle": true,
+    "targetApp": "tiktok"
+}
