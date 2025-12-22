@@ -105,7 +105,7 @@ try {
 
     updateTauriConfig();
     updateWhitelabelConfig();
-    updateMainRs();
+    updateMainRs(appName);
     updateIcons();
 
     if (!skipIcon) {
@@ -191,7 +191,7 @@ function updateWhitelabelConfig() {
     fs.writeFileSync(configFile, content, 'utf-8');
 }
 
-function updateMainRs() {
+function updateMainRs(MATRIX_APP_NAME) {
     const mainRsPath = path.join(rootDir, 'src-tauri', 'src', 'main.rs');
     backupTextFile(mainRsPath);
     let content = fs.readFileSync(mainRsPath, 'utf-8');
@@ -203,7 +203,6 @@ function updateMainRs() {
         throw new Error('无法在 main.rs 中找到 `setup_env` 函数或其结束位置。');
     }
 
-    const MATRIX_APP_NAME = targetApp === 'tiktok' ? 'TikMatrix' : 'IgMatrix';
     content = content.replace(
         setupEnvRegex,
         `$1\n    std::env::set_var("MATRIX_APP_NAME", "${escapeRust(MATRIX_APP_NAME)}");\n}`

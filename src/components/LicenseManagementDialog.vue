@@ -1,7 +1,6 @@
 <template>
     <dialog ref="license_management_dialog" class="modal license-management-dialog">
-        <div
-            class="modal-box w-11/12 max-w-7xl overflow-y-auto max-h-[90vh] bg-linear-to-br from-base-100 to-base-200">
+        <div class="modal-box w-11/12 max-w-7xl overflow-y-auto max-h-[90vh] bg-linear-to-br from-base-100 to-base-200">
             <!-- 关闭按钮 -->
             <form method="dialog">
                 <button
@@ -137,10 +136,12 @@ export default {
             await this.$emiter('LICENSE', { reload: true });
             const storedLocale = await getItem('locale');
             this.currentLocale = storedLocale ? storedLocale.replace(/"/g, '') : 'en';
-            await this.getStripePriceTableInfo();
             this.$refs.license_management_dialog.showModal();
             this.orderPaymentHandled = false;
-            await this.getOrder();
+            if (this.whitelabelConfig.enablePay) {
+                await this.getStripePriceTableInfo();
+                await this.getOrder();
+            }
         },
 
         async close() {
