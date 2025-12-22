@@ -130,14 +130,14 @@ jobs:
             exit 1
           fi
 
-      # Build IgMatrix whitelabel APK
-      - name: Build IgMatrix APK
+      # Build AGACloud whitelabel APK
+      - name: Build AGACloud APK
         run: |
           cd tikmatrix-desktop
           npm install
-          node scripts/build-whitelabel-apk.js IgMatrix --verbose
+          node scripts/build-whitelabel-apk.js AGACloud --verbose
 
-      - name: Upload IgMatrix APK to R2
+      - name: Upload AGACloud APK to R2
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -147,7 +147,7 @@ jobs:
           source-dir: tikmatrix-android/app/build/apk/
           destination-dir: ./
 
-      - name: Update IgMatrix APK Library Version
+      - name: Update AGACloud APK Library Version
         shell: bash
         env:
           API_KEY: ${{ secrets.API_KEY }}
@@ -161,24 +161,24 @@ jobs:
             "oldName": "apk",
             "oldPlatform": "generic",
             "name": "apk",
-            "downloadUrl": "https://r2.niostack.com/com.igmatrix.apk",
+            "downloadUrl": "https://r2.niostack.com/com.github.agacloud.apk",
             "platform": "generic",
             "version": "${VERSION}",
-            "app": "IgMatrix"
+            "app": "AGACloud"
           }
           EOF
           )
 
-          echo "Updating IgMatrix apk library..."
+          echo "Updating AGACloud apk library..."
           HTTP_CODE=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${API_KEY}" \
             -d "${APK_PAYLOAD}") || true
 
           if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
-            echo "IgMatrix apk library updated successfully (HTTP $HTTP_CODE)"
+            echo "AGACloud apk library updated successfully (HTTP $HTTP_CODE)"
           else
-            echo "Failed to update IgMatrix apk library (HTTP $HTTP_CODE)"
+            echo "Failed to update AGACloud apk library (HTTP $HTTP_CODE)"
             exit 1
           fi
 
@@ -188,23 +188,23 @@ jobs:
             "oldName": "test-apk",
             "oldPlatform": "generic",
             "name": "test-apk",
-            "downloadUrl": "https://r2.niostack.com/com.igmatrix.test.apk",
+            "downloadUrl": "https://r2.niostack.com/com.github.agacloud.test.apk",
             "platform": "generic",
             "version": "${VERSION}",
-            "app": "IgMatrix"
+            "app": "AGACloud"
           }
           EOF
           )
 
-          echo "Updating IgMatrix test-apk library..."
+          echo "Updating AGACloud test-apk library..."
           HTTP_CODE2=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${API_KEY}" \
             -d "${TEST_PAYLOAD}") || true
 
           if [ "$HTTP_CODE2" -ge 200 ] && [ "$HTTP_CODE2" -lt 300 ]; then
-            echo "IgMatrix test-apk library updated successfully (HTTP $HTTP_CODE2)"
+            echo "AGACloud test-apk library updated successfully (HTTP $HTTP_CODE2)"
           else
-            echo "Failed to update IgMatrix test-apk library (HTTP $HTTP_CODE2)"
+            echo "Failed to update AGACloud test-apk library (HTTP $HTTP_CODE2)"
             exit 1
           fi

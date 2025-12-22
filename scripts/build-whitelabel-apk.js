@@ -67,6 +67,7 @@ if (verbose) {
 }
 
 const backups = new Map();
+const createdFiles = [];
 let hadError = false;
 
 try {
@@ -80,6 +81,9 @@ try {
 
     // Update app name in strings.xml
     updateStringsXml();
+
+    // Update app icon from whitelabel directory
+    updateAppIcon();
 
     // Build APK
     buildApk();
@@ -218,6 +222,14 @@ function restoreFiles() {
         }
     }
     backups.clear();
+    // Remove any files we created during the process
+    for (const p of createdFiles) {
+        try {
+            if (fs.existsSync(p)) fs.unlinkSync(p);
+        } catch (e) {
+            console.error(`⚠️ 删除临时创建文件失败 ${p}:`, e.message);
+        }
+    }
 }
 
 function backupFile(filePath) {
@@ -226,6 +238,54 @@ function backupFile(filePath) {
     }
     const content = fs.readFileSync(filePath, 'utf-8');
     backups.set(filePath, content);
+}
+
+function backupBinaryFile(filePath) {
+    if (!fs.existsSync(filePath)) {
+        return;
+    }
+    const content = fs.readFileSync(filePath); // Buffer
+    backups.set(filePath, content);
+}
+
+function updateAppIcon() {
+    const iconSrc = path.join(brandDir, 'app-icon.png');
+    if (!fs.existsSync(iconSrc)) {
+        if (verbose) console.log('ℹ️ 白标目录中未找到 app-icon.png，跳过图标替换');
+        return;
+    }
+
+    const resDir = path.join(androidDir, 'app', 'src', 'main', 'res');
+    if (!fs.existsSync(resDir)) {
+        console.warn(`⚠️ 未找到 Android res 目录: ${resDir}`);
+        return;
+    }
+
+    const dirs = fs.readdirSync(resDir);
+    const iconNames = ['ic_launcher.png', 'ic_launcher_round.png', 'ic_launcher_foreground.png', 'ic_launcher_background.png'];
+
+    for (const d of dirs) {
+        if (!d.startsWith('mipmap') && !d.startsWith('drawable')) continue;
+        const fullDir = path.join(resDir, d);
+        for (const name of iconNames) {
+            const target = path.join(fullDir, name);
+            try {
+                if (fs.existsSync(target)) {
+                    backupBinaryFile(target);
+                    fs.copyFileSync(iconSrc, target);
+                    if (verbose) console.log(`✓ 替换 ${path.join('res', d, name)}`);
+                } else {
+                    // create new icon file and record for cleanup
+                    fs.copyFileSync(iconSrc, target);
+                    createdFiles.push(target);
+                    if (verbose) console.log(`✓ 创建 ${path.join('res', d, name)}`);
+                }
+            } catch (e) {
+                console.warn(`⚠️ 无法更新图标 ${target}: ${e.message}`);
+            }
+        }
+    }
+    console.log('✓ 更新应用图标（如果提供）');
 }
 
 function runCommand(command, cwd = null, quiet = false) {
