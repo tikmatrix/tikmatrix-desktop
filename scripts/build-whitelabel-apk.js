@@ -68,10 +68,17 @@ if (verbose) {
 
 const backups = new Map();
 const createdFiles = [];
+const renamedDirs = [];
 let hadError = false;
 
 try {
     console.log(`🚀 开始为 ${brandArg} 构建白标 APK...`);
+
+    // Replace package name in all relevant files
+    replacePackageNameInFiles();
+
+    // Rename Java source package directories
+    renameJavaPackageDirectories();
 
     // Update Android build.gradle
     updateAppBuildGradle();
@@ -118,7 +125,11 @@ function updateAppBuildGradle() {
         `applicationId "${packageName}"`
     );
 
-    // Do NOT change `namespace` here. Keep original namespace to match Java package
+    // Update namespace to match new package name
+    content = content.replace(
+        /namespace\s+'[^']+'/,
+        `namespace '${packageName}'`
+    );
 
     fs.writeFileSync(buildGradlePath, content);
     console.log('✓ 更新 app/build.gradle');
@@ -130,7 +141,11 @@ function updateAndroidManifest() {
 
     let content = fs.readFileSync(manifestPath, 'utf-8');
 
-    // Do NOT change the manifest `package` attribute. Android Gradle plugin manages namespace/applicationId.
+    // Update package attribute
+    content = content.replace(
+        /package="[^"]+"/,
+        `package="${packageName}"`
+    );
 
     fs.writeFileSync(manifestPath, content);
     console.log('✓ 更新 AndroidManifest.xml');
@@ -150,6 +165,137 @@ function updateStringsXml() {
 
     fs.writeFileSync(stringsPath, content);
     console.log('✓ 更新 strings.xml');
+}
+
+function replacePackageNameInFiles() {
+    console.log('🔄 替换所有文件中的包名...');
+    const defaultPackageName = 'com.github.tikmatrix';
+
+    // Files to process
+    const filesToProcess = [
+        // Gradle files
+        path.join(androidDir, 'app', 'build.gradle'),
+        // XML files
+        path.join(androidDir, 'app', 'src', 'main', 'AndroidManifest.xml'),
+        path.join(androidDir, 'app', 'src', 'main', 'res', 'xml', 'file_paths.xml'),
+        path.join(androidDir, 'app', 'src', 'main', 'res', 'layout', 'activity_main.xml'),
+    ];
+
+    // Find all Java and Kotlin files
+    const javaFiles = findFilesRecursively(
+        path.join(androidDir, 'app', 'src'),
+        ['.java', '.kt']
+    );
+    filesToProcess.push(...javaFiles);
+
+    let filesUpdated = 0;
+    for (const filePath of filesToProcess) {
+        if (!fs.existsSync(filePath)) {
+            continue;
+        }
+
+        try {
+            // Skip if already backed up (will be handled by other functions)
+            if (backups.has(filePath)) {
+                continue;
+            }
+
+            backupFile(filePath);
+            let content = fs.readFileSync(filePath, 'utf-8');
+            const originalContent = content;
+
+            // Replace package name (both with . and /)
+            content = content.replace(
+                new RegExp(defaultPackageName.replace(/\./g, '\\.'), 'g'),
+                packageName
+            );
+            content = content.replace(
+                new RegExp(defaultPackageName.replace(/\./g, '/'), 'g'),
+                packageName.replace(/\./g, '/')
+            );
+
+            if (content !== originalContent) {
+                fs.writeFileSync(filePath, content);
+                filesUpdated++;
+                if (verbose) {
+                    console.log(`  ✓ ${path.relative(androidDir, filePath)}`);
+                }
+            }
+        } catch (error) {
+            console.warn(`⚠️ 处理文件失败 ${filePath}: ${error.message}`);
+        }
+    }
+
+    console.log(`✓ 已更新 ${filesUpdated} 个文件中的包名`);
+}
+
+function renameJavaPackageDirectories() {
+    console.log('📁 重命名 Java 包目录...');
+    const defaultPackagePath = 'com/github/tikmatrix';
+    const newPackagePath = packageName.replace(/\./g, '/');
+
+    const sourceDirs = [
+        path.join(androidDir, 'app', 'src', 'main', 'java'),
+        path.join(androidDir, 'app', 'src', 'androidTest', 'java'),
+        path.join(androidDir, 'app', 'src', 'test', 'java'),
+    ];
+
+    for (const baseDir of sourceDirs) {
+        const oldPath = path.join(baseDir, defaultPackagePath);
+        const newPath = path.join(baseDir, newPackagePath);
+
+        if (!fs.existsSync(oldPath)) {
+            continue;
+        }
+
+        try {
+            // Create new directory structure
+            const newParentDir = path.dirname(newPath);
+            if (!fs.existsSync(newParentDir)) {
+                fs.mkdirSync(newParentDir, { recursive: true });
+            }
+
+            // Move directory
+            fs.renameSync(oldPath, newPath);
+
+            // Record for restoration
+            renamedDirs.push({ from: oldPath, to: newPath });
+
+            if (verbose) {
+                console.log(`  ✓ ${path.relative(androidDir, oldPath)} → ${path.relative(androidDir, newPath)}`);
+            }
+        } catch (error) {
+            console.warn(`⚠️ 重命名目录失败 ${oldPath}: ${error.message}`);
+        }
+    }
+
+    console.log(`✓ 已重命名 ${renamedDirs.length} 个包目录`);
+}
+
+function findFilesRecursively(dir, extensions) {
+    const results = [];
+
+    if (!fs.existsSync(dir)) {
+        return results;
+    }
+
+    const items = fs.readdirSync(dir);
+
+    for (const item of items) {
+        const fullPath = path.join(dir, item);
+        const stat = fs.statSync(fullPath);
+
+        if (stat.isDirectory()) {
+            results.push(...findFilesRecursively(fullPath, extensions));
+        } else if (stat.isFile()) {
+            const ext = path.extname(item);
+            if (extensions.includes(ext)) {
+                results.push(fullPath);
+            }
+        }
+    }
+
+    return results;
 }
 
 function buildApk() {
@@ -214,6 +360,39 @@ function renameApkFiles() {
 }
 
 function restoreFiles() {
+    // Restore renamed directories first
+    for (let i = renamedDirs.length - 1; i >= 0; i--) {
+        const { from, to } = renamedDirs[i];
+        try {
+            if (fs.existsSync(to)) {
+                // Ensure parent directory exists
+                const parentDir = path.dirname(from);
+                if (!fs.existsSync(parentDir)) {
+                    fs.mkdirSync(parentDir, { recursive: true });
+                }
+                fs.renameSync(to, from);
+                if (verbose) {
+                    console.log(`  ✓ 恢复目录: ${path.relative(androidDir, from)}`);
+                }
+            }
+        } catch (error) {
+            console.error(`⚠️ 恢复目录失败 ${from}:`, error.message);
+        }
+    }
+    renamedDirs.length = 0;
+
+    // Clean up empty parent directories created during rename
+    try {
+        const baseDir = path.join(androidDir, 'app', 'src', 'main', 'java', 'com', 'github');
+        const newAppIdPath = path.join(baseDir, appId);
+        if (fs.existsSync(newAppIdPath) && fs.readdirSync(newAppIdPath).length === 0) {
+            fs.rmdirSync(newAppIdPath);
+        }
+    } catch (e) {
+        // Ignore cleanup errors
+    }
+
+    // Restore file backups
     for (const [filePath, backupContent] of backups) {
         try {
             fs.writeFileSync(filePath, backupContent);
@@ -222,6 +401,7 @@ function restoreFiles() {
         }
     }
     backups.clear();
+
     // Remove any files we created during the process
     for (const p of createdFiles) {
         try {
@@ -237,7 +417,10 @@ function backupFile(filePath) {
         throw new Error(`文件不存在: ${filePath}`);
     }
     const content = fs.readFileSync(filePath, 'utf-8');
-    backups.set(filePath, content);
+    // Only backup original content once to avoid overwriting the original
+    if (!backups.has(filePath)) {
+        backups.set(filePath, content);
+    }
 }
 
 function backupBinaryFile(filePath) {
@@ -245,7 +428,10 @@ function backupBinaryFile(filePath) {
         return;
     }
     const content = fs.readFileSync(filePath); // Buffer
-    backups.set(filePath, content);
+    // Only backup original binary once
+    if (!backups.has(filePath)) {
+        backups.set(filePath, content);
+    }
 }
 
 function updateAppIcon() {
@@ -262,7 +448,7 @@ function updateAppIcon() {
     }
 
     const dirs = fs.readdirSync(resDir);
-    const iconNames = ['ic_launcher.png', 'ic_launcher_round.png', 'ic_launcher_foreground.png', 'ic_launcher_background.png'];
+    const iconNames = ['ic_notification.png'];
 
     for (const d of dirs) {
         if (!d.startsWith('mipmap') && !d.startsWith('drawable')) continue;
