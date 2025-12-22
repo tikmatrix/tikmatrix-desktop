@@ -12,6 +12,11 @@ export const DEFAULT_WHITELABEL_CONFIG = {
     targetApp: 'tiktok', // 目标应用，tiktok 或 instagram
     showAppNameInTitle: false, // 是否在窗口标题显示应用名称
 
+    // 显示控制开关
+    showOfficialWebsite: true, // 是否显示官网链接
+    showLogo: true, // 是否显示Logo配置
+    showBranding: true, // 是否显示品牌配置
+
     // Logo配置
     logo: {
         main: '', // 主logo

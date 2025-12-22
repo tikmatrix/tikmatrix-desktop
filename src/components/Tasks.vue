@@ -37,7 +37,7 @@
             <font-awesome-icon icon="cog" class="h-3 w-3" />{{ $t('taskSettings') }}
         </button>
 
-        <a class="link link-primary flex items-center gap-2 text-md leading-snug max-w-full md:max-w-md whitespace-normal wrap-break-word"
+        <a v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite" class="link link-primary flex items-center gap-2 text-md leading-snug max-w-full md:max-w-md whitespace-normal wrap-break-word"
             :href="whitelabelConfig.officialWebsite + '/docs/troubleshooting/task_failed'" target="_blank">
             <font-awesome-icon icon="fas fa-question-circle" class="h-5 w-5 shrink-0" />
             <span class="text-left">{{ $t('taskFailedTip') }}</span>

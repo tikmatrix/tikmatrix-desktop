@@ -191,7 +191,7 @@
             </svg>
           </div>
           <span class="mt-8 text-lg font-semibold text-base-content animate-bounce">{{ $t('detecting_devices') }}</span>
-          <a class="link link-primary text-md flex items-center gap-1 min-w-max"
+          <a v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite" class="link link-primary text-md flex items-center gap-1 min-w-max"
             :href="whitelabelConfig.officialWebsite + '/docs/troubleshooting/unable-detect-phone'" target="_blank">
             <font-awesome-icon icon="fas fa-question-circle" class="h-5 w-5" />
             {{ $t('unableDetectPhoneTip') }}
