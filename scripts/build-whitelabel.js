@@ -404,11 +404,14 @@ function runBuild() {
 }
 
 function mustHave(value, key) {
+    // Allow `officialWebsite` to be empty (some whitelabel configs may omit it)
     if (value === undefined || value === null) {
+        if (key === 'officialWebsite') return '';
         throw new Error(`配置字段 "${key}" 不能为空`);
     }
     const str = String(value).trim();
     if (!str) {
+        if (key === 'officialWebsite') return '';
         throw new Error(`配置字段 "${key}" 不能为空`);
     }
     return str;
