@@ -211,11 +211,9 @@ jobs:
 
             local UPDATE_DATA=$(cat <<EOF
           {
-            "oldName": "$NAME",
-            "oldPlatform": "$PLATFORM",
             "name": "$NAME",
-            "downloadUrl": "https://r2.niostack.com/$TARGET/$NAME",
             "platform": "$PLATFORM",
+            "downloadUrl": "https://r2.niostack.com/$TARGET/$NAME",
             "version": "$VERSION",
             "app": "TikMatrix",
             "md5": "$MD5"

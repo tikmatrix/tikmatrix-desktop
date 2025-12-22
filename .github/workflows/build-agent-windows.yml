@@ -171,11 +171,9 @@ jobs:
 
             $AGENT_UPDATE_DATA = @"
             {
-              "oldName": "agent",
-              "oldPlatform": "$PLATFORM",
               "name": "agent",
-              "downloadUrl": "https://r2.niostack.com/${{ matrix.target }}/agent.exe",
               "platform": "$PLATFORM",
+              "downloadUrl": "https://r2.niostack.com/${{ matrix.target }}/agent.exe",
               "version": "$VERSION",
               "app": "TikMatrix",
               "md5": "$AGENT_MD5"
@@ -208,11 +206,9 @@ jobs:
 
             $SCRIPT_UPDATE_DATA = @"
             {
-              "oldName": "script",
-              "oldPlatform": "$PLATFORM",
               "name": "script",
-              "downloadUrl": "https://r2.niostack.com/${{ matrix.target }}/script.exe",
               "platform": "$PLATFORM",
+              "downloadUrl": "https://r2.niostack.com/${{ matrix.target }}/script.exe",
               "version": "$VERSION",
               "app": "TikMatrix",
               "md5": "$SCRIPT_MD5"

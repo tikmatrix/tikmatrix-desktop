@@ -79,11 +79,10 @@ jobs:
           # Update APK
           APK_PAYLOAD=$(cat <<EOF
           {
-            "oldName": "apk",
-            "oldPlatform": "generic",
+            "name": "apk",
+            "platform": "generic",
             "name": "apk",
             "downloadUrl": "https://r2.niostack.com/com.github.tikmatrix.apk",
-            "platform": "generic",
             "version": "${VERSION}",
             "app": "TikMatrix"
           }
@@ -106,8 +105,7 @@ jobs:
           # Update test-apk
           TEST_PAYLOAD=$(cat <<EOF
           {
-            "oldName": "test-apk",
-            "oldPlatform": "generic",
+            "name": "test-apk",
             "name": "test-apk",
             "downloadUrl": "https://r2.niostack.com/com.github.tikmatrix.test.apk",
             "platform": "generic",
@@ -131,80 +129,78 @@ jobs:
           fi
 
       # Build AGACloud whitelabel APK
-      # - name: Build AGACloud APK
-      #   run: |
-      #     cd tikmatrix-desktop
-      #     npm install
-      #     node scripts/build-whitelabel-apk.js AGACloud --verbose
+      - name: Build AGACloud APK
+        run: |
+          cd tikmatrix-desktop
+          npm install
+          node scripts/build-whitelabel-apk.js AGACloud --verbose
 
-      # - name: Upload AGACloud APK to R2
-      #   uses: ryand56/r2-upload-action@v1.4
-      #   with:
-      #     r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
-      #     r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
-      #     r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
-      #     r2-bucket: matrix
-      #     source-dir: tikmatrix-android/app/build/apk/
-      #     destination-dir: ./
+      - name: Upload AGACloud APK to R2
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: tikmatrix-android/app/build/apk/
+          destination-dir: ./
 
-      # - name: Update AGACloud APK Library Version
-      #   shell: bash
-      #   env:
-      #     API_KEY: ${{ secrets.API_KEY }}
-      #     VERSION: ${{ inputs.version }}
-      #   run: |
-      #     set -e
+      - name: Update AGACloud APK Library Version
+        shell: bash
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+          VERSION: ${{ inputs.version }}
+        run: |
+          set -e
 
-      #     # Update APK
-      #     APK_PAYLOAD=$(cat <<EOF
-      #     {
-      #       "oldName": "apk",
-      #       "oldPlatform": "generic",
-      #       "name": "apk",
-      #       "downloadUrl": "https://r2.niostack.com/com.github.agacloud.apk",
-      #       "platform": "generic",
-      #       "version": "${VERSION}",
-      #       "app": "AGACloud"
-      #     }
-      #     EOF
-      #     )
+          # Update APK
+          APK_PAYLOAD=$(cat <<EOF
+          {
+            "name": "apk",
+            "platform": "generic",
+            "name": "apk",
+            "downloadUrl": "https://r2.niostack.com/com.github.agacloud.apk",
+            "version": "${VERSION}",
+            "app": "AGACloud"
+          }
+          EOF
+          )
 
-      #     echo "Updating AGACloud apk library..."
-      #     HTTP_CODE=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
-      #       -H "Content-Type: application/json" \
-      #       -H "Authorization: Bearer ${API_KEY}" \
-      #       -d "${APK_PAYLOAD}") || true
+          echo "Updating AGACloud apk library..."
+          HTTP_CODE=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${API_KEY}" \
+            -d "${APK_PAYLOAD}") || true
 
-      #     if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
-      #       echo "AGACloud apk library updated successfully (HTTP $HTTP_CODE)"
-      #     else
-      #       echo "Failed to update AGACloud apk library (HTTP $HTTP_CODE)"
-      #       exit 1
-      #     fi
+          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+            echo "AGACloud apk library updated successfully (HTTP $HTTP_CODE)"
+          else
+            echo "Failed to update AGACloud apk library (HTTP $HTTP_CODE)"
+            exit 1
+          fi
 
-      #     # Update test-apk
-      #     TEST_PAYLOAD=$(cat <<EOF
-      #     {
-      #       "oldName": "test-apk",
-      #       "oldPlatform": "generic",
-      #       "name": "test-apk",
-      #       "downloadUrl": "https://r2.niostack.com/com.github.agacloud.test.apk",
-      #       "platform": "generic",
-      #       "version": "${VERSION}",
-      #       "app": "AGACloud"
-      #     }
-      #     EOF
-      #     )
+          # Update test-apk
+          TEST_PAYLOAD=$(cat <<EOF
+          {
+            "name": "test-apk",
+            "platform": "generic",
+            "downloadUrl": "https://r2.niostack.com/com.github.agacloud.test.apk",
+            "platform": "generic",
+            "version": "${VERSION}",
+            "app": "AGACloud"
+          }
+          EOF
+          )
 
-      #     echo "Updating AGACloud test-apk library..."
-      #     HTTP_CODE2=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
-      #       -H "Content-Type: application/json" \
-      #       -H "Authorization: Bearer ${API_KEY}" \
-      #       -d "${TEST_PAYLOAD}") || true
+          echo "Updating AGACloud test-apk library..."
+          HTTP_CODE2=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${API_KEY}" \
+            -d "${TEST_PAYLOAD}") || true
 
-      #     if [ "$HTTP_CODE2" -ge 200 ] && [ "$HTTP_CODE2" -lt 300 ]; then
-      #       echo "AGACloud test-apk library updated successfully (HTTP $HTTP_CODE2)"
-      #     else
-      #       echo "Failed to update AGACloud test-apk library (HTTP $HTTP_CODE2)"
-      #       exit 1
-      #     fi
+          if [ "$HTTP_CODE2" -ge 200 ] && [ "$HTTP_CODE2" -lt 300 ]; then
+            echo "AGACloud test-apk library updated successfully (HTTP $HTTP_CODE2)"
+          else
+            echo "Failed to update AGACloud test-apk library (HTTP $HTTP_CODE2)"
+            exit 1
+          fi
