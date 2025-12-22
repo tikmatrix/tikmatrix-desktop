@@ -66,9 +66,10 @@ if (!fs.existsSync(iconSource)) {
     process.exit(1);
 }
 
-const appId = sanitizeAppId(rawConfig.appId?.trim() || appName);
+// Generate appId from appName: lowercase and remove spaces
+const appId = sanitizeAppId(appName);
 if (!appId) {
-    throw new Error('无法根据 appName 生成有效的 appId，请在 config.json 中显式设置 appId');
+    throw new Error('无法根据 appName 生成有效的 appId');
 }
 const updaterEndpoint = `https://api.niostack.com/front-api/check_update?app=${appId}`;
 
