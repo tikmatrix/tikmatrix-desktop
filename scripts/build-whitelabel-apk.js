@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { execSync } from 'child_process';
+import { execSync, spawnSync } from 'child_process';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -54,8 +54,8 @@ if (!appId) {
     throw new Error('无法根据 appName 生成有效的 appId');
 }
 
-// Generate package name from appId
-const packageName = `com.${appId}`;
+// Generate package name from appId (use GitHub namespace)
+const packageName = `com.github.${appId}`;
 
 if (verbose) {
     console.log('📋 白标配置:');
@@ -114,11 +114,7 @@ function updateAppBuildGradle() {
         `applicationId "${packageName}"`
     );
 
-    // Update namespace
-    content = content.replace(
-        /namespace\s+'[^']+'/,
-        `namespace '${packageName}'`
-    );
+    // Do NOT change `namespace` here. Keep original namespace to match Java package
 
     fs.writeFileSync(buildGradlePath, content);
     console.log('✓ 更新 app/build.gradle');
@@ -130,11 +126,7 @@ function updateAndroidManifest() {
 
     let content = fs.readFileSync(manifestPath, 'utf-8');
 
-    // Update package name
-    content = content.replace(
-        /package="[^"]+"/,
-        `package="${packageName}"`
-    );
+    // Do NOT change the manifest `package` attribute. Android Gradle plugin manages namespace/applicationId.
 
     fs.writeFileSync(manifestPath, content);
     console.log('✓ 更新 AndroidManifest.xml');
@@ -160,22 +152,28 @@ function buildApk() {
     console.log('🔨 开始构建 APK...');
 
     try {
-        // Make gradlew executable
-        const gradlewPath = path.join(androidDir, 'gradlew');
-        if (fs.existsSync(gradlewPath)) {
-            try {
-                execSync(`chmod +x ${gradlewPath}`, { cwd: androidDir });
-            } catch (e) {
-                // Ignore chmod errors on Windows
+        // Determine gradlew command for current platform
+        const isWin = process.platform === 'win32';
+        const gradlewCmd = isWin ? 'gradlew.bat' : './gradlew';
+
+        // Make gradlew executable on unix-like systems only
+        if (!isWin) {
+            const gradlewPath = path.join(androidDir, 'gradlew');
+            if (fs.existsSync(gradlewPath)) {
+                try {
+                    execSync(`chmod +x ${gradlewPath}`, { cwd: androidDir });
+                } catch (e) {
+                    // Non-fatal
+                }
             }
         }
 
         // Clean build
-        runCommand('./gradlew clean', androidDir);
+        runCommand(`${gradlewCmd} clean`, androidDir);
 
         // Build APKs
-        runCommand('./gradlew build', androidDir);
-        runCommand('./gradlew packageDebugAndroidTest', androidDir);
+        runCommand(`${gradlewCmd} build`, androidDir);
+        runCommand(`${gradlewCmd} packageDebugAndroidTest`, androidDir);
 
         console.log('✓ APK 构建完成');
     } catch (error) {
@@ -234,7 +232,12 @@ function runCommand(command, cwd = null, quiet = false) {
     if (!quiet && verbose) {
         console.log(`$ ${command}`);
     }
-    execSync(command, { cwd, stdio: quiet ? 'ignore' : 'inherit' });
+    const isWin = process.platform === 'win32';
+    const shell = isWin ? 'cmd.exe' : 'sh';
+    const args = isWin ? ['/c', command] : ['-c', command];
+    const res = spawnSync(shell, args, { cwd: cwd || androidDir, stdio: quiet ? 'ignore' : 'inherit', windowsHide: true });
+    if (res.error) throw res.error;
+    if (res.status !== 0) throw new Error(`命令执行失败（退出码 ${res.status}）: ${command}`);
 }
 
 function mustHave(value, key) {
@@ -272,7 +275,7 @@ function printUsage(code) {
     console.log('');
     console.log('注意:');
     console.log('  • 需要 tikmatrix-android 仓库在同一父目录下');
-    console.log('  • 会根据 appName 自动生成 appId 和包名 (com.{appId})');
+    console.log('  • 会根据 appName 自动生成 appId 和包名 (com.github.{appId})');
     console.log('  • APK 文件会以包名命名');
     process.exit(code);
 }

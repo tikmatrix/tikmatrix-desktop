@@ -79,18 +79,18 @@ whitelable/
 
 ## Android APK 包名规则
 
-基于 `appName` 自动生成的 `appId`，APK 的包名格式为：`com.{appId}`
+基于 `appName` 自动生成的 `appId`，APK 的包名格式为：`com.github.{appId}`
 
 示例：
 
-- IgMatrix → appId: `igmatrix` → 包名: `com.igmatrix`
-- AGA Cloud → appId: `agacloud` → 包名: `com.agacloud`
-- TikZenX → appId: `tikzenx` → 包名: `com.tikzenx`
+- IgMatrix → appId: `igmatrix` → 包名: `com.github.igmatrix`
+- AGA Cloud → appId: `agacloud` → 包名: `com.github.agacloud`
+- TikZenX → appId: `tikzenx` → 包名: `com.github.tikzenx`
 
 APK 文件命名：
 
-- 主 APK: `com.{appId}.apk`
-- 测试 APK: `com.{appId}.test.apk`
+- 主 APK: `com.github.{appId}.apk`
+- 测试 APK: `com.github.{appId}.test.apk`
 
 ## 构建白标客户端
 
@@ -108,6 +108,7 @@ node scripts/build-whitelabel.js <品牌目录>
 ```
 
 可选参数：
+
 - `--skip-icon`：跳过运行 `npm run tauri icon`
 - `--skip-build`：跳过构建步骤，仅更新配置
 - `--verbose`：显示详细日志
@@ -167,8 +168,8 @@ node scripts/build-whitelabel.js MyBrand --verbose
 2. appId: 应用 ID（不再需要手动配置，自动从 appName 生成）
     - 自动把 appName 转为小写并去掉空格和特殊字符
     - tauri.conf.json 中的 updater.endpoint 需要替换为 `https://api.niostack.com/front-api/check_update?app={appId}`
-    - tauri.conf.json 中的 bundle.identifier 需要替换为 `com.{appId}`
-    - Android APK 的包名为 `com.{appId}`
+    - tauri.conf.json 中的 bundle.identifier 需要替换为 `com.github.{appId}`
+    - Android APK 的包名为 `com.github.{appId}`
 
 3. icon: 应用图标
     - 需要替换 app-icon.png

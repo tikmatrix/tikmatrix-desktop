@@ -19,12 +19,12 @@
 功能：
 
 - 读取白标配置 (`whitelable/{brand}/config.json`)
-- 从 `appName` 生成 `appId` 和包名 (`com.{appId}`)
+- 从 `appName` 生成 `appId` 和包名 (`com.github.{appId}`)
 - 自动修改 Android 项目配置：
-  - `app/build.gradle` - 更新 `applicationId` 和 `namespace`
-  - `AndroidManifest.xml` - 更新 `package` 属性
+  - `app/build.gradle` - 更新 `applicationId`（不修改 namespace）
+  - `AndroidManifest.xml` - 保持 `package` 属性不变（由 Gradle 管理）
   - `res/values/strings.xml` - 更新 `app_name`
-- 构建 APK 并重命名为 `com.{appId}.apk` 和 `com.{appId}.test.apk`
+- 构建 APK 并重命名为 `com.github.{appId}.apk` 和 `com.github.{appId}.test.apk`
 - 自动恢复所有修改的文件
 
 使用方法：
@@ -94,7 +94,7 @@ node scripts/build-whitelabel-apk.js <品牌目录> --verbose
 
 - Android APK 包名规则说明
 - APK 构建命令和使用方法
-- 包名命名规范（`com.{appId}`）
+- 包名命名规范（`com.github.{appId}`）
 - APK 文件命名规范
 - GitHub Actions 自动构建说明
 
@@ -103,21 +103,21 @@ node scripts/build-whitelabel-apk.js <品牌目录> --verbose
 | 品牌 | appName | appId | 包名 |
 |------|---------|-------|------|
 | TikMatrix | TikMatrix | tikmatrix | com.github.tikmatrix |
-| IgMatrix | IgMatrix | igmatrix | com.igmatrix |
-| AGA Cloud | AGA Cloud | agacloud | com.agacloud |
-| TikZenX | TikZenX | tikzenx | com.tikzenx |
+| IgMatrix | IgMatrix | igmatrix | com.github.igmatrix |
+| AGA Cloud | AGA Cloud | agacloud | com.github.agacloud |
+| TikZenX | TikZenX | tikzenx | com.github.tikzenx |
 
 ## APK 文件命名
 
-- 主 APK: `com.{appId}.apk`
-- 测试 APK: `com.{appId}.test.apk`
+- 主 APK: `com.github.{appId}.apk`
+- 测试 APK: `com.github.{appId}.test.apk`
 
 示例：
 
-- `com.igmatrix.apk`
-- `com.igmatrix.test.apk`
-- `com.agacloud.apk`
-- `com.agacloud.test.apk`
+- `com.github.igmatrix.apk`
+- `com.github.igmatrix.test.apk`
+- `com.github.agacloud.apk`
+- `com.github.agacloud.test.apk`
 
 ## Agent 集成
 
@@ -125,7 +125,7 @@ node scripts/build-whitelabel-apk.js <品牌目录> --verbose
 
 ```rust
 // agent 中使用包名安装 APK
-let package_name = format!("com.{}", app_id);
+let package_name = format!("com.github.{}", app_id);
 agent.install_apk(&package_name).await?;
 ```
 
@@ -159,8 +159,8 @@ GitHub Actions 会自动构建所有白标 APK：
 
 构建完成后，测试清单：
 
-- [ ] APK 包名正确（`com.{appId}`）
-- [ ] APK 文件名正确（`com.{appId}.apk`）
+- [ ] APK 包名正确（`com.github.{appId}`）
+- [ ] APK 文件名正确（`com.github.{appId}.apk`）
 - [ ] 应用名称显示正确
 - [ ] 应用图标正确
 - [ ] 包可以正常安装
