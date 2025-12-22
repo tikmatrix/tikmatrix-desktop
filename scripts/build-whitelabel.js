@@ -55,6 +55,8 @@ const enableSupportEntry = rawConfig.enableSupportEntry !== false; // 默认为 
 const showOfficialWebsite = rawConfig.showOfficialWebsite !== false; // 默认为 true
 const showLogo = rawConfig.showLogo !== false; // 默认为 true
 const showBranding = rawConfig.showBranding !== false; // 默认为 true
+// `showAppNameInTitle` 默认为 false（与 DEFAULT_WHITELABEL_CONFIG 保持一致）
+const showAppNameInTitle = rawConfig.showAppNameInTitle === true;
 if (!enablePay) {
     console.warn('⚠️ 警告: 支付功能被禁用 (enablePay=false)');
 }
@@ -87,6 +89,7 @@ if (verbose) {
     console.log(`   • 显示官网链接: ${showOfficialWebsite ? '是' : '否'}`);
     console.log(`   • 显示 Logo: ${showLogo ? '是' : '否'}`);
     console.log(`   • 显示品牌配置: ${showBranding ? '是' : '否'}`);
+    console.log(`   • 窗口标题显示应用名: ${showAppNameInTitle ? '是' : '否'}`);
 }
 
 const backups = new Map();
@@ -179,6 +182,7 @@ function updateWhitelabelConfig() {
     content = replaceConfigBoolean(content, 'showOfficialWebsite', showOfficialWebsite);
     content = replaceConfigBoolean(content, 'showLogo', showLogo);
     content = replaceConfigBoolean(content, 'showBranding', showBranding);
+    content = replaceConfigBoolean(content, 'showAppNameInTitle', showAppNameInTitle);
     content = replaceConfigString(content, 'targetApp', targetApp);
     content = replaceConfigString(content, 'emailSupport', emailSupport);
     content = replaceConfigString(content, 'telegramSupport', telegramSupport);
