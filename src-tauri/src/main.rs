@@ -65,6 +65,7 @@ fn setup_env(working_dir: &str, version: String) {
         std::env::set_var("MATRIX_APP_WORK_DIR", working_dir);
         std::env::set_var("MATRIX_APP_NAME", "TikMatrix".to_string());
         std::env::set_var("MATRIX_APP_VERSION", version.clone());
+        std::env::set_var("MATRIX_TARGET_APP", "tiktok".to_string());
     };
     // Log proxy configuration for debugging
     proxy_config::log_proxy_config();

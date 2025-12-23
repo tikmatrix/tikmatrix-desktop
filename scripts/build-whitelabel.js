@@ -105,7 +105,7 @@ try {
 
     updateTauriConfig();
     updateWhitelabelConfig();
-    updateMainRs(appName);
+    updateMainRs(appName, targetApp);
     updateIcons();
 
     if (!skipIcon) {
@@ -191,7 +191,7 @@ function updateWhitelabelConfig() {
     fs.writeFileSync(configFile, content, 'utf-8');
 }
 
-function updateMainRs(MATRIX_APP_NAME) {
+function updateMainRs(MATRIX_APP_NAME, MATRIX_TARGET_APP) {
     const mainRsPath = path.join(rootDir, 'src-tauri', 'src', 'main.rs');
     backupTextFile(mainRsPath);
     let content = fs.readFileSync(mainRsPath, 'utf-8');
@@ -205,7 +205,7 @@ function updateMainRs(MATRIX_APP_NAME) {
 
     content = content.replace(
         setupEnvRegex,
-        `$1\n    std::env::set_var("MATRIX_APP_NAME", "${escapeRust(MATRIX_APP_NAME)}");\n}`
+        `$1\n    std::env::set_var("MATRIX_APP_NAME", "${escapeRust(MATRIX_APP_NAME)}");\n    std::env::set_var("MATRIX_TARGET_APP", "${escapeRust(MATRIX_TARGET_APP)}");\n}`
     );
 
     fs.writeFileSync(mainRsPath, content, 'utf-8');
