@@ -2,7 +2,7 @@
     <div class="space-y-2 w-full max-w-xl">
         <div class="alert alert-error py-2" v-if="network !== 'STRIPE'">
             <font-awesome-icon icon="fas fa-exclamation-triangle" class="w-4 h-4" />
-            <span class="text-md">{{ $t('usdtTip', { network: network, amount: amount }) }}</span>
+            <span class="text-md">{{ $t('cryptoTip', { network: network, amount: amount, token: tokenSymbol }) }}</span>
         </div>
         <div class="alert alert-error py-2" v-if="network === 'STRIPE'">
             <font-awesome-icon icon="fas fa-exclamation-triangle" class="w-4 h-4" />
@@ -26,6 +26,10 @@ export default {
         amount: {
             type: [Number, String],
             required: true
+        },
+        tokenSymbol: {
+            type: String,
+            default: 'USDT'
         }
     }
 }

@@ -55,8 +55,8 @@ export default {
         }
     },
     methods: {
-        handleCreateOrder(price, planId, planInterval, network) {
-            this.$emit('create-order', price, planId, planInterval, network)
+        handleCreateOrder(price, planId, planInterval, network, paymentInfo) {
+            this.$emit('create-order', price, planId, planInterval, network, paymentInfo)
         },
         handleCreateStripeCheckout(price, planId, planInterval) {
             this.$emit('create-stripe-checkout', price, planId, planInterval)

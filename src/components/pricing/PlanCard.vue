@@ -163,8 +163,8 @@ export default {
         handleStripeCheckout(priceId, planInterval) {
             this.$emit('create-stripe-checkout', priceId, planInterval);
         },
-        handleCreateOrder(price, planId, planInterval, network) {
-            this.$emit('create-order', price, planId, planInterval, network);
+        handleCreateOrder(price, planId, planInterval, network, paymentInfo) {
+            this.$emit('create-order', price, planId, planInterval, network, paymentInfo);
         },
         handleAlipayCheckout(planId, planInterval) {
             this.$emit('create-alipay-checkout', planId, planInterval);
