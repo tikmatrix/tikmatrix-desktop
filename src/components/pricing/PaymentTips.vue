@@ -29,7 +29,7 @@ export default {
         },
         tokenSymbol: {
             type: String,
-            default: 'USDT'
+            required: true
         }
     }
 }
