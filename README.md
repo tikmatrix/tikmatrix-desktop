@@ -39,12 +39,12 @@ Note: The TikTok app on the phone must be in English for all features to work pr
 
 [Official website](https://www.tikmatrix.com)
 
-[Video Tutorial](https://www.youtube.com/@tikmatrix)
+[YouTube](https://www.youtube.com/@tikmatrix)
 
 ## Discussions
 
-[Join our Telegram](https://t.me/tikmatrix_agent_bot)
-<iframe src="https://discordapp.com/widget?id=1428188531536171142&theme=dark" width="350" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+[Telegram](https://t.me/tikmatrix_agent_bot)
+
 ## Development
 
 ### Requirements
