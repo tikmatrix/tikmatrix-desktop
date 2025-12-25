@@ -6,7 +6,7 @@
             :aria-label="$t('monthly')" checked="checked" />
         <div class="tab-content bg-base-100 backdrop-blur border border-base-300 rounded-xl p-6 shadow-xl">
             <PlanSection :plans="plans" plan-type="monthly" :license="license"
-                :crypto-payment-methods="cryptoPaymentMethods" @create-stripe-checkout="handleCreateStripeCheckout"
+                @create-stripe-checkout="handleCreateStripeCheckout"
                 @create-alipay-checkout="handleCreateAlipayCheckout" @create-order="handleCreateOrder"
                 @manage-subscription="$emit('manage-subscription')" />
         </div>
@@ -17,7 +17,7 @@
             :aria-label="$t('yearlyDiscount', { percent: 30 })" />
         <div class="tab-content bg-base-100 backdrop-blur border border-base-300 rounded-xl p-6 shadow-xl">
             <PlanSection :plans="plans" plan-type="yearly" :license="license"
-                :crypto-payment-methods="cryptoPaymentMethods" @create-stripe-checkout="handleCreateStripeCheckout"
+                @create-stripe-checkout="handleCreateStripeCheckout"
                 @create-alipay-checkout="handleCreateAlipayCheckout" @create-order="handleCreateOrder"
                 @manage-subscription="$emit('manage-subscription')" />
         </div>
@@ -40,10 +40,6 @@ export default {
         license: {
             type: Object,
             required: true
-        },
-        cryptoPaymentMethods: {
-            type: Array,
-            default: null
         }
     },
     emits: ['create-stripe-checkout', 'create-alipay-checkout', 'create-order', 'manage-subscription'],

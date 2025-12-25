@@ -6,28 +6,13 @@
             <font-awesome-icon icon="fab fa-bitcoin" class="w-4 h-4" />
             <span>{{ $t('cryptoPayment') }}</span>
         </button>
-
-        <!-- Crypto Payment Selector Modal -->
-        <dialog ref="cryptoSelectorDialog" class="modal">
-            <div class="modal-box">
-                <CryptoPaymentSelector ref="cryptoSelector" :crypto-payment-methods="cryptoPaymentMethods"
-                    @select="handlePaymentMethodSelected" @cancel="hideSelector" />
-            </div>
-            <form method="dialog" class="modal-backdrop">
-                <button>close</button>
-            </form>
-        </dialog>
     </div>
 </template>
 
 <script>
-import CryptoPaymentSelector from './CryptoPaymentSelector.vue'
-
 export default {
     name: 'CryptoPaymentButton',
-    components: {
-        CryptoPaymentSelector
-    },
+    inject: ['showCryptoSelector'],
     props: {
         amount: {
             type: Number,
@@ -40,35 +25,12 @@ export default {
         planInterval: {
             type: String,
             required: true
-        },
-        cryptoPaymentMethods: {
-            type: Array,
-            default: null
         }
     },
-    emits: ['create-order'],
     methods: {
-        async showSelector() {
-            try {
-                // Ensure payment methods are loaded for this selector instance only when opened
-                if (this.$refs.cryptoSelector && typeof this.$refs.cryptoSelector.loadCryptoPaymentMethods === 'function') {
-                    await this.$refs.cryptoSelector.loadCryptoPaymentMethods()
-                }
-            } catch (err) {
-                console.error('Error loading crypto payment methods on open:', err)
-            }
-
-            this.$refs.cryptoSelectorDialog.showModal()
-        },
-
-        hideSelector() {
-            this.$refs.cryptoSelectorDialog.close()
-        },
-
-        handlePaymentMethodSelected(payment) {
-            this.hideSelector()
-            // Emit with the selected network
-            this.$emit('create-order', this.amount, this.planId, this.planInterval, payment.network, payment)
+        showSelector() {
+            // 调用注入的共享方法打开全局对话框
+            this.showCryptoSelector(this.amount, this.planId, this.planInterval);
         }
     }
 }

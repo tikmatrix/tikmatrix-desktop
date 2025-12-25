@@ -34,7 +34,7 @@
                     <!-- 定价表 -->
                     <PricingTable
                         v-else-if="whitelabelConfig.enablePay && priceTableInfo && priceTableInfo.plans.length > 0"
-                        :plans="priceTableInfo.plans" :license="license" :crypto-payment-methods="cryptoPaymentMethods"
+                        :plans="priceTableInfo.plans" :license="license"
                         @create-stripe-checkout="createStripeCheckoutUrl"
                         @create-alipay-checkout="createAlipayCheckoutUrl" @create-order="createOrder"
                         @manage-subscription="manageStripeSubscription" />
@@ -57,6 +57,17 @@
     <!-- License迁移对话框 -->
     <LicenseMigrationDialog ref="licenseMigrationDialog" :license-info="license"
         @migration-completed="handleMigrationCompleted" />
+
+    <!-- 全局加密货币支付选择器对话框 -->
+    <dialog ref="cryptoSelectorDialog" class="modal">
+        <div class="modal-box">
+            <CryptoPaymentSelector :crypto-payment-methods="cryptoPaymentMethods"
+                @select="handleCryptoPaymentSelected" @cancel="hideCryptoSelector" />
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
 </template>
 
 <script>
@@ -68,6 +79,7 @@ import PricingTable from './pricing/PricingTable.vue'
 import PrivacyAgreement from './pricing/PrivacyAgreement.vue'
 import LoadingDialogs from './pricing/LoadingDialogs.vue'
 import LicenseMigrationDialog from './LicenseMigrationDialog.vue'
+import CryptoPaymentSelector from './pricing/CryptoPaymentSelector.vue'
 
 // 导入业务逻辑混入
 import paymentMixin from '../mixins/paymentMixin'
@@ -86,7 +98,8 @@ export default {
         PricingTable,
         PrivacyAgreement,
         LoadingDialogs,
-        LicenseMigrationDialog
+        LicenseMigrationDialog,
+        CryptoPaymentSelector
     },
     mixins: [paymentMixin, licenseMixin, orderMixin],
     props: {
@@ -108,6 +121,16 @@ export default {
             cryptoPaymentMethods: null, // Cache crypto payment methods
             isLoadingPriceTable: false,
             isLoadingOrder: false,
+            // 用于存储加密货币支付的上下文信息
+            cryptoPaymentContext: null
+        };
+    },
+    provide() {
+        return {
+            // 提供打开加密货币选择器的方法
+            showCryptoSelector: (amount, planId, planInterval) => {
+                this.showCryptoSelector(amount, planId, planInterval);
+            }
         };
     },
     watch: {
@@ -200,6 +223,34 @@ export default {
             this.orderPaymentHandled = false;
             this.$refs.license_management_dialog.close();
             this.cryptoPaymentMethods = null; // Clear cached crypto payment methods
+            this.cryptoPaymentContext = null; // Clear context
+        },
+
+        // 显示加密货币选择器
+        showCryptoSelector(amount, planId, planInterval) {
+            // 保存上下文信息，以便在选择支付方式后使用
+            this.cryptoPaymentContext = { amount, planId, planInterval };
+            this.$refs.cryptoSelectorDialog.showModal();
+        },
+
+        // 隐藏加密货币选择器
+        hideCryptoSelector() {
+            this.$refs.cryptoSelectorDialog.close();
+            this.cryptoPaymentContext = null;
+        },
+
+        // 处理加密货币支付方式选择
+        handleCryptoPaymentSelected(payment) {
+            if (!this.cryptoPaymentContext) {
+                console.error('No crypto payment context available');
+                return;
+            }
+
+            const { amount, planId, planInterval } = this.cryptoPaymentContext;
+            this.hideCryptoSelector();
+            
+            // 调用 orderMixin 中的 createOrder 方法
+            this.createOrder(amount, planId, planInterval, payment.network, payment);
         }
     }
 }
