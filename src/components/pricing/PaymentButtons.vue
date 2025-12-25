@@ -27,7 +27,9 @@
 
         <!-- 加密货币支付按钮 (统一入口) -->
         <CryptoPaymentButton v-if="license.is_stripe_active == 0" :amount="amount" :plan-id="planId"
-            :plan-interval="planInterval" @create-order="handleCreateOrder" />
+            :plan-interval="planInterval" 
+            :crypto-payment-methods="cryptoPaymentMethods"
+            @create-order="handleCreateOrder" />
     </div>
 </template>
 
@@ -63,6 +65,10 @@ export default {
         planType: {
             type: String,
             default: 'monthly'
+        },
+        cryptoPaymentMethods: {
+            type: Array,
+            default: null
         }
     },
     emits: ['manage-subscription', 'create-stripe-checkout', 'create-alipay-checkout', 'create-order'],
