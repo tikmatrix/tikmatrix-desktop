@@ -15,8 +15,8 @@
           <font-awesome-icon icon="fa-solid fa-rocket" class="text-2xl text-success" />
         </div>
         <div>
-          <h3 class="text-2xl font-bold text-base-content">{{ title }}</h3>
-          <p class="text-sm text-base-content/60">{{ subtitle }}</p>
+          <h3 class="text-2xl font-bold text-base-content">{{ $t('updateAvailableTitle') }}</h3>
+          <p class="text-sm text-base-content/60">{{ $t(getSubtitleKey()) }}</p>
         </div>
       </div>
 
@@ -67,7 +67,7 @@
           </button>
           <button class="btn btn-success flex-1" @click="handleConfirm">
             <font-awesome-icon :icon="isMac ? 'fa-solid fa-download' : 'fa-solid fa-sync'" class="mr-2" />
-            {{ confirmButtonText }}
+            {{ $t(getConfirmButtonKey()) }}
           </button>
         </form>
       </div>
@@ -106,21 +106,6 @@ export default {
   },
   emits: ['confirm', 'cancel'],
   computed: {
-    title() {
-      return this.$t('updateAvailableTitle');
-    },
-    subtitle() {
-      if (this.isMac) {
-        return this.$t('macUpdateSubtitle');
-      }
-      return this.$t('windowsUpdateSubtitle');
-    },
-    confirmButtonText() {
-      if (this.isMac) {
-        return this.$t('downloadNow');
-      }
-      return this.$t('installNow');
-    },
     renderedMarkdown() {
       if (!this.updateBody) {
         return '';
@@ -153,6 +138,20 @@ export default {
     }
   },
   methods: {
+    /**
+     * Returns the i18n key for the dialog subtitle based on platform.
+     * @returns {string} Translation key for Mac or Windows subtitle
+     */
+    getSubtitleKey() {
+      return this.isMac ? 'macUpdateSubtitle' : 'windowsUpdateSubtitle';
+    },
+    /**
+     * Returns the i18n key for the confirm button text based on platform.
+     * @returns {string} Translation key for Mac download or Windows install button
+     */
+    getConfirmButtonKey() {
+      return this.isMac ? 'downloadNow' : 'installNow';
+    },
     show() {
       this.$refs.updateDialog.showModal();
     },
