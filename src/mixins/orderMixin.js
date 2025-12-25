@@ -20,8 +20,8 @@ export default {
                     console.log('get stripe price table info failed:', res.data);
                     this.order = null;
                 } else {
-                    console.log('get stripe price table info:', res.data);
                     this.priceTableInfo = JSON.parse(res.data);
+                    console.log('get stripe price table info:', this.priceTableInfo);
                 }
             } catch (err) {
                 console.error('get_stripe_price_table_info error:', err);

@@ -10,12 +10,12 @@
             <span>{{ error }}</span>
         </div>
 
-        <div v-else-if="cryptoPayments.length === 0" class="alert alert-warning">
+        <div v-else-if="cryptoPaymentMethods && cryptoPaymentMethods.length === 0" class="alert alert-warning">
             <span>{{ $t('noCryptoPaymentMethodsAvailable') }}</span>
         </div>
 
-        <div v-else class="space-y-2">
-            <button v-for="payment in cryptoPayments" :key="`${payment.network}-${payment.token_symbol}`"
+        <div v-else-if="cryptoPaymentMethods" class="space-y-2">
+            <button v-for="payment in cryptoPaymentMethods" :key="`${payment.network}-${payment.token_symbol}`"
                 @click="selectPaymentMethod(payment)" :disabled="!payment.available"
                 class="btn btn-outline btn-block btn-md hover:btn-secondary transition-all duration-200 flex items-center justify-start gap-2"
                 :class="{ 'btn-disabled opacity-50': !payment.available }">
@@ -27,6 +27,9 @@
                     {{ $t('unavailable') }}
                 </div>
             </button>
+        </div>
+        <div v-else class="flex justify-center py-4">
+            <span>{{ $t('loading') }}...</span>
         </div>
 
         <div class="flex justify-end gap-2 mt-4">
@@ -40,7 +43,7 @@
 <script>
 export default {
     name: 'CryptoPaymentSelector',
-    emits: ['select', 'cancel'],
+    emits: ['select'],
     props: {
         cryptoPaymentMethods: {
             type: Array,
@@ -51,43 +54,9 @@ export default {
         return {
             loading: false,
             error: null,
-            cryptoPayments: []
         }
     },
-    async mounted() {
-        await this.loadCryptoPaymentMethods()
-    },
     methods: {
-        async loadCryptoPaymentMethods() {
-            // If payment methods are provided as prop, use them
-            if (this.cryptoPaymentMethods !== null) {
-                this.cryptoPayments = this.cryptoPaymentMethods
-                console.log('Using cached crypto payment methods:', this.cryptoPayments)
-                return
-            }
-
-            // Otherwise, fetch from API
-            this.loading = true
-            this.error = null
-
-            try {
-                const res = await this.$service.get_crypto_payment_methods()
-
-                if (res.code !== 0) {
-                    this.error = res.data || this.$t('loadCryptoPaymentMethodsError')
-                    console.error('Failed to load crypto payment methods:', res.data)
-                } else {
-                    const data = JSON.parse(res.data)
-                    this.cryptoPayments = data || []
-                    console.log('Loaded crypto payment methods:', this.cryptoPayments)
-                }
-            } catch (err) {
-                console.error('Error loading crypto payment methods:', err)
-                this.error = this.$t('loadCryptoPaymentMethodsError')
-            } finally {
-                this.loading = false
-            }
-        },
 
         selectPaymentMethod(payment) {
             if (!payment.available) {

@@ -3,11 +3,10 @@
         <!-- 月度计划标签 -->
         <input type="radio" name="pricing_tabs"
             class="tab [--tab-bg:hsl(var(--p))] [--tab-color:hsl(var(--pc))] text-base font-semibold"
-            aria-label="Monthly" checked="checked" />
+            :aria-label="$t('monthly')" checked="checked" />
         <div class="tab-content bg-base-100 backdrop-blur border border-base-300 rounded-xl p-6 shadow-xl">
             <PlanSection :plans="plans" plan-type="monthly" :license="license"
-                :crypto-payment-methods="cryptoPaymentMethods"
-                @create-stripe-checkout="handleCreateStripeCheckout"
+                :crypto-payment-methods="cryptoPaymentMethods" @create-stripe-checkout="handleCreateStripeCheckout"
                 @create-alipay-checkout="handleCreateAlipayCheckout" @create-order="handleCreateOrder"
                 @manage-subscription="$emit('manage-subscription')" />
         </div>
@@ -18,8 +17,7 @@
             :aria-label="$t('yearlyDiscount', { percent: 30 })" />
         <div class="tab-content bg-base-100 backdrop-blur border border-base-300 rounded-xl p-6 shadow-xl">
             <PlanSection :plans="plans" plan-type="yearly" :license="license"
-                :crypto-payment-methods="cryptoPaymentMethods"
-                @create-stripe-checkout="handleCreateStripeCheckout"
+                :crypto-payment-methods="cryptoPaymentMethods" @create-stripe-checkout="handleCreateStripeCheckout"
                 @create-alipay-checkout="handleCreateAlipayCheckout" @create-order="handleCreateOrder"
                 @manage-subscription="$emit('manage-subscription')" />
         </div>

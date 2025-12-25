@@ -24,17 +24,17 @@
                         :remaining-time="remainingTime" @close-order="closeOrder" @copy-text="copyText" />
 
                     <!-- 定价表加载指示器 -->
-                    <div v-else-if="whitelabelConfig.enablePay && isLoadingPriceTable" 
+                    <div v-else-if="whitelabelConfig.enablePay && isLoadingPriceTable"
                         class="flex justify-center items-center py-12">
                         <span class="loading loading-spinner loading-lg"></span>
-                        <span class="ml-4 text-lg">{{ $t('loadingPricingInfo') || 'Loading pricing information...' }}</span>
+                        <span class="ml-4 text-lg">{{ $t('loadingPricingInfo') || 'Loading pricing information...'
+                        }}</span>
                     </div>
 
                     <!-- 定价表 -->
                     <PricingTable
                         v-else-if="whitelabelConfig.enablePay && priceTableInfo && priceTableInfo.plans.length > 0"
-                        :plans="priceTableInfo.plans" :license="license"
-                        :crypto-payment-methods="cryptoPaymentMethods"
+                        :plans="priceTableInfo.plans" :license="license" :crypto-payment-methods="cryptoPaymentMethods"
                         @create-stripe-checkout="createStripeCheckoutUrl"
                         @create-alipay-checkout="createAlipayCheckoutUrl" @create-order="createOrder"
                         @manage-subscription="manageStripeSubscription" />
@@ -148,11 +148,14 @@ export default {
             await this.$emiter('LICENSE', { reload: true });
             const storedLocale = await getItem('locale');
             this.currentLocale = storedLocale ? storedLocale.replace(/"/g, '') : 'en';
-            
+
             // Show dialog immediately without waiting for network requests
             this.$refs.license_management_dialog.showModal();
+            this.$refs.license_management_dialog.addEventListener('close', () => {
+                this.close();
+            })
             this.orderPaymentHandled = false;
-            
+
             // Load data asynchronously in the background
             if (this.whitelabelConfig.enablePay) {
                 // Execute all network requests in parallel
@@ -174,7 +177,7 @@ export default {
 
             try {
                 const res = await this.$service.get_crypto_payment_methods();
-                
+
                 if (res.code !== 0) {
                     console.error('Failed to load crypto payment methods:', res.data);
                     this.cryptoPaymentMethods = [];
@@ -190,11 +193,13 @@ export default {
         },
 
         async close() {
+            console.log('Closing License Management Dialog');
             clearInterval(this.interval);
             this.interval = null;
             this.order = null;
             this.orderPaymentHandled = false;
             this.$refs.license_management_dialog.close();
+            this.cryptoPaymentMethods = null; // Clear cached crypto payment methods
         }
     }
 }

@@ -10,14 +10,11 @@
         <!-- Crypto Payment Selector Modal -->
         <dialog ref="cryptoSelectorDialog" class="modal">
             <div class="modal-box">
-                <CryptoPaymentSelector 
-                    :crypto-payment-methods="cryptoPaymentMethods"
-                    @select="handlePaymentMethodSelected" 
-                    @cancel="hideSelector" 
-                />
+                <CryptoPaymentSelector ref="cryptoSelector" :crypto-payment-methods="cryptoPaymentMethods"
+                    @select="handlePaymentMethodSelected" @cancel="hideSelector" />
             </div>
             <form method="dialog" class="modal-backdrop">
-                <button @click="hideSelector">close</button>
+                <button>close</button>
             </form>
         </dialog>
     </div>
@@ -51,7 +48,16 @@ export default {
     },
     emits: ['create-order'],
     methods: {
-        showSelector() {
+        async showSelector() {
+            try {
+                // Ensure payment methods are loaded for this selector instance only when opened
+                if (this.$refs.cryptoSelector && typeof this.$refs.cryptoSelector.loadCryptoPaymentMethods === 'function') {
+                    await this.$refs.cryptoSelector.loadCryptoPaymentMethods()
+                }
+            } catch (err) {
+                console.error('Error loading crypto payment methods on open:', err)
+            }
+
             this.$refs.cryptoSelectorDialog.showModal()
         },
 
