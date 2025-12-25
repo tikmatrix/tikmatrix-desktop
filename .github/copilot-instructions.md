@@ -51,7 +51,7 @@ TikMatrix Desktop is a social media automation matrix management software that c
 ### Language and Comments
 
 - **Code Comments**: Always write comments in English
-- **Response Language**: Always respond in Chinese (中文)
+- **Response Language**: Always Summary in Chinese (中文)
 - **Search**: Use English when searching for information or documentation
 
 ### Vue.js Conventions
