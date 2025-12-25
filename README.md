@@ -31,15 +31,6 @@ Note: The TikTok app on the phone must be in English for all features to work pr
 
 - 💻Windows PC running Windows 7 or later OR 📱Mac computer running macOS
 - 🤖📱Android phones/devices with Android 5.0+ (API 21) Phones do not require root access.
-🏷Offers flexible pricing plans for every need:
-
-- Starter: $29/month/PC — Manage up to 5 phones, all features included, dedicated support.
-- Pro: $59/month/PC — Manage up to 20 phones, all features included, dedicated support.
-- Business: $149/month/PC — Manage up to 100 phones, all features included, dedicated support.
-
-- All plans include unlimited feature access and 1:1 Telegram support.
-- Annual billing enjoys a 30% discount.🔣
-- Payment methods: Card/Credit Card/USDT (TRC20/BEP20).💳💳🪙
 
 🔧Common troubleshooting and solutions
 <https://tikmatrix.com/docs/category/troubleshooting>
@@ -53,7 +44,7 @@ Note: The TikTok app on the phone must be in English for all features to work pr
 ## Discussions
 
 [Join our Telegram](https://t.me/tikmatrix_agent_bot)
-
+<iframe src="https://discordapp.com/widget?id=1428188531536171142&theme=dark" width="350" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 ## Development
 
 ### Requirements
