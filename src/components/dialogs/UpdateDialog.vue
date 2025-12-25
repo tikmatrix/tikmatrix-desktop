@@ -15,8 +15,8 @@
           <font-awesome-icon icon="fa-solid fa-rocket" class="text-2xl text-success" />
         </div>
         <div>
-          <h3 class="text-2xl font-bold text-base-content">{{ title }}</h3>
-          <p class="text-sm text-base-content/60">{{ subtitle }}</p>
+          <h3 class="text-2xl font-bold text-base-content">{{ $t('updateAvailableTitle') }}</h3>
+          <p class="text-sm text-base-content/60">{{ isMac ? $t('macUpdateSubtitle') : $t('windowsUpdateSubtitle') }}</p>
         </div>
       </div>
 
@@ -67,7 +67,7 @@
           </button>
           <button class="btn btn-success flex-1" @click="handleConfirm">
             <font-awesome-icon :icon="isMac ? 'fa-solid fa-download' : 'fa-solid fa-sync'" class="mr-2" />
-            {{ confirmButtonText }}
+            {{ isMac ? $t('downloadNow') : $t('installNow') }}
           </button>
         </form>
       </div>
@@ -106,21 +106,6 @@ export default {
   },
   emits: ['confirm', 'cancel'],
   computed: {
-    title() {
-      return this.$t('updateAvailableTitle');
-    },
-    subtitle() {
-      if (this.isMac) {
-        return this.$t('macUpdateSubtitle');
-      }
-      return this.$t('windowsUpdateSubtitle');
-    },
-    confirmButtonText() {
-      if (this.isMac) {
-        return this.$t('downloadNow');
-      }
-      return this.$t('installNow');
-    },
     renderedMarkdown() {
       if (!this.updateBody) {
         return '';
