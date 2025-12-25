@@ -16,7 +16,7 @@
         </div>
         <div>
           <h3 class="text-2xl font-bold text-base-content">{{ $t('updateAvailableTitle') }}</h3>
-          <p class="text-sm text-base-content/60">{{ isMac ? $t('macUpdateSubtitle') : $t('windowsUpdateSubtitle') }}</p>
+          <p class="text-sm text-base-content/60">{{ $t(getSubtitleKey()) }}</p>
         </div>
       </div>
 
@@ -67,7 +67,7 @@
           </button>
           <button class="btn btn-success flex-1" @click="handleConfirm">
             <font-awesome-icon :icon="isMac ? 'fa-solid fa-download' : 'fa-solid fa-sync'" class="mr-2" />
-            {{ isMac ? $t('downloadNow') : $t('installNow') }}
+            {{ $t(getConfirmButtonKey()) }}
           </button>
         </form>
       </div>
@@ -138,6 +138,12 @@ export default {
     }
   },
   methods: {
+    getSubtitleKey() {
+      return this.isMac ? 'macUpdateSubtitle' : 'windowsUpdateSubtitle';
+    },
+    getConfirmButtonKey() {
+      return this.isMac ? 'downloadNow' : 'installNow';
+    },
     show() {
       this.$refs.updateDialog.showModal();
     },
