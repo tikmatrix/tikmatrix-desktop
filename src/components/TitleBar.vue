@@ -297,6 +297,7 @@ import { isFeatureUnlocked } from '../utils/features.js';
 import { getItem, setItem } from '@/utils/storage.js';
 import LicenseLifecycle from './LicenseLifecycle.vue';
 import { useUpdateManager } from '../composables/useUpdateManager.js';
+import { computed } from 'vue';
 
 export default {
   name: 'TitleBar',
@@ -315,7 +316,13 @@ export default {
   },
   setup() {
     const updateManager = useUpdateManager();
-    return { updateManager };
+    return {
+      updateManager,
+      // Expose computed properties directly to avoid nested computed execution
+      tauriUpdateAvailable: updateManager.hasUpdateAvailable,
+      tauriUpdateInfo: computed(() => updateManager.updateState.value.tauriUpdateInfo),
+      download_progress: computed(() => updateManager.updateState.value.downloadProgress),
+    };
   },
   data() {
     return {
@@ -348,15 +355,6 @@ export default {
     }
   },
   computed: {
-    tauriUpdateAvailable() {
-      return this.updateManager.hasUpdateAvailable.value;
-    },
-    tauriUpdateInfo() {
-      return this.updateManager.updateState.value.tauriUpdateInfo;
-    },
-    download_progress() {
-      return this.updateManager.updateState.value.downloadProgress;
-    },
     currentLogoSrc() {
       if (this.whitelabelConfig.logo?.main) {
         const logoPath = this.whitelabelConfig.logo.main;
