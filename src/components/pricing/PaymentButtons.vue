@@ -25,19 +25,19 @@
             </div>
         </button>
 
-        <!-- USDT支付按钮 (TRC20) -->
-        <UsdtPaymentButton v-if="license.is_stripe_active == 0" :amount="amount" :plan-id="planId"
+        <!-- 加密货币支付按钮 (统一入口) -->
+        <CryptoPaymentButton v-if="license.is_stripe_active == 0" :amount="amount" :plan-id="planId"
             :plan-interval="planInterval" @create-order="handleCreateOrder" />
     </div>
 </template>
 
 <script>
-import UsdtPaymentButton from './UsdtPaymentButton.vue'
+import CryptoPaymentButton from './CryptoPaymentButton.vue'
 
 export default {
     name: 'PaymentButtons',
     components: {
-        UsdtPaymentButton
+        CryptoPaymentButton
     },
     props: {
         license: {
@@ -76,8 +76,8 @@ export default {
         handleStripeCheckout() {
             this.$emit('create-stripe-checkout', this.priceId, this.planInterval);
         },
-        handleCreateOrder(price, planId, planInterval, network) {
-            this.$emit('create-order', price, planId, planInterval, network);
+        handleCreateOrder(price, planId, planInterval, network, paymentInfo) {
+            this.$emit('create-order', price, planId, planInterval, network, paymentInfo);
         },
         handleAlipayCheckout() {
             this.$emit('create-alipay-checkout', this.planId, this.planInterval);

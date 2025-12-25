@@ -835,6 +835,13 @@ export function detectCurrentPackage(serial) {
   })
 }
 
+export function get_crypto_payment_methods() {
+  return request({
+    method: 'get',
+    url: api.get_crypto_payment_methods
+  })
+}
+
 const SUPPORT_RESPONSE_KEYS = ['data', 'result', 'payload'];
 
 function unwrapSupportResponse(response) {
