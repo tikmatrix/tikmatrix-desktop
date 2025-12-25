@@ -11,7 +11,9 @@
         <!-- 计划卡片网格 -->
         <div class="grid gap-4 w-full" :style="gridStyle">
             <PlanCard v-for="(plan, index) in plans" :key="plan.id + '_' + planType" :plan="plan" :plan-type="planType"
-                :index="index" :license="license" @create-stripe-checkout="handleCreateStripeCheckout"
+                :index="index" :license="license" 
+                :crypto-payment-methods="cryptoPaymentMethods"
+                @create-stripe-checkout="handleCreateStripeCheckout"
                 @create-alipay-checkout="handleCreateAlipayCheckout" @create-order="handleCreateOrder"
                 @manage-subscription="$emit('manage-subscription')" />
         </div>
@@ -39,6 +41,10 @@ export default {
         license: {
             type: Object,
             required: true
+        },
+        cryptoPaymentMethods: {
+            type: Array,
+            default: null
         }
     },
     emits: ['create-stripe-checkout', 'create-alipay-checkout', 'create-order', 'manage-subscription'],

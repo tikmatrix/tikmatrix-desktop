@@ -41,6 +41,12 @@
 export default {
     name: 'CryptoPaymentSelector',
     emits: ['select', 'cancel'],
+    props: {
+        cryptoPaymentMethods: {
+            type: Array,
+            default: null
+        }
+    },
     data() {
         return {
             loading: false,
@@ -53,6 +59,14 @@ export default {
     },
     methods: {
         async loadCryptoPaymentMethods() {
+            // If payment methods are provided as prop, use them
+            if (this.cryptoPaymentMethods !== null) {
+                this.cryptoPayments = this.cryptoPaymentMethods
+                console.log('Using cached crypto payment methods:', this.cryptoPayments)
+                return
+            }
+
+            // Otherwise, fetch from API
             this.loading = true
             this.error = null
 

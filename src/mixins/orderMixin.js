@@ -9,6 +9,10 @@ export default {
                 return;
             }
 
+            if (typeof this.isLoadingPriceTable !== 'undefined') {
+                this.isLoadingPriceTable = true;
+            }
+
             try {
                 const res = await this.$service.get_stripe_price_table_info();
 
@@ -26,12 +30,20 @@ export default {
                     message: this.$t('getStripePriceTableInfoErrorMessage'),
                     timeout: 2000
                 });
+            } finally {
+                if (typeof this.isLoadingPriceTable !== 'undefined') {
+                    this.isLoadingPriceTable = false;
+                }
             }
         },
 
         async getOrder() {
             if (!this.license.mid) {
                 return;
+            }
+
+            if (typeof this.isLoadingOrder !== 'undefined') {
+                this.isLoadingOrder = true;
             }
 
             try {
@@ -51,6 +63,10 @@ export default {
                     message: this.$t('getOrderErrorMessage'),
                     timeout: 2000
                 });
+            } finally {
+                if (typeof this.isLoadingOrder !== 'undefined') {
+                    this.isLoadingOrder = false;
+                }
             }
         },
 

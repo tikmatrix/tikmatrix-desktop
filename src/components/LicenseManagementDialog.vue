@@ -23,10 +23,18 @@
                     <OrderDisplay v-if="whitelabelConfig.enablePay && order && order.status == 0" :order="order"
                         :remaining-time="remainingTime" @close-order="closeOrder" @copy-text="copyText" />
 
+                    <!-- 定价表加载指示器 -->
+                    <div v-else-if="whitelabelConfig.enablePay && isLoadingPriceTable" 
+                        class="flex justify-center items-center py-12">
+                        <span class="loading loading-spinner loading-lg"></span>
+                        <span class="ml-4 text-lg">{{ $t('loadingPricingInfo') || 'Loading pricing information...' }}</span>
+                    </div>
+
                     <!-- 定价表 -->
                     <PricingTable
                         v-else-if="whitelabelConfig.enablePay && priceTableInfo && priceTableInfo.plans.length > 0"
                         :plans="priceTableInfo.plans" :license="license"
+                        :crypto-payment-methods="cryptoPaymentMethods"
                         @create-stripe-checkout="createStripeCheckoutUrl"
                         @create-alipay-checkout="createAlipayCheckoutUrl" @create-order="createOrder"
                         @manage-subscription="manageStripeSubscription" />
@@ -97,6 +105,9 @@ export default {
             priceTableInfo: null,
             whitelabelConfig: cloneDefaultWhiteLabelConfig(),
             orderPaymentHandled: false,
+            cryptoPaymentMethods: null, // Cache crypto payment methods
+            isLoadingPriceTable: false,
+            isLoadingOrder: false,
         };
     },
     watch: {
@@ -133,14 +144,48 @@ export default {
     },
     methods: {
         async show() {
+            // Reload license first
             await this.$emiter('LICENSE', { reload: true });
             const storedLocale = await getItem('locale');
             this.currentLocale = storedLocale ? storedLocale.replace(/"/g, '') : 'en';
+            
+            // Show dialog immediately without waiting for network requests
             this.$refs.license_management_dialog.showModal();
             this.orderPaymentHandled = false;
+            
+            // Load data asynchronously in the background
             if (this.whitelabelConfig.enablePay) {
-                await this.getStripePriceTableInfo();
-                await this.getOrder();
+                // Execute all network requests in parallel
+                Promise.all([
+                    this.getStripePriceTableInfo(),
+                    this.getOrder(),
+                    this.getCryptoPaymentMethods()
+                ]).catch(err => {
+                    console.error('Error loading payment data:', err);
+                });
+            }
+        },
+
+        async getCryptoPaymentMethods() {
+            // Only fetch if not already cached
+            if (this.cryptoPaymentMethods !== null) {
+                return;
+            }
+
+            try {
+                const res = await this.$service.get_crypto_payment_methods();
+                
+                if (res.code !== 0) {
+                    console.error('Failed to load crypto payment methods:', res.data);
+                    this.cryptoPaymentMethods = [];
+                } else {
+                    const data = JSON.parse(res.data);
+                    this.cryptoPaymentMethods = data || [];
+                    console.log('Loaded crypto payment methods:', this.cryptoPaymentMethods);
+                }
+            } catch (err) {
+                console.error('Error loading crypto payment methods:', err);
+                this.cryptoPaymentMethods = [];
             }
         },
 

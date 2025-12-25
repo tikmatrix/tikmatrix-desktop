@@ -11,6 +11,7 @@
         <dialog ref="cryptoSelectorDialog" class="modal">
             <div class="modal-box">
                 <CryptoPaymentSelector 
+                    :crypto-payment-methods="cryptoPaymentMethods"
                     @select="handlePaymentMethodSelected" 
                     @cancel="hideSelector" 
                 />
@@ -42,6 +43,10 @@ export default {
         planInterval: {
             type: String,
             required: true
+        },
+        cryptoPaymentMethods: {
+            type: Array,
+            default: null
         }
     },
     emits: ['create-order'],

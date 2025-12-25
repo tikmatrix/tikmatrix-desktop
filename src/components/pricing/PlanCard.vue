@@ -52,6 +52,7 @@
             <!-- 支付按钮 -->
             <PaymentButtons :license="license" :price-id="priceId" :amount="planAmount" :plan-id="plan.id"
                 :plan-interval="apiPlanInterval" :plan-type="planType"
+                :crypto-payment-methods="cryptoPaymentMethods"
                 @manage-subscription="$emit('manage-subscription')" @create-stripe-checkout="handleStripeCheckout"
                 @create-alipay-checkout="handleAlipayCheckout" @create-order="handleCreateOrder" />
         </div>
@@ -84,6 +85,10 @@ export default {
         license: {
             type: Object,
             required: true
+        },
+        cryptoPaymentMethods: {
+            type: Array,
+            default: null
         }
     },
     emits: ['create-stripe-checkout', 'create-alipay-checkout', 'create-order', 'manage-subscription'],
