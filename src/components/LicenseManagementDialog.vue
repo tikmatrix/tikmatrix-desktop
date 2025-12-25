@@ -128,9 +128,7 @@ export default {
     provide() {
         return {
             // 提供打开加密货币选择器的方法
-            showCryptoSelector: (amount, planId, planInterval) => {
-                this.showCryptoSelector(amount, planId, planInterval);
-            }
+            showCryptoSelector: this.showCryptoSelector
         };
     },
     watch: {
@@ -242,7 +240,7 @@ export default {
         // 处理加密货币支付方式选择
         handleCryptoPaymentSelected(payment) {
             if (!this.cryptoPaymentContext) {
-                console.error('No crypto payment context available');
+                console.error('Crypto payment context missing. Please try selecting the payment method again.');
                 return;
             }
 

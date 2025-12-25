@@ -12,7 +12,15 @@
 <script>
 export default {
     name: 'CryptoPaymentButton',
-    inject: ['showCryptoSelector'],
+    inject: {
+        showCryptoSelector: {
+            from: 'showCryptoSelector',
+            default: () => {
+                console.warn('showCryptoSelector not provided');
+                return () => {};
+            }
+        }
+    },
     props: {
         amount: {
             type: Number,
