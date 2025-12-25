@@ -15,7 +15,7 @@
           <font-awesome-icon icon="fa-solid fa-rocket" class="text-2xl text-success" />
         </div>
         <div>
-          <h3 class="text-2xl font-bold text-base-content">{{ $t('updateAvailableTitle') }}</h3>
+          <h3 class="text-2xl font-bold text-base-content">{{ $t(getTitleKey()) }}</h3>
           <p class="text-sm text-base-content/60">{{ $t(getSubtitleKey()) }}</p>
         </div>
       </div>
@@ -138,9 +138,24 @@ export default {
     }
   },
   methods: {
+    /**
+     * Returns the i18n key for the dialog title.
+     * @returns {string} Translation key for the title
+     */
+    getTitleKey() {
+      return 'updateAvailableTitle';
+    },
+    /**
+     * Returns the i18n key for the dialog subtitle based on platform.
+     * @returns {string} Translation key for Mac or Windows subtitle
+     */
     getSubtitleKey() {
       return this.isMac ? 'macUpdateSubtitle' : 'windowsUpdateSubtitle';
     },
+    /**
+     * Returns the i18n key for the confirm button text based on platform.
+     * @returns {string} Translation key for Mac download or Windows install button
+     */
     getConfirmButtonKey() {
       return this.isMac ? 'downloadNow' : 'installNow';
     },
