@@ -1,5 +1,6 @@
 export default {
   loadingPricingInfo: 'Loading pricing info...',
+  licenseManagement: 'License Management',
   account: 'Account',
   accountCount: 'Account Count',
   accountWarmup: 'Account Warmup',

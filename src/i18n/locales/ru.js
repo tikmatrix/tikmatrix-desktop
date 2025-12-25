@@ -1,5 +1,6 @@
 export default {
   loadingPricingInfo: 'Загрузка информации о ценах...',
+  licenseManagement: 'Управление лицензиями',
   account: 'Аккаунт',
   accountCount: 'Количество аккаунтов',
   accountWarmup: 'Прогрев аккаунтов',

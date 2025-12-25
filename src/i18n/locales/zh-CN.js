@@ -1,5 +1,6 @@
 export default {
   loadingPricingInfo: '正在加载价格信息...',
+  licenseManagement: '许可证管理',
   account: '帐号',
   accountCount: '帐号数量',
   accountWarmup: '账号预热',

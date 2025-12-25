@@ -333,7 +333,7 @@ export default {
       currentLocale: 'en',
       licenseData: {},
       check_update_dialog_title: '',
-      isLoadingLicense: true,
+      isLoadingLicense: false,
       agentProcessName: '',
       agentErrorType: 'port',
       whitelabelConfig: cloneDefaultWhiteLabelConfig(),
