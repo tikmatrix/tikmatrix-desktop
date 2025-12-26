@@ -1,4 +1,6 @@
 export default {
+  deleteReel: 'Delete Reel',
+  deleteReelWarning: 'The delete reel function can filter and delete reels with views less than or equal to the maximum view setting. Please ensure you know what you are doing before deleting.',
   loadingPricingInfo: 'Loading pricing info...',
   licenseManagement: 'License Management',
   account: 'Account',

@@ -15,6 +15,7 @@
           || script.name === 'followBack'
           || script.name === 'unFollowAll'
           || script.name === 'deletePost'
+          || script.name === 'deleteReel'
           || script.name === 'boostUsers'
           || script.name === 'boostPosts'
           || script.name === 'boostLives'
@@ -71,6 +72,7 @@
     <TestScriptDialog v-if="script.name === 'test'" ref="currentDialog" />
     <SuperMarketingDialog v-if="script.name === 'superMarketing'" ref="currentDialog" />
     <AIAgentDialog v-if="script.name === 'aiAgent'" ref="currentDialog" />
+    <DeleteReelDialog v-if="script.name === 'deleteReel'" ref="currentDialog" />
 
     <div class="flex items-center flex-row gap-2 max-w-full w-full mt-2">
       <div class="flex flex-1"></div>
@@ -102,6 +104,7 @@ import SwitchAccountDialog from './SwitchAccountDialog.vue'
 import TestScriptDialog from './TestScriptDialog.vue'
 import SuperMarketingDialog from './SuperMarketingDialog.vue'
 import AIAgentDialog from './AIAgentDialog.vue'
+import DeleteReelDialog from './DeleteReelDialog.vue'
 import { beforeRunScriptSettings } from '@/utils/settingsManager';
 
 const beforeRunScriptMixin = beforeRunScriptSettings.createVueMixin(
@@ -160,7 +163,8 @@ export default {
     SwitchAccountDialog,
     TestScriptDialog,
     SuperMarketingDialog,
-    AIAgentDialog
+    AIAgentDialog,
+    DeleteReelDialog
   },
 
   data() {

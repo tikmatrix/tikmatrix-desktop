@@ -1,4 +1,6 @@
 export default {
+  deleteReel: '删除 Reels',
+  deleteReelWarning: '删除 Reels 功能可以根据下方设置的最大浏览量进行过滤并删除小于或者等于该浏览量的 Reels, 删除是个危险操作, 请确保你知道你在做什么',
   loadingPricingInfo: '正在加载价格信息...',
   licenseManagement: '许可证管理',
   account: '帐号',
