@@ -516,24 +516,32 @@
 
                     <div class="space-y-4">
                         <div class="grid grid-cols-2 gap-3">
-                            <label class="cursor-pointer flex items-center gap-2">
+                            <label class="cursor-pointer flex items-center gap-2"
+                                :class="{ 'opacity-50 cursor-not-allowed': !features.boostPosts }">
                                 <input type="checkbox" class="checkbox checkbox-md checkbox-primary"
-                                    v-model="postSettings.enable_like" />
+                                    v-model="postSettings.enable_like"
+                                    :disabled="!features.boostPosts" />
                                 <span class="text-md">{{ $t('like') }}</span>
                             </label>
-                            <label class="cursor-pointer flex items-center gap-2">
+                            <label class="cursor-pointer flex items-center gap-2"
+                                :class="{ 'opacity-50 cursor-not-allowed': !features.boostPosts }">
                                 <input type="checkbox" class="checkbox checkbox-md checkbox-primary"
-                                    v-model="postSettings.enable_favorite" />
+                                    v-model="postSettings.enable_favorite"
+                                    :disabled="!features.boostPosts" />
                                 <span class="text-md">{{ $t('favorite') }}</span>
                             </label>
-                            <label class="cursor-pointer flex items-center gap-2">
+                            <label class="cursor-pointer flex items-center gap-2"
+                                :class="{ 'opacity-50 cursor-not-allowed': !features.boostPosts }">
                                 <input type="checkbox" class="checkbox checkbox-md checkbox-primary"
-                                    v-model="postSettings.enable_repost" />
+                                    v-model="postSettings.enable_repost"
+                                    :disabled="!features.boostPosts" />
                                 <span class="text-md">{{ $t('repost') }}</span>
                             </label>
-                            <label class="cursor-pointer flex items-center gap-2">
+                            <label class="cursor-pointer flex items-center gap-2"
+                                :class="{ 'opacity-50 cursor-not-allowed': !features.boostPosts }">
                                 <input type="checkbox" class="checkbox checkbox-md checkbox-primary"
-                                    v-model="postSettings.enable_share" />
+                                    v-model="postSettings.enable_share"
+                                    :disabled="!features.boostPosts" />
                                 <span class="text-md">{{ $t('share') }}</span>
                             </label>
                         </div>
