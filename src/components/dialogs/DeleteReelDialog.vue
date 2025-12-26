@@ -15,12 +15,12 @@
 
 </template>
 <script>
-import { deletePostSettings } from '@/utils/settingsManager';
+import { deleteReelSettings } from '@/utils/settingsManager';
 
 export default {
   name: 'DeleteReel',
   mixins: [
-    deletePostSettings.createVueMixin(
+    deleteReelSettings.createVueMixin(
       { maxViews: 0 }, // 默认设置
       ['maxViews']     // 需要监听的属性
     )

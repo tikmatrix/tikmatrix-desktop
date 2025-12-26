@@ -29,7 +29,7 @@
     <div class="flex-1"></div>
 
     <!-- 帮助区域 - 与系统控制分开 -->
-    <div class="flex items-center gap-3 mr-4 pr-4 border-r-2 border-base-300/60">
+    <div class="flex items-center gap-3 mr-4 pr-4 border-r-2 border-base-300/60" v-if="agentStarted">
       <!-- 支持工单入口 - Enhanced with text label and visual styling -->
       <button v-if="showSupportEntry" @click="openSupportDialog" :class="[
         'relative flex items-center gap-2 px-4 py-2 rounded-lg cursor-pointer transition-all duration-200 font-medium',
@@ -50,7 +50,8 @@
 
     <!-- 右侧：功能按钮和控制按钮 -->
     <div class="flex items-center gap-2">
-      <LicenseLifecycle :is-loading="isLoadingLicense" :licenseData="licenseData" @open-license="showLicenseDialog" />
+      <LicenseLifecycle :is-loading="isLoadingLicense" :licenseData="licenseData" @open-license="showLicenseDialog"
+        v-if="agentStarted" />
       <!-- 侧边栏切换 -->
       <label class="swap swap-rotate" :title="$t('toggleSidebar')">
         <input type="checkbox" value="true" v-model="sidebarVisible" />
@@ -339,6 +340,7 @@ export default {
       whitelabelConfig: cloneDefaultWhiteLabelConfig(),
       isWhiteLabelUnlocked: false,
       platform: 'windows',
+      agentStarted: false,
     }
   },
 
@@ -454,6 +456,7 @@ export default {
     },
     async loadLicense() {
       this.isLoadingLicense = true;
+      this.agentStarted = true;
       try {
         const res = await this.$service.get_license();
         if (res.code === 0) {
