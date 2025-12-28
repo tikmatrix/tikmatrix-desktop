@@ -71,13 +71,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout tikmatrix-api-rs repository
+      - name: Checkout tikmatrix-admin-pro repository
         uses: actions/checkout@v3
         with:
-          repository: tikmatrix/tikmatrix-api-rs
+          repository: tikmatrix/tikmatrix-admin-pro
           token: ${{ secrets.REPO_TOKEN }}
           ref: ${{ inputs.branch }}
-          path: tikmatrix-api-rs
+          path: tikmatrix-admin-pro
 
       - name: Install Rust toolchain
         run: |
@@ -93,27 +93,27 @@ jobs:
           key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Build release
-        run: cd tikmatrix-api-rs && cargo build --release
+        run: cd tikmatrix-admin-pro/src-rs && cargo build --release
 
       - name: Upload binary
         uses: actions/upload-artifact@v4
         with:
           name: tikmatrix-binary
-          path: tikmatrix-api-rs/target/release/tikmatrix-api-rs
+          path: tikmatrix-admin-pro/src-rs/target/release/tikmatrix-api-rs
 
       - name: Upload GeoLite2 database
         if: ${{ inputs.deploy_geolite }}
         uses: actions/upload-artifact@v4
         with:
           name: geolite2-db
-          path: tikmatrix-api-rs/data/GeoLite2-Country.mmdb
+          path: tikmatrix-admin-pro/src-rs/data/GeoLite2-Country.mmdb
 
       - name: Upload nginx configuration
         if: ${{ inputs.deploy_nginx_config }}
         uses: actions/upload-artifact@v4
         with:
           name: nginx-config
-          path: tikmatrix-api-rs/api.tikmatrix.com.conf
+          path: tikmatrix-admin-pro/src-rs/api.tikmatrix.com.conf
 
   deploy:
     needs: [prepare, build]
