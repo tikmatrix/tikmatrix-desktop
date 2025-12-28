@@ -1,0 +1,197 @@
+# Server Operations Workflow
+# Health checks, file push, and backup management
+name: Server Operations
+run-name: ${{ github.actor }} is running ${{ github.event.inputs.operation }} 🛠️
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: "Operation to perform"
+        required: true
+        type: choice
+        options:
+          - health-check
+          - push-files
+          - manage-backup
+
+      server:
+        description: "Target server (leave empty for all servers)"
+        required: false
+        type: choice
+        options:
+          - ""
+          - server-us
+          - server-dublin
+          - server-sgp
+
+      # File push options
+      local_path:
+        description: "Local path for file operations (e.g., ./build)"
+        required: false
+        type: string
+
+      remote_path:
+        description: "Remote path for file operations (e.g., /var/www/tikmatrix.com)"
+        required: false
+        type: string
+
+      post_upload_commands:
+        description: 'Commands to run after upload (e.g., "sudo nginx -t && sudo nginx -s reload")'
+        required: false
+        type: string
+
+      # Backup options
+      backup_action:
+        description: "Backup action (create or list)"
+        required: false
+        type: choice
+        options:
+          - list
+          - create
+        default: list
+
+      backup_site:
+        description: "Site domain to backup (e.g., tikmatrix.com)"
+        required: false
+        type: string
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      servers: ${{ steps.get-servers.outputs.servers }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Determine target servers
+        id: get-servers
+        run: |
+          CONFIG=$(cat deploy-config.json)
+          SELECTED_SERVER="${{ github.event.inputs.server }}"
+          
+          if [[ -n "$SELECTED_SERVER" ]]; then
+            # Use specific server
+            SERVERS=$(echo "$CONFIG" | jq -c --arg target "$SELECTED_SERVER" '[.servers[] | select(.id == $target)]')
+          else
+            # Use all servers
+            SERVERS=$(echo "$CONFIG" | jq -c '.servers')
+          fi
+          
+          # Validate servers is not empty
+          if [[ -z "$SERVERS" || "$SERVERS" == "[]" || "$SERVERS" == "null" ]]; then
+            echo "Error: No servers found"
+            exit 1
+          fi
+          
+          echo "servers=$SERVERS" >> $GITHUB_OUTPUT
+          echo "Target servers: $SERVERS"
+
+  health-check:
+    needs: prepare
+    if: github.event.inputs.operation == 'health-check'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Health check on ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          ./scripts/health-check.sh "${{ matrix.server.id }}"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  push-files:
+    needs: prepare
+    if: github.event.inputs.operation == 'push-files'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate inputs
+        run: |
+          if [[ -z "${{ github.event.inputs.local_path }}" ]] || [[ -z "${{ github.event.inputs.remote_path }}" ]]; then
+            echo "Error: Both local_path and remote_path are required for push-files operation"
+            exit 1
+          fi
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Push files to ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          ./scripts/push-files.sh \
+            "${{ matrix.server.id }}" \
+            "${{ github.event.inputs.local_path }}" \
+            "${{ github.event.inputs.remote_path }}" \
+            "${{ github.event.inputs.post_upload_commands }}"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  manage-backup:
+    needs: prepare
+    if: github.event.inputs.operation == 'manage-backup'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate inputs
+        run: |
+          if [[ "${{ github.event.inputs.backup_action }}" == "create" ]] && [[ -z "${{ github.event.inputs.backup_site }}" ]]; then
+            echo "Error: backup_site is required for create action"
+            exit 1
+          fi
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Manage backups on ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          ./scripts/backup-manage.sh \
+            "${{ matrix.server.id }}" \
+            "${{ github.event.inputs.backup_action }}" \
+            "${{ github.event.inputs.backup_site }}"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

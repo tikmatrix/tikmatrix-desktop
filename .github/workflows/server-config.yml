@@ -1,0 +1,170 @@
+# Server Configuration Workflow
+# Nginx and SSL configuration management
+name: Server Configuration
+run-name: ${{ github.actor }} is running ${{ github.event.inputs.operation }} ⚙️
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: "Operation to perform"
+        required: true
+        type: choice
+        options:
+          - configure-nginx
+          - renew-ssl
+
+      server:
+        description: "Target server (leave empty for all servers)"
+        required: false
+        type: choice
+        options:
+          - ""
+          - server-us
+          - server-dublin
+          - server-sgp
+
+      # Nginx configuration options
+      domain:
+        description: "Domain for nginx configuration"
+        required: false
+        type: string
+
+      site_type:
+        description: "Site type (static or proxy)"
+        required: false
+        type: choice
+        options:
+          - static
+          - proxy
+        default: static
+
+      proxy_backend:
+        description: "Backend URL for reverse proxy (e.g., http://127.0.0.1:3000)"
+        required: false
+        type: string
+
+      enable_ssl:
+        description: "Enable SSL certificate setup"
+        required: false
+        type: boolean
+        default: false
+
+      ssl_method:
+        description: "SSL validation method"
+        required: false
+        type: choice
+        options:
+          - http
+          - route53
+        default: http
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      servers: ${{ steps.get-servers.outputs.servers }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Determine target servers
+        id: get-servers
+        run: |
+          CONFIG=$(cat deploy-config.json)
+          SELECTED_SERVER="${{ github.event.inputs.server }}"
+          
+          if [[ -n "$SELECTED_SERVER" ]]; then
+            # Use specific server
+            SERVERS=$(echo "$CONFIG" | jq -c --arg target "$SELECTED_SERVER" '[.servers[] | select(.id == $target)]')
+          else
+            # Use all servers
+            SERVERS=$(echo "$CONFIG" | jq -c '.servers')
+          fi
+          
+          # Validate servers is not empty
+          if [[ -z "$SERVERS" || "$SERVERS" == "[]" || "$SERVERS" == "null" ]]; then
+            echo "Error: No servers found"
+            exit 1
+          fi
+          
+          echo "servers=$SERVERS" >> $GITHUB_OUTPUT
+          echo "Target servers: $SERVERS"
+
+  configure-nginx:
+    needs: prepare
+    if: github.event.inputs.operation == 'configure-nginx'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate inputs
+        run: |
+          if [[ -z "${{ github.event.inputs.domain }}" ]]; then
+            echo "Error: domain is required for configure-nginx operation"
+            exit 1
+          fi
+          
+          if [[ "${{ github.event.inputs.site_type }}" == "proxy" ]] && [[ -z "${{ github.event.inputs.proxy_backend }}" ]]; then
+            echo "Error: proxy_backend is required for proxy site type"
+            exit 1
+          fi
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Configure Nginx on ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          ./scripts/nginx-config.sh \
+            "${{ matrix.server.id }}" \
+            "${{ github.event.inputs.domain }}" \
+            "${{ github.event.inputs.site_type }}" \
+            "${{ github.event.inputs.proxy_backend }}" \
+            "${{ github.event.inputs.enable_ssl }}" \
+            "${{ github.event.inputs.ssl_method }}"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  renew-ssl:
+    needs: prepare
+    if: github.event.inputs.operation == 'renew-ssl'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Renew SSL certificates on ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          ./scripts/ssl-renew.sh "${{ matrix.server.id }}"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

@@ -169,7 +169,7 @@ jobs:
 
           if [[ "$BRAND_REPLACE" == "true" ]]; then
             echo "Running brand replacement..."
-            node ./scripts/replace-brand.js
+            node ../scripts/replace-brand.js
           else
             echo "Brand replacement not needed for this site"
           fi
