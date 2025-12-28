@@ -157,6 +157,7 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
+          cache-dependency-path: "www.tikmatrix.com/package-lock.json"
 
       - name: Install dependencies
         run: cd www.tikmatrix.com && npm ci
@@ -174,7 +175,7 @@ jobs:
           fi
 
       - name: Build project
-        run: npm run build
+        run: cd www.tikmatrix.com && npm run build
 
       - name: Create deployment archive
         run: |
@@ -199,6 +200,9 @@ jobs:
         deployment: ${{ fromJson(needs.prepare.outputs.deployments) }}
       fail-fast: false
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
