@@ -33,13 +33,8 @@ jobs:
       sites: ${{ steps.get-sites.outputs.sites }}
       deployments: ${{ steps.get-sites.outputs.deployments }}
     steps:
-      - name: Checkout www.tikmatrix.com code
+      - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          repository: tikmatrix/www.tikmatrix.com
-          token: ${{ secrets.REPO_TOKEN }}
-          ref: main
-          path: www.tikmatrix.com
 
       - name: Determine target sites and deployments
         id: get-sites
@@ -149,8 +144,13 @@ jobs:
         site: ${{ fromJson(needs.prepare.outputs.sites) }}
       fail-fast: false
     steps:
-      - name: Checkout code
+      - name: Checkout www.tikmatrix.com code
         uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/www.tikmatrix.com
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: main
+          path: www.tikmatrix.com
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -159,10 +159,11 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm ci
+        run: cd www.tikmatrix.com && npm ci
 
       - name: Run brand replacement if needed
         run: |
+          cd www.tikmatrix.com
           BRAND_REPLACE=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.brandReplace')
 
           if [[ "$BRAND_REPLACE" == "true" ]]; then
@@ -177,6 +178,7 @@ jobs:
 
       - name: Create deployment archive
         run: |
+          cd www.tikmatrix.com
           cd build
           tar -czf ../build-${{ matrix.site.name }}.tar.gz .
           cd ..
@@ -197,9 +199,6 @@ jobs:
         deployment: ${{ fromJson(needs.prepare.outputs.deployments) }}
       fail-fast: false
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
