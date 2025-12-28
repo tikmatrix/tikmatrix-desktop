@@ -188,7 +188,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact-${{ matrix.site.name }}
-          path: build-${{ matrix.site.name }}.tar.gz
+          path: www.tikmatrix.com/build-${{ matrix.site.name }}.tar.gz
           retention-days: 1
 
   deploy:
