@@ -1,0 +1,221 @@
+name: Deploy TikMatrix API Rust Service
+run-name: ${{ github.actor }} is deploying TikMatrix API Rust Service 🚀
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version tag (e.g., v1.0.0)"
+        required: true
+        type: string
+      branch:
+        description: "Branch to build from in tikmatrix-api-rs"
+        required: false
+        default: "main"
+        type: string
+      server:
+        description: "Target server (leave empty for all servers)"
+        required: false
+        type: choice
+        options:
+          - ""
+          - server-us
+          - server-dublin
+          - server-sgp
+      deploy_geolite:
+        description: "Deploy GeoLite2-Country.mmdb file (enable for first deployment or updates)"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      servers: ${{ steps.get-servers.outputs.servers }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Determine target servers
+        id: get-servers
+        run: |
+          CONFIG=$(cat deploy-config.json)
+          SELECTED_SERVER="${{ github.event.inputs.server }}"
+
+          if [[ -n "$SELECTED_SERVER" ]]; then
+            # Use specific server
+            SERVERS=$(echo "$CONFIG" | jq -c --arg target "$SELECTED_SERVER" '[.servers[] | select(.id == $target)]')
+          else
+            # Use all servers
+            SERVERS=$(echo "$CONFIG" | jq -c '.servers')
+          fi
+
+          # Validate servers is not empty
+          if [[ -z "$SERVERS" || "$SERVERS" == "[]" || "$SERVERS" == "null" ]]; then
+            echo "Error: No servers found"
+            exit 1
+          fi
+
+          echo "servers=$SERVERS" >> $GITHUB_OUTPUT
+          echo "Target servers: $SERVERS"
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tikmatrix-api-rs repository
+        uses: actions/checkout@v3
+        with:
+          repository: tikmatrix/tikmatrix-api-rs
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+          path: tikmatrix-api-rs
+
+      - name: Install Rust toolchain
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable --component rustfmt
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Cache cargo registry
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Build release
+        run: cd tikmatrix-api-rs && cargo build --release
+
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: tikmatrix-binary
+          path: tikmatrix-api-rs/target/release/tikmatrix-api-rs
+
+      - name: Upload GeoLite2 database
+        if: ${{ inputs.deploy_geolite }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: geolite2-db
+          path: tikmatrix-api-rs/data/GeoLite2-Country.mmdb
+
+  deploy:
+    needs: [prepare, build]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download binary
+        uses: actions/download-artifact@v4
+        with:
+          name: tikmatrix-binary
+
+      - name: Download GeoLite2 database
+        if: ${{ inputs.deploy_geolite }}
+        uses: actions/download-artifact@v4
+        with:
+          name: geolite2-db
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Deploy to ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+          REMOTE_DIR: /home/deploy/apps/tikmatrix-api-rs
+          DEPLOY_GEOLITE: ${{ inputs.deploy_geolite }}
+        run: |
+          SERVER_ID="${{ matrix.server.id }}"
+          SERVER_HOST="${{ matrix.server.host }}"
+          SERVER_PORT="${{ matrix.server.port }}"
+          SERVER_USER="${{ matrix.server.user }}"
+
+          echo "🚀 Deploying to $SERVER_ID ($SERVER_HOST)"
+
+          # Source common library functions
+          source ./scripts/lib-common.sh
+
+          # Upload binary
+          log_info "Uploading binary to server"
+          scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+            "tikmatrix-api-rs" "tikmatrix-api-rs.tmp"
+
+          # Upload GeoLite2 database if enabled
+          if [[ "$DEPLOY_GEOLITE" == "true" ]]; then
+            log_info "Uploading GeoLite2-Country.mmdb to server"
+            scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+              "GeoLite2-Country.mmdb" "GeoLite2-Country.mmdb.tmp"
+          fi
+
+          # Deploy and setup service
+          log_info "Setting up service on server"
+          ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            -o ConnectTimeout=10 \
+            "$SERVER_USER@$SERVER_HOST" bash -s "$DEPLOY_GEOLITE" << 'EOF'
+          set -euo pipefail
+
+          REMOTE_DIR="/home/deploy/apps/tikmatrix-api-rs"
+          DEPLOY_GEOLITE="$1"
+
+          # Move binary to final location
+          echo "Moving binary to $REMOTE_DIR"
+          mkdir -p "$REMOTE_DIR"
+          mv ~/tikmatrix-api-rs.tmp "$REMOTE_DIR/tikmatrix-api-rs"
+          chmod +x "$REMOTE_DIR/tikmatrix-api-rs"
+
+          # Move GeoLite2 database if enabled
+          if [[ "$DEPLOY_GEOLITE" == "true" ]]; then
+            echo "Moving GeoLite2-Country.mmdb to $REMOTE_DIR/data/"
+            mkdir -p "$REMOTE_DIR/data"
+            mv ~/GeoLite2-Country.mmdb.tmp "$REMOTE_DIR/data/GeoLite2-Country.mmdb"
+            chmod 644 "$REMOTE_DIR/data/GeoLite2-Country.mmdb"
+          fi
+
+          # Create systemd service
+          echo "Creating systemd service"
+          cat > /tmp/tikmatrix-api-rs.service <<'SERVICE'
+          [Unit]
+          Description=TikMatrix API Service
+          After=network.target
+
+          [Service]
+          User=deploy
+          WorkingDirectory=/home/deploy/apps/tikmatrix-api-rs
+          ExecStart=/home/deploy/apps/tikmatrix-api-rs/tikmatrix-api-rs
+          Restart=on-failure
+          RestartSec=5
+          Environment=RUST_LOG=info
+
+          [Install]
+          WantedBy=multi-user.target
+          SERVICE
+
+          # Install and restart service
+          echo "Installing and starting systemd service"
+          sudo mv /tmp/tikmatrix-api-rs.service /etc/systemd/system/
+          sudo systemctl daemon-reload
+          sudo systemctl enable --now tikmatrix-api-rs.service || true
+          sudo systemctl restart tikmatrix-api-rs.service
+          echo "✅ Deployment completed!"
+          EOF
+
+          log_success "Deployment to $SERVER_ID completed successfully!"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

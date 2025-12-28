@@ -1,0 +1,57 @@
+{
+    "servers": [
+        {
+            "id": "server-us",
+            "host": "23.95.253.245",
+            "port": 22,
+            "user": "deploy"
+        },
+        {
+            "id": "server-dublin",
+            "host": "172.245.97.215",
+            "port": 22,
+            "user": "deploy"
+        },
+        {
+            "id": "server-sgp",
+            "host": "52.77.229.28",
+            "port": 22,
+            "user": "deploy"
+        }
+    ],
+    "sites": [
+        {
+            "name": "tikmatrix",
+            "domain": "tikmatrix.com",
+            "branch": "main",
+            "brandReplace": false,
+            "deployTo": [
+                "server-us",
+                "server-dublin",
+                "server-sgp"
+            ]
+        },
+        {
+            "name": "ytmatrix",
+            "domain": "ytmatrix.com",
+            "branch": "main",
+            "brandReplace": false,
+            "deployTo": [
+                "server-us",
+                "server-dublin",
+                "server-sgp"
+            ]
+        },
+        {
+            "name": "igmatrix",
+            "domain": "igmatrix.com",
+            "branch": "main",
+            "brandReplace": true,
+            "deployTo": [
+                "server-us",
+                "server-dublin",
+                "server-sgp"
+            ]
+        }
+    ]
+}
