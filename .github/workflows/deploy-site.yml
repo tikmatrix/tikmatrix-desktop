@@ -221,7 +221,7 @@ jobs:
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
           echo "🚀 Deploying $SITE to ${{ matrix.deployment.server.id }} (${{ matrix.deployment.server.host }})"
-
+          chmod +x ./scripts/deploy-site.sh
           ./scripts/deploy-site.sh \
             "${{ matrix.deployment.server.id }}" \
             "$SITE" \
