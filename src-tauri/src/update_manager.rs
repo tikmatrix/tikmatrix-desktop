@@ -111,7 +111,7 @@ fn copy_file_with_retry(
 fn get_default_check_libs_url() -> String {
     if cfg!(debug_assertions) {
         // In dev builds prefer local dev server
-        "http://127.0.0.1:8787/front-api/check_libs?beta=0".to_string()
+        "http://localhost:3000/front-api/check_libs?beta=0".to_string()
     } else {
         // Production default
         "https://api.niostack.com/front-api/check_libs?beta=0".to_string()
