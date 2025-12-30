@@ -778,7 +778,7 @@ export default {
   price: '价格',
   privacyPolicy: '隐私政策',
   pro: '专业',
-  productAndCaptionSettings: '商品与文案',
+  postOptions: '帖子选项',
   productLink: '商品链接',
   profile: '资料',
   profileOrder: '个人资料顺序',

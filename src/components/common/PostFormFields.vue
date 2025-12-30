@@ -209,7 +209,7 @@
 
         <div class="card bg-base-100 border border-base-200 shadow-md">
             <div class="card-body space-y-6">
-                <h3 class="card-title text-lg font-semibold">{{ $t('productAndCaptionSettings') }}</h3>
+                <h3 class="card-title text-lg font-semibold">{{ $t('postOptions') }}</h3>
                 <div class="space-y-4">
                     <div class="grid gap-3 md:grid-cols-[180px_minmax(0,1fr)] items-start">
                         <div class="flex items-center gap-1 md:justify-end md:pt-1"

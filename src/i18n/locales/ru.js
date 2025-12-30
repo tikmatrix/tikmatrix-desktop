@@ -778,7 +778,7 @@ export default {
   price: 'Цена',
   privacyPolicy: 'Политика конфиденциальности',
   pro: 'Профессиональный',
-  productAndCaptionSettings: 'Товары и тексты',
+  postOptions: 'Параметры поста',
   productLink: 'Ссылка на продукт',
   profile: 'Профиль',
   profileOrder: 'Порядок профиля',

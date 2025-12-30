@@ -778,7 +778,7 @@ export default {
   price: 'Price',
   privacyPolicy: 'Privacy Policy',
   pro: 'Pro',
-  productAndCaptionSettings: 'Product & Captions',
+  postOptions: 'Post Options',
   productLink: 'Product Link',
   profile: 'Profile',
   profileOrder: 'Profile Order',
