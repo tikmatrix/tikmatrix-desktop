@@ -1,8 +1,8 @@
 {
     "appName": "IgMatrix",
     "officialWebsite": "https://igmatrix.com",
-    "emailSupport": "support@tikmatrix.com",
-    "telegramSupport": "https://t.me/tikmatrix_agent_bot",
+    "emailSupport": "",
+    "telegramSupport": "",
     "whatsappSupport": "",
     "iconFile": "app-icon.png",
     "enablePay": true,
