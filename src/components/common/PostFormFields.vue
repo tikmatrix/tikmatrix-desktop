@@ -240,6 +240,22 @@
                     <div class="grid gap-3 md:grid-cols-[180px_minmax(0,1fr)] items-start">
                         <div class="flex items-center gap-1 md:justify-end md:pt-1">
                             <span class="text-md font-semibold uppercase tracking-wide text-base-content/70">{{
+                                $t('aiLabel') }}</span>
+                            <div class="tooltip tooltip-right" :data-tip="$t('aiLabelDescription')">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    class="stroke-info shrink-0 w-5 h-5 cursor-help">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <input type="checkbox" class="toggle toggle-primary" v-model="localFormData.ai_label" />
+                        </div>
+                    </div>
+                    <div class="grid gap-3 md:grid-cols-[180px_minmax(0,1fr)] items-start">
+                        <div class="flex items-center gap-1 md:justify-end md:pt-1">
+                            <span class="text-md font-semibold uppercase tracking-wide text-base-content/70">{{
                                 $t('captions') }}</span>
                             <div class="tooltip tooltip-right" :data-tip="$t('captionsTips')">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
