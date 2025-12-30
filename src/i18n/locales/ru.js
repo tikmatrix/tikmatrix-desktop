@@ -59,6 +59,8 @@ export default {
   aiAgentGoalPlaceholder: 'Например: Открыть TikTok и найти "котики", затем поставить лайк первым 3 видео',
   aiAgentSystemPromptHint: 'Оставьте пустым для использования стандартного промпта. Продвинутые пользователи могут настроить поведение AI.',
   aiMade: 'Сделано ИИ',
+  aiLabel: 'Метка ИИ',
+  aiLabelDescription: 'При включении контент будет помечен как созданный ИИ',
   alipayPayment: 'Alipay',
   all: 'Все',
   allDevices: 'Все',

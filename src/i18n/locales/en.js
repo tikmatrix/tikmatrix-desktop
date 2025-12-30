@@ -59,6 +59,8 @@ export default {
   aiAgentGoalPlaceholder: 'e.g., Open TikTok and search for "cats", then like the first 3 videos',
   aiAgentSystemPromptHint: 'Leave empty to use the default prompt. Advanced users can customize AI behavior here.',
   aiMade: 'AI Made',
+  aiLabel: 'AI Label',
+  aiLabelDescription: 'When enabled, the content will be tagged as AI-generated',
   alipayPayment: 'Alipay',
   all: 'All',
   allDevices: 'All Devices',
