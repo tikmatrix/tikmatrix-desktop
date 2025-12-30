@@ -251,7 +251,6 @@
                         </div>
                         <div class="flex flex-wrap items-center gap-2">
                             <input type="checkbox" class="toggle toggle-primary" v-model="localFormData.ai_label" />
-                            <span class="text-md text-base-content/70">{{ $t('aiLabelDescription') }}</span>
                         </div>
                     </div>
                     <div class="grid gap-3 md:grid-cols-[180px_minmax(0,1fr)] items-start">
