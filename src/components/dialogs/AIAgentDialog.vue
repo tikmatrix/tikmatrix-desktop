@@ -205,7 +205,7 @@ export default {
                         messages: [
                             { role: 'user', content: 'Say "OK" if you can receive this message.' }
                         ],
-                        max_tokens: 10
+                        max_completion_tokens: 10
                     })
                 });
 
