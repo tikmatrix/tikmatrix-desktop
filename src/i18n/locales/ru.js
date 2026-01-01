@@ -1218,7 +1218,6 @@ export default {
   telegram: 'Telegram',
   telegramCustom: 'Настройка Telegram',
   telegramSupport: 'Поддержка в Telegram',
-  temperature: 'Температура',
   termsOfService: 'Условия обслуживания',
   test: 'Тест',
   testChatGPT: 'Тест ChatGPT',

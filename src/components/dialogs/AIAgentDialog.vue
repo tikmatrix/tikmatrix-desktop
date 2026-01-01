@@ -89,15 +89,7 @@
                             v-model.number="max_steps" />
                     </div>
 
-                    <!-- Temperature -->
-                    <div class="form-control">
-                        <label class="label py-1">
-                            <span class="label-text text-md">{{ $t('temperature') }}</span>
-                            <span class="label-text-alt text-base-content/60">0.0 - 1.0</span>
-                        </label>
-                        <input type="number" class="input input-bordered w-full" min="0" max="1" step="0.1"
-                            v-model.number="chatgpt_settings.temperature" />
-                    </div>
+
 
                     <!-- System Prompt -->
                     <div class="form-control md:col-span-2">
@@ -159,7 +151,6 @@ export default {
                     api_key: '',
                     model: 'gpt-4o-mini',
                     system_prompt: '',
-                    temperature: 0.3
                 }
             },
             ['goal', 'max_steps', 'chatgpt_settings']

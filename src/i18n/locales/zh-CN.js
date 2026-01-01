@@ -1218,7 +1218,6 @@ export default {
   telegram: 'Telegram',
   telegramCustom: 'Telegram 客服',
   telegramSupport: 'Telegram 支持',
-  temperature: '温度参数',
   termsOfService: '服务条款',
   test: 'Test',
   testChatGPT: '测试 ChatGPT',
