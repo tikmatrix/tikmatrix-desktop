@@ -81,6 +81,14 @@ jobs:
           source-dir: ./video-magic/src-tauri/target/universal-apple-darwin/release/bundle/dmg
           destination-dir: ./
 
+      - name: Update VideoMagic version
+        env:
+          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd video-magic
+          node ../tikmatrix-desktop/scripts/update-version.js --app=videomagic --app-name=VideoMagic
+
       - name: Clear uploaded files
         run: |
           rm -rf ./video-magic/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
