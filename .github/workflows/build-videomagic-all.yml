@@ -34,7 +34,7 @@ jobs:
         with:
           repository: tikmatrix/video-magic
           ref: ${{ inputs.branch }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.REPO_TOKEN }}
 
       - name: Create and push tag
         run: |
