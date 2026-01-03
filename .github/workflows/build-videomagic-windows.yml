@@ -37,7 +37,7 @@ jobs:
         with:
           repository: tikmatrix/video-magic
           ref: ${{ inputs.branch }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.REPO_TOKEN }}
 
       - name: Create and push tag
         run: |
@@ -64,6 +64,7 @@ jobs:
           repository: tikmatrix/video-magic
           ref: ${{ inputs.branch }}
           path: video-magic
+          token: ${{ secrets.REPO_TOKEN }}
 
       - name: Checkout TikMatrix Desktop (for scripts)
         uses: actions/checkout@v3
