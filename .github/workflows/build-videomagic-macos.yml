@@ -98,5 +98,7 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          cd video-magic
-          node ../tikmatrix-desktop/scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=videomagic --app-name=VideoMagic
+          # Copy tauri.conf.json for update-download-url.js to read version
+          cp ./video-magic/src-tauri/tauri.conf.json ./tikmatrix-desktop/src-tauri/tauri.conf.json
+          cd tikmatrix-desktop
+          node scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=videomagic --app-name=VideoMagic
