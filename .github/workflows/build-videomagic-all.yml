@@ -26,30 +26,7 @@ permissions:
   contents: write
 
 jobs:
-  create-tag:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ inputs.branch }}
-
-      - name: Create and push tag
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Check if tag already exists on remote
-          if git ls-remote --tags origin | grep -q "refs/tags/${{ inputs.version }}$"; then
-            echo "Tag ${{ inputs.version }} already exists on remote, skipping tag creation"
-          else
-            git tag -a "${{ inputs.version }}" -m "Release ${{ inputs.version }}"
-            git push origin "${{ inputs.version }}"
-            echo "Tag ${{ inputs.version }} created and pushed successfully"
-          fi
-
   build-videomagic-windows:
-    needs: create-tag
     if: ${{ inputs.platforms == 'all' || inputs.platforms == 'windows' }}
     uses: ./.github/workflows/build-videomagic-windows.yml
     with:
@@ -58,7 +35,6 @@ jobs:
     secrets: inherit
 
   build-videomagic-macos:
-    needs: create-tag
     if: ${{ inputs.platforms == 'all' || inputs.platforms == 'macos' }}
     uses: ./.github/workflows/build-videomagic-macos.yml
     with:

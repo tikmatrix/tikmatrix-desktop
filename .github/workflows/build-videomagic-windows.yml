@@ -28,38 +28,20 @@ permissions:
   contents: write
 
 jobs:
-  create-tag:
-    if: ${{ github.event_name == 'workflow_dispatch' }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ inputs.branch }}
-
-      - name: Create and push tag
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Check if tag already exists on remote
-          if git ls-remote --tags origin | grep -q "refs/tags/${{ inputs.version }}$"; then
-            echo "Tag ${{ inputs.version }} already exists on remote, skipping tag creation"
-          else
-            git tag -a "${{ inputs.version }}" -m "Release ${{ inputs.version }}"
-            git push origin "${{ inputs.version }}"
-            echo "Tag ${{ inputs.version }} created and pushed successfully"
-          fi
-
   build-videomagic-windows:
-    needs: [create-tag]
-    if: ${{ always() && (needs.create-tag.result == 'success' || needs.create-tag.result == 'skipped') }}
     runs-on: windows-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout VideoMagic repository
         uses: actions/checkout@v3
         with:
+          repository: tikmatrix/video-magic
           ref: ${{ inputs.branch }}
+          path: video-magic
+
+      - name: Checkout TikMatrix Desktop (for scripts)
+        uses: actions/checkout@v3
+        with:
+          path: tikmatrix-desktop
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -75,13 +57,14 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            src-tauri/target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+            video-magic/src-tauri/target
+          key: ${{ runner.os }}-cargo-videomagic-${{ hashFiles('video-magic/**/Cargo.lock') }}
           restore-keys: |
-            ${{ runner.os }}-cargo-
+            ${{ runner.os }}-cargo-videomagic-
 
       - name: Build VideoMagic package
         run: |
+          cd video-magic
           npm install
           .\build.ps1
 
@@ -92,7 +75,7 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./src-tauri/target/release/bundle/msi
+          source-dir: ./video-magic/src-tauri/target/release/bundle/msi
           destination-dir: ./
 
       - name: Update VideoMagic version
@@ -100,15 +83,17 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node scripts/update-version.js --app=videomagic --app-name=VideoMagic
+          cd video-magic
+          node ../tikmatrix-desktop/scripts/update-version.js --app=videomagic --app-name=VideoMagic
 
       - name: Clear uploaded files
         run: |
-          Remove-Item -Path .\src-tauri\target\release\bundle\msi\* -Force -Recurse
+          Remove-Item -Path .\video-magic\src-tauri\target\release\bundle\msi\* -Force -Recurse
 
       - name: Update VideoMagic download url
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=videomagic --app-name=VideoMagic
+          cd video-magic
+          node ../tikmatrix-desktop/scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=videomagic --app-name=VideoMagic
