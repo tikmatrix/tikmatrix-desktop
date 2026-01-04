@@ -1,17 +1,6 @@
 name: Build VideoMagic - Windows
 run-name: ${{ github.actor }} is building VideoMagic (Windows) 🚀
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: "Version tag (e.g., v1.0.0)"
-        required: true
-        type: string
-      branch:
-        description: "Branch to build from"
-        required: false
-        default: "main"
-        type: string
   workflow_call:
     inputs:
       version:
@@ -28,34 +17,7 @@ permissions:
   contents: write
 
 jobs:
-  create-tag:
-    if: ${{ github.event_name == 'workflow_dispatch' }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout VideoMagic repository
-        uses: actions/checkout@v3
-        with:
-          repository: tikmatrix/video-magic
-          ref: ${{ inputs.branch }}
-          token: ${{ secrets.REPO_TOKEN }}
-
-      - name: Create and push tag
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Check if tag already exists on remote
-          if git ls-remote --tags origin | grep -q "refs/tags/${{ inputs.version }}$"; then
-            echo "Tag ${{ inputs.version }} already exists on remote, skipping tag creation"
-          else
-            git tag -a "${{ inputs.version }}" -m "Release ${{ inputs.version }}"
-            git push origin "${{ inputs.version }}"
-            echo "Tag ${{ inputs.version }} created and pushed successfully"
-          fi
-
   build-videomagic-windows:
-    needs: [create-tag]
-    if: ${{ always() && (needs.create-tag.result == 'success' || needs.create-tag.result == 'skipped') }}
     runs-on: windows-latest
     steps:
       - name: Checkout VideoMagic repository
