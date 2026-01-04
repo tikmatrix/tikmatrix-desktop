@@ -189,6 +189,7 @@ jobs:
           # Create .env file from secret and upload
           log_info "Creating .env file from secret"
           echo "$ENV_PROD_CONTENT" > .env.tmp
+          chmod 600 .env.tmp
           scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
             ".env.tmp" ".env.tmp"
           rm -f .env.tmp
