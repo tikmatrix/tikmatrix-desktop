@@ -111,12 +111,6 @@ jobs:
           name: nginx-config
           path: tikmatrix-admin-pro/src-rs/api.tikmatrix.com.conf
 
-      - name: Upload .env.prod file
-        uses: actions/upload-artifact@v4
-        with:
-          name: env-prod-file
-          path: tikmatrix-admin-pro/src-rs/.env.prod
-
   deploy:
     needs: [prepare, build]
     runs-on: ubuntu-latest
@@ -145,11 +139,6 @@ jobs:
         with:
           name: nginx-config
 
-      - name: Download .env.prod file
-        uses: actions/download-artifact@v4
-        with:
-          name: env-prod-file
-
       - name: Setup SSH Key
         run: |
           mkdir -p ~/.ssh
@@ -163,6 +152,7 @@ jobs:
           REMOTE_DIR: /home/deploy/apps/tikmatrix-api-rs
           DEPLOY_GEOLITE: ${{ inputs.deploy_geolite }}
           DEPLOY_NGINX_CONFIG: ${{ inputs.deploy_nginx_config }}
+          ENV_PROD_CONTENT: ${{ secrets.ENV_PROD_CONTENT }}
         run: |
           SERVER_ID="${{ matrix.server.id }}"
           SERVER_HOST="${{ matrix.server.host }}"
@@ -193,13 +183,16 @@ jobs:
               "api.tikmatrix.com.conf" "api.tikmatrix.com.conf.tmp"
           fi
 
-          # Upload .env.prod file
-          log_info "Uploading .env.prod file to server"
-          scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
-            ".env.prod" ".env.prod.tmp"
-
           # Deploy and setup service
           log_info "Setting up service on server"
+          
+          # Create .env file from secret and upload
+          log_info "Creating .env file from secret"
+          echo "$ENV_PROD_CONTENT" > .env.tmp
+          scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+            ".env.tmp" ".env.tmp"
+          rm -f .env.tmp
+          
           ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
@@ -225,9 +218,9 @@ jobs:
             chmod 644 "$REMOTE_DIR/data/GeoLite2-Country.mmdb"
           fi
 
-          # Move .env.prod file to .env
-          echo "Moving .env.prod to $REMOTE_DIR/.env"
-          mv ~/.env.prod.tmp "$REMOTE_DIR/.env"
+          # Move .env file to program directory
+          echo "Moving .env to $REMOTE_DIR/.env"
+          mv ~/.env.tmp "$REMOTE_DIR/.env"
           chmod 600 "$REMOTE_DIR/.env"
 
           # Deploy nginx config if enabled
