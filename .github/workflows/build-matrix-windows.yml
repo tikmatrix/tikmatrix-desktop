@@ -12,6 +12,11 @@ on:
         required: false
         default: "main"
         type: string
+      build_apps:
+        description: "Apps to build"
+        required: false
+        default: "all"
+        type: string
 
 permissions:
   contents: write
@@ -44,12 +49,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Build official package
-        run: |
-          npm install
-          .\build.ps1
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+        run: .\build.ps1
 
       - name: Upload official package to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -60,6 +68,7 @@ jobs:
           destination-dir: ./
 
       - name: Update version
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -67,15 +76,18 @@ jobs:
           node scripts/update-version.js
 
       - name: Clear uploaded files
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
           Remove-Item -Path .\src-tauri\target\release\bundle\msi\* -Force -Recurse
 
       # IgMatrix whitelabel build and upload steps
       - name: Build IgMatrix whitelabel package
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
           node scripts/build-whitelabel.js IgMatrix
 
       - name: Upload IgMatrix package to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -86,6 +98,7 @@ jobs:
           destination-dir: ./
 
       - name: Update IgMatrix version
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -93,10 +106,12 @@ jobs:
           node scripts/update-version.js --app=igmatrix --app-name=IgMatrix
 
       - name: Clear uploaded files
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
           Remove-Item -Path .\src-tauri\target\release\bundle\msi\* -Force -Recurse
 
       - name: Update IgMatrix download url
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}

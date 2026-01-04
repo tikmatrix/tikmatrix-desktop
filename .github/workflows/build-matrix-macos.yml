@@ -12,6 +12,11 @@ on:
         required: false
         default: "main"
         type: string
+      build_apps:
+        description: "Apps to build"
+        required: false
+        default: "all"
+        type: string
 
 permissions:
   contents: write
@@ -46,13 +51,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Build official package
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
-          npm install
           chmod +x ./build.sh
           ./build.sh
 
       - name: Upload official package to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -63,15 +72,18 @@ jobs:
           destination-dir: ./
 
       - name: Clear uploaded files
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
           rm -rf ./src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
 
       # IgMatrix whitelabel build and upload steps
       - name: Build IgMatrix whitelabel package
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
           node scripts/build-whitelabel.js IgMatrix
 
       - name: Upload IgMatrix package to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -82,10 +94,12 @@ jobs:
           destination-dir: ./
 
       - name: Clear uploaded files
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
           rm -rf ./src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
 
       - name: Update IgMatrix download url
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}

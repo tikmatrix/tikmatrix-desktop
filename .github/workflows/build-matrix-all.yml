@@ -21,6 +21,15 @@ on:
           - all
           - windows
           - macos
+      build_apps:
+        description: "Apps to build"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - all
+          - tikmatrix
+          - igmatrix
 
 permissions:
   contents: write
@@ -55,6 +64,7 @@ jobs:
     with:
       version: ${{ inputs.version }}
       branch: ${{ inputs.branch }}
+      build_apps: ${{ inputs.build_apps }}
     secrets: inherit
 
   build-matrix-macos:
@@ -64,4 +74,5 @@ jobs:
     with:
       version: ${{ inputs.version }}
       branch: ${{ inputs.branch }}
+      build_apps: ${{ inputs.build_apps }}
     secrets: inherit
