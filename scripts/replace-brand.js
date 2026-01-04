@@ -1,5 +1,9 @@
-const fs = require('fs').promises;
-const path = require('path');
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const root = process.cwd();
 
@@ -35,6 +39,7 @@ async function processSrc() {
     try {
         const files = await walk(SRC_DIR);
         const targets = files.filter(f => fileExts.includes(path.extname(f)));
+        console.log(`Found ${targets.length} source files to process`);
         for (const f of targets) {
             let content = await fs.readFile(f, 'utf8');
             const updated = replaceAll(content);
@@ -48,7 +53,9 @@ async function processSrc() {
             console.warn('No src directory found, skipping src processing.');
             return;
         }
-        throw err;
+        console.error('Error processing src directory:', err.message);
+        console.warn('Skipping src processing due to error.');
+        return;
     }
 }
 
@@ -56,6 +63,7 @@ async function processI18n() {
     try {
         const files = await walk(I18N_DIR);
         const targets = files.filter(f => path.basename(f) === 'code.json');
+        console.log(`Found ${targets.length} i18n files to process`);
         for (const f of targets) {
             let content = await fs.readFile(f, 'utf8');
             const updated = replaceAll(content);
@@ -69,7 +77,9 @@ async function processI18n() {
             console.warn('No i18n directory found, skipping i18n processing.');
             return;
         }
-        throw err;
+        console.error('Error processing i18n directory:', err.message);
+        console.warn('Skipping i18n processing due to error.');
+        return;
     }
 }
 
@@ -86,18 +96,23 @@ async function processDocusaurus() {
         if (updated !== content) {
             await fs.writeFile(file, updated, 'utf8');
             console.log('[updated]', path.relative(root, file));
+        } else {
+            console.log('No changes needed in docusaurus.config.js');
         }
     } catch (err) {
         if (err.code === 'ENOENT') {
             console.warn('No docusaurus.config.js found, skipping docusaurus config processing.');
             return;
         }
-        throw err;
+        console.error('Error processing docusaurus.config.js:', err.message);
+        console.warn('Skipping docusaurus config processing due to error.');
+        return;
     }
 }
 
 async function main() {
     console.log('Brand replace start: TikMatrix -> IgMatrix, TikTok -> Instagram');
+    console.log('Working directory:', root);
     await processSrc();
     await processI18n();
     await processDocusaurus();
