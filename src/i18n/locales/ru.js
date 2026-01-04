@@ -649,6 +649,8 @@ export default {
   messageContents: 'Содержание сообщений',
   messageContentsOptionalTip: 'Необязательно при использовании ChatGPT. Если оставить пустым, будет использовано только сгенерированное сообщение.',
   messageContentsTips: 'Введите содержание сообщений, одно сообщение на строку',
+  messageContent: 'Содержимое сообщения',
+  messageContentTips: 'Введите содержимое сообщения (поддерживаются несколько строк)',
   messageJobs: 'Задания сообщений',
   messageSettings: 'Настройки сообщений',
   mid: 'ID машины',

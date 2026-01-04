@@ -649,6 +649,8 @@ export default {
   messageContents: 'Message Contents',
   messageContentsOptionalTip: 'Optional when using ChatGPT. Leave blank to use only the generated message.',
   messageContentsTips: 'Enter the message contents, one content per line',
+  messageContent: 'Message Content',
+  messageContentTips: 'Enter the message content (supports multiple lines)',
   messageJobs: 'Message Jobs',
   messageSettings: 'Message Settings',
   mid: 'Machine ID',

@@ -649,6 +649,8 @@ export default {
   messageContents: '消息内容',
   messageContentsOptionalTip: '启用 ChatGPT 时可选。不填则仅使用生成的消息。',
   messageContentsTips: '请输入消息内容，每行一个消息',
+  messageContent: '私信内容',
+  messageContentTips: '请输入私信内容，支持多行',
   messageJobs: '私信任务',
   messageSettings: '私信设置',
   mid: '机器码',
