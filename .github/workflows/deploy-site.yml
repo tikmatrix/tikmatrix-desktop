@@ -144,6 +144,11 @@ jobs:
         site: ${{ fromJson(needs.prepare.outputs.sites) }}
       fail-fast: false
     steps:
+      - name: Checkout tikmatrix-desktop for scripts
+        uses: actions/checkout@v4
+        with:
+          path: tikmatrix-desktop
+
       - name: Checkout www.tikmatrix.com code
         uses: actions/checkout@v4
         with:
@@ -169,7 +174,7 @@ jobs:
 
           if [[ "$BRAND_REPLACE" == "true" ]]; then
             echo "Running brand replacement..."
-            node ../scripts/replace-brand.js
+            node ../tikmatrix-desktop/scripts/replace-brand.js
           else
             echo "Brand replacement not needed for this site"
           fi
