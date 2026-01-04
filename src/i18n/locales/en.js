@@ -335,6 +335,7 @@ export default {
   privacySettings: 'Privacy Settings',
   privacySettingsWarning: 'The privacy settings function can filter posts based on maximum views and update privacy settings for posts. Please configure the settings below.',
   privacy_settings: 'Privacy Settings',
+  maxPosts: 'Maximum Posts to Process',
   whoCanWatchThisVideo: 'Who can watch this video',
   everyone: 'Everyone',
   onlyYou: 'Only you',

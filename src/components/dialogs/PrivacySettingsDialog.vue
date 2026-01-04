@@ -13,12 +13,19 @@
     <input class="input ring input-md ml-2" type="number" v-model="maxViews" :placeholder="$t('maxViews')" />
   </div>
 
+  <!-- 最大处理帖子数参数 -->
+  <div class="flex items-center flex-row gap-2 max-w-full w-full mt-2">
+    <span class="font-bold">{{ $t('maxPosts') }}: </span>
+    <input class="input ring input-md ml-2" type="number" v-model="maxPosts" :placeholder="$t('maxPosts')" />
+  </div>
+
   <!-- 隐私设置：谁可以观看此视频 -->
   <div class="flex flex-col gap-2 max-w-full w-full mt-4">
     <span class="font-bold">{{ $t('whoCanWatchThisVideo') }}: </span>
     <div class="flex flex-row gap-4 ml-2">
       <label class="flex items-center gap-2 cursor-pointer">
-        <input type="radio" name="privacy" class="radio radio-primary" value="Everyone" v-model="whoCanWatchThisVideo" />
+        <input type="radio" name="privacy" class="radio radio-primary" value="Everyone"
+          v-model="whoCanWatchThisVideo" />
         <span>{{ $t('everyone') }}</span>
       </label>
       <label class="flex items-center gap-2 cursor-pointer">
@@ -26,7 +33,8 @@
         <span>{{ $t('friends') }}</span>
       </label>
       <label class="flex items-center gap-2 cursor-pointer">
-        <input type="radio" name="privacy" class="radio radio-primary" value="Only you" v-model="whoCanWatchThisVideo" />
+        <input type="radio" name="privacy" class="radio radio-primary" value="Only you"
+          v-model="whoCanWatchThisVideo" />
         <span>{{ $t('onlyYou') }}</span>
       </label>
     </div>
@@ -55,18 +63,20 @@ export default {
   name: 'PrivacySettings',
   mixins: [
     privacySettings.createVueMixin(
-      { 
+      {
         maxViews: 0,
+        maxPosts: 0,
         whoCanWatchThisVideo: 'Everyone',
         allowComments: true,
         allowReuseContent: true
       },
-      ['maxViews', 'whoCanWatchThisVideo', 'allowComments', 'allowReuseContent']
+      ['maxViews', 'maxPosts', 'whoCanWatchThisVideo', 'allowComments', 'allowReuseContent']
     )
   ],
   data() {
     return {
       maxViews: 0,
+      maxPosts: 0,
       whoCanWatchThisVideo: 'Everyone',
       allowComments: true,
       allowReuseContent: true
@@ -76,10 +86,11 @@ export default {
     async runScript(enable_multi_account = false, rotate_proxy = false) {
       await this.$emiter('run_now_by_account', {
         name: 'privacy_settings',
-        args: { 
-          enable_multi_account, 
+        args: {
+          enable_multi_account,
           rotate_proxy,
           max_views: Number(this.maxViews),
+          max_posts: Number(this.maxPosts),
           who_can_watch_this_video: this.whoCanWatchThisVideo,
           allow_comments: this.allowComments,
           allow_reuse_content: this.allowReuseContent

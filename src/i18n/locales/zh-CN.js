@@ -335,6 +335,7 @@ export default {
   privacySettings: '隐私设置',
   privacySettingsWarning: '隐私设置功能可以根据最大浏览量过滤帖子并更新帖子的隐私设置，请在下方配置相关设置。',
   privacy_settings: '隐私设置',
+  maxPosts: '最大处理帖子数',
   whoCanWatchThisVideo: '谁可以观看此视频',
   everyone: '所有人',
   onlyYou: '仅自己',
