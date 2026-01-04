@@ -40,6 +40,11 @@
         <font-awesome-icon icon="fa-solid fa-trash" class="h-3 w-3 text-error" />
         {{ $t('deletePost') }}
     </button>
+    <button class="btn btn-md btn-primary  ml-1 mb-1" v-if="whitelabelConfig.targetApp === 'tiktok'"
+        @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'privacySettings' } })">
+        <font-awesome-icon icon="fa-solid fa-shield-halved" class="h-3 w-3 text-info" />
+        {{ $t('privacySettings') }}
+    </button>
     <button class="btn btn-md btn-primary  ml-1 mb-1" v-if="whitelabelConfig.targetApp === 'instagram'"
         @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'deleteReel' } })">
         <font-awesome-icon icon="fa-solid fa-trash" class="h-3 w-3 text-error" />

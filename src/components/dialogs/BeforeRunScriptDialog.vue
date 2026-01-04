@@ -16,6 +16,7 @@
           || script.name === 'unFollowAll'
           || script.name === 'deletePost'
           || script.name === 'deleteReel'
+          || script.name === 'privacySettings'
           || script.name === 'boostUsers'
           || script.name === 'boostPosts'
           || script.name === 'boostLives'
@@ -63,6 +64,7 @@
     <MatchAccounts v-if="script.name === 'matchAccount'" ref="currentDialog" />
     <ScrapeUsersDialog v-if="script.name === 'scrapeUsers'" ref="currentDialog" />
     <DeletePostDialog v-if="script.name === 'deletePost'" ref="currentDialog" />
+    <PrivacySettingsDialog v-if="script.name === 'privacySettings'" ref="currentDialog" />
     <BoostUsersDialog v-if="script.name === 'boostUsers'" ref="currentDialog" />
     <BoostPostsDialog v-if="script.name === 'boostPosts'" ref="currentDialog" />
     <BoostCommentsDialog v-if="script.name === 'boostComments'" ref="currentDialog" />
@@ -94,6 +96,7 @@ import AccountWarmupDialog from './AccountWarmupDialog.vue'
 import PostDialog from './PostDialog.vue'
 import ScrapeUsersDialog from './ScrapeUsersDialog.vue'
 import DeletePostDialog from './DeletePostDialog.vue'
+import PrivacySettingsDialog from './PrivacySettingsDialog.vue'
 import BoostUsersDialog from './BoostUsersDialog.vue'
 import BoostPostsDialog from './BoostPostsDialog.vue'
 import BoostCommentsDialog from './BoostCommentsDialog.vue'
@@ -154,6 +157,7 @@ export default {
     PostDialog,
     ScrapeUsersDialog,
     DeletePostDialog,
+    PrivacySettingsDialog,
     BoostUsersDialog,
     BoostPostsDialog,
     BoostCommentsDialog,
