@@ -196,6 +196,7 @@ export const superMarketingSettings = new SettingsManager('super_marketing_setti
 export const boostCommentsSettings = new SettingsManager('boost_comments_settings.json');
 export const aiAgentSettings = new SettingsManager('ai_agent_settings.json');
 export const deleteReelSettings = new SettingsManager('delete_reel_settings.json');
+export const privacySettings = new SettingsManager('privacy_settings.json');
 
 // 导出常用函数
 export async function loadSettings(filename, defaultSettings = {}) {
