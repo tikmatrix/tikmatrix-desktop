@@ -4,10 +4,6 @@ run-name: ${{ github.actor }} is deploying TikMatrix API Rust Service 🚀
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: "Version tag (e.g., v1.0.0)"
-        required: true
-        type: string
       branch:
         description: "Branch to build from in tikmatrix-api-rs"
         required: false
