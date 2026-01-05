@@ -276,6 +276,12 @@ jobs:
             sudo rm -f /tmp/api.tikmatrix.com.conf.new
           fi
 
+          # Create log directory
+          echo "Creating log directory"
+          sudo mkdir -p /var/log/tikmatrix-api-rs
+          sudo chown deploy:deploy /var/log/tikmatrix-api-rs
+          sudo chmod 755 /var/log/tikmatrix-api-rs
+
           # Create systemd service
           echo "Creating systemd service"
           cat > /tmp/tikmatrix-api-rs.service <<'SERVICE'
@@ -290,6 +296,8 @@ jobs:
           Restart=on-failure
           RestartSec=5
           Environment=RUST_LOG=info
+          StandardOutput=append:/var/log/tikmatrix-api-rs/output.log
+          StandardError=append:/var/log/tikmatrix-api-rs/error.log
 
           [Install]
           WantedBy=multi-user.target
