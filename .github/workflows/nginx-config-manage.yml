@@ -152,35 +152,42 @@ jobs:
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
             -o ConnectTimeout=10 \
-            "$SERVER_USER@$SERVER_HOST" bash -s "$NGINX_CONFIG" << 'EOF'
+            "$SERVER_USER@$SERVER_HOST" bash -s -- "$NGINX_CONFIG" << 'EOF'
           set -euo pipefail
 
           NGINX_CONFIG="$1"
+
+          # Validate nginx config filename format (only allow alphanumeric, dots, and hyphens)
+          if [[ ! "$NGINX_CONFIG" =~ ^[a-zA-Z0-9._-]+\.conf$ ]]; then
+            echo "❌ Invalid nginx configuration filename: $NGINX_CONFIG"
+            exit 1
+          fi
+
           CONFIG_NAME="${NGINX_CONFIG%.conf}"
 
           echo "Deploying nginx configuration: $NGINX_CONFIG"
 
           # Move config to /tmp for testing
-          mv ~/${NGINX_CONFIG}.tmp /tmp/${NGINX_CONFIG}.new
-          chmod 644 /tmp/${NGINX_CONFIG}.new
+          mv ~/"${NGINX_CONFIG}.tmp" /tmp/"${NGINX_CONFIG}.new"
+          chmod 644 /tmp/"${NGINX_CONFIG}.new"
 
           # Backup existing config if it exists
           BACKUP_EXISTS=false
-          if [[ -f /etc/nginx/conf.d/$NGINX_CONFIG ]]; then
+          if [[ -f /etc/nginx/conf.d/"$NGINX_CONFIG" ]]; then
             echo "Backing up existing nginx configuration..."
-            if sudo cp /etc/nginx/conf.d/$NGINX_CONFIG /tmp/${NGINX_CONFIG}.backup; then
+            if sudo cp /etc/nginx/conf.d/"$NGINX_CONFIG" /tmp/"${NGINX_CONFIG}.backup"; then
               BACKUP_EXISTS=true
               echo "✅ Backup created successfully"
             else
               echo "❌ Failed to create backup"
-              sudo rm -f /tmp/${NGINX_CONFIG}.new
+              sudo rm -f /tmp/"${NGINX_CONFIG}.new"
               exit 1
             fi
           fi
 
           # Test nginx configuration before applying
           echo "Testing nginx configuration..."
-          sudo cp /tmp/${NGINX_CONFIG}.new /etc/nginx/conf.d/$NGINX_CONFIG
+          sudo cp /tmp/"${NGINX_CONFIG}.new" /etc/nginx/conf.d/"$NGINX_CONFIG"
 
           if sudo nginx -t; then
             echo "✅ Nginx configuration test passed"
@@ -191,21 +198,21 @@ jobs:
             echo "❌ Nginx configuration test failed"
             echo "Rolling back configuration..."
             if [[ "$BACKUP_EXISTS" == "true" ]]; then
-              sudo mv /tmp/${NGINX_CONFIG}.backup /etc/nginx/conf.d/$NGINX_CONFIG
+              sudo mv /tmp/"${NGINX_CONFIG}.backup" /etc/nginx/conf.d/"$NGINX_CONFIG"
               echo "✅ Previous configuration restored"
             else
-              sudo rm -f /etc/nginx/conf.d/$NGINX_CONFIG
+              sudo rm -f /etc/nginx/conf.d/"$NGINX_CONFIG"
               echo "⚠️  No previous configuration found, removed invalid config"
             fi
             # Clean up temporary file
-            sudo rm -f /tmp/${NGINX_CONFIG}.new
+            sudo rm -f /tmp/"${NGINX_CONFIG}.new"
             exit 1
           fi
 
           # Clean up temporary files after successful deployment
           echo "Cleaning up temporary files..."
-          sudo rm -f /tmp/${NGINX_CONFIG}.backup
-          sudo rm -f /tmp/${NGINX_CONFIG}.new
+          sudo rm -f /tmp/"${NGINX_CONFIG}.backup"
+          sudo rm -f /tmp/"${NGINX_CONFIG}.new"
           echo "✅ Configuration deployed successfully!"
           EOF
 

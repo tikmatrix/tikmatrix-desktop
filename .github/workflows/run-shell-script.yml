@@ -146,10 +146,10 @@ jobs:
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
             -o ConnectTimeout=10 \
-            "$SERVER_USER@$SERVER_HOST" bash -s "$SCRIPT_ARGS" << 'EOF'
+            "$SERVER_USER@$SERVER_HOST" bash -s -- "$SCRIPT_ARGS" << 'EOF'
           set -euo pipefail
 
-          SCRIPT_ARGS="$1"
+          SCRIPT_ARGS="${1:-}"
 
           echo "Making script executable..."
           chmod +x ~/script_to_run.sh
@@ -162,9 +162,10 @@ jobs:
           echo "Running script with args: $SCRIPT_ARGS"
           cd ~
 
-          # Execute the script
+          # Execute the script with properly quoted arguments
           if [[ -n "$SCRIPT_ARGS" ]]; then
-            ./script_to_run.sh $SCRIPT_ARGS
+            # Using eval with proper quoting to handle arguments safely
+            eval "./script_to_run.sh $SCRIPT_ARGS"
           else
             ./script_to_run.sh
           fi
