@@ -23,11 +23,6 @@ on:
         required: false
         default: false
         type: boolean
-      deploy_nginx_config:
-        description: "Deploy and update nginx configuration file (api.tikmatrix.com.conf)"
-        required: false
-        default: false
-        type: boolean
 
 permissions:
   contents: write
@@ -104,13 +99,6 @@ jobs:
           name: geolite2-db
           path: tikmatrix-admin-pro/src-rs/data/GeoLite2-Country.mmdb
 
-      - name: Upload nginx configuration
-        if: ${{ inputs.deploy_nginx_config }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: nginx-config
-          path: tikmatrix-admin-pro/src-rs/api.tikmatrix.com.conf
-
   deploy:
     needs: [prepare, build]
     runs-on: ubuntu-latest
@@ -122,6 +110,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
       - name: Download binary
         uses: actions/download-artifact@v4
         with:
@@ -132,12 +127,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: geolite2-db
-
-      - name: Download nginx configuration
-        if: ${{ inputs.deploy_nginx_config }}
-        uses: actions/download-artifact@v4
-        with:
-          name: nginx-config
 
       - name: Setup SSH Key
         run: |
@@ -151,7 +140,6 @@ jobs:
           SSH_KEY_FILE: ~/.ssh/deploy_key
           REMOTE_DIR: /home/deploy/apps/tikmatrix-api-rs
           DEPLOY_GEOLITE: ${{ inputs.deploy_geolite }}
-          DEPLOY_NGINX_CONFIG: ${{ inputs.deploy_nginx_config }}
           ENV_PROD_CONTENT: ${{ secrets.ENV_PROD_CONTENT }}
         run: |
           SERVER_ID="${{ matrix.server.id }}"
@@ -162,7 +150,7 @@ jobs:
           echo "🚀 Deploying to $SERVER_ID ($SERVER_HOST)"
 
           # Source common library functions
-          source ./scripts/lib-common.sh
+          source ./LinuxConfig/shell/lib-common.sh
 
           # Upload binary
           log_info "Uploading binary to server"
@@ -174,13 +162,6 @@ jobs:
             log_info "Uploading GeoLite2-Country.mmdb to server"
             scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
               "GeoLite2-Country.mmdb" "GeoLite2-Country.mmdb.tmp"
-          fi
-
-          # Upload nginx config if enabled
-          if [[ "$DEPLOY_NGINX_CONFIG" == "true" ]]; then
-            log_info "Uploading nginx configuration to server"
-            scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
-              "api.tikmatrix.com.conf" "api.tikmatrix.com.conf.tmp"
           fi
 
           # Deploy and setup service
@@ -198,12 +179,11 @@ jobs:
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
             -o ConnectTimeout=10 \
-            "$SERVER_USER@$SERVER_HOST" bash -s "$DEPLOY_GEOLITE" "$DEPLOY_NGINX_CONFIG" << 'EOF'
+            "$SERVER_USER@$SERVER_HOST" bash -s "$DEPLOY_GEOLITE" << 'EOF'
           set -euo pipefail
 
           REMOTE_DIR="/home/deploy/apps/tikmatrix-api-rs"
           DEPLOY_GEOLITE="$1"
-          DEPLOY_NGINX_CONFIG="$2"
 
           # Move binary to final location
           echo "Moving binary to $REMOTE_DIR"
@@ -223,58 +203,6 @@ jobs:
           echo "Moving .env to $REMOTE_DIR/.env"
           mv ~/.env.tmp "$REMOTE_DIR/.env"
           chmod 600 "$REMOTE_DIR/.env"
-
-          # Deploy nginx config if enabled
-          if [[ "$DEPLOY_NGINX_CONFIG" == "true" ]]; then
-            echo "Deploying nginx configuration"
-
-            # Move config to /tmp for testing
-            mv ~/api.tikmatrix.com.conf.tmp /tmp/api.tikmatrix.com.conf.new
-            chmod 644 /tmp/api.tikmatrix.com.conf.new
-
-            # Backup existing config if it exists
-            BACKUP_EXISTS=false
-            if [[ -f /etc/nginx/conf.d/api.tikmatrix.com.conf ]]; then
-              echo "Backing up existing nginx configuration..."
-              if sudo cp /etc/nginx/conf.d/api.tikmatrix.com.conf /tmp/api.tikmatrix.com.conf.backup; then
-                BACKUP_EXISTS=true
-                echo "✅ Backup created successfully"
-              else
-                echo "❌ Failed to create backup"
-                sudo rm -f /tmp/api.tikmatrix.com.conf.new
-                exit 1
-              fi
-            fi
-
-            # Test nginx configuration before applying
-            echo "Testing nginx configuration..."
-            sudo cp /tmp/api.tikmatrix.com.conf.new /etc/nginx/conf.d/api.tikmatrix.com.conf
-
-            if sudo nginx -t; then
-              echo "✅ Nginx configuration test passed"
-              echo "Reloading nginx..."
-              sudo systemctl reload nginx
-              echo "✅ Nginx reloaded successfully"
-            else
-              echo "❌ Nginx configuration test failed"
-              echo "Rolling back configuration..."
-              if [[ "$BACKUP_EXISTS" == "true" ]]; then
-                sudo mv /tmp/api.tikmatrix.com.conf.backup /etc/nginx/conf.d/api.tikmatrix.com.conf
-                echo "✅ Previous configuration restored"
-              else
-                sudo rm -f /etc/nginx/conf.d/api.tikmatrix.com.conf
-                echo "⚠️  No previous configuration found, removed invalid config"
-              fi
-              # Clean up temporary file
-              sudo rm -f /tmp/api.tikmatrix.com.conf.new
-              exit 1
-            fi
-
-            # Clean up temporary files after successful deployment
-            echo "Cleaning up temporary files..."
-            sudo rm -f /tmp/api.tikmatrix.com.conf.backup
-            sudo rm -f /tmp/api.tikmatrix.com.conf.new
-          fi
 
           # Create log directory
           echo "Creating log directory"

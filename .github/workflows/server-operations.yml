@@ -100,6 +100,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
       - name: Setup SSH Key
         run: |
           mkdir -p ~/.ssh
@@ -111,7 +118,8 @@ jobs:
           CONFIG_FILE: deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
-          ./scripts/health-check.sh "${{ matrix.server.id }}"
+          chmod +x ./LinuxConfig/shell/health-check.sh
+          ./LinuxConfig/shell/health-check.sh "${{ matrix.server.id }}"
 
       - name: Cleanup SSH Key
         if: always()
@@ -128,6 +136,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
 
       - name: Validate inputs
         run: |
@@ -147,7 +162,8 @@ jobs:
           CONFIG_FILE: deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
-          ./scripts/push-files.sh \
+          chmod +x ./LinuxConfig/shell/push-files.sh
+          ./LinuxConfig/shell/push-files.sh \
             "${{ matrix.server.id }}" \
             "${{ github.event.inputs.local_path }}" \
             "${{ github.event.inputs.remote_path }}" \
@@ -169,6 +185,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
       - name: Validate inputs
         run: |
           if [[ "${{ github.event.inputs.backup_action }}" == "create" ]] && [[ -z "${{ github.event.inputs.backup_site }}" ]]; then
@@ -187,7 +210,8 @@ jobs:
           CONFIG_FILE: deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
-          ./scripts/backup-manage.sh \
+          chmod +x ./LinuxConfig/shell/backup-manage.sh
+          ./LinuxConfig/shell/backup-manage.sh \
             "${{ matrix.server.id }}" \
             "${{ github.event.inputs.backup_action }}" \
             "${{ github.event.inputs.backup_site }}"

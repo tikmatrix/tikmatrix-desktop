@@ -103,6 +103,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
       - name: Validate inputs
         run: |
           if [[ -z "${{ github.event.inputs.domain }}" ]]; then
@@ -128,7 +135,8 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
-          ./scripts/nginx-config.sh \
+          chmod +x ./LinuxConfig/shell/nginx-config.sh
+          ./LinuxConfig/shell/nginx-config.sh \
             "${{ matrix.server.id }}" \
             "${{ github.event.inputs.domain }}" \
             "${{ github.event.inputs.site_type }}" \
@@ -152,6 +160,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
       - name: Setup SSH Key
         run: |
           mkdir -p ~/.ssh
@@ -163,7 +178,8 @@ jobs:
           CONFIG_FILE: deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
-          ./scripts/ssl-renew.sh "${{ matrix.server.id }}"
+          chmod +x ./LinuxConfig/shell/ssl-renew.sh
+          ./LinuxConfig/shell/ssl-renew.sh "${{ matrix.server.id }}"
 
       - name: Cleanup SSH Key
         if: always()
