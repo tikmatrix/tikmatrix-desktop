@@ -1,0 +1,216 @@
+# Nginx Configuration Management Workflow
+# Deploy nginx configuration files from LinuxConfig repository to servers
+name: Nginx Config Management
+run-name: ${{ github.actor }} is managing nginx configuration 🔧
+
+on:
+  workflow_dispatch:
+    inputs:
+      domain:
+        description: "Domain config to deploy (leave empty for all configs in nginx folder)"
+        required: false
+        type: choice
+        options:
+          - ""
+          - api.tikmatrix.com
+          - user.tikmatrix.com
+          - www.igmatrix.com
+          - www.tikmatrix.com
+          - www.ytmatrix.com
+
+      server:
+        description: "Target server (leave empty for all servers)"
+        required: false
+        type: choice
+        options:
+          - ""
+          - server-us
+          - server-dublin
+          - server-sgp
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      servers: ${{ steps.get-servers.outputs.servers }}
+      configs: ${{ steps.get-configs.outputs.configs }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
+      - name: Determine target servers
+        id: get-servers
+        run: |
+          CONFIG=$(cat deploy-config.json)
+          SELECTED_SERVER="${{ github.event.inputs.server }}"
+
+          if [[ -n "$SELECTED_SERVER" ]]; then
+            # Use specific server
+            SERVERS=$(echo "$CONFIG" | jq -c --arg target "$SELECTED_SERVER" '[.servers[] | select(.id == $target)]')
+          else
+            # Use all servers
+            SERVERS=$(echo "$CONFIG" | jq -c '.servers')
+          fi
+
+          # Validate servers is not empty
+          if [[ -z "$SERVERS" || "$SERVERS" == "[]" || "$SERVERS" == "null" ]]; then
+            echo "Error: No servers found"
+            exit 1
+          fi
+
+          echo "servers=$SERVERS" >> $GITHUB_OUTPUT
+          echo "Target servers: $SERVERS"
+
+      - name: Determine nginx configs to deploy
+        id: get-configs
+        run: |
+          SELECTED_DOMAIN="${{ github.event.inputs.domain }}"
+
+          if [[ -n "$SELECTED_DOMAIN" ]]; then
+            # Use specific config
+            CONFIG_FILE="LinuxConfig/nginx/${SELECTED_DOMAIN}.conf"
+            if [[ -f "$CONFIG_FILE" ]]; then
+              CONFIGS=$(jq -n -c --arg name "${SELECTED_DOMAIN}.conf" '[{name: $name}]')
+            else
+              echo "Error: Configuration file $CONFIG_FILE not found"
+              exit 1
+            fi
+          else
+            # Use all configs in nginx folder
+            CONFIGS=$(find LinuxConfig/nginx -name "*.conf" -type f -exec basename {} \; | jq -R -s -c 'split("\n") | map(select(length > 0)) | map({name: .})')
+          fi
+
+          # Validate configs is not empty
+          if [[ -z "$CONFIGS" || "$CONFIGS" == "[]" || "$CONFIGS" == "null" ]]; then
+            echo "Error: No nginx configuration files found"
+            exit 1
+          fi
+
+          echo "configs=$CONFIGS" >> $GITHUB_OUTPUT
+          echo "Nginx configs to deploy: $CONFIGS"
+
+  deploy:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+        config: ${{ fromJson(needs.prepare.outputs.configs) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Deploy ${{ matrix.config.name }} to ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          SERVER_ID="${{ matrix.server.id }}"
+          SERVER_HOST="${{ matrix.server.host }}"
+          SERVER_PORT="${{ matrix.server.port }}"
+          SERVER_USER="${{ matrix.server.user }}"
+          NGINX_CONFIG="${{ matrix.config.name }}"
+
+          echo "🚀 Deploying $NGINX_CONFIG to $SERVER_ID ($SERVER_HOST)"
+
+          # Source common library functions
+          source ./LinuxConfig/shell/lib-common.sh
+
+          # Upload nginx config
+          log_info "Uploading nginx configuration to server"
+          scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+            "LinuxConfig/nginx/$NGINX_CONFIG" "${NGINX_CONFIG}.tmp"
+
+          # Deploy nginx config on server
+          log_info "Deploying nginx configuration on server"
+
+          ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            -o ConnectTimeout=10 \
+            "$SERVER_USER@$SERVER_HOST" bash -s "$NGINX_CONFIG" << 'EOF'
+          set -euo pipefail
+
+          NGINX_CONFIG="$1"
+          CONFIG_NAME="${NGINX_CONFIG%.conf}"
+
+          echo "Deploying nginx configuration: $NGINX_CONFIG"
+
+          # Move config to /tmp for testing
+          mv ~/${NGINX_CONFIG}.tmp /tmp/${NGINX_CONFIG}.new
+          chmod 644 /tmp/${NGINX_CONFIG}.new
+
+          # Backup existing config if it exists
+          BACKUP_EXISTS=false
+          if [[ -f /etc/nginx/conf.d/$NGINX_CONFIG ]]; then
+            echo "Backing up existing nginx configuration..."
+            if sudo cp /etc/nginx/conf.d/$NGINX_CONFIG /tmp/${NGINX_CONFIG}.backup; then
+              BACKUP_EXISTS=true
+              echo "✅ Backup created successfully"
+            else
+              echo "❌ Failed to create backup"
+              sudo rm -f /tmp/${NGINX_CONFIG}.new
+              exit 1
+            fi
+          fi
+
+          # Test nginx configuration before applying
+          echo "Testing nginx configuration..."
+          sudo cp /tmp/${NGINX_CONFIG}.new /etc/nginx/conf.d/$NGINX_CONFIG
+
+          if sudo nginx -t; then
+            echo "✅ Nginx configuration test passed"
+            echo "Reloading nginx..."
+            sudo systemctl reload nginx
+            echo "✅ Nginx reloaded successfully"
+          else
+            echo "❌ Nginx configuration test failed"
+            echo "Rolling back configuration..."
+            if [[ "$BACKUP_EXISTS" == "true" ]]; then
+              sudo mv /tmp/${NGINX_CONFIG}.backup /etc/nginx/conf.d/$NGINX_CONFIG
+              echo "✅ Previous configuration restored"
+            else
+              sudo rm -f /etc/nginx/conf.d/$NGINX_CONFIG
+              echo "⚠️  No previous configuration found, removed invalid config"
+            fi
+            # Clean up temporary file
+            sudo rm -f /tmp/${NGINX_CONFIG}.new
+            exit 1
+          fi
+
+          # Clean up temporary files after successful deployment
+          echo "Cleaning up temporary files..."
+          sudo rm -f /tmp/${NGINX_CONFIG}.backup
+          sudo rm -f /tmp/${NGINX_CONFIG}.new
+          echo "✅ Configuration deployed successfully!"
+          EOF
+
+          log_success "Deployment of $NGINX_CONFIG to $SERVER_ID completed successfully!"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

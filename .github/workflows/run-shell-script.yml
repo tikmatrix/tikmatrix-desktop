@@ -1,0 +1,183 @@
+# Run Shell Script Workflow
+# Execute shell scripts from LinuxConfig repository on servers
+name: Run Shell Script
+run-name: ${{ github.actor }} is running ${{ github.event.inputs.script_name }} 🖥️
+
+on:
+  workflow_dispatch:
+    inputs:
+      script_name:
+        description: "Script name to execute (required)"
+        required: true
+        type: choice
+        options:
+          - backup-manage.sh
+          - deploy-site.sh
+          - fix-deploy-permissions.sh
+          - health-check.sh
+          - init-vps.sh
+          - install_alloy.service.sh
+          - nginx-config.sh
+          - push-files.sh
+          - setup-hy2.sh
+          - setup-vps.sh
+          - ssl-renew.sh
+
+      script_args:
+        description: "Arguments to pass to the script (optional)"
+        required: false
+        type: string
+        default: ""
+
+      server:
+        description: "Target server (leave empty for all servers)"
+        required: false
+        type: choice
+        options:
+          - ""
+          - server-us
+          - server-dublin
+          - server-sgp
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      servers: ${{ steps.get-servers.outputs.servers }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Determine target servers
+        id: get-servers
+        run: |
+          CONFIG=$(cat deploy-config.json)
+          SELECTED_SERVER="${{ github.event.inputs.server }}"
+
+          if [[ -n "$SELECTED_SERVER" ]]; then
+            # Use specific server
+            SERVERS=$(echo "$CONFIG" | jq -c --arg target "$SELECTED_SERVER" '[.servers[] | select(.id == $target)]')
+          else
+            # Use all servers
+            SERVERS=$(echo "$CONFIG" | jq -c '.servers')
+          fi
+
+          # Validate servers is not empty
+          if [[ -z "$SERVERS" || "$SERVERS" == "[]" || "$SERVERS" == "null" ]]; then
+            echo "Error: No servers found"
+            exit 1
+          fi
+
+          echo "servers=$SERVERS" >> $GITHUB_OUTPUT
+          echo "Target servers: $SERVERS"
+
+  run-script:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
+      - name: Validate script exists
+        run: |
+          SCRIPT_NAME="${{ github.event.inputs.script_name }}"
+          SCRIPT_PATH="LinuxConfig/shell/$SCRIPT_NAME"
+
+          if [[ ! -f "$SCRIPT_PATH" ]]; then
+            echo "Error: Script $SCRIPT_NAME not found in LinuxConfig/shell/"
+            exit 1
+          fi
+
+          echo "✅ Script $SCRIPT_NAME found"
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Run ${{ github.event.inputs.script_name }} on ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          SERVER_ID="${{ matrix.server.id }}"
+          SERVER_HOST="${{ matrix.server.host }}"
+          SERVER_PORT="${{ matrix.server.port }}"
+          SERVER_USER="${{ matrix.server.user }}"
+          SCRIPT_NAME="${{ github.event.inputs.script_name }}"
+          SCRIPT_ARGS="${{ github.event.inputs.script_args }}"
+
+          echo "🚀 Running $SCRIPT_NAME on $SERVER_ID ($SERVER_HOST)"
+
+          # Source common library functions
+          source ./LinuxConfig/shell/lib-common.sh
+
+          # Upload script to server
+          log_info "Uploading script to server"
+          scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+            "LinuxConfig/shell/$SCRIPT_NAME" "script_to_run.sh"
+
+          # Also upload lib-common.sh if it exists (for scripts that source it)
+          if [[ -f "LinuxConfig/shell/lib-common.sh" ]]; then
+            log_info "Uploading lib-common.sh to server"
+            scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+              "LinuxConfig/shell/lib-common.sh" "lib-common.sh"
+          fi
+
+          # Execute script on server
+          log_info "Executing script on server"
+
+          ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            -o ConnectTimeout=10 \
+            "$SERVER_USER@$SERVER_HOST" bash -s "$SCRIPT_ARGS" << 'EOF'
+          set -euo pipefail
+
+          SCRIPT_ARGS="$1"
+
+          echo "Making script executable..."
+          chmod +x ~/script_to_run.sh
+
+          # Make lib-common.sh executable if it exists
+          if [[ -f ~/lib-common.sh ]]; then
+            chmod +x ~/lib-common.sh
+          fi
+
+          echo "Running script with args: $SCRIPT_ARGS"
+          cd ~
+
+          # Execute the script
+          if [[ -n "$SCRIPT_ARGS" ]]; then
+            ./script_to_run.sh $SCRIPT_ARGS
+          else
+            ./script_to_run.sh
+          fi
+
+          # Cleanup
+          echo "Cleaning up..."
+          rm -f ~/script_to_run.sh
+          rm -f ~/lib-common.sh
+          echo "✅ Script execution completed!"
+          EOF
+
+          log_success "Script execution on $SERVER_ID completed successfully!"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

@@ -208,6 +208,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
@@ -226,8 +233,8 @@ jobs:
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
           echo "🚀 Deploying $SITE to ${{ matrix.deployment.server.id }} (${{ matrix.deployment.server.host }})"
-          chmod +x ./scripts/deploy-site.sh
-          ./scripts/deploy-site.sh \
+          chmod +x ./LinuxConfig/shell/deploy-site.sh
+          ./LinuxConfig/shell/deploy-site.sh \
             "${{ matrix.deployment.server.id }}" \
             "$SITE" \
             "build-$SITE.tar.gz"
