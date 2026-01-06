@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TikMatrix roadmap (Russian compact responsive version) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1200 760" role="img"
+    aria-label="Дорожная карта TikMatrix/IgMatrix: подготовка оборудования → подключение устройств → установка и подготовка → автоматизированные операции → коммерция">
+    <style>
+        .bg { fill: #ffffff; }
+        .step { rx: 12; ry: 12; }
+        .step-normal { fill: #0ea5e9; }
+        .step-highlight { fill: #f97316; }
+
+        .num { font-family: Inter, Arial, sans-serif; font-size:28px; font-weight:700; fill:#ffffff
+        }
+        .label { font-family: Inter, Arial, sans-serif; font-size:18px; font-weight:600;
+        fill:#ffffff }
+        .sub { font-family: Inter, Arial, sans-serif; font-size:14px; fill:#ffffff; opacity:0.95 }
+        .note { font-family: Inter, Arial, sans-serif; font-size:15px; font-weight:700; fill:#475569
+        }
+
+        .arrow { stroke:#94a3b8; stroke-width:4; fill:none; marker-end:url(#arrowhead); }
+        .arrow-highlight { stroke:#f97316; stroke-width:4; fill:none;
+        marker-end:url(#arrowhead-orange); }
+    </style>
+
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+            <path d="M0,0 L10,4 L0,8 z" fill="#475569" />
+        </marker>
+        <marker id="arrowhead-orange" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto">
+            <path d="M0,0 L10,4 L0,8 z" fill="#f97316" />
+        </marker>
+    </defs>
+
+    <rect class="bg" width="1200" height="760" />
+
+    <!-- Row 1: steps 1-3 -->
+    <g transform="translate(40,28)">
+        <rect class="step step-normal" x="0" y="0" width="280" height="130" />
+        <text x="140" y="44" class="num" text-anchor="middle">1</text>
+        <text x="140" y="76" class="label" text-anchor="middle">Подготовка оборудования</text>
+        <text x="140" y="102" class="sub" text-anchor="middle">Android-телефоны + ПК</text>
+
+        <rect class="step step-normal" x="360" y="0" width="280" height="130" />
+        <text x="500" y="44" class="num" text-anchor="middle">2</text>
+        <text x="500" y="76" class="label" text-anchor="middle">Подключение устройств</text>
+        <text x="500" y="102" class="sub" text-anchor="middle">ADB (USB / TCP)</text>
+
+        <rect class="step step-normal" x="720" y="0" width="280" height="130" />
+        <text x="860" y="44" class="num" text-anchor="middle">3</text>
+        <text x="860" y="76" class="label" text-anchor="middle">Установка и подготовка</text>
+        <text x="860" y="102" class="sub" text-anchor="middle">Установить приложение / прокси /
+            аккаунты / материалы</text>
+    </g>
+
+    <!-- Middle row: step 4 (highlight) -->
+    <g transform="translate(40,260)">
+        <rect class="step step-highlight" x="0" y="0" width="1000" height="130" />
+        <text x="560" y="44" class="num" text-anchor="middle">4</text>
+        <text x="560" y="76" class="label" text-anchor="middle">Автоматизированные ежедневные
+            операции (TikMatrix/IgMatrix)</text>
+        <text x="560" y="102" class="sub" text-anchor="middle">Управление аккаунтами / вход (только
+            IgMatrix) / прогрев / публикация / взаимодействие / сбор / контроль рисков /
+            планирование</text>
+    </g>
+
+    <!-- Bottom row: step 5 and note -->
+    <g transform="translate(40,500)">
+        <rect class="step step-normal" x="0" y="0" width="440" height="130" />
+        <text x="220" y="44" class="num" text-anchor="middle">5</text>
+        <text x="220" y="76" class="label" text-anchor="middle">Коммерция / конверсии</text>
+        <text x="220" y="102" class="sub" text-anchor="middle">Собственный магазин / платформы
+            e‑commerce</text>
+
+        <text x="520" y="66" class="note" text-anchor="start">Примечание: TikMatrix/IgMatrix
+            фокусируется на шаге 4 (автоматизация и сбор данных); другие шаги обеспечиваются
+            пользователями/третьими сторонами.</text>
+    </g>
+
+    <!-- Arrows -->
+    <path class="arrow" d="M 330,94 L 390,94" />
+    <path class="arrow" d="M 690,94 L 750,94" />
+    <path class="arrow-highlight" d="M 900,180 L 900,240" />
+    <path class="arrow-highlight" d="M 260,420 L 260,480" />
+
+</svg>

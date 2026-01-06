@@ -1,0 +1,8 @@
+{
+    "label": "Руководство - Основы",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "Изучите, как настроить TikMatrix."
+    }
+}

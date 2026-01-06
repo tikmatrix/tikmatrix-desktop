@@ -1,0 +1,18 @@
+# Super Marketing Screenshot Placeholder
+
+This file serves as a placeholder for the Super Marketing script screenshot.
+
+The actual screenshot (super-marketing.png) should be captured from the TikMatrix application showing the Super Marketing dialog interface with all the configuration options:
+
+1. User Data Source section
+2. User Related Actions section (Follow Users, Send DM)
+3. Post Related Actions section (Post Interactions, Mass Comment)
+4. ChatGPT configuration (when enabled)
+
+The screenshot should show the complete interface to help users understand all available options and settings.
+
+## Screenshot Requirements:
+- Format: PNG
+- Filename: super-marketing.png
+- Location: /docs/img/
+- Content: Full Super Marketing dialog interface

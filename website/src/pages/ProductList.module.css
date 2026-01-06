@@ -1,0 +1,48 @@
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+
+.productPrice {
+    font-weight: bold;
+    color: #f00;
+}
+
+.productModel {
+    font-style: italic;
+    color: #666;
+}
+
+.shipping {
+    font-style: italic;
+    color: #666;
+}
+
+.productTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #333;
+}

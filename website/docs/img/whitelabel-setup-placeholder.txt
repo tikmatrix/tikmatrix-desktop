@@ -1,0 +1,19 @@
+# White Label Setup Screenshot Placeholder
+
+This file serves as a placeholder for the White Label setup screenshot.
+
+The actual screenshot (whitelabel-setup.png) should be captured from the TikMatrix application showing the White Label settings dialog interface with all the configuration options:
+
+1. App Name input field
+2. Logo upload section
+3. Brand settings (Support Email, Tutorial URL, Rewards URL, Telegram URL)
+4. Feature toggles (Show Tutorial Link, Show Brand Info)
+5. Save button
+
+The screenshot should show the complete interface to help users understand all available options and settings.
+
+## Screenshot Requirements:
+- Format: PNG
+- Filename: whitelabel-setup.png
+- Location: /docs/img/
+- Content: Full White Label settings dialog interface

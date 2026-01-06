@@ -1,0 +1,194 @@
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--ifm-color-primary);
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--ifm-color-primary), #ff6b35);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--ifm-color-secondary-dark);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.disclaimer {
+    background: linear-gradient(135deg, #fff5f5, #fef2f2);
+    border: 2px solid #fecaca;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.disclaimerIcon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.disclaimerContent h3 {
+    color: #dc2626;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.disclaimerContent p {
+    color: #7f1d1d;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.toolCard {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 0;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.toolCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: var(--ifm-color-primary-light);
+}
+
+.toolHeader {
+    background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-dark));
+    padding: 1rem 1.5rem;
+}
+
+.categoryBadge {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.toolContent {
+    padding: 1.5rem;
+}
+
+.toolTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--ifm-color-emphasis-800);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.toolDescription {
+    color: var(--ifm-color-emphasis-600);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.toolButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--ifm-color-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.toolButton:hover {
+    background: var(--ifm-color-primary-dark);
+    color: white;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.externalIcon {
+    font-size: 1.1rem;
+}
+
+.backToHome {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.backButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--ifm-color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.backButton:hover {
+    color: var(--ifm-color-primary-dark);
+    text-decoration: none;
+    background: var(--ifm-color-primary-lightest);
+}
+
+/* Dark theme support */
+[data-theme='dark'] .toolCard {
+    background: var(--ifm-background-surface-color);
+    border-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .disclaimer {
+    background: linear-gradient(135deg, #2d1b1b, #3d1a1a);
+    border-color: #7f1d1d;
+}
+
+[data-theme='dark'] .disclaimerContent h3 {
+    color: #fca5a5;
+}
+
+[data-theme='dark'] .disclaimerContent p {
+    color: #f7b6b6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .disclaimer {
+        padding: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .toolCard {
+        margin-bottom: 1.5rem;
+    }
+
+    .toolContent {
+        padding: 1.25rem;
+    }
+}

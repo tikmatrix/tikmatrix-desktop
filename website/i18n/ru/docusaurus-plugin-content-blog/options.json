@@ -1,0 +1,14 @@
+{
+    "title": {
+        "message": "Блог",
+        "description": "Блог TikMatrix"
+    },
+    "description": {
+        "message": "Блог TikMatrix",
+        "description": "Блог TikMatrix"
+    },
+    "sidebar.title": {
+        "message": "Последние посты",
+        "description": "Последние посты TikMatrix"
+    }
+}

@@ -1,0 +1,177 @@
+.download-page {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.download-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.download-subtitle {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 1.5rem;
+}
+
+/* 软件选择器样式 */
+.software-selector {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.software-link {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.software-link:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: underline;
+}
+
+.download-buttons {
+  margin-bottom: 4rem;
+}
+
+.download-card {
+  display: block;
+  padding: 2rem;
+  border-radius: 8px;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.download-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.platform-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.download-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.download-card p {
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 1.5rem;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--ifm-color-primary);
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.download-card:hover .download-btn {
+  background: var(--ifm-color-primary-dark);
+}
+
+.system-requirements {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.system-requirements h2 {
+  margin-bottom: 1.5rem;
+}
+
+.system-requirements ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.system-requirements li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.system-requirements li:before {
+  content: "•";
+  color: var(--ifm-color-primary);
+  position: absolute;
+  left: 0;
+}
+
+.mac-card {
+  padding-bottom: 1rem;
+}
+
+.mac-versions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mac-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.mac-btn:hover {
+  background: var(--ifm-color-primary-dark);
+}
+
+.linux-card {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.download-btn.disabled {
+  background: var(--ifm-color-emphasis-300);
+  cursor: not-allowed;
+}
+
+.coming-soon-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.mac-install-tip {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+.mac-install-tip code {
+  display: inline-block;
+  background-color: #e9ecef;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: monospace;
+  color: #333;
+  cursor: pointer;
+  user-select: all;
+  margin: 0 0.2rem;
+}
+
+.mac-install-tip code:hover {
+  background-color: #dee2e6;
+} 

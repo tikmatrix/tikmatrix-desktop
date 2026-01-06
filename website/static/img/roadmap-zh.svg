@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TikMatrix 路线图 (中文版) - 紧凑响应式版本，适配单屏展示 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1200 760" role="img"
+    aria-label="TikMatrix/IgMatrix 路线图：硬件准备 → 连接设备 → 安装与登录 → 自动化运营 → 商品成交">
+    <style>
+        .bg { fill: #ffffff; }
+        .step { rx: 12; ry: 12; }
+        .step-normal { fill: #0ea5e9; }
+        .step-highlight { fill: #f97316; }
+
+        .num { font-family: "Microsoft YaHei", "PingFang SC", Inter, Arial, sans-serif;
+        font-size:28px; font-weight:700; fill:#ffffff }
+        .label { font-family: "Microsoft YaHei", "PingFang SC", Inter, Arial, sans-serif;
+        font-size:18px; font-weight:600; fill:#ffffff }
+        .sub { font-family: "Microsoft YaHei", "PingFang SC", Inter, Arial, sans-serif;
+        font-size:14px; fill:#ffffff; opacity:0.95 }
+        .note { font-family: "Microsoft YaHei", "PingFang SC", Inter, Arial, sans-serif;
+        font-size:15px; font-weight:700; fill:#475569 }
+
+        .arrow { stroke:#94a3b8; stroke-width:4; fill:none; marker-end:url(#arrowhead); }
+        .arrow-highlight { stroke:#f97316; stroke-width:4; fill:none;
+        marker-end:url(#arrowhead-orange); }
+    </style>
+
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+            <path d="M0,0 L10,4 L0,8 z" fill="#475569" />
+        </marker>
+        <marker id="arrowhead-orange" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto">
+            <path d="M0,0 L10,4 L0,8 z" fill="#f97316" />
+        </marker>
+    </defs>
+
+    <rect class="bg" width="1200" height="760" />
+
+    <!-- 第一行：步骤1-3 -->
+    <g transform="translate(40,28)">
+        <rect class="step step-normal" x="0" y="0" width="280" height="130" />
+        <text x="140" y="44" class="num" text-anchor="middle">1</text>
+        <text x="140" y="76" class="label" text-anchor="middle">硬件准备</text>
+        <text x="140" y="102" class="sub" text-anchor="middle">安卓手机 + 电脑</text>
+
+        <!-- increase horizontal gap to 80 -->
+        <rect class="step step-normal" x="360" y="0" width="280" height="130" />
+        <text x="500" y="44" class="num" text-anchor="middle">2</text>
+        <text x="500" y="76" class="label" text-anchor="middle">连接设备</text>
+        <text x="500" y="102" class="sub" text-anchor="middle">ADB (USB/TCP)</text>
+
+        <rect class="step step-normal" x="720" y="0" width="280" height="130" />
+        <text x="860" y="44" class="num" text-anchor="middle">3</text>
+        <text x="860" y="76" class="label" text-anchor="middle">安装 &amp; 准备</text>
+        <text x="860" y="102" class="sub" text-anchor="middle">安装App / 设置代理 / 账号 / 发布素材</text>
+    </g>
+
+    <!-- 中行：第4步（高亮，跨列） -->
+    <g transform="translate(40,260)">
+        <!-- make step4 wider to span new canvas; moved up to reduce gap to row1 -->
+        <rect class="step step-highlight" x="0" y="0" width="1000" height="130" />
+        <text x="560" y="44" class="num" text-anchor="middle">4</text>
+        <text x="560" y="76" class="label" text-anchor="middle">自动化日常运营（TikMatrix/IgMatrix）</text>
+        <text x="560" y="102" class="sub" text-anchor="middle">账号管理 / 登录(仅限IgMatrix) / 预热 / 发布 / 互动
+            / 采集 / 风控 /
+            调度</text>
+    </g>
+
+    <!-- 说明和第5步 -->
+    <g transform="translate(40,500)">
+        <rect class="step step-normal" x="0" y="0" width="440" height="130" />
+        <text x="220" y="44" class="num" text-anchor="middle">5</text>
+        <text x="220" y="76" class="label" text-anchor="middle">商品成交</text>
+        <text x="220" y="102" class="sub" text-anchor="middle">独立站 / 电商平台</text>
+
+        <text x="520" y="66" class="note" text-anchor="start">说明：TikMatrix/IgMatrix 专注第 4
+            步（自动化与数据采集），其他步骤由用户/第三方提供。</text>
+    </g>
+
+    <!-- 箭头（简洁） -->
+    <!-- step1 -> step2 (in the horizontal gap between box1 and box2) -->
+    <path class="arrow" d="M 330,94 L 390,94" />
+    <!-- step2 -> step3 (in the horizontal gap between box2 and box3) -->
+    <path class="arrow" d="M 690,94 L 750,94" />
+    <!-- step3 -> step4 (vertical, placed fully inside the vertical gap; aligned to step3 center) -->
+    <path class="arrow-highlight" d="M 900,180 L 900,240" />
+    <!-- step4 -> step5 (vertical, placed fully inside the vertical gap and aligned to step5 center) -->
+    <path class="arrow-highlight" d="M 260,420 L 260,480" />
+
+</svg>

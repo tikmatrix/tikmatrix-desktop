@@ -1,0 +1,125 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.hero img {
+    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+    cover: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 250%;
+    height: 200%;
+    background: #e8ecf5;
+    transform: skewY(135deg);
+    transform-origin: bottom right;
+    z-index: -1;
+}
+
+.download-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 3px;
+    transition: 0.5s;
+    color: #fff;
+    background: #47536e;
+    position: relative;
+    margin: 0 10px;
+}
+
+.link-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 3px;
+    transition: 0.5s;
+    color: #fff;
+    background: #2461ad;
+    position: relative;
+    margin: 0 10px;
+}
+
+.image-slider {
+    width: 500px;
+    height: 100%;
+}
+
+.header-row {
+    padding: 4rem 2rem;
+    width: 100%;
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.download-btn,
+.link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 996px) {
+    .header-row {
+        padding: 2rem 1rem;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero__subtitle {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .header-buttons {
+        justify-content: center;
+    }
+
+    .col.col--6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .image-slider {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .download-btn,
+    .link-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

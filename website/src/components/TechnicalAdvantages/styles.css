@@ -1,0 +1,496 @@
+/* ============================================
+   Technical Advantages – Dark Neon Tech Style
+   ============================================ */
+
+/* --- CSS Variables --- */
+.techAdvantages {
+    --tech-bg: #0D0D0D;
+    --tech-surface: #1A1A1A;
+    --tech-border: #2A2A2A;
+    --neon-cyan: #05F2F2;
+    --neon-pink: #FF2D55;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A0A0A0;
+    --text-muted: #666666;
+}
+
+/* --- Section Container --- */
+.techAdvantages {
+    background: var(--tech-bg);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.techAdvantages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
+}
+
+.techAdvantages .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- Header --- */
+.techHeader {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.techTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
+}
+
+.techSubtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sectionSubhead {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--neon-cyan);
+    margin: 0 0 40px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--tech-border);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* ============================================
+   Section 1: Tech Diagram
+   ============================================ */
+.techDiagram {
+    margin-bottom: 100px;
+    padding: 48px;
+    background: var(--tech-surface);
+    border: 1px solid var(--tech-border);
+    border-radius: 12px;
+    position: relative;
+}
+
+.diagramWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+/* Diagram Nodes */
+.diagramNode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    z-index: 2;
+}
+
+.nodeIcon {
+    width: 72px;
+    height: 72px;
+    border: 2px solid var(--neon-cyan);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tech-bg);
+    box-shadow: 0 0 20px rgba(5, 242, 242, 0.2);
+    transition: all 0.3s ease;
+}
+
+.nodeIcon i {
+    font-size: 28px;
+    color: var(--neon-cyan);
+}
+
+.nodeLabel {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.diagramNode:hover .nodeIcon {
+    box-shadow: 0 0 30px rgba(5, 242, 242, 0.5);
+    transform: scale(1.05);
+}
+
+/* Diagram Lines */
+.diagramLine {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
+    position: relative;
+    min-width: 60px;
+    animation: flowLine 2s linear infinite;
+}
+
+.diagramLine::before {
+    /* add a subtle bright core so the line remains visible under semi-opaque tags */
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
+    filter: blur(0.6px);
+    opacity: 0.95;
+    z-index: 1;
+}
+
+@keyframes flowLine {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.lineTag {
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--neon-pink);
+    white-space: nowrap;
+    padding: 6px 10px;
+    /* make slightly translucent so the gradient line shows through */
+    background: rgba(13, 13, 13, 0.68);
+    border: 1px solid rgba(42, 42, 42, 0.55);
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+}
+
+/* Diagram Tags */
+.diagramTags {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+
+.tagItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: 8px 16px;
+    border: 1px solid var(--tech-border);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.tagItem i {
+    color: var(--neon-cyan);
+    font-size: 14px;
+}
+
+.tagItem:hover {
+    border-color: var(--neon-cyan);
+    color: var(--text-primary);
+}
+
+/* ============================================
+   Section 2: Technical Points (Two-column doc style)
+   ============================================ */
+.techPoints {
+    margin-bottom: 100px;
+}
+
+.pointsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.techPoint {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    background: var(--tech-surface);
+    border: 1px solid var(--tech-border);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.techPoint:hover {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(5, 242, 242, 0.1);
+}
+
+.techPoint:hover .pointIcon i {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.pointIcon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--tech-border);
+    border-radius: 8px;
+    background: var(--tech-bg);
+}
+
+.pointIcon i {
+    font-size: 24px;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.pointContent {
+    flex: 1;
+}
+
+.pointTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 8px;
+}
+
+.pointDesc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+.pointBullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pointBullets li {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.pointBullets li i {
+    color: var(--neon-cyan);
+    font-size: 12px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   Section 3: Security Grade Chart
+   ============================================ */
+.securityChart {
+    padding: 48px;
+    background: var(--tech-surface);
+    border: 1px solid var(--tech-border);
+    border-radius: 12px;
+}
+
+.gradeList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.gradeRow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.gradeLabel {
+    flex: 0 0 220px;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.gradeBarWrapper {
+    flex: 1;
+    height: 8px;
+    background: var(--tech-bg);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gradeBar {
+    height: 100%;
+    width: 0;
+    border-radius: 4px;
+    transition: width 1.2s ease-out;
+}
+
+.gradeRow.animate-in .gradeBar {
+    width: var(--target-width);
+}
+
+.gradeBar.gradeA {
+    background: linear-gradient(90deg, var(--neon-cyan), #00E5CC);
+    box-shadow: 0 0 10px rgba(5, 242, 242, 0.5);
+}
+
+.gradeBar.gradeB {
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.gradeBar.gradeC {
+    background: linear-gradient(90deg, #888, #666);
+    box-shadow: 0 0 10px rgba(136, 136, 136, 0.3);
+}
+
+.gradeBadge {
+    flex: 0 0 36px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+}
+
+.badgeA {
+    background: rgba(5, 242, 242, 0.15);
+    color: var(--neon-cyan);
+    border: 1px solid var(--neon-cyan);
+}
+
+.badgeB {
+    background: rgba(255, 215, 0, 0.15);
+    color: #FFD700;
+    border: 1px solid #FFD700;
+}
+
+.badgeC {
+    background: rgba(136, 136, 136, 0.15);
+    color: #888;
+    border: 1px solid #888;
+}
+
+/* Grade Legend */
+.gradeLegend {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--tech-border);
+}
+
+.legendItem {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.legendA {
+    color: var(--neon-cyan);
+}
+
+.legendB {
+    color: #FFD700;
+}
+
+.legendC {
+    color: #888;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 992px) {
+    .pointsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .diagramWrapper {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .diagramLine {
+        width: 2px;
+        height: 40px;
+        min-width: unset;
+        background: linear-gradient(180deg, var(--neon-cyan), var(--neon-pink));
+    }
+
+    .lineTag {
+        top: 50%;
+        left: calc(100% + 12px);
+        transform: translateY(-50%);
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .techAdvantages {
+        padding: 60px 0;
+    }
+
+    .techHeader {
+        margin-bottom: 48px;
+    }
+
+    .techTitle {
+        font-size: 1.75rem;
+    }
+
+    .techDiagram,
+    .securityChart {
+        padding: 24px;
+    }
+
+    .gradeLabel {
+        flex: 0 0 140px;
+        font-size: 0.75rem;
+    }
+
+    .gradeLegend {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .diagramTags {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "item.label.Tutorial - Basics": {
+        "message": "Основы руководства"
+    },
+    "item.label.Advertising": {
+        "message": "Реклама",
+        "description": "Navbar item with label Advertising"
+    }
+}
