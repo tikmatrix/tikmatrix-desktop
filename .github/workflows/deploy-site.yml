@@ -144,47 +144,37 @@ jobs:
         site: ${{ fromJson(needs.prepare.outputs.sites) }}
       fail-fast: false
     steps:
-      - name: Checkout tikmatrix-desktop for scripts
+      - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          path: tikmatrix-desktop
-
-      - name: Checkout www.tikmatrix.com code
-        uses: actions/checkout@v4
-        with:
-          repository: tikmatrix/www.tikmatrix.com
-          token: ${{ secrets.REPO_TOKEN }}
-          ref: main
-          path: www.tikmatrix.com
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "npm"
-          cache-dependency-path: "www.tikmatrix.com/package-lock.json"
+          cache-dependency-path: "website/package-lock.json"
 
       - name: Install dependencies
-        run: cd www.tikmatrix.com && npm ci
+        run: cd website && npm ci
 
       - name: Run brand replacement if needed
         run: |
-          cd www.tikmatrix.com
+          cd website
           BRAND_REPLACE=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.brandReplace')
 
           if [[ "$BRAND_REPLACE" == "true" ]]; then
             echo "Running brand replacement..."
-            node ../tikmatrix-desktop/scripts/replace-brand.js
+            node ../scripts/replace-brand.js
           else
             echo "Brand replacement not needed for this site"
           fi
 
       - name: Build project
-        run: cd www.tikmatrix.com && npm run build
+        run: cd website && npm run build
 
       - name: Create deployment archive
         run: |
-          cd www.tikmatrix.com
+          cd website
           cd build
           tar -czf ../build-${{ matrix.site.name }}.tar.gz .
           cd ..
@@ -194,7 +184,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact-${{ matrix.site.name }}
-          path: www.tikmatrix.com/build-${{ matrix.site.name }}.tar.gz
+          path: website/build-${{ matrix.site.name }}.tar.gz
           retention-days: 1
 
   deploy:
