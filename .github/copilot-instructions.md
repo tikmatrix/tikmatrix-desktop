@@ -120,7 +120,7 @@ npm run preview         # Preview production build
 
 1. **tikmatrix-desktop** (this repo): Client application for TikMatrix and IgMatrix
 2. **tikmatrix-agent**: Local Rust service shared by both clients, runs on port 50809
-3. **www.tikmatrix.com**: Official website and tutorials (Docusaurus)
+3. **tikmatrix-desktop/website**: Official website and tutorials (Docusaurus)
 4. **tikmatrix-android**: Android application for device communication
 5. **tikmatrix-admin-pro**: Admin backend and API service (Vue + Cloudflare Worker)
 
