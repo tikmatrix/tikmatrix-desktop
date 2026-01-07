@@ -241,7 +241,7 @@ export default {
             }
 
             await this.$emiter('run_now_by_account', {
-                name: 'aiAgent', args: {
+                name: 'ai_agent', args: {
                     start_time: this.startOption === 'scheduled' ? this.scheduledTime : '',
                     min_duration: Number(this.min_duration),
                     max_duration: Number(this.max_duration),

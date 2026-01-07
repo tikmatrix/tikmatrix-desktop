@@ -22,6 +22,7 @@
           || script.name === 'boostLives'
           || script.name === 'massComment'
           || script.name === 'boostComments'
+          || script.name === 'aiAgent'
           || script.name === 'superMarketing'">
           <label class="font-bold text-info">{{ $t('enableMultiAccount') }}:</label>
           <input type="checkbox" class="toggle toggle-accent" v-model="enable_multi_account" />
