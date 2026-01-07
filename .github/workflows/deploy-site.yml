@@ -201,7 +201,7 @@ jobs:
           echo "Running build command: $BUILD_COMMAND"
           
           # Validate build command - only allow npm/yarn commands
-          if [[ ! "$BUILD_COMMAND" =~ ^(npm|yarn|pnpm)[[:space:]] ]]; then
+          if [[ ! "$BUILD_COMMAND" =~ ^(npm|yarn|pnpm)($|[[:space:]]) ]]; then
             echo "Error: Invalid build command. Only npm, yarn, or pnpm commands are allowed."
             exit 1
           fi
