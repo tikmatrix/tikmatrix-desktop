@@ -52,6 +52,20 @@
                 "server-dublin",
                 "server-sgp"
             ]
+        },
+        {
+            "name": "videomagic",
+            "domain": "v.tikmatrix.com",
+            "branch": "main",
+            "brandReplace": false,
+            "repository": "tikmatrix/video-magic",
+            "buildCommand": "npm run docs:build",
+            "buildOutputDir": "docs/.vitepress/dist",
+            "deployTo": [
+                "server-us",
+                "server-dublin",
+                "server-sgp"
+            ]
         }
     ]
 }
