@@ -238,7 +238,7 @@ fn get_process_using_port(port: u16) -> String {
                 let output_str = String::from_utf8_lossy(&output.stdout);
                 if let Some(line) = output_str.lines().nth(1) {
                     let process_name = line.split_whitespace().next().unwrap_or("unknown");
-                    log::info!("Process using port {}: {}", port, process_name);
+                    log::debug!("Process using port {}: {}", port, process_name);
                     return process_name.to_string();
                 }
             }
