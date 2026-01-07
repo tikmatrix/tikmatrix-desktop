@@ -199,19 +199,31 @@ jobs:
           
           BUILD_COMMAND=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.buildCommand // "npm run build"')
           echo "Running build command: $BUILD_COMMAND"
-          eval "$BUILD_COMMAND"
+          
+          # Validate build command - only allow npm/yarn commands
+          if [[ ! "$BUILD_COMMAND" =~ ^(npm|yarn|pnpm)[[:space:]] ]]; then
+            echo "Error: Invalid build command. Only npm, yarn, or pnpm commands are allowed."
+            exit 1
+          fi
+          
+          $BUILD_COMMAND
 
       - name: Create deployment archive
         run: |
-          cd ${{ env.CHECKOUT_PATH }}
-          
+          WORKSPACE="${{ github.workspace }}"
+          CHECKOUT_PATH="${{ env.CHECKOUT_PATH }}"
           BUILD_OUTPUT_DIR=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.buildOutputDir // "build"')
-          echo "Using build output directory: $BUILD_OUTPUT_DIR"
           
-          cd $BUILD_OUTPUT_DIR
-          tar -czf ../../build-${{ matrix.site.name }}.tar.gz .
-          cd ../..
-          ls -lh build-${{ matrix.site.name }}.tar.gz
+          echo "Using build output directory: $BUILD_OUTPUT_DIR"
+          echo "Workspace: $WORKSPACE"
+          echo "Checkout path: $CHECKOUT_PATH"
+          
+          # Create archive from the build output directory
+          cd "$WORKSPACE/$CHECKOUT_PATH/$BUILD_OUTPUT_DIR"
+          tar -czf "$WORKSPACE/build-${{ matrix.site.name }}.tar.gz" .
+          
+          # Verify archive was created
+          ls -lh "$WORKSPACE/build-${{ matrix.site.name }}.tar.gz"
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
