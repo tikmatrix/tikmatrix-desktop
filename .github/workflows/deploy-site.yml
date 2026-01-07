@@ -15,6 +15,7 @@ on:
           - tikmatrix
           - igmatrix
           - ytmatrix
+          - videomagic
 
       server:
         description: "Target server (leave empty to deploy to all configured servers for this site)"
@@ -147,17 +148,40 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Determine repository and checkout
+        run: |
+          REPOSITORY=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.repository // empty')
+          
+          if [[ -n "$REPOSITORY" ]]; then
+            echo "Using external repository: $REPOSITORY"
+            echo "CHECKOUT_PATH=site-source" >> $GITHUB_ENV
+            echo "EXTERNAL_REPO=$REPOSITORY" >> $GITHUB_ENV
+          else
+            echo "Using default repository (website directory)"
+            echo "CHECKOUT_PATH=website" >> $GITHUB_ENV
+            echo "EXTERNAL_REPO=" >> $GITHUB_ENV
+          fi
+
+      - name: Checkout external repository if needed
+        if: env.EXTERNAL_REPO != ''
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.EXTERNAL_REPO }}
+          path: site-source
+          token: ${{ secrets.REPO_TOKEN }}
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "npm"
-          cache-dependency-path: "website/package-lock.json"
+          cache-dependency-path: "${{ env.CHECKOUT_PATH }}/package-lock.json"
 
       - name: Install dependencies
-        run: cd website && npm ci
+        run: cd ${{ env.CHECKOUT_PATH }} && npm ci
 
       - name: Run brand replacement if needed
+        if: env.EXTERNAL_REPO == ''
         run: |
           cd website
           BRAND_REPLACE=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.brandReplace')
@@ -170,21 +194,42 @@ jobs:
           fi
 
       - name: Build project
-        run: cd website && npm run build
+        run: |
+          cd ${{ env.CHECKOUT_PATH }}
+          
+          BUILD_COMMAND=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.buildCommand // "npm run build"')
+          echo "Running build command: $BUILD_COMMAND"
+          
+          # Validate build command - only allow npm/yarn commands
+          if [[ ! "$BUILD_COMMAND" =~ ^(npm|yarn|pnpm)($|[[:space:]]) ]]; then
+            echo "Error: Invalid build command. Only npm, yarn, or pnpm commands are allowed."
+            exit 1
+          fi
+          
+          $BUILD_COMMAND
 
       - name: Create deployment archive
         run: |
-          cd website
-          cd build
-          tar -czf ../build-${{ matrix.site.name }}.tar.gz .
-          cd ..
-          ls -lh build-${{ matrix.site.name }}.tar.gz
+          WORKSPACE="${{ github.workspace }}"
+          CHECKOUT_PATH="${{ env.CHECKOUT_PATH }}"
+          BUILD_OUTPUT_DIR=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.buildOutputDir // "build"')
+          
+          echo "Using build output directory: $BUILD_OUTPUT_DIR"
+          echo "Workspace: $WORKSPACE"
+          echo "Checkout path: $CHECKOUT_PATH"
+          
+          # Create archive from the build output directory
+          cd "$WORKSPACE/$CHECKOUT_PATH/$BUILD_OUTPUT_DIR"
+          tar -czf "$WORKSPACE/build-${{ matrix.site.name }}.tar.gz" .
+          
+          # Verify archive was created
+          ls -lh "$WORKSPACE/build-${{ matrix.site.name }}.tar.gz"
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact-${{ matrix.site.name }}
-          path: website/build-${{ matrix.site.name }}.tar.gz
+          path: build-${{ matrix.site.name }}.tar.gz
           retention-days: 1
 
   deploy:
