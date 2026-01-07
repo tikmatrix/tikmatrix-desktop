@@ -121,7 +121,7 @@ const config = {
           //   label: 'IgMatrix',
           // },
           {
-            href: '/VideoMagic',
+            href: 'https://v.tikmatrix.com',
             position: 'right',
             label: 'VideoMagic',
           },
