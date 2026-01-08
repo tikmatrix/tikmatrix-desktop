@@ -1,6 +1,6 @@
 const chat_id = process.env.CHAT_ID;
 const token = process.env.TOKEN;
-const url = 'https://api.niostack.com/front-api/download';
+const url = 'https://api.tikmatrix.com/front-api/download';
 
 import fs from 'fs';
 const configPath = "src-tauri/tauri.conf.json";
