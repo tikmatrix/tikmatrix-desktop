@@ -158,83 +158,36 @@ Enter a direct TikTok sound URL to use a specific sound:
   - Videos: randomly choose one each time
   - Images: select multiple depending on count
 - **Usage Tracking**: Files are automatically marked as used to prevent repetition.
+- **Spintax Support**: Caption files support spintax format `{option1|option2|option3}` for random text generation.
 
-### Caption.txt File Format
+  **Spintax Example:**
 
-The `caption.txt` file supports flexible caption formats with both sequential rotation and random text generation.
+  ```text
+  {Good morning|Hello|Hi}! Check out this {amazing|incredible|awesome} video!
+  ```
 
-#### Multiline Format Example
+  Possible outputs:
 
-Each line is a separate caption. The system rotates through them sequentially:
+  - “Good morning! Check out this amazing video!”
+  - “Hello! Check out this incredible video!”
+  - “Hi! Check out this awesome video!”
 
-```text
-Amazing video! Check it out! 🎥
-Love this content! Don't miss it! ✨
-Great post! Follow for more! 🔥
-```
+  **Complex Spintax Example:**
 
-**With line breaks using ###:**
+  ```text
+  {🔥|✨|🎉} {Don’t miss|Check out|Watch} this {amazing|incredible|awesome} {video|content|post}!
+  {Follow for more|Like and share|Tag your friends} {#trending|#viral|#fyp} #tiktok
+  ```
 
-```text
-First caption###with line break
-Second caption###also supports###multiple line breaks
-Third caption on single line
-```
+  **Caption.txt Example:**
 
-**With TikTok title/description split:**
+  ```text
+  {Morning motivation|Daily inspiration|Start your day}! 💪
 
-```text
-Amazing Discovery##Here's the full story about this incredible find!
-Quick Tutorial##Step-by-step guide to master this technique
-Daily Vlog##Join me on this exciting journey today
-```
+  {Loving|Enjoying|Obsessed with} this {beautiful|amazing|stunning} view! 🌅
 
-#### Spintax Format Example
-
-Use `{option1|option2}` syntax for random text variations. Use native line breaks (press Enter):
-
-```text
-{Good morning|Hello|Hi}! Check out this {amazing|incredible|awesome} video!
-{Follow for more|Like and share|Tag your friends}
-```
-
-Possible outputs:
-
-- "Good morning! Check out this amazing video!"
-- "Hello! Check out this incredible video!"
-- "Hi! Check out this awesome video!"
-
-**Complex Spintax with variations:**
-
-```text
-{🔥|✨|🎉} {Don't miss|Check out|Watch} this {amazing|incredible|awesome} {video|content|post}!
-{Follow for more|Like and share|Tag your friends} {#trending|#viral|#fyp} #tiktok
-```
-
-**Spintax with TikTok title/description split:**
-
-```text
-{Exciting|Amazing|Incredible} {News|Update|Discovery}##Here's what you need to know about this {fantastic|wonderful|remarkable} {development|update|story}!
-```
-
-#### Complete Caption.txt Example
-
-Combining multiple caption formats in one file:
-
-```text
-{Morning motivation|Daily inspiration|Start your day}! 💪
-
-{Loving|Enjoying|Obsessed with} this {beautiful|amazing|stunning} view! 🌅
-
-{Can't believe|So excited about|Thrilled with} this {moment|experience|adventure}! ✨
-
-Simple caption without variations
-
-Another caption###with line break###and multiple lines
-
-TikTok Title##And here's the detailed description that follows
-```
-
+  {Can’t believe|So excited about|Thrilled with} this {moment|experience|adventure}! ✨
+  ```
 
   **Sound_names.txt Example:**
 
