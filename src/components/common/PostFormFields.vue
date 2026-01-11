@@ -268,8 +268,8 @@
                         </div>
                         <div class="flex flex-wrap gap-4">
                             <label class="flex items-center gap-2">
-                                <input type="radio" id="multiline" value="multiline" v-model="localFormData.caption_format"
-                                    class="form-radio text-primary">
+                                <input type="radio" id="multiline" value="multiline"
+                                    v-model="localFormData.caption_format" class="form-radio text-primary">
                                 <span>{{ $t('captionFormatMultiline') }}</span>
                             </label>
                             <label class="flex items-center gap-2">
@@ -279,13 +279,13 @@
                             </label>
                         </div>
                     </div>
-                    
+
                     <!-- Captions Input with Format-specific UI -->
                     <div class="grid gap-3 md:grid-cols-[180px_minmax(0,1fr)] items-start">
                         <div class="flex items-center gap-1 md:justify-end md:pt-1">
                             <span class="text-md font-semibold uppercase tracking-wide text-base-content/70">{{
                                 $t('captions') }}</span>
-                            <div class="tooltip tooltip-right" 
+                            <div class="tooltip tooltip-right"
                                 :data-tip="localFormData.caption_format === 'spintax' ? $t('captionSpintaxTips') : $t('captionMultilineTips')">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     class="stroke-info shrink-0 w-5 h-5 cursor-help">
@@ -297,27 +297,30 @@
                         <div class="space-y-2">
                             <textarea class="textarea textarea-bordered h-32 leading-tight"
                                 :placeholder="localFormData.caption_format === 'spintax' ? $t('captionSpintaxPlaceholder') : $t('captionMultilinePlaceholder')"
-                                autocomplete="off"
-                                v-model="localFormData.captions"></textarea>
-                            
+                                autocomplete="off" v-model="localFormData.captions"></textarea>
+
                             <!-- Warning for ## on Instagram -->
                             <div v-if="whitelabelConfig.targetApp === 'instagram' && localFormData.captions && localFormData.captions.includes('##')"
                                 class="alert alert-warning py-2 px-3 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-5 w-5"
+                                    fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                                 </svg>
                                 <span>{{ $t('captionHashtagDetectedWarning') }}</span>
                             </div>
-                            
+
                             <!-- Tip for ### in Spintax mode -->
                             <div v-if="localFormData.caption_format === 'spintax' && localFormData.captions && localFormData.captions.includes('###')"
                                 class="alert alert-info py-2 px-3 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 h-5 w-5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    class="stroke-current shrink-0 h-5 w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                                 <span>{{ $t('captionTripleHashDetectedTip') }}</span>
                             </div>
-                            
+
                             <!-- Note about ## on TikTok for Spintax mode -->
                             <div v-if="localFormData.caption_format === 'spintax' && whitelabelConfig.targetApp === 'tiktok'"
                                 class="text-sm text-base-content/60 italic">
@@ -452,14 +455,13 @@ export default {
         formData: {
             handler(newVal) {
                 this.localFormData = {
-                    custom_sound_keyword: '',
-                    caption_format: 'multiline', // Default to multiline mode
                     ...newVal
                 };
                 // Ensure caption_format has a default value if not set
                 if (!this.localFormData.caption_format) {
                     this.localFormData.caption_format = 'multiline';
                 }
+                console.log('caption_format:', this.localFormData.caption_format);
                 if (this.localFormData.add_sound !== 'custom' && !this.localFormData.custom_sound_keyword) {
                     this.localFormData.custom_sound_keyword = newVal?.custom_sound_keyword || '';
                 }
