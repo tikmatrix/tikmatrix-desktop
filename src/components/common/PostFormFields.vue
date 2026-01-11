@@ -457,8 +457,10 @@ export default {
                 this.localFormData = {
                     ...newVal
                 };
-                // Ensure caption_format has a default value if not set
-                if (!this.localFormData.caption_format) {
+                // Ensure caption_format has a default value if not set or invalid
+                if (!this.localFormData.caption_format || 
+                    (this.localFormData.caption_format !== 'multiline' && 
+                     this.localFormData.caption_format !== 'spintax')) {
                     this.localFormData.caption_format = 'multiline';
                 }
                 console.log('caption_format:', this.localFormData.caption_format);
