@@ -87,11 +87,11 @@
     </button>
 
     <!-- AI 智能代理脚本 -->
-    <button class="btn btn-md btn-accent ml-1 mb-1"
+    <!-- <button class="btn btn-md btn-accent ml-1 mb-1"
         @click="$emiter('showDialog', { name: 'beforeRunScriptDialog', script: { name: 'aiAgent' } })">
         <font-awesome-icon icon="fa-solid fa-robot" class="h-3 w-3 mr-1" />
         {{ $t('aiAgent') }}
-    </button>
+    </button> -->
 
     <!-- 测试脚本 -->
     <button class="btn btn-md btn-warning ml-1 mb-1"
