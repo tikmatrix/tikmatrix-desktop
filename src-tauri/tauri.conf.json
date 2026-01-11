@@ -139,6 +139,7 @@
         "fullscreen": false,
         "resizable": true,
         "title": "TikMatrix",
+        "theme": "Light",
         "width": 1024,
         "height": 768,
         "maximized": true,
