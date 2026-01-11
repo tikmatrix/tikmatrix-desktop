@@ -27,11 +27,7 @@
                 <button class="btn btn-md md:btn-md btn-circle btn-ghost tooltip tooltip-bottom"
                   :data-tip="$t('screenCastSettings')" :aria-label="$t('screenCastSettings')"
                   @click="$refs.screen_cast_settings.show()">
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4 10V7C4 6.44772 4.44772 6 5 6H19C19.5523 6 20 6.44772 20 7V17C20 17.5523 19.5523 18 19 18H12M6 18C6 16.8954 5.10457 16 4 16M8 18C8 15.7909 6.20914 14 4 14M4 12C7.31371 12 10 14.6863 10 18"
-                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                  <font-awesome-icon icon="fa-solid fa-desktop" class="h-4 w-4" />
                 </button>
 
                 <div
