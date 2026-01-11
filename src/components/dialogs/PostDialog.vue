@@ -92,6 +92,7 @@ const postMixin = postSettings.createVueMixin(
     add_product_link: 0,
     ai_label: false,
     captions: '',
+    caption_format: 'multiline',
     materials_tags: '',
     material_source: 'materialLibrary',
     material_path: ''
@@ -105,7 +106,7 @@ const postMixin = postSettings.createVueMixin(
     'own_post_comment', 'own_post_comment_emoji', 'generate_by_chatgpt',
     'chatgpt_settings', 'sound_name', 'content_type', 'image_count',
     'custom_sound_keyword', 'add_sound', 'sound_wait_time', 'upload_wait_time', 'origin_sound_volume', 'add_sound_volume',
-    'add_product_link', 'ai_label', 'captions', 'materials_tags', 'material_source', 'material_path', 'placement'
+    'add_product_link', 'ai_label', 'captions', 'caption_format', 'materials_tags', 'material_source', 'material_path', 'placement'
   ]
 );
 
@@ -137,6 +138,7 @@ export default {
         add_product_link: this.add_product_link,
         ai_label: this.ai_label,
         captions: this.captions,
+        caption_format: this.caption_format,
         material_source: this.material_source,
         material_path: this.material_path,
         materials_tags: this.materials_tags
