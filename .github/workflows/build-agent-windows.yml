@@ -142,6 +142,8 @@ jobs:
               }
               Invoke-RestMethod -Uri "https://api.niostack.com/ci/update_lib" -Method Post -Headers $agentHeaders -Body $AGENT_UPDATE_DATA
               Write-Host "Agent library updated successfully"
+              Invoke-RestMethod -Uri "https://api.tikmatrix.com/ci/update_lib" -Method Post -Headers $agentHeaders -Body $AGENT_UPDATE_DATA
+              Write-Host "Agent library updated successfully on api.tikmatrix.com"
             } catch {
               Write-Host "Error updating agent library: $_"
               exit 1
@@ -177,6 +179,8 @@ jobs:
               }
               Invoke-RestMethod -Uri "https://api.niostack.com/ci/update_lib" -Method Post -Headers $scriptHeaders -Body $SCRIPT_UPDATE_DATA
               Write-Host "Script library updated successfully"
+              Invoke-RestMethod -Uri "https://api.tikmatrix.com/ci/update_lib" -Method Post -Headers $scriptHeaders -Body $SCRIPT_UPDATE_DATA
+              Write-Host "Script library updated successfully on api.tikmatrix.com"
             } catch {
               Write-Host "Error updating script library: $_"
               exit 1

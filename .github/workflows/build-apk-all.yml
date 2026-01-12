@@ -101,6 +101,11 @@ jobs:
             echo "Failed to update apk library (HTTP $HTTP_CODE)"
             exit 1
           fi
+          curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${API_KEY}" \
+            -d "${APK_PAYLOAD}"
+          echo "Updated apk library on api.tikmatrix.com"
 
           # Update test-apk
           TEST_PAYLOAD=$(cat <<EOF
@@ -127,6 +132,12 @@ jobs:
             echo "Failed to update test-apk library (HTTP $HTTP_CODE2)"
             exit 1
           fi
+          curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${API_KEY}" \
+            -d "${TEST_PAYLOAD}"
+
+          echo "Updated test-apk library on api.tikmatrix.com"
 
       # Build AGATikTok whitelabel APK
       - name: Build AGATikTok APK
@@ -178,6 +189,11 @@ jobs:
             echo "Failed to update AGATikTok apk library (HTTP $HTTP_CODE)"
             exit 1
           fi
+          curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${API_KEY}" \
+            -d "${APK_PAYLOAD}"
+          echo "Updated AGATikTok apk library on api.tikmatrix.com"
 
           # Update test-apk
           TEST_PAYLOAD=$(cat <<EOF
@@ -204,3 +220,8 @@ jobs:
             echo "Failed to update AGATikTok test-apk library (HTTP $HTTP_CODE2)"
             exit 1
           fi
+          curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${API_KEY}" \
+            -d "${TEST_PAYLOAD}"
+          echo "Updated AGATikTok test-apk library on api.tikmatrix.com"

@@ -180,6 +180,12 @@ jobs:
               -H "Authorization: Bearer ${{ secrets.API_KEY }}" \
               -d "$UPDATE_DATA" \
               "https://api.niostack.com/ci/update_lib"
+            echo "Updated $NAME for $PLATFORM by api.tikmatrix.com"
+            curl -X POST \
+              -H "Content-Type: application/json" \
+              -H "Authorization: Bearer ${{ secrets.API_KEY }}" \
+              -d "$UPDATE_DATA" \
+              "https://api.tikmatrix.com/ci/update_lib"
           }
 
           # Update libraries based on build target
