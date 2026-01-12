@@ -10,7 +10,7 @@
             <div class="space-y-4">
                 <div class="flex flex-col gap-3">
                     <VueSlider v-model="localFormData.view_duration" :width="500" :min="10" :max="180"
-                        :marks="{ 10: '10', 90: '90', 180: '180' + ' ' + $t('second') }" />
+                        :marks="{ 10: '10', 90: '90', 180: `180 ${$t('second')}` }" />
 
                     <div class="alert alert-info py-2 px-3 text-sm mt-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -33,7 +33,7 @@
                     5: '5',
                     20: '20',
                     40: '40',
-                    60: '60' + ' ' + $t('minute')
+                    60: `60 ${$t('minute')}`
                 }" />
             </div>
         </div>

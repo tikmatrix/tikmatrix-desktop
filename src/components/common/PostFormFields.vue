@@ -163,7 +163,7 @@
                                 15: '15',
                                 20: '20',
                                 25: '25',
-                                30: '30' + ' ' + $t('second')
+                                30: `30 ${$t('second')}`
                             }" />
                     </div>
                     <div class="grid gap-3 md:grid-cols-[180px_minmax(0,1fr)] items-start">
@@ -182,7 +182,7 @@
                             :min="30" :max="300" :step="30" :marks="{
                                 30: '30',
                                 150: '150',
-                                300: '300' + ' ' + $t('second')
+                                300: `300 ${$t('second')}`
                             }" />
                     </div>
                     <div class="grid gap-3 md:grid-cols-[180px_minmax(0,1fr)] items-start"

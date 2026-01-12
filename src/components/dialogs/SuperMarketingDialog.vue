@@ -487,7 +487,7 @@
                 <div class="flex w-full items-center gap-2 mt-8 mb-8">
                     <label class="font-bold mr-4">{{ $t('viewDuration') }}:</label>
                     <VueSlider v-model="postSettings.view_durations" :width="500" :min="0" :max="300"
-                        :marks="{ 0: '0', 60: '60', 120: '120', 180: '180', 240: '240', 300: '300' + ' ' + $t('second') }" />
+                        :marks="{ 0: '0', 60: '60', 120: '120', 180: '180', 240: '240', 300: `300 ${$t('second')}` }" />
 
 
                 </div>
@@ -712,7 +712,7 @@
                         <VueSlider v-model="task_interval" :width="500" :min="0" :max="10" :marks="{
                             0: '0',
                             5: '5',
-                            10: '10' + ' ' + $t('minute')
+                            10: `10 ${$t('minute')}`
                         }" />
                         <div class="text-sm text-base-content/70">
                             {{ $t('taskInterval') }}: {{ task_interval[0] }} - {{ task_interval[1] }}

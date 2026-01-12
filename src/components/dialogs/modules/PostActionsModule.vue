@@ -50,7 +50,7 @@
                     <VueSlider :modelValue="postSettings.view_durations"
                         @update:modelValue="$emit('updatePostSettings', 'view_durations', $event)"
                         :width="500" :min="0" :max="300"
-                        :marks="{ 0: '0', 60: '60', 120: '120', 180: '180', 240: '240', 300: '300' + ' ' + $t('second') }" />
+                        :marks="{ 0: '0', 60: '60', 120: '120', 180: '180', 240: '240', 300: `300 ${$t('second')}` }" />
                 </div>
                 <div class="alert alert-info py-2 px-3 mt-4">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
