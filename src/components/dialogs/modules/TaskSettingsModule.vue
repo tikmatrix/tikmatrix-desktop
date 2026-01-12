@@ -50,7 +50,7 @@
                             :width="500" :min="0" :max="10" :marks="{
                                 0: '0',
                                 5: '5',
-                                10: '10' + ' ' + $t('minute')
+                                10: `10 ${$t('minute')}`
                             }" />
                         <div class="text-sm text-base-content/70">
                             {{ $t('taskInterval') }}: {{ taskInterval[0] }} - {{ taskInterval[1] }}

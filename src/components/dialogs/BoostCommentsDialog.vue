@@ -65,7 +65,7 @@
         <VueSlider v-model="task_interval" :width="500" :min="0" :max="10" :marks="{
             0: '0',
             5: '5',
-            10: '10' + ' ' + $t('minute')
+            10: `10 ${$t('minute')}`
         }" />
     </div>
     <div class="alert alert-info py-2 px-3">

@@ -54,7 +54,7 @@
   <div class="flex flex-row items-center">
     <label class="font-bold mr-4">{{ $t('boostPostInterval') }}:</label>
     <VueSlider v-model="boost_post_interval" :width="200" :min="0" :max="10"
-      :marks="{ 0: '0' + $t('minute'), 5: '5' + $t('minute'), 10: '10' + $t('minute') }" />
+      :marks="{ 0: `0${$t('minute')}`, 5: `5${$t('minute')}`, 10: `10${$t('minute')}` }" />
   </div>
 </template>
 <script>
