@@ -138,7 +138,7 @@ export default {
         add_product_link: this.add_product_link,
         ai_label: this.ai_label,
         captions: this.captions,
-        caption_format: this.caption_format,
+        caption_format: this.caption_format && (this.caption_format === 'multiline' || this.caption_format === 'spintax') ? this.caption_format : 'multiline',
         material_source: this.material_source,
         material_path: this.material_path,
         materials_tags: this.materials_tags
