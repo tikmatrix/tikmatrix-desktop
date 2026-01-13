@@ -62,11 +62,11 @@ const advertising = [
     },
     // Proxy IP Providers
     {
-        titleId: 'advertising.proxy.bartproxies.title',
-        title: 'BartProxies',
-        url: 'https://bartproxies.com/login?referral=nai50tep',
-        descriptionId: 'advertising.proxy.bartproxies.description',
-        description: 'High-quality residential and datacenter proxy services',
+        titleId: 'advertising.proxy.thordata.title',
+        title: 'Thordata',
+        url: 'https://dashboard.thordata.com/register?invitation_code=S63414A4',
+        descriptionId: 'advertising.proxy.thordata.description',
+        description: 'Best Residential Proxies - Stable & Reliable & Cost-effective Sign up for a free 1GB trial',
         categoryId: 'advertising.category.proxy',
         category: 'Proxy'
     },

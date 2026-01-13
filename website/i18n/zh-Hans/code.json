@@ -386,11 +386,11 @@
   "advertising.vps.uuuvps.description": {
     "message": "高性能VPS主机，提供全球多个位置"
   },
-  "advertising.proxy.bartproxies.title": {
-    "message": "BartProxies"
+  "advertising.proxy.thordata.title": {
+    "message": "Thordata"
   },
-  "advertising.proxy.bartproxies.description": {
-    "message": "高质量住宅和数据中心代理服务"
+  "advertising.proxy.thordata.description": {
+    "message": "最佳住宅代理 —— 稳定 · 可靠 · 高性价比\n注册即可获得 1GB 免费试用流量"
   },
   "advertising.proxy.proxycheap.title": {
     "message": "Proxy-Cheap"

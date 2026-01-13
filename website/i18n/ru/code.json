@@ -1815,11 +1815,11 @@
     "advertising.vps.uuuvps.description": {
         "message": "Высокопроизводительный VPS-хостинг с глобальными локациями"
     },
-    "advertising.proxy.bartproxies.title": {
-        "message": "BartProxies"
+    "advertising.proxy.thordata.title": {
+        "message": "Thordata"
     },
-    "advertising.proxy.bartproxies.description": {
-        "message": "Высококачественные резидентные и дата-центровые прокси сервисы"
+    "advertising.proxy.thordata.description": {
+        "message": "Лучшие резидентные прокси - стабильные, надежные и экономичные. Зарегистрируйтесь для бесплатного пробного периода на 1 ГБ"
     },
     "advertising.proxy.proxycheap.title": {
         "message": "Proxy-Cheap"
