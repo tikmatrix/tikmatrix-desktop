@@ -1,0 +1,14 @@
+{
+    "title": {
+        "message": "Blog",
+        "description": "TikMatrix Blog"
+    },
+    "description": {
+        "message": "TikMatrix Blog",
+        "description": "TikMatrix Blog"
+    },
+    "sidebar.title": {
+        "message": "Neueste Beiträge",
+        "description": "Neueste TikMatrix Beiträge"
+    }
+}
