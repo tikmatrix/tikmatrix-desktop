@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
-title: API 示例
-description: 使用 TikMatrix 本地 API 的代码示例
+title: أمثلة API
+description: أمثلة أكواد لاستخدام API المحلي لـ TikMatrix
 ---
 
-本页面提供了在不同编程语言中使用 TikMatrix 本地 API 的示例代码。
+تقدم هذه الصفحة أمثلة أكواد لاستخدام API المحلي لـ TikMatrix في لغات برمجة مختلفة.
 
 ## Python
 
@@ -67,27 +67,27 @@ def get_stats():
     response = requests.get(f"{BASE_URL}/task/stats")
     return response.json()
 
-# 使用示例
+# مثال على الاستخدام
 if __name__ == "__main__":
-    # 首先检查许可证
+    # أولاً، تحقق من الترخيص
     license_info = check_license()
     if license_info["code"] != 0:
-        print("API 访问不可用:", license_info["message"])
+        print("الوصول إلى API غير متاح:", license_info["message"])
         exit(1)
     
-    print("许可证正常:", license_info["data"]["plan_name"])
+    print("الترخيص صالح:", license_info["data"]["plan_name"])
     
-    # 创建一个关注任务
+    # إنشاء مهمة متابعة
     result = create_task(
         serials=["device_serial_1"],
         script_name="follow",
         script_config={"target_username": "@tikmatrix"}
     )
-    print("任务已创建:", result)
+    print("تم إنشاء المهمة:", result)
     
-    # 获取统计信息
+    # الحصول على الإحصائيات
     stats = get_stats()
-    print("统计:", stats["data"])
+    print("الإحصائيات:", stats["data"])
 ```
 
 ## JavaScript / Node.js
@@ -146,27 +146,27 @@ async function getStats() {
   return response.json();
 }
 
-// 使用示例
+// مثال على الاستخدام
 async function main() {
-  // 检查许可证
+  // التحقق من الترخيص
   const license = await checkLicense();
   if (license.code !== 0) {
-    console.error('API 访问不可用:', license.message);
+    console.error('الوصول إلى API غير متاح:', license.message);
     return;
   }
-  console.log('许可证正常:', license.data.plan_name);
+  console.log('الترخيص صالح:', license.data.plan_name);
 
-  // 创建任务
+  // إنشاء مهمة
   const result = await createTask(
     ['device_serial_1'],
     'follow',
     { target_username: '@tikmatrix' }
   );
-  console.log('任务已创建:', result);
+  console.log('تم إنشاء المهمة:', result);
 
-  // 获取统计信息
+  // الحصول على الإحصائيات
   const stats = await getStats();
-  console.log('统计:', stats.data);
+  console.log('الإحصائيات:', stats.data);
 }
 
 main().catch(console.error);
@@ -175,10 +175,10 @@ main().catch(console.error);
 ## cURL
 
 ```bash
-# 检查许可证
+# التحقق من الترخيص
 curl http://localhost:50809/api/v1/license/check
 
-# 创建任务
+# إنشاء مهمة
 curl -X POST http://localhost:50809/api/v1/task \
   -H "Content-Type: application/json" \
   -d '{
@@ -188,30 +188,30 @@ curl -X POST http://localhost:50809/api/v1/task \
     "enable_multi_account": false
   }'
 
-# 列出待处理任务
+# إدراج المهام المعلقة
 curl "http://localhost:50809/api/v1/task?status=0&page=1&page_size=20"
 
-# 获取任务详情
+# الحصول على تفاصيل المهمة
 curl http://localhost:50809/api/v1/task/1
 
-# 停止任务
+# إيقاف مهمة
 curl -X POST http://localhost:50809/api/v1/task/1/stop
 
-# 重试任务
+# إعادة محاولة مهمة
 curl -X POST http://localhost:50809/api/v1/task/1/retry
 
-# 删除任务
+# حذف مهمة
 curl -X DELETE http://localhost:50809/api/v1/task/1
 
-# 批量删除任务
+# حذف مهام دفعية
 curl -X DELETE http://localhost:50809/api/v1/task/batch \
   -H "Content-Type: application/json" \
   -d '{"task_ids": [1, 2, 3]}'
 
-# 重试所有失败任务
+# إعادة محاولة جميع المهام الفاشلة
 curl -X POST http://localhost:50809/api/v1/task/retry-all
 
-# 获取任务统计
+# الحصول على إحصائيات المهام
 curl http://localhost:50809/api/v1/task/stats
 ```
 
@@ -271,29 +271,29 @@ function Remove-TaskById {
     return $response
 }
 
-# 使用示例
+# مثال على الاستخدام
 $license = Check-License
 if ($license.code -ne 0) {
-    Write-Error "API 访问不可用: $($license.message)"
+    Write-Error "الوصول إلى API غير متاح: $($license.message)"
     exit 1
 }
 
-Write-Host "许可证正常: $($license.data.plan_name)"
+Write-Host "الترخيص صالح: $($license.data.plan_name)"
 
-# 创建任务
+# إنشاء مهمة
 $result = Create-Task -Serials @("device_serial_1") `
     -ScriptName "follow" `
     -ScriptConfig @{ target_username = "@tikmatrix" }
 
-Write-Host "任务已创建: $($result | ConvertTo-Json)"
+Write-Host "تم إنشاء المهمة: $($result | ConvertTo-Json)"
 ```
 
-## 常见使用场景
+## سيناريوهات الاستخدام الشائعة
 
-### 为多个设备批量创建任务
+### إنشاء مهام دفعية لعدة أجهزة
 
 ```python
-# Python 示例：为所有已连接设备创建关注任务
+# مثال Python: إنشاء مهام متابعة لجميع الأجهزة المتصلة
 devices = ["device_1", "device_2", "device_3", "device_4", "device_5"]
 
 result = create_task(
@@ -303,16 +303,16 @@ result = create_task(
     multi_account=True
 )
 
-print(f"已创建 {result['data']['created_count']} 个任务")
+print(f"تم إنشاء {result['data']['created_count']} مهمة")
 ```
 
-### 监控任务进度
+### مراقبة تقدم المهام
 
 ```python
 import time
 
 def wait_for_completion(task_ids, timeout=300):
-    """等待所有任务完成"""
+    """انتظار اكتمال جميع المهام"""
     start_time = time.time()
     
     while time.time() - start_time < timeout:
@@ -321,33 +321,33 @@ def wait_for_completion(task_ids, timeout=300):
         pending = stats['data']['pending']
         
         if running == 0 and pending == 0:
-            print("所有任务已完成！")
+            print("اكتملت جميع المهام!")
             return True
         
-        print(f"运行中: {running}, 等待中: {pending}")
+        print(f"قيد التشغيل: {running}, في الانتظار: {pending}")
         time.sleep(5)
     
-    print("等待任务超时")
+    print("انتهى وقت انتظار المهام")
     return False
 ```
 
-### 自动重试失败任务
+### إعادة محاولة المهام الفاشلة تلقائيًا
 
 ```python
 def auto_retry_failed(max_retries=3):
-    """自动重试失败的任务"""
+    """إعادة محاولة المهام الفاشلة تلقائيًا"""
     for i in range(max_retries):
-        # 获取失败任务
+        # الحصول على المهام الفاشلة
         failed = list_tasks(status=3)
         if failed['data']['total'] == 0:
-            print("没有失败的任务")
+            print("لا توجد مهام فاشلة")
             return
         
-        print(f"重试 {failed['data']['total']} 个失败任务（第 {i+1} 次尝试）")
+        print(f"إعادة محاولة {failed['data']['total']} مهمة فاشلة (المحاولة {i+1})")
         
-        # 重试所有
+        # إعادة محاولة الجميع
         result = requests.post(f"{BASE_URL}/task/retry-all")
         
-        # 等待完成
+        # الانتظار حتى الاكتمال
         time.sleep(30)
 ```

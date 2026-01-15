@@ -1,45 +1,45 @@
 ---
 sidebar_position: 5
-title: 评论脚本配置
-description: 评论脚本的完整配置参考
+title: تكوين نص التعليق
+description: مرجع تكوين كامل لنص التعليق
 ---
 
-本页介绍用于任务创建的 `comment` 脚本的配置参数。
+تقدم هذه الصفحة معاملات تكوين نص `comment` لإنشاء المهام.
 
-## 概述
+## نظرة عامة
 
-`comment` 脚本用于自动在 TikTok 或 Instagram 帖子上发布评论。当您通过 API 提供多个目标帖子 URL 时，**每个目标帖子 URL 创建一个任务**。您可以使用 `start_time` 参数控制每个任务的执行时间。
+يُستخدم نص `comment` لنشر التعليقات تلقائيًا على منشورات TikTok أو Instagram. عند توفير عدة روابط منشورات مستهدفة عبر API، **يتم إنشاء مهمة واحدة لكل رابط منشور مستهدف**. يمكنك استخدام معامل `start_time` للتحكم في وقت تنفيذ كل مهمة.
 
-## 脚本配置 (`script_config`)
+## تكوين النص البرمجي (`script_config`)
 
-`script_config` 对象包含评论脚本的参数。以下是可用的参数：
+يحتوي كائن `script_config` على معاملات نص التعليق. فيما يلي المعاملات المتاحة:
 
-### 参数
+### المعاملات
 
-| 参数 | 类型 | 必填 | 默认值 | 描述 |
+| المعامل | النوع | مطلوب | القيمة الافتراضية | الوصف |
 |-----------|------|----------|---------|-------------|
-| target_post_urls | string[] | 是* | [] | 要评论的目标帖子 URL 数组（每个 URL 一个任务） |
-| target_post_url | string | 是* | "" | 单个目标帖子 URL 或用换行符/逗号分隔的多个 URL |
-| comment_content | string | 是 | "" | 评论文本内容。可以包含用换行符分隔的多条评论 |
-| comment_order | string | 否 | "random" | 如何选择评论：`random`（随机）或 `sequential`（顺序） |
-| insert_emoji | boolean | 否 | false | 是否在评论中插入随机表情符号 |
-| comment_image_path | string | 否 | "" | 图片评论的图片文件路径（仅限 TikTok）。支持绝对路径或相对于 work_dir/upload/ 的相对路径 |
+| target_post_urls | string[] | نعم* | [] | مصفوفة روابط المنشورات المستهدفة للتعليق عليها (مهمة واحدة لكل رابط) |
+| target_post_url | string | نعم* | "" | رابط منشور مستهدف واحد أو روابط متعددة مفصولة بفواصل أسطر/فواصل |
+| comment_content | string | نعم | "" | نص محتوى التعليق. يمكن أن يحتوي على تعليقات متعددة مفصولة بفواصل أسطر |
+| comment_order | string | لا | "random" | كيفية اختيار التعليقات: `random` (عشوائي) أو `sequential` (متسلسل) |
+| insert_emoji | boolean | لا | false | ما إذا كان يجب إدراج رموز تعبيرية عشوائية في التعليقات |
+| comment_image_path | string | لا | "" | مسار ملف الصورة للتعليقات بالصور (TikTok فقط). يدعم المسار المطلق أو المسار النسبي لـ work_dir/upload/ |
 
 :::note
-必须提供 `target_post_urls` 数组或 `target_post_url` 字符串。如果两者都提供，`target_post_urls` 优先。
+يجب توفير مصفوفة `target_post_urls` أو سلسلة `target_post_url`. إذا تم توفير كليهما، فإن `target_post_urls` له الأولوية.
 :::
 
-:::tip 图片评论（仅限 TikTok）
-`comment_image_path` 参数允许您在评论中附加图片。此功能**仅在 TikTok 上支持** - Instagram 评论不支持图片附件。图片将被推送到设备并作为图库中的第一张图片被选择。
+:::tip تعليقات بالصور (TikTok فقط)
+يتيح لك معامل `comment_image_path` إرفاق صورة في تعليقك. هذه الميزة **مدعومة فقط على TikTok** - تعليقات Instagram لا تدعم مرفقات الصور. سيتم دفع الصورة إلى الجهاز واختيارها كأول صورة في المعرض.
 :::
 
-:::info 任务创建
-当提供多个目标帖子 URL 时，API 会 **为每个目标帖子 URL 创建一个任务**。例如，如果您指定 3 个帖子 URL 和 2 个设备，将创建 6 个任务。使用 `start_time` 参数控制任务开始执行的时间。
+:::info إنشاء المهام
+عند توفير عدة روابط منشورات مستهدفة، سينشئ API **مهمة واحدة لكل رابط منشور مستهدف**. على سبيل المثال، إذا حددت 3 روابط منشورات وجهازين، سيتم إنشاء 6 مهام. استخدم معامل `start_time` للتحكم في وقت بدء تنفيذ المهام.
 :::
 
-## 示例
+## أمثلة
 
-### 评论单个帖子
+### التعليق على منشور واحد
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -49,14 +49,14 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "精彩内容！🔥"
+      "comment_content": "محتوى رائع! 🔥"
     }
   }'
 ```
 
-### 使用多个评论选项
+### استخدام خيارات تعليق متعددة
 
-提供用换行符分隔的多条评论。系统将根据 `comment_order` 选择其中一条：
+قدم تعليقات متعددة مفصولة بفواصل أسطر. سيختار النظام واحدًا بناءً على `comment_order`:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -66,15 +66,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "视频太棒了！\n喜欢这个内容！\n继续加油！👏\n真的很不错！",
+      "comment_content": "الفيديو رائع!\nأحب هذا المحتوى!\nاستمر في العمل الجيد! 👏\nجيد حقًا!",
       "comment_order": "random"
     }
   }'
 ```
 
-### 评论多个帖子
+### التعليق على منشورات متعددة
 
-当评论多个帖子时，每个帖子创建一个任务：
+عند التعليق على منشورات متعددة، يتم إنشاء مهمة لكل منشور:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -88,17 +88,17 @@ curl -X POST http://localhost:50809/api/v1/task \
         "https://www.tiktok.com/@user2/video/222",
         "https://www.tiktok.com/@user3/video/333"
       ],
-      "comment_content": "好视频！\n太棒了！\n喜欢！",
+      "comment_content": "فيديو جيد!\nرائع!\nأحببته!",
       "comment_order": "sequential"
     }
   }'
 ```
 
-这将创建 3 个立即执行的独立任务。
+سيؤدي هذا إلى إنشاء 3 مهام مستقلة يتم تنفيذها على الفور.
 
-### 定时评论
+### تعليق مجدول
 
-使用 `start_time` 安排任务开始执行的时间：
+استخدم `start_time` لجدولة وقت بدء تنفيذ المهام:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -108,15 +108,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "定时评论！"
+      "comment_content": "تعليق مجدول!"
     },
     "start_time": "14:30"
   }'
 ```
 
-### 带表情符号插入的评论
+### التعليق مع إدراج رموز تعبيرية
 
-启用自动表情符号插入使评论更具吸引力：
+تمكين الإدراج التلقائي للرموز التعبيرية لجعل التعليقات أكثر جاذبية:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -126,15 +126,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "这太棒了",
+      "comment_content": "هذا رائع",
       "insert_emoji": true
     }
   }'
 ```
 
-### 按用户名列表模式评论
+### التعليق بوضع قائمة أسماء المستخدمين
 
-直接为特定账号创建评论任务：
+إنشاء مهام تعليق مباشرة لحسابات محددة:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -144,12 +144,12 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@target/video/123",
-      "comment_content": "视频不错！"
+      "comment_content": "فيديو لا بأس به!"
     }
   }'
 ```
 
-### 在多设备上批量评论
+### التعليق الدفعي على عدة أجهزة
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -159,16 +159,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@viral/video/999",
-      "comment_content": "内容很棒！\n出色的作品！\n太喜欢了！",
+      "comment_content": "محتوى رائع!\nعمل ممتاز!\nأحبه جدًا!",
       "comment_order": "random"
     },
     "enable_multi_account": true
   }'
 ```
 
-### Instagram 评论示例
+### مثال تعليق Instagram
 
-同样的 API 适用于 Instagram 帖子：
+نفس API ينطبق على منشورات Instagram:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -178,15 +178,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.instagram.com/p/ABC123/",
-      "comment_content": "美丽的照片！📸",
+      "comment_content": "صورة جميلة! 📸",
       "insert_emoji": true
     }
   }'
 ```
 
-### TikTok 图片评论示例
+### مثال تعليق بصورة على TikTok
 
-在您的 TikTok 评论中附加图片（不支持 Instagram）：
+أرفق صورة في تعليقك على TikTok (غير مدعوم على Instagram):
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -196,21 +196,21 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "看看这张图片！",
+      "comment_content": "انظر إلى هذه الصورة!",
       "comment_image_path": "C:/images/my_image.jpg"
     }
   }'
 ```
 
-:::info 图片路径
-`comment_image_path` 可以是：
+:::info مسار الصورة
+يمكن أن يكون `comment_image_path`:
 
-- **绝对路径**：`C:/images/my_image.jpg` 或 `/home/user/images/my_image.jpg`
-- **相对路径**：`my_image.jpg`（相对于 `work_dir/upload/`）
+- **مسار مطلق**: `C:/images/my_image.jpg` أو `/home/user/images/my_image.jpg`
+- **مسار نسبي**: `my_image.jpg` (نسبيًا لـ `work_dir/upload/`)
 
 :::
 
-## 响应
+## الاستجابة
 
 ```json
 {
@@ -223,22 +223,22 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 评论顺序
+## ترتيب التعليقات
 
-### 随机顺序 (`random`)
+### ترتيب عشوائي (`random`)
 
-- 从提供的列表中随机选择一条评论
-- 适合使评论看起来更自然
-- 默认行为
+- اختيار تعليق عشوائيًا من القائمة المقدمة
+- مناسب لجعل التعليقات تبدو أكثر طبيعية
+- السلوك الافتراضي
 
-### 顺序 (`sequential`)
+### ترتيب متسلسل (`sequential`)
 
-- 根据 `job_count` 按顺序选择评论
-- 第一个任务使用第一条评论，第二个任务使用第二条评论，依此类推
-- 到达列表末尾时循环回开头
-- 适合在多个任务之间分发不同的评论
+- اختيار التعليقات بالترتيب بناءً على `job_count`
+- المهمة الأولى تستخدم التعليق الأول، المهمة الثانية تستخدم التعليق الثاني، وهكذا
+- العودة إلى البداية عند الوصول إلى نهاية القائمة
+- مناسب لتوزيع تعليقات مختلفة عبر مهام متعددة
 
-## 帖子 URL 格式
+## تنسيقات روابط المنشورات
 
 ### TikTok
 
@@ -254,29 +254,29 @@ https://www.instagram.com/p/ABCDEFGHIJK/
 https://www.instagram.com/reel/ABCDEFGHIJK/
 ```
 
-## 最佳实践
+## أفضل الممارسات
 
-1. **变化您的评论**：提供多个评论选项以避免看起来像垃圾信息。
+1. **نوّع تعليقاتك**: قدم خيارات تعليق متعددة لتجنب أن تبدو كرسائل غير مرغوب فيها.
 
-2. **使用顺序模式获得多样性**：当使用同一设备评论多个帖子时，使用 `sequential` 顺序来分发不同的评论。
+2. **استخدم الوضع المتسلسل للتنوع**: عند التعليق على منشورات متعددة بنفس الجهاز، استخدم الترتيب `sequential` لتوزيع تعليقات مختلفة.
 
-3. **启用表情符号插入**：设置 `insert_emoji: true` 使评论看起来更自然和有吸引力。
+3. **تمكين إدراج الرموز التعبيرية**: اضبط `insert_emoji: true` لجعل التعليقات تبدو أكثر طبيعية وجاذبية.
 
-4. **安排任务**：使用 `start_time` 参数将评论分散在一段时间内，减少触发频率限制的机会。
+4. **جدولة المهام**: استخدم معامل `start_time` لتوزيع التعليقات على مدى فترة زمنية، مما يقلل من فرص تفعيل حدود التكرار.
 
-5. **遵守平台限制**：不要一次创建太多评论任务。大多数平台对评论有频率限制。
+5. **الامتثال لحدود المنصة**: لا تنشئ عددًا كبيرًا جدًا من مهام التعليق مرة واحدة. لدى معظم المنصات حدود تكرار للتعليقات.
 
-## 错误代码
+## رموز الأخطاء
 
-| 代码 | 描述 |
+| الرمز | الوصف |
 |------|-------------|
-| 40001 | 缺少目标帖子 URL 或评论内容 |
-| 40003 | API 不支持该脚本 |
-| 40301 | API 访问需要 Pro+ 计划 |
+| 40001 | رابط المنشور المستهدف أو محتوى التعليق مفقود |
+| 40003 | النص البرمجي غير مدعوم بواسطة API |
+| 40301 | يتطلب الوصول إلى API خطة Pro+ |
 
-## 另请参阅
+## انظر أيضًا
 
-- [任务管理 API](./task-management.md) - 创建、列出和管理任务
-- [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [关注脚本配置](./follow-script.md) - 配置关注脚本参数
-- [本地 API 概述](./local-api.md) - API 概述和快速入门
+- [API إدارة المهام](./task-management.md) - إنشاء وإدراج وإدارة المهام
+- [تكوين نص النشر](./post-script.md) - تكوين معاملات نص النشر
+- [تكوين نص المتابعة](./follow-script.md) - تكوين معاملات نص المتابعة
+- [نظرة عامة على API المحلي](./local-api.md) - نظرة عامة على API والبدء السريع

@@ -1,56 +1,56 @@
 ---
 sidebar_position: 3
-title: Post 脚本配置
-description: Post 脚本的完整配置参考
+title: تكوين نص النشر
+description: مرجع تكوين كامل لنص النشر
 ---
 
-本页面记录了任务创建中使用的 `post` 脚本的配置参数。
+تسجل هذه الصفحة معاملات تكوين نص `post` المستخدم في إنشاء المهام.
 
-## 概述
+## نظرة عامة
 
-`post` 脚本用于自动发布内容（视频或图片）到 TikTok 或 Instagram。它支持多种发布方式、素材来源和音频选项。
+يُستخدم نص `post` لنشر المحتوى (الفيديوهات أو الصور) تلقائيًا على TikTok أو Instagram. يدعم طرق نشر متعددة ومصادر مواد وخيارات صوتية.
 
-## 脚本配置 (`script_config`)
+## تكوين النص البرمجي (`script_config`)
 
-`script_config` 对象包含发布脚本的参数。以下是可用参数：
+يحتوي كائن `script_config` على معاملات نص النشر. فيما يلي المعاملات المتاحة:
 
-### 通用参数（TikTok 和 Instagram）
+### المعاملات العامة (TikTok و Instagram)
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
+| المعامل | النوع | مطلوب | القيمة الافتراضية | الوصف |
 |------|------|------|--------|------|
-| content_type | integer | 否 | 0 | 内容类型：`0` = 视频，`1` = 图片 |
-| image_count | integer | 否 | 1 | 选择图片数量（当 content_type = 1 时） |
-| captions | string | 否 | "" | 帖子标题文本。支持 spintax 格式：`{选项1\|选项2\|选项3}` |
-| post_way | string | 否 | "share" | 发布方式：`share`、`addButton` 或 `useSound` |
-| material_source | string | 否 | "materialLibrary" | 素材来源：`materialLibrary`（素材库）或 `localFolder`（本地文件夹），如果提供了 material_list 则忽略此参数 |
-| material_path | string | 条件必需 | "" | 本地文件夹路径（当 material_source = "localFolder" 时必需） |
-| material_list | string[] | 否 | [] | **直接传递素材文件路径数组。** 提供此参数时，将跳过 material_source 和 material_path 的逻辑。推荐用于 API 自动化场景。 |
-| materials_tags | string | 否 | "" | 逗号分隔的素材标签，用于从素材库筛选 |
-| upload_wait_time | integer | 否 | 30 | 等待上传完成的秒数 |
-| sound_wait_time | integer | 否 | 10 | 等待音频加载的秒数 |
-| add_sound | string/integer | 否 | "-1" | 音频选项：`-1` = 默认，`0` = 禁用，`1` = 启用，`custom` = 使用自定义音频 |
-| sound_name | string | 条件必需 | "" | 音频名称/URL（当 post_way = "useSound" 时必需） |
-| custom_sound_keyword | string | 条件必需 | "" | 搜索自定义音频的关键词（当 add_sound = "custom" 时必需） |
-| origin_sound_volume | integer | 否 | 50 | 原始音频音量（0-100） |
-| add_sound_volume | integer | 否 | 50 | 添加音频音量（0-100） |
+| content_type | integer | لا | 0 | نوع المحتوى: `0` = فيديو، `1` = صورة |
+| image_count | integer | لا | 1 | عدد الصور المراد تحديدها (عندما content_type = 1) |
+| captions | string | لا | "" | نص عنوان المنشور. يدعم تنسيق spintax: `{خيار1\|خيار2\|خيار3}` |
+| post_way | string | لا | "share" | طريقة النشر: `share` أو `addButton` أو `useSound` |
+| material_source | string | لا | "materialLibrary" | مصدر المواد: `materialLibrary` (مكتبة المواد) أو `localFolder` (مجلد محلي)، يتم تجاهل هذا المعامل إذا تم توفير material_list |
+| material_path | string | مطلوب شرطيًا | "" | مسار المجلد المحلي (مطلوب عندما material_source = "localFolder") |
+| material_list | string[] | لا | [] | **تمرير مصفوفة مسارات ملفات المواد مباشرة.** عند توفير هذا المعامل، سيتم تخطي منطق material_source و material_path. موصى به لسيناريوهات أتمتة API. |
+| materials_tags | string | لا | "" | علامات المواد مفصولة بفواصل، تُستخدم لتصفية من مكتبة المواد |
+| upload_wait_time | integer | لا | 30 | الثواني للانتظار حتى اكتمال التحميل |
+| sound_wait_time | integer | لا | 10 | الثواني للانتظار حتى تحميل الصوت |
+| add_sound | string/integer | لا | "-1" | خيارات الصوت: `-1` = افتراضي، `0` = تعطيل، `1` = تمكين، `custom` = استخدام صوت مخصص |
+| sound_name | string | مطلوب شرطيًا | "" | اسم/URL الصوت (مطلوب عندما post_way = "useSound") |
+| custom_sound_keyword | string | مطلوب شرطيًا | "" | كلمة مفتاحية للبحث عن صوت مخصص (مطلوب عندما add_sound = "custom") |
+| origin_sound_volume | integer | لا | 50 | مستوى صوت الصوت الأصلي (0-100) |
+| add_sound_volume | integer | لا | 50 | مستوى صوت الصوت المضاف (0-100) |
 
-### TikTok 专属参数
+### معاملات خاصة بـ TikTok
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
+| المعامل | النوع | مطلوب | القيمة الافتراضية | الوصف |
 |------|------|------|--------|------|
-| add_product_link | integer | 否 | 0 | 添加商品链接：`0` = 否，`1` = 是 |
+| add_product_link | integer | لا | 0 | إضافة رابط منتج: `0` = لا، `1` = نعم |
 
-### Instagram 专属参数
+### معاملات خاصة بـ Instagram
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
+| المعامل | النوع | مطلوب | القيمة الافتراضية | الوصف |
 |------|------|------|--------|------|
-| placement | string | 否 | "reel" | 发布位置：`reel`（快拍）或 `story`（故事） |
+| placement | string | لا | "reel" | موضع النشر: `reel` (ريل) أو `story` (قصة) |
 
-## 示例
+## أمثلة
 
-### 基础发布任务 - 直接传递素材路径
+### مهمة نشر أساسية - تمرير مسارات المواد مباشرة
 
-这是 API 自动化的推荐方式 - 直接传递素材文件路径，无需依赖素材库或文件夹扫描：
+هذه هي الطريقة الموصى بها لأتمتة API - تمرير مسارات ملفات المواد مباشرة، دون الاعتماد على مكتبة المواد أو مسح المجلدات:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -60,7 +60,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "شاهد الفيديو الجديد الخاص بي! #trending #fyp",
       "material_list": [
         "C:/Videos/video1.mp4"
       ],
@@ -69,7 +69,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 使用素材库发布（TikTok）
+### النشر باستخدام مكتبة المواد (TikTok)
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -79,10 +79,10 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "شاهد الفيديو الجديد الخاص بي! #trending #fyp",
       "post_way": "share",
       "material_source": "materialLibrary",
-      "materials_tags": "热门, 舞蹈",
+      "materials_tags": "trending, dance",
       "upload_wait_time": 60,
       "add_sound": "-1"
     },
@@ -90,9 +90,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 通过用户名列表创建发布任务
+### إنشاء مهام نشر عبر قائمة أسماء المستخدمين
 
-此模式允许您直接为特定账号创建任务，无需知道它们的设备序列号：
+يتيح لك هذا الوضع إنشاء مهام مباشرة لحسابات محددة، دون الحاجة إلى معرفة أرقامها التسلسلية:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -102,7 +102,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "شاهد الفيديو الجديد الخاص بي! #trending #fyp",
       "material_list": [
         "C:/Videos/video1.mp4"
       ],
@@ -111,7 +111,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 使用本地文件夹发布（Instagram）
+### النشر من مجلد محلي (Instagram)
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -121,7 +121,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "精彩内容！#instagram #reels",
+      "captions": "محتوى رائع! #instagram #reels",
       "post_way": "addButton",
       "placement": "reel",
       "material_source": "localFolder",
@@ -132,7 +132,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 使用自定义音频发布
+### النشر باستخدام صوت مخصص
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -142,10 +142,10 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "跟着这首热门音乐跳舞！",
+      "captions": "الرقص مع هذه الموسيقى الشعبية!",
       "post_way": "share",
       "add_sound": "custom",
-      "custom_sound_keyword": "热门舞曲 2024",
+      "custom_sound_keyword": "موسيقى رقص شعبية 2024",
       "origin_sound_volume": 30,
       "add_sound_volume": 70,
       "material_source": "materialLibrary",
@@ -154,7 +154,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 使用指定音频 URL 发布
+### النشر باستخدام URL صوت محدد
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -165,13 +165,13 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_config": {
       "post_way": "useSound",
       "sound_name": "https://www.tiktok.com/music/original-sound-7123456789",
-      "captions": "使用这个超棒的音乐！",
+      "captions": "استخدام هذه الموسيقى الرائعة!",
       "material_source": "materialLibrary"
     }
   }'
 ```
 
-### 发布图片（轮播图）
+### نشر الصور (ألبوم دوار)
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -182,7 +182,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_config": {
       "content_type": 1,
       "image_count": 5,
-      "captions": "看看这些照片！#图集",
+      "captions": "شاهد هذه الصور! #photoset",
       "material_source": "localFolder",
       "material_path": "C:/Images/carousel",
       "upload_wait_time": 45
@@ -190,7 +190,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-## 响应
+## الاستجابة
 
 ```json
 {
@@ -203,6 +203,6 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 相关文档
+## الوثائق ذات الصلة
 
-- [任务管理 API](./task-management.md) - 创建、列表和管理任务
+- [API إدارة المهام](./task-management.md) - إنشاء وإدراج وإدارة المهام

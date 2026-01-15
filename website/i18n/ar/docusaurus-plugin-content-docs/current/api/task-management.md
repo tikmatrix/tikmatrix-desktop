@@ -1,41 +1,41 @@
 ---
 sidebar_position: 2
-title: 任务管理 API
-description: 任务管理端点的完整参考
+title: API إدارة المهام
+description: مرجع كامل لنقاط نهاية إدارة المهام
 ---
 
-本页面记录了管理 TikMatrix 任务的所有可用 API 端点。
+تسجل هذه الصفحة جميع نقاط نهاية API المتاحة لإدارة مهام TikMatrix.
 
-## 创建任务
+## إنشاء مهمة
 
-为一个或多个设备或用户名创建新任务。
+إنشاء مهام جديدة لجهاز واحد أو أكثر أو أسماء مستخدمين.
 
-- **端点：** `POST /api/v1/task`
-- **Content-Type：** `application/json`
+- **نقطة النهاية:** `POST /api/v1/task`
+- **Content-Type:** `application/json`
 
-### 请求参数
+### معاملات الطلب
 
-API 支持两种模式创建任务：
+يدعم API وضعين لإنشاء المهام:
 
-**模式 1：设备模式** - 使用 `serials` 为设备创建任务
-**模式 2：用户名模式** - 使用 `usernames` 直接为特定账号创建任务
+**الوضع 1: وضع الجهاز** - استخدام `serials` لإنشاء مهام للأجهزة
+**الوضع 2: وضع اسم المستخدم** - استخدام `usernames` لإنشاء مهام مباشرة لحسابات محددة
 
-| 参数 | 类型 | 必需 | 描述 |
+| المعامل | النوع | مطلوب | الوصف |
 |------|------|------|------|
-| serials | string[] | 条件必需 | 设备序列号数组（如果未提供 `usernames` 则必需） |
-| usernames | string[] | 条件必需 | 用户名数组（如果未提供 `serials` 则必需）。提供此参数时，直接为这些账号创建任务。 |
-| script_name | string | 是 | 要执行的脚本名称 |
-| script_config | object | 是 | 脚本的配置参数（请参阅对应脚本文档） |
-| enable_multi_account | boolean | 否 | 是否启用多账号模式（默认：false）。仅在设备模式下生效。 |
-| start_time | string | 否 | 计划执行时间，格式为 "HH:MM" |
+| serials | string[] | مطلوب شرطيًا | مصفوفة الأرقام التسلسلية للأجهزة (مطلوب إذا لم يتم توفير `usernames`) |
+| usernames | string[] | مطلوب شرطيًا | مصفوفة أسماء المستخدمين (مطلوبة إذا لم يتم توفير `serials`). عند توفير هذه المعاملة، يتم إنشاء المهام مباشرة لهذه الحسابات. |
+| script_name | string | نعم | اسم النص البرمجي المراد تنفيذه |
+| script_config | object | نعم | معاملات تكوين النص البرمجي (راجع وثائق النص البرمجي المقابل) |
+| enable_multi_account | boolean | لا | ما إذا كان يجب تمكين وضع الحسابات المتعددة (افتراضي: false). يعمل فقط في وضع الجهاز. |
+| start_time | string | لا | وقت التنفيذ المجدول بتنسيق "HH:MM" |
 
-### 支持的脚本
+### النصوص البرمجية المدعومة
 
-| 脚本名称 | 描述 | 文档 |
+| اسم النص البرمجي | الوصف | الوثائق |
 |----------|------|------|
-| post | 发布视频或图片到 TikTok/Instagram | [Post 脚本配置](./post-script.md) |
+| post | نشر فيديو أو صورة على TikTok/Instagram | [تكوين نص النشر](./post-script.md) |
 
-### 示例
+### مثال
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -45,16 +45,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "شاهد الفيديو الجديد الخاص بي! #trending #fyp",
       "material_list": ["C:/Videos/video1.mp4"],
       "upload_wait_time": 60
     }
   }'
 ```
 
-有关 `script_config` 的详细参数和更多示例，请参阅 [Post 脚本配置](./post-script.md)。
+للحصول على معاملات `script_config` التفصيلية والمزيد من الأمثلة، راجع [تكوين نص النشر](./post-script.md).
 
-### 响应
+### الاستجابة
 
 ```json
 {
@@ -67,68 +67,68 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 列表任务
+## إدراج المهام
 
-使用可选过滤条件查询任务。
+الاستعلام عن المهام مع شروط تصفية اختيارية.
 
-- **端点：** `GET /api/v1/task`
+- **نقطة النهاية:** `GET /api/v1/task`
 
-| 参数 | 类型 | 必需 | 描述 |
+| المعامل | النوع | مطلوب | الوصف |
 |------|------|------|------|
-| status | integer | 否 | 按状态过滤（0=pending, 1=running, 2=completed, 3=failed） |
-| serial | string | 否 | 按设备序列号过滤 |
-| script_name | string | 否 | 按脚本名称过滤 |
-| source | string | 否 | 按来源过滤（"ui" 或 "api"） |
-| page | integer | 否 | 页码（默认：1） |
-| page_size | integer | 否 | 每页条目数（默认：20，最大：100） |
+| status | integer | لا | تصفية حسب الحالة (0=pending, 1=running, 2=completed, 3=failed) |
+| serial | string | لا | تصفية حسب الرقم التسلسلي للجهاز |
+| script_name | string | لا | تصفية حسب اسم النص البرمجي |
+| source | string | لا | تصفية حسب المصدر ("ui" أو "api") |
+| page | integer | لا | رقم الصفحة (افتراضي: 1) |
+| page_size | integer | لا | عدد العناصر في كل صفحة (افتراضي: 20، الحد الأقصى: 100) |
 
-## 获取任务详情
+## الحصول على تفاصيل المهمة
 
-获取指定任务的详细信息。
+الحصول على معلومات تفصيلية عن مهمة محددة.
 
-- **端点：** `GET /api/v1/task/{task_id}`
+- **نقطة النهاية:** `GET /api/v1/task/{task_id}`
 
-## 删除任务
+## حذف مهمة
 
-删除任务。如果任务正在运行，会先尝试停止它。
+حذف مهمة. إذا كانت المهمة قيد التشغيل، سيحاول إيقافها أولاً.
 
-- **端点：** `DELETE /api/v1/task/{task_id}`
+- **نقطة النهاية:** `DELETE /api/v1/task/{task_id}`
 
-## 批量删除任务
+## حذف مهام دفعية
 
-一次删除多个任务，正在运行的任务会先被停止。
+حذف مهام متعددة دفعة واحدة، وسيتم إيقاف المهام قيد التشغيل أولاً.
 
-- **端点：** `DELETE /api/v1/task/batch`
-- **请求体：** `{ "task_ids": [1, 2, 3] }`
+- **نقطة النهاية:** `DELETE /api/v1/task/batch`
+- **نص الطلب:** `{ "task_ids": [1, 2, 3] }`
 
-## 停止任务
+## إيقاف مهمة
 
-停止正在运行的任务。
+إيقاف مهمة قيد التشغيل.
 
-- **端点：** `POST /api/v1/task/{task_id}/stop`
+- **نقطة النهاية:** `POST /api/v1/task/{task_id}/stop`
 
-## 重试失败任务
+## إعادة محاولة مهمة فاشلة
 
-重试单个失败任务。
+إعادة محاولة مهمة فاشلة واحدة.
 
-- **端点：** `POST /api/v1/task/{task_id}/retry`
+- **نقطة النهاية:** `POST /api/v1/task/{task_id}/retry`
 
-## 重试所有失败任务
+## إعادة محاولة جميع المهام الفاشلة
 
-一次性重试所有失败的任务。
+إعادة محاولة جميع المهام الفاشلة دفعة واحدة.
 
-- **端点：** `POST /api/v1/task/retry-all`
+- **نقطة النهاية:** `POST /api/v1/task/retry-all`
 
-## 获取任务统计
+## الحصول على إحصائيات المهام
 
-获取任务总体统计数据。
+الحصول على بيانات إحصائية إجمالية للمهام.
 
-- **端点：** `GET /api/v1/task/stats`
-- **响应：** 返回 total、pending、running、completed、failed 的计数。
+- **نقطة النهاية:** `GET /api/v1/task/stats`
+- **الاستجابة:** تُرجع عداد total و pending و running و completed و failed.
 
-## 检查 API 许可
+## التحقق من ترخيص API
 
-检查你的许可证是否支持 API 访问。
+التحقق مما إذا كان ترخيصك يدعم الوصول إلى API.
 
-- **端点：** `GET /api/v1/license/check`
-- **注意：** Starter 计划会返回错误码 40301；Pro/Team/Business 计划可访问 API。
+- **نقطة النهاية:** `GET /api/v1/license/check`
+- **ملاحظة:** ستُرجع خطة Starter رمز الخطأ 40301؛ خطط Pro/Team/Business يمكنها الوصول إلى API.
