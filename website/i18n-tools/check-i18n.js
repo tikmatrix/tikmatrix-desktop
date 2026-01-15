@@ -20,7 +20,6 @@ const BRAND_NAMES_PATTERN = /TikTok|TikMatrix|IgMatrix|Instagram|Android|GitHub|
 // Supported languages configuration with ISO 639-3 codes for language detection
 // Based on docusaurus.config.js locales
 const LANGUAGES = {
-    'en': { name: 'English', isoCode: 'eng', dir: 'en' },
     'zh-Hans': { name: '简体中文', isoCode: 'cmn', dir: 'zh-Hans' },
     'ru': { name: 'Русский', isoCode: 'rus', dir: 'ru' },
     'ja': { name: '日本語', isoCode: 'jpn', dir: 'ja' },

@@ -17,7 +17,6 @@ const MINIMUM_FILE_SIZE_BYTES = 100;
 
 // Supported languages - based on Docusaurus config
 const DOC_LANGUAGES = [
-    { code: 'en', name: 'English', dir: '' }, // English is in docs/ root
     { code: 'zh-Hans', name: '简体中文', dir: 'zh-Hans' },
     { code: 'ru', name: 'Русский', dir: 'ru' },
     { code: 'ja', name: '日本語', dir: 'ja' },
