@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Belgeler"
+  },
+  "item.label.Get Started": {
+    "message": "Başla",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "Öğretici",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "Tanıtım yaparak kazan",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "Özellikler",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "Fiyatlandırma",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "İletişim",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "İndir",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "SSS",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "Hakkımızda",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "Reklamcılık",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "AI Arama",
+    "description": "Navbar item with label AI Search"
+  }
+}

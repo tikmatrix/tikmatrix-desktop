@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Dokumentation"
+  },
+  "item.label.Get Started": {
+    "message": "Kom igång",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "Handledning",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "Tjäna genom marknadsföring",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "Funktioner",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "Blogg",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "Prissättning",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "Kontakt",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "Ladda ner",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "Vanliga frågor",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "Om oss",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "Annonsering",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "AI Sökning",
+    "description": "Navbar item with label AI Search"
+  }
+}

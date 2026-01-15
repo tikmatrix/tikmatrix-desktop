@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Documentation"
+  },
+  "item.label.Get Started": {
+    "message": "Commencer",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutoriel",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "Gagnez en promouvant",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "Fonctionnalités",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "Tarifs",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "Contact",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "Télécharger",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "À propos",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "Publicité",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "Recherche IA",
+    "description": "Navbar item with label AI Search"
+  }
+}

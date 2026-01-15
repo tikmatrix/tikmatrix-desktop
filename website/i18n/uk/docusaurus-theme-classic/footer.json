@@ -1,0 +1,77 @@
+{
+  "title": {
+    "message": "Матриця TikTok"
+  },
+  "link.title.Docs": {
+    "message": "Документація",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.item.label.Tutorial": {
+    "message": "Підручник",
+    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+  },
+  "link.item.label.Blog": {
+    "message": "Блог",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Recent posts": {
+    "message": "Останні публікації",
+    "description": "The label of footer link with label=Recent posts linking to /blog"
+  },
+  "link.item.label.Archive posts": {
+    "message": "Архівні публікації",
+    "description": "The label of footer link with label=Archive linking to /blog/archive"
+  },
+  "link.title.Community": {
+    "message": "Спільнота",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Youtube": {
+    "message": "Youtube",
+    "description": "The label of footer link with label=Youtube linking to https://youtube.com/@tikmatrix"
+  },
+  "link.item.label.Telegram": {
+    "message": "Telegram",
+    "description": "The label of footer link with label=Telegram linking to https://t.me/tikmatrix_agent_bot"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/niostack"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/tikmatrix/tikmatrix-desktop"
+  },
+  "copyright": {
+    "message": "Авторське право © 2024 TikMatrix LLC. Усі права захищені.",
+    "description": "The footer copyright"
+  },
+  "link.item.label.Privacy Policy": {
+    "message": "Політика конфіденційності",
+    "description": "The label of footer link with label=Privacy Policy linking to /privacy-policy"
+  },
+  "link.item.label.Terms of Service": {
+    "message": "Умови обслуговування",
+    "description": "The label of footer link with label=Terms of Service linking to /terms-of-service"
+  },
+  "link.title.Tools": {
+    "message": "Інструменти",
+    "description": "The title of the footer links column with title=Tools in the footer"
+  },
+  "link.item.label.Buy hardware": {
+    "message": "Купити обладнання",
+    "description": "The label of footer link with label=Buy Hardware linking to /buy-hardware"
+  },
+  "link.item.label.TikTok User Finder": {
+    "message": "Пошук країни користувача TikTok",
+    "description": "The label of footer link with label=TikTok User Finder linking to /tiktok-user-finder"
+  },
+  "link.item.label.About Us": {
+    "message": "Про нас",
+    "description": "The label of footer link with label=About Us linking to /about-us"
+  }
+}

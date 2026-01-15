@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "ドキュメント"
+  },
+  "item.label.Get Started": {
+    "message": "始める",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "チュートリアル",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "報酬で稼ぐ",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "機能",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "ブログ",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "価格",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "お問い合わせ",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "ダウンロード",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "よくある質問",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "私たちについて",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "広告",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "AI検索",
+    "description": "Navbar item with label AI Search"
+  }
+}
