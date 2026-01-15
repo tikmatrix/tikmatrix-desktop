@@ -10,7 +10,7 @@ TikMatrix Desktop is a social media automation matrix management software that c
 - **Desktop Framework**: Tauri v1 (Rust backend)
 - **UI Framework**: daisyUI + Tailwind CSS
 - **Build Tool**: Vite
-- **Language Support**: i18n with English, Chinese (CN), and Russian (RU)
+- **Language Support**: ['en', 'zh-Hans', 'ru', 'ja', 'ko', 'es', 'pt', 'fr', 'de', 'it', 'ar', 'hi', 'id', 'th', 'vi', 'tr', 'pl', 'nl', 'sv', 'he', 'uk']
 
 ## Architecture
 
@@ -129,7 +129,7 @@ npm run preview         # Preview production build
 ### Adding a New Feature
 
 1. Identify affected components in `/src/components`
-2. Update i18n files in `/src/i18n` for all three languages
+2. Update i18n files in `/src/i18n` for all supported languages
 3. Add any new API calls in `/src/api`
 4. Update Tauri commands in `/src-tauri/src` if backend changes needed
 5. Test with `npm run dev`
