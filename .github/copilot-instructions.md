@@ -72,7 +72,7 @@ TikMatrix Desktop is a social media automation matrix management software that c
 
 ### Internationalization
 
-- All user-facing text must support three languages: EN, CN, RU
+- All user-facing text must support i18n
 - Use the i18n framework for all strings
 - Add translation keys to appropriate i18n files
 - Never hardcode user-facing strings
@@ -182,10 +182,3 @@ npm run preview         # Preview production build
 - **vue-i18n**: Internationalization
 - **daisyui**: UI component library
 - **tailwindcss**: Utility-first CSS framework
-
-## Support and Resources
-
-- Official Website: https://tikmatrix.com
-- Documentation: https://tikmatrix.com/docs/intro
-- Telegram: https://t.me/tikmatrix_agent_bot
-- YouTube: https://www.youtube.com/@tikmatrix
