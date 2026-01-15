@@ -4,18 +4,18 @@
     "description": "The title in the navbar"
   },
   "item.label.Docs": {
-    "message": "التوثيق"
+    "message": "الوثائق"
   },
   "item.label.Get Started": {
-    "message": "ابدأ",
+    "message": "开始使用",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Tutorial": {
-    "message": "البرنامج التعليمي",
+    "message": "الدروس",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Rewards": {
-    "message": "اربح من خلال الترويج",
+    "message": "推广赚钱",
     "description": "Navbar item with label Rewards"
   },
   "item.label.Features": {
@@ -27,19 +27,19 @@
     "description": "Navbar item with label Blog"
   },
   "item.label.Pricing": {
-    "message": "الأسعار",
+    "message": "价格",
     "description": "Navbar item with label Pricing"
   },
   "item.label.Contact": {
-    "message": "اتصل بنا",
+    "message": "联系我们",
     "description": "Navbar item with label Contact"
   },
   "item.label.Download": {
-    "message": "تحميل",
+    "message": "تنزيل",
     "description": "Navbar item with label Download"
   },
   "item.label.FAQ": {
-    "message": "الأسئلة الشائعة",
+    "message": "常见问题",
     "description": "Navbar item with label FAQ"
   },
   "logo.alt": {
@@ -51,15 +51,15 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.About Us": {
-    "message": "معلومات عنا",
+    "message": "关于我们",
     "description": "Navbar item with label About Us"
   },
   "item.label.Advertising": {
-    "message": "الإعلانات",
+    "message": "广告",
     "description": "Navbar item with label Advertising"
   },
   "item.label.AI Search": {
-    "message": "البحث بالذكاء الاصطناعي",
+    "message": "AI 搜索",
     "description": "Navbar item with label AI Search"
   }
 }

@@ -1,13 +1,13 @@
 {
   "title": {
-    "message": "مصفوفة TikTok"
+    "message": "TikTok矩阵"
   },
   "link.title.Docs": {
-    "message": "التوثيق",
+    "message": "الوثائق",
     "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.item.label.Tutorial": {
-    "message": "البرنامج التعليمي",
+    "message": "الدروس",
     "description": "The label of footer link with label=Tutorial linking to /docs/intro"
   },
   "link.item.label.Blog": {
@@ -15,11 +15,11 @@
     "description": "The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.Recent posts": {
-    "message": "المنشورات الأخيرة",
+    "message": "最新文章",
     "description": "The label of footer link with label=Recent posts linking to /blog"
   },
   "link.item.label.Archive posts": {
-    "message": "المنشورات المؤرشفة",
+    "message": "归档文章",
     "description": "The label of footer link with label=Archive linking to /blog/archive"
   },
   "link.title.Community": {
@@ -27,7 +27,7 @@
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "المزيد",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Youtube": {
@@ -35,11 +35,11 @@
     "description": "The label of footer link with label=Youtube linking to https://youtube.com/@tikmatrix"
   },
   "link.item.label.Telegram": {
-    "message": "Telegram",
+    "message": "تيليجرام",
     "description": "The label of footer link with label=Telegram linking to https://t.me/tikmatrix_agent_bot"
   },
   "link.item.label.Twitter": {
-    "message": "Twitter",
+    "message": "تويتر",
     "description": "The label of footer link with label=Twitter linking to https://twitter.com/niostack"
   },
   "link.item.label.GitHub": {
@@ -47,7 +47,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/tikmatrix/tikmatrix-desktop"
   },
   "copyright": {
-    "message": "حقوق النشر © 2024 TikMatrix LLC. جميع الحقوق محفوظة.",
+    "message": "Copyright © 2024 TikMatrix LLC. All rights reserved.",
     "description": "The footer copyright"
   },
   "link.item.label.Privacy Policy": {
@@ -59,15 +59,15 @@
     "description": "The label of footer link with label=Terms of Service linking to /terms-of-service"
   },
   "link.title.Tools": {
-    "message": "الأدوات",
+    "message": "工具",
     "description": "The title of the footer links column with title=Tools in the footer"
   },
   "link.item.label.Buy hardware": {
-    "message": "شراء الأجهزة",
+    "message": "购买硬件",
     "description": "The label of footer link with label=Buy Hardware linking to /buy-hardware"
   },
   "link.item.label.TikTok User Finder": {
-    "message": "البحث عن بلد مستخدم TikTok",
+    "message": "TikTok用户国家查询",
     "description": "The label of footer link with label=TikTok User Finder linking to /tiktok-user-finder"
   },
   "link.item.label.About Us": {
