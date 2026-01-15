@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
-title: API 示例
-description: 使用 TikMatrix 本地 API 的代码示例
+title: أمثلة API
+description: أمثلة التعليمات البرمجية لاستخدام API المحلي لـ TikMatrix
 ---
 
-本页面提供了在不同编程语言中使用 TikMatrix 本地 API 的示例代码。
+توفر هذه الصفحة أمثلة التعليمات البرمجية لاستخدام TikMatrix API المحلي بلغات برمجة مختلفة.
 
 ## Python
 
@@ -288,9 +288,9 @@ $result = Create-Task -Serials @("device_serial_1") `
 Write-Host "任务已创建: $($result | ConvertTo-Json)"
 ```
 
-## 常见使用场景
+## 常见استخدام场景
 
-### 为多个设备批量创建任务
+### 为多个设备批量إنشاء مهمة
 
 ```python
 # Python 示例：为所有已连接设备创建关注任务

@@ -1,15 +1,15 @@
 ---
 sidebar_position: 1
-title: 本地 API 概览
-description: TikMatrix 本地 API，用于以编程方式管理任务
+title: API المحلي 概览
+description: TikMatrix API المحلي，用于以编程方式管理任务
 ---
 
-TikMatrix 提供了一个本地的 RESTful API，允许你以编程方式管理任务。这对于将 TikMatrix 集成到你自己的自动化系统、构建自定义工作流程或创建批量操作非常有用。
+TikMatrix 提供了一个本地的 RESTful API，允许你以编程方式管理任务。这对于将 TikMatrix 集成到你自己的自动化系统、构建自定义工作流程أو创建批量操作非常有用。
 
 ## 要求
 
 :::warning 许可证要求
-**本地 API 仅对 Pro、Team 和 Business 计划用户开放。** Starter 计划不提供 API 访问权限。
+**API المحلي 仅对 Pro、Team 和 Business 计划用户开放。** Starter 计划不提供 API 访问权限。
 :::
 
 ## 基础 URL
@@ -26,7 +26,7 @@ http://localhost:50809/api/v1/
 
 ## 响应格式
 
-所有 API 响应遵循以下格式：
+所有 API 响应遵循فيما يلي格式：
 
 ```json
 {
@@ -36,14 +36,14 @@ http://localhost:50809/api/v1/
 }
 ```
 
-### 响应码说明
+### 响应码الوصف
 
-| Code | 描述 |
+| Code | الوصف |
 |------|------|
 | 0 | 成功 |
-| 40001 | 参数错误 - 无效的请求参数 |
-| 40002 | 参数错误 - 缺少 script_name |
-| 40003 | 参数错误 - 脚本暂不支持 API 调用 |
+| 40001 | المعاملات错误 - 无效的معاملات الطلب |
+| 40002 | المعاملات错误 - 缺少 script_name |
+| 40003 | المعاملات错误 - 脚本暂不支持 API 调用 |
 | 40301 | 禁止 - API 访问需要 Pro+ 计划 |
 | 40401 | 未找到 - 资源不存在 |
 | 50001 | 服务器内部错误 |
@@ -52,13 +52,13 @@ http://localhost:50809/api/v1/
 
 ### 1. 检查 API 访问权限
 
-首先，确认你的许可证是否支持 API：
+首先，确认你的许可证نعملا支持 API：
 
 ```bash
 curl http://localhost:50809/api/v1/license/check
 ```
 
-示例响应：
+أمثلة响应：
 
 ```json
 {
@@ -73,7 +73,7 @@ curl http://localhost:50809/api/v1/license/check
 }
 ```
 
-### 2. 创建任务
+### 2. إنشاء مهمة
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -97,28 +97,28 @@ curl http://localhost:50809/api/v1/task?status=0&page=1&page_size=20
 
 ## 可用脚本
 
-:::info 当前支持
-目前，本地 API 支持 `post`、`follow`、`unfollow`、`account_warmup` 和 `comment` 脚本。更多脚本将在未来版本中陆续添加。
+:::info عندما前支持
+目前，API المحلي 支持 `post`、`follow`、`unfollow`、`account_warmup` 和 `comment` 脚本。更多脚本将在未来版本中陆续添加。
 :::
 
-`script_name` 参数可接受下列值：
+`script_name` المعاملات可接受下列值：
 
-| 脚本名 | 描述 | API 支持 |
+| 脚本名 | الوصف | API 支持 |
 |--------|------|----------|
-| `post` | 发布内容 | ✅ 已支持 |
+| `post` | النشر内容 | ✅ 已支持 |
 | `follow` | 关注用户 | ✅ 已支持 |
 | `unfollow` | 取消关注 | ✅ 已支持 |
-| `account_warmup` | 账号预热 | ✅ 已支持 |
+| `account_warmup` | تدفئة الحساب | ✅ 已支持 |
 | `comment` | 评论 | ✅ 已支持 |
-| `like` | 点赞 | 🔜 即将推出 |
-| `message` | 私信 | 🔜 即将推出 |
-| `super_marketing` | 超级营销活动 | 🔜 即将推出 |
-| `profile` | 更新个人资料 | 🔜 即将推出 |
-| `scrape_user` | 抓取用户数据 | 🔜 即将推出 |
+| `like` | 点赞 | 🔜 قريبًا |
+| `message` | 私信 | 🔜 قريبًا |
+| `super_marketing` | التسويق الفائق活动 | 🔜 قريبًا |
+| `profile` | 更新个人资料 | 🔜 قريبًا |
+| `scrape_user` | 抓取用户数据 | 🔜 قريبًا |
 
 ## 任务状态
 
-| 状态码 | 状态文本 | 描述 |
+| 状态码 | 状态文本 | الوصف |
 |--------|----------|------|
 | 0 | pending | 任务等待执行 |
 | 1 | running | 任务正在执行 |
@@ -127,10 +127,10 @@ curl http://localhost:50809/api/v1/task?status=0&page=1&page_size=20
 
 ## 后续
 
-- [任务管理 API](./task-management) - 创建、查询和管理任务
-- [发布脚本配置](./post-script) - 配置发布脚本参数
-- [关注脚本配置](./follow-script) - 配置关注脚本参数
-- [取消关注脚本配置](./unfollow-script) - 配置取消关注脚本参数
-- [账号预热脚本配置](./account-warmup-script) - 配置账号预热脚本参数
-- [评论脚本配置](./comment-script) - 配置评论脚本参数
-- [API 示例](./examples) - 不同语言的代码示例
+- [API إدارة المهام](./task-management) - 创建、查询和管理任务
+- [النشرتكوين البرنامج النصي](./post-script) - التكوينالنشر脚本المعاملات
+- [تكوين برنامج المتابعة النصي](./follow-script) - التكوين关注脚本المعاملات
+- [取消تكوين برنامج المتابعة النصي](./unfollow-script) - التكوين取消关注脚本المعاملات
+- [تكوين برنامج تدفئة الحساب النصي](./account-warmup-script) - التكوينتدفئة الحساب脚本المعاملات
+- [تكوين برنامج التعليقات النصي](./comment-script) - التكوين评论脚本المعاملات
+- [أمثلة API](./examples) - 不同语言的代码أمثلة
