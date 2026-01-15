@@ -1,0 +1,16 @@
+{
+    "name": "tikmatrix-i18n-tools",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Tools for managing Docusaurus i18n documentation and translation files",
+    "main": "index.js",
+    "scripts": {
+        "check": "node check-i18n.js",
+        "check:docs": "node check-docs.js",
+        "check:all": "node check-i18n.js && node check-docs.js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "franc-min": "^6.2.0"
+    }
+}
