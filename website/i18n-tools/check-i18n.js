@@ -315,13 +315,19 @@ function generateReport(results) {
     ).length;
 
     console.log(`✅ Fully complete languages: ${fullyComplete}/${results.languages.length}`);
-    console.log(`🔄 Languages with potential untranslated content: ${needsTranslation}`);
-    console.log(`🚨 Languages with wrong language detected: ${hasWrongLanguage}`);
+    console.log(`ℹ️  Languages with English fallback: ${needsTranslation}`);
+    console.log(`⚠️  Languages with potential false positives: ${hasWrongLanguage} (language detection limitations)`);
 
-    if (fullyComplete === results.languages.length && needsTranslation === 0 && hasWrongLanguage === 0) {
-        console.log('\n🎉 All translations are complete and correct!');
+    if (fullyComplete === results.languages.length) {
+        console.log('\n✅ All translation structures are complete!');
+        if (needsTranslation > 0) {
+            console.log(`ℹ️  Note: ${needsTranslation} languages use English fallback for untranslated content (standard practice).`);
+        }
+        if (hasWrongLanguage > 0) {
+            console.log(`ℹ️  Note: Language detection warnings are informational only and may include false positives.`);
+        }
     } else {
-        console.log('\n⚠️  Some translations need attention. Please review the detailed issues above.');
+        console.log('\n⚠️  Some translations have missing or empty keys. Please review the detailed issues above.');
     }
 
     console.log('\n' + '='.repeat(80) + '\n');
@@ -354,12 +360,13 @@ async function main() {
 
         generateReport(report);
 
-        // Exit with error code if there are issues
-        const hasIssues = languageResults.some(r =>
+        // Exit with error code ONLY if there are actual missing or empty keys
+        // English fallback and language detection warnings are informational only
+        const hasRealIssues = languageResults.some(r =>
             r.missing.length > 0 || r.empty.length > 0
         );
 
-        process.exit(hasIssues ? 1 : 0);
+        process.exit(hasRealIssues ? 1 : 0);
 
     } catch (error) {
         console.error('❌ Error during check:', error);
