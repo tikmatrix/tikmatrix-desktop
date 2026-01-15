@@ -1,0 +1,44 @@
+{
+    "pricing.toggle.monthly": {
+        "message": "Monthly"
+    },
+    "pricing.toggle.yearly": {
+        "message": "Yearly (Save 30%)"
+    },
+    "pricing.cta.free": {
+        "message": "Start for free"
+    },
+    "pricing.cta.pay": {
+        "message": "Subscribe"
+    },
+    "tech.diagram.user": {
+        "message": "User"
+    },
+    "tech.diagram.engine": {
+        "message": "TikMatrix Engine"
+    },
+    "tech.diagram.devices": {
+        "message": "Real Android Devices"
+    },
+    "tech.diagram.tiktok": {
+        "message": "TikTok App"
+    },
+    "tech.diagram.localExecution": {
+        "message": "Local Execution"
+    },
+    "tech.diagram.realTouch": {
+        "message": "Real Touch Injection"
+    },
+    "tech.diagram.noApi": {
+        "message": "No API Calls"
+    },
+    "tech.diagram.fingerprintIsolation": {
+        "message": "Device Fingerprint Isolation"
+    },
+    "tech.diagram.noMemoryInjection": {
+        "message": "No Memory Injection"
+    },
+    "tech.diagram.zeroCloud": {
+        "message": "Zero Cloud Dependency"
+    }
+}

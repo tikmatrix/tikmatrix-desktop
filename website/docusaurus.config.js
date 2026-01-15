@@ -33,7 +33,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans', 'ru'],
+    locales: ['en', 'zh-Hans', 'ru', 'es', 'fr', 'de', 'it', 'pt-BR', 'ja', 'ko', 'ar', 'hi', 'tr', 'vi', 'th', 'id', 'pl', 'nl', 'sv', 'no', 'da'],
     localeConfigs: {
       en: {
         htmlLang: 'en',
@@ -43,6 +43,60 @@ const config = {
       },
       ru: {
         htmlLang: 'ru',
+      },
+      es: {
+        htmlLang: 'es',
+      },
+      fr: {
+        htmlLang: 'fr',
+      },
+      de: {
+        htmlLang: 'de',
+      },
+      it: {
+        htmlLang: 'it',
+      },
+      'pt-BR': {
+        htmlLang: 'pt-BR',
+      },
+      ja: {
+        htmlLang: 'ja',
+      },
+      ko: {
+        htmlLang: 'ko',
+      },
+      ar: {
+        htmlLang: 'ar',
+      },
+      hi: {
+        htmlLang: 'hi',
+      },
+      tr: {
+        htmlLang: 'tr',
+      },
+      vi: {
+        htmlLang: 'vi',
+      },
+      th: {
+        htmlLang: 'th',
+      },
+      id: {
+        htmlLang: 'id',
+      },
+      pl: {
+        htmlLang: 'pl',
+      },
+      nl: {
+        htmlLang: 'nl',
+      },
+      sv: {
+        htmlLang: 'sv',
+      },
+      no: {
+        htmlLang: 'no',
+      },
+      da: {
+        htmlLang: 'da',
       },
     },
   },
