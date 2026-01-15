@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "दस्तावेज़ीकरण"
+  },
+  "item.label.Get Started": {
+    "message": "शुरू करें",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "ट्यूटोरियल",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "प्रचार करके कमाएं",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "विशेषताएं",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "ब्लॉग",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "मूल्य निर्धारण",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "संपर्क करें",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "डाउनलोड",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "अक्सर पूछे जाने वाले प्रश्न",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "हमारे बारे में",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "विज्ञापन",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "AI खोज",
+    "description": "Navbar item with label AI Search"
+  }
+}

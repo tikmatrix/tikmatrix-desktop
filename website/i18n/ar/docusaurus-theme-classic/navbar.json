@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "التوثيق"
+  },
+  "item.label.Get Started": {
+    "message": "ابدأ",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "البرنامج التعليمي",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "اربح من خلال الترويج",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "الميزات",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "المدونة",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "الأسعار",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "اتصل بنا",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "تحميل",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "الأسئلة الشائعة",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "معلومات عنا",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "الإعلانات",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "البحث بالذكاء الاصطناعي",
+    "description": "Navbar item with label AI Search"
+  }
+}

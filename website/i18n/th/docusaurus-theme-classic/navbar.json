@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "เอกสาร"
+  },
+  "item.label.Get Started": {
+    "message": "เริ่มต้น",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "บทช่วยสอน",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "รับเงินจากการโปรโมท",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "คุณสมบัติ",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "บล็อก",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "ราคา",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "ติดต่อเรา",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "ดาวน์โหลด",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "คำถามที่พบบ่อย",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "เกี่ยวกับเรา",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "โฆษณา",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "การค้นหา AI",
+    "description": "Navbar item with label AI Search"
+  }
+}

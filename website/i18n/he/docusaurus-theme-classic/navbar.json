@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "תיעוד"
+  },
+  "item.label.Get Started": {
+    "message": "התחל",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "מדריך",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "הרווח באמצעות קידום",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "תכונות",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "בלוג",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "תמחור",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "צור קשר",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "הורד",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "שאלות נפוצות",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "אודותינו",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "פרסום",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "חיפוש AI",
+    "description": "Navbar item with label AI Search"
+  }
+}

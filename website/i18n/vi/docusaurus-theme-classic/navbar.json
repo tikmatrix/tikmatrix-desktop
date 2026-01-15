@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Tài liệu"
+  },
+  "item.label.Get Started": {
+    "message": "Bắt đầu",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "Hướng dẫn",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "Kiếm tiền qua quảng bá",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "Tính năng",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "Giá",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "Liên hệ",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "Tải xuống",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "Câu hỏi thường gặp",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "Về chúng tôi",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "Quảng cáo",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "Tìm kiếm AI",
+    "description": "Navbar item with label AI Search"
+  }
+}

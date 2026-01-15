@@ -33,17 +33,29 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans', 'ru'],
+    locales: ['en', 'zh-Hans', 'ru', 'ja', 'ko', 'es', 'pt', 'fr', 'de', 'it', 'ar', 'hi', 'id', 'th', 'vi', 'tr', 'pl', 'nl', 'sv', 'he', 'uk'],
     localeConfigs: {
-      en: {
-        htmlLang: 'en',
-      },
-      'zh-Hans': {
-        htmlLang: 'zh-Hans',
-      },
-      ru: {
-        htmlLang: 'ru',
-      },
+      en: { htmlLang: 'en', label: 'English' },
+      'zh-Hans': { htmlLang: 'zh-Hans', label: '简体中文' },
+      ru: { htmlLang: 'ru', label: 'Русский' },
+      ja: { htmlLang: 'ja', label: '日本語' },
+      ko: { htmlLang: 'ko', label: '한국어' },
+      es: { htmlLang: 'es', label: 'Español' },
+      pt: { htmlLang: 'pt', label: 'Português' },
+      fr: { htmlLang: 'fr', label: 'Français' },
+      de: { htmlLang: 'de', label: 'Deutsch' },
+      it: { htmlLang: 'it', label: 'Italiano' },
+      ar: { htmlLang: 'ar', label: 'العربية', direction: 'rtl' },
+      hi: { htmlLang: 'hi', label: 'हिन्दी' },
+      id: { htmlLang: 'id', label: 'Bahasa Indonesia' },
+      th: { htmlLang: 'th', label: 'ไทย' },
+      vi: { htmlLang: 'vi', label: 'Tiếng Việt' },
+      tr: { htmlLang: 'tr', label: 'Türkçe' },
+      pl: { htmlLang: 'pl', label: 'Polski' },
+      nl: { htmlLang: 'nl', label: 'Nederlands' },
+      sv: { htmlLang: 'sv', label: 'Svenska' },
+      he: { htmlLang: 'he', label: 'עברית', direction: 'rtl' },
+      uk: { htmlLang: 'uk', label: 'Українська' },
     },
   },
 
