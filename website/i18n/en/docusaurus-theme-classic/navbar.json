@@ -1,0 +1,65 @@
+{
+  "title": {
+    "message": "",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "文档"
+  },
+  "item.label.Get Started": {
+    "message": "开始使用",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Tutorial": {
+    "message": "教程",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Rewards": {
+    "message": "推广赚钱",
+    "description": "Navbar item with label Rewards"
+  },
+  "item.label.Features": {
+    "message": "功能",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Pricing": {
+    "message": "价格",
+    "description": "Navbar item with label Pricing"
+  },
+  "item.label.Contact": {
+    "message": "联系我们",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Download": {
+    "message": "下载",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.FAQ": {
+    "message": "常见问题",
+    "description": "Navbar item with label FAQ"
+  },
+  "logo.alt": {
+    "message": "TikMatrix Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.About Us": {
+    "message": "关于我们",
+    "description": "Navbar item with label About Us"
+  },
+  "item.label.Advertising": {
+    "message": "广告",
+    "description": "Navbar item with label Advertising"
+  },
+  "item.label.AI Search": {
+    "message": "AI 搜索",
+    "description": "Navbar item with label AI Search"
+  }
+}
