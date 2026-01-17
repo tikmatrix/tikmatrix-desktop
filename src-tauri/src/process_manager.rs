@@ -35,11 +35,6 @@ fn has_vc_runtime() -> bool {
     candidates.iter().any(|path| path.exists())
 }
 
-#[cfg(not(target_os = "windows"))]
-fn has_vc_runtime() -> bool {
-    true
-}
-
 // Agent monitor configuration
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct AgentMonitorConfig {
