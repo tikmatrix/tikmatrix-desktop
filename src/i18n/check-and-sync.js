@@ -7,8 +7,52 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// 解析命令行参数
+const args = process.argv.slice(2);
+const options = {
+  checkOnly: args.includes('--check-only'),
+  skipQualityCheck: args.includes('--skip-quality-check'),
+  showAll: args.includes('--show-all'),
+  help: args.includes('--help') || args.includes('-h'),
+  languages: null
+};
+
+// 解析 --lang 参数
+const langArg = args.find(arg => arg.startsWith('--lang='));
+if (langArg) {
+  options.languages = langArg.split('=')[1].split(',').map(l => l.trim());
+}
+
+// 显示帮助信息
+if (options.help) {
+  console.log(`
+🌍 TikMatrix Desktop - 国际化翻译检查和同步工具
+
+用法:
+  npm run sync                          基本用法：检查并同步所有语言
+  node check-and-sync.js [options]      使用选项运行
+
+选项:
+  --check-only                仅执行检查，不生成和更新文件
+  --skip-quality-check        跳过翻译质量检查，仅检查键的完整性
+  --lang=<codes>             仅检查指定的语言（用逗号分隔）
+                             示例: --lang=zh-CN,ja,ko
+  --show-all                 显示所有问题，不限制输出数量
+  --help, -h                 显示此帮助信息
+
+示例:
+  node check-and-sync.js --check-only
+  node check-and-sync.js --lang=zh-CN,ja
+  node check-and-sync.js --check-only --show-all
+
+支持的语言代码:
+  en, zh-CN, ru, ja, ko, es, pt, fr, de, it, ar, hi, id, th, vi, tr, pl, nl, sv, he, uk
+  `);
+  process.exit(0);
+}
+
 // 定义所有支持的语言
-const LANGUAGES = [
+const ALL_LANGUAGES = [
   { code: 'en', name: '英语 (English)', file: 'en.js', isBase: true },
   { code: 'zh-CN', name: '简体中文 (Simplified Chinese)', file: 'zh-CN.js' },
   { code: 'ru', name: '俄语 (Russian)', file: 'ru.js' },
@@ -31,6 +75,25 @@ const LANGUAGES = [
   { code: 'he', name: '希伯来语 (Hebrew)', file: 'he.js' },
   { code: 'uk', name: '乌克兰语 (Ukrainian)', file: 'uk.js' }
 ];
+
+// 根据选项过滤语言
+const LANGUAGES = options.languages 
+  ? ALL_LANGUAGES.filter(lang => options.languages.includes(lang.code))
+  : ALL_LANGUAGES;
+
+// 验证语言代码
+if (options.languages && LANGUAGES.length === 0) {
+  console.error('❌ 错误: 没有找到匹配的语言代码');
+  console.error('支持的语言代码:', ALL_LANGUAGES.map(l => l.code).join(', '));
+  process.exit(1);
+}
+
+if (options.languages && LANGUAGES.length < options.languages.length) {
+  const found = LANGUAGES.map(l => l.code);
+  const notFound = options.languages.filter(l => !found.includes(l));
+  console.warn(`⚠️  警告: 以下语言代码未找到: ${notFound.join(', ')}`);
+  console.warn('将继续处理找到的语言...\n');
+}
 
 // 动态导入所有语言文件
 const translations = {};
@@ -290,43 +353,47 @@ function printQualityReport(langName, issues) {
     return;
   }
   
+  const maxDisplay = options.showAll ? Infinity : 20;
+  
   if (issues.missing.length > 0) {
     console.log(`\n❌ 缺失的键 (${issues.missing.length} 个):`);
-    if (issues.missing.length <= 20) {
+    if (issues.missing.length <= maxDisplay) {
       issues.missing.forEach(key => console.log(`   - ${key}`));
     } else {
-      issues.missing.slice(0, 20).forEach(key => console.log(`   - ${key}`));
-      console.log(`   ... 还有 ${issues.missing.length - 20} 个`);
+      issues.missing.slice(0, maxDisplay).forEach(key => console.log(`   - ${key}`));
+      console.log(`   ... 还有 ${issues.missing.length - maxDisplay} 个 (使用 --show-all 查看全部)`);
     }
   }
   
+  const maxUntranslatedDisplay = options.showAll ? Infinity : 10;
+  
   if (issues.untranslated.length > 0) {
     console.log(`\n⚠️  疑似未翻译（仍为英文）的字段 (${issues.untranslated.length} 个):`);
-    if (issues.untranslated.length <= 10) {
+    if (issues.untranslated.length <= maxUntranslatedDisplay) {
       issues.untranslated.forEach(({ key, value, reason }) => {
         console.log(`   - ${key}: "${value}" (${reason})`);
       });
     } else {
-      issues.untranslated.slice(0, 10).forEach(({ key, value, reason }) => {
+      issues.untranslated.slice(0, maxUntranslatedDisplay).forEach(({ key, value, reason }) => {
         console.log(`   - ${key}: "${value}" (${reason})`);
       });
-      console.log(`   ... 还有 ${issues.untranslated.length - 10} 个`);
+      console.log(`   ... 还有 ${issues.untranslated.length - maxUntranslatedDisplay} 个 (使用 --show-all 查看全部)`);
     }
   }
   
   if (issues.possibleWrongLanguage.length > 0) {
     console.log(`\n⚠️  疑似使用了错误语言的字段 (${issues.possibleWrongLanguage.length} 个):`);
-    if (issues.possibleWrongLanguage.length <= 10) {
+    if (issues.possibleWrongLanguage.length <= maxUntranslatedDisplay) {
       issues.possibleWrongLanguage.forEach(({ key, value, expected, detected }) => {
         console.log(`   - ${key}: "${value}"`);
         console.log(`     (预期: ${expected}, 检测到: ${detected})`);
       });
     } else {
-      issues.possibleWrongLanguage.slice(0, 10).forEach(({ key, value, expected, detected }) => {
+      issues.possibleWrongLanguage.slice(0, maxUntranslatedDisplay).forEach(({ key, value, expected, detected }) => {
         console.log(`   - ${key}: "${value}"`);
         console.log(`     (预期: ${expected}, 检测到: ${detected})`);
       });
-      console.log(`   ... 还有 ${issues.possibleWrongLanguage.length - 10} 个`);
+      console.log(`   ... 还有 ${issues.possibleWrongLanguage.length - maxUntranslatedDisplay} 个 (使用 --show-all 查看全部)`);
     }
   }
 }
@@ -385,8 +452,19 @@ function printSummaryReport(allIssues) {
 console.log('='.repeat(60));
 console.log('🌍 TikMatrix Desktop - 国际化翻译检查和同步工具');
 console.log('='.repeat(60));
+
+if (options.checkOnly) {
+  console.log('🔍 模式: 仅检查 (不修改文件)');
+}
+if (options.skipQualityCheck) {
+  console.log('⏭️  跳过: 翻译质量检查');
+}
+if (options.languages) {
+  console.log(`📋 范围: 仅检查指定语言 (${options.languages.join(', ')})`);
+}
+
 console.log(`\n总键数: ${sortedKeys.length}`);
-console.log(`支持语言数: ${LANGUAGES.length}\n`);
+console.log(`检查语言数: ${LANGUAGES.length}\n`);
 
 console.log('====== 第一步：检查所有语言的完整性 ======\n');
 
@@ -395,33 +473,73 @@ LANGUAGES.forEach(lang => {
   checkCoverage(translations[lang.code], lang.name);
 });
 
-console.log('\n====== 第二步：详细的翻译质量检查 ======');
-
 // 对每种语言进行详细的翻译质量检查
 const allIssues = [];
-const baseTranslations = translations['en'];
-
-for (const lang of LANGUAGES) {
-  const issues = checkTranslationQuality(
-    translations[lang.code], 
-    lang.code, 
-    lang.name, 
-    baseTranslations
-  );
-  allIssues.push({ langName: lang.name, langCode: lang.code, issues });
-  printQualityReport(lang.name, issues);
+// 确保我们总是有英文作为基准，即使它不在 LANGUAGES 列表中
+let baseTranslations = translations['en'];
+if (!baseTranslations) {
+  try {
+    const enModule = await import('./locales/en.js');
+    baseTranslations = enModule.default;
+  } catch (error) {
+    console.error('❌ 错误: 无法加载英文基准翻译文件');
+    process.exit(1);
+  }
 }
 
-// 打印汇总报告
-printSummaryReport(allIssues);
+if (!options.skipQualityCheck) {
+  console.log('\n====== 第二步：详细的翻译质量检查 ======');
+  
+  for (const lang of LANGUAGES) {
+    const issues = checkTranslationQuality(
+      translations[lang.code], 
+      lang.code, 
+      lang.name, 
+      baseTranslations
+    );
+    allIssues.push({ langName: lang.name, langCode: lang.code, issues });
+    printQualityReport(lang.name, issues);
+  }
+  
+  // 打印汇总报告
+  printSummaryReport(allIssues);
+} else {
+  console.log('\n⏭️  跳过翻译质量检查（使用了 --skip-quality-check 选项）');
+}
+
+// 如果是仅检查模式，到此结束
+if (options.checkOnly) {
+  console.log('\n✅ 检查完成！（使用了 --check-only 选项，未修改任何文件）');
+  console.log('提示：移除 --check-only 选项以执行文件同步和更新。');
+  process.exit(0);
+}
 
 console.log('\n====== 第三步：生成更新文件 ======\n');
 
 // 合并并排序所有语言的翻译
+// 注意：如果使用了 --lang 选项，我们需要加载所有语言来确保正确同步
+const languagesToUpdate = options.languages ? ALL_LANGUAGES : LANGUAGES;
+const allTranslations = {};
+
+// 加载所有需要的语言
+for (const lang of languagesToUpdate) {
+  if (!translations[lang.code]) {
+    try {
+      const module = await import(`./locales/${lang.file}`);
+      allTranslations[lang.code] = module.default;
+    } catch (error) {
+      console.warn(`⚠️  警告: 无法加载 ${lang.name}: ${error.message}`);
+      allTranslations[lang.code] = {};
+    }
+  } else {
+    allTranslations[lang.code] = translations[lang.code];
+  }
+}
+
 const sortedTranslations = {};
-LANGUAGES.forEach(lang => {
+languagesToUpdate.forEach(lang => {
   sortedTranslations[lang.code] = generateSortedTranslations(
-    translations[lang.code], 
+    allTranslations[lang.code], 
     baseTranslations
   );
 });
@@ -438,7 +556,7 @@ fs.mkdirSync(backupDir);
 // 备份所有语言文件
 console.log('正在备份所有语言文件...');
 let backedUpCount = 0;
-LANGUAGES.forEach(lang => {
+languagesToUpdate.forEach(lang => {
   const filePath = path.join(__dirname, 'locales', lang.file);
   if (fs.existsSync(filePath)) {
     fs.copyFileSync(filePath, path.join(backupDir, lang.file));
@@ -451,7 +569,7 @@ console.log(`✅ 已备份 ${backedUpCount} 个语言文件到: backups/${timest
 // 写入新文件
 console.log('\n正在更新所有语言文件...');
 let updatedCount = 0;
-LANGUAGES.forEach(lang => {
+languagesToUpdate.forEach(lang => {
   const code = generateJsCode(sortedTranslations[lang.code]);
   writeFile(`locales/${lang.file}`, code);
   updatedCount++;
@@ -460,5 +578,7 @@ LANGUAGES.forEach(lang => {
 console.log(`✅ 已更新 ${updatedCount} 个语言文件`);
 console.log('\n所有文件现在包含相同的键且按字母顺序排列。');
 console.log('对于缺失的翻译，暂时使用英文作为默认值。');
-console.log('请根据上述报告检查并修正翻译问题。');
+if (!options.skipQualityCheck) {
+  console.log('请根据上述报告检查并修正翻译问题。');
+}
 console.log('\n' + '='.repeat(60)); 
