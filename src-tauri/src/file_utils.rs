@@ -193,12 +193,11 @@ pub fn open_dir(name: String, app: tauri::AppHandle) {
     let _ = open::that(path);
 }
 
-const CREATE_NEW_CONSOLE: u32 = 0x00000010;
-
 #[tauri::command]
 pub fn open_adb_terminal(dir: String) {
     #[cfg(target_os = "windows")]
     {
+        const CREATE_NEW_CONSOLE: u32 = 0x00000010;
         // powershell -NoExit -Command "cd 'C:/path/to/platform-tools'"
         let mut command = Command::new("powershell.exe");
         command.args(&[

@@ -1,184 +1,205 @@
-# GitHub Copilot Instructions for TikMatrix Desktop
+# GitHub Copilot Instructions（TikMatrix Desktop）
 
-## Project Overview
+## 一、项目定位（必须理解）
 
-TikMatrix Desktop is a social media automation matrix management software that controls multiple (1-100) Android phones through PC software for real-time screen mirroring, task scheduling, account management, and content management.
+TikMatrix Desktop 是一款 **社交媒体自动化矩阵管理桌面软件**，用于通过 PC 同时控制 **1–100 台 Android 设备**，实现：
 
-## Technology Stack
+* 实时投屏与设备控制
+* 自动化任务调度
+* 账号管理
+* 内容管理
 
-- **Frontend Framework**: Vue 3 (Composition API and Options API)
-- **Desktop Framework**: Tauri v1 (Rust backend)
-- **UI Framework**: daisyUI + Tailwind CSS
-- **Build Tool**: Vite
-- **Language Support**: ['en', 'zh-Hans', 'ru', 'ja', 'ko', 'es', 'pt', 'fr', 'de', 'it', 'ar', 'hi', 'id', 'th', 'vi', 'tr', 'pl', 'nl', 'sv', 'he', 'uk']
+⚠️ 本项目**对稳定性、可维护性和可扩展性要求极高**，避免一次性、不可维护的实现。
 
-## Architecture
+---
 
-### Project Structure
+## 二、技术栈（不可偏离）
 
-- `/src` - Vue 3 frontend application
-  - `/components` - Reusable Vue components
-  - `/api` - API service layer
-  - `/i18n` - Internationalization files
-  - `/utils` - Utility functions
-  - `/service` - Business logic services
-  - `/composables` - Vue 3 composables
-  - `/config` - Configuration files
-- `/src-tauri` - Rust backend (Tauri)
-  - `/src` - Rust source code
-  - `/icons` - Application icons
-  - `/i18n` - Backend i18n files
-- `/scripts` - Build and automation scripts
-- `/whitelabel` - White-label configuration
-- `/docs` - Documentation
+### 前端
 
-### Data Storage
+* Vue 3（Composition API 为主，兼容 Options API）
+* Vite
+* Tailwind CSS + daisyUI
+* vue-i18n
 
-- Store data in `AppData/data` directory
-- Use local storage for user preferences
-- Configuration files in JSON format
+### 桌面端
 
-## Coding Standards
+* Tauri v1
+* Rust（后端）
 
-### General Principles
+---
 
-1. **Simplicity First**: Avoid over-engineering. Keep code simple, understandable, and practical
-2. **Code Reusability**: Pay attention to cyclomatic complexity and maximize code reuse
-3. **Module Design**: Use design patterns where appropriate
-4. **Minimal Changes**: When modifying code, minimize changes and avoid affecting other modules
-5. **No Unnecessary Documentation**: Don't create markdown files unless specifically requested
+## 三、项目结构认知（默认前提）
 
-### Language and Comments
+### 前端 `/src`
 
-- **Code Comments**: Always write comments in English
-- **Response Language**: Always Summary in Chinese (中文)
-- **Search**: Use English when searching for information or documentation
+* `components`：可复用组件（单一职责）
+* `api`：API 服务层
+* `service`：业务逻辑（不要直接写在组件里）
+* `composables`：Vue 3 组合式逻辑
+* `utils`：纯工具函数
+* `i18n`：前端多语言
+* `config`：配置文件
 
-### Vue.js Conventions
+### 后端 `/src-tauri`
 
-- Follow Vue 3 best practices
-- Use Composition API for new components when appropriate
-- Support both Options API and Composition API patterns
-- Keep components focused and single-purpose
-- Use props for parent-child communication
-- Emit events for child-parent communication
+* `src`：Rust 代码
+* `i18n`：后端多语言
+* `icons`：应用图标
 
-### Styling
+---
 
-- Use Tailwind CSS utility classes
-- Follow daisyUI component patterns
-- Use responsive design principles
-- Maintain consistent spacing and layout
+## 四、核心开发原则（强约束）
 
-### Internationalization
+### 1️⃣ 简单优先
 
-- All user-facing text must support i18n
-- Use the i18n framework for all strings
-- Add translation keys to appropriate i18n files
-- Never hardcode user-facing strings
+* 不要过度设计
+* 不引入无必要的抽象
+* 能用现有方案就不要重造轮子
 
-### File Naming
+### 2️⃣ 最小改动原则
 
-- Vue components: PascalCase (e.g., `TitleBar.vue`, `ManageDevices.vue`)
-- JavaScript/TypeScript files: camelCase (e.g., `storage.js`, `supportNotifications.js`)
-- Configuration files: kebab-case (e.g., `tauri.conf.json`, `vite.config.js`)
+* 修改代码时，只改**必须改的部分**
+* 不影响无关模块
+* 不做“顺手重构”
 
-## Build and Development Commands
+### 3️⃣ 可复用与可维护
 
-### Development
+* 控制圈复杂度
+* 公共逻辑必须抽离
+* 禁止在组件中堆业务代码
 
-```bash
-npm install              # Install dependencies
-npm run dev             # Start Vite dev server
-npm start               # Start Tauri development mode
-npm run tauri dev       # Alternative Tauri dev command
+### 4️⃣ 不创建无意义文档
+
+* **除非明确要求**
+* 不主动创建 Markdown 文档或说明文件
+
+---
+
+## 五、语言与输出规则（必须遵守）
+
+* **代码注释语言**：英文
+* **回答 / 总结语言**：中文
+* **搜索资料语言**：英文
+
+---
+
+## 六、Vue / 前端规范（强约束）
+
+* 新功能优先使用 **Composition API**
+* 组件保持**单一职责**
+* 父子通信：
+
+  * 父 → 子：props
+  * 子 → 父：emit
+* 禁止在组件中直接处理复杂业务逻辑
+* 状态与逻辑优先放在 `service / composables`
+
+---
+
+## 七、样式规范
+
+* 使用 Tailwind CSS 工具类
+* 遵循 daisyUI 组件模式
+* 保证响应式布局
+* 保持统一间距与视觉风格
+
+---
+
+## 八、国际化（强约束，不可违反）
+
+* 所有用户可见文本 **必须 i18n**
+* 禁止硬编码字符串
+* 新文本必须：
+
+  * 添加 key
+  * 放入正确的 i18n 文件
+* 前端与后端 i18n 分开维护
+
+支持语言列表（已存在）：
+
+```
+en, zh-Hans, ru, ja, ko, es, pt, fr, de, it,
+ar, hi, id, th, vi, tr, pl, nl, sv, he, uk
 ```
 
-### Building
+---
 
-```bash
-npm run build                      # Build frontend for production
-npm run build:agent               # Build agent (release mode)
-npm run build:agent-debug         # Build agent (debug mode)
-npm run build:whitelabel          # Build white-label version
-```
+## 九、文件命名规范
 
-### Code Quality
+* Vue 组件：`PascalCase.vue`
+* JS / TS 文件：`camelCase`
+* 配置文件：`kebab-case`
 
-```bash
-npm run lint            # Run ESLint
-npm run lint:fix        # Run ESLint with auto-fix
-```
+---
 
-### Testing
+## 十、常见任务执行规范
 
-```bash
-npm run preview         # Preview production build
-```
+### 新功能
 
-## Related Ecosystem Projects
+1. 确认影响组件
+2. 补全 i18n（所有语言）
+3. API 写在 `/api`
+4. 业务逻辑写在 `/service`
+5. 必要时同步修改 Tauri 后端
+6. 本地测试
+7. 运行 lint
 
-1. **tikmatrix-desktop** (this repo): Client application for TikMatrix and IgMatrix
-2. **tikmatrix-agent**: Local Rust service shared by both clients, runs on port 50809
-3. **tikmatrix-desktop/website**: Official website and tutorials (Docusaurus)
-4. **tikmatrix-android**: Android application for device communication
-5. **tikmatrix-admin-pro**: Admin backend and API service (Vue + Cloudflare Worker)
+### Bug 修复
 
-## Common Tasks
+* 先复现
+* 最小修复
+* 不影响其他模块
+* 修完必须测试
 
-### Adding a New Feature
+### UI 修改
 
-1. Identify affected components in `/src/components`
-2. Update i18n files in `/src/i18n` for all supported languages
-3. Add any new API calls in `/src/api`
-4. Update Tauri commands in `/src-tauri/src` if backend changes needed
-5. Test with `npm run dev`
-6. Lint with `npm run lint:fix`
+* 优先使用现有 daisyUI
+* 确保响应式
+* 不破坏整体风格
 
-### Fixing Bugs
+---
 
-1. Reproduce the issue in development mode
-2. Make minimal changes to fix the issue
-3. Ensure no other modules are affected
-4. Test thoroughly in dev mode
-5. Run linter before committing
+## 十一、安全与稳定性（默认前提）
 
-### UI Changes
+* 禁止硬编码密钥
+* 所有输入必须校验
+* 防止 XSS / 注入
+* 遵循 Tauri 安全最佳实践
 
-1. Use existing daisyUI components when possible
-2. Follow Tailwind CSS utility-first approach
-3. Ensure responsive design works on different screen sizes
-4. Maintain consistent styling with rest of application
-5. Test theme variations if applicable
+---
 
-## Security Considerations
+## 十二、性能要求（重要）
 
-- Never hardcode API keys or secrets
-- Validate all user inputs
-- Sanitize data before displaying (especially user-generated content)
-- Use secure communication for API calls
-- Follow Tauri security best practices
+* 组件按需加载
+* 减少无效渲染
+* 大列表必须虚拟滚动
+* 控制包体大小
 
-## Performance Guidelines
+---
 
-- Lazy load components when appropriate
-- Optimize images and assets
-- Minimize bundle size
-- Use efficient data structures
-- Avoid unnecessary re-renders in Vue components
-- Use virtual scrolling for large lists
+## 十三、Git 规范
 
-## Git Workflow
+* 提交信息清晰、可追溯
+* 每次提交只做一件事
+* 不提交构建产物和 `node_modules`
 
-- Write clear, descriptive commit messages
-- Keep commits focused and atomic
-- Don't commit build artifacts or `node_modules`
-- Use `.gitignore` appropriately
+---
 
-## Key Dependencies
+## 十四、生态项目认知（背景）
 
-- **@tauri-apps/api**: Tauri JavaScript API
-- **vue**: Vue 3 framework
-- **vue-i18n**: Internationalization
-- **daisyui**: UI component library
-- **tailwindcss**: Utility-first CSS framework
+* tikmatrix-desktop（当前项目）
+* tikmatrix-agent（Rust 本地服务，端口 50809）
+* tikmatrix-android
+* tikmatrix-admin-pro
+* 官网 & 文档（Docusaurus网站在当前项目的website目录）
+
+---
+
+### ✅ 最终目标
+
+Copilot 应像 **一名熟悉 TikMatrix 架构的高级工程师**：
+
+* 少猜测
+* 多遵守规则
+* 输出可落地、可维护的代码

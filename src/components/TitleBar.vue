@@ -204,6 +204,24 @@
         <option selected value="en">English</option>
         <option value="zh-CN">简体中文</option>
         <option value="ru">Русский</option>
+        <option value="ar">العربية</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="he">עברית</option>
+        <option value="hi">हिन्दी</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="nl">Nederlands</option>
+        <option value="pl">Polski</option>
+        <option value="pt">Português</option>
+        <option value="sv">Svenska</option>
+        <option value="th">ไทย</option>
+        <option value="tr">Türkçe</option>
+        <option value="uk">Українська</option>
+        <option value="vi">Tiếng Việt</option>
       </select>
 
       <!-- 主题切换 -->
