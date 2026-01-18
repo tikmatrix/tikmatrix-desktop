@@ -1,8 +1,8 @@
 {
-    "label": "故障排查",
+    "label": "문제 해결",
     "position": 3,
     "link": {
         "type": "generated-index",
-        "description": "常见问题和故障排查指南"
+        "description": "자주 묻는 질문 및 문제 해결 가이드"
     }
 }

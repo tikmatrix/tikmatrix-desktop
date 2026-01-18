@@ -15,7 +15,7 @@
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Rewards": {
-    "message": "Gana promocionando",
+    "message": "Ganar Dinero",
     "description": "Navbar item with label Rewards"
   },
   "item.label.Features": {
@@ -39,11 +39,11 @@
     "description": "Navbar item with label Download"
   },
   "item.label.FAQ": {
-    "message": "Preguntas frecuentes",
+    "message": "Preguntas Frecuentes",
     "description": "Navbar item with label FAQ"
   },
   "logo.alt": {
-    "message": "TikMatrix Logo",
+    "message": "Logo de TikMatrix",
     "description": "The alt text of navbar logo"
   },
   "item.label.GitHub": {
@@ -51,7 +51,7 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.About Us": {
-    "message": "Sobre nosotros",
+    "message": "Sobre Nosotros",
     "description": "Navbar item with label About Us"
   },
   "item.label.Advertising": {

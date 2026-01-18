@@ -15,11 +15,11 @@
     "description": "The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.Recent posts": {
-    "message": "Publications récentes",
+    "message": "Articles récents",
     "description": "The label of footer link with label=Recent posts linking to /blog"
   },
   "link.item.label.Archive posts": {
-    "message": "Publications archivées",
+    "message": "Articles archivés",
     "description": "The label of footer link with label=Archive linking to /blog/archive"
   },
   "link.title.Community": {
@@ -27,7 +27,7 @@
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "Plus",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Youtube": {
@@ -55,7 +55,7 @@
     "description": "The label of footer link with label=Privacy Policy linking to /privacy-policy"
   },
   "link.item.label.Terms of Service": {
-    "message": "Conditions de service",
+    "message": "Conditions d'utilisation",
     "description": "The label of footer link with label=Terms of Service linking to /terms-of-service"
   },
   "link.title.Tools": {
@@ -71,7 +71,7 @@
     "description": "The label of footer link with label=TikTok User Finder linking to /tiktok-user-finder"
   },
   "link.item.label.About Us": {
-    "message": "À propos",
+    "message": "À propos de nous",
     "description": "The label of footer link with label=About Us linking to /about-us"
   }
 }

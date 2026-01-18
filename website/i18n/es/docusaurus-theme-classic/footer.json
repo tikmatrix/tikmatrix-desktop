@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "Matriz TikTok"
+    "message": "Matriz de TikTok"
   },
   "link.title.Docs": {
     "message": "Documentación",
@@ -15,11 +15,11 @@
     "description": "The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.Recent posts": {
-    "message": "Publicaciones recientes",
+    "message": "Publicaciones Recientes",
     "description": "The label of footer link with label=Recent posts linking to /blog"
   },
   "link.item.label.Archive posts": {
-    "message": "Publicaciones archivadas",
+    "message": "Publicaciones Archivadas",
     "description": "The label of footer link with label=Archive linking to /blog/archive"
   },
   "link.title.Community": {
@@ -27,7 +27,7 @@
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "Más",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Youtube": {
@@ -51,11 +51,11 @@
     "description": "The footer copyright"
   },
   "link.item.label.Privacy Policy": {
-    "message": "Política de privacidad",
+    "message": "Política de Privacidad",
     "description": "The label of footer link with label=Privacy Policy linking to /privacy-policy"
   },
   "link.item.label.Terms of Service": {
-    "message": "Términos de servicio",
+    "message": "Términos de Servicio",
     "description": "The label of footer link with label=Terms of Service linking to /terms-of-service"
   },
   "link.title.Tools": {
@@ -63,15 +63,15 @@
     "description": "The title of the footer links column with title=Tools in the footer"
   },
   "link.item.label.Buy hardware": {
-    "message": "Comprar hardware",
+    "message": "Comprar Hardware",
     "description": "The label of footer link with label=Buy Hardware linking to /buy-hardware"
   },
   "link.item.label.TikTok User Finder": {
-    "message": "Buscador de país de usuario de TikTok",
+    "message": "Consulta de País de Usuario TikTok",
     "description": "The label of footer link with label=TikTok User Finder linking to /tiktok-user-finder"
   },
   "link.item.label.About Us": {
-    "message": "Sobre nosotros",
+    "message": "Sobre Nosotros",
     "description": "The label of footer link with label=About Us linking to /about-us"
   }
 }

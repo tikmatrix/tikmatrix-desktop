@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
-title: API 示例
-description: 使用 TikMatrix 本地 API 的代码示例
+title: API उदाहरण
+description: TikMatrix स्थानीय API का उपयोग करने के लिए कोड उदाहरण
 ---
 
-本页面提供了在不同编程语言中使用 TikMatrix 本地 API 的示例代码。
+यह पृष्ठ विभिन्न प्रोग्रामिंग भाषाओं में TikMatrix स्थानीय API का उपयोग करने के लिए उदाहरण कोड प्रदान करता है।
 
 ## Python
 
@@ -67,27 +67,27 @@ def get_stats():
     response = requests.get(f"{BASE_URL}/task/stats")
     return response.json()
 
-# 使用示例
+# उपयोग उदाहरण
 if __name__ == "__main__":
-    # 首先检查许可证
+    # पहले लाइसेंस की जांच करें
     license_info = check_license()
     if license_info["code"] != 0:
-        print("API 访问不可用:", license_info["message"])
+        print("API पहुंच उपलब्ध नहीं है:", license_info["message"])
         exit(1)
     
-    print("许可证正常:", license_info["data"]["plan_name"])
+    print("लाइसेंस सामान्य:", license_info["data"]["plan_name"])
     
-    # 创建一个关注任务
+    # एक फ़ॉलो कार्य बनाएं
     result = create_task(
         serials=["device_serial_1"],
         script_name="follow",
         script_config={"target_username": "@tikmatrix"}
     )
-    print("任务已创建:", result)
+    print("कार्य बनाया गया:", result)
     
-    # 获取统计信息
+    # सांख्यिकी प्राप्त करें
     stats = get_stats()
-    print("统计:", stats["data"])
+    print("सांख्यिकी:", stats["data"])
 ```
 
 ## JavaScript / Node.js
@@ -146,27 +146,27 @@ async function getStats() {
   return response.json();
 }
 
-// 使用示例
+// उपयोग उदाहरण
 async function main() {
-  // 检查许可证
+  // लाइसेंस की जांच करें
   const license = await checkLicense();
   if (license.code !== 0) {
-    console.error('API 访问不可用:', license.message);
+    console.error('API पहुंच उपलब्ध नहीं है:', license.message);
     return;
   }
-  console.log('许可证正常:', license.data.plan_name);
+  console.log('लाइसेंस सामान्य:', license.data.plan_name);
 
-  // 创建任务
+  // कार्य बनाएं
   const result = await createTask(
     ['device_serial_1'],
     'follow',
     { target_username: '@tikmatrix' }
   );
-  console.log('任务已创建:', result);
+  console.log('कार्य बनाया गया:', result);
 
-  // 获取统计信息
+  // सांख्यिकी प्राप्त करें
   const stats = await getStats();
-  console.log('统计:', stats.data);
+  console.log('सांख्यिकी:', stats.data);
 }
 
 main().catch(console.error);
@@ -175,10 +175,10 @@ main().catch(console.error);
 ## cURL
 
 ```bash
-# 检查许可证
+# लाइसेंस की जांच करें
 curl http://localhost:50809/api/v1/license/check
 
-# 创建任务
+# कार्य बनाएं
 curl -X POST http://localhost:50809/api/v1/task \
   -H "Content-Type: application/json" \
   -d '{
@@ -188,30 +188,30 @@ curl -X POST http://localhost:50809/api/v1/task \
     "enable_multi_account": false
   }'
 
-# 列出待处理任务
+# लंबित कार्यों की सूची बनाएं
 curl "http://localhost:50809/api/v1/task?status=0&page=1&page_size=20"
 
-# 获取任务详情
+# कार्य विवरण प्राप्त करें
 curl http://localhost:50809/api/v1/task/1
 
-# 停止任务
+# कार्य रोकें
 curl -X POST http://localhost:50809/api/v1/task/1/stop
 
-# 重试任务
+# कार्य पुनः प्रयास करें
 curl -X POST http://localhost:50809/api/v1/task/1/retry
 
-# 删除任务
+# कार्य हटाएं
 curl -X DELETE http://localhost:50809/api/v1/task/1
 
-# 批量删除任务
+# बैच में कार्य हटाएं
 curl -X DELETE http://localhost:50809/api/v1/task/batch \
   -H "Content-Type: application/json" \
   -d '{"task_ids": [1, 2, 3]}'
 
-# 重试所有失败任务
+# सभी विफल कार्य पुनः प्रयास करें
 curl -X POST http://localhost:50809/api/v1/task/retry-all
 
-# 获取任务统计
+# कार्य सांख्यिकी प्राप्त करें
 curl http://localhost:50809/api/v1/task/stats
 ```
 
@@ -271,29 +271,29 @@ function Remove-TaskById {
     return $response
 }
 
-# 使用示例
+# उपयोग उदाहरण
 $license = Check-License
 if ($license.code -ne 0) {
-    Write-Error "API 访问不可用: $($license.message)"
+    Write-Error "API पहुंच उपलब्ध नहीं है: $($license.message)"
     exit 1
 }
 
-Write-Host "许可证正常: $($license.data.plan_name)"
+Write-Host "लाइसेंस सामान्य: $($license.data.plan_name)"
 
-# 创建任务
+# कार्य बनाएं
 $result = Create-Task -Serials @("device_serial_1") `
     -ScriptName "follow" `
     -ScriptConfig @{ target_username = "@tikmatrix" }
 
-Write-Host "任务已创建: $($result | ConvertTo-Json)"
+Write-Host "कार्य बनाया गया: $($result | ConvertTo-Json)"
 ```
 
-## 常见使用场景
+## सामान्य उपयोग परिदृश्य
 
-### 为多个设备批量创建任务
+### कई डिवाइस के लिए बैच में कार्य बनाएं
 
 ```python
-# Python 示例：为所有已连接设备创建关注任务
+# Python उदाहरण: सभी कनेक्टेड डिवाइस के लिए फ़ॉलो कार्य बनाएं
 devices = ["device_1", "device_2", "device_3", "device_4", "device_5"]
 
 result = create_task(
@@ -303,16 +303,16 @@ result = create_task(
     multi_account=True
 )
 
-print(f"已创建 {result['data']['created_count']} 个任务")
+print(f"{result['data']['created_count']} कार्य बनाए गए")
 ```
 
-### 监控任务进度
+### कार्य प्रगति की निगरानी करें
 
 ```python
 import time
 
 def wait_for_completion(task_ids, timeout=300):
-    """等待所有任务完成"""
+    """सभी कार्यों के पूरा होने की प्रतीक्षा करें"""
     start_time = time.time()
     
     while time.time() - start_time < timeout:
@@ -321,33 +321,33 @@ def wait_for_completion(task_ids, timeout=300):
         pending = stats['data']['pending']
         
         if running == 0 and pending == 0:
-            print("所有任务已完成！")
+            print("सभी कार्य पूर्ण!")
             return True
         
-        print(f"运行中: {running}, 等待中: {pending}")
+        print(f"चल रहे: {running}, प्रतीक्षा में: {pending}")
         time.sleep(5)
     
-    print("等待任务超时")
+    print("कार्य प्रतीक्षा समय समाप्त")
     return False
 ```
 
-### 自动重试失败任务
+### विफल कार्यों को स्वचालित रूप से पुनः प्रयास करें
 
 ```python
 def auto_retry_failed(max_retries=3):
-    """自动重试失败的任务"""
+    """विफल कार्यों को स्वचालित रूप से पुनः प्रयास करें"""
     for i in range(max_retries):
-        # 获取失败任务
+        # विफल कार्य प्राप्त करें
         failed = list_tasks(status=3)
         if failed['data']['total'] == 0:
-            print("没有失败的任务")
+            print("कोई विफल कार्य नहीं")
             return
         
-        print(f"重试 {failed['data']['total']} 个失败任务（第 {i+1} 次尝试）")
+        print(f"{failed['data']['total']} विफल कार्यों को पुनः प्रयास कर रहे हैं (प्रयास {i+1})")
         
-        # 重试所有
+        # सभी को पुनः प्रयास करें
         result = requests.post(f"{BASE_URL}/task/retry-all")
         
-        # 等待完成
+        # पूर्ण होने की प्रतीक्षा करें
         time.sleep(30)
 ```

@@ -1,90 +1,90 @@
 ---
 slug: usb-phone-farm-limits
-title: 为什么普通 PC 很难接入超过 ~40 台手机？
+title: ¿Por qué un PC común difícilmente puede conectar más de ~40 teléfonos?
 authors: tikMatrix
 tags: [硬件, 手机农场, USB, TikTok 自动化, TikMatrix]
 ---
 
-> 按标准，USB 主机**最多可挂 127 个设备**。  
-> 但在现实中，多数消费级主板会在 **~40 台**左右“见顶”，原因多来自 **芯片组/固件限制与拓扑结构**。
+> Según estándares, un host USB **puede conectar hasta 127 dispositivos**.  
+> Pero en realidad, la mayoría de placas base de consumo "alcanzan el techo" alrededor de **~40 unidades**, debido principalmente a **limitaciones de chipset/firmware y estructura topológica**.
 
 <!-- truncate -->
 ---
-![USB 限制与手机农场](/img/blog/usb-phone-farm.webp)
+![Límites USB y granjas de teléfonos](/img/blog/usb-phone-farm.webp)
 
-## 🧠 1. 理论 vs 现实
+## 🧠 1. Teoría vs Realidad
 
-- **纸面参数：**单个 USB 主机地址空间可容纳 **127**（含 Hub）。  
-- **真实情况：**消费级主板通常在 **30–45 台**徘徊，主要因为：
-  - 主控固件的**设备扇出**限制  
-  - 芯片组**通道共享**导致的拥塞  
-  - **Hub 层级/拓扑**过深（电源分配、枚举超时）
+- **Parámetros sobre papel:** El espacio de direcciones de un solo host USB puede contener **127** (incluidos Hubs).  
+- **Situación real:** Las placas base de consumo generalmente rondan **30–45 unidades**, principalmente porque:
+  - Limitaciones de **fan-out de dispositivo** del firmware del controlador  
+  - Congestión causada por **compartición de canales** del chipset  
+  - **Niveles de Hub/topología** demasiado profundos (distribución de energía, timeout de enumeración)
 
-> 关键瓶颈常不在系统，而在**主控 + 主板设计**。
-
----
-
-## 🖥️ 2. 服务器/工作站主板为何更能“上量”
-
-如 **X79 架构**等服务器/高端平台通常具备：
-
-- **更多独立**的 USB 主控  
-- **更少固件限制**（设备扇出更宽）  
-- **更合理**的通道与供电影响控制
-
-**效果：**在同系统与相同 Hub 下，更容易突破消费级上限。
+> El cuello de botella clave a menudo no está en el sistema, sino en el **controlador + diseño de placa base**.
 
 ---
 
-## 🔌 3. 实操接线要点（提高识别上限）
+## 🖥️ 2. Por qué placas de servidor/estación de trabajo pueden "escalar" mejor
 
-1. **优先使用机箱后置**主板直连 USB 口，少用前置面板延长线。  
-2. 大规模连接时优先 **USB 2.0（黑色）**；**避免 USB 3.0（蓝色）**通道的不稳定因素。  
-3. **BIOS 设置：**  
-   - **关闭 XHCI**  
-   - **开启 EHCI**  
-   让设备走更稳定的 USB2 主机路径，枚举更可靠。
+Plataformas de servidor/alta gama como **arquitectura X79** suelen tener:
 
-> 供电同样关键：使用**带电源的优质 Hub**、短高品质线材，并把负载分散到多个主控上。
+- **Más controladores USB independientes**  
+- **Menos limitaciones de firmware** (fan-out de dispositivo más amplio)  
+- **Mejor** control de canales e impacto de energía
+
+**Efecto:** Con el mismo sistema y Hub, es más fácil romper el límite de consumo.
 
 ---
 
-## 🧩 4. 拓扑与供电清单
+## 🔌 3. Puntos clave de cableado práctico (aumentar límite de reconocimiento)
 
-| 维度 | 建议 | 说明 |
+1. **Prioriza puertos USB traseros** de conexión directa a placa base, usa menos extensiones de panel frontal.  
+2. Para conexiones masivas prioriza **USB 2.0 (negro)**; **evita factores inestables de canal USB 3.0 (azul)**.  
+3. **Configuración BIOS:**  
+   - **Desactivar XHCI**  
+   - **Activar EHCI**  
+   Hace que dispositivos usen ruta de host USB2 más estable, enumeración más confiable.
+
+> Energía también es crucial: usa **Hubs de calidad con alimentación**, cables cortos de alta calidad, y distribuye carga entre múltiples controladores.
+
+---
+
+## 🧩 4. Lista de topología y energía
+
+| Dimensión | Recomendación | Explicación |
 |---|---|---|
-| Hub 层级 | ≤ 3 层 | 过深易超时 |
-| Hub 规格 | 7–10 口带电源 | 每组独立电源更稳 |
-| 线材 | 短、屏蔽好 | 早换可疑线 |
-| 端口 | 先用后置 I/O | 前置走线共用多 |
-| 通道 | 手机走 USB2 | USB3 留给存储等 |
+| Niveles de Hub | ≤ 3 niveles | Demasiado profundo causa timeouts |
+| Especificación Hub | 7–10 puertos con alimentación | Cada grupo con energía independiente más estable |
+| Cables | Cortos, bien blindados | Reemplaza cables sospechosos temprano |
+| Puertos | Usa primero I/O trasero | Frontal comparte más cableado |
+| Canal | Teléfonos en USB2 | USB3 reservado para almacenamiento, etc. |
 
 ---
 
-## 🧪 5. 常见问题速排
+## 🧪 5. Solución rápida de problemas comunes
 
-- **随机掉线/重连：**供电不足或线材问题 → 换电源/线。  
-- **卡在 ~38–42 台不再枚举：**主控/固件上限 → 更换到其他根端口、加独立 USB 控制卡、或换服务器级主板。  
-- **ADB 扫描占用高：**同一主控挂太多设备 → 把 Hub 分散到不同根端口。
-
----
-
-## ⚙️ 6. TikMatrix 推荐配置
-
-- 主板：**服务器/工作站**（如 X79 级别或同类 HEDT）  
-- Hub：多组**带电源 USB2 Hub**，分布到不同根端口  
-- BIOS：**XHCI 关，EHCI 开**  
-- 系统：Windows + ADB 驱动；保持图形/WebView 稳定
+- **Desconexión/reconexión aleatoria:** Energía insuficiente o problema de cable → Cambia fuente/cable.  
+- **Se detiene en ~38–42 unidades sin enumerar más:** Límite de controlador/firmware → Cambia a otros puertos raíz, agrega tarjeta controladora USB independiente, o usa placa de servidor.  
+- **Alta ocupación de escaneo ADB:** Demasiados dispositivos en mismo controlador → Distribuye Hubs a diferentes puertos raíz.
 
 ---
 
-## 🏁 结语
+## ⚙️ 6. Configuración recomendada de TikMatrix
 
-USB 理论上能挂 127 台，但消费级主板常在 **~40** 台附近受限。  
-用 **后置 USB2**、**带电源 Hub**、**EHCI 优先 BIOS**，或直接上 **服务器级主板**，就能更稳地突破上限。
-
-👉 [访问 TikMatrix.com](https://www.tikmatrix.com)
+- Placa base: **Servidor/estación de trabajo** (como nivel X79 o HEDT similar)  
+- Hub: Múltiples **Hubs USB2 con alimentación**, distribuidos en diferentes puertos raíz  
+- BIOS: **XHCI desactivado, EHCI activado**  
+- Sistema: Windows + controladores ADB; mantener estabilidad de gráficos/WebView
 
 ---
 
-_本文基于 TikMatrix 在真实手机农场环境中的枚举与稳定性测试经验。_
+## 🏁 Conclusión
+
+USB teóricamente puede conectar 127 unidades, pero placas de consumo a menudo se limitan alrededor de **~40** unidades.  
+Usa **USB2 trasero**, **Hubs con alimentación**, **BIOS prioridad EHCI**, o directamente **placa de servidor**, para romper el límite de forma más estable.
+
+👉 [Visita TikMatrix.com](https://www.tikmatrix.com)
+
+---
+
+_Este artículo se basa en experiencia de pruebas de enumeración y estabilidad de TikMatrix en entorno real de granja de teléfonos._

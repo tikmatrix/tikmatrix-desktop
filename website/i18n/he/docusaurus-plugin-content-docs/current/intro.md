@@ -1,8 +1,38 @@
 ---
 sidebar_position: 1
-title: Introduction
+title: מבוא
+description: ברוך הבא ל-TikMatrix - פתרון אוטומציה למדיה חברתית
 ---
 
-# Introduction
+# ברוך הבא ל-TikMatrix
 
-This is a placeholder for עברית documentation. Content will be translated from the main docs.
+TikMatrix הוא פתרון אוטומציה חזק למדיה חברתית המאפשר לך לנהל חשבונות TikTok ו-Instagram מרובים ביעילות.
+
+## תכונות עיקריות
+
+- 🎯 **ניהול ריבוי מכשירים** - שלוט ב-1-100 מכשירי Android במקביל
+- 🤖 **אוטומציה של משימות** - פרסום, מעקב, תגובות ועוד
+- 🔥 **חימום חשבונות** - בנה אמינות לחשבונות חדשים
+- 📱 **שיקוף מסך בזמן אמת** - צפה ושלוט במכשירים מרחוק
+- 🌐 **תמיכה ב-API** - אינטגרציה עם המערכות שלך
+
+## התחלה מהירה
+
+1. הורד והתקן את TikMatrix Desktop
+2. חבר את מכשירי Android שלך
+3. הגדר חשבונות
+4. צור משימות אוטומטיות
+5. נטר ביצוע
+
+## נתמך
+
+- ✅ TikTok - כל התכונות
+- ✅ Instagram - כל התכונות
+- ✅ אפליקציות משובטות
+- ✅ Windows, macOS, Linux
+
+## למד עוד
+
+- [הגדרת מכשירים](./tutorial-basics/1.install-download)
+- [יצירת משימות](./tutorial-basics/2.create-task)
+- [API מקומי](./api/local-api)

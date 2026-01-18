@@ -1,34 +1,34 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Suivant",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "基础教程",
+    "message": "Tutoriel - Bases",
     "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Scripts": {
-    "message": "脚本教程",
+    "message": "Tutoriel - Scripts",
     "description": "The label for category Tutorial - Scripts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "了解如何使用 TIKTOK 矩阵的基础知识。",
+    "message": "Apprenez les bases de l'utilisation de la matrice TikTok.",
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Troubleshooting": {
-    "message": "故障排查",
+    "message": "Dépannage",
     "description": "The label for category Troubleshooting in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Troubleshooting.link.generated-index.description": {
-    "message": "常见问题和故障排查指南",
+    "message": "Questions fréquentes et guide de dépannage",
     "description": "The generated-index page description for category Troubleshooting in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.API Reference": {
-    "message": "API 参考",
+    "message": "Référence API",
     "description": "The generated-index page description for category API Reference in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.API Reference.link.generated-index.description": {
-    "message": "本地 API 文档，用于程序化任务管理。仅适用于 Pro+ 许可证持有者。",
+    "message": "Documentation de l'API locale pour la gestion programmatique des tâches. Disponible uniquement pour les détenteurs de licence Pro+.",
     "description": "The label for category API Reference in sidebar tutorialSidebar"
   }
 }

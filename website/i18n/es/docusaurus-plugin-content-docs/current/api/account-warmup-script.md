@@ -1,72 +1,72 @@
 ---
 sidebar_position: 6
-title: 账号预热脚本配置
-description: 账号预热脚本的完整配置参考
+title: Configuración del Script Account Warmup
+description: Referencia completa de configuración para el script Account Warmup
 ---
 
-本页面记录了用于任务创建的 `account_warmup` 脚本的配置参数。
+Esta página documenta los parámetros de configuración para el script `account_warmup` usado en la creación de tareas.
 
-## 概述
+## Visión General
 
-`account_warmup` 脚本用于通过模拟自然用户行为来预热 TikTok 或 Instagram 账号。它会观看视频，并根据配置的概率随机进行点赞、关注、收藏和评论。这有助于新账号建立互动历史并避免被检测为机器人。
+El script `account_warmup` se utiliza para calentar cuentas de TikTok o Instagram simulando comportamiento natural de usuario. Observa videos y realiza aleatoriamente me gusta, seguimientos, favoritos y comentarios según las probabilidades configuradas. Esto ayuda a las nuevas cuentas a construir un historial de interacción y evitar ser detectadas como bots.
 
-## 脚本配置 (`script_config`)
+## Configuración del Script (`script_config`)
 
-`script_config` 对象包含账号预热脚本的参数。以下是可用的参数：
+El objeto `script_config` contiene los parámetros para el script de calentamiento de cuenta. Los siguientes son los parámetros disponibles:
 
-### 参数
+### Parámetros
 
-| 参数 | 类型 | 必填 | 默认值 | 说明 |
+| Parámetro | Tipo | Requerido | Por Defecto | Descripción |
 |-----|------|------|-------|------|
-| task_duration | number | 否 | 600 | 预热任务的总时长（秒） |
-| topic | string | 否 | "" | 搜索主题关键词（每行一个，随机选择） |
-| min_duration | number | 否 | 15 | 最小视频观看时长（秒） |
-| max_duration | number | 否 | 30 | 最大视频观看时长（秒） |
-| like_probable | number | 否 | 0 | 点赞视频的概率（0-100） |
-| floow_probable | number | 否 | 0 | 关注视频创作者的概率（0-100） |
-| collect_probable | number | 否 | 0 | 收藏/书签视频的概率（0-100） |
-| comment_probable | number | 否 | 0 | 评论视频的概率（0-100） |
-| comment | string | 否 | "" | 评论模板（每行一个，随机选择） |
-| insert_emoji | boolean | 否 | false | 是否在评论中插入随机表情 |
-| comment_order | string | 否 | "random" | 评论选择顺序：`random`（随机）或 `sequential`（顺序） |
-| generate_by_chatgpt | boolean | 否 | false | 是否使用 ChatGPT 生成评论 |
-| chatgpt_settings | object | 否 | {} | ChatGPT 配置设置（见下文） |
+| task_duration | number | No | 600 | Duración total de la tarea de calentamiento (segundos) |
+| topic | string | No | "" | Palabras clave de tema de búsqueda (una por línea, selección aleatoria) |
+| min_duration | number | No | 15 | Duración mínima de visualización de video (segundos) |
+| max_duration | number | No | 30 | Duración máxima de visualización de video (segundos) |
+| like_probable | number | No | 0 | Probabilidad de dar me gusta a videos (0-100) |
+| floow_probable | number | No | 0 | Probabilidad de seguir a creadores de video (0-100) |
+| collect_probable | number | No | 0 | Probabilidad de guardar/marcar videos (0-100) |
+| comment_probable | number | No | 0 | Probabilidad de comentar videos (0-100) |
+| comment | string | No | "" | Plantillas de comentario (una por línea, selección aleatoria) |
+| insert_emoji | boolean | No | false | Insertar emojis aleatorios en comentarios |
+| comment_order | string | No | "random" | Orden de selección de comentarios: `random` (aleatorio) o `sequential` (secuencial) |
+| generate_by_chatgpt | boolean | No | false | Usar ChatGPT para generar comentarios |
+| chatgpt_settings | object | No | {} | Configuración de ChatGPT (ver abajo) |
 
-### ChatGPT 设置结构
+### Estructura de Configuración de ChatGPT
 
-当 `generate_by_chatgpt` 设置为 `true` 时，您可以使用 `chatgpt_settings` 对象配置 ChatGPT 评论生成：
+Cuando `generate_by_chatgpt` está establecido en `true`, puedes configurar la generación de comentarios de ChatGPT usando el objeto `chatgpt_settings`:
 
-| 参数 | 类型 | 必填 | 说明 |
+| Parámetro | Tipo | Requerido | Descripción |
 |-----|------|------|------|
-| api_key | string | 是 | 您的 OpenAI API 密钥 |
-| model | string | 否 | 使用的模型（默认："gpt-3.5-turbo"）。选项："gpt-3.5-turbo"、"gpt-4"、"gpt-4-turbo" |
-| prompt | string | 否 | 生成评论的自定义提示词。默认生成友好、相关的评论 |
-| max_tokens | number | 否 | 响应的最大 token 数（默认：100） |
-| temperature | number | 否 | 创造性等级 0-2（默认：0.7）。数值越高 = 越有创意 |
-| base_url | string | 否 | 自定义 API 端点 URL（用于 Azure OpenAI 或兼容的 API） |
+| api_key | string | Sí | Tu API key de OpenAI |
+| model | string | No | Modelo a usar (por defecto: "gpt-3.5-turbo"). Opciones: "gpt-3.5-turbo", "gpt-4", "gpt-4-turbo" |
+| prompt | string | No | Prompt personalizado para generar comentarios. Por defecto genera comentarios amigables y relevantes |
+| max_tokens | number | No | Máximo de tokens para respuesta (por defecto: 100) |
+| temperature | number | No | Nivel de creatividad 0-2 (por defecto: 0.7). Valor más alto = más creativo |
+| base_url | string | No | URL personalizada de endpoint API (para Azure OpenAI o API compatible) |
 
-`chatgpt_settings` 对象示例：
+Ejemplo de objeto `chatgpt_settings`:
 
 ```json
 {
   "api_key": "sk-your-openai-api-key",
   "model": "gpt-3.5-turbo",
-  "prompt": "针对这个视频生成一条简短友好的中文评论",
+  "prompt": "Genera un comentario breve y amigable en español para este video",
   "max_tokens": 50,
   "temperature": 0.8,
   "base_url": "https://api.openai.com/v1"
 }
 ```
 
-:::tip 建议
-对于新账号，建议从低互动概率（5-15%）开始，然后随时间逐渐增加。这模拟了自然用户行为。
+:::tip Recomendación
+Para nuevas cuentas, se recomienda comenzar con probabilidades de interacción bajas (5-15%) y aumentarlas gradualmente con el tiempo. Esto simula el comportamiento natural del usuario.
 :::
 
-## 示例
+## Ejemplos
 
-### 基本账号预热
+### Calentamiento Básico de Cuenta
 
-仅观看视频的简单预热：
+Calentamiento simple solo con visualización de videos:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -82,9 +82,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 带主题搜索的预热
+### Calentamiento con Búsqueda de Temas
 
-通过搜索特定主题来预热账号：
+Calentar cuenta buscando temas específicos:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -94,16 +94,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "account_warmup",
     "script_config": {
       "task_duration": 900,
-      "topic": "搞笑猫咪\n狗狗视频\n宠物合集",
+      "topic": "gatos graciosos\nvideos de perros\nmascotas adorables",
       "min_duration": 15,
       "max_duration": 45
     }
   }'
 ```
 
-### 带互动的预热
+### Calentamiento con Interacciones
 
-完整预热，包含点赞、关注和评论：
+Calentamiento completo incluyendo me gusta, seguimientos y comentarios:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -113,23 +113,23 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "account_warmup",
     "script_config": {
       "task_duration": 1200,
-      "topic": "美食\n食谱\n烹饪",
+      "topic": "comida\nrecetas\ncocina",
       "min_duration": 20,
       "max_duration": 60,
       "like_probable": 30,
       "floow_probable": 10,
       "collect_probable": 5,
       "comment_probable": 15,
-      "comment": "太棒了！🔥\n喜欢这个内容！\n太好了！👏\n哇，太厉害了！",
+      "comment": "¡Increíble! 🔥\n¡Me encanta este contenido!\n¡Muy bueno! 👏\nWow, ¡qué genial!",
       "insert_emoji": true,
       "comment_order": "random"
     }
   }'
 ```
 
-### 使用 ChatGPT 评论的预热
+### Calentamiento con Comentarios de ChatGPT
 
-使用 ChatGPT 生成智能评论：
+Usa ChatGPT para generar comentarios inteligentes:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -139,7 +139,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "account_warmup",
     "script_config": {
       "task_duration": 1800,
-      "topic": "科技评测\n数码产品",
+      "topic": "tecnología\nreseñas de gadgets",
       "min_duration": 30,
       "max_duration": 90,
       "like_probable": 25,
@@ -148,15 +148,15 @@ curl -X POST http://localhost:50809/api/v1/task \
       "chatgpt_settings": {
         "api_key": "your-api-key",
         "model": "gpt-3.5-turbo",
-        "prompt": "针对这个视频生成一条简短友好的评论"
+        "prompt": "Genera un comentario breve y amigable para este video"
       }
     }
   }'
 ```
 
-### 多设备批量预热
+### Calentamiento por Lotes en Múltiples Dispositivos
 
-在多个设备上同时运行预热：
+Ejecutar calentamiento simultáneamente en múltiples dispositivos:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -174,9 +174,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 定时预热任务
+### Tarea de Calentamiento Programada
 
-安排预热在特定时间运行：
+Programar calentamiento para ejecutarse a una hora específica:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -186,7 +186,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "account_warmup",
     "script_config": {
       "task_duration": 1200,
-      "topic": "音乐\n舞蹈\n热门",
+      "topic": "música\nbaile\ntendencias",
       "min_duration": 20,
       "max_duration": 40,
       "like_probable": 15,
@@ -196,9 +196,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 按用户名列表预热
+### Calentamiento por Lista de Nombres de Usuario
 
-为特定账号创建预热任务：
+Crear tareas de calentamiento para cuentas específicas:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -216,7 +216,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-## 响应
+## Respuesta
 
 ```json
 {
@@ -229,23 +229,23 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 最佳实践
+## Mejores Prácticas
 
-1. **从低概率开始**：对于新账号，使用低互动概率（5-15%），然后在几天/几周内逐渐增加。
+1. **Comenzar con Probabilidades Bajas**: Para nuevas cuentas, usa probabilidades de interacción bajas (5-15%) y luego aumenta gradualmente en días/semanas.
 
-2. **使用相关主题**：选择与您账号定位相关的主题，以建立相关的互动历史。
+2. **Usar Temas Relevantes**: Elige temas relacionados con el nicho de tu cuenta para construir un historial de interacción relevante.
 
-3. **变化观看时长**：设置 min_duration 和 max_duration 之间的范围，以模拟自然的观看模式。
+3. **Variar Duración de Visualización**: Establece un rango entre min_duration y max_duration para simular patrones de visualización naturales.
 
-4. **适度的任务时长**：每天运行 2-3 次，每次 10-30 分钟的预热会话，而不是持续长时间的会话。
+4. **Duración de Tarea Moderada**: Ejecuta sesiones de calentamiento de 10-30 minutos, 2-3 veces al día, en lugar de sesiones continuas largas.
 
-5. **使用多样化评论**：提供多个评论模板，以避免可能触发垃圾检测的重复模式。
+5. **Usar Comentarios Diversos**: Proporciona múltiples plantillas de comentario para evitar patrones repetitivos que puedan activar detección de spam.
 
-6. **明智地安排时间**：使用 `start_time` 在目标受众时区的活跃时段运行预热任务。
+6. **Programar Inteligentemente**: Usa `start_time` para ejecutar tareas de calentamiento durante horas activas en la zona horaria de tu audiencia objetivo.
 
-## 另请参阅
+## Ver También
 
-- [任务管理 API](./task-management.md) - 创建、列出和管理任务
-- [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [关注脚本配置](./follow-script.md) - 配置关注脚本参数
-- [取消关注脚本配置](./unfollow-script.md) - 配置取消关注脚本参数
+- [API de Gestión de Tareas](./task-management.md) - Crear, listar y gestionar tareas
+- [Configuración del Script Post](./post-script.md) - Configurar parámetros del script de publicación
+- [Configuración del Script Follow](./follow-script.md) - Configurar parámetros del script de seguir
+- [Configuración del Script Unfollow](./unfollow-script.md) - Configurar parámetros del script de dejar de seguir

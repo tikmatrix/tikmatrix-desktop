@@ -1,32 +1,32 @@
 ---
 sulg: how-to-check-shadowban-by-tiktok-2025
-title: 如何检查2025年TikTok的Shadowban
+title: Cara Memeriksa Shadowban TikTok di Tahun 2025
 authors: tikMatrix
 tags: [tikmatrix, tiktok, shadowban, check]
 ---
 
-Shadowban 是一个术语，用来描述用户的内容在社交媒体平台上被隐藏或抑制，而用户却不知情的情况。如果你怀疑自己在 TikTok 上被隐形封禁了，有几种方法可以检查和确认。以下是在 2025 年检查是否被 TikTok 隐形封禁的步骤：
+Shadowban adalah istilah yang digunakan untuk menggambarkan situasi di mana konten pengguna disembunyikan atau dibatasi di platform media sosial tanpa sepengetahuan pengguna. Jika Anda mencurigai bahwa Anda terkena shadowban di TikTok, ada beberapa cara untuk memeriksa dan mengonfirmasinya. Berikut adalah langkah-langkah untuk memeriksa apakah Anda terkena shadowban TikTok di tahun 2025:
 
 <!--truncate-->
 
-## 1. 检查你的标签覆盖率
+## 1. Periksa Jangkauan Hashtag Anda
 
-检查是否被 TikTok 隐形封禁的一种方法是监控你的标签覆盖率。如果你的帖子没有出现在标签提要或搜索结果中，这可能表明你的账户被隐形封禁了。尝试使用不同的标签，看看你的帖子是否出现在搜索结果中。
+Salah satu cara untuk memeriksa apakah Anda terkena shadowban TikTok adalah dengan memantau jangkauan hashtag Anda. Jika postingan Anda tidak muncul di feed hashtag atau hasil pencarian, ini mungkin menunjukkan bahwa akun Anda terkena shadowban. Coba gunakan hashtag yang berbeda dan lihat apakah postingan Anda muncul di hasil pencarian.
 
-## 2. 监控你的互动
+## 2. Pantau Interaksi Anda
 
-另一种检查隐形封禁的方法是监控你的互动指标，如点赞、评论和分享。如果你注意到互动突然下降，或者你的帖子没有获得通常的互动，这可能是你的账户被隐形封禁的迹象。关注你的互动指标，并将其与之前的表现进行比较。
+Cara lain untuk memeriksa shadowban adalah dengan memantau metrik interaksi Anda, seperti like, komentar, dan share. Jika Anda melihat penurunan interaksi yang tiba-tiba, atau postingan Anda tidak mendapatkan interaksi seperti biasanya, ini mungkin menjadi tanda bahwa akun Anda terkena shadowban. Perhatikan metrik interaksi Anda dan bandingkan dengan performa sebelumnya.
 
-## 3. 测试你的可见性
+## 3. Uji Visibilitas Anda
 
-要测试你的账户是否被隐形封禁，可以让朋友或其他 TikTok 用户使用特定的关键词或标签搜索你的账户或帖子。如果他们无法在搜索结果中找到你的账户或帖子，这可能表明你的账户被隐形封禁了。确保使用不同的设备和账户测试你的可见性，以确认隐形封禁。
+Untuk menguji apakah akun Anda terkena shadowban, minta teman atau pengguna TikTok lain untuk mencari akun atau postingan Anda menggunakan kata kunci atau hashtag tertentu. Jika mereka tidak dapat menemukan akun atau postingan Anda di hasil pencarian, ini mungkin menunjukkan bahwa akun Anda terkena shadowban. Pastikan untuk menguji visibilitas Anda menggunakan perangkat dan akun yang berbeda untuk mengonfirmasi shadowban.
 
-## 4. 联系 TikTok 支持
+## 4. Hubungi Dukungan TikTok
 
-如果你怀疑你的账户被隐形封禁了，可以联系 TikTok 支持寻求帮助。通过应用或网站联系 TikTok 的支持团队，并解释你的情况。提供有关你的账户和你遇到的问题的详细信息。TikTok 的支持团队将调查你的账户，并向你提供是否被隐形封禁的信息。
+Jika Anda mencurigai bahwa akun Anda terkena shadowban, Anda dapat menghubungi dukungan TikTok untuk mendapatkan bantuan. Hubungi tim dukungan TikTok melalui aplikasi atau situs web, dan jelaskan situasi Anda. Berikan informasi detail tentang akun Anda dan masalah yang Anda alami. Tim dukungan TikTok akan menyelidiki akun Anda dan memberikan informasi apakah Anda terkena shadowban.
 
-## 5. 查看 TikTok 的社区准则
+## 5. Tinjau Pedoman Komunitas TikTok
 
-查看 TikTok 的社区准则，确保你的内容符合他们的政策。违反 TikTok 的准则可能导致隐形封禁或其他账户限制。确保遵守 TikTok 的规则和规定，以避免将来被隐形封禁。
+Tinjau pedoman komunitas TikTok untuk memastikan konten Anda mematuhi kebijakan mereka. Melanggar pedoman TikTok dapat menyebabkan shadowban atau pembatasan akun lainnya. Pastikan untuk mematuhi aturan dan regulasi TikTok untuk menghindari shadowban di masa depan.
 
-通过遵循这些步骤并监控你的账户表现，你可以检查自己是否在 2025 年被 TikTok 隐形封禁。如果你怀疑自己的账户被隐形封禁，采取必要的步骤解决问题，并确保你的内容符合 TikTok 的准则。通过保持信息灵通和积极主动，你可以避免隐形封禁，并继续在 TikTok 上扩大你的影响力。
+Dengan mengikuti langkah-langkah ini dan memantau performa akun Anda, Anda dapat memeriksa apakah Anda terkena shadowban TikTok di tahun 2025. Jika Anda mencurigai akun Anda terkena shadowban, ambil langkah-langkah yang diperlukan untuk mengatasi masalah tersebut, dan pastikan konten Anda mematuhi pedoman TikTok. Dengan tetap terinformasi dan proaktif, Anda dapat menghindari shadowban dan terus mengembangkan pengaruh Anda di TikTok.

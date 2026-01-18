@@ -1,8 +1,8 @@
 {
-    "label": "故障排查",
-    "position": 3,
-    "link": {
-        "type": "generated-index",
-        "description": "常见问题和故障排查指南"
-    }
+  "label": "故障排查",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "常见问题和故障排查指南"
+  }
 }

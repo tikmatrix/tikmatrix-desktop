@@ -1,35 +1,35 @@
 ---
 slug: How-to-fix-vcruntime140.dll-not-found-when-open-TikMatrix
-title: 怎么解决 "vcruntime140.dll 没有找到" 的错误
+title: Cómo solucionar el error "vcruntime140.dll no encontrado"
 authors: tikMatrix
 tags: [vcruntime140.ddl not found,fixed,tikmatrix]
 ---
-"vcruntime140.dll 找不到" 错误通常是因为 Microsoft Visual C++ 可再发行包未安装或已损坏。以下是修复此问题的步骤：
+El error "vcruntime140.dll no encontrado" generalmente se debe a que el paquete redistribuible de Microsoft Visual C++ no está instalado o está dañado. Aquí están los pasos para solucionar este problema:
 <!--truncate-->
 ---
 
-1. **下载 Microsoft Visual C++ 可再发行包**：
-   - 前往 [Microsoft Visual C++ Redistributable 下载页面](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)。
-   - 下载适合你系统的版本（通常是 64 位版本，但如果你的应用程序需要 32 位版本，则下载相应的版本）。
+1. **Descargar el paquete redistribuible de Microsoft Visual C++**:
+   - Ve a la [página de descarga de Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
+   - Descarga la versión adecuada para tu sistema (generalmente la versión de 64 bits, pero si tu aplicación requiere la versión de 32 bits, descarga la correspondiente).
 
-2. **安装可再发行包**：
-   - 运行下载的安装程序并按照屏幕上的说明进行安装。
-   - 如果你已经安装了该包，可以选择在安装过程中选择“修复”选项来修复安装。
+2. **Instalar el paquete redistribuible**:
+   - Ejecuta el instalador descargado y sigue las instrucciones en pantalla para instalarlo.
+   - Si ya tienes el paquete instalado, puedes seleccionar la opción "Reparar" durante el proceso de instalación para reparar la instalación.
 
-3. **重启计算机**：
-   - 安装或修复该包后，重启计算机以确保所有更改生效。
+3. **Reinicia el ordenador**:
+   - Después de instalar o reparar el paquete, reinicia tu ordenador para asegurarte de que todos los cambios surtan efecto.
 
-4. **检查更新**：
-   - 确保你的 Windows 是最新的。前往 `设置 > 更新和安全 > Windows 更新` 并检查更新。
+4. **Verificar actualizaciones**:
+   - Asegúrate de que tu Windows esté actualizado. Ve a `Configuración > Actualización y seguridad > Windows Update` y verifica las actualizaciones.
 
-5. **重新安装 TikMatrix**：
-   - 如果上述步骤不起作用，尝试卸载并重新安装 TikMatrix。确保从官方下载最新版本。
+5. **Reinstalar TikMatrix**:
+   - Si los pasos anteriores no funcionan, intenta desinstalar y reinstalar TikMatrix. Asegúrate de descargar la última versión desde el sitio oficial.
 
-如果在尝试这些步骤后错误仍然存在，你可能需要通过运行系统文件检查工具来检查是否存在进一步的问题，例如系统文件损坏：
+Si después de intentar estos pasos el error persiste, es posible que necesites verificar si hay problemas adicionales, como archivos del sistema dañados, ejecutando la herramienta de verificación de archivos del sistema:
 
-1. **运行系统文件检查工具 (SFC)**：
-   - 以管理员身份打开命令提示符（右键单击“开始”按钮并选择“命令提示符（管理员）”或“Windows PowerShell（管理员）”）。
-   - 输入 `sfc /scannow` 并按回车键。
-   - 等待过程完成。如果 SFC 发现任何问题，它将尝试修复它们。
+1. **Ejecutar la herramienta de verificación de archivos del sistema (SFC)**:
+   - Abre el Símbolo del sistema como administrador (haz clic derecho en el botón "Inicio" y selecciona "Símbolo del sistema (Admin)" o "Windows PowerShell (Admin)").
+   - Escribe `sfc /scannow` y presiona Enter.
+   - Espera a que el proceso se complete. Si SFC encuentra problemas, intentará repararlos.
 
-这些步骤应该能帮助解决“vcruntime140.dll 找不到”错误，并使 TikMatrix 正常运行。
+Estos pasos deberían ayudarte a resolver el error "vcruntime140.dll no encontrado" y hacer que TikMatrix funcione normalmente.

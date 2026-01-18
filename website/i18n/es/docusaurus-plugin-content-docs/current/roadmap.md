@@ -1,86 +1,86 @@
 ---
 sidebar_position: 1
-title: TikMatrix/IgMatrix 软件定位与路线图
-sidebar_label: 路线图
-description: 官网版路线图，概述 TikMatrix/IgMatrix 在自动化运营生态中的定位、能力边界与上线建议。
+title: Posicionamiento y Hoja de Ruta de TikMatrix/IgMatrix
+sidebar_label: Hoja de Ruta
+description: Hoja de ruta de la versión oficial, describe el posicionamiento de TikMatrix/IgMatrix en el ecosistema de operaciones automatizadas, límites de capacidad y sugerencias de implementación.
 slug: roadmap
 ---
 
-## 全流程地图
+## Mapa del Flujo Completo
 
-![TikMatrix/IgMatrix 路线图](/img/roadmap-zh.svg)
-
----
-
-## 我们为谁创造价值
-
-- **中小团队/MCN/品牌方/灰度试验团队**：需要在 5～100 设备规模上稳定执行“每日重复但需要拟人化”的运营动作。
-- **增长与内容运营**：需要高可控的“批量但非机械”的行为编排，兼顾安全策略与效率。
+![Hoja de ruta de TikMatrix/IgMatrix](/img/roadmap-zh.svg)
 
 ---
 
-## 核心价值主张（为什么选 TikMatrix/IgMatrix）
+## Para Quién Creamos Valor
 
-1. **可编排的批量自动化**：以“任务 → 脚本 → 数据源”的模型构建可复用流水线，覆盖预热、发布、互动、采集的全链路动作。
-2. **拟人化与风控策略**：引擎具备随机化时序、节奏控制、人机手势模拟、异常中断恢复等机制，尽量贴近真人行为特征。
-3. **规模化与稳定性**：支持真机/云机混合，USB/TCP ADB 连接，保障 5→20→50→100 台的线性扩展与稳定调度。
-4. **数据可观测**：任务日志、设备投屏、账号统计与结果数据导出。
+- **Equipos pequeños y medianos/MCN/Marcas/Equipos de prueba A/B**: Necesitan ejecutar de manera estable "acciones operativas diarias repetitivas pero que requieren humanización" en una escala de 5 a 100 dispositivos.
+- **Crecimiento y operaciones de contenido**: Necesitan orquestación de comportamiento "masivo pero no mecánico" altamente controlable, equilibrando estrategias de seguridad y eficiencia.
 
 ---
 
-## 功能地图（步骤 4 的能力边界）
+## Propuesta de Valor Central (Por Qué Elegir TikMatrix/IgMatrix)
 
-### 1) 任务编排与调度
-
-- 多账号/多设备并发策略，随机化执行顺序
-- 失败重试、断点续跑、资源占用管理（素材/账号/代理）
-
-### 2) 脚本中心
-
-- **超级营销脚本**：已融合 Boost 用户/帖子、群发私信、批量评论等能力
-- 账号预热脚本：日常浏览、停留、轻互动
-- 内容发布脚本：视频/文案/标签/话题管理，定时发布
-- 数据采集脚本：抓取用户名信息，构建下一轮目标清单
-
-### 3) 人机与风控
-
-- 触控/滑动/停顿/观看时长的随机化
-- 异常检测与速率限制，避免一次性高频行为
-
-> **边界声明**：TikMatrix/IgMatrix 不提供设备、账号、代理本身；我们聚焦于 **运营动作的自动化**。
+1. **Automatización masiva orquestable**: Construye pipelines reutilizables con el modelo "tarea → script → fuente de datos", cubriendo toda la cadena de acciones de calentamiento, publicación, interacción y recopilación.
+2. **Humanización y estrategia de control de riesgos**: El motor cuenta con mecanismos de temporización aleatoria, control de ritmo, simulación de gestos humano-máquina y recuperación de interrupciones anormales, aproximándose lo más posible a las características de comportamiento humano real.
+3. **Escalabilidad y estabilidad**: Compatible con combinaciones de dispositivos reales/nube, conexiones USB/TCP ADB, garantiza expansión lineal y programación estable de 5→20→50→100 dispositivos.
+4. **Observabilidad de datos**: Registros de tareas, proyección de pantalla de dispositivos, estadísticas de cuentas y exportación de datos de resultados.
 
 ---
 
-## 上线建议（从 0 到 规模化）
+## Mapa de Funcionalidades (Límites de Capacidad del Paso 4)
 
-1. **验证期（1–5 台）**：串联设备→账号→代理→单一脚本的最小闭环
-2. **试点期（10–20 台）**：引入超级营销脚本 + 数据采集闭环；观察风控阈值
-3. **扩展期（20–50 台）**：分组限速、随机化策略、多数据源轮换
-4. **规模期（50-100 台）**：分批调度、错峰执行
+### 1) Orquestación y Programación de Tareas
 
----
+- Estrategia de concurrencia de múltiples cuentas/múltiples dispositivos, orden de ejecución aleatorio
+- Reintentos ante fallos, reanudación desde punto de interrupción, gestión de ocupación de recursos (materiales/cuentas/proxies)
 
-## 风险与合规提示
+### 2) Centro de Scripts
 
-- 使用自动化工具可能违反平台服务条款；请**自担风险**并合理控制频率与行为模式
-- 手机硬件环境、代理、账号质量与运营策略会显著影响稳定性与结果
+- **Script de Super Marketing**: Ya integra capacidades de impulso de usuarios/publicaciones, mensajes directos masivos, comentarios masivos, etc.
+- Script de calentamiento de cuentas: Navegación diaria, permanencia, interacción ligera
+- Script de publicación de contenido: Gestión de videos/textos/etiquetas/temas, publicación programada
+- Script de recopilación de datos: Extrae información de nombres de usuario, construye lista de objetivos para la próxima ronda
 
----
+### 3) Humano-Máquina y Control de Riesgos
 
-## 常见问答
+- Aleatorización de toques/deslizamientos/pausas/duración de visualización
+- Detección de anomalías y limitación de velocidad, evita comportamiento de alta frecuencia único
 
-**Q：TikMatrix 是否提供账号/代理？**  
-A：不提供。我们专注自动化引擎与脚本执行。
-
-**Q：是否提供云手机？**  
-A：不提供。用户需自行准备设备环境。
-
-**Q：是否支持云手机？**  
-A：只要能通过 ADB（USB/TCP）稳定连接，即可纳入调度。
+> **Declaración de límites**: TikMatrix/IgMatrix no proporciona dispositivos, cuentas ni proxies; nos enfocamos en la **automatización de acciones operativas**.
 
 ---
 
-## 行动呼吁
+## Sugerencias de Implementación (De 0 a Escala)
 
-- 立即试用 Starter 套餐，构建你的最小可行“步骤 4”闭环
-- 阅读脚本文档，快速上手批量运营
+1. **Período de validación (1-5 dispositivos)**: Conecte dispositivo→cuenta→proxy→script único en un bucle cerrado mínimo
+2. **Período piloto (10-20 dispositivos)**: Introduzca script de Super Marketing + bucle cerrado de recopilación de datos; observe umbrales de control de riesgos
+3. **Período de expansión (20-50 dispositivos)**: Limitación de velocidad por grupos, estrategia de aleatorización, rotación de múltiples fuentes de datos
+4. **Período de escala (50-100 dispositivos)**: Programación por lotes, ejecución escalonada
+
+---
+
+## Aviso de Riesgos y Cumplimiento
+
+- El uso de herramientas de automatización puede violar los términos de servicio de la plataforma; por favor **asuma los riesgos** y controle razonablemente la frecuencia y los patrones de comportamiento
+- El entorno de hardware del teléfono, proxies, calidad de cuentas y estrategia operativa afectarán significativamente la estabilidad y los resultados
+
+---
+
+## Preguntas Frecuentes
+
+**P: ¿TikMatrix proporciona cuentas/proxies?**  
+R: No. Nos enfocamos en el motor de automatización y la ejecución de scripts.
+
+**P: ¿Proporcionan teléfonos en la nube?**  
+R: No. Los usuarios deben preparar su propio entorno de dispositivos.
+
+**P: ¿Compatible con teléfonos en la nube?**  
+R: Siempre que pueda conectarse de manera estable a través de ADB (USB/TCP), puede ser programado.
+
+---
+
+## Llamado a la Acción
+
+- Pruebe inmediatamente el plan Starter, construya su bucle cerrado mínimo viable de "Paso 4"
+- Lea la documentación de scripts, comience rápidamente con operaciones masivas

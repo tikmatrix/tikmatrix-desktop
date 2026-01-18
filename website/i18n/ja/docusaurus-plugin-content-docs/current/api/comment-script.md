@@ -1,45 +1,45 @@
 ---
 sidebar_position: 5
-title: 评论脚本配置
-description: 评论脚本的完整配置参考
+title: コメント脚本配置
+description: コメント脚本の完整配置参考
 ---
 
-本页介绍用于任务创建的 `comment` 脚本的配置参数。
+本页介绍用于タスク创建の `comment` 脚本の配置参数。
 
 ## 概述
 
-`comment` 脚本用于自动在 TikTok 或 Instagram 帖子上发布评论。当您通过 API 提供多个目标帖子 URL 时，**每个目标帖子 URL 创建一个任务**。您可以使用 `start_time` 参数控制每个任务的执行时间。
+`comment` 脚本用于自動在 TikTok または Instagram 投稿上で发布コメント。当您通じて API 提供複数ターゲット投稿 URL 时，**每个ターゲット投稿 URL 创建一个タスク**。您できます以使用 `start_time` 参数制御每个タスクの実行时间。
 
 ## 脚本配置 (`script_config`)
 
-`script_config` 对象包含评论脚本的参数。以下是可用的参数：
+`script_config` 对象含むコメント脚本の参数。以下是できます用の参数：
 
 ### 参数
 
-| 参数 | 类型 | 必填 | 默认值 | 描述 |
+| 参数 | 类型 | 必填 | 默认值 | 説明 |
 |-----------|------|----------|---------|-------------|
-| target_post_urls | string[] | 是* | [] | 要评论的目标帖子 URL 数组（每个 URL 一个任务） |
-| target_post_url | string | 是* | "" | 单个目标帖子 URL 或用换行符/逗号分隔的多个 URL |
-| comment_content | string | 是 | "" | 评论文本内容。可以包含用换行符分隔的多条评论 |
-| comment_order | string | 否 | "random" | 如何选择评论：`random`（随机）或 `sequential`（顺序） |
-| insert_emoji | boolean | 否 | false | 是否在评论中插入随机表情符号 |
-| comment_image_path | string | 否 | "" | 图片评论的图片文件路径（仅限 TikTok）。支持绝对路径或相对于 work_dir/upload/ 的相对路径 |
+| target_post_urls | string[] | 是* | [] | 要コメントのターゲット投稿 URL 数组（每个 URL 一个タスク） |
+| target_post_url | string | 是* | "" | 单个ターゲット投稿 URL または用换行符/逗号分隔の複数 URL |
+| comment_content | string | 是 | "" | コメント文本コンテンツ。できます以含む用换行符分隔の多条コメント |
+| comment_order | string | 否 | "random" | など何选择コメント：`random`（ランダム）または `sequential`（顺序） |
+| insert_emoji | boolean | 否 | false | 是否在コメント中插入ランダム表情符号 |
+| comment_image_path | string | 否 | "" | 画像コメントの画像文件パス（仅限 TikTok）。サポート绝对パスまたは相对于 work_dir/upload/ の相对パス |
 
 :::note
-必须提供 `target_post_urls` 数组或 `target_post_url` 字符串。如果两者都提供，`target_post_urls` 优先。
+必须提供 `target_post_urls` 数组または `target_post_url` 字符串。など果两者都提供，`target_post_urls` 优先。
 :::
 
-:::tip 图片评论（仅限 TikTok）
-`comment_image_path` 参数允许您在评论中附加图片。此功能**仅在 TikTok 上支持** - Instagram 评论不支持图片附件。图片将被推送到设备并作为图库中的第一张图片被选择。
+:::tip 画像コメント（仅限 TikTok）
+`comment_image_path` 参数允许您在コメント中附加画像。此機能**仅在 TikTok 上でサポート** - Instagram コメント不サポート画像附件。画像将被推送到デバイスし作に图库中の第一张画像被选择。
 :::
 
-:::info 任务创建
-当提供多个目标帖子 URL 时，API 会 **为每个目标帖子 URL 创建一个任务**。例如，如果您指定 3 个帖子 URL 和 2 个设备，将创建 6 个任务。使用 `start_time` 参数控制任务开始执行的时间。
+:::info タスク创建
+当提供複数ターゲット投稿 URL 时，API 会 **に每个ターゲット投稿 URL 创建一个タスク**。例など，など果您指定された 3 个投稿 URL 和 2 个デバイス，将创建 6 个タスク。使用 `start_time` 参数制御タスク开始実行の时间。
 :::
 
 ## 示例
 
-### 评论单个帖子
+### コメント单个投稿
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -54,9 +54,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 使用多个评论选项
+### 使用複数コメント选项
 
-提供用换行符分隔的多条评论。系统将根据 `comment_order` 选择其中一条：
+提供用换行符分隔の多条コメント。系统将に基づいて `comment_order` 选择其中一条：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -72,9 +72,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 评论多个帖子
+### コメント複数投稿
 
-当评论多个帖子时，每个帖子创建一个任务：
+当コメント複数投稿时，每个投稿创建一个タスク：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -94,11 +94,11 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-这将创建 3 个立即执行的独立任务。
+这将创建 3 个立即実行の独立タスク。
 
-### 定时评论
+### 定时コメント
 
-使用 `start_time` 安排任务开始执行的时间：
+使用 `start_time` 安排タスク开始実行の时间：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -114,9 +114,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 带表情符号插入的评论
+### 带表情符号插入のコメント
 
-启用自动表情符号插入使评论更具吸引力：
+启用自動表情符号插入使コメント更具吸引力：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -132,9 +132,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 按用户名列表模式评论
+### 按ユーザー名列表模式コメント
 
-直接为特定账号创建评论任务：
+直接に特定アカウント创建コメントタスク：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -149,7 +149,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 在多设备上批量评论
+### 在多デバイス上で一括コメント
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -166,9 +166,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### Instagram 评论示例
+### Instagram コメント示例
 
-同样的 API 适用于 Instagram 帖子：
+同样の API 适用于 Instagram 投稿：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -184,9 +184,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### TikTok 图片评论示例
+### TikTok 画像コメント示例
 
-在您的 TikTok 评论中附加图片（不支持 Instagram）：
+在您の TikTok コメント中附加画像（不サポート Instagram）：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -202,11 +202,11 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-:::info 图片路径
-`comment_image_path` 可以是：
+:::info 画像パス
+`comment_image_path` できます以是：
 
-- **绝对路径**：`C:/images/my_image.jpg` 或 `/home/user/images/my_image.jpg`
-- **相对路径**：`my_image.jpg`（相对于 `work_dir/upload/`）
+- **绝对パス**：`C:/images/my_image.jpg` または `/home/user/images/my_image.jpg`
+- **相对パス**：`my_image.jpg`（相对于 `work_dir/upload/`）
 
 :::
 
@@ -223,22 +223,22 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 评论顺序
+## コメント顺序
 
-### 随机顺序 (`random`)
+### ランダム顺序 (`random`)
 
-- 从提供的列表中随机选择一条评论
-- 适合使评论看起来更自然
-- 默认行为
+- 从提供の列表中ランダム选择一条コメント
+- 适合使コメント看起来更自然
+- 默认動作
 
 ### 顺序 (`sequential`)
 
-- 根据 `job_count` 按顺序选择评论
-- 第一个任务使用第一条评论，第二个任务使用第二条评论，依此类推
+- に基づいて `job_count` 按顺序选择コメント
+- 第一个タスク使用第一条コメント，第二个タスク使用第二条コメント，依此类推
 - 到达列表末尾时循环回开头
-- 适合在多个任务之间分发不同的评论
+- 适合在複数タスク之间分发異なるのコメント
 
-## 帖子 URL 格式
+## 投稿 URL 形式
 
 ### TikTok
 
@@ -254,29 +254,29 @@ https://www.instagram.com/p/ABCDEFGHIJK/
 https://www.instagram.com/reel/ABCDEFGHIJK/
 ```
 
-## 最佳实践
+## 最適な实践
 
-1. **变化您的评论**：提供多个评论选项以避免看起来像垃圾信息。
+1. **变化您のコメント**：提供複数コメント选项以避免看起来像垃圾信息。
 
-2. **使用顺序模式获得多样性**：当使用同一设备评论多个帖子时，使用 `sequential` 顺序来分发不同的评论。
+2. **使用顺序模式得る多样性**：当使用同じデバイスコメント複数投稿时，使用 `sequential` 顺序来分发異なるのコメント。
 
-3. **启用表情符号插入**：设置 `insert_emoji: true` 使评论看起来更自然和有吸引力。
+3. **启用表情符号插入**：設定 `insert_emoji: true` 使コメント看起来更自然和有吸引力。
 
-4. **安排任务**：使用 `start_time` 参数将评论分散在一段时间内，减少触发频率限制的机会。
+4. **安排タスク**：使用 `start_time` 参数将コメント分散在一段时间内，减少触发频率限制の机会。
 
-5. **遵守平台限制**：不要一次创建太多评论任务。大多数平台对评论有频率限制。
+5. **遵守平台限制**：不要一次创建太多コメントタスク。大多数平台对コメント有频率限制。
 
 ## 错误代码
 
-| 代码 | 描述 |
+| 代码 | 説明 |
 |------|-------------|
-| 40001 | 缺少目标帖子 URL 或评论内容 |
-| 40003 | API 不支持该脚本 |
-| 40301 | API 访问需要 Pro+ 计划 |
+| 40001 | 缺少ターゲット投稿 URL またはコメントコンテンツ |
+| 40003 | API 不サポート该脚本 |
+| 40301 | API 訪問需要 Pro+ 计划 |
 
 ## 另请参阅
 
-- [任务管理 API](./task-management.md) - 创建、列出和管理任务
+- [タスク管理 API](./task-management.md) - 创建、列出和管理タスク
 - [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [关注脚本配置](./follow-script.md) - 配置关注脚本参数
+- [フォロー脚本配置](./follow-script.md) - 配置フォロー脚本参数
 - [本地 API 概述](./local-api.md) - API 概述和快速入门

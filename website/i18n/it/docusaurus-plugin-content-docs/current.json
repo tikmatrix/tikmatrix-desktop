@@ -4,15 +4,15 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "基础教程",
+    "message": "Tutorial di Base",
     "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Scripts": {
-    "message": "脚本教程",
+    "message": "Tutorial degli Script",
     "description": "The label for category Tutorial - Scripts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "了解如何使用 TIKTOK 矩阵的基础知识。",
+    "message": "了解如何Utilizzo TIKTOK 矩阵的Base知识。",
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Troubleshooting": {
@@ -20,7 +20,7 @@
     "description": "The label for category Troubleshooting in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Troubleshooting.link.generated-index.description": {
-    "message": "常见问题和故障排查指南",
+    "message": "Domande Frequenti和故障排查Guida",
     "description": "The generated-index page description for category Troubleshooting in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.API Reference": {
@@ -28,7 +28,7 @@
     "description": "The generated-index page description for category API Reference in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.API Reference.link.generated-index.description": {
-    "message": "本地 API 文档，用于程序化任务管理。仅适用于 Pro+ 许可证持有者。",
+    "message": "本地 API Documentazione，用于Programma化Gestione Attività。仅适用于 Pro+ Licenza持有者。",
     "description": "The label for category API Reference in sidebar tutorialSidebar"
   }
 }

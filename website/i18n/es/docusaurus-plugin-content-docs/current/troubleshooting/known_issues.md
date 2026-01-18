@@ -2,32 +2,32 @@
 sidebar_position: 2
 ---
 
-# 已知问题
+# Problemas conocidos
 
-## 端口冲突错误
+## Error de conflicto de puertos
 
-如果在日志中出现以下错误信息：
+Si aparece el siguiente mensaje de error en los registros:
 
 ```text
 tcp connect error: The connection could not be established because the target computer refused the connection request. (os error 10061)"
 ```
 
-这表示存在端口冲突问题。要解决此问题：
+Esto indica un problema de conflicto de puertos. Para resolver este problema:
 
-1. **完全重启TikMatrix/IgMatrix软件**后重试
-2. **避免在使用TikMatrix/IgMatrix时同时使用其他控制软件**，因为它们可能导致端口冲突
-3. 确保没有其他应用程序使用相同的通信端口
+1. **Reinicie completamente el software TikMatrix/IgMatrix** y vuelva a intentarlo
+2. **Evite usar otro software de control simultáneamente con TikMatrix/IgMatrix**, ya que pueden causar conflictos de puertos
+3. Asegúrese de que ninguna otra aplicación esté usando el mismo puerto de comunicación
 
-此错误通常发生在多个设备控制应用程序同时运行时，导致通信端口冲突。
+Este error generalmente ocurre cuando se ejecutan múltiples aplicaciones de control de dispositivos simultáneamente, causando conflictos en el puerto de comunicación.
 
-## 云手机脚本失败
+## Fallo de scripts en teléfonos en la nube
 
-请尽量保证你的电脑与云手机所在机房之间的网络带宽充足且稳定。为获得最佳效果，建议将电脑与云手机机房放在同一国家或同一地区，以降低延迟和丢包，从而保证自动化任务稳定可靠运行。
+Intente asegurarse de que el ancho de banda de red entre su computadora y el centro de datos del teléfono en la nube sea suficiente y estable. Para obtener mejores resultados, se recomienda colocar la computadora y el centro de datos del teléfono en la nube en el mismo país o región para reducir la latencia y la pérdida de paquetes, garantizando así que las tareas de automatización se ejecuten de manera estable y confiable.
 
-## 脚本运行不稳定, 随机性错误, 每次运行结果不一致
+## Scripts inestables, errores aleatorios, resultados inconsistentes en cada ejecución
 
-通常跟ADB连接质量有关, 如果使用USB连接, 请尝试更换数据线或USB接口; 如果使用无线ADB连接, 请确保电脑与设备之间的网络连接稳定, 并且信号强度良好。
+Generalmente está relacionado con la calidad de la conexión ADB. Si usa conexión USB, intente cambiar el cable de datos o el puerto USB; si usa conexión ADB inalámbrica, asegúrese de que la conexión de red entre la computadora y el dispositivo sea estable y que la intensidad de la señal sea buena.
 
-## TikTok/Instagram应用更新导致的脚本失败
+## Fallo de scripts debido a actualizaciones de aplicaciones TikTok/Instagram
 
-TikTok和Instagram应用会不定期更新, 有时会导致自动化脚本无法正常运行。请提交工单, 我们会尽快更新脚本以适应最新版本的应用。
+Las aplicaciones TikTok e Instagram se actualizan periódicamente, lo que a veces puede causar que los scripts de automatización no funcionen correctamente. Envíe un ticket de soporte y actualizaremos los scripts lo antes posible para adaptarse a la última versión de las aplicaciones.

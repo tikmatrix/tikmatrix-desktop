@@ -4,7 +4,7 @@
     "description": "The title in the navbar"
   },
   "item.label.Docs": {
-    "message": "दस्तावेज़ीकरण"
+    "message": "दस्तावेज़"
   },
   "item.label.Get Started": {
     "message": "शुरू करें",
@@ -15,11 +15,11 @@
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Rewards": {
-    "message": "प्रचार करके कमाएं",
+    "message": "प्रचार से कमाएं",
     "description": "Navbar item with label Rewards"
   },
   "item.label.Features": {
-    "message": "विशेषताएं",
+    "message": "फीचर्स",
     "description": "Navbar item with label Features"
   },
   "item.label.Blog": {
@@ -39,7 +39,7 @@
     "description": "Navbar item with label Download"
   },
   "item.label.FAQ": {
-    "message": "अक्सर पूछे जाने वाले प्रश्न",
+    "message": "सामान्य प्रश्न",
     "description": "Navbar item with label FAQ"
   },
   "logo.alt": {

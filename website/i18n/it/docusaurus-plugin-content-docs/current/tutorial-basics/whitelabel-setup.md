@@ -2,57 +2,57 @@
 sidebar_position: 9
 ---
 
-# 白标功能设置
+# White LabelFunzionalitàImpostazioni
 
-:::info 需要年付订阅
-白标功能仅对**年付订阅**用户开放。购买年付计划后，请通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系客服获取解锁码。
+:::info 需要anni付订阅
+White LabelFunzionalità仅对**anni付订阅**用户开放。Acquistaanni付计划后，请通过 [Telegram](https://t.me/tikmatrix_agent_bot) ContattaAssistenza获取解锁码。
 :::
 
-白标功能允许您自定义 TikMatrix 的品牌标识以匹配您的公司形象。您可以修改应用名称、Logo和品牌信息，创建个性化的 TikMatrix 版本。
+White LabelFunzionalità允许您Personalizzato TikMatrix 的品牌标识以匹配您的公司形象。您可以ModificaApplica名称、Logo和品牌信息，创建个性化的 TikMatrix Versione。
 
-## 功能特性
+## FunzionalitàCaratteristiche
 
-### 基本设置
+### 基本Impostazioni
 
-- **应用名称**: 自定义应用显示名称
-- **Logo上传**: 上传您的自定义主Logo（推荐128x128px）
-- **网站图标**: 设置应用的自定义图标
+- **Applica名称**: PersonalizzatoApplicaMostra名称
+- **LogoCarica**: Carica您的Personalizzato主Logo（Consigliati128x128px）
+- **网站图标**: ImpostazioniApplica的Personalizzato图标
 
-### 品牌设置
+### 品牌Impostazioni
 
-- **支持邮箱**: 客户支持邮箱地址
-- **教程链接**: 自定义教程/文档链接
-- **Telegram链接**: 设置您的Telegram群组或频道链接
+- **Supporto邮箱**: 客户Supporto邮箱地址
+- **Tutorial链接**: PersonalizzatoTutorial/Documentazione链接
+- **Telegram链接**: Impostazioni您的TelegramGruppo或频道链接
 
-### 功能开关
+### Funzionalità开关
 
-- **显示教程链接**: 控制教程链接的显示
-- **显示品牌信息**: 控制品牌信息的显示
+- **MostraTutorial链接**: 控制Tutorial链接的Mostra
+- **Mostra品牌信息**: 控制品牌信息的Mostra
 
-## 设置方法
+## Impostazioni方法
 
-### 方法一：界面配置
+### 方法一：界面Configurazione
 
-1. 启动 TikMatrix 应用
-2. 点击标题栏的调色板图标 🎨
-3. 在白标设置对话框中配置参数：
-   - **应用名称**: 输入您的自定义应用名称
-   - **主Logo**: 上传您的Logo文件（PNG/JPG，推荐128x128px）
-   - **支持邮箱**: 输入您的支持邮箱地址
-   - **教程链接**: 输入您的自定义教程链接
-   - **Telegram链接**: 输入您的Telegram群组/频道链接
-   - **功能开关**: 启用/禁用教程链接和品牌信息显示
-4. 点击"保存"应用设置
+1. Avvia TikMatrix Applica
+2. 点击Titolo栏的调色板图标 🎨
+3. 在Impostazioni White Label对话框中Configurazione参数：
+   - **Applica名称**: 输入您的PersonalizzatoApplica名称
+   - **主Logo**: Carica您的Logo文件（PNG/JPG，Consigliati128x128px）
+   - **Supporto邮箱**: 输入您的Supporto邮箱地址
+   - **Tutorial链接**: 输入您的PersonalizzatoTutorial链接
+   - **Telegram链接**: 输入您的TelegramGruppo/频道链接
+   - **Funzionalità开关**: Abilita/DisabilitaTutorial链接和品牌信息Mostra
+4. 点击"Salva"ApplicaImpostazioni
 
-### 方法二：配置文件
+### 方法二：Configurazione文件
 
-1. 复制示例配置文件：
+1. CopiaEsempioConfigurazione文件：
 
    ```bash
    cp examples/whitelabel-config.json src/config/whitelabel-custom.json
    ```
 
-2. 编辑配置文件：
+2. ModificaConfigurazione文件：
 
    ```json
    {
@@ -73,7 +73,7 @@ sidebar_position: 9
    }
    ```
 
-3. 保存文件并重启应用
+3. Salva文件并重启Applica
 
 ### 方法三：命令行工具
 
@@ -83,15 +83,15 @@ sidebar_position: 9
    cd tikmatrix-desktop
    ```
 
-2. 运行配置工具：
+2. EseguiConfigurazione工具：
 
    ```bash
    node scripts/whitelabel-config.js
    ```
 
-3. 按照提示逐步配置各项参数
+3. 按照Suggerimento逐步Configurazione各项参数
 
-## 构建自定义版本
+## 构建PersonalizzatoVersione
 
 ### 1. 准备资源文件
 
@@ -102,9 +102,9 @@ public/your-favicon.ico        # 网页图标
 src-tauri/icons/               # 应用图标（各种尺寸）
 ```
 
-### 2. 配置构建参数
+### 2. Configurazione构建参数
 
-使用命令行工具或手动编辑配置：
+Utilizzo命令行工具或ManualeModificaConfigurazione：
 
 ```bash
 # 使用命令行工具
@@ -114,7 +114,7 @@ node scripts/whitelabel-config.js
 src/config/whitelabel-build.json
 ```
 
-### 3. 构建应用
+### 3. 构建Applica
 
 ```bash
 # 开发模式
@@ -127,31 +127,31 @@ npm run build
 npm run tauri build
 ```
 
-## 配置优先级
+## Configurazione优先级
 
-系统按以下优先顺序使用配置：
+系统按以下优先顺序UtilizzoConfigurazione：
 
-1. **运行时配置**: 浏览器LocalStorage中的 `whitelabel_config`
-2. **构建配置**: `src/config/whitelabel-build.json`（构建时使用）
-3. **示例配置**: `examples/whitelabel-config.json`
-4. **默认配置**: 内置默认值
+1. **Esegui时Configurazione**: Visualizzazioni器LocalStorage中的 `whitelabel_config`
+2. **构建Configurazione**: `src/config/whitelabel-build.json`（构建时Utilizzo）
+3. **EsempioConfigurazione**: `examples/whitelabel-config.json`
+4. **PredefinitoConfigurazione**: 内置Predefinito值
 
 ## Logo要求
 
 ### 主Logo
 
 - **格式**: PNG、JPG或SVG
-- **尺寸**: 128x128px（推荐）
-- **背景**: 透明背景（PNG格式）
-- **用途**: 标题栏、启动画面、关于对话框
+- **尺寸**: 128x128px（Consigliati）
+- **Sfondo**: 透明Sfondo（PNG格式）
+- **用途**: Titolo栏、Avvia画面、Info对话框
 
 ### 网站图标
 
 - **格式**: ICO或PNG
 - **尺寸**: 32x32px或16x16px
-- **用途**: 浏览器标签页、窗口图标
+- **用途**: Visualizzazioni器Tag页、窗口图标
 
-### 应用图标（用于构建）
+### Applica图标（用于构建）
 
 - **格式**: PNG、ICO、ICNS
 - **尺寸**: 32x32、128x128、256x256、512x512
@@ -205,66 +205,66 @@ updateFavicon('/path/to/favicon.ico');
 
 ### Logo设计
 
-- 使用高分辨率图像以获得清晰显示
-- 在所有Logo尺寸中保持一致的品牌形象
-- 在明暗背景下测试Logo效果
+- Utilizzo高分辨率图像以获得清晰Mostra
+- 在TuttiLogo尺寸中保持一致的品牌形象
+- 在明暗Sfondo下测试Logo效果
 - 确保Logo在小尺寸下仍可读
 
 ### 品牌一致性
 
-- 在整个界面中使用一致的颜色和字体
-- 与您现有的品牌指南保持一致
-- 在不同屏幕尺寸下测试自定义界面
-- 保持专业外观
+- 在整个界面中Utilizzo一致的颜色和字体
+- 与您现有的品牌Guida保持一致
+- 在不同屏幕尺寸下测试Personalizzato界面
+- 保持Professionale外观
 
-### 链接配置
+### 链接Configurazione
 
-- 对所有外部链接使用HTTPS
-- 部署前测试所有链接
-- 确保支持渠道得到适当监控
-- 保持文档链接的最新状态
+- 对Tutti外部链接UtilizzoHTTPS
+- 部署前测试Tutti链接
+- 确保Supporto渠道得到适当监控
+- 保持Documentazione链接的Ultimi状态
 
-## 故障排除
+## Risoluzione dei Problemi
 
-### 常见问题
+### Domande Frequenti
 
-**Logo未显示：**
+**Logo未Mostra：**
 
 - 检查文件路径和权限
-- 验证图像格式受支持
+- 验证图像格式受Supporto
 - 确保图像尺寸合适
-- 清除浏览器缓存并重启应用
+- CancellaVisualizzazioni器缓存并重启Applica
 
-**配置未保存：**
+**Configurazione未Salva：**
 
 - 检查文件系统权限
 - 验证JSON语法正确
-- 确保配置目录存在
-- 尝试以管理员身份运行（如需要）
+- 确保Configurazione目录存在
+- 尝试以Gestione员身份Esegui（如需要）
 
-**构建失败：**
+**构建Fallito：**
 
-- 验证所有资源文件存在
-- 检查配置文件语法
+- 验证Tutti资源文件存在
+- 检查Configurazione文件语法
 - 确保图标文件格式正确
-- 查看构建日志获取具体错误
+- 查看构建日志获取具体Errore
 
-### 获取帮助
+### 获取Aiuto
 
-如果在白标设置过程中遇到问题：
+如果在Impostazioni White Label过程中遇到问题：
 
-1. 查看上述故障排除部分
-2. 检查配置文件语法
-3. 通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系技术支持
-4. 报告问题时请包含您的配置文件和错误信息
+1. 查看上述Risoluzione dei Problemi部分
+2. 检查Configurazione文件语法
+3. 通过 [Telegram](https://t.me/tikmatrix_agent_bot) Contatta技术Supporto
+4. 报告问题时请包含您的Configurazione文件和Errore信息
 
-## 许可和使用
+## 许可和Utilizzo
 
-- 白标功能仅对年付订阅用户开放
-- 自定义品牌权利包含在您的订阅中
-- 分发自定义版本可能需要额外许可
-- 企业许可选项请联系客服
+- White LabelFunzionalità仅对anni付订阅用户开放
+- Personalizzato品牌权利包含在您的订阅中
+- 分发PersonalizzatoVersione可能需要额外许可
+- Enterprise许Opzionale项请ContattaAssistenza
 
 ---
 
-**需要解锁码？** 请携带您的年付订阅详情通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系客服团队。
+**需要解锁码？** 请携带您的anni付订阅Dettagli通过 [Telegram](https://t.me/tikmatrix_agent_bot) ContattaAssistenza团队。

@@ -1,41 +1,41 @@
 ---
 sidebar_position: 2
-title: 任务管理 API
-description: 任务管理端点的完整参考
+title: API de Gestión de Tareas
+description: Referencia completa de endpoints de gestión de tareas
 ---
 
-本页面记录了管理 TikMatrix 任务的所有可用 API 端点。
+Esta página documenta todos los endpoints de API disponibles para gestionar tareas de TikMatrix.
 
-## 创建任务
+## Crear Tarea
 
-为一个或多个设备或用户名创建新任务。
+Crea una nueva tarea para uno o más dispositivos o nombres de usuario.
 
-- **端点：** `POST /api/v1/task`
-- **Content-Type：** `application/json`
+- **Endpoint:** `POST /api/v1/task`
+- **Content-Type:** `application/json`
 
-### 请求参数
+### Parámetros de Request
 
-API 支持两种模式创建任务：
+La API soporta dos modos para crear tareas:
 
-**模式 1：设备模式** - 使用 `serials` 为设备创建任务
-**模式 2：用户名模式** - 使用 `usernames` 直接为特定账号创建任务
+**Modo 1: Modo Dispositivo** - Usa `serials` para crear tareas para dispositivos
+**Modo 2: Modo Nombre de Usuario** - Usa `usernames` para crear tareas directamente para cuentas específicas
 
-| 参数 | 类型 | 必需 | 描述 |
+| Parámetro | Tipo | Requerido | Descripción |
 |------|------|------|------|
-| serials | string[] | 条件必需 | 设备序列号数组（如果未提供 `usernames` 则必需） |
-| usernames | string[] | 条件必需 | 用户名数组（如果未提供 `serials` 则必需）。提供此参数时，直接为这些账号创建任务。 |
-| script_name | string | 是 | 要执行的脚本名称 |
-| script_config | object | 是 | 脚本的配置参数（请参阅对应脚本文档） |
-| enable_multi_account | boolean | 否 | 是否启用多账号模式（默认：false）。仅在设备模式下生效。 |
-| start_time | string | 否 | 计划执行时间，格式为 "HH:MM" |
+| serials | string[] | Condicional | Array de números de serie de dispositivos (requerido si no se proporciona `usernames`) |
+| usernames | string[] | Condicional | Array de nombres de usuario (requerido si no se proporciona `serials`). Cuando se proporciona, crea tareas directamente para estas cuentas. |
+| script_name | string | Sí | Nombre del script a ejecutar |
+| script_config | object | Sí | Parámetros de configuración del script (ver documentación del script correspondiente) |
+| enable_multi_account | boolean | No | Habilitar modo multi-cuenta (por defecto: false). Solo efectivo en modo dispositivo. |
+| start_time | string | No | Hora de ejecución programada, formato "HH:MM" |
 
-### 支持的脚本
+### Scripts Soportados
 
-| 脚本名称 | 描述 | 文档 |
+| Nombre del Script | Descripción | Documentación |
 |----------|------|------|
-| post | 发布视频或图片到 TikTok/Instagram | [Post 脚本配置](./post-script.md) |
+| post | Publicar video o imagen en TikTok/Instagram | [Configuración del Script Post](./post-script.md) |
 
-### 示例
+### Ejemplo
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -45,16 +45,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "¡Mira mi nuevo video! #viral #trending",
       "material_list": ["C:/Videos/video1.mp4"],
       "upload_wait_time": 60
     }
   }'
 ```
 
-有关 `script_config` 的详细参数和更多示例，请参阅 [Post 脚本配置](./post-script.md)。
+Para parámetros detallados de `script_config` y más ejemplos, consulta [Configuración del Script Post](./post-script.md).
 
-### 响应
+### Respuesta
 
 ```json
 {
@@ -67,68 +67,68 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 列表任务
+## Listar Tareas
 
-使用可选过滤条件查询任务。
+Consulta tareas con condiciones de filtro opcionales.
 
-- **端点：** `GET /api/v1/task`
+- **Endpoint:** `GET /api/v1/task`
 
-| 参数 | 类型 | 必需 | 描述 |
+| Parámetro | Tipo | Requerido | Descripción |
 |------|------|------|------|
-| status | integer | 否 | 按状态过滤（0=pending, 1=running, 2=completed, 3=failed） |
-| serial | string | 否 | 按设备序列号过滤 |
-| script_name | string | 否 | 按脚本名称过滤 |
-| source | string | 否 | 按来源过滤（"ui" 或 "api"） |
-| page | integer | 否 | 页码（默认：1） |
-| page_size | integer | 否 | 每页条目数（默认：20，最大：100） |
+| status | integer | No | Filtrar por estado (0=pending, 1=running, 2=completed, 3=failed) |
+| serial | string | No | Filtrar por número de serie del dispositivo |
+| script_name | string | No | Filtrar por nombre del script |
+| source | string | No | Filtrar por origen ("ui" o "api") |
+| page | integer | No | Número de página (por defecto: 1) |
+| page_size | integer | No | Entradas por página (por defecto: 20, máximo: 100) |
 
-## 获取任务详情
+## Obtener Detalles de Tarea
 
-获取指定任务的详细信息。
+Obtiene información detallada de una tarea específica.
 
-- **端点：** `GET /api/v1/task/{task_id}`
+- **Endpoint:** `GET /api/v1/task/{task_id}`
 
-## 删除任务
+## Eliminar Tarea
 
-删除任务。如果任务正在运行，会先尝试停止它。
+Elimina una tarea. Si la tarea está en ejecución, intentará detenerla primero.
 
-- **端点：** `DELETE /api/v1/task/{task_id}`
+- **Endpoint:** `DELETE /api/v1/task/{task_id}`
 
-## 批量删除任务
+## Eliminar Tareas por Lotes
 
-一次删除多个任务，正在运行的任务会先被停止。
+Elimina múltiples tareas a la vez, las tareas en ejecución se detendrán primero.
 
-- **端点：** `DELETE /api/v1/task/batch`
-- **请求体：** `{ "task_ids": [1, 2, 3] }`
+- **Endpoint:** `DELETE /api/v1/task/batch`
+- **Request Body:** `{ "task_ids": [1, 2, 3] }`
 
-## 停止任务
+## Detener Tarea
 
-停止正在运行的任务。
+Detiene una tarea en ejecución.
 
-- **端点：** `POST /api/v1/task/{task_id}/stop`
+- **Endpoint:** `POST /api/v1/task/{task_id}/stop`
 
-## 重试失败任务
+## Reintentar Tarea Fallida
 
-重试单个失败任务。
+Reintenta una tarea fallida individual.
 
-- **端点：** `POST /api/v1/task/{task_id}/retry`
+- **Endpoint:** `POST /api/v1/task/{task_id}/retry`
 
-## 重试所有失败任务
+## Reintentar Todas las Tareas Fallidas
 
-一次性重试所有失败的任务。
+Reintenta todas las tareas fallidas de una vez.
 
-- **端点：** `POST /api/v1/task/retry-all`
+- **Endpoint:** `POST /api/v1/task/retry-all`
 
-## 获取任务统计
+## Obtener Estadísticas de Tareas
 
-获取任务总体统计数据。
+Obtiene datos estadísticos generales de tareas.
 
-- **端点：** `GET /api/v1/task/stats`
-- **响应：** 返回 total、pending、running、completed、failed 的计数。
+- **Endpoint:** `GET /api/v1/task/stats`
+- **Respuesta:** Devuelve conteos de total, pending, running, completed, failed.
 
-## 检查 API 许可
+## Verificar Licencia API
 
-检查你的许可证是否支持 API 访问。
+Verifica si tu licencia soporta acceso a la API.
 
-- **端点：** `GET /api/v1/license/check`
-- **注意：** Starter 计划会返回错误码 40301；Pro/Team/Business 计划可访问 API。
+- **Endpoint:** `GET /api/v1/license/check`
+- **Nota:** El plan Starter devolverá código de error 40301; los planes Pro/Team/Business pueden acceder a la API.

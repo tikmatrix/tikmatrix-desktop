@@ -1,8 +1,8 @@
 {
-    "label": "API 参考",
+    "label": "API संदर्भ",
     "position": 4,
     "link": {
         "type": "generated-index",
-        "description": "程序化任务管理的本地 API 文档。仅面向 Pro+ 许可用户。"
+        "description": "प्रोग्रामेटिक कार्य प्रबंधन के लिए स्थानीय API दस्तावेज़ीकरण। केवल Pro+ लाइसेंस उपयोगकर्ताओं के लिए।"
     }
 }

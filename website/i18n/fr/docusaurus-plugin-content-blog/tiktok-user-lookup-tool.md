@@ -1,83 +1,83 @@
 ---
 slug: tiktok-user-lookup-tool-zh
-title: 新上线 免费 TikTok 用户查询工具（可显示国家）— 无需登录
+title: Nouvel Outil Gratuit de Recherche d'Utilisateurs TikTok (Affiche le Pays) — Sans Connexion
 authors: tikMatrix
-tags: [产品更新, TikTok 工具, 数据分析, TikMatrix]
+tags: [Mise à jour produit, Outils TikTok, Analyse de données, TikMatrix]
 ---
 
-> 我们发布了一个**免费网页工具**，可一键查询 TikTok 用户信息，包含**国家识别**。  
-> 输入任意用户名，立即查看粉丝、点赞、视频、ID 等信息。快速、简单、无需登录。
+> Nous avons publié un **outil web gratuit** qui peut interroger instantanément les informations des utilisateurs TikTok, y compris l'**identification du pays**.  
+> Entrez n'importe quel nom d'utilisateur, consultez immédiatement followers, likes, vidéos, ID, etc. Rapide, simple, sans connexion.
 
 <!-- truncate -->
 ---
-![TikMatrix — TikTok 用户查询](/img/blog/tikmatrix-user-lookup.webp)
+![TikMatrix — Recherche utilisateurs TikTok](/img/blog/tikmatrix-user-lookup.webp)
 
-## 🧭 1. 这是什么
+## 🧭 1. Qu'est-ce que C'est
 
-一个轻量、高速的 TikTok 公开资料查看器，适合选品调研、质检与竞品分析。
+Un visualiseur de profils publics TikTok léger et rapide, adapté pour la recherche de produits, le contrôle qualité et l'analyse concurrentielle.
 
-- 访问地址：**[https://user.tikmatrix.com/](https://user.tikmatrix.com/)**
-- 100% 免费，无需登录
-- 支持电脑与手机端
+- URL d'accès : **[https://user.tikmatrix.com/](https://user.tikmatrix.com/)**
+- 100% gratuit, sans connexion requise
+- Support PC et mobile
 
 ---
 
-## 🔎 2. 可查看的信息
+## 🔎 2. Informations Consultables
 
-| 类别 | 字段 |
+| Catégorie | Champs |
 |---|---|
-| 主页 | 用户名、昵称、头像 |
-| 规模 | 粉丝数、关注数、总点赞、视频数量 |
-| 标识 | UserID、SecUID |
-| 元信息 | **国家**、账号创建日期 |
-| 其他 | 快速分析、**视频下载**（公开视频） |
+| Page d'accueil | Nom d'utilisateur, pseudo, avatar |
+| Échelle | Followers, Following, Total likes, Nombre de vidéos |
+| Identifiant | UserID, SecUID |
+| Méta-info | **Pays**, Date de création du compte |
+| Autres | Analyse rapide, **Téléchargement vidéo** (vidéos publiques) |
 
-> 提示：国家基于公开信号推断，仅供参考，不代表法律意义上的属地。
-
----
-
-## ⚡ 3. 使用方法（三步）
-
-1）打开 **[https://user.tikmatrix.com/](https://user.tikmatrix.com/)**  
-2）输入 TikTok **用户名**（如 `charlidamelio`）  
-3）点击 **Search**，即可即时显示结果
+> Conseil : Le pays est déduit des signaux publics, à titre indicatif uniquement, ne représente pas la juridiction légale.
 
 ---
 
-## 📊 4. 常见用途
+## ⚡ 3. Méthode d'Utilisation (Trois Étapes)
 
-- KOL 合作与受众质量评估  
-- 竞品快照（增长、发帖节奏）  
-- 合规检查（地区与元数据）  
-- 内部评审用的视频快速下载
-
----
-
-## 🔐 5. 隐私与合规
-
-- 仅展示**公开**信息  
-- 无登录，不收集凭据  
-- 下载/查看内容请遵守版权与平台政策
-
-> 若账号为私密/限制状态，部分字段可能不可用。
+1) Ouvrir **[https://user.tikmatrix.com/](https://user.tikmatrix.com/)**  
+2) Entrer le **nom d'utilisateur** TikTok (ex : `charlidamelio`)  
+3) Cliquer sur **Search**, résultats affichés instantanément
 
 ---
 
-## 🗺️ 6. 规划路线
+## 📊 4. Utilisations Courantes
 
-- 批量查询与 CSV 导出  
-- 历史变化（粉丝/点赞）  
-- 面向团队的 API
-
----
-
-## 🏁 结语
-
-立即试用，并欢迎反馈你的建议——你的需求将直接影响我们的迭代方向。
-
-👉 **免费使用：** [https://user.tikmatrix.com/](https://user.tikmatrix.com/)  
-👉 **了解 TikMatrix 自动化：** [https://www.tikmatrix.com](https://www.tikmatrix.com)
+- Collaboration KOL et évaluation qualité audience  
+- Instantané concurrent (croissance, rythme de publication)  
+- Vérification de conformité (région et métadonnées)  
+- Téléchargement rapide de vidéos pour révision interne
 
 ---
 
-_本文基于对 TikTok 公开数据的真实场景测试与验证。_
+## 🔐 5. Confidentialité et Conformité
+
+- Affiche uniquement les informations **publiques**  
+- Sans connexion, ne collecte pas d'identifiants  
+- Téléchargement/consultation de contenu respectez droits d'auteur et politiques de la plateforme
+
+> Si le compte est privé/restreint, certains champs peuvent être indisponibles.
+
+---
+
+## 🗺️ 6. Feuille de Route
+
+- Requêtes en lot et export CSV  
+- Changements historiques (followers/likes)  
+- API pour équipes
+
+---
+
+## 🏁 Conclusion
+
+Essayez-le maintenant et bienvenue à vos retours — vos besoins influenceront directement notre direction d'itération.
+
+👉 **Utilisation gratuite :** [https://user.tikmatrix.com/](https://user.tikmatrix.com/)  
+👉 **Découvrez l'automatisation TikMatrix :** [https://www.tikmatrix.com](https://www.tikmatrix.com)
+
+---
+
+_Cet article est basé sur des tests et validations de scénarios réels avec des données publiques TikTok._

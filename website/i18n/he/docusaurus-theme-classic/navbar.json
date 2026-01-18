@@ -7,15 +7,15 @@
     "message": "תיעוד"
   },
   "item.label.Get Started": {
-    "message": "התחל",
+    "message": "התחל עכשיו",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Tutorial": {
-    "message": "מדריך",
+    "message": "הדרכה",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Rewards": {
-    "message": "הרווח באמצעות קידום",
+    "message": "קידום והרוויח",
     "description": "Navbar item with label Rewards"
   },
   "item.label.Features": {
@@ -35,7 +35,7 @@
     "description": "Navbar item with label Contact"
   },
   "item.label.Download": {
-    "message": "הורד",
+    "message": "הורדה",
     "description": "Navbar item with label Download"
   },
   "item.label.FAQ": {

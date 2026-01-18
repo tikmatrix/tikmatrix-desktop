@@ -1,1649 +1,1890 @@
 {
   "24/7 Support": {
-    "message": "24/7 Support"
+    "message": "24/7 सहायता"
   },
   "24h AI Assistant": {
-    "message": "24h AI Assistant"
+    "message": "24 घंटे AI सहायक"
   },
   "AI voiceover": {
-    "message": "AI voiceover"
+    "message": "AI वॉयसओवर",
+    "description": "The product label"
   },
   "AI-Generated Comments": {
-    "message": "AI-Generated Comments"
+    "message": "AI स्मार्ट टिप्पणियाँ"
   },
   "API Protocol": {
-    "message": "API Protocol"
+    "message": "API प्रोटोकॉल"
   },
   "Account Safe": {
-    "message": "Account Safe"
+    "message": "खाता सुरक्षा"
   },
   "Account Setup": {
-    "message": "Account Setup"
+    "message": "खाता सेटअप"
   },
   "Account management": {
-    "message": "Account management"
+    "message": "खाता प्रबंधन"
   },
   "Account warmup": {
-    "message": "Account warmup"
+    "message": "खाता वार्मअप"
   },
   "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
-    "message": "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%."
+    "message": "इसके अतिरिक्त, हमारा वास्तविक डिवाइस मैट्रिक्स प्रोग्राम सिस्टम TIK के जोखिम नियंत्रण उपायों के कारण होने वाले खाता निलंबन से पूरी तरह बच सकता है। हमारी खाता निलंबन दर 0% है।"
   },
   "Advanced Technology for Superior Performance": {
-    "message": "Advanced Technology for Superior Performance"
+    "message": "बेहतर प्रदर्शन के लिए उन्नत तकनीक"
   },
   "Advanced safety mechanisms": {
-    "message": "Advanced safety mechanisms"
+    "message": "उन्नत सुरक्षा तंत्र"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix."
+    "message": "इंस्टॉलेशन के बाद, उपलब्ध Instagram स्वचालन स्क्रिप्ट की पूरी सूची देखने के लिए IgMatrix खोलें। स्क्रिप्ट चयन TikMatrix से भिन्न हो सकता है।"
   },
   "All Features": {
-    "message": "All Features"
+    "message": "सभी फीचर्स"
   },
   "All Free Features": {
-    "message": "All Free Features"
+    "message": "सभी मुफ्त फीचर्स"
   },
   "All Monthly Features": {
-    "message": "All Monthly Features"
+    "message": "सभी मासिक फीचर्स"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram."
+    "message": "हमेशा अपने IgMatrix सॉफ़्टवेयर में वास्तव में उपलब्ध फीचर्स की जांच करें, क्योंकि स्क्रिप्ट कार्यक्षमता TikMatrix से भिन्न हो सकती है। सॉफ़्टवेयर इंटरफ़ेस आपको सटीक रूप से दिखाएगा कि कौन से Instagram स्वचालन स्क्रिप्ट उपलब्ध हैं।"
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "Automate posting, following, commenting, and engagement activities on Instagram"
+    "message": "Instagram पर पोस्टिंग, फॉलोइंग, कमेंटिंग और एंगेजमेंट गतिविधियों को स्वचालित करें"
   },
   "Automated Comment": {
-    "message": "Automated Comment"
+    "message": "स्वचालित टिप्पणी"
   },
   "Automated Follow": {
-    "message": "Automated Follow"
+    "message": "स्वचालित फॉलो"
   },
   "Automated Message": {
-    "message": "Automated Message"
+    "message": "स्वचालित संदेश"
   },
   "Automated account nurturing": {
-    "message": "Automated account nurturing"
+    "message": "स्वचालित वार्मअप"
   },
   "Automated scheduling for unattended operation": {
-    "message": "Automated scheduling for unattended operation"
+    "message": "स्वचालित शेड्यूलिंग के लिए निर्बाध संचालन"
   },
   "Automatic Capture": {
-    "message": "Automatic Capture"
+    "message": "स्वचालित कैप्चर"
   },
   "Automatic account matching": {
-    "message": "Automatic account matching"
+    "message": "स्वचालित खाता मिलान"
   },
   "Automatic account nurturing": {
-    "message": "Automatic account nurturing"
+    "message": "स्वचालित वार्मअप",
+    "description": "The description of Automatic account nurturing"
   },
   "Automatic commenting": {
-    "message": "Automatic commenting"
+    "message": "स्वचालित टिप्पणी",
+    "description": "The description of Automatic commenting"
   },
   "Automatic direct messaging": {
-    "message": "Automatic direct messaging"
+    "message": "स्वचालित संदेश",
+    "description": "The description of Automatic direct messaging"
   },
   "Automatic following": {
-    "message": "Automatic following"
+    "message": "स्वचालित फॉलो",
+    "description": "The description of Automatic following"
   },
   "Automatic login": {
-    "message": "Automatic login"
+    "message": "स्वचालित लॉगिन"
   },
   "Automatic matching": {
-    "message": "Automatic matching"
+    "message": "स्वचालित मिलान",
+    "description": "The description of Automatic matching"
   },
   "Automatic posting": {
-    "message": "Automatic posting"
+    "message": "स्वचालित पोस्टिंग",
+    "description": "The description of Automatic posting"
   },
   "Automatic profile setup": {
-    "message": "Automatic profile setup"
+    "message": "स्वचालित प्रोफ़ाइल सेटअप",
+    "description": "The description of Automatic profile setup"
   },
   "Automatic registration & login": {
-    "message": "Automatic registration & login"
+    "message": "स्वचालित रजिस्ट्रेशन और लॉगिन"
   },
   "Automatic video posting": {
-    "message": "Automatic video posting"
+    "message": "स्वचालित पोस्टिंग"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Automatically generate AI voiceover for videos"
+    "message": "वीडियो के लिए स्वचालित रूप से AI वॉयसओवर जनरेट करें",
+    "description": "The description of AI voiceover"
   },
   "Automatically recognize subtitles and append them to the video": {
-    "message": "Automatically recognize subtitles and append them to the video"
+    "message": "स्वचालित रूप से सबटाइटल पहचानें और वीडियो में जोड़ें",
+    "description": "The description of Recognize subtitles"
   },
   "Automatically translate subtitles to any language": {
-    "message": "Automatically translate subtitles to any language"
+    "message": "स्वचालित रूप से सबटाइटल को किसी भी भाषा में अनुवाद करें",
+    "description": "The description of Translate subtitles"
   },
   "Automation & Content Management": {
-    "message": "Automation & Content Management"
+    "message": "स्वचालन और सामग्री प्रबंधन"
   },
   "Basic Automation": {
-    "message": "Basic Automation"
+    "message": "बुनियादी स्वचालन"
   },
   "Basic configuration": {
-    "message": "Basic configuration"
+    "message": "बुनियादी कॉन्फ़िगरेशन"
   },
   "Batch Generating Unique Videos": {
-    "message": "Batch Generating Unique Videos"
+    "message": "बैच में अनोखे वीडियो जनरेट करें",
+    "description": "The description of Batch Generating Unique Videos"
   },
   "Batch account management": {
-    "message": "Batch account management"
+    "message": "बैच खाता प्रबंधन",
+    "description": "The description of Batch account management"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "Batch login to TikTok accounts with account list management"
+    "message": "खाता सूची प्रबंधन के साथ TikTok खातों में बैच लॉगिन"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Boost engagement on specific comments by liking and replying to them in bulk"
+    "message": "विशिष्ट टिप्पणियों को बल्क में लाइक और जवाब देकर एंगेजमेंट बढ़ाएं"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
-    "message": "Built with safety mechanisms to protect your Instagram accounts from suspension"
+    "message": "आपके Instagram खातों को निलंबन से बचाने के लिए सुरक्षा तंत्र के साथ बनाया गया"
   },
   "Buy hardware": {
-    "message": "Buy hardware"
+    "message": "हार्डवेयर खरीदें",
+    "description": "The product label"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
-    "message": "Can I run both IgMatrix and TikMatrix on the same computer?"
+    "message": "क्या मैं एक ही कंप्यूटर पर IgMatrix और TikMatrix दोनों चला सकता/सकती हूं?"
   },
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-    "message": "Can I use the same tutorial for both IgMatrix and TikMatrix?"
+    "message": "क्या मैं IgMatrix और TikMatrix दोनों के लिए एक ही ट्यूटोरियल उपयोग कर सकता/सकती हूं?"
   },
   "Character-by-Character Input": {
-    "message": "Character-by-Character Input"
+    "message": "कैरेक्टर-दर-कैरेक्टर इनपुट"
   },
   "Check Available Scripts": {
-    "message": "Check Available Scripts"
+    "message": "उपलब्ध स्क्रिप्ट देखें"
   },
   "Comment boost": {
-    "message": "Comment boost"
+    "message": "टिप्पणी बूस्ट"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "Comment on multiple TikTok posts in bulk with customizable content and emojis"
+    "message": "कस्टमाइज़ेबल सामग्री और इमोजी के साथ बल्क में कई TikTok पोस्ट पर टिप्पणी करें"
   },
   "Comments, Messages, Follows": {
-    "message": "Comments, Messages, Follows"
+    "message": "टिप्पणियाँ, संदेश, फॉलो"
   },
   "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
-    "message": "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products."
+    "message": "बाज़ार में समान उत्पादों की तुलना में, हमारे उत्पाद TIK का उपयोग करने पर अन्य समान उत्पादों की तुलना में कम से कम 30% ट्रैफ़िक में वृद्धि होती है।"
   },
   "Completely local private deployment ensuring user data security": {
-    "message": "Completely local private deployment ensuring user data security"
+    "message": "पूर्ण रूप से स्थानीय निजी डिप्लॉयमेंट उपयोगकर्ता डेटा सुरक्षा सुनिश्चित करता है"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
-    "message": "Comprehensive automation combining multiple engagement strategies with AI-generated comments"
+    "message": "AI-जनरेटेड टिप्पणियों के साथ कई एंगेजमेंट रणनीतियों को मिलाकर व्यापक स्वचालन"
   },
   "Computer-based Execution": {
-    "message": "Computer-based Execution"
+    "message": "कंप्यूटर-आधारित निष्पादन"
   },
   "Contact": {
-    "message": "Contact"
+    "message": "संपर्क करें",
+    "description": "The contact form title"
   },
   "Contact Support": {
-    "message": "Contact Support"
+    "message": "सहायता से संपर्क करें"
   },
   "Contact to purchase": {
-    "message": "Contact to purchase"
+    "message": "खरीदने के लिए संपर्क करें",
+    "description": "The contact to purchase label"
   },
   "Content Management": {
-    "message": "Content Management"
+    "message": "सामग्री प्रबंधन"
   },
   "Control farm accounts to watch, like, and comment on target live streams": {
-    "message": "Control farm accounts to watch, like, and comment on target live streams"
+    "message": "कंट्रोलमैट्रिक्सखाता观看、लाइक和टिप्पणी目标直播"
   },
   "Control multiple Instagram accounts across different Android devices simultaneously": {
-    "message": "Control multiple Instagram accounts across different Android devices simultaneously"
+    "message": "एक साथ कंट्रोलभिन्नAndroidडिवाइस上的多Instagramखाता"
   },
   "Create new TikTok accounts with email registration and password setup": {
-    "message": "Create new TikTok accounts with email registration and password setup"
+    "message": "创建新的TikTokखाता，सहायता邮箱注册和密码सेटिंग्स"
   },
   "Custom Instagram workflows": {
-    "message": "Custom Instagram workflows"
+    "message": "कस्टमInstagram工作流程"
   },
   "Customer support": {
-    "message": "Customer support"
+    "message": "ग्राहकसहायता"
   },
   "Device connection": {
-    "message": "Device connection"
+    "message": "डिवाइस कनेक्शन"
   },
   "Different Script Logic": {
-    "message": "Different Script Logic"
+    "message": "भिन्न的脚本逻辑"
   },
   "Different script availability": {
-    "message": "Different script availability"
+    "message": "भिन्न कास्क्रिप्ट सकते हैं उपयोग प्रकृति"
   },
   "Do I need separate licenses for IgMatrix and TikMatrix?": {
-    "message": "Do I need separate licenses for IgMatrix and TikMatrix?"
+    "message": "我की आवश्यकता है为IgMatrix和TikMatrix单独खरीदें许可证吗？"
   },
   "Download IgMatrix": {
-    "message": "Download IgMatrix"
+    "message": "डाउनलोड IgMatrix",
+    "description": "The description of Download IgMatrix"
   },
   "Download IgMatrix from our official website and follow the installation instructions.": {
-    "message": "Download IgMatrix from our official website and follow the installation instructions."
+    "message": "从我们的官方网站डाउनलोडIgMatrix，并按照इंस्टॉलनिर्देश进行संचालन。"
   },
   "Download TikMatrix": {
-    "message": "Download TikMatrix"
+    "message": "डाउनलोड TikMatrix",
+    "description": "The description of Download TikMatrix"
   },
   "Download VideoMagic": {
-    "message": "Download VideoMagic"
+    "message": "डाउनलोड VideoMagic",
+    "description": "The description of Download VideoMagic"
   },
   "Download and Install": {
-    "message": "Download and Install"
+    "message": "डाउनलोड并इंस्टॉल"
   },
   "Download for Windows": {
-    "message": "Download for Windows"
+    "message": "Windows डाउनलोड"
   },
   "Email": {
-    "message": "Email"
+    "message": "ईमेल",
+    "description": "The email label"
   },
   "Expert Technical Team": {
-    "message": "Expert Technical Team"
+    "message": "पेशेवरतकनीकटीम"
   },
   "Fan collection": {
-    "message": "Fan collection"
+    "message": "采集फॉलोअर्स",
+    "description": "The description of Fan collection"
   },
   "Features": {
-    "message": "Features"
+    "message": "फीचर्स"
   },
   "Find answers to common questions about IgMatrix": {
-    "message": "Find answers to common questions about IgMatrix"
+    "message": "查找有关IgMatrixसामान्य प्रश्न的答案"
   },
   "Fingerprint Browser": {
-    "message": "Fingerprint Browser"
+    "message": "फिंगरप्रिंट浏览器"
   },
   "Follow TikMatrix Tutorial": {
-    "message": "Follow TikMatrix Tutorial"
+    "message": "参考TikMatrixट्यूटोरियल"
   },
   "Follow these steps to get started with IgMatrix": {
-    "message": "Follow these steps to get started with IgMatrix"
+    "message": "按照以下步骤开始उपयोग करेंIgMatrix"
   },
   "For 7 Days": {
-    "message": "For 7 Days"
+    "message": "7天परीक्षण"
   },
   "Free": {
-    "message": "Free"
+    "message": "मुफ्त"
   },
   "Frequently Asked Questions": {
-    "message": "Frequently Asked Questions"
+    "message": "सामान्य प्रश्न"
   },
   "Generate intelligent and contextual comments through ChatGPT API integration": {
-    "message": "Generate intelligent and contextual comments through ChatGPT API integration"
+    "message": "通过ChatGPT API集成生成स्मार्ट且符合语境的टिप्पणी"
   },
   "Generate unique videos from one source video": {
-    "message": "Generate unique videos from one source video"
+    "message": "从一源वीडियो生成अद्वितीय的वीडियो",
+    "description": "The description of Video unique"
   },
   "Get Started": {
-    "message": "Get Started"
+    "message": "खोलना शुरू उपयोग उपयोग"
   },
   "Get Support": {
-    "message": "Get Support"
+    "message": "प्राप्त लेंसहायता"
   },
   "Get dedicated support from our expert team whenever you need help": {
-    "message": "Get dedicated support from our expert team whenever you need help"
+    "message": "随时从我们的专家टीम获得专门सहायता"
   },
   "Go to the \"Download\" page and download the latest version of TikMatrix.": {
-    "message": "Go to the \"Download\" page and download the latest version of TikMatrix."
+    "message": "前往\"डाउनलोड\"पेज并डाउनलोडनवीनतम संस्करण的 TikMatrix。"
   },
   "Here are some frequently asked questions.": {
-    "message": "Here are some frequently asked questions."
+    "message": "以下是सामान्य प्रश्न。"
   },
   "How many TikTok accounts can each phone log into?": {
-    "message": "How many TikTok accounts can each phone log into?"
+    "message": "每फ़ोनकर सकते हैं登录几tiktokखाता?"
   },
   "How many devices can I manage?": {
-    "message": "How many devices can I manage?"
+    "message": "我कर सकते हैंप्रबंधन多少डिवाइस?"
   },
   "How to use?": {
-    "message": "How to use?"
+    "message": "如何उपयोग करें?"
   },
   "Human Technical Support": {
-    "message": "Human Technical Support"
+    "message": "व्यक्ति कामतकनीकसहायता"
   },
   "Human-like Click Simulation": {
-    "message": "Human-like Click Simulation"
+    "message": "सत्य人点击模拟"
   },
   "If you are interested in our service, please contact us to get price.": {
-    "message": "If you are interested in our service, please contact us to get price."
+    "message": "如果您想了解我们的सेवा，请हमसे संपर्क करें获取मूल्य。",
+    "description": "The contact form description"
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
-    "message": "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you."
+    "message": "如果您की आवश्यकता हैIgMatrix特定功能的सहायता或遇到任何问题，我们的सहायताटीम随时为您提供सहायता。"
   },
   "IgMatrix": {
-    "message": "IgMatrix"
+    "message": "IgMatrix",
+    "description": "The description of IgMatrix"
   },
   "IgMatrix Features": {
-    "message": "IgMatrix Features"
+    "message": "IgMatrixफीचर्स"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
-    "message": "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform."
+    "message": "IgMatrix和TikMatrix具有समान的सेटिंग्स过程和उपयोगकर्ताइंटरफ़ेस。मुख्य区别是IgMatrix专门为Instagramस्वचालन设计，而TikMatrix用于TikTok。脚本逻辑和可用功能针对各自的平台进行了अनुकूलन。"
   },
   "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely.": {
-    "message": "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely."
+    "message": "IgMatrix将TikMatrix的शक्तिशालीस्वचालन फीचर्स带到Instagram，सहायता您कुशल、सुरक्षा地扩展Instagram营销工作。"
   },
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
-    "message": "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information."
+    "message": "IgMatrix遵循与TikMatrix类似的定价结构，但可能有भिन्न的费率。请देखें我们的官方定价पेज或हमसे संपर्क करें的सहायताटीम了解वर्तमान的IgMatrix定价जानकारी。"
   },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
-    "message": "IgMatrix is a Instagram android phonefarm batch control tool"
+    "message": "IgMatrix 是一款Instagram安卓फ़ोन农场批量कंट्रोल工具",
+    "description": "The description of IgMatrix"
   },
   "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
-    "message": "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation."
+    "message": "IgMatrix的सेटिंग्सट्यूटोरियल与TikMatrixसमान。अद्वितीय的भिन्न就是他们的脚本逻辑भिन्न，所以您कर सकते हैं直接参考TikMatrix的ट्यूटोरियलप्रलेखन。"
   },
   "Important Notice": {
-    "message": "Important Notice"
+    "message": "महत्वपूर्णटिप"
   },
   "Important Reminder": {
-    "message": "Important Reminder"
+    "message": "महत्वपूर्ण提醒"
   },
   "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
-    "message": "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk"
+    "message": "通过批量लाइक、分享、收藏和观看来提升पोस्टएंगेजमेंट"
   },
   "Increase user engagement by following or unfollowing accounts in bulk": {
-    "message": "Increase user engagement by following or unfollowing accounts in bulk"
+    "message": "通过批量फॉलो或取消फॉलोखाता来提升उपयोगकर्ताएंगेजमेंट"
   },
   "Instagram Automation": {
-    "message": "Instagram Automation"
+    "message": "Instagramस्वचालन"
   },
   "Instagram Phone Farm Batch Control Tool": {
-    "message": "Instagram Phone Farm Batch Control Tool"
+    "message": "Instagram हाथ मशीन कृषि जगहबल्ककंट्रोल काम उपकरण",
+    "description": "The description of Instagram Phone Farm Batch Control Tool"
   },
   "Instagram-optimized automation scripts": {
-    "message": "Instagram-optimized automation scripts"
+    "message": "Instagramअनुकूलन कास्वचालनस्क्रिप्ट"
   },
   "Instagram-specific automation": {
-    "message": "Instagram-specific automation"
+    "message": "Instagram विशेष उपयोगस्वचालन"
   },
   "Is the pricing the same as TikMatrix?": {
-    "message": "Is the pricing the same as TikMatrix?"
+    "message": "定价与TikMatrixसमान吗？"
   },
   "Join Channel": {
-    "message": "Join Channel"
+    "message": "加入频道",
+    "description": "The join channel button label"
   },
   "Join Group": {
-    "message": "Join Group"
+    "message": "加入群समूह",
+    "description": "The join group button label"
   },
   "Key Differences from TikMatrix": {
-    "message": "Key Differences from TikMatrix"
+    "message": "与TikMatrix的मुख्य区别"
   },
   "Live stream boost": {
-    "message": "Live stream boost"
+    "message": "लाइव बूस्ट"
   },
   "Mass commenting": {
-    "message": "Mass commenting"
+    "message": "मास कमेंट"
   },
   "Mass direct messaging": {
-    "message": "Mass direct messaging"
+    "message": "मास DM"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "Mon - Fri: 9:00AM - 5:00PM(UTC+8)"
+    "message": "周一至周五: 9:00AM - 5:00PM（UTC+8）",
+    "description": "The working hours description"
   },
   "Monthly": {
-    "message": "Monthly"
+    "message": "शामिलमहीने"
   },
   "Multi-Device Control": {
-    "message": "Multi-Device Control"
+    "message": "कईडिवाइसकंट्रोल"
   },
   "Multi-language support (English, Chinese, Russian)": {
-    "message": "Multi-language support (English, Chinese, Russian)"
+    "message": "多语言सहायता（英语、中文、俄语）"
   },
   "Natural Swipe Gestures": {
-    "message": "Natural Swipe Gestures"
+    "message": "自然滑动轨迹"
   },
   "No Root Required": {
-    "message": "No Root Required"
+    "message": "की आवश्यकता नहींRoot权限"
   },
   "No root permissions needed, ensuring device environment security": {
-    "message": "No root permissions needed, ensuring device environment security"
+    "message": "की आवश्यकता नहींroot权限，保证डिवाइस环境सुरक्षा"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
-    "message": "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software."
+    "message": "由于脚本是平台特定的，并非सभीTikMatrix脚本都在IgMatrix中可用。इंस्टॉलेशन के बादकर सकते हैं在IgMatrixसॉफ़्टवेयर इंटरफ़ेस中找到可用脚本的确切列表。请参考सॉफ़्टवेयर中显示的实际功能。"
   },
   "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "One-click automatic collection of target account fan lists, can be used for direct messaging"
+    "message": "一键स्वचालित कैप्चर目标खाता的फॉलोअर्स列表，可用于发送डायरेक्ट मैसेज",
+    "description": "The description of Fan collection"
   },
   "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark"
+    "message": "一键批量स्वचालित वार्मअप，सहायता搜索关键字、随机फॉलो、लाइक、टिप्पणी、收藏",
+    "description": "The description of Automatic account nurturing"
   },
   "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "One-click batch automatic commenting on multiple videos with specified scripts and random emojis"
+    "message": "一键批量स्वचालित在大量的वीडियो中टिप्पणी指定的话术，并添加随机表情",
+    "description": "The description of Automatic commenting"
   },
   "One-click batch automatic direct messaging to multiple target users": {
-    "message": "One-click batch automatic direct messaging to multiple target users"
+    "message": "一键批量स्वचालित给大量目标उपयोगकर्ता发送डायरेक्ट मैसेज",
+    "description": "The description of Automatic direct messaging"
   },
   "One-click batch automatic follow of target accounts": {
-    "message": "One-click batch automatic follow of target accounts"
+    "message": "一键批量स्वचालित फॉलो目标खाता",
+    "description": "The description of Automatic following"
   },
   "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts"
+    "message": "一键批量स्वचालित लॉगिन TikTok खाता，सहायता批量导入导出खाता",
+    "description": "The description of Automatic login"
   },
   "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "One-click batch automatic matching of logged-in accounts, no manual binding needed"
+    "message": "一键批量स्वचालित匹配已登录的खाता，की आवश्यकता नहीं手动绑定",
+    "description": "The description of Automatic matching"
   },
   "One-click batch automatic posting, supports adding product links": {
-    "message": "One-click batch automatic posting, supports adding product links"
+    "message": "一键批量स्वचालित पोस्टिंग，सहायता添加商品链接",
+    "description": "The description of Automatic posting"
   },
   "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "One-click batch automatic registration of TikTok accounts, supports business email"
+    "message": "一键批量स्वचालित注册 TikTok खाता，सहायता企业邮箱",
+    "description": "The description of Automatic registration"
   },
   "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "One-click batch automatic setup of avatars, nicknames, signatures, usernames"
+    "message": "一键批量स्वचालितसेटिंग्स头像、昵称、签名、उपयोगकर्ता名",
+    "description": "The description of Automatic profile setup"
   },
   "One-click download of videos from all video websites": {
-    "message": "One-click download of videos from all video websites"
+    "message": "一键डाउनलोडसभीवीडियो网站的वीडियो",
+    "description": "The description of Video download"
   },
   "One-click download of videos from the entire network": {
-    "message": "One-click download of videos from the entire network"
+    "message": "全网वीडियो一键डाउनलोड",
+    "description": "The description of Video collection"
   },
   "Open Source Client": {
-    "message": "Open Source Client"
+    "message": "开源ग्राहक端"
   },
   "Open source client code allows users to customize their own client": {
-    "message": "Open source client code allows users to customize their own client"
+    "message": "开源的ग्राहक端代码，उपयोगकर्ताकर सकते हैं随意कस्टमग्राहक端"
   },
   "Our Competitive Advantages": {
-    "message": "Our Competitive Advantages"
+    "message": "我们का竞争优势",
+    "description": "The description of Our Competitive Advantages"
   },
   "Our Core Advantages": {
-    "message": "Our Core Advantages"
+    "message": "我们का核心优势"
   },
   "Our Core Features": {
-    "message": "Our Core Features"
+    "message": "我们的मुख्य फीचर्स",
+    "description": "The description of Our Core Features"
   },
   "Our plans": {
-    "message": "Our plans"
+    "message": "我们的पैकेज"
   },
   "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate."
+    "message": "我们专有的वास्तविक डिवाइसमैट्रिक्ससिस्टमपरफेक्ट规避TikTok的जोखिम नियंत्रण उपाय，实现极低的खाता封禁率。",
+    "description": "The description of TikMatrix proprietary technology"
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
-    "message": "Our support team is here to help you with any IgMatrix-related questions or issues."
+    "message": "我们的सहायताटीम在这里सहायता您解决任何与IgMatrix相关的问题或疑问。"
   },
   "Per Month": {
-    "message": "Per Month"
+    "message": "प्रत्येकमहीने"
   },
   "Per Year": {
-    "message": "Per Year"
+    "message": "प्रत्येकवर्ष"
   },
   "Performance analytics": {
-    "message": "Performance analytics"
+    "message": "प्रदर्शनविश्लेषण",
+    "description": "The description of Performance analytics"
   },
   "Phone screen mirroring to a computer": {
-    "message": "Phone screen mirroring to a computer"
+    "message": "फ़ोन投屏到电脑",
+    "description": "The description of Phone screen mirroring to a computer"
   },
   "Platform-optimized features": {
-    "message": "Platform-optimized features"
+    "message": "समतल मंचअनुकूलनफीचर्स"
   },
   "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
-    "message": "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software."
+    "message": "请直接डाउनलोडIgMatrixदेखें脚本列表。目前TikMatrix的脚本没有100%被IgMatrix中सहायता，请以सॉफ़्टवेयर中的功能为准。"
   },
   "Post engagement boost": {
-    "message": "Post engagement boost"
+    "message": "पोस्टएंगेजमेंट提升"
   },
   "Post management": {
-    "message": "Post management"
+    "message": "पोस्टप्रबंधन"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
-    "message": "Powerful Instagram automation tools designed for professional marketers and businesses"
+    "message": "为पेशेवर营销人员和企业设计的शक्तिशालीInstagramस्वचालन工具"
   },
   "Powerful TikTok Automation & Management Tools": {
-    "message": "Powerful TikTok Automation & Management Tools"
+    "message": "मजबूत बड़ा काTikTokस्वचालन औरप्रबंधन काम उपकरण",
+    "description": "The description of Powerful TikTok Automation & Management Tools"
   },
   "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
-    "message": "Powerful technical team with real-time maintenance and updates ensuring script reliability"
+    "message": "शक्तिशाली的तकनीकटीम，实时维护अपडेट किया गया，保证脚本的可用率"
   },
   "Premium Benefits": {
-    "message": "Premium Benefits"
+    "message": "उच्च स्तर विशेष अधिकार"
   },
   "Pricing": {
-    "message": "Pricing"
+    "message": "मूल्य निर्धारण"
   },
   "Private Local Deployment": {
-    "message": "Private Local Deployment"
+    "message": "私有化स्थानीयतैनाती"
   },
   "Professional TikTok Account Management & Marketing Tool": {
-    "message": "Professional TikTok Account Management & Marketing Tool"
+    "message": "पेशेवर的TikTokखाताप्रबंधन及营销工具",
+    "description": "The description of Professional TikTok Account Management & Marketing Tool"
   },
   "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
-    "message": "Professional TikTok Account Management & Marketing Tool for Windows & Mac"
+    "message": "पेशेवरTikTokखाताप्रबंधन与营销工具 - सहायताWindows和Mac"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
+    "message": "पेशेवरTikTokखाताप्रबंधन与营销工具，专为Windows和Mac上的安卓फ़ोन农场设计。实现स्वचालित पोस्टिंग、फॉलो等功能，促进TikTok影响力增长，确保零अकाउंट निलंबन दर。",
+    "description": "The description of Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
   },
   "Professional phone farm management": {
-    "message": "Professional phone farm management"
+    "message": "पेशेवर हाथ मशीन कृषि जगहप्रबंधन"
   },
   "Publish videos or images to TikTok with batch posting capabilities": {
-    "message": "Publish videos or images to TikTok with batch posting capabilities"
+    "message": "पोस्टिंगवीडियो याछवि तकTikTok，सहायताबल्कपोस्टिंगफीचर्स"
   },
   "Quick Setup Guide": {
-    "message": "Quick Setup Guide"
+    "message": "त्वरितसेटिंग्सगाइड"
   },
   "Randomized script parameters to avoid behavior detection patterns": {
-    "message": "Randomized script parameters to avoid behavior detection patterns"
+    "message": "स्क्रिप्टपैरामीटर随机化，避免पंक्तिके लिए检测"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
-    "message": "Recognize and match TikTok accounts from phones to add to account list"
+    "message": "识别并匹配फ़ोन中的TikTokखाता，添加到खाता列表"
   },
   "Recognize subtitles": {
-    "message": "Recognize subtitles"
+    "message": "सबटाइटल पहचानें",
+    "description": "The description of Recognize subtitles"
   },
   "Remove posts based on their view count for content optimization": {
-    "message": "Remove posts based on their view count for content optimization"
+    "message": "根据观看次数删除पोस्ट，अनुकूलनसामग्री"
   },
   "Safe & Secure": {
-    "message": "Safe & Secure"
+    "message": "सुरक्षाविश्वसनीय"
   },
   "Same Setup Process": {
-    "message": "Same Setup Process"
+    "message": "समान的सेटिंग्स过程"
   },
   "Same reliable technology as TikMatrix": {
-    "message": "Same reliable technology as TikMatrix"
+    "message": "与TikMatrixसमान的विश्वसनीयतकनीक"
   },
   "Save 50% compared to monthly plan": {
-    "message": "Save 50% compared to monthly plan"
+    "message": "比मासिक方案节省50%"
   },
   "Schedule your Instagram activities with intelligent timing algorithms": {
-    "message": "Schedule your Instagram activities with intelligent timing algorithms"
+    "message": "उपयोग करेंस्मार्ट时间算法安排您的Instagram活动"
   },
   "Scheduled Tasks": {
-    "message": "Scheduled Tasks"
+    "message": "शेड्यूलकार्य"
   },
   "Scrape TikTok usernames from followers lists or keyword searches": {
-    "message": "Scrape TikTok usernames from followers lists or keyword searches"
+    "message": "从फॉलोअर्स列表或关键词搜索中采集TikTokउपयोगकर्ता名"
   },
   "Script Parameter Randomization": {
-    "message": "Script Parameter Randomization"
+    "message": "स्क्रिप्टपैरामीटर随机化"
   },
   "Script engine simulates natural human clicking with randomized button offset": {
-    "message": "Script engine simulates natural human clicking with randomized button offset"
+    "message": "脚本引擎采用模拟真人的点击बटन随机化偏移"
   },
   "Scripts run on computer to avoid mobile device detection": {
-    "message": "Scripts run on computer to avoid mobile device detection"
+    "message": "脚本चलाएं在电脑端，避免फ़ोन端被检测"
   },
   "Send messages to multiple TikTok accounts in bulk with personalized content": {
-    "message": "Send messages to multiple TikTok accounts in bulk with personalized content"
+    "message": "批量向多TikTokखाता发送性化सामग्री的संदेश"
   },
   "Set up account profiles including avatars, nicknames, signatures, and usernames": {
-    "message": "Set up account profiles including avatars, nicknames, signatures, and usernames"
+    "message": "सेटिंग्सखाता资料，包括头像、昵称、签名和उपयोगकर्ता名"
   },
   "Setup Tutorial": {
-    "message": "Setup Tutorial"
+    "message": "सेटअपट्यूटोरियल"
   },
   "Shipping worldwide": {
-    "message": "Shipping worldwide"
+    "message": "全球发货",
+    "description": "The shipping worldwide label"
   },
   "Simulates natural right-hand arc swipe trajectories like real human interaction": {
-    "message": "Simulates natural right-hand arc swipe trajectories like real human interaction"
+    "message": "स्क्रिप्ट滑动采用模拟सत्य人的右手弧形滑动轨迹"
   },
   "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
-    "message": "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration."
+    "message": "由于सेटिंग्स过程完全समान，请参考我们व्यापक的TikMatrixप्रलेखन，获取डिवाइस कनेक्शन、खाता प्रबंधन和脚本कॉन्फ़िगर करें的विस्तृतनिर्देश。"
   },
   "Smart Scheduling": {
-    "message": "Smart Scheduling"
+    "message": "स्मार्ट शेड्यूलिंग"
   },
   "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
-    "message": "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust."
+    "message": "立即उपयोग करेंIgMatrix开始स्वचालन您的Instagram营销，体验成千上万营销人员信赖的पेशेवर级工具。"
   },
   "Still have questions?": {
-    "message": "Still have questions?"
+    "message": "还有问题？"
   },
   "Streamline your Android TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "Streamline your Android TikTok phone farm with advanced batch control and marketing automation"
+    "message": "通过先进的批量कंट्रोल和营销स्वचालन，कुशलप्रबंधन您的安卓TikTokफ़ोन农场"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-    "message": "Streamline your Instagram phone farm with advanced batch control and marketing automation"
+    "message": "通过先进的批量कंट्रोल和营销स्वचालन，आसानप्रबंधन您的Instagramफ़ोन农场。",
+    "description": "The description of Streamline your Instagram phone farm with advanced batch control and marketing automation"
   },
   "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "Streamline your TikTok phone farm with advanced batch control and marketing automation"
+    "message": "通过先进的批量कंट्रोल和营销स्वचालन，आसानप्रबंधन您的TikTokफ़ोन农场。",
+    "description": "The description of Streamline your TikTok phone farm with advanced batch control and marketing automation"
   },
   "Strong technical support team with open community ecosystem": {
-    "message": "Strong technical support team with open community ecosystem"
+    "message": "शक्तिशाली的तकनीकी सहायताटीम，开放的社区生态"
   },
   "Super Marketing": {
-    "message": "Super Marketing"
+    "message": "सुपर मार्केटिंग"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Supports 100+ phones mirroring to a computer, with synchronized operation"
+    "message": "सहायता100+फ़ोन投屏到电脑，同步संचालन"
   },
   "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Supports 200+ phones mirroring to a computer, with synchronized operation"
+    "message": "सहायता 200+ फ़ोन投屏到电脑，सहायता同步संचालन",
+    "description": "The description of Phone screen mirroring to a computer"
   },
   "Supports work profile enterprise space for professional use": {
-    "message": "Supports work profile enterprise space for professional use"
+    "message": "सहायताwork profileएंटरप्राइज खाली बीच"
   },
   "Technical Advantages": {
-    "message": "Technical Advantages"
+    "message": "तकनीकी लाभ"
   },
   "Telegram": {
-    "message": "Telegram"
+    "message": "Telegram",
+    "description": "The telegram label"
   },
   "Telegram Support": {
-    "message": "Telegram Support"
+    "message": "Telegramसहायता समूह"
   },
   "Text input mimics human typing patterns with character-by-character simulation": {
-    "message": "Text input mimics human typing patterns with character-by-character simulation"
+    "message": "स्क्रिप्टइनपुट文字采用模拟सत्य人的逐字इनपुट"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "The length and width are relatively big, but the height is low(2u size)"
+    "message": "लंबाईऔर宽度相के प्रति较大，लेकिन高度低（2u आयाम）",
+    "description": "The description of PhoneFarm Box"
   },
   "The length and width are relatively small, but the height is high": {
-    "message": "The length and width are relatively small, but the height is high"
+    "message": "लंबाईऔर宽度相के प्रति较小，लेकिन高度高",
+    "description": "The description of PhoneFarm Box"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections."
+    "message": "फ़ोन主板机是20三星फ़ोन主板。它是一台通电自लॉन्च的，统一电源供电，统一的多风扇散热，统一的 USB कनेक्ट，सहायता OTG 有线नेटवर्ककनेक्ट。",
+    "description": "The description of PhoneFarm Box"
   },
   "TikMatrix": {
-    "message": "TikMatrix"
+    "message": "TikMatrix वास्तविक डिवाइसमैट्रिक्स"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety."
+    "message": "TikMatrix 提供比同类产品至少高30%的एंगेजमेंट率，采用先进的वास्तविक डिवाइसतकनीक确保खाता完全सुरक्षा。",
+    "description": "The description of TikMatrix competitive advantage"
   },
   "TikMatrix is a TikTok group control operation tool": {
-    "message": "TikMatrix एक TikTok समूह नियंत्रण संचालन उपकरण है"
+    "message": "TikMatrixहां一款Tiktok群控运营工具"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms": {
-    "message": "TikMatrix is a professional marketing software designed for TikTok phone farms"
+    "message": "TikMatrix 是一款पेशेवर的TikTokफ़ोन农场营销सॉफ़्टवेयर"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
+    "message": "TikMatrix 是一款पेशेवर的TikTokफ़ोन农场营销सॉफ़्टवेयर。प्रबंधन多खाता，स्वचालित पोस्टिंग，并आसान扩展您的TikTok营销。",
+    "description": "The description of TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
-    "message": "TikMatrix supports 8 TikTok accounts on each phone."
+    "message": "TikMatrix सहायता每फ़ोन登录8tiktokखाता"
   },
   "TikMatrix supports Android phones running Android 5.0 and above.": {
-    "message": "TikMatrix supports Android phones running Android 5.0 and above."
+    "message": "TikMatrix सहायता Android फ़ोन，चलाएं Android 5.0 及以上संस्करण。"
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app"
+    "message": "TikMatrix सहायता Windows 10 及以上संस्करण，以及 macOS 10.15 或更高संस्करण。Macउपयोगकर्ताइंस्टॉलेशन के बाद，की आवश्यकता है在终端निष्पादन以下命令以允许चलाएं：xattr -cr /Applications/TikMatrix.app",
+    "description": "电脑支持回答"
   },
   "TikMatrix supports up to 200+ devices.": {
-    "message": "TikMatrix supports up to 200+ devices."
+    "message": "TikMatrix सहायता 200+ डिवाइस。"
   },
   "Translate subtitles": {
-    "message": "Translate subtitles"
+    "message": "सबटाइटल अनुवाद करें",
+    "description": "The description of Translate subtitles"
   },
   "Trial": {
-    "message": "Trial"
+    "message": "परीक्षण"
   },
   "Tutorial": {
-    "message": "Tutorial"
+    "message": "ट्यूटोरियल"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-    "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location"
+    "message": "美国原生非सक्रिय करें的 SIM 卡，用पर tiktok Android 应用来检测 SIM 卡स्थान",
+    "description": "The description of PhoneFarm Box"
   },
   "Unlimited devices": {
-    "message": "Unlimited devices"
+    "message": "नहीं सीमाडिवाइस"
   },
   "Unlimited devices, Customer support": {
-    "message": "Unlimited devices, Customer support"
+    "message": "无限डिवाइस、ग्राहकसहायता"
   },
   "Unlimited process tasks": {
-    "message": "Unlimited process tasks"
+    "message": "无限प्रोसेस任务",
+    "description": "The description of Unlimited process tasks"
   },
   "User engagement boost": {
-    "message": "User engagement boost"
+    "message": "उपयोगकर्ताएंगेजमेंट提升"
   },
   "User interface": {
-    "message": "User interface"
+    "message": "उपयोगकर्ताइंटरफेस"
   },
   "User scraping": {
-    "message": "User scraping"
+    "message": "उपयोगकर्ताकैप्चर"
   },
   "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency"
+    "message": "वीडियो魔法是一款पेशेवर的वीडियो生成सॉफ़्टवेयर，专为运营者设计。它कर सकते हैं为您生成विशिष्ट的वीडियो，极大提升运营दक्षता。",
+    "description": "The description of Video Magic"
   },
   "Video Magic is a tool that can generate unique videos": {
-    "message": "Video Magic is a tool that can generate unique videos"
+    "message": "वीडियो魔法是一款कर सकते हैं生成विशिष्टवीडियो的工具",
+    "description": "The description of Video Magic"
   },
   "Video collection": {
-    "message": "Video collection"
+    "message": "कैप्चरवीडियो",
+    "description": "The description of Video collection"
   },
   "Video download": {
-    "message": "Video download"
+    "message": "वीडियोडाउनलोड",
+    "description": "The description of Video download"
   },
   "Video posting, Account nurturing": {
-    "message": "Video posting, Account nurturing"
+    "message": "वीडियोपोस्ट、खाता养护"
   },
   "Video unique": {
-    "message": "Video unique"
+    "message": "वीडियो जीवन बनना",
+    "description": "The description of Video unique"
   },
   "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Batch Generating Unique Videos"
+    "message": "VideoMagic - 批量生成अद्वितीयवीडियो",
+    "description": "The description of Video Magic"
   },
   "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic is a Software for Batch Generating Unique Videos"
+    "message": "VideoMagic是一款用于批量生成अद्वितीयवीडियो的सॉफ़्टवेयर",
+    "description": "The description of Video Magic"
   },
   "View TikMatrix Tutorial": {
-    "message": "View TikMatrix Tutorial"
+    "message": "देखने के लिएTikMatrixट्यूटोरियल"
   },
   "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
-    "message": "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting"
+    "message": "通过搜索关键词、观看वीडियो、फॉलो、लाइक、टिप्पणी和收藏来养号"
   },
   "What computer can I use?": {
-    "message": "What computer can I use?"
+    "message": "我कर सकते हैंउपयोग करें哪些电脑?",
+    "description": "电脑支持问题"
   },
   "What devices can I use?": {
-    "message": "What devices can I use?"
+    "message": "मैंकर सकता है उपयोग उपयोगकौन सेडिवाइस?"
   },
   "What is TikMatrix?": {
-    "message": "What is TikMatrix?"
+    "message": "什么हां TikMatrix?"
   },
   "What is the difference between IgMatrix and TikMatrix?": {
-    "message": "What is the difference between IgMatrix and TikMatrix?"
+    "message": "IgMatrixऔरTikMatrix有什么区别？"
   },
   "Which scripts from TikMatrix are available in IgMatrix?": {
-    "message": "Which scripts from TikMatrix are available in IgMatrix?"
+    "message": "IgMatrix中有哪些来自TikMatrix的स्क्रिप्टउपलब्ध？"
   },
   "Why Choose IgMatrix?": {
-    "message": "Why Choose IgMatrix?"
+    "message": "为什么चुनेंIgMatrix？"
   },
   "Why TikMatrix?": {
-    "message": "Why TikMatrix?"
+    "message": "为什么उपयोग करें TikMatrix?"
   },
   "Work Profile Support": {
-    "message": "Work Profile Support"
+    "message": "एंटरप्राइज खाली बीचसहायता"
   },
   "Working Hours": {
-    "message": "Working Hours"
+    "message": "काम काम समय बीच",
+    "description": "The working hours label"
   },
   "Yearly": {
-    "message": "Yearly"
+    "message": "शामिलवर्ष"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
-    "message": "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform."
+    "message": "是的！IgMatrix的सेटिंग्सट्यूटोरियल与TikMatrix完全समान。您कर सकते हैं按照TikMatrixप्रलेखन进行इंस्टॉल、डिवाइस कनेक्शन和बुनियादीकॉन्फ़िगर करें。只有स्वचालन स्क्रिप्ट会根据平台而有所भिन्न。"
   },
   "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
-    "message": "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably."
+    "message": "是的，IgMatrix和TikMatrixकी आवश्यकता है单独的许可证，因为它们是针对भिन्न社交媒体平台अनुकूलन的भिन्न产品。每许可证都绑定到特定सॉफ़्टवेयर，नहीं कर सकते互换उपयोग करें。"
   },
   "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
-    "message": "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix."
+    "message": "您कर सकते हैं在同一台计算机上इंस्टॉलIgMatrix和TikMatrix，但由于चलाएं时冲突，它们नहीं कर सकते同时चलाएं。您一次只能चलाएं其中一सॉफ़्टवेयर - IgMatrix或TikMatrix。"
   },
   "advertising.back.home": {
-    "message": "advertising.back.home"
+    "message": "वापस जाएं首页"
   },
   "advertising.buy.accounts.description": {
-    "message": "advertising.buy.accounts.description"
+    "message": "पेशेवर的社交媒体खाता市场"
   },
   "advertising.buy.accounts.leadsmm.description": {
-    "message": "advertising.buy.accounts.leadsmm.description"
+    "message": "高品质社交媒体खाता提供商，提供优质खातासेवा"
   },
   "advertising.buy.accounts.leadsmm.title": {
-    "message": "advertising.buy.accounts.leadsmm.title"
+    "message": "LeadsSMM - खरीदखाता"
   },
   "advertising.buy.accounts.title": {
-    "message": "advertising.buy.accounts.title"
+    "message": "AccsMarket"
   },
   "advertising.buy.hardware.description": {
-    "message": "advertising.buy.hardware.description"
+    "message": "पेशेवर的फ़ोन农场和स्वचालनहार्डवेयरडिवाइस"
   },
   "advertising.buy.hardware.title": {
-    "message": "advertising.buy.hardware.title"
+    "message": "NiaoZun Shop"
   },
   "advertising.category.accounts": {
-    "message": "advertising.category.accounts"
+    "message": "खाता"
   },
   "advertising.category.analytics": {
-    "message": "advertising.category.analytics"
+    "message": "विश्लेषण काम उपकरण"
   },
   "advertising.category.hardware": {
-    "message": "advertising.category.hardware"
+    "message": "हार्डवेयर"
   },
   "advertising.category.proxy": {
-    "message": "advertising.category.proxy"
+    "message": "प्रॉक्सी"
   },
   "advertising.category.verification": {
-    "message": "advertising.category.verification"
+    "message": "सत्यापित करें工具"
   },
   "advertising.category.vps": {
-    "message": "advertising.category.vps"
+    "message": "VPS"
   },
   "advertising.disclaimer.content": {
-    "message": "advertising.disclaimer.content"
+    "message": "以下अनुशंसित和链接指向的是不属于或不由TikMatrix运营的外网站和सेवा。我们提供这些链接仅为सुविधाजनक您उपयोग करें。TikMatrix不认可、保证或承担这些第三方网站提供的任何जानकारी、产品或सेवा的सटीक性、पूर्ण性或实用性的责任。在与外सेवा交互时，请उपयोग करें您自己的判断。"
   },
   "advertising.disclaimer.title": {
-    "message": "advertising.disclaimer.title"
+    "message": "महत्वपूर्ण声明"
   },
   "advertising.page.subtitle": {
-    "message": "advertising.page.subtitle"
+    "message": "अनुशंसित的广告工具和सेवा，提升您的社交媒体स्वचालन体验"
   },
   "advertising.page.title": {
-    "message": "advertising.page.title"
+    "message": "广告साथ合作伙伴"
   },
   "advertising.proxy.proxycheap.description": {
-    "message": "advertising.proxy.proxycheap.description"
+    "message": "适用于各种用例的经济实惠प्रॉक्सी解决方案"
   },
   "advertising.proxy.proxycheap.title": {
-    "message": "advertising.proxy.proxycheap.title"
+    "message": "Proxy-Cheap"
   },
   "advertising.proxy.thordata.description": {
-    "message": "advertising.proxy.thordata.description"
+    "message": "最佳住宅प्रॉक्सी —— स्थिर · विश्वसनीय · 高性价比 注册即可获得 1GB मुफ्त试用流量"
   },
   "advertising.proxy.thordata.title": {
-    "message": "advertising.proxy.thordata.title"
+    "message": "Thordata"
   },
   "advertising.tiktok.user.finder.description": {
-    "message": "advertising.tiktok.user.finder.description"
+    "message": "查找和विश्लेषण TikTok उपयोगकर्ता及其डेटा"
   },
   "advertising.tiktok.user.finder.title": {
-    "message": "advertising.tiktok.user.finder.title"
+    "message": "TikTok उपयोगकर्ता查找器"
   },
   "advertising.visit.button": {
-    "message": "advertising.visit.button"
+    "message": "एक्सेस网站"
   },
   "advertising.vps.lisahost.description": {
-    "message": "advertising.vps.lisahost.description"
+    "message": "विश्वसनीय的VPS主机सेवा，适用于स्वचालन目"
   },
   "advertising.vps.lisahost.title": {
-    "message": "advertising.vps.lisahost.title"
+    "message": "LisaHost"
   },
   "advertising.vps.uuuvps.description": {
-    "message": "advertising.vps.uuuvps.description"
+    "message": "高प्रदर्शनVPS主机，提供全球多位置"
   },
   "advertising.vps.uuuvps.title": {
-    "message": "advertising.vps.uuuvps.title"
+    "message": "UUUVPS"
   },
   "advertising.whatsapp.checker.description": {
-    "message": "advertising.whatsapp.checker.description"
+    "message": "验证 WhatsApp 号码并जांच करें其状态"
   },
   "advertising.whatsapp.checker.title": {
-    "message": "advertising.whatsapp.checker.title"
+    "message": "WhatsApp 号码जांच करें器"
   },
   "download.description": {
-    "message": "download.description"
+    "message": "डाउनलोड TikMatrix का Windows、Mac और Linux संस्करण",
+    "description": "下载页面的描述"
   },
   "download.igmatrix.description": {
-    "message": "download.igmatrix.description"
+    "message": "डाउनलोड IgMatrix का Windows、Mac और Linux संस्करण",
+    "description": "IgMatrix下载页面的描述"
   },
   "download.igmatrix.linux.coming_soon": {
-    "message": "download.igmatrix.linux.coming_soon"
+    "message": "即होगा推出",
+    "description": "IgMatrix Linux即将推出提示"
   },
   "download.igmatrix.linux.description": {
-    "message": "download.igmatrix.linux.description"
+    "message": "Linux संस्करणहो रहा है开发中",
+    "description": "IgMatrix Linux开发中描述"
   },
   "download.igmatrix.linux.development": {
-    "message": "download.igmatrix.linux.development"
+    "message": "विकास中",
+    "description": "IgMatrix Linux开发中状态"
   },
   "download.igmatrix.linux.title": {
-    "message": "download.igmatrix.linux.title"
+    "message": "Linux",
+    "description": "IgMatrix Linux平台标题"
   },
   "download.igmatrix.mac.button": {
-    "message": "download.igmatrix.mac.button"
+    "message": "डाउनलोड Mac संस्करण",
+    "description": "IgMatrix Mac下载按钮文本"
   },
   "download.igmatrix.mac.description": {
-    "message": "download.igmatrix.mac.description"
+    "message": "macOS 10.15 या अधिक उच्चसंस्करण",
+    "description": "IgMatrix Mac平台描述"
   },
   "download.igmatrix.mac.install_tip": {
-    "message": "download.igmatrix.mac.install_tip"
+    "message": "इंस्टॉलेशन के बाद请在终端निष्पादन以下命令以允许चलाएं：",
+    "description": "IgMatrix Mac安装后需要执行的命令提示"
   },
   "download.igmatrix.mac.title": {
-    "message": "download.igmatrix.mac.title"
+    "message": "Mac",
+    "description": "IgMatrix Mac平台标题"
   },
   "download.igmatrix.requirements.internet": {
-    "message": "download.igmatrix.requirements.internet"
+    "message": "नेटवर्ककनेक्ट：必需",
+    "description": "IgMatrix网络连接要求"
   },
   "download.igmatrix.requirements.memory": {
-    "message": "download.igmatrix.requirements.memory"
+    "message": "मेमोरी：8 GB RAM",
+    "description": "IgMatrix内存要求"
   },
   "download.igmatrix.requirements.os": {
-    "message": "download.igmatrix.requirements.os"
+    "message": "संचालनसिस्टम：Windows 10/11、macOS 10.15+ या Ubuntu 20.04+",
+    "description": "IgMatrix操作系统要求"
   },
   "download.igmatrix.requirements.processor": {
-    "message": "download.igmatrix.requirements.processor"
+    "message": "प्रोसेस器：Intel Core i5 或同等प्रदर्शन",
+    "description": "IgMatrix处理器要求"
   },
   "download.igmatrix.requirements.storage": {
-    "message": "download.igmatrix.requirements.storage"
+    "message": "स्टोरेजस्थान：500 MB उपलब्धस्थान",
+    "description": "IgMatrix存储空间要求"
   },
   "download.igmatrix.requirements.title": {
-    "message": "download.igmatrix.requirements.title"
+    "message": "सिस्टम आवश्यकताएं",
+    "description": "IgMatrix系统要求标题"
   },
   "download.igmatrix.subtitle": {
-    "message": "download.igmatrix.subtitle"
+    "message": "चयनआपके समतल मंचडाउनलोड IgMatrix",
+    "description": "IgMatrix下载页面的副标题"
   },
   "download.igmatrix.title": {
-    "message": "download.igmatrix.title"
+    "message": "डाउनलोड IgMatrix",
+    "description": "IgMatrix下载页面的标题"
   },
   "download.igmatrix.windows.button": {
-    "message": "download.igmatrix.windows.button"
+    "message": "डाउनलोड Windows संस्करण",
+    "description": "IgMatrix Windows下载按钮文本"
   },
   "download.igmatrix.windows.description": {
-    "message": "download.igmatrix.windows.description"
+    "message": "Windows 10/11 (64 स्थिति)",
+    "description": "IgMatrix Windows平台描述"
   },
   "download.igmatrix.windows.title": {
-    "message": "download.igmatrix.windows.title"
+    "message": "Windows",
+    "description": "IgMatrix Windows平台标题"
   },
   "download.linux.coming_soon": {
-    "message": "download.linux.coming_soon"
+    "message": "即होगा推出",
+    "description": "Linux即将推出提示"
   },
   "download.linux.description": {
-    "message": "download.linux.description"
+    "message": "Linux संस्करणहो रहा है开发中",
+    "description": "Linux开发中描述"
   },
   "download.linux.development": {
-    "message": "download.linux.development"
+    "message": "विकास中",
+    "description": "Linux开发中状态"
   },
   "download.linux.title": {
-    "message": "download.linux.title"
+    "message": "Linux",
+    "description": "Linux平台标题"
   },
   "download.mac.button": {
-    "message": "download.mac.button"
+    "message": "डाउनलोड Mac संस्करण",
+    "description": "Mac下载按钮文本"
   },
   "download.mac.description": {
-    "message": "download.mac.description"
+    "message": "macOS 10.15 या अधिक उच्चसंस्करण",
+    "description": "Mac平台描述"
   },
   "download.mac.install_tip": {
-    "message": "download.mac.install_tip"
+    "message": "इंस्टॉलेशन के बाद请在终端निष्पादन以下命令以允许चलाएं：",
+    "description": "Mac安装后需要执行的命令提示"
   },
   "download.mac.title": {
-    "message": "download.mac.title"
+    "message": "Mac",
+    "description": "Mac平台标题"
   },
   "download.requirements.internet": {
-    "message": "download.requirements.internet"
+    "message": "नेटवर्ककनेक्ट：必需",
+    "description": "网络连接要求"
   },
   "download.requirements.memory": {
-    "message": "download.requirements.memory"
+    "message": "मेमोरी：8 GB RAM",
+    "description": "内存要求"
   },
   "download.requirements.os": {
-    "message": "download.requirements.os"
+    "message": "संचालनसिस्टम：Windows 10/11、macOS 10.15+ या Ubuntu 20.04+",
+    "description": "操作系统要求"
   },
   "download.requirements.processor": {
-    "message": "download.requirements.processor"
+    "message": "प्रोसेस器：Intel Core i5 或同等प्रदर्शन",
+    "description": "处理器要求"
   },
   "download.requirements.storage": {
-    "message": "download.requirements.storage"
+    "message": "स्टोरेजस्थान：500 MB उपलब्धस्थान",
+    "description": "存储空间要求"
   },
   "download.requirements.title": {
-    "message": "download.requirements.title"
+    "message": "सिस्टम आवश्यकताएं",
+    "description": "系统要求标题"
   },
   "download.subtitle": {
-    "message": "download.subtitle"
+    "message": "चयनआपके समतल मंचडाउनलोड TikMatrix",
+    "description": "下载页面的副标题"
   },
   "download.title": {
-    "message": "download.title"
+    "message": "डाउनलोड TikMatrix",
+    "description": "下载页面的标题"
   },
   "download.videomagic.description": {
-    "message": "download.videomagic.description"
+    "message": "डाउनलोड VideoMagic का Windows、Mac और Linux संस्करण",
+    "description": "VideoMagic下载页面的描述"
   },
   "download.videomagic.subtitle": {
-    "message": "download.videomagic.subtitle"
+    "message": "चयनआपके समतल मंचडाउनलोड VideoMagic",
+    "description": "VideoMagic下载页面的副标题"
   },
   "download.videomagic.title": {
-    "message": "download.videomagic.title"
+    "message": "डाउनलोड VideoMagic",
+    "description": "VideoMagic下载页面的标题"
   },
   "download.windows.button": {
-    "message": "download.windows.button"
+    "message": "डाउनलोड Windows संस्करण",
+    "description": "Windows下载按钮文本"
   },
   "download.windows.description": {
-    "message": "download.windows.description"
+    "message": "Windows 10/11 (64 स्थिति)",
+    "description": "Windows平台描述"
   },
   "download.windows.title": {
-    "message": "download.windows.title"
+    "message": "Windows",
+    "description": "Windows平台标题"
   },
   "homepage.header.cta.download": {
-    "message": "homepage.header.cta.download"
+    "message": "खड़ा तुरंतडाउनलोड"
   },
   "homepage.header.cta.features": {
-    "message": "homepage.header.cta.features"
+    "message": "देखने के लिएफीचर्स →"
   },
   "homepage.header.cta.primary": {
-    "message": "homepage.header.cta.primary"
+    "message": "डाउनलोड TikMatrix"
   },
   "homepage.header.cta.secondary": {
-    "message": "homepage.header.cta.secondary"
+    "message": "ट्यूटोरियल"
   },
   "homepage.header.defaultSubtitle": {
-    "message": "homepage.header.defaultSubtitle"
+    "message": "उपयोग करें先进的批量कंट्रोल和营销स्वचालनअनुकूलन您的 Android TikTok फ़ोन农场。"
   },
   "homepage.header.defaultTitle": {
-    "message": "homepage.header.defaultTitle"
+    "message": "面向 Windows 与 Mac 的पेशेवर TikTok खाताप्रबंधन与营销工具"
   },
   "homepage.header.subtitle": {
-    "message": "homepage.header.subtitle"
+    "message": "批量चलाएंडिवाइस、स्वचालननिष्पादन任务、शेड्यूल्ड पोस्टिंग、स्मार्ट养号—— TikMatrix 让你的 TikTok 运营 100% स्वचालन。"
   },
   "homepage.header.title": {
-    "message": "homepage.header.title"
+    "message": "TikTok स्वचालन，从这里开始"
   },
   "homepage.vs.card.analytics.desc": {
-    "message": "homepage.vs.card.analytics.desc"
+    "message": "रीयल-टाइम मॉनिटरिंग任务状态和खाता表现，आसान掌握运营效果"
   },
   "homepage.vs.card.analytics.title": {
-    "message": "homepage.vs.card.analytics.title"
+    "message": "可视化डेटा"
   },
   "homepage.vs.card.automation.desc": {
-    "message": "homepage.vs.card.automation.desc"
+    "message": "सहायताबल्क संचालन、脚本流程、शेड्यूल्ड पोस्टिंग，全流程覆盖 TikTok 业务需求"
   },
   "homepage.vs.card.automation.title": {
-    "message": "homepage.vs.card.automation.title"
+    "message": "पेशेवर TikTok स्वचालन"
   },
   "homepage.vs.card.cta": {
-    "message": "homepage.vs.card.cta"
+    "message": "और जानें"
   },
   "homepage.vs.card.lowRisk.desc": {
-    "message": "homepage.vs.card.lowRisk.desc"
+    "message": "模拟真实संचालन，减少अकाउंट निलंबन风险，保障खाता सुरक्षा"
   },
   "homepage.vs.card.lowRisk.title": {
-    "message": "homepage.vs.card.lowRisk.title"
+    "message": "低风险"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "homepage.vs.card.nodev.desc"
+    "message": "内置功能शक्तिशाली，拖拽/可视化संचालन即可पूर्ण复杂任务"
   },
   "homepage.vs.card.nodev.title": {
-    "message": "homepage.vs.card.nodev.title"
+    "message": "की आवश्यकता नहीं开发"
   },
   "homepage.vs.card.plug.desc": {
-    "message": "homepage.vs.card.plug.desc"
+    "message": "की आवश्यकता नहीं开发कॉन्फ़िगर करें，त्वरित上手，即刻चलाएं"
   },
   "homepage.vs.card.plug.title": {
-    "message": "homepage.vs.card.plug.title"
+    "message": "चालू箱即用"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "homepage.vs.card.realDevices.desc"
+    "message": "每任务在वास्तविक डिवाइस上निष्पादन，保证行为和效果与人工संचालन一致"
   },
   "homepage.vs.card.realDevices.title": {
-    "message": "homepage.vs.card.realDevices.title"
+    "message": "वास्तव में वास्तविक हाथ मशीनसंचालन"
   },
   "homepage.vs.cta.button": {
-    "message": "homepage.vs.cta.button"
+    "message": "立即体验 TikMatrix →"
   },
   "homepage.vs.cta.text": {
-    "message": "homepage.vs.cta.text"
+    "message": "想提升 TikTok स्वचालनदक्षता？"
   },
   "homepage.vs.subtitle": {
-    "message": "homepage.vs.subtitle"
+    "message": "专为 TikTok स्वचालन设计的पेशेवर解决方案"
   },
   "homepage.vs.title": {
-    "message": "homepage.vs.title"
+    "message": "为什么चुनें TikMatrix?"
   },
   "navbar.download": {
-    "message": "navbar.download"
+    "message": "डाउनलोड",
+    "description": "导航栏下载链接文本"
   },
   "pricing.all_features": {
-    "message": "pricing.all_features"
+    "message": "包含सभी फीचर्स",
+    "description": "包含所有功能文本"
   },
   "pricing.badge.popular": {
-    "message": "pricing.badge.popular"
+    "message": "最受欢迎"
   },
   "pricing.business.concurrent_tasks": {
-    "message": "pricing.business.concurrent_tasks"
+    "message": "最多100并发स्वचालन कार्य",
+    "description": "商业版并发任务数"
   },
   "pricing.business.description": {
-    "message": "pricing.business.description"
+    "message": "उपयुक्त संयोजन बड़ा प्रकारएंटरप्राइज",
+    "description": "商业版计划描述"
   },
   "pricing.business.manage_phones": {
-    "message": "pricing.business.manage_phones"
+    "message": "最多100并发स्वचालन कार्य",
+    "description": "商业版计划功能"
   },
   "pricing.business.name": {
-    "message": "pricing.business.name"
+    "message": "वाणिज्यिक版",
+    "description": "商业版计划名称"
   },
   "pricing.compare.automation": {
-    "message": "pricing.compare.automation"
+    "message": "स्वचालनकार्य"
   },
   "pricing.compare.devices": {
-    "message": "pricing.compare.devices"
+    "message": "डिवाइससहायता"
   },
   "pricing.compare.hide": {
-    "message": "pricing.compare.hide"
+    "message": "छिपाएंविशेषताके प्रति比"
   },
   "pricing.compare.show": {
-    "message": "pricing.compare.show"
+    "message": "देखें功能对比"
   },
   "pricing.cta.free": {
-    "message": "Start for free"
+    "message": "खड़ा तुरंत उपयोग उपयोग"
   },
   "pricing.cta.pay": {
-    "message": "Subscribe"
+    "message": "खड़ा तुरंतसदस्यता"
   },
   "pricing.dedicated_support": {
-    "message": "pricing.dedicated_support"
+    "message": "विशेष संबंधित काम एकलसहायता",
+    "description": "专属支持文本"
   },
   "pricing.free.all_free_features": {
-    "message": "pricing.free.all_free_features"
+    "message": "सभी基础功能（不含स्वचालन कार्य）",
+    "description": "免费计划基础功能描述"
   },
   "pricing.free.automation_disabled": {
-    "message": "pricing.free.automation_disabled"
+    "message": "स्वचालन कार्य不可用",
+    "description": "免费计划自动化不可用文本"
   },
   "pricing.free.community_support": {
-    "message": "pricing.free.community_support"
+    "message": "समाज क्षेत्रसहायता",
+    "description": "免费计划支持方式"
   },
   "pricing.free.description": {
-    "message": "pricing.free.description"
+    "message": "मुफ्तउपयोगकर्ताकर सकता हैकनेक्शन नहीं सीमाडिवाइस， लेकिन नहीं तरीका निष्पादित पंक्तिस्वचालनकार्य",
+    "description": "免费计划描述"
   },
   "pricing.free.name": {
-    "message": "pricing.free.name"
+    "message": "मुफ्त",
+    "description": "免费计划名称"
   },
   "pricing.free_label": {
-    "message": "pricing.free_label"
+    "message": "मुफ्त",
+    "description": "Free label"
   },
   "pricing.get_started": {
-    "message": "pricing.get_started"
+    "message": "खोलना शुरू उपयोग उपयोग",
+    "description": "开始使用按钮文本"
   },
   "pricing.local_api.description": {
-    "message": "pricing.local_api.description"
+    "message": "Pro、Team 和 Business उपयोगकर्ता可उपयोग करेंस्थानीय RESTful API 来以编程方式प्रबंधन任务和स्वचालन工作流。详见प्रलेखन。"
   },
   "pricing.local_api.link_text": {
-    "message": "pricing.local_api.link_text"
+    "message": "देखने के लिए मूल स्थान API प्रलेखन"
   },
   "pricing.local_api.support": {
-    "message": "pricing.local_api.support"
+    "message": "स्थानीय REST API एक्सेस（Pro+）"
   },
   "pricing.local_api.title": {
-    "message": "pricing.local_api.title"
+    "message": "मूल स्थान API"
   },
   "pricing.per_month": {
-    "message": "pricing.per_month"
+    "message": "प्रत्येकमहीने"
   },
   "pricing.per_month_pc": {
-    "message": "pricing.per_month_pc"
+    "message": "每月/每台电脑",
+    "description": "每月每台电脑文本"
   },
   "pricing.per_year": {
-    "message": "pricing.per_year"
+    "message": "每年 (节省 30%)"
   },
   "pricing.pro.concurrent_tasks": {
-    "message": "pricing.pro.concurrent_tasks"
+    "message": "最多20并发स्वचालन कार्य",
+    "description": "专业版并发任务数"
   },
   "pricing.pro.description": {
-    "message": "pricing.pro.description"
+    "message": "适合पेशेवर人士和小企业",
+    "description": "专业版计划描述"
   },
   "pricing.pro.manage_phones": {
-    "message": "pricing.pro.manage_phones"
+    "message": "最多20并发स्वचालन कार्य",
+    "description": "专业版计划功能"
   },
   "pricing.pro.name": {
-    "message": "pricing.pro.name"
+    "message": "प्रो संस्करण",
+    "description": "专业版计划名称"
   },
   "pricing.starter.concurrent_tasks": {
-    "message": "pricing.starter.concurrent_tasks"
+    "message": "最多5并发स्वचालन कार्य",
+    "description": "入门版并发任务数"
   },
   "pricing.starter.description": {
-    "message": "pricing.starter.description"
+    "message": "适合人和小टीम",
+    "description": "入门版计划描述"
   },
   "pricing.starter.manage_phones": {
-    "message": "pricing.starter.manage_phones"
+    "message": "最多5并发स्वचालन कार्य",
+    "description": "入门版计划功能"
   },
   "pricing.starter.name": {
-    "message": "pricing.starter.name"
+    "message": "入门版",
+    "description": "入门版计划名称"
   },
   "pricing.subtitle": {
-    "message": "Choose the plan that fits your needs"
+    "message": "适合每人的灵活योजना。वार्षिक享受30%折扣！",
+    "description": "定价部分副标题"
   },
   "pricing.team.concurrent_tasks": {
-    "message": "pricing.team.concurrent_tasks"
+    "message": "最多50并发स्वचालन कार्य",
+    "description": "团队版并发任务数"
   },
   "pricing.team.description": {
-    "message": "pricing.team.description"
+    "message": "适合成长中的टीम和公司",
+    "description": "团队版计划描述"
   },
   "pricing.team.manage_phones": {
-    "message": "pricing.team.manage_phones"
+    "message": "最多50并发स्वचालन कार्य",
+    "description": "团队版计划功能"
   },
   "pricing.team.name": {
-    "message": "pricing.team.name"
+    "message": "टीम版",
+    "description": "团队版计划名称"
   },
   "pricing.ticket_support": {
-    "message": "pricing.ticket_support"
+    "message": "विशेष संबंधित काम एकलसहायता",
+    "description": "专属工单支持文本"
   },
   "pricing.title": {
-    "message": "Pricing Plans"
+    "message": "मूल्य निर्धारण",
+    "description": "定价部分标题"
   },
   "pricing.toggle.monthly": {
-    "message": "Monthly"
+    "message": "मासिक"
   },
   "pricing.toggle.yearly": {
-    "message": "Yearly (Save 30%)"
+    "message": "वार्षिक (节省 30%)"
   },
   "pricing.unlimited_devices": {
-    "message": "pricing.unlimited_devices"
+    "message": "नहीं सीमाडिवाइसकनेक्शन",
+    "description": "无限设备连接文本"
   },
   "pricing.unlimited_devices_short": {
-    "message": "pricing.unlimited_devices_short"
+    "message": "नहीं सीमा"
   },
   "tech.diagram.devices": {
-    "message": "Real Android Devices"
+    "message": "वास्तव में वास्तविक Android डिवाइस"
   },
   "tech.diagram.engine": {
-    "message": "TikMatrix Engine"
+    "message": "TikMatrix 引擎"
   },
   "tech.diagram.fingerprintIsolation": {
-    "message": "Device Fingerprint Isolation"
+    "message": "डिवाइस फिंगरप्रिंटअलगाव"
   },
   "tech.diagram.localExecution": {
-    "message": "Local Execution"
+    "message": "मूल स्थान निष्पादित पंक्ति"
   },
   "tech.diagram.noApi": {
-    "message": "No API Calls"
+    "message": "不调用 API"
   },
   "tech.diagram.noMemoryInjection": {
-    "message": "No Memory Injection"
+    "message": "无内存इंजेक्शन"
   },
   "tech.diagram.realTouch": {
-    "message": "Real Touch Injection"
+    "message": "वास्तविक टच इंजेक्शन"
   },
   "tech.diagram.tiktok": {
-    "message": "TikTok App"
+    "message": "TikTok चाहिए उपयोग"
   },
   "tech.diagram.user": {
-    "message": "User"
+    "message": "उपयोगकर्ता"
   },
   "tech.diagram.zeroCloud": {
-    "message": "Zero Cloud Dependency"
+    "message": "零云निर्भर"
   },
   "tech.point.fingerprint.b1": {
-    "message": "Unique IMEI / Android ID per device"
+    "message": "每台डिवाइसअद्वितीय IMEI / Android ID"
   },
   "tech.point.fingerprint.b2": {
-    "message": "Isolated IP allocation via proxy"
+    "message": "通过प्रॉक्सी分配अलगाव IP"
   },
   "tech.point.fingerprint.b3": {
-    "message": "No shared cookies or tokens"
+    "message": "कोई नहींसाझा Cookie याटोकन"
   },
   "tech.point.fingerprint.desc": {
-    "message": "Each device maintains unique hardware and software fingerprints with no cross-contamination."
+    "message": "每台डिवाइस保持अद्वितीय的हार्डवेयर和सॉफ़्टवेयर फिंगरप्रिंट，无交叉污染。"
   },
   "tech.point.fingerprint.title": {
-    "message": "Device Fingerprint Isolation"
+    "message": "डिवाइस फिंगरप्रिंटअलगाव"
   },
   "tech.point.humanBehavior.b1": {
-    "message": "Randomized time intervals"
+    "message": "随机化时间अंतराल"
   },
   "tech.point.humanBehavior.b2": {
-    "message": "Natural scrolling velocity curves"
+    "message": "自然滚动गति曲线"
   },
   "tech.point.humanBehavior.b3": {
-    "message": "Session duration modeling"
+    "message": "सत्र时长建模"
   },
   "tech.point.humanBehavior.desc": {
-    "message": "Behavior patterns derived from real user data, avoiding detectable automation features."
+    "message": "行为मोड源自वास्तविक उपयोगकर्ताडेटा，避免可检测的स्वचालन特征。"
   },
   "tech.point.humanBehavior.title": {
-    "message": "Human Behavior Model"
+    "message": "仿人पंक्तिके लिए模型"
   },
   "tech.point.localExec.b1": {
-    "message": "No remote execution dependency"
+    "message": "无远程निष्पादन依赖"
   },
   "tech.point.localExec.b2": {
-    "message": "Complete data privacy"
+    "message": "पूर्ण पूर्णडेटागोपनीयता"
   },
   "tech.point.localExec.b3": {
-    "message": "Optional offline deployment"
+    "message": "वैकल्पिकऑफ़लाइनतैनाती"
   },
   "tech.point.localExec.desc": {
-    "message": "Scripts execute on local machines via ADB - no cloud relay, no third-party servers."
+    "message": "脚本通过 ADB 在स्थानीय机器上निष्पादन——无क्लाउड中继，无第三方सेवा器。"
   },
   "tech.point.localExec.title": {
-    "message": "Local Execution Sandbox"
+    "message": "स्थानीयनिष्पादन沙箱"
   },
   "tech.point.passiveCapture.b1": {
-    "message": "Zero code injection into TikTok"
+    "message": "零代码इंजेक्शन TikTok"
   },
   "tech.point.passiveCapture.b2": {
-    "message": "Read-only screen capture"
+    "message": "只读屏幕कैप्चर करें"
   },
   "tech.point.passiveCapture.b3": {
-    "message": "No modification of app binaries"
+    "message": "兼容任何应用संस्करण"
   },
   "tech.point.passiveCapture.desc": {
-    "message": "Extract screen data via OCR and computer vision - no in-app hooks or memory injection."
+    "message": "通过 OCR 和计算机视觉提取屏幕डेटा——无应用内 Hook 或内存इंजेक्शन。"
   },
   "tech.point.passiveCapture.title": {
-    "message": "Passive Capture Mode"
+    "message": "被动捕获मोड"
   },
   "tech.point.realTouch.b1": {
-    "message": "Hardware-level touch signal generation"
+    "message": "हार्डवेयर级टच信号生成"
   },
   "tech.point.realTouch.b2": {
-    "message": "Pressure and velocity randomization"
+    "message": "压力औरगति随机化"
   },
   "tech.point.realTouch.b3": {
-    "message": "Arc trajectory simulation"
+    "message": "弧形轨迹模拟"
   },
   "tech.point.realTouch.desc": {
-    "message": "Inject real touch events at the Android input layer, indistinguishable from human interaction behavior."
+    "message": "在 Android 输入层इंजेक्शन真实टच事件，与人类交互行为无法区分。"
   },
   "tech.point.realTouch.title": {
-    "message": "Real Touch Injection"
+    "message": "वास्तविक टच इंजेक्शन"
   },
   "tech.point.zeroApi.b1": {
-    "message": "No API token exposure"
+    "message": "कोई नहीं API टोकन暴露"
   },
   "tech.point.zeroApi.b2": {
-    "message": "No request signature forgery"
+    "message": "कोई नहींकृपया求हस्ताक्षर करें伪造"
   },
   "tech.point.zeroApi.b3": {
-    "message": "Not affected by API rate limits"
+    "message": "不受 API दरसीमा影响"
   },
   "tech.point.zeroApi.desc": {
-    "message": "No TikTok API calls, no network request interception. All operations completed at the UI layer."
+    "message": "不调用 TikTok API，不拦截नेटवर्क请求。सभीसंचालन都在 UI 层पूर्ण。"
   },
   "tech.point.zeroApi.title": {
-    "message": "Zero API Automation"
+    "message": "零 API स्वचालन"
   },
   "tech.points.heading": {
-    "message": "Core Technology Implementation"
+    "message": "核心तकनीक实现"
   },
   "tech.security.heading": {
-    "message": "tech.security.heading"
+    "message": "सुरक्षा等级评估"
   },
   "tech.security.humanModel": {
-    "message": "tech.security.humanModel"
+    "message": "仿人पंक्तिके लिए模型"
   },
   "tech.security.legendA": {
-    "message": "tech.security.legendA"
+    "message": "उत्कृष्ट"
   },
   "tech.security.legendB": {
-    "message": "tech.security.legendB"
+    "message": "अच्छा"
   },
   "tech.security.legendC": {
-    "message": "tech.security.legendC"
+    "message": "सकते हैं चुनें"
   },
   "tech.security.noHook": {
-    "message": "tech.security.noHook"
+    "message": "无इंजेक्शन / 无 Hook"
   },
   "tech.security.noiseCurve": {
-    "message": "tech.security.noiseCurve"
+    "message": "पंक्तिके लिए噪声曲线"
   },
   "tech.security.proxyIsolation": {
-    "message": "tech.security.proxyIsolation"
+    "message": "वैकल्पिकप्रॉक्सी अलगाव"
   },
   "tech.security.realDevice": {
-    "message": "tech.security.realDevice"
+    "message": "वास्तविक डिवाइस环境"
   },
   "tech.security.zeroApi": {
-    "message": "tech.security.zeroApi"
+    "message": "零 API संचालन"
   },
   "tech.subtitle": {
-    "message": "Anti-detection Architecture Built on Real Device Automation"
+    "message": "基于वास्तविक डिवाइसस्वचालनसिद्धांत构建的反检测आर्किटेक्चर"
   },
   "tech.title": {
-    "message": "Technology Advantages"
+    "message": "तकनीकी लाभ"
   },
   "testimonials.subtitle": {
-    "message": "Real feedback from TikMatrix users"
+    "message": "TikMatrixउपयोगकर्ता怎么说",
+    "description": "用户评价部分副标题"
   },
   "testimonials.title": {
-    "message": "What Our Users Say"
+    "message": "वास्तविक उपयोगकर्ता评价",
+    "description": "用户评价部分标题"
   },
   "testimonials.usage_label": {
-    "message": "testimonials.usage_label"
+    "message": "उपयोग उपयोग समय लंबा",
+    "description": "使用时长标签"
   },
   "testimonials.user1.text": {
-    "message": "testimonials.user1.text"
+    "message": "TikMatrix对我们स्टूडियो来说是लाइफ सेवर！我们कर सकते हैंएक साथ कंट्रोल这么多फ़ोन，स्वचालन फीचर्स超级शक्तिशाली。发帖和养号变得容易多了。TikTokपता लगाने से बचाव真的有效——我们的पोस्ट获得了比以前更自然的流量。",
+    "description": "第一个用户评价文本"
   },
   "testimonials.user1.usage": {
-    "message": "testimonials.user1.usage"
+    "message": "1वर्ष",
+    "description": "第一个用户使用时长"
   },
   "testimonials.user2.text": {
-    "message": "testimonials.user2.text"
+    "message": "उपयोग करेंTikMatrix后，我们विज्ञापन टीम的दक्षता में वृद्धि。स्वचालन स्क्रिप्ट为我们节省了大量手动工作，खाते सुरक्षित रहते हैं——到目前为止没有निलंबित。对我们这样的एजेंसी来说非常परफेक्ट！",
+    "description": "第二个用户评价文本"
   },
   "testimonials.user2.usage": {
-    "message": "testimonials.user2.usage"
+    "message": "10 महीने",
+    "description": "第二个用户使用时长"
   },
   "testimonials.user3.text": {
-    "message": "testimonials.user3.text"
+    "message": "एक साथ कंट्रोल100फ़ोन是गेम चेंजर的。बल्क संचालन超级सुविधाजनक，我们的TikTokपोस्ट获得了अधिकऑर्गेनिक रीच。के लिए परफेक्टअंतर्राष्ट्रीय मार्केटिंग，मूल्य也很公道！",
+    "description": "第三个用户评价文本"
   },
   "testimonials.user3.usage": {
-    "message": "testimonials.user3.usage"
+    "message": "6 महीने",
+    "description": "第三个用户使用时长"
   },
   "testimonials.user4.text": {
-    "message": "testimonials.user4.text"
+    "message": "之前试过अन्य工具，但TikMatrix是最省心的。स्वचालन和निलंबन-रोधी都很विश्वसनीय。के लिए परफेक्टकी आवश्यकता हैकुशलबल्क संचालन的मार्केटिंग टीम。",
+    "description": "第四个用户评价文本"
   },
   "testimonials.user4.usage": {
-    "message": "testimonials.user4.usage"
+    "message": "8 महीने",
+    "description": "第四个用户使用时长"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "theme.AnnouncementBar.closeButtonAriaLabel"
+    "message": "बंद करें",
+    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "theme.BackToTopButton.buttonAriaLabel"
+    "message": "शीर्ष पर वापस जाएं",
+    "description": "The ARIA label for the back to top button"
   },
   "theme.CodeBlock.copied": {
-    "message": "theme.CodeBlock.copied"
+    "message": "कॉपी हो गया",
+    "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copy": {
-    "message": "theme.CodeBlock.copy"
+    "message": "दोहराएं नियंत्रण",
+    "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "theme.CodeBlock.copyButtonAriaLabel"
+    "message": "कॉपी करें代码到剪贴板",
+    "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "theme.CodeBlock.wordWrapToggle"
+    "message": "काटें एक्सचेंजस्वचालित एक्सचेंज पंक्ति",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "theme.DocSidebarItem.collapseCategoryAriaLabel"
+    "message": "कोलैप्स करेंसाइडबार分类 '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "theme.DocSidebarItem.expandCategoryAriaLabel"
+    "message": "विस्तार करेंसाइडबार分类 '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
   },
   "theme.ErrorPageContent.title": {
-    "message": "theme.ErrorPageContent.title"
+    "message": "पेज已崩溃。",
+    "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "theme.ErrorPageContent.tryAgain"
+    "message": "पुनः प्रयास करें",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "theme.NavBar.navAriaLabel"
+    "message": "主导航",
+    "description": "The ARIA label for the main navigation"
   },
   "theme.NotFound.p1": {
-    "message": "theme.NotFound.p1"
+    "message": "我们找不到您要找的पेज。",
+    "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "theme.NotFound.p2"
+    "message": "请联系原始链接来源网站的मालिक，并告知他们लिंक टूटा हुआ है。",
+    "description": "The 2nd paragraph of the 404 page"
   },
   "theme.NotFound.title": {
-    "message": "theme.NotFound.title"
+    "message": "पेज नहीं मिला",
+    "description": "The title of the 404 page"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "theme.TOCCollapsible.toggleButtonLabel"
+    "message": "本页अवलोकन",
+    "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.admonition.caution": {
-    "message": "theme.admonition.caution"
+    "message": "चेतावनी",
+    "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "theme.admonition.danger"
+    "message": "खतरा",
+    "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "theme.admonition.info"
+    "message": "जानकारी",
+    "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "theme.admonition.note"
+    "message": "नोट",
+    "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "theme.admonition.tip"
+    "message": "टिप",
+    "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
-    "message": "theme.admonition.warning"
+    "message": "ध्यान दें",
+    "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.archive.description": {
-    "message": "theme.blog.archive.description"
+    "message": "इतिहासब्लॉग पोस्ट",
+    "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.archive.title": {
-    "message": "theme.blog.archive.title"
+    "message": "इतिहासब्लॉग पोस्ट",
+    "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "theme.blog.paginator.navAriaLabel"
+    "message": "ब्लॉग पोस्ट列表分页导航",
+    "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "theme.blog.paginator.newerEntries"
+    "message": "नया的ब्लॉग पोस्ट",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "theme.blog.paginator.olderEntries"
+    "message": "पुराना的ब्लॉग पोस्ट",
+    "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "theme.blog.post.paginator.navAriaLabel"
+    "message": "ब्लॉग पोस्ट分页导航",
+    "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "theme.blog.post.paginator.newerPost"
+    "message": "नया一",
+    "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "theme.blog.post.paginator.olderPost"
+    "message": "पुराना一",
+    "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "theme.blog.post.plurals"
+    "message": "{count} ब्लॉग पोस्ट",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMore": {
-    "message": "theme.blog.post.readMore"
+    "message": "पढ़ेंअधिक",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "theme.blog.post.readMoreLabel"
+    "message": "पढ़ें {title} 的पूरा लेख",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "theme.blog.post.readingTime.plurals"
+    "message": "पढ़ें需 {readingTime} 分钟",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "theme.blog.sidebar.navAriaLabel"
+    "message": "最近ब्लॉग पोस्ट导航",
+    "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.blog.tagTitle": {
-    "message": "theme.blog.tagTitle"
+    "message": "{nPosts} टैग के साथ「{tagName}」",
+    "description": "The title of the page for a blog tag"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "theme.colorToggle.ariaLabel"
+    "message": "टॉगल करें浅色/डार्क मोड（वर्तमान为{mode}）",
+    "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "theme.colorToggle.ariaLabel.mode.dark"
+    "message": "डार्क मोड",
+    "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "theme.colorToggle.ariaLabel.mode.light"
+    "message": "लाइट मोड",
+    "description": "The name for the light color mode"
   },
   "theme.common.editThisPage": {
-    "message": "theme.common.editThisPage"
+    "message": "यह पेज संपादित करें",
+    "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "theme.common.headingLinkTitle"
+    "message": "{heading}的सीधा लिंक",
+    "description": "Title for link to heading"
   },
   "theme.common.skipToMainContent": {
-    "message": "theme.common.skipToMainContent"
+    "message": "मुख्य सामग्री पर जाएं",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "theme.docs.DocCard.categoryDescription.plurals"
+    "message": "{count} 目",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "theme.docs.breadcrumbs.home"
+    "message": "主पेज",
+    "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "theme.docs.breadcrumbs.navAriaLabel"
+    "message": "पेज路径",
+    "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "theme.docs.paginator.navAriaLabel"
+    "message": "文件विकल्प卡",
+    "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.next": {
-    "message": "theme.docs.paginator.next"
+    "message": "अगला पेज",
+    "description": "The label used to navigate to the next doc"
   },
   "theme.docs.paginator.previous": {
-    "message": "theme.docs.paginator.previous"
+    "message": "पिछला पेज",
+    "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "theme.docs.sidebar.closeSidebarButtonAriaLabel"
+    "message": "बंद करेंनेविगेशन बार",
+    "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "theme.docs.sidebar.collapseButtonAriaLabel"
+    "message": "收起साइडबार",
+    "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "theme.docs.sidebar.collapseButtonTitle"
+    "message": "收起साइडबार",
+    "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "theme.docs.sidebar.expandButtonAriaLabel"
+    "message": "विस्तार करेंसाइडबार",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "theme.docs.sidebar.expandButtonTitle"
+    "message": "विस्तार करेंसाइडबार",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "theme.docs.sidebar.navAriaLabel"
+    "message": "प्रलेखनसाइडबार",
+    "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "theme.docs.sidebar.toggleSidebarButtonAriaLabel"
+    "message": "टॉगल करेंनेविगेशन बार",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "theme.docs.tagDocListPageTitle"
+    "message": "{nDocsTagged}「{tagName}」",
+    "description": "The title of the page for a docs tag"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "theme.docs.tagDocListPageTitle.nDocsTagged"
+    "message": "{count} प्रलेखन带有टैग",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.versionBadge.label": {
-    "message": "theme.docs.versionBadge.label"
+    "message": "संस्करण：{versionLabel}"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "theme.docs.versions.latestVersionLinkLabel"
+    "message": "सबसे नयासंस्करण",
+    "description": "The label used for the latest version suggestion link label"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "theme.docs.versions.latestVersionSuggestionLabel"
+    "message": "नवीनतम的प्रलेखन请参阅 {latestVersionLink} ({versionLabel})。",
+    "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "theme.docs.versions.unmaintainedVersionLabel"
+    "message": "此为 {siteTitle} {versionLabel} 版的प्रलेखन，现已अब सक्रिय रूप से बनाए नहीं रखा गया。",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "theme.docs.versions.unreleasedVersionLabel"
+    "message": "此为 {siteTitle} {versionLabel} 版अभी जारी नहीं किया गया的प्रलेखन。",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.footer.link.label.View All Advertising": {
-    "message": "सभी विज्ञापन देखें"
+    "message": "देखने के लिएसभी व्यापक सूचित"
   },
   "theme.footer.link.label.View All Tools": {
-    "message": "सभी उपकरण देखें"
+    "message": "देखने के लिएसभी काम उपकरण"
   },
   "theme.lastUpdated.atDate": {
-    "message": "theme.lastUpdated.atDate"
+    "message": "के लिए {date}",
+    "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": "theme.lastUpdated.byUser"
+    "message": "द्वारा {user}",
+    "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "theme.lastUpdated.lastUpdatedAtBy"
+    "message": "सबसेके बाद{byUser}{atDate}अपडेट",
+    "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.item.label.Advertising": {
-    "message": "विज्ञापन"
+    "message": "व्यापक सूचित"
   },
   "theme.navbar.item.label.Tools": {
-    "message": "उपकरण"
+    "message": "काम उपकरण"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "theme.navbar.mobileLanguageDropdown.label"
+    "message": "भाषा चुनें",
+    "description": "The label for the mobile language switcher dropdown"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel"
+    "message": "← 回到मुख्य मेनू",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "theme.navbar.mobileVersionsDropdown.label"
+    "message": "चयनसंस्करण",
+    "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
-    "message": "theme.tags.tagsListLabel"
+    "message": "टैग：",
+    "description": "The label alongside a tag list"
   },
   "theme.tags.tagsPageLink": {
-    "message": "theme.tags.tagsPageLink"
+    "message": "सभी देखेंटैग",
+    "description": "The label of the link targeting the tag list page"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "theme.tags.tagsPageTitle"
+    "message": "टैग",
+    "description": "The title of the tag list page"
   },
   "theme.unlistedContent.message": {
-    "message": "theme.unlistedContent.message"
+    "message": "此पेजअनलिस्टेड。सर्च इंजन不会对其इंडेक्स，只有拥有सीधा लिंक的उपयोगकर्ता才能एक्सेस。",
+    "description": "The unlisted content banner message"
   },
   "theme.unlistedContent.title": {
-    "message": "theme.unlistedContent.title"
+    "message": "अनलिस्टेड页",
+    "description": "The unlisted content banner title"
   },
   "whitelabel.annualRequired": {
-    "message": "whitelabel.annualRequired"
+    "message": "की आवश्यकता हैवार्षिकसदस्यता",
+    "description": "白标功能需要年付订阅"
   },
   "whitelabel.annualRequiredDesc": {
-    "message": "whitelabel.annualRequiredDesc"
+    "message": "व्हाइट-लेबल功能仅对वार्षिकसदस्यताउपयोगकर्ता开放。खरीदेंवार्षिकयोजना后，请通过Telegramग्राहक सेवा से संपर्क करें获取अनलॉक कोड。",
+    "description": "白标功能年付订阅说明"
   },
   "whitelabel.appName": {
-    "message": "whitelabel.appName"
+    "message": "应用नाम",
+    "description": "应用名称"
   },
   "whitelabel.contactSupport": {
-    "message": "whitelabel.contactSupport"
+    "message": "ग्राहक सेवा से संपर्क करें获取अनलॉक कोड",
+    "description": "联系客服获取白标解锁码"
   },
   "whitelabel.customization": {
-    "message": "whitelabel.customization"
+    "message": "ब्रांडअनुकूलन",
+    "description": "品牌定制"
   },
   "whitelabel.description": {
-    "message": "whitelabel.description"
+    "message": "कस्टमTikMatrix的ब्रांड标识以匹配您的公司形象",
+    "description": "白标功能描述"
   },
   "whitelabel.logo": {
-    "message": "whitelabel.logo"
+    "message": "Logo",
+    "description": "Logo"
   },
   "whitelabel.setup": {
-    "message": "whitelabel.setup"
+    "message": "व्हाइटलेबल सेटअप",
+    "description": "白标设置"
   },
   "whitelabel.supportEmail": {
-    "message": "whitelabel.supportEmail"
+    "message": "सहायता邮箱",
+    "description": "支持邮箱"
   },
   "whitelabel.telegramUrl": {
-    "message": "whitelabel.telegramUrl"
+    "message": "Telegramलिंक",
+    "description": "Telegram链接"
   },
   "whitelabel.title": {
-    "message": "whitelabel.title"
+    "message": "सफेद चिह्नफीचर्स",
+    "description": "白标功能标题"
   },
   "whitelabel.tutorialUrl": {
-    "message": "whitelabel.tutorialUrl"
+    "message": "ट्यूटोरियल链接",
+    "description": "教程链接"
   }
 }

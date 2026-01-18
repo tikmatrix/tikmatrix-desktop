@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
-title: API 示例
-description: 使用 TikMatrix 本地 API 的代码示例
+title: Exemples d'API
+description: Exemples de code utilisant l'API locale TikMatrix
 ---
 
-本页面提供了在不同编程语言中使用 TikMatrix 本地 API 的示例代码。
+Cette page fournit des exemples de code pour utiliser l'API locale TikMatrix dans différents langages de programmation.
 
 ## Python
 
@@ -67,27 +67,27 @@ def get_stats():
     response = requests.get(f"{BASE_URL}/task/stats")
     return response.json()
 
-# 使用示例
+# Exemple d'utilisation
 if __name__ == "__main__":
-    # 首先检查许可证
+    # Vérifier d'abord la licence
     license_info = check_license()
     if license_info["code"] != 0:
-        print("API 访问不可用:", license_info["message"])
+        print("Accès API non disponible:", license_info["message"])
         exit(1)
     
-    print("许可证正常:", license_info["data"]["plan_name"])
+    print("Licence valide:", license_info["data"]["plan_name"])
     
-    # 创建一个关注任务
+    # Créer une tâche de suivi
     result = create_task(
         serials=["device_serial_1"],
         script_name="follow",
         script_config={"target_username": "@tikmatrix"}
     )
-    print("任务已创建:", result)
+    print("Tâche créée:", result)
     
-    # 获取统计信息
+    # Obtenir les statistiques
     stats = get_stats()
-    print("统计:", stats["data"])
+    print("Statistiques:", stats["data"])
 ```
 
 ## JavaScript / Node.js
@@ -146,27 +146,27 @@ async function getStats() {
   return response.json();
 }
 
-// 使用示例
+// Exemple d'utilisation
 async function main() {
-  // 检查许可证
+  // Vérifier la licence
   const license = await checkLicense();
   if (license.code !== 0) {
-    console.error('API 访问不可用:', license.message);
+    console.error('Accès API non disponible:', license.message);
     return;
   }
-  console.log('许可证正常:', license.data.plan_name);
+  console.log('Licence valide:', license.data.plan_name);
 
-  // 创建任务
+  // Créer une tâche
   const result = await createTask(
     ['device_serial_1'],
     'follow',
     { target_username: '@tikmatrix' }
   );
-  console.log('任务已创建:', result);
+  console.log('Tâche créée:', result);
 
-  // 获取统计信息
+  // Obtenir les statistiques
   const stats = await getStats();
-  console.log('统计:', stats.data);
+  console.log('Statistiques:', stats.data);
 }
 
 main().catch(console.error);
@@ -175,10 +175,10 @@ main().catch(console.error);
 ## cURL
 
 ```bash
-# 检查许可证
+# Vérifier la licence
 curl http://localhost:50809/api/v1/license/check
 
-# 创建任务
+# Créer une tâche
 curl -X POST http://localhost:50809/api/v1/task \
   -H "Content-Type: application/json" \
   -d '{
@@ -188,30 +188,30 @@ curl -X POST http://localhost:50809/api/v1/task \
     "enable_multi_account": false
   }'
 
-# 列出待处理任务
+# Lister les tâches en attente
 curl "http://localhost:50809/api/v1/task?status=0&page=1&page_size=20"
 
-# 获取任务详情
+# Obtenir les détails d'une tâche
 curl http://localhost:50809/api/v1/task/1
 
-# 停止任务
+# Arrêter une tâche
 curl -X POST http://localhost:50809/api/v1/task/1/stop
 
-# 重试任务
+# Réessayer une tâche
 curl -X POST http://localhost:50809/api/v1/task/1/retry
 
-# 删除任务
+# Supprimer une tâche
 curl -X DELETE http://localhost:50809/api/v1/task/1
 
-# 批量删除任务
+# Supprimer plusieurs tâches
 curl -X DELETE http://localhost:50809/api/v1/task/batch \
   -H "Content-Type: application/json" \
   -d '{"task_ids": [1, 2, 3]}'
 
-# 重试所有失败任务
+# Réessayer toutes les tâches échouées
 curl -X POST http://localhost:50809/api/v1/task/retry-all
 
-# 获取任务统计
+# Obtenir les statistiques des tâches
 curl http://localhost:50809/api/v1/task/stats
 ```
 
@@ -271,29 +271,29 @@ function Remove-TaskById {
     return $response
 }
 
-# 使用示例
+# Exemple d'utilisation
 $license = Check-License
 if ($license.code -ne 0) {
-    Write-Error "API 访问不可用: $($license.message)"
+    Write-Error "Accès API non disponible: $($license.message)"
     exit 1
 }
 
-Write-Host "许可证正常: $($license.data.plan_name)"
+Write-Host "Licence valide: $($license.data.plan_name)"
 
-# 创建任务
+# Créer une tâche
 $result = Create-Task -Serials @("device_serial_1") `
     -ScriptName "follow" `
     -ScriptConfig @{ target_username = "@tikmatrix" }
 
-Write-Host "任务已创建: $($result | ConvertTo-Json)"
+Write-Host "Tâche créée: $($result | ConvertTo-Json)"
 ```
 
-## 常见使用场景
+## Cas d'Usage Courants
 
-### 为多个设备批量创建任务
+### Créer des Tâches en Masse pour Plusieurs Appareils
 
 ```python
-# Python 示例：为所有已连接设备创建关注任务
+# Exemple Python : Créer une tâche de suivi pour tous les appareils connectés
 devices = ["device_1", "device_2", "device_3", "device_4", "device_5"]
 
 result = create_task(
@@ -303,16 +303,16 @@ result = create_task(
     multi_account=True
 )
 
-print(f"已创建 {result['data']['created_count']} 个任务")
+print(f"{result['data']['created_count']} tâches créées")
 ```
 
-### 监控任务进度
+### Surveiller la Progression des Tâches
 
 ```python
 import time
 
 def wait_for_completion(task_ids, timeout=300):
-    """等待所有任务完成"""
+    """Attendre que toutes les tâches soient terminées"""
     start_time = time.time()
     
     while time.time() - start_time < timeout:
@@ -321,33 +321,33 @@ def wait_for_completion(task_ids, timeout=300):
         pending = stats['data']['pending']
         
         if running == 0 and pending == 0:
-            print("所有任务已完成！")
+            print("Toutes les tâches sont terminées !")
             return True
         
-        print(f"运行中: {running}, 等待中: {pending}")
+        print(f"En cours: {running}, En attente: {pending}")
         time.sleep(5)
     
-    print("等待任务超时")
+    print("Délai d'attente des tâches dépassé")
     return False
 ```
 
-### 自动重试失败任务
+### Réessayer Automatiquement les Tâches Échouées
 
 ```python
 def auto_retry_failed(max_retries=3):
-    """自动重试失败的任务"""
+    """Réessayer automatiquement les tâches échouées"""
     for i in range(max_retries):
-        # 获取失败任务
+        # Obtenir les tâches échouées
         failed = list_tasks(status=3)
         if failed['data']['total'] == 0:
-            print("没有失败的任务")
+            print("Aucune tâche échouée")
             return
         
-        print(f"重试 {failed['data']['total']} 个失败任务（第 {i+1} 次尝试）")
+        print(f"Réessayer {failed['data']['total']} tâches échouées (tentative {i+1})")
         
-        # 重试所有
+        # Réessayer toutes
         result = requests.post(f"{BASE_URL}/task/retry-all")
         
-        # 等待完成
+        # Attendre la fin
         time.sleep(30)
 ```

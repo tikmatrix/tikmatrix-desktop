@@ -1,1569 +1,1787 @@
 {
   "24/7 Support": {
-    "message": "24/7 Support"
+    "message": "Dukungan 24/7"
   },
   "24h AI Assistant": {
-    "message": "24h AI Assistant"
+    "message": "Asisten AI 24 Jam"
   },
   "AI voiceover": {
-    "message": "AI voiceover"
+    "message": "Pengisian Suara AI",
+    "description": "The product label"
   },
   "AI-Generated Comments": {
-    "message": "AI-Generated Comments"
+    "message": "Komentar Cerdas AI"
   },
   "API Protocol": {
-    "message": "API Protocol"
+    "message": "Protokol API"
   },
   "Account Safe": {
-    "message": "Account Safe"
+    "message": "Keamanan Akun"
   },
   "Account Setup": {
-    "message": "Account Setup"
+    "message": "Pengaturan Akun"
   },
   "Account management": {
-    "message": "Account management"
+    "message": "Manajemen Akun"
   },
   "Account warmup": {
-    "message": "Account warmup"
+    "message": "Pemanasan Akun"
   },
   "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
-    "message": "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%."
+    "message": "Selain itu, sistem program matriks perangkat asli kami dapat menghindari penangguhan akun yang disebabkan oleh langkah-langkah kontrol risiko TIK dengan sempurna. Tingkat penangguhan akun kami adalah 0%"
   },
   "Advanced Technology for Superior Performance": {
-    "message": "Advanced Technology for Superior Performance"
+    "message": "Teknologi Canggih untuk Kinerja Unggul"
   },
   "Advanced safety mechanisms": {
-    "message": "Advanced safety mechanisms"
+    "message": "Mekanisme keamanan canggih"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix."
+    "message": "Setelah instalasi, buka IgMatrix untuk melihat daftar lengkap skrip otomasi Instagram yang tersedia. Pilihan skrip mungkin berbeda dari TikMatrix."
   },
   "All Features": {
-    "message": "All Features"
+    "message": "Semua Fitur"
   },
   "All Free Features": {
-    "message": "All Free Features"
+    "message": "Semua Fitur Gratis"
   },
   "All Monthly Features": {
-    "message": "All Monthly Features"
+    "message": "Semua Fitur Bulanan"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram."
+    "message": "Selalu periksa fitur aktual yang tersedia di perangkat lunak IgMatrix Anda, karena fungsionalitas skrip mungkin berbeda dari TikMatrix. Antarmuka perangkat lunak akan menunjukkan dengan tepat skrip otomasi mana yang tersedia untuk Instagram."
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "Automate posting, following, commenting, and engagement activities on Instagram"
+    "message": "Otomatisasi aktivitas posting, mengikuti, berkomentar, dan interaksi di Instagram"
   },
   "Automated Comment": {
-    "message": "Automated Comment"
+    "message": "Komentar Otomatis"
   },
   "Automated Follow": {
-    "message": "Automated Follow"
+    "message": "Ikuti Otomatis"
   },
   "Automated Message": {
-    "message": "Automated Message"
+    "message": "Pesan Otomatis"
   },
   "Automated account nurturing": {
-    "message": "Automated account nurturing"
+    "message": "Pemanasan akun otomatis"
   },
   "Automated scheduling for unattended operation": {
-    "message": "Automated scheduling for unattended operation"
+    "message": "Penjadwalan otomatis untuk operasi tanpa pengawasan"
   },
   "Automatic Capture": {
-    "message": "Automatic Capture"
+    "message": "Pengumpulan Otomatis"
   },
   "Automatic account matching": {
-    "message": "Automatic account matching"
+    "message": "Pencocokan akun otomatis"
   },
   "Automatic account nurturing": {
-    "message": "Automatic account nurturing"
+    "message": "Pemanasan akun otomatis",
+    "description": "The description of Automatic account nurturing"
   },
   "Automatic commenting": {
-    "message": "Automatic commenting"
+    "message": "Komentar otomatis",
+    "description": "The description of Automatic commenting"
   },
   "Automatic direct messaging": {
-    "message": "Automatic direct messaging"
+    "message": "Pesan langsung otomatis",
+    "description": "The description of Automatic direct messaging"
   },
   "Automatic following": {
-    "message": "Automatic following"
+    "message": "Mengikuti otomatis",
+    "description": "The description of Automatic following"
   },
   "Automatic login": {
-    "message": "Automatic login"
+    "message": "Login otomatis"
   },
   "Automatic matching": {
-    "message": "Automatic matching"
+    "message": "Pencocokan otomatis",
+    "description": "The description of Automatic matching"
   },
   "Automatic posting": {
-    "message": "Automatic posting"
+    "message": "Posting otomatis",
+    "description": "The description of Automatic posting"
   },
   "Automatic profile setup": {
-    "message": "Automatic profile setup"
+    "message": "Pengaturan profil otomatis",
+    "description": "The description of Automatic profile setup"
   },
   "Automatic registration & login": {
-    "message": "Automatic registration & login"
+    "message": "Registrasi dan login otomatis"
   },
   "Automatic video posting": {
-    "message": "Automatic video posting"
+    "message": "Posting otomatis"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Automatically generate AI voiceover for videos"
+    "message": "Menghasilkan pengisian suara AI untuk video secara otomatis",
+    "description": "The description of AI voiceover"
   },
   "Automatically recognize subtitles and append them to the video": {
-    "message": "Automatically recognize subtitles and append them to the video"
+    "message": "Mengenali subtitle secara otomatis dan menambahkannya ke video",
+    "description": "The description of Recognize subtitles"
   },
   "Automatically translate subtitles to any language": {
-    "message": "Automatically translate subtitles to any language"
+    "message": "Menerjemahkan subtitle ke bahasa apa pun secara otomatis",
+    "description": "The description of Translate subtitles"
   },
   "Automation & Content Management": {
-    "message": "Automation & Content Management"
+    "message": "Otomasi & Manajemen Konten"
   },
   "Basic Automation": {
-    "message": "Basic Automation"
+    "message": "Otomasi Dasar"
   },
   "Basic configuration": {
-    "message": "Basic configuration"
+    "message": "Konfigurasi dasar"
   },
   "Batch Generating Unique Videos": {
-    "message": "Batch Generating Unique Videos"
+    "message": "Pembuatan Video Unik secara Massal",
+    "description": "The description of Batch Generating Unique Videos"
   },
   "Batch account management": {
-    "message": "Batch account management"
+    "message": "Manajemen akun secara massal",
+    "description": "The description of Batch account management"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "Batch login to TikTok accounts with account list management"
+    "message": "Login massal ke akun TikTok dengan manajemen daftar akun"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Boost engagement on specific comments by liking and replying to them in bulk"
+    "message": "Tingkatkan interaksi pada komentar tertentu dengan menyukai dan membalasnya secara massal"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
-    "message": "Built with safety mechanisms to protect your Instagram accounts from suspension"
+    "message": "Dibangun dengan mekanisme keamanan untuk melindungi akun Instagram Anda dari penangguhan"
   },
   "Buy hardware": {
-    "message": "Buy hardware"
+    "message": "Beli perangkat keras",
+    "description": "The product label"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
-    "message": "Can I run both IgMatrix and TikMatrix on the same computer?"
+    "message": "Bisakah saya menjalankan IgMatrix dan TikMatrix pada komputer yang sama?"
   },
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-    "message": "Can I use the same tutorial for both IgMatrix and TikMatrix?"
+    "message": "Bisakah saya menggunakan tutorial yang sama untuk IgMatrix dan TikMatrix?"
   },
   "Character-by-Character Input": {
-    "message": "Character-by-Character Input"
+    "message": "Simulasi Input Per Karakter"
   },
   "Check Available Scripts": {
-    "message": "Check Available Scripts"
+    "message": "Periksa Skrip yang Tersedia"
   },
   "Comment boost": {
-    "message": "Comment boost"
+    "message": "Peningkatan komentar"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "Comment on multiple TikTok posts in bulk with customizable content and emojis"
+    "message": "Beri komentar pada beberapa postingan TikTok secara massal dengan konten dan emoji yang dapat disesuaikan"
   },
   "Comments, Messages, Follows": {
-    "message": "Comments, Messages, Follows"
+    "message": "Komentar, Pesan, Ikuti"
   },
   "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
-    "message": "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products."
+    "message": "Dibandingkan dengan produk serupa di pasaran, menggunakan produk TIK kami menghasilkan peningkatan lalu lintas setidaknya 30% dibandingkan produk serupa lainnya."
   },
   "Completely local private deployment ensuring user data security": {
-    "message": "Completely local private deployment ensuring user data security"
+    "message": "Penerapan privat lokal sepenuhnya memastikan keamanan data pengguna"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
-    "message": "Comprehensive automation combining multiple engagement strategies with AI-generated comments"
+    "message": "Otomasi komprehensif yang menggabungkan berbagai strategi interaksi dengan komentar yang dihasilkan AI"
   },
   "Computer-based Execution": {
-    "message": "Computer-based Execution"
+    "message": "Eksekusi Berbasis Komputer"
   },
   "Contact": {
-    "message": "Contact"
+    "message": "Hubungi Kami",
+    "description": "The contact form title"
   },
   "Contact Support": {
-    "message": "Contact Support"
+    "message": "Hubungi Dukungan"
   },
   "Contact to purchase": {
-    "message": "Contact to purchase"
+    "message": "Hubungi untuk pembelian",
+    "description": "The contact to purchase label"
   },
   "Content Management": {
-    "message": "Content Management"
+    "message": "Manajemen Konten"
   },
   "Control farm accounts to watch, like, and comment on target live streams": {
-    "message": "Control farm accounts to watch, like, and comment on target live streams"
+    "message": "Kontrol akun farm untuk menonton, menyukai, dan berkomentar pada siaran langsung target"
   },
   "Control multiple Instagram accounts across different Android devices simultaneously": {
-    "message": "Control multiple Instagram accounts across different Android devices simultaneously"
+    "message": "Kontrol beberapa akun Instagram di berbagai perangkat Android secara bersamaan"
   },
   "Create new TikTok accounts with email registration and password setup": {
-    "message": "Create new TikTok accounts with email registration and password setup"
+    "message": "Buat akun TikTok baru dengan registrasi email dan pengaturan kata sandi"
   },
   "Custom Instagram workflows": {
-    "message": "Custom Instagram workflows"
+    "message": "Alur kerja Instagram kustom"
   },
   "Customer support": {
-    "message": "Customer support"
+    "message": "Dukungan pelanggan"
   },
   "Device connection": {
-    "message": "Device connection"
+    "message": "Koneksi perangkat"
   },
   "Different Script Logic": {
-    "message": "Different Script Logic"
+    "message": "Logika Skrip yang Berbeda"
   },
   "Different script availability": {
-    "message": "Different script availability"
+    "message": "Ketersediaan skrip yang berbeda"
   },
   "Do I need separate licenses for IgMatrix and TikMatrix?": {
-    "message": "Do I need separate licenses for IgMatrix and TikMatrix?"
+    "message": "Apakah saya perlu lisensi terpisah untuk IgMatrix dan TikMatrix?"
   },
   "Download IgMatrix": {
-    "message": "Download IgMatrix"
+    "message": "Unduh IgMatrix",
+    "description": "The description of Download IgMatrix"
   },
   "Download IgMatrix from our official website and follow the installation instructions.": {
-    "message": "Download IgMatrix from our official website and follow the installation instructions."
+    "message": "Unduh IgMatrix dari situs web resmi kami dan ikuti petunjuk instalasi."
   },
   "Download TikMatrix": {
-    "message": "Download TikMatrix"
+    "message": "Unduh TikMatrix",
+    "description": "The description of Download TikMatrix"
   },
   "Download VideoMagic": {
-    "message": "Download VideoMagic"
+    "message": "Unduh VideoMagic",
+    "description": "The description of Download VideoMagic"
   },
   "Download and Install": {
-    "message": "Download and Install"
+    "message": "Unduh dan Instal"
   },
   "Download for Windows": {
-    "message": "Download for Windows"
+    "message": "Unduh untuk Windows"
   },
   "Email": {
-    "message": "Email"
+    "message": "Email",
+    "description": "The email label"
   },
   "Expert Technical Team": {
-    "message": "Expert Technical Team"
+    "message": "Tim Teknis Ahli"
   },
   "Fan collection": {
-    "message": "Fan collection"
+    "message": "Pengumpulan penggemar",
+    "description": "The description of Fan collection"
   },
   "Features": {
-    "message": "Features"
+    "message": "Fitur"
   },
   "Find answers to common questions about IgMatrix": {
-    "message": "Find answers to common questions about IgMatrix"
+    "message": "Temukan jawaban untuk pertanyaan umum tentang IgMatrix"
   },
   "Fingerprint Browser": {
-    "message": "Fingerprint Browser"
+    "message": "Browser Sidik Jari"
   },
   "Follow TikMatrix Tutorial": {
-    "message": "Follow TikMatrix Tutorial"
+    "message": "Ikuti Tutorial TikMatrix"
   },
   "Follow these steps to get started with IgMatrix": {
-    "message": "Follow these steps to get started with IgMatrix"
+    "message": "Ikuti langkah-langkah ini untuk memulai dengan IgMatrix"
   },
   "For 7 Days": {
-    "message": "For 7 Days"
+    "message": "Uji Coba 7 Hari"
   },
   "Free": {
-    "message": "Free"
+    "message": "Gratis"
   },
   "Frequently Asked Questions": {
-    "message": "Frequently Asked Questions"
+    "message": "Pertanyaan yang Sering Diajukan"
   },
   "Generate intelligent and contextual comments through ChatGPT API integration": {
-    "message": "Generate intelligent and contextual comments through ChatGPT API integration"
+    "message": "Hasilkan komentar cerdas dan kontekstual melalui integrasi ChatGPT API"
   },
   "Generate unique videos from one source video": {
-    "message": "Generate unique videos from one source video"
+    "message": "Hasilkan video unik dari satu video sumber",
+    "description": "The description of Video unique"
   },
   "Get Started": {
-    "message": "Get Started"
+    "message": "Mulai"
   },
   "Get Support": {
-    "message": "Get Support"
+    "message": "Dapatkan Dukungan"
   },
   "Get dedicated support from our expert team whenever you need help": {
-    "message": "Get dedicated support from our expert team whenever you need help"
+    "message": "Dapatkan dukungan khusus dari tim ahli kami kapan pun Anda memerlukan bantuan"
   },
   "Go to the \"Download\" page and download the latest version of TikMatrix.": {
-    "message": "Go to the \"Download\" page and download the latest version of TikMatrix."
+    "message": "Buka halaman \"Unduh\" dan unduh versi terbaru TikMatrix."
   },
   "Here are some frequently asked questions.": {
-    "message": "Here are some frequently asked questions."
+    "message": "Berikut adalah beberapa pertanyaan yang sering diajukan."
   },
   "How many TikTok accounts can each phone log into?": {
-    "message": "How many TikTok accounts can each phone log into?"
+    "message": "Berapa banyak akun TikTok yang dapat di-login di setiap ponsel?"
   },
   "How many devices can I manage?": {
-    "message": "How many devices can I manage?"
+    "message": "Berapa banyak perangkat yang dapat saya kelola?"
   },
   "How to use?": {
-    "message": "How to use?"
+    "message": "Bagaimana cara menggunakan?"
   },
   "Human Technical Support": {
-    "message": "Human Technical Support"
+    "message": "Dukungan Teknis Manusia"
   },
   "Human-like Click Simulation": {
-    "message": "Human-like Click Simulation"
+    "message": "Simulasi Klik Seperti Manusia"
   },
   "If you are interested in our service, please contact us to get price.": {
-    "message": "If you are interested in our service, please contact us to get price."
+    "message": "Jika Anda tertarik dengan layanan kami, silakan hubungi kami untuk mendapatkan harga.",
+    "description": "The contact form description"
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
-    "message": "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you."
+    "message": "Jika Anda memerlukan bantuan dengan fitur khusus IgMatrix atau mengalami masalah apa pun, tim dukungan kami siap membantu Anda."
   },
   "IgMatrix": {
-    "message": "IgMatrix"
+    "message": "IgMatrix",
+    "description": "The description of IgMatrix"
   },
   "IgMatrix Features": {
-    "message": "IgMatrix Features"
+    "message": "Fitur IgMatrix"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
-    "message": "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform."
+    "message": "IgMatrix dan TikMatrix memiliki proses pengaturan dan antarmuka pengguna yang sama. Perbedaan utamanya adalah IgMatrix dirancang khusus untuk otomasi Instagram, sementara TikMatrix untuk TikTok. Logika skrip dan fitur yang tersedia dioptimalkan untuk setiap platform masing-masing."
   },
   "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely.": {
-    "message": "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely."
+    "message": "IgMatrix menghadirkan kemampuan otomasi yang sama kuatnya dengan TikMatrix ke Instagram, membantu Anda menskalakan upaya pemasaran Instagram Anda secara efisien dan aman."
   },
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
-    "message": "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information."
+    "message": "IgMatrix mengikuti struktur harga yang mirip dengan TikMatrix, tetapi mungkin memiliki tarif yang berbeda. Silakan periksa halaman harga resmi kami atau hubungi tim dukungan kami untuk informasi harga IgMatrix saat ini."
   },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
-    "message": "IgMatrix is a Instagram android phonefarm batch control tool"
+    "message": "IgMatrix adalah alat kontrol massal phonefarm android Instagram",
+    "description": "The description of IgMatrix"
   },
   "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
-    "message": "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation."
+    "message": "Tutorial pengaturan IgMatrix identik dengan TikMatrix. Satu-satunya perbedaan adalah logika skrip mereka, jadi Anda dapat langsung merujuk pada dokumentasi tutorial TikMatrix."
   },
   "Important Notice": {
-    "message": "Important Notice"
+    "message": "Pemberitahuan Penting"
   },
   "Important Reminder": {
-    "message": "Important Reminder"
+    "message": "Pengingat Penting"
   },
   "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
-    "message": "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk"
+    "message": "Tingkatkan interaksi pada postingan dengan menyukai, membagikan, memfavoritkan, dan melihatnya secara massal"
   },
   "Increase user engagement by following or unfollowing accounts in bulk": {
-    "message": "Increase user engagement by following or unfollowing accounts in bulk"
+    "message": "Tingkatkan interaksi pengguna dengan mengikuti atau berhenti mengikuti akun secara massal"
   },
   "Instagram Automation": {
-    "message": "Instagram Automation"
+    "message": "Otomasi Instagram"
   },
   "Instagram Phone Farm Batch Control Tool": {
-    "message": "Instagram Phone Farm Batch Control Tool"
+    "message": "Alat Kontrol Massal Phone Farm Instagram",
+    "description": "The description of Instagram Phone Farm Batch Control Tool"
   },
   "Instagram-optimized automation scripts": {
-    "message": "Instagram-optimized automation scripts"
+    "message": "Skrip otomasi yang dioptimalkan untuk Instagram"
   },
   "Instagram-specific automation": {
-    "message": "Instagram-specific automation"
+    "message": "Otomasi khusus Instagram"
   },
   "Is the pricing the same as TikMatrix?": {
-    "message": "Is the pricing the same as TikMatrix?"
+    "message": "Apakah harganya sama dengan TikMatrix?"
   },
   "Join Channel": {
-    "message": "Join Channel"
+    "message": "Gabung Saluran",
+    "description": "The join channel button label"
   },
   "Join Group": {
-    "message": "Join Group"
+    "message": "Gabung Grup",
+    "description": "The join group button label"
   },
   "Key Differences from TikMatrix": {
-    "message": "Key Differences from TikMatrix"
+    "message": "Perbedaan Utama dari TikMatrix"
   },
   "Live stream boost": {
-    "message": "Live stream boost"
+    "message": "Peningkatan siaran langsung"
   },
   "Mass commenting": {
-    "message": "Mass commenting"
+    "message": "Komentar massal"
   },
   "Mass direct messaging": {
-    "message": "Mass direct messaging"
+    "message": "Pesan langsung massal"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "Mon - Fri: 9:00AM - 5:00PM(UTC+8)"
+    "message": "Sen - Jum: 9:00 - 17:00 (UTC+8)",
+    "description": "The working hours description"
   },
   "Monthly": {
-    "message": "Monthly"
+    "message": "Bulanan"
   },
   "Multi-Device Control": {
-    "message": "Multi-Device Control"
+    "message": "Kontrol Multi-Perangkat"
   },
   "Multi-language support (English, Chinese, Russian)": {
-    "message": "Multi-language support (English, Chinese, Russian)"
+    "message": "Dukungan multi-bahasa (Inggris, Mandarin, Rusia)"
   },
   "Natural Swipe Gestures": {
-    "message": "Natural Swipe Gestures"
+    "message": "Gerakan Geser Alami"
   },
   "No Root Required": {
-    "message": "No Root Required"
+    "message": "Tidak Perlu Root"
   },
   "No root permissions needed, ensuring device environment security": {
-    "message": "No root permissions needed, ensuring device environment security"
+    "message": "Tidak perlu izin root, memastikan keamanan lingkungan perangkat"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
-    "message": "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software."
+    "message": "Tidak semua skrip TikMatrix tersedia di IgMatrix, karena mereka spesifik platform. Daftar skrip yang tersedia dapat ditemukan di dalam antarmuka perangkat lunak IgMatrix setelah instalasi. Silakan merujuk pada fitur aktual yang ditampilkan di perangkat lunak Anda."
   },
   "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "One-click automatic collection of target account fan lists, can be used for direct messaging"
+    "message": "Pengumpulan otomatis daftar penggemar akun target dengan satu klik, dapat digunakan untuk pengiriman pesan langsung",
+    "description": "The description of Fan collection"
   },
   "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark"
+    "message": "Pemanasan akun otomatis massal dengan satu klik, mendukung pencarian kata kunci, mengikuti acak, menyukai, berkomentar, dan menandai",
+    "description": "The description of Automatic account nurturing"
   },
   "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "One-click batch automatic commenting on multiple videos with specified scripts and random emojis"
+    "message": "Berkomentar otomatis massal pada banyak video dengan satu klik menggunakan skrip yang ditentukan dan emoji acak",
+    "description": "The description of Automatic commenting"
   },
   "One-click batch automatic direct messaging to multiple target users": {
-    "message": "One-click batch automatic direct messaging to multiple target users"
+    "message": "Pengiriman pesan langsung otomatis massal ke banyak pengguna target dengan satu klik",
+    "description": "The description of Automatic direct messaging"
   },
   "One-click batch automatic follow of target accounts": {
-    "message": "One-click batch automatic follow of target accounts"
+    "message": "Mengikuti akun target otomatis massal dengan satu klik",
+    "description": "The description of Automatic following"
   },
   "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts"
+    "message": "Login otomatis massal ke akun TikTok dengan satu klik, mendukung impor/ekspor akun secara massal",
+    "description": "The description of Automatic login"
   },
   "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "One-click batch automatic matching of logged-in accounts, no manual binding needed"
+    "message": "Pencocokan otomatis massal akun yang telah login dengan satu klik, tanpa perlu pengikatan manual",
+    "description": "The description of Automatic matching"
   },
   "One-click batch automatic posting, supports adding product links": {
-    "message": "One-click batch automatic posting, supports adding product links"
+    "message": "Posting otomatis massal dengan satu klik, mendukung penambahan tautan produk",
+    "description": "The description of Automatic posting"
   },
   "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "One-click batch automatic registration of TikTok accounts, supports business email"
+    "message": "Registrasi otomatis massal akun TikTok dengan satu klik, mendukung email bisnis",
+    "description": "The description of Automatic registration"
   },
   "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "One-click batch automatic setup of avatars, nicknames, signatures, usernames"
+    "message": "Pengaturan otomatis massal avatar, nama panggilan, tanda tangan, nama pengguna dengan satu klik",
+    "description": "The description of Automatic profile setup"
   },
   "One-click download of videos from all video websites": {
-    "message": "One-click download of videos from all video websites"
+    "message": "Unduh video dari semua situs web video dengan satu klik",
+    "description": "The description of Video download"
   },
   "One-click download of videos from the entire network": {
-    "message": "One-click download of videos from the entire network"
+    "message": "Unduh video dari seluruh jaringan dengan satu klik",
+    "description": "The description of Video collection"
   },
   "Open Source Client": {
-    "message": "Open Source Client"
+    "message": "Klien Sumber Terbuka"
   },
   "Open source client code allows users to customize their own client": {
-    "message": "Open source client code allows users to customize their own client"
+    "message": "Kode klien sumber terbuka memungkinkan pengguna untuk menyesuaikan klien mereka sendiri"
   },
   "Our Competitive Advantages": {
-    "message": "Our Competitive Advantages"
+    "message": "Keunggulan Kompetitif Kami",
+    "description": "The description of Our Competitive Advantages"
   },
   "Our Core Advantages": {
-    "message": "Our Core Advantages"
+    "message": "Keunggulan Inti Kami"
   },
   "Our Core Features": {
-    "message": "Our Core Features"
+    "message": "Fitur Inti Kami",
+    "description": "The description of Our Core Features"
   },
   "Our plans": {
-    "message": "Our plans"
+    "message": "Paket Kami"
   },
   "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate."
+    "message": "Sistem matriks perangkat asli milik kami menghindari langkah-langkah kontrol risiko TikTok dengan sempurna, menghasilkan tingkat penangguhan akun yang sangat rendah.",
+    "description": "The description of TikMatrix proprietary technology"
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
-    "message": "Our support team is here to help you with any IgMatrix-related questions or issues."
+    "message": "Tim dukungan kami di sini untuk membantu Anda dengan pertanyaan atau masalah terkait IgMatrix."
   },
   "Per Month": {
-    "message": "Per Month"
+    "message": "Per Bulan"
   },
   "Per Year": {
-    "message": "Per Year"
+    "message": "Per Tahun"
   },
   "Performance analytics": {
-    "message": "Performance analytics"
+    "message": "Analisis kinerja",
+    "description": "The description of Performance analytics"
   },
   "Phone screen mirroring to a computer": {
-    "message": "Phone screen mirroring to a computer"
+    "message": "Pencerminan layar ponsel ke komputer",
+    "description": "The description of Phone screen mirroring to a computer"
   },
   "Platform-optimized features": {
-    "message": "Platform-optimized features"
+    "message": "Fitur yang dioptimalkan platform"
   },
   "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
-    "message": "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software."
+    "message": "Silakan unduh IgMatrix untuk melihat daftar skrip secara langsung. Saat ini, tidak semua skrip TikMatrix didukung 100% di IgMatrix. Silakan merujuk pada fitur aktual di perangkat lunak."
   },
   "Post engagement boost": {
-    "message": "Post engagement boost"
+    "message": "Peningkatan interaksi postingan"
   },
   "Post management": {
-    "message": "Post management"
+    "message": "Manajemen postingan"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
-    "message": "Powerful Instagram automation tools designed for professional marketers and businesses"
+    "message": "Alat otomasi Instagram yang kuat dirancang untuk pemasar profesional dan bisnis"
   },
   "Powerful TikTok Automation & Management Tools": {
-    "message": "Powerful TikTok Automation & Management Tools"
+    "message": "Alat Otomasi & Manajemen TikTok yang Kuat",
+    "description": "The description of Powerful TikTok Automation & Management Tools"
   },
   "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
-    "message": "Powerful technical team with real-time maintenance and updates ensuring script reliability"
+    "message": "Tim teknis yang kuat dengan pemeliharaan dan pembaruan real-time memastikan keandalan skrip"
   },
   "Premium Benefits": {
-    "message": "Premium Benefits"
+    "message": "Manfaat Premium"
   },
   "Pricing": {
-    "message": "Pricing"
+    "message": "Harga"
   },
   "Private Local Deployment": {
-    "message": "Private Local Deployment"
+    "message": "Penerapan Lokal Privat"
   },
   "Professional TikTok Account Management & Marketing Tool": {
-    "message": "Professional TikTok Account Management & Marketing Tool"
+    "message": "Alat Manajemen Akun & Pemasaran TikTok Profesional",
+    "description": "The description of Professional TikTok Account Management & Marketing Tool"
   },
   "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
-    "message": "Professional TikTok Account Management & Marketing Tool for Windows & Mac"
+    "message": "Alat Manajemen Akun & Pemasaran TikTok Profesional untuk Windows & Mac"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
+    "message": "Alat manajemen akun dan pemasaran TikTok profesional yang dirancang untuk phone farm Android di Windows dan Mac. Otomatisasi posting, mengikuti, dan kembangkan kehadiran TikTok Anda dengan tingkat penangguhan akun nol.",
+    "description": "The description of Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
   },
   "Professional phone farm management": {
-    "message": "Professional phone farm management"
+    "message": "Manajemen phone farm profesional"
   },
   "Publish videos or images to TikTok with batch posting capabilities": {
-    "message": "Publish videos or images to TikTok with batch posting capabilities"
+    "message": "Publikasikan video atau gambar ke TikTok dengan kemampuan posting massal"
   },
   "Quick Setup Guide": {
-    "message": "Quick Setup Guide"
+    "message": "Panduan Pengaturan Cepat"
   },
   "Randomized script parameters to avoid behavior detection patterns": {
-    "message": "Randomized script parameters to avoid behavior detection patterns"
+    "message": "Parameter skrip acak untuk menghindari pola deteksi perilaku"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
-    "message": "Recognize and match TikTok accounts from phones to add to account list"
+    "message": "Kenali dan cocokkan akun TikTok dari ponsel untuk ditambahkan ke daftar akun"
   },
   "Recognize subtitles": {
-    "message": "Recognize subtitles"
+    "message": "Kenali subtitle",
+    "description": "The description of Recognize subtitles"
   },
   "Remove posts based on their view count for content optimization": {
-    "message": "Remove posts based on their view count for content optimization"
+    "message": "Hapus postingan berdasarkan jumlah tampilan untuk optimalisasi konten"
   },
   "Safe & Secure": {
-    "message": "Safe & Secure"
+    "message": "Aman & Terjamin"
   },
   "Same Setup Process": {
-    "message": "Same Setup Process"
+    "message": "Proses Pengaturan yang Sama"
   },
   "Same reliable technology as TikMatrix": {
-    "message": "Same reliable technology as TikMatrix"
+    "message": "Teknologi andal yang sama dengan TikMatrix"
   },
   "Save 50% compared to monthly plan": {
-    "message": "Save 50% compared to monthly plan"
+    "message": "Hemat 50% dibandingkan dengan paket bulanan"
   },
   "Schedule your Instagram activities with intelligent timing algorithms": {
-    "message": "Schedule your Instagram activities with intelligent timing algorithms"
+    "message": "Jadwalkan aktivitas Instagram Anda dengan algoritma waktu yang cerdas"
   },
   "Scheduled Tasks": {
-    "message": "Scheduled Tasks"
+    "message": "Tugas Terjadwal"
   },
   "Scrape TikTok usernames from followers lists or keyword searches": {
-    "message": "Scrape TikTok usernames from followers lists or keyword searches"
+    "message": "Kumpulkan nama pengguna TikTok dari daftar pengikut atau pencarian kata kunci"
   },
   "Script Parameter Randomization": {
-    "message": "Script Parameter Randomization"
+    "message": "Pengacakan Parameter Skrip"
   },
   "Script engine simulates natural human clicking with randomized button offset": {
-    "message": "Script engine simulates natural human clicking with randomized button offset"
+    "message": "Mesin skrip mensimulasikan klik manusia alami dengan offset tombol yang diacak"
   },
   "Scripts run on computer to avoid mobile device detection": {
-    "message": "Scripts run on computer to avoid mobile device detection"
+    "message": "Skrip berjalan di komputer untuk menghindari deteksi perangkat seluler"
   },
   "Send messages to multiple TikTok accounts in bulk with personalized content": {
-    "message": "Send messages to multiple TikTok accounts in bulk with personalized content"
+    "message": "Kirim pesan ke beberapa akun TikTok secara massal dengan konten yang dipersonalisasi"
   },
   "Set up account profiles including avatars, nicknames, signatures, and usernames": {
-    "message": "Set up account profiles including avatars, nicknames, signatures, and usernames"
+    "message": "Siapkan profil akun termasuk avatar, nama panggilan, tanda tangan, dan nama pengguna"
   },
   "Setup Tutorial": {
-    "message": "Setup Tutorial"
+    "message": "Tutorial Pengaturan"
   },
   "Shipping worldwide": {
-    "message": "Shipping worldwide"
+    "message": "Pengiriman ke seluruh dunia",
+    "description": "The shipping worldwide label"
   },
   "Simulates natural right-hand arc swipe trajectories like real human interaction": {
-    "message": "Simulates natural right-hand arc swipe trajectories like real human interaction"
+    "message": "Mensimulasikan lintasan geser lengkung tangan kanan alami seperti interaksi manusia nyata"
   },
   "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
-    "message": "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration."
+    "message": "Karena proses pengaturan identik, silakan merujuk pada dokumentasi TikMatrix komprehensif kami untuk instruksi terperinci tentang koneksi perangkat, manajemen akun, dan konfigurasi skrip."
   },
   "Smart Scheduling": {
-    "message": "Smart Scheduling"
+    "message": "Penjadwalan Cerdas"
   },
   "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
-    "message": "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust."
+    "message": "Mulai otomatisasi pemasaran Instagram Anda hari ini dengan IgMatrix dan rasakan alat tingkat profesional yang sama yang dipercaya ribuan pemasar."
   },
   "Still have questions?": {
-    "message": "Still have questions?"
+    "message": "Masih ada pertanyaan?"
   },
   "Streamline your Android TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "Streamline your Android TikTok phone farm with advanced batch control and marketing automation"
+    "message": "Sederhanakan phone farm TikTok Android Anda dengan kontrol massal canggih dan otomasi pemasaran"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-    "message": "Streamline your Instagram phone farm with advanced batch control and marketing automation"
+    "message": "Sederhanakan phone farm Instagram Anda dengan kontrol massal canggih dan otomasi pemasaran.",
+    "description": "The description of Streamline your Instagram phone farm with advanced batch control and marketing automation"
   },
   "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "Streamline your TikTok phone farm with advanced batch control and marketing automation"
+    "message": "Sederhanakan phone farm TikTok Anda dengan kontrol massal canggih dan otomasi pemasaran.",
+    "description": "The description of Streamline your TikTok phone farm with advanced batch control and marketing automation"
   },
   "Strong technical support team with open community ecosystem": {
-    "message": "Strong technical support team with open community ecosystem"
+    "message": "Tim dukungan teknis yang kuat dengan ekosistem komunitas terbuka"
   },
   "Super Marketing": {
-    "message": "Super Marketing"
+    "message": "Pemasaran Super"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Supports 100+ phones mirroring to a computer, with synchronized operation"
+    "message": "Mendukung 100+ ponsel dengan pencerminan ke komputer, dengan operasi tersinkronisasi"
   },
   "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Supports 200+ phones mirroring to a computer, with synchronized operation"
+    "message": "Mendukung 200+ ponsel dengan pencerminan ke komputer, dengan operasi tersinkronisasi",
+    "description": "The description of Phone screen mirroring to a computer"
   },
   "Supports work profile enterprise space for professional use": {
-    "message": "Supports work profile enterprise space for professional use"
+    "message": "Mendukung ruang perusahaan profil kerja untuk penggunaan profesional"
   },
   "Technical Advantages": {
-    "message": "Technical Advantages"
+    "message": "Keunggulan Teknis"
   },
   "Telegram": {
-    "message": "Telegram"
+    "message": "Telegram",
+    "description": "The telegram label"
   },
   "Telegram Support": {
-    "message": "Telegram Support"
+    "message": "Grup Dukungan Telegram"
   },
   "Text input mimics human typing patterns with character-by-character simulation": {
-    "message": "Text input mimics human typing patterns with character-by-character simulation"
+    "message": "Input teks meniru pola pengetikan manusia dengan simulasi per karakter"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "The length and width are relatively big, but the height is low(2u size)"
+    "message": "Panjang dan lebar relatif besar, tetapi tingginya rendah (ukuran 2u)",
+    "description": "The description of PhoneFarm Box"
   },
   "The length and width are relatively small, but the height is high": {
-    "message": "The length and width are relatively small, but the height is high"
+    "message": "Panjang dan lebar relatif kecil, tetapi tingginya tinggi",
+    "description": "The description of PhoneFarm Box"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections."
+    "message": "Mesin motherboard terdiri dari 20 motherboard ponsel Samsung. Ini menyala secara otomatis ketika terhubung ke listrik, berbagi catu daya terpadu, memiliki sistem pendingin multi-kipas terpadu, dan konektivitas USB terpadu. Ini juga mendukung koneksi jaringan kabel OTG.",
+    "description": "The description of PhoneFarm Box"
   },
   "TikMatrix": {
-    "message": "TikMatrix"
+    "message": "TikMatrix Matriks Perangkat Asli"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety."
+    "message": "TikMatrix memberikan keterlibatan setidaknya 30% lebih tinggi dibandingkan produk serupa, dengan teknologi perangkat asli canggih yang memastikan keamanan akun sepenuhnya.",
+    "description": "The description of TikMatrix competitive advantage"
   },
   "TikMatrix is a TikTok group control operation tool": {
-    "message": "TikMatrix adalah alat kontrol grup TikTok"
+    "message": "TikMatrix adalah alat operasi kontrol grup TikTok"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms": {
-    "message": "TikMatrix is a professional marketing software designed for TikTok phone farms"
+    "message": "TikMatrix adalah perangkat lunak pemasaran profesional yang dirancang untuk phone farm TikTok"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
+    "message": "TikMatrix adalah perangkat lunak pemasaran profesional yang dirancang untuk phone farm TikTok. Kelola beberapa akun, otomatisasi posting, dan skalakan pemasaran TikTok Anda dengan mudah.",
+    "description": "The description of TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
-    "message": "TikMatrix supports 8 TikTok accounts on each phone."
+    "message": "TikMatrix mendukung 8 akun TikTok di setiap ponsel."
   },
   "TikMatrix supports Android phones running Android 5.0 and above.": {
-    "message": "TikMatrix supports Android phones running Android 5.0 and above."
+    "message": "TikMatrix mendukung ponsel Android yang menjalankan Android 5.0 ke atas."
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app"
+    "message": "TikMatrix mendukung Windows 10 ke atas, dan macOS 10.15 atau lebih baru. Untuk pengguna Mac, setelah instalasi, Anda perlu menjalankan perintah berikut di Terminal untuk mengizinkan aplikasi berjalan: xattr -cr /Applications/TikMatrix.app",
+    "description": "电脑支持回答"
   },
   "TikMatrix supports up to 200+ devices.": {
-    "message": "TikMatrix supports up to 200+ devices."
+    "message": "TikMatrix mendukung hingga 200+ perangkat."
   },
   "Translate subtitles": {
-    "message": "Translate subtitles"
+    "message": "Terjemahkan subtitle",
+    "description": "The description of Translate subtitles"
   },
   "Trial": {
-    "message": "Trial"
+    "message": "Uji Coba"
   },
   "Tutorial": {
     "message": "Tutorial"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-    "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location"
+    "message": "Kartu SIM asli AS yang belum diaktivasi, Digunakan untuk aplikasi android TikTok untuk mendeteksi lokasi kartu SIM",
+    "description": "The description of PhoneFarm Box"
   },
   "Unlimited devices": {
-    "message": "Unlimited devices"
+    "message": "Perangkat tidak terbatas"
   },
   "Unlimited devices, Customer support": {
-    "message": "Unlimited devices, Customer support"
+    "message": "Perangkat tidak terbatas, Dukungan pelanggan"
   },
   "Unlimited process tasks": {
-    "message": "Unlimited process tasks"
+    "message": "Tugas proses tidak terbatas",
+    "description": "The description of Unlimited process tasks"
   },
   "User engagement boost": {
-    "message": "User engagement boost"
+    "message": "Peningkatan interaksi pengguna"
   },
   "User interface": {
-    "message": "User interface"
+    "message": "Antarmuka pengguna"
   },
   "User scraping": {
-    "message": "User scraping"
+    "message": "Pengumpulan pengguna"
   },
   "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency"
+    "message": "Video Magic adalah perangkat lunak pembuatan video profesional yang dirancang untuk operator. Ini dapat menghasilkan video unik untuk Anda, sangat meningkatkan efisiensi operasional.",
+    "description": "The description of Video Magic"
   },
   "Video Magic is a tool that can generate unique videos": {
-    "message": "Video Magic is a tool that can generate unique videos"
+    "message": "Video Magic adalah alat yang dapat menghasilkan video unik",
+    "description": "The description of Video Magic"
   },
   "Video collection": {
-    "message": "Video collection"
+    "message": "Pengumpulan video",
+    "description": "The description of Video collection"
   },
   "Video download": {
-    "message": "Video download"
+    "message": "Unduh video",
+    "description": "The description of Video download"
   },
   "Video posting, Account nurturing": {
-    "message": "Video posting, Account nurturing"
+    "message": "Posting video, Pemanasan akun"
   },
   "Video unique": {
-    "message": "Video unique"
+    "message": "Pembuatan video",
+    "description": "The description of Video unique"
   },
   "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Batch Generating Unique Videos"
+    "message": "VideoMagic - Pembuatan Video Unik secara Massal",
+    "description": "The description of Video Magic"
   },
   "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic is a Software for Batch Generating Unique Videos"
+    "message": "VideoMagic adalah Perangkat Lunak untuk Pembuatan Video Unik secara Massal",
+    "description": "The description of Video Magic"
   },
   "View TikMatrix Tutorial": {
-    "message": "View TikMatrix Tutorial"
+    "message": "Lihat Tutorial TikMatrix"
   },
   "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
-    "message": "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting"
+    "message": "Panaskan akun dengan mencari kata kunci, menonton video, mengikuti, menyukai, berkomentar, dan memfavoritkan"
   },
   "What computer can I use?": {
-    "message": "What computer can I use?"
+    "message": "Komputer apa yang dapat saya gunakan?",
+    "description": "电脑支持问题"
   },
   "What devices can I use?": {
-    "message": "What devices can I use?"
+    "message": "Perangkat apa yang dapat saya gunakan?"
   },
   "What is TikMatrix?": {
-    "message": "What is TikMatrix?"
+    "message": "Apa itu TikMatrix?"
   },
   "What is the difference between IgMatrix and TikMatrix?": {
-    "message": "What is the difference between IgMatrix and TikMatrix?"
+    "message": "Apa perbedaan antara IgMatrix dan TikMatrix?"
   },
   "Which scripts from TikMatrix are available in IgMatrix?": {
-    "message": "Which scripts from TikMatrix are available in IgMatrix?"
+    "message": "Skrip mana dari TikMatrix yang tersedia di IgMatrix?"
   },
   "Why Choose IgMatrix?": {
-    "message": "Why Choose IgMatrix?"
+    "message": "Mengapa Memilih IgMatrix?"
   },
   "Why TikMatrix?": {
-    "message": "Why TikMatrix?"
+    "message": "Mengapa TikMatrix?"
   },
   "Work Profile Support": {
-    "message": "Work Profile Support"
+    "message": "Dukungan Profil Kerja"
   },
   "Working Hours": {
-    "message": "Working Hours"
+    "message": "Jam Kerja",
+    "description": "The working hours label"
   },
   "Yearly": {
-    "message": "Yearly"
+    "message": "Tahunan"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
-    "message": "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform."
+    "message": "Ya! Tutorial pengaturan untuk IgMatrix identik dengan TikMatrix. Anda dapat mengikuti dokumentasi TikMatrix untuk instalasi, koneksi perangkat, dan konfigurasi dasar. Hanya skrip otomasi yang akan berbeda berdasarkan platform."
   },
   "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
-    "message": "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably."
+    "message": "Ya, IgMatrix dan TikMatrix memerlukan lisensi terpisah karena mereka adalah produk berbeda yang dioptimalkan untuk platform media sosial yang berbeda. Setiap lisensi terikat pada perangkat lunak tertentu dan tidak dapat digunakan secara bergantian."
   },
   "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
-    "message": "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix."
+    "message": "Anda dapat menginstal IgMatrix dan TikMatrix pada komputer yang sama, tetapi mereka tidak dapat berjalan secara bersamaan karena konflik runtime. Anda hanya dapat menjalankan satu perangkat lunak pada satu waktu - baik IgMatrix atau TikMatrix."
   },
   "advertising.back.home": {
-    "message": "advertising.back.home"
+    "message": "Kembali ke Beranda"
   },
   "advertising.buy.accounts.description": {
-    "message": "advertising.buy.accounts.description"
+    "message": "Pasar akun media sosial profesional"
   },
   "advertising.buy.accounts.leadsmm.description": {
-    "message": "advertising.buy.accounts.leadsmm.description"
+    "message": "Penyedia akun media sosial berkualitas tinggi, menawarkan layanan akun premium"
   },
   "advertising.buy.accounts.leadsmm.title": {
-    "message": "advertising.buy.accounts.leadsmm.title"
+    "message": "LeadsSMM - Beli Akun"
   },
   "advertising.buy.accounts.title": {
-    "message": "advertising.buy.accounts.title"
+    "message": "AccsMarket"
   },
   "advertising.buy.hardware.description": {
-    "message": "advertising.buy.hardware.description"
+    "message": "Perangkat keras phone farm dan otomasi profesional"
   },
   "advertising.buy.hardware.title": {
-    "message": "advertising.buy.hardware.title"
+    "message": "NiaoZun Shop"
   },
   "advertising.category.accounts": {
-    "message": "advertising.category.accounts"
+    "message": "Akun"
   },
   "advertising.category.analytics": {
-    "message": "advertising.category.analytics"
+    "message": "Alat Analisis"
   },
   "advertising.category.hardware": {
-    "message": "advertising.category.hardware"
+    "message": "Perangkat Keras"
   },
   "advertising.category.proxy": {
-    "message": "advertising.category.proxy"
+    "message": "Proxy"
   },
   "advertising.category.verification": {
-    "message": "advertising.category.verification"
+    "message": "Alat Verifikasi"
   },
   "advertising.category.vps": {
-    "message": "advertising.category.vps"
+    "message": "VPS"
   },
   "advertising.disclaimer.content": {
-    "message": "advertising.disclaimer.content"
+    "message": "Rekomendasi dan tautan berikut mengarah ke situs web dan layanan eksternal yang tidak dimiliki atau dioperasikan oleh TikMatrix. Kami menyediakan tautan ini hanya untuk kemudahan Anda. TikMatrix tidak mendukung, menjamin, atau bertanggung jawab atas keakuratan, kelengkapan, atau kegunaan informasi, produk, atau layanan yang disediakan oleh situs web pihak ketiga ini. Gunakan penilaian Anda sendiri saat berinteraksi dengan layanan eksternal."
   },
   "advertising.disclaimer.title": {
-    "message": "advertising.disclaimer.title"
+    "message": "Pernyataan Penting"
   },
   "advertising.page.subtitle": {
-    "message": "advertising.page.subtitle"
+    "message": "Alat dan layanan iklan yang direkomendasikan untuk meningkatkan pengalaman otomasi media sosial Anda"
   },
   "advertising.page.title": {
-    "message": "advertising.page.title"
+    "message": "Iklan & Mitra"
   },
   "advertising.proxy.proxycheap.description": {
-    "message": "advertising.proxy.proxycheap.description"
+    "message": "Solusi proxy terjangkau untuk berbagai kasus penggunaan"
   },
   "advertising.proxy.proxycheap.title": {
-    "message": "advertising.proxy.proxycheap.title"
+    "message": "Proxy-Cheap"
   },
   "advertising.proxy.thordata.description": {
-    "message": "advertising.proxy.thordata.description"
+    "message": "Proxy Residensial Terbaik — Stabil · Andal · Hemat Biaya\nDapatkan 1GB data uji coba gratis setelah registrasi"
   },
   "advertising.proxy.thordata.title": {
-    "message": "advertising.proxy.thordata.title"
+    "message": "Thordata"
   },
   "advertising.tiktok.user.finder.description": {
-    "message": "advertising.tiktok.user.finder.description"
+    "message": "Temukan dan analisis pengguna TikTok beserta datanya"
   },
   "advertising.tiktok.user.finder.title": {
-    "message": "advertising.tiktok.user.finder.title"
+    "message": "Pencari Pengguna TikTok"
   },
   "advertising.visit.button": {
-    "message": "advertising.visit.button"
+    "message": "Kunjungi Situs Web"
   },
   "advertising.vps.lisahost.description": {
-    "message": "advertising.vps.lisahost.description"
+    "message": "Layanan hosting VPS yang andal untuk proyek otomasi"
   },
   "advertising.vps.lisahost.title": {
-    "message": "advertising.vps.lisahost.title"
+    "message": "LisaHost"
   },
   "advertising.vps.uuuvps.description": {
-    "message": "advertising.vps.uuuvps.description"
+    "message": "Hosting VPS berkinerja tinggi dengan beberapa lokasi global"
   },
   "advertising.vps.uuuvps.title": {
-    "message": "advertising.vps.uuuvps.title"
+    "message": "UUUVPS"
   },
   "advertising.whatsapp.checker.description": {
-    "message": "advertising.whatsapp.checker.description"
+    "message": "Verifikasi nomor WhatsApp dan periksa statusnya"
   },
   "advertising.whatsapp.checker.title": {
-    "message": "advertising.whatsapp.checker.title"
+    "message": "Pemeriksa Nomor WhatsApp"
   },
   "download.description": {
-    "message": "download.description"
+    "message": "Unduh TikMatrix untuk Windows, Mac, dan Linux",
+    "description": "下载页面的描述"
   },
   "download.igmatrix.description": {
-    "message": "download.igmatrix.description"
+    "message": "Unduh IgMatrix untuk Windows, Mac, dan Linux",
+    "description": "IgMatrix下载页面的描述"
   },
   "download.igmatrix.linux.coming_soon": {
-    "message": "download.igmatrix.linux.coming_soon"
+    "message": "Segera Hadir",
+    "description": "IgMatrix Linux即将推出提示"
   },
   "download.igmatrix.linux.description": {
-    "message": "download.igmatrix.linux.description"
+    "message": "Versi Linux sedang dalam pengembangan",
+    "description": "IgMatrix Linux开发中描述"
   },
   "download.igmatrix.linux.development": {
-    "message": "download.igmatrix.linux.development"
+    "message": "Dalam Pengembangan",
+    "description": "IgMatrix Linux开发中状态"
   },
   "download.igmatrix.linux.title": {
-    "message": "download.igmatrix.linux.title"
+    "message": "Linux",
+    "description": "IgMatrix Linux平台标题"
   },
   "download.igmatrix.mac.button": {
-    "message": "download.igmatrix.mac.button"
+    "message": "Unduh Versi Mac",
+    "description": "IgMatrix Mac下载按钮文本"
   },
   "download.igmatrix.mac.description": {
-    "message": "download.igmatrix.mac.description"
+    "message": "macOS 10.15 atau lebih baru",
+    "description": "IgMatrix Mac平台描述"
   },
   "download.igmatrix.mac.install_tip": {
-    "message": "download.igmatrix.mac.install_tip"
+    "message": "Setelah instalasi, jalankan perintah berikut di Terminal untuk mengizinkan aplikasi berjalan:",
+    "description": "IgMatrix Mac安装后需要执行的命令提示"
   },
   "download.igmatrix.mac.title": {
-    "message": "download.igmatrix.mac.title"
+    "message": "Mac",
+    "description": "IgMatrix Mac平台标题"
   },
   "download.igmatrix.requirements.internet": {
-    "message": "download.igmatrix.requirements.internet"
+    "message": "Koneksi Internet: Diperlukan",
+    "description": "IgMatrix网络连接要求"
   },
   "download.igmatrix.requirements.memory": {
-    "message": "download.igmatrix.requirements.memory"
+    "message": "Memori: 8 GB RAM",
+    "description": "IgMatrix内存要求"
   },
   "download.igmatrix.requirements.os": {
-    "message": "download.igmatrix.requirements.os"
+    "message": "Sistem Operasi: Windows 10/11, macOS 10.15+, atau Ubuntu 20.04+",
+    "description": "IgMatrix操作系统要求"
   },
   "download.igmatrix.requirements.processor": {
-    "message": "download.igmatrix.requirements.processor"
+    "message": "Prosesor: Intel Core i5 atau setara",
+    "description": "IgMatrix处理器要求"
   },
   "download.igmatrix.requirements.storage": {
-    "message": "download.igmatrix.requirements.storage"
+    "message": "Ruang Penyimpanan: 500 MB ruang tersedia",
+    "description": "IgMatrix存储空间要求"
   },
   "download.igmatrix.requirements.title": {
-    "message": "download.igmatrix.requirements.title"
+    "message": "Persyaratan Sistem",
+    "description": "IgMatrix系统要求标题"
   },
   "download.igmatrix.subtitle": {
-    "message": "download.igmatrix.subtitle"
+    "message": "Pilih platform Anda untuk mengunduh IgMatrix",
+    "description": "IgMatrix下载页面的副标题"
   },
   "download.igmatrix.title": {
-    "message": "download.igmatrix.title"
+    "message": "Unduh IgMatrix",
+    "description": "IgMatrix下载页面的标题"
   },
   "download.igmatrix.windows.button": {
-    "message": "download.igmatrix.windows.button"
+    "message": "Unduh Versi Windows",
+    "description": "IgMatrix Windows下载按钮文本"
   },
   "download.igmatrix.windows.description": {
-    "message": "download.igmatrix.windows.description"
+    "message": "Windows 10/11 (64-bit)",
+    "description": "IgMatrix Windows平台描述"
   },
   "download.igmatrix.windows.title": {
-    "message": "download.igmatrix.windows.title"
+    "message": "Windows",
+    "description": "IgMatrix Windows平台标题"
   },
   "download.linux.coming_soon": {
-    "message": "download.linux.coming_soon"
+    "message": "Segera Hadir",
+    "description": "Linux即将推出提示"
   },
   "download.linux.description": {
-    "message": "download.linux.description"
+    "message": "Versi Linux sedang dalam pengembangan",
+    "description": "Linux开发中描述"
   },
   "download.linux.development": {
-    "message": "download.linux.development"
+    "message": "Dalam Pengembangan",
+    "description": "Linux开发中状态"
   },
   "download.linux.title": {
-    "message": "download.linux.title"
+    "message": "Linux",
+    "description": "Linux平台标题"
   },
   "download.mac.button": {
-    "message": "download.mac.button"
+    "message": "Unduh Versi Mac",
+    "description": "Mac下载按钮文本"
   },
   "download.mac.description": {
-    "message": "download.mac.description"
+    "message": "macOS 10.15 atau lebih baru",
+    "description": "Mac平台描述"
   },
   "download.mac.install_tip": {
-    "message": "download.mac.install_tip"
+    "message": "Setelah instalasi, jalankan perintah berikut di Terminal untuk mengizinkan aplikasi berjalan:",
+    "description": "Mac安装后需要执行的命令提示"
   },
   "download.mac.title": {
-    "message": "download.mac.title"
+    "message": "Mac",
+    "description": "Mac平台标题"
   },
   "download.requirements.internet": {
-    "message": "download.requirements.internet"
+    "message": "Koneksi Internet: Diperlukan",
+    "description": "网络连接要求"
   },
   "download.requirements.memory": {
-    "message": "download.requirements.memory"
+    "message": "Memori: 8 GB RAM",
+    "description": "内存要求"
   },
   "download.requirements.os": {
-    "message": "download.requirements.os"
+    "message": "Sistem Operasi: Windows 10/11, macOS 10.15+, atau Ubuntu 20.04+",
+    "description": "操作系统要求"
   },
   "download.requirements.processor": {
-    "message": "download.requirements.processor"
+    "message": "Prosesor: Intel Core i5 atau setara",
+    "description": "处理器要求"
   },
   "download.requirements.storage": {
-    "message": "download.requirements.storage"
+    "message": "Ruang Penyimpanan: 500 MB ruang tersedia",
+    "description": "存储空间要求"
   },
   "download.requirements.title": {
-    "message": "download.requirements.title"
+    "message": "Persyaratan Sistem",
+    "description": "系统要求标题"
   },
   "download.subtitle": {
-    "message": "download.subtitle"
+    "message": "Pilih platform Anda untuk mengunduh TikMatrix",
+    "description": "下载页面的副标题"
   },
   "download.title": {
-    "message": "download.title"
+    "message": "Unduh TikMatrix",
+    "description": "下载页面的标题"
   },
   "download.videomagic.description": {
-    "message": "download.videomagic.description"
+    "message": "Unduh VideoMagic untuk Windows, Mac, dan Linux",
+    "description": "VideoMagic下载页面的描述"
   },
   "download.videomagic.subtitle": {
-    "message": "download.videomagic.subtitle"
+    "message": "Pilih platform Anda untuk mengunduh VideoMagic",
+    "description": "VideoMagic下载页面的副标题"
   },
   "download.videomagic.title": {
-    "message": "download.videomagic.title"
+    "message": "Unduh VideoMagic",
+    "description": "VideoMagic下载页面的标题"
   },
   "download.windows.button": {
-    "message": "download.windows.button"
+    "message": "Unduh Versi Windows",
+    "description": "Windows下载按钮文本"
   },
   "download.windows.description": {
-    "message": "download.windows.description"
+    "message": "Windows 10/11 (64-bit)",
+    "description": "Windows平台描述"
   },
   "download.windows.title": {
-    "message": "download.windows.title"
+    "message": "Windows",
+    "description": "Windows平台标题"
   },
   "homepage.header.cta.download": {
-    "message": "homepage.header.cta.download"
+    "message": "Unduh Sekarang"
   },
   "homepage.header.cta.features": {
-    "message": "homepage.header.cta.features"
+    "message": "Lihat Fitur →"
   },
   "homepage.header.cta.primary": {
-    "message": "homepage.header.cta.primary"
+    "message": "Unduh TikMatrix"
   },
   "homepage.header.cta.secondary": {
-    "message": "homepage.header.cta.secondary"
+    "message": "Tutorial"
   },
   "homepage.header.defaultSubtitle": {
-    "message": "homepage.header.defaultSubtitle"
+    "message": "Optimalkan phone farm TikTok Android Anda dengan kontrol massal canggih dan otomasi pemasaran."
   },
   "homepage.header.defaultTitle": {
-    "message": "homepage.header.defaultTitle"
+    "message": "Alat Manajemen Akun & Pemasaran TikTok Profesional untuk Windows & Mac"
   },
   "homepage.header.subtitle": {
-    "message": "homepage.header.subtitle"
+    "message": "Jalankan perangkat secara massal, otomatisasi tugas, posting terjadwal, pemanasan cerdas — TikMatrix membuat operasi TikTok Anda 100% otomatis."
   },
   "homepage.header.title": {
-    "message": "homepage.header.title"
+    "message": "Otomasi TikTok, Dimulai dari Sini"
   },
   "homepage.vs.card.analytics.desc": {
-    "message": "homepage.vs.card.analytics.desc"
+    "message": "Pantau status tugas dan kinerja akun secara real-time, kuasai efek operasi dengan mudah"
   },
   "homepage.vs.card.analytics.title": {
-    "message": "homepage.vs.card.analytics.title"
+    "message": "Data Visual"
   },
   "homepage.vs.card.automation.desc": {
-    "message": "homepage.vs.card.automation.desc"
+    "message": "Mendukung operasi massal, alur skrip, posting terjadwal, mencakup semua kebutuhan bisnis TikTok"
   },
   "homepage.vs.card.automation.title": {
-    "message": "homepage.vs.card.automation.title"
+    "message": "Otomasi TikTok Profesional"
   },
   "homepage.vs.card.cta": {
-    "message": "homepage.vs.card.cta"
+    "message": "Pelajari Lebih Lanjut"
   },
   "homepage.vs.card.lowRisk.desc": {
-    "message": "homepage.vs.card.lowRisk.desc"
+    "message": "Simulasi operasi nyata, mengurangi risiko penangguhan, menjamin keamanan akun"
   },
   "homepage.vs.card.lowRisk.title": {
-    "message": "homepage.vs.card.lowRisk.title"
+    "message": "Risiko Rendah"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "homepage.vs.card.nodev.desc"
+    "message": "Fitur bawaan yang kuat, seret & lepas/operasi visual untuk menyelesaikan tugas kompleks"
   },
   "homepage.vs.card.nodev.title": {
-    "message": "homepage.vs.card.nodev.title"
+    "message": "Tanpa Perlu Pengembangan"
   },
   "homepage.vs.card.plug.desc": {
-    "message": "homepage.vs.card.plug.desc"
+    "message": "Tanpa perlu konfigurasi pengembangan, cepat dimulai, langsung berjalan"
   },
   "homepage.vs.card.plug.title": {
-    "message": "homepage.vs.card.plug.title"
+    "message": "Siap Pakai"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "homepage.vs.card.realDevices.desc"
+    "message": "Setiap tugas dijalankan pada perangkat nyata, menjamin perilaku dan efek yang konsisten dengan operasi manual"
   },
   "homepage.vs.card.realDevices.title": {
-    "message": "homepage.vs.card.realDevices.title"
+    "message": "Operasi Ponsel Nyata"
   },
   "homepage.vs.cta.button": {
-    "message": "homepage.vs.cta.button"
+    "message": "Coba TikMatrix Sekarang →"
   },
   "homepage.vs.cta.text": {
-    "message": "homepage.vs.cta.text"
+    "message": "Ingin meningkatkan efisiensi otomasi TikTok?"
   },
   "homepage.vs.subtitle": {
-    "message": "homepage.vs.subtitle"
+    "message": "Solusi profesional yang dirancang untuk otomasi TikTok"
   },
   "homepage.vs.title": {
-    "message": "homepage.vs.title"
+    "message": "Mengapa Memilih TikMatrix?"
   },
   "navbar.download": {
-    "message": "navbar.download"
+    "message": "Unduh",
+    "description": "导航栏下载链接文本"
   },
   "pricing.all_features": {
-    "message": "pricing.all_features"
+    "message": "Termasuk semua fitur",
+    "description": "包含所有功能文本"
   },
   "pricing.badge.popular": {
-    "message": "pricing.badge.popular"
+    "message": "Paling Populer"
   },
   "pricing.business.concurrent_tasks": {
-    "message": "pricing.business.concurrent_tasks"
+    "message": "Hingga 100 tugas otomasi bersamaan",
+    "description": "商业版并发任务数"
   },
   "pricing.business.description": {
-    "message": "pricing.business.description"
+    "message": "Cocok untuk perusahaan besar",
+    "description": "商业版计划描述"
   },
   "pricing.business.manage_phones": {
-    "message": "pricing.business.manage_phones"
+    "message": "Hingga 100 tugas otomasi bersamaan",
+    "description": "商业版计划功能"
   },
   "pricing.business.name": {
-    "message": "pricing.business.name"
+    "message": "Business",
+    "description": "商业版计划名称"
   },
   "pricing.compare.automation": {
-    "message": "pricing.compare.automation"
+    "message": "Tugas Otomasi"
   },
   "pricing.compare.devices": {
-    "message": "pricing.compare.devices"
+    "message": "Dukungan Perangkat"
   },
   "pricing.compare.hide": {
-    "message": "pricing.compare.hide"
+    "message": "Sembunyikan Perbandingan Fitur"
   },
   "pricing.compare.show": {
-    "message": "pricing.compare.show"
+    "message": "Lihat Perbandingan Fitur"
   },
   "pricing.cta.free": {
-    "message": "Start for free"
+    "message": "Gunakan Sekarang"
   },
   "pricing.cta.pay": {
-    "message": "Subscribe"
+    "message": "Berlangganan Sekarang"
   },
   "pricing.dedicated_support": {
-    "message": "pricing.dedicated_support"
+    "message": "Dukungan tiket khusus",
+    "description": "专属支持文本"
   },
   "pricing.free.all_free_features": {
-    "message": "pricing.free.all_free_features"
+    "message": "Semua fitur dasar (tidak termasuk tugas otomasi)",
+    "description": "免费计划基础功能描述"
   },
   "pricing.free.automation_disabled": {
-    "message": "pricing.free.automation_disabled"
+    "message": "Tugas otomasi tidak tersedia",
+    "description": "免费计划自动化不可用文本"
   },
   "pricing.free.community_support": {
-    "message": "pricing.free.community_support"
+    "message": "Dukungan komunitas",
+    "description": "免费计划支持方式"
   },
   "pricing.free.description": {
-    "message": "pricing.free.description"
+    "message": "Pengguna gratis dapat menghubungkan perangkat tak terbatas, tetapi tidak dapat menjalankan tugas otomasi",
+    "description": "免费计划描述"
   },
   "pricing.free.name": {
-    "message": "pricing.free.name"
+    "message": "Gratis",
+    "description": "免费计划名称"
   },
   "pricing.free_label": {
-    "message": "pricing.free_label"
+    "message": "Gratis",
+    "description": "Free label"
   },
   "pricing.get_started": {
-    "message": "pricing.get_started"
+    "message": "Mulai",
+    "description": "开始使用按钮文本"
   },
   "pricing.local_api.description": {
-    "message": "pricing.local_api.description"
+    "message": "Pengguna Pro, Team, dan Business dapat menggunakan RESTful API lokal untuk mengelola tugas dan otomatisasi alur kerja secara terprogram. Lihat dokumentasi."
   },
   "pricing.local_api.link_text": {
-    "message": "pricing.local_api.link_text"
+    "message": "Lihat Dokumentasi API Lokal"
   },
   "pricing.local_api.support": {
-    "message": "pricing.local_api.support"
+    "message": "Akses REST API Lokal (Pro+)"
   },
   "pricing.local_api.title": {
-    "message": "pricing.local_api.title"
+    "message": "API Lokal"
   },
   "pricing.per_month": {
-    "message": "pricing.per_month"
+    "message": "Per Bulan"
   },
   "pricing.per_month_pc": {
-    "message": "pricing.per_month_pc"
+    "message": "Per Bulan/Per PC",
+    "description": "每月每台电脑文本"
   },
   "pricing.per_year": {
-    "message": "pricing.per_year"
+    "message": "Per Tahun (Hemat 30%)"
   },
   "pricing.pro.concurrent_tasks": {
-    "message": "pricing.pro.concurrent_tasks"
+    "message": "Hingga 20 tugas otomasi bersamaan",
+    "description": "专业版并发任务数"
   },
   "pricing.pro.description": {
-    "message": "pricing.pro.description"
+    "message": "Cocok untuk profesional dan bisnis kecil",
+    "description": "专业版计划描述"
   },
   "pricing.pro.manage_phones": {
-    "message": "pricing.pro.manage_phones"
+    "message": "Hingga 20 tugas otomasi bersamaan",
+    "description": "专业版计划功能"
   },
   "pricing.pro.name": {
-    "message": "pricing.pro.name"
+    "message": "Pro",
+    "description": "专业版计划名称"
   },
   "pricing.starter.concurrent_tasks": {
-    "message": "pricing.starter.concurrent_tasks"
+    "message": "Hingga 5 tugas otomasi bersamaan",
+    "description": "入门版并发任务数"
   },
   "pricing.starter.description": {
-    "message": "pricing.starter.description"
+    "message": "Cocok untuk individu dan tim kecil",
+    "description": "入门版计划描述"
   },
   "pricing.starter.manage_phones": {
-    "message": "pricing.starter.manage_phones"
+    "message": "Hingga 5 tugas otomasi bersamaan",
+    "description": "入门版计划功能"
   },
   "pricing.starter.name": {
-    "message": "pricing.starter.name"
+    "message": "Starter",
+    "description": "入门版计划名称"
   },
   "pricing.subtitle": {
-    "message": "Choose the plan that fits your needs"
+    "message": "Paket fleksibel untuk semua orang. Dapatkan diskon 30% untuk pembayaran tahunan!",
+    "description": "定价部分副标题"
   },
   "pricing.team.concurrent_tasks": {
-    "message": "pricing.team.concurrent_tasks"
+    "message": "Hingga 50 tugas otomasi bersamaan",
+    "description": "团队版并发任务数"
   },
   "pricing.team.description": {
-    "message": "pricing.team.description"
+    "message": "Cocok untuk tim dan perusahaan yang berkembang",
+    "description": "团队版计划描述"
   },
   "pricing.team.manage_phones": {
-    "message": "pricing.team.manage_phones"
+    "message": "Hingga 50 tugas otomasi bersamaan",
+    "description": "团队版计划功能"
   },
   "pricing.team.name": {
-    "message": "pricing.team.name"
+    "message": "Team",
+    "description": "团队版计划名称"
   },
   "pricing.ticket_support": {
-    "message": "pricing.ticket_support"
+    "message": "Dukungan tiket khusus",
+    "description": "专属工单支持文本"
   },
   "pricing.title": {
-    "message": "Pricing Plans"
+    "message": "Harga",
+    "description": "定价部分标题"
   },
   "pricing.toggle.monthly": {
-    "message": "Monthly"
+    "message": "Bulanan"
   },
   "pricing.toggle.yearly": {
-    "message": "Yearly (Save 30%)"
+    "message": "Tahunan (Hemat 30%)"
   },
   "pricing.unlimited_devices": {
-    "message": "pricing.unlimited_devices"
+    "message": "Koneksi perangkat tak terbatas",
+    "description": "无限设备连接文本"
   },
   "pricing.unlimited_devices_short": {
-    "message": "pricing.unlimited_devices_short"
+    "message": "Tak Terbatas"
   },
   "tech.diagram.devices": {
-    "message": "Real Android Devices"
+    "message": "Perangkat Android Asli"
   },
   "tech.diagram.engine": {
-    "message": "TikMatrix Engine"
+    "message": "Mesin TikMatrix"
   },
   "tech.diagram.fingerprintIsolation": {
-    "message": "Device Fingerprint Isolation"
+    "message": "Isolasi Sidik Jari Perangkat"
   },
   "tech.diagram.localExecution": {
-    "message": "Local Execution"
+    "message": "Eksekusi Lokal"
   },
   "tech.diagram.noApi": {
-    "message": "No API Calls"
+    "message": "Tidak Memanggil API"
   },
   "tech.diagram.noMemoryInjection": {
-    "message": "No Memory Injection"
+    "message": "Tanpa Injeksi Memori"
   },
   "tech.diagram.realTouch": {
-    "message": "Real Touch Injection"
+    "message": "Injeksi Sentuhan Nyata"
   },
   "tech.diagram.tiktok": {
-    "message": "TikTok App"
+    "message": "Aplikasi TikTok"
   },
   "tech.diagram.user": {
-    "message": "User"
+    "message": "Pengguna"
   },
   "tech.diagram.zeroCloud": {
-    "message": "Zero Cloud Dependency"
+    "message": "Nol Ketergantungan Cloud"
   },
   "tech.point.fingerprint.b1": {
-    "message": "Unique IMEI / Android ID per device"
+    "message": "IMEI / Android ID unik untuk setiap perangkat"
   },
   "tech.point.fingerprint.b2": {
-    "message": "Isolated IP allocation via proxy"
+    "message": "IP terisolasi dialokasikan melalui proxy"
   },
   "tech.point.fingerprint.b3": {
-    "message": "No shared cookies or tokens"
+    "message": "Tidak ada Cookie atau token bersama"
   },
   "tech.point.fingerprint.desc": {
-    "message": "Each device maintains unique hardware and software fingerprints with no cross-contamination."
+    "message": "Setiap perangkat mempertahankan sidik jari perangkat keras dan perangkat lunak yang unik, tanpa kontaminasi silang."
   },
   "tech.point.fingerprint.title": {
-    "message": "Device Fingerprint Isolation"
+    "message": "Isolasi Sidik Jari Perangkat"
   },
   "tech.point.humanBehavior.b1": {
-    "message": "Randomized time intervals"
+    "message": "Interval waktu acak"
   },
   "tech.point.humanBehavior.b2": {
-    "message": "Natural scrolling velocity curves"
+    "message": "Kurva kecepatan scroll alami"
   },
   "tech.point.humanBehavior.b3": {
-    "message": "Session duration modeling"
+    "message": "Pemodelan durasi sesi"
   },
   "tech.point.humanBehavior.desc": {
-    "message": "Behavior patterns derived from real user data, avoiding detectable automation features."
+    "message": "Pola perilaku bersumber dari data pengguna nyata, menghindari fitur otomasi yang dapat dideteksi."
   },
   "tech.point.humanBehavior.title": {
-    "message": "Human Behavior Model"
+    "message": "Model Perilaku Seperti Manusia"
   },
   "tech.point.localExec.b1": {
-    "message": "No remote execution dependency"
+    "message": "Tanpa ketergantungan eksekusi jarak jauh"
   },
   "tech.point.localExec.b2": {
-    "message": "Complete data privacy"
+    "message": "Privasi data sepenuhnya"
   },
   "tech.point.localExec.b3": {
-    "message": "Optional offline deployment"
+    "message": "Penerapan offline opsional"
   },
   "tech.point.localExec.desc": {
-    "message": "Scripts execute on local machines via ADB - no cloud relay, no third-party servers."
+    "message": "Skrip dijalankan pada mesin lokal melalui ADB — tanpa relay cloud, tanpa server pihak ketiga."
   },
   "tech.point.localExec.title": {
-    "message": "Local Execution Sandbox"
+    "message": "Sandbox Eksekusi Lokal"
   },
   "tech.point.passiveCapture.b1": {
-    "message": "Zero code injection into TikTok"
+    "message": "Nol injeksi kode TikTok"
   },
   "tech.point.passiveCapture.b2": {
-    "message": "Read-only screen capture"
+    "message": "Tangkapan layar hanya baca"
   },
   "tech.point.passiveCapture.b3": {
-    "message": "No modification of app binaries"
+    "message": "Kompatibel dengan versi aplikasi apa pun"
   },
   "tech.point.passiveCapture.desc": {
-    "message": "Extract screen data via OCR and computer vision - no in-app hooks or memory injection."
+    "message": "Ekstrak data layar melalui OCR dan computer vision — tanpa Hook atau injeksi memori dalam aplikasi."
   },
   "tech.point.passiveCapture.title": {
-    "message": "Passive Capture Mode"
+    "message": "Mode Tangkapan Pasif"
   },
   "tech.point.realTouch.b1": {
-    "message": "Hardware-level touch signal generation"
+    "message": "Generasi sinyal sentuhan tingkat perangkat keras"
   },
   "tech.point.realTouch.b2": {
-    "message": "Pressure and velocity randomization"
+    "message": "Tekanan dan kecepatan acak"
   },
   "tech.point.realTouch.b3": {
-    "message": "Arc trajectory simulation"
+    "message": "Simulasi lintasan lengkung"
   },
   "tech.point.realTouch.desc": {
-    "message": "Inject real touch events at the Android input layer, indistinguishable from human interaction behavior."
+    "message": "Menyuntikkan peristiwa sentuhan nyata pada lapisan input Android, tidak dapat dibedakan dari interaksi manusia."
   },
   "tech.point.realTouch.title": {
-    "message": "Real Touch Injection"
+    "message": "Injeksi Sentuhan Nyata"
   },
   "tech.point.zeroApi.b1": {
-    "message": "No API token exposure"
+    "message": "Tidak ada paparan token API"
   },
   "tech.point.zeroApi.b2": {
-    "message": "No request signature forgery"
+    "message": "Tidak ada pemalsuan tanda tangan permintaan"
   },
   "tech.point.zeroApi.b3": {
-    "message": "Not affected by API rate limits"
+    "message": "Tidak terpengaruh oleh batas laju API"
   },
   "tech.point.zeroApi.desc": {
-    "message": "No TikTok API calls, no network request interception. All operations completed at the UI layer."
+    "message": "Tidak memanggil API TikTok, tidak mencegat permintaan jaringan. Semua operasi diselesaikan pada lapisan UI."
   },
   "tech.point.zeroApi.title": {
-    "message": "Zero API Automation"
+    "message": "Otomasi Tanpa API"
   },
   "tech.points.heading": {
-    "message": "Core Technology Implementation"
+    "message": "Implementasi Teknologi Inti"
   },
   "tech.security.heading": {
-    "message": "tech.security.heading"
+    "message": "Evaluasi Tingkat Keamanan"
   },
   "tech.security.humanModel": {
-    "message": "tech.security.humanModel"
+    "message": "Model Perilaku Seperti Manusia"
   },
   "tech.security.legendA": {
-    "message": "tech.security.legendA"
+    "message": "Sangat Baik"
   },
   "tech.security.legendB": {
-    "message": "tech.security.legendB"
+    "message": "Baik"
   },
   "tech.security.legendC": {
-    "message": "tech.security.legendC"
+    "message": "Opsional"
   },
   "tech.security.noHook": {
-    "message": "tech.security.noHook"
+    "message": "Tanpa Injeksi / Tanpa Hook"
   },
   "tech.security.noiseCurve": {
-    "message": "tech.security.noiseCurve"
+    "message": "Kurva Noise Perilaku"
   },
   "tech.security.proxyIsolation": {
-    "message": "tech.security.proxyIsolation"
+    "message": "Isolasi Proxy Opsional"
   },
   "tech.security.realDevice": {
-    "message": "tech.security.realDevice"
+    "message": "Lingkungan Perangkat Asli"
   },
   "tech.security.zeroApi": {
-    "message": "tech.security.zeroApi"
+    "message": "Operasi Tanpa API"
   },
   "tech.subtitle": {
-    "message": "Anti-detection Architecture Built on Real Device Automation"
+    "message": "Arsitektur anti-deteksi yang dibangun berdasarkan prinsip otomasi perangkat asli"
   },
   "tech.title": {
-    "message": "Technology Advantages"
+    "message": "Keunggulan Teknologi"
   },
   "testimonials.subtitle": {
-    "message": "Real feedback from TikMatrix users"
+    "message": "Apa yang dikatakan pengguna TikMatrix",
+    "description": "用户评价部分副标题"
   },
   "testimonials.title": {
-    "message": "What Our Users Say"
+    "message": "Ulasan Pengguna Asli",
+    "description": "用户评价部分标题"
   },
   "testimonials.usage_label": {
-    "message": "testimonials.usage_label"
+    "message": "Durasi Penggunaan",
+    "description": "使用时长标签"
   },
   "testimonials.user1.text": {
-    "message": "testimonials.user1.text"
+    "message": "TikMatrix adalah penyelamat untuk studio kami! Kami dapat mengontrol begitu banyak ponsel secara bersamaan, fitur otomasi sangat kuat. Posting dan pemanasan akun menjadi jauh lebih mudah. Pencegahan deteksi TikTok benar-benar berfungsi — postingan kami mendapat lebih banyak lalu lintas organik daripada sebelumnya.",
+    "description": "第一个用户评价文本"
   },
   "testimonials.user1.usage": {
-    "message": "testimonials.user1.usage"
+    "message": "1 tahun",
+    "description": "第一个用户使用时长"
   },
   "testimonials.user2.text": {
-    "message": "testimonials.user2.text"
+    "message": "Setelah menggunakan TikMatrix, efisiensi tim iklan kami melonjak. Skrip otomasi menghemat banyak pekerjaan manual, akun tetap aman — sejauh ini tidak ada penangguhan. Sangat sempurna untuk agensi seperti kami!",
+    "description": "第二个用户评价文本"
   },
   "testimonials.user2.usage": {
-    "message": "testimonials.user2.usage"
+    "message": "10 bulan",
+    "description": "第二个用户使用时长"
   },
   "testimonials.user3.text": {
-    "message": "testimonials.user3.text"
+    "message": "Mengontrol 100 ponsel secara bersamaan mengubah permainan. Operasi massal sangat nyaman, postingan TikTok kami mendapat jangkauan organik yang lebih banyak. Sangat cocok untuk pemasaran luar negeri, harganya juga terjangkau!",
+    "description": "第三个用户评价文本"
   },
   "testimonials.user3.usage": {
-    "message": "testimonials.user3.usage"
+    "message": "6 bulan",
+    "description": "第三个用户使用时长"
   },
   "testimonials.user4.text": {
-    "message": "testimonials.user4.text"
+    "message": "Sebelumnya mencoba alat lain, tetapi TikMatrix adalah yang paling tanpa khawatir. Otomasi dan pencegahan penangguhan sangat andal. Sangat cocok untuk tim pemasaran yang memerlukan operasi massal efisien.",
+    "description": "第四个用户评价文本"
   },
   "testimonials.user4.usage": {
-    "message": "testimonials.user4.usage"
+    "message": "8 bulan",
+    "description": "第四个用户使用时长"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "theme.AnnouncementBar.closeButtonAriaLabel"
+    "message": "Tutup",
+    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "theme.BackToTopButton.buttonAriaLabel"
+    "message": "Kembali ke atas",
+    "description": "The ARIA label for the back to top button"
   },
   "theme.CodeBlock.copied": {
-    "message": "theme.CodeBlock.copied"
+    "message": "Berhasil disalin",
+    "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copy": {
-    "message": "theme.CodeBlock.copy"
+    "message": "Salin",
+    "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "theme.CodeBlock.copyButtonAriaLabel"
+    "message": "Salin kode ke clipboard",
+    "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "theme.CodeBlock.wordWrapToggle"
+    "message": "Aktifkan/Nonaktifkan pembungkusan otomatis",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "theme.DocSidebarItem.collapseCategoryAriaLabel"
+    "message": "Tutup kategori sidebar '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "theme.DocSidebarItem.expandCategoryAriaLabel"
+    "message": "Buka kategori sidebar '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
   },
   "theme.ErrorPageContent.title": {
-    "message": "theme.ErrorPageContent.title"
+    "message": "Halaman telah crash.",
+    "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "theme.ErrorPageContent.tryAgain"
+    "message": "Coba lagi",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "theme.NavBar.navAriaLabel"
+    "message": "Navigasi utama",
+    "description": "The ARIA label for the main navigation"
   },
   "theme.NotFound.p1": {
-    "message": "theme.NotFound.p1"
+    "message": "Kami tidak dapat menemukan halaman yang Anda cari.",
+    "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "theme.NotFound.p2"
+    "message": "Silakan hubungi pemilik situs web yang menautkan ke tautan asli dan beri tahu mereka bahwa tautan tersebut rusak.",
+    "description": "The 2nd paragraph of the 404 page"
   },
   "theme.NotFound.title": {
-    "message": "theme.NotFound.title"
+    "message": "Halaman tidak ditemukan",
+    "description": "The title of the 404 page"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "theme.TOCCollapsible.toggleButtonLabel"
+    "message": "Di Halaman Ini",
+    "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.admonition.caution": {
-    "message": "theme.admonition.caution"
+    "message": "Peringatan",
+    "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "theme.admonition.danger"
+    "message": "Bahaya",
+    "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "theme.admonition.info"
+    "message": "Informasi",
+    "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "theme.admonition.note"
+    "message": "Catatan",
+    "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "theme.admonition.tip"
+    "message": "Tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
-    "message": "theme.admonition.warning"
+    "message": "Perhatian",
+    "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.archive.description": {
-    "message": "theme.blog.archive.description"
+    "message": "Arsip blog",
+    "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.archive.title": {
-    "message": "theme.blog.archive.title"
+    "message": "Arsip blog",
+    "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "theme.blog.paginator.navAriaLabel"
+    "message": "Navigasi paginasi daftar blog",
+    "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "theme.blog.paginator.newerEntries"
+    "message": "Entri lebih baru",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "theme.blog.paginator.olderEntries"
+    "message": "Entri lebih lama",
+    "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "theme.blog.post.paginator.navAriaLabel"
+    "message": "Navigasi paginasi posting blog",
+    "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "theme.blog.post.paginator.newerPost"
+    "message": "Posting lebih baru",
+    "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "theme.blog.post.paginator.olderPost"
+    "message": "Posting lebih lama",
+    "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "theme.blog.post.plurals"
+    "message": "{count} posting",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMore": {
-    "message": "theme.blog.post.readMore"
+    "message": "Baca selengkapnya",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "theme.blog.post.readMoreLabel"
+    "message": "Baca {title} selengkapnya",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "theme.blog.post.readingTime.plurals"
+    "message": "Waktu baca {readingTime} menit",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "theme.blog.sidebar.navAriaLabel"
+    "message": "Navigasi posting terbaru",
+    "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.blog.tagTitle": {
-    "message": "theme.blog.tagTitle"
+    "message": "{nPosts} dengan tag '{tagName}'",
+    "description": "The title of the page for a blog tag"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "theme.colorToggle.ariaLabel"
+    "message": "Beralih antara mode terang/gelap (saat ini {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "theme.colorToggle.ariaLabel.mode.dark"
+    "message": "mode gelap",
+    "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "theme.colorToggle.ariaLabel.mode.light"
+    "message": "mode terang",
+    "description": "The name for the light color mode"
   },
   "theme.common.editThisPage": {
-    "message": "theme.common.editThisPage"
+    "message": "Edit halaman ini",
+    "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "theme.common.headingLinkTitle"
+    "message": "Tautan langsung ke {heading}",
+    "description": "Title for link to heading"
   },
   "theme.common.skipToMainContent": {
-    "message": "theme.common.skipToMainContent"
+    "message": "Lewati ke konten utama",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "theme.docs.DocCard.categoryDescription.plurals"
+    "message": "{count} item",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "theme.docs.breadcrumbs.home"
+    "message": "Halaman Beranda",
+    "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "theme.docs.breadcrumbs.navAriaLabel"
+    "message": "Jalur halaman",
+    "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "theme.docs.paginator.navAriaLabel"
+    "message": "Tab dokumen",
+    "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.next": {
-    "message": "theme.docs.paginator.next"
+    "message": "Berikutnya",
+    "description": "The label used to navigate to the next doc"
   },
   "theme.docs.paginator.previous": {
-    "message": "theme.docs.paginator.previous"
+    "message": "Sebelumnya",
+    "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "theme.docs.sidebar.closeSidebarButtonAriaLabel"
+    "message": "Tutup bilah navigasi",
+    "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "theme.docs.sidebar.collapseButtonAriaLabel"
+    "message": "Tutup sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "theme.docs.sidebar.collapseButtonTitle"
+    "message": "Tutup sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "theme.docs.sidebar.expandButtonAriaLabel"
+    "message": "Buka sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "theme.docs.sidebar.expandButtonTitle"
+    "message": "Buka sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "theme.docs.sidebar.navAriaLabel"
+    "message": "Sidebar dokumentasi",
+    "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "theme.docs.sidebar.toggleSidebarButtonAriaLabel"
+    "message": "Aktifkan/Nonaktifkan bilah navigasi",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "theme.docs.tagDocListPageTitle"
+    "message": "{nDocsTagged} '{tagName}'",
+    "description": "The title of the page for a docs tag"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "theme.docs.tagDocListPageTitle.nDocsTagged"
+    "message": "{count} dokumen ditandai",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.versionBadge.label": {
-    "message": "theme.docs.versionBadge.label"
+    "message": "Versi: {versionLabel}"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "theme.docs.versions.latestVersionLinkLabel"
+    "message": "Versi terbaru",
+    "description": "The label used for the latest version suggestion link label"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "theme.docs.versions.latestVersionSuggestionLabel"
+    "message": "Untuk dokumentasi terbaru, lihat {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "theme.docs.versions.unmaintainedVersionLabel"
+    "message": "Ini adalah dokumentasi untuk {siteTitle} {versionLabel}, yang sekarang tidak lagi dipelihara secara aktif.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "theme.docs.versions.unreleasedVersionLabel"
+    "message": "Ini adalah dokumentasi untuk {siteTitle} {versionLabel} yang belum dirilis.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.footer.link.label.View All Advertising": {
     "message": "Lihat Semua Iklan"
@@ -1572,13 +1790,16 @@
     "message": "Lihat Semua Alat"
   },
   "theme.lastUpdated.atDate": {
-    "message": "theme.lastUpdated.atDate"
+    "message": "pada {date} ",
+    "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": "theme.lastUpdated.byUser"
+    "message": "oleh {user} ",
+    "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "theme.lastUpdated.lastUpdatedAtBy"
+    "message": "Terakhir diperbarui {byUser}{atDate}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.item.label.Advertising": {
     "message": "Iklan"
@@ -1587,63 +1808,83 @@
     "message": "Alat"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "theme.navbar.mobileLanguageDropdown.label"
+    "message": "Pilih bahasa",
+    "description": "The label for the mobile language switcher dropdown"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel"
+    "message": "← Kembali ke menu utama",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "theme.navbar.mobileVersionsDropdown.label"
+    "message": "Pilih versi",
+    "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
-    "message": "theme.tags.tagsListLabel"
+    "message": "Tag:",
+    "description": "The label alongside a tag list"
   },
   "theme.tags.tagsPageLink": {
-    "message": "theme.tags.tagsPageLink"
+    "message": "Lihat semua tag",
+    "description": "The label of the link targeting the tag list page"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "theme.tags.tagsPageTitle"
+    "message": "Tag",
+    "description": "The title of the tag list page"
   },
   "theme.unlistedContent.message": {
-    "message": "theme.unlistedContent.message"
+    "message": "Halaman ini tidak terdaftar. Mesin pencari tidak akan mengindeksnya, dan hanya pengguna dengan tautan langsung yang dapat mengaksesnya.",
+    "description": "The unlisted content banner message"
   },
   "theme.unlistedContent.title": {
-    "message": "theme.unlistedContent.title"
+    "message": "Halaman Tidak Terdaftar",
+    "description": "The unlisted content banner title"
   },
   "whitelabel.annualRequired": {
-    "message": "whitelabel.annualRequired"
+    "message": "Memerlukan langganan tahunan",
+    "description": "白标功能需要年付订阅"
   },
   "whitelabel.annualRequiredDesc": {
-    "message": "whitelabel.annualRequiredDesc"
+    "message": "Fitur white label hanya tersedia untuk pengguna berlangganan tahunan. Setelah membeli paket tahunan, silakan hubungi layanan pelanggan melalui Telegram untuk mendapatkan kode pembuka.",
+    "description": "白标功能年付订阅说明"
   },
   "whitelabel.appName": {
-    "message": "whitelabel.appName"
+    "message": "Nama Aplikasi",
+    "description": "应用名称"
   },
   "whitelabel.contactSupport": {
-    "message": "whitelabel.contactSupport"
+    "message": "Hubungi layanan pelanggan untuk mendapatkan kode pembuka",
+    "description": "联系客服获取白标解锁码"
   },
   "whitelabel.customization": {
-    "message": "whitelabel.customization"
+    "message": "Kustomisasi Merek",
+    "description": "品牌定制"
   },
   "whitelabel.description": {
-    "message": "whitelabel.description"
+    "message": "Sesuaikan identitas merek TikMatrix agar sesuai dengan citra perusahaan Anda",
+    "description": "白标功能描述"
   },
   "whitelabel.logo": {
-    "message": "whitelabel.logo"
+    "message": "Logo",
+    "description": "Logo"
   },
   "whitelabel.setup": {
-    "message": "whitelabel.setup"
+    "message": "Pengaturan White Label",
+    "description": "白标设置"
   },
   "whitelabel.supportEmail": {
-    "message": "whitelabel.supportEmail"
+    "message": "Email Dukungan",
+    "description": "支持邮箱"
   },
   "whitelabel.telegramUrl": {
-    "message": "whitelabel.telegramUrl"
+    "message": "Tautan Telegram",
+    "description": "Telegram链接"
   },
   "whitelabel.title": {
-    "message": "whitelabel.title"
+    "message": "Fitur White Label",
+    "description": "白标功能标题"
   },
   "whitelabel.tutorialUrl": {
-    "message": "whitelabel.tutorialUrl"
+    "message": "Tautan Tutorial",
+    "description": "教程链接"
   }
 }

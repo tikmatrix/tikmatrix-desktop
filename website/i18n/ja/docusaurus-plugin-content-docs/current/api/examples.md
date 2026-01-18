@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
 title: API 示例
-description: 使用 TikMatrix 本地 API 的代码示例
+description: 使用 TikMatrix 本地 API の代码示例
 ---
 
-本页面提供了在不同编程语言中使用 TikMatrix 本地 API 的示例代码。
+本页面提供在異なる编程言語中使用 TikMatrix 本地 API の示例代码。
 
 ## Python
 
@@ -290,7 +290,7 @@ Write-Host "任务已创建: $($result | ConvertTo-Json)"
 
 ## 常见使用场景
 
-### 为多个设备批量创建任务
+### に複数デバイス一括创建タスク
 
 ```python
 # Python 示例：为所有已连接设备创建关注任务
@@ -306,7 +306,7 @@ result = create_task(
 print(f"已创建 {result['data']['created_count']} 个任务")
 ```
 
-### 监控任务进度
+### 监控タスク进度
 
 ```python
 import time
@@ -331,7 +331,7 @@ def wait_for_completion(task_ids, timeout=300):
     return False
 ```
 
-### 自动重试失败任务
+### 自動再試行失败タスク
 
 ```python
 def auto_retry_failed(max_retries=3):

@@ -1,72 +1,72 @@
 ---
 slug: proxy-selection-101
-title: 🛠 代理选择入门 — 动态住宅 vs 静态住宅
+title: 🛠 Selección de proxies 101 — Residencial dinámico vs Residencial estático
 authors: tikMatrix
 tags: [代理, 风控, TikTok 营销, 自动化, TikMatrix]
 ---
 
-> 选对代理，增长更稳、风控更少。  
-> 给 TikMatrix 用户的一份**简明实战指南**。
+> Elige el proxy correcto, crece de forma más estable con menos control de riesgos.  
+> Una **guía práctica concisa** para usuarios de TikMatrix.
 
 <!-- truncate -->
 ---
-![TikTok 代理选择](/img/blog/proxy-selection.webp)
+![Selección de proxies TikTok](/img/blog/proxy-selection.webp)
 
-## 🔹 1. 新注册与首次登录 → 用**动态住宅代理**（按流量计费）
+## 🔹 1. Nuevo registro e inicio de sesión inicial → Usa **proxies residenciales dinámicos** (facturación por tráfico)
 
-- **原因：**高熵轮换，降低多次尝试之间的关联；更像不同住户。  
-- **适用：**创建/预热 **新号**。  
-- **要点：**控制并发，**每次尝试或每场会话**轮换；国家/语言与目标市场一致。
-
----
-
-## 🔷 2. 长期运营 → 用**静态住宅代理**（按数量计费）
-
-- **原因：**稳定 IP 累积**信任历史**（ASN、rDNS、时延更一致）。  
-- **适用：**已预热/老号的日常运营。  
-- **要点：**尽量 **一设备：一 IP**；若必须共享，避免给高风险账号共用。
-
-> 💡 共享策略按风险自定。更稳：**1 机 1 IP**；中等：**2–3 机/IP**，并**错峰**执行、行为分离。
+- **Razón:** Rotación de alta entropía, reduce la asociación entre múltiples intentos; más parecido a diferentes residentes.  
+- **Aplicable:** Crear/calentar **cuentas nuevas**.  
+- **Puntos clave:** Controla la concurrencia, **rota en cada intento o sesión**; país/idioma consistente con mercado objetivo.
 
 ---
 
-## 🧩 3. 快速对比
+## 🔷 2. Operación a largo plazo → Usa **proxies residenciales estáticos** (facturación por cantidad)
 
-| 维度 | 动态住宅（流量计费） | 静态住宅（按量计费） |
+- **Razón:** IP estable acumula **historial de confianza** (ASN, rDNS, latencia más consistente).  
+- **Aplicable:** Operaciones diarias de cuentas precalentadas/antiguas.  
+- **Puntos clave:** Preferiblemente **1 dispositivo : 1 IP**; si es necesario compartir, evita compartir con cuentas de alto riesgo.
+
+> 💡 Estrategia de compartición personalizable según riesgo. Más estable: **1 máquina 1 IP**; medio: **2–3 máquinas/IP** con ejecución escalonada y comportamiento separado.
+
+---
+
+## 🧩 3. Comparación rápida
+
+| Dimensión | Residencial dinámico (tráfico) | Residencial estático (cantidad) |
 |---|---|---|
-| 场景 | 注册 / 首登 | 长期日常 |
-| 稳定性 | 低–中（轮换） | **高**（固定） |
-| 关联性 | **低** | 中（若共享） |
-| 风险 | 初期规避佳 | 长期信任佳 |
-| 成本 | 按 GB | 按 IP |
+| Escenario | Registro / Primera conexión | Diario a largo plazo |
+| Estabilidad | Baja–Media (rotación) | **Alta** (fija) |
+| Asociación | **Baja** | Media (si compartida) |
+| Riesgo | Buena evasión inicial | Buena confianza a largo plazo |
+| Costo | Por GB | Por IP |
 
 ---
 
-## ⚙️ 4. 运营护栏
+## ⚙️ 4. Barreras operacionales
 
-- **区域一致：**国家/时区/语言与内容市场匹配  
-- **轮换规则：**动态 → 每次尝试/会话轮换；静态 → 出现异常再换  
-- **设备隔离：**代理账号与设备绑定；不共享会话  
-- **健康检查：**whoer/ipapi 测试；关注时延与丢包  
-- **兜底池：**预留少量备用静态 IP 以便快速切换
-
----
-
-## ✅ 5. 速查清单
-
-- 新号 → **动态住宅**  
-- 老号/长期 → **静态住宅**  
-- **优先 1 机 1 IP**；如需共享，错峰 + 行为隔离  
-- 保持地理一致；避免住宅与 VPN 混用
+- **Consistencia regional:** País/zona horaria/idioma coincide con mercado de contenido  
+- **Reglas de rotación:** Dinámico → rota en cada intento/sesión; Estático → cambia solo cuando hay anomalías  
+- **Aislamiento de dispositivo:** Vincular proxy-cuenta con dispositivo; no compartir sesiones  
+- **Verificación de salud:** Prueba whoer/ipapi; atención a latencia y pérdida de paquetes  
+- **Pool de respaldo:** Reserva algunos IPs estáticos de respaldo para cambios rápidos
 
 ---
 
-## 🏁 结语
+## ✅ 5. Lista de verificación rápida
 
-**一致性 = 安全增长。** 先用动态住宅**干净进入**，再切静态住宅**长期稳定**，累积信任。
-
-👉 [访问 TikMatrix.com](https://www.tikmatrix.com)
+- Cuentas nuevas → **Residencial dinámico**  
+- Cuentas antiguas/largo plazo → **Residencial estático**  
+- **Priorizar 1 máquina 1 IP**; si se comparte, escalonar + aislar comportamiento  
+- Mantener consistencia geográfica; evitar mezclar residencial con VPN
 
 ---
 
-_本文基于 TikMatrix 手机农场在不同代理形态下的实战经验。_
+## 🏁 Conclusión
+
+**Consistencia = crecimiento seguro.** Primero usa dinámico residencial para **entrada limpia**, luego cambia a estático residencial para **estabilidad a largo plazo** y acumular confianza.
+
+👉 [Visita TikMatrix.com](https://www.tikmatrix.com)
+
+---
+
+_Este artículo se basa en experiencia práctica de TikMatrix con granjas de teléfonos en diferentes configuraciones de proxy._

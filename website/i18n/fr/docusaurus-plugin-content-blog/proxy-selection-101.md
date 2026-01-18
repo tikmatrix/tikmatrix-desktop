@@ -1,72 +1,72 @@
 ---
 slug: proxy-selection-101
-title: 🛠 代理选择入门 — 动态住宅 vs 静态住宅
+title: 🛠 Guide de Sélection de Proxies — Résidentiel Rotatif vs Résidentiel Statique
 authors: tikMatrix
-tags: [代理, 风控, TikTok 营销, 自动化, TikMatrix]
+tags: [Proxies, Contrôle des risques, Marketing TikTok, Automatisation, TikMatrix]
 ---
 
-> 选对代理，增长更稳、风控更少。  
-> 给 TikMatrix 用户的一份**简明实战指南**。
+> Choisir le bon proxy, croissance plus stable et moins de risques.  
+> Un **guide pratique concis** pour les utilisateurs de TikMatrix.
 
 <!-- truncate -->
 ---
-![TikTok 代理选择](/img/blog/proxy-selection.webp)
+![Sélection de proxies TikTok](/img/blog/proxy-selection.webp)
 
-## 🔹 1. 新注册与首次登录 → 用**动态住宅代理**（按流量计费）
+## 🔹 1. Nouvelle Inscription et Première Connexion → Utilisez des **Proxies Résidentiels Rotatifs** (Facturation au Trafic)
 
-- **原因：**高熵轮换，降低多次尝试之间的关联；更像不同住户。  
-- **适用：**创建/预热 **新号**。  
-- **要点：**控制并发，**每次尝试或每场会话**轮换；国家/语言与目标市场一致。
-
----
-
-## 🔷 2. 长期运营 → 用**静态住宅代理**（按数量计费）
-
-- **原因：**稳定 IP 累积**信任历史**（ASN、rDNS、时延更一致）。  
-- **适用：**已预热/老号的日常运营。  
-- **要点：**尽量 **一设备：一 IP**；若必须共享，避免给高风险账号共用。
-
-> 💡 共享策略按风险自定。更稳：**1 机 1 IP**；中等：**2–3 机/IP**，并**错峰**执行、行为分离。
+- **Raison :** Rotation à haute entropie, réduit la corrélation entre plusieurs tentatives ; ressemble davantage à différents résidents.  
+- **Application :** Création/préchauffage de **nouveaux comptes**.  
+- **Points clés :** Contrôler la concurrence, **rotation à chaque tentative ou session** ; pays/langue cohérents avec le marché cible.
 
 ---
 
-## 🧩 3. 快速对比
+## 🔷 2. Opérations à Long Terme → Utilisez des **Proxies Résidentiels Statiques** (Facturation par Quantité)
 
-| 维度 | 动态住宅（流量计费） | 静态住宅（按量计费） |
+- **Raison :** IP stable accumule un **historique de confiance** (ASN, rDNS, latence plus cohérents).  
+- **Application :** Opérations quotidiennes de comptes préchauffés/anciens.  
+- **Points clés :** Préférez **1 appareil : 1 IP** ; si partage nécessaire, évitez de partager avec des comptes à haut risque.
+
+> 💡 Stratégie de partage selon le risque. Plus stable : **1 appareil 1 IP** ; moyen : **2–3 appareils/IP**, exécution décalée + séparation des comportements.
+
+---
+
+## 🧩 3. Comparaison Rapide
+
+| Dimension | Résidentiel Rotatif (Trafic) | Résidentiel Statique (Quantité) |
 |---|---|---|
-| 场景 | 注册 / 首登 | 长期日常 |
-| 稳定性 | 低–中（轮换） | **高**（固定） |
-| 关联性 | **低** | 中（若共享） |
-| 风险 | 初期规避佳 | 长期信任佳 |
-| 成本 | 按 GB | 按 IP |
+| Scénario | Inscription / Première connexion | Long terme quotidien |
+| Stabilité | Bas–Moyen (rotation) | **Haute** (fixe) |
+| Corrélation | **Basse** | Moyenne (si partagée) |
+| Risque | Bon évitement initial | Bonne confiance long terme |
+| Coût | Par GB | Par IP |
 
 ---
 
-## ⚙️ 4. 运营护栏
+## ⚙️ 4. Garde-Fous Opérationnels
 
-- **区域一致：**国家/时区/语言与内容市场匹配  
-- **轮换规则：**动态 → 每次尝试/会话轮换；静态 → 出现异常再换  
-- **设备隔离：**代理账号与设备绑定；不共享会话  
-- **健康检查：**whoer/ipapi 测试；关注时延与丢包  
-- **兜底池：**预留少量备用静态 IP 以便快速切换
-
----
-
-## ✅ 5. 速查清单
-
-- 新号 → **动态住宅**  
-- 老号/长期 → **静态住宅**  
-- **优先 1 机 1 IP**；如需共享，错峰 + 行为隔离  
-- 保持地理一致；避免住宅与 VPN 混用
+- **Cohérence régionale :** Pays/fuseau horaire/langue correspondent au marché de contenu  
+- **Règles de rotation :** Rotatif → rotation à chaque tentative/session ; Statique → changer uniquement en cas d'anomalie  
+- **Isolation des appareils :** Liaison compte proxy-appareil ; pas de partage de session  
+- **Vérification de santé :** Test whoer/ipapi ; surveiller latence et perte de paquets  
+- **Pool de secours :** Réserver quelques IP statiques de réserve pour basculement rapide
 
 ---
 
-## 🏁 结语
+## ✅ 5. Liste de Vérification Rapide
 
-**一致性 = 安全增长。** 先用动态住宅**干净进入**，再切静态住宅**长期稳定**，累积信任。
-
-👉 [访问 TikMatrix.com](https://www.tikmatrix.com)
+- Nouveaux comptes → **Résidentiel rotatif**  
+- Anciens comptes/long terme → **Résidentiel statique**  
+- **Priorité 1 appareil 1 IP** ; si partage nécessaire, décalage + isolation comportementale  
+- Maintenir cohérence géographique ; éviter mélange résidentiel et VPN
 
 ---
 
-_本文基于 TikMatrix 手机农场在不同代理形态下的实战经验。_
+## 🏁 Conclusion
+
+**Cohérence = Croissance sûre.** Commencez avec résidentiel rotatif pour **entrée propre**, puis basculez vers résidentiel statique pour **stabilité à long terme**, accumulation de confiance.
+
+👉 [Visitez TikMatrix.com](https://www.tikmatrix.com)
+
+---
+
+_Cet article est basé sur l'expérience pratique des fermes de téléphones TikMatrix avec différentes formes de proxies._

@@ -1,32 +1,32 @@
 ---
-sulg: how-to-check-shadowban-by-tiktok-2025
-title: 如何检查2025年TikTok的Shadowban
+slug: how-to-check-shadowban-by-tiktok-2025
+title: Comment Vérifier un Shadowban TikTok en 2025
 authors: tikMatrix
-tags: [tikmatrix, tiktok, shadowban, check]
+tags: [tikmatrix, tiktok, shadowban, vérification]
 ---
 
-Shadowban 是一个术语，用来描述用户的内容在社交媒体平台上被隐藏或抑制，而用户却不知情的情况。如果你怀疑自己在 TikTok 上被隐形封禁了，有几种方法可以检查和确认。以下是在 2025 年检查是否被 TikTok 隐形封禁的步骤：
+Le shadowban est un terme utilisé pour décrire une situation où le contenu d'un utilisateur est caché ou supprimé sur une plateforme de médias sociaux sans que l'utilisateur en soit informé. Si vous suspectez être victime d'un shadowban sur TikTok, il existe plusieurs méthodes pour vérifier et confirmer. Voici les étapes pour vérifier si vous êtes sous shadowban TikTok en 2025 :
 
 <!--truncate-->
 
-## 1. 检查你的标签覆盖率
+## 1. Vérifier Votre Portée de Hashtags
 
-检查是否被 TikTok 隐形封禁的一种方法是监控你的标签覆盖率。如果你的帖子没有出现在标签提要或搜索结果中，这可能表明你的账户被隐形封禁了。尝试使用不同的标签，看看你的帖子是否出现在搜索结果中。
+Une façon de vérifier si vous êtes sous shadowban TikTok est de surveiller la portée de vos hashtags. Si vos publications n'apparaissent pas dans les fils de hashtags ou les résultats de recherche, cela pourrait indiquer que votre compte est sous shadowban. Essayez d'utiliser différents hashtags et voyez si vos publications apparaissent dans les résultats de recherche.
 
-## 2. 监控你的互动
+## 2. Surveiller Votre Engagement
 
-另一种检查隐形封禁的方法是监控你的互动指标，如点赞、评论和分享。如果你注意到互动突然下降，或者你的帖子没有获得通常的互动，这可能是你的账户被隐形封禁的迹象。关注你的互动指标，并将其与之前的表现进行比较。
+Une autre façon de vérifier un shadowban est de surveiller vos indicateurs d'engagement, tels que les likes, commentaires et partages. Si vous remarquez une baisse soudaine d'engagement, ou si vos publications ne reçoivent pas l'engagement habituel, cela pourrait être un signe que votre compte est sous shadowban. Suivez vos indicateurs d'engagement et comparez-les à vos performances précédentes.
 
-## 3. 测试你的可见性
+## 3. Tester Votre Visibilité
 
-要测试你的账户是否被隐形封禁，可以让朋友或其他 TikTok 用户使用特定的关键词或标签搜索你的账户或帖子。如果他们无法在搜索结果中找到你的账户或帖子，这可能表明你的账户被隐形封禁了。确保使用不同的设备和账户测试你的可见性，以确认隐形封禁。
+Pour tester si votre compte est sous shadowban, demandez à des amis ou d'autres utilisateurs TikTok de rechercher votre compte ou vos publications en utilisant des mots-clés ou hashtags spécifiques. S'ils ne peuvent pas trouver votre compte ou vos publications dans les résultats de recherche, cela pourrait indiquer que votre compte est sous shadowban. Assurez-vous de tester votre visibilité en utilisant différents appareils et comptes pour confirmer le shadowban.
 
-## 4. 联系 TikTok 支持
+## 4. Contacter le Support TikTok
 
-如果你怀疑你的账户被隐形封禁了，可以联系 TikTok 支持寻求帮助。通过应用或网站联系 TikTok 的支持团队，并解释你的情况。提供有关你的账户和你遇到的问题的详细信息。TikTok 的支持团队将调查你的账户，并向你提供是否被隐形封禁的信息。
+Si vous suspectez que votre compte est sous shadowban, vous pouvez contacter le support TikTok pour obtenir de l'aide. Contactez l'équipe de support TikTok via l'application ou le site web et expliquez votre situation. Fournissez des détails sur votre compte et les problèmes que vous rencontrez. L'équipe de support TikTok enquêtera sur votre compte et vous fournira des informations sur l'existence ou non d'un shadowban.
 
-## 5. 查看 TikTok 的社区准则
+## 5. Consulter les Directives Communautaires de TikTok
 
-查看 TikTok 的社区准则，确保你的内容符合他们的政策。违反 TikTok 的准则可能导致隐形封禁或其他账户限制。确保遵守 TikTok 的规则和规定，以避免将来被隐形封禁。
+Consultez les directives communautaires de TikTok pour vous assurer que votre contenu est conforme à leurs politiques. Les violations des directives TikTok peuvent entraîner un shadowban ou d'autres restrictions de compte. Assurez-vous de respecter les règles et réglementations de TikTok pour éviter les shadowbans futurs.
 
-通过遵循这些步骤并监控你的账户表现，你可以检查自己是否在 2025 年被 TikTok 隐形封禁。如果你怀疑自己的账户被隐形封禁，采取必要的步骤解决问题，并确保你的内容符合 TikTok 的准则。通过保持信息灵通和积极主动，你可以避免隐形封禁，并继续在 TikTok 上扩大你的影响力。
+En suivant ces étapes et en surveillant les performances de votre compte, vous pouvez vérifier si vous êtes sous shadowban TikTok en 2025. Si vous suspectez que votre compte est sous shadowban, prenez les mesures nécessaires pour résoudre le problème et assurez-vous que votre contenu est conforme aux directives de TikTok. En restant informé et proactif, vous pouvez éviter les shadowbans et continuer à développer votre présence sur TikTok.

@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "Matrice TikTok"
+    "message": "TikTok矩阵"
   },
   "link.title.Docs": {
     "message": "Documentazione",
@@ -15,19 +15,19 @@
     "description": "The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.Recent posts": {
-    "message": "Articoli recenti",
+    "message": "Ultimi文章",
     "description": "The label of footer link with label=Recent posts linking to /blog"
   },
   "link.item.label.Archive posts": {
-    "message": "Articoli archiviati",
+    "message": "归档文章",
     "description": "The label of footer link with label=Archive linking to /blog/archive"
   },
   "link.title.Community": {
-    "message": "Comunità",
+    "message": "社区",
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "Altro",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Youtube": {
@@ -47,31 +47,31 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/tikmatrix/tikmatrix-desktop"
   },
   "copyright": {
-    "message": "Copyright © 2024 TikMatrix LLC. Tutti i diritti riservati.",
+    "message": "Copyright © 2024 TikMatrix LLC. All rights reserved.",
     "description": "The footer copyright"
   },
   "link.item.label.Privacy Policy": {
-    "message": "Informativa sulla privacy",
+    "message": "隐私政策",
     "description": "The label of footer link with label=Privacy Policy linking to /privacy-policy"
   },
   "link.item.label.Terms of Service": {
-    "message": "Termini di servizio",
+    "message": "服务条款",
     "description": "The label of footer link with label=Terms of Service linking to /terms-of-service"
   },
   "link.title.Tools": {
-    "message": "Strumenti",
+    "message": "工具",
     "description": "The title of the footer links column with title=Tools in the footer"
   },
   "link.item.label.Buy hardware": {
-    "message": "Acquista hardware",
+    "message": "Acquista硬件",
     "description": "The label of footer link with label=Buy Hardware linking to /buy-hardware"
   },
   "link.item.label.TikTok User Finder": {
-    "message": "Ricerca paese utente TikTok",
+    "message": "TikTok用户国家查询",
     "description": "The label of footer link with label=TikTok User Finder linking to /tiktok-user-finder"
   },
   "link.item.label.About Us": {
-    "message": "Chi siamo",
+    "message": "Chi Siamo",
     "description": "The label of footer link with label=About Us linking to /about-us"
   }
 }

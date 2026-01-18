@@ -15,11 +15,11 @@
     "description": "The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.Recent posts": {
-    "message": "最新の投稿",
+    "message": "最新記事",
     "description": "The label of footer link with label=Recent posts linking to /blog"
   },
   "link.item.label.Archive posts": {
-    "message": "アーカイブ投稿",
+    "message": "アーカイブ記事",
     "description": "The label of footer link with label=Archive linking to /blog/archive"
   },
   "link.title.Community": {
@@ -27,7 +27,7 @@
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "もっと見る",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Youtube": {
@@ -59,19 +59,19 @@
     "description": "The label of footer link with label=Terms of Service linking to /terms-of-service"
   },
   "link.title.Tools": {
-    "message": "ツール",
+    "message": "工具",
     "description": "The title of the footer links column with title=Tools in the footer"
   },
   "link.item.label.Buy hardware": {
-    "message": "ハードウェアを購入",
+    "message": "购买硬件",
     "description": "The label of footer link with label=Buy Hardware linking to /buy-hardware"
   },
   "link.item.label.TikTok User Finder": {
-    "message": "TikTokユーザー国検索",
+    "message": "TikTok用户国家查询",
     "description": "The label of footer link with label=TikTok User Finder linking to /tiktok-user-finder"
   },
   "link.item.label.About Us": {
-    "message": "私たちについて",
+    "message": "会社概要",
     "description": "The label of footer link with label=About Us linking to /about-us"
   }
 }

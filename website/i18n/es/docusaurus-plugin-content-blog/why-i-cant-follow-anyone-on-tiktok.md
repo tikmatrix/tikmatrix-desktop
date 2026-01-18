@@ -1,44 +1,44 @@
 ---
 slug: why-i-cant-follow-anyone-on-tiktok
-title: 为什么我无法在TikTok上关注任何人
+title: Por qué no puedo seguir a nadie en TikTok
 authors: tikMatrix
 tags: [tikmatrix, tiktok, follow, error]
 ---
 
-如果你无法在 TikTok 上关注任何人，可能有几个原因导致这个问题。以下是一些常见原因和解决方案，帮助你解决这个问题：
+Si no puedes seguir a nadie en TikTok, puede haber varias razones que causen este problema. Aquí están algunas razones comunes y soluciones para ayudarte a resolver este problema:
 <!--truncate-->
 ---
 
-## 1. 账户限制
+## 1. Restricciones de cuenta
 
-由于各种原因，例如违反社区准则、垃圾信息或可疑活动，TikTok 可能会限制你的账户关注用户。如果你收到了 TikTok 的警告或通知，你应该解决这些问题以恢复账户的全部功能。
+TikTok puede restringir tu cuenta para seguir usuarios debido a varias razones, como violar directrices de la comunidad, spam o actividad sospechosa. Si has recibido advertencias o notificaciones de TikTok, debes resolver estos problemas para restaurar la funcionalidad completa de tu cuenta.
 
-## 2. 关注限制
+## 2. Límites de seguimiento
 
-TikTok 对你在特定时间内可以关注的用户数量有限制。如果你达到了这个限制，你将无法再关注更多用户，直到限制解除。等待一段时间后再尝试关注更多用户。
+TikTok tiene límites sobre el número de usuarios que puedes seguir en un período de tiempo específico. Si alcanzas este límite, no podrás seguir a más usuarios hasta que se levante el límite. Espera un tiempo antes de intentar seguir a más usuarios.
 
-## 3. 技术问题
+## 3. Problemas técnicos
 
-有时，TikTok 应用中的技术故障或错误可能会阻止你关注用户。尝试重新启动应用、清除缓存或将应用更新到最新版本，以解决任何技术问题。
+A veces, fallos técnicos o errores en la aplicación de TikTok pueden impedirte seguir usuarios. Intenta reiniciar la aplicación, limpiar la caché o actualizar la aplicación a la última versión para resolver cualquier problema técnico.
 
-## 4. 网络连接
+## 4. Conexión de red
 
-网络连接不良也可能导致在 TikTok 上关注用户的问题。确保你有稳定的互联网连接，然后再尝试关注用户。
+Una mala conexión de red también puede causar problemas al seguir usuarios en TikTok. Asegúrate de tener una conexión a internet estable antes de intentar seguir usuarios.
 
-## 5. 账户验证
+## 5. Verificación de cuenta
 
-如果你的账户未验证，TikTok 可能会限制某些功能，包括关注用户。通过链接电话号码或电子邮件地址验证你的账户，以解锁所有功能。
+Si tu cuenta no está verificada, TikTok puede restringir ciertas funciones, incluida la de seguir usuarios. Verifica tu cuenta vinculando un número de teléfono o dirección de correo electrónico para desbloquear todas las funciones.
 
-## 6. 隐形封禁
+## 6. Shadowban
 
-如果你在 TikTok 上被隐形封禁，你的账户可见性和功能可能会受到限制，包括关注用户。检查你是否违反了 TikTok 的准则或社区标准，并解决任何问题以解除隐形封禁。
+Si has sido objeto de shadowban en TikTok, la visibilidad y funcionalidad de tu cuenta pueden estar limitadas, incluida la capacidad de seguir usuarios. Verifica si has violado las directrices o estándares de la comunidad de TikTok y resuelve cualquier problema para levantar el shadowban.
 
-## 7. 应用权限
+## 7. Permisos de aplicación
 
-确保 TikTok 应用具有访问你设备功能的必要权限，例如联系人、相机和位置。在应用设置中授予所需权限，以启用关注用户功能。
+Asegúrate de que la aplicación de TikTok tenga los permisos necesarios para acceder a las funciones de tu dispositivo, como contactos, cámara y ubicación. Otorga los permisos requeridos en la configuración de la aplicación para habilitar la función de seguir usuarios.
 
-## 8. 服务器问题
+## 8. Problemas del servidor
 
-有时，TikTok 的服务器可能会出现停机或问题，影响包括关注用户在内的各种功能。检查 TikTok 的官方社交媒体账户或支持渠道，了解有关服务器问题的任何公告。
+A veces, los servidores de TikTok pueden experimentar caídas o problemas que afectan varias funciones, incluida la de seguir usuarios. Verifica las cuentas oficiales de redes sociales de TikTok o canales de soporte para cualquier anuncio sobre problemas del servidor.
 
-如果你尝试了这些解决方案后仍然无法在 TikTok 上关注任何人，可以联系 TikTok 的支持团队以获得进一步帮助。提供你遇到问题的详细信息，他们可能会帮助你解决问题。
+Si después de intentar estas soluciones aún no puedes seguir a nadie en TikTok, puedes contactar con el equipo de soporte de TikTok para obtener más ayuda. Proporciona detalles sobre el problema que estás experimentando y ellos pueden ayudarte a resolverlo.

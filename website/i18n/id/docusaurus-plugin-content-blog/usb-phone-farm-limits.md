@@ -1,90 +1,90 @@
 ---
 slug: usb-phone-farm-limits
-title: 为什么普通 PC 很难接入超过 ~40 台手机？
+title: Mengapa PC Biasa Sulit Menghubungkan Lebih dari ~40 HP?
 authors: tikMatrix
-tags: [硬件, 手机农场, USB, TikTok 自动化, TikMatrix]
+tags: [Hardware, Phone Farm, USB, TikTok Automation, TikMatrix]
 ---
 
-> 按标准，USB 主机**最多可挂 127 个设备**。  
-> 但在现实中，多数消费级主板会在 **~40 台**左右“见顶”，原因多来自 **芯片组/固件限制与拓扑结构**。
+> Secara standar, USB host **bisa menampung hingga 127 perangkat**.  
+> Namun dalam praktiknya, sebagian besar motherboard consumer-grade akan "mentok" di sekitar **~40 perangkat**, penyebabnya kebanyakan dari **limitasi chipset/firmware dan struktur topologi**.
 
 <!-- truncate -->
 ---
-![USB 限制与手机农场](/img/blog/usb-phone-farm.webp)
+![Limitasi USB & Phone Farm](/img/blog/usb-phone-farm.webp)
 
-## 🧠 1. 理论 vs 现实
+## 🧠 1. Teori vs Realitas
 
-- **纸面参数：**单个 USB 主机地址空间可容纳 **127**（含 Hub）。  
-- **真实情况：**消费级主板通常在 **30–45 台**徘徊，主要因为：
-  - 主控固件的**设备扇出**限制  
-  - 芯片组**通道共享**导致的拥塞  
-  - **Hub 层级/拓扑**过深（电源分配、枚举超时）
+- **Parameter kertas:** Address space satu USB host bisa menampung **127** (termasuk Hub).  
+- **Situasi nyata:** Motherboard consumer-grade biasanya mentok di **30–45 perangkat**, terutama karena:
+  - Limitasi **device fanout** firmware controller  
+  - **Congestion channel sharing** chipset  
+  - **Topologi/layer Hub** terlalu dalam (distribusi daya, timeout enumerasi)
 
-> 关键瓶颈常不在系统，而在**主控 + 主板设计**。
-
----
-
-## 🖥️ 2. 服务器/工作站主板为何更能“上量”
-
-如 **X79 架构**等服务器/高端平台通常具备：
-
-- **更多独立**的 USB 主控  
-- **更少固件限制**（设备扇出更宽）  
-- **更合理**的通道与供电影响控制
-
-**效果：**在同系统与相同 Hub 下，更容易突破消费级上限。
+> Bottleneck utama sering bukan di sistem, tapi di **controller + desain motherboard**.
 
 ---
 
-## 🔌 3. 实操接线要点（提高识别上限）
+## 🖥️ 2. Mengapa Motherboard Server/Workstation Bisa "Lebih Banyak"
 
-1. **优先使用机箱后置**主板直连 USB 口，少用前置面板延长线。  
-2. 大规模连接时优先 **USB 2.0（黑色）**；**避免 USB 3.0（蓝色）**通道的不稳定因素。  
-3. **BIOS 设置：**  
-   - **关闭 XHCI**  
-   - **开启 EHCI**  
-   让设备走更稳定的 USB2 主机路径，枚举更可靠。
+Seperti **arsitektur X79** dan platform server/high-end lainnya biasanya memiliki:
 
-> 供电同样关键：使用**带电源的优质 Hub**、短高品质线材，并把负载分散到多个主控上。
+- **Lebih banyak USB controller independen**  
+- **Lebih sedikit limitasi firmware** (device fanout lebih lebar)  
+- **Kontrol channel dan power yang lebih baik**
+
+**Efek:** Dengan sistem dan Hub yang sama, lebih mudah menembus batas consumer-grade.
 
 ---
 
-## 🧩 4. 拓扑与供电清单
+## 🔌 3. Tips Koneksi Praktis (Tingkatkan Batas Deteksi)
 
-| 维度 | 建议 | 说明 |
+1. **Prioritaskan port USB rear panel** langsung dari motherboard, kurangi kabel ekstensi front panel.  
+2. Untuk koneksi skala besar prioritaskan **USB 2.0 (hitam)**; **hindari channel USB 3.0 (biru)** yang tidak stabil.  
+3. **Setting BIOS:**  
+   - **Matikan XHCI**  
+   - **Aktifkan EHCI**  
+   Biarkan perangkat menggunakan jalur host USB2 yang lebih stabil, enumerasi lebih reliable.
+
+> Power juga penting: gunakan **Hub berkualitas dengan power supply sendiri**, kabel pendek berkualitas, dan distribusikan beban ke beberapa controller.
+
+---
+
+## 🧩 4. Checklist Topologi & Power
+
+| Dimensi | Saran | Penjelasan |
 |---|---|---|
-| Hub 层级 | ≤ 3 层 | 过深易超时 |
-| Hub 规格 | 7–10 口带电源 | 每组独立电源更稳 |
-| 线材 | 短、屏蔽好 | 早换可疑线 |
-| 端口 | 先用后置 I/O | 前置走线共用多 |
-| 通道 | 手机走 USB2 | USB3 留给存储等 |
+| Layer Hub | ≤ 3 layer | Terlalu dalam mudah timeout |
+| Spek Hub | 7–10 port dengan power | Power independen per grup lebih stabil |
+| Kabel | Pendek, shielding bagus | Ganti kabel mencurigakan lebih awal |
+| Port | Pakai rear I/O dulu | Front panel banyak sharing jalur |
+| Channel | HP pakai USB2 | USB3 untuk storage dll |
 
 ---
 
-## 🧪 5. 常见问题速排
+## 🧪 5. Troubleshooting Masalah Umum
 
-- **随机掉线/重连：**供电不足或线材问题 → 换电源/线。  
-- **卡在 ~38–42 台不再枚举：**主控/固件上限 → 更换到其他根端口、加独立 USB 控制卡、或换服务器级主板。  
-- **ADB 扫描占用高：**同一主控挂太多设备 → 把 Hub 分散到不同根端口。
-
----
-
-## ⚙️ 6. TikMatrix 推荐配置
-
-- 主板：**服务器/工作站**（如 X79 级别或同类 HEDT）  
-- Hub：多组**带电源 USB2 Hub**，分布到不同根端口  
-- BIOS：**XHCI 关，EHCI 开**  
-- 系统：Windows + ADB 驱动；保持图形/WebView 稳定
+- **Random disconnect/reconnect:** Power tidak cukup atau masalah kabel → ganti power/kabel.  
+- **Stuck di ~38–42 perangkat tidak enumerasi lagi:** Limitasi controller/firmware → pindah ke root port lain, tambah card USB controller independen, atau ganti motherboard server-grade.  
+- **ADB scan usage tinggi:** Terlalu banyak perangkat di satu controller → distribusikan Hub ke root port berbeda.
 
 ---
 
-## 🏁 结语
+## ⚙️ 6. Konfigurasi Rekomendasi TikMatrix
 
-USB 理论上能挂 127 台，但消费级主板常在 **~40** 台附近受限。  
-用 **后置 USB2**、**带电源 Hub**、**EHCI 优先 BIOS**，或直接上 **服务器级主板**，就能更稳地突破上限。
-
-👉 [访问 TikMatrix.com](https://www.tikmatrix.com)
+- Motherboard: **Server/Workstation** (seperti X79 level atau HEDT sejenis)  
+- Hub: Banyak grup **USB2 Hub dengan power**, distribusi ke root port berbeda  
+- BIOS: **XHCI off, EHCI on**  
+- Sistem: Windows + ADB driver; jaga stabilitas grafis/WebView
 
 ---
 
-_本文基于 TikMatrix 在真实手机农场环境中的枚举与稳定性测试经验。_
+## 🏁 Kesimpulan
+
+USB secara teori bisa menampung 127 perangkat, tapi motherboard consumer-grade sering terbatas di sekitar **~40** perangkat.  
+Gunakan **rear USB2**, **Hub dengan power**, **BIOS prioritas EHCI**, atau langsung pakai **motherboard server-grade**, untuk lebih stabil menembus batas.
+
+👉 [Kunjungi TikMatrix.com](https://www.tikmatrix.com)
+
+---
+
+_Artikel ini berdasarkan pengalaman testing enumerasi dan stabilitas TikMatrix di lingkungan phone farm nyata._

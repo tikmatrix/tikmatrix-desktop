@@ -1,8 +1,8 @@
 {
-    "label": "教程 - 基础",
+    "label": "Tutoriel - Bases",
     "position": 1,
     "link": {
         "type": "generated-index",
-        "description": "学习如何设置TikMatrix。"
+        "description": "Apprenez à configurer TikMatrix."
     }
 }

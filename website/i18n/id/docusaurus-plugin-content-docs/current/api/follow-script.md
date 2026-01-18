@@ -1,38 +1,38 @@
 ---
 sidebar_position: 4
-title: 关注脚本配置
-description: 关注脚本完整配置参考
+title: Konfigurasi Script Follow
+description: Referensi konfigurasi lengkap script follow
 ---
 
-本页面介绍创建任务时 `follow` 脚本的配置参数。
+Halaman ini menjelaskan parameter konfigurasi untuk script `follow` saat membuat tugas.
 
-## 概述
+## Ringkasan
 
-`follow` 脚本用于在 TikTok 或 Instagram 上自动关注用户。当您通过 API 提供多个目标用户时，**系统会为每个目标用户创建一个任务**。您可以使用 `start_time` 参数来控制任务的执行时间。
+Script `follow` digunakan untuk mengikuti pengguna secara otomatis di TikTok atau Instagram. Ketika Anda menyediakan beberapa pengguna target melalui API, **sistem akan membuat satu tugas untuk setiap pengguna target**. Anda dapat menggunakan parameter `start_time` untuk mengontrol waktu eksekusi tugas.
 
-## 脚本配置 (`script_config`)
+## Konfigurasi Script (`script_config`)
 
-`script_config` 对象包含关注脚本的配置参数。以下是可用参数：
+Objek `script_config` berisi parameter konfigurasi untuk script follow. Berikut adalah parameter yang tersedia:
 
-### 参数
+### Parameter
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
+| Parameter | Tipe | Wajib | Default | Deskripsi |
 |------|------|------|--------|------|
-| target_users | string[] | 是* | [] | 要关注的目标用户名数组（每个用户一个任务） |
-| target_user | string | 是* | "" | 单个目标用户名，或多个用户名以换行/逗号分隔 |
-| access_method | string | 否 | "direct" | 导航到用户资料的方式：`direct`（通过 URL）或 `search` |
+| target_users | string[] | Ya* | [] | Array nama pengguna target yang akan diikuti (satu tugas per pengguna) |
+| target_user | string | Ya* | "" | Nama pengguna tunggal, atau beberapa nama pengguna dipisahkan baris baru/koma |
+| access_method | string | Tidak | "direct" | Cara navigasi ke profil pengguna: `direct` (melalui URL) atau `search` |
 
 :::note
-必须提供 `target_users` 数组或 `target_user` 字符串。如果两者都提供，`target_users` 优先。
+Anda harus menyediakan array `target_users` atau string `target_user`. Jika keduanya disediakan, `target_users` akan diprioritaskan.
 :::
 
-:::info 任务创建
-当提供多个目标用户时，API 会**为每个目标用户创建一个任务**。例如，如果您指定 3 个目标用户和 2 个设备，将创建 6 个任务。使用 `start_time` 参数来控制任务的执行时间。
+:::info Pembuatan Tugas
+Ketika beberapa pengguna target disediakan, API akan **membuat satu tugas untuk setiap pengguna target**. Misalnya, jika Anda menentukan 3 pengguna target dan 2 perangkat, akan dibuat 6 tugas. Gunakan parameter `start_time` untuk mengontrol waktu eksekusi tugas.
 :::
 
-## 示例
+## Contoh
 
-### 关注单个用户
+### Mengikuti Pengguna Tunggal
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -47,9 +47,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 关注多个用户
+### Mengikuti Beberapa Pengguna
 
-关注多个用户时，每个用户创建一个任务：
+Saat mengikuti beberapa pengguna, satu tugas dibuat per pengguna:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -64,11 +64,11 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-这将创建 3 个独立的任务，立即执行。
+Ini akan membuat 3 tugas terpisah yang dieksekusi segera.
 
-### 使用开始时间调度任务
+### Menjadwalkan Tugas dengan Waktu Mulai
 
-使用 `start_time` 来调度任务的开始时间：
+Gunakan `start_time` untuk menjadwalkan waktu mulai tugas:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -84,9 +84,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 通过搜索方式关注用户
+### Mengikuti Pengguna dengan Metode Pencarian
 
-当直接 URL 访问不起作用时，使用搜索方式：
+Gunakan metode pencarian ketika akses URL langsung tidak bekerja:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -101,7 +101,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 多设备批量关注
+### Follow Batch Multi-Perangkat
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -117,7 +117,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-## 响应
+## Response
 
 ```json
 {
@@ -130,30 +130,30 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 访问方式
+## Metode Akses
 
-### 直接访问 (`direct`)
+### Akses Langsung (`direct`)
 
-- 通过 URL 打开用户资料：`tiktok.com/@username` 或 `instagram.com/username`
-- 更快更可靠
-- 大多数情况下推荐使用
+- Membuka profil pengguna melalui URL: `tiktok.com/@username` atau `instagram.com/username`
+- Lebih cepat dan lebih andal
+- Direkomendasikan untuk sebagian besar kasus
 
-### 搜索访问 (`search`)
+### Akses Pencarian (`search`)
 
-- 导航到搜索，输入用户名，点击结果
-- 较慢但在直接 URL 访问被阻止时有效
-- 如果存在多个相似用户名，可能不太准确
+- Navigasi ke pencarian, masukkan nama pengguna, klik hasil
+- Lebih lambat tetapi efektif ketika akses URL langsung diblokir
+- Mungkin kurang akurat jika ada beberapa nama pengguna serupa
 
-## 最佳实践
+## Praktik Terbaik
 
-1. **使用 start_time 调度**：使用 `start_time` 参数来调度任务的执行时间（格式："HH:MM"）。
+1. **Gunakan start_time untuk Penjadwalan**: Gunakan parameter `start_time` untuk menjadwalkan waktu eksekusi tugas (format: "HH:MM").
 
-2. **优先直接访问**：`direct` 访问方式比 `search` 更快更可靠。
+2. **Prioritaskan Akses Langsung**: Metode akses `direct` lebih cepat dan lebih andal daripada `search`.
 
-3. **合理批量处理**：不要一次关注太多用户。系统会为每个目标用户创建一个任务，因此大列表会产生许多任务。
+3. **Batch yang Wajar**: Jangan mengikuti terlalu banyak pengguna sekaligus. Sistem membuat satu tugas untuk setiap pengguna target, sehingga daftar besar akan menghasilkan banyak tugas.
 
-## 另请参阅
+## Lihat Juga
 
-- [任务管理 API](./task-management.md) - 创建、查询和管理任务
-- [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [取消关注脚本配置](./unfollow-script.md) - 配置取消关注脚本参数
+- [API Manajemen Tugas](./task-management.md) - Membuat, query, dan mengelola tugas
+- [Konfigurasi Script Post](./post-script.md) - Konfigurasi parameter script post
+- [Konfigurasi Script Unfollow](./unfollow-script.md) - Konfigurasi parameter script unfollow

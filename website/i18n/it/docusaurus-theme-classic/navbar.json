@@ -15,7 +15,7 @@
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Rewards": {
-    "message": "Guadagna promuovendo",
+    "message": "Guadagna con le Referenze",
     "description": "Navbar item with label Rewards"
   },
   "item.label.Features": {
@@ -27,11 +27,11 @@
     "description": "Navbar item with label Blog"
   },
   "item.label.Pricing": {
-    "message": "Prezzi",
+    "message": "Prezzo",
     "description": "Navbar item with label Pricing"
   },
   "item.label.Contact": {
-    "message": "Contatti",
+    "message": "Contattaci",
     "description": "Navbar item with label Contact"
   },
   "item.label.Download": {
@@ -39,7 +39,7 @@
     "description": "Navbar item with label Download"
   },
   "item.label.FAQ": {
-    "message": "Domande frequenti",
+    "message": "Domande Frequenti",
     "description": "Navbar item with label FAQ"
   },
   "logo.alt": {
@@ -51,7 +51,7 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.About Us": {
-    "message": "Chi siamo",
+    "message": "Chi Siamo",
     "description": "Navbar item with label About Us"
   },
   "item.label.Advertising": {
@@ -59,7 +59,7 @@
     "description": "Navbar item with label Advertising"
   },
   "item.label.AI Search": {
-    "message": "Ricerca IA",
+    "message": "AI Cerca",
     "description": "Navbar item with label AI Search"
   }
 }

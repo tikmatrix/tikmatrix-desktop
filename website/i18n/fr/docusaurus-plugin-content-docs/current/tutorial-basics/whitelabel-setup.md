@@ -2,69 +2,69 @@
 sidebar_position: 9
 ---
 
-# 白标功能设置
+# Configuration de la marque blanche
 
-:::info 需要年付订阅
-白标功能仅对**年付订阅**用户开放。购买年付计划后，请通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系客服获取解锁码。
+:::info Abonnement annuel requis
+La fonction de marque blanche est réservée aux utilisateurs **avec abonnement annuel**. Après l'achat d'un plan annuel, veuillez contacter le service client via [Telegram](https://t.me/tikmatrix_agent_bot) pour obtenir le code de déverrouillage.
 :::
 
-白标功能允许您自定义 TikMatrix 的品牌标识以匹配您的公司形象。您可以修改应用名称、Logo和品牌信息，创建个性化的 TikMatrix 版本。
+La fonction de marque blanche vous permet de personnaliser l'identité de marque de TikMatrix pour correspondre à l'image de votre entreprise. Vous pouvez modifier le nom de l'application, le logo et les informations de marque pour créer une version personnalisée de TikMatrix.
 
-## 功能特性
+## Fonctionnalités
 
-### 基本设置
+### Paramètres de base
 
-- **应用名称**: 自定义应用显示名称
-- **Logo上传**: 上传您的自定义主Logo（推荐128x128px）
-- **网站图标**: 设置应用的自定义图标
+- **Nom de l'application** : Personnalisez le nom d'affichage de l'application
+- **Téléchargement du logo** : Téléchargez votre logo principal personnalisé (128x128px recommandé)
+- **Icône du site web** : Définissez une icône personnalisée pour l'application
 
-### 品牌设置
+### Paramètres de marque
 
-- **支持邮箱**: 客户支持邮箱地址
-- **教程链接**: 自定义教程/文档链接
-- **Telegram链接**: 设置您的Telegram群组或频道链接
+- **Email de support** : Adresse email du support client
+- **Lien tutoriel** : Lien personnalisé vers des tutoriels/documentation
+- **Lien Telegram** : Définissez le lien vers votre groupe ou canal Telegram
 
-### 功能开关
+### Commutateurs de fonctionnalités
 
-- **显示教程链接**: 控制教程链接的显示
-- **显示品牌信息**: 控制品牌信息的显示
+- **Afficher le lien tutoriel** : Contrôlez l'affichage du lien tutoriel
+- **Afficher les informations de marque** : Contrôlez l'affichage des informations de marque
 
-## 设置方法
+## Méthodes de configuration
 
-### 方法一：界面配置
+### Méthode 1 : Configuration via l'interface
 
-1. 启动 TikMatrix 应用
-2. 点击标题栏的调色板图标 🎨
-3. 在白标设置对话框中配置参数：
-   - **应用名称**: 输入您的自定义应用名称
-   - **主Logo**: 上传您的Logo文件（PNG/JPG，推荐128x128px）
-   - **支持邮箱**: 输入您的支持邮箱地址
-   - **教程链接**: 输入您的自定义教程链接
-   - **Telegram链接**: 输入您的Telegram群组/频道链接
-   - **功能开关**: 启用/禁用教程链接和品牌信息显示
-4. 点击"保存"应用设置
+1. Lancez l'application TikMatrix
+2. Cliquez sur l'icône de palette 🎨 dans la barre de titre
+3. Configurez les paramètres dans la boîte de dialogue des paramètres de marque blanche :
+   - **Nom de l'application** : Entrez le nom personnalisé de votre application
+   - **Logo principal** : Téléchargez votre fichier logo (PNG/JPG, 128x128px recommandé)
+   - **Email de support** : Entrez votre adresse email de support
+   - **Lien tutoriel** : Entrez votre lien tutoriel personnalisé
+   - **Lien Telegram** : Entrez le lien de votre groupe/canal Telegram
+   - **Commutateurs de fonctionnalités** : Activez/désactivez l'affichage du lien tutoriel et des informations de marque
+4. Cliquez sur "Enregistrer" pour appliquer les paramètres
 
-### 方法二：配置文件
+### Méthode 2 : Fichier de configuration
 
-1. 复制示例配置文件：
+1. Copiez le fichier de configuration exemple :
 
    ```bash
    cp examples/whitelabel-config.json src/config/whitelabel-custom.json
    ```
 
-2. 编辑配置文件：
+2. Modifiez le fichier de configuration :
 
    ```json
    {
-     "appName": "您的应用名称",
+     "appName": "Nom de votre application",
      "logo": {
-       "main": "/path/to/your/logo.webp",
-       "favicon": "/path/to/your/favicon.ico"
+       "main": "/chemin/vers/votre/logo.webp",
+       "favicon": "/chemin/vers/votre/favicon.ico"
      },
      "brand": {
-       "supportEmail": "support@yourcompany.com",
-       "tutorialUrl": "https://yourcompany.com/docs",
-       "telegramUrl": "https://t.me/yourgroup"
+       "supportEmail": "support@votreentreprise.com",
+       "tutorialUrl": "https://votreentreprise.com/docs",
+       "telegramUrl": "https://t.me/votregroupe"
      },
      "features": {
        "showTutorialLink": true,
@@ -73,93 +73,93 @@ sidebar_position: 9
    }
    ```
 
-3. 保存文件并重启应用
+3. Enregistrez le fichier et redémarrez l'application
 
-### 方法三：命令行工具
+### Méthode 3 : Outil en ligne de commande
 
-1. 进入项目目录：
+1. Accédez au répertoire du projet :
 
    ```bash
    cd tikmatrix-desktop
    ```
 
-2. 运行配置工具：
+2. Exécutez l'outil de configuration :
 
    ```bash
    node scripts/whitelabel-config.js
    ```
 
-3. 按照提示逐步配置各项参数
+3. Suivez les instructions pour configurer progressivement chaque paramètre
 
-## 构建自定义版本
+## Construire une version personnalisée
 
-### 1. 准备资源文件
+### 1. Préparer les fichiers de ressources
 
 ```bash
-# 将您的Logo文件放在正确位置
-src/assets/your-logo.webp       # 主Logo
-public/your-favicon.ico        # 网页图标
-src-tauri/icons/               # 应用图标（各种尺寸）
+# Placez vos fichiers logo aux emplacements corrects
+src/assets/your-logo.webp       # Logo principal
+public/your-favicon.ico        # Icône web
+src-tauri/icons/               # Icônes d'application (diverses tailles)
 ```
 
-### 2. 配置构建参数
+### 2. Configurer les paramètres de construction
 
-使用命令行工具或手动编辑配置：
+Utilisez l'outil en ligne de commande ou modifiez manuellement la configuration :
 
 ```bash
-# 使用命令行工具
+# Utiliser l'outil en ligne de commande
 node scripts/whitelabel-config.js
 
-# 或手动编辑
+# Ou modifier manuellement
 src/config/whitelabel-build.json
 ```
 
-### 3. 构建应用
+### 3. Construire l'application
 
 ```bash
-# 开发模式
+# Mode développement
 npm run dev
 
-# 生产构建
+# Construction de production
 npm run build
 
-# 构建Tauri应用
+# Construire l'application Tauri
 npm run tauri build
 ```
 
-## 配置优先级
+## Priorité de configuration
 
-系统按以下优先顺序使用配置：
+Le système utilise les configurations dans l'ordre de priorité suivant :
 
-1. **运行时配置**: 浏览器LocalStorage中的 `whitelabel_config`
-2. **构建配置**: `src/config/whitelabel-build.json`（构建时使用）
-3. **示例配置**: `examples/whitelabel-config.json`
-4. **默认配置**: 内置默认值
+1. **Configuration d'exécution** : `whitelabel_config` dans le LocalStorage du navigateur
+2. **Configuration de construction** : `src/config/whitelabel-build.json` (utilisé lors de la construction)
+3. **Configuration exemple** : `examples/whitelabel-config.json`
+4. **Configuration par défaut** : Valeurs par défaut intégrées
 
-## Logo要求
+## Exigences du logo
 
-### 主Logo
+### Logo principal
 
-- **格式**: PNG、JPG或SVG
-- **尺寸**: 128x128px（推荐）
-- **背景**: 透明背景（PNG格式）
-- **用途**: 标题栏、启动画面、关于对话框
+- **Format** : PNG, JPG ou SVG
+- **Taille** : 128x128px (recommandé)
+- **Arrière-plan** : Arrière-plan transparent (format PNG)
+- **Usage** : Barre de titre, écran de démarrage, boîte de dialogue À propos
 
-### 网站图标
+### Icône du site web
 
-- **格式**: ICO或PNG
-- **尺寸**: 32x32px或16x16px
-- **用途**: 浏览器标签页、窗口图标
+- **Format** : ICO ou PNG
+- **Taille** : 32x32px ou 16x16px
+- **Usage** : Onglet du navigateur, icône de fenêtre
 
-### 应用图标（用于构建）
+### Icône d'application (pour la construction)
 
-- **格式**: PNG、ICO、ICNS
-- **尺寸**: 32x32、128x128、256x256、512x512
-- **位置**: `src-tauri/icons/` 目录
+- **Format** : PNG, ICO, ICNS
+- **Taille** : 32x32, 128x128, 256x256, 512x512
+- **Emplacement** : Répertoire `src-tauri/icons/`
 
-## API集成
+## Intégration API
 
-### JavaScript API
+### API JavaScript
 
 ```javascript
 import { 
@@ -169,20 +169,20 @@ import {
   validateWhiteLabelConfig 
 } from './config/whitelabel.js';
 
-// 获取当前配置
+// Obtenir la configuration actuelle
 const config = getWhiteLabelConfig();
 
-// 保存新配置
+// Enregistrer une nouvelle configuration
 saveWhiteLabelConfig(newConfig);
 
-// 重置为默认值
+// Réinitialiser aux valeurs par défaut
 resetWhiteLabelConfig();
 
-// 验证配置
+// Valider la configuration
 validateWhiteLabelConfig(config);
 ```
 
-### 实用工具函数
+### Fonctions utilitaires
 
 ```javascript
 import { 
@@ -191,80 +191,80 @@ import {
   updateFavicon
 } from './utils/whitelabel.js';
 
-// 应用启动时初始化白标
+// Initialiser la marque blanche au démarrage de l'application
 initWhiteLabel();
 
-// 更新文档标题
-updateDocumentTitle('您的应用名称');
+// Mettre à jour le titre du document
+updateDocumentTitle('Nom de votre application');
 
-// 更新图标
-updateFavicon('/path/to/favicon.ico');
+// Mettre à jour l'icône
+updateFavicon('/chemin/vers/favicon.ico');
 ```
 
-## 最佳实践
+## Meilleures pratiques
 
-### Logo设计
+### Conception du logo
 
-- 使用高分辨率图像以获得清晰显示
-- 在所有Logo尺寸中保持一致的品牌形象
-- 在明暗背景下测试Logo效果
-- 确保Logo在小尺寸下仍可读
+- Utilisez des images haute résolution pour un affichage net
+- Maintenez une image de marque cohérente sur toutes les tailles de logo
+- Testez le logo sur des fonds clairs et sombres
+- Assurez-vous que le logo reste lisible en petite taille
 
-### 品牌一致性
+### Cohérence de la marque
 
-- 在整个界面中使用一致的颜色和字体
-- 与您现有的品牌指南保持一致
-- 在不同屏幕尺寸下测试自定义界面
-- 保持专业外观
+- Utilisez des couleurs et polices cohérentes dans toute l'interface
+- Alignez-vous avec vos directives de marque existantes
+- Testez l'interface personnalisée sur différentes tailles d'écran
+- Maintenez une apparence professionnelle
 
-### 链接配置
+### Configuration des liens
 
-- 对所有外部链接使用HTTPS
-- 部署前测试所有链接
-- 确保支持渠道得到适当监控
-- 保持文档链接的最新状态
+- Utilisez HTTPS pour tous les liens externes
+- Testez tous les liens avant le déploiement
+- Assurez-vous que les canaux de support sont correctement surveillés
+- Maintenez les liens de documentation à jour
 
-## 故障排除
+## Dépannage
 
-### 常见问题
+### Problèmes courants
 
-**Logo未显示：**
+**Le logo ne s'affiche pas :**
 
-- 检查文件路径和权限
-- 验证图像格式受支持
-- 确保图像尺寸合适
-- 清除浏览器缓存并重启应用
+- Vérifiez les chemins de fichiers et les permissions
+- Validez que le format d'image est pris en charge
+- Assurez-vous que la taille de l'image est appropriée
+- Videz le cache du navigateur et redémarrez l'application
 
-**配置未保存：**
+**La configuration n'est pas enregistrée :**
 
-- 检查文件系统权限
-- 验证JSON语法正确
-- 确保配置目录存在
-- 尝试以管理员身份运行（如需要）
+- Vérifiez les permissions du système de fichiers
+- Validez que la syntaxe JSON est correcte
+- Assurez-vous que le répertoire de configuration existe
+- Essayez d'exécuter en tant qu'administrateur (si nécessaire)
 
-**构建失败：**
+**Échec de la construction :**
 
-- 验证所有资源文件存在
-- 检查配置文件语法
-- 确保图标文件格式正确
-- 查看构建日志获取具体错误
+- Validez que tous les fichiers de ressources existent
+- Vérifiez la syntaxe du fichier de configuration
+- Assurez-vous que les formats de fichiers d'icônes sont corrects
+- Consultez les journaux de construction pour les erreurs spécifiques
 
-### 获取帮助
+### Obtenir de l'aide
 
-如果在白标设置过程中遇到问题：
+Si vous rencontrez des problèmes lors de la configuration de la marque blanche :
 
-1. 查看上述故障排除部分
-2. 检查配置文件语法
-3. 通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系技术支持
-4. 报告问题时请包含您的配置文件和错误信息
+1. Consultez la section de dépannage ci-dessus
+2. Vérifiez la syntaxe du fichier de configuration
+3. Contactez le support technique via [Telegram](https://t.me/tikmatrix_agent_bot)
+4. Incluez votre fichier de configuration et les messages d'erreur lors du signalement de problèmes
 
-## 许可和使用
+## Licence et utilisation
 
-- 白标功能仅对年付订阅用户开放
-- 自定义品牌权利包含在您的订阅中
-- 分发自定义版本可能需要额外许可
-- 企业许可选项请联系客服
+- La fonction de marque blanche est réservée aux utilisateurs avec abonnement annuel
+- Les droits de personnalisation de la marque sont inclus dans votre abonnement
+- La distribution de versions personnalisées peut nécessiter une licence supplémentaire
+- Contactez le service client pour les options de licence d'entreprise
 
 ---
 
-**需要解锁码？** 请携带您的年付订阅详情通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系客服团队。
+**Besoin d'un code de déverrouillage ?** Veuillez contacter l'équipe de support via [Telegram](https://t.me/tikmatrix_agent_bot) avec les détails de votre abonnement annuel.

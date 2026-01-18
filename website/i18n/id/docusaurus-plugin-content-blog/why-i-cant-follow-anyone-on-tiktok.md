@@ -1,44 +1,44 @@
 ---
 slug: why-i-cant-follow-anyone-on-tiktok
-title: 为什么我无法在TikTok上关注任何人
+title: Mengapa Saya Tidak Bisa Follow Siapapun di TikTok
 authors: tikMatrix
 tags: [tikmatrix, tiktok, follow, error]
 ---
 
-如果你无法在 TikTok 上关注任何人，可能有几个原因导致这个问题。以下是一些常见原因和解决方案，帮助你解决这个问题：
+Jika Anda tidak bisa follow siapapun di TikTok, ada beberapa alasan yang mungkin menyebabkan masalah ini. Berikut adalah beberapa penyebab umum dan solusinya untuk membantu Anda mengatasi masalah:
 <!--truncate-->
 ---
 
-## 1. 账户限制
+## 1. Pembatasan Akun
 
-由于各种原因，例如违反社区准则、垃圾信息或可疑活动，TikTok 可能会限制你的账户关注用户。如果你收到了 TikTok 的警告或通知，你应该解决这些问题以恢复账户的全部功能。
+TikTok mungkin membatasi kemampuan akun Anda untuk follow pengguna karena berbagai alasan, seperti melanggar pedoman komunitas, spam, atau aktivitas mencurigakan. Jika Anda menerima peringatan atau notifikasi dari TikTok, Anda harus mengatasi masalah tersebut untuk mengembalikan fungsi penuh akun.
 
-## 2. 关注限制
+## 2. Batas Follow
 
-TikTok 对你在特定时间内可以关注的用户数量有限制。如果你达到了这个限制，你将无法再关注更多用户，直到限制解除。等待一段时间后再尝试关注更多用户。
+TikTok memiliki batasan jumlah pengguna yang bisa Anda follow dalam periode waktu tertentu. Jika Anda mencapai batas ini, Anda tidak akan bisa follow pengguna lain sampai batasan diangkat. Tunggu beberapa waktu sebelum mencoba follow lebih banyak pengguna.
 
-## 3. 技术问题
+## 3. Masalah Teknis
 
-有时，TikTok 应用中的技术故障或错误可能会阻止你关注用户。尝试重新启动应用、清除缓存或将应用更新到最新版本，以解决任何技术问题。
+Terkadang, glitch atau bug teknis di aplikasi TikTok bisa mencegah Anda follow pengguna. Coba restart aplikasi, clear cache, atau update aplikasi ke versi terbaru untuk mengatasi masalah teknis.
 
-## 4. 网络连接
+## 4. Koneksi Internet
 
-网络连接不良也可能导致在 TikTok 上关注用户的问题。确保你有稳定的互联网连接，然后再尝试关注用户。
+Koneksi internet yang buruk juga bisa menyebabkan masalah saat follow pengguna di TikTok. Pastikan Anda memiliki koneksi internet yang stabil sebelum mencoba follow pengguna.
 
-## 5. 账户验证
+## 5. Verifikasi Akun
 
-如果你的账户未验证，TikTok 可能会限制某些功能，包括关注用户。通过链接电话号码或电子邮件地址验证你的账户，以解锁所有功能。
+Jika akun Anda belum terverifikasi, TikTok mungkin membatasi beberapa fitur, termasuk follow pengguna. Verifikasi akun Anda dengan menghubungkan nomor telepon atau alamat email untuk membuka semua fitur.
 
-## 6. 隐形封禁
+## 6. Shadowban
 
-如果你在 TikTok 上被隐形封禁，你的账户可见性和功能可能会受到限制，包括关注用户。检查你是否违反了 TikTok 的准则或社区标准，并解决任何问题以解除隐形封禁。
+Jika Anda terkena shadowban di TikTok, visibilitas dan fungsi akun Anda mungkin dibatasi, termasuk follow pengguna. Periksa apakah Anda melanggar pedoman atau standar komunitas TikTok, dan atasi masalahnya untuk mengangkat shadowban.
 
-## 7. 应用权限
+## 7. Izin Aplikasi
 
-确保 TikTok 应用具有访问你设备功能的必要权限，例如联系人、相机和位置。在应用设置中授予所需权限，以启用关注用户功能。
+Pastikan aplikasi TikTok memiliki izin yang diperlukan untuk mengakses fungsi perangkat Anda, seperti kontak, kamera, dan lokasi. Berikan izin yang diperlukan di pengaturan aplikasi untuk mengaktifkan fitur follow pengguna.
 
-## 8. 服务器问题
+## 8. Masalah Server
 
-有时，TikTok 的服务器可能会出现停机或问题，影响包括关注用户在内的各种功能。检查 TikTok 的官方社交媒体账户或支持渠道，了解有关服务器问题的任何公告。
+Terkadang, server TikTok mungkin mengalami downtime atau masalah yang mempengaruhi berbagai fungsi, termasuk follow pengguna. Periksa akun media sosial resmi TikTok atau channel support untuk pengumuman tentang masalah server.
 
-如果你尝试了这些解决方案后仍然无法在 TikTok 上关注任何人，可以联系 TikTok 的支持团队以获得进一步帮助。提供你遇到问题的详细信息，他们可能会帮助你解决问题。
+Jika Anda masih tidak bisa follow siapapun di TikTok setelah mencoba solusi ini, hubungi tim support TikTok untuk bantuan lebih lanjut. Berikan detail tentang masalah yang Anda alami, dan mereka mungkin bisa membantu menyelesaikan masalah.

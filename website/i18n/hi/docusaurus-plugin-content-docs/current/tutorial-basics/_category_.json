@@ -1,8 +1,8 @@
 {
-    "label": "教程 - 基础",
+    "label": "ट्यूटोरियल - बुनियादी",
     "position": 1,
     "link": {
         "type": "generated-index",
-        "description": "学习如何设置TikMatrix。"
+        "description": "TikMatrix सेटअप करना सीखें।"
     }
 }

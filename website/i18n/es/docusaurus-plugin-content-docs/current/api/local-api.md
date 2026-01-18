@@ -1,32 +1,32 @@
 ---
 sidebar_position: 1
-title: 本地 API 概览
-description: TikMatrix 本地 API，用于以编程方式管理任务
+title: Visión General de la API Local
+description: API local de TikMatrix para gestión programática de tareas
 ---
 
-TikMatrix 提供了一个本地的 RESTful API，允许你以编程方式管理任务。这对于将 TikMatrix 集成到你自己的自动化系统、构建自定义工作流程或创建批量操作非常有用。
+TikMatrix proporciona una API RESTful local que te permite gestionar tareas de forma programática. Esto es útil para integrar TikMatrix en tus propios sistemas de automatización, construir flujos de trabajo personalizados o crear operaciones por lotes.
 
-## 要求
+## Requisitos
 
-:::warning 许可证要求
-**本地 API 仅对 Pro、Team 和 Business 计划用户开放。** Starter 计划不提供 API 访问权限。
+:::warning Requisito de Licencia
+**La API local está disponible solo para usuarios de los planes Pro, Team y Business.** El plan Starter no proporciona acceso a la API.
 :::
 
-## 基础 URL
+## URL Base
 
-API 在本机运行，地址为：
+La API se ejecuta localmente en:
 
 ```text
 http://localhost:50809/api/v1/
 ```
 
 :::note
-端口 `50809` 为默认端口。请在发起请求前确保 TikMatrix 已在运行。
+El puerto `50809` es el puerto predeterminado. Asegúrate de que TikMatrix esté en ejecución antes de realizar solicitudes.
 :::
 
-## 响应格式
+## Formato de Respuesta
 
-所有 API 响应遵循以下格式：
+Todas las respuestas de la API siguen este formato:
 
 ```json
 {
@@ -36,29 +36,29 @@ http://localhost:50809/api/v1/
 }
 ```
 
-### 响应码说明
+### Códigos de Respuesta
 
-| Code | 描述 |
+| Code | Descripción |
 |------|------|
-| 0 | 成功 |
-| 40001 | 参数错误 - 无效的请求参数 |
-| 40002 | 参数错误 - 缺少 script_name |
-| 40003 | 参数错误 - 脚本暂不支持 API 调用 |
-| 40301 | 禁止 - API 访问需要 Pro+ 计划 |
-| 40401 | 未找到 - 资源不存在 |
-| 50001 | 服务器内部错误 |
+| 0 | Éxito |
+| 40001 | Error de parámetro - Parámetros de solicitud inválidos |
+| 40002 | Error de parámetro - Falta script_name |
+| 40003 | Error de parámetro - El script no soporta llamadas API actualmente |
+| 40301 | Prohibido - El acceso a la API requiere plan Pro+ |
+| 40401 | No encontrado - El recurso no existe |
+| 50001 | Error interno del servidor |
 
-## 快速开始
+## Inicio Rápido
 
-### 1. 检查 API 访问权限
+### 1. Verificar Acceso a la API
 
-首先，确认你的许可证是否支持 API：
+Primero, confirma si tu licencia soporta API:
 
 ```bash
 curl http://localhost:50809/api/v1/license/check
 ```
 
-示例响应：
+Respuesta de ejemplo:
 
 ```json
 {
@@ -73,7 +73,7 @@ curl http://localhost:50809/api/v1/license/check
 }
 ```
 
-### 2. 创建任务
+### 2. Crear una Tarea
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -83,54 +83,54 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 1,
-      "captions": "看看我的新视频！#热门"
+      "captions": "¡Mira mi nuevo video! #viral"
     },
     "enable_multi_account": false
   }'
 ```
 
-### 3. 查询任务列表
+### 3. Listar Tareas
 
 ```bash
 curl http://localhost:50809/api/v1/task?status=0&page=1&page_size=20
 ```
 
-## 可用脚本
+## Scripts Disponibles
 
-:::info 当前支持
-目前，本地 API 支持 `post`、`follow`、`unfollow`、`account_warmup` 和 `comment` 脚本。更多脚本将在未来版本中陆续添加。
+:::info Soporte Actual
+Actualmente, la API local soporta los scripts `post`, `follow`, `unfollow`, `account_warmup` y `comment`. Más scripts se añadirán en futuras versiones.
 :::
 
-`script_name` 参数可接受下列值：
+El parámetro `script_name` acepta los siguientes valores:
 
-| 脚本名 | 描述 | API 支持 |
+| Nombre del Script | Descripción | Soporte API |
 |--------|------|----------|
-| `post` | 发布内容 | ✅ 已支持 |
-| `follow` | 关注用户 | ✅ 已支持 |
-| `unfollow` | 取消关注 | ✅ 已支持 |
-| `account_warmup` | 账号预热 | ✅ 已支持 |
-| `comment` | 评论 | ✅ 已支持 |
-| `like` | 点赞 | 🔜 即将推出 |
-| `message` | 私信 | 🔜 即将推出 |
-| `super_marketing` | 超级营销活动 | 🔜 即将推出 |
-| `profile` | 更新个人资料 | 🔜 即将推出 |
-| `scrape_user` | 抓取用户数据 | 🔜 即将推出 |
+| `post` | Publicar contenido | ✅ Soportado |
+| `follow` | Seguir usuarios | ✅ Soportado |
+| `unfollow` | Dejar de seguir | ✅ Soportado |
+| `account_warmup` | Calentamiento de cuenta | ✅ Soportado |
+| `comment` | Comentar | ✅ Soportado |
+| `like` | Me gusta | 🔜 Próximamente |
+| `message` | Mensaje directo | 🔜 Próximamente |
+| `super_marketing` | Campaña de super marketing | 🔜 Próximamente |
+| `profile` | Actualizar perfil | 🔜 Próximamente |
+| `scrape_user` | Extraer datos de usuario | 🔜 Próximamente |
 
-## 任务状态
+## Estados de Tarea
 
-| 状态码 | 状态文本 | 描述 |
+| Código de Estado | Texto de Estado | Descripción |
 |--------|----------|------|
-| 0 | pending | 任务等待执行 |
-| 1 | running | 任务正在执行 |
-| 2 | completed | 任务执行成功 |
-| 3 | failed | 任务执行失败 |
+| 0 | pending | Tarea esperando ejecución |
+| 1 | running | Tarea en ejecución |
+| 2 | completed | Tarea completada exitosamente |
+| 3 | failed | Tarea fallida |
 
-## 后续
+## Siguiente Paso
 
-- [任务管理 API](./task-management) - 创建、查询和管理任务
-- [发布脚本配置](./post-script) - 配置发布脚本参数
-- [关注脚本配置](./follow-script) - 配置关注脚本参数
-- [取消关注脚本配置](./unfollow-script) - 配置取消关注脚本参数
-- [账号预热脚本配置](./account-warmup-script) - 配置账号预热脚本参数
-- [评论脚本配置](./comment-script) - 配置评论脚本参数
-- [API 示例](./examples) - 不同语言的代码示例
+- [API de Gestión de Tareas](./task-management) - Crear, consultar y gestionar tareas
+- [Configuración del Script Post](./post-script) - Configurar parámetros del script de publicación
+- [Configuración del Script Follow](./follow-script) - Configurar parámetros del script de seguir
+- [Configuración del Script Unfollow](./unfollow-script) - Configurar parámetros del script de dejar de seguir
+- [Configuración del Script Account Warmup](./account-warmup-script) - Configurar parámetros del script de calentamiento
+- [Configuración del Script Comment](./comment-script) - Configurar parámetros del script de comentario
+- [Ejemplos de API](./examples) - Ejemplos de código en diferentes lenguajes

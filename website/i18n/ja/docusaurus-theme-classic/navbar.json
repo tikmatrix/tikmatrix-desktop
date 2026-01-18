@@ -7,7 +7,7 @@
     "message": "ドキュメント"
   },
   "item.label.Get Started": {
-    "message": "始める",
+    "message": "スタートガイド",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Tutorial": {
@@ -15,7 +15,7 @@
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Rewards": {
-    "message": "報酬で稼ぐ",
+    "message": "アフィリエイト報酬",
     "description": "Navbar item with label Rewards"
   },
   "item.label.Features": {
@@ -31,15 +31,15 @@
     "description": "Navbar item with label Pricing"
   },
   "item.label.Contact": {
-    "message": "お問い合わせ",
+    "message": "联系我们",
     "description": "Navbar item with label Contact"
   },
   "item.label.Download": {
-    "message": "ダウンロード",
+    "message": "下载",
     "description": "Navbar item with label Download"
   },
   "item.label.FAQ": {
-    "message": "よくある質問",
+    "message": "常见问题",
     "description": "Navbar item with label FAQ"
   },
   "logo.alt": {
@@ -51,15 +51,15 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.About Us": {
-    "message": "私たちについて",
+    "message": "会社概要",
     "description": "Navbar item with label About Us"
   },
   "item.label.Advertising": {
-    "message": "広告",
+    "message": "广告",
     "description": "Navbar item with label Advertising"
   },
   "item.label.AI Search": {
-    "message": "AI検索",
+    "message": "AI 検索",
     "description": "Navbar item with label AI Search"
   }
 }

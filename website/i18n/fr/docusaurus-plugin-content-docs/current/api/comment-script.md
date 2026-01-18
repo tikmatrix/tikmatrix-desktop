@@ -1,45 +1,45 @@
 ---
 sidebar_position: 5
-title: 评论脚本配置
-description: 评论脚本的完整配置参考
+title: Configuration du Script de Commentaire
+description: Référence complète de configuration du script de commentaire
 ---
 
-本页介绍用于任务创建的 `comment` 脚本的配置参数。
+Cette page documente les paramètres de configuration du script `comment` utilisé lors de la création de tâches.
 
-## 概述
+## Vue d'ensemble
 
-`comment` 脚本用于自动在 TikTok 或 Instagram 帖子上发布评论。当您通过 API 提供多个目标帖子 URL 时，**每个目标帖子 URL 创建一个任务**。您可以使用 `start_time` 参数控制每个任务的执行时间。
+Le script `comment` permet de publier automatiquement des commentaires sur des publications TikTok ou Instagram. Lorsque vous fournissez plusieurs URL de publications cibles via l'API, **une tâche est créée pour chaque URL de publication cible**. Vous pouvez contrôler le moment d'exécution de chaque tâche en utilisant le paramètre `start_time`.
 
-## 脚本配置 (`script_config`)
+## Configuration du Script (`script_config`)
 
-`script_config` 对象包含评论脚本的参数。以下是可用的参数：
+L'objet `script_config` contient les paramètres du script de commentaire. Voici les paramètres disponibles :
 
-### 参数
+### Paramètres
 
-| 参数 | 类型 | 必填 | 默认值 | 描述 |
+| Paramètre | Type | Requis | Valeur par défaut | Description |
 |-----------|------|----------|---------|-------------|
-| target_post_urls | string[] | 是* | [] | 要评论的目标帖子 URL 数组（每个 URL 一个任务） |
-| target_post_url | string | 是* | "" | 单个目标帖子 URL 或用换行符/逗号分隔的多个 URL |
-| comment_content | string | 是 | "" | 评论文本内容。可以包含用换行符分隔的多条评论 |
-| comment_order | string | 否 | "random" | 如何选择评论：`random`（随机）或 `sequential`（顺序） |
-| insert_emoji | boolean | 否 | false | 是否在评论中插入随机表情符号 |
-| comment_image_path | string | 否 | "" | 图片评论的图片文件路径（仅限 TikTok）。支持绝对路径或相对于 work_dir/upload/ 的相对路径 |
+| target_post_urls | string[] | Oui* | [] | Tableau d'URL de publications cibles à commenter (une tâche par URL) |
+| target_post_url | string | Oui* | "" | URL d'une seule publication cible ou plusieurs URL séparées par des retours à la ligne/virgules |
+| comment_content | string | Oui | "" | Contenu texte du commentaire. Peut contenir plusieurs commentaires séparés par des retours à la ligne |
+| comment_order | string | Non | "random" | Mode de sélection des commentaires : `random` (aléatoire) ou `sequential` (séquentiel) |
+| insert_emoji | boolean | Non | false | Insérer ou non des emojis aléatoires dans le commentaire |
+| comment_image_path | string | Non | "" | Chemin du fichier image pour un commentaire avec image (TikTok uniquement). Supporte les chemins absolus ou relatifs par rapport à work_dir/upload/ |
 
 :::note
-必须提供 `target_post_urls` 数组或 `target_post_url` 字符串。如果两者都提供，`target_post_urls` 优先。
+Vous devez fournir soit le tableau `target_post_urls`, soit la chaîne `target_post_url`. Si les deux sont fournis, `target_post_urls` a la priorité.
 :::
 
-:::tip 图片评论（仅限 TikTok）
-`comment_image_path` 参数允许您在评论中附加图片。此功能**仅在 TikTok 上支持** - Instagram 评论不支持图片附件。图片将被推送到设备并作为图库中的第一张图片被选择。
+:::tip Commentaires avec Image (TikTok uniquement)
+Le paramètre `comment_image_path` vous permet de joindre une image à votre commentaire. Cette fonctionnalité est **uniquement supportée sur TikTok** - les commentaires Instagram ne supportent pas les pièces jointes d'images. L'image sera envoyée à l'appareil et sélectionnée comme première image de la galerie.
 :::
 
-:::info 任务创建
-当提供多个目标帖子 URL 时，API 会 **为每个目标帖子 URL 创建一个任务**。例如，如果您指定 3 个帖子 URL 和 2 个设备，将创建 6 个任务。使用 `start_time` 参数控制任务开始执行的时间。
+:::info Création de Tâches
+Lorsque plusieurs URL de publications cibles sont fournies, l'API **crée une tâche pour chaque URL de publication cible**. Par exemple, si vous spécifiez 3 URL de publications et 2 appareils, 6 tâches seront créées. Utilisez le paramètre `start_time` pour contrôler le moment où les tâches commencent à s'exécuter.
 :::
 
-## 示例
+## Exemples
 
-### 评论单个帖子
+### Commenter une Seule Publication
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -49,14 +49,14 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "精彩内容！🔥"
+      "comment_content": "Contenu excellent ! 🔥"
     }
   }'
 ```
 
-### 使用多个评论选项
+### Utiliser Plusieurs Options de Commentaires
 
-提供用换行符分隔的多条评论。系统将根据 `comment_order` 选择其中一条：
+Fournissez plusieurs commentaires séparés par des retours à la ligne. Le système sélectionnera l'un d'eux selon `comment_order` :
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -66,15 +66,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "视频太棒了！\n喜欢这个内容！\n继续加油！👏\n真的很不错！",
+      "comment_content": "Vidéo fantastique !\nJ'adore ce contenu !\nContinuez comme ça ! 👏\nVraiment excellent !",
       "comment_order": "random"
     }
   }'
 ```
 
-### 评论多个帖子
+### Commenter Plusieurs Publications
 
-当评论多个帖子时，每个帖子创建一个任务：
+Lors de commentaires sur plusieurs publications, une tâche est créée pour chaque publication :
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -88,17 +88,17 @@ curl -X POST http://localhost:50809/api/v1/task \
         "https://www.tiktok.com/@user2/video/222",
         "https://www.tiktok.com/@user3/video/333"
       ],
-      "comment_content": "好视频！\n太棒了！\n喜欢！",
+      "comment_content": "Belle vidéo !\nSuper !\nJ'aime !",
       "comment_order": "sequential"
     }
   }'
 ```
 
-这将创建 3 个立即执行的独立任务。
+Cela créera 3 tâches indépendantes qui s'exécuteront immédiatement.
 
-### 定时评论
+### Commentaires Programmés
 
-使用 `start_time` 安排任务开始执行的时间：
+Utilisez `start_time` pour planifier le moment de début d'exécution de la tâche :
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -108,15 +108,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "定时评论！"
+      "comment_content": "Commentaire programmé !"
     },
     "start_time": "14:30"
   }'
 ```
 
-### 带表情符号插入的评论
+### Commentaires avec Insertion d'Emojis
 
-启用自动表情符号插入使评论更具吸引力：
+Activez l'insertion automatique d'emojis pour rendre les commentaires plus engageants :
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -126,15 +126,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "这太棒了",
+      "comment_content": "C'est fantastique",
       "insert_emoji": true
     }
   }'
 ```
 
-### 按用户名列表模式评论
+### Commenter par Mode Liste de Noms d'Utilisateur
 
-直接为特定账号创建评论任务：
+Créez directement des tâches de commentaire pour des comptes spécifiques :
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -144,12 +144,12 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@target/video/123",
-      "comment_content": "视频不错！"
+      "comment_content": "Belle vidéo !"
     }
   }'
 ```
 
-### 在多设备上批量评论
+### Commentaires en Masse sur Plusieurs Appareils
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -159,16 +159,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@viral/video/999",
-      "comment_content": "内容很棒！\n出色的作品！\n太喜欢了！",
+      "comment_content": "Contenu génial !\nTravail excellent !\nJ'adore tellement !",
       "comment_order": "random"
     },
     "enable_multi_account": true
   }'
 ```
 
-### Instagram 评论示例
+### Exemple de Commentaire Instagram
 
-同样的 API 适用于 Instagram 帖子：
+La même API s'applique aux publications Instagram :
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -178,15 +178,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.instagram.com/p/ABC123/",
-      "comment_content": "美丽的照片！📸",
+      "comment_content": "Belle photo ! 📸",
       "insert_emoji": true
     }
   }'
 ```
 
-### TikTok 图片评论示例
+### Exemple de Commentaire avec Image TikTok
 
-在您的 TikTok 评论中附加图片（不支持 Instagram）：
+Joignez une image à votre commentaire TikTok (non supporté sur Instagram) :
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -196,21 +196,21 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "看看这张图片！",
+      "comment_content": "Regardez cette image !",
       "comment_image_path": "C:/images/my_image.jpg"
     }
   }'
 ```
 
-:::info 图片路径
-`comment_image_path` 可以是：
+:::info Chemins d'Images
+`comment_image_path` peut être :
 
-- **绝对路径**：`C:/images/my_image.jpg` 或 `/home/user/images/my_image.jpg`
-- **相对路径**：`my_image.jpg`（相对于 `work_dir/upload/`）
+- **Chemin absolu** : `C:/images/my_image.jpg` ou `/home/user/images/my_image.jpg`
+- **Chemin relatif** : `my_image.jpg` (relatif à `work_dir/upload/`)
 
 :::
 
-## 响应
+## Réponse
 
 ```json
 {
@@ -223,22 +223,22 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 评论顺序
+## Ordre des Commentaires
 
-### 随机顺序 (`random`)
+### Ordre Aléatoire (`random`)
 
-- 从提供的列表中随机选择一条评论
-- 适合使评论看起来更自然
-- 默认行为
+- Sélectionne aléatoirement un commentaire dans la liste fournie
+- Adapté pour rendre les commentaires plus naturels
+- Comportement par défaut
 
-### 顺序 (`sequential`)
+### Séquentiel (`sequential`)
 
-- 根据 `job_count` 按顺序选择评论
-- 第一个任务使用第一条评论，第二个任务使用第二条评论，依此类推
-- 到达列表末尾时循环回开头
-- 适合在多个任务之间分发不同的评论
+- Sélectionne les commentaires dans l'ordre selon `job_count`
+- La première tâche utilise le premier commentaire, la deuxième tâche utilise le deuxième commentaire, etc.
+- Revient au début lorsque la fin de la liste est atteinte
+- Adapté pour distribuer différents commentaires entre plusieurs tâches
 
-## 帖子 URL 格式
+## Formats d'URL de Publications
 
 ### TikTok
 
@@ -254,29 +254,29 @@ https://www.instagram.com/p/ABCDEFGHIJK/
 https://www.instagram.com/reel/ABCDEFGHIJK/
 ```
 
-## 最佳实践
+## Meilleures Pratiques
 
-1. **变化您的评论**：提供多个评论选项以避免看起来像垃圾信息。
+1. **Variez vos commentaires** : Fournissez plusieurs options de commentaires pour éviter d'avoir l'air de spam.
 
-2. **使用顺序模式获得多样性**：当使用同一设备评论多个帖子时，使用 `sequential` 顺序来分发不同的评论。
+2. **Utilisez le mode séquentiel pour la diversité** : Lorsque vous commentez plusieurs publications avec le même appareil, utilisez l'ordre `sequential` pour distribuer différents commentaires.
 
-3. **启用表情符号插入**：设置 `insert_emoji: true` 使评论看起来更自然和有吸引力。
+3. **Activez l'insertion d'emojis** : Définissez `insert_emoji: true` pour rendre les commentaires plus naturels et engageants.
 
-4. **安排任务**：使用 `start_time` 参数将评论分散在一段时间内，减少触发频率限制的机会。
+4. **Planifiez les tâches** : Utilisez le paramètre `start_time` pour espacer les commentaires dans le temps, réduisant les chances de déclencher des limites de fréquence.
 
-5. **遵守平台限制**：不要一次创建太多评论任务。大多数平台对评论有频率限制。
+5. **Respectez les limites de la plateforme** : Ne créez pas trop de tâches de commentaires à la fois. La plupart des plateformes ont des limites de fréquence pour les commentaires.
 
-## 错误代码
+## Codes d'Erreur
 
-| 代码 | 描述 |
+| Code | Description |
 |------|-------------|
-| 40001 | 缺少目标帖子 URL 或评论内容 |
-| 40003 | API 不支持该脚本 |
-| 40301 | API 访问需要 Pro+ 计划 |
+| 40001 | URL de publication cible manquante ou contenu de commentaire manquant |
+| 40003 | Ce script n'est pas supporté par l'API |
+| 40301 | L'accès à l'API nécessite un plan Pro+ |
 
-## 另请参阅
+## Voir Aussi
 
-- [任务管理 API](./task-management.md) - 创建、列出和管理任务
-- [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [关注脚本配置](./follow-script.md) - 配置关注脚本参数
-- [本地 API 概述](./local-api.md) - API 概述和快速入门
+- [API de Gestion des Tâches](./task-management.md) - Créer, lister et gérer les tâches
+- [Configuration du Script de Publication](./post-script.md) - Configurer les paramètres du script de publication
+- [Configuration du Script de Suivi](./follow-script.md) - Configurer les paramètres du script de suivi
+- [Vue d'ensemble de l'API Locale](./local-api.md) - Vue d'ensemble de l'API et démarrage rapide

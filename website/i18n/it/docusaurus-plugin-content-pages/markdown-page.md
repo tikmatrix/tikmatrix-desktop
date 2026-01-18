@@ -1,5 +1,5 @@
 ---
-title: Markdown 页面示例
+title: Markdown 页面Esempio
 ---
 
-您不需要使用 React 来编写简单的独立页面。
+您不需要Utilizzo React 来编写简单的独立页面。

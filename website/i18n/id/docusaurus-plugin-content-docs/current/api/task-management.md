@@ -1,41 +1,41 @@
 ---
 sidebar_position: 2
-title: 任务管理 API
-description: 任务管理端点的完整参考
+title: API Manajemen Tugas
+description: Referensi lengkap untuk endpoint manajemen tugas
 ---
 
-本页面记录了管理 TikMatrix 任务的所有可用 API 端点。
+Halaman ini mendokumentasikan semua endpoint API yang tersedia untuk mengelola tugas TikMatrix.
 
-## 创建任务
+## Membuat Tugas
 
-为一个或多个设备或用户名创建新任务。
+Membuat tugas baru untuk satu atau beberapa perangkat atau username.
 
-- **端点：** `POST /api/v1/task`
-- **Content-Type：** `application/json`
+- **Endpoint:** `POST /api/v1/task`
+- **Content-Type:** `application/json`
 
-### 请求参数
+### Parameter Permintaan
 
-API 支持两种模式创建任务：
+API mendukung dua mode untuk membuat tugas:
 
-**模式 1：设备模式** - 使用 `serials` 为设备创建任务
-**模式 2：用户名模式** - 使用 `usernames` 直接为特定账号创建任务
+**Mode 1: Mode Perangkat** - Gunakan `serials` untuk membuat tugas untuk perangkat
+**Mode 2: Mode Username** - Gunakan `usernames` untuk langsung membuat tugas untuk akun tertentu
 
-| 参数 | 类型 | 必需 | 描述 |
+| Parameter | Tipe | Wajib | Deskripsi |
 |------|------|------|------|
-| serials | string[] | 条件必需 | 设备序列号数组（如果未提供 `usernames` 则必需） |
-| usernames | string[] | 条件必需 | 用户名数组（如果未提供 `serials` 则必需）。提供此参数时，直接为这些账号创建任务。 |
-| script_name | string | 是 | 要执行的脚本名称 |
-| script_config | object | 是 | 脚本的配置参数（请参阅对应脚本文档） |
-| enable_multi_account | boolean | 否 | 是否启用多账号模式（默认：false）。仅在设备模式下生效。 |
-| start_time | string | 否 | 计划执行时间，格式为 "HH:MM" |
+| serials | string[] | Wajib bersyarat | Array nomor seri perangkat (wajib jika `usernames` tidak disediakan) |
+| usernames | string[] | Wajib bersyarat | Array username (wajib jika `serials` tidak disediakan). Ketika parameter ini disediakan, tugas dibuat langsung untuk akun-akun ini. |
+| script_name | string | Ya | Nama script yang akan dieksekusi |
+| script_config | object | Ya | Parameter konfigurasi untuk script (lihat dokumentasi script terkait) |
+| enable_multi_account | boolean | Tidak | Apakah mengaktifkan mode multi-akun (default: false). Hanya berlaku dalam mode perangkat. |
+| start_time | string | Tidak | Waktu eksekusi terjadwal, format "HH:MM" |
 
-### 支持的脚本
+### Script yang Didukung
 
-| 脚本名称 | 描述 | 文档 |
+| Nama Script | Deskripsi | Dokumentasi |
 |----------|------|------|
-| post | 发布视频或图片到 TikTok/Instagram | [Post 脚本配置](./post-script.md) |
+| post | Posting video atau gambar ke TikTok/Instagram | [Konfigurasi Script Post](./post-script.md) |
 
-### 示例
+### Contoh
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -45,16 +45,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "Lihat video baru saya! #trending #fyp",
       "material_list": ["C:/Videos/video1.mp4"],
       "upload_wait_time": 60
     }
   }'
 ```
 
-有关 `script_config` 的详细参数和更多示例，请参阅 [Post 脚本配置](./post-script.md)。
+Untuk parameter detail `script_config` dan lebih banyak contoh, lihat [Konfigurasi Script Post](./post-script.md).
 
-### 响应
+### Response
 
 ```json
 {
@@ -67,68 +67,68 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 列表任务
+## Daftar Tugas
 
-使用可选过滤条件查询任务。
+Query tugas dengan kondisi filter opsional.
 
-- **端点：** `GET /api/v1/task`
+- **Endpoint:** `GET /api/v1/task`
 
-| 参数 | 类型 | 必需 | 描述 |
+| Parameter | Tipe | Wajib | Deskripsi |
 |------|------|------|------|
-| status | integer | 否 | 按状态过滤（0=pending, 1=running, 2=completed, 3=failed） |
-| serial | string | 否 | 按设备序列号过滤 |
-| script_name | string | 否 | 按脚本名称过滤 |
-| source | string | 否 | 按来源过滤（"ui" 或 "api"） |
-| page | integer | 否 | 页码（默认：1） |
-| page_size | integer | 否 | 每页条目数（默认：20，最大：100） |
+| status | integer | Tidak | Filter berdasarkan status (0=pending, 1=running, 2=completed, 3=failed) |
+| serial | string | Tidak | Filter berdasarkan nomor seri perangkat |
+| script_name | string | Tidak | Filter berdasarkan nama script |
+| source | string | Tidak | Filter berdasarkan sumber ("ui" atau "api") |
+| page | integer | Tidak | Nomor halaman (default: 1) |
+| page_size | integer | Tidak | Jumlah item per halaman (default: 20, maksimal: 100) |
 
-## 获取任务详情
+## Dapatkan Detail Tugas
 
-获取指定任务的详细信息。
+Dapatkan informasi detail untuk tugas tertentu.
 
-- **端点：** `GET /api/v1/task/{task_id}`
+- **Endpoint:** `GET /api/v1/task/{task_id}`
 
-## 删除任务
+## Hapus Tugas
 
-删除任务。如果任务正在运行，会先尝试停止它。
+Hapus tugas. Jika tugas sedang berjalan, akan mencoba menghentikannya terlebih dahulu.
 
-- **端点：** `DELETE /api/v1/task/{task_id}`
+- **Endpoint:** `DELETE /api/v1/task/{task_id}`
 
-## 批量删除任务
+## Hapus Tugas Secara Batch
 
-一次删除多个任务，正在运行的任务会先被停止。
+Hapus beberapa tugas sekaligus, tugas yang sedang berjalan akan dihentikan terlebih dahulu.
 
-- **端点：** `DELETE /api/v1/task/batch`
-- **请求体：** `{ "task_ids": [1, 2, 3] }`
+- **Endpoint:** `DELETE /api/v1/task/batch`
+- **Request Body:** `{ "task_ids": [1, 2, 3] }`
 
-## 停止任务
+## Hentikan Tugas
 
-停止正在运行的任务。
+Hentikan tugas yang sedang berjalan.
 
-- **端点：** `POST /api/v1/task/{task_id}/stop`
+- **Endpoint:** `POST /api/v1/task/{task_id}/stop`
 
-## 重试失败任务
+## Coba Lagi Tugas yang Gagal
 
-重试单个失败任务。
+Coba lagi satu tugas yang gagal.
 
-- **端点：** `POST /api/v1/task/{task_id}/retry`
+- **Endpoint:** `POST /api/v1/task/{task_id}/retry`
 
-## 重试所有失败任务
+## Coba Lagi Semua Tugas yang Gagal
 
-一次性重试所有失败的任务。
+Coba lagi semua tugas yang gagal sekaligus.
 
-- **端点：** `POST /api/v1/task/retry-all`
+- **Endpoint:** `POST /api/v1/task/retry-all`
 
-## 获取任务统计
+## Dapatkan Statistik Tugas
 
-获取任务总体统计数据。
+Dapatkan data statistik keseluruhan tugas.
 
-- **端点：** `GET /api/v1/task/stats`
-- **响应：** 返回 total、pending、running、completed、failed 的计数。
+- **Endpoint:** `GET /api/v1/task/stats`
+- **Response:** Mengembalikan jumlah total, pending, running, completed, failed.
 
-## 检查 API 许可
+## Periksa Lisensi API
 
-检查你的许可证是否支持 API 访问。
+Periksa apakah lisensi Anda mendukung akses API.
 
-- **端点：** `GET /api/v1/license/check`
-- **注意：** Starter 计划会返回错误码 40301；Pro/Team/Business 计划可访问 API。
+- **Endpoint:** `GET /api/v1/license/check`
+- **Catatan:** Paket Starter akan mengembalikan kode error 40301; paket Pro/Team/Business dapat mengakses API.
