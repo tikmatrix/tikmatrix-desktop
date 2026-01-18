@@ -20,7 +20,7 @@ Transférez votre licence TikMatrix d'un ordinateur à un autre. Ceci est utile 
 2. Cliquez sur l'**icône de licence** dans la barre de titre
 3. Cliquez sur le bouton **"Migrer la licence"**
 
-![Bouton de migration de licence](../img/migrate-button.webp)
+![Bouton de migration de licence](/img/migrate-button.webp)
 
 ### Étape 2 : Obtenir l'ID de la machine cible
 
@@ -31,7 +31,7 @@ Sur l'ordinateur cible :
 3. Copiez l'**ID de machine**
 4. Envoyez cet ID à l'ordinateur actuel
 
-![ID de la machine cible](../img/target-machine-id.webp)
+![ID de la machine cible](/img/target-machine-id.webp)
 
 ### Étape 3 : Valider et migrer
 
@@ -41,12 +41,12 @@ Retour sur l'ordinateur actuel :
 2. Cliquez sur **"Valider"** pour vérifier la compatibilité
 3. Examinez les détails de la licence affichés
 
-![Validation réussie](../img/validation-success.webp)
+![Validation réussie](/img/validation-success.webp)
 
 1. Cochez la case de confirmation
 2. Cliquez sur **"Migrer la licence"** et confirmez
 
-![Confirmation de migration](../img/migration-confirm.webp)
+![Confirmation de migration](/img/migration-confirm.webp)
 
 ### Étape 4 : Finaliser la configuration
 
@@ -54,7 +54,7 @@ Retour sur l'ordinateur actuel :
 2. Redémarrez TikMatrix sur l'ordinateur cible
 3. Votre licence est maintenant active sur le nouvel ordinateur
 
-![Migration réussie](../img/migration-success.webp)
+![Migration réussie](/img/migration-success.webp)
 
 ## Avertissements importants
 

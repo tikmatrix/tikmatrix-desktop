@@ -20,7 +20,7 @@ sidebar_position: 9
 2. לחץ על **סמל הרישיון** בשורת הכותרת
 3. לחץ על כפתור **"העברת רישיון"**
 
-![כפתור העברת רישיון](../img/migrate-button.webp)
+![כפתור העברת רישיון](/img/migrate-button.webp)
 
 ### שלב 2: קבלת מזהה מחשב יעד
 
@@ -31,7 +31,7 @@ sidebar_position: 9
 3. העתק את **מזהה המחשב**
 4. שלח מזהה זה למחשב הנוכחי
 
-![מזהה מחשב יעד](../img/target-machine-id.webp)
+![מזהה מחשב יעד](/img/target-machine-id.webp)
 
 ### שלב 3: אימות והעברה
 
@@ -41,12 +41,12 @@ sidebar_position: 9
 2. לחץ על **"אמת"** כדי לבדוק תאימות
 3. בדוק את פרטי הרישיון המוצגים
 
-![אימות מוצלח](../img/validation-success.webp)
+![אימות מוצלח](/img/validation-success.webp)
 
 1. סמן את תיבת האישור
 2. לחץ על **"העברת רישיון"** ואשר
 
-![אישור העברה](../img/migration-confirm.webp)
+![אישור העברה](/img/migration-confirm.webp)
 
 ### שלב 4: השלמת ההגדרה
 
@@ -54,7 +54,7 @@ sidebar_position: 9
 2. הפעל מחדש את TikMatrix במחשב היעד
 3. הרישיון שלך כעת פעיל במחשב החדש
 
-![העברה מוצלחת](../img/migration-success.webp)
+![העברה מוצלחת](/img/migration-success.webp)
 
 ## אזהרות חשובות
 
