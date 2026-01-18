@@ -18,6 +18,9 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
+  // Additional static directories to serve (include docs images so translations can reference them)
+  staticDirectories: ['static', 'docs'],
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'tikmatrix', // Usually your GitHub org/user name.

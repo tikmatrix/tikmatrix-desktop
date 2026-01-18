@@ -1,12 +1,11 @@
 ---
 slug: How-to-fix-vcruntime140.dll-not-found-when-open-TikMatrix
-title: "vcruntime140.dll नहीं मिली" त्रुटि को कैसे हल करें
-authors: tikMatrix
-tags: [vcruntime140.ddl not found,fixed,tikmatrix]
+title: '"vcruntime140.dll नहीं मिली" त्रुटि को कैसे हल करें'
+authors: "tikMatrix"
+tags: ["vcruntime140.dll not found","fixed","tikmatrix"]
 ---
 "vcruntime140.dll नहीं मिली" त्रुटि आमतौर पर तब होती है जब Microsoft Visual C++ पुनर्वितरण योग्य पैकेज इंस्टॉल नहीं होता है या दूषित हो जाता है। इस समस्या को ठीक करने के चरण यहां दिए गए हैं:
 <!--truncate-->
----
 
 1. **Microsoft Visual C++ पुनर्वितरण योग्य पैकेज डाउनलोड करें**:
    - [Microsoft Visual C++ Redistributable डाउनलोड पेज](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) पर जाएं।

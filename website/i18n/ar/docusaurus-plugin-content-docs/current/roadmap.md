@@ -8,7 +8,7 @@ slug: roadmap
 
 ## خريطة العملية الكاملة
 
-![خارطة طريق TikMatrix/IgMatrix](/img/roadmap-ar.svg)
+![خارطة طريق TikMatrix/IgMatrix](/img/roadmap-en.svg)
 
 ---
 

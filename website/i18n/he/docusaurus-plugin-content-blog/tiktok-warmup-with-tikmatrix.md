@@ -1,8 +1,8 @@
 ---
 slug: tiktok-warmup-with-tikmatrix-he
-title: "חימום" חשבונות TikTok חדשים עם TikMatrix - קצב בטוח ויעיל
-authors: tikMatrix
-tags: [שיווק TikTok, חימום חשבון, בקרת סיכונים, אוטומציה, TikMatrix]
+title: '"חימום" חשבונות TikTok חדשים עם TikMatrix - קצב בטוח ויעיל'
+authors: "tikMatrix"
+tags: ["שיווק TikTok","חימום חשבון","בקרת סיכונים","אוטומציה","TikMatrix"]
 ---
 
 > 📈 חשבונות חדשים זקוקים לזמן כדי לבנות אמון עם האלגוריתם.  
