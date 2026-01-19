@@ -1,0 +1,8 @@
+{
+    "label": "מדריך API",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "תיעוד API מקומי לניהול משימות פרוגרמטי. זמין רק למשתמשי רישיון Pro+."
+    }
+}

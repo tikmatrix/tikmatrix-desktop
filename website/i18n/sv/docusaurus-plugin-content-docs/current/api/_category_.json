@@ -1,0 +1,8 @@
+{
+    "label": "API-referens",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "Lokal API-dokumentation för programmatisk uppgiftshantering. Endast tillgänglig för Pro+ licensanvändare."
+    }
+}

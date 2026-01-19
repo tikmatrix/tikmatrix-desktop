@@ -247,7 +247,7 @@
     "message": "下载し安装"
   },
   "Download for Windows": {
-    "message": "Windows 下载"
+    "message": "Windows版をダウンロード"
   },
   "Email": {
     "message": "邮箱",
@@ -279,7 +279,7 @@
     "message": "7日間试用"
   },
   "Free": {
-    "message": "免费"
+    "message": "無料"
   },
   "Frequently Asked Questions": {
     "message": "常见问题"
@@ -304,7 +304,7 @@
     "message": "前往\"下载\"页面し下载最新版本の TikMatrix。"
   },
   "Here are some frequently asked questions.": {
-    "message": "以下是常见问题。"
+    "message": "よくある質問です。"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "每个携帯電話できます以ログイン几个tiktokアカウント?"
@@ -400,7 +400,7 @@
     "message": "一括ダイレクトメッセージ"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "周一至周五: 9:00AM - 5:00PM（UTC+8）",
+    "message": "月〜金: 午前9時 - 午後5時（UTC+8）",
     "description": "The working hours description"
   },
   "Monthly": {
@@ -416,7 +416,7 @@
     "message": "自然滑动轨迹"
   },
   "No Root Required": {
-    "message": "无需Root权限"
+    "message": "Root権限不要"
   },
   "No root permissions needed, ensuring device environment security": {
     "message": "无需root权限，保证デバイス环境セキュリティ"
@@ -500,7 +500,7 @@
     "message": "我们のサポート团队在这里ヘルプ您解决任何とIgMatrix相关の问题または疑问。"
   },
   "Per Month": {
-    "message": "每月"
+    "message": "月額"
   },
   "Per Year": {
     "message": "每年"
@@ -587,7 +587,7 @@
     "message": "とTikMatrix相同のできます靠技术"
   },
   "Save 50% compared to monthly plan": {
-    "message": "比月付方案节省50%"
+    "message": "月額プランより50%節約"
   },
   "Schedule your Instagram activities with intelligent timing algorithms": {
     "message": "使用智能时间算法安排您のInstagram活动"
@@ -676,11 +676,11 @@
     "message": "スクリプト输入文字采用シミュレート実際の人間の逐字输入"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "长度和宽度相对较大，但高度低（2u 尺寸）",
+    "message": "長さと幅は比較的大きいが、高さは低い（2uサイズ）",
     "description": "The description of PhoneFarm Box"
   },
   "The length and width are relatively small, but the height is high": {
-    "message": "长度和宽度相对较小，但高度高",
+    "message": "長さと幅は比較的小さいが、高さは高い",
     "description": "The description of PhoneFarm Box"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
@@ -931,7 +931,7 @@
     "description": "IgMatrix Linux即将推出提示"
   },
   "download.igmatrix.linux.description": {
-    "message": "Linux 版本正在开发中",
+    "message": "Linux版は開発中です",
     "description": "IgMatrix Linux开发中説明"
   },
   "download.igmatrix.linux.development": {
@@ -943,7 +943,7 @@
     "description": "IgMatrix Linux平台タイトル"
   },
   "download.igmatrix.mac.button": {
-    "message": "下载 Mac 版本",
+    "message": "Mac版をダウンロード",
     "description": "IgMatrix Mac下载按钮文本"
   },
   "download.igmatrix.mac.description": {
@@ -963,7 +963,7 @@
     "description": "IgMatrix网络接続必要"
   },
   "download.igmatrix.requirements.memory": {
-    "message": "内存：8 GB RAM",
+    "message": "メモリ: 8GB RAM",
     "description": "IgMatrix内存必要"
   },
   "download.igmatrix.requirements.os": {
@@ -1007,7 +1007,7 @@
     "description": "Linux即将推出提示"
   },
   "download.linux.description": {
-    "message": "Linux 版本正在开发中",
+    "message": "Linux版は開発中です",
     "description": "Linux开发中説明"
   },
   "download.linux.development": {
@@ -1019,7 +1019,7 @@
     "description": "Linux平台タイトル"
   },
   "download.mac.button": {
-    "message": "下载 Mac 版本",
+    "message": "Mac版をダウンロード",
     "description": "Mac下载按钮文本"
   },
   "download.mac.description": {
@@ -1039,7 +1039,7 @@
     "description": "网络接続必要"
   },
   "download.requirements.memory": {
-    "message": "内存：8 GB RAM",
+    "message": "メモリ: 8GB RAM",
     "description": "内存必要"
   },
   "download.requirements.os": {
@@ -1231,11 +1231,11 @@
     "description": "免费计划説明"
   },
   "pricing.free.name": {
-    "message": "免费",
+    "message": "無料",
     "description": "免费计划名称"
   },
   "pricing.free_label": {
-    "message": "免费",
+    "message": "無料",
     "description": "Free label"
   },
   "pricing.get_started": {
@@ -1255,21 +1255,21 @@
     "message": "本地 API"
   },
   "pricing.per_month": {
-    "message": "每月"
+    "message": "月額"
   },
   "pricing.per_month_pc": {
     "message": "每月/每台コンピュータ",
     "description": "每月每台コンピュータ文本"
   },
   "pricing.per_year": {
-    "message": "每年 (节省 30%)"
+    "message": "年間（30%節約）"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "最多20个し发自動化タスク",
     "description": "专业版し发タスク数"
   },
   "pricing.pro.description": {
-    "message": "适合专业人士和小企业",
+    "message": "プロフェッショナルや中小企業に最適",
     "description": "专业版计划説明"
   },
   "pricing.pro.manage_phones": {
@@ -1277,7 +1277,7 @@
     "description": "专业版计划機能"
   },
   "pricing.pro.name": {
-    "message": "专业版",
+    "message": "プロフェッショナル",
     "description": "专业版计划名称"
   },
   "pricing.starter.concurrent_tasks": {
@@ -1285,7 +1285,7 @@
     "description": "入门版し发タスク数"
   },
   "pricing.starter.description": {
-    "message": "适合个人和小团队",
+    "message": "個人や小規模チームに最適",
     "description": "入门版计划説明"
   },
   "pricing.starter.manage_phones": {
@@ -1328,7 +1328,7 @@
     "message": "月付"
   },
   "pricing.toggle.yearly": {
-    "message": "年付 (节省 30%)"
+    "message": "年払い（30%節約）"
   },
   "pricing.unlimited_devices": {
     "message": "无限デバイス接続",
@@ -1386,7 +1386,7 @@
     "message": "ランダム化时间間隔"
   },
   "tech.point.humanBehavior.b2": {
-    "message": "自然滚动速度曲线"
+    "message": "自然なスクロール速度曲線"
   },
   "tech.point.humanBehavior.b3": {
     "message": "会话时长建模"
@@ -1428,7 +1428,7 @@
     "message": "被动捕获模式"
   },
   "tech.point.realTouch.b1": {
-    "message": "硬件级触控信号生成"
+    "message": "ハードウェアレベルのタッチ信号生成"
   },
   "tech.point.realTouch.b2": {
     "message": "压力和速度ランダム化"
@@ -1557,7 +1557,7 @@
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "复制代码到剪贴板",
+    "message": "クリップボードにコードをコピー",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.wordWrapToggle": {
@@ -1633,7 +1633,7 @@
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "博文列表分页导航",
+    "message": "ブログ投稿リストのページネーション",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
@@ -1657,7 +1657,7 @@
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "{count} 篇博文",
+    "message": "{count}件のブログ投稿",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMore": {
@@ -1677,7 +1677,7 @@
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} 含有标签「{tagName}」",
+    "message": "{tagName}タグの{nPosts}件",
     "description": "The title of the page for a blog tag"
   },
   "theme.colorToggle.ariaLabel": {
@@ -1697,7 +1697,7 @@
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading}的直接链接",
+    "message": "{heading}への直接リンク",
     "description": "Title for link to heading"
   },
   "theme.common.skipToMainContent": {
@@ -1705,7 +1705,7 @@
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} 个项目",
+    "message": "{count}個のアイテム",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.breadcrumbs.home": {
@@ -1757,7 +1757,7 @@
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged}「{tagName}」",
+    "message": "{tagName}タグの{nDocsTagged}件",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
@@ -1765,10 +1765,10 @@
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.versionBadge.label": {
-    "message": "版本：{versionLabel}"
+    "message": "バージョン: {versionLabel}"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "最新版本",
+    "message": "最新バージョン",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
@@ -1790,15 +1790,15 @@
     "message": "查看所有工具"
   },
   "theme.lastUpdated.atDate": {
-    "message": "于 {date} ",
+    "message": "{date}に ",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": "由 {user} ",
+    "message": "{user}により ",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "最后{byUser}{atDate}更新",
+    "message": "最終更新: {byUser}{atDate}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.item.label.Advertising": {
@@ -1852,7 +1852,7 @@
     "description": "アプリ名称"
   },
   "whitelabel.contactSupport": {
-    "message": "联系客服获取解锁码",
+    "message": "ロック解除コードを取得するにはカスタマーサービスにお問い合わせください",
     "description": "联系客服获取白标解锁码"
   },
   "whitelabel.customization": {

@@ -400,7 +400,7 @@
     "message": "मास DM"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "周一至周五: 9:00AM - 5:00PM（UTC+8）",
+    "message": "सोम - शुक्र: सुबह 9:00 - शाम 5:00 (UTC+8)",
     "description": "The working hours description"
   },
   "Monthly": {
@@ -1262,7 +1262,7 @@
     "description": "每月每台电脑文本"
   },
   "pricing.per_year": {
-    "message": "每年 (节省 30%)"
+    "message": "वार्षिक (30% बचाएं)"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "最多20并发स्वचालन कार्य",
@@ -1757,7 +1757,7 @@
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged}「{tagName}」",
+    "message": "{tagName} टैग के साथ {nDocsTagged}",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
