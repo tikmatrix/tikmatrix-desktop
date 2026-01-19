@@ -112,24 +112,27 @@
 
 ### 2. 混合语言文本
 
-某些翻译包含多种语言的混合，例如：
+某些翻译包含多种语言的混合或错误使用了其他语言，例如：
 
 - **意大利语** (`it/code.json`):
-  - 键: `"Additionally, our real device matrix program system can perfectly avoid..."`
-  - 完整键: 搜索 "Our account suspension rate is 0%" 可定位
-  - 值: "同时我们的Dispositivo Fisico矩阵Programma系统"（中文+意大利语）
+  - 翻译键包含文本: "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%."
+  - 翻译值: "同时我们的Dispositivo Fisico矩阵Programma系统 可以完美避开TIK风控带来的封停Account 我们的封号率Sì0%"
+  - 问题: 中文、意大利语和英语混合
+  - 搜索关键字: "Dispositivo Fisico矩阵Programma"
 
 - **日语** (`ja/code.json`):
-  - 键: `"The motherboard machine consists of 20 Samsung phone motherboards..."`
-  - 完整键: 搜索 "unified USB connectivity" 可定位
-  - 值: "携帯電話主板机是20个三星携帯電話主板"（日语+中文）
+  - 翻译键包含文本: "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity..."
+  - 翻译值: "携帯電話主板机是20个三星携帯電話主板。它是一台通电自启动の，统一电源供电，统一の多风扇散热，统一の USB 接続..."
+  - 问题: 日语、简体中文混合
+  - 搜索关键字: "携帯電話主板机"
 
 - **韩语** (`ko/code.json`):
-  - 键: `"The motherboard machine consists of 20 Samsung phone motherboards..."`
-  - 完整键: 与日语相同，搜索 "unified USB connectivity" 可定位
-  - 值: "手机主板机是20个三星手机主板"（完全中文）
+  - 翻译键包含文本: "The motherboard machine consists of 20 Samsung phone motherboards..."（与日语使用相同的键）
+  - 翻译值: "手机主板机是20个三星手机主板。它是一台通电自启动的，统一电源供电，统一的多风扇散热，统一的 USB..."
+  - 问题: 完全使用简体中文，而非韩语
+  - 搜索关键字: "手机主板机是20个"
 
-**建议**: 这些混合语言文本应该被审查和修正，确保使用正确的目标语言。可以在对应的 code.json 文件中搜索上述关键字来快速定位这些翻译条目。
+**建议**: 这些混合语言或错误语言的文本应该被审查和修正，确保使用纯正的目标语言。可以在对应的 code.json 文件中搜索上述关键字来快速定位这些翻译条目。
 
 ---
 
