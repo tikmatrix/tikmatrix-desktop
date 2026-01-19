@@ -684,7 +684,7 @@
     "description": "The description of PhoneFarm Box"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "手机主板机是20个三星手机主板。它是一台通电自启动的，统一电源供电，统一的多风扇散热，统一的 USB 连接，支持 OTG 有线网络连接。",
+    "message": "메인보드 머신은 20개의 삼성 휴대폰 메인보드로 구성됩니다. 전원 연결 시 자동으로 켜지며, 통합 전원 공급, 통합 멀티팬 냉각 시스템, 통합 USB 연결을 갖추고 있습니다. 또한 OTG 유선 네트워크 연결도 지원합니다.",
     "description": "The description of PhoneFarm Box"
   },
   "TikMatrix": {

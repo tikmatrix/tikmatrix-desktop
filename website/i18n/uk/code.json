@@ -105,7 +105,8 @@
     "message": "Automatic video posting"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Automatically generate AI voiceover for videos"
+    "message": "Автоматично генерувати AI озвучення для відео",
+    "description": "The description of AI voiceover"
   },
   "Automatically recognize subtitles and append them to the video": {
     "message": "Automatically recognize subtitles and append them to the video"
@@ -114,7 +115,7 @@
     "message": "Automatically translate subtitles to any language"
   },
   "Automation & Content Management": {
-    "message": "Automation & Content Management"
+    "message": "Автоматизація та Управління Контентом"
   },
   "Basic Automation": {
     "message": "Basic Automation"
@@ -267,7 +268,8 @@
     "message": "Generate intelligent and contextual comments through ChatGPT API integration"
   },
   "Generate unique videos from one source video": {
-    "message": "Generate unique videos from one source video"
+    "message": "Генерувати унікальні відео з одного вихідного відео",
+    "description": "The description of Video unique"
   },
   "Get Started": {
     "message": "Get Started"
