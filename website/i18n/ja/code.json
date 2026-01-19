@@ -1,6 +1,6 @@
 {
   "24/7 Support": {
-    "message": "24/7サポート"
+    "message": "サポート 24/7"
   },
   "24h AI Assistant": {
     "message": "24時間AIアシスタント"
@@ -10,13 +10,13 @@
     "description": "The product label"
   },
   "AI-Generated Comments": {
-    "message": "AIスマートコメント"
+    "message": "AI生成コメント"
   },
   "API Protocol": {
     "message": "APIプロトコル"
   },
   "Account Safe": {
-    "message": "アカウントセキュリティ"
+    "message": "セキュリティ アカウント"
   },
   "Account Setup": {
     "message": "アカウント設定"
@@ -25,34 +25,34 @@
     "message": "アカウント管理"
   },
   "Account warmup": {
-    "message": "アカウントウォームアップ"
+    "message": "ウォームアップ アカウント"
   },
   "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
-    "message": "同時に我们の実機マトリックス程序系统 できます以完美避开TIK风控带来の封停アカウント  我们の封号率是0%"
+    "message": "さらに、当社の実機マトリックスプログラムシステムは、TIKのリスク管理措置によるアカウント停止を完全に回避できます。当社のアカウント停止率は0%です。"
   },
   "Advanced Technology for Superior Performance": {
-    "message": "先進技術による優れたパフォーマンス"
+    "message": "卓越したパフォーマンスのための先進技術"
   },
   "Advanced safety mechanisms": {
-    "message": "先進のセキュリティメカニズム"
+    "message": "高度な安全メカニズム"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "安装后，開くIgMatrix查看できます用のInstagram自動化スクリプト完整列表。スクリプト选择できます能とTikMatrix異なる。"
+    "message": "インストール後、IgMatrixを開いて利用可能なInstagram自動化スクリプトの完全なリストを表示してください。スクリプトの選択はTikMatrixと異なる場合があります。"
   },
   "All Features": {
-    "message": "所有機能"
+    "message": "Todas las funciones"
   },
   "All Free Features": {
-    "message": "所有免费機能"
+    "message": "Todas las funciones gratuitas"
   },
   "All Monthly Features": {
-    "message": "所有月付機能"
+    "message": "Todas las funciones mensuales"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "请始终检查您のIgMatrixソフトウェア中の实际できます用機能，因にスクリプト機能できます能とTikMatrix異なる。ソフトウェア界面将确切显示哪些自動化スクリプトできます用于Instagram。"
+    "message": "IgMatrixソフトウェアで実際に利用可能な機能を常に確認してください。スクリプト機能はTikMatrixと異なる場合があります。ソフトウェアインターフェースには、Instagramで利用可能な自動化スクリプトが正確に表示されます。"
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "自動化Instagram上での投稿、フォロー、コメント和エンゲージメント活动"
+    "message": "Instagramでの投稿、フォロー、コメント、エンゲージメント活動を自動化"
   },
   "Automated Comment": {
     "message": "自動コメント"
@@ -61,22 +61,22 @@
     "message": "自動フォロー"
   },
   "Automated Message": {
-    "message": "自動ダイレクトメッセージ"
+    "message": "自動メッセージ"
   },
   "Automated account nurturing": {
-    "message": "自動ウォームアップ"
+    "message": "自動アカウント育成"
   },
   "Automated scheduling for unattended operation": {
-    "message": "定时タスク实现无人值守"
+    "message": "無人操作のための自動スケジューリング"
   },
   "Automatic Capture": {
-    "message": "自動収集"
+    "message": "自動キャプチャ"
   },
   "Automatic account matching": {
-    "message": "自動アカウント匹配"
+    "message": "自動アカウントマッチング"
   },
   "Automatic account nurturing": {
-    "message": "自動ウォームアップ",
+    "message": "自動アカウント育成",
     "description": "The description of Automatic account nurturing"
   },
   "Automatic commenting": {
@@ -95,7 +95,7 @@
     "message": "自動ログイン"
   },
   "Automatic matching": {
-    "message": "自動匹配",
+    "message": "自動マッチング",
     "description": "The description of Automatic matching"
   },
   "Automatic posting": {
@@ -103,1764 +103,1764 @@
     "description": "The description of Automatic posting"
   },
   "Automatic profile setup": {
-    "message": "自動設定资料",
+    "message": "自動プロフィール設定",
     "description": "The description of Automatic profile setup"
   },
   "Automatic registration & login": {
-    "message": "自動登録和ログイン"
+    "message": "自動登録とログイン"
   },
   "Automatic video posting": {
-    "message": "自動投稿"
+    "message": "自動動画投稿"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "自動に動画生成AI配音",
+    "message": "動画に自動的にAI音声を生成",
     "description": "The description of AI voiceover"
   },
   "Automatically recognize subtitles and append them to the video": {
-    "message": "自動認識字幕し附加到動画中",
+    "message": "字幕を自動認識して動画に追加",
     "description": "The description of Recognize subtitles"
   },
   "Automatically translate subtitles to any language": {
-    "message": "自動将字幕翻译成任何言語",
+    "message": "字幕を任意の言語に自動翻訳",
     "description": "The description of Translate subtitles"
   },
   "Automation & Content Management": {
-    "message": "自動化和コンテンツ管理"
+    "message": "自動化とコンテンツ管理"
   },
   "Basic Automation": {
-    "message": "基础自動化"
+    "message": "基本自動化"
   },
   "Basic configuration": {
-    "message": "基础配置"
+    "message": "基本設定"
   },
   "Batch Generating Unique Videos": {
-    "message": "一括生成唯一動画",
+    "message": "ユニーク動画の一括生成",
     "description": "The description of Batch Generating Unique Videos"
   },
   "Batch account management": {
-    "message": "一括アカウント管理",
+    "message": "アカウントの一括管理",
     "description": "The description of Batch account management"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "一括ログインTikTokアカウント，サポートアカウント列表管理"
+    "message": "アカウントリスト管理を使用したTikTokアカウントへのバッチログイン"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "通じて一括いいね和回复特定コメント来提升エンゲージメント"
+    "message": "特定のコメントに一括でいいねと返信をしてエンゲージメントを高める"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
-    "message": "内置セキュリティメカニズム，保护您のInstagramアカウント免受封禁"
+    "message": "Instagramアカウントを停止から保護する安全メカニズムを搭載"
   },
   "Buy hardware": {
-    "message": "购买硬件",
+    "message": "Comprar hardware",
     "description": "The product label"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
-    "message": "我できます以在同じ台计算机上で同時に运行IgMatrix和TikMatrix吗？"
+    "message": "¿Puedo ejecutar IgMatrix y TikMatrix en la misma computadora?"
   },
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-    "message": "我できます以对IgMatrix和TikMatrix使用相同のチュートリアル吗？"
+    "message": "¿Puedo usar el mismo tutorial para IgMatrix y TikMatrix?"
   },
   "Character-by-Character Input": {
-    "message": "逐字输入シミュレート"
+    "message": "Entrada carácter por carácter"
   },
   "Check Available Scripts": {
-    "message": "查看できます用スクリプト"
+    "message": "利用可能なスクリプトを確認"
   },
   "Comment boost": {
-    "message": "コメント提升"
+    "message": "コメントブースト"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "一括コメント複数TikTok投稿，サポートカスタムコンテンツ和表情符号"
+    "message": "カスタマイズ可能なコンテンツと絵文字で複数のTikTok投稿に一括コメント"
   },
   "Comments, Messages, Follows": {
-    "message": "コメント、ダイレクトメッセージ、フォロー"
+    "message": "コメント、メッセージ、フォロー"
   },
   "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
-    "message": "对比市面上での同类产品  使用我们の产品TIK流量对比同类其他产品流量增加最低约30%"
+    "message": "En comparación con productos similares del mercado, usar nuestro producto TIK genera un aumento de tráfico de al menos el 30% respecto a otros productos similares."
   },
   "Completely local private deployment ensuring user data security": {
-    "message": "完全本地私有化部署，保证用户数据セキュリティ"
+    "message": "ユーザーデータセキュリティを確保する完全なローカルプライベート展開"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
-    "message": "综合自動化，结合多种エンゲージメント策略和AI生成のコメント"
+    "message": "複数のエンゲージメント戦略とAI生成コメントを組み合わせた包括的な自動化"
   },
   "Computer-based Execution": {
-    "message": "コンピュータ端运行"
+    "message": "Ejecución desde computadora"
   },
   "Contact": {
-    "message": "联系我们",
+    "message": "Contacto",
     "description": "The contact form title"
   },
   "Contact Support": {
-    "message": "联系サポート"
+    "message": "Contactar con soporte"
   },
   "Contact to purchase": {
-    "message": "联系购买",
+    "message": "Contactar para comprar",
     "description": "The contact to purchase label"
   },
   "Content Management": {
     "message": "コンテンツ管理"
   },
   "Control farm accounts to watch, like, and comment on target live streams": {
-    "message": "制御マトリックスアカウント观看、いいね和コメントターゲットライブ配信"
+    "message": "ファームアカウントを制御してターゲットライブストリームを視聴、いいね、コメント"
   },
   "Control multiple Instagram accounts across different Android devices simultaneously": {
-    "message": "同時に制御異なるAndroidデバイス上での複数Instagramアカウント"
+    "message": "異なるAndroidデバイス上の複数のInstagramアカウントを同時に制御"
   },
   "Create new TikTok accounts with email registration and password setup": {
-    "message": "创建新のTikTokアカウント，サポート邮箱登録和密码設定"
+    "message": "メール登録とパスワード設定で新しいTikTokアカウントを作成"
   },
   "Custom Instagram workflows": {
-    "message": "カスタムInstagram工作流程"
+    "message": "Flujostrabajo personalizadosInstagram"
   },
   "Customer support": {
-    "message": "客户サポート"
+    "message": "サポート al cliente"
   },
   "Device connection": {
-    "message": "デバイス接続"
+    "message": "Conexión デバイスs"
   },
   "Different Script Logic": {
-    "message": "異なるのスクリプト逻辑"
+    "message": "異なるスクリプトロジック"
   },
   "Different script availability": {
-    "message": "異なるのスクリプトできます用性"
+    "message": "異なるスクリプトの利用可能性"
   },
   "Do I need separate licenses for IgMatrix and TikMatrix?": {
-    "message": "我需要にIgMatrix和TikMatrix单独购买许できます证吗？"
+    "message": "¿Necesito licencias separadas para IgMatrix y TikMatrix?"
   },
   "Download IgMatrix": {
-    "message": "下载 IgMatrix",
+    "message": "Descargar IgMatrix",
     "description": "The description of Download IgMatrix"
   },
   "Download IgMatrix from our official website and follow the installation instructions.": {
-    "message": "从我们の官方网站下载IgMatrix，し按照安装说明进行操作。"
+    "message": "Descarga IgMatrix desde nuestro sitio web oficial y sigue las instrucciones de instalación."
   },
   "Download TikMatrix": {
-    "message": "下载 TikMatrix",
+    "message": "Descargar TikMatrix",
     "description": "The description of Download TikMatrix"
   },
   "Download VideoMagic": {
-    "message": "下载 VideoMagic",
+    "message": "Descargar VideoMagic",
     "description": "The description of Download VideoMagic"
   },
   "Download and Install": {
-    "message": "下载し安装"
+    "message": "Descargar e instalar"
   },
   "Download for Windows": {
-    "message": "Windows版をダウンロード"
+    "message": "Descargar para Windows"
   },
   "Email": {
-    "message": "邮箱",
+    "message": "Correo electrónico",
     "description": "The email label"
   },
   "Expert Technical Team": {
-    "message": "专业技术团队"
+    "message": "Equipo técnico experto"
   },
   "Fan collection": {
-    "message": "収集フォロワー",
+    "message": "Recopilaciónseguidores",
     "description": "The description of Fan collection"
   },
   "Features": {
-    "message": "機能"
+    "message": "Funciones"
   },
   "Find answers to common questions about IgMatrix": {
-    "message": "查找有关IgMatrix常见问题の答案"
+    "message": "Encuentra respuestas a preguntas frecuentes sobre IgMatrix"
   },
   "Fingerprint Browser": {
-    "message": "指纹閲覧器"
+    "message": "Navegador con huella digital"
   },
   "Follow TikMatrix Tutorial": {
-    "message": "参考TikMatrixチュートリアル"
+    "message": "Seguir el tutorialTikMatrix"
   },
   "Follow these steps to get started with IgMatrix": {
-    "message": "按照以下步骤スタート使用IgMatrix"
+    "message": "Sigue estos pasos para comenzar con IgMatrix"
   },
   "For 7 Days": {
-    "message": "7日間试用"
+    "message": "Por 7 días"
   },
   "Free": {
-    "message": "無料"
+    "message": "Gratis"
   },
   "Frequently Asked Questions": {
-    "message": "常见问题"
+    "message": "Preguntas frecuentes"
   },
   "Generate intelligent and contextual comments through ChatGPT API integration": {
-    "message": "通じてChatGPT API集成生成智能且符合语境のコメント"
+    "message": "ChatGPT API統合を通じてインテリジェントでコンテキストに応じたコメントを生成"
   },
   "Generate unique videos from one source video": {
-    "message": "从一个源動画生成唯一の動画",
+    "message": "Generar videos únicos desde un video fuente",
     "description": "The description of Video unique"
   },
   "Get Started": {
-    "message": "スタート使用"
+    "message": "Comenzar"
   },
   "Get Support": {
-    "message": "获取サポート"
+    "message": "Obtener soporte"
   },
   "Get dedicated support from our expert team whenever you need help": {
-    "message": "随时从我们の专家团队得る专门サポート"
+    "message": "Obtén soporte dedicado de nuestro equipo experto siempre que necesites ayuda"
   },
   "Go to the \"Download\" page and download the latest version of TikMatrix.": {
-    "message": "前往\"下载\"页面し下载最新版本の TikMatrix。"
+    "message": "Ve a la página\"Descargas\" y descarga la última versiónTikMatrix."
   },
   "Here are some frequently asked questions.": {
-    "message": "よくある質問です。"
+    "message": "Aquí encontrarás algunas preguntas frecuentes."
   },
   "How many TikTok accounts can each phone log into?": {
-    "message": "每个携帯電話できます以ログイン几个tiktokアカウント?"
+    "message": "各スマートフォンはいくつのTikTokアカウントにログインできますか？"
   },
   "How many devices can I manage?": {
-    "message": "我できます以管理多少デバイス?"
+    "message": "¿Cuántos dispositivos puedo gestionar?"
   },
   "How to use?": {
-    "message": "など何使用?"
+    "message": "¿Cómo usar?"
   },
   "Human Technical Support": {
-    "message": "人工技术サポート"
+    "message": "サポート técnico humano"
   },
   "Human-like Click Simulation": {
-    "message": "実際の人間点击シミュレート"
+    "message": "Simulaciónclics similar a humanos"
   },
   "If you are interested in our service, please contact us to get price.": {
-    "message": "など果您想解我们の服务，请联系我们获取价格。",
+    "message": "Si estás interesado en nuestro servicio, contáctanos para obtener el precio.",
     "description": "The contact form description"
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
-    "message": "など果您需要IgMatrix特定機能のヘルプまたは遇到任何问题，我们のサポート团队随时に您提供ヘルプ。"
+    "message": "Si necesitas ayuda con funciones específicas de IgMatrix o encuentras algún problema, nuestro equipo de soporte está listo para asistirte."
   },
   "IgMatrix": {
     "message": "IgMatrix",
     "description": "The description of IgMatrix"
   },
   "IgMatrix Features": {
-    "message": "IgMatrix機能"
+    "message": "Funciones de IgMatrix"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
-    "message": "IgMatrix和TikMatrix具有相同の設定过程和用户界面。主要区别是IgMatrix专门にInstagram自動化设计，而TikMatrix用于TikTok。スクリプト逻辑和できます用機能针对各自の平台进行优化。"
+    "message": "IgMatrixとTikMatrixは同じセットアッププロセスとユーザーインターフェースを共有しています。主な違いは、IgMatrixがInstagram自動化専用に設計されているのに対し、TikMatrixはTikTok用であることです。スクリプトロジックと利用可能な機能は、それぞれのプラットフォームに最適化されています。"
   },
   "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely.": {
-    "message": "IgMatrix将TikMatrixの强大自動化機能带到Instagram，ヘルプ您高效、セキュリティ地扩展Instagramマーケティング工作。"
+    "message": "IgMatrix lleva las mismas potentes capacidades de automatización de TikMatrix a Instagram, ayudándote a escalar tus esfuerzos de marketing en Instagram de manera eficiente y segura."
   },
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
-    "message": "IgMatrix遵循とTikMatrix类似の定价结构，但できます能有異なるの费率。请查看我们の官方定价页面または联系我们のサポート团队解当前のIgMatrix定价信息。"
+    "message": "IgMatrix sigue una estructura de precios similar a TikMatrix, pero puede tener tarifas diferentes. Por favor, consulta nuestra página oficial de precios o contacta a nuestro equipo de soporte para información actual de precios de IgMatrix."
   },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
-    "message": "IgMatrix 是一款Instagram安卓携帯電話农场一括制御工具",
+    "message": "IgMatrixはInstagram Android手機農場批量控制ツールです",
     "description": "The description of IgMatrix"
   },
   "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
-    "message": "IgMatrixの設定チュートリアルとTikMatrix相同。唯一の異なる就是他们のスクリプト逻辑異なる，所以您できます以直接参考TikMatrixのチュートリアルドキュメント。"
+    "message": "IgMatrixのセットアップチュートリアルはTikMatrixと同じです。唯一の違いはスクリプトロジックなので、TikMatrixチュートリアルのドキュメントを直接参照できます。"
   },
   "Important Notice": {
-    "message": "重要提示"
+    "message": "Aviso importante"
   },
   "Important Reminder": {
-    "message": "重要提醒"
+    "message": "Recordatorio importante"
   },
   "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
-    "message": "通じて一括いいね、シェア、お気に入り和观看来提升投稿エンゲージメント"
+    "message": "Aumentar el engagement en publicaciones dando me gusta, compartiendo, marcando como favoritos y viéndolas de forma masiva"
   },
   "Increase user engagement by following or unfollowing accounts in bulk": {
-    "message": "通じて一括フォローまたは取消フォローアカウント来提升用户エンゲージメント"
+    "message": "アカウントの一括フォロー/アンフォローでユーザーエンゲージメントを向上"
   },
   "Instagram Automation": {
     "message": "Instagram自動化"
   },
   "Instagram Phone Farm Batch Control Tool": {
-    "message": "Instagram携帯電話农场一括制御工具",
+    "message": "Instagram手機農場バッチ制御ツール",
     "description": "The description of Instagram Phone Farm Batch Control Tool"
   },
   "Instagram-optimized automation scripts": {
-    "message": "Instagram优化の自動化スクリプト"
+    "message": "Instagram最適化自動化スクリプト"
   },
   "Instagram-specific automation": {
-    "message": "Instagram专用自動化"
+    "message": "Instagram専用自動化"
   },
   "Is the pricing the same as TikMatrix?": {
-    "message": "定价とTikMatrix相同吗？"
+    "message": "¿El precio es el mismo que TikMatrix?"
   },
   "Join Channel": {
-    "message": "加入频道",
+    "message": "Unirse al canal",
     "description": "The join channel button label"
   },
   "Join Group": {
-    "message": "加入群组",
+    "message": "Unirse al grupo",
     "description": "The join group button label"
   },
   "Key Differences from TikMatrix": {
-    "message": "とTikMatrixの主要区别"
+    "message": "Diferencias clave respecto a TikMatrix"
   },
   "Live stream boost": {
-    "message": "ライブ配信提升"
+    "message": "Impulsar transmisiones en vivo"
   },
   "Mass commenting": {
-    "message": "一括コメント"
+    "message": "コメント masivos"
   },
   "Mass direct messaging": {
     "message": "一括ダイレクトメッセージ"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "月〜金: 午前9時 - 午後5時（UTC+8）",
+    "message": "Lun - Vie: 9:00AM - 5:00PM (UTC+8)",
     "description": "The working hours description"
   },
   "Monthly": {
-    "message": "包月"
+    "message": "Mensual"
   },
   "Multi-Device Control": {
-    "message": "多デバイス制御"
+    "message": "マルチデバイス制御"
   },
   "Multi-language support (English, Chinese, Russian)": {
-    "message": "多言語サポート（英語、中国語、ロシア語）"
+    "message": "サポート multiidioma (inglés, chino, ruso)"
   },
   "Natural Swipe Gestures": {
-    "message": "自然滑动轨迹"
+    "message": "Gestosdeslizamiento naturales"
   },
   "No Root Required": {
-    "message": "Root権限不要"
+    "message": "No requiere root"
   },
   "No root permissions needed, ensuring device environment security": {
-    "message": "无需root权限，保证デバイス环境セキュリティ"
+    "message": "root権限不要、デバイス環境のセキュリティを確保"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
-    "message": "由于スクリプト是平台特定の，し非所有TikMatrixスクリプト都在IgMatrix中できます用。安装后できます以在IgMatrixソフトウェア界面中找到できます用スクリプトの确切列表。请参考ソフトウェア中显示の实际機能。"
+    "message": "すべてのTikMatrixスクリプトがIgMatrixで利用可能なわけではありません。これらはプラットフォーム固有のためです。インストール後、IgMatrixソフトウェアインターフェース内で利用可能なスクリプトの正確なリストを見つけることができます。ソフトウェアに表示されている実際の機能を参照してください。"
   },
   "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "ワンクリック自動収集ターゲットアカウントのフォロワー列表，できます用于发送ダイレクトメッセージ",
+    "message": "ワンクリックでターゲットアカウントのファンリストを自動収集、ダイレクトメッセージに使用可能",
     "description": "The description of Fan collection"
   },
   "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "ワンクリック一括自動ウォームアップ，サポート検索关键字、ランダムフォロー、いいね、コメント、お気に入り",
+    "message": "ワンクリックバッチ自動アカウント育成、キーワード検索、ランダムフォロー、いいね、コメント、ブックマークをサポート",
     "description": "The description of Automatic account nurturing"
   },
   "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "ワンクリック一括自動在大量の動画中コメント指定されたの话术，し添加ランダム表情",
+    "message": "ワンクリックバッチ自動コメント：指定されたスクリプトとランダム絵文字で複数の動画にコメント",
     "description": "The description of Automatic commenting"
   },
   "One-click batch automatic direct messaging to multiple target users": {
-    "message": "ワンクリック一括自動给大量ターゲット用户发送ダイレクトメッセージ",
+    "message": "ワンクリックバッチ自動ダイレクトメッセージ：複数のターゲットユーザーへ",
     "description": "The description of Automatic direct messaging"
   },
   "One-click batch automatic follow of target accounts": {
-    "message": "ワンクリック一括自動フォローターゲットアカウント",
+    "message": "ワンクリックバッチ自動フォロー：ターゲットアカウント",
     "description": "The description of Automatic following"
   },
   "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "ワンクリック一括自動ログイン TikTok アカウント，サポート一括インポートエクスポートアカウント",
+    "message": "ワンクリックバッチ自動ログイン：TikTokアカウント、バッチインポート/エクスポートをサポート",
     "description": "The description of Automatic login"
   },
   "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "ワンクリック一括自動匹配済みログインのアカウント，无需手動バインド",
+    "message": "ワンクリックバッチ自動マッチング：ログイン済みアカウント、手動バインディング不要",
     "description": "The description of Automatic matching"
   },
   "One-click batch automatic posting, supports adding product links": {
-    "message": "ワンクリック一括自動投稿，サポート添加商品リンク",
+    "message": "ワンクリックバッチ自動投稿、商品リンクの追加をサポート",
     "description": "The description of Automatic posting"
   },
   "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "ワンクリック一括自動登録 TikTok アカウント，サポート企业邮箱",
+    "message": "ワンクリックバッチ自動登録：TikTokアカウント、ビジネスメールをサポート",
     "description": "The description of Automatic registration"
   },
   "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "ワンクリック一括自動設定アバター、ニックネーム、签名、ユーザー名",
+    "message": "ワンクリックバッチ自動設定：アバター、ニックネーム、署名、ユーザー名",
     "description": "The description of Automatic profile setup"
   },
   "One-click download of videos from all video websites": {
-    "message": "ワンクリック下载所有動画网站の動画",
+    "message": "すべての動画ウェブサイトから動画をワンクリックでダウンロード",
     "description": "The description of Video download"
   },
   "One-click download of videos from the entire network": {
-    "message": "全网動画ワンクリック下载",
+    "message": "ネットワーク全体から動画をワンクリックでダウンロード",
     "description": "The description of Video collection"
   },
   "Open Source Client": {
-    "message": "开源客户端"
+    "message": "Clientecódigo abierto"
   },
   "Open source client code allows users to customize their own client": {
-    "message": "开源の客户端代码，用户できます以随意カスタム客户端"
+    "message": "オープンソースのクライアントコードにより、ユーザーは独自のクライアントをカスタマイズ可能"
   },
   "Our Competitive Advantages": {
-    "message": "我们の竞争优势",
+    "message": "Nuestras ventajas competitivas",
     "description": "The description of Our Competitive Advantages"
   },
   "Our Core Advantages": {
-    "message": "我们の核心优势"
+    "message": "Nuestras ventajas principales"
   },
   "Our Core Features": {
-    "message": "我们の核心機能",
+    "message": "Nuestras funciones principales",
     "description": "The description of Our Core Features"
   },
   "Our plans": {
-    "message": "我们の套餐"
+    "message": "Nuestros planes"
   },
   "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "我们专有の実機マトリックス系统完美规避TikTokの风控措施，实现极低のアカウント封禁率。",
+    "message": "当社独自の実機マトリックスシステムは、TikTokのリスク管理措置を完全に回避し、極めて低いアカウント停止率を実現します。",
     "description": "The description of TikMatrix proprietary technology"
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
-    "message": "我们のサポート团队在这里ヘルプ您解决任何とIgMatrix相关の问题または疑问。"
+    "message": "Nuestro equipo de soporte está aquí para ayudarte con cualquier pregunta o problema relacionado con IgMatrix."
   },
   "Per Month": {
-    "message": "月額"
+    "message": "Por mes"
   },
   "Per Year": {
-    "message": "每年"
+    "message": "Por año"
   },
   "Performance analytics": {
-    "message": "パフォーマンス分析",
+    "message": "Análisisrendimiento",
     "description": "The description of Performance analytics"
   },
   "Phone screen mirroring to a computer": {
-    "message": "携帯電話投屏到コンピュータ",
+    "message": "Reflejopantallateléfono a computadora",
     "description": "The description of Phone screen mirroring to a computer"
   },
   "Platform-optimized features": {
-    "message": "平台优化機能"
+    "message": "Funciones optimizadas para la plataforma"
   },
   "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
-    "message": "请直接下载IgMatrix查看スクリプト列表。目前TikMatrixのスクリプト没有100%被IgMatrix中サポート，请以ソフトウェア中の機能に准。"
+    "message": "スクリプトリストを直接表示するには、IgMatrixをダウンロードしてください。現在、すべてのTikMatrixスクリプトがIgMatrixで100%サポートされているわけではありません。ソフトウェアの実際の機能を参照してください。"
   },
   "Post engagement boost": {
-    "message": "投稿エンゲージメント提升"
+    "message": "Impulsar engagementpublicaciones"
   },
   "Post management": {
     "message": "投稿管理"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
-    "message": "に专业マーケティング人员和企业设计の强大Instagram自動化工具"
+    "message": "Potentes herramientas de automatización de Instagram diseñadas para profesionales del marketing y empresas"
   },
   "Powerful TikTok Automation & Management Tools": {
-    "message": "强大のTikTok自動化和管理工具",
+    "message": "Potentes herramientas de automatización y gestión de TikTok",
     "description": "The description of Powerful TikTok Automation & Management Tools"
   },
   "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
-    "message": "强大の技术团队，实时维护更新，保证スクリプトのできます用率"
+    "message": "リアルタイムのメンテナンスとアップデートによりスクリプトの信頼性を確保する強力な技術チーム"
   },
   "Premium Benefits": {
-    "message": "高级特权"
+    "message": "Beneficios premium"
   },
   "Pricing": {
-    "message": "价格"
+    "message": "Precios"
   },
   "Private Local Deployment": {
-    "message": "私有化本地部署"
+    "message": "Implementación local privada"
   },
   "Professional TikTok Account Management & Marketing Tool": {
-    "message": "专业のTikTokアカウント管理及マーケティング工具",
+    "message": "Herramienta profesionalgestión y marketing アカウントsTikTok",
     "description": "The description of Professional TikTok Account Management & Marketing Tool"
   },
   "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
-    "message": "专业TikTokアカウント管理とマーケティング工具 - サポートWindows和Mac"
+    "message": "Herramienta profesionalgestión y marketing アカウントsTikTok para Windows y Mac"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "专业TikTokアカウント管理とマーケティング工具，专にWindows和Mac上での安卓携帯電話农场设计。实现自動投稿、フォローなど機能，促进TikTok影响力增长，确保零封号率。",
+    "message": "WindowsとMac上のAndroid手機農場向けに設計されたプロフェッショナルなTikTokアカウント管理およびマーケティングツール。投稿、フォローを自動化し、アカウント停止率ゼロでTikTokプレゼンスを成長させます。",
     "description": "The description of Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
   },
   "Professional phone farm management": {
-    "message": "专业携帯電話农场管理"
+    "message": "プロフェッショナルなフォンファーム管理"
   },
   "Publish videos or images to TikTok with batch posting capabilities": {
-    "message": "投稿動画または画像到TikTok，サポート一括投稿機能"
+    "message": "バッチ投稿機能でTikTokに動画や画像を公開"
   },
   "Quick Setup Guide": {
-    "message": "快速設定指南"
+    "message": "Guíaconfiguración rápida"
   },
   "Randomized script parameters to avoid behavior detection patterns": {
-    "message": "スクリプト参数ランダム化，避免動作检测"
+    "message": "行動検出パターンを回避するためのランダム化されたスクリプトパラメータ"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
-    "message": "识别し匹配携帯電話中のTikTokアカウント，添加到アカウント列表"
+    "message": "スマートフォンからTikTokアカウントを認識してマッチング、アカウントリストに追加"
   },
   "Recognize subtitles": {
-    "message": "识别字幕",
+    "message": "Reconocer subtítulos",
     "description": "The description of Recognize subtitles"
   },
   "Remove posts based on their view count for content optimization": {
-    "message": "に基づいて观看回数删除投稿，优化コンテンツ"
+    "message": "Eliminar publicaciones según su númerovisualizaciones para optimizacióncontenido"
   },
   "Safe & Secure": {
-    "message": "セキュリティできます靠"
+    "message": "Seguro y protegido"
   },
   "Same Setup Process": {
-    "message": "相同の設定过程"
+    "message": "Mismo procesoconfiguración"
   },
   "Same reliable technology as TikMatrix": {
-    "message": "とTikMatrix相同のできます靠技术"
+    "message": "TikMatrixと同じ信頼性の高い技術"
   },
   "Save 50% compared to monthly plan": {
-    "message": "月額プランより50%節約"
+    "message": "Ahorra un 50% en comparación con el plan mensual"
   },
   "Schedule your Instagram activities with intelligent timing algorithms": {
-    "message": "使用智能时间算法安排您のInstagram活动"
+    "message": "インテリジェントなタイミングアルゴリズムでInstagram活動をスケジュール"
   },
   "Scheduled Tasks": {
-    "message": "定时タスク"
+    "message": "Tareas programadas"
   },
   "Scrape TikTok usernames from followers lists or keyword searches": {
-    "message": "从フォロワー列表またはキーワード検索中収集TikTokユーザー名"
+    "message": "Extraer nombres de usuario de TikTok de listas de seguidores o búsquedas por palabras clave"
   },
   "Script Parameter Randomization": {
-    "message": "スクリプト参数ランダム化"
+    "message": "Aleatorizaciónparámetrosscript"
   },
   "Script engine simulates natural human clicking with randomized button offset": {
-    "message": "スクリプト引擎采用シミュレート実際の人間の点击按钮ランダム化偏移"
+    "message": "スクリプトエンジンは、ランダム化されたボタンオフセットで自然な人間のクリックをシミュレート"
   },
   "Scripts run on computer to avoid mobile device detection": {
-    "message": "スクリプト运行在コンピュータ端，避免携帯電話端被检测"
+    "message": "モバイルデバイス検出を回避するためコンピューター上でスクリプトを実行"
   },
   "Send messages to multiple TikTok accounts in bulk with personalized content": {
-    "message": "一括向複数TikTokアカウント发送パーソナライズコンテンツの消息"
+    "message": "パーソナライズされたコンテンツで複数のTikTokアカウントに一括メッセージ送信"
   },
   "Set up account profiles including avatars, nicknames, signatures, and usernames": {
-    "message": "設定アカウント资料，包括アバター、ニックネーム、签名和ユーザー名"
+    "message": "Configurar perfiles アカウント incluyendo avatares, apodos, firmas y nombresusuario"
   },
   "Setup Tutorial": {
-    "message": "設定チュートリアル"
+    "message": "Tutorialconfiguración"
   },
   "Shipping worldwide": {
-    "message": "全球发货",
+    "message": "Envíos a todo el mundo",
     "description": "The shipping worldwide label"
   },
   "Simulates natural right-hand arc swipe trajectories like real human interaction": {
-    "message": "スクリプト滑动采用シミュレート実際の人間の右手弧形滑动轨迹"
+    "message": "Simula trayectoriasdeslizamiento en arco con la mano derecha como la interacción humana real"
   },
   "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
-    "message": "由于設定过程完全相同，请参考我们全面のTikMatrixドキュメント，获取デバイス接続、アカウント管理和スクリプト配置の详细说明。"
+    "message": "セットアッププロセスは同一なので、デバイス接続、アカウント管理、スクリプト設定の詳細な手順については、包括的なTikMatrixドキュメントを参照してください。"
   },
   "Smart Scheduling": {
-    "message": "智能スケジューリング"
+    "message": "スマートスケジューリング"
   },
   "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
-    "message": "立即使用IgMatrixスタート自動化您のInstagramマーケティング，体验成千上で万マーケティング人员信赖の专业级工具。"
+    "message": "Comienza a automatizar tu marketing en Instagram hoy con IgMatrix y experimenta las mismas herramientas de nivel profesional en las que confían miles de profesionales del marketing."
   },
   "Still have questions?": {
-    "message": "还有问题？"
+    "message": "¿Aún tienes preguntas?"
   },
   "Streamline your Android TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "通じて先進の一括制御和マーケティング自動化，高效管理您の安卓TikTok携帯電話农场"
+    "message": "高度なバッチ制御とマーケティング自動化でAndroid TikTok手機農場を合理化"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-    "message": "通じて先進の一括制御和マーケティング自動化，轻松管理您のInstagram携帯電話农场。",
+    "message": "高度なバッチ制御とマーケティング自動化でInstagram手機農場を合理化",
     "description": "The description of Streamline your Instagram phone farm with advanced batch control and marketing automation"
   },
   "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "通じて先進の一括制御和マーケティング自動化，轻松管理您のTikTok携帯電話农场。",
+    "message": "高度なバッチ制御とマーケティング自動化でTikTok手機農場を合理化",
     "description": "The description of Streamline your TikTok phone farm with advanced batch control and marketing automation"
   },
   "Strong technical support team with open community ecosystem": {
-    "message": "强大の技术サポート团队，开放の社区生态"
+    "message": "Equipo de soporte técnico sólido con ecosistema comunitario abierto"
   },
   "Super Marketing": {
-    "message": "スーパーマーケティング"
+    "message": "Super マーケティング"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
-    "message": "サポート100+携帯電話投屏到コンピュータ，同步操作"
+    "message": "Soporta más de 100 teléfonos con reflejo a una computadora, con operación sincronizada"
   },
   "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "サポート 200+ 携帯電話投屏到コンピュータ，サポート同步操作",
+    "message": "Soporta más de 200 teléfonos con reflejo a una computadora, con operación sincronizada",
     "description": "The description of Phone screen mirroring to a computer"
   },
   "Supports work profile enterprise space for professional use": {
-    "message": "サポートwork profile企业空间"
+    "message": "Soporta espacio empresarial de perfil de trabajo para uso profesional"
   },
   "Technical Advantages": {
-    "message": "技术优势"
+    "message": "Ventajas técnicas"
   },
   "Telegram": {
     "message": "Telegram",
     "description": "The telegram label"
   },
   "Telegram Support": {
-    "message": "Telegramサポート群"
+    "message": "サポート en Telegram"
   },
   "Text input mimics human typing patterns with character-by-character simulation": {
-    "message": "スクリプト输入文字采用シミュレート実際の人間の逐字输入"
+    "message": "La entrada de texto imita patrones de escritura humana con simulación carácter por carácter"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "長さと幅は比較的大きいが、高さは低い（2uサイズ）",
+    "message": "La longitud y el ancho son relativamente grandes, pero la altura es baja (tamaño 2u)",
     "description": "The description of PhoneFarm Box"
   },
   "The length and width are relatively small, but the height is high": {
-    "message": "長さと幅は比較的小さいが、高さは高い",
+    "message": "La longitud y el ancho son relativamente pequeños, pero la altura es alta",
     "description": "The description of PhoneFarm Box"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "マザーボードマシンは20枚のサムスン製携帯電話マザーボードで構成されています。電源接続時に自動起動し、統一電源供給、統一マルチファン冷却システム、統一USB接続を備えています。また、OTG有線ネットワーク接続もサポートしています。",
+    "message": "マザーボードマシンは20個のSamsungスマートフォンマザーボードで構成されています。電気に接続すると自動的に電源が入り、統一された電源、統一されたマルチファン冷却システム、統一されたUSB接続を共有します。OTG有線ネットワーク接続もサポートしています。",
     "description": "The description of PhoneFarm Box"
   },
   "TikMatrix": {
-    "message": "TikMatrix 実機マトリックス"
+    "message": "TikMatrix"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix 提供比同类产品至少高30%のエンゲージメント率，采用先進の実機技术确保アカウント完全セキュリティ。",
+    "message": "TikMatrixは、同様の製品と比較して少なくとも30%高いエンゲージメントを提供し、完全なアカウント安全性を確保する高度な実機技術を備えています。",
     "description": "The description of TikMatrix competitive advantage"
   },
   "TikMatrix is a TikTok group control operation tool": {
-    "message": "TikMatrix是一款Tiktok群控运营工具"
+    "message": "TikMatrix es una herramienta de control grupal de TikTok"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms": {
-    "message": "TikMatrix 是一款专业のTikTok携帯電話农场マーケティングソフトウェア"
+    "message": "TikMatrix es un software de marketing profesional diseñado para granjas de teléfonos de TikTok"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix 是一款专业のTikTok携帯電話农场マーケティングソフトウェア。管理複数アカウント，自動投稿，し轻松扩展您のTikTokマーケティング。",
+    "message": "TikMatrixはTikTok手機農場向けに設計されたプロフェッショナルなマーケティングソフトウェアです。複数のアカウントを管理し、投稿を自動化し、TikTokマーケティングを簡単にスケールアップできます。",
     "description": "The description of TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
-    "message": "TikMatrix サポート每个携帯電話ログイン8个tiktokアカウント"
+    "message": "TikMatrixは各スマートフォンで8つのTikTokアカウントをサポートします。"
   },
   "TikMatrix supports Android phones running Android 5.0 and above.": {
-    "message": "TikMatrix サポート Android 携帯電話，运行 Android 5.0 及以上で版本。"
+    "message": "TikMatrix admite teléfonos Android con Android 5.0 y versiones superiores."
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "TikMatrix サポート Windows 10 及以上で版本，以及 macOS 10.15 または更高版本。Mac用户安装后，需要在终端実行以下命令以允许运行：xattr -cr /Applications/TikMatrix.app",
+    "message": "TikMatrixはWindows 10以降、およびmacOS 10.15以降をサポートしています。Macユーザーの場合、インストール後、アプリを実行するためにターミナルで次のコマンドを実行する必要があります：xattr -cr /Applications/TikMatrix.app",
     "description": "コンピュータサポート回答"
   },
   "TikMatrix supports up to 200+ devices.": {
-    "message": "TikMatrix サポート 200+ 个デバイス。"
+    "message": "TikMatrix admite hasta más de 200 dispositivos."
   },
   "Translate subtitles": {
-    "message": "翻译字幕",
+    "message": "Traducir subtítulos",
     "description": "The description of Translate subtitles"
   },
   "Trial": {
-    "message": "试用"
+    "message": "Prueba"
   },
   "Tutorial": {
-    "message": "チュートリアル"
+    "message": "Tutorial"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-    "message": "美国原生非激活の SIM 卡，用于 tiktok Android アプリ来检测 SIM 卡位置",
+    "message": "Tarjeta SIM nativaEE.UU. sin activar, utilizada para que la aplicaciónTikTok para Android detecte la ubicaciónla tarjeta SIM",
     "description": "The description of PhoneFarm Box"
   },
   "Unlimited devices": {
-    "message": "无限デバイス"
+    "message": "デバイス ilimitados"
   },
   "Unlimited devices, Customer support": {
-    "message": "无限デバイス、客户サポート"
+    "message": "デバイス ilimitados, サポート al cliente"
   },
   "Unlimited process tasks": {
-    "message": "无限处理タスク",
+    "message": "Tareasproceso ilimitadas",
     "description": "The description of Unlimited process tasks"
   },
   "User engagement boost": {
-    "message": "用户エンゲージメント提升"
+    "message": "ユーザーエンゲージメントブースト"
   },
   "User interface": {
-    "message": "用户界面"
+    "message": "Interfazusuario"
   },
   "User scraping": {
-    "message": "用户収集"
+    "message": "ユーザースクレイピング"
   },
   "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "動画魔法是一款专业の動画生成ソフトウェア，专に运营者设计。它できます以に您生成独特の動画，极大提升运营效率。",
+    "message": "Video Magic es un software profesional de generación de videos diseñado para operadores. Puede generar videos únicos para ti, mejorando enormemente la eficiencia operativa",
     "description": "The description of Video Magic"
   },
   "Video Magic is a tool that can generate unique videos": {
-    "message": "動画魔法是一款できます以生成独特動画の工具",
+    "message": "Video Magic es una herramienta que puede generar videos únicos",
     "description": "The description of Video Magic"
   },
   "Video collection": {
-    "message": "収集動画",
+    "message": "Recopilaciónvideos",
     "description": "The description of Video collection"
   },
   "Video download": {
-    "message": "動画下载",
+    "message": "Descargavideos",
     "description": "The description of Video download"
   },
   "Video posting, Account nurturing": {
-    "message": "動画投稿、アカウント养护"
+    "message": "動画投稿、アカウント育成"
   },
   "Video unique": {
-    "message": "動画生成",
+    "message": "Video único",
     "description": "The description of Video unique"
   },
   "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - 一括生成唯一動画",
+    "message": "VideoMagic - ユニーク動画の一括生成",
     "description": "The description of Video Magic"
   },
   "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic是一款用于一括生成唯一動画のソフトウェア",
+    "message": "VideoMagic es un software para generación masiva de videos únicos",
     "description": "The description of Video Magic"
   },
   "View TikMatrix Tutorial": {
-    "message": "查看TikMatrixチュートリアル"
+    "message": "Ver tutorialTikMatrix"
   },
   "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
-    "message": "通じて検索キーワード、观看動画、フォロー、いいね、コメント和お気に入り来ウォームアップ"
+    "message": "キーワード検索、動画視聴、フォロー、いいね、コメント、お気に入りでアカウントをウォームアップ"
   },
   "What computer can I use?": {
-    "message": "我できます以使用哪些コンピュータ?",
+    "message": "¿Qué computadora puedo usar?",
     "description": "コンピュータサポート问题"
   },
   "What devices can I use?": {
-    "message": "我できます以使用哪些デバイス?"
+    "message": "¿Qué dispositivos puedo usar?"
   },
   "What is TikMatrix?": {
-    "message": "什么是 TikMatrix?"
+    "message": "¿Qué es TikMatrix?"
   },
   "What is the difference between IgMatrix and TikMatrix?": {
-    "message": "IgMatrix和TikMatrix有什么区别？"
+    "message": "¿Cuál es la diferencia entre IgMatrix y TikMatrix?"
   },
   "Which scripts from TikMatrix are available in IgMatrix?": {
-    "message": "IgMatrix中有哪些来自TikMatrixのスクリプトできます用？"
+    "message": "TikMatrixのどのスクリプトがIgMatrixで利用可能ですか？"
   },
   "Why Choose IgMatrix?": {
-    "message": "に什么选择IgMatrix？"
+    "message": "¿Por qué elegir IgMatrix?"
   },
   "Why TikMatrix?": {
-    "message": "に什么使用 TikMatrix?"
+    "message": "¿Por qué TikMatrix?"
   },
   "Work Profile Support": {
-    "message": "企业空间サポート"
+    "message": "Soporte de perfil de trabajo"
   },
   "Working Hours": {
-    "message": "工作时间",
+    "message": "Horariotrabajo",
     "description": "The working hours label"
   },
   "Yearly": {
-    "message": "包年"
+    "message": "Anual"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
-    "message": "是の！IgMatrixの設定チュートリアルとTikMatrix完全相同。您できます以按照TikMatrixドキュメント进行安装、デバイス接続和基本配置。只有自動化スクリプト会に基づいて平台而有所異なる。"
+    "message": "はい！IgMatrixのセットアップチュートリアルはTikMatrixと同じです。インストール、デバイス接続、基本設定についてはTikMatrixドキュメントに従うことができます。自動化スクリプトのみがプラットフォームに基づいて異なります。"
   },
   "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
-    "message": "是の，IgMatrix和TikMatrix需要单独の许できます证，因に它们是针对異なる社交媒体平台优化の異なる产品。每个许できます证都バインド到特定ソフトウェア，できません互换使用。"
+    "message": "Sí, IgMatrix y TikMatrix requieren licencias separadas ya que son productos diferentes optimizados para diferentes plataformas de redes sociales. Cada licencia está vinculada a un software específico y no se puede usar indistintamente."
   },
   "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
-    "message": "您できます以在同じ台计算机上で安装IgMatrix和TikMatrix，但由于运行时冲突，它们できません同時に运行。您一次只能运行其中一个ソフトウェア - IgMatrixまたはTikMatrix。"
+    "message": "Puedes instalar tanto IgMatrix como TikMatrix en la misma computadora, pero no pueden ejecutarse simultáneamente debido a conflictos de tiempo de ejecución. Solo puedes ejecutar un software a la vez: IgMatrix o TikMatrix."
   },
   "advertising.back.home": {
-    "message": "返回首页"
+    "message": "Volver al inicio"
   },
   "advertising.buy.accounts.description": {
-    "message": "专业の社交媒体アカウント市场"
+    "message": "Proveedores confiables アカウントsredes sociales para tus necesidadesmarketing"
   },
   "advertising.buy.accounts.leadsmm.description": {
-    "message": "高品质社交媒体アカウント提供商，提供优质アカウント服务"
+    "message": "高品質なソーシャルメディアアカウントと迅速な配信を提供するプロフェッショナルなSMMパネル"
   },
   "advertising.buy.accounts.leadsmm.title": {
-    "message": "LeadsSMM - 购买アカウント"
+    "message": "LeadSMM - Panel SMM Premium"
   },
   "advertising.buy.accounts.title": {
-    "message": "AccsMarket"
+    "message": "ソーシャルメディアアカウントを購入"
   },
   "advertising.buy.hardware.description": {
-    "message": "专业の携帯電話农场和自動化硬件デバイス"
+    "message": "Hardware especializado para granjasteléfonos y configuraciones a gran escala"
   },
   "advertising.buy.hardware.title": {
-    "message": "NiaoZun Shop"
+    "message": "Hardware para granjateléfonos"
   },
   "advertising.category.accounts": {
-    "message": "アカウント"
+    "message": "アカウントs"
   },
   "advertising.category.analytics": {
-    "message": "分析工具"
+    "message": "Analíticas"
   },
   "advertising.category.hardware": {
-    "message": "硬件"
+    "message": "Hardware"
   },
   "advertising.category.proxy": {
-    "message": "代理"
+    "message": "Proxy"
   },
   "advertising.category.verification": {
-    "message": "認証工具"
+    "message": "Verificación"
   },
   "advertising.category.vps": {
     "message": "VPS"
   },
   "advertising.disclaimer.content": {
-    "message": "以下推荐和リンク指向の是不属于または不由TikMatrix运营の外部网站和服务。我们提供这些リンク仅に方便您使用。TikMatrix不认できます、保证または承担这些第三方网站提供の任何信息、产品または服务の准确性、完整性または实用性の责任。在と外部服务交互时，请使用您自己の判断。"
+    "message": "Estos son serviciosterceros. Realiza tu propia investigación antesrealizar cualquier compra."
   },
   "advertising.disclaimer.title": {
-    "message": "重要声明"
+    "message": "Aviso legal"
   },
   "advertising.page.subtitle": {
-    "message": "推荐の广告工具和服务，提升您の社交媒体自動化体验"
+    "message": "Servicios y herramientas recomendadas para mejorar tu experiencia con TikMatrix"
   },
   "advertising.page.title": {
-    "message": "广告と合作伙伴"
+    "message": "Servicios recomendados"
   },
   "advertising.proxy.proxycheap.description": {
-    "message": "适用于各种用例の经济实惠代理解决方案"
+    "message": "Proxies asequibles y confiables para la automatizaciónredes sociales"
   },
   "advertising.proxy.proxycheap.title": {
-    "message": "Proxy-Cheap"
+    "message": "ProxyCheap - Proxies económicos"
   },
   "advertising.proxy.thordata.description": {
-    "message": "最適な住宅代理 —— 稳定 · できます靠 · 高性价比\n登録即できます得る 1GB 免费试用流量"
+    "message": "Proxies residenciales premium con alta tasa de éxito"
   },
   "advertising.proxy.thordata.title": {
-    "message": "Thordata"
+    "message": "ThorData - Proxies residenciales"
   },
   "advertising.tiktok.user.finder.description": {
-    "message": "查找和分析 TikTok 用户及其数据"
+    "message": "TikTokユーザーを検索・分析するための高度なツール"
   },
   "advertising.tiktok.user.finder.title": {
-    "message": "TikTok 用户查找器"
+    "message": "TikTokユーザーファインダー"
   },
   "advertising.visit.button": {
-    "message": "訪問网站"
+    "message": "Visitar sitio web"
   },
   "advertising.vps.lisahost.description": {
-    "message": "できます靠のVPS主机服务，适用于自動化项目"
+    "message": "Servidores VPS confiables con soporte excepcional"
   },
   "advertising.vps.lisahost.title": {
-    "message": "LisaHost"
+    "message": "LisaHost - Alojamiento VPS"
   },
   "advertising.vps.uuuvps.description": {
-    "message": "高パフォーマンスVPS主机，提供全球複数位置"
+    "message": "Soluciones VPS asequibles para todas tus necesidades"
   },
   "advertising.vps.uuuvps.title": {
-    "message": "UUUVPS"
+    "message": "UUUVPS - VPS económico"
   },
   "advertising.whatsapp.checker.description": {
-    "message": "認証 WhatsApp 号码し检查其状态"
+    "message": "WhatsApp番号を一括で確認および検証"
   },
   "advertising.whatsapp.checker.title": {
-    "message": "WhatsApp 号码检查器"
+    "message": "VerificadorWhatsApp"
   },
   "download.description": {
-    "message": "下载 TikMatrix の Windows、Mac 和 Linux 版本",
+    "message": "Descarga TikMatrix para Windows, Mac o Linux y comienza a automatizar tu marketingTikTok",
     "description": "下载页面の説明"
   },
   "download.igmatrix.description": {
-    "message": "下载 IgMatrix の Windows、Mac 和 Linux 版本",
+    "message": "Descarga IgMatrix para Windows, Mac o Linux y comienza a automatizar tu marketingInstagram",
     "description": "IgMatrix下载页面の説明"
   },
   "download.igmatrix.linux.coming_soon": {
-    "message": "即将推出",
+    "message": "Próximamente",
     "description": "IgMatrix Linux即将推出提示"
   },
   "download.igmatrix.linux.description": {
-    "message": "Linux版は開発中です",
+    "message": "La versiónLinuxIgMatrix está actualmente en desarrollo",
     "description": "IgMatrix Linux开发中説明"
   },
   "download.igmatrix.linux.development": {
-    "message": "开发中",
+    "message": "En desarrollo",
     "description": "IgMatrix Linux开发中状态"
   },
   "download.igmatrix.linux.title": {
-    "message": "Linux",
+    "message": "IgMatrix para Linux",
     "description": "IgMatrix Linux平台タイトル"
   },
   "download.igmatrix.mac.button": {
-    "message": "Mac版をダウンロード",
+    "message": "Descargar para Mac",
     "description": "IgMatrix Mac下载按钮文本"
   },
   "download.igmatrix.mac.description": {
-    "message": "macOS 10.15 または更高版本",
+    "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores",
     "description": "IgMatrix Mac平台説明"
   },
   "download.igmatrix.mac.install_tip": {
-    "message": "安装后请在终端実行以下命令以允许运行：",
+    "message": "Después de la instalación, ejecuta: xattr -cr /Applications/IgMatrix.app",
     "description": "IgMatrix Mac安装后需要実行の命令提示"
   },
   "download.igmatrix.mac.title": {
-    "message": "Mac",
+    "message": "IgMatrix para Mac",
     "description": "IgMatrix Mac平台タイトル"
   },
   "download.igmatrix.requirements.internet": {
-    "message": "网络接続：必需",
+    "message": "Conexión a Internet estable",
     "description": "IgMatrix网络接続必要"
   },
   "download.igmatrix.requirements.memory": {
-    "message": "メモリ: 8GB RAM",
+    "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）",
     "description": "IgMatrix内存必要"
   },
   "download.igmatrix.requirements.os": {
-    "message": "操作系统：Windows 10/11、macOS 10.15+ または Ubuntu 20.04+",
+    "message": "Windows 10/1164 bits o macOS 10.15+",
     "description": "IgMatrix操作系统必要"
   },
   "download.igmatrix.requirements.processor": {
-    "message": "处理器：Intel Core i5 または同などパフォーマンス",
+    "message": "Procesador Intel Core i5 o equivalente",
     "description": "IgMatrix处理器必要"
   },
   "download.igmatrix.requirements.storage": {
-    "message": "存储空间：500 MB できます用空间",
+    "message": "500 MBespacio disponible en disco",
     "description": "IgMatrix存储空间必要"
   },
   "download.igmatrix.requirements.title": {
-    "message": "系统必要",
+    "message": "Requisitos del sistema",
     "description": "IgMatrix系统必要タイトル"
   },
   "download.igmatrix.subtitle": {
-    "message": "选择您の平台下载 IgMatrix",
+    "message": "Herramienta profesionalautomatizaciónInstagram para Windows y Mac",
     "description": "IgMatrix下载页面の副タイトル"
   },
   "download.igmatrix.title": {
-    "message": "下载 IgMatrix",
+    "message": "Descargar IgMatrix",
     "description": "IgMatrix下载页面のタイトル"
   },
   "download.igmatrix.windows.button": {
-    "message": "下载 Windows 版本",
+    "message": "Descargar para Windows",
     "description": "IgMatrix Windows下载按钮文本"
   },
   "download.igmatrix.windows.description": {
-    "message": "Windows 10/11 (64位)",
+    "message": "Compatible con Windows 10 y 11 (64 bits)",
     "description": "IgMatrix Windows平台説明"
   },
   "download.igmatrix.windows.title": {
-    "message": "Windows",
+    "message": "IgMatrix para Windows",
     "description": "IgMatrix Windows平台タイトル"
   },
   "download.linux.coming_soon": {
-    "message": "即将推出",
+    "message": "Próximamente",
     "description": "Linux即将推出提示"
   },
   "download.linux.description": {
-    "message": "Linux版は開発中です",
+    "message": "La versiónLinuxTikMatrix está actualmente en desarrollo",
     "description": "Linux开发中説明"
   },
   "download.linux.development": {
-    "message": "开发中",
+    "message": "En desarrollo",
     "description": "Linux开发中状态"
   },
   "download.linux.title": {
-    "message": "Linux",
+    "message": "TikMatrix para Linux",
     "description": "Linux平台タイトル"
   },
   "download.mac.button": {
-    "message": "Mac版をダウンロード",
+    "message": "Descargar para Mac",
     "description": "Mac下载按钮文本"
   },
   "download.mac.description": {
-    "message": "macOS 10.15 または更高版本",
+    "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores",
     "description": "Mac平台説明"
   },
   "download.mac.install_tip": {
-    "message": "安装后请在终端実行以下命令以允许运行：",
+    "message": "Después de la instalación, ejecuta este comando en Terminal:",
     "description": "Mac安装后需要実行の命令提示"
   },
   "download.mac.title": {
-    "message": "Mac",
+    "message": "TikMatrix para Mac",
     "description": "Mac平台タイトル"
   },
   "download.requirements.internet": {
-    "message": "网络接続：必需",
+    "message": "Conexión a Internet estable",
     "description": "网络接続必要"
   },
   "download.requirements.memory": {
-    "message": "メモリ: 8GB RAM",
+    "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）",
     "description": "内存必要"
   },
   "download.requirements.os": {
-    "message": "操作系统：Windows 10/11、macOS 10.15+ または Ubuntu 20.04+",
+    "message": "Windows 10/1164 bits o macOS 10.15+",
     "description": "操作系统必要"
   },
   "download.requirements.processor": {
-    "message": "处理器：Intel Core i5 または同などパフォーマンス",
+    "message": "Procesador Intel Core i5 o equivalente",
     "description": "处理器必要"
   },
   "download.requirements.storage": {
-    "message": "存储空间：500 MB できます用空间",
+    "message": "500 MBespacio disponible en disco",
     "description": "存储空间必要"
   },
   "download.requirements.title": {
-    "message": "系统必要",
+    "message": "Requisitos del sistema",
     "description": "系统必要タイトル"
   },
   "download.subtitle": {
-    "message": "选择您の平台下载 TikMatrix",
+    "message": "Herramienta profesionalautomatizaciónTikTok para Windows y Mac",
     "description": "下载页面の副タイトル"
   },
   "download.title": {
-    "message": "下载 TikMatrix",
+    "message": "Descargar TikMatrix",
     "description": "下载页面のタイトル"
   },
   "download.videomagic.description": {
-    "message": "下载 VideoMagic の Windows、Mac 和 Linux 版本",
+    "message": "Descarga VideoMagic para Windows, Mac o Linux y comienza a generar videos únicos",
     "description": "VideoMagic下载页面の説明"
   },
   "download.videomagic.subtitle": {
-    "message": "选择您の平台下载 VideoMagic",
+    "message": "Software profesional de generación de videos para operadores",
     "description": "VideoMagic下载页面の副タイトル"
   },
   "download.videomagic.title": {
-    "message": "下载 VideoMagic",
+    "message": "Descargar VideoMagic",
     "description": "VideoMagic下载页面のタイトル"
   },
   "download.windows.button": {
-    "message": "下载 Windows 版本",
+    "message": "Descargar para Windows",
     "description": "Windows下载按钮文本"
   },
   "download.windows.description": {
-    "message": "Windows 10/11 (64位)",
+    "message": "Compatible con Windows 10 y 11 (64 bits)",
     "description": "Windows平台説明"
   },
   "download.windows.title": {
-    "message": "Windows",
+    "message": "TikMatrix para Windows",
     "description": "Windows平台タイトル"
   },
   "homepage.header.cta.download": {
-    "message": "立即下载"
+    "message": "Descargar ahora"
   },
   "homepage.header.cta.features": {
-    "message": "查看機能 →"
+    "message": "Ver funciones"
   },
   "homepage.header.cta.primary": {
-    "message": "下载 TikMatrix"
+    "message": "Comenzar"
   },
   "homepage.header.cta.secondary": {
-    "message": "チュートリアル"
+    "message": "Más información"
   },
   "homepage.header.defaultSubtitle": {
-    "message": "使用先進の一括制御和マーケティング自動化优化您の Android TikTok 携帯電話农场。"
+    "message": "複数のアカウントを管理し、投稿を自動化し、農場を簡単にスケールアップ"
   },
   "homepage.header.defaultTitle": {
-    "message": "面向 Windows と Mac の专业 TikTok アカウント管理とマーケティング工具"
+    "message": "Herramienta profesionalmarketing para redes sociales"
   },
   "homepage.header.subtitle": {
-    "message": "一括运行デバイス、自動化実行タスク、定时投稿、智能ウォームアップ—— TikMatrix 让你の TikTok 运营 100% 自動化。"
+    "message": "複数のTikTokアカウントを管理し、投稿を自動化し、マーケティングを簡単にスケールアップ"
   },
   "homepage.header.title": {
-    "message": "TikTok 自動化，从这里スタート"
+    "message": "Herramienta profesionalmarketing para TikTok"
   },
   "homepage.vs.card.analytics.desc": {
-    "message": "实时监控タスク状态和アカウント表现，轻松掌握运营パフォーマンス"
+    "message": "詳細な分析でアカウントのパフォーマンスを追跡・分析"
   },
   "homepage.vs.card.analytics.title": {
-    "message": "できます视化数据"
+    "message": "Analíticas potentes"
   },
   "homepage.vs.card.automation.desc": {
-    "message": "サポート一括操作、スクリプト流程、定时投稿，全流程覆盖 TikTok 业务需求"
+    "message": "Automatiza todas tus actividades de redes sociales con potentes capacidades de scripting"
   },
   "homepage.vs.card.automation.title": {
-    "message": "专业 TikTok 自動化"
+    "message": "強力な自動化"
   },
   "homepage.vs.card.cta": {
-    "message": "解更多"
+    "message": "Más información"
   },
   "homepage.vs.card.lowRisk.desc": {
-    "message": "シミュレート真实操作，减少封号风险，保障アカウントセキュリティ"
+    "message": "実機技術により極めて低いアカウント停止率"
   },
   "homepage.vs.card.lowRisk.title": {
-    "message": "低风险"
+    "message": "Bajo riesgo"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "内置機能强大，拖拽/できます视化操作即できます完成复杂タスク"
+    "message": "root権限不要、デバイス環境のセキュリティを確保"
   },
   "homepage.vs.card.nodev.title": {
-    "message": "无需开发"
+    "message": "No requiere desarrollo"
   },
   "homepage.vs.card.plug.desc": {
-    "message": "无需开发配置，快速上で手，即刻运行"
+    "message": "Conecta y usa, sin configuración complicada"
   },
   "homepage.vs.card.plug.title": {
-    "message": "开箱即用"
+    "message": "Plug and play"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "每个タスク在真实デバイス上で実行，保证動作和パフォーマンスと人工操作一致"
+    "message": "本物のAndroidデバイスを使用して本物の動作と最高のセキュリティを実現"
   },
   "homepage.vs.card.realDevices.title": {
-    "message": "真实携帯電話操作"
+    "message": "Dispositivos reales"
   },
   "homepage.vs.cta.button": {
-    "message": "立即体验 TikMatrix →"
+    "message": "Comparar funciones"
   },
   "homepage.vs.cta.text": {
-    "message": "想提升 TikTok 自動化效率？"
+    "message": "¿Quieres ver más comparaciones con productos similares?"
   },
   "homepage.vs.subtitle": {
-    "message": "专に TikTok 自動化设计の专业解决方案"
+    "message": "Mira cómo nos comparamos con otras soluciones del mercado"
   },
   "homepage.vs.title": {
-    "message": "に什么选择 TikMatrix?"
+    "message": "¿Por qué elegirnos?"
   },
   "navbar.download": {
-    "message": "下载",
+    "message": "Descargar",
     "description": "导航栏下载リンク文本"
   },
   "pricing.all_features": {
-    "message": "含む所有機能",
+    "message": "Todas las funciones",
     "description": "含む所有機能文本"
   },
   "pricing.badge.popular": {
-    "message": "最受ウェルカム"
+    "message": "Popular"
   },
   "pricing.business.concurrent_tasks": {
-    "message": "最多100个し发自動化タスク",
+    "message": "Tareas concurrentes ilimitadas",
     "description": "商业版し发タスク数"
   },
   "pricing.business.description": {
-    "message": "适合大型企业",
+    "message": "Para equipos y empresas grandes",
     "description": "商业版计划説明"
   },
   "pricing.business.manage_phones": {
-    "message": "最多100个し发自動化タスク",
+    "message": "Gestionar dispositivos ilimitados",
     "description": "商业版计划機能"
   },
   "pricing.business.name": {
-    "message": "商业版",
+    "message": "Empresarial",
     "description": "商业版计划名称"
   },
   "pricing.compare.automation": {
-    "message": "自動化タスク"
+    "message": "高度な自動化"
   },
   "pricing.compare.devices": {
-    "message": "デバイスサポート"
+    "message": "Dispositivos soportados"
   },
   "pricing.compare.hide": {
-    "message": "隐藏機能对比"
+    "message": "Ocultar comparación"
   },
   "pricing.compare.show": {
-    "message": "查看機能对比"
+    "message": "Mostrar comparación"
   },
   "pricing.cta.free": {
-    "message": "立即使用"
+    "message": "Start for free"
   },
   "pricing.cta.pay": {
-    "message": "立即订阅"
+    "message": "Subscribe"
   },
   "pricing.dedicated_support": {
-    "message": "专属工单サポート",
+    "message": "サポート dedicado",
     "description": "专属サポート文本"
   },
   "pricing.free.all_free_features": {
-    "message": "所有基础機能（不含自動化タスク）",
+    "message": "Todas las funciones gratuitas",
     "description": "免费计划基础機能説明"
   },
   "pricing.free.automation_disabled": {
-    "message": "自動化タスク不できます用",
+    "message": "自動化が無効",
     "description": "免费计划自動化不できます用文本"
   },
   "pricing.free.community_support": {
-    "message": "社区サポート",
+    "message": "サポート comunitario",
     "description": "免费计划サポート方式"
   },
   "pricing.free.description": {
-    "message": "免费用户できます以接続无限デバイス，但无法実行自動化タスク",
+    "message": "Perfecto para empezar",
     "description": "免费计划説明"
   },
   "pricing.free.name": {
-    "message": "無料",
+    "message": "Gratuito",
     "description": "免费计划名称"
   },
   "pricing.free_label": {
-    "message": "無料",
+    "message": "Gratis",
     "description": "Free label"
   },
   "pricing.get_started": {
-    "message": "スタート使用",
+    "message": "Comenzar",
     "description": "スタート使用按钮文本"
   },
   "pricing.local_api.description": {
-    "message": "Pro、Team 和 Business 用户できます使用本地 RESTful API 来以编程方式管理タスク和自動化工作流。详见ドキュメント。"
+    "message": "TikMatrixを独自のシステムと統合する必要がありますか？ローカルAPIでプログラム的にタスクを管理し、ワークフローを自動化できます。"
   },
   "pricing.local_api.link_text": {
-    "message": "查看本地 API ドキュメント"
+    "message": "Ver documentaciónla API"
   },
   "pricing.local_api.support": {
-    "message": "本地 REST API 訪問（Pro+）"
+    "message": "Disponible en todos los planespago"
   },
   "pricing.local_api.title": {
-    "message": "本地 API"
+    "message": "API local"
   },
   "pricing.per_month": {
-    "message": "月額"
+    "message": "por mes"
   },
   "pricing.per_month_pc": {
-    "message": "每月/每台コンピュータ",
+    "message": "por mes por PC",
     "description": "每月每台コンピュータ文本"
   },
   "pricing.per_year": {
-    "message": "年間（30%節約）"
+    "message": "por año"
   },
   "pricing.pro.concurrent_tasks": {
-    "message": "最多20个し发自動化タスク",
+    "message": "50 tareas concurrentes",
     "description": "专业版し发タスク数"
   },
   "pricing.pro.description": {
-    "message": "プロフェッショナルや中小企業に最適",
+    "message": "Para profesionales y equipos pequeños",
     "description": "专业版计划説明"
   },
   "pricing.pro.manage_phones": {
-    "message": "最多20个し发自動化タスク",
+    "message": "Gestionar hasta 50 dispositivos",
     "description": "专业版计划機能"
   },
   "pricing.pro.name": {
-    "message": "プロフェッショナル",
+    "message": "Profesional",
     "description": "专业版计划名称"
   },
   "pricing.starter.concurrent_tasks": {
-    "message": "最多5个し发自動化タスク",
+    "message": "10 tareas concurrentes",
     "description": "入门版し发タスク数"
   },
   "pricing.starter.description": {
-    "message": "個人や小規模チームに最適",
+    "message": "Perfecto para empezar",
     "description": "入门版计划説明"
   },
   "pricing.starter.manage_phones": {
-    "message": "最多5个し发自動化タスク",
+    "message": "Gestionar hasta 10 dispositivos",
     "description": "入门版计划機能"
   },
   "pricing.starter.name": {
-    "message": "入门版",
+    "message": "Inicial",
     "description": "入门版计划名称"
   },
   "pricing.subtitle": {
-    "message": "适合每个人の灵活计划。年付享受30%折扣！",
+    "message": "Choose the plan that fits your needs",
     "description": "定价一部副タイトル"
   },
   "pricing.team.concurrent_tasks": {
-    "message": "最多50个し发自動化タスク",
+    "message": "100 tareas concurrentes",
     "description": "团队版し发タスク数"
   },
   "pricing.team.description": {
-    "message": "适合成长中の团队和公司",
+    "message": "Para equipos en crecimiento",
     "description": "团队版计划説明"
   },
   "pricing.team.manage_phones": {
-    "message": "最多50个し发自動化タスク",
+    "message": "Gestionar hasta 100 dispositivos",
     "description": "团队版计划機能"
   },
   "pricing.team.name": {
-    "message": "团队版",
+    "message": "Equipo",
     "description": "团队版计划名称"
   },
   "pricing.ticket_support": {
-    "message": "专属工单サポート",
+    "message": "Soporte por tickets",
     "description": "专属工单サポート文本"
   },
   "pricing.title": {
-    "message": "定价",
+    "message": "Pricing Plans",
     "description": "定价一部タイトル"
   },
   "pricing.toggle.monthly": {
-    "message": "月付"
+    "message": "Monthly"
   },
   "pricing.toggle.yearly": {
-    "message": "年払い（30%節約）"
+    "message": "Yearly (Save 30%)"
   },
   "pricing.unlimited_devices": {
-    "message": "无限デバイス接続",
+    "message": "デバイス ilimitados",
     "description": "无限デバイス接続文本"
   },
   "pricing.unlimited_devices_short": {
-    "message": "无限"
+    "message": "Ilimitado"
   },
   "tech.diagram.devices": {
-    "message": "真实 Android デバイス"
+    "message": "Real Android Devices"
   },
   "tech.diagram.engine": {
-    "message": "TikMatrix 引擎"
+    "message": "TikMatrix Engine"
   },
   "tech.diagram.fingerprintIsolation": {
-    "message": "デバイス指纹隔离"
+    "message": "Device Fingerprint Isolation"
   },
   "tech.diagram.localExecution": {
-    "message": "本地実行"
+    "message": "Local Execution"
   },
   "tech.diagram.noApi": {
-    "message": "不调用 API"
+    "message": "No API Calls"
   },
   "tech.diagram.noMemoryInjection": {
-    "message": "无内存注入"
+    "message": "No Memory Injection"
   },
   "tech.diagram.realTouch": {
-    "message": "真实触控注入"
+    "message": "Real Touch Injection"
   },
   "tech.diagram.tiktok": {
-    "message": "TikTok アプリ"
+    "message": "TikTok App"
   },
   "tech.diagram.user": {
-    "message": "用户"
+    "message": "User"
   },
   "tech.diagram.zeroCloud": {
-    "message": "零云依赖"
+    "message": "Zero Cloud Dependency"
   },
   "tech.point.fingerprint.b1": {
-    "message": "每台デバイス唯一 IMEI / Android ID"
+    "message": "Unique IMEI / Android ID per device"
   },
   "tech.point.fingerprint.b2": {
-    "message": "通じて代理分配隔离 IP"
+    "message": "Isolated IP allocation via proxy"
   },
   "tech.point.fingerprint.b3": {
-    "message": "无共享 Cookie または令牌"
+    "message": "No shared cookies or tokens"
   },
   "tech.point.fingerprint.desc": {
-    "message": "每台デバイス保持唯一の硬件和ソフトウェア指纹，无交叉污染。"
+    "message": "Each device maintains unique hardware and software fingerprints with no cross-contamination."
   },
   "tech.point.fingerprint.title": {
-    "message": "デバイス指纹隔离"
+    "message": "Device Fingerprint Isolation"
   },
   "tech.point.humanBehavior.b1": {
-    "message": "ランダム化时间間隔"
+    "message": "Randomized time intervals"
   },
   "tech.point.humanBehavior.b2": {
-    "message": "自然なスクロール速度曲線"
+    "message": "Natural scrolling velocity curves"
   },
   "tech.point.humanBehavior.b3": {
-    "message": "会话时长建模"
+    "message": "Session duration modeling"
   },
   "tech.point.humanBehavior.desc": {
-    "message": "動作模式源自真实用户数据，避免できます检测の自動化特征。"
+    "message": "Behavior patterns derived from real user data, avoiding detectable automation features."
   },
   "tech.point.humanBehavior.title": {
-    "message": "仿人動作模型"
+    "message": "Human Behavior Model"
   },
   "tech.point.localExec.b1": {
-    "message": "无远程実行依赖"
+    "message": "No remote execution dependency"
   },
   "tech.point.localExec.b2": {
-    "message": "完全数据隐私"
+    "message": "Complete data privacy"
   },
   "tech.point.localExec.b3": {
-    "message": "できます选离线部署"
+    "message": "Optional offline deployment"
   },
   "tech.point.localExec.desc": {
-    "message": "スクリプト通じて ADB 在本地机器上で実行——无云端中继，无第三方服务器。"
+    "message": "スクリプトはADB経由でローカルマシンで実行 - クラウドリレーなし、サードパーティサーバーなし"
   },
   "tech.point.localExec.title": {
-    "message": "本地実行沙箱"
+    "message": "Local Execution Sandbox"
   },
   "tech.point.passiveCapture.b1": {
-    "message": "零代码注入 TikTok"
+    "message": "Zero code injection into TikTok"
   },
   "tech.point.passiveCapture.b2": {
-    "message": "只读屏幕捕获"
+    "message": "Read-only screen capture"
   },
   "tech.point.passiveCapture.b3": {
-    "message": "兼容任何アプリ版本"
+    "message": "No modification of app binaries"
   },
   "tech.point.passiveCapture.desc": {
-    "message": "通じて OCR 和计算机视觉提取屏幕数据——无アプリ内 Hook または内存注入。"
+    "message": "Extract screen data via OCR and computer vision - no in-app hooks or memory injection."
   },
   "tech.point.passiveCapture.title": {
-    "message": "被动捕获模式"
+    "message": "Passive Capture Mode"
   },
   "tech.point.realTouch.b1": {
-    "message": "ハードウェアレベルのタッチ信号生成"
+    "message": "Hardware-level touch signal generation"
   },
   "tech.point.realTouch.b2": {
-    "message": "压力和速度ランダム化"
+    "message": "Pressure and velocity randomization"
   },
   "tech.point.realTouch.b3": {
-    "message": "弧形轨迹シミュレート"
+    "message": "Arc trajectory simulation"
   },
   "tech.point.realTouch.desc": {
-    "message": "在 Android 输入层注入真实触控事件，と人类交互動作无法区分。"
+    "message": "Inject real touch events at the Android input layer, indistinguishable from human interaction behavior."
   },
   "tech.point.realTouch.title": {
-    "message": "真实触控注入"
+    "message": "Real Touch Injection"
   },
   "tech.point.zeroApi.b1": {
-    "message": "无 API 令牌暴露"
+    "message": "No API token exposure"
   },
   "tech.point.zeroApi.b2": {
-    "message": "无请求签名伪造"
+    "message": "No request signature forgery"
   },
   "tech.point.zeroApi.b3": {
-    "message": "不受 API 速率限制影响"
+    "message": "Not affected by API rate limits"
   },
   "tech.point.zeroApi.desc": {
-    "message": "不调用 TikTok API，不拦截网络请求。所有操作都在 UI 层完成。"
+    "message": "No TikTok API calls, no network request interception. All operations completed at the UI layer."
   },
   "tech.point.zeroApi.title": {
-    "message": "零 API 自動化"
+    "message": "Zero API Automation"
   },
   "tech.points.heading": {
-    "message": "核心技术实现"
+    "message": "Core Technology Implementation"
   },
   "tech.security.heading": {
-    "message": "セキュリティなど级评估"
+    "message": "高度なセキュリティ機能"
   },
   "tech.security.humanModel": {
-    "message": "仿人動作模型"
+    "message": "Modelo de comportamiento humano"
   },
   "tech.security.legendA": {
-    "message": "优秀"
+    "message": "Riesgo alto"
   },
   "tech.security.legendB": {
-    "message": "良好"
+    "message": "Riesgo medio"
   },
   "tech.security.legendC": {
-    "message": "できます选"
+    "message": "Riesgo bajo"
   },
   "tech.security.noHook": {
-    "message": "无注入 / 无 Hook"
+    "message": "Sin hooks del sistema"
   },
   "tech.security.noiseCurve": {
-    "message": "動作噪声曲线"
+    "message": "Curvaruido aleatorio"
   },
   "tech.security.proxyIsolation": {
-    "message": "できます选代理隔离"
+    "message": "Aislamientoproxy"
   },
   "tech.security.realDevice": {
-    "message": "真实デバイス环境"
+    "message": "Entorno デバイス real"
   },
   "tech.security.zeroApi": {
-    "message": "零 API 操作"
+    "message": "Cero llamadas a API"
   },
   "tech.subtitle": {
-    "message": "基于真实デバイス自動化原理构建の反检测架构"
+    "message": "Anti-detection Architecture Built on Real Device Automation"
   },
   "tech.title": {
-    "message": "技术优势"
+    "message": "Technology Advantages"
   },
   "testimonials.subtitle": {
-    "message": "TikMatrix用户怎么说",
+    "message": "Real feedback from TikMatrix users",
     "description": "用户评价一部副タイトル"
   },
   "testimonials.title": {
-    "message": "真实用户评价",
+    "message": "What Our Users Say",
     "description": "用户评价一部タイトル"
   },
   "testimonials.usage_label": {
-    "message": "使用时长",
+    "message": "Uso:",
     "description": "使用时长标签"
   },
   "testimonials.user1.text": {
-    "message": "TikMatrix对我们工作室来说是救星！我们できます以同時に制御这么多携帯電話，自動化機能超级强大。发帖和ウォームアップ变得容易多。TikTok防检测真の有效——我们の投稿得る比以前更自然の流量。",
+    "message": "TikMatrix ha revolucionado nuestra operación de granja de teléfonos. La capacidad de gestionar 100+ dispositivos desde una sola PC es increíble.",
     "description": "第一个用户评价文本"
   },
   "testimonials.user1.usage": {
-    "message": "1年",
+    "message": "Gestión de 120 dispositivos",
     "description": "第一个用户使用时长"
   },
   "testimonials.user2.text": {
-    "message": "使用TikMatrix后，我们广告团队の效率飙升。自動化スクリプトに我们节省大量手動工作，アカウント保持セキュリティ——到目前に止没有被封禁。对我们这样の代理商来说非常完美！",
+    "message": "El sistema de automatización es potente y fácil de usar. Nuestro engagement ha aumentado un 40% desde que comenzamos a usar TikMatrix.",
     "description": "第二个用户评价文本"
   },
   "testimonials.user2.usage": {
-    "message": "10个月",
+    "message": "50のTikTokアカウント",
     "description": "第二个用户使用时长"
   },
   "testimonials.user3.text": {
-    "message": "同時に制御100部携帯電話是改变游戏ルールの。一括操作超级方便，我们のTikTok投稿得る更多有机触达。非常适合海外マーケティング，价格也很公道！",
+    "message": "La mejor inversión para nuestro negocio de marketing en TikTok. El soporte técnico es excepcional y el software es muy estable.",
     "description": "第三个用户评价文本"
   },
   "testimonials.user3.usage": {
-    "message": "6个月",
+    "message": "Operación profesionalmarketing",
     "description": "第三个用户使用时长"
   },
   "testimonials.user4.text": {
-    "message": "之前试过其他工具，但TikMatrix是最省心の。自動化和防封都很できます靠。非常适合需要高效一括操作のマーケティング团队。",
+    "message": "6か月の使用でアカウント停止率ゼロ。実機技術は本当に機能します！",
     "description": "第四个用户评价文本"
   },
   "testimonials.user4.usage": {
-    "message": "8个月",
+    "message": "80アカウント管理",
     "description": "第四个用户使用时长"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "关闭",
+    "message": "Cerrar",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "回到顶部",
+    "message": "Volver arriba",
     "description": "The ARIA label for the back to top button"
   },
   "theme.CodeBlock.copied": {
-    "message": "复制成功",
+    "message": "Copiado",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copy": {
-    "message": "复制",
+    "message": "Copiar",
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "クリップボードにコードをコピー",
+    "message": "Copiar código al portapapeles",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "切换自動换行",
+    "message": "Alternar ajustelínea",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "折叠侧边栏分类 '{label}'",
+    "message": "Colapsar categoríala barra lateral '{label}'",
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "展开侧边栏分类 '{label}'",
+    "message": "Expandir categoríala barra lateral '{label}'",
     "description": "The ARIA label to expand the sidebar category"
   },
   "theme.ErrorPageContent.title": {
-    "message": "页面済み崩溃。",
+    "message": "Esta página se ha caído.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "再試行",
+    "message": "Intentarnuevo",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "主导航",
+    "message": "Principal",
     "description": "The ARIA label for the main navigation"
   },
   "theme.NotFound.p1": {
-    "message": "我们找不到您要找の页面。",
+    "message": "No pudimos encontrar lo que buscabas.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "请联系原始リンク来源网站の所有者，し告知他们リンク済み损坏。",
+    "message": "Por favor, contacta al propietario del sitio que te vinculó a la URL original y hazle saber que el enlace está roto.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.NotFound.title": {
-    "message": "找不到页面",
+    "message": "Página no encontrada",
     "description": "The title of the 404 page"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "本页总览",
+    "message": "En esta página",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.admonition.caution": {
-    "message": "警告",
+    "message": "precaución",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "危险",
+    "message": "peligro",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "信息",
+    "message": "información",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "备注",
+    "message": "nota",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "提示",
+    "message": "consejo",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
-    "message": "注意",
+    "message": "advertencia",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.archive.description": {
-    "message": "历史博文",
+    "message": "Archivo",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.archive.title": {
-    "message": "历史博文",
+    "message": "Archivo",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "ブログ投稿リストのページネーション",
+    "message": "Navegación de la lista de publicaciones del blog",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "较新の博文",
+    "message": "Entradas más recientes",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "较旧の博文",
+    "message": "Entradas más antiguas",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "博文分页导航",
+    "message": "Navegación de publicaciones del blog",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "较新一篇",
+    "message": "新しい投稿",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "较旧一篇",
+    "message": "古い投稿",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "{count}件のブログ投稿",
+    "message": "Una publicación|{count} publicaciones",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMore": {
-    "message": "阅读更多",
+    "message": "Leer más",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "阅读 {title} の全文",
+    "message": "Leer más sobre {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "阅读需 {readingTime} 分",
+    "message": "Lecturaun minuto|Lectura{readingTime} minutos",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "最近博文导航",
+    "message": "Navegación de publicaciones recientes del blog",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.blog.tagTitle": {
-    "message": "{tagName}タグの{nPosts}件",
+    "message": "{nPosts} etiquetadas con \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "切换浅色/暗黑模式（当前に{mode}）",
+    "message": "Cambiar entre modo oscuro y claro (actualmente modo {mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "暗黑模式",
+    "message": "oscuro",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "浅色模式",
+    "message": "claro",
     "description": "The name for the light color mode"
   },
   "theme.common.editThisPage": {
-    "message": "编辑此页",
+    "message": "Editar esta página",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading}への直接リンク",
+    "message": "Enlace directo al encabezado",
     "description": "Title for link to heading"
   },
   "theme.common.skipToMainContent": {
-    "message": "跳到主要コンテンツ",
+    "message": "Saltar al contenido principal",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count}個のアイテム",
+    "message": "1 elemento|{count} elementos",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "ホームページ面",
+    "message": "Páginainicio",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "页面パス",
+    "message": "Migaspan",
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "文件选项卡",
+    "message": "Navegaciónpáginasdocumentos",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.next": {
-    "message": "下一页",
+    "message": "Siguiente",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.paginator.previous": {
-    "message": "上で一页",
+    "message": "Anterior",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "关闭导航栏",
+    "message": "Cerrar barra lateralnavegación",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "收起侧边栏",
+    "message": "Colapsar barra lateral",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "收起侧边栏",
+    "message": "Colapsar barra lateral",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "展开侧边栏",
+    "message": "Expandir barra lateral",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "展开侧边栏",
+    "message": "Expandir barra lateral",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "ドキュメント侧边栏",
+    "message": "Barra lateraldocumentos",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "切换导航栏",
+    "message": "Alternar barra lateralnavegación",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{tagName}タグの{nDocsTagged}件",
+    "message": "{nDocsTagged} con \"{tagName}\"",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} 篇ドキュメント带有标签",
+    "message": "Un documento etiquetado|{count} documentos etiquetados",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.versionBadge.label": {
-    "message": "バージョン: {versionLabel}"
+    "message": "Versión: {versionLabel}"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "最新バージョン",
+    "message": "Última versión",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "最新のドキュメント请参阅 {latestVersionLink} ({versionLabel})。",
+    "message": "Para documentación actualizada, consulta la {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "此に {siteTitle} {versionLabel} 版のドキュメント，现済み不再积极维护。",
+    "message": "Esta es la documentación{siteTitle} {versionLabel}, que ya no se mantiene activamente.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "此に {siteTitle} {versionLabel} 版尚未发行のドキュメント。",
+    "message": "Esta es la documentación no publicada{siteTitle} {versionLabel}.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.footer.link.label.View All Advertising": {
-    "message": "查看所有广告"
+    "message": "Ver Toda la Publicidad"
   },
   "theme.footer.link.label.View All Tools": {
-    "message": "查看所有工具"
+    "message": "Ver Todas las Herramientas"
   },
   "theme.lastUpdated.atDate": {
-    "message": "{date}に ",
+    "message": " el {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": "{user}により ",
+    "message": " por {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "最終更新: {byUser}{atDate}",
+    "message": "Última actualización{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.item.label.Advertising": {
-    "message": "广告"
+    "message": "Publicidad"
   },
   "theme.navbar.item.label.Tools": {
-    "message": "工具"
+    "message": "Herramientas"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "选择言語",
+    "message": "Idiomas",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← 回到主菜单",
+    "message": "← Volver al menú principal",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "选择版本",
+    "message": "Versiones",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
-    "message": "标签：",
+    "message": "Etiquetas:",
     "description": "The label alongside a tag list"
   },
   "theme.tags.tagsPageLink": {
-    "message": "查看所有标签",
+    "message": "Ver todas las etiquetas",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "标签",
+    "message": "Etiquetas",
     "description": "The title of the tag list page"
   },
   "theme.unlistedContent.message": {
-    "message": "此页面未列出。検索引擎不会对其索引，只有拥有直接リンクの用户才能訪問。",
+    "message": "このページはリストに載っていません。検索エンジンにインデックスされず、直接リンクを持つユーザーのみがアクセスできます。",
     "description": "The unlisted content banner message"
   },
   "theme.unlistedContent.title": {
-    "message": "未列出页",
+    "message": "Página no listada",
     "description": "The unlisted content banner title"
   },
   "whitelabel.annualRequired": {
-    "message": "需要年付订阅",
+    "message": "Se requiere licencia anual",
     "description": "白标機能需要年付订阅"
   },
   "whitelabel.annualRequiredDesc": {
-    "message": "白标機能仅对年付订阅用户开放。购买年付计划后，请通じてTelegram联系客服获取解锁码。",
+    "message": "La funcionalidadmarca blanca solo está disponible con licencias anuales",
     "description": "白标機能年付订阅说明"
   },
   "whitelabel.appName": {
-    "message": "アプリ名称",
+    "message": "Nombrela aplicación",
     "description": "アプリ名称"
   },
   "whitelabel.contactSupport": {
-    "message": "ロック解除コードを取得するにはカスタマーサービスにお問い合わせください",
+    "message": "Contactar con soporte",
     "description": "联系客服获取白标解锁码"
   },
   "whitelabel.customization": {
-    "message": "品牌定制",
+    "message": "Personalizaciónmarca blanca",
     "description": "品牌定制"
   },
   "whitelabel.description": {
-    "message": "カスタムTikMatrixの品牌标识以匹配您の公司形象",
+    "message": "Personaliza la aplicación con tu propia marca",
     "description": "白标機能説明"
   },
   "whitelabel.logo": {
@@ -1868,23 +1868,23 @@
     "description": "Logo"
   },
   "whitelabel.setup": {
-    "message": "白标設定",
+    "message": "設定",
     "description": "白标設定"
   },
   "whitelabel.supportEmail": {
-    "message": "サポート邮箱",
+    "message": "Correo electrónico de soporte",
     "description": "サポート邮箱"
   },
   "whitelabel.telegramUrl": {
-    "message": "Telegramリンク",
+    "message": "URLTelegram",
     "description": "Telegramリンク"
   },
   "whitelabel.title": {
-    "message": "白标機能",
+    "message": "Marca blanca",
     "description": "白标機能タイトル"
   },
   "whitelabel.tutorialUrl": {
-    "message": "チュートリアルリンク",
+    "message": "URL del tutorial",
     "description": "チュートリアルリンク"
   }
 }
