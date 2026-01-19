@@ -31,10 +31,10 @@
     "message": "또한 우리의 실제 장치 매트릭스 프로그램 시스템은 TIK의 위험 통제 조치로 인한 계정 정지를 완벽하게 피할 수 있습니다. 우리의 계정 정지율은 0%입니다."
   },
   "Advanced Technology for Superior Performance": {
-    "message": "뛰어난 성능을 위한 고급 기술"
+    "message": "뛰어난 성능을 위한 첨단 기술"
   },
   "Advanced safety mechanisms": {
-    "message": "Mecanismos seguridad avanzados"
+    "message": "고급 안전 메커니즘"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "설치 후 IgMatrix를 열어 사용 가능한 Instagram 자동화 스크립트의 전체 목록을 확인하십시오. 스크립트 선택은 TikMatrix와 다를 수 있습니다."
@@ -179,7 +179,7 @@
     "message": "En comparación con productos similares del mercado, usar nuestro producto TIK genera un aumento de tráfico de al menos el 30% respecto a otros productos similares."
   },
   "Completely local private deployment ensuring user data security": {
-    "message": "Implementación privada completamente local que garantiza la seguridad de los datos del usuario"
+    "message": "사용자 데이터 보안을 보장하는 완전한 로컬 프라이빗 배포"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "자동화 integral que combina múltiples estrategias engagement con comentarios AI 생성"
@@ -419,7 +419,7 @@
     "message": "No requiere root"
   },
   "No root permissions needed, ensuring device environment security": {
-    "message": "No se necesitan permisos de root, garantizando la seguridad del entorno del dispositivo"
+    "message": "root 권한 불필요, 기기 환경 보안 보장"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "No todos los scripts de TikMatrix están disponibles en IgMatrix, ya que son específicos de cada plataforma. La lista exacta de scripts disponibles se puede encontrar en la interfaz del software IgMatrix después de la instalación. Por favor, consulta las funciones reales mostradas en tu software."
@@ -584,7 +584,7 @@
     "message": "Mismo proceso configuración"
   },
   "Same reliable technology as TikMatrix": {
-    "message": "Misma tecnología confiable que TikMatrix"
+    "message": "TikMatrix와 동일한 신뢰할 수 있는 기술"
   },
   "Save 50% compared to monthly plan": {
     "message": "Ahorra un 50% en comparación con el plan mensual"
@@ -691,7 +691,7 @@
     "message": "TikMatrix"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix ofrece al menos un 30% más de engagement en comparación con productos similares, con tecnología avanzada de dispositivos reales que garantiza la seguridad completa de la cuenta.",
+    "message": "TikMatrix는 유사 제품 대비 최소 30% 더 높은 참여도를 제공하며, 완전한 계정 안전을 보장하는 고급 실제 기기 기술을 갖추고 있습니다.",
     "description": "The description of TikMatrix competitive advantage"
   },
   "TikMatrix is a TikTok group control operation tool": {
@@ -1136,7 +1136,7 @@
     "message": "Bajo riesgo"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "Sin necesidad de permisos de root, garantizando la seguridad del entorno del dispositivo"
+    "message": "root 권한 불필요, 기기 환경 보안 보장"
   },
   "homepage.vs.card.nodev.title": {
     "message": "No requiere desarrollo"
@@ -1148,7 +1148,7 @@
     "message": "Plug and play"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "Usa dispositivos Android reales para comportamiento auténtico y máxima seguridad"
+    "message": "진정한 동작과 최대 보안을 위해 실제 Android 기기 사용"
   },
   "homepage.vs.card.realDevices.title": {
     "message": "Dispositivos reales"
@@ -1461,7 +1461,7 @@
     "message": "Core Technology Implementation"
   },
   "tech.security.heading": {
-    "message": "Funciones de seguridad avanzadas"
+    "message": "고급 보안 기능"
   },
   "tech.security.humanModel": {
     "message": "Modelo de comportamiento humano"

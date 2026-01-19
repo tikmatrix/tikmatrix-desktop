@@ -34,7 +34,7 @@
     "message": "Tecnologia avanzata per prestazioni superiori"
   },
   "Advanced safety mechanisms": {
-    "message": "Mecanismos de seguridad avanzados"
+    "message": "Meccanismi di sicurezza avanzati"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "Dopo l'installazione, apri IgMatrix per visualizzare l'elenco completo degli script di automazione Instagram disponibili. La selezione degli script potrebbe differire da TikMatrix."
@@ -179,7 +179,7 @@
     "message": "En comparación con productos similares del mercado, usar nuestro producto TIK genera un aumento de tráfico de al menos el 30% respecto a otros productos similares."
   },
   "Completely local private deployment ensuring user data security": {
-    "message": "Implementación privada completamente local que garantiza la seguridad de los datos del usuario"
+    "message": "Distribuzione privata completamente locale che garantisce la sicurezza dei dati utente"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Automatización integral que combina múltiples estrategias de engagement con comentarios generados por IA"
@@ -419,7 +419,7 @@
     "message": "No requiere root"
   },
   "No root permissions needed, ensuring device environment security": {
-    "message": "No se necesitan permisos de root, garantizando la seguridad del entorno del dispositivo"
+    "message": "Nessun permesso root necessario, garantendo la sicurezza dell'ambiente del dispositivo"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "No todos los scripts de TikMatrix están disponibles en IgMatrix, ya que son específicos de cada plataforma. La lista exacta de scripts disponibles se puede encontrar en la interfaz del software IgMatrix después de la instalación. Por favor, consulta las funciones reales mostradas en tu software."
@@ -584,7 +584,7 @@
     "message": "Mismo proceso de configuración"
   },
   "Same reliable technology as TikMatrix": {
-    "message": "Misma tecnología confiable que TikMatrix"
+    "message": "Stessa tecnologia affidabile di TikMatrix"
   },
   "Save 50% compared to monthly plan": {
     "message": "Ahorra un 50% en comparación con el plan mensual"
@@ -691,7 +691,7 @@
     "message": "TikMatrix"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix ofrece al menos un 30% más de engagement en comparación con productos similares, con tecnología avanzada de dispositivos reales que garantiza la seguridad completa de la cuenta.",
+    "message": "TikMatrix offre un coinvolgimento almeno del 30% superiore rispetto a prodotti simili, con tecnologia avanzata di dispositivi reali che garantisce la completa sicurezza dell'account.",
     "description": "The description of TikMatrix competitive advantage"
   },
   "TikMatrix is a TikTok group control operation tool": {
@@ -1136,7 +1136,7 @@
     "message": "Bajo riesgo"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "Sin necesidad de permisos de root, garantizando la seguridad del entorno del dispositivo"
+    "message": "Nessun permesso root necessario, garantendo la sicurezza dell'ambiente del dispositivo"
   },
   "homepage.vs.card.nodev.title": {
     "message": "No requiere desarrollo"
@@ -1148,7 +1148,7 @@
     "message": "Plug and play"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "Usa dispositivos Android reales para comportamiento auténtico y máxima seguridad"
+    "message": "Utilizza dispositivi Android reali per comportamento autentico e massima sicurezza"
   },
   "homepage.vs.card.realDevices.title": {
     "message": "Dispositivos reales"
@@ -1461,7 +1461,7 @@
     "message": "Core Technology Implementation"
   },
   "tech.security.heading": {
-    "message": "Funciones de seguridad avanzadas"
+    "message": "Funzionalità di sicurezza avanzate"
   },
   "tech.security.humanModel": {
     "message": "Modelo de comportamiento humano"

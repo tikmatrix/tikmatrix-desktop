@@ -31,10 +31,10 @@
     "message": "さらに、当社の実機マトリックスプログラムシステムは、TIKのリスク管理措置によるアカウント停止を完全に回避できます。当社のアカウント停止率は0%です。"
   },
   "Advanced Technology for Superior Performance": {
-    "message": "Tecnología avanzada para un rendimiento superior"
+    "message": "卓越したパフォーマンスのための先進技術"
   },
   "Advanced safety mechanisms": {
-    "message": "Mecanismosseguridad avanzados"
+    "message": "高度な安全メカニズム"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "インストール後、IgMatrixを開いて利用可能なInstagram自動化スクリプトの完全なリストを表示してください。スクリプトの選択はTikMatrixと異なる場合があります。"
@@ -179,7 +179,7 @@
     "message": "En comparación con productos similares del mercado, usar nuestro producto TIK genera un aumento de tráfico de al menos el 30% respecto a otros productos similares."
   },
   "Completely local private deployment ensuring user data security": {
-    "message": "Implementación privada completamente local que garantiza la seguridad de los datos del usuario"
+    "message": "ユーザーデータセキュリティを確保する完全なローカルプライベート展開"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "複数のエンゲージメント戦略とAI生成コメントを組み合わせた包括的な自動化"
@@ -419,7 +419,7 @@
     "message": "No requiere root"
   },
   "No root permissions needed, ensuring device environment security": {
-    "message": "No se necesitan permisos de root, garantizando la seguridad del entorno del dispositivo"
+    "message": "root権限不要、デバイス環境のセキュリティを確保"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "すべてのTikMatrixスクリプトがIgMatrixで利用可能なわけではありません。これらはプラットフォーム固有のためです。インストール後、IgMatrixソフトウェアインターフェース内で利用可能なスクリプトの正確なリストを見つけることができます。ソフトウェアに表示されている実際の機能を参照してください。"
@@ -584,7 +584,7 @@
     "message": "Mismo procesoconfiguración"
   },
   "Same reliable technology as TikMatrix": {
-    "message": "Misma tecnología confiable que TikMatrix"
+    "message": "TikMatrixと同じ信頼性の高い技術"
   },
   "Save 50% compared to monthly plan": {
     "message": "Ahorra un 50% en comparación con el plan mensual"
@@ -691,7 +691,7 @@
     "message": "TikMatrix"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix ofrece al menos un 30% más de engagement en comparación con productos similares, con tecnología avanzada de dispositivos reales que garantiza la seguridad completa de la cuenta.",
+    "message": "TikMatrixは、同様の製品と比較して少なくとも30%高いエンゲージメントを提供し、完全なアカウント安全性を確保する高度な実機技術を備えています。",
     "description": "The description of TikMatrix competitive advantage"
   },
   "TikMatrix is a TikTok group control operation tool": {
@@ -1136,7 +1136,7 @@
     "message": "Bajo riesgo"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "Sin necesidad de permisos de root, garantizando la seguridad del entorno del dispositivo"
+    "message": "root権限不要、デバイス環境のセキュリティを確保"
   },
   "homepage.vs.card.nodev.title": {
     "message": "No requiere desarrollo"
@@ -1148,7 +1148,7 @@
     "message": "Plug and play"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "Usa dispositivos Android reales para comportamiento auténtico y máxima seguridad"
+    "message": "本物のAndroidデバイスを使用して本物の動作と最高のセキュリティを実現"
   },
   "homepage.vs.card.realDevices.title": {
     "message": "Dispositivos reales"
@@ -1461,7 +1461,7 @@
     "message": "Core Technology Implementation"
   },
   "tech.security.heading": {
-    "message": "Funciones de seguridad avanzadas"
+    "message": "高度なセキュリティ機能"
   },
   "tech.security.humanModel": {
     "message": "Modelo de comportamiento humano"
