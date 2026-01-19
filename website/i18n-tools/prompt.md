@@ -1,9 +1,5 @@
 # 翻译项目说明
 
-```copilot cli
-copilot -p "$(cat prompt.md)" --allow-all-tools
-```
-
 ## 项目背景
 
 这是一个基于 **Docusaurus** 的文档网站。目录是./website
@@ -92,14 +88,11 @@ copilot -p "$(cat prompt.md)" --allow-all-tools
 ### 已完成的语言
 
 * zh-Hans
-* ru
-* ar
-* de
 
 ### 需要翻译的语言
 
 翻译以下所有语言目录：
 
-`es, fr, he, hi, id, it, ja, ko, nl, pl, pt, sv, th, tr, uk, vi`
+`ru, ar, de, es, fr, he, hi, id, it, ja, ko, nl, pl, pt, sv, th, tr, uk, vi`
 
 ### 本次任务目标是按顺序翻译每个需要翻译的目录下面的所有需要翻译的文件, 翻译完一个目录后再继续下一个目录
