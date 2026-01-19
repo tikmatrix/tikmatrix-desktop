@@ -104,11 +104,11 @@
 
 某些语言（特别是 th、vi、tr、pl、nl、sv、uk）中发现完全保留英文的情况：
 
-- "Automatically generate AI voiceover for videos"
-- "Automation & Content Management"
-- "Generate unique videos from one source video"
+- "Automatically generate AI voiceover for videos" - 出现在：`th/code.json`, `vi/code.json`, `tr/code.json`, `pl/code.json`, `nl/code.json`, `sv/code.json`, `uk/code.json`
+- "Automation & Content Management" - 出现在相同的7种语言文件
+- "Generate unique videos from one source video" - 出现在相同的7种语言文件
 
-**建议**: 检查这些内容是否需要翻译成目标语言。
+**建议**: 检查这些内容是否需要翻译成目标语言。这些保留英文的情况在多种语言中一致出现，可能是有意为之（保持技术术语英文），但建议确认。
 
 ### 2. 混合语言文本
 
@@ -117,7 +117,7 @@
 - **意大利语** (`it/code.json`):
   - 翻译键包含文本: "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%."
   - 翻译值: "同时我们的Dispositivo Fisico矩阵Programma系统 可以完美避开TIK风控带来的封停Account 我们的封号率Sì0%"
-  - 问题: 中文、意大利语和英语混合
+  - 问题: 中文、意大利语和英语混合；另外"Sì0%"疑似拼写错误
   - 搜索关键字: "Dispositivo Fisico矩阵Programma"
 
 - **日语** (`ja/code.json`):
