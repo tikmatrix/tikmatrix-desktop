@@ -115,18 +115,21 @@
 某些翻译包含多种语言的混合，例如：
 
 - **意大利语** (`it/code.json`):
-  - 键: `"Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%."`
+  - 键: `"Additionally, our real device matrix program system can perfectly avoid..."`
+  - 完整键: 搜索 "Our account suspension rate is 0%" 可定位
   - 值: "同时我们的Dispositivo Fisico矩阵Programma系统"（中文+意大利语）
 
 - **日语** (`ja/code.json`):
   - 键: `"The motherboard machine consists of 20 Samsung phone motherboards..."`
+  - 完整键: 搜索 "unified USB connectivity" 可定位
   - 值: "携帯電話主板机是20个三星携帯電話主板"（日语+中文）
 
 - **韩语** (`ko/code.json`):
   - 键: `"The motherboard machine consists of 20 Samsung phone motherboards..."`
+  - 完整键: 与日语相同，搜索 "unified USB connectivity" 可定位
   - 值: "手机主板机是20个三星手机主板"（完全中文）
 
-**建议**: 这些混合语言文本应该被审查和修正，确保使用正确的目标语言。
+**建议**: 这些混合语言文本应该被审查和修正，确保使用正确的目标语言。可以在对应的 code.json 文件中搜索上述关键字来快速定位这些翻译条目。
 
 ---
 
