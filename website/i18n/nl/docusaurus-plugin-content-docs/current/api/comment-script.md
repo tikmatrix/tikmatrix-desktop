@@ -1,45 +1,45 @@
 ---
 sidebar_position: 5
-title: 评论脚本配置
-description: 评论脚本的完整配置参考
+title: Comment Script Configuratie
+description: Volledige configuratiereferentie voor het comment script
 ---
 
-本页介绍用于任务创建的 `comment` 脚本的配置参数。
+Deze pagina documenteert de configuratieparameters voor het `comment` script dat gebruikt wordt bij het aanmaken van taken.
 
-## 概述
+## Overzicht
 
-`comment` 脚本用于自动在 TikTok 或 Instagram 帖子上发布评论。当您通过 API 提供多个目标帖子 URL 时，**每个目标帖子 URL 创建一个任务**。您可以使用 `start_time` 参数控制每个任务的执行时间。
+Het `comment` script wordt gebruikt om automatisch reacties te plaatsen op TikTok of Instagram posts. Wanneer u meerdere doel post URL's via API aanlevert, **wordt er één taak gemaakt per doel post URL**. U kunt bepalen wanneer elke taak wordt uitgevoerd met de `start_time` parameter.
 
-## 脚本配置 (`script_config`)
+## Script Configuratie (`script_config`)
 
-`script_config` 对象包含评论脚本的参数。以下是可用的参数：
+Het `script_config` object bevat de parameters voor het comment script. Hieronder staan de beschikbare parameters:
 
-### 参数
+### Parameters
 
-| 参数 | 类型 | 必填 | 默认值 | 描述 |
+| Parameter | Type | Verplicht | Standaard | Beschrijving |
 |-----------|------|----------|---------|-------------|
-| target_post_urls | string[] | 是* | [] | 要评论的目标帖子 URL 数组（每个 URL 一个任务） |
-| target_post_url | string | 是* | "" | 单个目标帖子 URL 或用换行符/逗号分隔的多个 URL |
-| comment_content | string | 是 | "" | 评论文本内容。可以包含用换行符分隔的多条评论 |
-| comment_order | string | 否 | "random" | 如何选择评论：`random`（随机）或 `sequential`（顺序） |
-| insert_emoji | boolean | 否 | false | 是否在评论中插入随机表情符号 |
-| comment_image_path | string | 否 | "" | 图片评论的图片文件路径（仅限 TikTok）。支持绝对路径或相对于 work_dir/upload/ 的相对路径 |
+| target_post_urls | string[] | Ja* | [] | Array van doel post URL's om op te reageren (één taak per URL) |
+| target_post_url | string | Ja* | "" | Enkele doel post URL of meerdere URL's gescheiden door nieuwe regels/komma's |
+| comment_content | string | Ja | "" | Reactietekst inhoud. Kan meerdere reacties bevatten gescheiden door nieuwe regels |
+| comment_order | string | Nee | "random" | Hoe reacties te selecteren: `random` of `sequential` |
+| insert_emoji | boolean | Nee | false | Of willekeurige emoji in de reactie moeten worden ingevoegd |
+| comment_image_path | string | Nee | "" | Pad naar afbeeldingsbestand voor afbeeldingsreactie (alleen TikTok). Ondersteunt absoluut pad of relatief pad naar work_dir/upload/ |
 
 :::note
-必须提供 `target_post_urls` 数组或 `target_post_url` 字符串。如果两者都提供，`target_post_urls` 优先。
+Ofwel `target_post_urls` array of `target_post_url` string moet worden opgegeven. Als beide worden opgegeven, heeft `target_post_urls` voorrang.
 :::
 
-:::tip 图片评论（仅限 TikTok）
-`comment_image_path` 参数允许您在评论中附加图片。此功能**仅在 TikTok 上支持** - Instagram 评论不支持图片附件。图片将被推送到设备并作为图库中的第一张图片被选择。
+:::tip Afbeeldingsreactie (Alleen TikTok)
+De `comment_image_path` parameter stelt u in staat om een afbeelding aan uw reactie toe te voegen. Deze functie wordt **alleen ondersteund op TikTok** - Instagram reacties ondersteunen geen afbeeldingsbijlagen. De afbeelding wordt naar het apparaat gepusht en geselecteerd als de eerste afbeelding in de galerij.
 :::
 
-:::info 任务创建
-当提供多个目标帖子 URL 时，API 会 **为每个目标帖子 URL 创建一个任务**。例如，如果您指定 3 个帖子 URL 和 2 个设备，将创建 6 个任务。使用 `start_time` 参数控制任务开始执行的时间。
+:::info Taak Aanmaken
+Wanneer meerdere doel post URL's worden opgegeven, maakt de API **één taak per doel post URL** aan. Bijvoorbeeld, als u 3 post URL's en 2 apparaten opgeeft, worden er 6 taken aangemaakt. Gebruik de `start_time` parameter om te bepalen wanneer taken beginnen met uitvoeren.
 :::
 
-## 示例
+## Voorbeelden
 
-### 评论单个帖子
+### Reageren op Enkele Post
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -49,14 +49,14 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "精彩内容！🔥"
+      "comment_content": "Great content! 🔥"
     }
   }'
 ```
 
-### 使用多个评论选项
+### Reageren met Meerdere Reactie Opties
 
-提供用换行符分隔的多条评论。系统将根据 `comment_order` 选择其中一条：
+Geef meerdere reacties gescheiden door nieuwe regels. Het systeem selecteert er één op basis van `comment_order`:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -66,15 +66,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "视频太棒了！\n喜欢这个内容！\n继续加油！👏\n真的很不错！",
+      "comment_content": "Amazing video!\nLove this content!\nKeep it up! 👏\nThis is so good!",
       "comment_order": "random"
     }
   }'
 ```
 
-### 评论多个帖子
+### Reageren op Meerdere Posts
 
-当评论多个帖子时，每个帖子创建一个任务：
+Bij het reageren op meerdere posts, wordt er één taak per post aangemaakt:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -88,17 +88,17 @@ curl -X POST http://localhost:50809/api/v1/task \
         "https://www.tiktok.com/@user2/video/222",
         "https://www.tiktok.com/@user3/video/333"
       ],
-      "comment_content": "好视频！\n太棒了！\n喜欢！",
+      "comment_content": "Great video!\nAwesome!\nLove it!",
       "comment_order": "sequential"
     }
   }'
 ```
 
-这将创建 3 个立即执行的独立任务。
+Dit maakt 3 afzonderlijke taken die onmiddellijk worden uitgevoerd.
 
-### 定时评论
+### Plan Reacties met Start Tijd
 
-使用 `start_time` 安排任务开始执行的时间：
+Gebruik `start_time` om te plannen wanneer taken moeten starten:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -108,15 +108,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "定时评论！"
+      "comment_content": "Scheduled comment!"
     },
     "start_time": "14:30"
   }'
 ```
 
-### 带表情符号插入的评论
+### Reageren met Emoji Invoegen
 
-启用自动表情符号插入使评论更具吸引力：
+Schakel automatisch emoji invoegen in om reacties aantrekkelijker te maken:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -126,15 +126,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "这太棒了",
+      "comment_content": "This is amazing",
       "insert_emoji": true
     }
   }'
 ```
 
-### 按用户名列表模式评论
+### Reageren op Gebruikersnaamlijst Modus
 
-直接为特定账号创建评论任务：
+Maak reactietaken direct voor specifieke accounts:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -144,12 +144,12 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@target/video/123",
-      "comment_content": "视频不错！"
+      "comment_content": "Nice video!"
     }
   }'
 ```
 
-### 在多设备上批量评论
+### Batch Reageren op Meerdere Apparaten
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -159,16 +159,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@viral/video/999",
-      "comment_content": "内容很棒！\n出色的作品！\n太喜欢了！",
+      "comment_content": "Great content!\nAmazing work!\nLove this!",
       "comment_order": "random"
     },
     "enable_multi_account": true
   }'
 ```
 
-### Instagram 评论示例
+### Instagram Reactie Voorbeeld
 
-同样的 API 适用于 Instagram 帖子：
+Dezelfde API werkt voor Instagram posts:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -178,15 +178,15 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.instagram.com/p/ABC123/",
-      "comment_content": "美丽的照片！📸",
+      "comment_content": "Beautiful photo! 📸",
       "insert_emoji": true
     }
   }'
 ```
 
-### TikTok 图片评论示例
+### TikTok Afbeeldingsreactie Voorbeeld
 
-在您的 TikTok 评论中附加图片（不支持 Instagram）：
+Voeg een afbeelding toe aan uw TikTok reactie (niet ondersteund op Instagram):
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -196,21 +196,21 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "comment",
     "script_config": {
       "target_post_url": "https://www.tiktok.com/@username/video/1234567890",
-      "comment_content": "看看这张图片！",
+      "comment_content": "Check out this image!",
       "comment_image_path": "C:/images/my_image.jpg"
     }
   }'
 ```
 
-:::info 图片路径
-`comment_image_path` 可以是：
+:::info Afbeeldingspad
+De `comment_image_path` kan zijn:
 
-- **绝对路径**：`C:/images/my_image.jpg` 或 `/home/user/images/my_image.jpg`
-- **相对路径**：`my_image.jpg`（相对于 `work_dir/upload/`）
+- **Absoluut pad**: `C:/images/my_image.jpg` of `/home/user/images/my_image.jpg`
+- **Relatief pad**: `my_image.jpg` (relatief ten opzichte van `work_dir/upload/`)
 
 :::
 
-## 响应
+## Response
 
 ```json
 {
@@ -223,22 +223,22 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 评论顺序
+## Reactievolgorde
 
-### 随机顺序 (`random`)
+### Willekeurige Volgorde (`random`)
 
-- 从提供的列表中随机选择一条评论
-- 适合使评论看起来更自然
-- 默认行为
+- Selecteert willekeurig één reactie uit de opgegeven lijst
+- Goed om reacties natuurlijker te laten lijken
+- Standaard gedrag
 
-### 顺序 (`sequential`)
+### Sequentiële Volgorde (`sequential`)
 
-- 根据 `job_count` 按顺序选择评论
-- 第一个任务使用第一条评论，第二个任务使用第二条评论，依此类推
-- 到达列表末尾时循环回开头
-- 适合在多个任务之间分发不同的评论
+- Selecteert reacties op volgorde op basis van `job_count`
+- Eerste taak gebruikt eerste reactie, tweede taak gebruikt tweede reactie, etc.
+- Keert terug naar het begin wanneer het einde van de lijst is bereikt
+- Goed voor het verdelen van verschillende reacties over meerdere taken
 
-## 帖子 URL 格式
+## Post URL Formaten
 
 ### TikTok
 
@@ -254,29 +254,29 @@ https://www.instagram.com/p/ABCDEFGHIJK/
 https://www.instagram.com/reel/ABCDEFGHIJK/
 ```
 
-## 最佳实践
+## Beste Praktijken
 
-1. **变化您的评论**：提供多个评论选项以避免看起来像垃圾信息。
+1. **Varieer uw reacties**: Geef meerdere reactie opties om spamachtig te lijken te voorkomen.
 
-2. **使用顺序模式获得多样性**：当使用同一设备评论多个帖子时，使用 `sequential` 顺序来分发不同的评论。
+2. **Gebruik sequentiële volgorde voor variatie**: Bij het reageren op meerdere posts met hetzelfde apparaat, gebruik `sequential` volgorde om verschillende reacties te verdelen.
 
-3. **启用表情符号插入**：设置 `insert_emoji: true` 使评论看起来更自然和有吸引力。
+3. **Schakel emoji invoegen in**: Stel `insert_emoji: true` in om reacties natuurlijker en aantrekkelijker te laten lijken.
 
-4. **安排任务**：使用 `start_time` 参数将评论分散在一段时间内，减少触发频率限制的机会。
+4. **Plan taken**: Gebruik de `start_time` parameter om reacties over tijd te spreiden, waardoor de kans op rate limiting wordt verminderd.
 
-5. **遵守平台限制**：不要一次创建太多评论任务。大多数平台对评论有频率限制。
+5. **Respecteer platformlimieten**: Maak niet te veel reactietaken tegelijk. De meeste platforms hebben rate limieten voor het reageren.
 
-## 错误代码
+## Foutcodes
 
-| 代码 | 描述 |
+| Code | Beschrijving |
 |------|-------------|
-| 40001 | 缺少目标帖子 URL 或评论内容 |
-| 40003 | API 不支持该脚本 |
-| 40301 | API 访问需要 Pro+ 计划 |
+| 40001 | Ontbrekende doel post URL of reactie inhoud |
+| 40003 | Script niet ondersteund via API |
+| 40301 | API toegang vereist Pro+ plan |
 
-## 另请参阅
+## Zie Ook
 
-- [任务管理 API](./task-management.md) - 创建、列出和管理任务
-- [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [关注脚本配置](./follow-script.md) - 配置关注脚本参数
-- [本地 API 概述](./local-api.md) - API 概述和快速入门
+- [Task Management API](./task-management.md) - Taken maken, weergeven en beheren
+- [Post Script Configuratie](./post-script.md) - Post script parameters configureren
+- [Follow Script Configuratie](./follow-script.md) - Follow script parameters configureren
+- [Local API Overzicht](./local-api.md) - API overzicht en snelstart

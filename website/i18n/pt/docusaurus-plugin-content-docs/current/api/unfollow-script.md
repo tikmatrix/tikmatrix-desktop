@@ -1,38 +1,38 @@
 ---
 sidebar_position: 5
-title: 取消关注脚本配置
-description: 取消关注脚本完整配置参考
+title: Configuração do Script Unfollow
+description: Referência completa de configuração para o script unfollow
 ---
 
-本页面介绍创建任务时 `unfollow` 脚本的配置参数。
+Esta página documenta os parâmetros de configuração para o script `unfollow` usado na criação de tarefas.
 
-## 概述
+## Visão Geral
 
-`unfollow` 脚本用于在 TikTok 或 Instagram 上自动取消关注用户。当您通过 API 提供多个目标用户时，**系统会为每个目标用户创建一个任务**。您可以使用 `start_time` 参数来控制任务的执行时间。
+O script `unfollow` é usado para deixar de seguir automaticamente usuários no TikTok ou Instagram. Quando você fornece múltiplos usuários alvo via API, **uma tarefa é criada por usuário alvo**. Você pode controlar quando cada tarefa é executada usando o parâmetro `start_time`.
 
-## 脚本配置 (`script_config`)
+## Configuração do Script (`script_config`)
 
-`script_config` 对象包含取消关注脚本的配置参数。以下是可用参数：
+O objeto `script_config` contém os parâmetros para o script unfollow. Abaixo estão os parâmetros disponíveis:
 
-### 参数
+### Parâmetros
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
-|------|------|------|--------|------|
-| target_users | string[] | 是* | [] | 要取消关注的目标用户名数组（每个用户一个任务） |
-| target_user | string | 是* | "" | 单个目标用户名，或多个用户名以换行/逗号分隔 |
-| access_method | string | 否 | "direct" | 导航到用户资料的方式：`direct`（通过 URL）或 `search` |
+| Parâmetro | Tipo | Obrigatório | Padrão | Descrição |
+|-----------|------|-------------|---------|-----------|
+| target_users | string[] | Sim* | [] | Array de nomes de usuário alvo para deixar de seguir (uma tarefa por usuário) |
+| target_user | string | Sim* | "" | Nome de usuário alvo único ou múltiplos nomes de usuário separados por quebras de linha/vírgulas |
+| access_method | string | Não | "direct" | Como navegar até o perfil do usuário: `direct` (via URL) ou `search` |
 
 :::note
-必须提供 `target_users` 数组或 `target_user` 字符串。如果两者都提供，`target_users` 优先。
+Ou o array `target_users` ou a string `target_user` deve ser fornecida. Se ambos forem fornecidos, `target_users` tem prioridade.
 :::
 
-:::info 任务创建
-当提供多个目标用户时，API 会**为每个目标用户创建一个任务**。例如，如果您指定 3 个目标用户和 2 个设备，将创建 6 个任务。使用 `start_time` 参数来控制任务的执行时间。
+:::info Criação de Tarefas
+Quando múltiplos usuários alvo são fornecidos, a API cria **uma tarefa por usuário alvo**. Por exemplo, se você especificar 3 usuários alvo e 2 dispositivos, 6 tarefas serão criadas. Use o parâmetro `start_time` para controlar quando as tarefas começam a executar.
 :::
 
-## 示例
+## Exemplos
 
-### 取消关注单个用户
+### Deixar de Seguir Usuário Único
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -47,9 +47,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 取消关注多个用户
+### Deixar de Seguir Múltiplos Usuários
 
-取消关注多个用户时，每个用户创建一个任务：
+Ao deixar de seguir múltiplos usuários, uma tarefa é criada por usuário:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -64,11 +64,11 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-这将创建 3 个独立的任务，立即执行。
+Isso cria 3 tarefas separadas que são executadas imediatamente.
 
-### 使用开始时间调度任务
+### Agendar Tarefas com Horário de Início
 
-使用 `start_time` 来调度任务的开始时间：
+Use `start_time` para agendar quando as tarefas devem começar:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -84,9 +84,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 通过搜索方式取消关注用户
+### Deixar de Seguir Usuários via Método de Busca
 
-当直接 URL 访问不起作用时，使用搜索方式：
+Use o método de busca quando o acesso direto por URL não estiver funcionando:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -101,7 +101,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 多设备批量取消关注
+### Deixar de Seguir em Lote em Múltiplos Dispositivos
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -117,7 +117,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-## 响应
+## Resposta
 
 ```json
 {
@@ -130,30 +130,30 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 访问方式
+## Métodos de Acesso
 
-### 直接访问 (`direct`)
+### Método Direto (`direct`)
 
-- 通过 URL 打开用户资料：`tiktok.com/@username` 或 `instagram.com/username`
-- 更快更可靠
-- 大多数情况下推荐使用
+- Abre o perfil do usuário via URL: `tiktok.com/@username` ou `instagram.com/username`
+- Mais rápido e confiável
+- Recomendado para a maioria dos casos de uso
 
-### 搜索访问 (`search`)
+### Método de Busca (`search`)
 
-- 导航到搜索，输入用户名，点击结果
-- 较慢但在直接 URL 访问被阻止时有效
-- 如果存在多个相似用户名，可能不太准确
+- Navega até a busca, digita o nome de usuário, clica no resultado
+- Mais lento, mas funciona quando o acesso direto por URL está bloqueado
+- Pode ser menos preciso se existirem múltiplos nomes de usuário semelhantes
 
-## 最佳实践
+## Melhores Práticas
 
-1. **使用 start_time 调度**：使用 `start_time` 参数来调度任务的执行时间（格式："HH:MM"）。
+1. **Use start_time para agendamento**: Use o parâmetro `start_time` para agendar quando as tarefas devem executar (formato: "HH:MM").
 
-2. **优先直接访问**：`direct` 访问方式比 `search` 更快更可靠。
+2. **Prefira acesso direto**: O método de acesso `direct` é mais rápido e confiável que o `search`.
 
-3. **合理批量处理**：不要一次取消关注太多用户。系统会为每个目标用户创建一个任务，因此大列表会产生许多任务。
+3. **Processe em lotes com sabedoria**: Não deixe de seguir muitos usuários de uma só vez. O sistema cria uma tarefa por usuário alvo, então listas grandes resultam em muitas tarefas.
 
-## 另请参阅
+## Veja Também
 
-- [任务管理 API](./task-management.md) - 创建、查询和管理任务
-- [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [关注脚本配置](./follow-script.md) - 配置关注脚本参数
+- [API de Gerenciamento de Tarefas](./task-management.md) - Criar, listar e gerenciar tarefas
+- [Configuração do Script Post](./post-script.md) - Configurar parâmetros do script post
+- [Configuração do Script Follow](./follow-script.md) - Configurar parâmetros do script follow

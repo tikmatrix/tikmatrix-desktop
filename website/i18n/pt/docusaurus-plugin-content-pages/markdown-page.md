@@ -1,5 +1,7 @@
 ---
-title: Markdown 页面示例
+title: Exemplo de página Markdown
 ---
 
-您不需要使用 React 来编写简单的独立页面。
+# Exemplo de página Markdown
+
+Você não precisa de React para escrever páginas simples e independentes.

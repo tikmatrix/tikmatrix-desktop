@@ -1,5 +1,7 @@
 ---
-title: Markdown 页面示例
+title: Exempel på Markdown-sida
 ---
 
-您不需要使用 React 来编写简单的独立页面。
+# Exempel på Markdown-sida
+
+Du behöver inte React för att skriva enkla fristående sidor.

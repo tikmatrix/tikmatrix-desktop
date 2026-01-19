@@ -1,100 +1,100 @@
-# Work Profile 工作资料配置
+# Configuração de Perfil de Trabalho
 
-TikMatrix 支持为每台设备单独配置 Work Profile 用户，这对于使用企业设备或双开应用非常有用。
+O TikMatrix suporta a configuração de usuários de Perfil de Trabalho para cada dispositivo individualmente, o que é muito útil para dispositivos gerenciados por empresas ou ambientes de aplicativos duplos.
 
-## 什么是 Work Profile
+## O que é Perfil de Trabalho
 
-Work Profile（工作资料）是 Android 的一个功能，它允许在同一设备上创建一个独立的工作环境。通过配置不同的用户 ID，您可以：
+Perfil de Trabalho é um recurso do Android que permite criar um ambiente de trabalho independente no mesmo dispositivo. Ao configurar diferentes IDs de usuário, você pode:
 
-- 在企业管理的设备上正常使用 TikMatrix
-- 为不同的应用环境设置不同的用户配置
-- 实现更精细的设备管理和权限控制
+- Usar o TikMatrix normalmente em dispositivos gerenciados por empresas
+- Definir diferentes configurações de usuário para diferentes ambientes de aplicativo
+- Alcançar gerenciamento de dispositivos e controle de permissões mais granular
 
-## 使用 Shelter 工具克隆应用
+## Usando a Ferramenta Shelter para Clonar Aplicativos
 
-在配置 Work Profile 之前，您需要使用 Shelter 工具克隆 TikTok 和 TikMatrix 应用：
+Antes de configurar o Perfil de Trabalho, você precisa usar a ferramenta Shelter para clonar os aplicativos TikTok e TikMatrix:
 
-### 什么是 Shelter
+### O que é Shelter
 
-Shelter 是一个开源应用程序，可以在 Android 设备上创建和管理 Work Profile。它允许您在隔离的工作环境中运行重复的应用程序。
+Shelter é um aplicativo de código aberto que cria e gerencia Perfil de Trabalho em dispositivos Android. Ele permite que você execute aplicativos duplicados em um ambiente de trabalho isolado.
 
-### 安装 Shelter
+### Instalando o Shelter
 
-1. 从 [F-Droid](https://f-droid.org/packages/net.typeblog.shelter/) 或 [Google Play 商店](https://play.google.com/store/apps/details?id=net.typeblog.shelter) 下载 Shelter
-2. 在设备上安装并打开 Shelter
-3. 按照设置向导创建 Work Profile
+1. Baixe o Shelter do [F-Droid](https://f-droid.org/packages/net.typeblog.shelter/) ou [Google Play Store](https://play.google.com/store/apps/details?id=net.typeblog.shelter)
+2. Instale e abra o Shelter no seu dispositivo
+3. Siga o assistente de configuração para criar um Perfil de Trabalho
 
-### 克隆所需应用
+### Clonando Aplicativos Necessários
 
-设置 Shelter 后，您需要克隆 TikTok 和 TikMatrix 应用：
+Após configurar o Shelter, você precisa clonar tanto os aplicativos TikTok quanto TikMatrix:
 
-1. **克隆 TikTok 应用**：
-   - 打开 Shelter 并转到"主界面"选项卡
-   - 在应用程序列表中找到 TikTok
-   - 点击"克隆到工作资料"按钮
-   - 等待克隆过程完成
+1. **Clonar Aplicativo TikTok**:
+   - Abra o Shelter e vá para a aba "Main"
+   - Encontre o TikTok na lista de aplicativos
+   - Toque no botão "Clone to Work Profile"
+   - Aguarde a conclusão do processo de clonagem
 
-2. **克隆 TikMatrix 应用**：
-   - 在 Shelter 中，在应用程序列表中找到 TikMatrix
-   - 点击"克隆到工作资料"按钮
-   - 确认克隆操作
+2. **Clonar Aplicativo TikMatrix**:
+   - No Shelter, localize o TikMatrix na lista de aplicativos
+   - Toque no botão "Clone to Work Profile"
+   - Confirme a operação de clonagem
 
-### 验证克隆成功
+### Verificar Sucesso da Clonagem
 
-克隆成功后：
+Após clonagem bem-sucedida:
 
-- 您将在应用抽屉中看到带有公文包图标的 TikTok 和 TikMatrix
-- 这些是应用程序的 Work Profile 版本
-- 主配置文件中的原始应用程序保持不变
+- Você verá tanto o TikTok quanto o TikMatrix com um ícone de maleta na gaveta de aplicativos
+- Estas são as versões de Perfil de Trabalho dos aplicativos
+- Os aplicativos originais permanecem inalterados no perfil principal
 
-## 如何配置 Work Profile
+## Como Configurar Perfil de Trabalho
 
-### 1. 打开设备工具栏
+### 1. Abrir Barra de Ferramentas do Dispositivo
 
-当您的设备连接并显示在 TikMatrix 主界面时：
+Quando seu dispositivo está conectado e exibido na interface principal do TikMatrix:
 
-1. 双击设备卡片进入大屏模式
-2. 在设备屏幕右侧会出现一个工具栏
-3. 工具栏默认处于收缩状态，鼠标悬停时会自动展开
+1. Clique duas vezes no cartão do dispositivo para entrar no modo de tela cheia
+2. Uma barra de ferramentas aparecerá no lado direito da tela do dispositivo
+3. A barra de ferramentas está recolhida por padrão e se expandirá automaticamente quando você passar o mouse sobre ela
 
-### 2. 找到 Work Profile 按钮
+### 2. Encontrar o Botão de Perfil de Trabalho
 
-在工具栏的底部，您会看到一个公文包图标的按钮，这就是 Work Profile 配置按钮。
+Na parte inferior da barra de ferramentas, você verá um botão de ícone de maleta, que é o botão de configuração do Perfil de Trabalho.
 
-### 3. 设置用户 ID
+### 3. Definir ID de Usuário
 
-1. 点击公文包图标按钮
-2. 在弹出的对话框中输入用户 ID（例如：10）
-3. 点击"保存"按钮
+1. Clique no botão de ícone de maleta
+2. Insira o ID de usuário no diálogo popup (ex.: 10)
+3. Clique no botão "Save"
 
-### 4. 确认配置
+### 4. Confirmar Configuração
 
-配置成功后，系统会显示"工作资料用户设置已保存"的提示消息。
+Após configuração bem-sucedida, o sistema exibirá uma notificação "Work Profile user settings saved".
 
-## 用户 ID 说明
+## Descrição do ID de Usuário
 
-### 常用用户 ID
+### IDs de Usuário Comuns
 
-- **0**: 主用户（默认用户）
-- **10**: 第一个工作资料用户
-- **11**: 第二个工作资料用户
-- 更多用户 ID 依此类推
+- **0**: Usuário principal (usuário padrão)
+- **10**: Primeiro usuário de perfil de trabalho
+- **11**: Segundo usuário de perfil de trabalho
+- IDs de usuário adicionais seguem este padrão
 
-### 如何查找用户 ID
+### Como Encontrar o ID de Usuário
 
-如果您不确定设备上的用户 ID，可以通过以下方式查找：
+Se você não tiver certeza sobre os IDs de usuário no seu dispositivo, pode encontrá-los usando:
 
 ```bash
 adb shell pm list users
 ```
 
-或在 TikMatrix 的调试工具中执行：
+Ou executar nas ferramentas de depuração do TikMatrix:
 
 ```bash
 pm list users
 ```
 
-输出示例：
+Exemplo de saída:
 
 ```text
 Users:
@@ -102,101 +102,101 @@ Users:
   UserInfo{10:Work profile:1030} running
 ```
 
-## 配置文件存储
+## Armazenamento do Arquivo de Configuração
 
-Work Profile 配置会自动保存到 `data/work_profile_user.json` 文件中，格式如下：
+As configurações de Perfil de Trabalho são automaticamente salvas no arquivo `data/work_profile_user.json` com o seguinte formato:
 
 ```json
 {
-  "设备序列号1": "10",
-  "设备序列号2": "0",
-  "设备序列号3": "11"
+  "device_serial_1": "10",
+  "device_serial_2": "0",
+  "device_serial_3": "11"
 }
 ```
 
-## 管理设备配置
+## Gerenciando Configurações de Dispositivos
 
-### 查看当前配置
+### Ver Configuração Atual
 
-每台设备的 Work Profile 配置是独立的，您可以：
+A configuração de Perfil de Trabalho de cada dispositivo é independente. Você pode:
 
-1. 为每台设备设置不同的用户 ID
-2. 随时修改现有设备的用户配置
-3. 清空配置（输入空值并保存即可删除配置）
+1. Definir diferentes IDs de usuário para cada dispositivo
+2. Modificar configurações de usuário de dispositivos existentes a qualquer momento
+3. Limpar configuração (insira valor vazio e salve para excluir configuração)
 
-### 批量管理
+### Gerenciamento em Lote
 
-如果您需要管理大量设备，可以直接编辑 `data/work_profile_user.json` 文件：
+Se você precisar gerenciar um grande número de dispositivos, pode editar diretamente o arquivo `data/work_profile_user.json`:
 
-1. 关闭 TikMatrix 应用
-2. 打开配置文件
-3. 按 JSON 格式添加或修改设备配置
-4. 重新启动 TikMatrix
+1. Feche o aplicativo TikMatrix
+2. Abra o arquivo de configuração
+3. Adicione ou modifique configurações de dispositivos no formato JSON
+4. Reinicie o TikMatrix
 
-## 故障排除
+## Solução de Problemas
 
-### 常见问题
+### Problemas Comuns
 
-#### Q: 设置 Work Profile 后命令执行失败
+#### P: Comandos falham após definir Perfil de Trabalho
 
-A: 请确认：
+R: Por favor confirme:
 
-- 用户 ID 是否正确
-- 设备上是否存在对应的用户
-- 是否有足够的权限访问该用户
+- Se o ID de usuário está correto
+- Se o usuário correspondente existe no dispositivo
+- Se você tem permissões suficientes para acessar aquele usuário
 
-#### Q: 如何取消 Work Profile 配置
+#### P: Como cancelar a configuração de Perfil de Trabalho
 
-A: 在配置对话框中清空用户 ID 输入框，然后点击保存即可。
+R: Limpe o campo de entrada de ID de usuário no diálogo de configuração e clique em salvar.
 
-#### Q: 配置丢失了怎么办
+#### P: O que fazer se a configuração for perdida
 
-A: 配置存储在本地 JSON 文件中，如果丢失可以重新设置，或者从备份中恢复 `data/work_profile_user.json` 文件。
+R: As configurações são armazenadas em um arquivo JSON local. Se perdidas, você pode reconfigurar ou restaurar o arquivo `data/work_profile_user.json` do backup.
 
-#### Q: Shelter 相关问题
+#### P: Problemas relacionados ao Shelter
 
-A: 如果遇到 Shelter 相关问题：
+R: Se você encontrar problemas com o Shelter:
 
-- **克隆失败**: 确保您拥有管理员权限和足够的存储空间
-- **克隆应用不可见**: 检查 Shelter 中的 Work Profile 是否正确激活
-- **应用在 Work Profile 中崩溃**: 尝试重新克隆应用程序或更新 Shelter
-- **找不到克隆应用**: 在应用抽屉中查找带有公文包图标的应用
+- **Clonagem falha**: Certifique-se de ter permissões de administrador e espaço de armazenamento suficiente
+- **Aplicativos clonados não visíveis**: Verifique se o Perfil de Trabalho está ativado corretamente no Shelter
+- **Aplicativos travam no Perfil de Trabalho**: Tente clonar novamente os aplicativos ou atualizar o Shelter
+- **Não consegue encontrar aplicativos clonados**: Procure por aplicativos com ícones de maleta na gaveta de aplicativos
 
-## 最佳实践
+## Melhores Práticas
 
-### 企业环境使用
+### Ambiente Empresarial
 
-1. **统一管理**: 为所有企业设备设置相同的用户 ID
-2. **权限分离**: 使用不同用户 ID 区分不同权限级别
-3. **备份配置**: 定期备份 `work_profile_user.json` 文件
+1. **Gerenciamento Unificado**: Defina o mesmo ID de usuário para todos os dispositivos empresariais
+2. **Separação de Permissões**: Use diferentes IDs de usuário para distinguir diferentes níveis de permissão
+3. **Backup de Configuração**: Faça backup regularmente do arquivo `work_profile_user.json`
 
-### 个人使用
+### Uso Pessoal
 
-1. **应用隔离**: 为不同用途的应用设置不同用户环境
-2. **测试环境**: 使用独立的用户 ID 进行应用测试
-3. **隐私保护**: 通过用户分离提高隐私安全性
+1. **Isolamento de Aplicativos**: Defina diferentes ambientes de usuário para diferentes propósitos
+2. **Ambiente de Teste**: Use IDs de usuário independentes para testes de aplicativos
+3. **Proteção de Privacidade**: Melhore a segurança da privacidade através da separação de usuários
 
-### Shelter 工具管理
+### Gerenciamento da Ferramenta Shelter
 
-1. **定期更新**: 保持 Shelter 应用程序最新以确保兼容性
-2. **应用同步**: 确保在配置 Work Profile 之前克隆了 TikTok 和 TikMatrix
-3. **备份 Shelter 设置**: 导出并备份 Shelter 配置以便轻松恢复
-4. **监控应用更新**: 当 TikTok 或 TikMatrix 更新时，您可能需要更新克隆版本
+1. **Atualizações Regulares**: Mantenha o aplicativo Shelter atualizado para garantir compatibilidade
+2. **Sincronização de Aplicativos**: Certifique-se de que tanto o TikTok quanto o TikMatrix estejam clonados antes de configurar o Perfil de Trabalho
+3. **Backup de Configurações do Shelter**: Exporte e faça backup das configurações do Shelter para fácil recuperação
+4. **Monitorar Atualizações de Aplicativos**: Quando o TikTok ou TikMatrix atualizar, você pode precisar atualizar as versões clonadas também
 
-## 技术说明
+## Detalhes Técnicos
 
-Work Profile 功能通过在 ADB 命令中添加 `--user` 参数实现：
+A função de Perfil de Trabalho é implementada adicionando o parâmetro `--user` aos comandos ADB:
 
 ```bash
-# 不使用 Work Profile
+# Sem Perfil de Trabalho
 adb shell input tap 100 200
 
-# 使用 Work Profile (用户 ID: 10)
+# Com Perfil de Trabalho (ID de Usuário: 10)
 adb shell --user 10 input tap 100 200
 ```
 
-这确保了命令在正确的用户环境中执行，避免权限问题和环境冲突。
+Isso garante que os comandos sejam executados no ambiente de usuário correto, evitando problemas de permissão e conflitos de ambiente.
 
 ---
 
-通过合理配置 Work Profile，您可以在各种复杂的设备环境中顺利使用 TikMatrix，提高工作效率和管理便利性。
+Ao configurar adequadamente o Perfil de Trabalho, você pode usar o TikMatrix suavemente em vários ambientes de dispositivos complexos, melhorando a eficiência do trabalho e a conveniência de gerenciamento.

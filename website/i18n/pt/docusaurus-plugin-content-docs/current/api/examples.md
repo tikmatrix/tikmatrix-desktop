@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
-title: API 示例
-description: 使用 TikMatrix 本地 API 的代码示例
+title: Exemplos de API
+description: Exemplos de código para usar a API Local do TikMatrix
 ---
 
-本页面提供了在不同编程语言中使用 TikMatrix 本地 API 的示例代码。
+Esta página fornece exemplos de código para usar a API Local do TikMatrix em diferentes linguagens de programação.
 
 ## Python
 
@@ -15,12 +15,12 @@ import json
 BASE_URL = "http://localhost:50809/api/v1"
 
 def check_license():
-    """Check if API access is available"""
+    """Verifica se o acesso à API está disponível"""
     response = requests.get(f"{BASE_URL}/license/check")
     return response.json()
 
 def create_task(serials, script_name, script_config=None, multi_account=False):
-    """Create a new task"""
+    """Cria uma nova tarefa"""
     payload = {
         "serials": serials,
         "script_name": script_name,
@@ -35,7 +35,7 @@ def create_task(serials, script_name, script_config=None, multi_account=False):
     return response.json()
 
 def list_tasks(status=None, page=1, page_size=20):
-    """List tasks with optional filters"""
+    """Lista tarefas com filtros opcionais"""
     params = {"page": page, "page_size": page_size}
     if status is not None:
         params["status"] = status
@@ -43,51 +43,51 @@ def list_tasks(status=None, page=1, page_size=20):
     return response.json()
 
 def get_task(task_id):
-    """Get task details"""
+    """Obtém detalhes da tarefa"""
     response = requests.get(f"{BASE_URL}/task/{task_id}")
     return response.json()
 
 def delete_task(task_id):
-    """Delete a task"""
+    """Deleta uma tarefa"""
     response = requests.delete(f"{BASE_URL}/task/{task_id}")
     return response.json()
 
 def stop_task(task_id):
-    """Stop a running task"""
+    """Para uma tarefa em execução"""
     response = requests.post(f"{BASE_URL}/task/{task_id}/stop")
     return response.json()
 
 def retry_task(task_id):
-    """Retry a failed task"""
+    """Retenta uma tarefa que falhou"""
     response = requests.post(f"{BASE_URL}/task/{task_id}/retry")
     return response.json()
 
 def get_stats():
-    """Get task statistics"""
+    """Obtém estatísticas de tarefas"""
     response = requests.get(f"{BASE_URL}/task/stats")
     return response.json()
 
-# 使用示例
+# Exemplo de uso
 if __name__ == "__main__":
-    # 首先检查许可证
+    # Verifica licença primeiro
     license_info = check_license()
     if license_info["code"] != 0:
-        print("API 访问不可用:", license_info["message"])
+        print("Acesso à API não disponível:", license_info["message"])
         exit(1)
     
-    print("许可证正常:", license_info["data"]["plan_name"])
+    print("Licença OK:", license_info["data"]["plan_name"])
     
-    # 创建一个关注任务
+    # Cria uma tarefa de follow
     result = create_task(
         serials=["device_serial_1"],
         script_name="follow",
         script_config={"target_username": "@tikmatrix"}
     )
-    print("任务已创建:", result)
+    print("Tarefa criada:", result)
     
-    # 获取统计信息
+    # Obtém estatísticas
     stats = get_stats()
-    print("统计:", stats["data"])
+    print("Estatísticas:", stats["data"])
 ```
 
 ## JavaScript / Node.js
@@ -146,27 +146,27 @@ async function getStats() {
   return response.json();
 }
 
-// 使用示例
+// Exemplo de uso
 async function main() {
-  // 检查许可证
+  // Verifica licença
   const license = await checkLicense();
   if (license.code !== 0) {
-    console.error('API 访问不可用:', license.message);
+    console.error('Acesso à API não disponível:', license.message);
     return;
   }
-  console.log('许可证正常:', license.data.plan_name);
+  console.log('Licença OK:', license.data.plan_name);
 
-  // 创建任务
+  // Cria uma tarefa
   const result = await createTask(
     ['device_serial_1'],
     'follow',
     { target_username: '@tikmatrix' }
   );
-  console.log('任务已创建:', result);
+  console.log('Tarefa criada:', result);
 
-  // 获取统计信息
+  // Obtém estatísticas
   const stats = await getStats();
-  console.log('统计:', stats.data);
+  console.log('Estatísticas:', stats.data);
 }
 
 main().catch(console.error);
@@ -175,10 +175,10 @@ main().catch(console.error);
 ## cURL
 
 ```bash
-# 检查许可证
+# Verifica licença
 curl http://localhost:50809/api/v1/license/check
 
-# 创建任务
+# Cria uma tarefa
 curl -X POST http://localhost:50809/api/v1/task \
   -H "Content-Type: application/json" \
   -d '{
@@ -188,30 +188,30 @@ curl -X POST http://localhost:50809/api/v1/task \
     "enable_multi_account": false
   }'
 
-# 列出待处理任务
+# Lista tarefas pendentes
 curl "http://localhost:50809/api/v1/task?status=0&page=1&page_size=20"
 
-# 获取任务详情
+# Obtém detalhes da tarefa
 curl http://localhost:50809/api/v1/task/1
 
-# 停止任务
+# Para uma tarefa
 curl -X POST http://localhost:50809/api/v1/task/1/stop
 
-# 重试任务
+# Retenta uma tarefa
 curl -X POST http://localhost:50809/api/v1/task/1/retry
 
-# 删除任务
+# Deleta uma tarefa
 curl -X DELETE http://localhost:50809/api/v1/task/1
 
-# 批量删除任务
+# Deleta tarefas em lote
 curl -X DELETE http://localhost:50809/api/v1/task/batch \
   -H "Content-Type: application/json" \
   -d '{"task_ids": [1, 2, 3]}'
 
-# 重试所有失败任务
+# Retenta todas as tarefas que falharam
 curl -X POST http://localhost:50809/api/v1/task/retry-all
 
-# 获取任务统计
+# Obtém estatísticas de tarefas
 curl http://localhost:50809/api/v1/task/stats
 ```
 
@@ -271,29 +271,29 @@ function Remove-TaskById {
     return $response
 }
 
-# 使用示例
+# Exemplo de uso
 $license = Check-License
 if ($license.code -ne 0) {
-    Write-Error "API 访问不可用: $($license.message)"
+    Write-Error "Acesso à API não disponível: $($license.message)"
     exit 1
 }
 
-Write-Host "许可证正常: $($license.data.plan_name)"
+Write-Host "Licença OK: $($license.data.plan_name)"
 
-# 创建任务
+# Cria uma tarefa
 $result = Create-Task -Serials @("device_serial_1") `
     -ScriptName "follow" `
     -ScriptConfig @{ target_username = "@tikmatrix" }
 
-Write-Host "任务已创建: $($result | ConvertTo-Json)"
+Write-Host "Tarefa criada: $($result | ConvertTo-Json)"
 ```
 
-## 常见使用场景
+## Casos de Uso Comuns
 
-### 为多个设备批量创建任务
+### Criar Tarefas em Lote para Múltiplos Dispositivos
 
 ```python
-# Python 示例：为所有已连接设备创建关注任务
+# Exemplo Python: Criar tarefas de follow para todos os dispositivos conectados
 devices = ["device_1", "device_2", "device_3", "device_4", "device_5"]
 
 result = create_task(
@@ -303,16 +303,16 @@ result = create_task(
     multi_account=True
 )
 
-print(f"已创建 {result['data']['created_count']} 个任务")
+print(f"Criadas {result['data']['created_count']} tarefas")
 ```
 
-### 监控任务进度
+### Monitorar Progresso da Tarefa
 
 ```python
 import time
 
 def wait_for_completion(task_ids, timeout=300):
-    """等待所有任务完成"""
+    """Aguarda todas as tarefas serem concluídas"""
     start_time = time.time()
     
     while time.time() - start_time < timeout:
@@ -321,33 +321,33 @@ def wait_for_completion(task_ids, timeout=300):
         pending = stats['data']['pending']
         
         if running == 0 and pending == 0:
-            print("所有任务已完成！")
+            print("Todas as tarefas concluídas!")
             return True
         
-        print(f"运行中: {running}, 等待中: {pending}")
+        print(f"Em execução: {running}, Pendentes: {pending}")
         time.sleep(5)
     
-    print("等待任务超时")
+    print("Tempo esgotado aguardando tarefas")
     return False
 ```
 
-### 自动重试失败任务
+### Retentar Tarefas que Falharam Automaticamente
 
 ```python
 def auto_retry_failed(max_retries=3):
-    """自动重试失败的任务"""
+    """Retenta automaticamente tarefas que falharam"""
     for i in range(max_retries):
-        # 获取失败任务
+        # Obtém tarefas que falharam
         failed = list_tasks(status=3)
         if failed['data']['total'] == 0:
-            print("没有失败的任务")
+            print("Nenhuma tarefa falhou")
             return
         
-        print(f"重试 {failed['data']['total']} 个失败任务（第 {i+1} 次尝试）")
+        print(f"Retentando {failed['data']['total']} tarefas que falharam (tentativa {i+1})")
         
-        # 重试所有
+        # Retenta todas
         result = requests.post(f"{BASE_URL}/task/retry-all")
         
-        # 等待完成
+        # Aguarda conclusão
         time.sleep(30)
 ```

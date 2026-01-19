@@ -2,61 +2,61 @@
 sidebar_position: 9
 ---
 
-# 白标功能设置
+# White Label-konfiguration
 
-:::info 需要年付订阅
-白标功能仅对**年付订阅**用户开放。购买年付计划后，请通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系客服获取解锁码。
+:::info Årsprenumeration krävs
+White Label-funktionalitet är endast tillgänglig för användare med **årsprenumeration**. Kontakta vårt supportteam via [Telegram](https://t.me/tikmatrix_agent_bot) för att få din upplåsningskod efter att du köpt en årsplan.
 :::
 
-白标功能允许您自定义 TikMatrix 的品牌标识以匹配您的公司形象。您可以修改应用名称、Logo和品牌信息，创建个性化的 TikMatrix 版本。
+White Label-funktionen låter dig anpassa TikMatrix:s varumärke för att matcha din företagsidentitet. Du kan ändra appnamnet, logotypen och varumärkesinformationen för att skapa en personlig version av TikMatrix.
 
-## 功能特性
+## Funktioner
 
-### 基本设置
+### Grundinställningar
 
-- **应用名称**: 自定义应用显示名称
-- **Logo上传**: 上传您的自定义主Logo（推荐128x128px）
-- **网站图标**: 设置应用的自定义图标
+- **App Name**: Anpassa applikationens visningsnamn
+- **Logo Upload**: Ladda upp din anpassade huvudlogotyp (rekommenderat 128x128px)
+- **Favicon**: Ställ in anpassad favicon för applikationen
 
-### 品牌设置
+### Varumärkesinställningar
 
-- **支持邮箱**: 客户支持邮箱地址
-- **教程链接**: 自定义教程/文档链接
-- **Telegram链接**: 设置您的Telegram群组或频道链接
+- **Support Email**: E-postadress för kundsupport
+- **Tutorial URL**: Anpassad handlednings-/dokumentationslänk
+- **Telegram URL**: Ställ in din Telegram-grupp eller kanallänk
 
-### 功能开关
+### Funktionsväxlare
 
-- **显示教程链接**: 控制教程链接的显示
-- **显示品牌信息**: 控制品牌信息的显示
+- **Show Tutorial Link**: Styr synlighet för handledningslänk
+- **Show Brand Info**: Styr visning av varumärkesinformation
 
-## 设置方法
+## Konfigurationsmetoder
 
-### 方法一：界面配置
+### Metod 1: UI-konfiguration
 
-1. 启动 TikMatrix 应用
-2. 点击标题栏的调色板图标 🎨
-3. 在白标设置对话框中配置参数：
-   - **应用名称**: 输入您的自定义应用名称
-   - **主Logo**: 上传您的Logo文件（PNG/JPG，推荐128x128px）
-   - **支持邮箱**: 输入您的支持邮箱地址
-   - **教程链接**: 输入您的自定义教程链接
-   - **Telegram链接**: 输入您的Telegram群组/频道链接
-   - **功能开关**: 启用/禁用教程链接和品牌信息显示
-4. 点击"保存"应用设置
+1. Starta TikMatrix-applikationen
+2. Klicka på palettikonen 🎨 i titelraden
+3. Konfigurera parametrar i dialogen White Label Settings:
+   - **App Name**: Ange ditt anpassade applikationsnamn
+   - **Main Logo**: Ladda upp din logotypfil (PNG/JPG, 128x128px rekommenderat)
+   - **Support Email**: Ange din support-e-postadress
+   - **Tutorial URL**: Ange din anpassade handlednings-URL
+   - **Telegram URL**: Ange din Telegram-grupp/kanal-URL
+   - **Feature Toggles**: Aktivera/inaktivera handledningslänkar och visning av varumärkesinformation
+4. Klicka på "Save" för att tillämpa inställningarna
 
-### 方法二：配置文件
+### Metod 2: Konfigurationsfil
 
-1. 复制示例配置文件：
+1. Kopiera exempelkonfigurationsfilen:
 
    ```bash
    cp examples/whitelabel-config.json src/config/whitelabel-custom.json
    ```
 
-2. 编辑配置文件：
+2. Redigera konfigurationsfilen:
 
    ```json
    {
-     "appName": "您的应用名称",
+     "appName": "Your App Name",
      "logo": {
        "main": "/path/to/your/logo.webp",
        "favicon": "/path/to/your/favicon.ico"
@@ -73,91 +73,91 @@ sidebar_position: 9
    }
    ```
 
-3. 保存文件并重启应用
+3. Spara filen och starta om applikationen
 
-### 方法三：命令行工具
+### Metod 3: Kommandoradsverktyg
 
-1. 进入项目目录：
+1. Navigera till projektkatalogen:
 
    ```bash
    cd tikmatrix-desktop
    ```
 
-2. 运行配置工具：
+2. Kör konfigurationsverktyget:
 
    ```bash
    node scripts/whitelabel-config.js
    ```
 
-3. 按照提示逐步配置各项参数
+3. Följ anvisningarna för att konfigurera varje parameter steg för steg
 
-## 构建自定义版本
+## Bygga anpassad version
 
-### 1. 准备资源文件
+### 1. Förbered resursfiler
 
 ```bash
-# 将您的Logo文件放在正确位置
-src/assets/your-logo.webp       # 主Logo
-public/your-favicon.ico        # 网页图标
-src-tauri/icons/               # 应用图标（各种尺寸）
+# Placera dina logotypfiler på rätt platser
+src/assets/your-logo.webp       # Huvudlogotyp
+public/your-favicon.ico        # Webb-favicon
+src-tauri/icons/               # Applikationsikoner (olika storlekar)
 ```
 
-### 2. 配置构建参数
+### 2. Konfigurera byggparametrar
 
-使用命令行工具或手动编辑配置：
+Använd kommandoradsverktyget eller redigera konfigurationen manuellt:
 
 ```bash
-# 使用命令行工具
+# Använd kommandoradsverktyget
 node scripts/whitelabel-config.js
 
-# 或手动编辑
+# Eller redigera manuellt
 src/config/whitelabel-build.json
 ```
 
-### 3. 构建应用
+### 3. Bygg applikationen
 
 ```bash
-# 开发模式
+# Utvecklingsläge
 npm run dev
 
-# 生产构建
+# Produktionsbygge
 npm run build
 
-# 构建Tauri应用
+# Bygg Tauri-applikation
 npm run tauri build
 ```
 
-## 配置优先级
+## Konfigurationsprioritet
 
-系统按以下优先顺序使用配置：
+Systemet använder följande prioritetsordning för konfiguration:
 
-1. **运行时配置**: 浏览器LocalStorage中的 `whitelabel_config`
-2. **构建配置**: `src/config/whitelabel-build.json`（构建时使用）
-3. **示例配置**: `examples/whitelabel-config.json`
-4. **默认配置**: 内置默认值
+1. **Runtime Config**: Browser LocalStorage `whitelabel_config`
+2. **Build Config**: `src/config/whitelabel-build.json` (används under bygge)
+3. **Example Config**: `examples/whitelabel-config.json`
+4. **Default Config**: Inbyggda standardvärden
 
-## Logo要求
+## Logotypkrav
 
-### 主Logo
+### Huvudlogotyp
 
-- **格式**: PNG、JPG或SVG
-- **尺寸**: 128x128px（推荐）
-- **背景**: 透明背景（PNG格式）
-- **用途**: 标题栏、启动画面、关于对话框
+- **Format**: PNG, JPG eller SVG
+- **Storlek**: 128x128px (rekommenderat)
+- **Bakgrund**: Transparent (för PNG)
+- **Användning**: Sidhuvud, startskärm, om-dialog
 
-### 网站图标
+### Favicon
 
-- **格式**: ICO或PNG
-- **尺寸**: 32x32px或16x16px
-- **用途**: 浏览器标签页、窗口图标
+- **Format**: ICO eller PNG
+- **Storlek**: 32x32px eller 16x16px
+- **Användning**: Webbläsarflik, fönsterikon
 
-### 应用图标（用于构建）
+### Applikationsikoner (för byggen)
 
-- **格式**: PNG、ICO、ICNS
-- **尺寸**: 32x32、128x128、256x256、512x512
-- **位置**: `src-tauri/icons/` 目录
+- **Format**: PNG, ICO, ICNS
+- **Storlekar**: 32x32, 128x128, 256x256, 512x512
+- **Plats**: `src-tauri/icons/`-katalog
 
-## API集成
+## API-integration
 
 ### JavaScript API
 
@@ -169,20 +169,20 @@ import {
   validateWhiteLabelConfig 
 } from './config/whitelabel.js';
 
-// 获取当前配置
+// Get current configuration
 const config = getWhiteLabelConfig();
 
-// 保存新配置
+// Save new configuration
 saveWhiteLabelConfig(newConfig);
 
-// 重置为默认值
+// Reset to defaults
 resetWhiteLabelConfig();
 
-// 验证配置
+// Validate configuration
 validateWhiteLabelConfig(config);
 ```
 
-### 实用工具函数
+### Verktygsfunktioner
 
 ```javascript
 import { 
@@ -191,80 +191,80 @@ import {
   updateFavicon
 } from './utils/whitelabel.js';
 
-// 应用启动时初始化白标
+// Initialize white label on app start
 initWhiteLabel();
 
-// 更新文档标题
-updateDocumentTitle('您的应用名称');
+// Update document title
+updateDocumentTitle('Your App Name');
 
-// 更新图标
+// Update favicon
 updateFavicon('/path/to/favicon.ico');
 ```
 
-## 最佳实践
+## Bästa praxis
 
-### Logo设计
+### Logotypdesign
 
-- 使用高分辨率图像以获得清晰显示
-- 在所有Logo尺寸中保持一致的品牌形象
-- 在明暗背景下测试Logo效果
-- 确保Logo在小尺寸下仍可读
+- Använd högupplösta bilder för skarp visning
+- Behåll konsekvent varumärke över alla logotypstorlekar
+- Testa logotyper på både ljusa och mörka bakgrunder
+- Se till att logotyper är läsbara i små storlekar
 
-### 品牌一致性
+### Varumärkeskonsistens
 
-- 在整个界面中使用一致的颜色和字体
-- 与您现有的品牌指南保持一致
-- 在不同屏幕尺寸下测试自定义界面
-- 保持专业外观
+- Använd konsekventa färger och typsnitt genomgående
+- Anpassa till dina befintliga varumärkesriktlinjer
+- Testa det anpassade gränssnittet på olika skärmstorlekar
+- Bibehåll professionellt utseende
 
-### 链接配置
+### URL-konfiguration
 
-- 对所有外部链接使用HTTPS
-- 部署前测试所有链接
-- 确保支持渠道得到适当监控
-- 保持文档链接的最新状态
+- Använd HTTPS-URL:er för alla externa länkar
+- Testa alla länkar före distribution
+- Se till att supportkanaler övervakas ordentligt
+- Håll dokumentations-URL:er uppdaterade
 
-## 故障排除
+## Felsökning
 
-### 常见问题
+### Vanliga problem
 
-**Logo未显示：**
+**Logotypen visas inte:**
 
-- 检查文件路径和权限
-- 验证图像格式受支持
-- 确保图像尺寸合适
-- 清除浏览器缓存并重启应用
+- Kontrollera filsökväg och behörigheter
+- Verifiera att bildformatet stöds
+- Se till att bildstorleken är lämplig
+- Rensa webbläsarcachen och starta om appen
 
-**配置未保存：**
+**Konfigurationen sparas inte:**
 
-- 检查文件系统权限
-- 验证JSON语法正确
-- 确保配置目录存在
-- 尝试以管理员身份运行（如需要）
+- Kontrollera filsystembehörigheter
+- Verifiera att JSON-syntaxen är korrekt
+- Se till att konfigurationskatalogen finns
+- Försök köra som administratör (om det behövs)
 
-**构建失败：**
+**Bygget misslyckas:**
 
-- 验证所有资源文件存在
-- 检查配置文件语法
-- 确保图标文件格式正确
-- 查看构建日志获取具体错误
+- Verifiera att alla resursfiler finns
+- Kontrollera konfigurationsfilens syntax
+- Se till att ikonfiler är i korrekt format
+- Granska byggloggar för specifika fel
 
-### 获取帮助
+### Få hjälp
 
-如果在白标设置过程中遇到问题：
+Om du stöter på problem med White Label-konfiguration:
 
-1. 查看上述故障排除部分
-2. 检查配置文件语法
-3. 通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系技术支持
-4. 报告问题时请包含您的配置文件和错误信息
+1. Kontrollera felsökningssektionen ovan
+2. Granska konfigurationsfilens syntax
+3. Kontakta support via [Telegram](https://t.me/tikmatrix_agent_bot)
+4. Inkludera din konfigurationsfil och felmeddelanden när du rapporterar problem
 
-## 许可和使用
+## Licens och användning
 
-- 白标功能仅对年付订阅用户开放
-- 自定义品牌权利包含在您的订阅中
-- 分发自定义版本可能需要额外许可
-- 企业许可选项请联系客服
+- White Label-funktionalitet är endast tillgänglig för användare med årsprenumeration
+- Anpassade varumärkesrättigheter ingår i din prenumeration
+- Omdistribution av anpassade versioner kan kräva ytterligare licensiering
+- Kontakta support för företagslicensalternativ
 
 ---
 
-**需要解锁码？** 请携带您的年付订阅详情通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系客服团队。
+**Behöver du upplåsningskoden?** Kontakta vårt supportteam via [Telegram](https://t.me/tikmatrix_agent_bot) med dina årsprenumerationsdetaljer.

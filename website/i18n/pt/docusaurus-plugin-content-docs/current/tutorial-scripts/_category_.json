@@ -1,8 +1,8 @@
 {
-    "label": "教程 - 脚本",
+    "label": "Tutorial - Scripts",
     "position": 2,
     "link": {
         "type": "generated-index",
-        "description": "学习如何使用TikMatrix在TikTok上自动化执行任何任务。"
+        "description": "Aprenda como usar o TikMatrix para automatizar qualquer tarefa no TikTok."
     }
 }

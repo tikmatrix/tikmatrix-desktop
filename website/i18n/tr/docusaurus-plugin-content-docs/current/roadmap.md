@@ -1,86 +1,86 @@
 ---
 sidebar_position: 1
-title: TikMatrix/IgMatrix 软件定位与路线图
-sidebar_label: 路线图
-description: 官网版路线图，概述 TikMatrix/IgMatrix 在自动化运营生态中的定位、能力边界与上线建议。
+title: TikMatrix/IgMatrix Ürün Konumlandırma & Yol Haritası
+sidebar_label: Yol Haritası
+description: TikMatrix/IgMatrix konumlandırması, kapasite sınırları ve kullanım önerilerini açıklayan resmi yol haritası.
 slug: roadmap
 ---
 
-## 全流程地图
+## Tam Süreç Haritası
 
-![TikMatrix/IgMatrix 路线图](/img/roadmap-zh.svg)
-
----
-
-## 我们为谁创造价值
-
-- **中小团队/MCN/品牌方/灰度试验团队**：需要在 5～100 设备规模上稳定执行“每日重复但需要拟人化”的运营动作。
-- **增长与内容运营**：需要高可控的“批量但非机械”的行为编排，兼顾安全策略与效率。
+![TikMatrix/IgMatrix Roadmap](/img/roadmap-en.svg)
 
 ---
 
-## 核心价值主张（为什么选 TikMatrix/IgMatrix）
+## Kimler için değer yaratıyoruz
 
-1. **可编排的批量自动化**：以“任务 → 脚本 → 数据源”的模型构建可复用流水线，覆盖预热、发布、互动、采集的全链路动作。
-2. **拟人化与风控策略**：引擎具备随机化时序、节奏控制、人机手势模拟、异常中断恢复等机制，尽量贴近真人行为特征。
-3. **规模化与稳定性**：支持真机/云机混合，USB/TCP ADB 连接，保障 5→20→50→100 台的线性扩展与稳定调度。
-4. **数据可观测**：任务日志、设备投屏、账号统计与结果数据导出。
+- **KOBİ'ler / MCN'ler / markalar / deney ekipleri**: 5–100 cihaz ölçeğinde günlük ancak insan benzeri operasyonel eylemlerin istikrarlı yürütülmesine ihtiyaç duyar.
+- **Büyüme ve içerik operasyonları**: Güvenlik ve verimliliği dengeleyen kontrol edilebilir toplu (ama mekanik olmayan) orkestrasyon gerektirir.
 
 ---
 
-## 功能地图（步骤 4 的能力边界）
+## Temel değer önerileri (neden TikMatrix/IgMatrix'i seçmelisiniz)
 
-### 1) 任务编排与调度
-
-- 多账号/多设备并发策略，随机化执行顺序
-- 失败重试、断点续跑、资源占用管理（素材/账号/代理）
-
-### 2) 脚本中心
-
-- **超级营销脚本**：已融合 Boost 用户/帖子、群发私信、批量评论等能力
-- 账号预热脚本：日常浏览、停留、轻互动
-- 内容发布脚本：视频/文案/标签/话题管理，定时发布
-- 数据采集脚本：抓取用户名信息，构建下一轮目标清单
-
-### 3) 人机与风控
-
-- 触控/滑动/停顿/观看时长的随机化
-- 异常检测与速率限制，避免一次性高频行为
-
-> **边界声明**：TikMatrix/IgMatrix 不提供设备、账号、代理本身；我们聚焦于 **运营动作的自动化**。
+1. **Birleştirilebilir toplu otomasyon**: Isınma, yayınlama, etkileşim ve toplama kapsayan "görev → script → veri kaynağı" modeliyle yeniden kullanılabilir boru hatları oluşturun.
+2. **İnsan benzeri davranış ve risk kontrolü**: Motor, gerçek kullanıcı davranışını taklit etmek için rastgeleleştirilmiş zamanlama, ritim kontrolü, insan jesti simülasyonu ve anormal kurtarma destekler.
+3. **Ölçeklenebilirlik ve istikrar**: Gerçek cihazlar / bulut cihazları hibrit, USB/TCP ADB'yi destekler, güvenilir zamanlama ile 5→20→50→100 cihazların doğrusal ölçeklenmesini sağlar.
+4. **Gözlemlenebilirlik**: Görev günlükleri, cihaz yansıtma, hesap istatistikleri ve dışa aktarılabilir sonuç verileri.
 
 ---
 
-## 上线建议（从 0 到 规模化）
+## Kapasite haritası (4. adımın kapsamı)
 
-1. **验证期（1–5 台）**：串联设备→账号→代理→单一脚本的最小闭环
-2. **试点期（10–20 台）**：引入超级营销脚本 + 数据采集闭环；观察风控阈值
-3. **扩展期（20–50 台）**：分组限速、随机化策略、多数据源轮换
-4. **规模期（50-100 台）**：分批调度、错峰执行
+### 1) Görev orkestrasyonu ve zamanlama
 
----
+- Çok hesaplı / çok cihazlı eşzamanlılık stratejileri, rastgeleleştirilmiş yürütme sırası
+- Başarısızlıkta yeniden dene, kesme noktasından devam et, kaynak yönetimi (varlıklar/hesaplar/proxy'ler)
 
-## 风险与合规提示
+### 2) Script merkezi
 
-- 使用自动化工具可能违反平台服务条款；请**自担风险**并合理控制频率与行为模式
-- 手机硬件环境、代理、账号质量与运营策略会显著影响稳定性与结果
+- **Gelişmiş pazarlama scriptleri**: Kullanıcı/gönderi artırma, toplu DM'ler, toplu yorumları içerir
+- Hesap ısınma scriptleri: Günlük gezinme, kalma, hafif etkileşimler
+- İçerik yayınlama scriptleri: Video/altyazı/etiket/konu yönetimi, zamanlanmış yayınlama
+- Veri toplama scriptleri: Kullanıcı bilgilerini topla ve sonraki hedef listelerini oluştur
 
----
+### 3) İnsan ve risk kontrolü
 
-## 常见问答
+- Dokunma/kaydırma/duraklama/görüntüleme zamanının rastgeleleştirilmesi
+- Ani yüksek frekanslı davranışları önlemek için anomali algılama ve oran sınırları
 
-**Q：TikMatrix 是否提供账号/代理？**  
-A：不提供。我们专注自动化引擎与脚本执行。
-
-**Q：是否提供云手机？**  
-A：不提供。用户需自行准备设备环境。
-
-**Q：是否支持云手机？**  
-A：只要能通过 ADB（USB/TCP）稳定连接，即可纳入调度。
+> **Sınır beyanı**: TikMatrix/IgMatrix cihaz, hesap veya proxy sağlamaz; operasyonel eylemlerin otomasyonuna odaklanıyoruz.
 
 ---
 
-## 行动呼吁
+## Kullanım önerileri (0'dan ölçeğe)
 
-- 立即试用 Starter 套餐，构建你的最小可行“步骤 4”闭环
-- 阅读脚本文档，快速上手批量运营
+1. **Doğrulama (1–5 cihaz)**: Cihazları bağla → hesaplar → proxy'ler → tek script minimal kapalı döngü
+2. **Pilot (10–20 cihaz)**: Gelişmiş pazarlama scriptleri + veri toplama döngüsü tanıt; risk eşiklerini izle
+3. **Genişleme (20–50 cihaz)**: Grup oranı sınırlama, rastgeleleştirilmiş stratejiler, çok veri kaynağı rotasyonu
+4. **Ölçek (50–100 cihaz)**: Toplu zamanlama, kademeli yürütme
+
+---
+
+## Riskler ve uyumluluk notları
+
+- Otomasyon kullanımı platform şartlarını ihlal edebilir; kendi riskinizde kullanın ve frekans/davranış kalıplarını kontrol edin
+- Cihaz donanımı, proxy'ler, hesap kalitesi ve operasyonel strateji istikrar ve sonuçları önemli ölçüde etkiler
+
+---
+
+## SSS
+
+**S: TikMatrix hesap/proxy sağlıyor mu?**  
+C: Hayır. Otomasyon motoruna ve script yürütmesine odaklanıyoruz.
+
+**S: Bulut telefonları sağlıyor musunuz?**  
+C: Hayır. Kullanıcılar cihaz ortamlarını kendileri hazırlamalıdır.
+
+**S: Bulut telefonları destekliyor musunuz?**  
+C: ADB (USB/TCP) yoluyla istikrarlı bir şekilde bağlanabilen herhangi bir cihaz zamanlanabilir.
+
+---
+
+## Harekete geçirme çağrısı
+
+- Starter planını şimdi deneyin ve 4. adımınızın minimal uygulanabilir kapalı döngüsünü oluşturun
+- Toplu operasyonlara başlamak için script belgelerini okuyun

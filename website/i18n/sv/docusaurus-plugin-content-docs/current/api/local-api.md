@@ -1,32 +1,32 @@
 ---
 sidebar_position: 1
-title: 本地 API 概览
-description: TikMatrix 本地 API，用于以编程方式管理任务
+title: Översikt över lokalt API
+description: TikMatrix lokalt API för programmatisk uppgiftshantering
 ---
 
-TikMatrix 提供了一个本地的 RESTful API，允许你以编程方式管理任务。这对于将 TikMatrix 集成到你自己的自动化系统、构建自定义工作流程或创建批量操作非常有用。
+TikMatrix tillhandahåller ett lokalt RESTful API som gör det möjligt att hantera uppgifter programmatiskt. Detta är användbart för att integrera TikMatrix med dina egna automationssystem, bygga anpassade arbetsflöden eller skapa batch-operationer.
 
-## 要求
+## Krav
 
-:::warning 许可证要求
-**本地 API 仅对 Pro、Team 和 Business 计划用户开放。** Starter 计划不提供 API 访问权限。
+:::warning Licenskrav
+**Det lokala API:et är endast tillgängligt för Pro, Team och Business-prenumeranter.** Starter-planen har inte tillgång till API:et.
 :::
 
-## 基础 URL
+## Bas-URL
 
-API 在本机运行，地址为：
+API:et körs på din lokala maskin på:
 
 ```text
 http://localhost:50809/api/v1/
 ```
 
 :::note
-端口 `50809` 为默认端口。请在发起请求前确保 TikMatrix 已在运行。
+Porten `50809` är standardporten. Se till att TikMatrix körs innan du gör API-förfrågningar.
 :::
 
-## 响应格式
+## Svarsformat
 
-所有 API 响应遵循以下格式：
+Alla API-svar följer detta format:
 
 ```json
 {
@@ -36,29 +36,29 @@ http://localhost:50809/api/v1/
 }
 ```
 
-### 响应码说明
+### Svarskoder
 
-| Code | 描述 |
-|------|------|
-| 0 | 成功 |
-| 40001 | 参数错误 - 无效的请求参数 |
-| 40002 | 参数错误 - 缺少 script_name |
-| 40003 | 参数错误 - 脚本暂不支持 API 调用 |
-| 40301 | 禁止 - API 访问需要 Pro+ 计划 |
-| 40401 | 未找到 - 资源不存在 |
-| 50001 | 服务器内部错误 |
+| Kod | Beskrivning |
+|------|-------------|
+| 0 | Framgång |
+| 40001 | Felaktig begäran - Ogiltiga parametrar |
+| 40002 | Felaktig begäran - Saknar script_name |
+| 40003 | Felaktig begäran - Script stöds inte via API |
+| 40301 | Förbjuden - API-åtkomst kräver Pro+ plan |
+| 40401 | Hittades inte - Resurs hittades inte |
+| 50001 | Internt serverfel |
 
-## 快速开始
+## Snabbstart
 
-### 1. 检查 API 访问权限
+### 1. Kontrollera API-åtkomst
 
-首先，确认你的许可证是否支持 API：
+Först, verifiera att din licens stöder API-åtkomst:
 
 ```bash
 curl http://localhost:50809/api/v1/license/check
 ```
 
-示例响应：
+Svar:
 
 ```json
 {
@@ -73,7 +73,7 @@ curl http://localhost:50809/api/v1/license/check
 }
 ```
 
-### 2. 创建任务
+### 2. Skapa en uppgift
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -83,54 +83,51 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 1,
-      "captions": "看看我的新视频！#热门"
+      "captions": "Check out my new video! #viral"
     },
-    "enable_multi_account": false
+    "enable_multi_account": false,
+    "start_time": "14:30"
   }'
 ```
 
-### 3. 查询任务列表
+### 3. Lista uppgifter
 
 ```bash
 curl http://localhost:50809/api/v1/task?status=0&page=1&page_size=20
 ```
 
-## 可用脚本
+## Tillgängliga scripts
 
-:::info 当前支持
-目前，本地 API 支持 `post`、`follow`、`unfollow`、`account_warmup` 和 `comment` 脚本。更多脚本将在未来版本中陆续添加。
-:::
+Parametern `script_name` accepterar följande värden:
 
-`script_name` 参数可接受下列值：
+| Script-namn | Beskrivning | API-stöd |
+|-------------|-------------|-------------|
+| `post` | Publicera innehåll | ✅ Stöds |
+| `follow` | Följ användare | ✅ Stöds |
+| `unfollow` | Sluta följa användare | ✅ Stöds |
+| `account_warmup` | Värm upp konton | ✅ Stöds |
+| `comment` | Kommentera inlägg | ✅ Stöds |
+| `like` | Gilla inlägg | 🔜 Kommer snart |
+| `message` | Skicka direktmeddelanden | 🔜 Kommer snart |
+| `super_marketing` | Supermarknadsföringskampanj | 🔜 Kommer snart |
+| `profile` | Uppdatera profil | 🔜 Kommer snart |
+| `scrape_user` | Skrapa användardata | 🔜 Kommer snart |
 
-| 脚本名 | 描述 | API 支持 |
-|--------|------|----------|
-| `post` | 发布内容 | ✅ 已支持 |
-| `follow` | 关注用户 | ✅ 已支持 |
-| `unfollow` | 取消关注 | ✅ 已支持 |
-| `account_warmup` | 账号预热 | ✅ 已支持 |
-| `comment` | 评论 | ✅ 已支持 |
-| `like` | 点赞 | 🔜 即将推出 |
-| `message` | 私信 | 🔜 即将推出 |
-| `super_marketing` | 超级营销活动 | 🔜 即将推出 |
-| `profile` | 更新个人资料 | 🔜 即将推出 |
-| `scrape_user` | 抓取用户数据 | 🔜 即将推出 |
+## Uppgiftsstatus
 
-## 任务状态
+| Statuskod | Statustext | Beskrivning |
+|-------------|-------------|-------------|
+| 0 | pending | Uppgiften väntar på att utföras |
+| 1 | running | Uppgiften körs för närvarande |
+| 2 | completed | Uppgiften slutfördes framgångsrikt |
+| 3 | failed | Uppgiften misslyckades |
 
-| 状态码 | 状态文本 | 描述 |
-|--------|----------|------|
-| 0 | pending | 任务等待执行 |
-| 1 | running | 任务正在执行 |
-| 2 | completed | 任务执行成功 |
-| 3 | failed | 任务执行失败 |
+## Nästa steg
 
-## 后续
-
-- [任务管理 API](./task-management) - 创建、查询和管理任务
-- [发布脚本配置](./post-script) - 配置发布脚本参数
-- [关注脚本配置](./follow-script) - 配置关注脚本参数
-- [取消关注脚本配置](./unfollow-script) - 配置取消关注脚本参数
-- [账号预热脚本配置](./account-warmup-script) - 配置账号预热脚本参数
-- [评论脚本配置](./comment-script) - 配置评论脚本参数
-- [API 示例](./examples) - 不同语言的代码示例
+- [API för uppgiftshantering](./task-management) - Skapa, fråga och hantera uppgifter
+- [Konfiguration av post-script](./post-script) - Konfigurera parametrar för post-script
+- [Konfiguration av follow-script](./follow-script) - Konfigurera parametrar för follow-script
+- [Konfiguration av unfollow-script](./unfollow-script) - Konfigurera parametrar för unfollow-script
+- [Konfiguration av account warmup-script](./account-warmup-script) - Konfigurera parametrar för account warmup-script
+- [Konfiguration av comment-script](./comment-script) - Konfigurera parametrar för comment-script
+- [API-exempel](./examples) - Kodexempel på olika språk

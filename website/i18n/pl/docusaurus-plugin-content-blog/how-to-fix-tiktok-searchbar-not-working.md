@@ -1,48 +1,48 @@
 ---
 slug: how-to-fix-tiktok-searchbar-not-working
-title: 怎么修复TikTok搜索栏不工作
+title: Jak naprawić niedziałający pasek wyszukiwania TikTok
 authors: tikMatrix
-tags: [tikmatrix, tiktok, searchbar, fix]
+tags: [tikmatrix, tiktok, pasek wyszukiwania, naprawa]
 ---
 
-TikTok 搜索栏不工作可能是一个令人沮丧的问题，但幸运的是，有几种方法可以解决这个问题。以下是一些关于如何修复 TikTok 搜索栏不工作的技巧：
+Niedziałający pasek wyszukiwania TikTok może być frustrującym problemem, ale na szczęście istnieje kilka metod rozwiązania tego problemu. Oto kilka wskazówek, jak naprawić pasek wyszukiwania TikTok, gdy nie działa:
 <!--truncate-->
 ---
 
-## 1. 检查网络连接
+## 1. Sprawdź połączenie sieciowe
 
-首先，确保你的设备已连接到互联网。如果网络连接不稳定，搜索栏可能无法正常工作。
+Najpierw upewnij się, że Twoje urządzenie jest podłączone do internetu. Jeśli połączenie sieciowe jest niestabilne, pasek wyszukiwania może nie działać poprawnie.
 
-## 2. 清除缓存
+## 2. Wyczyść pamięć podręczną
 
-如果网络连接正常，但搜索栏仍然无法工作，请尝试清除 TikTok 的缓存。
+Jeśli połączenie sieciowe jest normalne, ale pasek wyszukiwania nadal nie działa, spróbuj wyczyścić pamięć podręczną TikTok.
 
-## 3. 更新应用程序
+## 3. Zaktualizuj aplikację
 
-确保你的 TikTok 应用程序是最新版本。旧版本可能存在已知问题，导致搜索栏无法正常工作。
+Upewnij się, że Twoja aplikacja TikTok jest zaktualizowana do najnowszej wersji. Starsze wersje mogą mieć znane problemy, które uniemożliwiają prawidłowe działanie paska wyszukiwania.
 
-## 4. 重启安装应用程序
+## 4. Uruchom ponownie i przeinstaluj aplikację
 
-有时，简单地重启安装应用可以解决搜索栏不工作的问题。
+Czasami proste ponowne uruchomienie lub ponowna instalacja aplikacji może rozwiązać problemy z paskiem wyszukiwania.
 
-## 5. 检查权限
+## 5. Sprawdź uprawnienia
 
-确保 TikTok 应用程序已获得必要的权限，例如访问互联网和存储权限。
+Upewnij się, że aplikacja TikTok otrzymała niezbędne uprawnienia, takie jak dostęp do internetu i uprawnienia do przechowywania.
 
-## 6. 检查 TikTok 服务
+## 6. Sprawdź usługi TikTok
 
-确保 TikTok 服务正常运行。如果 TikTok 服务器出现问题，搜索栏可能无法正常工作。
+Upewnij się, że usługi TikTok działają normalnie. Jeśli serwery TikTok mają problemy, pasek wyszukiwania może nie działać poprawnie.
 
-## 7. 检查设备设置
+## 7. Sprawdź ustawienia urządzenia
 
-确保你的设备设置允许 TikTok 访问互联网。
+Upewnij się, że ustawienia Twojego urządzenia pozwalają TikTok na dostęp do internetu.
 
-## 8. 检查 TikTok 账户
+## 8. Sprawdź swoje konto TikTok
 
-确保你的 TikTok 账户没有被暂停或禁用。如果账户被暂停或禁用，搜索栏可能无法正常工作。
+Upewnij się, że Twoje konto TikTok nie zostało zawieszone ani wyłączone. Jeśli Twoje konto zostało zawieszone lub wyłączone, pasek wyszukiwania może nie działać poprawnie.
 
-## 9. 联系 TikTok 支持
+## 9. Skontaktuj się z pomocą techniczną TikTok
 
-如果以上方法都无法解决问题，请联系 TikTok 支持寻求帮助。
+Jeśli żadna z powyższych metod nie rozwiązuje problemu, skontaktuj się z pomocą techniczną TikTok po pomoc.
 
-## 如果你需要更多TikTok相关信息，请加入我们的[Telegram讨论群组](https://t.me/tikmatrix_agent_bot)
+## Jeśli potrzebujesz więcej informacji związanych z TikTok, dołącz do naszej [grupy dyskusyjnej Telegram](https://t.me/tikmatrix_agent_bot)

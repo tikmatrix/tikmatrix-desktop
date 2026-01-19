@@ -1,56 +1,56 @@
 ---
 sidebar_position: 3
-title: Post 脚本配置
-description: Post 脚本的完整配置参考
+title: Konfiguracja skryptu publikacji
+description: Kompletna dokumentacja konfiguracji skryptu publikacji
 ---
 
-本页面记录了任务创建中使用的 `post` 脚本的配置参数。
+Ta strona dokumentuje parametry konfiguracyjne dla skryptu `post` używanego przy tworzeniu zadań.
 
-## 概述
+## Przegląd
 
-`post` 脚本用于自动发布内容（视频或图片）到 TikTok 或 Instagram。它支持多种发布方式、素材来源和音频选项。
+Skrypt `post` służy do automatycznego publikowania treści (filmów lub obrazów) na TikTok lub Instagram. Obsługuje różne metody publikowania, źródła materiałów i opcje dźwięku.
 
-## 脚本配置 (`script_config`)
+## Konfiguracja skryptu (`script_config`)
 
-`script_config` 对象包含发布脚本的参数。以下是可用参数：
+Obiekt `script_config` zawiera parametry dla skryptu publikacji. Poniżej znajdują się dostępne parametry:
 
-### 通用参数（TikTok 和 Instagram）
+### Wspólne parametry (TikTok i Instagram)
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
-|------|------|------|--------|------|
-| content_type | integer | 否 | 0 | 内容类型：`0` = 视频，`1` = 图片 |
-| image_count | integer | 否 | 1 | 选择图片数量（当 content_type = 1 时） |
-| captions | string | 否 | "" | 帖子标题文本。支持 spintax 格式：`{选项1\|选项2\|选项3}` |
-| post_way | string | 否 | "share" | 发布方式：`share`、`addButton` 或 `useSound` |
-| material_source | string | 否 | "materialLibrary" | 素材来源：`materialLibrary`（素材库）或 `localFolder`（本地文件夹），如果提供了 material_list 则忽略此参数 |
-| material_path | string | 条件必需 | "" | 本地文件夹路径（当 material_source = "localFolder" 时必需） |
-| material_list | string[] | 否 | [] | **直接传递素材文件路径数组。** 提供此参数时，将跳过 material_source 和 material_path 的逻辑。推荐用于 API 自动化场景。 |
-| materials_tags | string | 否 | "" | 逗号分隔的素材标签，用于从素材库筛选 |
-| upload_wait_time | integer | 否 | 30 | 等待上传完成的秒数 |
-| sound_wait_time | integer | 否 | 10 | 等待音频加载的秒数 |
-| add_sound | string/integer | 否 | "-1" | 音频选项：`-1` = 默认，`0` = 禁用，`1` = 启用，`custom` = 使用自定义音频 |
-| sound_name | string | 条件必需 | "" | 音频名称/URL（当 post_way = "useSound" 时必需） |
-| custom_sound_keyword | string | 条件必需 | "" | 搜索自定义音频的关键词（当 add_sound = "custom" 时必需） |
-| origin_sound_volume | integer | 否 | 50 | 原始音频音量（0-100） |
-| add_sound_volume | integer | 否 | 50 | 添加音频音量（0-100） |
+| Parametr | Typ | Wymagany | Domyślnie | Opis |
+|-----------|------|----------|---------|-------------|
+| content_type | integer | Nie | 0 | Typ treści: `0` = Wideo, `1` = Obrazy |
+| image_count | integer | Nie | 1 | Liczba obrazów do wybrania (gdy content_type = 1) |
+| captions | string | Nie | "" | Tekst podpisu do posta. Obsługuje format spintax: `{opcja1\|opcja2\|opcja3}` |
+| post_way | string | Nie | "share" | Metoda publikacji: `share`, `addButton` lub `useSound` |
+| material_source | string | Nie | "materialLibrary" | Źródło materiału: `materialLibrary` lub `localFolder` (ignorowane, jeśli podano material_list) |
+| material_path | string | Warunkowy | "" | Ścieżka do folderu lokalnego (wymagana, gdy material_source = "localFolder") |
+| material_list | string[] | Nie | [] | **Tablica bezpośrednich ścieżek plików materiałów.** Gdy podana, pomija logikę material_source i material_path. Idealna do automatyzacji API. |
+| materials_tags | string | Nie | "" | Tagi materiałów oddzielone przecinkami do filtrowania z biblioteki |
+| upload_wait_time | integer | Nie | 30 | Sekundy oczekiwania na zakończenie przesyłania |
+| sound_wait_time | integer | Nie | 10 | Sekundy oczekiwania na załadowanie dźwięku |
+| add_sound | string/integer | Nie | "-1" | Opcja dźwięku: `-1` = domyślny, `0` = wyłącz, `1` = włącz, `custom` = użyj niestandardowego dźwięku |
+| sound_name | string | Warunkowy | "" | Nazwa/URL dźwięku (wymagana, gdy post_way = "useSound") |
+| custom_sound_keyword | string | Warunkowy | "" | Słowo kluczowe do wyszukiwania niestandardowego dźwięku (wymagane, gdy add_sound = "custom") |
+| origin_sound_volume | integer | Nie | 50 | Głośność oryginalnego dźwięku (0-100) |
+| add_sound_volume | integer | Nie | 50 | Głośność dodanego dźwięku (0-100) |
 
-### TikTok 专属参数
+### Parametry specyficzne dla TikTok
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
-|------|------|------|--------|------|
-| add_product_link | integer | 否 | 0 | 添加商品链接：`0` = 否，`1` = 是 |
+| Parametr | Typ | Wymagany | Domyślnie | Opis |
+|-----------|------|----------|---------|-------------|
+| add_product_link | integer | Nie | 0 | Dodaj link do produktu: `0` = Nie, `1` = Tak |
 
-### Instagram 专属参数
+### Parametry specyficzne dla Instagram
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
-|------|------|------|--------|------|
-| placement | string | 否 | "reel" | 发布位置：`reel`（快拍）或 `story`（故事） |
+| Parametr | Typ | Wymagany | Domyślnie | Opis |
+|-----------|------|----------|---------|-------------|
+| placement | string | Nie | "reel" | Umiejscowienie posta: `reel` lub `story` |
 
-## 示例
+## Przykłady
 
-### 基础发布任务 - 直接传递素材路径
+### Podstawowe zadanie publikacji z bezpośrednią listą materiałów
 
-这是 API 自动化的推荐方式 - 直接传递素材文件路径，无需依赖素材库或文件夹扫描：
+Jest to zalecane podejście do automatyzacji API - przekazuj ścieżki materiałów bezpośrednio bez polegania na bibliotece materiałów lub skanowaniu folderów:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -60,7 +60,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "Check out my new video! #viral #fyp",
       "material_list": [
         "C:/Videos/video1.mp4"
       ],
@@ -69,7 +69,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 使用素材库发布（TikTok）
+### Zadanie publikacji z biblioteką materiałów (TikTok)
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -79,10 +79,10 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "Check out my new video! #viral #fyp",
       "post_way": "share",
       "material_source": "materialLibrary",
-      "materials_tags": "热门, 舞蹈",
+      "materials_tags": "trending, dance",
       "upload_wait_time": 60,
       "add_sound": "-1"
     },
@@ -90,9 +90,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 通过用户名列表创建发布任务
+### Zadanie publikacji według listy nazw użytkowników
 
-此模式允许您直接为特定账号创建任务，无需知道它们的设备序列号：
+Ten tryb pozwala tworzyć zadania bezpośrednio dla określonych kont bez znajomości ich numerów seryjnych urządzeń:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -102,7 +102,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "Check out my new video! #viral #fyp",
       "material_list": [
         "C:/Videos/video1.mp4"
       ],
@@ -111,7 +111,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 使用本地文件夹发布（Instagram）
+### Zadanie publikacji z folderu lokalnego (Instagram)
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -121,7 +121,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "精彩内容！#instagram #reels",
+      "captions": "Amazing content! #instagram #reels",
       "post_way": "addButton",
       "placement": "reel",
       "material_source": "localFolder",
@@ -132,7 +132,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 使用自定义音频发布
+### Publikacja z niestandardowym dźwiękiem
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -142,10 +142,10 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "跟着这首热门音乐跳舞！",
+      "captions": "Dancing to this trending sound!",
       "post_way": "share",
       "add_sound": "custom",
-      "custom_sound_keyword": "热门舞曲 2024",
+      "custom_sound_keyword": "trending dance 2024",
       "origin_sound_volume": 30,
       "add_sound_volume": 70,
       "material_source": "materialLibrary",
@@ -154,7 +154,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 使用指定音频 URL 发布
+### Publikacja z użyciem określonego URL dźwięku
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -165,13 +165,13 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_config": {
       "post_way": "useSound",
       "sound_name": "https://www.tiktok.com/music/original-sound-7123456789",
-      "captions": "使用这个超棒的音乐！",
+      "captions": "Using this awesome sound!",
       "material_source": "materialLibrary"
     }
   }'
 ```
 
-### 发布图片（轮播图）
+### Publikacja obrazów (Karuzela)
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -182,7 +182,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_config": {
       "content_type": 1,
       "image_count": 5,
-      "captions": "看看这些照片！#图集",
+      "captions": "Check out these photos! #photocarousel",
       "material_source": "localFolder",
       "material_path": "C:/Images/carousel",
       "upload_wait_time": 45
@@ -190,7 +190,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-## 响应
+## Odpowiedź
 
 ```json
 {
@@ -203,6 +203,6 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 相关文档
+## Zobacz także
 
-- [任务管理 API](./task-management.md) - 创建、列表和管理任务
+- [API zarządzania zadaniami](./task-management.md) - Tworzenie, wyświetlanie i zarządzanie zadaniami

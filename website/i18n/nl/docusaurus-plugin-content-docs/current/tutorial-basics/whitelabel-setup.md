@@ -2,69 +2,69 @@
 sidebar_position: 9
 ---
 
-# 白标功能设置
+# White Label Setup
 
-:::info 需要年付订阅
-白标功能仅对**年付订阅**用户开放。购买年付计划后，请通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系客服获取解锁码。
+:::info Jaarabonnement Vereist
+White Label-functionaliteit is exclusief beschikbaar voor gebruikers met een **Jaarabonnement**. Neem contact op met ons supportteam via [Telegram](https://t.me/tikmatrix_agent_bot) om je ontgrendelingscode te verkrijgen na aankoop van een jaarplan.
 :::
 
-白标功能允许您自定义 TikMatrix 的品牌标识以匹配您的公司形象。您可以修改应用名称、Logo和品牌信息，创建个性化的 TikMatrix 版本。
+De White Label-functie stelt je in staat om de branding van TikMatrix aan te passen aan je bedrijfsidentiteit. Je kunt de app-naam, het logo en de merkinformatie wijzigen om een gepersonaliseerde versie van TikMatrix te creëren.
 
-## 功能特性
+## Functies
 
-### 基本设置
+### Basisinstellingen
 
-- **应用名称**: 自定义应用显示名称
-- **Logo上传**: 上传您的自定义主Logo（推荐128x128px）
-- **网站图标**: 设置应用的自定义图标
+- **App-naam**: Pas de weergavenaam van de applicatie aan
+- **Logo Upload**: Upload je aangepaste hoofdlogo (aanbevolen 128x128px)
+- **Favicon**: Stel aangepaste favicon in voor de applicatie
 
-### 品牌设置
+### Merkinstellingen
 
-- **支持邮箱**: 客户支持邮箱地址
-- **教程链接**: 自定义教程/文档链接
-- **Telegram链接**: 设置您的Telegram群组或频道链接
+- **Support E-mail**: E-mailadres voor klantenondersteuning
+- **Tutorial URL**: Aangepaste tutorial/documentatie link
+- **Telegram URL**: Stel je Telegram groep of kanaal link in
 
-### 功能开关
+### Functie Schakelaars
 
-- **显示教程链接**: 控制教程链接的显示
-- **显示品牌信息**: 控制品牌信息的显示
+- **Toon Tutorial Link**: Beheer zichtbaarheid van tutorial link
+- **Toon Merkinfo**: Beheer weergave van merkinformatie
 
-## 设置方法
+## Setup Methoden
 
-### 方法一：界面配置
+### Methode 1: UI Configuratie
 
-1. 启动 TikMatrix 应用
-2. 点击标题栏的调色板图标 🎨
-3. 在白标设置对话框中配置参数：
-   - **应用名称**: 输入您的自定义应用名称
-   - **主Logo**: 上传您的Logo文件（PNG/JPG，推荐128x128px）
-   - **支持邮箱**: 输入您的支持邮箱地址
-   - **教程链接**: 输入您的自定义教程链接
-   - **Telegram链接**: 输入您的Telegram群组/频道链接
-   - **功能开关**: 启用/禁用教程链接和品牌信息显示
-4. 点击"保存"应用设置
+1. Start de TikMatrix applicatie
+2. Klik op het palet pictogram 🎨 in de titelbalk
+3. Configureer parameters in het White Label Instellingen dialoogvenster:
+   - **App-naam**: Voer je aangepaste applicatienaam in
+   - **Hoofdlogo**: Upload je logobestand (PNG/JPG, 128x128px aanbevolen)
+   - **Support E-mail**: Voer je support e-mailadres in
+   - **Tutorial URL**: Voer je aangepaste tutorial URL in
+   - **Telegram URL**: Voer je Telegram groep/kanaal URL in
+   - **Functie Schakelaars**: Tutorial links en merkinfo weergave in-/uitschakelen
+4. Klik op "Opslaan" om instellingen toe te passen
 
-### 方法二：配置文件
+### Methode 2: Configuratiebestand
 
-1. 复制示例配置文件：
+1. Kopieer het voorbeeldconfiguratiebestand:
 
    ```bash
    cp examples/whitelabel-config.json src/config/whitelabel-custom.json
    ```
 
-2. 编辑配置文件：
+2. Bewerk het configuratiebestand:
 
    ```json
    {
-     "appName": "您的应用名称",
+     "appName": "Je App Naam",
      "logo": {
-       "main": "/path/to/your/logo.webp",
-       "favicon": "/path/to/your/favicon.ico"
+       "main": "/pad/naar/je/logo.webp",
+       "favicon": "/pad/naar/je/favicon.ico"
      },
      "brand": {
-       "supportEmail": "support@yourcompany.com",
-       "tutorialUrl": "https://yourcompany.com/docs",
-       "telegramUrl": "https://t.me/yourgroup"
+       "supportEmail": "support@jouwbedrijf.com",
+       "tutorialUrl": "https://jouwbedrijf.com/docs",
+       "telegramUrl": "https://t.me/jouwgroep"
      },
      "features": {
        "showTutorialLink": true,
@@ -73,91 +73,91 @@ sidebar_position: 9
    }
    ```
 
-3. 保存文件并重启应用
+3. Sla het bestand op en herstart de applicatie
 
-### 方法三：命令行工具
+### Methode 3: Commandoregel Tool
 
-1. 进入项目目录：
+1. Navigeer naar de projectmap:
 
    ```bash
    cd tikmatrix-desktop
    ```
 
-2. 运行配置工具：
+2. Voer de configuratietool uit:
 
    ```bash
    node scripts/whitelabel-config.js
    ```
 
-3. 按照提示逐步配置各项参数
+3. Volg de prompts om elke parameter stap voor stap te configureren
 
-## 构建自定义版本
+## Aangepaste Versie Bouwen
 
-### 1. 准备资源文件
+### 1. Bronbestanden Voorbereiden
 
 ```bash
-# 将您的Logo文件放在正确位置
-src/assets/your-logo.webp       # 主Logo
-public/your-favicon.ico        # 网页图标
-src-tauri/icons/               # 应用图标（各种尺寸）
+# Plaats je logobestanden op de juiste locaties
+src/assets/jouw-logo.webp       # Hoofdlogo
+public/jouw-favicon.ico        # Web favicon
+src-tauri/icons/               # Applicatie iconen (verschillende groottes)
 ```
 
-### 2. 配置构建参数
+### 2. Build Parameters Configureren
 
-使用命令行工具或手动编辑配置：
+Gebruik de commandoregel tool of bewerk handmatig de configuratie:
 
 ```bash
-# 使用命令行工具
+# Commandoregel tool gebruiken
 node scripts/whitelabel-config.js
 
-# 或手动编辑
+# Of handmatig bewerken
 src/config/whitelabel-build.json
 ```
 
-### 3. 构建应用
+### 3. Applicatie Bouwen
 
 ```bash
-# 开发模式
+# Ontwikkelmodus
 npm run dev
 
-# 生产构建
+# Productie build
 npm run build
 
-# 构建Tauri应用
+# Tauri applicatie bouwen
 npm run tauri build
 ```
 
-## 配置优先级
+## Configuratie Prioriteit
 
-系统按以下优先顺序使用配置：
+Het systeem gebruikt de volgende prioriteitsvolgorde voor configuratie:
 
-1. **运行时配置**: 浏览器LocalStorage中的 `whitelabel_config`
-2. **构建配置**: `src/config/whitelabel-build.json`（构建时使用）
-3. **示例配置**: `examples/whitelabel-config.json`
-4. **默认配置**: 内置默认值
+1. **Runtime Config**: Browser LocalStorage `whitelabel_config`
+2. **Build Config**: `src/config/whitelabel-build.json` (gebruikt tijdens build)
+3. **Voorbeeld Config**: `examples/whitelabel-config.json`
+4. **Standaard Config**: Ingebouwde standaardwaarden
 
-## Logo要求
+## Logo Vereisten
 
-### 主Logo
+### Hoofdlogo
 
-- **格式**: PNG、JPG或SVG
-- **尺寸**: 128x128px（推荐）
-- **背景**: 透明背景（PNG格式）
-- **用途**: 标题栏、启动画面、关于对话框
+- **Formaat**: PNG, JPG, of SVG
+- **Grootte**: 128x128px (aanbevolen)
+- **Achtergrond**: Transparant (voor PNG)
+- **Gebruik**: Header, splash screen, over dialoog
 
-### 网站图标
+### Favicon
 
-- **格式**: ICO或PNG
-- **尺寸**: 32x32px或16x16px
-- **用途**: 浏览器标签页、窗口图标
+- **Formaat**: ICO of PNG
+- **Grootte**: 32x32px of 16x16px
+- **Gebruik**: Browser tab, venster icoon
 
-### 应用图标（用于构建）
+### Applicatie Iconen (voor builds)
 
-- **格式**: PNG、ICO、ICNS
-- **尺寸**: 32x32、128x128、256x256、512x512
-- **位置**: `src-tauri/icons/` 目录
+- **Formaten**: PNG, ICO, ICNS
+- **Groottes**: 32x32, 128x128, 256x256, 512x512
+- **Locatie**: `src-tauri/icons/` map
 
-## API集成
+## API Integratie
 
 ### JavaScript API
 
@@ -169,20 +169,20 @@ import {
   validateWhiteLabelConfig 
 } from './config/whitelabel.js';
 
-// 获取当前配置
+// Huidige configuratie ophalen
 const config = getWhiteLabelConfig();
 
-// 保存新配置
+// Nieuwe configuratie opslaan
 saveWhiteLabelConfig(newConfig);
 
-// 重置为默认值
+// Terugzetten naar standaard
 resetWhiteLabelConfig();
 
-// 验证配置
+// Configuratie valideren
 validateWhiteLabelConfig(config);
 ```
 
-### 实用工具函数
+### Hulpfuncties
 
 ```javascript
 import { 
@@ -191,80 +191,80 @@ import {
   updateFavicon
 } from './utils/whitelabel.js';
 
-// 应用启动时初始化白标
+// White label initialiseren bij app start
 initWhiteLabel();
 
-// 更新文档标题
-updateDocumentTitle('您的应用名称');
+// Document titel bijwerken
+updateDocumentTitle('Je App Naam');
 
-// 更新图标
-updateFavicon('/path/to/favicon.ico');
+// Favicon bijwerken
+updateFavicon('/pad/naar/favicon.ico');
 ```
 
-## 最佳实践
+## Best Practices
 
-### Logo设计
+### Logo Ontwerp
 
-- 使用高分辨率图像以获得清晰显示
-- 在所有Logo尺寸中保持一致的品牌形象
-- 在明暗背景下测试Logo效果
-- 确保Logo在小尺寸下仍可读
+- Gebruik hoge resolutie afbeeldingen voor scherpe weergave
+- Handhaaf consistente branding over alle logogroottes
+- Test logo's op zowel lichte als donkere achtergronden
+- Zorg ervoor dat logo's leesbaar zijn bij kleine groottes
 
-### 品牌一致性
+### Merkconsistentie
 
-- 在整个界面中使用一致的颜色和字体
-- 与您现有的品牌指南保持一致
-- 在不同屏幕尺寸下测试自定义界面
-- 保持专业外观
+- Gebruik consistente kleuren en lettertypen overal
+- Stem af op je bestaande merkrichtlijnen
+- Test de aangepaste interface op verschillende schermgroottes
+- Handhaaf professioneel uiterlijk
 
-### 链接配置
+### URL Configuratie
 
-- 对所有外部链接使用HTTPS
-- 部署前测试所有链接
-- 确保支持渠道得到适当监控
-- 保持文档链接的最新状态
+- Gebruik HTTPS URL's voor alle externe links
+- Test alle links voor implementatie
+- Zorg ervoor dat supportkanalen goed worden gemonitord
+- Houd documentatie URL's up-to-date
 
-## 故障排除
+## Probleemoplossing
 
-### 常见问题
+### Veelvoorkomende Problemen
 
-**Logo未显示：**
+**Logo wordt niet weergegeven:**
 
-- 检查文件路径和权限
-- 验证图像格式受支持
-- 确保图像尺寸合适
-- 清除浏览器缓存并重启应用
+- Controleer bestandspad en machtigingen
+- Verifieer dat afbeeldingsformaat wordt ondersteund
+- Zorg ervoor dat afbeeldingsgrootte passend is
+- Wis browsercache en herstart app
 
-**配置未保存：**
+**Configuratie wordt niet opgeslagen:**
 
-- 检查文件系统权限
-- 验证JSON语法正确
-- 确保配置目录存在
-- 尝试以管理员身份运行（如需要）
+- Controleer bestandssysteemmachtigingen
+- Verifieer JSON-syntax is correct
+- Zorg ervoor dat configuratiemap bestaat
+- Probeer als administrator uit te voeren (indien nodig)
 
-**构建失败：**
+**Build mislukt:**
 
-- 验证所有资源文件存在
-- 检查配置文件语法
-- 确保图标文件格式正确
-- 查看构建日志获取具体错误
+- Verifieer dat alle bronbestanden bestaan
+- Controleer configuratiebestand syntax
+- Zorg ervoor dat icoonbestanden in correct formaat zijn
+- Bekijk build logs voor specifieke fouten
 
-### 获取帮助
+### Hulp Verkrijgen
 
-如果在白标设置过程中遇到问题：
+Als je problemen ondervindt met White Label setup:
 
-1. 查看上述故障排除部分
-2. 检查配置文件语法
-3. 通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系技术支持
-4. 报告问题时请包含您的配置文件和错误信息
+1. Controleer de probleemoplossing sectie hierboven
+2. Bekijk configuratiebestand syntax
+3. Neem contact op met support via [Telegram](https://t.me/tikmatrix_agent_bot)
+4. Voeg je configuratiebestand en foutmeldingen toe bij het rapporteren van problemen
 
-## 许可和使用
+## Licentie en Gebruik
 
-- 白标功能仅对年付订阅用户开放
-- 自定义品牌权利包含在您的订阅中
-- 分发自定义版本可能需要额外许可
-- 企业许可选项请联系客服
+- White Label functionaliteit is alleen beschikbaar voor gebruikers met een Jaarabonnement
+- Aangepaste branding rechten zijn inbegrepen bij je abonnement
+- Herdistributie van aangepaste versies kan aanvullende licenties vereisen
+- Neem contact op met support voor enterprise licentie-opties
 
 ---
 
-**需要解锁码？** 请携带您的年付订阅详情通过 [Telegram](https://t.me/tikmatrix_agent_bot) 联系客服团队。
+**Heb je de ontgrendelingscode nodig?** Neem contact op met ons supportteam via [Telegram](https://t.me/tikmatrix_agent_bot) met je jaarabonnement details.

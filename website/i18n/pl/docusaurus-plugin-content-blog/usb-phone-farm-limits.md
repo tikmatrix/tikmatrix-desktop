@@ -1,90 +1,90 @@
 ---
 slug: usb-phone-farm-limits
-title: 为什么普通 PC 很难接入超过 ~40 台手机？
+title: Dlaczego nie możesz podłączyć więcej niż ~40 telefonów do zwykłego PC
 authors: tikMatrix
-tags: [硬件, 手机农场, USB, TikTok 自动化, TikMatrix]
+tags: [Hardware, Farma telefonów, USB, Automatyzacja TikTok, TikMatrix]
 ---
 
-> 按标准，USB 主机**最多可挂 127 个设备**。  
-> 但在现实中，多数消费级主板会在 **~40 台**左右“见顶”，原因多来自 **芯片组/固件限制与拓扑结构**。
+> USB obsługuje **127 urządzeń** na host — *na papierze*.  
+> W rzeczywistości większość konsumenckich płyt głównych osiąga ścianę wokół **~40 urządzeń** ze względu na limity chipset/firmware i topologię hub.
 
 <!-- truncate -->
 ---
-![USB 限制与手机农场](/img/blog/usb-phone-farm.webp)
+![Limity USB dla farm telefonów](/img/blog/usb-phone-farm.webp)
 
-## 🧠 1. 理论 vs 现实
+## 🧠 1. Teoria vs. Rzeczywistość
 
-- **纸面参数：**单个 USB 主机地址空间可容纳 **127**（含 Hub）。  
-- **真实情况：**消费级主板通常在 **30–45 台**徘徊，主要因为：
-  - 主控固件的**设备扇出**限制  
-  - 芯片组**通道共享**导致的拥塞  
-  - **Hub 层级/拓扑**过深（电源分配、枚举超时）
+- **Specyfikacja:** Jeden host USB może adresować do **127 urządzeń** (w tym huby).  
+- **Rzeczywistość:** Płyty konsumenckie często osiągają limit około **30–45 telefonów** ze względu na:
+  - Limity firmware kontrolera hosta
+  - Przeciążenie ścieżki chipsetu (współdzielone linie)
+  - Ograniczenia głębokości/topologii huba (warstwy, zasilanie)
 
-> 关键瓶颈常不在系统，而在**主控 + 主板设计**。
-
----
-
-## 🖥️ 2. 服务器/工作站主板为何更能“上量”
-
-如 **X79 架构**等服务器/高端平台通常具备：
-
-- **更多独立**的 USB 主控  
-- **更少固件限制**（设备扇出更宽）  
-- **更合理**的通道与供电影响控制
-
-**效果：**在同系统与相同 Hub 下，更容易突破消费级上限。
+> Podsumowanie: Limit rzadko wynika z systemu operacyjnego — to **kontroler + projekt płyty**.
 
 ---
 
-## 🔌 3. 实操接线要点（提高识别上限）
+## 🖥️ 2. Dlaczego płyty serwerowe skalują się lepiej
 
-1. **优先使用机箱后置**主板直连 USB 口，少用前置面板延长线。  
-2. 大规模连接时优先 **USB 2.0（黑色）**；**避免 USB 3.0（蓝色）**通道的不稳定因素。  
-3. **BIOS 设置：**  
-   - **关闭 XHCI**  
-   - **开启 EHCI**  
-   让设备走更稳定的 USB2 主机路径，枚举更可靠。
+Płyty serwerowe/stacje robocze (np. **klasa X79**, platformy HEDT) zazwyczaj:
 
-> 供电同样关键：使用**带电源的优质 Hub**、短高品质线材，并把负载分散到多个主控上。
+- Zapewniają **więcej głównych kontrolerów hosta**
+- Mają **mniej limitów firmware** na fan-out urządzeń
+- Oferują lepszą **alokację linii** i stabilność zasilania
+
+**Wynik:** Realistycznie możliwe jest przekroczenie limitów płyt konsumenckich z tym samym systemem operacyjnym i hubami.
 
 ---
 
-## 🧩 4. 拓扑与供电清单
+## 🔌 3. Praktyczne wskazówki dotyczące okablowania (uzyskaj rozpoznanie większej liczby urządzeń)
 
-| 维度 | 建议 | 说明 |
+1. **Używaj portów tylnego I/O** (bezpośrednie ślady do płyty głównej) zamiast nagłówków panelu przedniego.  
+2. Preferuj **USB 2.0 (czarny)** dla dużych farm; **unikaj ścieżek USB 3.0 (niebieskich)**, które mogą być kapryśne z wieloma urządzeniami MTP/ADB.  
+3. **Konfiguracja BIOS:**  
+   - **Wyłącz XHCI**  
+   - **Włącz EHCI**  
+   To wymusza stabilne ścieżki hosta USB2, które niezawodniej wyliczają duże farmy.
+
+> Zasilanie ma znaczenie: używaj **hubów zasilanych** (wysokiej jakości zasilaczy), krótkich wysokiej jakości kabli i rozkładaj obciążenie na wiele głównych kontrolerów.
+
+---
+
+## 🧩 4. Lista kontrolna topologii i zasilania
+
+| Wektor | Zalecenie | Uwagi |
 |---|---|---|
-| Hub 层级 | ≤ 3 层 | 过深易超时 |
-| Hub 规格 | 7–10 口带电源 | 每组独立电源更稳 |
-| 线材 | 短、屏蔽好 | 早换可疑线 |
-| 端口 | 先用后置 I/O | 前置走线共用多 |
-| 通道 | 手机走 USB2 | USB3 留给存储等 |
+| Warstwy huba | ≤ 3 warstwy głęboko | Zbyt wiele kaskad = timeouty |
+| Wybór huba | 7–10 portowe huby zasilane | Oddzielny zasilacz na bank hubów |
+| Kabel | Krótki, ekranowany | Wymień uszkodzone przewody wcześnie |
+| Porty | Najpierw tylne I/O | Nagłówki przednie współdzielą ścieżki |
+| Mix | Trzymaj telefony na ścieżkach USB2 | Zarezerwuj USB3 tylko dla przechowywania |
 
 ---
 
-## 🧪 5. 常见问题速排
+## 🧪 5. Szybkie rozwiązywanie problemów
 
-- **随机掉线/重连：**供电不足或线材问题 → 换电源/线。  
-- **卡在 ~38–42 台不再枚举：**主控/固件上限 → 更换到其他根端口、加独立 USB 控制卡、或换服务器级主板。  
-- **ADB 扫描占用高：**同一主控挂太多设备 → 把 Hub 分散到不同根端口。
-
----
-
-## ⚙️ 6. TikMatrix 推荐配置
-
-- 主板：**服务器/工作站**（如 X79 级别或同类 HEDT）  
-- Hub：多组**带电源 USB2 Hub**，分布到不同根端口  
-- BIOS：**XHCI 关，EHCI 开**  
-- 系统：Windows + ADB 驱动；保持图形/WebView 稳定
+- **Telefony łączą/rozłączają się losowo:** Budżet zasilania lub zły kabel → wymień zasilacz/kabel.  
+- **Nowe urządzenia przestają się wyliczać przy ~38–42:** Limit kontrolera → przenieś huby do różnych portów głównych / dodaj drugą kartę kontrolera / przełącz się na płytę serwerową.  
+- **Wysokie CPU podczas skanów ADB:** Zbyt wiele urządzeń na jednym kontrolerze → zrównoważ huby na portach.
 
 ---
 
-## 🏁 结语
+## ⚙️ 6. Zalecana konfiguracja dla TikMatrix
 
-USB 理论上能挂 127 台，但消费级主板常在 **~40** 台附近受限。  
-用 **后置 USB2**、**带电源 Hub**、**EHCI 优先 BIOS**，或直接上 **服务器级主板**，就能更稳地突破上限。
-
-👉 [访问 TikMatrix.com](https://www.tikmatrix.com)
+- Płyta: **Serwer/HEDT** (np. klasa X79 lub nowsze chipsety stacji roboczych)  
+- Huby: Wiele **hubów zasilanych USB2** na różnych portach głównych  
+- BIOS: **XHCI wyłączone, EHCI włączone**  
+- System: Standardowy Windows z sterownikami ADB; utrzymuj stabilny WebView/grafika dla wielu ekranów
 
 ---
 
-_本文基于 TikMatrix 在真实手机农场环境中的枚举与稳定性测试经验。_
+## 🏁 Podsumowanie
+
+Tak, USB może adresować 127 urządzeń — ale płyty konsumenckie osiągają ściany firmware/chipsetu w pobliżu **~40**.  
+Używaj **tylnego USB2**, **hubów zasilanych** i **BIOS EHCI-first** — lub przejdź na **serwerowy** , aby skalować znacznie dalej.
+
+👉 [Odwiedź TikMatrix.com](https://www.tikmatrix.com)
+
+---
+
+*Ten przewodnik odzwierciedla praktyczne buildy farm telefonów i testy wyliczania z TikMatrix.*

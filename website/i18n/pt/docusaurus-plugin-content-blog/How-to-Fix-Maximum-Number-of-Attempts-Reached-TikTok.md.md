@@ -1,33 +1,33 @@
 ---
 slug: how-to-fix-maximum-number-of-attempts-reached-tiktok
-title: 如何解决TikTok的“最大尝试次数已达到”错误
+title: Como Corrigir o Erro "Número Máximo de Tentativas Atingido" no TikTok
 authors: tikMatrix
-tags: [tikmatrix, tiktok, maximum number of attempts reached, error]
+tags: [tikmatrix, tiktok, número máximo de tentativas atingido, erro]
 ---
 
-如果你在 TikTok 上收到“尝试次数已达上限”的错误提示，不要担心，你并不孤单。这个错误信息可能会让人感到沮丧，尤其是当你试图登录账户或执行某些操作时。然而，有几个步骤可以帮助你修复 TikTok 上的“尝试次数已达上限”错误，并重新获得账户访问权限。以下是你需要做的：
+Se você recebeu o erro "Número Máximo de Tentativas Atingido" no TikTok, você não está sozinho. Esta mensagem de erro pode ser frustrante, especialmente se você está tentando fazer login na sua conta ou realizar certas ações no aplicativo. No entanto, existem várias etapas que você pode seguir para corrigir o erro "Número Máximo de Tentativas Atingido" no TikTok e recuperar o acesso à sua conta. Veja o que você precisa fazer:
 
 <!--truncate-->
 ---
 
-## 1. 等待一段时间
+## 1. Aguarde Algum Tempo
 
-如果你在 TikTok 上达到了最大登录尝试次数，你可能需要等待一段时间再试。TikTok 具有保护用户账户免受未经授权访问的安全措施，达到最大登录尝试次数可能会触发这些安全功能。等待几个小时甚至一天后再尝试登录。
+Se você atingiu o número máximo de tentativas de login no TikTok, pode precisar aguardar algum tempo antes de tentar novamente. O TikTok possui medidas de segurança para proteger as contas de usuários contra acesso não autorizado, e atingir o número máximo de tentativas de login pode acionar esses recursos de segurança. Aguarde algumas horas ou até um dia antes de tentar fazer login novamente.
 
-## 2. 更改你的 IP 地址
+## 2. Mude Seu Endereço IP
 
-如果等待后仍然遇到“尝试次数已达上限”错误，你可能需要更改你的 IP 地址。IP 地址是一个唯一标识符，可以用来跟踪你的在线活动，更改它可以帮助绕过可能阻止你访问 TikTok 的安全措施。你可以通过使用 VPN 或代理服务器连接到互联网来更改你的 IP 地址。
+Se você ainda estiver enfrentando o erro "Número Máximo de Tentativas Atingido" após aguardar, pode precisar mudar seu endereço IP. Seu endereço IP é um identificador único que pode ser usado para rastrear suas atividades online, e mudá-lo pode ajudar a contornar medidas de segurança que podem estar bloqueando seu acesso ao TikTok. Você pode mudar seu endereço IP usando uma VPN ou servidor proxy para se conectar à internet.
 
-## 3. 重新安装 TikTok 应用
+## 3. Reinstale o Aplicativo TikTok
 
-如果更改 IP 地址不能解决问题，你可能需要重新安装设备上的 TikTok 应用。有时，应用数据或缓存文件可能会损坏，导致登录问题和其他错误。通过卸载和重新安装 TikTok 应用，你可以从头开始，可能会修复“尝试次数已达上限”错误。
+Se mudar seu endereço IP não resolver o problema, você pode precisar reinstalar o aplicativo TikTok no seu dispositivo. Às vezes, dados do aplicativo ou arquivos de cache podem ficar corrompidos, causando problemas de login e outros erros. Ao desinstalar e reinstalar o aplicativo TikTok, você pode começar do zero e potencialmente corrigir o erro "Número Máximo de Tentativas Atingido".
 
-## 4. 重置手机的网络设置
+## 4. Redefina as Configurações de Rede do Seu Telefone
 
-如果重新安装应用后仍然无法登录 TikTok，你可能需要重置手机的网络设置。重置网络设置可以帮助解决可能阻止你访问 TikTok 的连接问题。要重置手机的网络设置，请进入设备的设置菜单，查找网络或连接选项。
+Se você ainda não conseguir fazer login no TikTok após reinstalar o aplicativo, pode precisar redefinir as configurações de rede do seu telefone. Redefinir suas configurações de rede pode ajudar a resolver problemas de conectividade que podem estar impedindo você de acessar o TikTok. Para redefinir as configurações de rede do seu telefone, vá ao menu de configurações do seu dispositivo e procure pelas opções de rede ou conectividade.
 
-## 5. 联系 TikTok 支持
+## 5. Entre em Contato com o Suporte do TikTok
 
-如果以上步骤都不起作用，你可能需要联系 TikTok 支持以获得进一步的帮助。TikTok 的支持团队可以帮助你排查问题，并提供解决“尝试次数已达上限”错误的指导。你可以通过应用或网站联系 TikTok 支持，并说明你遇到的问题。
+Se nenhuma das etapas acima funcionar, você pode precisar entrar em contato com o suporte do TikTok para obter mais assistência. A equipe de suporte do TikTok pode ajudá-lo a solucionar o problema e fornecer orientações sobre como resolver o erro "Número Máximo de Tentativas Atingido". Você pode entrar em contato com o suporte do TikTok através do aplicativo ou site e explicar o problema que está enfrentando.
 
-通过遵循这些步骤，你可以修复 TikTok 上的“尝试次数已达上限”错误，并重新获得账户访问权限。如果问题仍然存在，请联系 TikTok 支持以获得进一步的帮助。通过正确的故障排除步骤，你可以解决错误，恢复正常使用 TikTok。
+Seguindo essas etapas, você pode corrigir o erro "Número Máximo de Tentativas Atingido" no TikTok e recuperar o acesso à sua conta. Se você continuar enfrentando problemas, entre em contato com o suporte do TikTok para obter mais assistência. Com as etapas corretas de solução de problemas, você pode resolver o erro e voltar a usar o TikTok normalmente.

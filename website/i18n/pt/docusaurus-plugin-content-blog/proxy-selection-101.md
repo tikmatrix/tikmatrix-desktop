@@ -1,72 +1,72 @@
 ---
 slug: proxy-selection-101
-title: 🛠 代理选择入门 — 动态住宅 vs 静态住宅
+title: 🛠 Seleção de Proxy 101 — Dinâmico vs Estático para TikTok
 authors: tikMatrix
-tags: [代理, 风控, TikTok 营销, 自动化, TikMatrix]
+tags: [Proxies, Controle de Risco, Marketing no TikTok, Automação, TikMatrix]
 ---
 
-> 选对代理，增长更稳、风控更少。  
-> 给 TikMatrix 用户的一份**简明实战指南**。
+> Escolher o **tipo certo de proxy** é a diferença entre escalamento suave e sinalizações constantes.  
+> Aqui está um manual simples e comprovado para usuários do TikMatrix.
 
 <!-- truncate -->
 ---
-![TikTok 代理选择](/img/blog/proxy-selection.webp)
+![Seleção de proxy para TikTok](/img/blog/proxy-selection.webp)
 
-## 🔹 1. 新注册与首次登录 → 用**动态住宅代理**（按流量计费）
+## 🔹 1. Novo Registro & Primeiros Logins → Use **Residencial Dinâmico** (por tráfego)
 
-- **原因：**高熵轮换，降低多次尝试之间的关联；更像不同住户。  
-- **适用：**创建/预热 **新号**。  
-- **要点：**控制并发，**每次尝试或每场会话**轮换；国家/语言与目标市场一致。
-
----
-
-## 🔷 2. 长期运营 → 用**静态住宅代理**（按数量计费）
-
-- **原因：**稳定 IP 累积**信任历史**（ASN、rDNS、时延更一致）。  
-- **适用：**已预热/老号的日常运营。  
-- **要点：**尽量 **一设备：一 IP**；若必须共享，避免给高风险账号共用。
-
-> 💡 共享策略按风险自定。更稳：**1 机 1 IP**；中等：**2–3 机/IP**，并**错峰**执行、行为分离。
+- **Por quê:** rotação de IP de alta entropia reduz ligação entre tentativas; parece diferentes domicílios.  
+- **Melhor para:** criar/aquecer **contas novas**.  
+- **Dicas:** limite concorrência, rotacione **por tentativa**, alinhe país/localidade ao mercado alvo.
 
 ---
 
-## 🧩 3. 快速对比
+## 🔷 2. Gerenciamento de Longo Prazo → Use **Residencial Estático** (por quantidade)
 
-| 维度 | 动态住宅（流量计费） | 静态住宅（按量计费） |
+- **Por quê:** IP estável constrói **histórico de confiança** (ASN consistente, rDNS, latência).  
+- **Melhor para:** operações diárias em contas aquecidas/envelhecidas.  
+- **Dicas:** mantenha **um IP limpo por dispositivo/conta** quando possível; evite compartilhar entre perfis arriscados.
+
+> 💡 Decida quantos dispositivos compartilham o mesmo IP baseado em tolerância a risco. Mais seguro: **1 dispositivo : 1 IP**. Moderado: **2–3 dispositivos/IP** com cronogramas escalonados.
+
+---
+
+## 🧩 3. Comparação Rápida
+
+| Fator | Residencial Dinâmico (Tráfego) | Residencial Estático (Quantidade) |
 |---|---|---|
-| 场景 | 注册 / 首登 | 长期日常 |
-| 稳定性 | 低–中（轮换） | **高**（固定） |
-| 关联性 | **低** | 中（若共享） |
-| 风险 | 初期规避佳 | 长期信任佳 |
-| 成本 | 按 GB | 按 IP |
+| Caso de uso | Registro / primeiros logins | Operações diárias de longo prazo |
+| Estabilidade | Baixa–média (rotaciona) | **Alta** (fixo) |
+| Vinculabilidade | **Baixa** | Média (se compartilhado) |
+| Perfil de risco | Bom para evitação inicial | Melhor para construção de confiança |
+| Modelo de custo | Pague por GB | Pague por IP |
 
 ---
 
-## ⚙️ 4. 运营护栏
+## ⚙️ 4. Proteções Operacionais
 
-- **区域一致：**国家/时区/语言与内容市场匹配  
-- **轮换规则：**动态 → 每次尝试/会话轮换；静态 → 出现异常再换  
-- **设备隔离：**代理账号与设备绑定；不共享会话  
-- **健康检查：**whoer/ipapi 测试；关注时延与丢包  
-- **兜底池：**预留少量备用静态 IP 以便快速切换
-
----
-
-## ✅ 5. 速查清单
-
-- 新号 → **动态住宅**  
-- 老号/长期 → **静态住宅**  
-- **优先 1 机 1 IP**；如需共享，错峰 + 行为隔离  
-- 保持地理一致；避免住宅与 VPN 混用
+- **Geo & Localidade:** país/região/fuso horário **correspondem ao mercado de conteúdo**  
+- **Regras de Rotação:** dinâmico → rotacionar por tentativa/sessão; estático → rotacionar apenas em incidente  
+- **Isolamento de Dispositivo:** credenciais de proxy por dispositivo; sem sessões compartilhadas  
+- **Verificações de Saúde:** testar IP em whoer/ipapi; observar latência e perda de pacotes  
+- **Plano de Contingência:** manter um pequeno pool de IPs estáticos reserva para trocas
 
 ---
 
-## 🏁 结语
+## ✅ 5. Lista de Verificação TL;DR
 
-**一致性 = 安全增长。** 先用动态住宅**干净进入**，再切静态住宅**长期稳定**，累积信任。
-
-👉 [访问 TikMatrix.com](https://www.tikmatrix.com)
+- Contas novas → **Residencial Dinâmico**  
+- Contas de longo prazo → **Residencial Estático**  
+- Preferir **1 dispositivo : 1 IP**; se compartilhar, escalonar e separar comportamentos  
+- Manter geo consistente; evitar misturar VPNs com rotas residenciais
 
 ---
 
-_本文基于 TikMatrix 手机农场在不同代理形态下的实战经验。_
+## 🏁 Conclusão
+
+**Consistência é chave para crescimento seguro.** Use resi dinâmico para entrar limpamente, depois mude para resi estático para **permanecer** limpo e construir confiança.
+
+👉 [Visite TikMatrix.com](https://www.tikmatrix.com)
+
+---
+
+_Este guia reflete configurações de proxy do mundo real usadas em phone farms TikMatrix._

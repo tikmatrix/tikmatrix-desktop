@@ -1,86 +1,86 @@
 ---
 sidebar_position: 1
-title: TikMatrix/IgMatrix 软件定位与路线图
-sidebar_label: 路线图
-description: 官网版路线图，概述 TikMatrix/IgMatrix 在自动化运营生态中的定位、能力边界与上线建议。
+title: TikMatrix/IgMatrix Produktpositionering & Roadmap
+sidebar_label: Roadmap
+description: Officiell roadmap som beskriver TikMatrix/IgMatrix-positionering, kapacitetsgränser och implementeringsrekommendationer.
 slug: roadmap
 ---
 
-## 全流程地图
+## Fullständig Processkarta
 
-![TikMatrix/IgMatrix 路线图](/img/roadmap-zh.svg)
-
----
-
-## 我们为谁创造价值
-
-- **中小团队/MCN/品牌方/灰度试验团队**：需要在 5～100 设备规模上稳定执行“每日重复但需要拟人化”的运营动作。
-- **增长与内容运营**：需要高可控的“批量但非机械”的行为编排，兼顾安全策略与效率。
+![TikMatrix/IgMatrix Roadmap](/img/roadmap-en.svg)
 
 ---
 
-## 核心价值主张（为什么选 TikMatrix/IgMatrix）
+## Vem vi skapar värde för
 
-1. **可编排的批量自动化**：以“任务 → 脚本 → 数据源”的模型构建可复用流水线，覆盖预热、发布、互动、采集的全链路动作。
-2. **拟人化与风控策略**：引擎具备随机化时序、节奏控制、人机手势模拟、异常中断恢复等机制，尽量贴近真人行为特征。
-3. **规模化与稳定性**：支持真机/云机混合，USB/TCP ADB 连接，保障 5→20→50→100 台的线性扩展与稳定调度。
-4. **数据可观测**：任务日志、设备投屏、账号统计与结果数据导出。
+- **SMB / MCN / varumärken / experimentteam**: behöver stabil utförning av dagliga men människoliknande operationella åtgärder i 5–100 enhetssskala.
+- **Tillväxt- och innehållsoperationer**: behöver kontrollerbar batch (men inte mekanisk) orkestrering som balanserar säkerhet och effektivitet.
 
 ---
 
-## 功能地图（步骤 4 的能力边界）
+## Kärna värdeförslag (varför välja TikMatrix/IgMatrix)
 
-### 1) 任务编排与调度
-
-- 多账号/多设备并发策略，随机化执行顺序
-- 失败重试、断点续跑、资源占用管理（素材/账号/代理）
-
-### 2) 脚本中心
-
-- **超级营销脚本**：已融合 Boost 用户/帖子、群发私信、批量评论等能力
-- 账号预热脚本：日常浏览、停留、轻互动
-- 内容发布脚本：视频/文案/标签/话题管理，定时发布
-- 数据采集脚本：抓取用户名信息，构建下一轮目标清单
-
-### 3) 人机与风控
-
-- 触控/滑动/停顿/观看时长的随机化
-- 异常检测与速率限制，避免一次性高频行为
-
-> **边界声明**：TikMatrix/IgMatrix 不提供设备、账号、代理本身；我们聚焦于 **运营动作的自动化**。
+1. **Komponerbar batch-automation**: bygg återanvändbara pipelines med modellen "uppgift → skript → datakälla", täckande uppvärmning, publicering, engagemang och insamling.
+2. **Människoliknande beteende & riskkontroll**: motor stödjer slumpmässig timing, rytmkontroll, simulering av mänskliga gester och abnorm återhämtning för att likna verkligt användarbeteende.
+3. **Skalbarhet & stabilitet**: stödjer verkliga enheter / molnenheter hybrid, USB/TCP ADB, möjliggör linjär skalning från 5→20→50→100 enheter med pålitlig schemaläggning.
+4. **Observerbarhet**: uppgiftsloggar, enhetsspegeling, kontostatistik och exporterbara resultatdata.
 
 ---
 
-## 上线建议（从 0 到 规模化）
+## Kapacitetskarta (omfattning av steg 4)
 
-1. **验证期（1–5 台）**：串联设备→账号→代理→单一脚本的最小闭环
-2. **试点期（10–20 台）**：引入超级营销脚本 + 数据采集闭环；观察风控阈值
-3. **扩展期（20–50 台）**：分组限速、随机化策略、多数据源轮换
-4. **规模期（50-100 台）**：分批调度、错峰执行
+### 1) Uppgiftsorkestrering & schemaläggning
 
----
+- Multi-konto / multi-enhet samtidighetsstrategier, slumpmässig exekveringsordning
+- Försök igen vid fel, återuppta från brytpunkt, resurshantering (tillgångar/konton/proxies)
 
-## 风险与合规提示
+### 2) Skriptcenter
 
-- 使用自动化工具可能违反平台服务条款；请**自担风险**并合理控制频率与行为模式
-- 手机硬件环境、代理、账号质量与运营策略会显著影响稳定性与结果
+- **Avancerade marknadsföringsskript**: inkluderar Boosta användare/inlägg, bulk-DM:er, batch-kommentarer
+- Kontouppvärmningsskript: daglig surfning, uppehåll, lätta interaktioner
+- Innehållspubliceringsskript: video/bildtext/taggar/ämneshantering, schemalagd publicering
+- Datainsamlingsskript: skrapa användarinfo och bygg nästa mållistor
 
----
+### 3) Mänsklig & riskkontroll
 
-## 常见问答
+- Slumpmässighet av touch/svep/paus/visningstid
+- Anomalidetektering och hastighetsgränser för att undvika plötsligt högfrekvent beteende
 
-**Q：TikMatrix 是否提供账号/代理？**  
-A：不提供。我们专注自动化引擎与脚本执行。
-
-**Q：是否提供云手机？**  
-A：不提供。用户需自行准备设备环境。
-
-**Q：是否支持云手机？**  
-A：只要能通过 ADB（USB/TCP）稳定连接，即可纳入调度。
+> **Gränsdeklaration**: TikMatrix/IgMatrix tillhandahåller INTE enheter, konton eller proxies; vi fokuserar på automation av operationella åtgärder.
 
 ---
 
-## 行动呼吁
+## Implementeringsrekommendationer (från 0 till skala)
 
-- 立即试用 Starter 套餐，构建你的最小可行“步骤 4”闭环
-- 阅读脚本文档，快速上手批量运营
+1. **Validering (1–5 enheter)**: anslut enheter → konton → proxies → minimal sluten loop av ett enda skript
+2. **Pilot (10–20 enheter)**: introducera avancerade marknadsföringsskript + datainsamlingsloop; övervaka risktrösklar
+3. **Expansion (20–50 enheter)**: grupphastighetsbegränsning, slumpmässiga strategier, rotation av flera datakällor
+4. **Skala (50–100 enheter)**: batch-schemaläggning, fördelad exekvering
+
+---
+
+## Risker och compliance-medvetenhet
+
+- Att använda automation kan bryta mot plattformsvillkor; använd på egen risk och kontrollera frekvens/beteendemönster
+- Enhetshårdvara, proxies, kontokvalitet och operationsstrategi påverkar avsevärt stabilitet och resultat
+
+---
+
+## FAQ
+
+**F: Tillhandahåller TikMatrix konton/proxies?**  
+S: Nej. Vi fokuserar på automationsmotorn och skriptexekvering.
+
+**F: Tillhandahåller ni molntelefoner?**  
+S: Nej. Användare bör förbereda enhetsmiljöer själva.
+
+**F: Stödjer ni molntelefoner?**  
+S: Alla enheter som kan ansluten stabilt via ADB (USB/TCP) kan schemaläggas.
+
+---
+
+## Handlingsuppmaning
+
+- Prova Starter-planen nu och bygg din minimala funktionella slutna loop av steg 4
+- Läs skriptdokumentationen för att börja batch-operationer

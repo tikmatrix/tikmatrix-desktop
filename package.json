@@ -22,6 +22,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
     "@coleqiu/vue-drag-select": "^2.0.6-beta.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
@@ -38,8 +39,8 @@
     "countup.js": "^2.8.0",
     "dompurify": "^3.2.2",
     "h264-converter": "^0.1.4",
-    "marked": "^15.0.6",
     "jmuxer": "^2.0.5",
+    "marked": "^15.0.6",
     "odometer_countup": "^1.0.4",
     "qrcode": "^1.5.4",
     "tikmatrix-desktop": "file:",

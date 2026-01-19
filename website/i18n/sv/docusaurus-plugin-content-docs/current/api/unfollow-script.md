@@ -1,38 +1,38 @@
 ---
 sidebar_position: 5
-title: 取消关注脚本配置
-description: 取消关注脚本完整配置参考
+title: Konfiguration av unfollow-script
+description: Komplett konfigurationsreferens för unfollow-scriptet
 ---
 
-本页面介绍创建任务时 `unfollow` 脚本的配置参数。
+Den här sidan dokumenterar konfigurationsparametrarna för `unfollow`-scriptet som används vid skapande av uppgifter.
 
-## 概述
+## Översikt
 
-`unfollow` 脚本用于在 TikTok 或 Instagram 上自动取消关注用户。当您通过 API 提供多个目标用户时，**系统会为每个目标用户创建一个任务**。您可以使用 `start_time` 参数来控制任务的执行时间。
+`unfollow`-scriptet används för att automatiskt sluta följa användare på TikTok eller Instagram. När du tillhandahåller flera målanvändare via API skapas **en uppgift per målanvändare**. Du kan styra när varje uppgift körs genom att använda parametern `start_time`.
 
-## 脚本配置 (`script_config`)
+## Scriptkonfiguration (`script_config`)
 
-`script_config` 对象包含取消关注脚本的配置参数。以下是可用参数：
+Objektet `script_config` innehåller parametrarna för unfollow-scriptet. Nedan finns tillgängliga parametrar:
 
-### 参数
+### Parametrar
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
-|------|------|------|--------|------|
-| target_users | string[] | 是* | [] | 要取消关注的目标用户名数组（每个用户一个任务） |
-| target_user | string | 是* | "" | 单个目标用户名，或多个用户名以换行/逗号分隔 |
-| access_method | string | 否 | "direct" | 导航到用户资料的方式：`direct`（通过 URL）或 `search` |
+| Parameter | Typ | Krävs | Standard | Beskrivning |
+|-----------|------|----------|---------|-------------|
+| target_users | string[] | Ja* | [] | Array av målanvändarnamn att sluta följa (en uppgift per användare) |
+| target_user | string | Ja* | "" | Enskilt målanvändarnamn eller flera användarnamn separerade med radbrytningar/kommatecken |
+| access_method | string | Nej | "direct" | Hur man navigerar till användarprofil: `direct` (via URL) eller `search` |
 
 :::note
-必须提供 `target_users` 数组或 `target_user` 字符串。如果两者都提供，`target_users` 优先。
+Antingen `target_users`-array eller `target_user`-sträng måste anges. Om båda anges har `target_users` prioritet.
 :::
 
-:::info 任务创建
-当提供多个目标用户时，API 会**为每个目标用户创建一个任务**。例如，如果您指定 3 个目标用户和 2 个设备，将创建 6 个任务。使用 `start_time` 参数来控制任务的执行时间。
+:::info Uppgiftsskapande
+När flera målanvändare tillhandahålls skapar API:et **en uppgift per målanvändare**. Till exempel, om du anger 3 målanvändare och 2 enheter kommer 6 uppgifter att skapas. Använd parametern `start_time` för att styra när uppgifter börjar köras.
 :::
 
-## 示例
+## Exempel
 
-### 取消关注单个用户
+### Sluta följa en enskild användare
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -47,9 +47,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 取消关注多个用户
+### Sluta följa flera användare
 
-取消关注多个用户时，每个用户创建一个任务：
+När flera användare slutas följas skapas en uppgift per användare:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -64,11 +64,11 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-这将创建 3 个独立的任务，立即执行。
+Detta skapar 3 separata uppgifter som körs omedelbart.
 
-### 使用开始时间调度任务
+### Schemalägg uppgifter med starttid
 
-使用 `start_time` 来调度任务的开始时间：
+Använd `start_time` för att schemalägga när uppgifter ska starta:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -84,9 +84,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 通过搜索方式取消关注用户
+### Sluta följa användare via sökmetod
 
-当直接 URL 访问不起作用时，使用搜索方式：
+Använd sökmetoden när direkt URL-åtkomst inte fungerar:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -101,7 +101,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 多设备批量取消关注
+### Batch-unfollow på flera enheter
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -117,7 +117,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-## 响应
+## Svar
 
 ```json
 {
@@ -130,30 +130,30 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 访问方式
+## Åtkomstmetoder
 
-### 直接访问 (`direct`)
+### Direktmetod (`direct`)
 
-- 通过 URL 打开用户资料：`tiktok.com/@username` 或 `instagram.com/username`
-- 更快更可靠
-- 大多数情况下推荐使用
+- Öppnar användarprofil via URL: `tiktok.com/@username` eller `instagram.com/username`
+- Snabbare och mer pålitlig
+- Rekommenderas för de flesta användningsfall
 
-### 搜索访问 (`search`)
+### Sökmetod (`search`)
 
-- 导航到搜索，输入用户名，点击结果
-- 较慢但在直接 URL 访问被阻止时有效
-- 如果存在多个相似用户名，可能不太准确
+- Navigerar till sökning, skriver användarnamn, klickar på resultat
+- Långsammare men fungerar när direkt URL-åtkomst är blockerad
+- Kan vara mindre exakt om flera liknande användarnamn finns
 
-## 最佳实践
+## Bästa praxis
 
-1. **使用 start_time 调度**：使用 `start_time` 参数来调度任务的执行时间（格式："HH:MM"）。
+1. **Använd start_time för schemaläggning**: Använd parametern `start_time` för att schemalägga när uppgifter ska köras (format: "HH:MM").
 
-2. **优先直接访问**：`direct` 访问方式比 `search` 更快更可靠。
+2. **Föredra direkt åtkomst**: Åtkomstmetoden `direct` är snabbare och mer pålitlig än `search`.
 
-3. **合理批量处理**：不要一次取消关注太多用户。系统会为每个目标用户创建一个任务，因此大列表会产生许多任务。
+3. **Batch klokt**: Sluta inte följa för många användare samtidigt. Systemet skapar en uppgift per målanvändare, så stora listor resulterar i många uppgifter.
 
-## 另请参阅
+## Se även
 
-- [任务管理 API](./task-management.md) - 创建、查询和管理任务
-- [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [关注脚本配置](./follow-script.md) - 配置关注脚本参数
+- [API för uppgiftshantering](./task-management.md) - Skapa, lista och hantera uppgifter
+- [Konfiguration av post-script](./post-script.md) - Konfigurera parametrar för post-script
+- [Konfiguration av follow-script](./follow-script.md) - Konfigurera parametrar för follow-script

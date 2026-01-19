@@ -1,86 +1,86 @@
 ---
 sidebar_position: 1
-title: TikMatrix/IgMatrix 软件定位与路线图
-sidebar_label: 路线图
-description: 官网版路线图，概述 TikMatrix/IgMatrix 在自动化运营生态中的定位、能力边界与上线建议。
+title: Pozycjonowanie i mapa drogowa produktu TikMatrix/IgMatrix
+sidebar_label: Mapa drogowa
+description: Oficjalna mapa drogowa opisująca pozycjonowanie TikMatrix/IgMatrix, granice możliwości oraz zalecenia wdrożeniowe.
 slug: roadmap
 ---
 
-## 全流程地图
+## Pełna mapa procesu
 
-![TikMatrix/IgMatrix 路线图](/img/roadmap-zh.svg)
-
----
-
-## 我们为谁创造价值
-
-- **中小团队/MCN/品牌方/灰度试验团队**：需要在 5～100 设备规模上稳定执行“每日重复但需要拟人化”的运营动作。
-- **增长与内容运营**：需要高可控的“批量但非机械”的行为编排，兼顾安全策略与效率。
+![Mapa drogowa TikMatrix/IgMatrix](/img/roadmap-en.svg)
 
 ---
 
-## 核心价值主张（为什么选 TikMatrix/IgMatrix）
+## Dla kogo tworzymy wartość
 
-1. **可编排的批量自动化**：以“任务 → 脚本 → 数据源”的模型构建可复用流水线，覆盖预热、发布、互动、采集的全链路动作。
-2. **拟人化与风控策略**：引擎具备随机化时序、节奏控制、人机手势模拟、异常中断恢复等机制，尽量贴近真人行为特征。
-3. **规模化与稳定性**：支持真机/云机混合，USB/TCP ADB 连接，保障 5→20→50→100 台的线性扩展与稳定调度。
-4. **数据可观测**：任务日志、设备投屏、账号统计与结果数据导出。
+- **MŚP / MCN / marki / zespoły eksperymentalne**: potrzebują stabilnego wykonywania codziennych, ale przypominających ludzkie działania operacyjnych na skali 5–100 urządzeń.
+- **Zespoły wzrostu i operacji treści**: potrzebują kontrolowalnej orkiestracji wsadowej (ale nie mechanicznej), która równoważy bezpieczeństwo i efektywność.
 
 ---
 
-## 功能地图（步骤 4 的能力边界）
+## Kluczowe propozycje wartości (dlaczego wybrać TikMatrix/IgMatrix)
 
-### 1) 任务编排与调度
-
-- 多账号/多设备并发策略，随机化执行顺序
-- 失败重试、断点续跑、资源占用管理（素材/账号/代理）
-
-### 2) 脚本中心
-
-- **超级营销脚本**：已融合 Boost 用户/帖子、群发私信、批量评论等能力
-- 账号预热脚本：日常浏览、停留、轻互动
-- 内容发布脚本：视频/文案/标签/话题管理，定时发布
-- 数据采集脚本：抓取用户名信息，构建下一轮目标清单
-
-### 3) 人机与风控
-
-- 触控/滑动/停顿/观看时长的随机化
-- 异常检测与速率限制，避免一次性高频行为
-
-> **边界声明**：TikMatrix/IgMatrix 不提供设备、账号、代理本身；我们聚焦于 **运营动作的自动化**。
+1. **Kompozytowalna automatyzacja wsadowa**: buduj wielokrotnego użytku potoki z modelem "zadanie → skrypt → źródło danych", obejmujące rozgrzewkę, publikowanie, zaangażowanie i zbieranie.
+2. **Zachowanie przypominające ludzkie i kontrola ryzyka**: silnik wspiera losowe harmonogramy, kontrolę rytmu, symulację ludzkich gestów i przywracanie po anomaliach, aby przypominać zachowanie prawdziwego użytkownika.
+3. **Skalowalność i stabilność**: wspiera hybrydę rzeczywistych urządzeń / urządzeń chmurowych, USB/TCP ADB, umożliwiając liniowe skalowanie od 5→20→50→100 urządzeń z niezawodnym planowaniem.
+4. **Obserwowalność**: logi zadań, dublowanie urządzeń, statystyki kont i eksportowalne dane wynikowe.
 
 ---
 
-## 上线建议（从 0 到 规模化）
+## Mapa możliwości (zakres kroku 4)
 
-1. **验证期（1–5 台）**：串联设备→账号→代理→单一脚本的最小闭环
-2. **试点期（10–20 台）**：引入超级营销脚本 + 数据采集闭环；观察风控阈值
-3. **扩展期（20–50 台）**：分组限速、随机化策略、多数据源轮换
-4. **规模期（50-100 台）**：分批调度、错峰执行
+### 1) Orkiestracja i planowanie zadań
 
----
+- Strategie współbieżności wielu kont / wielu urządzeń, losowa kolejność wykonywania
+- Ponowna próba przy niepowodzeniu, wznowienie z punktu przerwania, zarządzanie zasobami (zasoby/konta/proxy)
 
-## 风险与合规提示
+### 2) Centrum skryptów
 
-- 使用自动化工具可能违反平台服务条款；请**自担风险**并合理控制频率与行为模式
-- 手机硬件环境、代理、账号质量与运营策略会显著影响稳定性与结果
+- **Zaawansowane skrypty marketingowe**: obejmują wzmacnianie użytkowników/postów, masowe DM, komentarze wsadowe
+- Skrypty rozgrzewkowe kont: codzienne przeglądanie, przebywanie, lekkie interakcje
+- Skrypty publikowania treści: zarządzanie wideo/napisami/tagami/tematami, zaplanowane publikowanie
+- Skrypty zbierania danych: pobieranie informacji o użytkownikach i budowanie list kolejnych celów
 
----
+### 3) Kontrola ludzka i ryzyka
 
-## 常见问答
+- Randomizacja dotyku/przesuwania/pauzy/czasu wyświetlania
+- Wykrywanie anomalii i limity częstotliwości, aby uniknąć nagłego zachowania o wysokiej częstotliwości
 
-**Q：TikMatrix 是否提供账号/代理？**  
-A：不提供。我们专注自动化引擎与脚本执行。
-
-**Q：是否提供云手机？**  
-A：不提供。用户需自行准备设备环境。
-
-**Q：是否支持云手机？**  
-A：只要能通过 ADB（USB/TCP）稳定连接，即可纳入调度。
+> **Deklaracja granic**: TikMatrix/IgMatrix NIE dostarcza urządzeń, kont ani proxy; koncentrujemy się na automatyzacji działań operacyjnych.
 
 ---
 
-## 行动呼吁
+## Zalecenia wdrożeniowe (od 0 do skali)
 
-- 立即试用 Starter 套餐，构建你的最小可行“步骤 4”闭环
-- 阅读脚本文档，快速上手批量运营
+1. **Walidacja (1–5 urządzeń)**: podłącz urządzenia → konta → proxy → minimalny zamknięty obieg pojedynczego skryptu
+2. **Pilot (10–20 urządzeń)**: wprowadź zaawansowane skrypty marketingowe + pętlę zbierania danych; monitoruj progi ryzyka
+3. **Rozszerzenie (20–50 urządzeń)**: grupowe ograniczanie częstotliwości, losowe strategie, rotacja wielu źródeł danych
+4. **Skala (50–100 urządzeń)**: planowanie wsadowe, rozłożone wykonanie
+
+---
+
+## Ryzyka i uwagi dotyczące zgodności
+
+- Używanie automatyzacji może naruszać warunki platformy; używaj na własne ryzyko i kontroluj częstotliwość/wzorce zachowań
+- Sprzęt urządzenia, proxy, jakość konta i strategia operacyjna znacząco wpływają na stabilność i wyniki
+
+---
+
+## FAQ
+
+**P: Czy TikMatrix dostarcza konta/proxy?**  
+O: Nie. Koncentrujemy się na silniku automatyzacji i wykonywaniu skryptów.
+
+**P: Czy dostarczacie telefony chmurowe?**  
+O: Nie. Użytkownicy powinni przygotować środowiska urządzeń samodzielnie.
+
+**P: Czy obsługujecie telefony chmurowe?**  
+O: Każde urządzenie, które może być stabilnie podłączone przez ADB (USB/TCP), może być zaplanowane.
+
+---
+
+## Wezwanie do działania
+
+- Wypróbuj teraz plan Starter i zbuduj swój minimalny funkcjonalny zamknięty obieg kroku 4
+- Przeczytaj dokumentację skryptów, aby rozpocząć operacje wsadowe

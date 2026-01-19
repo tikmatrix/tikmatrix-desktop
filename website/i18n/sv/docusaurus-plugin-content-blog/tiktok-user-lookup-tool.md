@@ -1,83 +1,83 @@
 ---
-slug: tiktok-user-lookup-tool-zh
-title: 新上线 免费 TikTok 用户查询工具（可显示国家）— 无需登录
+slug: tiktok-user-lookup-tool
+title: Nytt gratis TikTok-användarsökverktyg (visar land) — ingen inloggning krävs
 authors: tikMatrix
-tags: [产品更新, TikTok 工具, 数据分析, TikMatrix]
+tags: [Product Update, TikTok Tools, Analytics, TikMatrix]
 ---
 
-> 我们发布了一个**免费网页工具**，可一键查询 TikTok 用户信息，包含**国家识别**。  
-> 输入任意用户名，立即查看粉丝、点赞、视频、ID 等信息。快速、简单、无需登录。
+> Vi lanserade just ett **gratis webbverktyg** för att omedelbart slå upp TikTok-användarinfo — inklusive **landupptäckt**.  
+> Ange vilket användarnamn som helst och få följare, gillningar, videor, ID:n och mer. Snabbt, enkelt, ingen inloggning.
 
 <!-- truncate -->
 ---
-![TikMatrix — TikTok 用户查询](/img/blog/tikmatrix-user-lookup.webp)
+![TikMatrix — TikTok User Lookup](/img/blog/tikmatrix-user-lookup.webp)
 
-## 🧭 1. 这是什么
+## 🧭 1. Vad det är
 
-一个轻量、高速的 TikTok 公开资料查看器，适合选品调研、质检与竞品分析。
+En lätt, höghastighetsbetraktare för offentliga TikTok-profildata — perfekt för forskning, QA och konkurrentkontroller.
 
-- 访问地址：**[https://user.tikmatrix.com/](https://user.tikmatrix.com/)**
-- 100% 免费，无需登录
-- 支持电脑与手机端
+- URL: **[https://user.tikmatrix.com/](https://user.tikmatrix.com/)**
+- 100% gratis, ingen inloggning
+- Fungerar på desktop & mobil
 
 ---
 
-## 🔎 2. 可查看的信息
+## 🔎 2. Vad du kan se
 
-| 类别 | 字段 |
+| Kategori | Fält |
 |---|---|
-| 主页 | 用户名、昵称、头像 |
-| 规模 | 粉丝数、关注数、总点赞、视频数量 |
-| 标识 | UserID、SecUID |
-| 元信息 | **国家**、账号创建日期 |
-| 其他 | 快速分析、**视频下载**（公开视频） |
+| Profil | Användarnamn, Smeknamn, Avatar |
+| Skala | Följare, Följer, Totalt gillningar, Videoantal |
+| ID:n | UserID, SecUID |
+| Meta | **Land**, Kontos skapandedatum |
+| Extras | Snabb analys, **Video nedladdning** länkar (offentliga videor) |
 
-> 提示：国家基于公开信号推断，仅供参考，不代表法律意义上的属地。
-
----
-
-## ⚡ 3. 使用方法（三步）
-
-1）打开 **[https://user.tikmatrix.com/](https://user.tikmatrix.com/)**  
-2）输入 TikTok **用户名**（如 `charlidamelio`）  
-3）点击 **Search**，即可即时显示结果
+> Tips: Land härleds från offentliga signaler; behandla som indikativt, inte bevis på bosättning.
 
 ---
 
-## 📊 4. 常见用途
+## ⚡ 3. Hur man använder (3 steg)
 
-- KOL 合作与受众质量评估  
-- 竞品快照（增长、发帖节奏）  
-- 合规检查（地区与元数据）  
-- 内部评审用的视频快速下载
-
----
-
-## 🔐 5. 隐私与合规
-
-- 仅展示**公开**信息  
-- 无登录，不收集凭据  
-- 下载/查看内容请遵守版权与平台政策
-
-> 若账号为私密/限制状态，部分字段可能不可用。
+1) Öppna **[https://user.tikmatrix.com/](https://user.tikmatrix.com/)**  
+2) Ange ett TikTok-**användarnamn** (t.ex. `charlidamelio`)  
+3) Klicka **Sök** → resultat renderas omedelbart
 
 ---
 
-## 🗺️ 6. 规划路线
+## 📊 4. Populära användningsfall
 
-- 批量查询与 CSV 导出  
-- 历史变化（粉丝/点赞）  
-- 面向团队的 API
-
----
-
-## 🏁 结语
-
-立即试用，并欢迎反馈你的建议——你的需求将直接影响我们的迭代方向。
-
-👉 **免费使用：** [https://user.tikmatrix.com/](https://user.tikmatrix.com/)  
-👉 **了解 TikMatrix 自动化：** [https://www.tikmatrix.com](https://www.tikmatrix.com)
+- Publikkontroll för samarbeten & shoutouts  
+- Konkurrent-ögonblicksbilder (tillväxt, publiceringskadans)  
+- Efterlevnadskontroller (region, metadata)  
+- Snabba nedladdningar för intern granskning
 
 ---
 
-_本文基于对 TikTok 公开数据的真实场景测试与验证。_
+## 🔐 5. Integritet & efterlevnad
+
+- Vi surfar **offentlig** profilinfo endast.  
+- Ingen inloggning; ingen uppgiftsinsamling.  
+- Respektera skapares rättigheter vid nedladdning/visning av innehåll.
+
+> Om en profil är privat/begränsad kan vissa fält vara otillgängliga genom design.
+
+---
+
+## 🗺️ 6. Färdplan
+
+- Batch-sökningar & CSV-export  
+- Historiska deltas (följare/gillningar)  
+- API-åtkomst för team
+
+---
+
+## 🏁 Slutsats
+
+Prova det nu och berätta vad du tycker — din feedback formar färdplanen.
+
+👉 **Använd det gratis:** [https://user.tikmatrix.com/](https://user.tikmatrix.com/)  
+👉 **Utforska TikMatrix-automatisering:** [https://www.tikmatrix.com](https://www.tikmatrix.com)
+
+---
+
+_Detta inlägg återspeglar resultat från verkliga tester på offentliga TikTok-datakällor._

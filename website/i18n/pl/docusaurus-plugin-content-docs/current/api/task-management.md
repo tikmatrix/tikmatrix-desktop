@@ -1,41 +1,42 @@
 ---
 sidebar_position: 2
-title: 任务管理 API
-description: 任务管理端点的完整参考
+title: API zarządzania zadaniami
+description: Kompletna dokumentacja API do zarządzania zadaniami
 ---
 
-本页面记录了管理 TikMatrix 任务的所有可用 API 端点。
+Ta strona dokumentuje wszystkie dostępne punkty końcowe API do zarządzania zadaniami w TikMatrix.
 
-## 创建任务
+## Tworzenie zadania
 
-为一个或多个设备或用户名创建新任务。
+Utwórz nowe zadanie dla jednego lub więcej urządzeń lub nazw użytkowników.
 
-- **端点：** `POST /api/v1/task`
-- **Content-Type：** `application/json`
+- **Punkt końcowy:** `POST /api/v1/task`
+- **Content-Type:** `application/json`
 
-### 请求参数
+### Parametry żądania
 
-API 支持两种模式创建任务：
+API obsługuje dwa tryby tworzenia zadań:
 
-**模式 1：设备模式** - 使用 `serials` 为设备创建任务
-**模式 2：用户名模式** - 使用 `usernames` 直接为特定账号创建任务
+**Tryb 1: Oparty na urządzeniach** - Użyj `serials` do tworzenia zadań dla urządzeń
+**Tryb 2: Oparty na nazwach użytkowników** - Użyj `usernames` do tworzenia zadań bezpośrednio dla określonych kont
 
-| 参数 | 类型 | 必需 | 描述 |
-|------|------|------|------|
-| serials | string[] | 条件必需 | 设备序列号数组（如果未提供 `usernames` 则必需） |
-| usernames | string[] | 条件必需 | 用户名数组（如果未提供 `serials` 则必需）。提供此参数时，直接为这些账号创建任务。 |
-| script_name | string | 是 | 要执行的脚本名称 |
-| script_config | object | 是 | 脚本的配置参数（请参阅对应脚本文档） |
-| enable_multi_account | boolean | 否 | 是否启用多账号模式（默认：false）。仅在设备模式下生效。 |
-| start_time | string | 否 | 计划执行时间，格式为 "HH:MM" |
+| Parametr | Typ | Wymagany | Opis |
+|-----------|------|----------|-------------|
+| serials | string[] | Warunkowy | Tablica numerów seryjnych urządzeń (wymagana, jeśli nie podano `usernames`) |
+| usernames | string[] | Warunkowy | Tablica nazw użytkowników do utworzenia zadań (wymagana, jeśli nie podano `serials`). Gdy podana, zadania są tworzone bezpośrednio dla tych kont. |
+| script_name | string | Tak | Nazwa skryptu do wykonania |
+| script_config | object | Tak | Parametry konfiguracyjne dla skryptu (zobacz dokumentację specyficzną dla skryptu) |
+| enable_multi_account | boolean | Nie | Włącz tryb wielokontowy (domyślnie: false). Dotyczy tylko trybu opartego na urządzeniach. |
+| start_time | string | Nie | Zaplanowany czas rozpoczęcia w formacie "HH:MM" |
 
-### 支持的脚本
+### Obsługiwane skrypty
 
-| 脚本名称 | 描述 | 文档 |
-|----------|------|------|
-| post | 发布视频或图片到 TikTok/Instagram | [Post 脚本配置](./post-script.md) |
+| Nazwa skryptu | Opis | Dokumentacja |
+|-------------|-------------|---------------|
+| post | Publikowanie filmów lub obrazów na TikTok/Instagram | [Konfiguracja skryptu publikacji](./post-script.md) |
+| follow | Obserwowanie lub zaprzestanie obserwacji użytkowników | [Konfiguracja skryptu obserwowania](./follow-script.md) |
 
-### 示例
+### Przykład
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -45,16 +46,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "Check out my new video! #viral #fyp",
       "material_list": ["C:/Videos/video1.mp4"],
       "upload_wait_time": 60
     }
   }'
 ```
 
-有关 `script_config` 的详细参数和更多示例，请参阅 [Post 脚本配置](./post-script.md)。
+Aby uzyskać szczegółowe parametry `script_config` i więcej przykładów, zobacz [Konfiguracja skryptu publikacji](./post-script.md) i [Konfiguracja skryptu obserwowania](./follow-script.md).
 
-### 响应
+### Odpowiedź
 
 ```json
 {
@@ -67,68 +68,68 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 列表任务
+## Wyświetlanie zadań
 
-使用可选过滤条件查询任务。
+Zapytanie o zadania z opcjonalnymi filtrami.
 
-- **端点：** `GET /api/v1/task`
+- **Punkt końcowy:** `GET /api/v1/task`
 
-| 参数 | 类型 | 必需 | 描述 |
-|------|------|------|------|
-| status | integer | 否 | 按状态过滤（0=pending, 1=running, 2=completed, 3=failed） |
-| serial | string | 否 | 按设备序列号过滤 |
-| script_name | string | 否 | 按脚本名称过滤 |
-| source | string | 否 | 按来源过滤（"ui" 或 "api"） |
-| page | integer | 否 | 页码（默认：1） |
-| page_size | integer | 否 | 每页条目数（默认：20，最大：100） |
+| Parametr | Typ | Wymagany | Opis |
+|-----------|------|----------|-------------|
+| status | integer | Nie | Filtruj według statusu (0=oczekujące, 1=wykonywane, 2=zakończone, 3=nieudane) |
+| serial | string | Nie | Filtruj według numeru seryjnego urządzenia |
+| script_name | string | Nie | Filtruj według nazwy skryptu |
+| source | string | Nie | Filtruj według źródła ("ui" lub "api") |
+| page | integer | Nie | Numer strony (domyślnie: 1) |
+| page_size | integer | Nie | Elementy na stronę (domyślnie: 20, maks: 100) |
 
-## 获取任务详情
+## Pobieranie szczegółów zadania
 
-获取指定任务的详细信息。
+Pobierz szczegółowe informacje o określonym zadaniu.
 
-- **端点：** `GET /api/v1/task/{task_id}`
+- **Punkt końcowy:** `GET /api/v1/task/{task_id}`
 
-## 删除任务
+## Usuwanie zadania
 
-删除任务。如果任务正在运行，会先尝试停止它。
+Usuń zadanie. Jeśli zadanie jest wykonywane, zostanie najpierw zatrzymane.
 
-- **端点：** `DELETE /api/v1/task/{task_id}`
+- **Punkt końcowy:** `DELETE /api/v1/task/{task_id}`
 
-## 批量删除任务
+## Grupowe usuwanie zadań
 
-一次删除多个任务，正在运行的任务会先被停止。
+Usuń wiele zadań na raz. Wykonywane zadania zostaną najpierw zatrzymane.
 
-- **端点：** `DELETE /api/v1/task/batch`
-- **请求体：** `{ "task_ids": [1, 2, 3] }`
+- **Punkt końcowy:** `DELETE /api/v1/task/batch`
+- **Body:** `{ "task_ids": [1, 2, 3] }`
 
-## 停止任务
+## Zatrzymywanie zadania
 
-停止正在运行的任务。
+Zatrzymaj wykonywane zadanie.
 
-- **端点：** `POST /api/v1/task/{task_id}/stop`
+- **Punkt końcowy:** `POST /api/v1/task/{task_id}/stop`
 
-## 重试失败任务
+## Ponowienie nieudanego zadania
 
-重试单个失败任务。
+Ponów nieudane zadanie.
 
-- **端点：** `POST /api/v1/task/{task_id}/retry`
+- **Punkt końcowy:** `POST /api/v1/task/{task_id}/retry`
 
-## 重试所有失败任务
+## Ponowienie wszystkich nieudanych zadań
 
-一次性重试所有失败的任务。
+Ponów wszystkie nieudane zadania na raz.
 
-- **端点：** `POST /api/v1/task/retry-all`
+- **Punkt końcowy:** `POST /api/v1/task/retry-all`
 
-## 获取任务统计
+## Pobieranie statystyk zadań
 
-获取任务总体统计数据。
+Pobierz statystyki dotyczące wszystkich zadań.
 
-- **端点：** `GET /api/v1/task/stats`
-- **响应：** 返回 total、pending、running、completed、failed 的计数。
+- **Punkt końcowy:** `GET /api/v1/task/stats`
+- **Odpowiedź:** Zwraca liczbę wszystkich, oczekujących, wykonywanych, zakończonych i nieudanych zadań.
 
-## 检查 API 许可
+## Sprawdzanie licencji API
 
-检查你的许可证是否支持 API 访问。
+Sprawdź, czy twoja licencja obsługuje dostęp do API.
 
-- **端点：** `GET /api/v1/license/check`
-- **注意：** Starter 计划会返回错误码 40301；Pro/Team/Business 计划可访问 API。
+- **Punkt końcowy:** `GET /api/v1/license/check`
+- **Uwaga:** Plan Starter zwraca kod błędu 40301. Plany Pro, Team i Business mają dostęp do API.

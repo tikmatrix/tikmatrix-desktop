@@ -1,86 +1,86 @@
 ---
 sidebar_position: 1
-title: TikMatrix/IgMatrix 软件定位与路线图
-sidebar_label: 路线图
-description: 官网版路线图，概述 TikMatrix/IgMatrix 在自动化运营生态中的定位、能力边界与上线建议。
+title: TikMatrix/IgMatrix Productpositionering & Roadmap
+sidebar_label: Roadmap
+description: Officiële roadmap met beschrijving van TikMatrix/IgMatrix positionering, functionaliteitsgrenzen en implementatieaanbevelingen.
 slug: roadmap
 ---
 
-## 全流程地图
+## Volledig Procesoverzicht
 
-![TikMatrix/IgMatrix 路线图](/img/roadmap-zh.svg)
-
----
-
-## 我们为谁创造价值
-
-- **中小团队/MCN/品牌方/灰度试验团队**：需要在 5～100 设备规模上稳定执行“每日重复但需要拟人化”的运营动作。
-- **增长与内容运营**：需要高可控的“批量但非机械”的行为编排，兼顾安全策略与效率。
+![TikMatrix/IgMatrix Roadmap](/img/roadmap-en.svg)
 
 ---
 
-## 核心价值主张（为什么选 TikMatrix/IgMatrix）
+## Voor wie we waarde creëren
 
-1. **可编排的批量自动化**：以“任务 → 脚本 → 数据源”的模型构建可复用流水线，覆盖预热、发布、互动、采集的全链路动作。
-2. **拟人化与风控策略**：引擎具备随机化时序、节奏控制、人机手势模拟、异常中断恢复等机制，尽量贴近真人行为特征。
-3. **规模化与稳定性**：支持真机/云机混合，USB/TCP ADB 连接，保障 5→20→50→100 台的线性扩展与稳定调度。
-4. **数据可观测**：任务日志、设备投屏、账号统计与结果数据导出。
+- **MKB / MCN's / merken / experimentteams**: hebben stabiele uitvoering nodig van dagelijkse maar menselijk ogende operationele acties op 5–100 apparaten.
+- **Groei- & contentoperaties**: hebben controleerbare batch- (maar niet-mechanische) orkestratie nodig die veiligheid en efficiëntie in balans brengt.
 
 ---
 
-## 功能地图（步骤 4 的能力边界）
+## Kernwaardepropositie (waarom kiezen voor TikMatrix/IgMatrix)
 
-### 1) 任务编排与调度
-
-- 多账号/多设备并发策略，随机化执行顺序
-- 失败重试、断点续跑、资源占用管理（素材/账号/代理）
-
-### 2) 脚本中心
-
-- **超级营销脚本**：已融合 Boost 用户/帖子、群发私信、批量评论等能力
-- 账号预热脚本：日常浏览、停留、轻互动
-- 内容发布脚本：视频/文案/标签/话题管理，定时发布
-- 数据采集脚本：抓取用户名信息，构建下一轮目标清单
-
-### 3) 人机与风控
-
-- 触控/滑动/停顿/观看时长的随机化
-- 异常检测与速率限制，避免一次性高频行为
-
-> **边界声明**：TikMatrix/IgMatrix 不提供设备、账号、代理本身；我们聚焦于 **运营动作的自动化**。
+1. **Samenstellbare batch-automatisering**: bouw herbruikbare pijplijnen met het model "taak → script → gegevensbron", die warming, publiceren, engagement en verzameling dekken.
+2. **Menselijk gedrag & risicobeheer**: engine ondersteunt gerandomiseerde timing, ritmecontrole, menselijke gestuurde simulatie en abnormaal herstel om echt gebruikersgedrag na te bootsen.
+3. **Schaalbaarheid & stabiliteit**: ondersteunt hybride echte apparaten / cloudapparaten, USB/TCP ADB, waardoor lineaire schaling van 5→20→50→100 apparaten mogelijk is met betrouwbare scheduling.
+4. **Observeerbaarheid**: taaklogboeken, apparaatspiegeling, accountstatistieken en exporteerbare resultaatgegevens.
 
 ---
 
-## 上线建议（从 0 到 规模化）
+## Functieoverzicht (bereik van stap 4)
 
-1. **验证期（1–5 台）**：串联设备→账号→代理→单一脚本的最小闭环
-2. **试点期（10–20 台）**：引入超级营销脚本 + 数据采集闭环；观察风控阈值
-3. **扩展期（20–50 台）**：分组限速、随机化策略、多数据源轮换
-4. **规模期（50-100 台）**：分批调度、错峰执行
+### 1) Taakorkestratie & scheduling
 
----
+- Multi-account / multi-apparaat gelijktijdigheidsstrategieën, gerandomiseerde uitvoeringsvolgorde
+- Opnieuw proberen bij falen, hervatten vanaf breekpunt, resourcebeheer (assets/accounts/proxies)
 
-## 风险与合规提示
+### 2) Scriptcentrum
 
-- 使用自动化工具可能违反平台服务条款；请**自担风险**并合理控制频率与行为模式
-- 手机硬件环境、代理、账号质量与运营策略会显著影响稳定性与结果
+- **Geavanceerde marketingscripts**: omvat Boost gebruikers/posts, bulk DM's, batch reacties
+- Account warming scripts: dagelijks browsen, verblijftijd, lichte interacties
+- Contentpublicatiescripts: video/bijschrift/tags/onderwerpen beheer, geplande publicatie
+- Gegevensverzamelingsscripts: scrape gebruikersinfo en bouw volgende doellijsten
 
----
+### 3) Menselijk & risicobeheer
 
-## 常见问答
+- Randomisatie van aanraking/swipe/pauze/weergavetijd
+- Anomaliedetectie en frequentielimieten om plotseling hoogfrequent gedrag te voorkomen
 
-**Q：TikMatrix 是否提供账号/代理？**  
-A：不提供。我们专注自动化引擎与脚本执行。
-
-**Q：是否提供云手机？**  
-A：不提供。用户需自行准备设备环境。
-
-**Q：是否支持云手机？**  
-A：只要能通过 ADB（USB/TCP）稳定连接，即可纳入调度。
+> **Afbakening**: TikMatrix/IgMatrix levert GEEN apparaten, accounts of proxies; we focussen op automatisering van operationele acties.
 
 ---
 
-## 行动呼吁
+## Implementatieaanbevelingen (van 0 tot schaal)
 
-- 立即试用 Starter 套餐，构建你的最小可行“步骤 4”闭环
-- 阅读脚本文档，快速上手批量运营
+1. **Validatie (1–5 apparaten)**: verbind apparaten → accounts → proxies → enkel script minimale gesloten lus
+2. **Pilot (10–20 apparaten)**: introduceer geavanceerde marketingscripts + gegevensverzamelingslus; bewaak risicodrempels
+3. **Uitbreiding (20–50 apparaten)**: groep frequentielimiet, gerandomiseerde strategieën, multi-gegevensbron rotatie
+4. **Schaal (50–100 apparaten)**: batch scheduling, gespreide uitvoering
+
+---
+
+## Risico's & compliance-opmerkingen
+
+- Het gebruik van automatisering kan platformvoorwaarden schenden; gebruik op eigen risico en beheer frequentie/gedragspatronen
+- Apparaathardware, proxies, accountkwaliteit en operationele strategie beïnvloeden stabiliteit en resultaten aanzienlijk
+
+---
+
+## Veelgestelde Vragen
+
+**V: Levert TikMatrix accounts/proxies?**  
+A: Nee. We focussen op de automatiseringsengine en scriptuitvoering.
+
+**V: Leveren jullie cloud phones?**  
+A: Nee. Gebruikers moeten zelf apparaatomgevingen voorbereiden.
+
+**V: Ondersteunen jullie cloud phones?**  
+A: Elk apparaat dat stabiel via ADB (USB/TCP) kan worden verbonden, kan worden gescheduled.
+
+---
+
+## Oproep tot actie
+
+- Probeer nu het Starter-plan en bouw uw minimaal levensvatbare stap-4 gesloten lus
+- Lees de scriptdocumentatie om te starten met batch-operaties

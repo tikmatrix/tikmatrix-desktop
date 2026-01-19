@@ -1,38 +1,38 @@
 ---
 sidebar_position: 4
-title: 关注脚本配置
-description: 关注脚本完整配置参考
+title: Follow Script Configuratie
+description: Volledige configuratiereferentie voor het follow script
 ---
 
-本页面介绍创建任务时 `follow` 脚本的配置参数。
+Deze pagina documenteert de configuratieparameters voor het `follow` script dat gebruikt wordt bij het aanmaken van taken.
 
-## 概述
+## Overzicht
 
-`follow` 脚本用于在 TikTok 或 Instagram 上自动关注用户。当您通过 API 提供多个目标用户时，**系统会为每个目标用户创建一个任务**。您可以使用 `start_time` 参数来控制任务的执行时间。
+Het `follow` script wordt gebruikt om automatisch gebruikers te volgen op TikTok of Instagram. Wanneer u meerdere doelgebruikers via API aanlevert, **wordt er één taak gemaakt per doelgebruiker**. U kunt bepalen wanneer elke taak wordt uitgevoerd met de `start_time` parameter.
 
-## 脚本配置 (`script_config`)
+## Script Configuratie (`script_config`)
 
-`script_config` 对象包含关注脚本的配置参数。以下是可用参数：
+Het `script_config` object bevat de parameters voor het follow script. Hieronder staan de beschikbare parameters:
 
-### 参数
+### Parameters
 
-| 参数 | 类型 | 必需 | 默认值 | 描述 |
-|------|------|------|--------|------|
-| target_users | string[] | 是* | [] | 要关注的目标用户名数组（每个用户一个任务） |
-| target_user | string | 是* | "" | 单个目标用户名，或多个用户名以换行/逗号分隔 |
-| access_method | string | 否 | "direct" | 导航到用户资料的方式：`direct`（通过 URL）或 `search` |
+| Parameter | Type | Verplicht | Standaard | Beschrijving |
+|-----------|------|----------|---------|-------------|
+| target_users | string[] | Ja* | [] | Array van doel gebruikersnamen om te volgen (één taak per gebruiker) |
+| target_user | string | Ja* | "" | Enkele doel gebruikersnaam of meerdere gebruikersnamen gescheiden door nieuwe regels/komma's |
+| access_method | string | Nee | "direct" | Hoe naar gebruikersprofiel te navigeren: `direct` (via URL) of `search` |
 
 :::note
-必须提供 `target_users` 数组或 `target_user` 字符串。如果两者都提供，`target_users` 优先。
+Ofwel `target_users` array of `target_user` string moet worden opgegeven. Als beide worden opgegeven, heeft `target_users` voorrang.
 :::
 
-:::info 任务创建
-当提供多个目标用户时，API 会**为每个目标用户创建一个任务**。例如，如果您指定 3 个目标用户和 2 个设备，将创建 6 个任务。使用 `start_time` 参数来控制任务的执行时间。
+:::info Taak Aanmaken
+Wanneer meerdere doelgebruikers worden opgegeven, maakt de API **één taak per doelgebruiker** aan. Bijvoorbeeld, als u 3 doelgebruikers en 2 apparaten opgeeft, worden er 6 taken aangemaakt. Gebruik de `start_time` parameter om te bepalen wanneer taken beginnen met uitvoeren.
 :::
 
-## 示例
+## Voorbeelden
 
-### 关注单个用户
+### Volg Enkele Gebruiker
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -47,9 +47,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 关注多个用户
+### Volg Meerdere Gebruikers
 
-关注多个用户时，每个用户创建一个任务：
+Bij het volgen van meerdere gebruikers, wordt er één taak per gebruiker aangemaakt:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -64,11 +64,11 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-这将创建 3 个独立的任务，立即执行。
+Dit maakt 3 afzonderlijke taken die onmiddellijk worden uitgevoerd.
 
-### 使用开始时间调度任务
+### Plan Taken met Start Tijd
 
-使用 `start_time` 来调度任务的开始时间：
+Gebruik `start_time` om te plannen wanneer taken moeten starten:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -84,9 +84,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 通过搜索方式关注用户
+### Volg Gebruikers via Zoekmethode
 
-当直接 URL 访问不起作用时，使用搜索方式：
+Gebruik de zoekmethode wanneer directe URL toegang niet werkt:
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -101,7 +101,24 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 多设备批量关注
+### Volg Gebruikers op Gebruikersnaamlijst Modus
+
+Maak follow taken direct voor specifieke accounts:
+
+```bash
+curl -X POST http://localhost:50809/api/v1/task \
+  -H "Content-Type: application/json" \
+  -d '{
+    "usernames": ["@my_account1", "@my_account2"],
+    "script_name": "follow",
+    "script_config": {
+      "target_users": ["@target_user"],
+      "access_method": "direct"
+    }
+  }'
+```
+
+### Batch Volgen op Meerdere Apparaten
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -117,7 +134,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-## 响应
+## Response
 
 ```json
 {
@@ -130,30 +147,30 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 访问方式
+## Toegangsmethoden
 
-### 直接访问 (`direct`)
+### Directe Methode (`direct`)
 
-- 通过 URL 打开用户资料：`tiktok.com/@username` 或 `instagram.com/username`
-- 更快更可靠
-- 大多数情况下推荐使用
+- Opent gebruikersprofiel via URL: `tiktok.com/@username` of `instagram.com/username`
+- Sneller en betrouwbaarder
+- Aanbevolen voor de meeste gebruikssituaties
 
-### 搜索访问 (`search`)
+### Zoekmethode (`search`)
 
-- 导航到搜索，输入用户名，点击结果
-- 较慢但在直接 URL 访问被阻止时有效
-- 如果存在多个相似用户名，可能不太准确
+- Navigeert naar zoeken, typt gebruikersnaam, klikt op resultaat
+- Langzamer maar werkt wanneer directe URL toegang geblokkeerd is
+- Mogelijk minder nauwkeurig als meerdere vergelijkbare gebruikersnamen bestaan
 
-## 最佳实践
+## Beste Praktijken
 
-1. **使用 start_time 调度**：使用 `start_time` 参数来调度任务的执行时间（格式："HH:MM"）。
+1. **Gebruik start_time voor planning**: Gebruik de `start_time` parameter om te plannen wanneer taken moeten worden uitgevoerd (formaat: "HH:MM").
 
-2. **优先直接访问**：`direct` 访问方式比 `search` 更快更可靠。
+2. **Geef voorkeur aan directe toegang**: De `direct` toegangsmethode is sneller en betrouwbaarder dan `search`.
 
-3. **合理批量处理**：不要一次关注太多用户。系统会为每个目标用户创建一个任务，因此大列表会产生许多任务。
+3. **Batch verstandig**: Volg niet te veel gebruikers tegelijk. Het systeem maakt één taak per doelgebruiker, dus grote lijsten resulteren in veel taken.
 
-## 另请参阅
+## Zie Ook
 
-- [任务管理 API](./task-management.md) - 创建、查询和管理任务
-- [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [取消关注脚本配置](./unfollow-script.md) - 配置取消关注脚本参数
+- [Task Management API](./task-management.md) - Taken maken, weergeven en beheren
+- [Post Script Configuratie](./post-script.md) - Post script parameters configureren
+- [Unfollow Script Configuratie](./unfollow-script.md) - Unfollow script parameters configureren

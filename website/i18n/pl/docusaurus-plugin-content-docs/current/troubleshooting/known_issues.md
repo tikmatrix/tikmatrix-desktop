@@ -2,32 +2,32 @@
 sidebar_position: 2
 ---
 
-# 已知问题
+# Znane problemy
 
-## 端口冲突错误
+## Błąd konfliktu portów
 
-如果在日志中出现以下错误信息：
+Jeśli widzisz następujący błąd w dziennikach:
 
 ```text
-tcp connect error: The connection could not be established because the target computer refused the connection request. (os error 10061)"
+tcp connect error: The connection could not be established because the target computer refused the connection request. (os error 10061)
 ```
 
-这表示存在端口冲突问题。要解决此问题：
+Oznacza to konflikt portów. Aby rozwiązać ten problem:
 
-1. **完全重启TikMatrix/IgMatrix软件**后重试
-2. **避免在使用TikMatrix/IgMatrix时同时使用其他控制软件**，因为它们可能导致端口冲突
-3. 确保没有其他应用程序使用相同的通信端口
+1. Całkowicie uruchom ponownie aplikację TikMatrix/IgMatrix i spróbuj ponownie.
+2. Unikaj jednoczesnego uruchamiania innego oprogramowania do kontroli urządzeń wraz z TikMatrix/IgMatrix, ponieważ mogą one powodować konflikty portów.
+3. Upewnij się, że żadna inna aplikacja nie używa tego samego portu komunikacyjnego.
 
-此错误通常发生在多个设备控制应用程序同时运行时，导致通信端口冲突。
+Ten błąd zwykle występuje, gdy wiele aplikacji do kontroli urządzeń działa jednocześnie i konfliktują one o port komunikacyjny.
 
-## 云手机脚本失败
+## Awarie skryptów na Cloud Phone
 
-请尽量保证你的电脑与云手机所在机房之间的网络带宽充足且稳定。为获得最佳效果，建议将电脑与云手机机房放在同一国家或同一地区，以降低延迟和丢包，从而保证自动化任务稳定可靠运行。
+Zapewnij wystarczającą i stabilną przepustowość sieci między Twoim PC a centrum danych telefonu w chmurze. Dla najlepszych wyników umieść PC i centrum danych telefonu w chmurze w tym samym kraju lub regionie, aby zmniejszyć opóźnienia i utratę pakietów, co pomaga zadaniom automatyzacji działać niezawodnie.
 
-## 脚本运行不稳定, 随机性错误, 每次运行结果不一致
+## Niestabilne wykonanie skryptu, losowe błędy, niespójne wyniki
 
-通常跟ADB连接质量有关, 如果使用USB连接, 请尝试更换数据线或USB接口; 如果使用无线ADB连接, 请确保电脑与设备之间的网络连接稳定, 并且信号强度良好。
+Jest to często związane z jakością połączenia ADB. Jeśli używasz połączenia USB, wypróbuj inny kabel lub port USB. Jeśli używasz bezprzewodowego ADB, upewnij się, że połączenie sieciowe jest stabilne i że siła sygnału między PC a urządzeniem jest dobra.
 
-## TikTok/Instagram应用更新导致的脚本失败
+## Skrypty zepsute przez aktualizacje aplikacji TikTok/Instagram
 
-TikTok和Instagram应用会不定期更新, 有时会导致自动化脚本无法正常运行。请提交工单, 我们会尽快更新脚本以适应最新版本的应用。
+TikTok i Instagram aktualizują się często i mogą powodować awarie skryptów automatyzacji. Prześlij zgłoszenie do pomocy technicznej, a my zaktualizujemy skrypty, aby dostosować je do najnowszych wersji aplikacji tak szybko, jak to możliwe.

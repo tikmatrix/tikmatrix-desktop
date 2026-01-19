@@ -2,127 +2,127 @@
 sidebar_position: 9
 ---
 
-# 许可证迁移
+# Migração de Licença
 
-将您的TikMatrix许可证从一台计算机转移到另一台计算机。这在升级硬件或更换计算机时非常有用。
+Transfira sua licença do TikMatrix de um computador para outro. Isso é útil ao atualizar hardware ou trocar de computador.
 
-## 要求
+## Requisitos
 
-- 当前计算机上有有效许可证（激活码或Stripe订阅）
-- 目标计算机没有现有的TikMatrix许可证
-- 每月最多允许5次迁移
+- Licença ativa no computador atual (código de ativação ou assinatura Stripe)
+- Computador de destino sem licença TikMatrix existente
+- Máximo de 5 migrações por mês permitidas
 
-## 迁移步骤
+## Etapas de Migração
 
-### 步骤1：打开迁移对话框
+### Passo 1: Abrir Diálogo de Migração
 
-1. 在当前计算机上启动TikMatrix
-2. 点击标题栏的**许可证图标**
-3. 点击**"迁移许可证"**按钮
+1. Inicie o TikMatrix no seu computador atual
+2. Clique no **ícone de Licença** na barra de título
+3. Clique no botão **"Migrate License"**
 
-![许可证迁移按钮](../img/migrate-button.webp)
+![License Migration Button](../img/migrate-button.webp)
 
-### 步骤2：获取目标机器ID
+### Passo 2: Obter ID da Máquina de Destino
 
-在目标计算机上：
+No seu computador de destino:
 
-1. 安装并启动TikMatrix
-2. 点击标题栏的**许可证图标**
-3. 复制**机器ID**
-4. 将此ID发送到当前计算机
+1. Instale e inicie o TikMatrix
+2. Clique no **ícone de Licença** na barra de título
+3. Copie o **Machine ID**
+4. Envie este ID para o seu computador atual
 
-![目标机器ID](../img/target-machine-id.webp)
+![Target Machine ID](../img/target-machine-id.webp)
 
-### 步骤3：验证和迁移
+### Passo 3: Validar e Migrar
 
-回到当前计算机：
+De volta ao seu computador atual:
 
-1. 在迁移对话框中粘贴**目标机器ID**
-2. 点击**"验证"**检查兼容性
-3. 查看显示的许可证详细信息
+1. Cole o **Target Machine ID** no diálogo de migração
+2. Clique em **"Validate"** para verificar a compatibilidade
+3. Revise os detalhes da licença mostrados
 
-![验证成功](../img/validation-success.webp)
+![Validation Success](../img/validation-success.webp)
 
-1. 勾选确认复选框
-2. 点击**"迁移许可证"**并确认
+1. Marque a caixa de confirmação
+2. Clique em **"Migrate License"** e confirme
 
-![迁移确认](../img/migration-confirm.webp)
+![Migration Confirmation](../img/migration-confirm.webp)
 
-### 步骤4：完成设置
+### Passo 4: Completar a Configuração
 
-1. 等待迁移完成
-2. 在目标计算机上重启TikMatrix
-3. 您的许可证现在在新计算机上处于活跃状态
+1. Aguarde a conclusão da migração
+2. No seu computador de destino, reinicie o TikMatrix
+3. Sua licença agora está ativa no novo computador
 
-![迁移成功](../img/migration-success.webp)
+![Migration Success](../img/migration-success.webp)
 
-## 重要警告
+## Avisos Importantes
 
-⚠️ **许可证迁移无法撤销**
+⚠️ **A migração de licença não pode ser desfeita**
 
-- 许可证完全从源计算机转移到目标计算机
-- 您的旧计算机立即失去访问权限
-- 每月最多5次迁移
-- 两台计算机都需要稳定的网络连接
+- A licença se move completamente da origem para o destino
+- Seu computador antigo perde o acesso imediatamente
+- Máximo de 5 migrações por mês
+- Ambos os computadores precisam de internet estável
 
-## 迁移内容
+## O que é Migrado
 
-### 激活码用户
+### Para Códigos de Ativação
 
-- 许可证状态和剩余天数
-- 许可证代码信息
+- Status da licença e dias restantes
+- Informações do código de licença
 
-### Stripe订阅用户
+### Para Assinaturas Stripe
 
-- 订阅状态和账单信息
-- 续费日期和计划详情
+- Status da assinatura e informações de cobrança
+- Datas de renovação e detalhes do plano
 
-## 故障排除
+## Solução de Problemas
 
-### 常见错误信息
+### Mensagens de Erro Comuns
 
-#### "目标机器已有许可证"
+#### "Target machine already has a license"
 
-目标计算机已经有活跃的许可证。迁移只能迁移到没有现有许可证的计算机。
+O computador de destino já tem uma licença ativa. A migração só funciona para computadores sem licenças existentes.
 
-#### "超过月度迁移限制"
+#### "Monthly migration limit exceeded"
 
-您每月只能迁移5次。请等到下个月或联系客服。
+Você só pode migrar 5 vezes por mês. Aguarde até o próximo mês ou contate o suporte.
 
-#### "无效的机器ID格式"
+#### "Invalid machine ID format"
 
-确保您正确复制了完整的机器ID。它应该至少10个字符长。
+Certifique-se de ter copiado o Machine ID completo corretamente. Ele deve ter pelo menos 10 caracteres.
 
-#### "迁移验证失败"
+#### "Migration validation failed"
 
-检查以下内容：
+Verifique se:
 
-- 您当前的许可证是活跃且未过期的
-- 目标机器ID是正确的
-- 两台计算机都有网络连接
+- Sua licença atual está ativa e não expirou
+- O Machine ID de destino está correto
+- Ambos os computadores têm acesso à internet
 
-### 获取支持
+### Obtendo Suporte
 
-联系[Telegram客服](https://t.me/tikmatrix_agent_bot)并提供：
+Contate o [Suporte do Telegram](https://t.me/tikmatrix_agent_bot) com:
 
-- 错误信息的截图
-- 您当前和目标的机器ID
-- 问题描述
+- Capturas de tela das mensagens de erro
+- Seus Machine IDs atual e de destino
+- Descrição do problema
 
-## 常见问题
+## FAQ
 
-**我可以迁移回原来的计算机吗？**
+**Posso migrar de volta para o meu computador original?**
 
-可以，但它会计入您的月度迁移限制。
+Sim, mas conta como outra migração para o seu limite mensal.
 
-**迁移后我的设备连接会怎样？**
+**O que acontece com minhas conexões de dispositivos?**
 
-设备连接与计算机绑定。您需要在新计算机上重新连接设备。
+As conexões de dispositivos estão vinculadas ao computador. Você precisará reconectar os dispositivos no novo computador.
 
-**我可以迁移试用许可证吗？**
+**Posso migrar uma licença de teste?**
 
-不可以，只有付费许可证才能迁移。
+Não, apenas licenças pagas podem ser migradas.
 
-**迁移会影响剩余的许可证天数吗？**
+**A migração afeta os dias de licença restantes?**
 
-不会，迁移后您的剩余天数保持不变。
+Não, seus dias restantes permanecem os mesmos após a migração.

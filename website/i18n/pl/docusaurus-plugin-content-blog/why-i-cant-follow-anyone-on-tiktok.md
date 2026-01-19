@@ -1,44 +1,44 @@
 ---
 slug: why-i-cant-follow-anyone-on-tiktok
-title: 为什么我无法在TikTok上关注任何人
+title: Dlaczego nie mogę nikogo obserwować na TikTok
 authors: tikMatrix
-tags: [tikmatrix, tiktok, follow, error]
+tags: [tikmatrix, tiktok, obserwowanie, błąd]
 ---
 
-如果你无法在 TikTok 上关注任何人，可能有几个原因导致这个问题。以下是一些常见原因和解决方案，帮助你解决这个问题：
+Jeśli nie możesz nikogo obserwować na TikTok, może to mieć kilka przyczyn. Oto niektóre powszechne przyczyny i rozwiązania, które pomogą Ci rozwiązać problem:
 <!--truncate-->
 ---
 
-## 1. 账户限制
+## 1. Ograniczenia konta
 
-由于各种原因，例如违反社区准则、垃圾信息或可疑活动，TikTok 可能会限制你的账户关注用户。如果你收到了 TikTok 的警告或通知，你应该解决这些问题以恢复账户的全部功能。
+TikTok może ograniczyć Twoje konto w obserwowaniu użytkowników z różnych powodów, takich jak naruszanie wytycznych społeczności, spamowanie lub podejrzana aktywność. Jeśli otrzymałeś ostrzeżenia lub powiadomienia od TikTok, powinieneś się nimi zająć, aby odzyskać pełną funkcjonalność konta.
 
-## 2. 关注限制
+## 2. Limit obserwowania
 
-TikTok 对你在特定时间内可以关注的用户数量有限制。如果你达到了这个限制，你将无法再关注更多用户，直到限制解除。等待一段时间后再尝试关注更多用户。
+TikTok ma limit liczby użytkowników, których możesz obserwować w określonym przedziale czasu. Jeśli osiągnąłeś ten limit, nie będziesz mógł obserwować więcej użytkowników, dopóki ograniczenie nie zostanie zniesione. Poczekaj przez jakiś czas przed ponowną próbą obserwowania użytkowników.
 
-## 3. 技术问题
+## 3. Problemy techniczne
 
-有时，TikTok 应用中的技术故障或错误可能会阻止你关注用户。尝试重新启动应用、清除缓存或将应用更新到最新版本，以解决任何技术问题。
+Czasami usterki techniczne lub błędy w aplikacji TikTok mogą uniemożliwiać obserwowanie użytkowników. Spróbuj ponownie uruchomić aplikację, wyczyścić pamięć podręczną lub zaktualizować aplikację do najnowszej wersji, aby rozwiązać problemy techniczne.
 
-## 4. 网络连接
+## 4. Łączność sieciowa
 
-网络连接不良也可能导致在 TikTok 上关注用户的问题。确保你有稳定的互联网连接，然后再尝试关注用户。
+Słaba łączność sieciowa może również powodować problemy z obserwowaniem użytkowników na TikTok. Upewnij się, że masz stabilne połączenie internetowe i spróbuj ponownie obserwować użytkowników.
 
-## 5. 账户验证
+## 5. Weryfikacja konta
 
-如果你的账户未验证，TikTok 可能会限制某些功能，包括关注用户。通过链接电话号码或电子邮件地址验证你的账户，以解锁所有功能。
+Jeśli Twoje konto nie jest zweryfikowane, TikTok może ograniczyć pewne funkcjonalności, w tym obserwowanie użytkowników. Zweryfikuj swoje konto, łącząc numer telefonu lub adres e-mail, aby odblokować wszystkie funkcje.
 
-## 6. 隐形封禁
+## 6. Shadowban
 
-如果你在 TikTok 上被隐形封禁，你的账户可见性和功能可能会受到限制，包括关注用户。检查你是否违反了 TikTok 的准则或社区标准，并解决任何问题以解除隐形封禁。
+Jeśli zostałeś objęty shadowbanem na TikTok, widoczność i funkcjonalność Twojego konta mogą być ograniczone, w tym obserwowanie użytkowników. Sprawdź, czy naruszyłeś wytyczne TikTok lub standardy społeczności i rozwiąż wszelkie problemy, aby znieść shadowban.
 
-## 7. 应用权限
+## 7. Uprawnienia aplikacji
 
-确保 TikTok 应用具有访问你设备功能的必要权限，例如联系人、相机和位置。在应用设置中授予所需权限，以启用关注用户功能。
+Upewnij się, że aplikacja TikTok ma niezbędne uprawnienia do dostępu do funkcji Twojego urządzenia, takich jak kontakty, kamera i lokalizacja. Przyznaj wymagane uprawnienia w ustawieniach aplikacji, aby umożliwić obserwowanie użytkowników.
 
-## 8. 服务器问题
+## 8. Problemy z serwerem
 
-有时，TikTok 的服务器可能会出现停机或问题，影响包括关注用户在内的各种功能。检查 TikTok 的官方社交媒体账户或支持渠道，了解有关服务器问题的任何公告。
+Czasami serwery TikTok mogą doświadczać przestojów lub problemów, wpływając na różne funkcjonalności, w tym obserwowanie użytkowników. Sprawdź oficjalne konta mediów społecznościowych TikTok lub kanały wsparcia w poszukiwaniu ogłoszeń dotyczących problemów z serwerem.
 
-如果你尝试了这些解决方案后仍然无法在 TikTok 上关注任何人，可以联系 TikTok 的支持团队以获得进一步帮助。提供你遇到问题的详细信息，他们可能会帮助你解决问题。
+Jeśli wypróbowałeś te rozwiązania i nadal nie możesz nikogo obserwować na TikTok, możesz skontaktować się z zespołem wsparcia TikTok po dalszą pomoc. Przekaż szczegóły dotyczące problemu, z którym się borykasz, a mogą pomóc Ci rozwiązać problem.
