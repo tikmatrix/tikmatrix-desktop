@@ -6,14 +6,14 @@
     "message": "24시간 AI 어시스턴트"
   },
   "AI voiceover": {
-    "message": "Locución con IA",
+    "message": "AI 음성 해설",
     "description": "The product label"
   },
   "AI-Generated Comments": {
     "message": "AI 생성 댓글"
   },
   "API Protocol": {
-    "message": "Protocolo API"
+    "message": "API 프로토콜"
   },
   "Account Safe": {
     "message": "계정 보안"
@@ -25,7 +25,7 @@
     "message": "관리 계정s"
   },
   "Account warmup": {
-    "message": "Calentamiento 계정"
+    "message": "워밍업 계정"
   },
   "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
     "message": "또한, nuestro sistema matriz dispositivos reales puede evitar perfectamente las suspensiones 계정s causadas por las medidas control riesgos TikTok. Nuestra tasa suspensión 계정s es del 0%."
@@ -55,97 +55,97 @@
     "message": "Automatice la publicación, el seguimiento, los comentarios y las actividades interacción en Instagram"
   },
   "Automated Comment": {
-    "message": "Comentario automático"
+    "message": "Comentario 자동"
   },
   "Automated Follow": {
-    "message": "Seguimiento automático"
+    "message": "Seguimiento 자동"
   },
   "Automated Message": {
-    "message": "Mensaje automático"
+    "message": "Mensaje 자동"
   },
   "Automated account nurturing": {
-    "message": "Calentamiento automático 계정"
+    "message": "워밍업 자동 계정"
   },
   "Automated scheduling for unattended operation": {
-    "message": "Programación automática para operación desatendida"
+    "message": "Programación 자동 para operación desatendida"
   },
   "Automatic Capture": {
-    "message": "Captura automática"
+    "message": "Captura 자동"
   },
   "Automatic account matching": {
-    "message": "Coincidencia automática 계정s"
+    "message": "Coincidencia 자동 계정s"
   },
   "Automatic account nurturing": {
-    "message": "Calentamiento automático 계정",
+    "message": "워밍업 자동 계정",
     "description": "The description of Automatic account nurturing"
   },
   "Automatic commenting": {
-    "message": "댓글 automáticos",
+    "message": "댓글 자동s",
     "description": "The description of Automatic commenting"
   },
   "Automatic direct messaging": {
-    "message": "메시지 directos automáticos",
+    "message": "메시지 directos 자동s",
     "description": "The description of Automatic direct messaging"
   },
   "Automatic following": {
-    "message": "Seguimiento automático",
+    "message": "Seguimiento 자동",
     "description": "The description of Automatic following"
   },
   "Automatic login": {
-    "message": "Inicio sesión automático"
+    "message": "Inicio sesión 자동"
   },
   "Automatic matching": {
-    "message": "Coincidencia automática",
+    "message": "Coincidencia 자동",
     "description": "The description of Automatic matching"
   },
   "Automatic posting": {
-    "message": "게시 automática",
+    "message": "게시 자동",
     "description": "The description of Automatic posting"
   },
   "Automatic profile setup": {
-    "message": "설정 automática perfil",
+    "message": "설정 자동 perfil",
     "description": "The description of Automatic profile setup"
   },
   "Automatic registration & login": {
-    "message": "Registro e inicio sesión automáticos"
+    "message": "Registro e inicio sesión 자동s"
   },
   "Automatic video posting": {
-    "message": "게시 automática vídeos"
+    "message": "게시 자동 vídeos"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Generar automáticamente locución IA para vídeos",
+    "message": "Generar 자동mente locución AI para vídeos",
     "description": "The description of AI voiceover"
   },
   "Automatically recognize subtitles and append them to the video": {
-    "message": "Reconocer automáticamente los subtítulos y añadirlos al vídeo",
+    "message": "Reconocer 자동mente los subtítulos y añadirlos al vídeo",
     "description": "The description of Recognize subtitles"
   },
   "Automatically translate subtitles to any language": {
-    "message": "Traducir automáticamente los subtítulos a cualquier idioma",
+    "message": "Traducir 자동mente los subtítulos a cualquier idioma",
     "description": "The description of Translate subtitles"
   },
   "Automation & Content Management": {
     "message": "자동화 y gestión contenido"
   },
   "Basic Automation": {
-    "message": "자동화 básica"
+    "message": "자동화 기본"
   },
   "Basic configuration": {
-    "message": "설정 básica"
+    "message": "설정 기본"
   },
   "Batch Generating Unique Videos": {
-    "message": "Generación masiva vídeos únicos",
+    "message": "Generación 일괄 vídeos únicos",
     "description": "The description of Batch Generating Unique Videos"
   },
   "Batch account management": {
-    "message": "관리 masiva 계정s",
+    "message": "관리 일괄 계정s",
     "description": "The description of Batch account management"
   },
   "Batch login to TikTok accounts with account list management": {
     "message": "Inicio sesión masivo en cuentas TikTok con gestión lista 계정s"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Aumente la interacción en comentarios específicos dándoles me gusta y respondiendo masivamente"
+    "message": "Aumente la interacción en comentarios específicos dándoles me gusta y respondiendo 일괄mente"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Construido con mecanismos seguridad para proteger sus cuentas Instagram la suspensión"
@@ -170,7 +170,7 @@
     "message": "Impulsar comentarios"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "Comentar múltiples publicaciones TikTok forma masiva con contenido y emojis personalizables"
+    "message": "Comentar múltiples publicaciones TikTok forma 일괄 con contenido y emojis personalizables"
   },
   "Comments, Messages, Follows": {
     "message": "댓글, mensajes, seguimientos"
@@ -358,10 +358,10 @@
     "message": "Recordatorio importante"
   },
   "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
-    "message": "Aumentar el engagement en publicaciones dando me gusta, compartiendo, marcando como favoritos y viéndolas forma masiva"
+    "message": "Aumentar el engagement en publicaciones dando me gusta, compartiendo, marcando como favoritos y viéndolas forma 일괄"
   },
   "Increase user engagement by following or unfollowing accounts in bulk": {
-    "message": "Aumentar el engagement usuarios siguiendo o dejando seguir cuentas forma masiva"
+    "message": "Aumentar el engagement usuarios siguiendo o dejando seguir cuentas forma 일괄"
   },
   "Instagram Automation": {
     "message": "자동화 Instagram"
@@ -397,7 +397,7 @@
     "message": "댓글 masivos"
   },
   "Mass direct messaging": {
-    "message": "Mensajería directa masiva"
+    "message": "Mensajería directa 일괄"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
     "message": "Lun - Vie: 9:00AM - 5:00PM (UTC+8)",
@@ -425,43 +425,43 @@
     "message": "No todos los scripts TikMatrix están disponibles en IgMatrix, ya que son específicos cada plataforma. La lista exacta scripts disponibles se puede encontrar en la interfaz del software IgMatrix después la instalación. Por favor, consulta las funciones reales mostradas en tu software."
   },
   "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "Recopilación automática con un clic listas seguidores 계정s objetivo, se puede usar para mensajería directa",
+    "message": "Recopilación 자동 con un clic listas seguidores 계정s objetivo, se puede usar para mensajería directa",
     "description": "The description of Fan collection"
   },
   "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "Calentamiento automático 계정s por lotes con un clic, soporta búsqueda por palabras clave, seguimiento aleatorio, me gusta, comentario y marcador",
+    "message": "워밍업 자동 계정s por lotes con un clic, soporta búsqueda por palabras clave, seguimiento aleatorio, me gusta, comentario y marcador",
     "description": "The description of Automatic account nurturing"
   },
   "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "댓글 automáticos por lotes con un clic en múltiples videos con scripts especificados y emojis aleatorios",
+    "message": "댓글 자동s por lotes con un clic en múltiples videos con scripts especificados y emojis aleatorios",
     "description": "The description of Automatic commenting"
   },
   "One-click batch automatic direct messaging to multiple target users": {
-    "message": "Mensajería directa automática por lotes con un clic a múltiples usuarios objetivo",
+    "message": "Mensajería directa 자동 por lotes con un clic a múltiples usuarios objetivo",
     "description": "The description of Automatic direct messaging"
   },
   "One-click batch automatic follow of target accounts": {
-    "message": "Seguimiento automático por lotes con un clic 계정s objetivo",
+    "message": "Seguimiento 자동 por lotes con un clic 계정s objetivo",
     "description": "The description of Automatic following"
   },
   "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "Inicio sesión automático por lotes con un clic en cuentas TikTok, soporta importación/exportación por lotes 계정s",
+    "message": "Inicio sesión 자동 por lotes con un clic en cuentas TikTok, soporta importación/exportación por lotes 계정s",
     "description": "The description of Automatic login"
   },
   "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "Coincidencia automática por lotes con un clic 계정s con sesión iniciada, no se necesita vinculación manual",
+    "message": "Coincidencia 자동 por lotes con un clic 계정s con sesión iniciada, no se necesita vinculación manual",
     "description": "The description of Automatic matching"
   },
   "One-click batch automatic posting, supports adding product links": {
-    "message": "게시 automática por lotes con un clic, soporta añadir enlaces productos",
+    "message": "게시 자동 por lotes con un clic, soporta añadir enlaces productos",
     "description": "The description of Automatic posting"
   },
   "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "Registro automático por lotes con un clic 계정s TikTok, soporta correo electrónico empresarial",
+    "message": "Registro 자동 por lotes con un clic 계정s TikTok, soporta correo electrónico empresarial",
     "description": "The description of Automatic registration"
   },
   "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "설정 automática por lotes con un clic avatares, apodos, firmas, nombres usuario",
+    "message": "설정 자동 por lotes con un clic avatares, apodos, firmas, nombres usuario",
     "description": "The description of Automatic profile setup"
   },
   "One-click download of videos from all video websites": {
@@ -608,7 +608,7 @@
     "message": "Los scripts se ejecutan en la computadora para evitar la detección dispositivos móviles"
   },
   "Send messages to multiple TikTok accounts in bulk with personalized content": {
-    "message": "Enviar mensajes a múltiples cuentas TikTok forma masiva con contenido personalizado"
+    "message": "Enviar mensajes a múltiples cuentas TikTok forma 일괄 con contenido personalizado"
   },
   "Set up account profiles including avatars, nicknames, signatures, and usernames": {
     "message": "Configurar perfiles 계정 incluyendo avatares, apodos, firmas y nombres usuario"
@@ -684,7 +684,7 @@
     "description": "The description of PhoneFarm Box"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "La máquina placas base consta 20 placas base teléfonos Samsung. Se enciende automáticamente al conectarse a la electricidad, comparte una fuente alimentación unificada, tiene un sistema refrigeración múltiples ventiladores unificado y conectividad USB unificada. También admite conexiones red por cable OTG.",
+    "message": "La máquina placas base consta 20 placas base teléfonos Samsung. Se enciende 자동mente al conectarse a la electricidad, comparte una fuente alimentación unificada, tiene un sistema refrigeración múltiples ventiladores unificado y conectividad USB unificada. También admite conexiones red por cable OTG.",
     "description": "The description of PhoneFarm Box"
   },
   "TikMatrix": {
@@ -767,18 +767,18 @@
     "description": "The description of Video download"
   },
   "Video posting, Account nurturing": {
-    "message": "게시 videos, Calentamiento 계정s"
+    "message": "게시 videos, 워밍업 계정s"
   },
   "Video unique": {
     "message": "Video único",
     "description": "The description of Video unique"
   },
   "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Generación masiva videos únicos",
+    "message": "VideoMagic - Generación 일괄 videos únicos",
     "description": "The description of Video Magic"
   },
   "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic es un software para generación masiva videos únicos",
+    "message": "VideoMagic es un software para generación 일괄 videos únicos",
     "description": "The description of Video Magic"
   },
   "View TikMatrix Tutorial": {
@@ -820,7 +820,7 @@
     "message": "Anual"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
-    "message": "¡Sí! El tutorial configuración IgMatrix es idéntico al TikMatrix. Puedes seguir la documentación TikMatrix para la instalación, conexión dispositivos y configuración básica. Solo los scripts automatización diferirán según la plataforma."
+    "message": "¡Sí! El tutorial configuración IgMatrix es idéntico al TikMatrix. Puedes seguir la documentación TikMatrix para la instalación, conexión dispositivos y configuración 기본. Solo los scripts automatización diferirán según la plataforma."
   },
   "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
     "message": "Sí, IgMatrix y TikMatrix requieren licencias separadas ya que son productos diferentes optimizados para diferentes plataformas redes sociales. Cada licencia está vinculada a un software específico y no se puede usar indistintamente."
@@ -913,7 +913,7 @@
     "message": "UUUVPS - VPS económico"
   },
   "advertising.whatsapp.checker.description": {
-    "message": "Verificar y validar números WhatsApp forma masiva"
+    "message": "Verificar y validar números WhatsApp forma 일괄"
   },
   "advertising.whatsapp.checker.title": {
     "message": "Verificador WhatsApp"
