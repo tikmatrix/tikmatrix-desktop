@@ -19,25 +19,25 @@
     "message": "계정 보안"
   },
   "Account Setup": {
-    "message": "설정 계정"
+    "message": "계정 설정"
   },
   "Account management": {
-    "message": "관리 계정s"
+    "message": "계정 관리"
   },
   "Account warmup": {
     "message": "워밍업 계정"
   },
   "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
-    "message": "또한, 당사의 실제 기기 매트릭스 프로그램 시스템은 TIK의 위험 통제 조치로 인한 계정 정지를 완벽하게 방지할 수 있습니다. 당사의 계정 정지율은 0%입니다."
+    "message": "또한 우리의 실제 장치 매트릭스 프로그램 시스템은 TIK의 위험 통제 조치로 인한 계정 정지를 완벽하게 피할 수 있습니다. 우리의 계정 정지율은 0%입니다."
   },
   "Advanced Technology for Superior Performance": {
-    "message": "Tecnología avanzada para un rendimiento superior"
+    "message": "뛰어난 성능을 위한 고급 기술"
   },
   "Advanced safety mechanisms": {
     "message": "Mecanismos seguridad avanzados"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "Después de la instalación, abra IgMatrix para ver la lista completa de scripts de automatización disponibles para Instagram. La selección de scripts puede diferir de TikMatrix."
+    "message": "설치 후 IgMatrix를 열어 사용 가능한 Instagram 자동화 스크립트의 전체 목록을 확인하십시오. 스크립트 선택은 TikMatrix와 다를 수 있습니다."
   },
   "All Features": {
     "message": "Todas las funciones"
@@ -49,19 +49,19 @@
     "message": "Todas las funciones mensuales"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "Siempre verifique las funciones reales disponibles en su software IgMatrix, ya que la funcionalidad de los scripts puede variar de TikMatrix. La interfaz del software le mostrará exactamente qué scripts de automatización están disponibles para Instagram."
+    "message": "IgMatrix 소프트웨어에서 실제로 사용 가능한 기능을 항상 확인하십시오. 스크립트 기능은 TikMatrix와 다를 수 있습니다. 소프트웨어 인터페이스는 Instagram에서 사용 가능한 자동화 스크립트를 정확히 보여줍니다."
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "Automatice la publicación, el seguimiento, los comentarios y las actividades de interacción en Instagram"
+    "message": "Instagram에서 게시, 팔로우, 댓글 및 참여 활동 자동화"
   },
   "Automated Comment": {
-    "message": "Comentario 자동"
+    "message": "자동 댓글"
   },
   "Automated Follow": {
-    "message": "Seguimiento 자동"
+    "message": "자동 팔로우"
   },
   "Automated Message": {
-    "message": "Mensaje 자동"
+    "message": "자동 메시지"
   },
   "Automated account nurturing": {
     "message": "워밍업 자동 계정"
@@ -199,7 +199,7 @@
     "description": "The contact to purchase label"
   },
   "Content Management": {
-    "message": "관리 contenido"
+    "message": "콘텐츠 관리"
   },
   "Control farm accounts to watch, like, and comment on target live streams": {
     "message": "제어ar cuentas granja para ver, dar me gusta y comentar transmisiones en vivo objetivo"
@@ -407,7 +407,7 @@
     "message": "Mensual"
   },
   "Multi-Device Control": {
-    "message": "Control de múltiples dispositivos"
+    "message": "다중 기기 제어"
   },
   "Multi-language support (English, Chinese, Russian)": {
     "message": "지원 multiidioma (inglés, chino, ruso)"
@@ -627,7 +627,7 @@
     "message": "Dado que el proceso de configuración es idéntico, consulta nuestra documentación integral de TikMatrix para obtener instrucciones detalladas sobre conexión de dispositivos, gestión de cuentas y configuración de scripts."
   },
   "Smart Scheduling": {
-    "message": "Programación inteligente"
+    "message": "스마트 스케줄링"
   },
   "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
     "message": "Comienza a automatizar tu marketing en Instagram hoy con IgMatrix y experimenta las mismas herramientas de nivel profesional en las que confían miles de profesionales del marketing."

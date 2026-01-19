@@ -10,7 +10,7 @@
     "description": "The product label"
   },
   "AI-Generated Comments": {
-    "message": "Comentarios generados por IA"
+    "message": "AI जनरेट की गई टिप्पणियाँ"
   },
   "API Protocol": {
     "message": "Protocolo API"
@@ -19,25 +19,25 @@
     "message": "Seguridad de cuenta"
   },
   "Account Setup": {
-    "message": "Configuración de cuenta"
+    "message": "खाता सेटअप"
   },
   "Account management": {
-    "message": "Gestión de cuentas"
+    "message": "खाता प्रबंधन"
   },
   "Account warmup": {
     "message": "Calentamiento de cuenta"
   },
   "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
-    "message": "Además, nuestro sistema de matriz de dispositivos reales puede evitar perfectamente las suspensiones de cuentas causadas por las medidas de control de riesgos de TikTok. Nuestra tasa de suspensión de cuentas es del 0%."
+    "message": "इसके अतिरिक्त, हमारी वास्तविक डिवाइस मैट्रिक्स प्रोग्राम प्रणाली TIK के जोखिम नियंत्रण उपायों के कारण होने वाले खाता निलंबन से पूरी तरह बच सकती है। हमारी खाता निलंबन दर 0% है।"
   },
   "Advanced Technology for Superior Performance": {
-    "message": "Tecnología avanzada para un rendimiento superior"
+    "message": "बेहतर प्रदर्शन के लिए उन्नत तकनीक"
   },
   "Advanced safety mechanisms": {
     "message": "Mecanismos de seguridad avanzados"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "Después de la instalación, abra IgMatrix para ver la lista completa de scripts de automatización disponibles para Instagram. La selección de scripts puede diferir de TikMatrix."
+    "message": "स्थापना के बाद, उपलब्ध Instagram स्वचालन स्क्रिप्ट की पूर्ण सूची देखने के लिए IgMatrix खोलें। स्क्रिप्ट चयन TikMatrix से भिन्न हो सकता है।"
   },
   "All Features": {
     "message": "Todas las funciones"
@@ -49,19 +49,19 @@
     "message": "Todas las funciones mensuales"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "Siempre verifique las funciones reales disponibles en su software IgMatrix, ya que la funcionalidad de los scripts puede variar de TikMatrix. La interfaz del software le mostrará exactamente qué scripts de automatización están disponibles para Instagram."
+    "message": "हमेशा अपने IgMatrix सॉफ़्टवेयर में उपलब्ध वास्तविक सुविधाओं की जांच करें, क्योंकि स्क्रिप्ट कार्यक्षमता TikMatrix से भिन्न हो सकती है। सॉफ़्टवेयर इंटरफ़ेस आपको बताएगा कि Instagram के लिए कौन सी स्वचालन स्क्रिप्ट उपलब्ध हैं।"
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "Automatice la publicación, el seguimiento, los comentarios y las actividades de interacción en Instagram"
+    "message": "Instagram पर पोस्टिंग, फॉलोइंग, टिप्पणी और एंगेजमेंट गतिविधियों को स्वचालित करें"
   },
   "Automated Comment": {
-    "message": "Comentario automático"
+    "message": "स्वचालित टिप्पणी"
   },
   "Automated Follow": {
-    "message": "Seguimiento automático"
+    "message": "स्वचालित फॉलो"
   },
   "Automated Message": {
-    "message": "Mensaje automático"
+    "message": "स्वचालित संदेश"
   },
   "Automated account nurturing": {
     "message": "Calentamiento automático de cuenta"
@@ -199,7 +199,7 @@
     "description": "The contact to purchase label"
   },
   "Content Management": {
-    "message": "Gestión de contenido"
+    "message": "सामग्री प्रबंधन"
   },
   "Control farm accounts to watch, like, and comment on target live streams": {
     "message": "Controlar cuentas de granja para ver, dar me gusta y comentar transmisiones en vivo objetivo"
@@ -407,7 +407,7 @@
     "message": "Mensual"
   },
   "Multi-Device Control": {
-    "message": "Control de múltiples dispositivos"
+    "message": "मल्टी-डिवाइस नियंत्रण"
   },
   "Multi-language support (English, Chinese, Russian)": {
     "message": "Soporte multiidioma (inglés, chino, ruso)"
@@ -627,7 +627,7 @@
     "message": "Dado que el proceso de configuración es idéntico, consulta nuestra documentación integral de TikMatrix para obtener instrucciones detalladas sobre conexión de dispositivos, gestión de cuentas y configuración de scripts."
   },
   "Smart Scheduling": {
-    "message": "Programación inteligente"
+    "message": "स्मार्ट शेड्यूलिंग"
   },
   "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
     "message": "Comienza a automatizar tu marketing en Instagram hoy con IgMatrix y experimenta las mismas herramientas de nivel profesional en las que confían miles de profesionales del marketing."
