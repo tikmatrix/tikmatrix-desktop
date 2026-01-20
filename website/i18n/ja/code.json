@@ -928,7 +928,7 @@
   },
   "download.igmatrix.linux.coming_soon": {
     "message": "Próximamente",
-    "description": "IgMatrix Linux即将推出提示"
+    "description": "IgMatrix Linuxまもなく提供のヒント"
   },
   "download.igmatrix.linux.description": {
     "message": "La versiónLinuxIgMatrix está actualmente en desarrollo",
@@ -936,7 +936,7 @@
   },
   "download.igmatrix.linux.development": {
     "message": "En desarrollo",
-    "description": "IgMatrix Linux开发中状态"
+    "description": "IgMatrix Linux開発状況"
   },
   "download.igmatrix.linux.title": {
     "message": "IgMatrix para Linux",
@@ -944,7 +944,7 @@
   },
   "download.igmatrix.mac.button": {
     "message": "Descargar para Mac",
-    "description": "IgMatrix Mac下载按钮文本"
+    "description": "IgMatrix Macダウンロードボタンテキスト"
   },
   "download.igmatrix.mac.description": {
     "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores",
@@ -992,7 +992,7 @@
   },
   "download.igmatrix.windows.button": {
     "message": "Descargar para Windows",
-    "description": "IgMatrix Windows下载按钮文本"
+    "description": "IgMatrix Windowsダウンロードボタンテキスト"
   },
   "download.igmatrix.windows.description": {
     "message": "Compatible con Windows 10 y 11 (64 bits)",
@@ -1004,7 +1004,7 @@
   },
   "download.linux.coming_soon": {
     "message": "Próximamente",
-    "description": "Linux即将推出提示"
+    "description": "Linuxまもなく提供のヒント"
   },
   "download.linux.description": {
     "message": "La versiónLinuxTikMatrix está actualmente en desarrollo",
@@ -1012,7 +1012,7 @@
   },
   "download.linux.development": {
     "message": "En desarrollo",
-    "description": "Linux开发中状态"
+    "description": "Linux開発状況"
   },
   "download.linux.title": {
     "message": "TikMatrix para Linux",
@@ -1020,7 +1020,7 @@
   },
   "download.mac.button": {
     "message": "Descargar para Mac",
-    "description": "Mac下载按钮文本"
+    "description": "Macダウンロードボタンテキスト"
   },
   "download.mac.description": {
     "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores",
@@ -1080,7 +1080,7 @@
   },
   "download.windows.button": {
     "message": "Descargar para Windows",
-    "description": "Windows下载按钮文本"
+    "description": "Windowsダウンロードボタンテキスト"
   },
   "download.windows.description": {
     "message": "Compatible con Windows 10 y 11 (64 bits)",
@@ -1190,7 +1190,7 @@
   },
   "pricing.business.name": {
     "message": "Empresarial",
-    "description": "商业版计划名称"
+    "description": "ビジネスプラン名"
   },
   "pricing.compare.automation": {
     "message": "高度な自動化"
@@ -1232,7 +1232,7 @@
   },
   "pricing.free.name": {
     "message": "Gratuito",
-    "description": "免费计划名称"
+    "description": "無料プラン名"
   },
   "pricing.free_label": {
     "message": "Gratis",
@@ -1278,7 +1278,7 @@
   },
   "pricing.pro.name": {
     "message": "Profesional",
-    "description": "专业版计划名称"
+    "description": "プロプラン名"
   },
   "pricing.starter.concurrent_tasks": {
     "message": "10 tareas concurrentes",
@@ -1294,7 +1294,7 @@
   },
   "pricing.starter.name": {
     "message": "Inicial",
-    "description": "入门版计划名称"
+    "description": "スタータープラン名"
   },
   "pricing.subtitle": {
     "message": "Choose the plan that fits your needs",
@@ -1314,7 +1314,7 @@
   },
   "pricing.team.name": {
     "message": "Equipo",
-    "description": "团队版计划名称"
+    "description": "チームプラン名"
   },
   "pricing.ticket_support": {
     "message": "Soporte por tickets",
@@ -1506,39 +1506,39 @@
   },
   "testimonials.usage_label": {
     "message": "Uso:",
-    "description": "使用时长标签"
+    "description": "使用期間ラベル"
   },
   "testimonials.user1.text": {
     "message": "TikMatrix ha revolucionado nuestra operación de granja de teléfonos. La capacidad de gestionar 100+ dispositivos desde una sola PC es increíble.",
-    "description": "第一个用户评价文本"
+    "description": "最初のユーザーレビューテキスト"
   },
   "testimonials.user1.usage": {
     "message": "Gestión de 120 dispositivos",
-    "description": "第一个用户使用时长"
+    "description": "最初のユーザーの使用期間"
   },
   "testimonials.user2.text": {
     "message": "El sistema de automatización es potente y fácil de usar. Nuestro engagement ha aumentado un 40% desde que comenzamos a usar TikMatrix.",
-    "description": "第二个用户评价文本"
+    "description": "2番目のユーザーレビューテキスト"
   },
   "testimonials.user2.usage": {
     "message": "50のTikTokアカウント",
-    "description": "第二个用户使用时长"
+    "description": "2番目のユーザーの使用期間"
   },
   "testimonials.user3.text": {
     "message": "La mejor inversión para nuestro negocio de marketing en TikTok. El soporte técnico es excepcional y el software es muy estable.",
-    "description": "第三个用户评价文本"
+    "description": "3番目のユーザーレビューテキスト"
   },
   "testimonials.user3.usage": {
     "message": "Operación profesionalmarketing",
-    "description": "第三个用户使用时长"
+    "description": "3番目のユーザーの使用期間"
   },
   "testimonials.user4.text": {
     "message": "6か月の使用でアカウント停止率ゼロ。実機技術は本当に機能します！",
-    "description": "第四个用户评价文本"
+    "description": "4番目のユーザーレビューテキスト"
   },
   "testimonials.user4.usage": {
     "message": "80アカウント管理",
-    "description": "第四个用户使用时长"
+    "description": "4番目のユーザーの使用期間"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "Cerrar",
@@ -1853,11 +1853,11 @@
   },
   "whitelabel.contactSupport": {
     "message": "Contactar con soporte",
-    "description": "联系客服获取白标解锁码"
+    "description": "ホワイトレーベルアンロックコードについてはカスタマーサービスにお問い合わせください"
   },
   "whitelabel.customization": {
     "message": "Personalizaciónmarca blanca",
-    "description": "品牌定制"
+    "description": "ブランドカスタマイズ"
   },
   "whitelabel.description": {
     "message": "Personaliza la aplicación con tu propia marca",

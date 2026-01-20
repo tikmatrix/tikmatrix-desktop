@@ -712,7 +712,7 @@
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
     "message": "TikMatrix mendukung Windows 10 ke atas, dan macOS 10.15 atau lebih baru. Untuk pengguna Mac, setelah instalasi, Anda perlu menjalankan perintah berikut di Terminal untuk mengizinkan aplikasi berjalan: xattr -cr /Applications/TikMatrix.app",
-    "description": "电脑支持回答"
+    "description": "Jawaban dukungan komputer"
   },
   "TikMatrix supports up to 200+ devices.": {
     "message": "TikMatrix mendukung hingga 200+ perangkat."
@@ -789,7 +789,7 @@
   },
   "What computer can I use?": {
     "message": "Komputer apa yang dapat saya gunakan?",
-    "description": "电脑支持问题"
+    "description": "Pertanyaan dukungan komputer"
   },
   "What devices can I use?": {
     "message": "Perangkat apa yang dapat saya gunakan?"
@@ -920,151 +920,151 @@
   },
   "download.description": {
     "message": "Unduh TikMatrix untuk Windows, Mac, dan Linux",
-    "description": "下载页面的描述"
+    "description": "Deskripsi halaman unduh"
   },
   "download.igmatrix.description": {
     "message": "Unduh IgMatrix untuk Windows, Mac, dan Linux",
-    "description": "IgMatrix下载页面的描述"
+    "description": "Deskripsi halaman unduh IgMatrix"
   },
   "download.igmatrix.linux.coming_soon": {
     "message": "Segera Hadir",
-    "description": "IgMatrix Linux即将推出提示"
+    "description": "Tips segera hadir untuk IgMatrix Linux"
   },
   "download.igmatrix.linux.description": {
     "message": "Versi Linux sedang dalam pengembangan",
-    "description": "IgMatrix Linux开发中描述"
+    "description": "Deskripsi IgMatrix Linux dalam pengembangan"
   },
   "download.igmatrix.linux.development": {
     "message": "Dalam Pengembangan",
-    "description": "IgMatrix Linux开发中状态"
+    "description": "Status pengembangan IgMatrix Linux"
   },
   "download.igmatrix.linux.title": {
     "message": "Linux",
-    "description": "IgMatrix Linux平台标题"
+    "description": "Judul platform IgMatrix Linux"
   },
   "download.igmatrix.mac.button": {
     "message": "Unduh Versi Mac",
-    "description": "IgMatrix Mac下载按钮文本"
+    "description": "Teks tombol unduh IgMatrix Mac"
   },
   "download.igmatrix.mac.description": {
     "message": "macOS 10.15 atau lebih baru",
-    "description": "IgMatrix Mac平台描述"
+    "description": "Deskripsi platform IgMatrix Mac"
   },
   "download.igmatrix.mac.install_tip": {
     "message": "Setelah instalasi, jalankan perintah berikut di Terminal untuk mengizinkan aplikasi berjalan:",
-    "description": "IgMatrix Mac安装后需要执行的命令提示"
+    "description": "Tips perintah yang perlu dijalankan setelah instalasi IgMatrix Mac"
   },
   "download.igmatrix.mac.title": {
     "message": "Mac",
-    "description": "IgMatrix Mac平台标题"
+    "description": "Judul platform IgMatrix Mac"
   },
   "download.igmatrix.requirements.internet": {
     "message": "Koneksi Internet: Diperlukan",
-    "description": "IgMatrix网络连接要求"
+    "description": "Persyaratan koneksi jaringan IgMatrix"
   },
   "download.igmatrix.requirements.memory": {
     "message": "Memori: 8 GB RAM",
-    "description": "IgMatrix内存要求"
+    "description": "Persyaratan memori IgMatrix"
   },
   "download.igmatrix.requirements.os": {
     "message": "Sistem Operasi: Windows 10/11, macOS 10.15+, atau Ubuntu 20.04+",
-    "description": "IgMatrix操作系统要求"
+    "description": "Persyaratan sistem operasi IgMatrix"
   },
   "download.igmatrix.requirements.processor": {
     "message": "Prosesor: Intel Core i5 atau setara",
-    "description": "IgMatrix处理器要求"
+    "description": "Persyaratan prosesor IgMatrix"
   },
   "download.igmatrix.requirements.storage": {
     "message": "Ruang Penyimpanan: 500 MB ruang tersedia",
-    "description": "IgMatrix存储空间要求"
+    "description": "Persyaratan ruang penyimpanan IgMatrix"
   },
   "download.igmatrix.requirements.title": {
     "message": "Persyaratan Sistem",
-    "description": "IgMatrix系统要求标题"
+    "description": "Judul persyaratan sistem IgMatrix"
   },
   "download.igmatrix.subtitle": {
     "message": "Pilih platform Anda untuk mengunduh IgMatrix",
-    "description": "IgMatrix下载页面的副标题"
+    "description": "Subjudul halaman unduh IgMatrix"
   },
   "download.igmatrix.title": {
     "message": "Unduh IgMatrix",
-    "description": "IgMatrix下载页面的标题"
+    "description": "Judul halaman unduh IgMatrix"
   },
   "download.igmatrix.windows.button": {
     "message": "Unduh Versi Windows",
-    "description": "IgMatrix Windows下载按钮文本"
+    "description": "Teks tombol unduh IgMatrix Windows"
   },
   "download.igmatrix.windows.description": {
     "message": "Windows 10/11 (64-bit)",
-    "description": "IgMatrix Windows平台描述"
+    "description": "Deskripsi platform IgMatrix Windows"
   },
   "download.igmatrix.windows.title": {
     "message": "Windows",
-    "description": "IgMatrix Windows平台标题"
+    "description": "Judul platform IgMatrix Windows"
   },
   "download.linux.coming_soon": {
     "message": "Segera Hadir",
-    "description": "Linux即将推出提示"
+    "description": "Tips segera hadir untuk Linux"
   },
   "download.linux.description": {
     "message": "Versi Linux sedang dalam pengembangan",
-    "description": "Linux开发中描述"
+    "description": "Deskripsi Linux dalam pengembangan"
   },
   "download.linux.development": {
     "message": "Dalam Pengembangan",
-    "description": "Linux开发中状态"
+    "description": "Status pengembangan Linux"
   },
   "download.linux.title": {
     "message": "Linux",
-    "description": "Linux平台标题"
+    "description": "Judul platform Linux"
   },
   "download.mac.button": {
     "message": "Unduh Versi Mac",
-    "description": "Mac下载按钮文本"
+    "description": "Teks tombol unduh Mac"
   },
   "download.mac.description": {
     "message": "macOS 10.15 atau lebih baru",
-    "description": "Mac平台描述"
+    "description": "Deskripsi platform Mac"
   },
   "download.mac.install_tip": {
     "message": "Setelah instalasi, jalankan perintah berikut di Terminal untuk mengizinkan aplikasi berjalan:",
-    "description": "Mac安装后需要执行的命令提示"
+    "description": "Tips perintah yang perlu dijalankan setelah instalasi Mac"
   },
   "download.mac.title": {
     "message": "Mac",
-    "description": "Mac平台标题"
+    "description": "Judul platform Mac"
   },
   "download.requirements.internet": {
     "message": "Koneksi Internet: Diperlukan",
-    "description": "网络连接要求"
+    "description": "Persyaratan koneksi jaringan"
   },
   "download.requirements.memory": {
     "message": "Memori: 8 GB RAM",
-    "description": "内存要求"
+    "description": "Persyaratan memori"
   },
   "download.requirements.os": {
     "message": "Sistem Operasi: Windows 10/11, macOS 10.15+, atau Ubuntu 20.04+",
-    "description": "操作系统要求"
+    "description": "Persyaratan sistem operasi"
   },
   "download.requirements.processor": {
     "message": "Prosesor: Intel Core i5 atau setara",
-    "description": "处理器要求"
+    "description": "Persyaratan prosesor"
   },
   "download.requirements.storage": {
     "message": "Ruang Penyimpanan: 500 MB ruang tersedia",
-    "description": "存储空间要求"
+    "description": "Persyaratan ruang penyimpanan"
   },
   "download.requirements.title": {
     "message": "Persyaratan Sistem",
-    "description": "系统要求标题"
+    "description": "Judul persyaratan sistem"
   },
   "download.subtitle": {
     "message": "Pilih platform Anda untuk mengunduh TikMatrix",
-    "description": "下载页面的副标题"
+    "description": "Subjudul halaman unduh"
   },
   "download.title": {
     "message": "Unduh TikMatrix",
-    "description": "下载页面的标题"
+    "description": "Judul halaman unduh"
   },
   "download.videomagic.description": {
     "message": "Unduh VideoMagic untuk Windows, Mac, dan Linux",
@@ -1080,15 +1080,15 @@
   },
   "download.windows.button": {
     "message": "Unduh Versi Windows",
-    "description": "Windows下载按钮文本"
+    "description": "Teks tombol unduh Windows"
   },
   "download.windows.description": {
     "message": "Windows 10/11 (64-bit)",
-    "description": "Windows平台描述"
+    "description": "Deskripsi platform Windows"
   },
   "download.windows.title": {
     "message": "Windows",
-    "description": "Windows平台标题"
+    "description": "Judul platform Windows"
   },
   "homepage.header.cta.download": {
     "message": "Unduh Sekarang"
@@ -1167,30 +1167,30 @@
   },
   "navbar.download": {
     "message": "Unduh",
-    "description": "导航栏下载链接文本"
+    "description": "Teks tautan unduh bilah navigasi"
   },
   "pricing.all_features": {
     "message": "Termasuk semua fitur",
-    "description": "包含所有功能文本"
+    "description": "Teks termasuk semua fitur"
   },
   "pricing.badge.popular": {
     "message": "Paling Populer"
   },
   "pricing.business.concurrent_tasks": {
     "message": "Hingga 100 tugas otomasi bersamaan",
-    "description": "商业版并发任务数"
+    "description": "Jumlah tugas bersamaan versi bisnis"
   },
   "pricing.business.description": {
     "message": "Cocok untuk perusahaan besar",
-    "description": "商业版计划描述"
+    "description": "Deskripsi paket bisnis"
   },
   "pricing.business.manage_phones": {
     "message": "Hingga 100 tugas otomasi bersamaan",
-    "description": "商业版计划功能"
+    "description": "Fitur paket bisnis"
   },
   "pricing.business.name": {
     "message": "Business",
-    "description": "商业版计划名称"
+    "description": "Nama paket bisnis"
   },
   "pricing.compare.automation": {
     "message": "Tugas Otomasi"
@@ -1212,27 +1212,27 @@
   },
   "pricing.dedicated_support": {
     "message": "Dukungan tiket khusus",
-    "description": "专属支持文本"
+    "description": "Teks dukungan eksklusif"
   },
   "pricing.free.all_free_features": {
     "message": "Semua fitur dasar (tidak termasuk tugas otomasi)",
-    "description": "免费计划基础功能描述"
+    "description": "Deskripsi fitur dasar paket gratis"
   },
   "pricing.free.automation_disabled": {
     "message": "Tugas otomasi tidak tersedia",
-    "description": "免费计划自动化不可用文本"
+    "description": "Teks otomasi tidak tersedia untuk paket gratis"
   },
   "pricing.free.community_support": {
     "message": "Dukungan komunitas",
-    "description": "免费计划支持方式"
+    "description": "Metode dukungan paket gratis"
   },
   "pricing.free.description": {
     "message": "Pengguna gratis dapat menghubungkan perangkat tak terbatas, tetapi tidak dapat menjalankan tugas otomasi",
-    "description": "免费计划描述"
+    "description": "Deskripsi paket gratis"
   },
   "pricing.free.name": {
     "message": "Gratis",
-    "description": "免费计划名称"
+    "description": "Nama paket gratis"
   },
   "pricing.free_label": {
     "message": "Gratis",
@@ -1240,7 +1240,7 @@
   },
   "pricing.get_started": {
     "message": "Mulai",
-    "description": "开始使用按钮文本"
+    "description": "Teks tombol mulai"
   },
   "pricing.local_api.description": {
     "message": "Pengguna Pro, Team, dan Business dapat menggunakan RESTful API lokal untuk mengelola tugas dan otomatisasi alur kerja secara terprogram. Lihat dokumentasi."
@@ -1259,70 +1259,70 @@
   },
   "pricing.per_month_pc": {
     "message": "Per Bulan/Per PC",
-    "description": "每月每台电脑文本"
+    "description": "Teks per komputer per bulan"
   },
   "pricing.per_year": {
     "message": "Per Tahun (Hemat 30%)"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "Hingga 20 tugas otomasi bersamaan",
-    "description": "专业版并发任务数"
+    "description": "Jumlah tugas bersamaan versi pro"
   },
   "pricing.pro.description": {
     "message": "Cocok untuk profesional dan bisnis kecil",
-    "description": "专业版计划描述"
+    "description": "Deskripsi paket pro"
   },
   "pricing.pro.manage_phones": {
     "message": "Hingga 20 tugas otomasi bersamaan",
-    "description": "专业版计划功能"
+    "description": "Fitur paket pro"
   },
   "pricing.pro.name": {
     "message": "Pro",
-    "description": "专业版计划名称"
+    "description": "Nama paket pro"
   },
   "pricing.starter.concurrent_tasks": {
     "message": "Hingga 5 tugas otomasi bersamaan",
-    "description": "入门版并发任务数"
+    "description": "Jumlah tugas bersamaan versi starter"
   },
   "pricing.starter.description": {
     "message": "Cocok untuk individu dan tim kecil",
-    "description": "入门版计划描述"
+    "description": "Deskripsi paket starter"
   },
   "pricing.starter.manage_phones": {
     "message": "Hingga 5 tugas otomasi bersamaan",
-    "description": "入门版计划功能"
+    "description": "Fitur paket starter"
   },
   "pricing.starter.name": {
     "message": "Starter",
-    "description": "入门版计划名称"
+    "description": "Nama paket starter"
   },
   "pricing.subtitle": {
     "message": "Paket fleksibel untuk semua orang. Dapatkan diskon 30% untuk pembayaran tahunan!",
-    "description": "定价部分副标题"
+    "description": "Subjudul bagian harga"
   },
   "pricing.team.concurrent_tasks": {
     "message": "Hingga 50 tugas otomasi bersamaan",
-    "description": "团队版并发任务数"
+    "description": "Jumlah tugas bersamaan versi tim"
   },
   "pricing.team.description": {
     "message": "Cocok untuk tim dan perusahaan yang berkembang",
-    "description": "团队版计划描述"
+    "description": "Deskripsi paket tim"
   },
   "pricing.team.manage_phones": {
     "message": "Hingga 50 tugas otomasi bersamaan",
-    "description": "团队版计划功能"
+    "description": "Fitur paket tim"
   },
   "pricing.team.name": {
     "message": "Team",
-    "description": "团队版计划名称"
+    "description": "Nama paket tim"
   },
   "pricing.ticket_support": {
     "message": "Dukungan tiket khusus",
-    "description": "专属工单支持文本"
+    "description": "Teks dukungan tiket eksklusif"
   },
   "pricing.title": {
     "message": "Harga",
-    "description": "定价部分标题"
+    "description": "Judul bagian harga"
   },
   "pricing.toggle.monthly": {
     "message": "Bulanan"
@@ -1332,7 +1332,7 @@
   },
   "pricing.unlimited_devices": {
     "message": "Koneksi perangkat tak terbatas",
-    "description": "无限设备连接文本"
+    "description": "Teks koneksi perangkat tak terbatas"
   },
   "pricing.unlimited_devices_short": {
     "message": "Tak Terbatas"
@@ -1498,47 +1498,47 @@
   },
   "testimonials.subtitle": {
     "message": "Apa yang dikatakan pengguna TikMatrix",
-    "description": "用户评价部分副标题"
+    "description": "Subjudul bagian ulasan pengguna"
   },
   "testimonials.title": {
     "message": "Ulasan Pengguna Asli",
-    "description": "用户评价部分标题"
+    "description": "Judul bagian ulasan pengguna"
   },
   "testimonials.usage_label": {
     "message": "Durasi Penggunaan",
-    "description": "使用时长标签"
+    "description": "Label durasi penggunaan"
   },
   "testimonials.user1.text": {
     "message": "TikMatrix adalah penyelamat untuk studio kami! Kami dapat mengontrol begitu banyak ponsel secara bersamaan, fitur otomasi sangat kuat. Posting dan pemanasan akun menjadi jauh lebih mudah. Pencegahan deteksi TikTok benar-benar berfungsi — postingan kami mendapat lebih banyak lalu lintas organik daripada sebelumnya.",
-    "description": "第一个用户评价文本"
+    "description": "Teks ulasan pengguna pertama"
   },
   "testimonials.user1.usage": {
     "message": "1 tahun",
-    "description": "第一个用户使用时长"
+    "description": "Durasi penggunaan pengguna pertama"
   },
   "testimonials.user2.text": {
     "message": "Setelah menggunakan TikMatrix, efisiensi tim iklan kami melonjak. Skrip otomasi menghemat banyak pekerjaan manual, akun tetap aman — sejauh ini tidak ada penangguhan. Sangat sempurna untuk agensi seperti kami!",
-    "description": "第二个用户评价文本"
+    "description": "Teks ulasan pengguna kedua"
   },
   "testimonials.user2.usage": {
     "message": "10 bulan",
-    "description": "第二个用户使用时长"
+    "description": "Durasi penggunaan pengguna kedua"
   },
   "testimonials.user3.text": {
     "message": "Mengontrol 100 ponsel secara bersamaan mengubah permainan. Operasi massal sangat nyaman, postingan TikTok kami mendapat jangkauan organik yang lebih banyak. Sangat cocok untuk pemasaran luar negeri, harganya juga terjangkau!",
-    "description": "第三个用户评价文本"
+    "description": "Teks ulasan pengguna ketiga"
   },
   "testimonials.user3.usage": {
     "message": "6 bulan",
-    "description": "第三个用户使用时长"
+    "description": "Durasi penggunaan pengguna ketiga"
   },
   "testimonials.user4.text": {
     "message": "Sebelumnya mencoba alat lain, tetapi TikMatrix adalah yang paling tanpa khawatir. Otomasi dan pencegahan penangguhan sangat andal. Sangat cocok untuk tim pemasaran yang memerlukan operasi massal efisien.",
-    "description": "第四个用户评价文本"
+    "description": "Teks ulasan pengguna keempat"
   },
   "testimonials.user4.usage": {
     "message": "8 bulan",
-    "description": "第四个用户使用时长"
+    "description": "Durasi penggunaan pengguna keempat"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "Tutup",
@@ -1841,27 +1841,27 @@
   },
   "whitelabel.annualRequired": {
     "message": "Memerlukan langganan tahunan",
-    "description": "白标功能需要年付订阅"
+    "description": "Fitur white label memerlukan langganan tahunan"
   },
   "whitelabel.annualRequiredDesc": {
     "message": "Fitur white label hanya tersedia untuk pengguna berlangganan tahunan. Setelah membeli paket tahunan, silakan hubungi layanan pelanggan melalui Telegram untuk mendapatkan kode pembuka.",
-    "description": "白标功能年付订阅说明"
+    "description": "Penjelasan langganan tahunan untuk fitur white label"
   },
   "whitelabel.appName": {
     "message": "Nama Aplikasi",
-    "description": "应用名称"
+    "description": "Nama aplikasi"
   },
   "whitelabel.contactSupport": {
     "message": "Hubungi layanan pelanggan untuk mendapatkan kode pembuka",
-    "description": "联系客服获取白标解锁码"
+    "description": "Hubungi layanan pelanggan untuk mendapatkan kode unlock white label"
   },
   "whitelabel.customization": {
     "message": "Kustomisasi Merek",
-    "description": "品牌定制"
+    "description": "Kustomisasi merek"
   },
   "whitelabel.description": {
     "message": "Sesuaikan identitas merek TikMatrix agar sesuai dengan citra perusahaan Anda",
-    "description": "白标功能描述"
+    "description": "Deskripsi fitur white label"
   },
   "whitelabel.logo": {
     "message": "Logo",
@@ -1869,11 +1869,11 @@
   },
   "whitelabel.setup": {
     "message": "Pengaturan White Label",
-    "description": "白标设置"
+    "description": "Pengaturan white label"
   },
   "whitelabel.supportEmail": {
     "message": "Email Dukungan",
-    "description": "支持邮箱"
+    "description": "Email dukungan"
   },
   "whitelabel.telegramUrl": {
     "message": "Tautan Telegram",
@@ -1881,10 +1881,10 @@
   },
   "whitelabel.title": {
     "message": "Fitur White Label",
-    "description": "白标功能标题"
+    "description": "Judul fitur white label"
   },
   "whitelabel.tutorialUrl": {
     "message": "Tautan Tutorial",
-    "description": "教程链接"
+    "description": "Tautan tutorial"
   }
 }

@@ -712,7 +712,7 @@
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
     "message": "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app",
-    "description": "电脑支持回答"
+    "description": "תשובת תמיכה במחשב"
   },
   "TikMatrix supports up to 200+ devices.": {
     "message": "TikMatrix supports up to 200+ devices."
@@ -789,7 +789,7 @@
   },
   "What computer can I use?": {
     "message": "What computer can I use?",
-    "description": "电脑支持问题"
+    "description": "שאלת תמיכה במחשב"
   },
   "What devices can I use?": {
     "message": "What devices can I use?"
@@ -920,151 +920,151 @@
   },
   "download.description": {
     "message": "download.description",
-    "description": "下载页面的描述"
+    "description": "תיאור עמוד ההורדה"
   },
   "download.igmatrix.description": {
     "message": "download.igmatrix.description",
-    "description": "IgMatrix下载页面的描述"
+    "description": "תיאור עמוד ההורדה של IgMatrix"
   },
   "download.igmatrix.linux.coming_soon": {
     "message": "download.igmatrix.linux.coming_soon",
-    "description": "IgMatrix Linux即将推出提示"
+    "description": "רמז בקרוב ל-IgMatrix Linux"
   },
   "download.igmatrix.linux.description": {
     "message": "download.igmatrix.linux.description",
-    "description": "IgMatrix Linux开发中描述"
+    "description": "תיאור IgMatrix Linux בפיתוח"
   },
   "download.igmatrix.linux.development": {
     "message": "download.igmatrix.linux.development",
-    "description": "IgMatrix Linux开发中状态"
+    "description": "סטטוס פיתוח IgMatrix Linux"
   },
   "download.igmatrix.linux.title": {
     "message": "download.igmatrix.linux.title",
-    "description": "IgMatrix Linux平台标题"
+    "description": "כותרת פלטפורמת IgMatrix Linux"
   },
   "download.igmatrix.mac.button": {
     "message": "download.igmatrix.mac.button",
-    "description": "IgMatrix Mac下载按钮文本"
+    "description": "טקסט כפתור הורדה של IgMatrix Mac"
   },
   "download.igmatrix.mac.description": {
     "message": "download.igmatrix.mac.description",
-    "description": "IgMatrix Mac平台描述"
+    "description": "תיאור פלטפורמת IgMatrix Mac"
   },
   "download.igmatrix.mac.install_tip": {
     "message": "download.igmatrix.mac.install_tip",
-    "description": "IgMatrix Mac安装后需要执行的命令提示"
+    "description": "רמז פקודה להפעלה לאחר התקנת IgMatrix Mac"
   },
   "download.igmatrix.mac.title": {
     "message": "download.igmatrix.mac.title",
-    "description": "IgMatrix Mac平台标题"
+    "description": "כותרת פלטפורמת IgMatrix Mac"
   },
   "download.igmatrix.requirements.internet": {
     "message": "download.igmatrix.requirements.internet",
-    "description": "IgMatrix网络连接要求"
+    "description": "דרישות חיבור רשת IgMatrix"
   },
   "download.igmatrix.requirements.memory": {
     "message": "download.igmatrix.requirements.memory",
-    "description": "IgMatrix内存要求"
+    "description": "דרישות זיכרון IgMatrix"
   },
   "download.igmatrix.requirements.os": {
     "message": "download.igmatrix.requirements.os",
-    "description": "IgMatrix操作系统要求"
+    "description": "דרישות מערכת הפעלה IgMatrix"
   },
   "download.igmatrix.requirements.processor": {
     "message": "download.igmatrix.requirements.processor",
-    "description": "IgMatrix处理器要求"
+    "description": "דרישות מעבד IgMatrix"
   },
   "download.igmatrix.requirements.storage": {
     "message": "download.igmatrix.requirements.storage",
-    "description": "IgMatrix存储空间要求"
+    "description": "דרישות שטח אחסון IgMatrix"
   },
   "download.igmatrix.requirements.title": {
     "message": "download.igmatrix.requirements.title",
-    "description": "IgMatrix系统要求标题"
+    "description": "כותרת דרישות המערכת של IgMatrix"
   },
   "download.igmatrix.subtitle": {
     "message": "download.igmatrix.subtitle",
-    "description": "IgMatrix下载页面的副标题"
+    "description": "כותרת המשנה של עמוד ההורדה של IgMatrix"
   },
   "download.igmatrix.title": {
     "message": "download.igmatrix.title",
-    "description": "IgMatrix下载页面的标题"
+    "description": "כותרת עמוד ההורדה של IgMatrix"
   },
   "download.igmatrix.windows.button": {
     "message": "download.igmatrix.windows.button",
-    "description": "IgMatrix Windows下载按钮文本"
+    "description": "טקסט כפתור הורדה של IgMatrix Windows"
   },
   "download.igmatrix.windows.description": {
     "message": "download.igmatrix.windows.description",
-    "description": "IgMatrix Windows平台描述"
+    "description": "תיאור פלטפורמת IgMatrix Windows"
   },
   "download.igmatrix.windows.title": {
     "message": "download.igmatrix.windows.title",
-    "description": "IgMatrix Windows平台标题"
+    "description": "כותרת פלטפורמת IgMatrix Windows"
   },
   "download.linux.coming_soon": {
     "message": "download.linux.coming_soon",
-    "description": "Linux即将推出提示"
+    "description": "רמז בקרוב ל-Linux"
   },
   "download.linux.description": {
     "message": "download.linux.description",
-    "description": "Linux开发中描述"
+    "description": "תיאור Linux בפיתוח"
   },
   "download.linux.development": {
     "message": "download.linux.development",
-    "description": "Linux开发中状态"
+    "description": "סטטוס פיתוח Linux"
   },
   "download.linux.title": {
     "message": "download.linux.title",
-    "description": "Linux平台标题"
+    "description": "כותרת פלטפורמת Linux"
   },
   "download.mac.button": {
     "message": "download.mac.button",
-    "description": "Mac下载按钮文本"
+    "description": "טקסט כפתור הורדה של Mac"
   },
   "download.mac.description": {
     "message": "download.mac.description",
-    "description": "Mac平台描述"
+    "description": "תיאור פלטפורמת Mac"
   },
   "download.mac.install_tip": {
     "message": "download.mac.install_tip",
-    "description": "Mac安装后需要执行的命令提示"
+    "description": "רמז פקודה להפעלה לאחר התקנת Mac"
   },
   "download.mac.title": {
     "message": "download.mac.title",
-    "description": "Mac平台标题"
+    "description": "כותרת פלטפורמת Mac"
   },
   "download.requirements.internet": {
     "message": "download.requirements.internet",
-    "description": "网络连接要求"
+    "description": "דרישות חיבור רשת"
   },
   "download.requirements.memory": {
     "message": "download.requirements.memory",
-    "description": "内存要求"
+    "description": "דרישות זיכרון"
   },
   "download.requirements.os": {
     "message": "download.requirements.os",
-    "description": "操作系统要求"
+    "description": "דרישות מערכת הפעלה"
   },
   "download.requirements.processor": {
     "message": "download.requirements.processor",
-    "description": "处理器要求"
+    "description": "דרישות מעבד"
   },
   "download.requirements.storage": {
     "message": "download.requirements.storage",
-    "description": "存储空间要求"
+    "description": "דרישות שטח אחסון"
   },
   "download.requirements.title": {
     "message": "download.requirements.title",
-    "description": "系统要求标题"
+    "description": "כותרת דרישות המערכת"
   },
   "download.subtitle": {
     "message": "download.subtitle",
-    "description": "下载页面的副标题"
+    "description": "כותרת המשנה של עמוד ההורדה"
   },
   "download.title": {
     "message": "download.title",
-    "description": "下载页面的标题"
+    "description": "כותרת עמוד ההורדה"
   },
   "download.videomagic.description": {
     "message": "download.videomagic.description",
@@ -1080,15 +1080,15 @@
   },
   "download.windows.button": {
     "message": "download.windows.button",
-    "description": "Windows下载按钮文本"
+    "description": "טקסט כפתור הורדה של Windows"
   },
   "download.windows.description": {
     "message": "download.windows.description",
-    "description": "Windows平台描述"
+    "description": "תיאור פלטפורמת Windows"
   },
   "download.windows.title": {
     "message": "download.windows.title",
-    "description": "Windows平台标题"
+    "description": "כותרת פלטפורמת Windows"
   },
   "homepage.header.cta.download": {
     "message": "homepage.header.cta.download"
@@ -1167,30 +1167,30 @@
   },
   "navbar.download": {
     "message": "navbar.download",
-    "description": "导航栏下载链接文本"
+    "description": "טקסט קישור הורדה בסרגל הניווט"
   },
   "pricing.all_features": {
     "message": "pricing.all_features",
-    "description": "包含所有功能文本"
+    "description": "טקסט כולל את כל התכונות"
   },
   "pricing.badge.popular": {
     "message": "pricing.badge.popular"
   },
   "pricing.business.concurrent_tasks": {
     "message": "pricing.business.concurrent_tasks",
-    "description": "商业版并发任务数"
+    "description": "מספר משימות במקביל גרסת עסקים"
   },
   "pricing.business.description": {
     "message": "pricing.business.description",
-    "description": "商业版计划描述"
+    "description": "תיאור תוכנית עסקית"
   },
   "pricing.business.manage_phones": {
     "message": "pricing.business.manage_phones",
-    "description": "商业版计划功能"
+    "description": "תכונות תוכנית עסקית"
   },
   "pricing.business.name": {
     "message": "pricing.business.name",
-    "description": "商业版计划名称"
+    "description": "שם תוכנית עסקית"
   },
   "pricing.compare.automation": {
     "message": "pricing.compare.automation"
@@ -1212,27 +1212,27 @@
   },
   "pricing.dedicated_support": {
     "message": "pricing.dedicated_support",
-    "description": "专属支持文本"
+    "description": "טקסט תמיכה ייעודית"
   },
   "pricing.free.all_free_features": {
     "message": "pricing.free.all_free_features",
-    "description": "免费计划基础功能描述"
+    "description": "תיאור תכונות הבסיס של תוכנית חינמית"
   },
   "pricing.free.automation_disabled": {
     "message": "pricing.free.automation_disabled",
-    "description": "免费计划自动化不可用文本"
+    "description": "טקסט אוטומציה לא זמינה לתוכנית חינמית"
   },
   "pricing.free.community_support": {
     "message": "pricing.free.community_support",
-    "description": "免费计划支持方式"
+    "description": "שיטת תמיכה לתוכנית חינמית"
   },
   "pricing.free.description": {
     "message": "pricing.free.description",
-    "description": "免费计划描述"
+    "description": "תיאור תוכנית חינמית"
   },
   "pricing.free.name": {
     "message": "pricing.free.name",
-    "description": "免费计划名称"
+    "description": "שם תוכנית חינמית"
   },
   "pricing.free_label": {
     "message": "pricing.free_label",
@@ -1240,7 +1240,7 @@
   },
   "pricing.get_started": {
     "message": "pricing.get_started",
-    "description": "开始使用按钮文本"
+    "description": "טקסט כפתור התחל"
   },
   "pricing.local_api.description": {
     "message": "pricing.local_api.description"
@@ -1259,70 +1259,70 @@
   },
   "pricing.per_month_pc": {
     "message": "pricing.per_month_pc",
-    "description": "每月每台电脑文本"
+    "description": "טקסט למחשב לחודש"
   },
   "pricing.per_year": {
     "message": "pricing.per_year"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "pricing.pro.concurrent_tasks",
-    "description": "专业版并发任务数"
+    "description": "מספר משימות במקביל גרסת מקצועי"
   },
   "pricing.pro.description": {
     "message": "pricing.pro.description",
-    "description": "专业版计划描述"
+    "description": "תיאור תוכנית מקצועית"
   },
   "pricing.pro.manage_phones": {
     "message": "pricing.pro.manage_phones",
-    "description": "专业版计划功能"
+    "description": "תכונות תוכנית מקצועית"
   },
   "pricing.pro.name": {
     "message": "pricing.pro.name",
-    "description": "专业版计划名称"
+    "description": "שם תוכנית מקצועית"
   },
   "pricing.starter.concurrent_tasks": {
     "message": "pricing.starter.concurrent_tasks",
-    "description": "入门版并发任务数"
+    "description": "מספר משימות במקביל גרסת מתחילים"
   },
   "pricing.starter.description": {
     "message": "pricing.starter.description",
-    "description": "入门版计划描述"
+    "description": "תיאור תוכנית מתחילים"
   },
   "pricing.starter.manage_phones": {
     "message": "pricing.starter.manage_phones",
-    "description": "入门版计划功能"
+    "description": "תכונות תוכנית מתחילים"
   },
   "pricing.starter.name": {
     "message": "pricing.starter.name",
-    "description": "入门版计划名称"
+    "description": "שם תוכנית מתחילים"
   },
   "pricing.subtitle": {
     "message": "pricing.subtitle",
-    "description": "定价部分副标题"
+    "description": "כותרת משנה של מדור תמחור"
   },
   "pricing.team.concurrent_tasks": {
     "message": "pricing.team.concurrent_tasks",
-    "description": "团队版并发任务数"
+    "description": "מספר משימות במקביל גרסת צוות"
   },
   "pricing.team.description": {
     "message": "pricing.team.description",
-    "description": "团队版计划描述"
+    "description": "תיאור תוכנית צוות"
   },
   "pricing.team.manage_phones": {
     "message": "pricing.team.manage_phones",
-    "description": "团队版计划功能"
+    "description": "תכונות תוכנית צוות"
   },
   "pricing.team.name": {
     "message": "pricing.team.name",
-    "description": "团队版计划名称"
+    "description": "שם תוכנית צוות"
   },
   "pricing.ticket_support": {
     "message": "pricing.ticket_support",
-    "description": "专属工单支持文本"
+    "description": "טקסט תמיכת כרטיסים ייעודי"
   },
   "pricing.title": {
     "message": "pricing.title",
-    "description": "定价部分标题"
+    "description": "כותרת מדור תמחור"
   },
   "pricing.toggle.monthly": {
     "message": "pricing.toggle.monthly"
@@ -1332,7 +1332,7 @@
   },
   "pricing.unlimited_devices": {
     "message": "pricing.unlimited_devices",
-    "description": "无限设备连接文本"
+    "description": "טקסט חיבור מכשירים בלתי מוגבל"
   },
   "pricing.unlimited_devices_short": {
     "message": "pricing.unlimited_devices_short"
@@ -1498,47 +1498,47 @@
   },
   "testimonials.subtitle": {
     "message": "testimonials.subtitle",
-    "description": "用户评价部分副标题"
+    "description": "כותרת משנה של מדור ביקורות משתמשים"
   },
   "testimonials.title": {
     "message": "testimonials.title",
-    "description": "用户评价部分标题"
+    "description": "כותרת מדור ביקורות משתמשים"
   },
   "testimonials.usage_label": {
     "message": "testimonials.usage_label",
-    "description": "使用时长标签"
+    "description": "תווית משך שימוש"
   },
   "testimonials.user1.text": {
     "message": "testimonials.user1.text",
-    "description": "第一个用户评价文本"
+    "description": "טקסט ביקורת משתמש ראשון"
   },
   "testimonials.user1.usage": {
     "message": "testimonials.user1.usage",
-    "description": "第一个用户使用时长"
+    "description": "משך שימוש של משתמש ראשון"
   },
   "testimonials.user2.text": {
     "message": "testimonials.user2.text",
-    "description": "第二个用户评价文本"
+    "description": "טקסט ביקורת משתמש שני"
   },
   "testimonials.user2.usage": {
     "message": "testimonials.user2.usage",
-    "description": "第二个用户使用时长"
+    "description": "משך שימוש של משתמש שני"
   },
   "testimonials.user3.text": {
     "message": "testimonials.user3.text",
-    "description": "第三个用户评价文本"
+    "description": "טקסט ביקורת משתמש שלישי"
   },
   "testimonials.user3.usage": {
     "message": "testimonials.user3.usage",
-    "description": "第三个用户使用时长"
+    "description": "משך שימוש של משתמש שלישי"
   },
   "testimonials.user4.text": {
     "message": "testimonials.user4.text",
-    "description": "第四个用户评价文本"
+    "description": "טקסט ביקורת משתמש רביעי"
   },
   "testimonials.user4.usage": {
     "message": "testimonials.user4.usage",
-    "description": "第四个用户使用时长"
+    "description": "משך שימוש של משתמש רביעי"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "סגור",
@@ -1841,27 +1841,27 @@
   },
   "whitelabel.annualRequired": {
     "message": "whitelabel.annualRequired",
-    "description": "白标功能需要年付订阅"
+    "description": "תכונת מותג לבן דורשת מנוי שנתי"
   },
   "whitelabel.annualRequiredDesc": {
     "message": "whitelabel.annualRequiredDesc",
-    "description": "白标功能年付订阅说明"
+    "description": "הסבר מנוי שנתי לתכונת מותג לבן"
   },
   "whitelabel.appName": {
     "message": "whitelabel.appName",
-    "description": "应用名称"
+    "description": "שם האפליקציה"
   },
   "whitelabel.contactSupport": {
     "message": "whitelabel.contactSupport",
-    "description": "联系客服获取白标解锁码"
+    "description": "צור קשר עם שירות הלקוחות לקבלת קוד פתיחת מותג לבן"
   },
   "whitelabel.customization": {
     "message": "whitelabel.customization",
-    "description": "品牌定制"
+    "description": "התאמה אישית של מותג"
   },
   "whitelabel.description": {
     "message": "whitelabel.description",
-    "description": "白标功能描述"
+    "description": "תיאור תכונת מותג לבן"
   },
   "whitelabel.logo": {
     "message": "whitelabel.logo",
@@ -1869,11 +1869,11 @@
   },
   "whitelabel.setup": {
     "message": "whitelabel.setup",
-    "description": "白标设置"
+    "description": "הגדרות מותג לבן"
   },
   "whitelabel.supportEmail": {
     "message": "whitelabel.supportEmail",
-    "description": "支持邮箱"
+    "description": "דוא\"ל תמיכה"
   },
   "whitelabel.telegramUrl": {
     "message": "whitelabel.telegramUrl",
@@ -1881,10 +1881,10 @@
   },
   "whitelabel.title": {
     "message": "whitelabel.title",
-    "description": "白标功能标题"
+    "description": "כותרת תכונת מותג לבן"
   },
   "whitelabel.tutorialUrl": {
     "message": "whitelabel.tutorialUrl",
-    "description": "教程链接"
+    "description": "קישור מדריך"
   }
 }

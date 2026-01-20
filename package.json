@@ -19,6 +19,7 @@
     "preview": "vite preview --mode test",
     "lint": "eslint \"{src,scripts}/**/*.{js,ts,vue}\"",
     "lint:fix": "npm run lint -- --fix",
+    "translate:i18n": "node translate-i18n.cjs",
     "tauri": "tauri"
   },
   "dependencies": {

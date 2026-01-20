@@ -712,7 +712,7 @@
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
     "message": "TikMatrix unterstützt Windows 10 und höher sowie macOS 10.15 oder neuer. Für Mac-Benutzer müssen Sie nach der Installation den folgenden Befehl im Terminal ausführen, um die App zu starten: xattr -cr /Applications/TikMatrix.app",
-    "description": "电脑支持回答"
+    "description": "Computer-Unterstützung Antwort"
   },
   "TikMatrix supports up to 200+ devices.": {
     "message": "TikMatrix unterstützt bis zu 200+ Geräte."
@@ -789,7 +789,7 @@
   },
   "What computer can I use?": {
     "message": "Welchen Computer kann ich verwenden?",
-    "description": "电脑支持问题"
+    "description": "Computer-Unterstützung Frage"
   },
   "What devices can I use?": {
     "message": "Welche Geräte kann ich verwenden?"
@@ -920,151 +920,151 @@
   },
   "download.description": {
     "message": "Laden Sie TikMatrix für Windows, Mac und Linux herunter",
-    "description": "下载页面的描述"
+    "description": "Beschreibung der Download-Seite"
   },
   "download.igmatrix.description": {
     "message": "Laden Sie IgMatrix für Windows, Mac und Linux herunter",
-    "description": "IgMatrix下载页面的描述"
+    "description": "Beschreibung der IgMatrix-Download-Seite"
   },
   "download.igmatrix.linux.coming_soon": {
     "message": "Demnächst verfügbar",
-    "description": "IgMatrix Linux即将推出提示"
+    "description": "IgMatrix Linux Demnächst-Hinweis"
   },
   "download.igmatrix.linux.description": {
     "message": "Linux-Version ist in Entwicklung",
-    "description": "IgMatrix Linux开发中描述"
+    "description": "IgMatrix Linux in Entwicklung Beschreibung"
   },
   "download.igmatrix.linux.development": {
     "message": "In Entwicklung",
-    "description": "IgMatrix Linux开发中状态"
+    "description": "IgMatrix Linux Entwicklungsstatus"
   },
   "download.igmatrix.linux.title": {
     "message": "Linux",
-    "description": "IgMatrix Linux平台标题"
+    "description": "IgMatrix Linux-Plattformtitel"
   },
   "download.igmatrix.mac.button": {
     "message": "Mac-Version herunterladen",
-    "description": "IgMatrix Mac下载按钮文本"
+    "description": "IgMatrix Mac Download-Button-Text"
   },
   "download.igmatrix.mac.description": {
     "message": "macOS 10.15 oder höher",
-    "description": "IgMatrix Mac平台描述"
+    "description": "IgMatrix Mac-Plattformbeschreibung"
   },
   "download.igmatrix.mac.install_tip": {
     "message": "Nach der Installation führen Sie bitte folgenden Befehl im Terminal aus, um die App zu starten:",
-    "description": "IgMatrix Mac安装后需要执行的命令提示"
+    "description": "Befehlshinweis nach IgMatrix Mac Installation"
   },
   "download.igmatrix.mac.title": {
     "message": "Mac",
-    "description": "IgMatrix Mac平台标题"
+    "description": "IgMatrix Mac-Plattformtitel"
   },
   "download.igmatrix.requirements.internet": {
     "message": "Internetverbindung: Erforderlich",
-    "description": "IgMatrix网络连接要求"
+    "description": "IgMatrix Netzwerkverbindungsanforderungen"
   },
   "download.igmatrix.requirements.memory": {
     "message": "Arbeitsspeicher: 8 GB RAM",
-    "description": "IgMatrix内存要求"
+    "description": "IgMatrix Speicheranforderungen"
   },
   "download.igmatrix.requirements.os": {
     "message": "Betriebssystem: Windows 10/11, macOS 10.15+ oder Ubuntu 20.04+",
-    "description": "IgMatrix操作系统要求"
+    "description": "IgMatrix Betriebssystemanforderungen"
   },
   "download.igmatrix.requirements.processor": {
     "message": "Prozessor: Intel Core i5 oder gleichwertig",
-    "description": "IgMatrix处理器要求"
+    "description": "IgMatrix Prozessoranforderungen"
   },
   "download.igmatrix.requirements.storage": {
     "message": "Speicherplatz: 500 MB verfügbarer Speicherplatz",
-    "description": "IgMatrix存储空间要求"
+    "description": "IgMatrix Speicherplatzanforderungen"
   },
   "download.igmatrix.requirements.title": {
     "message": "Systemanforderungen",
-    "description": "IgMatrix系统要求标题"
+    "description": "IgMatrix Systemanforderungen Titel"
   },
   "download.igmatrix.subtitle": {
     "message": "Wählen Sie Ihre Plattform zum Herunterladen von IgMatrix",
-    "description": "IgMatrix下载页面的副标题"
+    "description": "Untertitel der IgMatrix-Download-Seite"
   },
   "download.igmatrix.title": {
     "message": "IgMatrix herunterladen",
-    "description": "IgMatrix下载页面的标题"
+    "description": "Titel der IgMatrix-Download-Seite"
   },
   "download.igmatrix.windows.button": {
     "message": "Windows-Version herunterladen",
-    "description": "IgMatrix Windows下载按钮文本"
+    "description": "IgMatrix Windows Download-Button-Text"
   },
   "download.igmatrix.windows.description": {
     "message": "Windows 10/11 (64-Bit)",
-    "description": "IgMatrix Windows平台描述"
+    "description": "IgMatrix Windows-Plattformbeschreibung"
   },
   "download.igmatrix.windows.title": {
     "message": "Windows",
-    "description": "IgMatrix Windows平台标题"
+    "description": "IgMatrix Windows-Plattformtitel"
   },
   "download.linux.coming_soon": {
     "message": "Demnächst verfügbar",
-    "description": "Linux即将推出提示"
+    "description": "Linux Demnächst-Hinweis"
   },
   "download.linux.description": {
     "message": "Linux-Version ist in Entwicklung",
-    "description": "Linux开发中描述"
+    "description": "Linux in Entwicklung Beschreibung"
   },
   "download.linux.development": {
     "message": "In Entwicklung",
-    "description": "Linux开发中状态"
+    "description": "Linux Entwicklungsstatus"
   },
   "download.linux.title": {
     "message": "Linux",
-    "description": "Linux平台标题"
+    "description": "Linux-Plattformtitel"
   },
   "download.mac.button": {
     "message": "Mac-Version herunterladen",
-    "description": "Mac下载按钮文本"
+    "description": "Mac Download-Button-Text"
   },
   "download.mac.description": {
     "message": "macOS 10.15 oder höher",
-    "description": "Mac平台描述"
+    "description": "Mac-Plattformbeschreibung"
   },
   "download.mac.install_tip": {
     "message": "Nach der Installation führen Sie bitte folgenden Befehl im Terminal aus, um die App zu starten:",
-    "description": "Mac安装后需要执行的命令提示"
+    "description": "Befehlshinweis nach Mac Installation"
   },
   "download.mac.title": {
     "message": "Mac",
-    "description": "Mac平台标题"
+    "description": "Mac-Plattformtitel"
   },
   "download.requirements.internet": {
     "message": "Internetverbindung: Erforderlich",
-    "description": "网络连接要求"
+    "description": "Netzwerkverbindungsanforderungen"
   },
   "download.requirements.memory": {
     "message": "Arbeitsspeicher: 8 GB RAM",
-    "description": "内存要求"
+    "description": "Speicheranforderungen"
   },
   "download.requirements.os": {
     "message": "Betriebssystem: Windows 10/11, macOS 10.15+ oder Ubuntu 20.04+",
-    "description": "操作系统要求"
+    "description": "Betriebssystemanforderungen"
   },
   "download.requirements.processor": {
     "message": "Prozessor: Intel Core i5 oder gleichwertig",
-    "description": "处理器要求"
+    "description": "Prozessoranforderungen"
   },
   "download.requirements.storage": {
     "message": "Speicherplatz: 500 MB verfügbarer Speicherplatz",
-    "description": "存储空间要求"
+    "description": "Speicherplatzanforderungen"
   },
   "download.requirements.title": {
     "message": "Systemanforderungen",
-    "description": "系统要求标题"
+    "description": "Systemanforderungen Titel"
   },
   "download.subtitle": {
     "message": "Wählen Sie Ihre Plattform zum Herunterladen von TikMatrix",
-    "description": "下载页面的副标题"
+    "description": "Untertitel der Download-Seite"
   },
   "download.title": {
     "message": "TikMatrix herunterladen",
-    "description": "下载页面的标题"
+    "description": "Titel der Download-Seite"
   },
   "download.videomagic.description": {
     "message": "Laden Sie VideoMagic für Windows, Mac und Linux herunter",
@@ -1080,15 +1080,15 @@
   },
   "download.windows.button": {
     "message": "Windows-Version herunterladen",
-    "description": "Windows下载按钮文本"
+    "description": "Windows Download-Button-Text"
   },
   "download.windows.description": {
     "message": "Windows 10/11 (64-Bit)",
-    "description": "Windows平台描述"
+    "description": "Windows-Plattformbeschreibung"
   },
   "download.windows.title": {
     "message": "Windows",
-    "description": "Windows平台标题"
+    "description": "Windows-Plattformtitel"
   },
   "homepage.header.cta.download": {
     "message": "Jetzt herunterladen"
@@ -1167,30 +1167,30 @@
   },
   "navbar.download": {
     "message": "Herunterladen",
-    "description": "导航栏下载链接文本"
+    "description": "Navigationsleiste Download-Link-Text"
   },
   "pricing.all_features": {
     "message": "Alle Funktionen enthalten",
-    "description": "包含所有功能文本"
+    "description": "Enthält alle Funktionen Text"
   },
   "pricing.badge.popular": {
     "message": "Beliebteste"
   },
   "pricing.business.concurrent_tasks": {
     "message": "Bis zu 100 gleichzeitige Automatisierungsaufgaben",
-    "description": "商业版并发任务数"
+    "description": "Business-Version gleichzeitige Aufgaben"
   },
   "pricing.business.description": {
     "message": "Für große Unternehmen",
-    "description": "商业版计划描述"
+    "description": "Business-Plan-Beschreibung"
   },
   "pricing.business.manage_phones": {
     "message": "Bis zu 100 gleichzeitige Automatisierungsaufgaben",
-    "description": "商业版计划功能"
+    "description": "Business-Plan-Funktionen"
   },
   "pricing.business.name": {
     "message": "Business-Version",
-    "description": "商业版计划名称"
+    "description": "Business-Plan-Name"
   },
   "pricing.compare.automation": {
     "message": "Automatisierungsaufgaben"
@@ -1212,27 +1212,27 @@
   },
   "pricing.dedicated_support": {
     "message": "Dedizierter Ticket-Support",
-    "description": "专属支持文本"
+    "description": "Exklusiver Support Text"
   },
   "pricing.free.all_free_features": {
     "message": "Alle Basisfunktionen (ohne Automatisierungsaufgaben)",
-    "description": "免费计划基础功能描述"
+    "description": "Beschreibung der Basisfunktionen des kostenlosen Plans"
   },
   "pricing.free.automation_disabled": {
     "message": "Automatisierungsaufgaben nicht verfügbar",
-    "description": "免费计划自动化不可用文本"
+    "description": "Automatisierung nicht verfügbar Text für kostenlosen Plan"
   },
   "pricing.free.community_support": {
     "message": "Community-Support",
-    "description": "免费计划支持方式"
+    "description": "Support-Methode für kostenlosen Plan"
   },
   "pricing.free.description": {
     "message": "Für einzelne Benutzer",
-    "description": "免费计划描述"
+    "description": "Beschreibung des kostenlosen Plans"
   },
   "pricing.free.name": {
     "message": "Kostenlos",
-    "description": "免费计划名称"
+    "description": "Name des kostenlosen Plans"
   },
   "pricing.free_label": {
     "message": "Kostenlos",
@@ -1240,7 +1240,7 @@
   },
   "pricing.get_started": {
     "message": "Loslegen",
-    "description": "开始使用按钮文本"
+    "description": "Erste Schritte Button-Text"
   },
   "pricing.local_api.description": {
     "message": "Pro-, Team- und Business-Nutzer können die lokale RESTful-API verwenden, um Aufgaben programmatisch zu verwalten und Workflows zu automatisieren. Siehe Dokumentation."
@@ -1259,70 +1259,70 @@
   },
   "pricing.per_month_pc": {
     "message": "Pro Monat/Pro PC",
-    "description": "每月每台电脑文本"
+    "description": "Pro Computer pro Monat Text"
   },
   "pricing.per_year": {
     "message": "Pro Jahr (30% sparen)"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "Bis zu 20 gleichzeitige Automatisierungsaufgaben",
-    "description": "专业版并发任务数"
+    "description": "Pro-Version gleichzeitige Aufgaben"
   },
   "pricing.pro.description": {
     "message": "Für Profis und kleine Unternehmen",
-    "description": "专业版计划描述"
+    "description": "Pro-Plan-Beschreibung"
   },
   "pricing.pro.manage_phones": {
     "message": "Bis zu 20 gleichzeitige Automatisierungsaufgaben",
-    "description": "专业版计划功能"
+    "description": "Pro-Plan-Funktionen"
   },
   "pricing.pro.name": {
     "message": "Pro-Version",
-    "description": "专业版计划名称"
+    "description": "Pro-Plan-Name"
   },
   "pricing.starter.concurrent_tasks": {
     "message": "Bis zu 5 gleichzeitige Automatisierungsaufgaben",
-    "description": "入门版并发任务数"
+    "description": "Starter-Version gleichzeitige Aufgaben"
   },
   "pricing.starter.description": {
     "message": "Für Einzelpersonen und kleine Teams",
-    "description": "入门版计划描述"
+    "description": "Starter-Plan-Beschreibung"
   },
   "pricing.starter.manage_phones": {
     "message": "Bis zu 5 gleichzeitige Automatisierungsaufgaben",
-    "description": "入门版计划功能"
+    "description": "Starter-Plan-Funktionen"
   },
   "pricing.starter.name": {
     "message": "Starter-Version",
-    "description": "入门版计划名称"
+    "description": "Starter-Plan-Name"
   },
   "pricing.subtitle": {
     "message": "Wählen Sie den Plan, der am besten zu Ihren Anforderungen passt",
-    "description": "定价部分副标题"
+    "description": "Preisabschnitt Untertitel"
   },
   "pricing.team.concurrent_tasks": {
     "message": "Bis zu 50 gleichzeitige Automatisierungsaufgaben",
-    "description": "团队版并发任务数"
+    "description": "Team-Version gleichzeitige Aufgaben"
   },
   "pricing.team.description": {
     "message": "Für wachsende Teams und Unternehmen",
-    "description": "团队版计划描述"
+    "description": "Team-Plan-Beschreibung"
   },
   "pricing.team.manage_phones": {
     "message": "Bis zu 50 gleichzeitige Automatisierungsaufgaben",
-    "description": "团队版计划功能"
+    "description": "Team-Plan-Funktionen"
   },
   "pricing.team.name": {
     "message": "Team-Version",
-    "description": "团队版计划名称"
+    "description": "Team-Plan-Name"
   },
   "pricing.ticket_support": {
     "message": "Dedizierter Ticket-Support",
-    "description": "专属工单支持文本"
+    "description": "Exklusiver Ticket-Support Text"
   },
   "pricing.title": {
     "message": "Preispläne",
-    "description": "定价部分标题"
+    "description": "Preisabschnitt Titel"
   },
   "pricing.toggle.monthly": {
     "message": "Monatlich"
@@ -1332,7 +1332,7 @@
   },
   "pricing.unlimited_devices": {
     "message": "Unbegrenzte Geräteverbindungen",
-    "description": "无限设备连接文本"
+    "description": "Unbegrenzte Geräteverbindungen Text"
   },
   "pricing.unlimited_devices_short": {
     "message": "Unbegrenzt"
@@ -1498,47 +1498,47 @@
   },
   "testimonials.subtitle": {
     "message": "Was TikMatrix-Benutzer sagen",
-    "description": "用户评价部分副标题"
+    "description": "Benutzerbewertungen Abschnitt Untertitel"
   },
   "testimonials.title": {
     "message": "Echte Benutzerbewertungen",
-    "description": "用户评价部分标题"
+    "description": "Benutzerbewertungen Abschnitt Titel"
   },
   "testimonials.usage_label": {
     "message": "Nutzungsdauer",
-    "description": "使用时长标签"
+    "description": "Nutzungsdauer Label"
   },
   "testimonials.user1.text": {
     "message": "TikMatrix ist ein Lebensretter für unser Studio! Wir können so viele Telefone gleichzeitig steuern und die Automatisierungsfunktionen sind superstark. Veröffentlichen und Konto-Warmup sind viel einfacher geworden. Die TikTok-Erkennungsvermeidung funktioniert wirklich – unsere Posts erhalten natürlicheren Traffic als zuvor.",
-    "description": "第一个用户评价文本"
+    "description": "Erster Benutzerbewertungstext"
   },
   "testimonials.user1.usage": {
     "message": "1 Jahr",
-    "description": "第一个用户使用时长"
+    "description": "Nutzungsdauer des ersten Benutzers"
   },
   "testimonials.user2.text": {
     "message": "Seit wir TikMatrix verwenden, ist die Effizienz unseres Werbeteams in die Höhe geschnellt. Die Automatisierungsskripte sparen uns tonnenweise manuelle Arbeit und Konten bleiben sicher – bisher keine Sperrungen. Perfekt für Agenturen wie unsere!",
-    "description": "第二个用户评价文本"
+    "description": "Zweiter Benutzerbewertungstext"
   },
   "testimonials.user2.usage": {
     "message": "10 Monate",
-    "description": "第二个用户使用时长"
+    "description": "Nutzungsdauer des zweiten Benutzers"
   },
   "testimonials.user3.text": {
     "message": "100 Telefone gleichzeitig zu steuern ist ein Game-Changer. Batch-Operationen sind super bequem und unsere TikTok-Posts erhalten mehr organische Reichweite. Großartig für Übersee-Marketing und der Preis ist vernünftig!",
-    "description": "第三个用户评价文本"
+    "description": "Dritter Benutzerbewertungstext"
   },
   "testimonials.user3.usage": {
     "message": "6 Monate",
-    "description": "第三个用户使用时长"
+    "description": "Nutzungsdauer des dritten Benutzers"
   },
   "testimonials.user4.text": {
     "message": "Habe zuvor andere Tools ausprobiert, aber TikMatrix ist am wartungsärmsten. Automatisierung und Anti-Sperrung sind beide zuverlässig. Sehr gut für Marketing-Teams, die effiziente Batch-Operationen benötigen.",
-    "description": "第四个用户评价文本"
+    "description": "Vierter Benutzerbewertungstext"
   },
   "testimonials.user4.usage": {
     "message": "8 Monate",
-    "description": "第四个用户使用时长"
+    "description": "Nutzungsdauer des vierten Benutzers"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "Schließen",
@@ -1841,27 +1841,27 @@
   },
   "whitelabel.annualRequired": {
     "message": "Jahresabonnement erforderlich",
-    "description": "白标功能需要年付订阅"
+    "description": "Whitelabel-Funktion erfordert Jahresabonnement"
   },
   "whitelabel.annualRequiredDesc": {
     "message": "White-Label-Funktion ist nur für Jahresabonnement-Benutzer verfügbar. Nach dem Kauf eines Jahresplans kontaktieren Sie bitte den Kundensupport über Telegram, um den Freischaltcode zu erhalten.",
-    "description": "白标功能年付订阅说明"
+    "description": "Jahresabonnement Erklärung für Whitelabel-Funktion"
   },
   "whitelabel.appName": {
     "message": "Anwendungsname",
-    "description": "应用名称"
+    "description": "Anwendungsname"
   },
   "whitelabel.contactSupport": {
     "message": "Kontaktieren Sie Support für Freischaltcode",
-    "description": "联系客服获取白标解锁码"
+    "description": "Kontaktieren Sie den Kundendienst für Whitelabel-Freischaltcode"
   },
   "whitelabel.customization": {
     "message": "Marken-Anpassung",
-    "description": "品牌定制"
+    "description": "Markenanpassung"
   },
   "whitelabel.description": {
     "message": "Passen Sie die Markenidentität von TikMatrix an Ihr Unternehmensimage an",
-    "description": "白标功能描述"
+    "description": "Whitelabel-Funktionsbeschreibung"
   },
   "whitelabel.logo": {
     "message": "Logo",
@@ -1869,11 +1869,11 @@
   },
   "whitelabel.setup": {
     "message": "White-Label-Einrichtung",
-    "description": "白标设置"
+    "description": "Whitelabel-Einstellungen"
   },
   "whitelabel.supportEmail": {
     "message": "Support-E-Mail",
-    "description": "支持邮箱"
+    "description": "Support-E-Mail"
   },
   "whitelabel.telegramUrl": {
     "message": "Telegram-Link",
@@ -1881,10 +1881,10 @@
   },
   "whitelabel.title": {
     "message": "White-Label-Funktion",
-    "description": "白标功能标题"
+    "description": "Whitelabel-Funktionstitel"
   },
   "whitelabel.tutorialUrl": {
     "message": "Tutorial-Link",
-    "description": "教程链接"
+    "description": "Tutorial-Link"
   }
 }

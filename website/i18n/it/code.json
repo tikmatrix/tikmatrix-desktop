@@ -936,7 +936,7 @@
   },
   "download.igmatrix.linux.development": {
     "message": "En desarrollo",
-    "description": "IgMatrix Linux开发中状态"
+    "description": "Stato di sviluppo IgMatrix Linux"
   },
   "download.igmatrix.linux.title": {
     "message": "IgMatrix para Linux",
@@ -964,7 +964,7 @@
   },
   "download.igmatrix.requirements.memory": {
     "message": "8 GB de RAM (se recomiendan 16 GB para múltiples dispositivos)",
-    "description": "IgMatrix内存要求"
+    "description": "Requisiti di memoria IgMatrix"
   },
   "download.igmatrix.requirements.os": {
     "message": "Windows 10/11 de 64 bits o macOS 10.15+",
@@ -972,11 +972,11 @@
   },
   "download.igmatrix.requirements.processor": {
     "message": "Procesador Intel Core i5 o equivalente",
-    "description": "IgMatrix处理器要求"
+    "description": "Requisiti del processore IgMatrix"
   },
   "download.igmatrix.requirements.storage": {
     "message": "500 MB de espacio disponible en disco",
-    "description": "IgMatrix存储空间要求"
+    "description": "Requisiti di spazio di archiviazione IgMatrix"
   },
   "download.igmatrix.requirements.title": {
     "message": "Requisitos del sistema",
@@ -1012,7 +1012,7 @@
   },
   "download.linux.development": {
     "message": "En desarrollo",
-    "description": "Linux开发中状态"
+    "description": "Stato di sviluppo Linux"
   },
   "download.linux.title": {
     "message": "TikMatrix para Linux",
@@ -1040,7 +1040,7 @@
   },
   "download.requirements.memory": {
     "message": "8 GB de RAM (se recomiendan 16 GB para múltiples dispositivos)",
-    "description": "内存要求"
+    "description": "Requisiti di memoria"
   },
   "download.requirements.os": {
     "message": "Windows 10/11 de 64 bits o macOS 10.15+",
@@ -1048,11 +1048,11 @@
   },
   "download.requirements.processor": {
     "message": "Procesador Intel Core i5 o equivalente",
-    "description": "处理器要求"
+    "description": "Requisiti del processore"
   },
   "download.requirements.storage": {
     "message": "500 MB de espacio disponible en disco",
-    "description": "存储空间要求"
+    "description": "Requisiti di spazio di archiviazione"
   },
   "download.requirements.title": {
     "message": "Requisitos del sistema",
@@ -1190,7 +1190,7 @@
   },
   "pricing.business.name": {
     "message": "Empresarial",
-    "description": "商业版计划名称"
+    "description": "Nome piano business"
   },
   "pricing.compare.automation": {
     "message": "Automatización avanzada"
@@ -1232,7 +1232,7 @@
   },
   "pricing.free.name": {
     "message": "Gratuito",
-    "description": "免费计划名称"
+    "description": "Nome piano gratuito"
   },
   "pricing.free_label": {
     "message": "Gratis",
@@ -1314,7 +1314,7 @@
   },
   "pricing.team.name": {
     "message": "Equipo",
-    "description": "团队版计划名称"
+    "description": "Nome piano team"
   },
   "pricing.ticket_support": {
     "message": "Soporte por tickets",
@@ -1510,7 +1510,7 @@
   },
   "testimonials.user1.text": {
     "message": "TikMatrix ha revolucionado nuestra operación de granja de teléfonos. La capacidad de gestionar 100+ dispositivos desde una sola PC es increíble.",
-    "description": "第一个用户评价文本"
+    "description": "Testo prima recensione utente"
   },
   "testimonials.user1.usage": {
     "message": "Gestión de 120 dispositivos",
@@ -1518,7 +1518,7 @@
   },
   "testimonials.user2.text": {
     "message": "El sistema de automatización es potente y fácil de usar. Nuestro engagement ha aumentado un 40% desde que comenzamos a usar TikMatrix.",
-    "description": "第二个用户评价文本"
+    "description": "Testo seconda recensione utente"
   },
   "testimonials.user2.usage": {
     "message": "50 cuentas de TikTok",
@@ -1526,7 +1526,7 @@
   },
   "testimonials.user3.text": {
     "message": "La mejor inversión para nuestro negocio de marketing en TikTok. El soporte técnico es excepcional y el software es muy estable.",
-    "description": "第三个用户评价文本"
+    "description": "Testo terza recensione utente"
   },
   "testimonials.user3.usage": {
     "message": "Operación profesional de marketing",
@@ -1534,7 +1534,7 @@
   },
   "testimonials.user4.text": {
     "message": "Tasa de suspensión de cuentas cero en 6 meses de uso. La tecnología de dispositivos reales realmente marca la diferencia.",
-    "description": "第四个用户评价文本"
+    "description": "Testo quarta recensione utente"
   },
   "testimonials.user4.usage": {
     "message": "80 cuentas gestionadas",
@@ -1857,7 +1857,7 @@
   },
   "whitelabel.customization": {
     "message": "Personalización de marca blanca",
-    "description": "品牌定制"
+    "description": "Personalizzazione del marchio"
   },
   "whitelabel.description": {
     "message": "Personaliza la aplicación con tu propia marca",
