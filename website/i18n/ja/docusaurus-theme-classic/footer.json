@@ -15,7 +15,7 @@
     "description": "The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.Recent posts": {
-    "message": "最新記事",
+    "message": "最新の記事",
     "description": "The label of footer link with label=Recent posts linking to /blog"
   },
   "link.item.label.Archive posts": {
@@ -55,23 +55,23 @@
     "description": "The label of footer link with label=Privacy Policy linking to /privacy-policy"
   },
   "link.item.label.Terms of Service": {
-    "message": "利用規約",
+    "message": "利用規約について",
     "description": "The label of footer link with label=Terms of Service linking to /terms-of-service"
   },
   "link.title.Tools": {
-    "message": "工具",
+    "message": "ツール",
     "description": "The title of the footer links column with title=Tools in the footer"
   },
   "link.item.label.Buy hardware": {
-    "message": "购买硬件",
+    "message": "ハードウェアを購入",
     "description": "The label of footer link with label=Buy Hardware linking to /buy-hardware"
   },
   "link.item.label.TikTok User Finder": {
-    "message": "TikTok用户国家查询",
+    "message": "TikTokユーザー国別検索",
     "description": "The label of footer link with label=TikTok User Finder linking to /tiktok-user-finder"
   },
   "link.item.label.About Us": {
-    "message": "会社概要",
+    "message": "会社について",
     "description": "The label of footer link with label=About Us linking to /about-us"
   }
 }

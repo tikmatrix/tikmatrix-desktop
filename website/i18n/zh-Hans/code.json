@@ -847,7 +847,7 @@
     "message": "专业的手机农场和自动化硬件设备"
   },
   "advertising.buy.hardware.title": {
-    "message": "NiaoZun Shop"
+    "message": "鸟尊商店"
   },
   "advertising.category.accounts": {
     "message": "账号"
@@ -1757,7 +1757,7 @@
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged}「{tagName}」",
+    "message": "{nDocsTagged} 个文档标记为"{tagName}"",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
@@ -1864,7 +1864,7 @@
     "description": "白标功能描述"
   },
   "whitelabel.logo": {
-    "message": "Logo",
+    "message": "标志",
     "description": "Logo"
   },
   "whitelabel.setup": {

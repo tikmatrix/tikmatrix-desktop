@@ -8,7 +8,7 @@
     "description": "TikMatrix Blog"
   },
   "sidebar.title": {
-    "message": "Recenti博文",
-    "description": "TikMatrix Recenti博文"
+    "message": "Post recenti",
+    "description": "TikMatrix post recenti"
   }
 }

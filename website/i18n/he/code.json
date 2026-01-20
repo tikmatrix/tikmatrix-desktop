@@ -361,46 +361,46 @@
     "message": "הגברת אינטראקציה בפוסטים על ידי לייק, שיתוף, הוספה למועדפים וצפייה באצווה"
   },
   "Increase user engagement by following or unfollowing accounts in bulk": {
-    "message": "Increase user engagement by following or unfollowing accounts in bulk"
+    "message": "הגבר את המעורבות של המשתמשים על ידי עקיבה או ביטול עקיבה אחר חשבונות בכמות גדולה"
   },
   "Instagram Automation": {
     "message": "אוטומציה ל-Instagram"
   },
   "Instagram Phone Farm Batch Control Tool": {
-    "message": "Instagram Phone Farm Batch Control Tool",
+    "message": "כלי בקרת חוות טלפונים אינסטגרם אצווה",
     "description": "The description of Instagram Phone Farm Batch Control Tool"
   },
   "Instagram-optimized automation scripts": {
-    "message": "Instagram-optimized automation scripts"
+    "message": "סקריפטים אוטומטיים מותאמים לאינסטגרם"
   },
   "Instagram-specific automation": {
-    "message": "Instagram-specific automation"
+    "message": "אוטומציה ספציפית לאינסטגרם"
   },
   "Is the pricing the same as TikMatrix?": {
-    "message": "Is the pricing the same as TikMatrix?"
+    "message": "האם המחיר זהה ל-TikMatrix?"
   },
   "Join Channel": {
-    "message": "Join Channel",
+    "message": "הצטרף לערוץ",
     "description": "The join channel button label"
   },
   "Join Group": {
-    "message": "Join Group",
+    "message": "הצטרף לקבוצה",
     "description": "The join group button label"
   },
   "Key Differences from TikMatrix": {
-    "message": "Key Differences from TikMatrix"
+    "message": "הבדלים מרכזיים מ-TikMatrix"
   },
   "Live stream boost": {
-    "message": "Live stream boost"
+    "message": "שידור חי - הגברה"
   },
   "Mass commenting": {
-    "message": "Mass commenting"
+    "message": "תגובות המוניות"
   },
   "Mass direct messaging": {
-    "message": "Mass direct messaging"
+    "message": "הודעות ישירות המוניות"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "Mon - Fri: 9:00AM - 5:00PM(UTC+8)",
+    "message": "ימים א' - ה': 9:00 - 17:00 (UTC+8)",
     "description": "The working hours description"
   },
   "Monthly": {
@@ -410,16 +410,16 @@
     "message": "בקרת מכשירים מרובים"
   },
   "Multi-language support (English, Chinese, Russian)": {
-    "message": "Multi-language support (English, Chinese, Russian)"
+    "message": "תמיכה רב-לשונית (אנגלית, סינית, רוסית)"
   },
   "Natural Swipe Gestures": {
-    "message": "Natural Swipe Gestures"
+    "message": "תנועות החלקה טבעיות"
   },
   "No Root Required": {
-    "message": "No Root Required"
+    "message": "אין צורך ברוט"
   },
   "No root permissions needed, ensuring device environment security": {
-    "message": "No root permissions needed, ensuring device environment security"
+    "message": "אין צורך בהרשאות רוט, מבטיח אבטחת סביבת המכשיר"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software."
@@ -473,24 +473,24 @@
     "description": "The description of Video collection"
   },
   "Open Source Client": {
-    "message": "Open Source Client"
+    "message": "לקוח קוד פתוח"
   },
   "Open source client code allows users to customize their own client": {
-    "message": "Open source client code allows users to customize their own client"
+    "message": "קוד לקוח קוד פתוח מאפשר למשתמשים להתאים אישית את הלקוח שלהם"
   },
   "Our Competitive Advantages": {
-    "message": "Our Competitive Advantages",
+    "message": "היתרונות התחרותיים שלנו",
     "description": "The description of Our Competitive Advantages"
   },
   "Our Core Advantages": {
-    "message": "Our Core Advantages"
+    "message": "היתרונות המרכזיים שלנו"
   },
   "Our Core Features": {
-    "message": "Our Core Features",
+    "message": "התכונות המרכזיות שלנו",
     "description": "The description of Our Core Features"
   },
   "Our plans": {
-    "message": "Our plans"
+    "message": "התוכניות שלנו"
   },
   "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
     "message": "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.",
@@ -506,46 +506,46 @@
     "message": "לשנה"
   },
   "Performance analytics": {
-    "message": "Performance analytics",
+    "message": "ניתוח ביצועים",
     "description": "The description of Performance analytics"
   },
   "Phone screen mirroring to a computer": {
-    "message": "Phone screen mirroring to a computer",
+    "message": "שיקוף מסך הטלפון למחשב",
     "description": "The description of Phone screen mirroring to a computer"
   },
   "Platform-optimized features": {
-    "message": "Platform-optimized features"
+    "message": "תכונות מותאמות לפלטפורמה"
   },
   "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
     "message": "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software."
   },
   "Post engagement boost": {
-    "message": "Post engagement boost"
+    "message": "הגברת מעורבות פוסטים"
   },
   "Post management": {
-    "message": "Post management"
+    "message": "ניהול פוסטים"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
-    "message": "Powerful Instagram automation tools designed for professional marketers and businesses"
+    "message": "כלי אוטומציה רבי עוצמה לאינסטגרם המיועדים למשווקים מקצועיים ועסקים"
   },
   "Powerful TikTok Automation & Management Tools": {
-    "message": "Powerful TikTok Automation & Management Tools",
+    "message": "כלי אוטומציה וניהול רבי עוצמה ל-TikTok",
     "description": "The description of Powerful TikTok Automation & Management Tools"
   },
   "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
-    "message": "Powerful technical team with real-time maintenance and updates ensuring script reliability"
+    "message": "צוות טכני רב עוצמה עם תחזוקה ועדכונים בזמן אמת המבטיחים אמינות סקריפטים"
   },
   "Premium Benefits": {
-    "message": "Premium Benefits"
+    "message": "הטבות פרמיום"
   },
   "Pricing": {
     "message": "תמחור"
   },
   "Private Local Deployment": {
-    "message": "Private Local Deployment"
+    "message": "פריסה מקומית פרטית"
   },
   "Professional TikTok Account Management & Marketing Tool": {
-    "message": "Professional TikTok Account Management & Marketing Tool",
+    "message": "כלי ניהול ושיווק מקצועי לחשבונות TikTok",
     "description": "The description of Professional TikTok Account Management & Marketing Tool"
   },
   "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {

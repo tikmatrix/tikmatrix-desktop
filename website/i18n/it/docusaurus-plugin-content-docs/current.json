@@ -12,23 +12,23 @@
     "description": "The label for category Tutorial - Scripts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "了解如何Utilizzo TIKTOK 矩阵的Base知识。",
+    "message": "Impara le basi dell'utilizzo di TIKTOK Matrix.",
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Troubleshooting": {
-    "message": "故障排查",
+    "message": "Risoluzione dei problemi",
     "description": "The label for category Troubleshooting in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Troubleshooting.link.generated-index.description": {
-    "message": "Domande Frequenti和故障排查Guida",
+    "message": "Domande frequenti e guida alla risoluzione dei problemi",
     "description": "The generated-index page description for category Troubleshooting in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.API Reference": {
-    "message": "API 参考",
+    "message": "Riferimento API",
     "description": "The generated-index page description for category API Reference in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.API Reference.link.generated-index.description": {
-    "message": "本地 API Documentazione，用于Programma化Gestione Attività。仅适用于 Pro+ Licenza持有者。",
+    "message": "Documentazione API locale per la gestione programmatica delle attività. Solo per titolari di licenza Pro+.",
     "description": "The label for category API Reference in sidebar tutorialSidebar"
   }
 }

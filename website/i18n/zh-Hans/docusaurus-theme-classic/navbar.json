@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "",
+    "message": "TikMatrix",
     "description": "The title in the navbar"
   },
   "item.label.Docs": {
@@ -43,7 +43,7 @@
     "description": "Navbar item with label FAQ"
   },
   "logo.alt": {
-    "message": "TikMatrix Logo",
+    "message": "TikMatrix 标志",
     "description": "The alt text of navbar logo"
   },
   "item.label.GitHub": {

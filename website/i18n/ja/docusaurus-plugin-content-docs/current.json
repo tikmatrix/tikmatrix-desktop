@@ -4,31 +4,31 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "基础教程",
+    "message": "基礎チュートリアル",
     "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Scripts": {
-    "message": "脚本教程",
+    "message": "スクリプトチュートリアル",
     "description": "The label for category Tutorial - Scripts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "解など何使用 TIKTOK 矩阵の基础知识。",
+    "message": "TikTokマトリックスの基礎知識の使い方を学びます。",
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Troubleshooting": {
-    "message": "故障排查",
+    "message": "トラブルシューティング",
     "description": "The label for category Troubleshooting in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Troubleshooting.link.generated-index.description": {
-    "message": "常见问题和故障排查指南",
+    "message": "よくある質問とトラブルシューティングガイド",
     "description": "The generated-index page description for category Troubleshooting in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.API Reference": {
-    "message": "API 参考",
+    "message": "APIリファレンス",
     "description": "The generated-index page description for category API Reference in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.API Reference.link.generated-index.description": {
-    "message": "本地 API 文档，用于程序化タスク管理。仅适用于 Pro+ 许できます证持有者。",
+    "message": "プログラムによるタスク管理のためのローカルAPIドキュメント。Pro+ライセンス所有者のみが利用できます。",
     "description": "The label for category API Reference in sidebar tutorialSidebar"
   }
 }
