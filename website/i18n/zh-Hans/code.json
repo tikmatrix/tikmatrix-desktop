@@ -1757,7 +1757,7 @@
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} 个文档标记为"{tagName}"",
+    "message": "{nDocsTagged} 个文档标记为\"{tagName}\"",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
