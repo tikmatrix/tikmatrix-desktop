@@ -211,7 +211,7 @@ async function processFile(metadata, config) {
     // Resolve the actual file path from the i18n directory and the stored relative path
     const fileFullPath = path.join(config.i18nDir, absolutePath);
 
-    const prompt = `
+    const prompt = `"
 请将文件 i18n/${relativePath} 的内容翻译为目标语言：${languageName}（${languageCode}）。
 
 【回复规则（必须严格遵守）】
@@ -220,7 +220,7 @@ async function processFile(metadata, config) {
 2️⃣ 我已经翻译完成
 
 禁止回复任何其他文字、解释、标点或格式。
-`;
+"`;
 
     const command = 'copilot';
     const args = [
