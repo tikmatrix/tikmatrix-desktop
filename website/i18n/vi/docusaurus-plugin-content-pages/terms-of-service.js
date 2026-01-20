@@ -5,64 +5,64 @@ import styles from './terms-of-service.module.css';
 export default function TermsOfService() {
     return (
         <Layout
-            title="服务条款"
-            description="TikMatrix 服务条款 - 使用我们平台的规则和指南">
+            title="Điều Khoản Dịch Vụ"
+            description="Điều Khoản Dịch Vụ TikMatrix - Quy tắc và hướng dẫn sử dụng nền tảng của chúng tôi">
             <div className="container">
                 <div className={styles.termsContent}>
-                    <h1>服务条款</h1>
-                    <p>最后更新日期: {new Date().toISOString().split('T')[0]}</p>
+                    <h1>Điều Khoản Dịch Vụ</h1>
+                    <p>Cập nhật lần cuối: {new Date().toISOString().split('T')[0]}</p>
 
-                    <h2>1. 条款接受</h2>
-                    <p>通过访问或使用 TikMatrix 网站和服务，您同意受这些服务条款以及所有适用的法律法规的约束。如果您不同意这些条款中的任何一条，您将被禁止使用或访问本网站。</p>
+                    <h2>1. Chấp Nhận Điều Khoản</h2>
+                    <p>Bằng cách truy cập hoặc sử dụng trang web và dịch vụ của TikMatrix, bạn đồng ý bị ràng buộc bởi các điều khoản dịch vụ này cũng như tất cả các luật và quy định hiện hành. Nếu bạn không đồng ý với bất kỳ điều khoản nào trong số này, bạn bị cấm sử dụng hoặc truy cập trang web này.</p>
 
-                    <h2>2. 使用许可</h2>
-                    <p>允许临时下载 TikMatrix 网站上的材料（信息或软件）仅供个人、非商业性的临时浏览。这是授予许可，而非所有权转让，根据此许可，您不得：</p>
+                    <h2>2. Giấy Phép Sử Dụng</h2>
+                    <p>Được phép tải xuống tạm thời các tài liệu (thông tin hoặc phần mềm) trên trang web TikMatrix chỉ để xem tạm thời cá nhân, phi thương mại. Đây là việc cấp giấy phép, không phải chuyển giao quyền sở hữu, và theo giấy phép này, bạn không được:</p>
                     <ul>
-                        <li>修改或复制材料</li>
-                        <li>将材料用于任何商业目的或公开展示</li>
-                        <li>尝试对 TikMatrix 网站包含的任何软件进行逆向工程</li>
-                        <li>从材料中删除任何版权或其他专有标记</li>
-                        <li>将材料转让给他人或在任何其他服务器上"镜像"材料</li>
+                        <li>Sửa đổi hoặc sao chép tài liệu</li>
+                        <li>Sử dụng tài liệu cho bất kỳ mục đích thương mại nào hoặc hiển thị công khai</li>
+                        <li>Cố gắng dịch ngược bất kỳ phần mềm nào có trong trang web TikMatrix</li>
+                        <li>Xóa bất kỳ bản quyền hoặc các dấu hiệu độc quyền khác khỏi tài liệu</li>
+                        <li>Chuyển giao tài liệu cho người khác hoặc "sao chép" tài liệu trên bất kỳ máy chủ nào khác</li>
                     </ul>
-                    <p>如果您违反任何这些限制，本许可将自动终止，并可能随时被 TikMatrix 终止。</p>
+                    <p>Nếu bạn vi phạm bất kỳ hạn chế nào trong số này, giấy phép này sẽ tự động chấm dứt và có thể bị TikMatrix chấm dứt bất cứ lúc nào.</p>
 
-                    <h2>3. 服务和订阅</h2>
-                    <p>TikMatrix 提供用于 TikTok 账户管理和营销自动化的软件工具。访问这些服务可能需要订阅或一次性付款。通过订阅我们的服务，您同意：</p>
+                    <h2>3. Dịch Vụ và Đăng Ký</h2>
+                    <p>TikMatrix cung cấp các công cụ phần mềm cho quản lý tài khoản TikTok và tự động hóa marketing. Truy cập các dịch vụ này có thể yêu cầu đăng ký hoặc thanh toán một lần. Bằng cách đăng ký dịch vụ của chúng tôi, bạn đồng ý:</p>
                     <ul>
-                        <li>试用期间可以随机取消订阅, 如果没有取消订阅将自动转为付费订阅</li>
-                        <li>提供准确和完整的账单信息</li>
-                        <li>支付产生费用时有效的所有费用</li>
-                        <li>不将服务用于任何非法目的或违反任何适用法律或法规</li>
-                    </ul>
-
-                    <h2>4. 用户行为</h2>
-                    <p>在使用我们的服务时，您同意不会：</p>
-                    <ul>
-                        <li>违反任何适用的法律或法规</li>
-                        <li>侵犯他人的权利</li>
-                        <li>分发恶意软件或从事其他有害活动</li>
-                        <li>尝试未经授权访问我们的系统或其他用户的账户</li>
-                        <li>以任何可能损害、禁用、使负担过重或损害我们服务的方式使用我们的服务</li>
+                        <li>Có thể hủy đăng ký bất cứ lúc nào trong thời gian dùng thử, nếu không hủy đăng ký sẽ tự động chuyển sang đăng ký trả phí</li>
+                        <li>Cung cấp thông tin thanh toán chính xác và đầy đủ</li>
+                        <li>Thanh toán tất cả các khoản phí có hiệu lực tại thời điểm phát sinh chi phí</li>
+                        <li>Không sử dụng dịch vụ cho bất kỳ mục đích bất hợp pháp nào hoặc vi phạm bất kỳ luật hoặc quy định hiện hành nào</li>
                     </ul>
 
-                    <h2>5. 知识产权</h2>
-                    <p>TikMatrix 名称、标志、软件和内容是 TikMatrix 及其许可方的专属财产。我们的服务和通过我们的服务包含或提供的所有内容均受知识产权法保护。</p>
+                    <h2>4. Hành Vi Người Dùng</h2>
+                    <p>Khi sử dụng dịch vụ của chúng tôi, bạn đồng ý sẽ không:</p>
+                    <ul>
+                        <li>Vi phạm bất kỳ luật hoặc quy định hiện hành nào</li>
+                        <li>Xâm phạm quyền của người khác</li>
+                        <li>Phân phối phần mềm độc hại hoặc tham gia vào các hoạt động có hại khác</li>
+                        <li>Cố gắng truy cập trái phép vào hệ thống của chúng tôi hoặc tài khoản của người dùng khác</li>
+                        <li>Sử dụng dịch vụ của chúng tôi theo bất kỳ cách nào có thể gây thiệt hại, vô hiệu hóa, quá tải hoặc làm hỏng dịch vụ của chúng tôi</li>
+                    </ul>
 
-                    <h2>6. 免责声明</h2>
-                    <p>TikMatrix 网站上的材料和提供的服务均按"原样"提供。TikMatrix 不做任何明示或暗示的保证，并特此否认所有其他保证，包括但不限于对特定用途的适销性或适用性的暗示保证。</p>
+                    <h2>5. Quyền Sở Hữu Trí Tuệ</h2>
+                    <p>Tên TikMatrix, logo, phần mềm và nội dung là tài sản độc quyền của TikMatrix và các bên cấp phép của công ty. Dịch vụ của chúng tôi và tất cả nội dung được chứa hoặc cung cấp thông qua dịch vụ của chúng tôi đều được bảo vệ bởi luật sở hữu trí tuệ.</p>
 
-                    <h2>7. 责任限制</h2>
-                    <p>在任何情况下，TikMatrix 或其供应商均不对因使用或无法使用材料或服务而产生的任何损害负责，即使 TikMatrix 已被告知可能发生此类损害。</p>
+                    <h2>6. Tuyên Bố Từ Chối Trách Nhiệm</h2>
+                    <p>Các tài liệu trên trang web TikMatrix và các dịch vụ được cung cấp đều được cung cấp "nguyên trạng". TikMatrix không đưa ra bất kỳ bảo đảm nào, dù rõ ràng hay ngụ ý, và đặc biệt từ chối tất cả các bảo đảm khác, bao gồm nhưng không giới hạn ở các bảo đảm ngụ ý về khả năng bán được hoặc phù hợp cho một mục đích cụ thể.</p>
 
-                    <h2>8. 适用法律</h2>
-                    <p>这些条款应受 TikMatrix 成立地管辖法律的管辖并按其解释，不考虑其法律冲突规定。</p>
+                    <h2>7. Giới Hạn Trách Nhiệm</h2>
+                    <p>Trong mọi trường hợp, TikMatrix hoặc các nhà cung cấp của công ty sẽ không chịu trách nhiệm về bất kỳ thiệt hại nào phát sinh từ việc sử dụng hoặc không thể sử dụng các tài liệu hoặc dịch vụ, ngay cả khi TikMatrix đã được thông báo về khả năng xảy ra thiệt hại như vậy.</p>
 
-                    <h2>9. 条款变更</h2>
-                    <p>TikMatrix 保留随时修改这些条款的权利。我们将通过更新这些条款的"最后更新日期"来通知用户任何更改。您在任何更改后继续使用我们的网站和服务表示您接受修改后的条款。</p>
+                    <h2>8. Luật Áp Dụng</h2>
+                    <p>Các điều khoản này sẽ được điều chỉnh và giải thích theo luật pháp của nơi TikMatrix được thành lập, không xem xét các quy định xung đột pháp luật của nơi đó.</p>
 
-                    <h2>10. 联系我们</h2>
-                    <p>如果您对这些条款有任何疑问，请联系我们：</p>
-                    <p>电子邮件：support@tikmatrix.com</p>
+                    <h2>9. Thay Đổi Điều Khoản</h2>
+                    <p>TikMatrix bảo lưu quyền sửa đổi các điều khoản này bất cứ lúc nào. Chúng tôi sẽ thông báo cho người dùng về bất kỳ thay đổi nào bằng cách cập nhật "Cập nhật lần cuối" của các điều khoản này. Việc bạn tiếp tục sử dụng trang web và dịch vụ của chúng tôi sau bất kỳ thay đổi nào cho thấy bạn chấp nhận các điều khoản đã sửa đổi.</p>
+
+                    <h2>10. Liên Hệ Với Chúng Tôi</h2>
+                    <p>Nếu bạn có bất kỳ câu hỏi nào về các điều khoản này, vui lòng liên hệ với chúng tôi:</p>
+                    <p>Email: support@tikmatrix.com</p>
                 </div>
             </div>
         </Layout>

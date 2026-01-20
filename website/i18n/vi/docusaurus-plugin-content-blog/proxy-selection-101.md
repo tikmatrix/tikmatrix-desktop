@@ -1,72 +1,72 @@
 ---
 slug: proxy-selection-101
-title: 🛠 代理选择入门 — 动态住宅 vs 静态住宅
+title: 🛠 Hướng Dẫn Lựa Chọn Proxy — Residential Dynamic vs Residential Static
 authors: tikMatrix
-tags: [代理, 风控, TikTok 营销, 自动化, TikMatrix]
+tags: [proxy, quản lý rủi ro, tiếp thị TikTok, tự động hóa, TikMatrix]
 ---
 
-> 选对代理，增长更稳、风控更少。  
-> 给 TikMatrix 用户的一份**简明实战指南**。
+> Chọn đúng proxy, tăng trưởng ổn định hơn, rủi ro kiểm soát ít hơn.  
+> Một **hướng dẫn thực chiến ngắn gọn** dành cho người dùng TikMatrix.
 
 <!-- truncate -->
 ---
-![TikTok 代理选择](/img/blog/proxy-selection.webp)
+![Lựa chọn proxy TikTok](/img/blog/proxy-selection.webp)
 
-## 🔹 1. 新注册与首次登录 → 用**动态住宅代理**（按流量计费）
+## 🔹 1. Đăng Ký Mới & Đăng Nhập Lần Đầu → Dùng **Proxy Residential Dynamic** (tính phí theo lưu lượng)
 
-- **原因：**高熵轮换，降低多次尝试之间的关联；更像不同住户。  
-- **适用：**创建/预热 **新号**。  
-- **要点：**控制并发，**每次尝试或每场会话**轮换；国家/语言与目标市场一致。
-
----
-
-## 🔷 2. 长期运营 → 用**静态住宅代理**（按数量计费）
-
-- **原因：**稳定 IP 累积**信任历史**（ASN、rDNS、时延更一致）。  
-- **适用：**已预热/老号的日常运营。  
-- **要点：**尽量 **一设备：一 IP**；若必须共享，避免给高风险账号共用。
-
-> 💡 共享策略按风险自定。更稳：**1 机 1 IP**；中等：**2–3 机/IP**，并**错峰**执行、行为分离。
+- **Lý do:** Xoay vòng entropy cao, giảm mối liên hệ giữa các lần thử; giống như những người dùng khác nhau hơn.  
+- **Áp dụng:** Tạo/làm nóng **tài khoản mới**.  
+- **Điểm quan trọng:** Kiểm soát đồng thời, xoay vòng **mỗi lần thử hoặc mỗi phiên**; quốc gia/ngôn ngữ phù hợp với thị trường mục tiêu.
 
 ---
 
-## 🧩 3. 快速对比
+## 🔷 2. Vận Hành Dài Hạn → Dùng **Proxy Residential Static** (tính phí theo số lượng)
 
-| 维度 | 动态住宅（流量计费） | 静态住宅（按量计费） |
+- **Lý do:** IP ổn định tích lũy **lịch sử tin cậy** (ASN, rDNS, độ trễ nhất quán hơn).  
+- **Áp dụng:** Vận hành hàng ngày của tài khoản đã làm nóng/cũ.  
+- **Điểm quan trọng:** Cố gắng **1 thiết bị : 1 IP**; nếu phải chia sẻ, tránh chia sẻ cho tài khoản có rủi ro cao.
+
+> 💡 Chiến lược chia sẻ tùy theo mức rủi ro. Ổn định hơn: **1 máy 1 IP**; Trung bình: **2–3 máy/IP**, và **sai lệch thời gian** thực thi, phân tách hành vi.
+
+---
+
+## 🧩 3. So Sánh Nhanh
+
+| Tiêu chí | Residential Dynamic (tính phí lưu lượng) | Residential Static (tính phí số lượng) |
 |---|---|---|
-| 场景 | 注册 / 首登 | 长期日常 |
-| 稳定性 | 低–中（轮换） | **高**（固定） |
-| 关联性 | **低** | 中（若共享） |
-| 风险 | 初期规避佳 | 长期信任佳 |
-| 成本 | 按 GB | 按 IP |
+| Kịch bản | Đăng ký / Đăng nhập lần đầu | Dài hạn hàng ngày |
+| Tính ổn định | Thấp–Trung bình (xoay vòng) | **Cao** (cố định) |
+| Tính liên kết | **Thấp** | Trung bình (nếu chia sẻ) |
+| Rủi ro | Tốt cho giai đoạn đầu | Tốt cho tin cậy dài hạn |
+| Chi phí | Theo GB | Theo IP |
 
 ---
 
-## ⚙️ 4. 运营护栏
+## ⚙️ 4. Hàng Rào Vận Hành
 
-- **区域一致：**国家/时区/语言与内容市场匹配  
-- **轮换规则：**动态 → 每次尝试/会话轮换；静态 → 出现异常再换  
-- **设备隔离：**代理账号与设备绑定；不共享会话  
-- **健康检查：**whoer/ipapi 测试；关注时延与丢包  
-- **兜底池：**预留少量备用静态 IP 以便快速切换
-
----
-
-## ✅ 5. 速查清单
-
-- 新号 → **动态住宅**  
-- 老号/长期 → **静态住宅**  
-- **优先 1 机 1 IP**；如需共享，错峰 + 行为隔离  
-- 保持地理一致；避免住宅与 VPN 混用
+- **Nhất quán khu vực:** Quốc gia/múi giờ/ngôn ngữ phù hợp với thị trường nội dung  
+- **Quy tắc xoay vòng:** Dynamic → xoay vòng mỗi lần thử/phiên; Static → chỉ đổi khi có bất thường  
+- **Cô lập thiết bị:** Proxy, tài khoản và thiết bị gắn kết; không chia sẻ phiên  
+- **Kiểm tra sức khỏe:** Kiểm tra whoer/ipapi; chú ý độ trễ và mất gói  
+- **Pool dự phòng:** Dự trữ một số IP static dự phòng để chuyển đổi nhanh
 
 ---
 
-## 🏁 结语
+## ✅ 5. Danh Sách Kiểm Tra Nhanh
 
-**一致性 = 安全增长。** 先用动态住宅**干净进入**，再切静态住宅**长期稳定**，累积信任。
-
-👉 [访问 TikMatrix.com](https://www.tikmatrix.com)
+- Tài khoản mới → **Residential Dynamic**  
+- Tài khoản cũ/dài hạn → **Residential Static**  
+- **Ưu tiên 1 máy 1 IP**; nếu cần chia sẻ, sai lệch thời gian + cô lập hành vi  
+- Giữ nhất quán địa lý; tránh trộn lẫn residential và VPN
 
 ---
 
-_本文基于 TikMatrix 手机农场在不同代理形态下的实战经验。_
+## 🏁 Kết Luận
+
+**Nhất quán = Tăng trưởng an toàn.** Đầu tiên dùng residential dynamic để **vào sạch**, sau đó chuyển sang residential static để **ổn định dài hạn**, tích lũy lòng tin.
+
+👉 [Truy cập TikMatrix.com](https://www.tikmatrix.com)
+
+---
+
+_Bài viết này dựa trên kinh nghiệm thực chiến của TikMatrix phone farm với các loại proxy khác nhau._

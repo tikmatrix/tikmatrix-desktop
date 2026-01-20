@@ -1,86 +1,86 @@
 ---
 sidebar_position: 1
-title: TikMatrix/IgMatrix Software定位与Roadmap
+title: Posizionamento Software e Roadmap TikMatrix/IgMatrix
 sidebar_label: Roadmap
-description: 官网版Roadmap，Panoramica TikMatrix/IgMatrix 在Automatico化运营生态中的定位、能力边界与上线Consigliato。
+description: Roadmap versione ufficiale, panoramica del posizionamento di TikMatrix/IgMatrix nell'ecosistema operativo automatizzato, limiti delle capacità e raccomandazioni per il lancio.
 slug: roadmap
 ---
 
-## 全流程地图
+## Mappa del Processo Completo
 
-![__PROTECTED_0__/__PROTECTED_1__ 路线图](/img/roadmap-zh.svg)
-
----
-
-## 我们为谁创造价值
-
-- **中小团队/MCN/品牌方/灰度试验团队**：需要在 5～100 Dispositivi规模上稳定Esegui“Ogni日重复但需要拟人化”的运营动作。
-- **Crescita与Contenuto运营**：需要高可控的“In Massa但非机械”的行为编排，兼顾安全策略与效率。
+![Roadmap TikMatrix/IgMatrix](/img/roadmap-zh.svg)
 
 ---
 
-## 核心价值主张（为什么选 TikMatrix/IgMatrix）
+## Per Chi Creiamo Valore
 
-1. **可编排的In MassaAutomatico化**：以“Attività → Script → 数据源”的模型构建可复用流水线，覆盖预热、Pubblica、Interazioni、采集的全链路动作。
-2. **拟人化与风控策略**：引擎具备Casuale化时序、节奏控制、人机手势模拟、异常中断恢复等机制，尽量贴近真人行为特征。
-3. **规模化与稳定性**：SupportoDispositivo Fisico/云机混合，USB/TCP ADB Connessione，保障 5→20→50→100 台的线性扩展与稳定调度。
-4. **数据可观测**：Attività日志、DispositiviScreen Mirroring、Account统计与结果数据Esporta。
+- **Team Piccoli-Medi/MCN/Brand/Team di Test Graduali**: Necessitano di eseguire stabilmente "azioni operative ripetitive quotidiane che richiedono simulazione umana" su scala di 5～100 dispositivi.
+- **Crescita e Operazioni Contenuto**: Necessitano di orchestrazione comportamentale "in massa ma non meccanica" altamente controllabile, bilanciando strategia di sicurezza ed efficienza.
 
 ---
 
-## Funzionalità地图（步骤 4 的能力边界）
+## Proposizione di Valore Principale (Perché Scegliere TikMatrix/IgMatrix)
 
-### 1) Attività编排与调度
-
-- 多Account/多Dispositivi并发策略，Casuale化Esegui顺序
-- FallitoRiprova、断点续跑、资源占用Gestione（素材/Account/Proxy）
-
-### 2) Script中心
-
-- **Super MarketingScript**：已融合 Boost 用户/帖子、Invia DM in Massa、Commenti in Massa等能力
-- Account预热Script：日常Visualizzazioni、停留、轻Interazioni
-- ContenutoPubblicaScript：Video/文案/Tag/HashtagGestione，定时Pubblica
-- 数据采集Script：Scraping Utenti名信息，构建下一轮目标清单
-
-### 3) 人机与风控
-
-- 触控/滑动/停顿/Visualizzazioni时长的Casuale化
-- 异常检测与速率限制，避免一volte性高频行为
-
-> **边界声明**：TikMatrix/IgMatrix 不提供Dispositivi、Account、Proxy本身；我们聚焦于 **运营动作的Automatico化**。
+1. **Automazione in Massa Orchestrabile**: Costruisce pipeline riutilizzabili con il modello "attività → script → sorgente dati", coprendo l'intera catena di azioni: warm-up, pubblicazione, interazione e raccolta.
+2. **Simulazione Umana e Strategia di Controllo Rischi**: Il motore è dotato di meccanismi di randomizzazione temporale, controllo del ritmo, simulazione gesti umano-macchina, recupero da interruzioni anomale, ecc., per avvicinarsi il più possibile alle caratteristiche comportamentali umane reali.
+3. **Scalabilità e Stabilità**: Supporta mix di dispositivi fisici/cloud, connessione USB/TCP ADB, garantendo scalabilità lineare e pianificazione stabile da 5→20→50→100 dispositivi.
+4. **Osservabilità Dati**: Log attività, screen mirroring dispositivi, statistiche account ed esportazione dati risultati.
 
 ---
 
-## 上线Consigliato（从 0 到 规模化）
+## Mappa Funzionalità (Limiti Capacità Passo 4)
 
-1. **验证期（1–5 台）**：串联Dispositivi→Account→Proxy→单一Script的最小闭环
-2. **试点期（10–20 台）**：引入Super MarketingScript + 数据采集闭环；观察风控阈值
-3. **扩展期（20–50 台）**：Gruppo限速、Casuale化策略、多数据源轮换
-4. **规模期（50-100 台）**：分批调度、错峰Esegui
+### 1) Orchestrazione e Pianificazione Attività
 
----
+- Strategia concorrenza multi-account/multi-dispositivo, randomizzazione ordine di esecuzione
+- Retry fallimenti, ripresa da checkpoint, gestione occupazione risorse (materiali/account/proxy)
 
-## 风险与合规Suggerimento
+### 2) Centro Script
 
-- UtilizzoAutomatico化工具可能违反平台服务条款；请**自担风险**并合理控制频率与行为模式
-- Telefono硬件环境、Proxy、Account质量与运营策略会显著影响稳定性与结果
+- **Script Super Marketing**: Ha integrato capacità Boost utenti/post, invio DM in massa, commenti in massa, ecc.
+- Script warm-up account: navigazione quotidiana, permanenza, interazioni leggere
+- Script pubblicazione contenuti: gestione video/testo/tag/hashtag, pubblicazione programmata
+- Script raccolta dati: scraping informazioni nome utente, costruzione lista target prossimo turno
 
----
+### 3) Simulazione Umana e Controllo Rischi
 
-## 常见问答
+- Randomizzazione tocco/scorrimento/pausa/durata visualizzazione
+- Rilevamento anomalie e limitazione velocità, evitando comportamenti ad alta frequenza una tantum
 
-**Q：TikMatrix Vuoi提供Account/Proxy？**  
-A：不提供。我们专注Automatico化引擎与ScriptEsegui。
-
-**Q：Vuoi提供Cloud Phone？**  
-A：不提供。用户需自行准备Dispositivi环境。
-
-**Q：VuoiSupportoCloud Phone？**  
-A：只要能通过 ADB（USB/TCP）稳定Connessione，即可纳入调度。
+> **Dichiarazione Limiti**: TikMatrix/IgMatrix non fornisce dispositivi, account o proxy; ci concentriamo sull'**automazione delle azioni operative**.
 
 ---
 
-## 行动呼吁
+## Raccomandazioni per il Lancio (Da 0 alla Scala)
 
-- 立即试用 Starter 套餐，构建你的最小可行“步骤 4”闭环
-- 阅读ScriptDocumentazione，快速上手In Massa运营
+1. **Periodo di Validazione (1–5 dispositivi)**: Collegare dispositivo→account→proxy→script singolo nel loop chiuso minimo
+2. **Periodo Pilota (10–20 dispositivi)**: Introdurre script Super Marketing + loop raccolta dati; osservare soglia controllo rischi
+3. **Periodo di Espansione (20–50 dispositivi)**: Limitazione velocità per gruppo, strategia randomizzazione, rotazione multi-sorgente dati
+4. **Periodo di Scala (50-100 dispositivi)**: Pianificazione batch, esecuzione sfalsata
+
+---
+
+## Avviso Rischi e Conformità
+
+- L'utilizzo di strumenti di automazione potrebbe violare i termini di servizio della piattaforma; si prega di **assumersi i rischi** e controllare ragionevolmente frequenza e modelli comportamentali
+- L'ambiente hardware del telefono, proxy, qualità account e strategia operativa influenzeranno significativamente stabilità e risultati
+
+---
+
+## Domande Frequenti
+
+**Q: TikMatrix fornisce account/proxy?**  
+A: No. Ci concentriamo sul motore di automazione e l'esecuzione degli script.
+
+**Q: Fornite cloud phone?**  
+A: No. Gli utenti devono preparare autonomamente l'ambiente dei dispositivi.
+
+**Q: Supportate i cloud phone?**  
+A: Purché possano connettersi stabilmente tramite ADB (USB/TCP), possono essere inclusi nella pianificazione.
+
+---
+
+## Invito all'Azione
+
+- Prova subito il piano Starter, costruisci il tuo loop chiuso "passo 4" minimo vitale
+- Leggi la documentazione degli script, padroneggia rapidamente le operazioni in massa

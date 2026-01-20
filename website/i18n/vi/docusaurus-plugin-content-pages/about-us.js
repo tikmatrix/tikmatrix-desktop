@@ -5,46 +5,46 @@ import styles from './about-us.module.css';
 export default function AboutUs() {
     return (
         <Layout
-            title="关于我们"
-            description="了解更多关于 TikMatrix - 我们是谁，我们的使命和愿景">
+            title="Về Chúng Tôi"
+            description="Tìm hiểu thêm về TikMatrix - Chúng tôi là ai, sứ mệnh và tầm nhìn của chúng tôi">
             <div className="container">
                 <div className={styles.aboutContent}>
-                    <h1>关于我们</h1>
+                    <h1>Về Chúng Tôi</h1>
 
-                    <h2>公司简介</h2>
-                    <p>TikMatrix 由美国怀俄明州注册公司 TikMatrix LLC 开发。自成立以来，我们一直致力于创建创新的社交媒体营销工具，帮助企业和内容创作者最大化他们的线上影响力。</p>
+                    <h2>Giới Thiệu Công Ty</h2>
+                    <p>TikMatrix được phát triển bởi TikMatrix LLC, một công ty đăng ký tại bang Wyoming, Hoa Kỳ. Kể từ khi thành lập, chúng tôi luôn cam kết tạo ra các công cụ marketing truyền thông xã hội sáng tạo, giúp doanh nghiệp và nhà sáng tạo nội dung tối đa hóa ảnh hưởng trực tuyến của họ.</p>
 
-                    <h2>我们的使命</h2>
-                    <p>我们的使命是开发强大、易用的社交媒体营销工具，帮助各种规模的企业高效地发展其线上影响力。我们努力使先进的营销技术变得人人可及。</p>
+                    <h2>Sứ Mệnh Của Chúng Tôi</h2>
+                    <p>Sứ mệnh của chúng tôi là phát triển các công cụ marketing truyền thông xã hội mạnh mẽ và dễ sử dụng, giúp các doanh nghiệp thuộc mọi quy mô phát triển ảnh hưởng trực tuyến một cách hiệu quả. Chúng tôi nỗ lực làm cho công nghệ marketing tiên tiến trở nên dễ tiếp cận với tất cả mọi người.</p>
 
-                    <h2>我们的产品</h2>
-                    <p>我们的旗舰产品 TikMatrix 专为专业 TikTok 账户管理和营销自动化而设计。我们还为其他平台提供补充工具：</p>
+                    <h2>Sản Phẩm Của Chúng Tôi</h2>
+                    <p>Sản phẩm hàng đầu của chúng tôi, TikMatrix, được thiết kế đặc biệt cho quản lý tài khoản TikTok chuyên nghiệp và tự động hóa marketing. Chúng tôi cũng cung cấp các công cụ bổ sung cho các nền tảng khác:</p>
                     <ul>
-                        <li><strong>TikMatrix</strong> - 专业 TikTok 账户管理和营销工具</li>
-                        <li><strong>IgMatrix</strong> - Instagram 营销和账户管理解决方案</li>
-                        <li><strong>VideoMagic</strong> - 视频内容创作和优化工具</li>
-                        <li><strong>YtMatrix</strong> - YouTube 频道增长和管理平台</li>
+                        <li><strong>TikMatrix</strong> - Công cụ quản lý tài khoản và marketing TikTok chuyên nghiệp</li>
+                        <li><strong>IgMatrix</strong> - Giải pháp marketing và quản lý tài khoản Instagram</li>
+                        <li><strong>VideoMagic</strong> - Công cụ sáng tạo và tối ưu hóa nội dung video</li>
+                        <li><strong>YtMatrix</strong> - Nền tảng phát triển và quản lý kênh YouTube</li>
                     </ul>
 
-                    <h2>我们的技术</h2>
-                    <p>在 TikMatrix，我们利用尖端技术提供可靠、高效和安全的社交媒体营销工具。我们的开发团队不断努力改进产品并融入最新的行业创新，确保我们的用户始终能够获得最佳的营销工具。</p>
+                    <h2>Công Nghệ Của Chúng Tôi</h2>
+                    <p>Tại TikMatrix, chúng tôi tận dụng công nghệ tiên tiến để cung cấp các công cụ marketing truyền thông xã hội đáng tin cậy, hiệu quả và an toàn. Đội ngũ phát triển của chúng tôi không ngừng nỗ lực cải tiến sản phẩm và tích hợp những đổi mới mới nhất trong ngành, đảm bảo người dùng của chúng tôi luôn có quyền truy cập vào các công cụ marketing tốt nhất.</p>
 
-                    <h2>我们的价值观</h2>
-                    <p>我们坚信：</p>
+                    <h2>Giá Trị Của Chúng Tôi</h2>
+                    <p>Chúng tôi tin tưởng vào:</p>
                     <ul>
-                        <li><strong>创新</strong> - 不断改进我们的产品以满足不断变化的市场需求</li>
-                        <li><strong>可靠性</strong> - 确保我们的工具持续稳定和安全运行</li>
-                        <li><strong>普惠性</strong> - 让各种规模的企业都能使用先进的营销工具</li>
-                        <li><strong>客户成功</strong> - 优先考虑用户的成长和成就</li>
+                        <li><strong>Đổi Mới</strong> - Liên tục cải tiến sản phẩm của chúng tôi để đáp ứng nhu cầu thị trường thay đổi</li>
+                        <li><strong>Độ Tin Cậy</strong> - Đảm bảo các công cụ của chúng tôi hoạt động ổn định và an toàn liên tục</li>
+                        <li><strong>Khả Năng Tiếp Cận</strong> - Làm cho các công cụ marketing tiên tiến có thể sử dụng được cho các doanh nghiệp thuộc mọi quy mô</li>
+                        <li><strong>Thành Công Của Khách Hàng</strong> - Ưu tiên sự phát triển và thành tựu của người dùng</li>
                     </ul>
 
-                    <h2>加入我们</h2>
-                    <p>无论您是小企业主、内容创作者还是营销专业人士，TikMatrix 都能提供您在当今竞争激烈的社交媒体环境中取得成功所需的工具。我们的团队致力于帮助您实现营销目标并扩大线上影响力。</p>
+                    <h2>Tham Gia Với Chúng Tôi</h2>
+                    <p>Cho dù bạn là chủ doanh nghiệp nhỏ, nhà sáng tạo nội dung hay chuyên gia marketing, TikMatrix đều cung cấp các công cụ bạn cần để thành công trong môi trường truyền thông xã hội cạnh tranh ngày nay. Đội ngũ của chúng tôi cam kết giúp bạn đạt được mục tiêu marketing và mở rộng ảnh hưởng trực tuyến.</p>
 
-                    <h2>联系我们</h2>
-                    <p>有问题或需要帮助？我们随时为您服务！</p>
-                    <p>电子邮件：support@tikmatrix.com</p>
-                    <p>加入我们的社区：<a href="https://t.me/tikmatrix_agent_bot">Telegram 支持群组</a></p>
+                    <h2>Liên Hệ Với Chúng Tôi</h2>
+                    <p>Có câu hỏi hoặc cần trợ giúp? Chúng tôi luôn sẵn sàng phục vụ bạn!</p>
+                    <p>Email: support@tikmatrix.com</p>
+                    <p>Tham gia cộng đồng của chúng tôi: <a href="https://t.me/tikmatrix_agent_bot">Nhóm Hỗ Trợ Telegram</a></p>
                 </div>
             </div>
         </Layout>

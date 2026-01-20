@@ -1,90 +1,90 @@
 ---
 slug: usb-phone-farm-limits
-title: 为什么普通 PC 很难接入超过 ~40 台手机？
+title: Normal Bir PC Neden ~40 Cihazdan Fazlasını Bağlamakta Zorlanır?
 authors: tikMatrix
-tags: [硬件, 手机农场, USB, TikTok 自动化, TikMatrix]
+tags: [Donanım, Cihaz Çiftliği, USB, TikTok Otomasyonu, TikMatrix]
 ---
 
-> 按标准，USB 主机**最多可挂 127 个设备**。  
-> 但在现实中，多数消费级主板会在 **~40 台**左右“见顶”，原因多来自 **芯片组/固件限制与拓扑结构**。
+> Standarda göre, USB ana bilgisayarı **maksimum 127 cihaz** takabilir.  
+> Ancak gerçekte, çoğu tüketici anakartı **~40 cihazda** "tavan"a ulaşır, nedenleri çoğunlukla **yonga seti/firmware limitleri ve topoloji yapısından** gelir.
 
 <!-- truncate -->
 ---
-![USB 限制与手机农场](/img/blog/usb-phone-farm.webp)
+![USB Limitleri ve Cihaz Çiftliği](/img/blog/usb-phone-farm.webp)
 
-## 🧠 1. 理论 vs 现实
+## 🧠 1. Teori vs Gerçeklik
 
-- **纸面参数：**单个 USB 主机地址空间可容纳 **127**（含 Hub）。  
-- **真实情况：**消费级主板通常在 **30–45 台**徘徊，主要因为：
-  - 主控固件的**设备扇出**限制  
-  - 芯片组**通道共享**导致的拥塞  
-  - **Hub 层级/拓扑**过深（电源分配、枚举超时）
+- **Kağıt parametreler:** Tek USB ana bilgisayar adres alanı **127** (Hub dahil) alabilir.  
+- **Gerçek durum:** Tüketici anakartları genellikle **30–45 cihazda** kalır, ana nedenler:
+  - Ana kontrolör firmware **cihaz fan-out** limiti  
+  - Yonga seti **kanal paylaşımından** kaynaklanan tıkanıklık  
+  - **Hub katmanı/topoloji** çok derin (güç dağıtımı, numaralandırma zaman aşımı)
 
-> 关键瓶颈常不在系统，而在**主控 + 主板设计**。
-
----
-
-## 🖥️ 2. 服务器/工作站主板为何更能“上量”
-
-如 **X79 架构**等服务器/高端平台通常具备：
-
-- **更多独立**的 USB 主控  
-- **更少固件限制**（设备扇出更宽）  
-- **更合理**的通道与供电影响控制
-
-**效果：**在同系统与相同 Hub 下，更容易突破消费级上限。
+> Anahtar darboğaz genellikle sistemde değil, **ana kontrolör + anakart tasarımındadır**.
 
 ---
 
-## 🔌 3. 实操接线要点（提高识别上限）
+## 🖥️ 2. Sunucu/İş İstasyonu Anakartı Neden Daha Fazla "Hacim Yapabilir"
 
-1. **优先使用机箱后置**主板直连 USB 口，少用前置面板延长线。  
-2. 大规模连接时优先 **USB 2.0（黑色）**；**避免 USB 3.0（蓝色）**通道的不稳定因素。  
-3. **BIOS 设置：**  
-   - **关闭 XHCI**  
-   - **开启 EHCI**  
-   让设备走更稳定的 USB2 主机路径，枚举更可靠。
+**X79 mimarisi** gibi sunucu/üst düzey platformlar genellikle şunlara sahiptir:
 
-> 供电同样关键：使用**带电源的优质 Hub**、短高品质线材，并把负载分散到多个主控上。
+- **Daha fazla bağımsız** USB ana kontrolör  
+- **Daha az firmware limiti** (cihaz fan-out daha geniş)  
+- **Daha mantıklı** kanal ve güç etkisi kontrolü
+
+**Etki:** Aynı sistem ve aynı Hub altında, tüketici seviyesi üst sınırını aşmak daha kolaydır.
 
 ---
 
-## 🧩 4. 拓扑与供电清单
+## 🔌 3. Pratik Kablolama Noktaları (Tanıma Üst Sınırını Artırma)
 
-| 维度 | 建议 | 说明 |
+1. **Öncelikle arka panel** anakart doğrudan bağlantı USB portunu kullanın, ön panel uzatma kablosunu az kullanın.  
+2. Büyük ölçekli bağlantıda öncelikle **USB 2.0 (siyah)**; **USB 3.0 (mavi)** kanalının istikrarsızlık faktörlerinden **kaçının**.  
+3. **BIOS ayarları:**  
+   - **XHCI'yi kapatın**  
+   - **EHCI'yi açın**  
+   Cihazların daha istikrarlı USB2 ana bilgisayar yoluna gitmesini sağlayın, numaralandırma daha güvenilir.
+
+> Güç de aynı derecede önemli: **Güç sağlayan kaliteli Hub**, kısa yüksek kaliteli kablolar kullanın ve yükü birden fazla ana kontrolöre dağıtın.
+
+---
+
+## 🧩 4. Topoloji ve Güç Kontrol Listesi
+
+| Boyut | Öneri | Açıklama |
 |---|---|---|
-| Hub 层级 | ≤ 3 层 | 过深易超时 |
-| Hub 规格 | 7–10 口带电源 | 每组独立电源更稳 |
-| 线材 | 短、屏蔽好 | 早换可疑线 |
-| 端口 | 先用后置 I/O | 前置走线共用多 |
-| 通道 | 手机走 USB2 | USB3 留给存储等 |
+| Hub katmanı | ≤ 3 katman | Çok derin kolay zaman aşımı |
+| Hub spesifikasyonu | 7–10 port güç sağlayan | Her grup bağımsız güç daha istikrarlı |
+| Kablo | Kısa, iyi ekranlanmış | Şüpheli kabloyu erken değiştir |
+| Port | Önce arka panel I/O kullan | Ön panel kablolama paylaşımlı |
+| Kanal | Cihazlar USB2'ye gitsin | USB3'ü depolama vs. için bırak |
 
 ---
 
-## 🧪 5. 常见问题速排
+## 🧪 5. Yaygın Sorun Hızlı Giderme
 
-- **随机掉线/重连：**供电不足或线材问题 → 换电源/线。  
-- **卡在 ~38–42 台不再枚举：**主控/固件上限 → 更换到其他根端口、加独立 USB 控制卡、或换服务器级主板。  
-- **ADB 扫描占用高：**同一主控挂太多设备 → 把 Hub 分散到不同根端口。
-
----
-
-## ⚙️ 6. TikMatrix 推荐配置
-
-- 主板：**服务器/工作站**（如 X79 级别或同类 HEDT）  
-- Hub：多组**带电源 USB2 Hub**，分布到不同根端口  
-- BIOS：**XHCI 关，EHCI 开**  
-- 系统：Windows + ADB 驱动；保持图形/WebView 稳定
+- **Rastgele kesinti/yeniden bağlantı:** Yetersiz güç veya kablo sorunu → Güç/kabloyu değiştir.  
+- **~38–42 cihazda takılıp numaralandırma yok:** Ana kontrolör/firmware üst sınırı → Diğer kök porta değiştir, bağımsız USB kontrol kartı ekle veya sunucu seviyesi anakarta geç.  
+- **ADB tarama kullanımı yüksek:** Aynı ana kontrolöre çok fazla cihaz takılı → Hub'ları farklı kök portlara dağıt.
 
 ---
 
-## 🏁 结语
+## ⚙️ 6. TikMatrix Önerilen Yapılandırma
 
-USB 理论上能挂 127 台，但消费级主板常在 **~40** 台附近受限。  
-用 **后置 USB2**、**带电源 Hub**、**EHCI 优先 BIOS**，或直接上 **服务器级主板**，就能更稳地突破上限。
-
-👉 [访问 TikMatrix.com](https://www.tikmatrix.com)
+- Anakart: **Sunucu/iş istasyonu** (X79 seviyesi veya benzer HEDT gibi)  
+- Hub: Birden fazla grup **güç sağlayan USB2 Hub**, farklı kök portlara dağıt  
+- BIOS: **XHCI kapat, EHCI aç**  
+- Sistem: Windows + ADB sürücüsü; grafik/WebView istikrarlı tut
 
 ---
 
-_本文基于 TikMatrix 在真实手机农场环境中的枚举与稳定性测试经验。_
+## 🏁 Sonuç
+
+USB teoride 127 cihaz takabilir, ancak tüketici anakartı genellikle **~40** cihaz civarında sınırlıdır.  
+**Arka panel USB2**, **güç sağlayan Hub**, **EHCI öncelikli BIOS** kullanın veya doğrudan **sunucu seviyesi anakarta** geçin, üst sınırı daha istikrarlı aşabilirsiniz.
+
+👉 [TikMatrix.com'u ziyaret edin](https://www.tikmatrix.com)
+
+---
+
+_Bu makale, TikMatrix'in gerçek cihaz çiftliği ortamında numaralandırma ve istikrar testi deneyimine dayanmaktadır._

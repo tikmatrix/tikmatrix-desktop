@@ -5,48 +5,48 @@ import styles from './about-us.module.css';
 export default function AboutUs() {
     return (
         <Layout
-            title="关于我们"
-            description="了解更多关于 TikMatrix - 我们是谁，我们的使命和愿景">
+            title="Chi Siamo"
+            description="Scopri di più su TikMatrix - chi siamo, la nostra missione e visione">
             <div className="container">
                 <div className={styles.aboutContent}>
-                    <h1>关于我们</h1>
+                    <h1>Chi Siamo</h1>
 
-                    <h2>公司简介</h2>
-                    <p>TikMatrix 由美国怀俄明州注册公司 TikMatrix LLC 开发。自成立以来，我们一直致力于创建创新的社交媒体营销工具，帮助企业和内容创作者最大化他们的线上影响力。</p>
+                    <h2>Profilo Aziendale</h2>
+                    <p>TikMatrix è sviluppato da TikMatrix LLC, registrata nello stato del Wyoming, Stati Uniti. Dalla nostra fondazione, ci siamo impegnati a creare strumenti innovativi di marketing sui social media per aiutare le aziende e i creatori di contenuti a massimizzare la loro influenza online.</p>
 
-                    <h2>我们的使命</h2>
-                    <p>我们的使命是开发强大、易用的社交媒体营销工具，帮助各种规模的企业高效地发展其线上影响力。我们努力使先进的营销技术变得人人可及。</p>
+                    <h2>La Nostra Missione</h2>
+                    <p>La nostra missione è sviluppare strumenti di marketing sui social media potenti e facili da usare per aiutare le aziende di tutte le dimensioni a far crescere la loro presenza online in modo efficiente. Ci sforziamo di rendere le tecnologie di marketing avanzate accessibili a tutti.</p>
 
-                    <h2>我们的产品</h2>
-                    <p>我们的旗舰产品 TikMatrix 专为专业 TikTok 账户管理和营销自动化而设计。我们还为其他平台提供补充工具：</p>
+                    <h2>I Nostri Prodotti</h2>
+                    <p>Il nostro prodotto di punta, TikMatrix, è progettato per la gestione professionale degli account TikTok e l'automazione del marketing. Offriamo anche strumenti complementari per altre piattaforme:</p>
                     <ul>
-                        <li><strong>TikMatrix</strong> - 专业 TikTok 账户管理和营销工具</li>
-                        <li><strong>IgMatrix</strong> - Instagram 营销和账户管理解决方案</li>
-                        <li><strong>VideoMagic</strong> - 视频内容创作和优化工具</li>
-                        <li><strong>YtMatrix</strong> - YouTube 频道增长和管理平台</li>
+                        <li><strong>TikMatrix</strong> - Strumento professionale per la gestione degli account TikTok e il marketing</li>
+                        <li><strong>IgMatrix</strong> - Soluzione di marketing e gestione degli account Instagram</li>
+                        <li><strong>VideoMagic</strong> - Strumento per la creazione e l'ottimizzazione di contenuti video</li>
+                        <li><strong>YtMatrix</strong> - Piattaforma per la crescita e la gestione dei canali YouTube</li>
                     </ul>
 
-                    <h2>我们的技术</h2>
-                    <p>在 TikMatrix，我们利用尖端技术提供可靠、高效和安全的社交媒体营销工具。我们的开发团队不断努力改进产品并融入最新的行业创新，确保我们的用户始终能够获得最佳的营销工具。</p>
+                    <h2>La Nostra Tecnologia</h2>
+                    <p>In TikMatrix, utilizziamo tecnologie all'avanguardia per fornire strumenti di marketing sui social media affidabili, efficienti e sicuri. Il nostro team di sviluppo lavora continuamente per migliorare i prodotti e incorporare le ultime innovazioni del settore, assicurando che i nostri utenti abbiano sempre accesso ai migliori strumenti di marketing.</p>
 
-                    <h2>我们的价值观</h2>
-                    <p>我们坚信：</p>
+                    <h2>I Nostri Valori</h2>
+                    <p>Crediamo fermamente in:</p>
                     <ul>
-                        <li><strong>创新</strong> - 不断改进我们的产品以满足不断变化的市场需求</li>
-                        <li><strong>可靠性</strong> - 确保我们的工具持续稳定和安全运行</li>
-                        <li><strong>普惠性</strong> - 让各种规模的企业都能使用先进的营销工具</li>
-                        <li><strong>客户成功</strong> - 优先考虑用户的成长和成就</li>
+                        <li><strong>Innovazione</strong> - Migliorare continuamente i nostri prodotti per soddisfare le esigenze del mercato in evoluzione</li>
+                        <li><strong>Affidabilità</strong> - Garantire il funzionamento stabile e sicuro dei nostri strumenti</li>
+                        <li><strong>Accessibilità</strong> - Rendere gli strumenti di marketing avanzati disponibili per aziende di tutte le dimensioni</li>
+                        <li><strong>Successo del Cliente</strong> - Dare priorità alla crescita e ai risultati degli utenti</li>
                     </ul>
 
-                    <h2>加入我们</h2>
-                    <p>无论您是小企业主、内容创作者还是营销专业人士，TikMatrix 都能提供您在当今竞争激烈的社交媒体环境中取得成功所需的工具。我们的团队致力于帮助您实现营销目标并扩大线上影响力。</p>
+                    <h2>Unisciti a Noi</h2>
+                    <p>Che tu sia un piccolo imprenditore, un creatore di contenuti o un professionista del marketing, TikMatrix fornisce gli strumenti di cui hai bisogno per avere successo nell'ambiente competitivo dei social media di oggi. Il nostro team si impegna ad aiutarti a raggiungere i tuoi obiettivi di marketing ed espandere la tua presenza online.</p>
 
-                    <h2>联系我们</h2>
-                    <p>有问题或需要帮助？我们随时为您服务！</p>
-                    <p>电子邮件：support@tikmatrix.com</p>
-                    <p>加入我们的社区：<a href="https://t.me/tikmatrix_agent_bot">Telegram 支持群组</a></p>
+                    <h2>Contattaci</h2>
+                    <p>Hai domande o hai bisogno di aiuto? Siamo qui per te!</p>
+                    <p>Email: support@tikmatrix.com</p>
+                    <p>Unisciti alla nostra comunità: <a href="https://t.me/tikmatrix_agent_bot">Gruppo di Supporto Telegram</a></p>
                 </div>
             </div>
         </Layout>
     );
-} 
+}

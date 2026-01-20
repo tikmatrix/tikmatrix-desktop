@@ -5,66 +5,66 @@ import styles from './privacy-policy.module.css';
 export default function PrivacyPolicy() {
     return (
         <Layout
-            title="隐私政策"
-            description="TikMatrix 隐私政策 - 我们如何收集、使用和保护您的数据">
+            title="Gizlilik Politikası"
+            description="TikMatrix Gizlilik Politikası - Verilerinizi nasıl topluyoruz, kullanıyoruz ve koruyoruz">
             <div className="container">
                 <div className={styles.privacyContent}>
-                    <h1>隐私政策</h1>
-                    <p>最后更新日期: {new Date().toISOString().split('T')[0]}</p>
+                    <h1>Gizlilik Politikası</h1>
+                    <p>Son güncelleme tarihi: {new Date().toISOString().split('T')[0]}</p>
 
-                    <h2>1. 引言</h2>
-                    <p>欢迎访问 TikMatrix（以下简称"我们"、"我们的"或"本公司"）。我们致力于保护您的个人信息和隐私权。本隐私政策解释了当您访问我们的网站或使用我们的服务时，我们如何收集、使用、披露和保护您的信息。</p>
+                    <h2>1. Giriş</h2>
+                    <p>TikMatrix'e ("biz", "bizim" veya "şirket" olarak anılacaktır) hoş geldiniz. Kişisel bilgilerinizi ve gizlilik haklarınızı korumaya kararlıyız. Bu gizlilik politikası, web sitemizi ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda bilgilerinizi nasıl topladığımızı, kullandığımızı, ifşa ettiğimizi ve koruduğumuzu açıklamaktadır.</p>
 
-                    <h2>2. 我们收集的信息</h2>
-                    <p>我们可能会收集网站和服务用户的几类信息，包括：</p>
+                    <h2>2. Topladığımız Bilgiler</h2>
+                    <p>Web sitemizin ve hizmetlerimizin kullanıcılarından aşağıdakiler dahil olmak üzere çeşitli bilgi kategorileri toplayabiliriz:</p>
                     <ul>
-                        <li><strong>个人信息：</strong>当您注册我们的服务或与我们沟通时提供的姓名、电子邮件地址、电话号码和其他标识符。</li>
-                        <li><strong>技术信息：</strong>当您访问我们的网站时的 IP 地址、浏览器类型、操作系统和其他技术详情。</li>
-                        <li><strong>使用信息：</strong>您如何与我们的网站和服务互动，包括使用的功能和花费的时间。</li>
+                        <li><strong>Kişisel Bilgiler:</strong> Hizmetlerimize kaydolduğunuzda veya bizimle iletişime geçtiğinizde sağladığınız ad, e-posta adresi, telefon numarası ve diğer tanımlayıcılar.</li>
+                        <li><strong>Teknik Bilgiler:</strong> Web sitemizi ziyaret ettiğinizde IP adresi, tarayıcı türü, işletim sistemi ve diğer teknik ayrıntılar.</li>
+                        <li><strong>Kullanım Bilgileri:</strong> Web sitemiz ve hizmetlerimizle nasıl etkileşimde bulunduğunuz, kullanılan özellikler ve harcanan zaman dahil.</li>
                     </ul>
 
-                    <h2>3. 我们如何使用您的信息</h2>
-                    <p>我们可能将收集的信息用于各种目的，包括：</p>
+                    <h2>3. Bilgilerinizi Nasıl Kullanıyoruz</h2>
+                    <p>Topladığımız bilgileri aşağıdakiler dahil olmak üzere çeşitli amaçlar için kullanabiliriz:</p>
                     <ul>
-                        <li>提供、运营和维护我们的服务</li>
-                        <li>改进和个性化您的体验</li>
-                        <li>就更新、支持和促销与您沟通</li>
-                        <li>分析使用模式以增强我们的服务</li>
-                        <li>防止欺诈并确保安全</li>
+                        <li>Hizmetlerimizi sağlamak, işletmek ve sürdürmek</li>
+                        <li>Deneyiminizi geliştirmek ve kişiselleştirmek</li>
+                        <li>Güncellemeler, destek ve promosyonlar hakkında sizinle iletişim kurmak</li>
+                        <li>Hizmetlerimizi geliştirmek için kullanım kalıplarını analiz etmek</li>
+                        <li>Dolandırıcılığı önlemek ve güvenliği sağlamak</li>
                     </ul>
 
-                    <h2>4. 信息共享和披露</h2>
-                    <p>我们可能在以下情况下共享您的信息：</p>
+                    <h2>4. Bilgi Paylaşımı ve İfşası</h2>
+                    <p>Bilgilerinizi aşağıdaki durumlarda paylaşabiliriz:</p>
                     <ul>
-                        <li><strong>服务提供商：</strong>与帮助我们运营业务和提供服务的第三方。</li>
-                        <li><strong>法律要求：</strong>当法律要求或为保护我们的权利或用户安全时。</li>
-                        <li><strong>业务转让：</strong>与合并、收购或资产出售相关的情况。</li>
+                        <li><strong>Hizmet Sağlayıcılar:</strong> İşimizi yürütmemize ve hizmetlerimizi sağlamamıza yardımcı olan üçüncü taraflarla.</li>
+                        <li><strong>Yasal Gereklilikler:</strong> Yasal olarak gerekli olduğunda veya haklarımızı veya kullanıcı güvenliğini korumak için.</li>
+                        <li><strong>İş Devri:</strong> Birleşme, devralma veya varlık satışı ile ilgili durumlarda.</li>
                     </ul>
 
-                    <h2>5. 数据安全</h2>
-                    <p>我们实施适当的安全措施来保护您的个人信息。但是，没有任何通过互联网传输或电子存储的方法是 100% 安全的，我们不能保证绝对的安全性。</p>
+                    <h2>5. Veri Güvenliği</h2>
+                    <p>Kişisel bilgilerinizi korumak için uygun güvenlik önlemleri uyguluyoruz. Ancak, internet üzerinden iletimin veya elektronik depolamanın hiçbir yöntemi %100 güvenli değildir ve mutlak güvenliği garanti edemeyiz.</p>
 
-                    <h2>6. 您的权利</h2>
-                    <p>根据您所在的位置，您可能对您的个人信息拥有某些权利，包括：</p>
+                    <h2>6. Haklarınız</h2>
+                    <p>Bulunduğunuz yere bağlı olarak, kişisel bilgileriniz üzerinde aşağıdakiler dahil olmak üzere belirli haklara sahip olabilirsiniz:</p>
                     <ul>
-                        <li>访问您的个人信息</li>
-                        <li>更正不准确的个人信息</li>
-                        <li>删除您的个人信息</li>
-                        <li>反对某些处理活动</li>
-                        <li>数据可携带性</li>
+                        <li>Kişisel bilgilerinize erişim</li>
+                        <li>Yanlış kişisel bilgileri düzeltme</li>
+                        <li>Kişisel bilgilerinizi silme</li>
+                        <li>Belirli işleme faaliyetlerine itiraz etme</li>
+                        <li>Veri taşınabilirliği</li>
                     </ul>
 
-                    <h2>7. 儿童隐私</h2>
-                    <p>我们的服务不面向 16 岁以下的个人。我们不会故意收集儿童的个人信息。</p>
+                    <h2>7. Çocukların Gizliliği</h2>
+                    <p>Hizmetlerimiz 16 yaşın altındaki bireylere yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamayız.</p>
 
-                    <h2>8. 本隐私政策的变更</h2>
-                    <p>我们可能会不时更新我们的隐私政策。我们将通过在此页面上发布新的隐私政策并更新"最后更新日期"来通知您任何更改。</p>
+                    <h2>8. Bu Gizlilik Politikasındaki Değişiklikler</h2>
+                    <p>Gizlilik politikamızı zaman zaman güncelleyebiliriz. Bu sayfada yeni gizlilik politikasını yayınlayarak ve "Son güncelleme tarihi"ni güncelleyerek herhangi bir değişikliği size bildireceğiz.</p>
 
-                    <h2>9. 联系我们</h2>
-                    <p>如果您对本隐私政策有任何疑问，请联系我们：</p>
-                    <p>电子邮件：support@tikmatrix.com</p>
+                    <h2>9. Bize Ulaşın</h2>
+                    <p>Bu gizlilik politikası hakkında herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin:</p>
+                    <p>E-posta: support@tikmatrix.com</p>
                 </div>
             </div>
         </Layout>
     );
-} 
+}

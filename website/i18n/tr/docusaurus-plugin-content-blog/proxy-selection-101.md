@@ -1,72 +1,72 @@
 ---
 slug: proxy-selection-101
-title: 🛠 代理选择入门 — 动态住宅 vs 静态住宅
+title: 🛠 Proxy Seçimi 101 — Dinamik Yerleşim vs Statik Yerleşim
 authors: tikMatrix
-tags: [代理, 风控, TikTok 营销, 自动化, TikMatrix]
+tags: [proxy, risk kontrolü, TikTok Pazarlama, otomasyon, TikMatrix]
 ---
 
-> 选对代理，增长更稳、风控更少。  
-> 给 TikMatrix 用户的一份**简明实战指南**。
+> Doğru proxy'yi seçin, daha istikrarlı büyüme ve daha az risk kontrolü.  
+> TikMatrix kullanıcıları için **kısa ve pratik bir kılavuz**.
 
 <!-- truncate -->
 ---
-![TikTok 代理选择](/img/blog/proxy-selection.webp)
+![TikTok Proxy Seçimi](/img/blog/proxy-selection.webp)
 
-## 🔹 1. 新注册与首次登录 → 用**动态住宅代理**（按流量计费）
+## 🔹 1. Yeni Kayıt ve İlk Giriş → **Dinamik Yerleşim Proxy** Kullanın (trafik bazında ücretlendirme)
 
-- **原因：**高熵轮换，降低多次尝试之间的关联；更像不同住户。  
-- **适用：**创建/预热 **新号**。  
-- **要点：**控制并发，**每次尝试或每场会话**轮换；国家/语言与目标市场一致。
-
----
-
-## 🔷 2. 长期运营 → 用**静态住宅代理**（按数量计费）
-
-- **原因：**稳定 IP 累积**信任历史**（ASN、rDNS、时延更一致）。  
-- **适用：**已预热/老号的日常运营。  
-- **要点：**尽量 **一设备：一 IP**；若必须共享，避免给高风险账号共用。
-
-> 💡 共享策略按风险自定。更稳：**1 机 1 IP**；中等：**2–3 机/IP**，并**错峰**执行、行为分离。
+- **Neden:** Yüksek entropi rotasyonu, birden fazla deneme arasındaki ilişkiyi azaltır; farklı yerleşim sakinleri gibi görünür.  
+- **Kullanım:** **Yeni hesaplar** oluşturma/ısınma.  
+- **Önemli Noktalar:** Eşzamanlılığı kontrol edin, **her deneme veya her oturum** döndürün; ülke/dil hedef pazarla tutarlı olsun.
 
 ---
 
-## 🧩 3. 快速对比
+## 🔷 2. Uzun Vadeli Operasyon → **Statik Yerleşim Proxy** Kullanın (miktar bazında ücretlendirme)
 
-| 维度 | 动态住宅（流量计费） | 静态住宅（按量计费） |
+- **Neden:** İstikrarlı IP **güven geçmişi** biriktirir (ASN, rDNS, gecikme daha tutarlıdır).  
+- **Kullanım:** Isınmış/eski hesapların günlük operasyonu.  
+- **Önemli Noktalar:** Mümkünse **1 cihaz: 1 IP**; paylaşım gerekirse, yüksek riskli hesapları paylaşmaktan kaçının.
+
+> 💡 Paylaşım stratejisi riski göre özelleştirilebilir. Daha istikrarlı: **1 makine 1 IP**; orta: **2–3 makine/IP**, ve **zaman kaydırma** yürütme + davranış ayrımı.
+
+---
+
+## 🧩 3. Hızlı Karşılaştırma
+
+| Boyut | Dinamik Yerleşim (trafik ücretli) | Statik Yerleşim (miktar ücretli) |
 |---|---|---|
-| 场景 | 注册 / 首登 | 长期日常 |
-| 稳定性 | 低–中（轮换） | **高**（固定） |
-| 关联性 | **低** | 中（若共享） |
-| 风险 | 初期规避佳 | 长期信任佳 |
-| 成本 | 按 GB | 按 IP |
+| Senaryo | Kayıt / İlk giriş | Uzun vadeli günlük |
+| İstikrar | Düşük–Orta (rotasyon) | **Yüksek** (sabit) |
+| İlişki | **Düşük** | Orta (paylaşılırsa) |
+| Risk | İlk aşamada iyi kaçınma | Uzun vadede iyi güven |
+| Maliyet | GB başına | IP başına |
 
 ---
 
-## ⚙️ 4. 运营护栏
+## ⚙️ 4. Operasyon Korkulukları
 
-- **区域一致：**国家/时区/语言与内容市场匹配  
-- **轮换规则：**动态 → 每次尝试/会话轮换；静态 → 出现异常再换  
-- **设备隔离：**代理账号与设备绑定；不共享会话  
-- **健康检查：**whoer/ipapi 测试；关注时延与丢包  
-- **兜底池：**预留少量备用静态 IP 以便快速切换
-
----
-
-## ✅ 5. 速查清单
-
-- 新号 → **动态住宅**  
-- 老号/长期 → **静态住宅**  
-- **优先 1 机 1 IP**；如需共享，错峰 + 行为隔离  
-- 保持地理一致；避免住宅与 VPN 混用
+- **Bölge Tutarlılığı:** Ülke/saat dilimi/dil içerik pazarıyla eşleşir  
+- **Rotasyon Kuralları:** Dinamik → her deneme/oturum döndür; statik → anormallik olduğunda değiştir  
+- **Cihaz İzolasyonu:** Proxy hesabı cihazla bağlantılı; oturumları paylaşmayın  
+- **Sağlık Kontrolü:** whoer/ipapi testi; gecikme ve paket kaybına odaklanın  
+- **Yedek Havuz:** Hızlı geçiş için az sayıda yedek statik IP ayırın
 
 ---
 
-## 🏁 结语
+## ✅ 5. Hızlı Kontrol Listesi
 
-**一致性 = 安全增长。** 先用动态住宅**干净进入**，再切静态住宅**长期稳定**，累积信任。
-
-👉 [访问 TikMatrix.com](https://www.tikmatrix.com)
+- Yeni hesap → **Dinamik yerleşim**  
+- Eski hesap/uzun vadeli → **Statik yerleşim**  
+- **Öncelik 1 makine 1 IP**; paylaşım gerekirse, zaman kaydırma + davranış izolasyonu  
+- Coğrafi tutarlılığı koruyun; yerleşim ve VPN karışımından kaçının
 
 ---
 
-_本文基于 TikMatrix 手机农场在不同代理形态下的实战经验。_
+## 🏁 Sonuç
+
+**Tutarlılık = Güvenli büyüme.** Önce dinamik yerleşimle **temiz giriş** yapın, ardından uzun vadeli istikrar için statik yerleşime geçin ve güven biriktirin.
+
+👉 [TikMatrix.com'u Ziyaret Edin](https://www.tikmatrix.com)
+
+---
+
+_Bu makale, TikMatrix telefon çiftliğinin farklı proxy biçimleriyle pratik deneyimine dayanmaktadır._

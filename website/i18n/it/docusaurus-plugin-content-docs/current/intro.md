@@ -2,67 +2,67 @@
 sidebar_position: 1
 ---
 
-# Tutorial介绍
+# Introduzione al Tutorial
 
-在不到 5 minuti内了解 **TikMatrix** 和 **IgMatrix** 的核心Funzionalità与Utilizzo方法。
+Scopri le funzionalità principali e i metodi di utilizzo di **TikMatrix** e **IgMatrix** in meno di 5 minuti.
 
-## Software介绍
+## Introduzione al Software
 
-**TikMatrix** Sì一款在AndroidDispositivi上AutomaticoEsegui TikTok Attività的 PC 桌面Software。  
-**IgMatrix** Sì一款在AndroidDispositivi上AutomaticoEsegui Instagram Attività的 PC 桌面Software。
+**TikMatrix** è un software desktop per PC che esegue automaticamente attività TikTok su dispositivi Android.  
+**IgMatrix** è un software desktop per PC che esegue automaticamente attività Instagram su dispositivi Android.
 
-**Nota：** **TikMatrix** 和 **IgMatrix** Sì两个独立的Software，不能在同一台电脑上同时Esegui。
+**Nota:** **TikMatrix** e **IgMatrix** sono due software indipendenti e non possono essere eseguiti contemporaneamente sullo stesso computer.
 
-## FunzionalitàCaratteristiche
+## Caratteristiche Principali
 
-- **多Account切换**：同一Dispositivi可Accedi多个 TikTok/Instagram Account并Automatico切换EseguiAttività。
-- **克隆 APP Supporto**：SupportoUtilizzoPersonalizzato包名的 TikTok/Instagram Clona Applicazione，不同Account可绑定不同Clona Applicazione并AutomaticoApri目标 APP。
-- ~~**AutomaticoRegistrati**~~：**[已下线]**
-- **AutomaticoAccedi**：Instagram Supporto 2FA AutomaticoAccedi；TikTok 在部分验证（如图形验证、邮箱验证）上仍需人工介入。
-- **Automatico填写资料**：SupportoImpostazioniAvatar、昵称、Bio和用户名。
-- **Automatico识别**：一键识别并ImportaTelefono上已Accedi的 TikTok/Instagram Account。
-- **Warm-up Automatico degli Account**：SupportoCerca关键词、VisualizzazioniVideo、Mi Piace、Segui、Commento与Preferiti等Warm-up行为。
-- **AutomaticoPubblica**：SupportoPubblica Video或图片（可ImpostazioniOrdina与In Massa数量），SupportoPersonalizzato音乐，并包含Titolo、Descrizione、HashtagTag与商品链接。
-- **AutomaticoElimina**：根据Riproduzioni量或指定规则Elimina效果不佳的帖子。
-- **Super Marketing**：模拟真人访问路径（访问Home、Visualizzazioni帖子、CasualeSegui/Mi Piace/Commento/Preferiti/Condividi/Messaggio Diretto），SupportoUtilizzo OpenAI 或兼容 API 生成个性化Messaggio Diretto与CommentoContenuto。
-- **In Massa助推（Live）**：为LiveIn MassaMi Piace与Commento。
-- **Raccogli Utenti**：通过关键词、Follower或Segui列表采集目标用户名。
-- **In Massa回关**：In MassaSeguiFollower并发送欢迎Messaggio Diretto。
-- **Attività调度**：minuti级精度调度，SupportoAutomaticoRiprova、间隔Esegui与最大Riprovavolte数Impostazioni。
-- **多Dispositivi并行**：一台电脑可同时Connessione并Gestione多部AndroidDispositivi并行EseguiAttività。
-- **屏幕Mirror**：Supporto将多部Dispositivi屏幕Mirror到 Windows / macOS，并通过鼠标与键盘进行控制。
-- **Importa / EsportaAccount**：Supporto Excel 格式的In MassaImporta与Esporta。
-- **多语言Supporto**：电脑SoftwareSupporto英语、俄语与中文。Nota：部分Funzionalità要求Telefono上的 TikTok/Instagram Applica语言为英语以获得最佳兼容性。
-- **工单Supporto**：提供人工工单服务以解决Utilizzo过程中的问题。
+- **Cambio Multi-Account**: Lo stesso dispositivo può accedere a più account TikTok/Instagram e cambiare automaticamente per eseguire attività.
+- **Supporto App Clone**: Supporta l'utilizzo di applicazioni clone TikTok/Instagram con nomi pacchetto personalizzati, diversi account possono essere associati a diverse app clone e aprire automaticamente l'app target.
+- ~~**Registrazione Automatica**~~: **[Funzionalità rimossa]**
+- **Accesso Automatico**: Instagram supporta l'accesso automatico con 2FA; TikTok richiede ancora intervento manuale per alcune verifiche (come la verifica grafica, verifica email).
+- **Compilazione Automatica Profilo**: Supporta l'impostazione di avatar, nickname, bio e nome utente.
+- **Riconoscimento Automatico**: Riconosce e importa con un clic gli account TikTok/Instagram già connessi sul telefono.
+- **Warm-up Automatico Account**: Supporta comportamenti di warm-up come ricerca parole chiave, visualizzazione video, like, follow, commento e preferiti.
+- **Pubblicazione Automatica**: Supporta la pubblicazione di video o immagini (con impostazioni di sequenza e quantità batch), supporta musica personalizzata e include titolo, descrizione, hashtag e link prodotto.
+- **Eliminazione Automatica**: Elimina i post con scarsi risultati in base al numero di visualizzazioni o alle regole specificate.
+- **Super Marketing**: Simula percorsi di visita reali (visita home, visualizza post, follow/like/commento/preferiti/condivisione/messaggio diretto casuale), supporta l'utilizzo di OpenAI o API compatibili per generare contenuti personalizzati di messaggi diretti e commenti.
+- **Boost in Massa (Live)**: Like e commenti in massa per le live.
+- **Raccolta Utenti**: Raccoglie nomi utente target tramite parole chiave, elenco follower o following.
+- **Follow-back in Massa**: Segui i follower in massa e invia messaggi di benvenuto diretti.
+- **Pianificazione Attività**: Pianificazione con precisione al minuto, supporta retry automatico, esecuzione a intervalli e impostazioni numero massimo di tentativi.
+- **Multi-Dispositivo Parallelo**: Un computer può connettere e gestire contemporaneamente più dispositivi Android per eseguire attività in parallelo.
+- **Screen Mirroring**: Supporta il mirroring dello schermo di più dispositivi su Windows/macOS e il controllo tramite mouse e tastiera.
+- **Importa/Esporta Account**: Supporta l'importazione e l'esportazione in massa in formato Excel.
+- **Supporto Multilingua**: Il software per computer supporta inglese, russo e cinese. Nota: alcune funzionalità richiedono che la lingua dell'app TikTok/Instagram sul telefono sia impostata in inglese per una compatibilità ottimale.
+- **Supporto Ticket**: Fornisce servizio ticket manuale per risolvere problemi durante l'utilizzo.
 
 ## Prezzi
 
-BaseFunzionalità**永久免费**（不含Automatico化Script）。按 **Ogni台PC** Autorizzazione，按需扩展并发。
+Le funzionalità base sono **gratuite per sempre** (esclusi gli script di automazione). Licenza per **ogni PC**, espandi la concorrenza secondo necessità.
 
-- **Per Iniziare版** — **$29 / mesi / PC**
-  并发 **5 台Telefono** EseguiAutomatico化；**解锁TuttoFunzionalità**；含**人工工单技术Supporto**。
+- **Starter** — **$29/mese/PC**
+  **5 telefoni** in concorrenza per l'automazione; **sblocca tutte le funzionalità**; include **supporto tecnico tramite ticket**.
 
-- **Professionale版** — **$59 / mesi / PC**
-  并发 **20 台Telefono**；**解锁TuttoFunzionalità**；**人工工单技术Supporto**。
+- **Professional** — **$59/mese/PC**
+  **20 telefoni** in concorrenza; **sblocca tutte le funzionalità**; **supporto tecnico tramite ticket**.
 
-- **团队版** — **$99 / mesi / PC**
-  并发 **50 台Telefono**；**解锁TuttoFunzionalità**；**人工工单技术Supporto**。
+- **Team** — **$99/mese/PC**
+  **50 telefoni** in concorrenza; **sblocca tutte le funzionalità**; **supporto tecnico tramite ticket**.
 
-- **商业版** — **$149 / mesi / PC**
-  并发 **100 台Telefono**；**解锁TuttoFunzionalità**；**人工工单技术Supporto**。
+- **Business** — **$149/mese/PC**
+  **100 telefoni** in concorrenza; **sblocca tutte le funzionalità**; **supporto tecnico tramite ticket**.
 
-> Istruzioni：**并发**指同一台 PC 上可同时EseguiAutomatico化Attività的Telefono数量。BaseFunzionalità（DispositiviGestione、Connessione与可视化控制、日志与统计等）免费开放；Automatico化Script能力随套餐提供相应并发额度。
+> Nota: **Concorrenza** indica il numero di telefoni che possono eseguire contemporaneamente attività di automazione sullo stesso PC. Le funzionalità base (gestione dispositivi, connessione e controllo visuale, log e statistiche, ecc.) sono gratuite; le capacità degli script di automazione forniscono quote di concorrenza corrispondenti con i piani.
 
-**付款细节**：
+**Dettagli Pagamento**:
 
-- anni付可享 30% 折扣。  
-- 支付方式：信用卡、支付宝、加密货币。  
-- Ogni个Licenza绑定一台电脑，Supporto免费更换电脑。  
-- 可Connessione的Telefono数量可能受限于电脑硬件（例如，Standard主板大约可Connessione 40 个 USB Dispositivi）。
+- Sconto del 30% per pagamento annuale.
+- Metodi di pagamento: carta di credito, Alipay, criptovaluta.
+- Ogni licenza è vincolata a un computer, supporto cambio computer gratuito.
+- Il numero di telefoni connettibili può essere limitato dall'hardware del computer (ad esempio, una scheda madre standard può connettere circa 40 dispositivi USB).
 
-套餐Aggiorna规则：系统会根据剩余时长Automatico计算差价，Aggiorna时按新套餐Prezzo减去Corrente套餐剩余价值收取差额。
+Regole di aggiornamento piano: il sistema calcola automaticamente la differenza in base al tempo rimanente, addebitando la differenza tra il prezzo del nuovo piano e il valore residuo del piano corrente durante l'aggiornamento.
 
-如需更换电脑，请参阅我们的Migrazione LicenzaGuida：[许可证迁移指南](tutorial-basics/license-migration.md)。
+Per cambiare computer, consulta la nostra guida alla migrazione della licenza: [Guida Migrazione Licenza](tutorial-basics/license-migration.md).
 
 ## 你需要什么
 
