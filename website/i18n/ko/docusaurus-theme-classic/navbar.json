@@ -1,49 +1,49 @@
 {
   "title": {
-    "message": "",
+    "message": "TikMatrix",
     "description": "The title in the navbar"
   },
   "item.label.Docs": {
-    "message": "문서"
+    "message": "文档"
   },
   "item.label.Get Started": {
-    "message": "시작하기",
+    "message": "开始使用",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Tutorial": {
-    "message": "튜토리얼",
+    "message": "教程",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Rewards": {
-    "message": "추천하고 수익 얻기",
+    "message": "推广赚钱",
     "description": "Navbar item with label Rewards"
   },
   "item.label.Features": {
-    "message": "기능",
+    "message": "功能",
     "description": "Navbar item with label Features"
   },
   "item.label.Blog": {
-    "message": "블로그",
+    "message": "博客",
     "description": "Navbar item with label Blog"
   },
   "item.label.Pricing": {
-    "message": "가격",
+    "message": "价格",
     "description": "Navbar item with label Pricing"
   },
   "item.label.Contact": {
-    "message": "문의하기",
+    "message": "联系我们",
     "description": "Navbar item with label Contact"
   },
   "item.label.Download": {
-    "message": "다운로드",
+    "message": "下载",
     "description": "Navbar item with label Download"
   },
   "item.label.FAQ": {
-    "message": "자주 묻는 질문",
+    "message": "常见问题",
     "description": "Navbar item with label FAQ"
   },
   "logo.alt": {
-    "message": "TikMatrix Logo",
+    "message": "TikMatrix 标志",
     "description": "The alt text of navbar logo"
   },
   "item.label.GitHub": {
@@ -51,15 +51,15 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.About Us": {
-    "message": "회사 소개",
+    "message": "关于我们",
     "description": "Navbar item with label About Us"
   },
   "item.label.Advertising": {
-    "message": "광고",
+    "message": "广告",
     "description": "Navbar item with label Advertising"
   },
   "item.label.AI Search": {
-    "message": "AI 검색",
+    "message": "AI 搜索",
     "description": "Navbar item with label AI Search"
   }
 }

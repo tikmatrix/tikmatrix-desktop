@@ -1,49 +1,49 @@
 {
   "title": {
-    "message": "",
+    "message": "TikMatrix",
     "description": "The title in the navbar"
   },
   "item.label.Docs": {
-    "message": "เอกสาร"
+    "message": "文档"
   },
   "item.label.Get Started": {
-    "message": "เริ่มต้น",
+    "message": "开始使用",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Tutorial": {
-    "message": "บทช่วยสอน",
+    "message": "教程",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Rewards": {
-    "message": "รับเงินจากการโปรโมท",
+    "message": "推广赚钱",
     "description": "Navbar item with label Rewards"
   },
   "item.label.Features": {
-    "message": "คุณสมบัติ",
+    "message": "功能",
     "description": "Navbar item with label Features"
   },
   "item.label.Blog": {
-    "message": "บล็อก",
+    "message": "博客",
     "description": "Navbar item with label Blog"
   },
   "item.label.Pricing": {
-    "message": "ราคา",
+    "message": "价格",
     "description": "Navbar item with label Pricing"
   },
   "item.label.Contact": {
-    "message": "ติดต่อเรา",
+    "message": "联系我们",
     "description": "Navbar item with label Contact"
   },
   "item.label.Download": {
-    "message": "ดาวน์โหลด",
+    "message": "下载",
     "description": "Navbar item with label Download"
   },
   "item.label.FAQ": {
-    "message": "คำถามที่พบบ่อย",
+    "message": "常见问题",
     "description": "Navbar item with label FAQ"
   },
   "logo.alt": {
-    "message": "TikMatrix Logo",
+    "message": "TikMatrix 标志",
     "description": "The alt text of navbar logo"
   },
   "item.label.GitHub": {
@@ -51,15 +51,15 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.About Us": {
-    "message": "เกี่ยวกับเรา",
+    "message": "关于我们",
     "description": "Navbar item with label About Us"
   },
   "item.label.Advertising": {
-    "message": "โฆษณา",
+    "message": "广告",
     "description": "Navbar item with label Advertising"
   },
   "item.label.AI Search": {
-    "message": "การค้นหา AI",
+    "message": "AI 搜索",
     "description": "Navbar item with label AI Search"
   }
 }

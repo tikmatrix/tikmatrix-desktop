@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "Blog",
-    "description": "TikMatrix Blog"
+    "message": "博客",
+    "description": "TikMatrix 博客"
   },
   "description": {
-    "message": "TikMatrix Blog",
-    "description": "TikMatrix Blog"
+    "message": "TikMatrix 博客",
+    "description": "TikMatrix 博客"
   },
   "sidebar.title": {
-    "message": "Son gönderiler",
-    "description": "TikMatrix son gönderiler"
+    "message": "最近博文",
+    "description": "TikMatrix 最近博文"
   }
 }

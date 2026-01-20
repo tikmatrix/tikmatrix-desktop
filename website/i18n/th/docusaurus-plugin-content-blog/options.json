@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "บล็อก",
-    "description": "บล็อก TikMatrix"
+    "message": "博客",
+    "description": "TikMatrix 博客"
   },
   "description": {
-    "message": "บล็อก TikMatrix",
-    "description": "บล็อก TikMatrix"
+    "message": "TikMatrix 博客",
+    "description": "TikMatrix 博客"
   },
   "sidebar.title": {
-    "message": "โพสต์ล่าสุด",
-    "description": "โพสต์ล่าสุดของ TikMatrix"
+    "message": "最近博文",
+    "description": "TikMatrix 最近博文"
   }
 }
