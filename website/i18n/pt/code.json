@@ -846,7 +846,7 @@
     "message": "advertising.whatsapp.checker.title"
   },
   "download.description": {
-    "message": "download.description"
+    "message": "Baixe o TikMatrix para Windows, Mac e Linux"
   },
   "download.igmatrix.description": {
     "message": "download.igmatrix.description"
@@ -930,31 +930,31 @@
     "message": "download.mac.install_tip"
   },
   "download.mac.title": {
-    "message": "download.mac.title"
+    "message": "Mac"
   },
   "download.requirements.internet": {
-    "message": "download.requirements.internet"
+    "message": "Conexão de internet estável"
   },
   "download.requirements.memory": {
-    "message": "download.requirements.memory"
+    "message": "Memória: 8 GB RAM"
   },
   "download.requirements.os": {
-    "message": "download.requirements.os"
+    "message": "Sistema operacional: Windows 10/11, macOS 10.15+ ou Ubuntu 20.04+"
   },
   "download.requirements.processor": {
-    "message": "download.requirements.processor"
+    "message": "Processador: Intel Core i5 ou equivalente"
   },
   "download.requirements.storage": {
-    "message": "download.requirements.storage"
+    "message": "Armazenamento: 500 MB de espaço disponível"
   },
   "download.requirements.title": {
-    "message": "download.requirements.title"
+    "message": "Requisitos do sistema"
   },
   "download.subtitle": {
-    "message": "download.subtitle"
+    "message": "Escolha sua plataforma para baixar o TikMatrix"
   },
   "download.title": {
-    "message": "download.title"
+    "message": "Baixar TikMatrix"
   },
   "download.videomagic.description": {
     "message": "download.videomagic.description"
@@ -972,70 +972,70 @@
     "message": "download.windows.description"
   },
   "download.windows.title": {
-    "message": "download.windows.title"
+    "message": "Windows"
   },
   "homepage.header.cta.download": {
-    "message": "homepage.header.cta.download"
+    "message": "Baixar agora"
   },
   "homepage.header.cta.features": {
-    "message": "homepage.header.cta.features"
+    "message": "Explorar recursos"
   },
   "homepage.header.cta.primary": {
-    "message": "homepage.header.cta.primary"
+    "message": "Começar"
   },
   "homepage.header.cta.secondary": {
-    "message": "homepage.header.cta.secondary"
+    "message": "Ver recursos"
   },
   "homepage.header.defaultSubtitle": {
-    "message": "homepage.header.defaultSubtitle"
+    "message": "Ferramentas poderosas de automação para TikTok e Instagram"
   },
   "homepage.header.defaultTitle": {
-    "message": "homepage.header.defaultTitle"
+    "message": "TikMatrix & IgMatrix"
   },
   "homepage.header.subtitle": {
-    "message": "homepage.header.subtitle"
+    "message": "Execute dispositivos em escala, automatize tarefas, agende publicações e gerencie contas de forma inteligente — TikMatrix torna suas operações no TikTok 100% automatizadas."
   },
   "homepage.header.title": {
-    "message": "homepage.header.title"
+    "message": "A automatização do TikTok começa aqui"
   },
   "homepage.vs.card.analytics.desc": {
-    "message": "homepage.vs.card.analytics.desc"
+    "message": "Monitore o status de tarefas e o desempenho de contas em tempo real"
   },
   "homepage.vs.card.analytics.title": {
-    "message": "homepage.vs.card.analytics.title"
+    "message": "Análises avançadas"
   },
   "homepage.vs.card.automation.desc": {
-    "message": "homepage.vs.card.automation.desc"
+    "message": "Automatize todas as suas tarefas de mídia social"
   },
   "homepage.vs.card.automation.title": {
-    "message": "homepage.vs.card.automation.title"
+    "message": "Automação completa"
   },
   "homepage.vs.card.cta": {
     "message": "homepage.vs.card.cta"
   },
   "homepage.vs.card.lowRisk.desc": {
-    "message": "homepage.vs.card.lowRisk.desc"
+    "message": "Sistema com dispositivos reais garante a segurança das contas"
   },
   "homepage.vs.card.lowRisk.title": {
-    "message": "homepage.vs.card.lowRisk.title"
+    "message": "Baixo risco"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "homepage.vs.card.nodev.desc"
+    "message": "Nenhuma habilidade de desenvolvedor necessária"
   },
   "homepage.vs.card.nodev.title": {
-    "message": "homepage.vs.card.nodev.title"
+    "message": "Sem programação"
   },
   "homepage.vs.card.plug.desc": {
-    "message": "homepage.vs.card.plug.desc"
+    "message": "Plug-and-play, fácil de configurar"
   },
   "homepage.vs.card.plug.title": {
-    "message": "homepage.vs.card.plug.title"
+    "message": "Fácil de configurar"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "homepage.vs.card.realDevices.desc"
+    "message": "Use dispositivos Android reais para máxima segurança da conta"
   },
   "homepage.vs.card.realDevices.title": {
-    "message": "homepage.vs.card.realDevices.title"
+    "message": "Dispositivos reais"
   },
   "homepage.vs.cta.button": {
     "message": "homepage.vs.cta.button"
@@ -1044,13 +1044,13 @@
     "message": "homepage.vs.cta.text"
   },
   "homepage.vs.subtitle": {
-    "message": "homepage.vs.subtitle"
+    "message": "Uma solução poderosa de automação para ampliar sua presença nas redes sociais"
   },
   "homepage.vs.title": {
-    "message": "homepage.vs.title"
+    "message": "Por que escolher TikMatrix & IgMatrix?"
   },
   "navbar.download": {
-    "message": "navbar.download"
+    "message": "Baixar"
   },
   "pricing.all_features": {
     "message": "pricing.all_features"
@@ -1095,13 +1095,13 @@
     "message": "pricing.free.all_free_features"
   },
   "pricing.free.automation_disabled": {
-    "message": "pricing.free.automation_disabled"
+    "message": "Automação desativada"
   },
   "pricing.free.community_support": {
     "message": "pricing.free.community_support"
   },
   "pricing.free.description": {
-    "message": "pricing.free.description"
+    "message": "Ideal para iniciantes"
   },
   "pricing.free.name": {
     "message": "pricing.free.name"
@@ -1110,7 +1110,7 @@
     "message": "pricing.free_label"
   },
   "pricing.get_started": {
-    "message": "pricing.get_started"
+    "message": "Começar"
   },
   "pricing.local_api.description": {
     "message": "pricing.local_api.description"
@@ -1125,13 +1125,13 @@
     "message": "pricing.local_api.title"
   },
   "pricing.per_month": {
-    "message": "pricing.per_month"
+    "message": "por mês"
   },
   "pricing.per_month_pc": {
     "message": "pricing.per_month_pc"
   },
   "pricing.per_year": {
-    "message": "pricing.per_year"
+    "message": "por ano"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "pricing.pro.concurrent_tasks"

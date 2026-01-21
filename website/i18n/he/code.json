@@ -919,7 +919,7 @@
     "message": "advertising.whatsapp.checker.title"
   },
   "download.description": {
-    "message": "download.description",
+    "message": "הורד את TikMatrix עבור Windows, Mac ו‑Linux",
     "description": "תיאור עמוד ההורדה"
   },
   "download.igmatrix.description": {
@@ -1031,39 +1031,39 @@
     "description": "רמז פקודה להפעלה לאחר התקנת Mac"
   },
   "download.mac.title": {
-    "message": "download.mac.title",
+    "message": "Mac",
     "description": "כותרת פלטפורמת Mac"
   },
   "download.requirements.internet": {
-    "message": "download.requirements.internet",
+    "message": "חיבור אינטרנט יציב",
     "description": "דרישות חיבור רשת"
   },
   "download.requirements.memory": {
-    "message": "download.requirements.memory",
+    "message": "זיכרון: 8 GB RAM",
     "description": "דרישות זיכרון"
   },
   "download.requirements.os": {
-    "message": "download.requirements.os",
+    "message": "מערכת הפעלה: Windows 10/11, macOS 10.15+ או Ubuntu 20.04+",
     "description": "דרישות מערכת הפעלה"
   },
   "download.requirements.processor": {
-    "message": "download.requirements.processor",
+    "message": "מעבד: Intel Core i5 או שווה ערך",
     "description": "דרישות מעבד"
   },
   "download.requirements.storage": {
-    "message": "download.requirements.storage",
+    "message": "אחסון: 500 MB מקום פנוי",
     "description": "דרישות שטח אחסון"
   },
   "download.requirements.title": {
-    "message": "download.requirements.title",
+    "message": "דרישות מערכת",
     "description": "כותרת דרישות המערכת"
   },
   "download.subtitle": {
-    "message": "download.subtitle",
+    "message": "בחר את הפלטפורמה שלך כדי להוריד את TikMatrix",
     "description": "כותרת המשנה של עמוד ההורדה"
   },
   "download.title": {
-    "message": "download.title",
+    "message": "הורד את TikMatrix",
     "description": "כותרת עמוד ההורדה"
   },
   "download.videomagic.description": {
@@ -1087,71 +1087,71 @@
     "description": "תיאור פלטפורמת Windows"
   },
   "download.windows.title": {
-    "message": "download.windows.title",
+    "message": "Windows",
     "description": "כותרת פלטפורמת Windows"
   },
   "homepage.header.cta.download": {
-    "message": "homepage.header.cta.download"
+    "message": "הורד עכשיו"
   },
   "homepage.header.cta.features": {
-    "message": "homepage.header.cta.features"
+    "message": "גלה תכונות"
   },
   "homepage.header.cta.primary": {
-    "message": "homepage.header.cta.primary"
+    "message": "התחל"
   },
   "homepage.header.cta.secondary": {
-    "message": "homepage.header.cta.secondary"
+    "message": "הצג תכונות"
   },
   "homepage.header.defaultSubtitle": {
-    "message": "homepage.header.defaultSubtitle"
+    "message": "כלי אוטומציה עוצמתיים עבור TikTok ו‑Instagram"
   },
   "homepage.header.defaultTitle": {
-    "message": "homepage.header.defaultTitle"
+    "message": "TikMatrix & IgMatrix"
   },
   "homepage.header.subtitle": {
-    "message": "homepage.header.subtitle"
+    "message": "הפעל מכשירים בקנה מידה רחב, אוטומציה של משימות, תזמון פוסטים וגידול חשבונות בצורה חכמה — TikMatrix הופך את תפעול ה‑TikTok שלך לאוטומטי ב‑100%"
   },
   "homepage.header.title": {
-    "message": "homepage.header.title"
+    "message": "אוטומציה של TikTok מתחילה כאן"
   },
   "homepage.vs.card.analytics.desc": {
-    "message": "homepage.vs.card.analytics.desc"
+    "message": "עקוב אחרי מצב משימות וביצועי חשבונות בזמן אמת"
   },
   "homepage.vs.card.analytics.title": {
-    "message": "homepage.vs.card.analytics.title"
+    "message": "אנליטיקה מתקדמת"
   },
   "homepage.vs.card.automation.desc": {
-    "message": "homepage.vs.card.automation.desc"
+    "message": "אוטומט את כל משימות המדיה החברתית שלך"
   },
   "homepage.vs.card.automation.title": {
-    "message": "homepage.vs.card.automation.title"
+    "message": "אוטומציה מלאה"
   },
   "homepage.vs.card.cta": {
     "message": "homepage.vs.card.cta"
   },
   "homepage.vs.card.lowRisk.desc": {
-    "message": "homepage.vs.card.lowRisk.desc"
+    "message": "מערכת מכשירים אמיתית מבטיחה את בטיחות החשבונות"
   },
   "homepage.vs.card.lowRisk.title": {
-    "message": "homepage.vs.card.lowRisk.title"
+    "message": "סיכון נמוך"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "homepage.vs.card.nodev.desc"
+    "message": "אין צורך בכישורי פיתוח"
   },
   "homepage.vs.card.nodev.title": {
-    "message": "homepage.vs.card.nodev.title"
+    "message": "ללא קידוד"
   },
   "homepage.vs.card.plug.desc": {
-    "message": "homepage.vs.card.plug.desc"
+    "message": "חבר ופעל, קל להגדרה"
   },
   "homepage.vs.card.plug.title": {
-    "message": "homepage.vs.card.plug.title"
+    "message": "התקנה קלה"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "homepage.vs.card.realDevices.desc"
+    "message": "השתמש במכשירי Android אמיתיים לאבטחה מלאה של החשבון"
   },
   "homepage.vs.card.realDevices.title": {
-    "message": "homepage.vs.card.realDevices.title"
+    "message": "מכשירים אמיתיים"
   },
   "homepage.vs.cta.button": {
     "message": "homepage.vs.cta.button"
@@ -1160,13 +1160,13 @@
     "message": "homepage.vs.cta.text"
   },
   "homepage.vs.subtitle": {
-    "message": "homepage.vs.subtitle"
+    "message": "פתרון אוטומציה חזק כדי להגדיל את הנוכחות שלך ברשתות החברתיות"
   },
   "homepage.vs.title": {
-    "message": "homepage.vs.title"
+    "message": "למה לבחור TikMatrix & IgMatrix?"
   },
   "navbar.download": {
-    "message": "navbar.download",
+    "message": "הורד",
     "description": "טקסט קישור הורדה בסרגל הניווט"
   },
   "pricing.all_features": {
@@ -1205,10 +1205,10 @@
     "message": "pricing.compare.show"
   },
   "pricing.cta.free": {
-    "message": "pricing.cta.free"
+    "message": "התחל בחינם"
   },
   "pricing.cta.pay": {
-    "message": "pricing.cta.pay"
+    "message": "הירשם"
   },
   "pricing.dedicated_support": {
     "message": "pricing.dedicated_support",
@@ -1219,7 +1219,7 @@
     "description": "תיאור תכונות הבסיס של תוכנית חינמית"
   },
   "pricing.free.automation_disabled": {
-    "message": "pricing.free.automation_disabled",
+    "message": "אוטומציה מושבתת",
     "description": "טקסט אוטומציה לא זמינה לתוכנית חינמית"
   },
   "pricing.free.community_support": {
@@ -1227,7 +1227,7 @@
     "description": "שיטת תמיכה לתוכנית חינמית"
   },
   "pricing.free.description": {
-    "message": "pricing.free.description",
+    "message": "מושלם למתחילים",
     "description": "תיאור תוכנית חינמית"
   },
   "pricing.free.name": {
@@ -1239,7 +1239,7 @@
     "description": "Free label"
   },
   "pricing.get_started": {
-    "message": "pricing.get_started",
+    "message": "התחל",
     "description": "טקסט כפתור התחל"
   },
   "pricing.local_api.description": {
@@ -1255,14 +1255,14 @@
     "message": "pricing.local_api.title"
   },
   "pricing.per_month": {
-    "message": "pricing.per_month"
+    "message": "לחודש"
   },
   "pricing.per_month_pc": {
     "message": "pricing.per_month_pc",
     "description": "טקסט למחשב לחודש"
   },
   "pricing.per_year": {
-    "message": "pricing.per_year"
+    "message": "לשנה"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "pricing.pro.concurrent_tasks",
