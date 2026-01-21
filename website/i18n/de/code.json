@@ -1068,15 +1068,15 @@
   },
   "download.videomagic.description": {
     "message": "Laden Sie VideoMagic für Windows, Mac und Linux herunter",
-    "description": "VideoMagic下载页面的描述"
+    "description": "Beschreibung der VideoMagic-Download-Seite"
   },
   "download.videomagic.subtitle": {
     "message": "Wählen Sie Ihre Plattform zum Herunterladen von VideoMagic",
-    "description": "VideoMagic下载页面的副标题"
+    "description": "Untertitel der VideoMagic-Download-Seite"
   },
   "download.videomagic.title": {
     "message": "VideoMagic herunterladen",
-    "description": "VideoMagic下载页面的标题"
+    "description": "Titel der VideoMagic-Download-Seite"
   },
   "download.windows.button": {
     "message": "Windows-Version herunterladen",
@@ -1877,7 +1877,7 @@
   },
   "whitelabel.telegramUrl": {
     "message": "Telegram-Link",
-    "description": "Telegram链接"
+    "description": "Telegram-Link"
   },
   "whitelabel.title": {
     "message": "White-Label-Funktion",
