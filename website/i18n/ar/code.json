@@ -14,6 +14,12 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "بعد التثبيت، افتح IgMatrix لعرض القائمة الكاملة لنصوص أتمتة Instagram المتاحة. قد يختلف اختيار النصوص عن TikMatrix."
   },
+  "All basic features (automation excluded)": {
+    "message": "جميع الميزات المجانية"
+  },
+  "All features included": {
+    "message": "جميع الميزات"
+  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "تحقق دائماً من الميزات الفعلية المتاحة في برنامج IgMatrix الخاص بك، حيث قد تختلف وظيفة النصوص عن TikMatrix. ستظهر لك واجهة البرنامج بالضبط أي نصوص أتمتة متاحة لـ Instagram."
   },
@@ -41,6 +47,12 @@
   "Automatic profile setup": {
     "message": "إعداد الملف الشخصي التلقائي"
   },
+  "Automation tasks": {
+    "message": "نصوص الأتمتة"
+  },
+  "Automation tasks disabled": {
+    "message": "الأتمتة معطلة"
+  },
   "Basic configuration": {
     "message": "تكوين أساسي"
   },
@@ -59,6 +71,9 @@
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "مبني بآليات أمان لحماية حسابات Instagram الخاصة بك من التعليق"
   },
+  "Business": {
+    "message": "الأعمال"
+  },
   "Buy hardware": {
     "message": "شراء الأجهزة"
   },
@@ -76,6 +91,12 @@
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "التعليق على منشورات TikTok متعددة بشكل جماعي مع محتوى ورموز تعبيرية قابلة للتخصيص"
+  },
+  "Community support": {
+    "message": "دعم المجتمع"
+  },
+  "Compare features": {
+    "message": "مقارنة الخطط"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "أتمتة شاملة تجمع بين استراتيجيات تفاعل متعددة مع تعليقات مولدة بالذكاء الاصطناعي"
@@ -98,8 +119,14 @@
   "Custom Instagram workflows": {
     "message": "سير عمل Instagram مخصص"
   },
+  "Dedicated ticket support": {
+    "message": "دعم التذاكر"
+  },
   "Device connection": {
     "message": "اتصال الجهاز"
+  },
+  "Device support": {
+    "message": "الأجهزة"
   },
   "Different Script Logic": {
     "message": "منطق نص مختلف"
@@ -134,14 +161,32 @@
   "Find answers to common questions about IgMatrix": {
     "message": "ابحث عن إجابات للأسئلة الشائعة حول IgMatrix"
   },
+  "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
+    "message": "خطط مرنة تناسب الجميع. اشترك سنوياً لتحصل على خصم 30%!"
+  },
   "Follow TikMatrix Tutorial": {
     "message": "اتبع برنامج TikMatrix التعليمي"
   },
   "Follow these steps to get started with IgMatrix": {
     "message": "اتبع هذه الخطوات للبدء مع IgMatrix"
   },
+  "For growing teams and companies": {
+    "message": "للفرق المتوسطة والكبيرة"
+  },
+  "For individuals and small teams": {
+    "message": "للأفراد والشركات الصغيرة"
+  },
+  "For large enterprises": {
+    "message": "للفرق والشركات الكبيرة"
+  },
+  "For professionals and small businesses": {
+    "message": "للمحترفين وفرق التسويق"
+  },
   "Free": {
     "message": "مجاني"
+  },
+  "Free users can connect unlimited devices and use all basic features except automation tasks": {
+    "message": "مثالي للمبتدئين"
   },
   "Frequently Asked Questions": {
     "message": "الأسئلة المتكررة"
@@ -157,6 +202,9 @@
   },
   "Here are some frequently asked questions.": {
     "message": "فيما يلي بعض الأسئلة المتكررة."
+  },
+  "Hide feature comparison": {
+    "message": "إخفاء المقارنة"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "كم عدد حسابات TikTok التي يمكن لكل هاتف تسجيل الدخول إليها؟"
@@ -224,11 +272,23 @@
   "Live stream boost": {
     "message": "تعزيز البث المباشر"
   },
+  "Local API": {
+    "message": "واجهة API المحلية"
+  },
+  "Local REST API access (Pro+)": {
+    "message": "دعم API المحلي"
+  },
   "Mass commenting": {
     "message": "التعليق الجماعي"
   },
   "Mass direct messaging": {
     "message": "المراسلة المباشرة الجماعية"
+  },
+  "Monthly": {
+    "message": "شهريًا"
+  },
+  "Most popular": {
+    "message": "الأكثر شيوعاً"
   },
   "Multi-Device Control": {
     "message": "التحكم في أجهزة متعددة"
@@ -241,6 +301,12 @@
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "فريق الدعم لدينا هنا لمساعدتك في أي أسئلة أو مشكلات متعلقة بـ IgMatrix."
+  },
+  "Per Month": {
+    "message": "شهرياً"
+  },
+  "Per Year (Save 30%)": {
+    "message": "سنوياً"
   },
   "Performance analytics": {
     "message": "تحليلات الأداء"
@@ -267,7 +333,13 @@
     "message": "أدوات أتمتة وإدارة TikTok قوية"
   },
   "Pricing": {
-    "message": "الأسعار"
+    "message": "التسعير"
+  },
+  "Pro": {
+    "message": "احترافي"
+  },
+  "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
+    "message": "يدعم TikMatrix واجهة API محلية مفتوحة"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "أداة إدارة وتسويق حسابات TikTok احترافية مصممة لمزارع هواتف Android على نظام ويندوز وماك. أتمتة النشر والمتابعة وتنمية تواجدك على TikTok مع معدل تعليق حساب صفري."
@@ -280,6 +352,9 @@
   },
   "Quick Setup Guide": {
     "message": "دليل الإعداد السريع"
+  },
+  "Read Local API docs": {
+    "message": "عرض وثائق API"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "التعرف على حسابات TikTok من الهواتف ومطابقتها لإضافتها إلى قائمة الحسابات"
@@ -323,17 +398,29 @@
   "Smart Scheduling": {
     "message": "جدولة ذكية"
   },
+  "Start for free": {
+    "message": "ابدأ الآن"
+  },
+  "Starter": {
+    "message": "مبتدئ"
+  },
   "Still have questions?": {
     "message": "لا تزال لديك أسئلة؟"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "بسّط مزرعة هواتف Instagram الخاصة بك من خلال التحكم الجماعي المتقدم وأتمتة التسويق"
   },
+  "Subscribe": {
+    "message": "اشترك الآن"
+  },
   "Super Marketing": {
     "message": "التسويق الفائق"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "يدعم عكس أكثر من 100 هاتف على الكمبيوتر، مع التشغيل المتزامن"
+  },
+  "Team": {
+    "message": "الفريق"
   },
   "Technical Advantages": {
     "message": "المزايا التقنية"
@@ -370,6 +457,24 @@
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "بطاقة SIM أمريكية أصلية غير مفعلة، تُستخدم لتطبيق TikTok Android للكشف عن موقع بطاقة SIM"
+  },
+  "Unlimited": {
+    "message": "غير محدود"
+  },
+  "Unlimited device connections": {
+    "message": "أجهزة غير محدودة"
+  },
+  "Up to 100 concurrent automation tasks": {
+    "message": "مهام متزامنة غير محدودة"
+  },
+  "Up to 20 concurrent automation tasks": {
+    "message": "200 مهمة متزامنة"
+  },
+  "Up to 5 concurrent automation tasks": {
+    "message": "50 مهمة متزامنة"
+  },
+  "Up to 50 concurrent automation tasks": {
+    "message": "500 مهمة متزامنة"
   },
   "User engagement boost": {
     "message": "تعزيز تفاعل المستخدمين"
@@ -409,6 +514,9 @@
   },
   "Why Choose IgMatrix?": {
     "message": "لماذا تختار IgMatrix؟"
+  },
+  "Yearly (Save 30%)": {
+    "message": "سنويًا (وفر 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "نعم! برنامج الإعداد التعليمي لـ IgMatrix مطابق لـ TikMatrix. يمكنك اتباع وثائق TikMatrix للتثبيت واتصال الجهاز والتكوين الأساسي. فقط نصوص الأتمتة ستختلف بناءً على المنصة."
@@ -628,123 +736,6 @@
   },
   "homepage.vs.title": {
     "message": "لماذا تختار TikMatrix & IgMatrix؟"
-  },
-  "pricing.all_features": {
-    "message": "جميع الميزات"
-  },
-  "pricing.badge.popular": {
-    "message": "الأكثر شيوعاً"
-  },
-  "pricing.business.concurrent_tasks": {
-    "message": "مهام متزامنة غير محدودة"
-  },
-  "pricing.business.description": {
-    "message": "للفرق والشركات الكبيرة"
-  },
-  "pricing.business.name": {
-    "message": "الأعمال"
-  },
-  "pricing.compare.automation": {
-    "message": "نصوص الأتمتة"
-  },
-  "pricing.compare.devices": {
-    "message": "الأجهزة"
-  },
-  "pricing.compare.hide": {
-    "message": "إخفاء المقارنة"
-  },
-  "pricing.compare.show": {
-    "message": "مقارنة الخطط"
-  },
-  "pricing.cta.free": {
-    "message": "ابدأ الآن"
-  },
-  "pricing.cta.pay": {
-    "message": "اشترك الآن"
-  },
-  "pricing.free.all_free_features": {
-    "message": "جميع الميزات المجانية"
-  },
-  "pricing.free.automation_disabled": {
-    "message": "الأتمتة معطلة"
-  },
-  "pricing.free.community_support": {
-    "message": "دعم المجتمع"
-  },
-  "pricing.free.description": {
-    "message": "مثالي للمبتدئين"
-  },
-  "pricing.free.name": {
-    "message": "مجاني"
-  },
-  "pricing.free_label": {
-    "message": "مجاني"
-  },
-  "pricing.local_api.description": {
-    "message": "يدعم TikMatrix واجهة API محلية مفتوحة"
-  },
-  "pricing.local_api.link_text": {
-    "message": "عرض وثائق API"
-  },
-  "pricing.local_api.support": {
-    "message": "دعم API المحلي"
-  },
-  "pricing.local_api.title": {
-    "message": "واجهة API المحلية"
-  },
-  "pricing.per_month": {
-    "message": "شهرياً"
-  },
-  "pricing.per_year": {
-    "message": "سنوياً"
-  },
-  "pricing.pro.concurrent_tasks": {
-    "message": "200 مهمة متزامنة"
-  },
-  "pricing.pro.description": {
-    "message": "للمحترفين وفرق التسويق"
-  },
-  "pricing.pro.name": {
-    "message": "احترافي"
-  },
-  "pricing.starter.concurrent_tasks": {
-    "message": "50 مهمة متزامنة"
-  },
-  "pricing.starter.description": {
-    "message": "للأفراد والشركات الصغيرة"
-  },
-  "pricing.starter.name": {
-    "message": "مبتدئ"
-  },
-  "pricing.subtitle": {
-    "message": "خطط مرنة تناسب الجميع. اشترك سنوياً لتحصل على خصم 30%!"
-  },
-  "pricing.team.concurrent_tasks": {
-    "message": "500 مهمة متزامنة"
-  },
-  "pricing.team.description": {
-    "message": "للفرق المتوسطة والكبيرة"
-  },
-  "pricing.team.name": {
-    "message": "الفريق"
-  },
-  "pricing.ticket_support": {
-    "message": "دعم التذاكر"
-  },
-  "pricing.title": {
-    "message": "التسعير"
-  },
-  "pricing.toggle.monthly": {
-    "message": "شهريًا"
-  },
-  "pricing.toggle.yearly": {
-    "message": "سنويًا (وفر 30%)"
-  },
-  "pricing.unlimited_devices": {
-    "message": "أجهزة غير محدودة"
-  },
-  "pricing.unlimited_devices_short": {
-    "message": "غير محدود"
   },
   "tech.diagram.devices": {
     "message": "أجهزة Android حقيقية"

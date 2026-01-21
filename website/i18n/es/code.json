@@ -14,6 +14,12 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "Después de la instalación, abra IgMatrix para ver la lista completa de scripts de automatización disponibles para Instagram. La selección de scripts puede diferir de TikMatrix."
   },
+  "All basic features (automation excluded)": {
+    "message": "Todas las funciones gratuitas"
+  },
+  "All features included": {
+    "message": "Todas las funciones"
+  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Siempre verifique las funciones reales disponibles en su software IgMatrix, ya que la funcionalidad de los scripts puede variar de TikMatrix. La interfaz del software le mostrará exactamente qué scripts de automatización están disponibles para Instagram."
   },
@@ -41,6 +47,12 @@
   "Automatic profile setup": {
     "message": "Configuración automática de perfil"
   },
+  "Automation tasks": {
+    "message": "Automatización avanzada"
+  },
+  "Automation tasks disabled": {
+    "message": "Automatización deshabilitada"
+  },
   "Basic configuration": {
     "message": "Configuración básica"
   },
@@ -59,6 +71,9 @@
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Construido con mecanismos de seguridad para proteger sus cuentas de Instagram de la suspensión"
   },
+  "Business": {
+    "message": "Empresarial"
+  },
   "Buy hardware": {
     "message": "Comprar hardware"
   },
@@ -76,6 +91,12 @@
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "Comentar múltiples publicaciones de TikTok de forma masiva con contenido y emojis personalizables"
+  },
+  "Community support": {
+    "message": "Soporte comunitario"
+  },
+  "Compare features": {
+    "message": "Mostrar comparación"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Automatización integral que combina múltiples estrategias de engagement con comentarios generados por IA"
@@ -98,8 +119,14 @@
   "Custom Instagram workflows": {
     "message": "Flujos de trabajo personalizados de Instagram"
   },
+  "Dedicated ticket support": {
+    "message": "Soporte por tickets"
+  },
   "Device connection": {
     "message": "Conexión de dispositivos"
+  },
+  "Device support": {
+    "message": "Dispositivos soportados"
   },
   "Different Script Logic": {
     "message": "Lógica de scripts diferente"
@@ -134,14 +161,32 @@
   "Find answers to common questions about IgMatrix": {
     "message": "Encuentra respuestas a preguntas frecuentes sobre IgMatrix"
   },
+  "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
+    "message": "Choose the plan that fits your needs"
+  },
   "Follow TikMatrix Tutorial": {
     "message": "Seguir el tutorial de TikMatrix"
   },
   "Follow these steps to get started with IgMatrix": {
     "message": "Sigue estos pasos para comenzar con IgMatrix"
   },
+  "For growing teams and companies": {
+    "message": "Para equipos en crecimiento"
+  },
+  "For individuals and small teams": {
+    "message": "Perfecto para empezar"
+  },
+  "For large enterprises": {
+    "message": "Para equipos y empresas grandes"
+  },
+  "For professionals and small businesses": {
+    "message": "Para profesionales y equipos pequeños"
+  },
   "Free": {
     "message": "Gratis"
+  },
+  "Free users can connect unlimited devices and use all basic features except automation tasks": {
+    "message": "Perfecto para empezar"
   },
   "Frequently Asked Questions": {
     "message": "Preguntas frecuentes"
@@ -157,6 +202,9 @@
   },
   "Here are some frequently asked questions.": {
     "message": "Aquí encontrarás algunas preguntas frecuentes."
+  },
+  "Hide feature comparison": {
+    "message": "Ocultar comparación"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "¿Cuántas cuentas de TikTok puede iniciar sesión cada teléfono?"
@@ -224,11 +272,23 @@
   "Live stream boost": {
     "message": "Impulsar transmisiones en vivo"
   },
+  "Local API": {
+    "message": "API local"
+  },
+  "Local REST API access (Pro+)": {
+    "message": "Disponible en todos los planes de pago"
+  },
   "Mass commenting": {
     "message": "Comentarios masivos"
   },
   "Mass direct messaging": {
     "message": "Mensajería directa masiva"
+  },
+  "Monthly": {
+    "message": "Monthly"
+  },
+  "Most popular": {
+    "message": "Popular"
   },
   "Multi-Device Control": {
     "message": "Control de múltiples dispositivos"
@@ -241,6 +301,12 @@
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "Nuestro equipo de soporte está aquí para ayudarte con cualquier pregunta o problema relacionado con IgMatrix."
+  },
+  "Per Month": {
+    "message": "por mes"
+  },
+  "Per Year (Save 30%)": {
+    "message": "por año"
   },
   "Performance analytics": {
     "message": "Análisis de rendimiento"
@@ -267,7 +333,13 @@
     "message": "Potentes herramientas de automatización y gestión de TikTok"
   },
   "Pricing": {
-    "message": "Precios"
+    "message": "Pricing Plans"
+  },
+  "Pro": {
+    "message": "Profesional"
+  },
+  "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
+    "message": "¿Necesitas integrar TikMatrix con tus propios sistemas? Nuestra API local te permite controlar TikMatrix mediante programación."
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "Herramienta profesional de gestión y marketing de cuentas de TikTok diseñada para granjas de teléfonos Android en Windows y Mac. Automatiza publicaciones, seguimientos y haz crecer tu presencia en TikTok con una tasa de suspensión de cuentas de cero."
@@ -280,6 +352,9 @@
   },
   "Quick Setup Guide": {
     "message": "Guía de configuración rápida"
+  },
+  "Read Local API docs": {
+    "message": "Ver documentación de la API"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "Reconocer y emparejar cuentas de TikTok desde teléfonos para añadir a la lista de cuentas"
@@ -323,17 +398,29 @@
   "Smart Scheduling": {
     "message": "Programación inteligente"
   },
+  "Start for free": {
+    "message": "Comenzar gratis"
+  },
+  "Starter": {
+    "message": "Inicial"
+  },
   "Still have questions?": {
     "message": "¿Aún tienes preguntas?"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "Optimiza tu granja de teléfonos de Instagram con control por lotes avanzado y automatización de marketing"
   },
+  "Subscribe": {
+    "message": "Suscribirse"
+  },
   "Super Marketing": {
     "message": "Super Marketing"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "Soporta más de 100 teléfonos con reflejo a una computadora, con operación sincronizada"
+  },
+  "Team": {
+    "message": "Equipo"
   },
   "Technical Advantages": {
     "message": "Ventajas técnicas"
@@ -370,6 +457,24 @@
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "Tarjeta SIM nativa de EE.UU. sin activar, utilizada para que la aplicación de TikTok para Android detecte la ubicación de la tarjeta SIM"
+  },
+  "Unlimited": {
+    "message": "Ilimitado"
+  },
+  "Unlimited device connections": {
+    "message": "Dispositivos ilimitados"
+  },
+  "Up to 100 concurrent automation tasks": {
+    "message": "Tareas concurrentes ilimitadas"
+  },
+  "Up to 20 concurrent automation tasks": {
+    "message": "50 tareas concurrentes"
+  },
+  "Up to 5 concurrent automation tasks": {
+    "message": "10 tareas concurrentes"
+  },
+  "Up to 50 concurrent automation tasks": {
+    "message": "100 tareas concurrentes"
   },
   "User engagement boost": {
     "message": "Impulso del engagement de usuarios"
@@ -409,6 +514,9 @@
   },
   "Why Choose IgMatrix?": {
     "message": "¿Por qué elegir IgMatrix?"
+  },
+  "Yearly (Save 30%)": {
+    "message": "Yearly (Save 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "¡Sí! El tutorial de configuración de IgMatrix es idéntico al de TikMatrix. Puedes seguir la documentación de TikMatrix para la instalación, conexión de dispositivos y configuración básica. Solo los scripts de automatización diferirán según la plataforma."
@@ -628,123 +736,6 @@
   },
   "homepage.vs.title": {
     "message": "¿Por qué elegirnos?"
-  },
-  "pricing.all_features": {
-    "message": "Todas las funciones"
-  },
-  "pricing.badge.popular": {
-    "message": "Popular"
-  },
-  "pricing.business.concurrent_tasks": {
-    "message": "Tareas concurrentes ilimitadas"
-  },
-  "pricing.business.description": {
-    "message": "Para equipos y empresas grandes"
-  },
-  "pricing.business.name": {
-    "message": "Empresarial"
-  },
-  "pricing.compare.automation": {
-    "message": "Automatización avanzada"
-  },
-  "pricing.compare.devices": {
-    "message": "Dispositivos soportados"
-  },
-  "pricing.compare.hide": {
-    "message": "Ocultar comparación"
-  },
-  "pricing.compare.show": {
-    "message": "Mostrar comparación"
-  },
-  "pricing.cta.free": {
-    "message": "Comenzar gratis"
-  },
-  "pricing.cta.pay": {
-    "message": "Suscribirse"
-  },
-  "pricing.free.all_free_features": {
-    "message": "Todas las funciones gratuitas"
-  },
-  "pricing.free.automation_disabled": {
-    "message": "Automatización deshabilitada"
-  },
-  "pricing.free.community_support": {
-    "message": "Soporte comunitario"
-  },
-  "pricing.free.description": {
-    "message": "Perfecto para empezar"
-  },
-  "pricing.free.name": {
-    "message": "Gratuito"
-  },
-  "pricing.free_label": {
-    "message": "Gratis"
-  },
-  "pricing.local_api.description": {
-    "message": "¿Necesitas integrar TikMatrix con tus propios sistemas? Nuestra API local te permite controlar TikMatrix mediante programación."
-  },
-  "pricing.local_api.link_text": {
-    "message": "Ver documentación de la API"
-  },
-  "pricing.local_api.support": {
-    "message": "Disponible en todos los planes de pago"
-  },
-  "pricing.local_api.title": {
-    "message": "API local"
-  },
-  "pricing.per_month": {
-    "message": "por mes"
-  },
-  "pricing.per_year": {
-    "message": "por año"
-  },
-  "pricing.pro.concurrent_tasks": {
-    "message": "50 tareas concurrentes"
-  },
-  "pricing.pro.description": {
-    "message": "Para profesionales y equipos pequeños"
-  },
-  "pricing.pro.name": {
-    "message": "Profesional"
-  },
-  "pricing.starter.concurrent_tasks": {
-    "message": "10 tareas concurrentes"
-  },
-  "pricing.starter.description": {
-    "message": "Perfecto para empezar"
-  },
-  "pricing.starter.name": {
-    "message": "Inicial"
-  },
-  "pricing.subtitle": {
-    "message": "Choose the plan that fits your needs"
-  },
-  "pricing.team.concurrent_tasks": {
-    "message": "100 tareas concurrentes"
-  },
-  "pricing.team.description": {
-    "message": "Para equipos en crecimiento"
-  },
-  "pricing.team.name": {
-    "message": "Equipo"
-  },
-  "pricing.ticket_support": {
-    "message": "Soporte por tickets"
-  },
-  "pricing.title": {
-    "message": "Pricing Plans"
-  },
-  "pricing.toggle.monthly": {
-    "message": "Monthly"
-  },
-  "pricing.toggle.yearly": {
-    "message": "Yearly (Save 30%)"
-  },
-  "pricing.unlimited_devices": {
-    "message": "Dispositivos ilimitados"
-  },
-  "pricing.unlimited_devices_short": {
-    "message": "Ilimitado"
   },
   "tech.diagram.devices": {
     "message": "Real Android Devices"

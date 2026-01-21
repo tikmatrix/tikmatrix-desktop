@@ -14,6 +14,12 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "Setelah instalasi, buka IgMatrix untuk melihat daftar lengkap skrip otomasi Instagram yang tersedia. Pilihan skrip mungkin berbeda dari TikMatrix."
   },
+  "All basic features (automation excluded)": {
+    "message": "Semua fitur dasar (tidak termasuk tugas otomasi)"
+  },
+  "All features included": {
+    "message": "Termasuk semua fitur"
+  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Selalu periksa fitur aktual yang tersedia di perangkat lunak IgMatrix Anda, karena fungsionalitas skrip mungkin berbeda dari TikMatrix. Antarmuka perangkat lunak akan menunjukkan dengan tepat skrip otomasi mana yang tersedia untuk Instagram."
   },
@@ -41,6 +47,12 @@
   "Automatic profile setup": {
     "message": "Pengaturan profil otomatis"
   },
+  "Automation tasks": {
+    "message": "Tugas Otomasi"
+  },
+  "Automation tasks disabled": {
+    "message": "Tugas otomasi tidak tersedia"
+  },
   "Basic configuration": {
     "message": "Konfigurasi dasar"
   },
@@ -59,6 +71,9 @@
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Dibangun dengan mekanisme keamanan untuk melindungi akun Instagram Anda dari penangguhan"
   },
+  "Business": {
+    "message": "Business"
+  },
   "Buy hardware": {
     "message": "Beli perangkat keras"
   },
@@ -76,6 +91,12 @@
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "Beri komentar pada beberapa postingan TikTok secara massal dengan konten dan emoji yang dapat disesuaikan"
+  },
+  "Community support": {
+    "message": "Dukungan komunitas"
+  },
+  "Compare features": {
+    "message": "Lihat Perbandingan Fitur"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Otomasi komprehensif yang menggabungkan berbagai strategi interaksi dengan komentar yang dihasilkan AI"
@@ -98,8 +119,14 @@
   "Custom Instagram workflows": {
     "message": "Alur kerja Instagram kustom"
   },
+  "Dedicated ticket support": {
+    "message": "Dukungan tiket khusus"
+  },
   "Device connection": {
     "message": "Koneksi perangkat"
+  },
+  "Device support": {
+    "message": "Dukungan Perangkat"
   },
   "Different Script Logic": {
     "message": "Logika Skrip yang Berbeda"
@@ -134,14 +161,32 @@
   "Find answers to common questions about IgMatrix": {
     "message": "Temukan jawaban untuk pertanyaan umum tentang IgMatrix"
   },
+  "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
+    "message": "Paket fleksibel untuk semua orang. Dapatkan diskon 30% untuk pembayaran tahunan!"
+  },
   "Follow TikMatrix Tutorial": {
     "message": "Ikuti Tutorial TikMatrix"
   },
   "Follow these steps to get started with IgMatrix": {
     "message": "Ikuti langkah-langkah ini untuk memulai dengan IgMatrix"
   },
+  "For growing teams and companies": {
+    "message": "Cocok untuk tim dan perusahaan yang berkembang"
+  },
+  "For individuals and small teams": {
+    "message": "Cocok untuk individu dan tim kecil"
+  },
+  "For large enterprises": {
+    "message": "Cocok untuk perusahaan besar"
+  },
+  "For professionals and small businesses": {
+    "message": "Cocok untuk profesional dan bisnis kecil"
+  },
   "Free": {
     "message": "Gratis"
+  },
+  "Free users can connect unlimited devices and use all basic features except automation tasks": {
+    "message": "Pengguna gratis dapat menghubungkan perangkat tak terbatas, tetapi tidak dapat menjalankan tugas otomasi"
   },
   "Frequently Asked Questions": {
     "message": "Pertanyaan yang Sering Diajukan"
@@ -157,6 +202,9 @@
   },
   "Here are some frequently asked questions.": {
     "message": "Berikut adalah beberapa pertanyaan yang sering diajukan."
+  },
+  "Hide feature comparison": {
+    "message": "Sembunyikan Perbandingan Fitur"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "Berapa banyak akun TikTok yang dapat di-login di setiap ponsel?"
@@ -224,11 +272,23 @@
   "Live stream boost": {
     "message": "Peningkatan siaran langsung"
   },
+  "Local API": {
+    "message": "API Lokal"
+  },
+  "Local REST API access (Pro+)": {
+    "message": "Akses REST API Lokal (Pro+)"
+  },
   "Mass commenting": {
     "message": "Komentar massal"
   },
   "Mass direct messaging": {
     "message": "Pesan langsung massal"
+  },
+  "Monthly": {
+    "message": "Bulanan"
+  },
+  "Most popular": {
+    "message": "Paling Populer"
   },
   "Multi-Device Control": {
     "message": "Kontrol Multi-Perangkat"
@@ -241,6 +301,12 @@
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "Tim dukungan kami di sini untuk membantu Anda dengan pertanyaan atau masalah terkait IgMatrix."
+  },
+  "Per Month": {
+    "message": "Per Bulan"
+  },
+  "Per Year (Save 30%)": {
+    "message": "Per Tahun (Hemat 30%)"
   },
   "Performance analytics": {
     "message": "Analisis kinerja"
@@ -269,6 +335,12 @@
   "Pricing": {
     "message": "Harga"
   },
+  "Pro": {
+    "message": "Pro"
+  },
+  "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
+    "message": "Pengguna Pro, Team, dan Business dapat menggunakan RESTful API lokal untuk mengelola tugas dan otomatisasi alur kerja secara terprogram. Lihat dokumentasi."
+  },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "Alat manajemen akun dan pemasaran TikTok profesional yang dirancang untuk phone farm Android di Windows dan Mac. Otomatisasi posting, mengikuti, dan kembangkan kehadiran TikTok Anda dengan tingkat penangguhan akun nol."
   },
@@ -280,6 +352,9 @@
   },
   "Quick Setup Guide": {
     "message": "Panduan Pengaturan Cepat"
+  },
+  "Read Local API docs": {
+    "message": "Lihat Dokumentasi API Lokal"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "Kenali dan cocokkan akun TikTok dari ponsel untuk ditambahkan ke daftar akun"
@@ -323,17 +398,29 @@
   "Smart Scheduling": {
     "message": "Penjadwalan Cerdas"
   },
+  "Start for free": {
+    "message": "Gunakan Sekarang"
+  },
+  "Starter": {
+    "message": "Starter"
+  },
   "Still have questions?": {
     "message": "Masih ada pertanyaan?"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "Sederhanakan phone farm Instagram Anda dengan kontrol massal canggih dan otomasi pemasaran."
   },
+  "Subscribe": {
+    "message": "Berlangganan Sekarang"
+  },
   "Super Marketing": {
     "message": "Pemasaran Super"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "Mendukung 100+ ponsel dengan pencerminan ke komputer, dengan operasi tersinkronisasi"
+  },
+  "Team": {
+    "message": "Team"
   },
   "Technical Advantages": {
     "message": "Keunggulan Teknis"
@@ -370,6 +457,24 @@
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "Kartu SIM asli AS yang belum diaktivasi, Digunakan untuk aplikasi android TikTok untuk mendeteksi lokasi kartu SIM"
+  },
+  "Unlimited": {
+    "message": "Tak Terbatas"
+  },
+  "Unlimited device connections": {
+    "message": "Koneksi perangkat tak terbatas"
+  },
+  "Up to 100 concurrent automation tasks": {
+    "message": "Hingga 100 tugas otomasi bersamaan"
+  },
+  "Up to 20 concurrent automation tasks": {
+    "message": "Hingga 20 tugas otomasi bersamaan"
+  },
+  "Up to 5 concurrent automation tasks": {
+    "message": "Hingga 5 tugas otomasi bersamaan"
+  },
+  "Up to 50 concurrent automation tasks": {
+    "message": "Hingga 50 tugas otomasi bersamaan"
   },
   "User engagement boost": {
     "message": "Peningkatan interaksi pengguna"
@@ -409,6 +514,9 @@
   },
   "Why Choose IgMatrix?": {
     "message": "Mengapa Memilih IgMatrix?"
+  },
+  "Yearly (Save 30%)": {
+    "message": "Tahunan (Hemat 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Ya! Tutorial pengaturan untuk IgMatrix identik dengan TikMatrix. Anda dapat mengikuti dokumentasi TikMatrix untuk instalasi, koneksi perangkat, dan konfigurasi dasar. Hanya skrip otomasi yang akan berbeda berdasarkan platform."
@@ -628,123 +736,6 @@
   },
   "homepage.vs.title": {
     "message": "Mengapa Memilih TikMatrix?"
-  },
-  "pricing.all_features": {
-    "message": "Termasuk semua fitur"
-  },
-  "pricing.badge.popular": {
-    "message": "Paling Populer"
-  },
-  "pricing.business.concurrent_tasks": {
-    "message": "Hingga 100 tugas otomasi bersamaan"
-  },
-  "pricing.business.description": {
-    "message": "Cocok untuk perusahaan besar"
-  },
-  "pricing.business.name": {
-    "message": "Business"
-  },
-  "pricing.compare.automation": {
-    "message": "Tugas Otomasi"
-  },
-  "pricing.compare.devices": {
-    "message": "Dukungan Perangkat"
-  },
-  "pricing.compare.hide": {
-    "message": "Sembunyikan Perbandingan Fitur"
-  },
-  "pricing.compare.show": {
-    "message": "Lihat Perbandingan Fitur"
-  },
-  "pricing.cta.free": {
-    "message": "Gunakan Sekarang"
-  },
-  "pricing.cta.pay": {
-    "message": "Berlangganan Sekarang"
-  },
-  "pricing.free.all_free_features": {
-    "message": "Semua fitur dasar (tidak termasuk tugas otomasi)"
-  },
-  "pricing.free.automation_disabled": {
-    "message": "Tugas otomasi tidak tersedia"
-  },
-  "pricing.free.community_support": {
-    "message": "Dukungan komunitas"
-  },
-  "pricing.free.description": {
-    "message": "Pengguna gratis dapat menghubungkan perangkat tak terbatas, tetapi tidak dapat menjalankan tugas otomasi"
-  },
-  "pricing.free.name": {
-    "message": "Gratis"
-  },
-  "pricing.free_label": {
-    "message": "Gratis"
-  },
-  "pricing.local_api.description": {
-    "message": "Pengguna Pro, Team, dan Business dapat menggunakan RESTful API lokal untuk mengelola tugas dan otomatisasi alur kerja secara terprogram. Lihat dokumentasi."
-  },
-  "pricing.local_api.link_text": {
-    "message": "Lihat Dokumentasi API Lokal"
-  },
-  "pricing.local_api.support": {
-    "message": "Akses REST API Lokal (Pro+)"
-  },
-  "pricing.local_api.title": {
-    "message": "API Lokal"
-  },
-  "pricing.per_month": {
-    "message": "Per Bulan"
-  },
-  "pricing.per_year": {
-    "message": "Per Tahun (Hemat 30%)"
-  },
-  "pricing.pro.concurrent_tasks": {
-    "message": "Hingga 20 tugas otomasi bersamaan"
-  },
-  "pricing.pro.description": {
-    "message": "Cocok untuk profesional dan bisnis kecil"
-  },
-  "pricing.pro.name": {
-    "message": "Pro"
-  },
-  "pricing.starter.concurrent_tasks": {
-    "message": "Hingga 5 tugas otomasi bersamaan"
-  },
-  "pricing.starter.description": {
-    "message": "Cocok untuk individu dan tim kecil"
-  },
-  "pricing.starter.name": {
-    "message": "Starter"
-  },
-  "pricing.subtitle": {
-    "message": "Paket fleksibel untuk semua orang. Dapatkan diskon 30% untuk pembayaran tahunan!"
-  },
-  "pricing.team.concurrent_tasks": {
-    "message": "Hingga 50 tugas otomasi bersamaan"
-  },
-  "pricing.team.description": {
-    "message": "Cocok untuk tim dan perusahaan yang berkembang"
-  },
-  "pricing.team.name": {
-    "message": "Team"
-  },
-  "pricing.ticket_support": {
-    "message": "Dukungan tiket khusus"
-  },
-  "pricing.title": {
-    "message": "Harga"
-  },
-  "pricing.toggle.monthly": {
-    "message": "Bulanan"
-  },
-  "pricing.toggle.yearly": {
-    "message": "Tahunan (Hemat 30%)"
-  },
-  "pricing.unlimited_devices": {
-    "message": "Koneksi perangkat tak terbatas"
-  },
-  "pricing.unlimited_devices_short": {
-    "message": "Tak Terbatas"
   },
   "tech.diagram.devices": {
     "message": "Perangkat Android Asli"
