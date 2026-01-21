@@ -2,35 +2,11 @@
   "24/7 Support": {
     "message": "24/7支持"
   },
-  "24h AI Assistant": {
-    "message": "24小时AI助手"
-  },
-  "AI voiceover": {
-    "message": "AI 配音"
-  },
-  "AI-Generated Comments": {
-    "message": "AI智能评论"
-  },
-  "API Protocol": {
-    "message": "API协议"
-  },
-  "Account Safe": {
-    "message": "账号安全"
-  },
-  "Account Setup": {
-    "message": "账号设置"
-  },
   "Account management": {
     "message": "账户管理"
   },
   "Account warmup": {
     "message": "账户养号"
-  },
-  "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
-    "message": "同时我们的真机矩阵程序系统 可以完美避开TIK风控带来的封停账号  我们的封号率是0%"
-  },
-  "Advanced Technology for Superior Performance": {
-    "message": "先进技术打造卓越性能"
   },
   "Advanced safety mechanisms": {
     "message": "先进的安全机制"
@@ -38,38 +14,11 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "安装后，打开IgMatrix查看可用的Instagram自动化脚本完整列表。脚本选择可能与TikMatrix不同。"
   },
-  "All Features": {
-    "message": "所有功能"
-  },
-  "All Free Features": {
-    "message": "所有免费功能"
-  },
-  "All Monthly Features": {
-    "message": "所有月付功能"
-  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "请始终检查您的IgMatrix软件中的实际可用功能，因为脚本功能可能与TikMatrix不同。软件界面将确切显示哪些自动化脚本可用于Instagram。"
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
     "message": "自动化Instagram上的发布、关注、评论和互动活动"
-  },
-  "Automated Comment": {
-    "message": "自动评论"
-  },
-  "Automated Follow": {
-    "message": "自动关注"
-  },
-  "Automated Message": {
-    "message": "自动私信"
-  },
-  "Automated account nurturing": {
-    "message": "自动养号"
-  },
-  "Automated scheduling for unattended operation": {
-    "message": "定时任务实现无人值守"
-  },
-  "Automatic Capture": {
-    "message": "自动采集"
   },
   "Automatic account matching": {
     "message": "自动账户匹配"
@@ -80,44 +29,17 @@
   "Automatic commenting": {
     "message": "自动评论"
   },
-  "Automatic direct messaging": {
-    "message": "自动私信"
-  },
   "Automatic following": {
     "message": "自动关注"
   },
   "Automatic login": {
     "message": "自动登录"
   },
-  "Automatic matching": {
-    "message": "自动匹配"
-  },
   "Automatic posting": {
     "message": "自动发布"
   },
   "Automatic profile setup": {
     "message": "自动设置资料"
-  },
-  "Automatic registration & login": {
-    "message": "自动注册和登录"
-  },
-  "Automatic video posting": {
-    "message": "自动发布"
-  },
-  "Automatically generate AI voiceover for videos": {
-    "message": "自动为视频生成AI配音"
-  },
-  "Automatically recognize subtitles and append them to the video": {
-    "message": "自动识别字幕并附加到视频中"
-  },
-  "Automatically translate subtitles to any language": {
-    "message": "自动将字幕翻译成任何语言"
-  },
-  "Automation & Content Management": {
-    "message": "自动化和内容管理"
-  },
-  "Basic Automation": {
-    "message": "基础自动化"
   },
   "Basic configuration": {
     "message": "基础配置"
@@ -146,9 +68,6 @@
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
     "message": "我可以对IgMatrix和TikMatrix使用相同的教程吗？"
   },
-  "Character-by-Character Input": {
-    "message": "逐字输入模拟"
-  },
   "Check Available Scripts": {
     "message": "查看可用脚本"
   },
@@ -158,20 +77,8 @@
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "批量评论多个TikTok帖子，支持自定义内容和表情符号"
   },
-  "Comments, Messages, Follows": {
-    "message": "评论、私信、关注"
-  },
-  "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
-    "message": "对比市面上的同类产品  使用我们的产品TIK流量对比同类其他产品流量增加最低约30%"
-  },
-  "Completely local private deployment ensuring user data security": {
-    "message": "完全本地私有化部署，保证用户数据安全"
-  },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "综合自动化，结合多种互动策略和AI生成的评论"
-  },
-  "Computer-based Execution": {
-    "message": "电脑端运行"
   },
   "Contact": {
     "message": "联系我们"
@@ -182,23 +89,14 @@
   "Contact to purchase": {
     "message": "联系购买"
   },
-  "Content Management": {
-    "message": "内容管理"
-  },
   "Control farm accounts to watch, like, and comment on target live streams": {
     "message": "控制矩阵账户观看、点赞和评论目标直播"
   },
   "Control multiple Instagram accounts across different Android devices simultaneously": {
     "message": "同时控制不同Android设备上的多个Instagram账户"
   },
-  "Create new TikTok accounts with email registration and password setup": {
-    "message": "创建新的TikTok账户，支持邮箱注册和密码设置"
-  },
   "Custom Instagram workflows": {
     "message": "自定义Instagram工作流程"
-  },
-  "Customer support": {
-    "message": "客户支持"
   },
   "Device connection": {
     "message": "设备连接"
@@ -233,20 +131,11 @@
   "Email": {
     "message": "邮箱"
   },
-  "Expert Technical Team": {
-    "message": "专业技术团队"
-  },
-  "Fan collection": {
-    "message": "采集粉丝"
-  },
   "Features": {
     "message": "功能"
   },
   "Find answers to common questions about IgMatrix": {
     "message": "查找有关IgMatrix常见问题的答案"
-  },
-  "Fingerprint Browser": {
-    "message": "指纹浏览器"
   },
   "Follow TikMatrix Tutorial": {
     "message": "参考TikMatrix教程"
@@ -254,23 +143,11 @@
   "Follow these steps to get started with IgMatrix": {
     "message": "按照以下步骤开始使用IgMatrix"
   },
-  "For 7 Days": {
-    "message": "7天试用"
-  },
   "Free": {
     "message": "免费"
   },
   "Frequently Asked Questions": {
     "message": "常见问题"
-  },
-  "Generate intelligent and contextual comments through ChatGPT API integration": {
-    "message": "通过ChatGPT API集成生成智能且符合语境的评论"
-  },
-  "Generate unique videos from one source video": {
-    "message": "从一个源视频生成唯一的视频"
-  },
-  "Get Started": {
-    "message": "开始使用"
   },
   "Get Support": {
     "message": "获取支持"
@@ -293,29 +170,17 @@
   "How to use?": {
     "message": "如何使用?"
   },
-  "Human Technical Support": {
-    "message": "人工技术支持"
-  },
-  "Human-like Click Simulation": {
-    "message": "真人点击模拟"
-  },
   "If you are interested in our service, please contact us to get price.": {
     "message": "如果您想了解我们的服务，请联系我们获取价格。"
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
     "message": "如果您需要IgMatrix特定功能的帮助或遇到任何问题，我们的支持团队随时为您提供帮助。"
   },
-  "IgMatrix": {
-    "message": "IgMatrix"
-  },
   "IgMatrix Features": {
     "message": "IgMatrix功能"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
     "message": "IgMatrix和TikMatrix具有相同的设置过程和用户界面。主要区别是IgMatrix专门为Instagram自动化设计，而TikMatrix用于TikTok。脚本逻辑和可用功能针对各自的平台进行了优化。"
-  },
-  "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely.": {
-    "message": "IgMatrix将TikMatrix的强大自动化功能带到Instagram，帮助您高效、安全地扩展Instagram营销工作。"
   },
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
     "message": "IgMatrix遵循与TikMatrix类似的定价结构，但可能有不同的费率。请查看我们的官方定价页面或联系我们的支持团队了解当前的IgMatrix定价信息。"
@@ -353,9 +218,6 @@
   "Is the pricing the same as TikMatrix?": {
     "message": "定价与TikMatrix相同吗？"
   },
-  "Join Channel": {
-    "message": "加入频道"
-  },
   "Join Group": {
     "message": "加入群组"
   },
@@ -371,95 +233,17 @@
   "Mass direct messaging": {
     "message": "批量私信"
   },
-  "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "周一至周五: 9:00AM - 5:00PM（UTC+8）"
-  },
-  "Monthly": {
-    "message": "包月"
-  },
   "Multi-Device Control": {
     "message": "多设备控制"
   },
   "Multi-language support (English, Chinese, Russian)": {
     "message": "多语言支持（英语、中文、俄语）"
   },
-  "Natural Swipe Gestures": {
-    "message": "自然滑动轨迹"
-  },
-  "No Root Required": {
-    "message": "无需Root权限"
-  },
-  "No root permissions needed, ensuring device environment security": {
-    "message": "无需root权限，保证设备环境安全"
-  },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "由于脚本是平台特定的，并非所有TikMatrix脚本都在IgMatrix中可用。安装后可以在IgMatrix软件界面中找到可用脚本的确切列表。请参考软件中显示的实际功能。"
   },
-  "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "一键自动采集目标账号的粉丝列表，可用于发送私信"
-  },
-  "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "一键批量自动养号，支持搜索关键字、随机关注、点赞、评论、收藏"
-  },
-  "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "一键批量自动在大量的视频中评论指定的话术，并添加随机表情"
-  },
-  "One-click batch automatic direct messaging to multiple target users": {
-    "message": "一键批量自动给大量目标用户发送私信"
-  },
-  "One-click batch automatic follow of target accounts": {
-    "message": "一键批量自动关注目标账号"
-  },
-  "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "一键批量自动登录 TikTok 账号，支持批量导入导出账号"
-  },
-  "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "一键批量自动匹配已登录的账号，无需手动绑定"
-  },
-  "One-click batch automatic posting, supports adding product links": {
-    "message": "一键批量自动发布，支持添加商品链接"
-  },
-  "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "一键批量自动注册 TikTok 账号，支持企业邮箱"
-  },
-  "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "一键批量自动设置头像、昵称、签名、用户名"
-  },
-  "One-click download of videos from all video websites": {
-    "message": "一键下载所有视频网站的视频"
-  },
-  "One-click download of videos from the entire network": {
-    "message": "全网视频一键下载"
-  },
-  "Open Source Client": {
-    "message": "开源客户端"
-  },
-  "Open source client code allows users to customize their own client": {
-    "message": "开源的客户端代码，用户可以随意自定义客户端"
-  },
-  "Our Competitive Advantages": {
-    "message": "我们的竞争优势"
-  },
-  "Our Core Advantages": {
-    "message": "我们的核心优势"
-  },
-  "Our Core Features": {
-    "message": "我们的核心功能"
-  },
-  "Our plans": {
-    "message": "我们的套餐"
-  },
-  "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "我们专有的真机矩阵系统完美规避TikTok的风控措施，实现极低的账号封禁率。"
-  },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "我们的支持团队在这里帮助您解决任何与IgMatrix相关的问题或疑问。"
-  },
-  "Per Month": {
-    "message": "每月"
-  },
-  "Per Year": {
-    "message": "每年"
   },
   "Performance analytics": {
     "message": "性能分析"
@@ -485,23 +269,8 @@
   "Powerful TikTok Automation & Management Tools": {
     "message": "强大的TikTok自动化和管理工具"
   },
-  "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
-    "message": "强大的技术团队，实时维护更新，保证脚本的可用率"
-  },
-  "Premium Benefits": {
-    "message": "高级特权"
-  },
   "Pricing": {
     "message": "价格"
-  },
-  "Private Local Deployment": {
-    "message": "私有化本地部署"
-  },
-  "Professional TikTok Account Management & Marketing Tool": {
-    "message": "专业的TikTok账号管理及营销工具"
-  },
-  "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
-    "message": "专业TikTok账号管理与营销工具 - 支持Windows和Mac"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "专业TikTok账号管理与营销工具，专为Windows和Mac上的安卓手机农场设计。实现自动发布、关注等功能，促进TikTok影响力增长，确保零封号率。"
@@ -514,9 +283,6 @@
   },
   "Quick Setup Guide": {
     "message": "快速设置指南"
-  },
-  "Randomized script parameters to avoid behavior detection patterns": {
-    "message": "脚本参数随机化，避免行为检测"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "识别并匹配手机中的TikTok账户，添加到账户列表"
@@ -536,26 +302,11 @@
   "Same reliable technology as TikMatrix": {
     "message": "与TikMatrix相同的可靠技术"
   },
-  "Save 50% compared to monthly plan": {
-    "message": "比月付方案节省50%"
-  },
   "Schedule your Instagram activities with intelligent timing algorithms": {
     "message": "使用智能时间算法安排您的Instagram活动"
   },
-  "Scheduled Tasks": {
-    "message": "定时任务"
-  },
   "Scrape TikTok usernames from followers lists or keyword searches": {
     "message": "从粉丝列表或关键词搜索中采集TikTok用户名"
-  },
-  "Script Parameter Randomization": {
-    "message": "脚本参数随机化"
-  },
-  "Script engine simulates natural human clicking with randomized button offset": {
-    "message": "脚本引擎采用模拟真人的点击按钮随机化偏移"
-  },
-  "Scripts run on computer to avoid mobile device detection": {
-    "message": "脚本运行在电脑端，避免手机端被检测"
   },
   "Send messages to multiple TikTok accounts in bulk with personalized content": {
     "message": "批量向多个TikTok账户发送个性化内容的消息"
@@ -569,32 +320,17 @@
   "Shipping worldwide": {
     "message": "全球发货"
   },
-  "Simulates natural right-hand arc swipe trajectories like real human interaction": {
-    "message": "脚本滑动采用模拟真人的右手弧形滑动轨迹"
-  },
   "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
     "message": "由于设置过程完全相同，请参考我们全面的TikMatrix文档，获取设备连接、账户管理和脚本配置的详细说明。"
   },
   "Smart Scheduling": {
     "message": "智能调度"
   },
-  "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
-    "message": "立即使用IgMatrix开始自动化您的Instagram营销，体验成千上万营销人员信赖的专业级工具。"
-  },
   "Still have questions?": {
     "message": "还有问题？"
   },
-  "Streamline your Android TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "通过先进的批量控制和营销自动化，高效管理您的安卓TikTok手机农场"
-  },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "通过先进的批量控制和营销自动化，轻松管理您的Instagram手机农场。"
-  },
-  "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "通过先进的批量控制和营销自动化，轻松管理您的TikTok手机农场。"
-  },
-  "Strong technical support team with open community ecosystem": {
-    "message": "强大的技术支持团队，开放的社区生态"
   },
   "Super Marketing": {
     "message": "超级营销"
@@ -602,23 +338,11 @@
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "支持100+手机投屏到电脑，同步操作"
   },
-  "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "支持 200+ 手机投屏到电脑，支持同步操作"
-  },
-  "Supports work profile enterprise space for professional use": {
-    "message": "支持work profile企业空间"
-  },
   "Technical Advantages": {
     "message": "技术优势"
   },
   "Telegram": {
     "message": "Telegram"
-  },
-  "Telegram Support": {
-    "message": "Telegram支持群"
-  },
-  "Text input mimics human typing patterns with character-by-character simulation": {
-    "message": "脚本输入文字采用模拟真人的逐字输入"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
     "message": "长度和宽度相对较大，但高度低（2u 尺寸）"
@@ -629,20 +353,8 @@
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
     "message": "手机主板机是20个三星手机主板。它是一台通电自启动的，统一电源供电，统一的多风扇散热，统一的 USB 连接，支持 OTG 有线网络连接。"
   },
-  "TikMatrix": {
-    "message": "TikMatrix 真机矩阵"
-  },
-  "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix 提供比同类产品至少高30%的互动率，采用先进的真机技术确保账号完全安全。"
-  },
-  "TikMatrix is a TikTok group control operation tool": {
-    "message": "TikMatrix是一款Tiktok群控运营工具"
-  },
   "TikMatrix is a professional marketing software designed for TikTok phone farms": {
     "message": "TikMatrix 是一款专业的TikTok手机农场营销软件"
-  },
-  "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix 是一款专业的TikTok手机农场营销软件。管理多个账号，自动发布，并轻松扩展您的TikTok营销。"
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
     "message": "TikMatrix 支持每个手机登录8个tiktok账号"
@@ -659,23 +371,8 @@
   "Translate subtitles": {
     "message": "翻译字幕"
   },
-  "Trial": {
-    "message": "试用"
-  },
-  "Tutorial": {
-    "message": "教程"
-  },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "美国原生非激活的 SIM 卡，用于 tiktok Android 应用来检测 SIM 卡位置"
-  },
-  "Unlimited devices": {
-    "message": "无限设备"
-  },
-  "Unlimited devices, Customer support": {
-    "message": "无限设备、客户支持"
-  },
-  "Unlimited process tasks": {
-    "message": "无限处理任务"
   },
   "User engagement boost": {
     "message": "用户互动提升"
@@ -686,20 +383,8 @@
   "User scraping": {
     "message": "用户采集"
   },
-  "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "视频魔法是一款专业的视频生成软件，专为运营者设计。它可以为您生成独特的视频，极大提升运营效率。"
-  },
-  "Video Magic is a tool that can generate unique videos": {
-    "message": "视频魔法是一款可以生成独特视频的工具"
-  },
-  "Video collection": {
-    "message": "采集视频"
-  },
   "Video download": {
     "message": "视频下载"
-  },
-  "Video posting, Account nurturing": {
-    "message": "视频发布、账号养护"
   },
   "Video unique": {
     "message": "视频生成"
@@ -734,18 +419,6 @@
   "Why Choose IgMatrix?": {
     "message": "为什么选择IgMatrix？"
   },
-  "Why TikMatrix?": {
-    "message": "为什么使用 TikMatrix?"
-  },
-  "Work Profile Support": {
-    "message": "企业空间支持"
-  },
-  "Working Hours": {
-    "message": "工作时间"
-  },
-  "Yearly": {
-    "message": "包年"
-  },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "是的！IgMatrix的设置教程与TikMatrix完全相同。您可以按照TikMatrix文档进行安装、设备连接和基本配置。只有自动化脚本会根据平台而有所不同。"
   },
@@ -754,45 +427,6 @@
   },
   "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
     "message": "您可以在同一台计算机上安装IgMatrix和TikMatrix，但由于运行时冲突，它们不能同时运行。您一次只能运行其中一个软件 - IgMatrix或TikMatrix。"
-  },
-  "advertising.back.home": {
-    "message": "返回首页"
-  },
-  "advertising.buy.accounts.description": {
-    "message": "专业的社交媒体账号市场"
-  },
-  "advertising.buy.accounts.leadsmm.description": {
-    "message": "高品质社交媒体账号提供商，提供优质账号服务"
-  },
-  "advertising.buy.accounts.leadsmm.title": {
-    "message": "LeadsSMM - 购买账号"
-  },
-  "advertising.buy.accounts.title": {
-    "message": "AccsMarket"
-  },
-  "advertising.buy.hardware.description": {
-    "message": "专业的手机农场和自动化硬件设备"
-  },
-  "advertising.buy.hardware.title": {
-    "message": "鸟尊商店"
-  },
-  "advertising.category.accounts": {
-    "message": "账号"
-  },
-  "advertising.category.analytics": {
-    "message": "分析工具"
-  },
-  "advertising.category.hardware": {
-    "message": "硬件"
-  },
-  "advertising.category.proxy": {
-    "message": "代理"
-  },
-  "advertising.category.verification": {
-    "message": "验证工具"
-  },
-  "advertising.category.vps": {
-    "message": "VPS"
   },
   "advertising.disclaimer.content": {
     "message": "以下推荐和链接指向的是不属于或不由TikMatrix运营的外部网站和服务。我们提供这些链接仅为方便您使用。TikMatrix不认可、保证或承担这些第三方网站提供的任何信息、产品或服务的准确性、完整性或实用性的责任。在与外部服务交互时，请使用您自己的判断。"
@@ -806,44 +440,8 @@
   "advertising.page.title": {
     "message": "广告与合作伙伴"
   },
-  "advertising.proxy.proxycheap.description": {
-    "message": "适用于各种用例的经济实惠代理解决方案"
-  },
-  "advertising.proxy.proxycheap.title": {
-    "message": "Proxy-Cheap"
-  },
-  "advertising.proxy.thordata.description": {
-    "message": "最佳住宅代理 —— 稳定 · 可靠 · 高性价比\n注册即可获得 1GB 免费试用流量"
-  },
-  "advertising.proxy.thordata.title": {
-    "message": "Thordata"
-  },
-  "advertising.tiktok.user.finder.description": {
-    "message": "查找和分析 TikTok 用户及其数据"
-  },
-  "advertising.tiktok.user.finder.title": {
-    "message": "TikTok 用户查找器"
-  },
   "advertising.visit.button": {
     "message": "访问网站"
-  },
-  "advertising.vps.lisahost.description": {
-    "message": "可靠的VPS主机服务，适用于自动化项目"
-  },
-  "advertising.vps.lisahost.title": {
-    "message": "LisaHost"
-  },
-  "advertising.vps.uuuvps.description": {
-    "message": "高性能VPS主机，提供全球多个位置"
-  },
-  "advertising.vps.uuuvps.title": {
-    "message": "UUUVPS"
-  },
-  "advertising.whatsapp.checker.description": {
-    "message": "验证 WhatsApp 号码并检查其状态"
-  },
-  "advertising.whatsapp.checker.title": {
-    "message": "WhatsApp 号码检查器"
   },
   "download.description": {
     "message": "下载 TikMatrix 的 Windows、Mac 和 Linux 版本"
@@ -1049,9 +647,6 @@
   "homepage.vs.title": {
     "message": "为什么选择 TikMatrix?"
   },
-  "navbar.download": {
-    "message": "下载"
-  },
   "pricing.all_features": {
     "message": "包含所有功能"
   },
@@ -1063,9 +658,6 @@
   },
   "pricing.business.description": {
     "message": "适合大型企业"
-  },
-  "pricing.business.manage_phones": {
-    "message": "最多100个并发自动化任务"
   },
   "pricing.business.name": {
     "message": "商业版"
@@ -1088,9 +680,6 @@
   "pricing.cta.pay": {
     "message": "立即订阅"
   },
-  "pricing.dedicated_support": {
-    "message": "专属工单支持"
-  },
   "pricing.free.all_free_features": {
     "message": "所有基础功能（不含自动化任务）"
   },
@@ -1109,9 +698,6 @@
   "pricing.free_label": {
     "message": "免费"
   },
-  "pricing.get_started": {
-    "message": "开始使用"
-  },
   "pricing.local_api.description": {
     "message": "Pro、Team 和 Business 用户可使用本地 RESTful API 来以编程方式管理任务和自动化工作流。详见文档。"
   },
@@ -1127,9 +713,6 @@
   "pricing.per_month": {
     "message": "每月"
   },
-  "pricing.per_month_pc": {
-    "message": "每月/每台电脑"
-  },
   "pricing.per_year": {
     "message": "每年 (节省 30%)"
   },
@@ -1139,9 +722,6 @@
   "pricing.pro.description": {
     "message": "适合专业人士和小企业"
   },
-  "pricing.pro.manage_phones": {
-    "message": "最多20个并发自动化任务"
-  },
   "pricing.pro.name": {
     "message": "专业版"
   },
@@ -1150,9 +730,6 @@
   },
   "pricing.starter.description": {
     "message": "适合个人和小团队"
-  },
-  "pricing.starter.manage_phones": {
-    "message": "最多5个并发自动化任务"
   },
   "pricing.starter.name": {
     "message": "入门版"
@@ -1165,9 +742,6 @@
   },
   "pricing.team.description": {
     "message": "适合成长中的团队和公司"
-  },
-  "pricing.team.manage_phones": {
-    "message": "最多50个并发自动化任务"
   },
   "pricing.team.name": {
     "message": "团队版"
@@ -1382,268 +956,10 @@
   "testimonials.user4.usage": {
     "message": "8个月"
   },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "关闭"
-  },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "回到顶部"
-  },
-  "theme.CodeBlock.copied": {
-    "message": "复制成功"
-  },
-  "theme.CodeBlock.copy": {
-    "message": "复制"
-  },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "复制代码到剪贴板"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "切换自动换行"
-  },
-  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "折叠侧边栏分类 '{label}'"
-  },
-  "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "展开侧边栏分类 '{label}'"
-  },
-  "theme.ErrorPageContent.title": {
-    "message": "页面已崩溃。"
-  },
-  "theme.ErrorPageContent.tryAgain": {
-    "message": "重试"
-  },
-  "theme.NavBar.navAriaLabel": {
-    "message": "主导航"
-  },
-  "theme.NotFound.p1": {
-    "message": "我们找不到您要找的页面。"
-  },
-  "theme.NotFound.p2": {
-    "message": "请联系原始链接来源网站的所有者，并告知他们链接已损坏。"
-  },
-  "theme.NotFound.title": {
-    "message": "找不到页面"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "本页总览"
-  },
-  "theme.admonition.caution": {
-    "message": "警告"
-  },
-  "theme.admonition.danger": {
-    "message": "危险"
-  },
-  "theme.admonition.info": {
-    "message": "信息"
-  },
-  "theme.admonition.note": {
-    "message": "备注"
-  },
-  "theme.admonition.tip": {
-    "message": "提示"
-  },
-  "theme.admonition.warning": {
-    "message": "注意"
-  },
-  "theme.blog.archive.description": {
-    "message": "历史博文"
-  },
-  "theme.blog.archive.title": {
-    "message": "历史博文"
-  },
-  "theme.blog.paginator.navAriaLabel": {
-    "message": "博文列表分页导航"
-  },
-  "theme.blog.paginator.newerEntries": {
-    "message": "较新的博文"
-  },
-  "theme.blog.paginator.olderEntries": {
-    "message": "较旧的博文"
-  },
-  "theme.blog.post.paginator.navAriaLabel": {
-    "message": "博文分页导航"
-  },
-  "theme.blog.post.paginator.newerPost": {
-    "message": "较新一篇"
-  },
-  "theme.blog.post.paginator.olderPost": {
-    "message": "较旧一篇"
-  },
   "theme.blog.post.plurals": {
     "message": "{count} 篇博文"
   },
-  "theme.blog.post.readMore": {
-    "message": "阅读更多"
-  },
-  "theme.blog.post.readMoreLabel": {
-    "message": "阅读 {title} 的全文"
-  },
   "theme.blog.post.readingTime.plurals": {
     "message": "阅读需 {readingTime} 分钟"
-  },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "最近博文导航"
-  },
-  "theme.blog.tagTitle": {
-    "message": "{nPosts} 含有标签「{tagName}」"
-  },
-  "theme.colorToggle.ariaLabel": {
-    "message": "切换浅色/暗黑模式（当前为{mode}）"
-  },
-  "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "暗黑模式"
-  },
-  "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "浅色模式"
-  },
-  "theme.common.editThisPage": {
-    "message": "编辑此页"
-  },
-  "theme.common.headingLinkTitle": {
-    "message": "{heading}的直接链接"
-  },
-  "theme.common.skipToMainContent": {
-    "message": "跳到主要内容"
-  },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} 个项目"
-  },
-  "theme.docs.breadcrumbs.home": {
-    "message": "主页面"
-  },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "页面路径"
-  },
-  "theme.docs.paginator.navAriaLabel": {
-    "message": "文件选项卡"
-  },
-  "theme.docs.paginator.next": {
-    "message": "下一页"
-  },
-  "theme.docs.paginator.previous": {
-    "message": "上一页"
-  },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "关闭导航栏"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "收起侧边栏"
-  },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "收起侧边栏"
-  },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "展开侧边栏"
-  },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "展开侧边栏"
-  },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "文档侧边栏"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "切换导航栏"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} 个文档标记为\"{tagName}\""
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} 篇文档带有标签"
-  },
-  "theme.docs.versionBadge.label": {
-    "message": "版本：{versionLabel}"
-  },
-  "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "最新版本"
-  },
-  "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "最新的文档请参阅 {latestVersionLink} ({versionLabel})。"
-  },
-  "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "此为 {siteTitle} {versionLabel} 版的文档，现已不再积极维护。"
-  },
-  "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "此为 {siteTitle} {versionLabel} 版尚未发行的文档。"
-  },
-  "theme.footer.link.label.View All Advertising": {
-    "message": "查看所有广告"
-  },
-  "theme.footer.link.label.View All Tools": {
-    "message": "查看所有工具"
-  },
-  "theme.lastUpdated.atDate": {
-    "message": "于 {date} "
-  },
-  "theme.lastUpdated.byUser": {
-    "message": "由 {user} "
-  },
-  "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "最后{byUser}{atDate}更新"
-  },
-  "theme.navbar.item.label.Advertising": {
-    "message": "广告"
-  },
-  "theme.navbar.item.label.Tools": {
-    "message": "工具"
-  },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "选择语言"
-  },
-  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← 回到主菜单"
-  },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "选择版本"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "标签："
-  },
-  "theme.tags.tagsPageLink": {
-    "message": "查看所有标签"
-  },
-  "theme.tags.tagsPageTitle": {
-    "message": "标签"
-  },
-  "theme.unlistedContent.message": {
-    "message": "此页面未列出。搜索引擎不会对其索引，只有拥有直接链接的用户才能访问。"
-  },
-  "theme.unlistedContent.title": {
-    "message": "未列出页"
-  },
-  "whitelabel.annualRequired": {
-    "message": "需要年付订阅"
-  },
-  "whitelabel.annualRequiredDesc": {
-    "message": "白标功能仅对年付订阅用户开放。购买年付计划后，请通过Telegram联系客服获取解锁码。"
-  },
-  "whitelabel.appName": {
-    "message": "应用名称"
-  },
-  "whitelabel.contactSupport": {
-    "message": "联系客服获取解锁码"
-  },
-  "whitelabel.customization": {
-    "message": "品牌定制"
-  },
-  "whitelabel.description": {
-    "message": "自定义TikMatrix的品牌标识以匹配您的公司形象"
-  },
-  "whitelabel.logo": {
-    "message": "标志"
-  },
-  "whitelabel.setup": {
-    "message": "白标设置"
-  },
-  "whitelabel.supportEmail": {
-    "message": "支持邮箱"
-  },
-  "whitelabel.telegramUrl": {
-    "message": "Telegram链接"
-  },
-  "whitelabel.title": {
-    "message": "白标功能"
-  },
-  "whitelabel.tutorialUrl": {
-    "message": "教程链接"
   }
 }
