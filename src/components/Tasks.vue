@@ -37,6 +37,10 @@
             <font-awesome-icon icon="cog" class="h-3 w-3" />{{ $t('taskSettings') }}
         </button>
 
+        <button class="btn btn-md btn-outline btn-secondary mt-1 ml-1 mb-1" @click="$emiter('showDialog', { name: 'scheduleTemplates' })">
+            <font-awesome-icon icon="calendar-alt" class="h-3 w-3" />{{ $t('scheduleTemplates.title') }}
+        </button>
+
         <a v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite" class="link link-primary flex items-center gap-2 text-md leading-snug max-w-full md:max-w-md whitespace-normal wrap-break-word"
             :href="whitelabelConfig.officialWebsite + '/docs/troubleshooting/task_failed'" target="_blank">
             <font-awesome-icon icon="fas fa-question-circle" class="h-5 w-5 shrink-0" />

@@ -1106,3 +1106,52 @@ export async function support_download_attachment(params) {
     rawResponse: true
   })
 }
+
+// ============================================================================
+// Schedule Template API
+// ============================================================================
+
+export function list_schedule_templates() {
+  return request({
+    method: 'get',
+    url: api.schedule_template
+  })
+}
+
+export function get_schedule_template({ id }) {
+  return request({
+    method: 'get',
+    url: `${api.schedule_template}/${id}`
+  })
+}
+
+export function create_schedule_template(data) {
+  return request({
+    method: 'post',
+    url: api.schedule_template,
+    data
+  })
+}
+
+export function update_schedule_template(data) {
+  return request({
+    method: 'put',
+    url: api.schedule_template,
+    data
+  })
+}
+
+export function delete_schedule_template({ id }) {
+  return request({
+    method: 'delete',
+    url: api.schedule_template,
+    params: { id }
+  })
+}
+
+export function toggle_schedule_template({ id }) {
+  return request({
+    method: 'post',
+    url: `${api.schedule_template}/${id}/toggle`
+  })
+}

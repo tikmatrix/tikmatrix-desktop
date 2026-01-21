@@ -15,6 +15,7 @@
         :settings="settings" v-if="selectedItem.name === 'beforeRunScriptDialog' && $refs.page_dialog.open" />
       <SupportCenter :devices="devices" :seleced-devices="selecedDevices"
         v-if="selectedItem.name === 'support' && $refs.page_dialog.open" />
+      <ManageScheduleTemplates v-if="selectedItem.name === 'scheduleTemplates' && $refs.page_dialog.open" />
 
     </div>
     <form method="dialog" class="modal-backdrop">
@@ -36,6 +37,7 @@ import ManageTasks from './components/tasks/ManageTasks.vue'
 import BeforeRunScriptDialog from './components/dialogs/BeforeRunScriptDialog.vue'
 import AccountWarmupSettings from './components/groups/AccountWarmupSettings.vue'
 import SupportCenter from './components/support/SupportCenter.vue'
+import ManageScheduleTemplates from './components/schedule/ManageScheduleTemplates.vue'
 export default {
   name: 'appDialog',
   props: {
@@ -62,7 +64,8 @@ export default {
     BeforeRunScriptDialog,
     AccountWarmupSettings,
     PostSettings,
-    SupportCenter
+    SupportCenter,
+    ManageScheduleTemplates
   },
   data() {
     return {

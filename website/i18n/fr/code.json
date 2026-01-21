@@ -11,10 +11,10 @@
   },
   "download.subtitle": {
     "message": "download.subtitle",
-    "description": "下载页面的副标题"
+    "description": "Sous-titre de la page de téléchargement"
   },
   "Same Setup Process": {
-    "message": "Same Setup Process"
+    "message": "Même processus d'installation"
   },
   "tech.diagram.zeroCloud": {
     "message": "tech.diagram.zeroCloud"
@@ -25,13 +25,13 @@
   },
   "pricing.free.description": {
     "message": "pricing.free.description",
-    "description": "免费计划描述"
+    "description": "Description du plan gratuit"
   },
   "Set up account profiles including avatars, nicknames, signatures, and usernames": {
-    "message": "Set up account profiles including avatars, nicknames, signatures, and usernames"
+    "message": "Configurez les profils de compte (avatar, pseudo, signature et nom d'utilisateur)"
   },
   "Scripts run on computer to avoid mobile device detection": {
-    "message": "Scripts run on computer to avoid mobile device detection"
+    "message": "Les scripts s'exécutent sur l'ordinateur pour éviter la détection par des appareils mobiles"
   },
   "pricing.compare.show": {
     "message": "pricing.compare.show"
@@ -44,11 +44,11 @@
     "message": "Toutes les fonctionnalités mensuelles"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Supports 100+ phones mirroring to a computer, with synchronized operation"
+    "message": "Prend en charge la mise en miroir de plus de 100 téléphones vers un ordinateur, avec une opération synchronisée"
   },
   "pricing.per_month_pc": {
     "message": "pricing.per_month_pc",
-    "description": "每月每台电脑文本"
+    "description": "Texte par mois et par ordinateur"
   },
   "Automatic direct messaging": {
     "message": "Messagerie directe automatique",
@@ -56,18 +56,18 @@
   },
   "testimonials.user2.text": {
     "message": "testimonials.user2.text",
-    "description": "第二个用户评价文本"
+    "description": "Texte du deuxième témoignage utilisateur"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-    "message": "Streamline your Instagram phone farm with advanced batch control and marketing automation",
-    "description": "The description of Streamline your Instagram phone farm with advanced batch control and marketing automation"
+    "message": "Optimisez votre ferme de téléphones Instagram grâce à un contrôle par lots avancé et à l'automatisation du marketing",
+    "description": "Description de l'optimisation de la ferme de téléphones Instagram"
   },
   "pricing.team.concurrent_tasks": {
     "message": "pricing.team.concurrent_tasks",
-    "description": "团队版并发任务数"
+    "description": "Nombre de tâches simultanées pour le plan équipe"
   },
   "Same reliable technology as TikMatrix": {
-    "message": "Same reliable technology as TikMatrix"
+    "message": "Même technologie fiable que TikMatrix"
   },
   "tech.point.zeroApi.title": {
     "message": "tech.point.zeroApi.title"
@@ -79,7 +79,7 @@
     "message": "tech.security.legendB"
   },
   "Contact Support": {
-    "message": "Contact Support"
+    "message": "Contacter le support"
   },
   "homepage.vs.card.plug.title": {
     "message": "homepage.vs.card.plug.title"
@@ -96,7 +96,7 @@
   },
   "download.description": {
     "message": "download.description",
-    "description": "下载页面的描述"
+    "description": "Description de la page de téléchargement"
   },
   "Remove posts based on their view count for content optimization": {
     "message": "Remove posts based on their view count for content optimization"
@@ -148,10 +148,10 @@
   },
   "testimonials.user3.usage": {
     "message": "testimonials.user3.usage",
-    "description": "第三个用户使用时长"
+    "description": "Durée d'utilisation du troisième utilisateur"
   },
   "No Root Required": {
-    "message": "No Root Required"
+    "message": "Aucun accès root requis"
   },
   "tech.security.legendA": {
     "message": "tech.security.legendA"
@@ -168,7 +168,7 @@
   },
   "whitelabel.contactSupport": {
     "message": "whitelabel.contactSupport",
-    "description": "联系客服获取白标解锁码"
+    "description": "Contactez le support client pour obtenir le code de déverrouillage White-Label"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
     "message": "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.",
@@ -193,7 +193,7 @@
   },
   "pricing.starter.name": {
     "message": "pricing.starter.name",
-    "description": "入门版计划名称"
+    "description": "Nom du plan Starter"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
     "message": "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.",
@@ -206,17 +206,17 @@
     "message": "Randomized script parameters to avoid behavior detection patterns"
   },
   "Download for Windows": {
-    "message": "Download for Windows"
+    "message": "Télécharger pour Windows"
   },
   "24/7 Support": {
     "message": "Support 24/7"
   },
   "Features": {
-    "message": "Features"
+    "message": "Fonctionnalités"
   },
   "download.requirements.storage": {
     "message": "download.requirements.storage",
-    "description": "存储空间要求"
+    "description": "Exigences d'espace de stockage"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Built with safety mechanisms to protect your Instagram accounts from suspension"
@@ -229,16 +229,16 @@
   },
   "download.videomagic.title": {
     "message": "download.videomagic.title",
-    "description": "VideoMagic下载页面的标题"
+    "description": "Titre de la page de téléchargement VideoMagic"
   },
   "Comments, Messages, Follows": {
-    "message": "Comments, Messages, Follows"
+    "message": "Commentaires, Messages, Abonnements"
   },
   "TikMatrix supports up to 200+ devices.": {
     "message": "TikMatrix supports up to 200+ devices."
   },
   "Get Support": {
-    "message": "Get Support"
+    "message": "Obtenir de l'aide"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
     "message": "theme.docs.sidebar.toggleSidebarButtonAriaLabel",
@@ -253,7 +253,7 @@
   },
   "pricing.subtitle": {
     "message": "pricing.subtitle",
-    "description": "定价部分副标题"
+    "description": "Sous-titre de la section Tarification"
   },
   "tech.diagram.tiktok": {
     "message": "tech.diagram.tiktok"
@@ -263,7 +263,7 @@
   },
   "download.igmatrix.requirements.memory": {
     "message": "download.igmatrix.requirements.memory",
-    "description": "IgMatrix内存要求"
+    "description": "Exigences de mémoire pour IgMatrix"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
     "message": "Powerful Instagram automation tools designed for professional marketers and businesses"
@@ -273,7 +273,7 @@
   },
   "pricing.free.community_support": {
     "message": "pricing.free.community_support",
-    "description": "免费计划支持方式"
+    "description": "Méthode de support pour le plan gratuit"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
     "message": "theme.docs.sidebar.expandButtonAriaLabel",
@@ -281,7 +281,7 @@
   },
   "download.igmatrix.linux.development": {
     "message": "download.igmatrix.linux.development",
-    "description": "IgMatrix Linux开发中状态"
+    "description": "IgMatrix pour Linux en développement"
   },
   "Join Channel": {
     "message": "Join Channel",
@@ -307,7 +307,7 @@
   },
   "download.videomagic.description": {
     "message": "download.videomagic.description",
-    "description": "VideoMagic下载页面的描述"
+    "description": "Description de la page de téléchargement VideoMagic"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
     "message": "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.",
@@ -321,7 +321,7 @@
   },
   "testimonials.user3.text": {
     "message": "testimonials.user3.text",
-    "description": "第三个用户评价文本"
+    "description": "Texte du troisième témoignage utilisateur"
   },
   "theme.common.skipToMainContent": {
     "message": "theme.common.skipToMainContent",
@@ -329,7 +329,7 @@
   },
   "download.igmatrix.requirements.processor": {
     "message": "download.igmatrix.requirements.processor",
-    "description": "IgMatrix处理器要求"
+    "description": "Exigences processeur pour IgMatrix"
   },
   "Email": {
     "message": "Email",
@@ -356,22 +356,22 @@
   },
   "whitelabel.appName": {
     "message": "whitelabel.appName",
-    "description": "应用名称"
+    "description": "Nom de l'application"
   },
   "download.videomagic.subtitle": {
     "message": "download.videomagic.subtitle",
-    "description": "VideoMagic下载页面的副标题"
+    "description": "Sous-titre de la page de téléchargement VideoMagic"
   },
   "testimonials.subtitle": {
     "message": "testimonials.subtitle",
-    "description": "用户评价部分副标题"
+    "description": "Sous-titre de la section témoignages"
   },
   "tech.security.proxyIsolation": {
     "message": "tech.security.proxyIsolation"
   },
   "pricing.unlimited_devices": {
     "message": "pricing.unlimited_devices",
-    "description": "无限设备连接文本"
+    "description": "Texte pour connexion d'appareils illimités"
   },
   "Video posting, Account nurturing": {
     "message": "Video posting, Account nurturing"
@@ -413,18 +413,18 @@
   },
   "pricing.title": {
     "message": "pricing.title",
-    "description": "定价部分标题"
+    "description": "Titre de la section Tarification"
   },
   "download.windows.title": {
     "message": "download.windows.title",
-    "description": "Windows平台标题"
+    "description": "Titre de la plateforme Windows"
   },
   "advertising.proxy.proxycheap.description": {
     "message": "advertising.proxy.proxycheap.description"
   },
   "pricing.ticket_support": {
     "message": "pricing.ticket_support",
-    "description": "专属工单支持文本"
+    "description": "Texte de support par ticket dédié"
   },
   "tech.point.humanBehavior.b2": {
     "message": "tech.point.humanBehavior.b2"
@@ -440,7 +440,7 @@
   },
   "download.igmatrix.title": {
     "message": "download.igmatrix.title",
-    "description": "IgMatrix下载页面的标题"
+    "description": "Titre de la page de téléchargement IgMatrix"
   },
   "Different Script Logic": {
     "message": "Different Script Logic"
@@ -458,7 +458,7 @@
   },
   "whitelabel.telegramUrl": {
     "message": "whitelabel.telegramUrl",
-    "description": "Telegram链接"
+    "description": "Lien Telegram"
   },
   "Go to the \"Download\" page and download the latest version of TikMatrix.": {
     "message": "Go to the \"Download\" page and download the latest version of TikMatrix."
@@ -478,7 +478,7 @@
   },
   "pricing.business.description": {
     "message": "pricing.business.description",
-    "description": "商业版计划描述"
+    "description": "Description du plan Business"
   },
   "Per Year": {
     "message": "Per Year"
@@ -488,7 +488,7 @@
   },
   "testimonials.title": {
     "message": "testimonials.title",
-    "description": "用户评价部分标题"
+    "description": "Titre de la section témoignages"
   },
   "Generate unique videos from one source video": {
     "message": "Generate unique videos from one source video",
@@ -496,7 +496,7 @@
   },
   "pricing.pro.concurrent_tasks": {
     "message": "pricing.pro.concurrent_tasks",
-    "description": "专业版并发任务数"
+    "description": "Nombre de tâches simultanées (plan Pro)"
   },
   "tech.point.realTouch.b2": {
     "message": "tech.point.realTouch.b2"
@@ -537,7 +537,7 @@
   },
   "download.igmatrix.requirements.title": {
     "message": "download.igmatrix.requirements.title",
-    "description": "IgMatrix系统要求标题"
+    "description": "Titre des exigences système pour IgMatrix"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform."
@@ -547,7 +547,7 @@
   },
   "pricing.business.concurrent_tasks": {
     "message": "pricing.business.concurrent_tasks",
-    "description": "商业版并发任务数"
+    "description": "Nombre de tâches simultanées (plan Business)"
   },
   "pricing.compare.devices": {
     "message": "pricing.compare.devices"
@@ -571,7 +571,7 @@
   },
   "download.igmatrix.windows.button": {
     "message": "download.igmatrix.windows.button",
-    "description": "IgMatrix Windows下载按钮文本"
+    "description": "Texte du bouton de téléchargement IgMatrix (Windows)"
   },
   "Download IgMatrix": {
     "message": "Download IgMatrix",
@@ -589,7 +589,7 @@
   },
   "download.igmatrix.mac.install_tip": {
     "message": "download.igmatrix.mac.install_tip",
-    "description": "IgMatrix Mac安装后需要执行的命令提示"
+    "description": "Instructions à exécuter après l'installation sur Mac"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
     "message": "theme.DocSidebarItem.collapseCategoryAriaLabel",
@@ -654,7 +654,7 @@
   },
   "testimonials.user1.text": {
     "message": "testimonials.user1.text",
-    "description": "第一个用户评价文本"
+    "description": "Texte du premier témoignage utilisateur"
   },
   "theme.tags.tagsPageLink": {
     "message": "theme.tags.tagsPageLink",
@@ -669,7 +669,7 @@
   },
   "pricing.starter.manage_phones": {
     "message": "pricing.starter.manage_phones",
-    "description": "入门版计划功能"
+    "description": "Fonctionnalités du plan Starter"
   },
   "theme.blog.paginator.newerEntries": {
     "message": "theme.blog.paginator.newerEntries",
@@ -696,7 +696,7 @@
   },
   "download.requirements.internet": {
     "message": "download.requirements.internet",
-    "description": "网络连接要求"
+    "description": "Exigences de connexion Internet"
   },
   "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
     "message": "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products."
@@ -712,7 +712,7 @@
     "message": "tech.security.realDevice"
   },
   "Get Started": {
-    "message": "Get Started"
+    "message": "Commencer"
   },
   "All Features": {
     "message": "Toutes les fonctionnalités"
@@ -741,7 +741,7 @@
   },
   "download.linux.title": {
     "message": "download.linux.title",
-    "description": "Linux平台标题"
+    "description": "Titre de la plateforme Linux"
   },
   "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
     "message": "One-click batch automatic commenting on multiple videos with specified scripts and random emojis",
@@ -752,7 +752,7 @@
   },
   "whitelabel.annualRequiredDesc": {
     "message": "whitelabel.annualRequiredDesc",
-    "description": "白标功能年付订阅说明"
+    "description": "La fonctionnalité White-Label n'est disponible qu'avec un abonnement annuel"
   },
   "pricing.local_api.title": {
     "message": "pricing.local_api.title"
@@ -818,7 +818,7 @@
   },
   "download.linux.coming_soon": {
     "message": "download.linux.coming_soon",
-    "description": "Linux即将推出提示"
+    "description": "Bientôt disponible pour Linux"
   },
   "theme.blog.post.paginator.olderPost": {
     "message": "theme.blog.post.paginator.olderPost",
@@ -879,7 +879,7 @@
   },
   "pricing.free.all_free_features": {
     "message": "pricing.free.all_free_features",
-    "description": "免费计划基础功能描述"
+    "description": "Description des fonctionnalités de base du plan gratuit"
   },
   "Performance analytics": {
     "message": "Performance analytics",
@@ -897,7 +897,7 @@
   },
   "download.igmatrix.mac.title": {
     "message": "download.igmatrix.mac.title",
-    "description": "IgMatrix Mac平台标题"
+    "description": "Titre de la plateforme IgMatrix (Mac)"
   },
   "Video Magic is a tool that can generate unique videos": {
     "message": "Video Magic is a tool that can generate unique videos",
@@ -911,7 +911,7 @@
   },
   "download.igmatrix.windows.description": {
     "message": "download.igmatrix.windows.description",
-    "description": "IgMatrix Windows平台描述"
+    "description": "Description de la plateforme IgMatrix (Windows)"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
     "message": "The length and width are relatively big, but the height is low(2u size)",
@@ -933,11 +933,11 @@
   },
   "download.igmatrix.requirements.storage": {
     "message": "download.igmatrix.requirements.storage",
-    "description": "IgMatrix存储空间要求"
+    "description": "Exigences d'espace de stockage pour IgMatrix"
   },
   "download.title": {
     "message": "download.title",
-    "description": "下载页面的标题"
+    "description": "Titre de la page de téléchargement"
   },
   "theme.CodeBlock.wordWrapToggle": {
     "message": "theme.CodeBlock.wordWrapToggle",
@@ -963,14 +963,14 @@
   },
   "pricing.business.name": {
     "message": "pricing.business.name",
-    "description": "商业版计划名称"
+    "description": "Nom du plan Business"
   },
   "tech.diagram.realTouch": {
     "message": "tech.diagram.realTouch"
   },
   "download.requirements.processor": {
     "message": "download.requirements.processor",
-    "description": "处理器要求"
+    "description": "Exigences processeur"
   },
   "Safe & Secure": {
     "message": "Safe & Secure"
@@ -998,7 +998,7 @@
   },
   "download.linux.development": {
     "message": "download.linux.development",
-    "description": "Linux开发中状态"
+    "description": "Linux en développement"
   },
   "Completely local private deployment ensuring user data security": {
     "message": "Completely local private deployment ensuring user data security"
@@ -1009,7 +1009,7 @@
   },
   "pricing.all_features": {
     "message": "pricing.all_features",
-    "description": "包含所有功能文本"
+    "description": "Texte indiquant que toutes les fonctionnalités sont incluses"
   },
   "Script engine simulates natural human clicking with randomized button offset": {
     "message": "Script engine simulates natural human clicking with randomized button offset"
@@ -1020,7 +1020,7 @@
   },
   "download.requirements.memory": {
     "message": "download.requirements.memory",
-    "description": "内存要求"
+    "description": "Exigences de mémoire"
   },
   "tech.point.fingerprint.b3": {
     "message": "tech.point.fingerprint.b3"
@@ -1041,7 +1041,7 @@
   },
   "download.igmatrix.description": {
     "message": "download.igmatrix.description",
-    "description": "IgMatrix下载页面的描述"
+    "description": "Description de la page de téléchargement IgMatrix"
   },
   "tech.point.humanBehavior.desc": {
     "message": "tech.point.humanBehavior.desc"
@@ -1069,15 +1069,15 @@
   },
   "pricing.team.description": {
     "message": "pricing.team.description",
-    "description": "团队版计划描述"
+    "description": "Description du plan Équipe"
   },
   "whitelabel.description": {
     "message": "whitelabel.description",
-    "description": "白标功能描述"
+    "description": "Description de la fonctionnalité White-Label"
   },
   "pricing.get_started": {
     "message": "pricing.get_started",
-    "description": "开始使用按钮文本"
+    "description": "Texte du bouton 'Commencer'"
   },
   "Automatic profile setup": {
     "message": "Configuration automatique du profil",
@@ -1106,7 +1106,7 @@
   },
   "download.requirements.os": {
     "message": "download.requirements.os",
-    "description": "操作系统要求"
+    "description": "Exigences du système d'exploitation"
   },
   "Automated Comment": {
     "message": "Commentaire automatisé"
@@ -1129,7 +1129,7 @@
   },
   "pricing.starter.description": {
     "message": "pricing.starter.description",
-    "description": "入门版计划描述"
+    "description": "Description du plan Starter"
   },
   "advertising.whatsapp.checker.title": {
     "message": "advertising.whatsapp.checker.title"
@@ -1148,14 +1148,14 @@
   },
   "download.igmatrix.linux.title": {
     "message": "download.igmatrix.linux.title",
-    "description": "IgMatrix Linux平台标题"
+    "description": "Titre de la plateforme IgMatrix (Linux)"
   },
   "homepage.header.cta.secondary": {
     "message": "homepage.header.cta.secondary"
   },
   "download.mac.description": {
     "message": "download.mac.description",
-    "description": "Mac平台描述"
+    "description": "Description de la plateforme Mac"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
     "message": "theme.CodeBlock.copyButtonAriaLabel",
@@ -1186,7 +1186,7 @@
   },
   "whitelabel.customization": {
     "message": "whitelabel.customization",
-    "description": "品牌定制"
+    "description": "Personnalisation de la marque"
   },
   "theme.docs.sidebar.navAriaLabel": {
     "message": "theme.docs.sidebar.navAriaLabel",
@@ -1209,7 +1209,7 @@
   },
   "pricing.free.automation_disabled": {
     "message": "pricing.free.automation_disabled",
-    "description": "免费计划自动化不可用文本"
+    "description": "Texte indiquant que l'automatisation n'est pas disponible pour le plan gratuit"
   },
   "Download VideoMagic": {
     "message": "Download VideoMagic",
@@ -1217,7 +1217,7 @@
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
     "message": "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app",
-    "description": "电脑支持回答"
+    "description": "Réponse du support pour ordinateur"
   },
   "Simulates natural right-hand arc swipe trajectories like real human interaction": {
     "message": "Simulates natural right-hand arc swipe trajectories like real human interaction"
@@ -1231,7 +1231,7 @@
   },
   "whitelabel.annualRequired": {
     "message": "whitelabel.annualRequired",
-    "description": "白标功能需要年付订阅"
+    "description": "La fonctionnalité White-Label nécessite un abonnement annuel"
   },
   "tech.diagram.noApi": {
     "message": "tech.diagram.noApi"
@@ -1259,11 +1259,11 @@
   },
   "download.igmatrix.requirements.internet": {
     "message": "download.igmatrix.requirements.internet",
-    "description": "IgMatrix网络连接要求"
+    "description": "Exigences de connexion Internet pour IgMatrix"
   },
   "testimonials.user4.usage": {
     "message": "testimonials.user4.usage",
-    "description": "第四个用户使用时长"
+    "description": "Durée d'utilisation du quatrième utilisateur"
   },
   "theme.blog.post.plurals": {
     "message": "theme.blog.post.plurals",
@@ -1299,7 +1299,7 @@
   },
   "pricing.free.name": {
     "message": "pricing.free.name",
-    "description": "免费计划名称"
+    "description": "Nom du plan Gratuit"
   },
   "tech.security.humanModel": {
     "message": "tech.security.humanModel"
@@ -1334,14 +1334,14 @@
   },
   "testimonials.user4.text": {
     "message": "testimonials.user4.text",
-    "description": "第四个用户评价文本"
+    "description": "Texte du quatrième témoignage utilisateur"
   },
   "advertising.vps.uuuvps.description": {
     "message": "advertising.vps.uuuvps.description"
   },
   "What computer can I use?": {
     "message": "What computer can I use?",
-    "description": "电脑支持问题"
+    "description": "Questions de support pour ordinateur"
   },
   "Contact": {
     "message": "Contact",
@@ -1385,7 +1385,7 @@
   },
   "download.linux.description": {
     "message": "download.linux.description",
-    "description": "Linux开发中描述"
+    "description": "Description : Linux en cours de développement"
   },
   "Shipping worldwide": {
     "message": "Shipping worldwide",
@@ -1403,7 +1403,7 @@
   },
   "testimonials.user2.usage": {
     "message": "testimonials.user2.usage",
-    "description": "第二个用户使用时长"
+    "description": "Durée d'utilisation du deuxième utilisateur"
   },
   "Our Competitive Advantages": {
     "message": "Our Competitive Advantages",
@@ -1411,11 +1411,11 @@
   },
   "download.windows.button": {
     "message": "download.windows.button",
-    "description": "Windows下载按钮文本"
+    "description": "Texte du bouton de téléchargement Windows"
   },
   "pricing.dedicated_support": {
     "message": "pricing.dedicated_support",
-    "description": "专属支持文本"
+    "description": "Texte de support dédié"
   },
   "Automatic login": {
     "message": "Connexion automatique"
@@ -1432,7 +1432,7 @@
   },
   "download.mac.button": {
     "message": "download.mac.button",
-    "description": "Mac下载按钮文本"
+    "description": "Texte du bouton de téléchargement Mac"
   },
   "Professional phone farm management": {
     "message": "Professional phone farm management"
@@ -1446,7 +1446,7 @@
   },
   "testimonials.user1.usage": {
     "message": "testimonials.user1.usage",
-    "description": "第一个用户使用时长"
+    "description": "Durée d'utilisation du premier utilisateur"
   },
   "tech.point.fingerprint.b2": {
     "message": "tech.point.fingerprint.b2"
@@ -1469,7 +1469,7 @@
   },
   "whitelabel.setup": {
     "message": "whitelabel.setup",
-    "description": "白标设置"
+    "description": "Paramètres White-Label"
   },
   "theme.colorToggle.ariaLabel": {
     "message": "theme.colorToggle.ariaLabel",
@@ -1477,7 +1477,7 @@
   },
   "pricing.team.name": {
     "message": "pricing.team.name",
-    "description": "团队版计划名称"
+    "description": "Nom du plan Équipe"
   },
   "Translate subtitles": {
     "message": "Translate subtitles",
@@ -1488,11 +1488,11 @@
   },
   "whitelabel.tutorialUrl": {
     "message": "whitelabel.tutorialUrl",
-    "description": "教程链接"
+    "description": "Lien du tutoriel"
   },
   "navbar.download": {
     "message": "navbar.download",
-    "description": "导航栏下载链接文本"
+    "description": "Texte du lien de téléchargement dans la barre de navigation"
   },
   "tech.point.humanBehavior.title": {
     "message": "tech.point.humanBehavior.title"
@@ -1536,11 +1536,11 @@
   },
   "pricing.pro.name": {
     "message": "pricing.pro.name",
-    "description": "专业版计划名称"
+    "description": "Nom du plan Pro"
   },
   "pricing.pro.description": {
     "message": "pricing.pro.description",
-    "description": "专业版计划描述"
+    "description": "Description du plan Pro"
   },
   "Instagram Phone Farm Batch Control Tool": {
     "message": "Instagram Phone Farm Batch Control Tool",
@@ -1565,7 +1565,7 @@
   },
   "testimonials.usage_label": {
     "message": "testimonials.usage_label",
-    "description": "使用时长标签"
+    "description": "Étiquette de durée d'utilisation"
   },
   "advertising.vps.lisahost.description": {
     "message": "advertising.vps.lisahost.description"
@@ -1591,7 +1591,7 @@
   },
   "download.igmatrix.linux.description": {
     "message": "download.igmatrix.linux.description",
-    "description": "IgMatrix Linux开发中描述"
+    "description": "Description : IgMatrix Linux en cours de développement"
   },
   "Character-by-Character Input": {
     "message": "Character-by-Character Input"
@@ -1637,7 +1637,7 @@
   },
   "download.igmatrix.windows.title": {
     "message": "download.igmatrix.windows.title",
-    "description": "IgMatrix Windows平台标题"
+    "description": "Titre de la plateforme IgMatrix (Windows)"
   },
   "homepage.header.subtitle": {
     "message": "homepage.header.subtitle"
@@ -1647,7 +1647,7 @@
   },
   "whitelabel.supportEmail": {
     "message": "whitelabel.supportEmail",
-    "description": "支持邮箱"
+    "description": "Adresse e-mail du support"
   },
   "homepage.vs.card.realDevices.desc": {
     "message": "homepage.vs.card.realDevices.desc"
@@ -1696,7 +1696,7 @@
   },
   "download.igmatrix.mac.button": {
     "message": "download.igmatrix.mac.button",
-    "description": "IgMatrix Mac下载按钮文本"
+    "description": "Texte du bouton de téléchargement IgMatrix (Mac)"
   },
   "theme.docs.sidebar.expandButtonTitle": {
     "message": "theme.docs.sidebar.expandButtonTitle",
@@ -1714,11 +1714,11 @@
   },
   "download.igmatrix.linux.coming_soon": {
     "message": "download.igmatrix.linux.coming_soon",
-    "description": "IgMatrix Linux即将推出提示"
+    "description": "Bientôt disponible pour IgMatrix Linux"
   },
   "pricing.starter.concurrent_tasks": {
     "message": "pricing.starter.concurrent_tasks",
-    "description": "入门版并发任务数"
+    "description": "Nombre de tâches simultanées (plan Starter)"
   },
   "tech.point.fingerprint.b1": {
     "message": "tech.point.fingerprint.b1"
@@ -1732,14 +1732,14 @@
   },
   "download.requirements.title": {
     "message": "download.requirements.title",
-    "description": "系统要求标题"
+    "description": "Titre des exigences système"
   },
   "Monthly": {
     "message": "Monthly"
   },
   "whitelabel.title": {
     "message": "whitelabel.title",
-    "description": "白标功能标题"
+    "description": "Titre de la fonctionnalité White-Label"
   },
   "AI voiceover": {
     "message": "Voix off IA",
@@ -1760,14 +1760,14 @@
   },
   "download.igmatrix.requirements.os": {
     "message": "download.igmatrix.requirements.os",
-    "description": "IgMatrix操作系统要求"
+    "description": "Exigences du système d'exploitation pour IgMatrix"
   },
   "theme.docs.versionBadge.label": {
     "message": "theme.docs.versionBadge.label"
   },
   "download.mac.title": {
     "message": "download.mac.title",
-    "description": "Mac平台标题"
+    "description": "Titre de la plateforme Mac"
   },
   "advertising.category.proxy": {
     "message": "advertising.category.proxy"
@@ -1791,7 +1791,7 @@
   },
   "download.igmatrix.subtitle": {
     "message": "download.igmatrix.subtitle",
-    "description": "IgMatrix下载页面的副标题"
+    "description": "Sous-titre de la page de téléchargement IgMatrix"
   },
   "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
     "message": "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably."
@@ -1808,7 +1808,7 @@
   },
   "download.igmatrix.mac.description": {
     "message": "download.igmatrix.mac.description",
-    "description": "IgMatrix Mac平台描述"
+    "description": "Description de la plateforme IgMatrix (Mac)"
   },
   "Automatically generate AI voiceover for videos": {
     "message": "Automatically generate AI voiceover for videos",
@@ -1816,7 +1816,7 @@
   },
   "pricing.pro.manage_phones": {
     "message": "pricing.pro.manage_phones",
-    "description": "专业版计划功能"
+    "description": "Fonctionnalités du plan Pro"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location",
@@ -1848,11 +1848,11 @@
   },
   "download.windows.description": {
     "message": "download.windows.description",
-    "description": "Windows平台描述"
+    "description": "Description de la plateforme Windows"
   },
   "download.mac.install_tip": {
     "message": "download.mac.install_tip",
-    "description": "Mac安装后需要执行的命令提示"
+    "description": "Instructions à exécuter après l'installation sur Mac"
   },
   "Our plans": {
     "message": "Our plans"
@@ -1869,7 +1869,7 @@
   },
   "pricing.business.manage_phones": {
     "message": "pricing.business.manage_phones",
-    "description": "商业版计划功能"
+    "description": "Fonctionnalités du plan Business"
   },
   "Automation & Content Management": {
     "message": "Automation & Content Management"
@@ -1885,6 +1885,6 @@
   },
   "pricing.team.manage_phones": {
     "message": "pricing.team.manage_phones",
-    "description": "团队版计划功能"
+    "description": "Fonctionnalités du plan Équipe"
   }
 }

@@ -88,5 +88,7 @@ const api = {
   super_marketing_dataset: '/api/super_marketing/datasets',
   super_marketing_run_now: '/api/task/super_marketing/run_now',
   get_crypto_payment_methods: '/api/get_crypto_payment_methods',
+  // Schedule Template API
+  schedule_template: '/api/schedule_template',
 }
 export default api
