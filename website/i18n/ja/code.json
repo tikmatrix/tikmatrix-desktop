@@ -14,6 +14,12 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "インストール後、IgMatrixを開いて利用可能なInstagram自動化スクリプトの完全なリストを表示してください。スクリプトの選択はTikMatrixと異なる場合があります。"
   },
+  "All basic features (automation excluded)": {
+    "message": "すべての無料機能"
+  },
+  "All features included": {
+    "message": "すべての機能"
+  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "IgMatrixソフトウェアで実際に利用可能な機能を常に確認してください。スクリプト機能はTikMatrixと異なる場合があります。ソフトウェアインターフェースには、Instagramで利用可能な自動化スクリプトが正確に表示されます。"
   },
@@ -41,6 +47,12 @@
   "Automatic profile setup": {
     "message": "自動プロフィール設定"
   },
+  "Automation tasks": {
+    "message": "高度な自動化"
+  },
+  "Automation tasks disabled": {
+    "message": "自動化が無効"
+  },
   "Basic configuration": {
     "message": "基本的な設定"
   },
@@ -59,6 +71,9 @@
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Instagramアカウントを停止から保護する安全メカニズムを搭載"
   },
+  "Business": {
+    "message": "ビジネス"
+  },
   "Buy hardware": {
     "message": "ハードウェアを購入する"
   },
@@ -76,6 +91,12 @@
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "カスタマイズ可能なコンテンツと絵文字で複数のTikTok投稿に一括コメント"
+  },
+  "Community support": {
+    "message": "サポート comunitario"
+  },
+  "Compare features": {
+    "message": "比較を表示"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "複数のエンゲージメント戦略とAI生成コメントを組み合わせた包括的な自動化"
@@ -98,8 +119,14 @@
   "Custom Instagram workflows": {
     "message": "カスタムInstagramワークフロー"
   },
+  "Dedicated ticket support": {
+    "message": "Soporte por tickets"
+  },
   "Device connection": {
     "message": "デバイス接続"
+  },
+  "Device support": {
+    "message": "対応デバイス"
   },
   "Different Script Logic": {
     "message": "異なるスクリプトロジック"
@@ -134,14 +161,32 @@
   "Find answers to common questions about IgMatrix": {
     "message": "Encuentra respuestas a preguntas frecuentes sobre IgMatrix"
   },
+  "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
+    "message": "Choose the plan that fits your needs"
+  },
   "Follow TikMatrix Tutorial": {
     "message": "Seguir el tutorialTikMatrix"
   },
   "Follow these steps to get started with IgMatrix": {
     "message": "Sigue estos pasos para comenzar con IgMatrix"
   },
+  "For growing teams and companies": {
+    "message": "Para equipos en crecimiento"
+  },
+  "For individuals and small teams": {
+    "message": "Perfecto para empezar"
+  },
+  "For large enterprises": {
+    "message": "チームおよび大規模企業向け"
+  },
+  "For professionals and small businesses": {
+    "message": "Para profesionales y equipos pequeños"
+  },
   "Free": {
     "message": "Gratis"
+  },
+  "Free users can connect unlimited devices and use all basic features except automation tasks": {
+    "message": "Perfecto para empezar"
   },
   "Frequently Asked Questions": {
     "message": "Preguntas frecuentes"
@@ -157,6 +202,9 @@
   },
   "Here are some frequently asked questions.": {
     "message": "よくあるご質問はこちらです。"
+  },
+  "Hide feature comparison": {
+    "message": "比較を非表示"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "各スマートフォンはいくつのTikTokアカウントにログインできますか？"
@@ -224,11 +272,23 @@
   "Live stream boost": {
     "message": "Impulsar transmisiones en vivo"
   },
+  "Local API": {
+    "message": "API local"
+  },
+  "Local REST API access (Pro+)": {
+    "message": "Disponible en todos los planespago"
+  },
   "Mass commenting": {
     "message": "コメント masivos"
   },
   "Mass direct messaging": {
     "message": "一括ダイレクトメッセージ"
+  },
+  "Monthly": {
+    "message": "Monthly"
+  },
+  "Most popular": {
+    "message": "Popular"
   },
   "Multi-Device Control": {
     "message": "マルチデバイス制御"
@@ -241,6 +301,12 @@
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "Nuestro equipo de soporte está aquí para ayudarte con cualquier pregunta o problema relacionado con IgMatrix."
+  },
+  "Per Month": {
+    "message": "por mes"
+  },
+  "Per Year (Save 30%)": {
+    "message": "por año"
   },
   "Performance analytics": {
     "message": "Análisisrendimiento"
@@ -267,7 +333,13 @@
     "message": "Potentes herramientas de automatización y gestión de TikTok"
   },
   "Pricing": {
-    "message": "Precios"
+    "message": "Pricing Plans"
+  },
+  "Pro": {
+    "message": "Profesional"
+  },
+  "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
+    "message": "TikMatrixを独自のシステムと統合する必要がありますか？ローカルAPIでプログラム的にタスクを管理し、ワークフローを自動化できます。"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "WindowsとMac上のAndroid手機農場向けに設計されたプロフェッショナルなTikTokアカウント管理およびマーケティングツール。投稿、フォローを自動化し、アカウント停止率ゼロでTikTokプレゼンスを成長させます。"
@@ -280,6 +352,9 @@
   },
   "Quick Setup Guide": {
     "message": "Guíaconfiguración rápida"
+  },
+  "Read Local API docs": {
+    "message": "Ver documentaciónla API"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "スマートフォンからTikTokアカウントを認識してマッチング、アカウントリストに追加"
@@ -323,17 +398,29 @@
   "Smart Scheduling": {
     "message": "スマートスケジューリング"
   },
+  "Start for free": {
+    "message": "無料で始める"
+  },
+  "Starter": {
+    "message": "Inicial"
+  },
   "Still have questions?": {
     "message": "ご不明点はありますか？"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "高度なバッチ制御とマーケティング自動化でInstagram手機農場を合理化"
   },
+  "Subscribe": {
+    "message": "申し込む"
+  },
   "Super Marketing": {
     "message": "Super マーケティング"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "Soporta más de 100 teléfonos con reflejo a una computadora, con operación sincronizada"
+  },
+  "Team": {
+    "message": "Equipo"
   },
   "Technical Advantages": {
     "message": "Ventajas técnicas"
@@ -370,6 +457,24 @@
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "Tarjeta SIM nativaEE.UU. sin activar, utilizada para que la aplicaciónTikTok para Android detecte la ubicaciónla tarjeta SIM"
+  },
+  "Unlimited": {
+    "message": "Ilimitado"
+  },
+  "Unlimited device connections": {
+    "message": "デバイス ilimitados"
+  },
+  "Up to 100 concurrent automation tasks": {
+    "message": "無制限の同時タスク"
+  },
+  "Up to 20 concurrent automation tasks": {
+    "message": "50 tareas concurrentes"
+  },
+  "Up to 5 concurrent automation tasks": {
+    "message": "10 tareas concurrentes"
+  },
+  "Up to 50 concurrent automation tasks": {
+    "message": "100 tareas concurrentes"
   },
   "User engagement boost": {
     "message": "ユーザーエンゲージメントブースト"
@@ -409,6 +514,9 @@
   },
   "Why Choose IgMatrix?": {
     "message": "なぜIgMatrixを選ぶのか？"
+  },
+  "Yearly (Save 30%)": {
+    "message": "Yearly (Save 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "はい！IgMatrixのセットアップチュートリアルはTikMatrixと同じです。インストール、デバイス接続、基本設定についてはTikMatrixドキュメントに従うことができます。自動化スクリプトのみがプラットフォームに基づいて異なります。"
@@ -628,123 +736,6 @@
   },
   "homepage.vs.title": {
     "message": "なぜ当社を選ぶのか？"
-  },
-  "pricing.all_features": {
-    "message": "すべての機能"
-  },
-  "pricing.badge.popular": {
-    "message": "Popular"
-  },
-  "pricing.business.concurrent_tasks": {
-    "message": "無制限の同時タスク"
-  },
-  "pricing.business.description": {
-    "message": "チームおよび大規模企業向け"
-  },
-  "pricing.business.name": {
-    "message": "ビジネス"
-  },
-  "pricing.compare.automation": {
-    "message": "高度な自動化"
-  },
-  "pricing.compare.devices": {
-    "message": "対応デバイス"
-  },
-  "pricing.compare.hide": {
-    "message": "比較を非表示"
-  },
-  "pricing.compare.show": {
-    "message": "比較を表示"
-  },
-  "pricing.cta.free": {
-    "message": "無料で始める"
-  },
-  "pricing.cta.pay": {
-    "message": "申し込む"
-  },
-  "pricing.free.all_free_features": {
-    "message": "すべての無料機能"
-  },
-  "pricing.free.automation_disabled": {
-    "message": "自動化が無効"
-  },
-  "pricing.free.community_support": {
-    "message": "サポート comunitario"
-  },
-  "pricing.free.description": {
-    "message": "Perfecto para empezar"
-  },
-  "pricing.free.name": {
-    "message": "Gratuito"
-  },
-  "pricing.free_label": {
-    "message": "Gratis"
-  },
-  "pricing.local_api.description": {
-    "message": "TikMatrixを独自のシステムと統合する必要がありますか？ローカルAPIでプログラム的にタスクを管理し、ワークフローを自動化できます。"
-  },
-  "pricing.local_api.link_text": {
-    "message": "Ver documentaciónla API"
-  },
-  "pricing.local_api.support": {
-    "message": "Disponible en todos los planespago"
-  },
-  "pricing.local_api.title": {
-    "message": "API local"
-  },
-  "pricing.per_month": {
-    "message": "por mes"
-  },
-  "pricing.per_year": {
-    "message": "por año"
-  },
-  "pricing.pro.concurrent_tasks": {
-    "message": "50 tareas concurrentes"
-  },
-  "pricing.pro.description": {
-    "message": "Para profesionales y equipos pequeños"
-  },
-  "pricing.pro.name": {
-    "message": "Profesional"
-  },
-  "pricing.starter.concurrent_tasks": {
-    "message": "10 tareas concurrentes"
-  },
-  "pricing.starter.description": {
-    "message": "Perfecto para empezar"
-  },
-  "pricing.starter.name": {
-    "message": "Inicial"
-  },
-  "pricing.subtitle": {
-    "message": "Choose the plan that fits your needs"
-  },
-  "pricing.team.concurrent_tasks": {
-    "message": "100 tareas concurrentes"
-  },
-  "pricing.team.description": {
-    "message": "Para equipos en crecimiento"
-  },
-  "pricing.team.name": {
-    "message": "Equipo"
-  },
-  "pricing.ticket_support": {
-    "message": "Soporte por tickets"
-  },
-  "pricing.title": {
-    "message": "Pricing Plans"
-  },
-  "pricing.toggle.monthly": {
-    "message": "Monthly"
-  },
-  "pricing.toggle.yearly": {
-    "message": "Yearly (Save 30%)"
-  },
-  "pricing.unlimited_devices": {
-    "message": "デバイス ilimitados"
-  },
-  "pricing.unlimited_devices_short": {
-    "message": "Ilimitado"
   },
   "tech.diagram.devices": {
     "message": "Real Android Devices"

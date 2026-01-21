@@ -14,6 +14,12 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "安装后，打开IgMatrix查看可用的Instagram自动化脚本完整列表。脚本选择可能与TikMatrix不同。"
   },
+  "All basic features (automation excluded)": {
+    "message": "所有基础功能（不含自动化任务）"
+  },
+  "All features included": {
+    "message": "包含所有功能"
+  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "请始终检查您的IgMatrix软件中的实际可用功能，因为脚本功能可能与TikMatrix不同。软件界面将确切显示哪些自动化脚本可用于Instagram。"
   },
@@ -41,6 +47,12 @@
   "Automatic profile setup": {
     "message": "自动设置资料"
   },
+  "Automation tasks": {
+    "message": "自动化任务"
+  },
+  "Automation tasks disabled": {
+    "message": "自动化任务不可用"
+  },
   "Basic configuration": {
     "message": "基础配置"
   },
@@ -59,6 +71,9 @@
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "内置安全机制，保护您的Instagram账户免受封禁"
   },
+  "Business": {
+    "message": "商业版"
+  },
   "Buy hardware": {
     "message": "购买硬件"
   },
@@ -76,6 +91,12 @@
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "批量评论多个TikTok帖子，支持自定义内容和表情符号"
+  },
+  "Community support": {
+    "message": "社区支持"
+  },
+  "Compare features": {
+    "message": "查看功能对比"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "综合自动化，结合多种互动策略和AI生成的评论"
@@ -98,8 +119,14 @@
   "Custom Instagram workflows": {
     "message": "自定义Instagram工作流程"
   },
+  "Dedicated ticket support": {
+    "message": "专属工单支持"
+  },
   "Device connection": {
     "message": "设备连接"
+  },
+  "Device support": {
+    "message": "设备支持"
   },
   "Different Script Logic": {
     "message": "不同的脚本逻辑"
@@ -134,14 +161,32 @@
   "Find answers to common questions about IgMatrix": {
     "message": "查找有关IgMatrix常见问题的答案"
   },
+  "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
+    "message": "适合每个人的灵活计划。年付享受30%折扣！"
+  },
   "Follow TikMatrix Tutorial": {
     "message": "参考TikMatrix教程"
   },
   "Follow these steps to get started with IgMatrix": {
     "message": "按照以下步骤开始使用IgMatrix"
   },
+  "For growing teams and companies": {
+    "message": "适合成长中的团队和公司"
+  },
+  "For individuals and small teams": {
+    "message": "适合个人和小团队"
+  },
+  "For large enterprises": {
+    "message": "适合大型企业"
+  },
+  "For professionals and small businesses": {
+    "message": "适合专业人士和小企业"
+  },
   "Free": {
     "message": "免费"
+  },
+  "Free users can connect unlimited devices and use all basic features except automation tasks": {
+    "message": "免费用户可以连接无限设备，但无法执行自动化任务"
   },
   "Frequently Asked Questions": {
     "message": "常见问题"
@@ -157,6 +202,9 @@
   },
   "Here are some frequently asked questions.": {
     "message": "以下是常见问题。"
+  },
+  "Hide feature comparison": {
+    "message": "隐藏功能对比"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "每个手机可以登录几个tiktok账号?"
@@ -224,11 +272,23 @@
   "Live stream boost": {
     "message": "直播提升"
   },
+  "Local API": {
+    "message": "本地 API"
+  },
+  "Local REST API access (Pro+)": {
+    "message": "本地 REST API 访问（Pro+）"
+  },
   "Mass commenting": {
     "message": "批量评论"
   },
   "Mass direct messaging": {
     "message": "批量私信"
+  },
+  "Monthly": {
+    "message": "月付"
+  },
+  "Most popular": {
+    "message": "最受欢迎"
   },
   "Multi-Device Control": {
     "message": "多设备控制"
@@ -241,6 +301,12 @@
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "我们的支持团队在这里帮助您解决任何与IgMatrix相关的问题或疑问。"
+  },
+  "Per Month": {
+    "message": "每月"
+  },
+  "Per Year (Save 30%)": {
+    "message": "每年 (节省 30%)"
   },
   "Performance analytics": {
     "message": "性能分析"
@@ -267,7 +333,13 @@
     "message": "强大的TikTok自动化和管理工具"
   },
   "Pricing": {
-    "message": "价格"
+    "message": "定价"
+  },
+  "Pro": {
+    "message": "专业版"
+  },
+  "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
+    "message": "Pro、Team 和 Business 用户可使用本地 RESTful API 来以编程方式管理任务和自动化工作流。详见文档。"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "专业TikTok账号管理与营销工具，专为Windows和Mac上的安卓手机农场设计。实现自动发布、关注等功能，促进TikTok影响力增长，确保零封号率。"
@@ -280,6 +352,9 @@
   },
   "Quick Setup Guide": {
     "message": "快速设置指南"
+  },
+  "Read Local API docs": {
+    "message": "查看本地 API 文档"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "识别并匹配手机中的TikTok账户，添加到账户列表"
@@ -323,17 +398,29 @@
   "Smart Scheduling": {
     "message": "智能调度"
   },
+  "Start for free": {
+    "message": "立即使用"
+  },
+  "Starter": {
+    "message": "入门版"
+  },
   "Still have questions?": {
     "message": "还有问题？"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "通过先进的批量控制和营销自动化，轻松管理您的Instagram手机农场。"
   },
+  "Subscribe": {
+    "message": "立即订阅"
+  },
   "Super Marketing": {
     "message": "超级营销"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "支持100+手机投屏到电脑，同步操作"
+  },
+  "Team": {
+    "message": "团队版"
   },
   "Technical Advantages": {
     "message": "技术优势"
@@ -370,6 +457,24 @@
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "美国原生非激活的 SIM 卡，用于 tiktok Android 应用来检测 SIM 卡位置"
+  },
+  "Unlimited": {
+    "message": "无限"
+  },
+  "Unlimited device connections": {
+    "message": "无限设备连接"
+  },
+  "Up to 100 concurrent automation tasks": {
+    "message": "最多100个并发自动化任务"
+  },
+  "Up to 20 concurrent automation tasks": {
+    "message": "最多20个并发自动化任务"
+  },
+  "Up to 5 concurrent automation tasks": {
+    "message": "最多5个并发自动化任务"
+  },
+  "Up to 50 concurrent automation tasks": {
+    "message": "最多50个并发自动化任务"
   },
   "User engagement boost": {
     "message": "用户互动提升"
@@ -409,6 +514,9 @@
   },
   "Why Choose IgMatrix?": {
     "message": "为什么选择IgMatrix？"
+  },
+  "Yearly (Save 30%)": {
+    "message": "年付 (节省 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "是的！IgMatrix的设置教程与TikMatrix完全相同。您可以按照TikMatrix文档进行安装、设备连接和基本配置。只有自动化脚本会根据平台而有所不同。"
@@ -628,123 +736,6 @@
   },
   "homepage.vs.title": {
     "message": "为什么选择 TikMatrix?"
-  },
-  "pricing.all_features": {
-    "message": "包含所有功能"
-  },
-  "pricing.badge.popular": {
-    "message": "最受欢迎"
-  },
-  "pricing.business.concurrent_tasks": {
-    "message": "最多100个并发自动化任务"
-  },
-  "pricing.business.description": {
-    "message": "适合大型企业"
-  },
-  "pricing.business.name": {
-    "message": "商业版"
-  },
-  "pricing.compare.automation": {
-    "message": "自动化任务"
-  },
-  "pricing.compare.devices": {
-    "message": "设备支持"
-  },
-  "pricing.compare.hide": {
-    "message": "隐藏功能对比"
-  },
-  "pricing.compare.show": {
-    "message": "查看功能对比"
-  },
-  "pricing.cta.free": {
-    "message": "立即使用"
-  },
-  "pricing.cta.pay": {
-    "message": "立即订阅"
-  },
-  "pricing.free.all_free_features": {
-    "message": "所有基础功能（不含自动化任务）"
-  },
-  "pricing.free.automation_disabled": {
-    "message": "自动化任务不可用"
-  },
-  "pricing.free.community_support": {
-    "message": "社区支持"
-  },
-  "pricing.free.description": {
-    "message": "免费用户可以连接无限设备，但无法执行自动化任务"
-  },
-  "pricing.free.name": {
-    "message": "免费"
-  },
-  "pricing.free_label": {
-    "message": "免费"
-  },
-  "pricing.local_api.description": {
-    "message": "Pro、Team 和 Business 用户可使用本地 RESTful API 来以编程方式管理任务和自动化工作流。详见文档。"
-  },
-  "pricing.local_api.link_text": {
-    "message": "查看本地 API 文档"
-  },
-  "pricing.local_api.support": {
-    "message": "本地 REST API 访问（Pro+）"
-  },
-  "pricing.local_api.title": {
-    "message": "本地 API"
-  },
-  "pricing.per_month": {
-    "message": "每月"
-  },
-  "pricing.per_year": {
-    "message": "每年 (节省 30%)"
-  },
-  "pricing.pro.concurrent_tasks": {
-    "message": "最多20个并发自动化任务"
-  },
-  "pricing.pro.description": {
-    "message": "适合专业人士和小企业"
-  },
-  "pricing.pro.name": {
-    "message": "专业版"
-  },
-  "pricing.starter.concurrent_tasks": {
-    "message": "最多5个并发自动化任务"
-  },
-  "pricing.starter.description": {
-    "message": "适合个人和小团队"
-  },
-  "pricing.starter.name": {
-    "message": "入门版"
-  },
-  "pricing.subtitle": {
-    "message": "适合每个人的灵活计划。年付享受30%折扣！"
-  },
-  "pricing.team.concurrent_tasks": {
-    "message": "最多50个并发自动化任务"
-  },
-  "pricing.team.description": {
-    "message": "适合成长中的团队和公司"
-  },
-  "pricing.team.name": {
-    "message": "团队版"
-  },
-  "pricing.ticket_support": {
-    "message": "专属工单支持"
-  },
-  "pricing.title": {
-    "message": "定价"
-  },
-  "pricing.toggle.monthly": {
-    "message": "月付"
-  },
-  "pricing.toggle.yearly": {
-    "message": "年付 (节省 30%)"
-  },
-  "pricing.unlimited_devices": {
-    "message": "无限设备连接"
-  },
-  "pricing.unlimited_devices_short": {
-    "message": "无限"
   },
   "tech.diagram.devices": {
     "message": "真实 Android 设备"

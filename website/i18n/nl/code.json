@@ -14,6 +14,12 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "Open na installatie IgMatrix om de volledige lijst met beschikbare Instagram-automatiseringsscripts te bekijken. De scriptselectie kan verschillen van TikMatrix."
   },
+  "All basic features (automation excluded)": {
+    "message": "pricing.free.all_free_features"
+  },
+  "All features included": {
+    "message": "pricing.all_features"
+  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Controleer altijd de daadwerkelijk beschikbare functies in uw IgMatrix-software, omdat de scriptfunctionaliteit kan verschillen van TikMatrix. De software-interface laat u precies zien welke automatiseringsscripts beschikbaar zijn voor Instagram."
   },
@@ -41,6 +47,12 @@
   "Automatic profile setup": {
     "message": "Automatische profielinstellingen"
   },
+  "Automation tasks": {
+    "message": "pricing.compare.automation"
+  },
+  "Automation tasks disabled": {
+    "message": "Automatisering uitgeschakeld"
+  },
   "Basic configuration": {
     "message": "Basisconfiguratie"
   },
@@ -59,6 +71,9 @@
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Gebouwd met veiligheidsmechanismen om uw Instagram-accounts te beschermen tegen opschorting"
   },
+  "Business": {
+    "message": "pricing.business.name"
+  },
   "Buy hardware": {
     "message": "Hardware kopen"
   },
@@ -76,6 +91,12 @@
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "Reageer op meerdere TikTok-berichten in bulk met aanpasbare inhoud en emoji's"
+  },
+  "Community support": {
+    "message": "pricing.free.community_support"
+  },
+  "Compare features": {
+    "message": "pricing.compare.show"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Uitgebreide automatisering die meerdere betrokkenheidsstrategieën combineert met AI-gegenereerde reacties"
@@ -98,8 +119,14 @@
   "Custom Instagram workflows": {
     "message": "Aangepaste Instagram-workflows"
   },
+  "Dedicated ticket support": {
+    "message": "pricing.ticket_support"
+  },
   "Device connection": {
     "message": "Apparaatverbinding"
+  },
+  "Device support": {
+    "message": "pricing.compare.devices"
   },
   "Different Script Logic": {
     "message": "Andere scriptlogica"
@@ -134,14 +161,32 @@
   "Find answers to common questions about IgMatrix": {
     "message": "Vind antwoorden op veelgestelde vragen over IgMatrix"
   },
+  "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
+    "message": "Choose the plan that fits your needs"
+  },
   "Follow TikMatrix Tutorial": {
     "message": "Volg TikMatrix-tutorial"
   },
   "Follow these steps to get started with IgMatrix": {
     "message": "Volg deze stappen om aan de slag te gaan met IgMatrix"
   },
+  "For growing teams and companies": {
+    "message": "pricing.team.description"
+  },
+  "For individuals and small teams": {
+    "message": "pricing.starter.description"
+  },
+  "For large enterprises": {
+    "message": "pricing.business.description"
+  },
+  "For professionals and small businesses": {
+    "message": "pricing.pro.description"
+  },
   "Free": {
-    "message": "Gratis"
+    "message": "pricing.free_label"
+  },
+  "Free users can connect unlimited devices and use all basic features except automation tasks": {
+    "message": "Ideaal voor beginners"
   },
   "Frequently Asked Questions": {
     "message": "Veelgestelde vragen"
@@ -157,6 +202,9 @@
   },
   "Here are some frequently asked questions.": {
     "message": "Hier zijn enkele veelgestelde vragen."
+  },
+  "Hide feature comparison": {
+    "message": "pricing.compare.hide"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "Op hoeveel TikTok-accounts kan elke telefoon inloggen?"
@@ -224,11 +272,23 @@
   "Live stream boost": {
     "message": "Livestream-boost"
   },
+  "Local API": {
+    "message": "pricing.local_api.title"
+  },
+  "Local REST API access (Pro+)": {
+    "message": "pricing.local_api.support"
+  },
   "Mass commenting": {
     "message": "Massa-opmerkingen"
   },
   "Mass direct messaging": {
     "message": "Massa-directe berichten"
+  },
+  "Monthly": {
+    "message": "Monthly"
+  },
+  "Most popular": {
+    "message": "pricing.badge.popular"
   },
   "Multi-Device Control": {
     "message": "Multi-apparaatbesturing"
@@ -241,6 +301,12 @@
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "Ons ondersteuningsteam staat klaar om u te helpen met IgMatrix-gerelateerde vragen of problemen."
+  },
+  "Per Month": {
+    "message": "per maand"
+  },
+  "Per Year (Save 30%)": {
+    "message": "per jaar"
   },
   "Performance analytics": {
     "message": "Prestatieanalyse"
@@ -267,7 +333,13 @@
     "message": "Krachtige TikTok-automatiserings- en beheertools"
   },
   "Pricing": {
-    "message": "Prijzen"
+    "message": "Pricing Plans"
+  },
+  "Pro": {
+    "message": "pricing.pro.name"
+  },
+  "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
+    "message": "pricing.local_api.description"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "Professioneel TikTok-accountbeheer- en marketingtool ontworpen voor Android-telefoonboerderijen op Windows en Mac. Automatiseer het plaatsen, volgen en laat uw TikTok-aanwezigheid groeien met een nul accountopschortingspercentage."
@@ -280,6 +352,9 @@
   },
   "Quick Setup Guide": {
     "message": "Snelle installatiegids"
+  },
+  "Read Local API docs": {
+    "message": "pricing.local_api.link_text"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "Herken en koppel TikTok-accounts van telefoons om toe te voegen aan accountlijst"
@@ -323,17 +398,29 @@
   "Smart Scheduling": {
     "message": "Slimme planning"
   },
+  "Start for free": {
+    "message": "Start for free"
+  },
+  "Starter": {
+    "message": "pricing.starter.name"
+  },
   "Still have questions?": {
     "message": "Nog vragen?"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "Stroomlijn uw Instagram-telefoonboerderij met geavanceerde batch-besturing en marketingautomatisering"
   },
+  "Subscribe": {
+    "message": "Subscribe"
+  },
   "Super Marketing": {
     "message": "Super marketing"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "Ondersteunt 100+ telefoons spiegelen naar een computer, met gesynchroniseerde werking"
+  },
+  "Team": {
+    "message": "pricing.team.name"
   },
   "Technical Advantages": {
     "message": "Technische voordelen"
@@ -370,6 +457,24 @@
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "Amerikaanse native niet-geactiveerde simkaart, gebruikt voor tiktok Android-app om simkaartlocatie te detecteren"
+  },
+  "Unlimited": {
+    "message": "pricing.unlimited_devices_short"
+  },
+  "Unlimited device connections": {
+    "message": "pricing.unlimited_devices"
+  },
+  "Up to 100 concurrent automation tasks": {
+    "message": "pricing.business.concurrent_tasks"
+  },
+  "Up to 20 concurrent automation tasks": {
+    "message": "pricing.pro.concurrent_tasks"
+  },
+  "Up to 5 concurrent automation tasks": {
+    "message": "pricing.starter.concurrent_tasks"
+  },
+  "Up to 50 concurrent automation tasks": {
+    "message": "pricing.team.concurrent_tasks"
   },
   "User engagement boost": {
     "message": "Gebruikersbetrokkenheidboost"
@@ -409,6 +514,9 @@
   },
   "Why Choose IgMatrix?": {
     "message": "Waarom IgMatrix kiezen?"
+  },
+  "Yearly (Save 30%)": {
+    "message": "Yearly (Save 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Ja! De installatietutorial voor IgMatrix is identiek aan TikMatrix. U kunt de TikMatrix-documentatie volgen voor installatie, apparaatverbinding en basisconfiguratie. Alleen de automatiseringsscripts zullen verschillen op basis van het platform."
@@ -628,123 +736,6 @@
   },
   "homepage.vs.title": {
     "message": "Waarom TikMatrix kiezen"
-  },
-  "pricing.all_features": {
-    "message": "pricing.all_features"
-  },
-  "pricing.badge.popular": {
-    "message": "pricing.badge.popular"
-  },
-  "pricing.business.concurrent_tasks": {
-    "message": "pricing.business.concurrent_tasks"
-  },
-  "pricing.business.description": {
-    "message": "pricing.business.description"
-  },
-  "pricing.business.name": {
-    "message": "pricing.business.name"
-  },
-  "pricing.compare.automation": {
-    "message": "pricing.compare.automation"
-  },
-  "pricing.compare.devices": {
-    "message": "pricing.compare.devices"
-  },
-  "pricing.compare.hide": {
-    "message": "pricing.compare.hide"
-  },
-  "pricing.compare.show": {
-    "message": "pricing.compare.show"
-  },
-  "pricing.cta.free": {
-    "message": "Start for free"
-  },
-  "pricing.cta.pay": {
-    "message": "Subscribe"
-  },
-  "pricing.free.all_free_features": {
-    "message": "pricing.free.all_free_features"
-  },
-  "pricing.free.automation_disabled": {
-    "message": "Automatisering uitgeschakeld"
-  },
-  "pricing.free.community_support": {
-    "message": "pricing.free.community_support"
-  },
-  "pricing.free.description": {
-    "message": "Ideaal voor beginners"
-  },
-  "pricing.free.name": {
-    "message": "pricing.free.name"
-  },
-  "pricing.free_label": {
-    "message": "pricing.free_label"
-  },
-  "pricing.local_api.description": {
-    "message": "pricing.local_api.description"
-  },
-  "pricing.local_api.link_text": {
-    "message": "pricing.local_api.link_text"
-  },
-  "pricing.local_api.support": {
-    "message": "pricing.local_api.support"
-  },
-  "pricing.local_api.title": {
-    "message": "pricing.local_api.title"
-  },
-  "pricing.per_month": {
-    "message": "per maand"
-  },
-  "pricing.per_year": {
-    "message": "per jaar"
-  },
-  "pricing.pro.concurrent_tasks": {
-    "message": "pricing.pro.concurrent_tasks"
-  },
-  "pricing.pro.description": {
-    "message": "pricing.pro.description"
-  },
-  "pricing.pro.name": {
-    "message": "pricing.pro.name"
-  },
-  "pricing.starter.concurrent_tasks": {
-    "message": "pricing.starter.concurrent_tasks"
-  },
-  "pricing.starter.description": {
-    "message": "pricing.starter.description"
-  },
-  "pricing.starter.name": {
-    "message": "pricing.starter.name"
-  },
-  "pricing.subtitle": {
-    "message": "Choose the plan that fits your needs"
-  },
-  "pricing.team.concurrent_tasks": {
-    "message": "pricing.team.concurrent_tasks"
-  },
-  "pricing.team.description": {
-    "message": "pricing.team.description"
-  },
-  "pricing.team.name": {
-    "message": "pricing.team.name"
-  },
-  "pricing.ticket_support": {
-    "message": "pricing.ticket_support"
-  },
-  "pricing.title": {
-    "message": "Pricing Plans"
-  },
-  "pricing.toggle.monthly": {
-    "message": "Monthly"
-  },
-  "pricing.toggle.yearly": {
-    "message": "Yearly (Save 30%)"
-  },
-  "pricing.unlimited_devices": {
-    "message": "pricing.unlimited_devices"
-  },
-  "pricing.unlimited_devices_short": {
-    "message": "pricing.unlimited_devices_short"
   },
   "tech.diagram.devices": {
     "message": "Real Android Devices"
