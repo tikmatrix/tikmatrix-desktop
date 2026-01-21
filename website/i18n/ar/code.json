@@ -822,7 +822,7 @@
     "message": "أداة لاكتشاف مستخدمي TikTok وتحليلهم"
   },
   "advertising.tiktok.user.finder.title": {
-    "message": "TikTok User Finder"
+    "message": "أداة بحث مستخدمي TikTok"
   },
   "advertising.visit.button": {
     "message": "زيارة الموقع"
@@ -843,7 +843,7 @@
     "message": "أداة للتحقق من صحة أرقام WhatsApp"
   },
   "advertising.whatsapp.checker.title": {
-    "message": "WhatsApp Checker"
+    "message": "مدقق أرقام WhatsApp"
   },
   "download.description": {
     "message": "قم بتنزيل TikMatrix لنظام Windows أو Mac"
@@ -990,7 +990,7 @@
     "message": "أدوات أتمتة قوية لـ TikTok و Instagram"
   },
   "homepage.header.defaultTitle": {
-    "message": "TikMatrix & IgMatrix"
+    "message": "أداة احترافية لإدارة وتسويق حسابات TikTok لنظامي Windows وMac"
   },
   "homepage.header.subtitle": {
     "message": "أدوات أتمتة وإدارة TikTok و Instagram احترافية"
@@ -1083,10 +1083,10 @@
     "message": "مقارنة الخطط"
   },
   "pricing.cta.free": {
-    "message": "Start for free"
+    "message": "ابدأ الآن"
   },
   "pricing.cta.pay": {
-    "message": "Subscribe"
+    "message": "اشترك الآن"
   },
   "pricing.dedicated_support": {
     "message": "دعم مخصص"
@@ -1158,7 +1158,7 @@
     "message": "مبتدئ"
   },
   "pricing.subtitle": {
-    "message": "Choose the plan that fits your needs"
+    "message": "خطط مرنة تناسب الجميع. اشترك سنوياً لتحصل على خصم 30%!"
   },
   "pricing.team.concurrent_tasks": {
     "message": "500 مهمة متزامنة"
@@ -1176,13 +1176,13 @@
     "message": "دعم التذاكر"
   },
   "pricing.title": {
-    "message": "Pricing Plans"
+    "message": "التسعير"
   },
   "pricing.toggle.monthly": {
-    "message": "Monthly"
+    "message": "شهريًا"
   },
   "pricing.toggle.yearly": {
-    "message": "Yearly (Save 30%)"
+    "message": "سنويًا (وفر 30%)"
   },
   "pricing.unlimited_devices": {
     "message": "أجهزة غير محدودة"
@@ -1191,127 +1191,127 @@
     "message": "غير محدود"
   },
   "tech.diagram.devices": {
-    "message": "Real Android Devices"
+    "message": "أجهزة Android حقيقية"
   },
   "tech.diagram.engine": {
-    "message": "TikMatrix Engine"
+    "message": "محرك TikMatrix"
   },
   "tech.diagram.fingerprintIsolation": {
-    "message": "Device Fingerprint Isolation"
+    "message": "عزل بصمة الجهاز"
   },
   "tech.diagram.localExecution": {
-    "message": "Local Execution"
+    "message": "التنفيذ محليًا"
   },
   "tech.diagram.noApi": {
-    "message": "No API Calls"
+    "message": "بدون استدعاء API"
   },
   "tech.diagram.noMemoryInjection": {
-    "message": "No Memory Injection"
+    "message": "بدون حقن في الذاكرة"
   },
   "tech.diagram.realTouch": {
-    "message": "Real Touch Injection"
+    "message": "حقن لمس حقيقي"
   },
   "tech.diagram.tiktok": {
-    "message": "TikTok App"
+    "message": "تطبيق TikTok"
   },
   "tech.diagram.user": {
-    "message": "User"
+    "message": "المستخدم"
   },
   "tech.diagram.zeroCloud": {
-    "message": "Zero Cloud Dependency"
+    "message": "لا يعتمد على السحابة"
   },
   "tech.point.fingerprint.b1": {
-    "message": "Unique IMEI / Android ID per device"
+    "message": "IMEI / Android ID فريد لكل جهاز"
   },
   "tech.point.fingerprint.b2": {
-    "message": "Isolated IP allocation via proxy"
+    "message": "تخصيص IP معزول عبر البروكسي"
   },
   "tech.point.fingerprint.b3": {
-    "message": "No shared cookies or tokens"
+    "message": "لا توجد ملفات تعريف ارتباط أو رموز مشتركة"
   },
   "tech.point.fingerprint.desc": {
-    "message": "Each device maintains unique hardware and software fingerprints with no cross-contamination."
+    "message": "يحافظ كل جهاز على بصمة أجهزة وبرمجيات فريدة دون تلوث متبادل."
   },
   "tech.point.fingerprint.title": {
-    "message": "Device Fingerprint Isolation"
+    "message": "عزل بصمة الجهاز"
   },
   "tech.point.humanBehavior.b1": {
-    "message": "Randomized time intervals"
+    "message": "توزيع أوقات عشوائي"
   },
   "tech.point.humanBehavior.b2": {
-    "message": "Natural scrolling velocity curves"
+    "message": "منحنيات سرعة التمرير الطبيعية"
   },
   "tech.point.humanBehavior.b3": {
-    "message": "Session duration modeling"
+    "message": "نمذجة مدة الجلسة"
   },
   "tech.point.humanBehavior.desc": {
-    "message": "Behavior patterns derived from real user data, avoiding detectable automation features."
+    "message": "نماذج السلوك مستمدة من بيانات مستخدمين حقيقية لتجنب سمات الأتمتة القابلة للكشف."
   },
   "tech.point.humanBehavior.title": {
-    "message": "Human Behavior Model"
+    "message": "نموذج سلوك شبيه بالبشر"
   },
   "tech.point.localExec.b1": {
-    "message": "No remote execution dependency"
+    "message": "لا يعتمد على التنفيذ عن بُعد"
   },
   "tech.point.localExec.b2": {
-    "message": "Complete data privacy"
+    "message": "خصوصية بيانات كاملة"
   },
   "tech.point.localExec.b3": {
-    "message": "Optional offline deployment"
+    "message": "قابلية النشر دون اتصال (اختياري)"
   },
   "tech.point.localExec.desc": {
-    "message": "Scripts execute on local machines via ADB - no cloud relay, no third-party servers."
+    "message": "تُنفَّذ السكربتات محليًا عبر ADB — بدون توجيه عبر السحابة أو خوادم طرف ثالث."
   },
   "tech.point.localExec.title": {
-    "message": "Local Execution Sandbox"
+    "message": "بيئة تنفيذ محلية معزولة"
   },
   "tech.point.passiveCapture.b1": {
-    "message": "Zero code injection into TikTok"
+    "message": "عدم حقن أي كود داخل تطبيق TikTok"
   },
   "tech.point.passiveCapture.b2": {
-    "message": "Read-only screen capture"
+    "message": "التقاط شاشة للقراءة فقط"
   },
   "tech.point.passiveCapture.b3": {
-    "message": "No modification of app binaries"
+    "message": "متوافق مع أي إصدار للتطبيق"
   },
   "tech.point.passiveCapture.desc": {
-    "message": "Extract screen data via OCR and computer vision - no in-app hooks or memory injection."
+    "message": "استخراج بيانات الشاشة عبر OCR والرؤية الحاسوبية — بدون خطافات داخل التطبيق أو حقن في الذاكرة."
   },
   "tech.point.passiveCapture.title": {
-    "message": "Passive Capture Mode"
+    "message": "وضع الالتقاط السلبي"
   },
   "tech.point.realTouch.b1": {
-    "message": "Hardware-level touch signal generation"
+    "message": "توليد إشارات لمس بمستوى الأجهزة"
   },
   "tech.point.realTouch.b2": {
-    "message": "Pressure and velocity randomization"
+    "message": "توزيع عشوائي للضغط والسرعة"
   },
   "tech.point.realTouch.b3": {
-    "message": "Arc trajectory simulation"
+    "message": "محاكاة مسارات قوسية"
   },
   "tech.point.realTouch.desc": {
-    "message": "Inject real touch events at the Android input layer, indistinguishable from human interaction behavior."
+    "message": "حقن أحداث لمس حقيقية على طبقة إدخال Android بحيث لا يمكن تمييزها عن تفاعل إنساني."
   },
   "tech.point.realTouch.title": {
-    "message": "Real Touch Injection"
+    "message": "حقن لمس حقيقي"
   },
   "tech.point.zeroApi.b1": {
-    "message": "No API token exposure"
+    "message": "عدم كشف رموز API"
   },
   "tech.point.zeroApi.b2": {
-    "message": "No request signature forgery"
+    "message": "منع تزوير توقيع الطلب"
   },
   "tech.point.zeroApi.b3": {
-    "message": "Not affected by API rate limits"
+    "message": "غير متأثر بمحددات معدل API"
   },
   "tech.point.zeroApi.desc": {
-    "message": "No TikTok API calls, no network request interception. All operations completed at the UI layer."
+    "message": "لا يستدعي واجهة TikTok ولا يعترض الطلبات الشبكية؛ تتم جميع العمليات على مستوى واجهة المستخدم."
   },
   "tech.point.zeroApi.title": {
-    "message": "Zero API Automation"
+    "message": "أتمتة بدون API"
   },
   "tech.points.heading": {
-    "message": "Core Technology Implementation"
+    "message": "التنفيذ التقني الأساسي"
   },
   "tech.security.heading": {
     "message": "آليات الأمان المتقدمة"
@@ -1344,16 +1344,16 @@
     "message": "صفر API"
   },
   "tech.subtitle": {
-    "message": "Anti-detection Architecture Built on Real Device Automation"
+    "message": "بنية مضادة للكشف مبنية على مبدأ الأتمتة عبر أجهزة حقيقية"
   },
   "tech.title": {
-    "message": "Technology Advantages"
+    "message": "مزايا تقنية"
   },
   "testimonials.subtitle": {
-    "message": "Real feedback from TikMatrix users"
+    "message": "آراء مستخدمي TikMatrix"
   },
   "testimonials.title": {
-    "message": "What Our Users Say"
+    "message": "ماذا يقول مستخدمونا"
   },
   "testimonials.usage_label": {
     "message": "الاستخدام"
