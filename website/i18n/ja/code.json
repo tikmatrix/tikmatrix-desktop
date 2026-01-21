@@ -40,13 +40,13 @@
         "message": "インストール後、IgMatrixを開いて利用可能なInstagram自動化スクリプトの完全なリストを表示してください。スクリプトの選択はTikMatrixと異なる場合があります。"
     },
     "All Features": {
-        "message": "Todas las funciones"
+        "message": "すべての機能"
     },
     "All Free Features": {
-        "message": "Todas las funciones gratuitas"
+        "message": "すべての無料機能"
     },
     "All Monthly Features": {
-        "message": "Todas las funciones mensuales"
+        "message": "すべての月額機能"
     },
     "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
         "message": "IgMatrixソフトウェアで実際に利用可能な機能を常に確認してください。スクリプト機能はTikMatrixと異なる場合があります。ソフトウェアインターフェースには、Instagramで利用可能な自動化スクリプトが正確に表示されます。"
@@ -151,17 +151,17 @@
         "message": "Instagramアカウントを停止から保護する安全メカニズムを搭載"
     },
     "Buy hardware": {
-        "message": "Comprar hardware",
-        "description": "The product label"
+        "message": "ハードウェアを購入する",
+        "description": "製品ラベル"
     },
     "Can I run both IgMatrix and TikMatrix on the same computer?": {
-        "message": "¿Puedo ejecutar IgMatrix y TikMatrix en la misma computadora?"
+        "message": "同じコンピュータでIgMatrixとTikMatrixの両方を実行できますか？"
     },
     "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-        "message": "¿Puedo usar el mismo tutorial para IgMatrix y TikMatrix?"
+        "message": "IgMatrixとTikMatrixで同じチュートリアルを使えますか？"
     },
     "Character-by-Character Input": {
-        "message": "Entrada carácter por carácter"
+        "message": "1文字ずつ入力"
     },
     "Check Available Scripts": {
         "message": "利用可能なスクリプトを確認"
@@ -176,7 +176,7 @@
         "message": "コメント、メッセージ、フォロー"
     },
     "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
-        "message": "En comparación con productos similares del mercado, usar nuestro producto TIK genera un aumento de tráfico de al menos el 30% respecto a otros productos similares."
+        "message": "他社類似製品と比較して、当社のTIK製品を使用すると、他製品に比べて少なくとも30％のトラフィック増加が見られます。"
     },
     "Completely local private deployment ensuring user data security": {
         "message": "ユーザーデータセキュリティを確保する完全なローカルプライベート展開"
@@ -185,18 +185,18 @@
         "message": "複数のエンゲージメント戦略とAI生成コメントを組み合わせた包括的な自動化"
     },
     "Computer-based Execution": {
-        "message": "Ejecución desde computadora"
+        "message": "コンピュータ上での実行"
     },
     "Contact": {
-        "message": "Contacto",
-        "description": "The contact form title"
+        "message": "お問い合わせ",
+        "description": "お問い合わせフォームのタイトル"
     },
     "Contact Support": {
-        "message": "Contactar con soporte"
+        "message": "サポートに問い合わせる"
     },
     "Contact to purchase": {
-        "message": "Contactar para comprar",
-        "description": "The contact to purchase label"
+        "message": "購入についてお問い合わせください",
+        "description": "購入に関するお問い合わせラベル"
     },
     "Content Management": {
         "message": "コンテンツ管理"
@@ -211,13 +211,13 @@
         "message": "メール登録とパスワード設定で新しいTikTokアカウントを作成"
     },
     "Custom Instagram workflows": {
-        "message": "Flujostrabajo personalizadosInstagram"
+        "message": "カスタムInstagramワークフロー"
     },
     "Customer support": {
-        "message": "サポート al cliente"
+        "message": "カスタマーサポート"
     },
     "Device connection": {
-        "message": "Conexión デバイスs"
+        "message": "デバイス接続"
     },
     "Different Script Logic": {
         "message": "異なるスクリプトロジック"
@@ -226,32 +226,32 @@
         "message": "異なるスクリプトの利用可能性"
     },
     "Do I need separate licenses for IgMatrix and TikMatrix?": {
-        "message": "¿Necesito licencias separadas para IgMatrix y TikMatrix?"
+        "message": "IgMatrixとTikMatrixに別々のライセンスが必要ですか？"
     },
     "Download IgMatrix": {
-        "message": "Descargar IgMatrix",
-        "description": "The description of Download IgMatrix"
+        "message": "IgMatrixをダウンロード",
+        "description": "IgMatrixのダウンロードの説明"
     },
     "Download IgMatrix from our official website and follow the installation instructions.": {
-        "message": "Descarga IgMatrix desde nuestro sitio web oficial y sigue las instrucciones de instalación."
+        "message": "公式サイトからIgMatrixをダウンロードし、インストール手順に従ってください。"
     },
     "Download TikMatrix": {
-        "message": "Descargar TikMatrix",
-        "description": "The description of Download TikMatrix"
+        "message": "TikMatrixをダウンロード",
+        "description": "TikMatrixのダウンロードの説明"
     },
     "Download VideoMagic": {
-        "message": "Descargar VideoMagic",
-        "description": "The description of Download VideoMagic"
+        "message": "VideoMagicをダウンロード",
+        "description": "VideoMagicのダウンロードの説明"
     },
     "Download and Install": {
-        "message": "Descargar e instalar"
+        "message": "ダウンロードとインストール"
     },
     "Download for Windows": {
-        "message": "Descargar para Windows"
+        "message": "Windows用ダウンロード"
     },
     "Email": {
-        "message": "Correo electrónico",
-        "description": "The email label"
+        "message": "メール",
+        "description": "メールラベル"
     },
     "Expert Technical Team": {
         "message": "Equipo técnico experto"
@@ -301,22 +301,22 @@
         "message": "Obtén soporte dedicado de nuestro equipo experto siempre que necesites ayuda"
     },
     "Go to the \"Download\" page and download the latest version of TikMatrix.": {
-        "message": "Ve a la página\"Descargas\" y descarga la última versiónTikMatrix."
+        "message": "「ダウンロード」ページに移動して、TikMatrixの最新バージョンをダウンロードしてください。"
     },
     "Here are some frequently asked questions.": {
-        "message": "Aquí encontrarás algunas preguntas frecuentes."
+        "message": "よくあるご質問はこちらです。"
     },
     "How many TikTok accounts can each phone log into?": {
         "message": "各スマートフォンはいくつのTikTokアカウントにログインできますか？"
     },
     "How many devices can I manage?": {
-        "message": "¿Cuántos dispositivos puedo gestionar?"
+        "message": "何台のデバイスを管理できますか？"
     },
     "How to use?": {
-        "message": "¿Cómo usar?"
+        "message": "使い方は？"
     },
     "Human Technical Support": {
-        "message": "サポート técnico humano"
+        "message": "有人テクニカルサポート"
     },
     "Human-like Click Simulation": {
         "message": "Simulaciónclics similar a humanos"
@@ -377,7 +377,7 @@
         "message": "Instagram専用の自動化"
     },
     "Is the pricing the same as TikMatrix?": {
-        "message": "¿El precio es el mismo que TikMatrix?"
+        "message": "価格はTikMatrixと同じですか？"
     },
     "Join Channel": {
         "message": "Unirse al canal",
@@ -633,7 +633,7 @@
         "message": "Comienza a automatizar tu marketing en Instagram hoy con IgMatrix y experimenta las mismas herramientas de nivel profesional en las que confían miles de profesionales del marketing."
     },
     "Still have questions?": {
-        "message": "¿Aún tienes preguntas?"
+        "message": "ご不明点はありますか？"
     },
     "Streamline your Android TikTok phone farm with advanced batch control and marketing automation": {
         "message": "高度なバッチ制御とマーケティング自動化でAndroid TikTok手機農場を合理化"
@@ -788,26 +788,26 @@
         "message": "キーワード検索、動画視聴、フォロー、いいね、コメント、お気に入りでアカウントをウォームアップ"
     },
     "What computer can I use?": {
-        "message": "¿Qué computadora puedo usar?",
+        "message": "どのコンピュータを使用できますか？",
         "description": "コンピュータサポート问题"
     },
     "What devices can I use?": {
-        "message": "¿Qué dispositivos puedo usar?"
+        "message": "どのデバイスが使用できますか？"
     },
     "What is TikMatrix?": {
-        "message": "¿Qué es TikMatrix?"
+        "message": "TikMatrixとは何ですか？"
     },
     "What is the difference between IgMatrix and TikMatrix?": {
-        "message": "¿Cuál es la diferencia entre IgMatrix y TikMatrix?"
+        "message": "IgMatrixとTikMatrixの違いは何ですか？"
     },
     "Which scripts from TikMatrix are available in IgMatrix?": {
         "message": "TikMatrixのどのスクリプトがIgMatrixで利用可能ですか？"
     },
     "Why Choose IgMatrix?": {
-        "message": "¿Por qué elegir IgMatrix?"
+        "message": "なぜIgMatrixを選ぶのか？"
     },
     "Why TikMatrix?": {
-        "message": "¿Por qué TikMatrix?"
+        "message": "なぜTikMatrixを選ぶのか？"
     },
     "Work Profile Support": {
         "message": "Soporte de perfil de trabajo"
@@ -943,24 +943,24 @@
         "description": "IgMatrix Linux平台タイトル"
     },
     "download.igmatrix.mac.button": {
-        "message": "Descargar para Mac",
+        "message": "Mac用ダウンロード",
         "description": "IgMatrix Macダウンロードボタンテキスト"
     },
     "download.igmatrix.mac.description": {
-        "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores",
-        "description": "IgMatrix Mac平台説明"
+        "message": "macOS 10.15（Catalina）以降に対応",
+        "description": "IgMatrix Macプラットフォーム説明"
     },
     "download.igmatrix.mac.install_tip": {
-        "message": "Después de la instalación, ejecuta: xattr -cr /Applications/IgMatrix.app",
-        "description": "IgMatrix Mac安装后需要実行の命令提示"
+        "message": "インストール後、次を実行してください： xattr -cr /Applications/IgMatrix.app",
+        "description": "IgMatrix Macインストール後に実行するコマンドの案内"
     },
     "download.igmatrix.mac.title": {
-        "message": "IgMatrix para Mac",
-        "description": "IgMatrix Mac平台タイトル"
+        "message": "IgMatrix（Mac）",
+        "description": "IgMatrix Macプラットフォームタイトル"
     },
     "download.igmatrix.requirements.internet": {
-        "message": "Conexión a Internet estable",
-        "description": "IgMatrix网络接続必要"
+        "message": "安定したインターネット接続",
+        "description": "IgMatrix ネットワーク接続要件"
     },
     "download.igmatrix.requirements.memory": {
         "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）",
@@ -983,24 +983,24 @@
         "description": "IgMatrix系统必要タイトル"
     },
     "download.igmatrix.subtitle": {
-        "message": "Herramienta profesionalautomatizaciónInstagram para Windows y Mac",
-        "description": "IgMatrixダウンロード页面の副タイトル"
+        "message": "WindowsおよびMac向けのInstagram自動化プロ用ツール",
+        "description": "IgMatrixダウンロードページの副タイトル"
     },
     "download.igmatrix.title": {
-        "message": "Descargar IgMatrix",
-        "description": "IgMatrixダウンロード页面のタイトル"
+        "message": "IgMatrixをダウンロード",
+        "description": "IgMatrixダウンロードページのタイトル"
     },
     "download.igmatrix.windows.button": {
-        "message": "Descargar para Windows",
+        "message": "Windows用ダウンロード",
         "description": "IgMatrix Windowsダウンロードボタンテキスト"
     },
     "download.igmatrix.windows.description": {
-        "message": "Compatible con Windows 10 y 11 (64 bits)",
-        "description": "IgMatrix Windows平台説明"
+        "message": "Windows 10 および 11（64ビット）に対応",
+        "description": "IgMatrix Windowsプラットフォーム説明"
     },
     "download.igmatrix.windows.title": {
-        "message": "IgMatrix para Windows",
-        "description": "IgMatrix Windows平台タイトル"
+        "message": "IgMatrix（Windows）",
+        "description": "IgMatrix Windowsプラットフォームタイトル"
     },
     "download.linux.coming_soon": {
         "message": "Próximamente",
@@ -1015,28 +1015,28 @@
         "description": "Linux開発状況"
     },
     "download.linux.title": {
-        "message": "TikMatrix para Linux",
-        "description": "Linux平台タイトル"
+        "message": "TikMatrix（Linux）",
+        "description": "Linuxプラットフォームタイトル"
     },
     "download.mac.button": {
-        "message": "Descargar para Mac",
+        "message": "Mac用ダウンロード",
         "description": "Macダウンロードボタンテキスト"
     },
     "download.mac.description": {
-        "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores",
-        "description": "Mac平台説明"
+        "message": "macOS 10.15（Catalina）以降に対応",
+        "description": "Macプラットフォーム説明"
     },
     "download.mac.install_tip": {
-        "message": "Después de la instalación, ejecuta este comando en Terminal:",
-        "description": "Mac安装后需要実行の命令提示"
+        "message": "インストール後、ターミナルで次のコマンドを実行してください：",
+        "description": "Macインストール後に実行するコマンドの案内"
     },
     "download.mac.title": {
-        "message": "TikMatrix para Mac",
-        "description": "Mac平台タイトル"
+        "message": "TikMatrix（Mac）",
+        "description": "Macプラットフォームタイトル"
     },
     "download.requirements.internet": {
-        "message": "Conexión a Internet estable",
-        "description": "网络接続必要"
+        "message": "安定したインターネット接続",
+        "description": "ネットワーク接続要件"
     },
     "download.requirements.memory": {
         "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）",
@@ -1059,164 +1059,164 @@
         "description": "系统必要タイトル"
     },
     "download.subtitle": {
-        "message": "Herramienta profesionalautomatizaciónTikTok para Windows y Mac",
-        "description": "ダウンロード页面の副タイトル"
+        "message": "WindowsおよびMac向けのプロ向けTikTok自動化ツール",
+        "description": "ダウンロードページの副タイトル"
     },
     "download.title": {
-        "message": "Descargar TikMatrix",
-        "description": "ダウンロード页面のタイトル"
+        "message": "TikMatrixをダウンロード",
+        "description": "ダウンロードページのタイトル"
     },
     "download.videomagic.description": {
-        "message": "Descarga VideoMagic para Windows, Mac o Linux y comienza a generar videos únicos",
-        "description": "VideoMagicダウンロード页面の説明"
+        "message": "Windows、Mac、Linux向けのVideoMagicをダウンロードして、独自の動画作成を始めましょう。",
+        "description": "VideoMagicダウンロードページの説明"
     },
     "download.videomagic.subtitle": {
-        "message": "Software profesional de generación de videos para operadores",
-        "description": "VideoMagicダウンロード页面の副タイトル"
+        "message": "オペレーター向けのプロ用ビデオ生成ソフトウェア",
+        "description": "VideoMagicダウンロードページの副タイトル"
     },
     "download.videomagic.title": {
-        "message": "Descargar VideoMagic",
-        "description": "VideoMagicダウンロード页面のタイトル"
+        "message": "VideoMagicをダウンロード",
+        "description": "VideoMagicダウンロードページのタイトル"
     },
     "download.windows.button": {
-        "message": "Descargar para Windows",
+        "message": "Windows用ダウンロード",
         "description": "Windowsダウンロードボタンテキスト"
     },
     "download.windows.description": {
-        "message": "Compatible con Windows 10 y 11 (64 bits)",
-        "description": "Windows平台説明"
+        "message": "Windows 10 および 11（64ビット）に対応",
+        "description": "Windowsプラットフォーム説明"
     },
     "download.windows.title": {
-        "message": "TikMatrix para Windows",
-        "description": "Windows平台タイトル"
+        "message": "TikMatrix（Windows）",
+        "description": "Windowsプラットフォームタイトル"
     },
     "homepage.header.cta.download": {
-        "message": "Descargar ahora"
+        "message": "今すぐダウンロード"
     },
     "homepage.header.cta.features": {
-        "message": "Ver funciones"
+        "message": "機能を見る"
     },
     "homepage.header.cta.primary": {
-        "message": "Comenzar"
+        "message": "はじめる"
     },
     "homepage.header.cta.secondary": {
-        "message": "Más información"
+        "message": "詳細を見る"
     },
     "homepage.header.defaultSubtitle": {
         "message": "複数のアカウントを管理し、投稿を自動化し、農場を簡単にスケールアップ"
     },
     "homepage.header.defaultTitle": {
-        "message": "Herramienta profesionalmarketing para redes sociales"
+        "message": "ソーシャルメディア向けのプロ用マーケティングツール"
     },
     "homepage.header.subtitle": {
         "message": "複数のTikTokアカウントを管理し、投稿を自動化し、マーケティングを簡単にスケールアップ"
     },
     "homepage.header.title": {
-        "message": "Herramienta profesionalmarketing para TikTok"
+        "message": "TikTok向けのプロ用マーケティングツール"
     },
     "homepage.vs.card.analytics.desc": {
         "message": "詳細な分析でアカウントのパフォーマンスを追跡・分析"
     },
     "homepage.vs.card.analytics.title": {
-        "message": "Analíticas potentes"
+        "message": "強力な分析"
     },
     "homepage.vs.card.automation.desc": {
-        "message": "Automatiza todas tus actividades de redes sociales con potentes capacidades de scripting"
+        "message": "強力なスクリプト機能でソーシャルメディアの操作を自動化"
     },
     "homepage.vs.card.automation.title": {
         "message": "強力な自動化"
     },
     "homepage.vs.card.cta": {
-        "message": "Más información"
+        "message": "詳細を見る"
     },
     "homepage.vs.card.lowRisk.desc": {
         "message": "実機技術により極めて低いアカウント停止率"
     },
     "homepage.vs.card.lowRisk.title": {
-        "message": "Bajo riesgo"
+        "message": "低リスク"
     },
     "homepage.vs.card.nodev.desc": {
         "message": "root権限不要、デバイス環境のセキュリティを確保"
     },
     "homepage.vs.card.nodev.title": {
-        "message": "No requiere desarrollo"
+        "message": "開発不要"
     },
     "homepage.vs.card.plug.desc": {
-        "message": "Conecta y usa, sin configuración complicada"
+        "message": "接続してすぐ使える、複雑な設定は不要"
     },
     "homepage.vs.card.plug.title": {
-        "message": "Plug and play"
+        "message": "プラグアンドプレイ"
     },
     "homepage.vs.card.realDevices.desc": {
         "message": "本物のAndroidデバイスを使用して本物の動作と最高のセキュリティを実現"
     },
     "homepage.vs.card.realDevices.title": {
-        "message": "Dispositivos reales"
+        "message": "実機デバイス"
     },
     "homepage.vs.cta.button": {
-        "message": "Comparar funciones"
+        "message": "機能を比較"
     },
     "homepage.vs.cta.text": {
-        "message": "¿Quieres ver más comparaciones con productos similares?"
+        "message": "他社製品との比較をもっと見たいですか？"
     },
     "homepage.vs.subtitle": {
-        "message": "Mira cómo nos comparamos con otras soluciones del mercado"
+        "message": "当社が他のソリューションとどう違うかをご覧ください"
     },
     "homepage.vs.title": {
-        "message": "¿Por qué elegirnos?"
+        "message": "なぜ当社を選ぶのか？"
     },
     "navbar.download": {
-        "message": "Descargar",
-        "description": "导航栏ダウンロードリンク文本"
+        "message": "ダウンロード",
+        "description": "ナビゲーションバーのダウンロードリンクテキスト"
     },
     "pricing.all_features": {
-        "message": "Todas las funciones",
-        "description": "含む所有機能文本"
+        "message": "すべての機能",
+        "description": "含むすべての機能テキスト"
     },
     "pricing.badge.popular": {
         "message": "Popular"
     },
     "pricing.business.concurrent_tasks": {
-        "message": "Tareas concurrentes ilimitadas",
-        "description": "商业版し发タスク数"
+        "message": "無制限の同時タスク",
+        "description": "ビジネスプランの同時タスク数"
     },
     "pricing.business.description": {
-        "message": "Para equipos y empresas grandes",
-        "description": "商业版计划説明"
+        "message": "チームおよび大規模企業向け",
+        "description": "ビジネスプランの説明"
     },
     "pricing.business.manage_phones": {
-        "message": "Gestionar dispositivos ilimitados",
-        "description": "商业版计划機能"
+        "message": "無制限のデバイス管理",
+        "description": "ビジネスプランの機能"
     },
     "pricing.business.name": {
-        "message": "Empresarial",
+        "message": "ビジネス",
         "description": "ビジネスプラン名"
     },
     "pricing.compare.automation": {
         "message": "高度な自動化"
     },
     "pricing.compare.devices": {
-        "message": "Dispositivos soportados"
+        "message": "対応デバイス"
     },
     "pricing.compare.hide": {
-        "message": "Ocultar comparación"
+        "message": "比較を非表示"
     },
     "pricing.compare.show": {
-        "message": "Mostrar comparación"
+        "message": "比較を表示"
     },
     "pricing.cta.free": {
-        "message": "Start for free"
+        "message": "無料で始める"
     },
     "pricing.cta.pay": {
-        "message": "Subscribe"
+        "message": "申し込む"
     },
     "pricing.dedicated_support": {
-        "message": "サポート dedicado",
-        "description": "专属サポート文本"
+        "message": "専用サポート",
+        "description": "専用サポートテキスト"
     },
     "pricing.free.all_free_features": {
-        "message": "Todas las funciones gratuitas",
-        "description": "免费计划基础機能説明"
+        "message": "すべての無料機能",
+        "description": "無料プランの基本機能の説明"
     },
     "pricing.free.automation_disabled": {
         "message": "自動化が無効",
@@ -1844,39 +1844,39 @@
         "description": "白标機能需要年付订阅"
     },
     "whitelabel.annualRequiredDesc": {
-        "message": "La funcionalidadmarca blanca solo está disponible con licencias anuales",
-        "description": "白标機能年付订阅说明"
+        "message": "ホワイトラベル機能は年額ライセンスのみで利用可能です。",
+        "description": "ホワイトラベル機能は年額ライセンスが必要です"
     },
     "whitelabel.appName": {
-        "message": "Nombrela aplicación",
+        "message": "アプリ名",
         "description": "アプリ名称"
     },
     "whitelabel.contactSupport": {
-        "message": "Contactar con soporte",
-        "description": "ホワイトレーベルアンロックコードについてはカスタマーサービスにお問い合わせください"
+        "message": "サポートにお問い合わせください",
+        "description": "ホワイトラベルアンロックコードについてはカスタマーサービスにお問い合わせください"
     },
     "whitelabel.customization": {
-        "message": "Personalizaciónmarca blanca",
+        "message": "ホワイトラベルのカスタマイズ",
         "description": "ブランドカスタマイズ"
     },
     "whitelabel.description": {
-        "message": "Personaliza la aplicación con tu propia marca",
-        "description": "白标機能説明"
+        "message": "自社ブランドでアプリをカスタマイズできます",
+        "description": "ホワイトラベル機能の説明"
     },
     "whitelabel.logo": {
-        "message": "Logo",
-        "description": "Logo"
+        "message": "ロゴ",
+        "description": "ロゴ"
     },
     "whitelabel.setup": {
         "message": "セットアップ",
-        "description": "白标設定"
+        "description": "ホワイトラベル設定"
     },
     "whitelabel.supportEmail": {
-        "message": "Correo electrónico de soporte",
-        "description": "サポート邮箱"
+        "message": "サポートのメールアドレス",
+        "description": "サポートメールアドレス"
     },
     "whitelabel.telegramUrl": {
-        "message": "URLTelegram",
+        "message": "TelegramのURL",
         "description": "Telegramリンク"
     },
     "whitelabel.title": {
