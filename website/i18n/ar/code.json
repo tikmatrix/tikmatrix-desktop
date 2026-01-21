@@ -2,35 +2,11 @@
   "24/7 Support": {
     "message": "دعم على مدار الساعة"
   },
-  "24h AI Assistant": {
-    "message": "مساعد ذكاء اصطناعي على مدار 24 ساعة"
-  },
-  "AI voiceover": {
-    "message": "تعليق صوتي بالذكاء الاصطناعي"
-  },
-  "AI-Generated Comments": {
-    "message": "تعليقات مولدة بالذكاء الاصطناعي"
-  },
-  "API Protocol": {
-    "message": "بروتوكول API"
-  },
-  "Account Safe": {
-    "message": "أمان الحساب"
-  },
-  "Account Setup": {
-    "message": "إعداد الحساب"
-  },
   "Account management": {
     "message": "إدارة الحساب"
   },
   "Account warmup": {
     "message": "تسخين الحساب"
-  },
-  "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
-    "message": "بالإضافة إلى ذلك، يمكن لنظام برنامج المصفوفة للأجهزة الحقيقية لدينا تجنب تعليق الحسابات بشكل مثالي الناجم عن إجراءات التحكم في المخاطر الخاصة بـ TIK. معدل تعليق حساباتنا هو 0%."
-  },
-  "Advanced Technology for Superior Performance": {
-    "message": "تقنية متقدمة لأداء متفوق"
   },
   "Advanced safety mechanisms": {
     "message": "آليات أمان متقدمة"
@@ -38,38 +14,11 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "بعد التثبيت، افتح IgMatrix لعرض القائمة الكاملة لنصوص أتمتة Instagram المتاحة. قد يختلف اختيار النصوص عن TikMatrix."
   },
-  "All Features": {
-    "message": "جميع الميزات"
-  },
-  "All Free Features": {
-    "message": "جميع الميزات المجانية"
-  },
-  "All Monthly Features": {
-    "message": "جميع ميزات الاشتراك الشهري"
-  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "تحقق دائماً من الميزات الفعلية المتاحة في برنامج IgMatrix الخاص بك، حيث قد تختلف وظيفة النصوص عن TikMatrix. ستظهر لك واجهة البرنامج بالضبط أي نصوص أتمتة متاحة لـ Instagram."
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
     "message": "أتمتة النشر والمتابعة والتعليق وأنشطة التفاعل على Instagram"
-  },
-  "Automated Comment": {
-    "message": "تعليق آلي"
-  },
-  "Automated Follow": {
-    "message": "متابعة آلية"
-  },
-  "Automated Message": {
-    "message": "رسالة آلية"
-  },
-  "Automated account nurturing": {
-    "message": "تنمية الحساب الآلية"
-  },
-  "Automated scheduling for unattended operation": {
-    "message": "جدولة آلية للتشغيل بدون مراقبة"
-  },
-  "Automatic Capture": {
-    "message": "التقاط تلقائي"
   },
   "Automatic account matching": {
     "message": "مطابقة الحساب التلقائية"
@@ -80,44 +29,17 @@
   "Automatic commenting": {
     "message": "التعليق التلقائي"
   },
-  "Automatic direct messaging": {
-    "message": "المراسلة المباشرة التلقائية"
-  },
   "Automatic following": {
     "message": "المتابعة التلقائية"
   },
   "Automatic login": {
     "message": "تسجيل الدخول التلقائي"
   },
-  "Automatic matching": {
-    "message": "المطابقة التلقائية"
-  },
   "Automatic posting": {
     "message": "النشر التلقائي"
   },
   "Automatic profile setup": {
     "message": "إعداد الملف الشخصي التلقائي"
-  },
-  "Automatic registration & login": {
-    "message": "التسجيل وتسجيل الدخول التلقائي"
-  },
-  "Automatic video posting": {
-    "message": "نشر الفيديو التلقائي"
-  },
-  "Automatically generate AI voiceover for videos": {
-    "message": "توليد التعليق الصوتي بالذكاء الاصطناعي للفيديوهات تلقائياً"
-  },
-  "Automatically recognize subtitles and append them to the video": {
-    "message": "التعرف على الترجمات تلقائياً وإلحاقها بالفيديو"
-  },
-  "Automatically translate subtitles to any language": {
-    "message": "ترجمة الترجمات تلقائياً إلى أي لغة"
-  },
-  "Automation & Content Management": {
-    "message": "الأتمتة وإدارة المحتوى"
-  },
-  "Basic Automation": {
-    "message": "أتمتة أساسية"
   },
   "Basic configuration": {
     "message": "تكوين أساسي"
@@ -146,9 +68,6 @@
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
     "message": "هل يمكنني استخدام نفس البرنامج التعليمي لكل من IgMatrix و TikMatrix؟"
   },
-  "Character-by-Character Input": {
-    "message": "الإدخال حرفاً بحرف"
-  },
   "Check Available Scripts": {
     "message": "التحقق من النصوص المتاحة"
   },
@@ -158,20 +77,8 @@
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "التعليق على منشورات TikTok متعددة بشكل جماعي مع محتوى ورموز تعبيرية قابلة للتخصيص"
   },
-  "Comments, Messages, Follows": {
-    "message": "التعليقات والرسائل والمتابعات"
-  },
-  "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
-    "message": "مقارنةً بالمنتجات المماثلة في السوق، يؤدي استخدام منتجنا TIK إلى زيادة في الزيارات بنسبة 30٪ على الأقل مقارنةً بالمنتجات المماثلة الأخرى."
-  },
-  "Completely local private deployment ensuring user data security": {
-    "message": "نشر خاص محلي بالكامل يضمن أمان بيانات المستخدم"
-  },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "أتمتة شاملة تجمع بين استراتيجيات تفاعل متعددة مع تعليقات مولدة بالذكاء الاصطناعي"
-  },
-  "Computer-based Execution": {
-    "message": "تنفيذ قائم على الكمبيوتر"
   },
   "Contact": {
     "message": "اتصال"
@@ -182,23 +89,14 @@
   "Contact to purchase": {
     "message": "اتصل للشراء"
   },
-  "Content Management": {
-    "message": "إدارة المحتوى"
-  },
   "Control farm accounts to watch, like, and comment on target live streams": {
     "message": "التحكم في حسابات المزرعة لمشاهدة البث المباشر المستهدف والإعجاب به والتعليق عليه"
   },
   "Control multiple Instagram accounts across different Android devices simultaneously": {
     "message": "التحكم في حسابات Instagram متعددة عبر أجهزة Android مختلفة في وقت واحد"
   },
-  "Create new TikTok accounts with email registration and password setup": {
-    "message": "إنشاء حسابات TikTok جديدة مع التسجيل بالبريد الإلكتروني وإعداد كلمة المرور"
-  },
   "Custom Instagram workflows": {
     "message": "سير عمل Instagram مخصص"
-  },
-  "Customer support": {
-    "message": "دعم العملاء"
   },
   "Device connection": {
     "message": "اتصال الجهاز"
@@ -233,20 +131,11 @@
   "Email": {
     "message": "البريد الإلكتروني"
   },
-  "Expert Technical Team": {
-    "message": "فريق تقني خبير"
-  },
-  "Fan collection": {
-    "message": "جمع المعجبين"
-  },
   "Features": {
     "message": "الميزات"
   },
   "Find answers to common questions about IgMatrix": {
     "message": "ابحث عن إجابات للأسئلة الشائعة حول IgMatrix"
-  },
-  "Fingerprint Browser": {
-    "message": "متصفح البصمة"
   },
   "Follow TikMatrix Tutorial": {
     "message": "اتبع برنامج TikMatrix التعليمي"
@@ -254,23 +143,11 @@
   "Follow these steps to get started with IgMatrix": {
     "message": "اتبع هذه الخطوات للبدء مع IgMatrix"
   },
-  "For 7 Days": {
-    "message": "لمدة 7 أيام"
-  },
   "Free": {
     "message": "مجاني"
   },
   "Frequently Asked Questions": {
     "message": "الأسئلة المتكررة"
-  },
-  "Generate intelligent and contextual comments through ChatGPT API integration": {
-    "message": "توليد تعليقات ذكية وسياقية من خلال دمج ChatGPT API"
-  },
-  "Generate unique videos from one source video": {
-    "message": "توليد مقاطع فيديو فريدة من فيديو مصدر واحد"
-  },
-  "Get Started": {
-    "message": "ابدأ الآن"
   },
   "Get Support": {
     "message": "احصل على الدعم"
@@ -293,29 +170,17 @@
   "How to use?": {
     "message": "كيفية الاستخدام؟"
   },
-  "Human Technical Support": {
-    "message": "الدعم التقني البشري"
-  },
-  "Human-like Click Simulation": {
-    "message": "محاكاة نقر شبيه بالبشر"
-  },
   "If you are interested in our service, please contact us to get price.": {
     "message": "إذا كنت مهتماً بخدمتنا، يرجى الاتصال بنا للحصول على السعر."
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
     "message": "إذا كنت بحاجة إلى مساعدة في ميزات IgMatrix الخاصة أو واجهت أي مشكلات، فإن فريق الدعم لدينا مستعد لمساعدتك."
   },
-  "IgMatrix": {
-    "message": "IgMatrix"
-  },
   "IgMatrix Features": {
     "message": "ميزات IgMatrix"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
     "message": "يشترك IgMatrix و TikMatrix في نفس عملية الإعداد وواجهة المستخدم. الفرق الرئيسي هو أن IgMatrix مصمم خصيصاً لأتمتة Instagram، بينما TikMatrix لـ TikTok. منطق النص والميزات المتاحة محسّنة لكل منصة على حدة."
-  },
-  "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely.": {
-    "message": "يجلب IgMatrix نفس قدرات الأتمتة القوية لـ TikMatrix إلى Instagram، مما يساعدك على توسيع جهود التسويق على Instagram بكفاءة وأمان."
   },
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
     "message": "يتبع IgMatrix هيكل تسعير مماثل لـ TikMatrix، لكن قد يكون لديه أسعار مختلفة. يرجى التحقق من صفحة الأسعار الرسمية لدينا أو الاتصال بفريق الدعم للحصول على معلومات تسعير IgMatrix الحالية."
@@ -353,9 +218,6 @@
   "Is the pricing the same as TikMatrix?": {
     "message": "هل التسعير هو نفسه لـ TikMatrix؟"
   },
-  "Join Channel": {
-    "message": "انضم إلى القناة"
-  },
   "Join Group": {
     "message": "انضم إلى المجموعة"
   },
@@ -371,95 +233,17 @@
   "Mass direct messaging": {
     "message": "المراسلة المباشرة الجماعية"
   },
-  "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "الإثنين - الجمعة: 9:00 صباحاً - 5:00 مساءً (UTC+8)"
-  },
-  "Monthly": {
-    "message": "شهري"
-  },
   "Multi-Device Control": {
     "message": "التحكم في أجهزة متعددة"
   },
   "Multi-language support (English, Chinese, Russian)": {
     "message": "دعم متعدد اللغات (الإنجليزية والصينية والروسية)"
   },
-  "Natural Swipe Gestures": {
-    "message": "إيماءات السحب الطبيعية"
-  },
-  "No Root Required": {
-    "message": "لا يتطلب صلاحيات الجذر"
-  },
-  "No root permissions needed, ensuring device environment security": {
-    "message": "لا حاجة لأذونات الجذر، مما يضمن أمان بيئة الجهاز"
-  },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "ليست جميع نصوص TikMatrix متاحة في IgMatrix، حيث إنها خاصة بالمنصة. يمكن العثور على القائمة الدقيقة للنصوص المتاحة داخل واجهة برنامج IgMatrix بعد التثبيت. يرجى الرجوع إلى الميزات الفعلية الموضحة في برنامجك."
   },
-  "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "جمع تلقائي بنقرة واحدة لقوائم معجبي الحساب المستهدف، يمكن استخدامه للرسائل المباشرة"
-  },
-  "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "تنمية الحساب التلقائية الجماعية بنقرة واحدة، يدعم البحث بالكلمات المفتاحية، المتابعة العشوائية، الإعجاب، التعليق، والإشارات المرجعية"
-  },
-  "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "التعليق التلقائي الجماعي بنقرة واحدة على مقاطع فيديو متعددة مع نصوص محددة ورموز تعبيرية عشوائية"
-  },
-  "One-click batch automatic direct messaging to multiple target users": {
-    "message": "المراسلة المباشرة التلقائية الجماعية بنقرة واحدة لمستخدمين مستهدفين متعددين"
-  },
-  "One-click batch automatic follow of target accounts": {
-    "message": "المتابعة التلقائية الجماعية بنقرة واحدة للحسابات المستهدفة"
-  },
-  "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "تسجيل دخول تلقائي جماعي بنقرة واحدة لحسابات TikTok، يدعم الاستيراد/التصدير الجماعي للحسابات"
-  },
-  "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "مطابقة تلقائية جماعية بنقرة واحدة للحسابات المسجلة، لا حاجة للربط اليدوي"
-  },
-  "One-click batch automatic posting, supports adding product links": {
-    "message": "النشر التلقائي الجماعي بنقرة واحدة، يدعم إضافة روابط المنتجات"
-  },
-  "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "تسجيل تلقائي جماعي بنقرة واحدة لحسابات TikTok، يدعم البريد الإلكتروني التجاري"
-  },
-  "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "إعداد تلقائي جماعي بنقرة واحدة للصور الرمزية والألقاب والتوقيعات وأسماء المستخدمين"
-  },
-  "One-click download of videos from all video websites": {
-    "message": "تحميل بنقرة واحدة لمقاطع الفيديو من جميع مواقع الفيديو"
-  },
-  "One-click download of videos from the entire network": {
-    "message": "تحميل بنقرة واحدة لمقاطع الفيديو من الشبكة بأكملها"
-  },
-  "Open Source Client": {
-    "message": "عميل مفتوح المصدر"
-  },
-  "Open source client code allows users to customize their own client": {
-    "message": "كود العميل مفتوح المصدر يسمح للمستخدمين بتخصيص عميلهم الخاص"
-  },
-  "Our Competitive Advantages": {
-    "message": "مزايانا التنافسية"
-  },
-  "Our Core Advantages": {
-    "message": "مزايانا الأساسية"
-  },
-  "Our Core Features": {
-    "message": "ميزاتنا الأساسية"
-  },
-  "Our plans": {
-    "message": "خططنا"
-  },
-  "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "نظام مصفوفة الأجهزة الحقيقية الخاص بنا يتجنب بشكل مثالي إجراءات التحكم في المخاطر الخاصة بـ TikTok، مما يؤدي إلى معدل تعليق حساب منخفض للغاية."
-  },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "فريق الدعم لدينا هنا لمساعدتك في أي أسئلة أو مشكلات متعلقة بـ IgMatrix."
-  },
-  "Per Month": {
-    "message": "شهرياً"
-  },
-  "Per Year": {
-    "message": "سنوياً"
   },
   "Performance analytics": {
     "message": "تحليلات الأداء"
@@ -485,23 +269,8 @@
   "Powerful TikTok Automation & Management Tools": {
     "message": "أدوات أتمتة وإدارة TikTok قوية"
   },
-  "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
-    "message": "فريق تقني قوي مع صيانة وتحديثات في الوقت الفعلي لضمان موثوقية النص"
-  },
-  "Premium Benefits": {
-    "message": "فوائد مميزة"
-  },
   "Pricing": {
     "message": "الأسعار"
-  },
-  "Private Local Deployment": {
-    "message": "نشر خاص محلي"
-  },
-  "Professional TikTok Account Management & Marketing Tool": {
-    "message": "أداة إدارة وتسويق حسابات TikTok احترافية"
-  },
-  "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
-    "message": "أداة إدارة وتسويق حسابات TikTok احترافية لنظام ويندوز وماك"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "أداة إدارة وتسويق حسابات TikTok احترافية مصممة لمزارع هواتف Android على نظام ويندوز وماك. أتمتة النشر والمتابعة وتنمية تواجدك على TikTok مع معدل تعليق حساب صفري."
@@ -514,9 +283,6 @@
   },
   "Quick Setup Guide": {
     "message": "دليل الإعداد السريع"
-  },
-  "Randomized script parameters to avoid behavior detection patterns": {
-    "message": "معاملات النص العشوائية لتجنب أنماط كشف السلوك"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "التعرف على حسابات TikTok من الهواتف ومطابقتها لإضافتها إلى قائمة الحسابات"
@@ -536,26 +302,11 @@
   "Same reliable technology as TikMatrix": {
     "message": "نفس التقنية الموثوقة مثل TikMatrix"
   },
-  "Save 50% compared to monthly plan": {
-    "message": "وفر 50٪ مقارنة بالخطة الشهرية"
-  },
   "Schedule your Instagram activities with intelligent timing algorithms": {
     "message": "جدولة أنشطة Instagram الخاصة بك بخوارزميات توقيت ذكية"
   },
-  "Scheduled Tasks": {
-    "message": "المهام المجدولة"
-  },
   "Scrape TikTok usernames from followers lists or keyword searches": {
     "message": "جمع أسماء مستخدمي TikTok من قوائم المتابعين أو عمليات البحث بالكلمات المفتاحية"
-  },
-  "Script Parameter Randomization": {
-    "message": "عشوائية معاملات النص"
-  },
-  "Script engine simulates natural human clicking with randomized button offset": {
-    "message": "محرك النص يحاكي النقر البشري الطبيعي مع إزاحة الزر العشوائية"
-  },
-  "Scripts run on computer to avoid mobile device detection": {
-    "message": "تعمل النصوص على الكمبيوتر لتجنب اكتشاف الأجهزة المحمولة"
   },
   "Send messages to multiple TikTok accounts in bulk with personalized content": {
     "message": "إرسال رسائل إلى حسابات TikTok متعددة بشكل جماعي مع محتوى مخصص"
@@ -569,32 +320,17 @@
   "Shipping worldwide": {
     "message": "الشحن عالمياً"
   },
-  "Simulates natural right-hand arc swipe trajectories like real human interaction": {
-    "message": "يحاكي مسارات السحب القوسية الطبيعية باليد اليمنى مثل التفاعل البشري الحقيقي"
-  },
   "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
     "message": "نظراً لأن عملية الإعداد متطابقة، يرجى الرجوع إلى وثائق TikMatrix الشاملة للحصول على تعليمات مفصلة حول اتصال الجهاز وإدارة الحساب وتكوين النص."
   },
   "Smart Scheduling": {
     "message": "جدولة ذكية"
   },
-  "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
-    "message": "ابدأ أتمتة تسويق Instagram الخاص بك اليوم مع IgMatrix واختبر نفس الأدوات الاحترافية التي يثق بها آلاف المسوقين."
-  },
   "Still have questions?": {
     "message": "لا تزال لديك أسئلة؟"
   },
-  "Streamline your Android TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "بسّط مزرعة هواتف TikTok Android الخاصة بك من خلال التحكم الجماعي المتقدم وأتمتة التسويق"
-  },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "بسّط مزرعة هواتف Instagram الخاصة بك من خلال التحكم الجماعي المتقدم وأتمتة التسويق"
-  },
-  "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "بسّط مزرعة هواتف TikTok الخاصة بك من خلال التحكم الجماعي المتقدم وأتمتة التسويق"
-  },
-  "Strong technical support team with open community ecosystem": {
-    "message": "فريق دعم تقني قوي مع نظام بيئي مجتمعي مفتوح"
   },
   "Super Marketing": {
     "message": "التسويق الفائق"
@@ -602,23 +338,11 @@
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "يدعم عكس أكثر من 100 هاتف على الكمبيوتر، مع التشغيل المتزامن"
   },
-  "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "يدعم عكس أكثر من 200 هاتف على الكمبيوتر، مع التشغيل المتزامن"
-  },
-  "Supports work profile enterprise space for professional use": {
-    "message": "يدعم مساحة ملف تعريف العمل المؤسسي للاستخدام الاحترافي"
-  },
   "Technical Advantages": {
     "message": "المزايا التقنية"
   },
   "Telegram": {
     "message": "تيليجرام"
-  },
-  "Telegram Support": {
-    "message": "دعم Telegram"
-  },
-  "Text input mimics human typing patterns with character-by-character simulation": {
-    "message": "إدخال النص يحاكي أنماط الكتابة البشرية مع المحاكاة حرفاً بحرف"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
     "message": "الطول والعرض كبيران نسبياً، لكن الارتفاع منخفض (حجم 2u)"
@@ -629,20 +353,8 @@
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
     "message": "تتكون آلة اللوحة الأم من 20 لوحة أم لهاتف Samsung. تشتغل تلقائياً عند توصيلها بالكهرباء، وتشترك في مصدر طاقة موحد، ولديها نظام تبريد موحد متعدد المراوح، واتصال USB موحد. كما تدعم اتصالات الشبكة السلكية OTG."
   },
-  "TikMatrix": {
-    "message": "TikMatrix مصفوفة الأجهزة الحقيقية"
-  },
-  "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "توفر TikMatrix تفاعلاً أعلى بنسبة 30٪ على الأقل مقارنة بالمنتجات المماثلة، مع تقنية الأجهزة الحقيقية المتقدمة التي تضمن أمان الحساب الكامل."
-  },
-  "TikMatrix is a TikTok group control operation tool": {
-    "message": "TikMatrix هي أداة للتحكم في مجموعات TikTok"
-  },
   "TikMatrix is a professional marketing software designed for TikTok phone farms": {
     "message": "TikMatrix هو برنامج تسويق احترافي مصمم لمزارع هواتف TikTok"
-  },
-  "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix هو برنامج تسويق احترافي مصمم لمزارع هواتف TikTok. إدارة حسابات متعددة، وأتمتة النشر، وتوسيع تسويق TikTok الخاص بك بسهولة."
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
     "message": "يدعم TikMatrix 8 حسابات TikTok على كل هاتف."
@@ -659,23 +371,8 @@
   "Translate subtitles": {
     "message": "ترجمة الترجمات"
   },
-  "Trial": {
-    "message": "تجربة"
-  },
-  "Tutorial": {
-    "message": "البرنامج التعليمي"
-  },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "بطاقة SIM أمريكية أصلية غير مفعلة، تُستخدم لتطبيق TikTok Android للكشف عن موقع بطاقة SIM"
-  },
-  "Unlimited devices": {
-    "message": "أجهزة غير محدودة"
-  },
-  "Unlimited devices, Customer support": {
-    "message": "أجهزة غير محدودة، دعم العملاء"
-  },
-  "Unlimited process tasks": {
-    "message": "مهام معالجة غير محدودة"
   },
   "User engagement boost": {
     "message": "تعزيز تفاعل المستخدمين"
@@ -686,20 +383,8 @@
   "User scraping": {
     "message": "جمع المستخدمين"
   },
-  "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "Video Magic هو برنامج توليد فيديو احترافي مصمم للمشغلين. يمكنه توليد مقاطع فيديو فريدة لك، مما يعزز الكفاءة التشغيلية بشكل كبير"
-  },
-  "Video Magic is a tool that can generate unique videos": {
-    "message": "Video Magic هي أداة يمكنها توليد مقاطع فيديو فريدة"
-  },
-  "Video collection": {
-    "message": "جمع الفيديو"
-  },
   "Video download": {
     "message": "تحميل الفيديو"
-  },
-  "Video posting, Account nurturing": {
-    "message": "نشر الفيديو، تنمية الحساب"
   },
   "Video unique": {
     "message": "فيديو فريد"
@@ -734,18 +419,6 @@
   "Why Choose IgMatrix?": {
     "message": "لماذا تختار IgMatrix؟"
   },
-  "Why TikMatrix?": {
-    "message": "لماذا TikMatrix؟"
-  },
-  "Work Profile Support": {
-    "message": "دعم ملف تعريف العمل"
-  },
-  "Working Hours": {
-    "message": "ساعات العمل"
-  },
-  "Yearly": {
-    "message": "سنوي"
-  },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "نعم! برنامج الإعداد التعليمي لـ IgMatrix مطابق لـ TikMatrix. يمكنك اتباع وثائق TikMatrix للتثبيت واتصال الجهاز والتكوين الأساسي. فقط نصوص الأتمتة ستختلف بناءً على المنصة."
   },
@@ -754,45 +427,6 @@
   },
   "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
     "message": "يمكنك تثبيت كل من IgMatrix و TikMatrix على نفس الكمبيوتر، لكن لا يمكنهما العمل في وقت واحد بسبب تعارضات وقت التشغيل. يمكنك تشغيل برنامج واحد فقط في كل مرة - إما IgMatrix أو TikMatrix."
-  },
-  "advertising.back.home": {
-    "message": "العودة إلى الرئيسية"
-  },
-  "advertising.buy.accounts.description": {
-    "message": "خدمات شراء الحسابات"
-  },
-  "advertising.buy.accounts.leadsmm.description": {
-    "message": "شراء حسابات وسائل التواصل الاجتماعي عالية الجودة"
-  },
-  "advertising.buy.accounts.leadsmm.title": {
-    "message": "LeadSMM - حسابات وسائل التواصل الاجتماعي"
-  },
-  "advertising.buy.accounts.title": {
-    "message": "شراء الحسابات"
-  },
-  "advertising.buy.hardware.description": {
-    "message": "أجهزة متخصصة لمزارع الهواتف"
-  },
-  "advertising.buy.hardware.title": {
-    "message": "شراء الأجهزة"
-  },
-  "advertising.category.accounts": {
-    "message": "الحسابات"
-  },
-  "advertising.category.analytics": {
-    "message": "التحليلات"
-  },
-  "advertising.category.hardware": {
-    "message": "الأجهزة"
-  },
-  "advertising.category.proxy": {
-    "message": "البروكسي"
-  },
-  "advertising.category.verification": {
-    "message": "التحقق"
-  },
-  "advertising.category.vps": {
-    "message": "خادم VPS"
   },
   "advertising.disclaimer.content": {
     "message": "نحن لا ننتمي لهذه الخدمات ولا نتحمل أي مسؤولية عن جودتها"
@@ -806,44 +440,8 @@
   "advertising.page.title": {
     "message": "الخدمات والمنتجات الموصى بها"
   },
-  "advertising.proxy.proxycheap.description": {
-    "message": "خدمات بروكسي موثوقة وبأسعار معقولة"
-  },
-  "advertising.proxy.proxycheap.title": {
-    "message": "ProxyCheap - خدمات البروكسي"
-  },
-  "advertising.proxy.thordata.description": {
-    "message": "بروكسيات سكنية وبروكسيات مركز بيانات عالية الجودة"
-  },
-  "advertising.proxy.thordata.title": {
-    "message": "ThorData - خدمات البروكسي المتميزة"
-  },
-  "advertising.tiktok.user.finder.description": {
-    "message": "أداة لاكتشاف مستخدمي TikTok وتحليلهم"
-  },
-  "advertising.tiktok.user.finder.title": {
-    "message": "أداة بحث مستخدمي TikTok"
-  },
   "advertising.visit.button": {
     "message": "زيارة الموقع"
-  },
-  "advertising.vps.lisahost.description": {
-    "message": "خدمات استضافة VPS موثوقة"
-  },
-  "advertising.vps.lisahost.title": {
-    "message": "LisaHost - استضافة VPS"
-  },
-  "advertising.vps.uuuvps.description": {
-    "message": "حلول خادم VPS عالية الأداء"
-  },
-  "advertising.vps.uuuvps.title": {
-    "message": "UUUVPS - خوادم عالية الأداء"
-  },
-  "advertising.whatsapp.checker.description": {
-    "message": "أداة للتحقق من صحة أرقام WhatsApp"
-  },
-  "advertising.whatsapp.checker.title": {
-    "message": "مدقق أرقام WhatsApp"
   },
   "download.description": {
     "message": "قم بتنزيل TikMatrix لنظام Windows أو Mac"
@@ -1049,9 +647,6 @@
   "homepage.vs.title": {
     "message": "لماذا تختار TikMatrix & IgMatrix؟"
   },
-  "navbar.download": {
-    "message": "تحميل"
-  },
   "pricing.all_features": {
     "message": "جميع الميزات"
   },
@@ -1063,9 +658,6 @@
   },
   "pricing.business.description": {
     "message": "للفرق والشركات الكبيرة"
-  },
-  "pricing.business.manage_phones": {
-    "message": "إدارة أجهزة غير محدودة"
   },
   "pricing.business.name": {
     "message": "الأعمال"
@@ -1088,9 +680,6 @@
   "pricing.cta.pay": {
     "message": "اشترك الآن"
   },
-  "pricing.dedicated_support": {
-    "message": "دعم مخصص"
-  },
   "pricing.free.all_free_features": {
     "message": "جميع الميزات المجانية"
   },
@@ -1109,9 +698,6 @@
   "pricing.free_label": {
     "message": "مجاني"
   },
-  "pricing.get_started": {
-    "message": "ابدأ الآن"
-  },
   "pricing.local_api.description": {
     "message": "يدعم TikMatrix واجهة API محلية مفتوحة"
   },
@@ -1127,9 +713,6 @@
   "pricing.per_month": {
     "message": "شهرياً"
   },
-  "pricing.per_month_pc": {
-    "message": "/ شهر / جهاز كمبيوتر"
-  },
   "pricing.per_year": {
     "message": "سنوياً"
   },
@@ -1139,9 +722,6 @@
   "pricing.pro.description": {
     "message": "للمحترفين وفرق التسويق"
   },
-  "pricing.pro.manage_phones": {
-    "message": "إدارة ما يصل إلى 200 جهاز"
-  },
   "pricing.pro.name": {
     "message": "احترافي"
   },
@@ -1150,9 +730,6 @@
   },
   "pricing.starter.description": {
     "message": "للأفراد والشركات الصغيرة"
-  },
-  "pricing.starter.manage_phones": {
-    "message": "إدارة ما يصل إلى 50 جهازاً"
   },
   "pricing.starter.name": {
     "message": "مبتدئ"
@@ -1165,9 +742,6 @@
   },
   "pricing.team.description": {
     "message": "للفرق المتوسطة والكبيرة"
-  },
-  "pricing.team.manage_phones": {
-    "message": "إدارة ما يصل إلى 500 جهاز"
   },
   "pricing.team.name": {
     "message": "الفريق"
@@ -1381,269 +955,5 @@
   },
   "testimonials.user4.usage": {
     "message": "50 حساب TikTok"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "إغلاق"
-  },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "العودة إلى الأعلى"
-  },
-  "theme.CodeBlock.copied": {
-    "message": "تم النسخ"
-  },
-  "theme.CodeBlock.copy": {
-    "message": "نسخ"
-  },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "نسخ الكود إلى الحافظة"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "تبديل التفاف النص"
-  },
-  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "طي الفئة الجانبية '{label}'"
-  },
-  "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "فتح الفئة الجانبية '{label}'"
-  },
-  "theme.ErrorPageContent.title": {
-    "message": "حدث خطأ في هذه الصفحة."
-  },
-  "theme.ErrorPageContent.tryAgain": {
-    "message": "حاول مرة أخرى"
-  },
-  "theme.NavBar.navAriaLabel": {
-    "message": "رئيسي"
-  },
-  "theme.NotFound.p1": {
-    "message": "لم نتمكن من العثور على ما تبحث عنه."
-  },
-  "theme.NotFound.p2": {
-    "message": "يرجى الاتصال بمالك الموقع الذي ربطك بعنوان URL الأصلي وإخباره بأن الرابط معطل."
-  },
-  "theme.NotFound.title": {
-    "message": "الصفحة غير موجودة"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "في هذه الصفحة"
-  },
-  "theme.admonition.caution": {
-    "message": "تحذير"
-  },
-  "theme.admonition.danger": {
-    "message": "خطر"
-  },
-  "theme.admonition.info": {
-    "message": "معلومة"
-  },
-  "theme.admonition.note": {
-    "message": "ملاحظة"
-  },
-  "theme.admonition.tip": {
-    "message": "نصيحة"
-  },
-  "theme.admonition.warning": {
-    "message": "تحذير"
-  },
-  "theme.blog.archive.description": {
-    "message": "أرشيف"
-  },
-  "theme.blog.archive.title": {
-    "message": "أرشيف"
-  },
-  "theme.blog.paginator.navAriaLabel": {
-    "message": "التنقل في صفحات قائمة المدونة"
-  },
-  "theme.blog.paginator.newerEntries": {
-    "message": "منشورات أحدث"
-  },
-  "theme.blog.paginator.olderEntries": {
-    "message": "منشورات أقدم"
-  },
-  "theme.blog.post.paginator.navAriaLabel": {
-    "message": "التنقل في صفحات المنشورات"
-  },
-  "theme.blog.post.paginator.newerPost": {
-    "message": "منشور أحدث"
-  },
-  "theme.blog.post.paginator.olderPost": {
-    "message": "منشور أقدم"
-  },
-  "theme.blog.post.plurals": {
-    "message": "منشور واحد|{count} منشورات"
-  },
-  "theme.blog.post.readMore": {
-    "message": "اقرأ المزيد"
-  },
-  "theme.blog.post.readMoreLabel": {
-    "message": "اقرأ المزيد عن {title}"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} دقيقة قراءة"
-  },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "التنقل في المنشورات الحديثة"
-  },
-  "theme.blog.tagTitle": {
-    "message": "{nPosts} تحمل وسم \"{tagName}\""
-  },
-  "theme.colorToggle.ariaLabel": {
-    "message": "تبديل بين الوضع الداكن والفاتح (حالياً {mode})"
-  },
-  "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "وضع داكن"
-  },
-  "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "وضع فاتح"
-  },
-  "theme.common.editThisPage": {
-    "message": "تحرير هذه الصفحة"
-  },
-  "theme.common.headingLinkTitle": {
-    "message": "رابط مباشر إلى {heading}"
-  },
-  "theme.common.skipToMainContent": {
-    "message": "الانتقال إلى المحتوى الرئيسي"
-  },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} عنصر|{count} عناصر"
-  },
-  "theme.docs.breadcrumbs.home": {
-    "message": "الصفحة الرئيسية"
-  },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "مسار التنقل"
-  },
-  "theme.docs.paginator.navAriaLabel": {
-    "message": "التنقل في صفحات الوثائق"
-  },
-  "theme.docs.paginator.next": {
-    "message": "التالي"
-  },
-  "theme.docs.paginator.previous": {
-    "message": "السابق"
-  },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "إغلاق الشريط الجانبي"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "طي الشريط الجانبي"
-  },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "طي الشريط الجانبي"
-  },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "فتح الشريط الجانبي"
-  },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "فتح الشريط الجانبي"
-  },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "التنقل في الشريط الجانبي"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "تبديل الشريط الجانبي"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} تحمل وسم \"{tagName}\""
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} مستند"
-  },
-  "theme.docs.versionBadge.label": {
-    "message": "الإصدار: {versionLabel}"
-  },
-  "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "أحدث إصدار"
-  },
-  "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "للحصول على أحدث الوثائق، انظر إلى {latestVersionLink} ({versionLabel})."
-  },
-  "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "هذه وثائق الإصدار {siteTitle} {versionLabel}، والتي لم تعد مدعومة بنشاط."
-  },
-  "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "هذه وثائق غير مصدرة لإصدار {siteTitle} {versionLabel}."
-  },
-  "theme.footer.link.label.View All Advertising": {
-    "message": "عرض جميع الإعلانات"
-  },
-  "theme.footer.link.label.View All Tools": {
-    "message": "عرض جميع الأدوات"
-  },
-  "theme.lastUpdated.atDate": {
-    "message": " في {date}"
-  },
-  "theme.lastUpdated.byUser": {
-    "message": " بواسطة {user}"
-  },
-  "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "آخر تحديث{atDate}{byUser}"
-  },
-  "theme.navbar.item.label.Advertising": {
-    "message": "الإعلان"
-  },
-  "theme.navbar.item.label.Tools": {
-    "message": "الأدوات"
-  },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "اللغات"
-  },
-  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← العودة إلى القائمة الرئيسية"
-  },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "الإصدارات"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "الوسوم:"
-  },
-  "theme.tags.tagsPageLink": {
-    "message": "عرض جميع الوسوم"
-  },
-  "theme.tags.tagsPageTitle": {
-    "message": "الوسوم"
-  },
-  "theme.unlistedContent.message": {
-    "message": "هذه الصفحة غير مدرجة. لن تقوم محركات البحث بفهرستها، ويمكن فقط للمستخدمين الذين لديهم رابط مباشر الوصول إليها."
-  },
-  "theme.unlistedContent.title": {
-    "message": "صفحة غير مدرجة"
-  },
-  "whitelabel.annualRequired": {
-    "message": "الاشتراك السنوي مطلوب"
-  },
-  "whitelabel.annualRequiredDesc": {
-    "message": "خدمة العلامة البيضاء متاحة فقط لمستخدمي الاشتراك السنوي"
-  },
-  "whitelabel.appName": {
-    "message": "اسم التطبيق المخصص"
-  },
-  "whitelabel.contactSupport": {
-    "message": "اتصل بالدعم للإعداد"
-  },
-  "whitelabel.customization": {
-    "message": "التخصيص"
-  },
-  "whitelabel.description": {
-    "message": "قم بتخصيص TikMatrix بعلامتك التجارية الخاصة"
-  },
-  "whitelabel.logo": {
-    "message": "شعار مخصص"
-  },
-  "whitelabel.setup": {
-    "message": "الإعداد"
-  },
-  "whitelabel.supportEmail": {
-    "message": "بريد الدعم المخصص"
-  },
-  "whitelabel.telegramUrl": {
-    "message": "رابط Telegram المخصص"
-  },
-  "whitelabel.title": {
-    "message": "حل العلامة البيضاء"
-  },
-  "whitelabel.tutorialUrl": {
-    "message": "رابط البرنامج التعليمي المخصص"
   }
 }

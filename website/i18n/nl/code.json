@@ -2,35 +2,11 @@
   "24/7 Support": {
     "message": "24/7 ondersteuning"
   },
-  "24h AI Assistant": {
-    "message": "24-uurs AI-assistent"
-  },
-  "AI voiceover": {
-    "message": "AI voice-over"
-  },
-  "AI-Generated Comments": {
-    "message": "AI-gegenereerde opmerkingen"
-  },
-  "API Protocol": {
-    "message": "API-protocol"
-  },
-  "Account Safe": {
-    "message": "Accountveiligheid"
-  },
-  "Account Setup": {
-    "message": "Account instellen"
-  },
   "Account management": {
     "message": "Accountbeheer"
   },
   "Account warmup": {
     "message": "Account opwarmen"
-  },
-  "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
-    "message": "Bovendien kan ons echte apparaatmatrixprogrammasysteem accountopschortingen veroorzaakt door TikTok's risicocontrolemaatregelen perfect vermijden. Ons accountopschortingspercentage is 0%."
-  },
-  "Advanced Technology for Superior Performance": {
-    "message": "Geavanceerde technologie voor superieure prestaties"
   },
   "Advanced safety mechanisms": {
     "message": "Geavanceerde veiligheidsmechanismen"
@@ -38,38 +14,11 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "Open na installatie IgMatrix om de volledige lijst met beschikbare Instagram-automatiseringsscripts te bekijken. De scriptselectie kan verschillen van TikMatrix."
   },
-  "All Features": {
-    "message": "Alle functies"
-  },
-  "All Free Features": {
-    "message": "Alle gratis functies"
-  },
-  "All Monthly Features": {
-    "message": "Alle maandelijkse functies"
-  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Controleer altijd de daadwerkelijk beschikbare functies in uw IgMatrix-software, omdat de scriptfunctionaliteit kan verschillen van TikMatrix. De software-interface laat u precies zien welke automatiseringsscripts beschikbaar zijn voor Instagram."
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
     "message": "Automatiseer het plaatsen, volgen, reageren en betrokkenheidactiviteiten op Instagram"
-  },
-  "Automated Comment": {
-    "message": "Geautomatiseerde reacties"
-  },
-  "Automated Follow": {
-    "message": "Geautomatiseerd volgen"
-  },
-  "Automated Message": {
-    "message": "Geautomatiseerde berichten"
-  },
-  "Automated account nurturing": {
-    "message": "Geautomatiseerd account opwarmen"
-  },
-  "Automated scheduling for unattended operation": {
-    "message": "Geautomatiseerde planning voor onbeheerde werking"
-  },
-  "Automatic Capture": {
-    "message": "Automatische vastlegging"
   },
   "Automatic account matching": {
     "message": "Automatische accountkoppeling"
@@ -80,44 +29,17 @@
   "Automatic commenting": {
     "message": "Automatisch reageren"
   },
-  "Automatic direct messaging": {
-    "message": "Automatische directe berichten"
-  },
   "Automatic following": {
     "message": "Automatisch volgen"
   },
   "Automatic login": {
     "message": "Automatische aanmelding"
   },
-  "Automatic matching": {
-    "message": "Automatische koppeling"
-  },
   "Automatic posting": {
     "message": "Automatisch plaatsen"
   },
   "Automatic profile setup": {
     "message": "Automatische profielinstellingen"
-  },
-  "Automatic registration & login": {
-    "message": "Automatische registratie en aanmelding"
-  },
-  "Automatic video posting": {
-    "message": "Automatisch video's plaatsen"
-  },
-  "Automatically generate AI voiceover for videos": {
-    "message": "Automatisch AI voice-over genereren voor video's"
-  },
-  "Automatically recognize subtitles and append them to the video": {
-    "message": "Automatisch ondertitels herkennen en toevoegen aan de video"
-  },
-  "Automatically translate subtitles to any language": {
-    "message": "Automatisch ondertitels vertalen naar elke taal"
-  },
-  "Automation & Content Management": {
-    "message": "Automatisering en Contentbeheer"
-  },
-  "Basic Automation": {
-    "message": "Basisautomatisering"
   },
   "Basic configuration": {
     "message": "Basisconfiguratie"
@@ -146,9 +68,6 @@
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
     "message": "Kan ik dezelfde tutorial gebruiken voor zowel IgMatrix als TikMatrix?"
   },
-  "Character-by-Character Input": {
-    "message": "Karakter-voor-karakter invoer"
-  },
   "Check Available Scripts": {
     "message": "Beschikbare scripts controleren"
   },
@@ -158,20 +77,8 @@
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "Reageer op meerdere TikTok-berichten in bulk met aanpasbare inhoud en emoji's"
   },
-  "Comments, Messages, Follows": {
-    "message": "Reacties, berichten, volgingen"
-  },
-  "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
-    "message": "Vergeleken met vergelijkbare producten op de markt, resulteert het gebruik van ons product TikMatrix in ten minste 30% meer verkeer vergeleken met andere vergelijkbare producten."
-  },
-  "Completely local private deployment ensuring user data security": {
-    "message": "Volledig lokale privé-implementatie die gebruikersgegevensbeveiliging garandeert"
-  },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Uitgebreide automatisering die meerdere betrokkenheidsstrategieën combineert met AI-gegenereerde reacties"
-  },
-  "Computer-based Execution": {
-    "message": "Computergebaseerde uitvoering"
   },
   "Contact": {
     "message": "Contact"
@@ -182,23 +89,14 @@
   "Contact to purchase": {
     "message": "Neem contact op om te kopen"
   },
-  "Content Management": {
-    "message": "Contentbeheer"
-  },
   "Control farm accounts to watch, like, and comment on target live streams": {
     "message": "Beheer farm-accounts om doellivestreams te bekijken, liken en erop te reageren"
   },
   "Control multiple Instagram accounts across different Android devices simultaneously": {
     "message": "Beheer meerdere Instagram-accounts op verschillende Android-apparaten tegelijkertijd"
   },
-  "Create new TikTok accounts with email registration and password setup": {
-    "message": "Maak nieuwe TikTok-accounts aan met e-mailregistratie en wachtwoordinstellingen"
-  },
   "Custom Instagram workflows": {
     "message": "Aangepaste Instagram-workflows"
-  },
-  "Customer support": {
-    "message": "Klantenondersteuning"
   },
   "Device connection": {
     "message": "Apparaatverbinding"
@@ -233,20 +131,11 @@
   "Email": {
     "message": "E-mail"
   },
-  "Expert Technical Team": {
-    "message": "Deskundig technisch team"
-  },
-  "Fan collection": {
-    "message": "Fanverzameling"
-  },
   "Features": {
     "message": "Functies"
   },
   "Find answers to common questions about IgMatrix": {
     "message": "Vind antwoorden op veelgestelde vragen over IgMatrix"
-  },
-  "Fingerprint Browser": {
-    "message": "Vingerafdrukbrowser"
   },
   "Follow TikMatrix Tutorial": {
     "message": "Volg TikMatrix-tutorial"
@@ -254,23 +143,11 @@
   "Follow these steps to get started with IgMatrix": {
     "message": "Volg deze stappen om aan de slag te gaan met IgMatrix"
   },
-  "For 7 Days": {
-    "message": "Voor 7 dagen"
-  },
   "Free": {
     "message": "Gratis"
   },
   "Frequently Asked Questions": {
     "message": "Veelgestelde vragen"
-  },
-  "Generate intelligent and contextual comments through ChatGPT API integration": {
-    "message": "Genereer intelligente en contextuele reacties via ChatGPT API-integratie"
-  },
-  "Generate unique videos from one source video": {
-    "message": "Genereer unieke video's uit één bronvideo"
-  },
-  "Get Started": {
-    "message": "Aan de slag"
   },
   "Get Support": {
     "message": "Krijg ondersteuning"
@@ -293,29 +170,17 @@
   "How to use?": {
     "message": "Hoe te gebruiken?"
   },
-  "Human Technical Support": {
-    "message": "Menselijke technische ondersteuning"
-  },
-  "Human-like Click Simulation": {
-    "message": "Mensachtige kliksimulatie"
-  },
   "If you are interested in our service, please contact us to get price.": {
     "message": "Als u geïnteresseerd bent in onze service, neem dan contact met ons op voor de prijs."
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
     "message": "Als u hulp nodig heeft met IgMatrix-specifieke functies of problemen ondervindt, staat ons ondersteuningsteam klaar om u te helpen."
   },
-  "IgMatrix": {
-    "message": "IgMatrix"
-  },
   "IgMatrix Features": {
     "message": "IgMatrix-functies"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
     "message": "IgMatrix en TikMatrix delen hetzelfde installatieproces en dezelfde gebruikersinterface. Het belangrijkste verschil is dat IgMatrix specifiek is ontworpen voor Instagram-automatisering, terwijl TikMatrix voor TikTok is. De scriptlogica en beschikbare functies zijn geoptimaliseerd voor elk respectievelijk platform."
-  },
-  "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely.": {
-    "message": "IgMatrix brengt dezelfde krachtige automatiseringsmogelijkheden van TikMatrix naar Instagram en helpt u uw Instagram-marketinginspanningen efficiënt en veilig op te schalen."
   },
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
     "message": "IgMatrix volgt een vergelijkbare prijsstructuur als TikMatrix, maar kan verschillende tarieven hebben. Controleer onze officiële prijspagina of neem contact op met ons ondersteuningsteam voor actuele IgMatrix-prijsinformatie."
@@ -353,9 +218,6 @@
   "Is the pricing the same as TikMatrix?": {
     "message": "Is de prijs hetzelfde als TikMatrix?"
   },
-  "Join Channel": {
-    "message": "Sluit je aan bij kanaal"
-  },
   "Join Group": {
     "message": "Sluit je aan bij groep"
   },
@@ -371,95 +233,17 @@
   "Mass direct messaging": {
     "message": "Massa-directe berichten"
   },
-  "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "Ma - Vr: 9:00 - 17:00 (UTC+8)"
-  },
-  "Monthly": {
-    "message": "Maandelijks"
-  },
   "Multi-Device Control": {
     "message": "Multi-apparaatbesturing"
   },
   "Multi-language support (English, Chinese, Russian)": {
     "message": "Meertalige ondersteuning (Engels, Chinees, Russisch)"
   },
-  "Natural Swipe Gestures": {
-    "message": "Natuurlijke veeggebaren"
-  },
-  "No Root Required": {
-    "message": "Geen root vereist"
-  },
-  "No root permissions needed, ensuring device environment security": {
-    "message": "Geen root-machtigingen nodig, waardoor de beveiliging van de apparaatomgeving wordt gewaarborgd"
-  },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "Niet alle TikMatrix-scripts zijn beschikbaar in IgMatrix, omdat ze platformspecifiek zijn. De exacte lijst met beschikbare scripts is te vinden in de IgMatrix-software-interface na installatie. Raadpleeg de daadwerkelijke functies die in uw software worden weergegeven."
   },
-  "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "Automatische verzameling van doelaccount-fanlijsten met één klik, kan worden gebruikt voor directe berichten"
-  },
-  "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "Automatisch account opwarmen met één klik in batch, ondersteunt zoeken op trefwoord, willekeurig volgen, liken, reageren en bladwijzer maken"
-  },
-  "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "Automatisch reageren op meerdere video's met één klik in batch met gespecificeerde scripts en willekeurige emoji's"
-  },
-  "One-click batch automatic direct messaging to multiple target users": {
-    "message": "Automatische directe berichten naar meerdere doelgebruikers met één klik in batch"
-  },
-  "One-click batch automatic follow of target accounts": {
-    "message": "Automatisch volgen van doelaccounts met één klik in batch"
-  },
-  "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "Automatisch inloggen op TikTok-accounts met één klik in batch, ondersteunt batch-import/export van accounts"
-  },
-  "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "Automatisch koppelen van ingelogde accounts met één klik in batch, geen handmatige binding nodig"
-  },
-  "One-click batch automatic posting, supports adding product links": {
-    "message": "Automatisch plaatsen met één klik in batch, ondersteunt het toevoegen van productlinks"
-  },
-  "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "Automatische registratie van TikTok-accounts met één klik in batch, ondersteunt zakelijke e-mail"
-  },
-  "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "Automatische instelling van avatars, bijnamen, handtekeningen, gebruikersnamen met één klik in batch"
-  },
-  "One-click download of videos from all video websites": {
-    "message": "Video's downloaden van alle videowebsites met één klik"
-  },
-  "One-click download of videos from the entire network": {
-    "message": "Video's downloaden van het hele netwerk met één klik"
-  },
-  "Open Source Client": {
-    "message": "Open source-client"
-  },
-  "Open source client code allows users to customize their own client": {
-    "message": "Open source-clientcode stelt gebruikers in staat hun eigen client aan te passen"
-  },
-  "Our Competitive Advantages": {
-    "message": "Onze concurrentievoordelen"
-  },
-  "Our Core Advantages": {
-    "message": "Onze kernvoordelen"
-  },
-  "Our Core Features": {
-    "message": "Onze kernfuncties"
-  },
-  "Our plans": {
-    "message": "Onze plannen"
-  },
-  "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "Ons eigen echte apparaatmatrixsysteem vermijdt perfect TikTok's risicocontrolemaatregelen, wat resulteert in een extreem laag accountopschortingspercentage."
-  },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "Ons ondersteuningsteam staat klaar om u te helpen met IgMatrix-gerelateerde vragen of problemen."
-  },
-  "Per Month": {
-    "message": "Per maand"
-  },
-  "Per Year": {
-    "message": "Per jaar"
   },
   "Performance analytics": {
     "message": "Prestatieanalyse"
@@ -485,23 +269,8 @@
   "Powerful TikTok Automation & Management Tools": {
     "message": "Krachtige TikTok-automatiserings- en beheertools"
   },
-  "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
-    "message": "Krachtig technisch team met realtime onderhoud en updates die scriptbetrouwbaarheid garanderen"
-  },
-  "Premium Benefits": {
-    "message": "Premium-voordelen"
-  },
   "Pricing": {
     "message": "Prijzen"
-  },
-  "Private Local Deployment": {
-    "message": "Privégevorderde lokale implementatie"
-  },
-  "Professional TikTok Account Management & Marketing Tool": {
-    "message": "Professioneel TikTok-accountbeheer- en marketingtool"
-  },
-  "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
-    "message": "Professioneel TikTok-accountbeheer- en marketingtool voor Windows en Mac"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "Professioneel TikTok-accountbeheer- en marketingtool ontworpen voor Android-telefoonboerderijen op Windows en Mac. Automatiseer het plaatsen, volgen en laat uw TikTok-aanwezigheid groeien met een nul accountopschortingspercentage."
@@ -514,9 +283,6 @@
   },
   "Quick Setup Guide": {
     "message": "Snelle installatiegids"
-  },
-  "Randomized script parameters to avoid behavior detection patterns": {
-    "message": "Willekeurige scriptparameters om gedragsdetectiepatronen te vermijden"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "Herken en koppel TikTok-accounts van telefoons om toe te voegen aan accountlijst"
@@ -536,26 +302,11 @@
   "Same reliable technology as TikMatrix": {
     "message": "Dezelfde betrouwbare technologie als TikMatrix"
   },
-  "Save 50% compared to monthly plan": {
-    "message": "Bespaar 50% vergeleken met maandelijks abonnement"
-  },
   "Schedule your Instagram activities with intelligent timing algorithms": {
     "message": "Plan uw Instagram-activiteiten met intelligente timingalgoritmen"
   },
-  "Scheduled Tasks": {
-    "message": "Geplande taken"
-  },
   "Scrape TikTok usernames from followers lists or keyword searches": {
     "message": "Verzamel TikTok-gebruikersnamen van volgerslijsten of trefwoordzoekopdrachten"
-  },
-  "Script Parameter Randomization": {
-    "message": "Scriptparameter randomisatie"
-  },
-  "Script engine simulates natural human clicking with randomized button offset": {
-    "message": "Scriptengine simuleert natuurlijke menselijke klikken met willekeurige knopverschuiving"
-  },
-  "Scripts run on computer to avoid mobile device detection": {
-    "message": "Scripts draaien op computer om detectie van mobiele apparaten te vermijden"
   },
   "Send messages to multiple TikTok accounts in bulk with personalized content": {
     "message": "Verzend berichten naar meerdere TikTok-accounts in bulk met gepersonaliseerde inhoud"
@@ -569,32 +320,17 @@
   "Shipping worldwide": {
     "message": "Wereldwijde verzending"
   },
-  "Simulates natural right-hand arc swipe trajectories like real human interaction": {
-    "message": "Simuleert natuurlijke rechterhands-boogveegtrajecten zoals echte menselijke interactie"
-  },
   "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
     "message": "Aangezien het installatieproces identiek is, raadpleegt u onze uitgebreide TikMatrix-documentatie voor gedetailleerde instructies over apparaatverbinding, accountbeheer en scriptconfiguratie."
   },
   "Smart Scheduling": {
     "message": "Slimme planning"
   },
-  "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
-    "message": "Begin vandaag met het automatiseren van uw Instagram-marketing met IgMatrix en ervaar dezelfde professionele tools die duizenden marketeers vertrouwen."
-  },
   "Still have questions?": {
     "message": "Nog vragen?"
   },
-  "Streamline your Android TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "Stroomlijn uw Android TikTok-telefoonboerderij met geavanceerde batch-besturing en marketingautomatisering"
-  },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "Stroomlijn uw Instagram-telefoonboerderij met geavanceerde batch-besturing en marketingautomatisering"
-  },
-  "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "Stroomlijn uw TikTok-telefoonboerderij met geavanceerde batch-besturing en marketingautomatisering"
-  },
-  "Strong technical support team with open community ecosystem": {
-    "message": "Sterk technisch ondersteuningsteam met open gemeenschapsecosysteem"
   },
   "Super Marketing": {
     "message": "Super marketing"
@@ -602,23 +338,11 @@
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "Ondersteunt 100+ telefoons spiegelen naar een computer, met gesynchroniseerde werking"
   },
-  "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Ondersteunt 200+ telefoons spiegelen naar een computer, met gesynchroniseerde werking"
-  },
-  "Supports work profile enterprise space for professional use": {
-    "message": "Ondersteunt werkprofielondernemingsruimte voor professioneel gebruik"
-  },
   "Technical Advantages": {
     "message": "Technische voordelen"
   },
   "Telegram": {
     "message": "Telegram"
-  },
-  "Telegram Support": {
-    "message": "Telegram-ondersteuning"
-  },
-  "Text input mimics human typing patterns with character-by-character simulation": {
-    "message": "Tekstinvoer bootst menselijke typpatronen na met karakter-voor-karakter simulatie"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
     "message": "De lengte en breedte zijn relatief groot, maar de hoogte is laag (2u-formaat)"
@@ -629,20 +353,8 @@
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
     "message": "De moederbordmachine bestaat uit 20 Samsung-telefoonmoederborden. Het schakelt automatisch in wanneer aangesloten op elektriciteit, deelt een uniforme stroomvoorziening, heeft een uniform multi-fan koelsysteem en uniforme USB-connectiviteit. Het ondersteunt ook OTG-bekabelde netwerkverbindingen."
   },
-  "TikMatrix": {
-    "message": "TikMatrix"
-  },
-  "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix levert ten minste 30% hogere betrokkenheid vergeleken met vergelijkbare producten, met geavanceerde real-device-technologie die volledige accountveiligheid garandeert."
-  },
-  "TikMatrix is a TikTok group control operation tool": {
-    "message": "TikMatrix is een TikTok groepsbesturingstool"
-  },
   "TikMatrix is a professional marketing software designed for TikTok phone farms": {
     "message": "TikMatrix is een professionele marketingsoftware ontworpen voor TikTok-telefoonboerderijen"
-  },
-  "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix is een professionele marketingsoftware ontworpen voor TikTok-telefoonboerderijen. Beheer meerdere accounts, automatiseer het plaatsen en schaal uw TikTok-marketing met gemak."
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
     "message": "TikMatrix ondersteunt 8 TikTok-accounts op elke telefoon."
@@ -659,23 +371,8 @@
   "Translate subtitles": {
     "message": "Ondertitels vertalen"
   },
-  "Trial": {
-    "message": "Proefperiode"
-  },
-  "Tutorial": {
-    "message": "Tutorial"
-  },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "Amerikaanse native niet-geactiveerde simkaart, gebruikt voor tiktok Android-app om simkaartlocatie te detecteren"
-  },
-  "Unlimited devices": {
-    "message": "Onbeperkt aantal apparaten"
-  },
-  "Unlimited devices, Customer support": {
-    "message": "Onbeperkt aantal apparaten, klantenondersteuning"
-  },
-  "Unlimited process tasks": {
-    "message": "Onbeperkt aantal procestaken"
   },
   "User engagement boost": {
     "message": "Gebruikersbetrokkenheidboost"
@@ -686,20 +383,8 @@
   "User scraping": {
     "message": "Gebruikers verzamelen"
   },
-  "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "Video Magic is een professionele videogeneratiesoftware ontworpen voor operators. Het kan unieke video's voor u genereren, waardoor de operationele efficiëntie aanzienlijk wordt verbeterd"
-  },
-  "Video Magic is a tool that can generate unique videos": {
-    "message": "Video Magic is een tool die unieke video's kan genereren"
-  },
-  "Video collection": {
-    "message": "Videoverzameling"
-  },
   "Video download": {
     "message": "Video downloaden"
-  },
-  "Video posting, Account nurturing": {
-    "message": "Video's plaatsen, account opwarmen"
   },
   "Video unique": {
     "message": "Unieke video"
@@ -734,18 +419,6 @@
   "Why Choose IgMatrix?": {
     "message": "Waarom IgMatrix kiezen?"
   },
-  "Why TikMatrix?": {
-    "message": "Waarom TikMatrix?"
-  },
-  "Work Profile Support": {
-    "message": "Werkprofielondersteuning"
-  },
-  "Working Hours": {
-    "message": "Werkuren"
-  },
-  "Yearly": {
-    "message": "Jaarlijks"
-  },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Ja! De installatietutorial voor IgMatrix is identiek aan TikMatrix. U kunt de TikMatrix-documentatie volgen voor installatie, apparaatverbinding en basisconfiguratie. Alleen de automatiseringsscripts zullen verschillen op basis van het platform."
   },
@@ -754,45 +427,6 @@
   },
   "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
     "message": "U kunt zowel IgMatrix als TikMatrix op dezelfde computer installeren, maar ze kunnen niet tegelijkertijd draaien vanwege runtime-conflicten. U kunt slechts één software tegelijkertijd uitvoeren - óf IgMatrix óf TikMatrix."
-  },
-  "advertising.back.home": {
-    "message": "Terug naar home"
-  },
-  "advertising.buy.accounts.description": {
-    "message": "Vind betrouwbare leveranciers van TikTok- en Instagram-accounts"
-  },
-  "advertising.buy.accounts.leadsmm.description": {
-    "message": "Betrouwbare leverancier van TikTok- en Instagram-accounts"
-  },
-  "advertising.buy.accounts.leadsmm.title": {
-    "message": "LeadsMM - TikTok/Instagram-accounts"
-  },
-  "advertising.buy.accounts.title": {
-    "message": "Accounts kopen"
-  },
-  "advertising.buy.hardware.description": {
-    "message": "Aanbevolen hardware voor telefoonboerderijbeheer"
-  },
-  "advertising.buy.hardware.title": {
-    "message": "Hardware kopen"
-  },
-  "advertising.category.accounts": {
-    "message": "Accounts"
-  },
-  "advertising.category.analytics": {
-    "message": "Analytics"
-  },
-  "advertising.category.hardware": {
-    "message": "Hardware"
-  },
-  "advertising.category.proxy": {
-    "message": "Proxy"
-  },
-  "advertising.category.verification": {
-    "message": "Verificatie"
-  },
-  "advertising.category.vps": {
-    "message": "VPS"
   },
   "advertising.disclaimer.content": {
     "message": "De aanbevolen producten en services op deze pagina worden geleverd door derden. We zijn niet verantwoordelijk voor de kwaliteit, prestaties of problemen met betrekking tot deze services."
@@ -806,44 +440,8 @@
   "advertising.page.title": {
     "message": "Aanbevolen bronnen"
   },
-  "advertising.proxy.proxycheap.description": {
-    "message": "Betaalbare en betrouwbare proxyservice"
-  },
-  "advertising.proxy.proxycheap.title": {
-    "message": "ProxyCheap - Proxyservice"
-  },
-  "advertising.proxy.thordata.description": {
-    "message": "Premium residentiële proxy's voor TikTok en Instagram"
-  },
-  "advertising.proxy.thordata.title": {
-    "message": "ThorData - Residentiële proxy's"
-  },
-  "advertising.tiktok.user.finder.description": {
-    "message": "Tool om TikTok-gebruikers te vinden en analyseren"
-  },
-  "advertising.tiktok.user.finder.title": {
-    "message": "TikTok User Finder"
-  },
   "advertising.visit.button": {
     "message": "Bezoek website"
-  },
-  "advertising.vps.lisahost.description": {
-    "message": "Hoogperformante VPS-service"
-  },
-  "advertising.vps.lisahost.title": {
-    "message": "LisaHost - VPS-service"
-  },
-  "advertising.vps.uuuvps.description": {
-    "message": "Betrouwbare VPS-oplossingen voor automatisering"
-  },
-  "advertising.vps.uuuvps.title": {
-    "message": "UUUVPS - VPS-oplossingen"
-  },
-  "advertising.whatsapp.checker.description": {
-    "message": "Controleer de geldigheid van WhatsApp-nummers"
-  },
-  "advertising.whatsapp.checker.title": {
-    "message": "WhatsApp Checker"
   },
   "download.description": {
     "message": "Download onze producten voor verschillende platforms"
@@ -1049,9 +647,6 @@
   "homepage.vs.title": {
     "message": "Waarom TikMatrix kiezen"
   },
-  "navbar.download": {
-    "message": "Downloaden"
-  },
   "pricing.all_features": {
     "message": "pricing.all_features"
   },
@@ -1063,9 +658,6 @@
   },
   "pricing.business.description": {
     "message": "pricing.business.description"
-  },
-  "pricing.business.manage_phones": {
-    "message": "pricing.business.manage_phones"
   },
   "pricing.business.name": {
     "message": "pricing.business.name"
@@ -1088,9 +680,6 @@
   "pricing.cta.pay": {
     "message": "Subscribe"
   },
-  "pricing.dedicated_support": {
-    "message": "pricing.dedicated_support"
-  },
   "pricing.free.all_free_features": {
     "message": "pricing.free.all_free_features"
   },
@@ -1109,9 +698,6 @@
   "pricing.free_label": {
     "message": "pricing.free_label"
   },
-  "pricing.get_started": {
-    "message": "Begin"
-  },
   "pricing.local_api.description": {
     "message": "pricing.local_api.description"
   },
@@ -1127,9 +713,6 @@
   "pricing.per_month": {
     "message": "per maand"
   },
-  "pricing.per_month_pc": {
-    "message": "pricing.per_month_pc"
-  },
   "pricing.per_year": {
     "message": "per jaar"
   },
@@ -1139,9 +722,6 @@
   "pricing.pro.description": {
     "message": "pricing.pro.description"
   },
-  "pricing.pro.manage_phones": {
-    "message": "pricing.pro.manage_phones"
-  },
   "pricing.pro.name": {
     "message": "pricing.pro.name"
   },
@@ -1150,9 +730,6 @@
   },
   "pricing.starter.description": {
     "message": "pricing.starter.description"
-  },
-  "pricing.starter.manage_phones": {
-    "message": "pricing.starter.manage_phones"
   },
   "pricing.starter.name": {
     "message": "pricing.starter.name"
@@ -1165,9 +742,6 @@
   },
   "pricing.team.description": {
     "message": "pricing.team.description"
-  },
-  "pricing.team.manage_phones": {
-    "message": "pricing.team.manage_phones"
   },
   "pricing.team.name": {
     "message": "pricing.team.name"
@@ -1381,269 +955,5 @@
   },
   "testimonials.user4.usage": {
     "message": "testimonials.user4.usage"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "theme.AnnouncementBar.closeButtonAriaLabel"
-  },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "theme.BackToTopButton.buttonAriaLabel"
-  },
-  "theme.CodeBlock.copied": {
-    "message": "theme.CodeBlock.copied"
-  },
-  "theme.CodeBlock.copy": {
-    "message": "theme.CodeBlock.copy"
-  },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "theme.CodeBlock.copyButtonAriaLabel"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "theme.CodeBlock.wordWrapToggle"
-  },
-  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "theme.DocSidebarItem.collapseCategoryAriaLabel"
-  },
-  "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "theme.DocSidebarItem.expandCategoryAriaLabel"
-  },
-  "theme.ErrorPageContent.title": {
-    "message": "theme.ErrorPageContent.title"
-  },
-  "theme.ErrorPageContent.tryAgain": {
-    "message": "theme.ErrorPageContent.tryAgain"
-  },
-  "theme.NavBar.navAriaLabel": {
-    "message": "theme.NavBar.navAriaLabel"
-  },
-  "theme.NotFound.p1": {
-    "message": "theme.NotFound.p1"
-  },
-  "theme.NotFound.p2": {
-    "message": "theme.NotFound.p2"
-  },
-  "theme.NotFound.title": {
-    "message": "theme.NotFound.title"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "theme.TOCCollapsible.toggleButtonLabel"
-  },
-  "theme.admonition.caution": {
-    "message": "theme.admonition.caution"
-  },
-  "theme.admonition.danger": {
-    "message": "theme.admonition.danger"
-  },
-  "theme.admonition.info": {
-    "message": "theme.admonition.info"
-  },
-  "theme.admonition.note": {
-    "message": "theme.admonition.note"
-  },
-  "theme.admonition.tip": {
-    "message": "theme.admonition.tip"
-  },
-  "theme.admonition.warning": {
-    "message": "theme.admonition.warning"
-  },
-  "theme.blog.archive.description": {
-    "message": "theme.blog.archive.description"
-  },
-  "theme.blog.archive.title": {
-    "message": "theme.blog.archive.title"
-  },
-  "theme.blog.paginator.navAriaLabel": {
-    "message": "theme.blog.paginator.navAriaLabel"
-  },
-  "theme.blog.paginator.newerEntries": {
-    "message": "theme.blog.paginator.newerEntries"
-  },
-  "theme.blog.paginator.olderEntries": {
-    "message": "theme.blog.paginator.olderEntries"
-  },
-  "theme.blog.post.paginator.navAriaLabel": {
-    "message": "theme.blog.post.paginator.navAriaLabel"
-  },
-  "theme.blog.post.paginator.newerPost": {
-    "message": "theme.blog.post.paginator.newerPost"
-  },
-  "theme.blog.post.paginator.olderPost": {
-    "message": "theme.blog.post.paginator.olderPost"
-  },
-  "theme.blog.post.plurals": {
-    "message": "theme.blog.post.plurals"
-  },
-  "theme.blog.post.readMore": {
-    "message": "theme.blog.post.readMore"
-  },
-  "theme.blog.post.readMoreLabel": {
-    "message": "theme.blog.post.readMoreLabel"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "theme.blog.post.readingTime.plurals"
-  },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "theme.blog.sidebar.navAriaLabel"
-  },
-  "theme.blog.tagTitle": {
-    "message": "theme.blog.tagTitle"
-  },
-  "theme.colorToggle.ariaLabel": {
-    "message": "theme.colorToggle.ariaLabel"
-  },
-  "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "theme.colorToggle.ariaLabel.mode.dark"
-  },
-  "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "theme.colorToggle.ariaLabel.mode.light"
-  },
-  "theme.common.editThisPage": {
-    "message": "theme.common.editThisPage"
-  },
-  "theme.common.headingLinkTitle": {
-    "message": "theme.common.headingLinkTitle"
-  },
-  "theme.common.skipToMainContent": {
-    "message": "theme.common.skipToMainContent"
-  },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "theme.docs.DocCard.categoryDescription.plurals"
-  },
-  "theme.docs.breadcrumbs.home": {
-    "message": "theme.docs.breadcrumbs.home"
-  },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "theme.docs.breadcrumbs.navAriaLabel"
-  },
-  "theme.docs.paginator.navAriaLabel": {
-    "message": "theme.docs.paginator.navAriaLabel"
-  },
-  "theme.docs.paginator.next": {
-    "message": "theme.docs.paginator.next"
-  },
-  "theme.docs.paginator.previous": {
-    "message": "theme.docs.paginator.previous"
-  },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "theme.docs.sidebar.closeSidebarButtonAriaLabel"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "theme.docs.sidebar.collapseButtonAriaLabel"
-  },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "theme.docs.sidebar.collapseButtonTitle"
-  },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "theme.docs.sidebar.expandButtonAriaLabel"
-  },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "theme.docs.sidebar.expandButtonTitle"
-  },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "theme.docs.sidebar.navAriaLabel"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "theme.docs.sidebar.toggleSidebarButtonAriaLabel"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "theme.docs.tagDocListPageTitle"
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "theme.docs.tagDocListPageTitle.nDocsTagged"
-  },
-  "theme.docs.versionBadge.label": {
-    "message": "theme.docs.versionBadge.label"
-  },
-  "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "theme.docs.versions.latestVersionLinkLabel"
-  },
-  "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "theme.docs.versions.latestVersionSuggestionLabel"
-  },
-  "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "theme.docs.versions.unmaintainedVersionLabel"
-  },
-  "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "theme.docs.versions.unreleasedVersionLabel"
-  },
-  "theme.footer.link.label.View All Advertising": {
-    "message": "Bekijk alle advertenties"
-  },
-  "theme.footer.link.label.View All Tools": {
-    "message": "Bekijk alle hulpmiddelen"
-  },
-  "theme.lastUpdated.atDate": {
-    "message": "theme.lastUpdated.atDate"
-  },
-  "theme.lastUpdated.byUser": {
-    "message": "theme.lastUpdated.byUser"
-  },
-  "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "theme.lastUpdated.lastUpdatedAtBy"
-  },
-  "theme.navbar.item.label.Advertising": {
-    "message": "Adverteren"
-  },
-  "theme.navbar.item.label.Tools": {
-    "message": "Hulpmiddelen"
-  },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "theme.navbar.mobileLanguageDropdown.label"
-  },
-  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel"
-  },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "theme.navbar.mobileVersionsDropdown.label"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "theme.tags.tagsListLabel"
-  },
-  "theme.tags.tagsPageLink": {
-    "message": "theme.tags.tagsPageLink"
-  },
-  "theme.tags.tagsPageTitle": {
-    "message": "theme.tags.tagsPageTitle"
-  },
-  "theme.unlistedContent.message": {
-    "message": "theme.unlistedContent.message"
-  },
-  "theme.unlistedContent.title": {
-    "message": "theme.unlistedContent.title"
-  },
-  "whitelabel.annualRequired": {
-    "message": "whitelabel.annualRequired"
-  },
-  "whitelabel.annualRequiredDesc": {
-    "message": "whitelabel.annualRequiredDesc"
-  },
-  "whitelabel.appName": {
-    "message": "whitelabel.appName"
-  },
-  "whitelabel.contactSupport": {
-    "message": "whitelabel.contactSupport"
-  },
-  "whitelabel.customization": {
-    "message": "whitelabel.customization"
-  },
-  "whitelabel.description": {
-    "message": "whitelabel.description"
-  },
-  "whitelabel.logo": {
-    "message": "whitelabel.logo"
-  },
-  "whitelabel.setup": {
-    "message": "whitelabel.setup"
-  },
-  "whitelabel.supportEmail": {
-    "message": "whitelabel.supportEmail"
-  },
-  "whitelabel.telegramUrl": {
-    "message": "whitelabel.telegramUrl"
-  },
-  "whitelabel.title": {
-    "message": "whitelabel.title"
-  },
-  "whitelabel.tutorialUrl": {
-    "message": "whitelabel.tutorialUrl"
   }
 }
