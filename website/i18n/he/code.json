@@ -119,9 +119,6 @@
   "Download TikMatrix": {
     "message": "הורדת TikMatrix"
   },
-  "Download VideoMagic": {
-    "message": "הורדת VideoMagic"
-  },
   "Download and Install": {
     "message": "הורדה והתקנה"
   },
@@ -389,12 +386,6 @@
   "Video unique": {
     "message": "Video unique"
   },
-  "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Batch Generating Unique Videos"
-  },
-  "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic is a Software for Batch Generating Unique Videos"
-  },
   "View TikMatrix Tutorial": {
     "message": "View TikMatrix Tutorial"
   },
@@ -553,15 +544,6 @@
   },
   "download.title": {
     "message": "הורד את TikMatrix"
-  },
-  "download.videomagic.description": {
-    "message": "download.videomagic.description"
-  },
-  "download.videomagic.subtitle": {
-    "message": "download.videomagic.subtitle"
-  },
-  "download.videomagic.title": {
-    "message": "download.videomagic.title"
   },
   "download.windows.button": {
     "message": "download.windows.button"

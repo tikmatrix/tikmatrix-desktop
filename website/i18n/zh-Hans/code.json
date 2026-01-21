@@ -119,9 +119,6 @@
   "Download TikMatrix": {
     "message": "下载 TikMatrix"
   },
-  "Download VideoMagic": {
-    "message": "下载 VideoMagic"
-  },
   "Download and Install": {
     "message": "下载并安装"
   },
@@ -389,12 +386,6 @@
   "Video unique": {
     "message": "视频生成"
   },
-  "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - 批量生成唯一视频"
-  },
-  "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic是一款用于批量生成唯一视频的软件"
-  },
   "View TikMatrix Tutorial": {
     "message": "查看TikMatrix教程"
   },
@@ -553,15 +544,6 @@
   },
   "download.title": {
     "message": "下载 TikMatrix"
-  },
-  "download.videomagic.description": {
-    "message": "下载 VideoMagic 的 Windows、Mac 和 Linux 版本"
-  },
-  "download.videomagic.subtitle": {
-    "message": "选择您的平台下载 VideoMagic"
-  },
-  "download.videomagic.title": {
-    "message": "下载 VideoMagic"
   },
   "download.windows.button": {
     "message": "下载 Windows 版本"

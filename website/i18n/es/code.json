@@ -119,9 +119,6 @@
   "Download TikMatrix": {
     "message": "Descargar TikMatrix"
   },
-  "Download VideoMagic": {
-    "message": "Descargar VideoMagic"
-  },
   "Download and Install": {
     "message": "Descargar e instalar"
   },
@@ -389,12 +386,6 @@
   "Video unique": {
     "message": "Video único"
   },
-  "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Generación masiva de videos únicos"
-  },
-  "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic es un software para generación masiva de videos únicos"
-  },
   "View TikMatrix Tutorial": {
     "message": "Ver tutorial de TikMatrix"
   },
@@ -553,15 +544,6 @@
   },
   "download.title": {
     "message": "Descargar TikMatrix"
-  },
-  "download.videomagic.description": {
-    "message": "Descarga VideoMagic para Windows, Mac o Linux y comienza a generar videos únicos"
-  },
-  "download.videomagic.subtitle": {
-    "message": "Software profesional de generación de videos para operadores"
-  },
-  "download.videomagic.title": {
-    "message": "Descargar VideoMagic"
   },
   "download.windows.button": {
     "message": "Descargar para Windows"

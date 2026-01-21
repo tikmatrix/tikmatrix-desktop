@@ -22,7 +22,7 @@ export default function AboutUs() {
                     <ul>
                         <li><strong>TikMatrix</strong> - أداة احترافية لإدارة وتسويق حسابات TikTok</li>
                         <li><strong>IgMatrix</strong> - حل تسويق وإدارة حسابات Instagram</li>
-                        <li><strong>VideoMagic</strong> - أداة إنشاء وتحسين محتوى الفيديو</li>
+                        <li><strong><a href="https://v.tikmatrix.com" target="_blank" rel="noopener noreferrer">VideoMagic</a></strong> - أداة إنشاء وتحسين محتوى الفيديو</li>
                         <li><strong>YtMatrix</strong> - منصة نمو وإدارة قنوات YouTube</li>
                     </ul>
 
