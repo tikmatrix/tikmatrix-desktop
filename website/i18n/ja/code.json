@@ -120,7 +120,7 @@
     "message": "カスタムInstagramワークフロー"
   },
   "Dedicated ticket support": {
-    "message": "Soporte por tickets"
+    "message": "専用チケットサポート"
   },
   "Device connection": {
     "message": "デバイス接続"
@@ -156,7 +156,7 @@
     "message": "メール"
   },
   "Features": {
-    "message": "Funciones"
+    "message": "機能"
   },
   "Find answers to common questions about IgMatrix": {
     "message": "Encuentra respuestas a preguntas frecuentes sobre IgMatrix"
@@ -222,7 +222,7 @@
     "message": "Si necesitas ayuda con funciones específicas de IgMatrix o encuentras algún problema, nuestro equipo de soporte está listo para asistirte."
   },
   "IgMatrix Features": {
-    "message": "Funciones de IgMatrix"
+    "message": "IgMatrix機能"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
     "message": "IgMatrixとTikMatrixは同じセットアッププロセスとユーザーインターフェースを共有しています。主な違いは、IgMatrixがInstagram自動化専用に設計されているのに対し、TikMatrixはTikTok用であることです。スクリプトロジックと利用可能な機能は、それぞれのプラットフォームに最適化されています。"
@@ -315,7 +315,7 @@
     "message": "Reflejopantallateléfono a computadora"
   },
   "Platform-optimized features": {
-    "message": "Funciones optimizadas para la plataforma"
+    "message": "プラットフォーム最適化機能"
   },
   "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
     "message": "スクリプトリストを直接表示するには、IgMatrixをダウンロードしてください。現在、すべてのTikMatrixスクリプトがIgMatrixで100%サポートされているわけではありません。ソフトウェアの実際の機能を参照してください。"
