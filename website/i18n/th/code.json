@@ -3,16 +3,16 @@
     "message": "24/7 Support"
   },
   "Account management": {
-    "message": "Account management"
+    "message": "การจัดการบัญชี"
   },
   "Account warmup": {
-    "message": "Account warmup"
+    "message": "การอุ่นบัญชี"
   },
   "Advanced safety mechanisms": {
-    "message": "Advanced safety mechanisms"
+    "message": "กลไกความปลอดภัยขั้นสูง"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix."
+    "message": "หลังการติดตั้ง เปิด IgMatrix เพื่อดูรายการสคริปต์อัตโนมัติ Instagram ที่มีอยู่ทั้งหมด การเลือกสคริปต์อาจแตกต่างจาก TikMatrix"
   },
   "All basic features (automation excluded)": {
     "message": "pricing.free.all_free_features"
@@ -21,31 +21,31 @@
     "message": "pricing.all_features"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram."
+    "message": "ตรวจสอบคุณสมบัติจริงที่มีในซอฟต์แวร์ IgMatrix ของคุณเสมอ เนื่องจากฟังก์ชันสคริปต์อาจแตกต่างจาก TikMatrix อินเทอร์เฟซซอฟต์แวร์จะแสดงสคริปต์อัตโนมัติที่มีสำหรับ Instagram ได้อย่างแน่ชัด"
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "Automate posting, following, commenting, and engagement activities on Instagram"
+    "message": "ทำให้การโพสต์ การติดตาม การแสดงความคิดเห็น และกิจกรรมการมีส่วนร่วมบน Instagram เป็นอัตโนมัติ"
   },
   "Automatic account matching": {
-    "message": "Automatic account matching"
+    "message": "การจับคู่บัญชีอัตโนมัติ"
   },
   "Automatic account nurturing": {
-    "message": "Automatic account nurturing"
+    "message": "การดูแลบัญชีอัตโนมัติ"
   },
   "Automatic commenting": {
-    "message": "Automatic commenting"
+    "message": "การแสดงความคิดเห็นอัตโนมัติ"
   },
   "Automatic following": {
-    "message": "Automatic following"
+    "message": "การติดตามอัตโนมัติ"
   },
   "Automatic login": {
-    "message": "Automatic login"
+    "message": "การเข้าสู่ระบบอัตโนมัติ"
   },
   "Automatic posting": {
-    "message": "Automatic posting"
+    "message": "การโพสต์อัตโนมัติ"
   },
   "Automatic profile setup": {
-    "message": "Automatic profile setup"
+    "message": "การตั้งค่าโปรไฟล์อัตโนมัติ"
   },
   "Automation tasks": {
     "message": "pricing.compare.automation"
@@ -54,43 +54,43 @@
     "message": "ปิดใช้งานระบบอัตโนมัติ"
   },
   "Basic configuration": {
-    "message": "Basic configuration"
+    "message": "การกำหนดค่าพื้นฐาน"
   },
   "Batch Generating Unique Videos": {
-    "message": "Batch Generating Unique Videos"
+    "message": "การสร้างวิดีโอที่ไม่ซ้ำแบบแบทช์"
   },
   "Batch account management": {
-    "message": "Batch account management"
+    "message": "การจัดการบัญชีแบบแบทช์"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "Batch login to TikTok accounts with account list management"
+    "message": "เข้าสู่ระบบบัญชี TikTok แบบแบทช์พร้อมการจัดการรายการบัญชี"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Boost engagement on specific comments by liking and replying to them in bulk"
+    "message": "เพิ่มการมีส่วนร่วมในความคิดเห็นเฉพาะโดยการกดถูกใจและตอบกลับแบบจำนวนมาก"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
-    "message": "Built with safety mechanisms to protect your Instagram accounts from suspension"
+    "message": "สร้างขึ้นด้วยกลไกความปลอดภัยเพื่อปกป้องบัญชี Instagram ของคุณจากการระงับ"
   },
   "Business": {
     "message": "pricing.business.name"
   },
   "Buy hardware": {
-    "message": "Buy hardware"
+    "message": "ซื้อฮาร์ดแวร์"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
-    "message": "Can I run both IgMatrix and TikMatrix on the same computer?"
+    "message": "ฉันสามารถรัน IgMatrix และ TikMatrix บนคอมพิวเตอร์เครื่องเดียวกันได้หรือไม่"
   },
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-    "message": "Can I use the same tutorial for both IgMatrix and TikMatrix?"
+    "message": "ฉันสามารถใช้คู่มือเดียวกันสำหรับทั้ง IgMatrix และ TikMatrix ได้หรือไม่"
   },
   "Check Available Scripts": {
-    "message": "Check Available Scripts"
+    "message": "ตรวจสอบสคริปต์ที่มีอยู่"
   },
   "Comment boost": {
-    "message": "Comment boost"
+    "message": "เพิ่มความคิดเห็น"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "Comment on multiple TikTok posts in bulk with customizable content and emojis"
+    "message": "แสดงความคิดเห็นในโพสต์ TikTok หลายรายการพร้อมกันด้วยเนื้อหาและอีโมจิที่ปรับแต่งได้"
   },
   "Community support": {
     "message": "pricing.free.community_support"
