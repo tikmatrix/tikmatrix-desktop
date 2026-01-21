@@ -6,7 +6,7 @@ import 'boxicons/css/boxicons.min.css';
 import './YtMatrix.css'
 import Translate, { translate } from '@docusaurus/Translate';
 import Head from '@docusaurus/Head';
-export default function VideoMagic() {
+export default function YtMatrix() {
   useEffect(() => {
     AOS.init({
       duration: 1000, // 动画持续时间，单位毫秒

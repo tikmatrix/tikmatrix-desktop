@@ -22,7 +22,7 @@ export default function AboutUs() {
                     <ul>
                         <li><strong>TikMatrix</strong> - Gestion professionnelle de comptes TikTok et outil de marketing</li>
                         <li><strong>IgMatrix</strong> - Solution de marketing et gestion de comptes Instagram</li>
-                        <li><strong>VideoMagic</strong> - Outil de création et d'optimisation de contenu vidéo</li>
+                        <li><strong><a href="https://v.tikmatrix.com" target="_blank" rel="noopener noreferrer">VideoMagic</a></strong> - Outil de création et d'optimisation de contenu vidéo</li>
                         <li><strong>YtMatrix</strong> - Plateforme de croissance et gestion de chaînes YouTube</li>
                     </ul>
 

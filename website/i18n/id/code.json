@@ -119,9 +119,6 @@
   "Download TikMatrix": {
     "message": "Unduh TikMatrix"
   },
-  "Download VideoMagic": {
-    "message": "Unduh VideoMagic"
-  },
   "Download and Install": {
     "message": "Unduh dan Instal"
   },
@@ -389,12 +386,6 @@
   "Video unique": {
     "message": "Pembuatan video"
   },
-  "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Pembuatan Video Unik secara Massal"
-  },
-  "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic adalah Perangkat Lunak untuk Pembuatan Video Unik secara Massal"
-  },
   "View TikMatrix Tutorial": {
     "message": "Lihat Tutorial TikMatrix"
   },
@@ -553,15 +544,6 @@
   },
   "download.title": {
     "message": "Unduh TikMatrix"
-  },
-  "download.videomagic.description": {
-    "message": "Unduh VideoMagic untuk Windows, Mac, dan Linux"
-  },
-  "download.videomagic.subtitle": {
-    "message": "Pilih platform Anda untuk mengunduh VideoMagic"
-  },
-  "download.videomagic.title": {
-    "message": "Unduh VideoMagic"
   },
   "download.windows.button": {
     "message": "Unduh Versi Windows"

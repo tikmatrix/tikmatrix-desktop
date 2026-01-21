@@ -119,9 +119,6 @@
   "Download TikMatrix": {
     "message": "Download TikMatrix"
   },
-  "Download VideoMagic": {
-    "message": "Download VideoMagic"
-  },
   "Download and Install": {
     "message": "Downloaden en installeren"
   },
@@ -389,12 +386,6 @@
   "Video unique": {
     "message": "Unieke video"
   },
-  "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Batch unieke video's genereren"
-  },
-  "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic is een software voor het batchgewijs genereren van unieke video's"
-  },
   "View TikMatrix Tutorial": {
     "message": "Bekijk TikMatrix-tutorial"
   },
@@ -553,15 +544,6 @@
   },
   "download.title": {
     "message": "Download"
-  },
-  "download.videomagic.description": {
-    "message": "AI-aangedreven videocreatie- en bewerkingstool"
-  },
-  "download.videomagic.subtitle": {
-    "message": "Gratis videogeneratietool"
-  },
-  "download.videomagic.title": {
-    "message": "VideoMagic"
   },
   "download.windows.button": {
     "message": "Download voor Windows"

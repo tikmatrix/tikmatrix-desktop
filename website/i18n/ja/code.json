@@ -119,9 +119,6 @@
   "Download TikMatrix": {
     "message": "TikMatrixをダウンロード"
   },
-  "Download VideoMagic": {
-    "message": "VideoMagicをダウンロード"
-  },
   "Download and Install": {
     "message": "ダウンロードとインストール"
   },
@@ -389,12 +386,6 @@
   "Video unique": {
     "message": "Video único"
   },
-  "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - ユニーク動画の一括生成"
-  },
-  "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic es un software para generación masiva de videos únicos"
-  },
   "View TikMatrix Tutorial": {
     "message": "Ver tutorialTikMatrix"
   },
@@ -553,15 +544,6 @@
   },
   "download.title": {
     "message": "TikMatrixをダウンロード"
-  },
-  "download.videomagic.description": {
-    "message": "Windows、Mac、Linux向けのVideoMagicをダウンロードして、独自の動画作成を始めましょう。"
-  },
-  "download.videomagic.subtitle": {
-    "message": "オペレーター向けのプロ用ビデオ生成ソフトウェア"
-  },
-  "download.videomagic.title": {
-    "message": "VideoMagicをダウンロード"
   },
   "download.windows.button": {
     "message": "Windows用ダウンロード"

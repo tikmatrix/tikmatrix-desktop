@@ -119,9 +119,6 @@
   "Download TikMatrix": {
     "message": "تحميل TikMatrix"
   },
-  "Download VideoMagic": {
-    "message": "تحميل VideoMagic"
-  },
   "Download and Install": {
     "message": "التحميل والتثبيت"
   },
@@ -389,12 +386,6 @@
   "Video unique": {
     "message": "فيديو فريد"
   },
-  "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - توليد مقاطع فيديو فريدة بشكل جماعي"
-  },
-  "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic هو برنامج لتوليد مقاطع فيديو فريدة بشكل جماعي"
-  },
   "View TikMatrix Tutorial": {
     "message": "عرض برنامج TikMatrix التعليمي"
   },
@@ -553,15 +544,6 @@
   },
   "download.title": {
     "message": "تحميل TikMatrix"
-  },
-  "download.videomagic.description": {
-    "message": "أداة توليد فيديو مدعومة بالذكاء الاصطناعي"
-  },
-  "download.videomagic.subtitle": {
-    "message": "أنشئ مقاطع فيديو فريدة بتعليقات صوتية بالذكاء الاصطناعي وترجمات"
-  },
-  "download.videomagic.title": {
-    "message": "تحميل VideoMagic"
   },
   "download.windows.button": {
     "message": "تحميل لـ Windows"
