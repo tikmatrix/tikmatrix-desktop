@@ -955,5 +955,11 @@
   },
   "testimonials.user4.usage": {
     "message": "80アカウント管理"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} posts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} min read"
   }
 }

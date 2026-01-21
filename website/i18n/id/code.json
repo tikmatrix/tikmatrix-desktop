@@ -955,5 +955,11 @@
   },
   "testimonials.user4.usage": {
     "message": "8 bulan"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} posting"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Waktu baca {readingTime} menit"
   }
 }

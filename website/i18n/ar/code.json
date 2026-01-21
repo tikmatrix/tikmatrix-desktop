@@ -955,5 +955,11 @@
   },
   "testimonials.user4.usage": {
     "message": "50 حساب TikTok"
+  },
+  "theme.blog.post.plurals": {
+    "message": "منشور واحد|{count} منشورات"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} دقيقة قراءة"
   }
 }

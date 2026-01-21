@@ -955,5 +955,11 @@
   },
   "testimonials.user4.usage": {
     "message": "8个月"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} 篇博文"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "阅读需 {readingTime} 分钟"
   }
 }

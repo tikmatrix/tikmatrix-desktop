@@ -955,5 +955,11 @@
   },
   "testimonials.user4.usage": {
     "message": "8 Monate"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Ein Beitrag|{count} Beiträge"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} Minuten Lesezeit"
   }
 }

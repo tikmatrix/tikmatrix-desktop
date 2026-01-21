@@ -955,5 +955,11 @@
   },
   "testimonials.user4.usage": {
     "message": "8 месяцев"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} постов"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} мин чтения"
   }
 }

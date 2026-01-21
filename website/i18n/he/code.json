@@ -955,5 +955,11 @@
   },
   "testimonials.user4.usage": {
     "message": "testimonials.user4.usage"
+  },
+  "theme.blog.post.plurals": {
+    "message": "פוסט אחד|{count} פוסטים"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "דקת קריאה אחת|{readingTime} דקות קריאה"
   }
 }

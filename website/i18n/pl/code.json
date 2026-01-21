@@ -955,5 +955,11 @@
   },
   "testimonials.user4.usage": {
     "message": "testimonials.user4.usage"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} postów"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Czas czytania {readingTime} min"
   }
 }

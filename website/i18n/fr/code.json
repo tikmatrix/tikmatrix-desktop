@@ -1,231 +1,816 @@
 {
-  "tech.point.passiveCapture.b1": {
-    "message": "tech.point.passiveCapture.b1"
-  },
-  "advertising.page.subtitle": {
-    "message": "advertising.page.subtitle"
-  },
-  "download.subtitle": {
-    "message": "Choisissez votre plateforme pour télécharger TikMatrix"
-  },
-  "Same Setup Process": {
-    "message": "Même processus d'installation"
-  },
-  "tech.diagram.zeroCloud": {
-    "message": "tech.diagram.zeroCloud"
-  },
-  "pricing.free.description": {
-    "message": "Idéal pour les débutants"
-  },
-  "Set up account profiles including avatars, nicknames, signatures, and usernames": {
-    "message": "Configurez les profils de compte (avatar, pseudo, signature et nom d'utilisateur)"
-  },
-  "pricing.compare.show": {
-    "message": "pricing.compare.show"
-  },
-  "Supports 100+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Prend en charge la mise en miroir de plus de 100 téléphones vers un ordinateur, avec une opération synchronisée"
-  },
-  "testimonials.user2.text": {
-    "message": "testimonials.user2.text"
-  },
-  "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-    "message": "Optimisez votre ferme de téléphones Instagram grâce à un contrôle par lots avancé et à l'automatisation du marketing"
-  },
-  "pricing.team.concurrent_tasks": {
-    "message": "pricing.team.concurrent_tasks"
-  },
-  "Same reliable technology as TikMatrix": {
-    "message": "Même technologie fiable que TikMatrix"
-  },
-  "tech.point.zeroApi.title": {
-    "message": "tech.point.zeroApi.title"
-  },
-  "tech.security.legendB": {
-    "message": "tech.security.legendB"
-  },
-  "Contact Support": {
-    "message": "Contacter le support"
-  },
-  "homepage.vs.card.plug.title": {
-    "message": "Facile à installer"
-  },
-  "IgMatrix Features": {
-    "message": "IgMatrix Features"
-  },
-  "download.description": {
-    "message": "Téléchargez TikMatrix pour Windows, Mac et Linux"
-  },
-  "Remove posts based on their view count for content optimization": {
-    "message": "Remove posts based on their view count for content optimization"
-  },
-  "tech.diagram.localExecution": {
-    "message": "tech.diagram.localExecution"
-  },
-  "tech.diagram.fingerprintIsolation": {
-    "message": "tech.diagram.fingerprintIsolation"
+  "24/7 Support": {
+    "message": "Support 24/7"
   },
   "Account management": {
     "message": "Gestion des comptes"
   },
-  "Batch Generating Unique Videos": {
-    "message": "Batch Generating Unique Videos"
+  "Account warmup": {
+    "message": "Préparation du compte"
   },
-  "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
-    "message": "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation."
+  "Advanced safety mechanisms": {
+    "message": "Mécanismes de sécurité avancés"
   },
-  "homepage.vs.subtitle": {
-    "message": "Une solution d'automatisation puissante pour étendre votre présence sur les réseaux sociaux"
+  "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
+    "message": "Après l'installation, ouvrez IgMatrix pour voir la liste complète des scripts d'automatisation Instagram disponibles. La sélection de scripts peut différer de TikMatrix."
   },
-  "The length and width are relatively small, but the height is high": {
-    "message": "The length and width are relatively small, but the height is high"
+  "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
+    "message": "Vérifiez toujours les fonctionnalités réelles disponibles dans votre logiciel IgMatrix, car les fonctionnalités de script peuvent varier par rapport à TikMatrix. L'interface du logiciel vous montrera exactement quels scripts d'automatisation sont disponibles pour Instagram."
   },
-  "testimonials.user3.usage": {
-    "message": "testimonials.user3.usage"
+  "Automate posting, following, commenting, and engagement activities on Instagram": {
+    "message": "Automatisez la publication, le suivi, les commentaires et les activités d'engagement sur Instagram"
   },
-  "tech.security.legendA": {
-    "message": "tech.security.legendA"
-  },
-  "pricing.local_api.description": {
-    "message": "pricing.local_api.description"
-  },
-  "Why Choose IgMatrix?": {
-    "message": "Why Choose IgMatrix?"
+  "Automatic account matching": {
+    "message": "Correspondance automatique de comptes"
   },
   "Automatic account nurturing": {
     "message": "Préparation automatique du compte"
   },
-  "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections."
+  "Automatic commenting": {
+    "message": "Commentaires automatiques"
   },
-  "pricing.starter.name": {
-    "message": "pricing.starter.name"
+  "Automatic following": {
+    "message": "Suivi automatique"
   },
-  "tech.diagram.devices": {
-    "message": "tech.diagram.devices"
+  "Automatic login": {
+    "message": "Connexion automatique"
   },
-  "Download for Windows": {
-    "message": "Télécharger pour Windows"
+  "Automatic posting": {
+    "message": "Publication automatique"
   },
-  "24/7 Support": {
-    "message": "Support 24/7"
+  "Automatic profile setup": {
+    "message": "Configuration automatique du profil"
   },
-  "Features": {
-    "message": "Fonctionnalités"
+  "Basic configuration": {
+    "message": "Basic configuration"
   },
-  "download.requirements.storage": {
-    "message": "Stockage : 500 Mo d'espace disponible"
+  "Batch Generating Unique Videos": {
+    "message": "Batch Generating Unique Videos"
+  },
+  "Batch account management": {
+    "message": "Batch account management"
+  },
+  "Batch login to TikTok accounts with account list management": {
+    "message": "Batch login to TikTok accounts with account list management"
+  },
+  "Boost engagement on specific comments by liking and replying to them in bulk": {
+    "message": "Boost engagement on specific comments by liking and replying to them in bulk"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Built with safety mechanisms to protect your Instagram accounts from suspension"
   },
-  "pricing.toggle.monthly": {
-    "message": "pricing.toggle.monthly"
+  "Buy hardware": {
+    "message": "Buy hardware"
   },
-  "download.videomagic.title": {
-    "message": "download.videomagic.title"
+  "Can I run both IgMatrix and TikMatrix on the same computer?": {
+    "message": "Can I run both IgMatrix and TikMatrix on the same computer?"
   },
-  "TikMatrix supports up to 200+ devices.": {
-    "message": "TikMatrix supports up to 200+ devices."
+  "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
+    "message": "Can I use the same tutorial for both IgMatrix and TikMatrix?"
   },
-  "Get Support": {
-    "message": "Obtenir de l'aide"
-  },
-  "pricing.subtitle": {
-    "message": "pricing.subtitle"
-  },
-  "tech.diagram.tiktok": {
-    "message": "tech.diagram.tiktok"
-  },
-  "tech.security.noiseCurve": {
-    "message": "tech.security.noiseCurve"
-  },
-  "download.igmatrix.requirements.memory": {
-    "message": "download.igmatrix.requirements.memory"
-  },
-  "Powerful Instagram automation tools designed for professional marketers and businesses": {
-    "message": "Powerful Instagram automation tools designed for professional marketers and businesses"
-  },
-  "pricing.free.community_support": {
-    "message": "pricing.free.community_support"
-  },
-  "download.igmatrix.linux.development": {
-    "message": "download.igmatrix.linux.development"
-  },
-  "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
-  },
-  "tech.point.realTouch.b3": {
-    "message": "tech.point.realTouch.b3"
+  "Check Available Scripts": {
+    "message": "Check Available Scripts"
   },
   "Comment boost": {
     "message": "Comment boost"
   },
-  "download.videomagic.description": {
-    "message": "download.videomagic.description"
+  "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
+    "message": "Comment on multiple TikTok posts in bulk with customizable content and emojis"
   },
-  "Multi-language support (English, Chinese, Russian)": {
-    "message": "Multi-language support (English, Chinese, Russian)"
+  "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
+    "message": "Comprehensive automation combining multiple engagement strategies with AI-generated comments"
   },
-  "tech.point.localExec.b2": {
-    "message": "tech.point.localExec.b2"
+  "Contact": {
+    "message": "Contact"
   },
-  "testimonials.user3.text": {
-    "message": "testimonials.user3.text"
+  "Contact Support": {
+    "message": "Contacter le support"
   },
-  "download.igmatrix.requirements.processor": {
-    "message": "download.igmatrix.requirements.processor"
-  },
-  "Email": {
-    "message": "Email"
-  },
-  "tech.title": {
-    "message": "tech.title"
-  },
-  "pricing.local_api.link_text": {
-    "message": "pricing.local_api.link_text"
-  },
-  "Automatic commenting": {
-    "message": "Commentaires automatiques"
-  },
-  "tech.point.localExec.b3": {
-    "message": "tech.point.localExec.b3"
-  },
-  "download.videomagic.subtitle": {
-    "message": "download.videomagic.subtitle"
-  },
-  "testimonials.subtitle": {
-    "message": "testimonials.subtitle"
-  },
-  "tech.security.proxyIsolation": {
-    "message": "tech.security.proxyIsolation"
-  },
-  "pricing.unlimited_devices": {
-    "message": "pricing.unlimited_devices"
-  },
-  "User interface": {
-    "message": "User interface"
-  },
-  "tech.security.noHook": {
-    "message": "tech.security.noHook"
-  },
-  "pricing.unlimited_devices_short": {
-    "message": "pricing.unlimited_devices_short"
-  },
-  "tech.point.localExec.title": {
-    "message": "tech.point.localExec.title"
+  "Contact to purchase": {
+    "message": "Contact to purchase"
   },
   "Control farm accounts to watch, like, and comment on target live streams": {
     "message": "Control farm accounts to watch, like, and comment on target live streams"
   },
-  "pricing.title": {
-    "message": "pricing.title"
+  "Control multiple Instagram accounts across different Android devices simultaneously": {
+    "message": "Control multiple Instagram accounts across different Android devices simultaneously"
+  },
+  "Custom Instagram workflows": {
+    "message": "Custom Instagram workflows"
+  },
+  "Device connection": {
+    "message": "Device connection"
+  },
+  "Different Script Logic": {
+    "message": "Different Script Logic"
+  },
+  "Different script availability": {
+    "message": "Different script availability"
+  },
+  "Do I need separate licenses for IgMatrix and TikMatrix?": {
+    "message": "Do I need separate licenses for IgMatrix and TikMatrix?"
+  },
+  "Download IgMatrix": {
+    "message": "Download IgMatrix"
+  },
+  "Download IgMatrix from our official website and follow the installation instructions.": {
+    "message": "Download IgMatrix from our official website and follow the installation instructions."
+  },
+  "Download TikMatrix": {
+    "message": "Download TikMatrix"
+  },
+  "Download VideoMagic": {
+    "message": "Download VideoMagic"
+  },
+  "Download and Install": {
+    "message": "Download and Install"
+  },
+  "Download for Windows": {
+    "message": "Télécharger pour Windows"
+  },
+  "Email": {
+    "message": "Email"
+  },
+  "Features": {
+    "message": "Fonctionnalités"
+  },
+  "Find answers to common questions about IgMatrix": {
+    "message": "Find answers to common questions about IgMatrix"
+  },
+  "Follow TikMatrix Tutorial": {
+    "message": "Follow TikMatrix Tutorial"
+  },
+  "Follow these steps to get started with IgMatrix": {
+    "message": "Follow these steps to get started with IgMatrix"
+  },
+  "Free": {
+    "message": "Free"
+  },
+  "Frequently Asked Questions": {
+    "message": "Frequently Asked Questions"
+  },
+  "Get Support": {
+    "message": "Obtenir de l'aide"
+  },
+  "Get dedicated support from our expert team whenever you need help": {
+    "message": "Get dedicated support from our expert team whenever you need help"
+  },
+  "Go to the \"Download\" page and download the latest version of TikMatrix.": {
+    "message": "Go to the \"Download\" page and download the latest version of TikMatrix."
+  },
+  "Here are some frequently asked questions.": {
+    "message": "Here are some frequently asked questions."
+  },
+  "How many TikTok accounts can each phone log into?": {
+    "message": "How many TikTok accounts can each phone log into?"
+  },
+  "How many devices can I manage?": {
+    "message": "How many devices can I manage?"
+  },
+  "How to use?": {
+    "message": "How to use?"
+  },
+  "If you are interested in our service, please contact us to get price.": {
+    "message": "If you are interested in our service, please contact us to get price."
+  },
+  "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
+    "message": "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you."
+  },
+  "IgMatrix Features": {
+    "message": "IgMatrix Features"
+  },
+  "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
+    "message": "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform."
+  },
+  "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
+    "message": "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information."
+  },
+  "IgMatrix is a Instagram android phonefarm batch control tool": {
+    "message": "IgMatrix is a Instagram android phonefarm batch control tool"
+  },
+  "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
+    "message": "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation."
+  },
+  "Important Notice": {
+    "message": "Important Notice"
+  },
+  "Important Reminder": {
+    "message": "Important Reminder"
+  },
+  "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
+    "message": "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk"
+  },
+  "Increase user engagement by following or unfollowing accounts in bulk": {
+    "message": "Increase user engagement by following or unfollowing accounts in bulk"
+  },
+  "Instagram Automation": {
+    "message": "Instagram Automation"
+  },
+  "Instagram Phone Farm Batch Control Tool": {
+    "message": "Instagram Phone Farm Batch Control Tool"
+  },
+  "Instagram-optimized automation scripts": {
+    "message": "Instagram-optimized automation scripts"
+  },
+  "Instagram-specific automation": {
+    "message": "Instagram-specific automation"
+  },
+  "Is the pricing the same as TikMatrix?": {
+    "message": "Is the pricing the same as TikMatrix?"
+  },
+  "Join Group": {
+    "message": "Join Group"
+  },
+  "Key Differences from TikMatrix": {
+    "message": "Key Differences from TikMatrix"
+  },
+  "Live stream boost": {
+    "message": "Live stream boost"
+  },
+  "Mass commenting": {
+    "message": "Mass commenting"
+  },
+  "Mass direct messaging": {
+    "message": "Mass direct messaging"
+  },
+  "Multi-Device Control": {
+    "message": "Multi-Device Control"
+  },
+  "Multi-language support (English, Chinese, Russian)": {
+    "message": "Multi-language support (English, Chinese, Russian)"
+  },
+  "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
+    "message": "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software."
+  },
+  "Our support team is here to help you with any IgMatrix-related questions or issues.": {
+    "message": "Our support team is here to help you with any IgMatrix-related questions or issues."
+  },
+  "Performance analytics": {
+    "message": "Performance analytics"
+  },
+  "Phone screen mirroring to a computer": {
+    "message": "Phone screen mirroring to a computer"
+  },
+  "Platform-optimized features": {
+    "message": "Platform-optimized features"
+  },
+  "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
+    "message": "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software."
+  },
+  "Post engagement boost": {
+    "message": "Post engagement boost"
+  },
+  "Post management": {
+    "message": "Post management"
+  },
+  "Powerful Instagram automation tools designed for professional marketers and businesses": {
+    "message": "Powerful Instagram automation tools designed for professional marketers and businesses"
+  },
+  "Powerful TikTok Automation & Management Tools": {
+    "message": "Powerful TikTok Automation & Management Tools"
+  },
+  "Pricing": {
+    "message": "Pricing"
+  },
+  "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
+    "message": "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
+  },
+  "Professional phone farm management": {
+    "message": "Professional phone farm management"
+  },
+  "Publish videos or images to TikTok with batch posting capabilities": {
+    "message": "Publish videos or images to TikTok with batch posting capabilities"
+  },
+  "Quick Setup Guide": {
+    "message": "Quick Setup Guide"
+  },
+  "Recognize and match TikTok accounts from phones to add to account list": {
+    "message": "Recognize and match TikTok accounts from phones to add to account list"
+  },
+  "Recognize subtitles": {
+    "message": "Recognize subtitles"
+  },
+  "Remove posts based on their view count for content optimization": {
+    "message": "Remove posts based on their view count for content optimization"
+  },
+  "Safe & Secure": {
+    "message": "Safe & Secure"
+  },
+  "Same Setup Process": {
+    "message": "Même processus d'installation"
+  },
+  "Same reliable technology as TikMatrix": {
+    "message": "Même technologie fiable que TikMatrix"
+  },
+  "Schedule your Instagram activities with intelligent timing algorithms": {
+    "message": "Schedule your Instagram activities with intelligent timing algorithms"
+  },
+  "Scrape TikTok usernames from followers lists or keyword searches": {
+    "message": "Scrape TikTok usernames from followers lists or keyword searches"
+  },
+  "Send messages to multiple TikTok accounts in bulk with personalized content": {
+    "message": "Send messages to multiple TikTok accounts in bulk with personalized content"
+  },
+  "Set up account profiles including avatars, nicknames, signatures, and usernames": {
+    "message": "Configurez les profils de compte (avatar, pseudo, signature et nom d'utilisateur)"
+  },
+  "Setup Tutorial": {
+    "message": "Setup Tutorial"
+  },
+  "Shipping worldwide": {
+    "message": "Shipping worldwide"
+  },
+  "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
+    "message": "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration."
+  },
+  "Smart Scheduling": {
+    "message": "Smart Scheduling"
+  },
+  "Still have questions?": {
+    "message": "Still have questions?"
+  },
+  "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
+    "message": "Optimisez votre ferme de téléphones Instagram grâce à un contrôle par lots avancé et à l'automatisation du marketing"
+  },
+  "Super Marketing": {
+    "message": "Super Marketing"
+  },
+  "Supports 100+ phones mirroring to a computer, with synchronized operation": {
+    "message": "Prend en charge la mise en miroir de plus de 100 téléphones vers un ordinateur, avec une opération synchronisée"
+  },
+  "Technical Advantages": {
+    "message": "Technical Advantages"
+  },
+  "Telegram": {
+    "message": "Telegram"
+  },
+  "The length and width are relatively big, but the height is low(2u size)": {
+    "message": "The length and width are relatively big, but the height is low(2u size)"
+  },
+  "The length and width are relatively small, but the height is high": {
+    "message": "The length and width are relatively small, but the height is high"
+  },
+  "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
+    "message": "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections."
+  },
+  "TikMatrix is a professional marketing software designed for TikTok phone farms": {
+    "message": "TikMatrix is a professional marketing software designed for TikTok phone farms"
+  },
+  "TikMatrix supports 8 TikTok accounts on each phone.": {
+    "message": "TikMatrix supports 8 TikTok accounts on each phone."
+  },
+  "TikMatrix supports Android phones running Android 5.0 and above.": {
+    "message": "TikMatrix supports Android phones running Android 5.0 and above."
+  },
+  "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
+    "message": "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app"
+  },
+  "TikMatrix supports up to 200+ devices.": {
+    "message": "TikMatrix supports up to 200+ devices."
+  },
+  "Translate subtitles": {
+    "message": "Translate subtitles"
+  },
+  "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
+    "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location"
+  },
+  "User engagement boost": {
+    "message": "User engagement boost"
+  },
+  "User interface": {
+    "message": "User interface"
+  },
+  "User scraping": {
+    "message": "User scraping"
+  },
+  "Video download": {
+    "message": "Video download"
+  },
+  "Video unique": {
+    "message": "Video unique"
+  },
+  "VideoMagic - Batch Generating Unique Videos": {
+    "message": "VideoMagic - Batch Generating Unique Videos"
+  },
+  "VideoMagic is a Software for Batch Generating Unique Videos": {
+    "message": "VideoMagic is a Software for Batch Generating Unique Videos"
+  },
+  "View TikMatrix Tutorial": {
+    "message": "View TikMatrix Tutorial"
+  },
+  "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
+    "message": "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting"
+  },
+  "What computer can I use?": {
+    "message": "What computer can I use?"
+  },
+  "What devices can I use?": {
+    "message": "What devices can I use?"
+  },
+  "What is TikMatrix?": {
+    "message": "What is TikMatrix?"
+  },
+  "What is the difference between IgMatrix and TikMatrix?": {
+    "message": "What is the difference between IgMatrix and TikMatrix?"
+  },
+  "Which scripts from TikMatrix are available in IgMatrix?": {
+    "message": "Which scripts from TikMatrix are available in IgMatrix?"
+  },
+  "Why Choose IgMatrix?": {
+    "message": "Why Choose IgMatrix?"
+  },
+  "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
+    "message": "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform."
+  },
+  "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
+    "message": "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably."
+  },
+  "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
+    "message": "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix."
+  },
+  "advertising.disclaimer.content": {
+    "message": "advertising.disclaimer.content"
+  },
+  "advertising.disclaimer.title": {
+    "message": "advertising.disclaimer.title"
+  },
+  "advertising.page.subtitle": {
+    "message": "advertising.page.subtitle"
+  },
+  "advertising.page.title": {
+    "message": "advertising.page.title"
+  },
+  "advertising.visit.button": {
+    "message": "advertising.visit.button"
+  },
+  "download.description": {
+    "message": "Téléchargez TikMatrix pour Windows, Mac et Linux"
+  },
+  "download.igmatrix.description": {
+    "message": "download.igmatrix.description"
+  },
+  "download.igmatrix.linux.coming_soon": {
+    "message": "download.igmatrix.linux.coming_soon"
+  },
+  "download.igmatrix.linux.description": {
+    "message": "download.igmatrix.linux.description"
+  },
+  "download.igmatrix.linux.development": {
+    "message": "download.igmatrix.linux.development"
+  },
+  "download.igmatrix.linux.title": {
+    "message": "download.igmatrix.linux.title"
+  },
+  "download.igmatrix.mac.button": {
+    "message": "download.igmatrix.mac.button"
+  },
+  "download.igmatrix.mac.description": {
+    "message": "download.igmatrix.mac.description"
+  },
+  "download.igmatrix.mac.install_tip": {
+    "message": "download.igmatrix.mac.install_tip"
+  },
+  "download.igmatrix.mac.title": {
+    "message": "download.igmatrix.mac.title"
+  },
+  "download.igmatrix.requirements.internet": {
+    "message": "download.igmatrix.requirements.internet"
+  },
+  "download.igmatrix.requirements.memory": {
+    "message": "download.igmatrix.requirements.memory"
+  },
+  "download.igmatrix.requirements.os": {
+    "message": "download.igmatrix.requirements.os"
+  },
+  "download.igmatrix.requirements.processor": {
+    "message": "download.igmatrix.requirements.processor"
+  },
+  "download.igmatrix.requirements.storage": {
+    "message": "download.igmatrix.requirements.storage"
+  },
+  "download.igmatrix.requirements.title": {
+    "message": "download.igmatrix.requirements.title"
+  },
+  "download.igmatrix.subtitle": {
+    "message": "download.igmatrix.subtitle"
+  },
+  "download.igmatrix.title": {
+    "message": "download.igmatrix.title"
+  },
+  "download.igmatrix.windows.button": {
+    "message": "download.igmatrix.windows.button"
+  },
+  "download.igmatrix.windows.description": {
+    "message": "download.igmatrix.windows.description"
+  },
+  "download.igmatrix.windows.title": {
+    "message": "download.igmatrix.windows.title"
+  },
+  "download.linux.coming_soon": {
+    "message": "download.linux.coming_soon"
+  },
+  "download.linux.description": {
+    "message": "download.linux.description"
+  },
+  "download.linux.development": {
+    "message": "download.linux.development"
+  },
+  "download.linux.title": {
+    "message": "download.linux.title"
+  },
+  "download.mac.button": {
+    "message": "download.mac.button"
+  },
+  "download.mac.description": {
+    "message": "download.mac.description"
+  },
+  "download.mac.install_tip": {
+    "message": "download.mac.install_tip"
+  },
+  "download.mac.title": {
+    "message": "Mac"
+  },
+  "download.requirements.internet": {
+    "message": "Connexion Internet stable"
+  },
+  "download.requirements.memory": {
+    "message": "Mémoire : 8 Go RAM"
+  },
+  "download.requirements.os": {
+    "message": "Système d'exploitation : Windows 10/11, macOS 10.15+ ou Ubuntu 20.04+"
+  },
+  "download.requirements.processor": {
+    "message": "Processeur : Intel Core i5 ou équivalent"
+  },
+  "download.requirements.storage": {
+    "message": "Stockage : 500 Mo d'espace disponible"
+  },
+  "download.requirements.title": {
+    "message": "Configuration requise"
+  },
+  "download.subtitle": {
+    "message": "Choisissez votre plateforme pour télécharger TikMatrix"
+  },
+  "download.title": {
+    "message": "Télécharger TikMatrix"
+  },
+  "download.videomagic.description": {
+    "message": "download.videomagic.description"
+  },
+  "download.videomagic.subtitle": {
+    "message": "download.videomagic.subtitle"
+  },
+  "download.videomagic.title": {
+    "message": "download.videomagic.title"
+  },
+  "download.windows.button": {
+    "message": "download.windows.button"
+  },
+  "download.windows.description": {
+    "message": "download.windows.description"
   },
   "download.windows.title": {
     "message": "Windows"
   },
+  "homepage.header.cta.download": {
+    "message": "Télécharger maintenant"
+  },
+  "homepage.header.cta.features": {
+    "message": "Explorer les fonctionnalités"
+  },
+  "homepage.header.cta.primary": {
+    "message": "Commencer"
+  },
+  "homepage.header.cta.secondary": {
+    "message": "Voir les fonctionnalités"
+  },
+  "homepage.header.defaultSubtitle": {
+    "message": "Outils d'automatisation puissants pour TikTok et Instagram"
+  },
+  "homepage.header.defaultTitle": {
+    "message": "TikMatrix & IgMatrix"
+  },
+  "homepage.header.subtitle": {
+    "message": "Exécutez des appareils à grande échelle, automatisez les tâches, planifiez des publications et gérez intelligemment les comptes — TikMatrix rend vos opérations TikTok 100% automatisées."
+  },
+  "homepage.header.title": {
+    "message": "L'automatisation de TikTok commence ici"
+  },
+  "homepage.vs.card.analytics.desc": {
+    "message": "Surveillez les performances de vos comptes et l'état des tâches en temps réel"
+  },
+  "homepage.vs.card.analytics.title": {
+    "message": "Analyses avancées"
+  },
+  "homepage.vs.card.automation.desc": {
+    "message": "Automatisez toutes vos tâches de médias sociaux"
+  },
+  "homepage.vs.card.automation.title": {
+    "message": "Automatisation complète"
+  },
+  "homepage.vs.card.cta": {
+    "message": "homepage.vs.card.cta"
+  },
+  "homepage.vs.card.lowRisk.desc": {
+    "message": "Le système d'appareils réels garantit la sécurité des comptes"
+  },
+  "homepage.vs.card.lowRisk.title": {
+    "message": "Faible risque"
+  },
+  "homepage.vs.card.nodev.desc": {
+    "message": "Aucune compétence en développement requise"
+  },
+  "homepage.vs.card.nodev.title": {
+    "message": "Sans programmation"
+  },
+  "homepage.vs.card.plug.desc": {
+    "message": "Plug-and-play, configuration rapide"
+  },
+  "homepage.vs.card.plug.title": {
+    "message": "Facile à installer"
+  },
+  "homepage.vs.card.realDevices.desc": {
+    "message": "Utilisez de vrais appareils Android pour une sécurité maximale"
+  },
+  "homepage.vs.card.realDevices.title": {
+    "message": "Appareils réels"
+  },
+  "homepage.vs.cta.button": {
+    "message": "homepage.vs.cta.button"
+  },
+  "homepage.vs.cta.text": {
+    "message": "homepage.vs.cta.text"
+  },
+  "homepage.vs.subtitle": {
+    "message": "Une solution d'automatisation puissante pour étendre votre présence sur les réseaux sociaux"
+  },
+  "homepage.vs.title": {
+    "message": "Pourquoi choisir TikMatrix & IgMatrix ?"
+  },
+  "pricing.all_features": {
+    "message": "pricing.all_features"
+  },
+  "pricing.badge.popular": {
+    "message": "pricing.badge.popular"
+  },
+  "pricing.business.concurrent_tasks": {
+    "message": "pricing.business.concurrent_tasks"
+  },
+  "pricing.business.description": {
+    "message": "pricing.business.description"
+  },
+  "pricing.business.name": {
+    "message": "pricing.business.name"
+  },
+  "pricing.compare.automation": {
+    "message": "pricing.compare.automation"
+  },
+  "pricing.compare.devices": {
+    "message": "pricing.compare.devices"
+  },
+  "pricing.compare.hide": {
+    "message": "pricing.compare.hide"
+  },
+  "pricing.compare.show": {
+    "message": "pricing.compare.show"
+  },
+  "pricing.cta.free": {
+    "message": "Commencer gratuitement"
+  },
+  "pricing.cta.pay": {
+    "message": "S'abonner"
+  },
+  "pricing.free.all_free_features": {
+    "message": "pricing.free.all_free_features"
+  },
+  "pricing.free.automation_disabled": {
+    "message": "Automatisation désactivée"
+  },
+  "pricing.free.community_support": {
+    "message": "pricing.free.community_support"
+  },
+  "pricing.free.description": {
+    "message": "Idéal pour les débutants"
+  },
+  "pricing.free.name": {
+    "message": "pricing.free.name"
+  },
+  "pricing.free_label": {
+    "message": "pricing.free_label"
+  },
+  "pricing.local_api.description": {
+    "message": "pricing.local_api.description"
+  },
+  "pricing.local_api.link_text": {
+    "message": "pricing.local_api.link_text"
+  },
+  "pricing.local_api.support": {
+    "message": "pricing.local_api.support"
+  },
+  "pricing.local_api.title": {
+    "message": "pricing.local_api.title"
+  },
+  "pricing.per_month": {
+    "message": "par mois"
+  },
+  "pricing.per_year": {
+    "message": "par an"
+  },
+  "pricing.pro.concurrent_tasks": {
+    "message": "pricing.pro.concurrent_tasks"
+  },
+  "pricing.pro.description": {
+    "message": "pricing.pro.description"
+  },
+  "pricing.pro.name": {
+    "message": "pricing.pro.name"
+  },
+  "pricing.starter.concurrent_tasks": {
+    "message": "pricing.starter.concurrent_tasks"
+  },
+  "pricing.starter.description": {
+    "message": "pricing.starter.description"
+  },
+  "pricing.starter.name": {
+    "message": "pricing.starter.name"
+  },
+  "pricing.subtitle": {
+    "message": "pricing.subtitle"
+  },
+  "pricing.team.concurrent_tasks": {
+    "message": "pricing.team.concurrent_tasks"
+  },
+  "pricing.team.description": {
+    "message": "pricing.team.description"
+  },
+  "pricing.team.name": {
+    "message": "pricing.team.name"
+  },
   "pricing.ticket_support": {
     "message": "pricing.ticket_support"
+  },
+  "pricing.title": {
+    "message": "pricing.title"
+  },
+  "pricing.toggle.monthly": {
+    "message": "pricing.toggle.monthly"
+  },
+  "pricing.toggle.yearly": {
+    "message": "pricing.toggle.yearly"
+  },
+  "pricing.unlimited_devices": {
+    "message": "pricing.unlimited_devices"
+  },
+  "pricing.unlimited_devices_short": {
+    "message": "pricing.unlimited_devices_short"
+  },
+  "tech.diagram.devices": {
+    "message": "tech.diagram.devices"
+  },
+  "tech.diagram.engine": {
+    "message": "tech.diagram.engine"
+  },
+  "tech.diagram.fingerprintIsolation": {
+    "message": "tech.diagram.fingerprintIsolation"
+  },
+  "tech.diagram.localExecution": {
+    "message": "tech.diagram.localExecution"
+  },
+  "tech.diagram.noApi": {
+    "message": "tech.diagram.noApi"
+  },
+  "tech.diagram.noMemoryInjection": {
+    "message": "tech.diagram.noMemoryInjection"
+  },
+  "tech.diagram.realTouch": {
+    "message": "tech.diagram.realTouch"
+  },
+  "tech.diagram.tiktok": {
+    "message": "tech.diagram.tiktok"
+  },
+  "tech.diagram.user": {
+    "message": "tech.diagram.user"
+  },
+  "tech.diagram.zeroCloud": {
+    "message": "tech.diagram.zeroCloud"
+  },
+  "tech.point.fingerprint.b1": {
+    "message": "tech.point.fingerprint.b1"
+  },
+  "tech.point.fingerprint.b2": {
+    "message": "tech.point.fingerprint.b2"
+  },
+  "tech.point.fingerprint.b3": {
+    "message": "tech.point.fingerprint.b3"
+  },
+  "tech.point.fingerprint.desc": {
+    "message": "tech.point.fingerprint.desc"
+  },
+  "tech.point.fingerprint.title": {
+    "message": "tech.point.fingerprint.title"
+  },
+  "tech.point.humanBehavior.b1": {
+    "message": "tech.point.humanBehavior.b1"
   },
   "tech.point.humanBehavior.b2": {
     "message": "tech.point.humanBehavior.b2"
@@ -233,727 +818,148 @@
   "tech.point.humanBehavior.b3": {
     "message": "tech.point.humanBehavior.b3"
   },
-  "tech.point.fingerprint.title": {
-    "message": "tech.point.fingerprint.title"
-  },
-  "download.igmatrix.title": {
-    "message": "download.igmatrix.title"
-  },
-  "Different Script Logic": {
-    "message": "Different Script Logic"
-  },
-  "Join Group": {
-    "message": "Join Group"
-  },
-  "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Boost engagement on specific comments by liking and replying to them in bulk"
-  },
-  "Go to the \"Download\" page and download the latest version of TikMatrix.": {
-    "message": "Go to the \"Download\" page and download the latest version of TikMatrix."
-  },
-  "advertising.disclaimer.content": {
-    "message": "advertising.disclaimer.content"
-  },
-  "Smart Scheduling": {
-    "message": "Smart Scheduling"
-  },
-  "Live stream boost": {
-    "message": "Live stream boost"
-  },
-  "Contact to purchase": {
-    "message": "Contact to purchase"
-  },
-  "pricing.business.description": {
-    "message": "pricing.business.description"
-  },
-  "homepage.vs.card.cta": {
-    "message": "homepage.vs.card.cta"
-  },
-  "testimonials.title": {
-    "message": "testimonials.title"
-  },
-  "pricing.pro.concurrent_tasks": {
-    "message": "pricing.pro.concurrent_tasks"
-  },
-  "tech.point.realTouch.b2": {
-    "message": "tech.point.realTouch.b2"
-  },
-  "tech.diagram.noMemoryInjection": {
-    "message": "tech.diagram.noMemoryInjection"
-  },
-  "Increase user engagement by following or unfollowing accounts in bulk": {
-    "message": "Increase user engagement by following or unfollowing accounts in bulk"
-  },
-  "homepage.vs.card.realDevices.title": {
-    "message": "Appareils réels"
-  },
-  "Important Reminder": {
-    "message": "Important Reminder"
-  },
-  "tech.point.realTouch.b1": {
-    "message": "tech.point.realTouch.b1"
-  },
-  "download.igmatrix.requirements.title": {
-    "message": "download.igmatrix.requirements.title"
-  },
-  "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
-    "message": "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform."
-  },
-  "pricing.business.concurrent_tasks": {
-    "message": "pricing.business.concurrent_tasks"
-  },
-  "pricing.compare.devices": {
-    "message": "pricing.compare.devices"
-  },
-  "tech.point.zeroApi.desc": {
-    "message": "tech.point.zeroApi.desc"
-  },
-  "pricing.free_label": {
-    "message": "pricing.free_label"
-  },
-  "download.igmatrix.windows.button": {
-    "message": "download.igmatrix.windows.button"
-  },
-  "Download IgMatrix": {
-    "message": "Download IgMatrix"
-  },
-  "homepage.vs.card.nodev.desc": {
-    "message": "Aucune compétence en développement requise"
-  },
-  "Super Marketing": {
-    "message": "Super Marketing"
-  },
-  "download.igmatrix.mac.install_tip": {
-    "message": "download.igmatrix.mac.install_tip"
-  },
-  "Pricing": {
-    "message": "Pricing"
-  },
-  "Find answers to common questions about IgMatrix": {
-    "message": "Find answers to common questions about IgMatrix"
-  },
-  "Quick Setup Guide": {
-    "message": "Quick Setup Guide"
-  },
-  "Instagram Automation": {
-    "message": "Instagram Automation"
-  },
-  "pricing.badge.popular": {
-    "message": "pricing.badge.popular"
-  },
-  "Scrape TikTok usernames from followers lists or keyword searches": {
-    "message": "Scrape TikTok usernames from followers lists or keyword searches"
-  },
-  "Which scripts from TikMatrix are available in IgMatrix?": {
-    "message": "Which scripts from TikMatrix are available in IgMatrix?"
-  },
-  "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
-    "message": "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix."
-  },
-  "Device connection": {
-    "message": "Device connection"
-  },
-  "testimonials.user1.text": {
-    "message": "testimonials.user1.text"
-  },
-  "Can I run both IgMatrix and TikMatrix on the same computer?": {
-    "message": "Can I run both IgMatrix and TikMatrix on the same computer?"
-  },
-  "Technical Advantages": {
-    "message": "Technical Advantages"
-  },
-  "pricing.per_month": {
-    "message": "par mois"
-  },
-  "homepage.header.title": {
-    "message": "L'automatisation de TikTok commence ici"
-  },
-  "Post management": {
-    "message": "Post management"
-  },
-  "download.requirements.internet": {
-    "message": "Connexion Internet stable"
-  },
-  "tech.security.realDevice": {
-    "message": "tech.security.realDevice"
-  },
-  "Video download": {
-    "message": "Video download"
-  },
-  "View TikMatrix Tutorial": {
-    "message": "View TikMatrix Tutorial"
-  },
-  "download.linux.title": {
-    "message": "download.linux.title"
-  },
-  "homepage.vs.card.automation.desc": {
-    "message": "Automatisez toutes vos tâches de médias sociaux"
-  },
-  "pricing.local_api.title": {
-    "message": "pricing.local_api.title"
-  },
-  "pricing.per_year": {
-    "message": "par an"
-  },
-  "homepage.vs.card.nodev.title": {
-    "message": "Sans programmation"
-  },
-  "homepage.header.defaultSubtitle": {
-    "message": "Outils d'automatisation puissants pour TikTok et Instagram"
-  },
-  "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
-    "message": "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk"
-  },
-  "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "Automatisez la publication, le suivi, les commentaires et les activités d'engagement sur Instagram"
-  },
-  "homepage.vs.cta.text": {
-    "message": "homepage.vs.cta.text"
-  },
-  "Powerful TikTok Automation & Management Tools": {
-    "message": "Powerful TikTok Automation & Management Tools"
-  },
-  "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "Comment on multiple TikTok posts in bulk with customizable content and emojis"
-  },
-  "tech.point.humanBehavior.b1": {
-    "message": "tech.point.humanBehavior.b1"
-  },
-  "homepage.vs.card.lowRisk.desc": {
-    "message": "Le système d'appareils réels garantit la sécurité des comptes"
-  },
-  "Telegram": {
-    "message": "Telegram"
-  },
-  "download.linux.coming_soon": {
-    "message": "download.linux.coming_soon"
-  },
-  "tech.subtitle": {
-    "message": "tech.subtitle"
-  },
-  "Key Differences from TikMatrix": {
-    "message": "Key Differences from TikMatrix"
-  },
-  "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
-    "message": "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting"
-  },
-  "Free": {
-    "message": "Free"
-  },
-  "Multi-Device Control": {
-    "message": "Multi-Device Control"
-  },
-  "advertising.page.title": {
-    "message": "advertising.page.title"
-  },
-  "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
-    "message": "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you."
-  },
-  "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Batch Generating Unique Videos"
-  },
-  "pricing.compare.hide": {
-    "message": "pricing.compare.hide"
-  },
-  "tech.point.localExec.b1": {
-    "message": "tech.point.localExec.b1"
-  },
-  "pricing.free.all_free_features": {
-    "message": "pricing.free.all_free_features"
-  },
-  "Performance analytics": {
-    "message": "Performance analytics"
-  },
-  "pricing.toggle.yearly": {
-    "message": "pricing.toggle.yearly"
-  },
-  "homepage.vs.card.plug.desc": {
-    "message": "Plug-and-play, configuration rapide"
-  },
-  "download.igmatrix.mac.title": {
-    "message": "download.igmatrix.mac.title"
-  },
-  "How many TikTok accounts can each phone log into?": {
-    "message": "How many TikTok accounts can each phone log into?"
-  },
-  "download.igmatrix.windows.description": {
-    "message": "download.igmatrix.windows.description"
-  },
-  "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "The length and width are relatively big, but the height is low(2u size)"
-  },
-  "Recognize subtitles": {
-    "message": "Recognize subtitles"
-  },
-  "download.igmatrix.requirements.storage": {
-    "message": "download.igmatrix.requirements.storage"
-  },
-  "download.title": {
-    "message": "Télécharger TikMatrix"
-  },
-  "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
-    "message": "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information."
-  },
-  "Basic configuration": {
-    "message": "Basic configuration"
-  },
-  "pricing.business.name": {
-    "message": "pricing.business.name"
-  },
-  "tech.diagram.realTouch": {
-    "message": "tech.diagram.realTouch"
-  },
-  "download.requirements.processor": {
-    "message": "Processeur : Intel Core i5 ou équivalent"
-  },
-  "Safe & Secure": {
-    "message": "Safe & Secure"
-  },
-  "Instagram-specific automation": {
-    "message": "Instagram-specific automation"
-  },
-  "Important Notice": {
-    "message": "Important Notice"
-  },
-  "tech.point.realTouch.desc": {
-    "message": "tech.point.realTouch.desc"
-  },
-  "Mass direct messaging": {
-    "message": "Mass direct messaging"
-  },
-  "pricing.local_api.support": {
-    "message": "pricing.local_api.support"
-  },
-  "download.linux.development": {
-    "message": "download.linux.development"
-  },
-  "pricing.all_features": {
-    "message": "pricing.all_features"
-  },
-  "Buy hardware": {
-    "message": "Buy hardware"
-  },
-  "download.requirements.memory": {
-    "message": "Mémoire : 8 Go RAM"
-  },
-  "tech.point.fingerprint.b3": {
-    "message": "tech.point.fingerprint.b3"
-  },
-  "advertising.visit.button": {
-    "message": "advertising.visit.button"
-  },
-  "Download TikMatrix": {
-    "message": "Download TikMatrix"
-  },
-  "Control multiple Instagram accounts across different Android devices simultaneously": {
-    "message": "Control multiple Instagram accounts across different Android devices simultaneously"
-  },
-  "download.igmatrix.description": {
-    "message": "download.igmatrix.description"
-  },
   "tech.point.humanBehavior.desc": {
     "message": "tech.point.humanBehavior.desc"
-  },
-  "Instagram-optimized automation scripts": {
-    "message": "Instagram-optimized automation scripts"
-  },
-  "tech.points.heading": {
-    "message": "tech.points.heading"
-  },
-  "pricing.team.description": {
-    "message": "pricing.team.description"
-  },
-  "Automatic profile setup": {
-    "message": "Configuration automatique du profil"
-  },
-  "tech.point.passiveCapture.desc": {
-    "message": "tech.point.passiveCapture.desc"
-  },
-  "Is the pricing the same as TikMatrix?": {
-    "message": "Is the pricing the same as TikMatrix?"
-  },
-  "homepage.header.defaultTitle": {
-    "message": "TikMatrix & IgMatrix"
-  },
-  "download.requirements.os": {
-    "message": "Système d'exploitation : Windows 10/11, macOS 10.15+ ou Ubuntu 20.04+"
-  },
-  "tech.security.legendC": {
-    "message": "tech.security.legendC"
-  },
-  "Publish videos or images to TikTok with batch posting capabilities": {
-    "message": "Publish videos or images to TikTok with batch posting capabilities"
-  },
-  "pricing.cta.pay": {
-    "message": "S'abonner"
-  },
-  "pricing.starter.description": {
-    "message": "pricing.starter.description"
-  },
-  "pricing.cta.free": {
-    "message": "Commencer gratuitement"
-  },
-  "Our support team is here to help you with any IgMatrix-related questions or issues.": {
-    "message": "Our support team is here to help you with any IgMatrix-related questions or issues."
-  },
-  "tech.diagram.engine": {
-    "message": "tech.diagram.engine"
-  },
-  "download.igmatrix.linux.title": {
-    "message": "download.igmatrix.linux.title"
-  },
-  "homepage.header.cta.secondary": {
-    "message": "Voir les fonctionnalités"
-  },
-  "download.mac.description": {
-    "message": "download.mac.description"
-  },
-  "tech.point.fingerprint.desc": {
-    "message": "tech.point.fingerprint.desc"
-  },
-  "Send messages to multiple TikTok accounts in bulk with personalized content": {
-    "message": "Send messages to multiple TikTok accounts in bulk with personalized content"
-  },
-  "User engagement boost": {
-    "message": "User engagement boost"
-  },
-  "homepage.header.cta.download": {
-    "message": "Télécharger maintenant"
-  },
-  "homepage.vs.card.analytics.desc": {
-    "message": "Surveillez les performances de vos comptes et l'état des tâches en temps réel"
-  },
-  "How to use?": {
-    "message": "How to use?"
-  },
-  "homepage.vs.cta.button": {
-    "message": "homepage.vs.cta.button"
-  },
-  "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
-    "message": "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration."
-  },
-  "pricing.free.automation_disabled": {
-    "message": "Automatisation désactivée"
-  },
-  "Download VideoMagic": {
-    "message": "Download VideoMagic"
-  },
-  "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app"
-  },
-  "IgMatrix is a Instagram android phonefarm batch control tool": {
-    "message": "IgMatrix is a Instagram android phonefarm batch control tool"
-  },
-  "tech.diagram.noApi": {
-    "message": "tech.diagram.noApi"
-  },
-  "Schedule your Instagram activities with intelligent timing algorithms": {
-    "message": "Schedule your Instagram activities with intelligent timing algorithms"
-  },
-  "What devices can I use?": {
-    "message": "What devices can I use?"
-  },
-  "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "Après l'installation, ouvrez IgMatrix pour voir la liste complète des scripts d'automatisation Instagram disponibles. La sélection de scripts peut différer de TikMatrix."
-  },
-  "download.igmatrix.requirements.internet": {
-    "message": "download.igmatrix.requirements.internet"
-  },
-  "testimonials.user4.usage": {
-    "message": "testimonials.user4.usage"
-  },
-  "tech.point.passiveCapture.b2": {
-    "message": "tech.point.passiveCapture.b2"
-  },
-  "What is TikMatrix?": {
-    "message": "What is TikMatrix?"
-  },
-  "pricing.free.name": {
-    "message": "pricing.free.name"
-  },
-  "tech.security.humanModel": {
-    "message": "tech.security.humanModel"
-  },
-  "Follow these steps to get started with IgMatrix": {
-    "message": "Follow these steps to get started with IgMatrix"
-  },
-  "tech.point.zeroApi.b2": {
-    "message": "tech.point.zeroApi.b2"
-  },
-  "tech.point.realTouch.title": {
-    "message": "tech.point.realTouch.title"
-  },
-  "Post engagement boost": {
-    "message": "Post engagement boost"
-  },
-  "tech.security.zeroApi": {
-    "message": "tech.security.zeroApi"
-  },
-  "testimonials.user4.text": {
-    "message": "testimonials.user4.text"
-  },
-  "What computer can I use?": {
-    "message": "What computer can I use?"
-  },
-  "Contact": {
-    "message": "Contact"
-  },
-  "Download IgMatrix from our official website and follow the installation instructions.": {
-    "message": "Download IgMatrix from our official website and follow the installation instructions."
-  },
-  "tech.security.heading": {
-    "message": "tech.security.heading"
-  },
-  "Batch login to TikTok accounts with account list management": {
-    "message": "Batch login to TikTok accounts with account list management"
-  },
-  "Automatic posting": {
-    "message": "Publication automatique"
-  },
-  "download.linux.description": {
-    "message": "download.linux.description"
-  },
-  "Shipping worldwide": {
-    "message": "Shipping worldwide"
-  },
-  "Here are some frequently asked questions.": {
-    "message": "Here are some frequently asked questions."
-  },
-  "testimonials.user2.usage": {
-    "message": "testimonials.user2.usage"
-  },
-  "download.windows.button": {
-    "message": "download.windows.button"
-  },
-  "Automatic login": {
-    "message": "Connexion automatique"
-  },
-  "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "Vérifiez toujours les fonctionnalités réelles disponibles dans votre logiciel IgMatrix, car les fonctionnalités de script peuvent varier par rapport à TikMatrix. L'interface du logiciel vous montrera exactement quels scripts d'automatisation sont disponibles pour Instagram."
-  },
-  "download.mac.button": {
-    "message": "download.mac.button"
-  },
-  "Professional phone farm management": {
-    "message": "Professional phone farm management"
-  },
-  "Custom Instagram workflows": {
-    "message": "Custom Instagram workflows"
-  },
-  "Video unique": {
-    "message": "Video unique"
-  },
-  "testimonials.user1.usage": {
-    "message": "testimonials.user1.usage"
-  },
-  "tech.point.fingerprint.b2": {
-    "message": "tech.point.fingerprint.b2"
-  },
-  "Setup Tutorial": {
-    "message": "Setup Tutorial"
-  },
-  "tech.point.passiveCapture.b3": {
-    "message": "tech.point.passiveCapture.b3"
-  },
-  "advertising.disclaimer.title": {
-    "message": "advertising.disclaimer.title"
-  },
-  "pricing.team.name": {
-    "message": "pricing.team.name"
-  },
-  "Translate subtitles": {
-    "message": "Translate subtitles"
-  },
-  "TikMatrix supports Android phones running Android 5.0 and above.": {
-    "message": "TikMatrix supports Android phones running Android 5.0 and above."
   },
   "tech.point.humanBehavior.title": {
     "message": "tech.point.humanBehavior.title"
   },
-  "tech.point.zeroApi.b1": {
-    "message": "tech.point.zeroApi.b1"
+  "tech.point.localExec.b1": {
+    "message": "tech.point.localExec.b1"
   },
-  "Mass commenting": {
-    "message": "Mass commenting"
+  "tech.point.localExec.b2": {
+    "message": "tech.point.localExec.b2"
   },
-  "homepage.vs.title": {
-    "message": "Pourquoi choisir TikMatrix & IgMatrix ?"
-  },
-  "Advanced safety mechanisms": {
-    "message": "Mécanismes de sécurité avancés"
-  },
-  "pricing.pro.name": {
-    "message": "pricing.pro.name"
-  },
-  "pricing.pro.description": {
-    "message": "pricing.pro.description"
-  },
-  "Instagram Phone Farm Batch Control Tool": {
-    "message": "Instagram Phone Farm Batch Control Tool"
-  },
-  "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
-    "message": "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software."
-  },
-  "Do I need separate licenses for IgMatrix and TikMatrix?": {
-    "message": "Do I need separate licenses for IgMatrix and TikMatrix?"
-  },
-  "testimonials.usage_label": {
-    "message": "testimonials.usage_label"
-  },
-  "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-    "message": "Can I use the same tutorial for both IgMatrix and TikMatrix?"
-  },
-  "homepage.vs.card.automation.title": {
-    "message": "Automatisation complète"
-  },
-  "Recognize and match TikTok accounts from phones to add to account list": {
-    "message": "Recognize and match TikTok accounts from phones to add to account list"
-  },
-  "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic is a Software for Batch Generating Unique Videos"
-  },
-  "Frequently Asked Questions": {
-    "message": "Frequently Asked Questions"
-  },
-  "download.igmatrix.linux.description": {
-    "message": "download.igmatrix.linux.description"
-  },
-  "Automatic account matching": {
-    "message": "Correspondance automatique de comptes"
-  },
-  "homepage.vs.card.lowRisk.title": {
-    "message": "Faible risque"
-  },
-  "Automatic following": {
-    "message": "Suivi automatique"
-  },
-  "Download and Install": {
-    "message": "Download and Install"
-  },
-  "homepage.header.cta.features": {
-    "message": "Explorer les fonctionnalités"
-  },
-  "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
-    "message": "Comprehensive automation combining multiple engagement strategies with AI-generated comments"
-  },
-  "download.igmatrix.windows.title": {
-    "message": "download.igmatrix.windows.title"
-  },
-  "homepage.header.subtitle": {
-    "message": "Exécutez des appareils à grande échelle, automatisez les tâches, planifiez des publications et gérez intelligemment les comptes — TikMatrix rend vos opérations TikTok 100% automatisées."
-  },
-  "homepage.vs.card.realDevices.desc": {
-    "message": "Utilisez de vrais appareils Android pour une sécurité maximale"
+  "tech.point.localExec.b3": {
+    "message": "tech.point.localExec.b3"
   },
   "tech.point.localExec.desc": {
     "message": "tech.point.localExec.desc"
   },
-  "pricing.compare.automation": {
-    "message": "pricing.compare.automation"
+  "tech.point.localExec.title": {
+    "message": "tech.point.localExec.title"
   },
-  "tech.point.zeroApi.b3": {
-    "message": "tech.point.zeroApi.b3"
+  "tech.point.passiveCapture.b1": {
+    "message": "tech.point.passiveCapture.b1"
   },
-  "How many devices can I manage?": {
-    "message": "How many devices can I manage?"
+  "tech.point.passiveCapture.b2": {
+    "message": "tech.point.passiveCapture.b2"
   },
-  "Phone screen mirroring to a computer": {
-    "message": "Phone screen mirroring to a computer"
+  "tech.point.passiveCapture.b3": {
+    "message": "tech.point.passiveCapture.b3"
   },
-  "homepage.header.cta.primary": {
-    "message": "Commencer"
-  },
-  "Check Available Scripts": {
-    "message": "Check Available Scripts"
-  },
-  "download.igmatrix.mac.button": {
-    "message": "download.igmatrix.mac.button"
-  },
-  "Follow TikMatrix Tutorial": {
-    "message": "Follow TikMatrix Tutorial"
-  },
-  "Account warmup": {
-    "message": "Préparation du compte"
-  },
-  "download.igmatrix.linux.coming_soon": {
-    "message": "download.igmatrix.linux.coming_soon"
-  },
-  "pricing.starter.concurrent_tasks": {
-    "message": "pricing.starter.concurrent_tasks"
-  },
-  "tech.point.fingerprint.b1": {
-    "message": "tech.point.fingerprint.b1"
-  },
-  "download.requirements.title": {
-    "message": "Configuration requise"
-  },
-  "Still have questions?": {
-    "message": "Still have questions?"
-  },
-  "tech.diagram.user": {
-    "message": "tech.diagram.user"
-  },
-  "download.igmatrix.requirements.os": {
-    "message": "download.igmatrix.requirements.os"
-  },
-  "download.mac.title": {
-    "message": "Mac"
-  },
-  "TikMatrix is a professional marketing software designed for TikTok phone farms": {
-    "message": "TikMatrix is a professional marketing software designed for TikTok phone farms"
-  },
-  "download.igmatrix.subtitle": {
-    "message": "download.igmatrix.subtitle"
-  },
-  "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
-    "message": "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably."
-  },
-  "Batch account management": {
-    "message": "Batch account management"
-  },
-  "Platform-optimized features": {
-    "message": "Platform-optimized features"
-  },
-  "download.igmatrix.mac.description": {
-    "message": "download.igmatrix.mac.description"
-  },
-  "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-    "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location"
-  },
-  "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
-    "message": "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform."
+  "tech.point.passiveCapture.desc": {
+    "message": "tech.point.passiveCapture.desc"
   },
   "tech.point.passiveCapture.title": {
     "message": "tech.point.passiveCapture.title"
   },
-  "If you are interested in our service, please contact us to get price.": {
-    "message": "If you are interested in our service, please contact us to get price."
+  "tech.point.realTouch.b1": {
+    "message": "tech.point.realTouch.b1"
   },
-  "What is the difference between IgMatrix and TikMatrix?": {
-    "message": "What is the difference between IgMatrix and TikMatrix?"
+  "tech.point.realTouch.b2": {
+    "message": "tech.point.realTouch.b2"
   },
-  "User scraping": {
-    "message": "User scraping"
+  "tech.point.realTouch.b3": {
+    "message": "tech.point.realTouch.b3"
   },
-  "download.windows.description": {
-    "message": "download.windows.description"
+  "tech.point.realTouch.desc": {
+    "message": "tech.point.realTouch.desc"
   },
-  "download.mac.install_tip": {
-    "message": "download.mac.install_tip"
+  "tech.point.realTouch.title": {
+    "message": "tech.point.realTouch.title"
   },
-  "homepage.vs.card.analytics.title": {
-    "message": "Analyses avancées"
+  "tech.point.zeroApi.b1": {
+    "message": "tech.point.zeroApi.b1"
   },
-  "Different script availability": {
-    "message": "Different script availability"
+  "tech.point.zeroApi.b2": {
+    "message": "tech.point.zeroApi.b2"
   },
-  "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
-    "message": "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software."
+  "tech.point.zeroApi.b3": {
+    "message": "tech.point.zeroApi.b3"
   },
-  "TikMatrix supports 8 TikTok accounts on each phone.": {
-    "message": "TikMatrix supports 8 TikTok accounts on each phone."
+  "tech.point.zeroApi.desc": {
+    "message": "tech.point.zeroApi.desc"
   },
-  "Get dedicated support from our expert team whenever you need help": {
-    "message": "Get dedicated support from our expert team whenever you need help"
+  "tech.point.zeroApi.title": {
+    "message": "tech.point.zeroApi.title"
+  },
+  "tech.points.heading": {
+    "message": "tech.points.heading"
+  },
+  "tech.security.heading": {
+    "message": "tech.security.heading"
+  },
+  "tech.security.humanModel": {
+    "message": "tech.security.humanModel"
+  },
+  "tech.security.legendA": {
+    "message": "tech.security.legendA"
+  },
+  "tech.security.legendB": {
+    "message": "tech.security.legendB"
+  },
+  "tech.security.legendC": {
+    "message": "tech.security.legendC"
+  },
+  "tech.security.noHook": {
+    "message": "tech.security.noHook"
+  },
+  "tech.security.noiseCurve": {
+    "message": "tech.security.noiseCurve"
+  },
+  "tech.security.proxyIsolation": {
+    "message": "tech.security.proxyIsolation"
+  },
+  "tech.security.realDevice": {
+    "message": "tech.security.realDevice"
+  },
+  "tech.security.zeroApi": {
+    "message": "tech.security.zeroApi"
+  },
+  "tech.subtitle": {
+    "message": "tech.subtitle"
+  },
+  "tech.title": {
+    "message": "tech.title"
+  },
+  "testimonials.subtitle": {
+    "message": "testimonials.subtitle"
+  },
+  "testimonials.title": {
+    "message": "testimonials.title"
+  },
+  "testimonials.usage_label": {
+    "message": "testimonials.usage_label"
+  },
+  "testimonials.user1.text": {
+    "message": "testimonials.user1.text"
+  },
+  "testimonials.user1.usage": {
+    "message": "testimonials.user1.usage"
+  },
+  "testimonials.user2.text": {
+    "message": "testimonials.user2.text"
+  },
+  "testimonials.user2.usage": {
+    "message": "testimonials.user2.usage"
+  },
+  "testimonials.user3.text": {
+    "message": "testimonials.user3.text"
+  },
+  "testimonials.user3.usage": {
+    "message": "testimonials.user3.usage"
+  },
+  "testimonials.user4.text": {
+    "message": "testimonials.user4.text"
+  },
+  "testimonials.user4.usage": {
+    "message": "testimonials.user4.usage"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} publication(s)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Lecture d'{readingTime} min"
   }
 }

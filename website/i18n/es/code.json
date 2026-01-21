@@ -955,5 +955,11 @@
   },
   "testimonials.user4.usage": {
     "message": "80 cuentas gestionadas"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Una publicación|{count} publicaciones"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Lectura de un minuto|Lectura de {readingTime} minutos"
   }
 }
