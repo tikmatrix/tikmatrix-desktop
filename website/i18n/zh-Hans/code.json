@@ -6,8 +6,7 @@
     "message": "24小时AI助手"
   },
   "AI voiceover": {
-    "message": "AI 配音",
-    "description": "The product label"
+    "message": "AI 配音"
   },
   "AI-Generated Comments": {
     "message": "AI智能评论"
@@ -76,35 +75,28 @@
     "message": "自动账户匹配"
   },
   "Automatic account nurturing": {
-    "message": "自动养号",
-    "description": "The description of Automatic account nurturing"
+    "message": "自动养号"
   },
   "Automatic commenting": {
-    "message": "自动评论",
-    "description": "The description of Automatic commenting"
+    "message": "自动评论"
   },
   "Automatic direct messaging": {
-    "message": "自动私信",
-    "description": "The description of Automatic direct messaging"
+    "message": "自动私信"
   },
   "Automatic following": {
-    "message": "自动关注",
-    "description": "The description of Automatic following"
+    "message": "自动关注"
   },
   "Automatic login": {
     "message": "自动登录"
   },
   "Automatic matching": {
-    "message": "自动匹配",
-    "description": "The description of Automatic matching"
+    "message": "自动匹配"
   },
   "Automatic posting": {
-    "message": "自动发布",
-    "description": "The description of Automatic posting"
+    "message": "自动发布"
   },
   "Automatic profile setup": {
-    "message": "自动设置资料",
-    "description": "The description of Automatic profile setup"
+    "message": "自动设置资料"
   },
   "Automatic registration & login": {
     "message": "自动注册和登录"
@@ -113,16 +105,13 @@
     "message": "自动发布"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "自动为视频生成AI配音",
-    "description": "The description of AI voiceover"
+    "message": "自动为视频生成AI配音"
   },
   "Automatically recognize subtitles and append them to the video": {
-    "message": "自动识别字幕并附加到视频中",
-    "description": "The description of Recognize subtitles"
+    "message": "自动识别字幕并附加到视频中"
   },
   "Automatically translate subtitles to any language": {
-    "message": "自动将字幕翻译成任何语言",
-    "description": "The description of Translate subtitles"
+    "message": "自动将字幕翻译成任何语言"
   },
   "Automation & Content Management": {
     "message": "自动化和内容管理"
@@ -134,12 +123,10 @@
     "message": "基础配置"
   },
   "Batch Generating Unique Videos": {
-    "message": "批量生成唯一视频",
-    "description": "The description of Batch Generating Unique Videos"
+    "message": "批量生成唯一视频"
   },
   "Batch account management": {
-    "message": "批量账号管理",
-    "description": "The description of Batch account management"
+    "message": "批量账号管理"
   },
   "Batch login to TikTok accounts with account list management": {
     "message": "批量登录TikTok账户，支持账户列表管理"
@@ -151,8 +138,7 @@
     "message": "内置安全机制，保护您的Instagram账户免受封禁"
   },
   "Buy hardware": {
-    "message": "购买硬件",
-    "description": "The product label"
+    "message": "购买硬件"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
     "message": "我可以在同一台计算机上同时运行IgMatrix和TikMatrix吗？"
@@ -188,15 +174,13 @@
     "message": "电脑端运行"
   },
   "Contact": {
-    "message": "联系我们",
-    "description": "The contact form title"
+    "message": "联系我们"
   },
   "Contact Support": {
     "message": "联系支持"
   },
   "Contact to purchase": {
-    "message": "联系购买",
-    "description": "The contact to purchase label"
+    "message": "联系购买"
   },
   "Content Management": {
     "message": "内容管理"
@@ -229,19 +213,16 @@
     "message": "我需要为IgMatrix和TikMatrix单独购买许可证吗？"
   },
   "Download IgMatrix": {
-    "message": "下载 IgMatrix",
-    "description": "The description of Download IgMatrix"
+    "message": "下载 IgMatrix"
   },
   "Download IgMatrix from our official website and follow the installation instructions.": {
     "message": "从我们的官方网站下载IgMatrix，并按照安装说明进行操作。"
   },
   "Download TikMatrix": {
-    "message": "下载 TikMatrix",
-    "description": "The description of Download TikMatrix"
+    "message": "下载 TikMatrix"
   },
   "Download VideoMagic": {
-    "message": "下载 VideoMagic",
-    "description": "The description of Download VideoMagic"
+    "message": "下载 VideoMagic"
   },
   "Download and Install": {
     "message": "下载并安装"
@@ -250,15 +231,13 @@
     "message": "Windows 下载"
   },
   "Email": {
-    "message": "邮箱",
-    "description": "The email label"
+    "message": "邮箱"
   },
   "Expert Technical Team": {
     "message": "专业技术团队"
   },
   "Fan collection": {
-    "message": "采集粉丝",
-    "description": "The description of Fan collection"
+    "message": "采集粉丝"
   },
   "Features": {
     "message": "功能"
@@ -288,8 +267,7 @@
     "message": "通过ChatGPT API集成生成智能且符合语境的评论"
   },
   "Generate unique videos from one source video": {
-    "message": "从一个源视频生成唯一的视频",
-    "description": "The description of Video unique"
+    "message": "从一个源视频生成唯一的视频"
   },
   "Get Started": {
     "message": "开始使用"
@@ -322,15 +300,13 @@
     "message": "真人点击模拟"
   },
   "If you are interested in our service, please contact us to get price.": {
-    "message": "如果您想了解我们的服务，请联系我们获取价格。",
-    "description": "The contact form description"
+    "message": "如果您想了解我们的服务，请联系我们获取价格。"
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
     "message": "如果您需要IgMatrix特定功能的帮助或遇到任何问题，我们的支持团队随时为您提供帮助。"
   },
   "IgMatrix": {
-    "message": "IgMatrix",
-    "description": "The description of IgMatrix"
+    "message": "IgMatrix"
   },
   "IgMatrix Features": {
     "message": "IgMatrix功能"
@@ -345,8 +321,7 @@
     "message": "IgMatrix遵循与TikMatrix类似的定价结构，但可能有不同的费率。请查看我们的官方定价页面或联系我们的支持团队了解当前的IgMatrix定价信息。"
   },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
-    "message": "IgMatrix 是一款Instagram安卓手机农场批量控制工具",
-    "description": "The description of IgMatrix"
+    "message": "IgMatrix 是一款Instagram安卓手机农场批量控制工具"
   },
   "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
     "message": "IgMatrix的设置教程与TikMatrix相同。唯一的不同就是他们的脚本逻辑不同，所以您可以直接参考TikMatrix的教程文档。"
@@ -367,8 +342,7 @@
     "message": "Instagram自动化"
   },
   "Instagram Phone Farm Batch Control Tool": {
-    "message": "Instagram手机农场批量控制工具",
-    "description": "The description of Instagram Phone Farm Batch Control Tool"
+    "message": "Instagram手机农场批量控制工具"
   },
   "Instagram-optimized automation scripts": {
     "message": "Instagram优化的自动化脚本"
@@ -380,12 +354,10 @@
     "message": "定价与TikMatrix相同吗？"
   },
   "Join Channel": {
-    "message": "加入频道",
-    "description": "The join channel button label"
+    "message": "加入频道"
   },
   "Join Group": {
-    "message": "加入群组",
-    "description": "The join group button label"
+    "message": "加入群组"
   },
   "Key Differences from TikMatrix": {
     "message": "与TikMatrix的主要区别"
@@ -400,8 +372,7 @@
     "message": "批量私信"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "周一至周五: 9:00AM - 5:00PM（UTC+8）",
-    "description": "The working hours description"
+    "message": "周一至周五: 9:00AM - 5:00PM（UTC+8）"
   },
   "Monthly": {
     "message": "包月"
@@ -425,52 +396,40 @@
     "message": "由于脚本是平台特定的，并非所有TikMatrix脚本都在IgMatrix中可用。安装后可以在IgMatrix软件界面中找到可用脚本的确切列表。请参考软件中显示的实际功能。"
   },
   "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "一键自动采集目标账号的粉丝列表，可用于发送私信",
-    "description": "The description of Fan collection"
+    "message": "一键自动采集目标账号的粉丝列表，可用于发送私信"
   },
   "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "一键批量自动养号，支持搜索关键字、随机关注、点赞、评论、收藏",
-    "description": "The description of Automatic account nurturing"
+    "message": "一键批量自动养号，支持搜索关键字、随机关注、点赞、评论、收藏"
   },
   "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "一键批量自动在大量的视频中评论指定的话术，并添加随机表情",
-    "description": "The description of Automatic commenting"
+    "message": "一键批量自动在大量的视频中评论指定的话术，并添加随机表情"
   },
   "One-click batch automatic direct messaging to multiple target users": {
-    "message": "一键批量自动给大量目标用户发送私信",
-    "description": "The description of Automatic direct messaging"
+    "message": "一键批量自动给大量目标用户发送私信"
   },
   "One-click batch automatic follow of target accounts": {
-    "message": "一键批量自动关注目标账号",
-    "description": "The description of Automatic following"
+    "message": "一键批量自动关注目标账号"
   },
   "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "一键批量自动登录 TikTok 账号，支持批量导入导出账号",
-    "description": "The description of Automatic login"
+    "message": "一键批量自动登录 TikTok 账号，支持批量导入导出账号"
   },
   "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "一键批量自动匹配已登录的账号，无需手动绑定",
-    "description": "The description of Automatic matching"
+    "message": "一键批量自动匹配已登录的账号，无需手动绑定"
   },
   "One-click batch automatic posting, supports adding product links": {
-    "message": "一键批量自动发布，支持添加商品链接",
-    "description": "The description of Automatic posting"
+    "message": "一键批量自动发布，支持添加商品链接"
   },
   "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "一键批量自动注册 TikTok 账号，支持企业邮箱",
-    "description": "The description of Automatic registration"
+    "message": "一键批量自动注册 TikTok 账号，支持企业邮箱"
   },
   "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "一键批量自动设置头像、昵称、签名、用户名",
-    "description": "The description of Automatic profile setup"
+    "message": "一键批量自动设置头像、昵称、签名、用户名"
   },
   "One-click download of videos from all video websites": {
-    "message": "一键下载所有视频网站的视频",
-    "description": "The description of Video download"
+    "message": "一键下载所有视频网站的视频"
   },
   "One-click download of videos from the entire network": {
-    "message": "全网视频一键下载",
-    "description": "The description of Video collection"
+    "message": "全网视频一键下载"
   },
   "Open Source Client": {
     "message": "开源客户端"
@@ -479,22 +438,19 @@
     "message": "开源的客户端代码，用户可以随意自定义客户端"
   },
   "Our Competitive Advantages": {
-    "message": "我们的竞争优势",
-    "description": "The description of Our Competitive Advantages"
+    "message": "我们的竞争优势"
   },
   "Our Core Advantages": {
     "message": "我们的核心优势"
   },
   "Our Core Features": {
-    "message": "我们的核心功能",
-    "description": "The description of Our Core Features"
+    "message": "我们的核心功能"
   },
   "Our plans": {
     "message": "我们的套餐"
   },
   "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "我们专有的真机矩阵系统完美规避TikTok的风控措施，实现极低的账号封禁率。",
-    "description": "The description of TikMatrix proprietary technology"
+    "message": "我们专有的真机矩阵系统完美规避TikTok的风控措施，实现极低的账号封禁率。"
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "我们的支持团队在这里帮助您解决任何与IgMatrix相关的问题或疑问。"
@@ -506,12 +462,10 @@
     "message": "每年"
   },
   "Performance analytics": {
-    "message": "性能分析",
-    "description": "The description of Performance analytics"
+    "message": "性能分析"
   },
   "Phone screen mirroring to a computer": {
-    "message": "手机投屏到电脑",
-    "description": "The description of Phone screen mirroring to a computer"
+    "message": "手机投屏到电脑"
   },
   "Platform-optimized features": {
     "message": "平台优化功能"
@@ -529,8 +483,7 @@
     "message": "为专业营销人员和企业设计的强大Instagram自动化工具"
   },
   "Powerful TikTok Automation & Management Tools": {
-    "message": "强大的TikTok自动化和管理工具",
-    "description": "The description of Powerful TikTok Automation & Management Tools"
+    "message": "强大的TikTok自动化和管理工具"
   },
   "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
     "message": "强大的技术团队，实时维护更新，保证脚本的可用率"
@@ -545,15 +498,13 @@
     "message": "私有化本地部署"
   },
   "Professional TikTok Account Management & Marketing Tool": {
-    "message": "专业的TikTok账号管理及营销工具",
-    "description": "The description of Professional TikTok Account Management & Marketing Tool"
+    "message": "专业的TikTok账号管理及营销工具"
   },
   "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
     "message": "专业TikTok账号管理与营销工具 - 支持Windows和Mac"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "专业TikTok账号管理与营销工具，专为Windows和Mac上的安卓手机农场设计。实现自动发布、关注等功能，促进TikTok影响力增长，确保零封号率。",
-    "description": "The description of Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
+    "message": "专业TikTok账号管理与营销工具，专为Windows和Mac上的安卓手机农场设计。实现自动发布、关注等功能，促进TikTok影响力增长，确保零封号率。"
   },
   "Professional phone farm management": {
     "message": "专业手机农场管理"
@@ -571,8 +522,7 @@
     "message": "识别并匹配手机中的TikTok账户，添加到账户列表"
   },
   "Recognize subtitles": {
-    "message": "识别字幕",
-    "description": "The description of Recognize subtitles"
+    "message": "识别字幕"
   },
   "Remove posts based on their view count for content optimization": {
     "message": "根据观看次数删除帖子，优化内容"
@@ -617,8 +567,7 @@
     "message": "设置教程"
   },
   "Shipping worldwide": {
-    "message": "全球发货",
-    "description": "The shipping worldwide label"
+    "message": "全球发货"
   },
   "Simulates natural right-hand arc swipe trajectories like real human interaction": {
     "message": "脚本滑动采用模拟真人的右手弧形滑动轨迹"
@@ -639,12 +588,10 @@
     "message": "通过先进的批量控制和营销自动化，高效管理您的安卓TikTok手机农场"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-    "message": "通过先进的批量控制和营销自动化，轻松管理您的Instagram手机农场。",
-    "description": "The description of Streamline your Instagram phone farm with advanced batch control and marketing automation"
+    "message": "通过先进的批量控制和营销自动化，轻松管理您的Instagram手机农场。"
   },
   "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "通过先进的批量控制和营销自动化，轻松管理您的TikTok手机农场。",
-    "description": "The description of Streamline your TikTok phone farm with advanced batch control and marketing automation"
+    "message": "通过先进的批量控制和营销自动化，轻松管理您的TikTok手机农场。"
   },
   "Strong technical support team with open community ecosystem": {
     "message": "强大的技术支持团队，开放的社区生态"
@@ -656,8 +603,7 @@
     "message": "支持100+手机投屏到电脑，同步操作"
   },
   "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "支持 200+ 手机投屏到电脑，支持同步操作",
-    "description": "The description of Phone screen mirroring to a computer"
+    "message": "支持 200+ 手机投屏到电脑，支持同步操作"
   },
   "Supports work profile enterprise space for professional use": {
     "message": "支持work profile企业空间"
@@ -666,8 +612,7 @@
     "message": "技术优势"
   },
   "Telegram": {
-    "message": "Telegram",
-    "description": "The telegram label"
+    "message": "Telegram"
   },
   "Telegram Support": {
     "message": "Telegram支持群"
@@ -676,23 +621,19 @@
     "message": "脚本输入文字采用模拟真人的逐字输入"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "长度和宽度相对较大，但高度低（2u 尺寸）",
-    "description": "The description of PhoneFarm Box"
+    "message": "长度和宽度相对较大，但高度低（2u 尺寸）"
   },
   "The length and width are relatively small, but the height is high": {
-    "message": "长度和宽度相对较小，但高度高",
-    "description": "The description of PhoneFarm Box"
+    "message": "长度和宽度相对较小，但高度高"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "手机主板机是20个三星手机主板。它是一台通电自启动的，统一电源供电，统一的多风扇散热，统一的 USB 连接，支持 OTG 有线网络连接。",
-    "description": "The description of PhoneFarm Box"
+    "message": "手机主板机是20个三星手机主板。它是一台通电自启动的，统一电源供电，统一的多风扇散热，统一的 USB 连接，支持 OTG 有线网络连接。"
   },
   "TikMatrix": {
     "message": "TikMatrix 真机矩阵"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix 提供比同类产品至少高30%的互动率，采用先进的真机技术确保账号完全安全。",
-    "description": "The description of TikMatrix competitive advantage"
+    "message": "TikMatrix 提供比同类产品至少高30%的互动率，采用先进的真机技术确保账号完全安全。"
   },
   "TikMatrix is a TikTok group control operation tool": {
     "message": "TikMatrix是一款Tiktok群控运营工具"
@@ -701,8 +642,7 @@
     "message": "TikMatrix 是一款专业的TikTok手机农场营销软件"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix 是一款专业的TikTok手机农场营销软件。管理多个账号，自动发布，并轻松扩展您的TikTok营销。",
-    "description": "The description of TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
+    "message": "TikMatrix 是一款专业的TikTok手机农场营销软件。管理多个账号，自动发布，并轻松扩展您的TikTok营销。"
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
     "message": "TikMatrix 支持每个手机登录8个tiktok账号"
@@ -711,15 +651,13 @@
     "message": "TikMatrix 支持 Android 手机，运行 Android 5.0 及以上版本。"
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "TikMatrix 支持 Windows 10 及以上版本，以及 macOS 10.15 或更高版本。Mac用户安装后，需要在终端执行以下命令以允许运行：xattr -cr /Applications/TikMatrix.app",
-    "description": "电脑支持回答"
+    "message": "TikMatrix 支持 Windows 10 及以上版本，以及 macOS 10.15 或更高版本。Mac用户安装后，需要在终端执行以下命令以允许运行：xattr -cr /Applications/TikMatrix.app"
   },
   "TikMatrix supports up to 200+ devices.": {
     "message": "TikMatrix 支持 200+ 个设备。"
   },
   "Translate subtitles": {
-    "message": "翻译字幕",
-    "description": "The description of Translate subtitles"
+    "message": "翻译字幕"
   },
   "Trial": {
     "message": "试用"
@@ -728,8 +666,7 @@
     "message": "教程"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-    "message": "美国原生非激活的 SIM 卡，用于 tiktok Android 应用来检测 SIM 卡位置",
-    "description": "The description of PhoneFarm Box"
+    "message": "美国原生非激活的 SIM 卡，用于 tiktok Android 应用来检测 SIM 卡位置"
   },
   "Unlimited devices": {
     "message": "无限设备"
@@ -738,8 +675,7 @@
     "message": "无限设备、客户支持"
   },
   "Unlimited process tasks": {
-    "message": "无限处理任务",
-    "description": "The description of Unlimited process tasks"
+    "message": "无限处理任务"
   },
   "User engagement boost": {
     "message": "用户互动提升"
@@ -751,35 +687,28 @@
     "message": "用户采集"
   },
   "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "视频魔法是一款专业的视频生成软件，专为运营者设计。它可以为您生成独特的视频，极大提升运营效率。",
-    "description": "The description of Video Magic"
+    "message": "视频魔法是一款专业的视频生成软件，专为运营者设计。它可以为您生成独特的视频，极大提升运营效率。"
   },
   "Video Magic is a tool that can generate unique videos": {
-    "message": "视频魔法是一款可以生成独特视频的工具",
-    "description": "The description of Video Magic"
+    "message": "视频魔法是一款可以生成独特视频的工具"
   },
   "Video collection": {
-    "message": "采集视频",
-    "description": "The description of Video collection"
+    "message": "采集视频"
   },
   "Video download": {
-    "message": "视频下载",
-    "description": "The description of Video download"
+    "message": "视频下载"
   },
   "Video posting, Account nurturing": {
     "message": "视频发布、账号养护"
   },
   "Video unique": {
-    "message": "视频生成",
-    "description": "The description of Video unique"
+    "message": "视频生成"
   },
   "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - 批量生成唯一视频",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic - 批量生成唯一视频"
   },
   "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic是一款用于批量生成唯一视频的软件",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic是一款用于批量生成唯一视频的软件"
   },
   "View TikMatrix Tutorial": {
     "message": "查看TikMatrix教程"
@@ -788,8 +717,7 @@
     "message": "通过搜索关键词、观看视频、关注、点赞、评论和收藏来养号"
   },
   "What computer can I use?": {
-    "message": "我可以使用哪些电脑?",
-    "description": "电脑支持问题"
+    "message": "我可以使用哪些电脑?"
   },
   "What devices can I use?": {
     "message": "我可以使用哪些设备?"
@@ -813,8 +741,7 @@
     "message": "企业空间支持"
   },
   "Working Hours": {
-    "message": "工作时间",
-    "description": "The working hours label"
+    "message": "工作时间"
   },
   "Yearly": {
     "message": "包年"
@@ -919,176 +846,133 @@
     "message": "WhatsApp 号码检查器"
   },
   "download.description": {
-    "message": "下载 TikMatrix 的 Windows、Mac 和 Linux 版本",
-    "description": "下载页面的描述"
+    "message": "下载 TikMatrix 的 Windows、Mac 和 Linux 版本"
   },
   "download.igmatrix.description": {
-    "message": "下载 IgMatrix 的 Windows、Mac 和 Linux 版本",
-    "description": "IgMatrix下载页面的描述"
+    "message": "下载 IgMatrix 的 Windows、Mac 和 Linux 版本"
   },
   "download.igmatrix.linux.coming_soon": {
-    "message": "即将推出",
-    "description": "IgMatrix Linux即将推出提示"
+    "message": "即将推出"
   },
   "download.igmatrix.linux.description": {
-    "message": "Linux 版本正在开发中",
-    "description": "IgMatrix Linux开发中描述"
+    "message": "Linux 版本正在开发中"
   },
   "download.igmatrix.linux.development": {
-    "message": "开发中",
-    "description": "IgMatrix Linux开发中状态"
+    "message": "开发中"
   },
   "download.igmatrix.linux.title": {
-    "message": "Linux",
-    "description": "IgMatrix Linux平台标题"
+    "message": "Linux"
   },
   "download.igmatrix.mac.button": {
-    "message": "下载 Mac 版本",
-    "description": "IgMatrix Mac下载按钮文本"
+    "message": "下载 Mac 版本"
   },
   "download.igmatrix.mac.description": {
-    "message": "macOS 10.15 或更高版本",
-    "description": "IgMatrix Mac平台描述"
+    "message": "macOS 10.15 或更高版本"
   },
   "download.igmatrix.mac.install_tip": {
-    "message": "安装后请在终端执行以下命令以允许运行：",
-    "description": "IgMatrix Mac安装后需要执行的命令提示"
+    "message": "安装后请在终端执行以下命令以允许运行："
   },
   "download.igmatrix.mac.title": {
-    "message": "Mac",
-    "description": "IgMatrix Mac平台标题"
+    "message": "Mac"
   },
   "download.igmatrix.requirements.internet": {
-    "message": "网络连接：必需",
-    "description": "IgMatrix网络连接要求"
+    "message": "网络连接：必需"
   },
   "download.igmatrix.requirements.memory": {
-    "message": "内存：8 GB RAM",
-    "description": "IgMatrix内存要求"
+    "message": "内存：8 GB RAM"
   },
   "download.igmatrix.requirements.os": {
-    "message": "操作系统：Windows 10/11、macOS 10.15+ 或 Ubuntu 20.04+",
-    "description": "IgMatrix操作系统要求"
+    "message": "操作系统：Windows 10/11、macOS 10.15+ 或 Ubuntu 20.04+"
   },
   "download.igmatrix.requirements.processor": {
-    "message": "处理器：Intel Core i5 或同等性能",
-    "description": "IgMatrix处理器要求"
+    "message": "处理器：Intel Core i5 或同等性能"
   },
   "download.igmatrix.requirements.storage": {
-    "message": "存储空间：500 MB 可用空间",
-    "description": "IgMatrix存储空间要求"
+    "message": "存储空间：500 MB 可用空间"
   },
   "download.igmatrix.requirements.title": {
-    "message": "系统要求",
-    "description": "IgMatrix系统要求标题"
+    "message": "系统要求"
   },
   "download.igmatrix.subtitle": {
-    "message": "选择您的平台下载 IgMatrix",
-    "description": "IgMatrix下载页面的副标题"
+    "message": "选择您的平台下载 IgMatrix"
   },
   "download.igmatrix.title": {
-    "message": "下载 IgMatrix",
-    "description": "IgMatrix下载页面的标题"
+    "message": "下载 IgMatrix"
   },
   "download.igmatrix.windows.button": {
-    "message": "下载 Windows 版本",
-    "description": "IgMatrix Windows下载按钮文本"
+    "message": "下载 Windows 版本"
   },
   "download.igmatrix.windows.description": {
-    "message": "Windows 10/11 (64位)",
-    "description": "IgMatrix Windows平台描述"
+    "message": "Windows 10/11 (64位)"
   },
   "download.igmatrix.windows.title": {
-    "message": "Windows",
-    "description": "IgMatrix Windows平台标题"
+    "message": "Windows"
   },
   "download.linux.coming_soon": {
-    "message": "即将推出",
-    "description": "Linux即将推出提示"
+    "message": "即将推出"
   },
   "download.linux.description": {
-    "message": "Linux 版本正在开发中",
-    "description": "Linux开发中描述"
+    "message": "Linux 版本正在开发中"
   },
   "download.linux.development": {
-    "message": "开发中",
-    "description": "Linux开发中状态"
+    "message": "开发中"
   },
   "download.linux.title": {
-    "message": "Linux",
-    "description": "Linux平台标题"
+    "message": "Linux"
   },
   "download.mac.button": {
-    "message": "下载 Mac 版本",
-    "description": "Mac下载按钮文本"
+    "message": "下载 Mac 版本"
   },
   "download.mac.description": {
-    "message": "macOS 10.15 或更高版本",
-    "description": "Mac平台描述"
+    "message": "macOS 10.15 或更高版本"
   },
   "download.mac.install_tip": {
-    "message": "安装后请在终端执行以下命令以允许运行：",
-    "description": "Mac安装后需要执行的命令提示"
+    "message": "安装后请在终端执行以下命令以允许运行："
   },
   "download.mac.title": {
-    "message": "Mac",
-    "description": "Mac平台标题"
+    "message": "Mac"
   },
   "download.requirements.internet": {
-    "message": "网络连接：必需",
-    "description": "网络连接要求"
+    "message": "网络连接：必需"
   },
   "download.requirements.memory": {
-    "message": "内存：8 GB RAM",
-    "description": "内存要求"
+    "message": "内存：8 GB RAM"
   },
   "download.requirements.os": {
-    "message": "操作系统：Windows 10/11、macOS 10.15+ 或 Ubuntu 20.04+",
-    "description": "操作系统要求"
+    "message": "操作系统：Windows 10/11、macOS 10.15+ 或 Ubuntu 20.04+"
   },
   "download.requirements.processor": {
-    "message": "处理器：Intel Core i5 或同等性能",
-    "description": "处理器要求"
+    "message": "处理器：Intel Core i5 或同等性能"
   },
   "download.requirements.storage": {
-    "message": "存储空间：500 MB 可用空间",
-    "description": "存储空间要求"
+    "message": "存储空间：500 MB 可用空间"
   },
   "download.requirements.title": {
-    "message": "系统要求",
-    "description": "系统要求标题"
+    "message": "系统要求"
   },
   "download.subtitle": {
-    "message": "选择您的平台下载 TikMatrix",
-    "description": "下载页面的副标题"
+    "message": "选择您的平台下载 TikMatrix"
   },
   "download.title": {
-    "message": "下载 TikMatrix",
-    "description": "下载页面的标题"
+    "message": "下载 TikMatrix"
   },
   "download.videomagic.description": {
-    "message": "下载 VideoMagic 的 Windows、Mac 和 Linux 版本",
-    "description": "VideoMagic下载页面的描述"
+    "message": "下载 VideoMagic 的 Windows、Mac 和 Linux 版本"
   },
   "download.videomagic.subtitle": {
-    "message": "选择您的平台下载 VideoMagic",
-    "description": "VideoMagic下载页面的副标题"
+    "message": "选择您的平台下载 VideoMagic"
   },
   "download.videomagic.title": {
-    "message": "下载 VideoMagic",
-    "description": "VideoMagic下载页面的标题"
+    "message": "下载 VideoMagic"
   },
   "download.windows.button": {
-    "message": "下载 Windows 版本",
-    "description": "Windows下载按钮文本"
+    "message": "下载 Windows 版本"
   },
   "download.windows.description": {
-    "message": "Windows 10/11 (64位)",
-    "description": "Windows平台描述"
+    "message": "Windows 10/11 (64位)"
   },
   "download.windows.title": {
-    "message": "Windows",
-    "description": "Windows平台标题"
+    "message": "Windows"
   },
   "homepage.header.cta.download": {
     "message": "立即下载"
@@ -1166,31 +1050,25 @@
     "message": "为什么选择 TikMatrix?"
   },
   "navbar.download": {
-    "message": "下载",
-    "description": "导航栏下载链接文本"
+    "message": "下载"
   },
   "pricing.all_features": {
-    "message": "包含所有功能",
-    "description": "包含所有功能文本"
+    "message": "包含所有功能"
   },
   "pricing.badge.popular": {
     "message": "最受欢迎"
   },
   "pricing.business.concurrent_tasks": {
-    "message": "最多100个并发自动化任务",
-    "description": "商业版并发任务数"
+    "message": "最多100个并发自动化任务"
   },
   "pricing.business.description": {
-    "message": "适合大型企业",
-    "description": "商业版计划描述"
+    "message": "适合大型企业"
   },
   "pricing.business.manage_phones": {
-    "message": "最多100个并发自动化任务",
-    "description": "商业版计划功能"
+    "message": "最多100个并发自动化任务"
   },
   "pricing.business.name": {
-    "message": "商业版",
-    "description": "商业版计划名称"
+    "message": "商业版"
   },
   "pricing.compare.automation": {
     "message": "自动化任务"
@@ -1211,36 +1089,28 @@
     "message": "立即订阅"
   },
   "pricing.dedicated_support": {
-    "message": "专属工单支持",
-    "description": "专属支持文本"
+    "message": "专属工单支持"
   },
   "pricing.free.all_free_features": {
-    "message": "所有基础功能（不含自动化任务）",
-    "description": "免费计划基础功能描述"
+    "message": "所有基础功能（不含自动化任务）"
   },
   "pricing.free.automation_disabled": {
-    "message": "自动化任务不可用",
-    "description": "免费计划自动化不可用文本"
+    "message": "自动化任务不可用"
   },
   "pricing.free.community_support": {
-    "message": "社区支持",
-    "description": "免费计划支持方式"
+    "message": "社区支持"
   },
   "pricing.free.description": {
-    "message": "免费用户可以连接无限设备，但无法执行自动化任务",
-    "description": "免费计划描述"
+    "message": "免费用户可以连接无限设备，但无法执行自动化任务"
   },
   "pricing.free.name": {
-    "message": "免费",
-    "description": "免费计划名称"
+    "message": "免费"
   },
   "pricing.free_label": {
-    "message": "免费",
-    "description": "Free label"
+    "message": "免费"
   },
   "pricing.get_started": {
-    "message": "开始使用",
-    "description": "开始使用按钮文本"
+    "message": "开始使用"
   },
   "pricing.local_api.description": {
     "message": "Pro、Team 和 Business 用户可使用本地 RESTful API 来以编程方式管理任务和自动化工作流。详见文档。"
@@ -1258,71 +1128,55 @@
     "message": "每月"
   },
   "pricing.per_month_pc": {
-    "message": "每月/每台电脑",
-    "description": "每月每台电脑文本"
+    "message": "每月/每台电脑"
   },
   "pricing.per_year": {
     "message": "每年 (节省 30%)"
   },
   "pricing.pro.concurrent_tasks": {
-    "message": "最多20个并发自动化任务",
-    "description": "专业版并发任务数"
+    "message": "最多20个并发自动化任务"
   },
   "pricing.pro.description": {
-    "message": "适合专业人士和小企业",
-    "description": "专业版计划描述"
+    "message": "适合专业人士和小企业"
   },
   "pricing.pro.manage_phones": {
-    "message": "最多20个并发自动化任务",
-    "description": "专业版计划功能"
+    "message": "最多20个并发自动化任务"
   },
   "pricing.pro.name": {
-    "message": "专业版",
-    "description": "专业版计划名称"
+    "message": "专业版"
   },
   "pricing.starter.concurrent_tasks": {
-    "message": "最多5个并发自动化任务",
-    "description": "入门版并发任务数"
+    "message": "最多5个并发自动化任务"
   },
   "pricing.starter.description": {
-    "message": "适合个人和小团队",
-    "description": "入门版计划描述"
+    "message": "适合个人和小团队"
   },
   "pricing.starter.manage_phones": {
-    "message": "最多5个并发自动化任务",
-    "description": "入门版计划功能"
+    "message": "最多5个并发自动化任务"
   },
   "pricing.starter.name": {
-    "message": "入门版",
-    "description": "入门版计划名称"
+    "message": "入门版"
   },
   "pricing.subtitle": {
-    "message": "适合每个人的灵活计划。年付享受30%折扣！",
-    "description": "定价部分副标题"
+    "message": "适合每个人的灵活计划。年付享受30%折扣！"
   },
   "pricing.team.concurrent_tasks": {
-    "message": "最多50个并发自动化任务",
-    "description": "团队版并发任务数"
+    "message": "最多50个并发自动化任务"
   },
   "pricing.team.description": {
-    "message": "适合成长中的团队和公司",
-    "description": "团队版计划描述"
+    "message": "适合成长中的团队和公司"
   },
   "pricing.team.manage_phones": {
-    "message": "最多50个并发自动化任务",
-    "description": "团队版计划功能"
+    "message": "最多50个并发自动化任务"
   },
   "pricing.team.name": {
-    "message": "团队版",
-    "description": "团队版计划名称"
+    "message": "团队版"
   },
   "pricing.ticket_support": {
-    "message": "专属工单支持",
-    "description": "专属工单支持文本"
+    "message": "专属工单支持"
   },
   "pricing.title": {
-    "message": "定价",
-    "description": "定价部分标题"
+    "message": "定价"
   },
   "pricing.toggle.monthly": {
     "message": "月付"
@@ -1331,8 +1185,7 @@
     "message": "年付 (节省 30%)"
   },
   "pricing.unlimited_devices": {
-    "message": "无限设备连接",
-    "description": "无限设备连接文本"
+    "message": "无限设备连接"
   },
   "pricing.unlimited_devices_short": {
     "message": "无限"
@@ -1497,291 +1350,220 @@
     "message": "技术优势"
   },
   "testimonials.subtitle": {
-    "message": "TikMatrix用户怎么说",
-    "description": "用户评价部分副标题"
+    "message": "TikMatrix用户怎么说"
   },
   "testimonials.title": {
-    "message": "真实用户评价",
-    "description": "用户评价部分标题"
+    "message": "真实用户评价"
   },
   "testimonials.usage_label": {
-    "message": "使用时长",
-    "description": "使用时长标签"
+    "message": "使用时长"
   },
   "testimonials.user1.text": {
-    "message": "TikMatrix对我们工作室来说是救星！我们可以同时控制这么多手机，自动化功能超级强大。发帖和养号变得容易多了。TikTok防检测真的有效——我们的帖子获得了比以前更自然的流量。",
-    "description": "第一个用户评价文本"
+    "message": "TikMatrix对我们工作室来说是救星！我们可以同时控制这么多手机，自动化功能超级强大。发帖和养号变得容易多了。TikTok防检测真的有效——我们的帖子获得了比以前更自然的流量。"
   },
   "testimonials.user1.usage": {
-    "message": "1年",
-    "description": "第一个用户使用时长"
+    "message": "1年"
   },
   "testimonials.user2.text": {
-    "message": "使用TikMatrix后，我们广告团队的效率飙升。自动化脚本为我们节省了大量手动工作，账户保持安全——到目前为止没有被封禁。对我们这样的代理商来说非常完美！",
-    "description": "第二个用户评价文本"
+    "message": "使用TikMatrix后，我们广告团队的效率飙升。自动化脚本为我们节省了大量手动工作，账户保持安全——到目前为止没有被封禁。对我们这样的代理商来说非常完美！"
   },
   "testimonials.user2.usage": {
-    "message": "10个月",
-    "description": "第二个用户使用时长"
+    "message": "10个月"
   },
   "testimonials.user3.text": {
-    "message": "同时控制100部手机是改变游戏规则的。批量操作超级方便，我们的TikTok帖子获得了更多有机触达。非常适合海外营销，价格也很公道！",
-    "description": "第三个用户评价文本"
+    "message": "同时控制100部手机是改变游戏规则的。批量操作超级方便，我们的TikTok帖子获得了更多有机触达。非常适合海外营销，价格也很公道！"
   },
   "testimonials.user3.usage": {
-    "message": "6个月",
-    "description": "第三个用户使用时长"
+    "message": "6个月"
   },
   "testimonials.user4.text": {
-    "message": "之前试过其他工具，但TikMatrix是最省心的。自动化和防封都很可靠。非常适合需要高效批量操作的营销团队。",
-    "description": "第四个用户评价文本"
+    "message": "之前试过其他工具，但TikMatrix是最省心的。自动化和防封都很可靠。非常适合需要高效批量操作的营销团队。"
   },
   "testimonials.user4.usage": {
-    "message": "8个月",
-    "description": "第四个用户使用时长"
+    "message": "8个月"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "关闭",
-    "description": "The ARIA label for close button of announcement bar"
+    "message": "关闭"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "回到顶部",
-    "description": "The ARIA label for the back to top button"
+    "message": "回到顶部"
   },
   "theme.CodeBlock.copied": {
-    "message": "复制成功",
-    "description": "The copied button label on code blocks"
+    "message": "复制成功"
   },
   "theme.CodeBlock.copy": {
-    "message": "复制",
-    "description": "The copy button label on code blocks"
+    "message": "复制"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "复制代码到剪贴板",
-    "description": "The ARIA label for copy code blocks button"
+    "message": "复制代码到剪贴板"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "切换自动换行",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
+    "message": "切换自动换行"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "折叠侧边栏分类 '{label}'",
-    "description": "The ARIA label to collapse the sidebar category"
+    "message": "折叠侧边栏分类 '{label}'"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "展开侧边栏分类 '{label}'",
-    "description": "The ARIA label to expand the sidebar category"
+    "message": "展开侧边栏分类 '{label}'"
   },
   "theme.ErrorPageContent.title": {
-    "message": "页面已崩溃。",
-    "description": "The title of the fallback page when the page crashed"
+    "message": "页面已崩溃。"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "重试",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+    "message": "重试"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "主导航",
-    "description": "The ARIA label for the main navigation"
+    "message": "主导航"
   },
   "theme.NotFound.p1": {
-    "message": "我们找不到您要找的页面。",
-    "description": "The first paragraph of the 404 page"
+    "message": "我们找不到您要找的页面。"
   },
   "theme.NotFound.p2": {
-    "message": "请联系原始链接来源网站的所有者，并告知他们链接已损坏。",
-    "description": "The 2nd paragraph of the 404 page"
+    "message": "请联系原始链接来源网站的所有者，并告知他们链接已损坏。"
   },
   "theme.NotFound.title": {
-    "message": "找不到页面",
-    "description": "The title of the 404 page"
+    "message": "找不到页面"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "本页总览",
-    "description": "The label used by the button on the collapsible TOC component"
+    "message": "本页总览"
   },
   "theme.admonition.caution": {
-    "message": "警告",
-    "description": "The default label used for the Caution admonition (:::caution)"
+    "message": "警告"
   },
   "theme.admonition.danger": {
-    "message": "危险",
-    "description": "The default label used for the Danger admonition (:::danger)"
+    "message": "危险"
   },
   "theme.admonition.info": {
-    "message": "信息",
-    "description": "The default label used for the Info admonition (:::info)"
+    "message": "信息"
   },
   "theme.admonition.note": {
-    "message": "备注",
-    "description": "The default label used for the Note admonition (:::note)"
+    "message": "备注"
   },
   "theme.admonition.tip": {
-    "message": "提示",
-    "description": "The default label used for the Tip admonition (:::tip)"
+    "message": "提示"
   },
   "theme.admonition.warning": {
-    "message": "注意",
-    "description": "The default label used for the Warning admonition (:::warning)"
+    "message": "注意"
   },
   "theme.blog.archive.description": {
-    "message": "历史博文",
-    "description": "The page & hero description of the blog archive page"
+    "message": "历史博文"
   },
   "theme.blog.archive.title": {
-    "message": "历史博文",
-    "description": "The page & hero title of the blog archive page"
+    "message": "历史博文"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "博文列表分页导航",
-    "description": "The ARIA label for the blog pagination"
+    "message": "博文列表分页导航"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "较新的博文",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
+    "message": "较新的博文"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "较旧的博文",
-    "description": "The label used to navigate to the older blog posts page (next page)"
+    "message": "较旧的博文"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "博文分页导航",
-    "description": "The ARIA label for the blog posts pagination"
+    "message": "博文分页导航"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "较新一篇",
-    "description": "The blog post button label to navigate to the newer/previous post"
+    "message": "较新一篇"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "较旧一篇",
-    "description": "The blog post button label to navigate to the older/next post"
+    "message": "较旧一篇"
   },
   "theme.blog.post.plurals": {
-    "message": "{count} 篇博文",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} 篇博文"
   },
   "theme.blog.post.readMore": {
-    "message": "阅读更多",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
+    "message": "阅读更多"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "阅读 {title} 的全文",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
+    "message": "阅读 {title} 的全文"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "阅读需 {readingTime} 分钟",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "阅读需 {readingTime} 分钟"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "最近博文导航",
-    "description": "The ARIA label for recent posts in the blog sidebar"
+    "message": "最近博文导航"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} 含有标签「{tagName}」",
-    "description": "The title of the page for a blog tag"
+    "message": "{nPosts} 含有标签「{tagName}」"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "切换浅色/暗黑模式（当前为{mode}）",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "message": "切换浅色/暗黑模式（当前为{mode}）"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "暗黑模式",
-    "description": "The name for the dark color mode"
+    "message": "暗黑模式"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "浅色模式",
-    "description": "The name for the light color mode"
+    "message": "浅色模式"
   },
   "theme.common.editThisPage": {
-    "message": "编辑此页",
-    "description": "The link label to edit the current page"
+    "message": "编辑此页"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading}的直接链接",
-    "description": "Title for link to heading"
+    "message": "{heading}的直接链接"
   },
   "theme.common.skipToMainContent": {
-    "message": "跳到主要内容",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+    "message": "跳到主要内容"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} 个项目",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
+    "message": "{count} 个项目"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "主页面",
-    "description": "The ARIA label for the home page in the breadcrumbs"
+    "message": "主页面"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "页面路径",
-    "description": "The ARIA label for the breadcrumbs"
+    "message": "页面路径"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "文件选项卡",
-    "description": "The ARIA label for the docs pagination"
+    "message": "文件选项卡"
   },
   "theme.docs.paginator.next": {
-    "message": "下一页",
-    "description": "The label used to navigate to the next doc"
+    "message": "下一页"
   },
   "theme.docs.paginator.previous": {
-    "message": "上一页",
-    "description": "The label used to navigate to the previous doc"
+    "message": "上一页"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "关闭导航栏",
-    "description": "The ARIA label for close button of mobile sidebar"
+    "message": "关闭导航栏"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "收起侧边栏",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "收起侧边栏"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "收起侧边栏",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "收起侧边栏"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "展开侧边栏",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "展开侧边栏"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "展开侧边栏",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "展开侧边栏"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "文档侧边栏",
-    "description": "The ARIA label for the sidebar navigation"
+    "message": "文档侧边栏"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "切换导航栏",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
+    "message": "切换导航栏"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} 个文档标记为\"{tagName}\"",
-    "description": "The title of the page for a docs tag"
+    "message": "{nDocsTagged} 个文档标记为\"{tagName}\""
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} 篇文档带有标签",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} 篇文档带有标签"
   },
   "theme.docs.versionBadge.label": {
     "message": "版本：{versionLabel}"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "最新版本",
-    "description": "The label used for the latest version suggestion link label"
+    "message": "最新版本"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "最新的文档请参阅 {latestVersionLink} ({versionLabel})。",
-    "description": "The label used to tell the user to check the latest version"
+    "message": "最新的文档请参阅 {latestVersionLink} ({versionLabel})。"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "此为 {siteTitle} {versionLabel} 版的文档，现已不再积极维护。",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+    "message": "此为 {siteTitle} {versionLabel} 版的文档，现已不再积极维护。"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "此为 {siteTitle} {versionLabel} 版尚未发行的文档。",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+    "message": "此为 {siteTitle} {versionLabel} 版尚未发行的文档。"
   },
   "theme.footer.link.label.View All Advertising": {
     "message": "查看所有广告"
@@ -1790,16 +1572,13 @@
     "message": "查看所有工具"
   },
   "theme.lastUpdated.atDate": {
-    "message": "于 {date} ",
-    "description": "The words used to describe on which date a page has been last updated"
+    "message": "于 {date} "
   },
   "theme.lastUpdated.byUser": {
-    "message": "由 {user} ",
-    "description": "The words used to describe by who the page has been last updated"
+    "message": "由 {user} "
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "最后{byUser}{atDate}更新",
-    "description": "The sentence used to display when a page has been last updated, and by who"
+    "message": "最后{byUser}{atDate}更新"
   },
   "theme.navbar.item.label.Advertising": {
     "message": "广告"
@@ -1808,83 +1587,63 @@
     "message": "工具"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "选择语言",
-    "description": "The label for the mobile language switcher dropdown"
+    "message": "选择语言"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← 回到主菜单",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+    "message": "← 回到主菜单"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "选择版本",
-    "description": "The label for the navbar versions dropdown on mobile view"
+    "message": "选择版本"
   },
   "theme.tags.tagsListLabel": {
-    "message": "标签：",
-    "description": "The label alongside a tag list"
+    "message": "标签："
   },
   "theme.tags.tagsPageLink": {
-    "message": "查看所有标签",
-    "description": "The label of the link targeting the tag list page"
+    "message": "查看所有标签"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "标签",
-    "description": "The title of the tag list page"
+    "message": "标签"
   },
   "theme.unlistedContent.message": {
-    "message": "此页面未列出。搜索引擎不会对其索引，只有拥有直接链接的用户才能访问。",
-    "description": "The unlisted content banner message"
+    "message": "此页面未列出。搜索引擎不会对其索引，只有拥有直接链接的用户才能访问。"
   },
   "theme.unlistedContent.title": {
-    "message": "未列出页",
-    "description": "The unlisted content banner title"
+    "message": "未列出页"
   },
   "whitelabel.annualRequired": {
-    "message": "需要年付订阅",
-    "description": "白标功能需要年付订阅"
+    "message": "需要年付订阅"
   },
   "whitelabel.annualRequiredDesc": {
-    "message": "白标功能仅对年付订阅用户开放。购买年付计划后，请通过Telegram联系客服获取解锁码。",
-    "description": "白标功能年付订阅说明"
+    "message": "白标功能仅对年付订阅用户开放。购买年付计划后，请通过Telegram联系客服获取解锁码。"
   },
   "whitelabel.appName": {
-    "message": "应用名称",
-    "description": "应用名称"
+    "message": "应用名称"
   },
   "whitelabel.contactSupport": {
-    "message": "联系客服获取解锁码",
-    "description": "联系客服获取白标解锁码"
+    "message": "联系客服获取解锁码"
   },
   "whitelabel.customization": {
-    "message": "品牌定制",
-    "description": "品牌定制"
+    "message": "品牌定制"
   },
   "whitelabel.description": {
-    "message": "自定义TikMatrix的品牌标识以匹配您的公司形象",
-    "description": "白标功能描述"
+    "message": "自定义TikMatrix的品牌标识以匹配您的公司形象"
   },
   "whitelabel.logo": {
-    "message": "标志",
-    "description": "Logo"
+    "message": "标志"
   },
   "whitelabel.setup": {
-    "message": "白标设置",
-    "description": "白标设置"
+    "message": "白标设置"
   },
   "whitelabel.supportEmail": {
-    "message": "支持邮箱",
-    "description": "支持邮箱"
+    "message": "支持邮箱"
   },
   "whitelabel.telegramUrl": {
-    "message": "Telegram链接",
-    "description": "Telegram链接"
+    "message": "Telegram链接"
   },
   "whitelabel.title": {
-    "message": "白标功能",
-    "description": "白标功能标题"
+    "message": "白标功能"
   },
   "whitelabel.tutorialUrl": {
-    "message": "教程链接",
-    "description": "教程链接"
+    "message": "教程链接"
   }
 }

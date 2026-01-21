@@ -105,8 +105,7 @@
     "message": "Automatic video posting"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Tự động tạo lồng tiếng AI cho video",
-    "description": "The description of AI voiceover"
+    "message": "Tự động tạo lồng tiếng AI cho video"
   },
   "Automatically recognize subtitles and append them to the video": {
     "message": "Automatically recognize subtitles and append them to the video"
@@ -268,8 +267,7 @@
     "message": "Generate intelligent and contextual comments through ChatGPT API integration"
   },
   "Generate unique videos from one source video": {
-    "message": "Tạo video độc đáo từ một video nguồn",
-    "description": "The description of Video unique"
+    "message": "Tạo video độc đáo từ một video nguồn"
   },
   "Get Started": {
     "message": "Get Started"

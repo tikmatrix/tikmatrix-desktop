@@ -105,8 +105,7 @@
     "message": "Automatisch video's plaatsen"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Automatisch AI voice-over genereren voor video's",
-    "description": "The description of AI voiceover"
+    "message": "Automatisch AI voice-over genereren voor video's"
   },
   "Automatically recognize subtitles and append them to the video": {
     "message": "Automatisch ondertitels herkennen en toevoegen aan de video"
@@ -268,8 +267,7 @@
     "message": "Genereer intelligente en contextuele reacties via ChatGPT API-integratie"
   },
   "Generate unique videos from one source video": {
-    "message": "Genereer unieke video's uit één bronvideo",
-    "description": "The description of Video unique"
+    "message": "Genereer unieke video's uit één bronvideo"
   },
   "Get Started": {
     "message": "Aan de slag"

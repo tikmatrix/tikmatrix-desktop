@@ -6,8 +6,7 @@
     "message": "24-Stunden-KI-Assistent"
   },
   "AI voiceover": {
-    "message": "KI-Sprachausgabe",
-    "description": "The product label"
+    "message": "KI-Sprachausgabe"
   },
   "AI-Generated Comments": {
     "message": "KI-generierte Kommentare"
@@ -76,35 +75,28 @@
     "message": "Automatische Kontozuordnung"
   },
   "Automatic account nurturing": {
-    "message": "Automatisches Konto-Warmup",
-    "description": "The description of Automatic account nurturing"
+    "message": "Automatisches Konto-Warmup"
   },
   "Automatic commenting": {
-    "message": "Automatisches Kommentieren",
-    "description": "The description of Automatic commenting"
+    "message": "Automatisches Kommentieren"
   },
   "Automatic direct messaging": {
-    "message": "Automatische Direktnachrichten",
-    "description": "The description of Automatic direct messaging"
+    "message": "Automatische Direktnachrichten"
   },
   "Automatic following": {
-    "message": "Automatisches Folgen",
-    "description": "The description of Automatic following"
+    "message": "Automatisches Folgen"
   },
   "Automatic login": {
     "message": "Automatische Anmeldung"
   },
   "Automatic matching": {
-    "message": "Automatische Zuordnung",
-    "description": "The description of Automatic matching"
+    "message": "Automatische Zuordnung"
   },
   "Automatic posting": {
-    "message": "Automatische Veröffentlichung",
-    "description": "The description of Automatic posting"
+    "message": "Automatische Veröffentlichung"
   },
   "Automatic profile setup": {
-    "message": "Automatische Profileinrichtung",
-    "description": "The description of Automatic profile setup"
+    "message": "Automatische Profileinrichtung"
   },
   "Automatic registration & login": {
     "message": "Automatische Registrierung und Anmeldung"
@@ -113,16 +105,13 @@
     "message": "Automatische Videoveröffentlichung"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Automatische Generierung von KI-Sprachausgabe für Videos",
-    "description": "The description of AI voiceover"
+    "message": "Automatische Generierung von KI-Sprachausgabe für Videos"
   },
   "Automatically recognize subtitles and append them to the video": {
-    "message": "Untertitel automatisch erkennen und dem Video hinzufügen",
-    "description": "The description of Recognize subtitles"
+    "message": "Untertitel automatisch erkennen und dem Video hinzufügen"
   },
   "Automatically translate subtitles to any language": {
-    "message": "Untertitel automatisch in jede Sprache übersetzen",
-    "description": "The description of Translate subtitles"
+    "message": "Untertitel automatisch in jede Sprache übersetzen"
   },
   "Automation & Content Management": {
     "message": "Automatisierung und Content-Management"
@@ -134,12 +123,10 @@
     "message": "Basiskonfiguration"
   },
   "Batch Generating Unique Videos": {
-    "message": "Batch-Generierung einzigartiger Videos",
-    "description": "The description of Batch Generating Unique Videos"
+    "message": "Batch-Generierung einzigartiger Videos"
   },
   "Batch account management": {
-    "message": "Batch-Kontoverwaltung",
-    "description": "The description of Batch account management"
+    "message": "Batch-Kontoverwaltung"
   },
   "Batch login to TikTok accounts with account list management": {
     "message": "Batch-Anmeldung bei TikTok-Konten mit Kontolisten-Verwaltung"
@@ -151,8 +138,7 @@
     "message": "Mit Sicherheitsmechanismen zum Schutz Ihrer Instagram-Konten vor Sperrung"
   },
   "Buy hardware": {
-    "message": "Hardware kaufen",
-    "description": "The product label"
+    "message": "Hardware kaufen"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
     "message": "Kann ich IgMatrix und TikMatrix auf demselben Computer ausführen?"
@@ -188,15 +174,13 @@
     "message": "Computerbasierte Ausführung"
   },
   "Contact": {
-    "message": "Kontakt",
-    "description": "The contact form title"
+    "message": "Kontakt"
   },
   "Contact Support": {
     "message": "Support kontaktieren"
   },
   "Contact to purchase": {
-    "message": "Für Kauf kontaktieren",
-    "description": "The contact to purchase label"
+    "message": "Für Kauf kontaktieren"
   },
   "Content Management": {
     "message": "Inhaltsverwaltung"
@@ -229,19 +213,16 @@
     "message": "Benötige ich separate Lizenzen für IgMatrix und TikMatrix?"
   },
   "Download IgMatrix": {
-    "message": "IgMatrix herunterladen",
-    "description": "The description of Download IgMatrix"
+    "message": "IgMatrix herunterladen"
   },
   "Download IgMatrix from our official website and follow the installation instructions.": {
     "message": "Laden Sie IgMatrix von unserer offiziellen Website herunter und folgen Sie den Installationsanweisungen."
   },
   "Download TikMatrix": {
-    "message": "TikMatrix herunterladen",
-    "description": "The description of Download TikMatrix"
+    "message": "TikMatrix herunterladen"
   },
   "Download VideoMagic": {
-    "message": "VideoMagic herunterladen",
-    "description": "The description of Download VideoMagic"
+    "message": "VideoMagic herunterladen"
   },
   "Download and Install": {
     "message": "Herunterladen und installieren"
@@ -250,15 +231,13 @@
     "message": "Für Windows herunterladen"
   },
   "Email": {
-    "message": "E-Mail",
-    "description": "The email label"
+    "message": "E-Mail"
   },
   "Expert Technical Team": {
     "message": "Erfahrenes technisches Team"
   },
   "Fan collection": {
-    "message": "Follower-Sammlung",
-    "description": "The description of Fan collection"
+    "message": "Follower-Sammlung"
   },
   "Features": {
     "message": "Funktionen"
@@ -288,8 +267,7 @@
     "message": "Generieren Sie intelligente und kontextbezogene Kommentare durch ChatGPT-API-Integration"
   },
   "Generate unique videos from one source video": {
-    "message": "Generieren Sie einzigartige Videos aus einem Quellvideo",
-    "description": "The description of Video unique"
+    "message": "Generieren Sie einzigartige Videos aus einem Quellvideo"
   },
   "Get Started": {
     "message": "Jetzt starten"
@@ -322,15 +300,13 @@
     "message": "Menschenähnliche Klick-Simulation"
   },
   "If you are interested in our service, please contact us to get price.": {
-    "message": "Wenn Sie an unserem Service interessiert sind, kontaktieren Sie uns bitte für Preisinformationen.",
-    "description": "The contact form description"
+    "message": "Wenn Sie an unserem Service interessiert sind, kontaktieren Sie uns bitte für Preisinformationen."
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
     "message": "Wenn Sie Hilfe bei IgMatrix-spezifischen Funktionen benötigen oder auf Probleme stoßen, steht Ihnen unser Support-Team zur Verfügung."
   },
   "IgMatrix": {
-    "message": "IgMatrix",
-    "description": "The description of IgMatrix"
+    "message": "IgMatrix"
   },
   "IgMatrix Features": {
     "message": "IgMatrix-Funktionen"
@@ -345,8 +321,7 @@
     "message": "IgMatrix folgt einer ähnlichen Preisstruktur wie TikMatrix, kann aber unterschiedliche Tarife haben. Bitte überprüfen Sie unsere offizielle Preisseite oder kontaktieren Sie unser Support-Team für aktuelle IgMatrix-Preisinformationen."
   },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
-    "message": "IgMatrix ist ein Instagram-Android-Telefonfarm-Batch-Steuerungstool",
-    "description": "The description of IgMatrix"
+    "message": "IgMatrix ist ein Instagram-Android-Telefonfarm-Batch-Steuerungstool"
   },
   "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
     "message": "Das IgMatrix-Einrichtungs-Tutorial ist identisch mit TikMatrix. Der einzige Unterschied ist ihre Skriptlogik, sodass Sie direkt auf die TikMatrix-Tutorial-Dokumentation verweisen können."
@@ -367,8 +342,7 @@
     "message": "Instagram-Automatisierung"
   },
   "Instagram Phone Farm Batch Control Tool": {
-    "message": "Instagram-Telefonfarm-Batch-Steuerungstool",
-    "description": "The description of Instagram Phone Farm Batch Control Tool"
+    "message": "Instagram-Telefonfarm-Batch-Steuerungstool"
   },
   "Instagram-optimized automation scripts": {
     "message": "Instagram-optimierte Automatisierungsskripte"
@@ -380,12 +354,10 @@
     "message": "Ist die Preisgestaltung die gleiche wie bei TikMatrix?"
   },
   "Join Channel": {
-    "message": "Kanal beitreten",
-    "description": "The join channel button label"
+    "message": "Kanal beitreten"
   },
   "Join Group": {
-    "message": "Gruppe beitreten",
-    "description": "The join group button label"
+    "message": "Gruppe beitreten"
   },
   "Key Differences from TikMatrix": {
     "message": "Hauptunterschiede zu TikMatrix"
@@ -400,8 +372,7 @@
     "message": "Massen-Direktnachrichten"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "Mo - Fr: 9:00 - 17:00 Uhr (UTC+8)",
-    "description": "The working hours description"
+    "message": "Mo - Fr: 9:00 - 17:00 Uhr (UTC+8)"
   },
   "Monthly": {
     "message": "Monatlich"
@@ -425,52 +396,40 @@
     "message": "Nicht alle TikMatrix-Skripte sind in IgMatrix verfügbar, da sie plattformspezifisch sind. Die genaue Liste der verfügbaren Skripte finden Sie nach der Installation in der IgMatrix-Softwareoberfläche. Bitte beziehen Sie sich auf die tatsächlich in Ihrer Software angezeigten Funktionen."
   },
   "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "Ein-Klick automatische Sammlung von Follower-Listen von Zielkonten, kann für Direktnachrichten verwendet werden",
-    "description": "The description of Fan collection"
+    "message": "Ein-Klick automatische Sammlung von Follower-Listen von Zielkonten, kann für Direktnachrichten verwendet werden"
   },
   "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "Ein-Klick Batch-automatisches Konto-Warmup, unterstützt Keyword-Suche, zufälliges Folgen, Liken, Kommentieren und Lesezeichen setzen",
-    "description": "The description of Automatic account nurturing"
+    "message": "Ein-Klick Batch-automatisches Konto-Warmup, unterstützt Keyword-Suche, zufälliges Folgen, Liken, Kommentieren und Lesezeichen setzen"
   },
   "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "Ein-Klick Batch-automatisches Kommentieren mehrerer Videos mit festgelegten Skripten und zufälligen Emojis",
-    "description": "The description of Automatic commenting"
+    "message": "Ein-Klick Batch-automatisches Kommentieren mehrerer Videos mit festgelegten Skripten und zufälligen Emojis"
   },
   "One-click batch automatic direct messaging to multiple target users": {
-    "message": "Ein-Klick Batch-automatisches Senden von Direktnachrichten an mehrere Zielnutzer",
-    "description": "The description of Automatic direct messaging"
+    "message": "Ein-Klick Batch-automatisches Senden von Direktnachrichten an mehrere Zielnutzer"
   },
   "One-click batch automatic follow of target accounts": {
-    "message": "Ein-Klick Batch-automatisches Folgen von Zielkonten",
-    "description": "The description of Automatic following"
+    "message": "Ein-Klick Batch-automatisches Folgen von Zielkonten"
   },
   "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "Ein-Klick Batch-automatische Anmeldung bei TikTok-Konten, unterstützt Batch-Import/Export von Konten",
-    "description": "The description of Automatic login"
+    "message": "Ein-Klick Batch-automatische Anmeldung bei TikTok-Konten, unterstützt Batch-Import/Export von Konten"
   },
   "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "Ein-Klick Batch-automatische Zuordnung angemeldeter Konten, keine manuelle Bindung erforderlich",
-    "description": "The description of Automatic matching"
+    "message": "Ein-Klick Batch-automatische Zuordnung angemeldeter Konten, keine manuelle Bindung erforderlich"
   },
   "One-click batch automatic posting, supports adding product links": {
-    "message": "Ein-Klick Batch-automatische Veröffentlichung, unterstützt das Hinzufügen von Produktlinks",
-    "description": "The description of Automatic posting"
+    "message": "Ein-Klick Batch-automatische Veröffentlichung, unterstützt das Hinzufügen von Produktlinks"
   },
   "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "Ein-Klick Batch-automatische Registrierung von TikTok-Konten, unterstützt Geschäfts-E-Mails",
-    "description": "The description of Automatic registration"
+    "message": "Ein-Klick Batch-automatische Registrierung von TikTok-Konten, unterstützt Geschäfts-E-Mails"
   },
   "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "Ein-Klick Batch-automatische Einrichtung von Avataren, Spitznamen, Signaturen, Benutzernamen",
-    "description": "The description of Automatic profile setup"
+    "message": "Ein-Klick Batch-automatische Einrichtung von Avataren, Spitznamen, Signaturen, Benutzernamen"
   },
   "One-click download of videos from all video websites": {
-    "message": "Ein-Klick Download von Videos von allen Video-Websites",
-    "description": "The description of Video download"
+    "message": "Ein-Klick Download von Videos von allen Video-Websites"
   },
   "One-click download of videos from the entire network": {
-    "message": "Ein-Klick Download von Videos aus dem gesamten Netzwerk",
-    "description": "The description of Video collection"
+    "message": "Ein-Klick Download von Videos aus dem gesamten Netzwerk"
   },
   "Open Source Client": {
     "message": "Open-Source-Client"
@@ -479,22 +438,19 @@
     "message": "Open-Source-Client-Code ermöglicht Benutzern die Anpassung ihres eigenen Clients"
   },
   "Our Competitive Advantages": {
-    "message": "Unsere Wettbewerbsvorteile",
-    "description": "The description of Our Competitive Advantages"
+    "message": "Unsere Wettbewerbsvorteile"
   },
   "Our Core Advantages": {
     "message": "Unsere Kernvorteile"
   },
   "Our Core Features": {
-    "message": "Unsere Kernfunktionen",
-    "description": "The description of Our Core Features"
+    "message": "Unsere Kernfunktionen"
   },
   "Our plans": {
     "message": "Unsere Pläne"
   },
   "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "Unser proprietäres Echtgeräte-Matrix-System vermeidet perfekt TikToks Risikokontrollmaßnahmen und führt zu einer extrem niedrigen Kontosperrrate.",
-    "description": "The description of TikMatrix proprietary technology"
+    "message": "Unser proprietäres Echtgeräte-Matrix-System vermeidet perfekt TikToks Risikokontrollmaßnahmen und führt zu einer extrem niedrigen Kontosperrrate."
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "Unser Support-Team steht Ihnen bei allen IgMatrix-bezogenen Fragen oder Problemen zur Verfügung."
@@ -506,12 +462,10 @@
     "message": "Pro Jahr"
   },
   "Performance analytics": {
-    "message": "Leistungsanalyse",
-    "description": "The description of Performance analytics"
+    "message": "Leistungsanalyse"
   },
   "Phone screen mirroring to a computer": {
-    "message": "Telefon-Bildschirmspiegelung auf Computer",
-    "description": "The description of Phone screen mirroring to a computer"
+    "message": "Telefon-Bildschirmspiegelung auf Computer"
   },
   "Platform-optimized features": {
     "message": "Plattform-optimierte Funktionen"
@@ -529,8 +483,7 @@
     "message": "Leistungsstarke Instagram-Automatisierungstools für professionelle Marketer und Unternehmen"
   },
   "Powerful TikTok Automation & Management Tools": {
-    "message": "Leistungsstarke TikTok-Automatisierungs- und Verwaltungstools",
-    "description": "The description of Powerful TikTok Automation & Management Tools"
+    "message": "Leistungsstarke TikTok-Automatisierungs- und Verwaltungstools"
   },
   "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
     "message": "Leistungsstarkes technisches Team mit Echtzeit-Wartung und Updates für zuverlässige Skripte"
@@ -545,15 +498,13 @@
     "message": "Private lokale Bereitstellung"
   },
   "Professional TikTok Account Management & Marketing Tool": {
-    "message": "Professionelles TikTok-Kontoverwaltungs- und Marketing-Tool",
-    "description": "The description of Professional TikTok Account Management & Marketing Tool"
+    "message": "Professionelles TikTok-Kontoverwaltungs- und Marketing-Tool"
   },
   "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
     "message": "Professionelles TikTok-Kontoverwaltungs- und Marketing-Tool für Windows und Mac"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "Professionelles TikTok-Kontoverwaltungs- und Marketing-Tool für Android-Telefonfarmen auf Windows und Mac. Automatisieren Sie Veröffentlichungen, Folgen und steigern Sie Ihre TikTok-Präsenz mit null Sperrrate.",
-    "description": "The description of Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
+    "message": "Professionelles TikTok-Kontoverwaltungs- und Marketing-Tool für Android-Telefonfarmen auf Windows und Mac. Automatisieren Sie Veröffentlichungen, Folgen und steigern Sie Ihre TikTok-Präsenz mit null Sperrrate."
   },
   "Professional phone farm management": {
     "message": "Professionelle Telefonfarm-Verwaltung"
@@ -571,8 +522,7 @@
     "message": "Erkennen und zuordnen von TikTok-Konten von Telefonen zur Kontoliste"
   },
   "Recognize subtitles": {
-    "message": "Untertitel erkennen",
-    "description": "The description of Recognize subtitles"
+    "message": "Untertitel erkennen"
   },
   "Remove posts based on their view count for content optimization": {
     "message": "Entfernen Sie Beiträge basierend auf Aufrufzahlen zur Inhaltsoptimierung"
@@ -617,8 +567,7 @@
     "message": "Einrichtungs-Tutorial"
   },
   "Shipping worldwide": {
-    "message": "Weltweiter Versand",
-    "description": "The shipping worldwide label"
+    "message": "Weltweiter Versand"
   },
   "Simulates natural right-hand arc swipe trajectories like real human interaction": {
     "message": "Simuliert natürliche rechtshändige Bogen-Wischbewegungen wie echte menschliche Interaktion"
@@ -639,12 +588,10 @@
     "message": "Optimieren Sie Ihre Android-TikTok-Telefonfarm mit fortschrittlicher Batch-Steuerung und Marketing-Automatisierung"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-    "message": "Optimieren Sie Ihre Instagram-Telefonfarm mit fortschrittlicher Batch-Steuerung und Marketing-Automatisierung",
-    "description": "The description of Streamline your Instagram phone farm with advanced batch control and marketing automation"
+    "message": "Optimieren Sie Ihre Instagram-Telefonfarm mit fortschrittlicher Batch-Steuerung und Marketing-Automatisierung"
   },
   "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "Optimieren Sie Ihre TikTok-Telefonfarm mit fortschrittlicher Batch-Steuerung und Marketing-Automatisierung",
-    "description": "The description of Streamline your TikTok phone farm with advanced batch control and marketing automation"
+    "message": "Optimieren Sie Ihre TikTok-Telefonfarm mit fortschrittlicher Batch-Steuerung und Marketing-Automatisierung"
   },
   "Strong technical support team with open community ecosystem": {
     "message": "Starkes technisches Support-Team mit offenem Community-Ökosystem"
@@ -656,8 +603,7 @@
     "message": "Unterstützt 100+ Telefone mit Bildschirmspiegelung auf Computer und synchronisierten Operationen"
   },
   "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Unterstützt 200+ Telefone mit Bildschirmspiegelung auf Computer und synchronisierten Operationen",
-    "description": "The description of Phone screen mirroring to a computer"
+    "message": "Unterstützt 200+ Telefone mit Bildschirmspiegelung auf Computer und synchronisierten Operationen"
   },
   "Supports work profile enterprise space for professional use": {
     "message": "Unterstützt Work-Profile-Unternehmensbereich für professionelle Nutzung"
@@ -666,8 +612,7 @@
     "message": "Technische Vorteile"
   },
   "Telegram": {
-    "message": "Telegram",
-    "description": "The telegram label"
+    "message": "Telegram"
   },
   "Telegram Support": {
     "message": "Telegram-Support-Gruppe"
@@ -676,23 +621,19 @@
     "message": "Texteingabe imitiert menschliche Tippmuster mit Zeichen-für-Zeichen-Simulation"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "Länge und Breite sind relativ groß, aber die Höhe ist niedrig (2U-Größe)",
-    "description": "The description of PhoneFarm Box"
+    "message": "Länge und Breite sind relativ groß, aber die Höhe ist niedrig (2U-Größe)"
   },
   "The length and width are relatively small, but the height is high": {
-    "message": "Länge und Breite sind relativ klein, aber die Höhe ist hoch",
-    "description": "The description of PhoneFarm Box"
+    "message": "Länge und Breite sind relativ klein, aber die Höhe ist hoch"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "Die Mainboard-Maschine besteht aus 20 Samsung-Telefon-Mainboards. Sie startet automatisch beim Anschließen an Strom, teilt sich eine einheitliche Stromversorgung, hat ein einheitliches Multi-Lüfter-Kühlsystem und einheitliche USB-Konnektivität. Sie unterstützt auch OTG-Kabelnetzwerkverbindungen.",
-    "description": "The description of PhoneFarm Box"
+    "message": "Die Mainboard-Maschine besteht aus 20 Samsung-Telefon-Mainboards. Sie startet automatisch beim Anschließen an Strom, teilt sich eine einheitliche Stromversorgung, hat ein einheitliches Multi-Lüfter-Kühlsystem und einheitliche USB-Konnektivität. Sie unterstützt auch OTG-Kabelnetzwerkverbindungen."
   },
   "TikMatrix": {
     "message": "TikMatrix"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix liefert mindestens 30% höheres Engagement im Vergleich zu ähnlichen Produkten mit fortschrittlicher Echtgeräte-Technologie für vollständige Kontosicherheit.",
-    "description": "The description of TikMatrix competitive advantage"
+    "message": "TikMatrix liefert mindestens 30% höheres Engagement im Vergleich zu ähnlichen Produkten mit fortschrittlicher Echtgeräte-Technologie für vollständige Kontosicherheit."
   },
   "TikMatrix is a TikTok group control operation tool": {
     "message": "TikMatrix ist ein TikTok-Gruppenkontroll-Betriebstool"
@@ -701,8 +642,7 @@
     "message": "TikMatrix ist eine professionelle Marketing-Software für TikTok-Telefonfarmen"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix ist eine professionelle Marketing-Software für TikTok-Telefonfarmen. Verwalten Sie mehrere Konten, automatisieren Sie Veröffentlichungen und skalieren Sie Ihr TikTok-Marketing mit Leichtigkeit.",
-    "description": "The description of TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
+    "message": "TikMatrix ist eine professionelle Marketing-Software für TikTok-Telefonfarmen. Verwalten Sie mehrere Konten, automatisieren Sie Veröffentlichungen und skalieren Sie Ihr TikTok-Marketing mit Leichtigkeit."
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
     "message": "TikMatrix unterstützt 8 TikTok-Konten auf jedem Telefon."
@@ -711,15 +651,13 @@
     "message": "TikMatrix unterstützt Android-Telefone mit Android 5.0 und höher."
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "TikMatrix unterstützt Windows 10 und höher sowie macOS 10.15 oder neuer. Für Mac-Benutzer müssen Sie nach der Installation den folgenden Befehl im Terminal ausführen, um die App zu starten: xattr -cr /Applications/TikMatrix.app",
-    "description": "Computer-Unterstützung Antwort"
+    "message": "TikMatrix unterstützt Windows 10 und höher sowie macOS 10.15 oder neuer. Für Mac-Benutzer müssen Sie nach der Installation den folgenden Befehl im Terminal ausführen, um die App zu starten: xattr -cr /Applications/TikMatrix.app"
   },
   "TikMatrix supports up to 200+ devices.": {
     "message": "TikMatrix unterstützt bis zu 200+ Geräte."
   },
   "Translate subtitles": {
-    "message": "Untertitel übersetzen",
-    "description": "The description of Translate subtitles"
+    "message": "Untertitel übersetzen"
   },
   "Trial": {
     "message": "Testversion"
@@ -728,8 +666,7 @@
     "message": "Tutorial"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-    "message": "US-native nicht-aktivierte SIM-Karte, verwendet für TikTok-Android-App zur SIM-Karten-Standorterkennung",
-    "description": "The description of PhoneFarm Box"
+    "message": "US-native nicht-aktivierte SIM-Karte, verwendet für TikTok-Android-App zur SIM-Karten-Standorterkennung"
   },
   "Unlimited devices": {
     "message": "Unbegrenzte Geräte"
@@ -738,8 +675,7 @@
     "message": "Unbegrenzte Geräte, Kundensupport"
   },
   "Unlimited process tasks": {
-    "message": "Unbegrenzte Prozessaufgaben",
-    "description": "The description of Unlimited process tasks"
+    "message": "Unbegrenzte Prozessaufgaben"
   },
   "User engagement boost": {
     "message": "Nutzer-Engagement-Boost"
@@ -751,35 +687,28 @@
     "message": "Nutzer-Scraping"
   },
   "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "VideoMagic ist eine professionelle Videogenerierungs-Software für Betreiber. Sie kann einzigartige Videos für Sie generieren und die operative Effizienz erheblich steigern",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic ist eine professionelle Videogenerierungs-Software für Betreiber. Sie kann einzigartige Videos für Sie generieren und die operative Effizienz erheblich steigern"
   },
   "Video Magic is a tool that can generate unique videos": {
-    "message": "VideoMagic ist ein Tool, das einzigartige Videos generieren kann",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic ist ein Tool, das einzigartige Videos generieren kann"
   },
   "Video collection": {
-    "message": "Video-Sammlung",
-    "description": "The description of Video collection"
+    "message": "Video-Sammlung"
   },
   "Video download": {
-    "message": "Video-Download",
-    "description": "The description of Video download"
+    "message": "Video-Download"
   },
   "Video posting, Account nurturing": {
     "message": "Video-Veröffentlichung, Konto-Warmup"
   },
   "Video unique": {
-    "message": "Video-Generierung",
-    "description": "The description of Video unique"
+    "message": "Video-Generierung"
   },
   "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Batch-Generierung einzigartiger Videos",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic - Batch-Generierung einzigartiger Videos"
   },
   "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic ist eine Software zur Batch-Generierung einzigartiger Videos",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic ist eine Software zur Batch-Generierung einzigartiger Videos"
   },
   "View TikMatrix Tutorial": {
     "message": "TikMatrix-Tutorial anzeigen"
@@ -788,8 +717,7 @@
     "message": "Konten aufwärmen durch Keyword-Suche, Videos ansehen, Folgen, Liken, Kommentieren und Favorisieren"
   },
   "What computer can I use?": {
-    "message": "Welchen Computer kann ich verwenden?",
-    "description": "Computer-Unterstützung Frage"
+    "message": "Welchen Computer kann ich verwenden?"
   },
   "What devices can I use?": {
     "message": "Welche Geräte kann ich verwenden?"
@@ -813,8 +741,7 @@
     "message": "Work-Profile-Unterstützung"
   },
   "Working Hours": {
-    "message": "Arbeitszeiten",
-    "description": "The working hours label"
+    "message": "Arbeitszeiten"
   },
   "Yearly": {
     "message": "Jährlich"
@@ -919,176 +846,133 @@
     "message": "WhatsApp-Nummernprüfer"
   },
   "download.description": {
-    "message": "Laden Sie TikMatrix für Windows, Mac und Linux herunter",
-    "description": "Beschreibung der Download-Seite"
+    "message": "Laden Sie TikMatrix für Windows, Mac und Linux herunter"
   },
   "download.igmatrix.description": {
-    "message": "Laden Sie IgMatrix für Windows, Mac und Linux herunter",
-    "description": "Beschreibung der IgMatrix-Download-Seite"
+    "message": "Laden Sie IgMatrix für Windows, Mac und Linux herunter"
   },
   "download.igmatrix.linux.coming_soon": {
-    "message": "Demnächst verfügbar",
-    "description": "IgMatrix Linux Demnächst-Hinweis"
+    "message": "Demnächst verfügbar"
   },
   "download.igmatrix.linux.description": {
-    "message": "Linux-Version ist in Entwicklung",
-    "description": "IgMatrix Linux in Entwicklung Beschreibung"
+    "message": "Linux-Version ist in Entwicklung"
   },
   "download.igmatrix.linux.development": {
-    "message": "In Entwicklung",
-    "description": "IgMatrix Linux Entwicklungsstatus"
+    "message": "In Entwicklung"
   },
   "download.igmatrix.linux.title": {
-    "message": "Linux",
-    "description": "IgMatrix Linux-Plattformtitel"
+    "message": "Linux"
   },
   "download.igmatrix.mac.button": {
-    "message": "Mac-Version herunterladen",
-    "description": "IgMatrix Mac Download-Button-Text"
+    "message": "Mac-Version herunterladen"
   },
   "download.igmatrix.mac.description": {
-    "message": "macOS 10.15 oder höher",
-    "description": "IgMatrix Mac-Plattformbeschreibung"
+    "message": "macOS 10.15 oder höher"
   },
   "download.igmatrix.mac.install_tip": {
-    "message": "Nach der Installation führen Sie bitte folgenden Befehl im Terminal aus, um die App zu starten:",
-    "description": "Befehlshinweis nach IgMatrix Mac Installation"
+    "message": "Nach der Installation führen Sie bitte folgenden Befehl im Terminal aus, um die App zu starten:"
   },
   "download.igmatrix.mac.title": {
-    "message": "Mac",
-    "description": "IgMatrix Mac-Plattformtitel"
+    "message": "Mac"
   },
   "download.igmatrix.requirements.internet": {
-    "message": "Internetverbindung: Erforderlich",
-    "description": "IgMatrix Netzwerkverbindungsanforderungen"
+    "message": "Internetverbindung: Erforderlich"
   },
   "download.igmatrix.requirements.memory": {
-    "message": "Arbeitsspeicher: 8 GB RAM",
-    "description": "IgMatrix Speicheranforderungen"
+    "message": "Arbeitsspeicher: 8 GB RAM"
   },
   "download.igmatrix.requirements.os": {
-    "message": "Betriebssystem: Windows 10/11, macOS 10.15+ oder Ubuntu 20.04+",
-    "description": "IgMatrix Betriebssystemanforderungen"
+    "message": "Betriebssystem: Windows 10/11, macOS 10.15+ oder Ubuntu 20.04+"
   },
   "download.igmatrix.requirements.processor": {
-    "message": "Prozessor: Intel Core i5 oder gleichwertig",
-    "description": "IgMatrix Prozessoranforderungen"
+    "message": "Prozessor: Intel Core i5 oder gleichwertig"
   },
   "download.igmatrix.requirements.storage": {
-    "message": "Speicherplatz: 500 MB verfügbarer Speicherplatz",
-    "description": "IgMatrix Speicherplatzanforderungen"
+    "message": "Speicherplatz: 500 MB verfügbarer Speicherplatz"
   },
   "download.igmatrix.requirements.title": {
-    "message": "Systemanforderungen",
-    "description": "IgMatrix Systemanforderungen Titel"
+    "message": "Systemanforderungen"
   },
   "download.igmatrix.subtitle": {
-    "message": "Wählen Sie Ihre Plattform zum Herunterladen von IgMatrix",
-    "description": "Untertitel der IgMatrix-Download-Seite"
+    "message": "Wählen Sie Ihre Plattform zum Herunterladen von IgMatrix"
   },
   "download.igmatrix.title": {
-    "message": "IgMatrix herunterladen",
-    "description": "Titel der IgMatrix-Download-Seite"
+    "message": "IgMatrix herunterladen"
   },
   "download.igmatrix.windows.button": {
-    "message": "Windows-Version herunterladen",
-    "description": "IgMatrix Windows Download-Button-Text"
+    "message": "Windows-Version herunterladen"
   },
   "download.igmatrix.windows.description": {
-    "message": "Windows 10/11 (64-Bit)",
-    "description": "IgMatrix Windows-Plattformbeschreibung"
+    "message": "Windows 10/11 (64-Bit)"
   },
   "download.igmatrix.windows.title": {
-    "message": "Windows",
-    "description": "IgMatrix Windows-Plattformtitel"
+    "message": "Windows"
   },
   "download.linux.coming_soon": {
-    "message": "Demnächst verfügbar",
-    "description": "Linux Demnächst-Hinweis"
+    "message": "Demnächst verfügbar"
   },
   "download.linux.description": {
-    "message": "Linux-Version ist in Entwicklung",
-    "description": "Linux in Entwicklung Beschreibung"
+    "message": "Linux-Version ist in Entwicklung"
   },
   "download.linux.development": {
-    "message": "In Entwicklung",
-    "description": "Linux Entwicklungsstatus"
+    "message": "In Entwicklung"
   },
   "download.linux.title": {
-    "message": "Linux",
-    "description": "Linux-Plattformtitel"
+    "message": "Linux"
   },
   "download.mac.button": {
-    "message": "Mac-Version herunterladen",
-    "description": "Mac Download-Button-Text"
+    "message": "Mac-Version herunterladen"
   },
   "download.mac.description": {
-    "message": "macOS 10.15 oder höher",
-    "description": "Mac-Plattformbeschreibung"
+    "message": "macOS 10.15 oder höher"
   },
   "download.mac.install_tip": {
-    "message": "Nach der Installation führen Sie bitte folgenden Befehl im Terminal aus, um die App zu starten:",
-    "description": "Befehlshinweis nach Mac Installation"
+    "message": "Nach der Installation führen Sie bitte folgenden Befehl im Terminal aus, um die App zu starten:"
   },
   "download.mac.title": {
-    "message": "Mac",
-    "description": "Mac-Plattformtitel"
+    "message": "Mac"
   },
   "download.requirements.internet": {
-    "message": "Internetverbindung: Erforderlich",
-    "description": "Netzwerkverbindungsanforderungen"
+    "message": "Internetverbindung: Erforderlich"
   },
   "download.requirements.memory": {
-    "message": "Arbeitsspeicher: 8 GB RAM",
-    "description": "Speicheranforderungen"
+    "message": "Arbeitsspeicher: 8 GB RAM"
   },
   "download.requirements.os": {
-    "message": "Betriebssystem: Windows 10/11, macOS 10.15+ oder Ubuntu 20.04+",
-    "description": "Betriebssystemanforderungen"
+    "message": "Betriebssystem: Windows 10/11, macOS 10.15+ oder Ubuntu 20.04+"
   },
   "download.requirements.processor": {
-    "message": "Prozessor: Intel Core i5 oder gleichwertig",
-    "description": "Prozessoranforderungen"
+    "message": "Prozessor: Intel Core i5 oder gleichwertig"
   },
   "download.requirements.storage": {
-    "message": "Speicherplatz: 500 MB verfügbarer Speicherplatz",
-    "description": "Speicherplatzanforderungen"
+    "message": "Speicherplatz: 500 MB verfügbarer Speicherplatz"
   },
   "download.requirements.title": {
-    "message": "Systemanforderungen",
-    "description": "Systemanforderungen Titel"
+    "message": "Systemanforderungen"
   },
   "download.subtitle": {
-    "message": "Wählen Sie Ihre Plattform zum Herunterladen von TikMatrix",
-    "description": "Untertitel der Download-Seite"
+    "message": "Wählen Sie Ihre Plattform zum Herunterladen von TikMatrix"
   },
   "download.title": {
-    "message": "TikMatrix herunterladen",
-    "description": "Titel der Download-Seite"
+    "message": "TikMatrix herunterladen"
   },
   "download.videomagic.description": {
-    "message": "Laden Sie VideoMagic für Windows, Mac und Linux herunter",
-    "description": "Beschreibung der VideoMagic-Download-Seite"
+    "message": "Laden Sie VideoMagic für Windows, Mac und Linux herunter"
   },
   "download.videomagic.subtitle": {
-    "message": "Wählen Sie Ihre Plattform zum Herunterladen von VideoMagic",
-    "description": "Untertitel der VideoMagic-Download-Seite"
+    "message": "Wählen Sie Ihre Plattform zum Herunterladen von VideoMagic"
   },
   "download.videomagic.title": {
-    "message": "VideoMagic herunterladen",
-    "description": "Titel der VideoMagic-Download-Seite"
+    "message": "VideoMagic herunterladen"
   },
   "download.windows.button": {
-    "message": "Windows-Version herunterladen",
-    "description": "Windows Download-Button-Text"
+    "message": "Windows-Version herunterladen"
   },
   "download.windows.description": {
-    "message": "Windows 10/11 (64-Bit)",
-    "description": "Windows-Plattformbeschreibung"
+    "message": "Windows 10/11 (64-Bit)"
   },
   "download.windows.title": {
-    "message": "Windows",
-    "description": "Windows-Plattformtitel"
+    "message": "Windows"
   },
   "homepage.header.cta.download": {
     "message": "Jetzt herunterladen"
@@ -1166,31 +1050,25 @@
     "message": "Warum TikMatrix wählen?"
   },
   "navbar.download": {
-    "message": "Herunterladen",
-    "description": "Navigationsleiste Download-Link-Text"
+    "message": "Herunterladen"
   },
   "pricing.all_features": {
-    "message": "Alle Funktionen enthalten",
-    "description": "Enthält alle Funktionen Text"
+    "message": "Alle Funktionen enthalten"
   },
   "pricing.badge.popular": {
     "message": "Beliebteste"
   },
   "pricing.business.concurrent_tasks": {
-    "message": "Bis zu 100 gleichzeitige Automatisierungsaufgaben",
-    "description": "Business-Version gleichzeitige Aufgaben"
+    "message": "Bis zu 100 gleichzeitige Automatisierungsaufgaben"
   },
   "pricing.business.description": {
-    "message": "Für große Unternehmen",
-    "description": "Business-Plan-Beschreibung"
+    "message": "Für große Unternehmen"
   },
   "pricing.business.manage_phones": {
-    "message": "Bis zu 100 gleichzeitige Automatisierungsaufgaben",
-    "description": "Business-Plan-Funktionen"
+    "message": "Bis zu 100 gleichzeitige Automatisierungsaufgaben"
   },
   "pricing.business.name": {
-    "message": "Business-Version",
-    "description": "Business-Plan-Name"
+    "message": "Business-Version"
   },
   "pricing.compare.automation": {
     "message": "Automatisierungsaufgaben"
@@ -1211,36 +1089,28 @@
     "message": "Jetzt abonnieren"
   },
   "pricing.dedicated_support": {
-    "message": "Dedizierter Ticket-Support",
-    "description": "Exklusiver Support Text"
+    "message": "Dedizierter Ticket-Support"
   },
   "pricing.free.all_free_features": {
-    "message": "Alle Basisfunktionen (ohne Automatisierungsaufgaben)",
-    "description": "Beschreibung der Basisfunktionen des kostenlosen Plans"
+    "message": "Alle Basisfunktionen (ohne Automatisierungsaufgaben)"
   },
   "pricing.free.automation_disabled": {
-    "message": "Automatisierungsaufgaben nicht verfügbar",
-    "description": "Automatisierung nicht verfügbar Text für kostenlosen Plan"
+    "message": "Automatisierungsaufgaben nicht verfügbar"
   },
   "pricing.free.community_support": {
-    "message": "Community-Support",
-    "description": "Support-Methode für kostenlosen Plan"
+    "message": "Community-Support"
   },
   "pricing.free.description": {
-    "message": "Für einzelne Benutzer",
-    "description": "Beschreibung des kostenlosen Plans"
+    "message": "Für einzelne Benutzer"
   },
   "pricing.free.name": {
-    "message": "Kostenlos",
-    "description": "Name des kostenlosen Plans"
+    "message": "Kostenlos"
   },
   "pricing.free_label": {
-    "message": "Kostenlos",
-    "description": "Free label"
+    "message": "Kostenlos"
   },
   "pricing.get_started": {
-    "message": "Loslegen",
-    "description": "Erste Schritte Button-Text"
+    "message": "Loslegen"
   },
   "pricing.local_api.description": {
     "message": "Pro-, Team- und Business-Nutzer können die lokale RESTful-API verwenden, um Aufgaben programmatisch zu verwalten und Workflows zu automatisieren. Siehe Dokumentation."
@@ -1258,71 +1128,55 @@
     "message": "Pro Monat"
   },
   "pricing.per_month_pc": {
-    "message": "Pro Monat/Pro PC",
-    "description": "Pro Computer pro Monat Text"
+    "message": "Pro Monat/Pro PC"
   },
   "pricing.per_year": {
     "message": "Pro Jahr (30% sparen)"
   },
   "pricing.pro.concurrent_tasks": {
-    "message": "Bis zu 20 gleichzeitige Automatisierungsaufgaben",
-    "description": "Pro-Version gleichzeitige Aufgaben"
+    "message": "Bis zu 20 gleichzeitige Automatisierungsaufgaben"
   },
   "pricing.pro.description": {
-    "message": "Für Profis und kleine Unternehmen",
-    "description": "Pro-Plan-Beschreibung"
+    "message": "Für Profis und kleine Unternehmen"
   },
   "pricing.pro.manage_phones": {
-    "message": "Bis zu 20 gleichzeitige Automatisierungsaufgaben",
-    "description": "Pro-Plan-Funktionen"
+    "message": "Bis zu 20 gleichzeitige Automatisierungsaufgaben"
   },
   "pricing.pro.name": {
-    "message": "Pro-Version",
-    "description": "Pro-Plan-Name"
+    "message": "Pro-Version"
   },
   "pricing.starter.concurrent_tasks": {
-    "message": "Bis zu 5 gleichzeitige Automatisierungsaufgaben",
-    "description": "Starter-Version gleichzeitige Aufgaben"
+    "message": "Bis zu 5 gleichzeitige Automatisierungsaufgaben"
   },
   "pricing.starter.description": {
-    "message": "Für Einzelpersonen und kleine Teams",
-    "description": "Starter-Plan-Beschreibung"
+    "message": "Für Einzelpersonen und kleine Teams"
   },
   "pricing.starter.manage_phones": {
-    "message": "Bis zu 5 gleichzeitige Automatisierungsaufgaben",
-    "description": "Starter-Plan-Funktionen"
+    "message": "Bis zu 5 gleichzeitige Automatisierungsaufgaben"
   },
   "pricing.starter.name": {
-    "message": "Starter-Version",
-    "description": "Starter-Plan-Name"
+    "message": "Starter-Version"
   },
   "pricing.subtitle": {
-    "message": "Wählen Sie den Plan, der am besten zu Ihren Anforderungen passt",
-    "description": "Preisabschnitt Untertitel"
+    "message": "Wählen Sie den Plan, der am besten zu Ihren Anforderungen passt"
   },
   "pricing.team.concurrent_tasks": {
-    "message": "Bis zu 50 gleichzeitige Automatisierungsaufgaben",
-    "description": "Team-Version gleichzeitige Aufgaben"
+    "message": "Bis zu 50 gleichzeitige Automatisierungsaufgaben"
   },
   "pricing.team.description": {
-    "message": "Für wachsende Teams und Unternehmen",
-    "description": "Team-Plan-Beschreibung"
+    "message": "Für wachsende Teams und Unternehmen"
   },
   "pricing.team.manage_phones": {
-    "message": "Bis zu 50 gleichzeitige Automatisierungsaufgaben",
-    "description": "Team-Plan-Funktionen"
+    "message": "Bis zu 50 gleichzeitige Automatisierungsaufgaben"
   },
   "pricing.team.name": {
-    "message": "Team-Version",
-    "description": "Team-Plan-Name"
+    "message": "Team-Version"
   },
   "pricing.ticket_support": {
-    "message": "Dedizierter Ticket-Support",
-    "description": "Exklusiver Ticket-Support Text"
+    "message": "Dedizierter Ticket-Support"
   },
   "pricing.title": {
-    "message": "Preispläne",
-    "description": "Preisabschnitt Titel"
+    "message": "Preispläne"
   },
   "pricing.toggle.monthly": {
     "message": "Monatlich"
@@ -1331,8 +1185,7 @@
     "message": "Jährlich (30% sparen)"
   },
   "pricing.unlimited_devices": {
-    "message": "Unbegrenzte Geräteverbindungen",
-    "description": "Unbegrenzte Geräteverbindungen Text"
+    "message": "Unbegrenzte Geräteverbindungen"
   },
   "pricing.unlimited_devices_short": {
     "message": "Unbegrenzt"
@@ -1497,291 +1350,220 @@
     "message": "Technische Vorteile"
   },
   "testimonials.subtitle": {
-    "message": "Was TikMatrix-Benutzer sagen",
-    "description": "Benutzerbewertungen Abschnitt Untertitel"
+    "message": "Was TikMatrix-Benutzer sagen"
   },
   "testimonials.title": {
-    "message": "Echte Benutzerbewertungen",
-    "description": "Benutzerbewertungen Abschnitt Titel"
+    "message": "Echte Benutzerbewertungen"
   },
   "testimonials.usage_label": {
-    "message": "Nutzungsdauer",
-    "description": "Nutzungsdauer Label"
+    "message": "Nutzungsdauer"
   },
   "testimonials.user1.text": {
-    "message": "TikMatrix ist ein Lebensretter für unser Studio! Wir können so viele Telefone gleichzeitig steuern und die Automatisierungsfunktionen sind superstark. Veröffentlichen und Konto-Warmup sind viel einfacher geworden. Die TikTok-Erkennungsvermeidung funktioniert wirklich – unsere Posts erhalten natürlicheren Traffic als zuvor.",
-    "description": "Erster Benutzerbewertungstext"
+    "message": "TikMatrix ist ein Lebensretter für unser Studio! Wir können so viele Telefone gleichzeitig steuern und die Automatisierungsfunktionen sind superstark. Veröffentlichen und Konto-Warmup sind viel einfacher geworden. Die TikTok-Erkennungsvermeidung funktioniert wirklich – unsere Posts erhalten natürlicheren Traffic als zuvor."
   },
   "testimonials.user1.usage": {
-    "message": "1 Jahr",
-    "description": "Nutzungsdauer des ersten Benutzers"
+    "message": "1 Jahr"
   },
   "testimonials.user2.text": {
-    "message": "Seit wir TikMatrix verwenden, ist die Effizienz unseres Werbeteams in die Höhe geschnellt. Die Automatisierungsskripte sparen uns tonnenweise manuelle Arbeit und Konten bleiben sicher – bisher keine Sperrungen. Perfekt für Agenturen wie unsere!",
-    "description": "Zweiter Benutzerbewertungstext"
+    "message": "Seit wir TikMatrix verwenden, ist die Effizienz unseres Werbeteams in die Höhe geschnellt. Die Automatisierungsskripte sparen uns tonnenweise manuelle Arbeit und Konten bleiben sicher – bisher keine Sperrungen. Perfekt für Agenturen wie unsere!"
   },
   "testimonials.user2.usage": {
-    "message": "10 Monate",
-    "description": "Nutzungsdauer des zweiten Benutzers"
+    "message": "10 Monate"
   },
   "testimonials.user3.text": {
-    "message": "100 Telefone gleichzeitig zu steuern ist ein Game-Changer. Batch-Operationen sind super bequem und unsere TikTok-Posts erhalten mehr organische Reichweite. Großartig für Übersee-Marketing und der Preis ist vernünftig!",
-    "description": "Dritter Benutzerbewertungstext"
+    "message": "100 Telefone gleichzeitig zu steuern ist ein Game-Changer. Batch-Operationen sind super bequem und unsere TikTok-Posts erhalten mehr organische Reichweite. Großartig für Übersee-Marketing und der Preis ist vernünftig!"
   },
   "testimonials.user3.usage": {
-    "message": "6 Monate",
-    "description": "Nutzungsdauer des dritten Benutzers"
+    "message": "6 Monate"
   },
   "testimonials.user4.text": {
-    "message": "Habe zuvor andere Tools ausprobiert, aber TikMatrix ist am wartungsärmsten. Automatisierung und Anti-Sperrung sind beide zuverlässig. Sehr gut für Marketing-Teams, die effiziente Batch-Operationen benötigen.",
-    "description": "Vierter Benutzerbewertungstext"
+    "message": "Habe zuvor andere Tools ausprobiert, aber TikMatrix ist am wartungsärmsten. Automatisierung und Anti-Sperrung sind beide zuverlässig. Sehr gut für Marketing-Teams, die effiziente Batch-Operationen benötigen."
   },
   "testimonials.user4.usage": {
-    "message": "8 Monate",
-    "description": "Nutzungsdauer des vierten Benutzers"
+    "message": "8 Monate"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Schließen",
-    "description": "The ARIA label for close button of announcement bar"
+    "message": "Schließen"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Nach oben scrollen",
-    "description": "The ARIA label for the back to top button"
+    "message": "Nach oben scrollen"
   },
   "theme.CodeBlock.copied": {
-    "message": "Kopiert",
-    "description": "The copied button label on code blocks"
+    "message": "Kopiert"
   },
   "theme.CodeBlock.copy": {
-    "message": "Kopieren",
-    "description": "The copy button label on code blocks"
+    "message": "Kopieren"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Code in Zwischenablage kopieren",
-    "description": "The ARIA label for copy code blocks button"
+    "message": "Code in Zwischenablage kopieren"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Zeilenumbruch umschalten",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
+    "message": "Zeilenumbruch umschalten"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Seitenleisten-Kategorie '{label}' einklappen",
-    "description": "The ARIA label to collapse the sidebar category"
+    "message": "Seitenleisten-Kategorie '{label}' einklappen"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Seitenleisten-Kategorie '{label}' ausklappen",
-    "description": "The ARIA label to expand the sidebar category"
+    "message": "Seitenleisten-Kategorie '{label}' ausklappen"
   },
   "theme.ErrorPageContent.title": {
-    "message": "Diese Seite ist abgestürzt.",
-    "description": "The title of the fallback page when the page crashed"
+    "message": "Diese Seite ist abgestürzt."
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Versuchen Sie es erneut",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+    "message": "Versuchen Sie es erneut"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Hauptnavigation",
-    "description": "The ARIA label for the main navigation"
+    "message": "Hauptnavigation"
   },
   "theme.NotFound.p1": {
-    "message": "Wir konnten nicht finden, wonach Sie gesucht haben.",
-    "description": "The first paragraph of the 404 page"
+    "message": "Wir konnten nicht finden, wonach Sie gesucht haben."
   },
   "theme.NotFound.p2": {
-    "message": "Bitte kontaktieren Sie den Eigentümer der Seite, die Sie mit der ursprünglichen URL verlinkt hat, und teilen Sie ihm mit, dass ihr Link defekt ist.",
-    "description": "The 2nd paragraph of the 404 page"
+    "message": "Bitte kontaktieren Sie den Eigentümer der Seite, die Sie mit der ursprünglichen URL verlinkt hat, und teilen Sie ihm mit, dass ihr Link defekt ist."
   },
   "theme.NotFound.title": {
-    "message": "Seite nicht gefunden",
-    "description": "The title of the 404 page"
+    "message": "Seite nicht gefunden"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "Auf dieser Seite",
-    "description": "The label used by the button on the collapsible TOC component"
+    "message": "Auf dieser Seite"
   },
   "theme.admonition.caution": {
-    "message": "Vorsicht",
-    "description": "The default label used for the Caution admonition (:::caution)"
+    "message": "Vorsicht"
   },
   "theme.admonition.danger": {
-    "message": "Gefahr",
-    "description": "The default label used for the Danger admonition (:::danger)"
+    "message": "Gefahr"
   },
   "theme.admonition.info": {
-    "message": "Info",
-    "description": "The default label used for the Info admonition (:::info)"
+    "message": "Info"
   },
   "theme.admonition.note": {
-    "message": "Hinweis",
-    "description": "The default label used for the Note admonition (:::note)"
+    "message": "Hinweis"
   },
   "theme.admonition.tip": {
-    "message": "Tipp",
-    "description": "The default label used for the Tip admonition (:::tip)"
+    "message": "Tipp"
   },
   "theme.admonition.warning": {
-    "message": "Warnung",
-    "description": "The default label used for the Warning admonition (:::warning)"
+    "message": "Warnung"
   },
   "theme.blog.archive.description": {
-    "message": "Archiv",
-    "description": "The page & hero description of the blog archive page"
+    "message": "Archiv"
   },
   "theme.blog.archive.title": {
-    "message": "Archiv",
-    "description": "The page & hero title of the blog archive page"
+    "message": "Archiv"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog-Listen-Seiten-Navigation",
-    "description": "The ARIA label for the blog pagination"
+    "message": "Blog-Listen-Seiten-Navigation"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Neuere Einträge",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
+    "message": "Neuere Einträge"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Ältere Einträge",
-    "description": "The label used to navigate to the older blog posts page (next page)"
+    "message": "Ältere Einträge"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog-Beitrags-Seiten-Navigation",
-    "description": "The ARIA label for the blog posts pagination"
+    "message": "Blog-Beitrags-Seiten-Navigation"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Neuerer Beitrag",
-    "description": "The blog post button label to navigate to the newer/previous post"
+    "message": "Neuerer Beitrag"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Älterer Beitrag",
-    "description": "The blog post button label to navigate to the older/next post"
+    "message": "Älterer Beitrag"
   },
   "theme.blog.post.plurals": {
-    "message": "Ein Beitrag|{count} Beiträge",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "Ein Beitrag|{count} Beiträge"
   },
   "theme.blog.post.readMore": {
-    "message": "Mehr lesen",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
+    "message": "Mehr lesen"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Mehr über {title} lesen",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
+    "message": "Mehr über {title} lesen"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} Minuten Lesezeit",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{readingTime} Minuten Lesezeit"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog aktuelle Beiträge Navigation",
-    "description": "The ARIA label for recent posts in the blog sidebar"
+    "message": "Blog aktuelle Beiträge Navigation"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} getaggt mit \"{tagName}\"",
-    "description": "The title of the page for a blog tag"
+    "message": "{nPosts} getaggt mit \"{tagName}\""
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Zwischen hellem und dunklem Modus umschalten (derzeit {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "message": "Zwischen hellem und dunklem Modus umschalten (derzeit {mode})"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "Dunkler Modus",
-    "description": "The name for the dark color mode"
+    "message": "Dunkler Modus"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "Heller Modus",
-    "description": "The name for the light color mode"
+    "message": "Heller Modus"
   },
   "theme.common.editThisPage": {
-    "message": "Diese Seite bearbeiten",
-    "description": "The link label to edit the current page"
+    "message": "Diese Seite bearbeiten"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direkter Link zur Überschrift",
-    "description": "Title for link to heading"
+    "message": "Direkter Link zur Überschrift"
   },
   "theme.common.skipToMainContent": {
-    "message": "Zum Hauptinhalt springen",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+    "message": "Zum Hauptinhalt springen"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} Elemente",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
+    "message": "{count} Elemente"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Startseite",
-    "description": "The ARIA label for the home page in the breadcrumbs"
+    "message": "Startseite"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Breadcrumbs",
-    "description": "The ARIA label for the breadcrumbs"
+    "message": "Breadcrumbs"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs-Seiten-Navigation",
-    "description": "The ARIA label for the docs pagination"
+    "message": "Docs-Seiten-Navigation"
   },
   "theme.docs.paginator.next": {
-    "message": "Weiter",
-    "description": "The label used to navigate to the next doc"
+    "message": "Weiter"
   },
   "theme.docs.paginator.previous": {
-    "message": "Zurück",
-    "description": "The label used to navigate to the previous doc"
+    "message": "Zurück"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Seitenleiste schließen",
-    "description": "The ARIA label for close button of mobile sidebar"
+    "message": "Seitenleiste schließen"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Seitenleiste einklappen",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "Seitenleiste einklappen"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Seitenleiste einklappen",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "Seitenleiste einklappen"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Seitenleiste ausklappen",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "Seitenleiste ausklappen"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Seitenleiste ausklappen",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "Seitenleiste ausklappen"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs-Sidebar",
-    "description": "The ARIA label for the sidebar navigation"
+    "message": "Docs-Sidebar"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Navigationsleiste umschalten",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
+    "message": "Navigationsleiste umschalten"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} mit \"{tagName}\" getaggt",
-    "description": "The title of the page for a docs tag"
+    "message": "{nDocsTagged} mit \"{tagName}\" getaggt"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} Dokumente mit Tag",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} Dokumente mit Tag"
   },
   "theme.docs.versionBadge.label": {
     "message": "Version: {versionLabel}"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "Neueste Version",
-    "description": "The label used for the latest version suggestion link label"
+    "message": "Neueste Version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Für aktuelle Dokumentation siehe {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
+    "message": "Für aktuelle Dokumentation siehe {latestVersionLink} ({versionLabel})."
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Dies ist Dokumentation für {siteTitle} {versionLabel}, die nicht mehr aktiv gewartet wird.",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+    "message": "Dies ist Dokumentation für {siteTitle} {versionLabel}, die nicht mehr aktiv gewartet wird."
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Dies ist unveröffentlichte Dokumentation für {siteTitle} {versionLabel}.",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+    "message": "Dies ist unveröffentlichte Dokumentation für {siteTitle} {versionLabel}."
   },
   "theme.footer.link.label.View All Advertising": {
     "message": "Alle Werbung anzeigen"
@@ -1790,16 +1572,13 @@
     "message": "Alle Tools anzeigen"
   },
   "theme.lastUpdated.atDate": {
-    "message": " am {date}",
-    "description": "The words used to describe on which date a page has been last updated"
+    "message": " am {date}"
   },
   "theme.lastUpdated.byUser": {
-    "message": " von {user}",
-    "description": "The words used to describe by who the page has been last updated"
+    "message": " von {user}"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Zuletzt aktualisiert{atDate}{byUser}",
-    "description": "The sentence used to display when a page has been last updated, and by who"
+    "message": "Zuletzt aktualisiert{atDate}{byUser}"
   },
   "theme.navbar.item.label.Advertising": {
     "message": "Werbung"
@@ -1808,83 +1587,63 @@
     "message": "Tools"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Sprachen",
-    "description": "The label for the mobile language switcher dropdown"
+    "message": "Sprachen"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Zurück zum Hauptmenü",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+    "message": "← Zurück zum Hauptmenü"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Version auswählen",
-    "description": "The label for the navbar versions dropdown on mobile view"
+    "message": "Version auswählen"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags:",
-    "description": "The label alongside a tag list"
+    "message": "Tags:"
   },
   "theme.tags.tagsPageLink": {
-    "message": "Alle Tags anzeigen",
-    "description": "The label of the link targeting the tag list page"
+    "message": "Alle Tags anzeigen"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
-    "description": "The title of the tag list page"
+    "message": "Tags"
   },
   "theme.unlistedContent.message": {
-    "message": "Diese Seite ist nicht gelistet. Suchmaschinen werden sie nicht indexieren, und nur Benutzer mit direktem Link können darauf zugreifen.",
-    "description": "The unlisted content banner message"
+    "message": "Diese Seite ist nicht gelistet. Suchmaschinen werden sie nicht indexieren, und nur Benutzer mit direktem Link können darauf zugreifen."
   },
   "theme.unlistedContent.title": {
-    "message": "Nicht gelistete Seite",
-    "description": "The unlisted content banner title"
+    "message": "Nicht gelistete Seite"
   },
   "whitelabel.annualRequired": {
-    "message": "Jahresabonnement erforderlich",
-    "description": "Whitelabel-Funktion erfordert Jahresabonnement"
+    "message": "Jahresabonnement erforderlich"
   },
   "whitelabel.annualRequiredDesc": {
-    "message": "White-Label-Funktion ist nur für Jahresabonnement-Benutzer verfügbar. Nach dem Kauf eines Jahresplans kontaktieren Sie bitte den Kundensupport über Telegram, um den Freischaltcode zu erhalten.",
-    "description": "Jahresabonnement Erklärung für Whitelabel-Funktion"
+    "message": "White-Label-Funktion ist nur für Jahresabonnement-Benutzer verfügbar. Nach dem Kauf eines Jahresplans kontaktieren Sie bitte den Kundensupport über Telegram, um den Freischaltcode zu erhalten."
   },
   "whitelabel.appName": {
-    "message": "Anwendungsname",
-    "description": "Anwendungsname"
+    "message": "Anwendungsname"
   },
   "whitelabel.contactSupport": {
-    "message": "Kontaktieren Sie Support für Freischaltcode",
-    "description": "Kontaktieren Sie den Kundendienst für Whitelabel-Freischaltcode"
+    "message": "Kontaktieren Sie Support für Freischaltcode"
   },
   "whitelabel.customization": {
-    "message": "Marken-Anpassung",
-    "description": "Markenanpassung"
+    "message": "Marken-Anpassung"
   },
   "whitelabel.description": {
-    "message": "Passen Sie die Markenidentität von TikMatrix an Ihr Unternehmensimage an",
-    "description": "Whitelabel-Funktionsbeschreibung"
+    "message": "Passen Sie die Markenidentität von TikMatrix an Ihr Unternehmensimage an"
   },
   "whitelabel.logo": {
-    "message": "Logo",
-    "description": "Logo"
+    "message": "Logo"
   },
   "whitelabel.setup": {
-    "message": "White-Label-Einrichtung",
-    "description": "Whitelabel-Einstellungen"
+    "message": "White-Label-Einrichtung"
   },
   "whitelabel.supportEmail": {
-    "message": "Support-E-Mail",
-    "description": "Support-E-Mail"
+    "message": "Support-E-Mail"
   },
   "whitelabel.telegramUrl": {
-    "message": "Telegram-Link",
-    "description": "Telegram-Link"
+    "message": "Telegram-Link"
   },
   "whitelabel.title": {
-    "message": "White-Label-Funktion",
-    "description": "Whitelabel-Funktionstitel"
+    "message": "White-Label-Funktion"
   },
   "whitelabel.tutorialUrl": {
-    "message": "Tutorial-Link",
-    "description": "Tutorial-Link"
+    "message": "Tutorial-Link"
   }
 }

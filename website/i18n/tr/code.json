@@ -105,8 +105,7 @@
     "message": "Automatic video posting"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Videolar için otomatik olarak AI seslendirme oluştur",
-    "description": "The description of AI voiceover"
+    "message": "Videolar için otomatik olarak AI seslendirme oluştur"
   },
   "Automatically recognize subtitles and append them to the video": {
     "message": "Automatically recognize subtitles and append them to the video"
@@ -268,8 +267,7 @@
     "message": "Generate intelligent and contextual comments through ChatGPT API integration"
   },
   "Generate unique videos from one source video": {
-    "message": "Tek kaynak videodan benzersiz videolar oluştur",
-    "description": "The description of Video unique"
+    "message": "Tek kaynak videodan benzersiz videolar oluştur"
   },
   "Get Started": {
     "message": "Get Started"

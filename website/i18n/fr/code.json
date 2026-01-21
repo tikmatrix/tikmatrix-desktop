@@ -1,7 +1,6 @@
 {
   "theme.admonition.danger": {
-    "message": "theme.admonition.danger",
-    "description": "The default label used for the Danger admonition (:::danger)"
+    "message": "theme.admonition.danger"
   },
   "tech.point.passiveCapture.b1": {
     "message": "tech.point.passiveCapture.b1"
@@ -10,8 +9,7 @@
     "message": "advertising.page.subtitle"
   },
   "download.subtitle": {
-    "message": "Choisissez votre plateforme pour télécharger TikMatrix",
-    "description": "Sous-titre de la page de téléchargement"
+    "message": "Choisissez votre plateforme pour télécharger TikMatrix"
   },
   "Same Setup Process": {
     "message": "Même processus d'installation"
@@ -20,12 +18,10 @@
     "message": "tech.diagram.zeroCloud"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "theme.blog.post.paginator.navAriaLabel",
-    "description": "The ARIA label for the blog posts pagination"
+    "message": "theme.blog.post.paginator.navAriaLabel"
   },
   "pricing.free.description": {
-    "message": "Idéal pour les débutants",
-    "description": "Description du plan gratuit"
+    "message": "Idéal pour les débutants"
   },
   "Set up account profiles including avatars, nicknames, signatures, and usernames": {
     "message": "Configurez les profils de compte (avatar, pseudo, signature et nom d'utilisateur)"
@@ -37,8 +33,7 @@
     "message": "pricing.compare.show"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "theme.docs.breadcrumbs.home",
-    "description": "The ARIA label for the home page in the breadcrumbs"
+    "message": "theme.docs.breadcrumbs.home"
   },
   "All Monthly Features": {
     "message": "Toutes les fonctionnalités mensuelles"
@@ -47,24 +42,19 @@
     "message": "Prend en charge la mise en miroir de plus de 100 téléphones vers un ordinateur, avec une opération synchronisée"
   },
   "pricing.per_month_pc": {
-    "message": "pricing.per_month_pc",
-    "description": "Texte par mois et par ordinateur"
+    "message": "pricing.per_month_pc"
   },
   "Automatic direct messaging": {
-    "message": "Messagerie directe automatique",
-    "description": "The description of Automatic direct messaging"
+    "message": "Messagerie directe automatique"
   },
   "testimonials.user2.text": {
-    "message": "testimonials.user2.text",
-    "description": "Texte du deuxième témoignage utilisateur"
+    "message": "testimonials.user2.text"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-    "message": "Optimisez votre ferme de téléphones Instagram grâce à un contrôle par lots avancé et à l'automatisation du marketing",
-    "description": "Description de l'optimisation de la ferme de téléphones Instagram"
+    "message": "Optimisez votre ferme de téléphones Instagram grâce à un contrôle par lots avancé et à l'automatisation du marketing"
   },
   "pricing.team.concurrent_tasks": {
-    "message": "pricing.team.concurrent_tasks",
-    "description": "Nombre de tâches simultanées pour le plan équipe"
+    "message": "pricing.team.concurrent_tasks"
   },
   "Same reliable technology as TikMatrix": {
     "message": "Même technologie fiable que TikMatrix"
@@ -91,19 +81,16 @@
     "message": "Create new TikTok accounts with email registration and password setup"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "theme.navbar.mobileVersionsDropdown.label",
-    "description": "The label for the navbar versions dropdown on mobile view"
+    "message": "theme.navbar.mobileVersionsDropdown.label"
   },
   "download.description": {
-    "message": "Téléchargez TikMatrix pour Windows, Mac et Linux",
-    "description": "Description de la page de téléchargement"
+    "message": "Téléchargez TikMatrix pour Windows, Mac et Linux"
   },
   "Remove posts based on their view count for content optimization": {
     "message": "Remove posts based on their view count for content optimization"
   },
   "One-click batch automatic posting, supports adding product links": {
-    "message": "One-click batch automatic posting, supports adding product links",
-    "description": "The description of Automatic posting"
+    "message": "One-click batch automatic posting, supports adding product links"
   },
   "tech.diagram.localExecution": {
     "message": "tech.diagram.localExecution"
@@ -112,8 +99,7 @@
     "message": "TikMatrix"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "theme.TOCCollapsible.toggleButtonLabel",
-    "description": "The label used by the button on the collapsible TOC component"
+    "message": "theme.TOCCollapsible.toggleButtonLabel"
   },
   "tech.diagram.fingerprintIsolation": {
     "message": "tech.diagram.fingerprintIsolation"
@@ -122,8 +108,7 @@
     "message": "Gestion des comptes"
   },
   "Batch Generating Unique Videos": {
-    "message": "Batch Generating Unique Videos",
-    "description": "The description of Batch Generating Unique Videos"
+    "message": "Batch Generating Unique Videos"
   },
   "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
     "message": "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation."
@@ -135,20 +120,16 @@
     "message": "Premium Benefits"
   },
   "theme.admonition.note": {
-    "message": "theme.admonition.note",
-    "description": "The default label used for the Note admonition (:::note)"
+    "message": "theme.admonition.note"
   },
   "Video collection": {
-    "message": "Video collection",
-    "description": "The description of Video collection"
+    "message": "Video collection"
   },
   "The length and width are relatively small, but the height is high": {
-    "message": "The length and width are relatively small, but the height is high",
-    "description": "The description of PhoneFarm Box"
+    "message": "The length and width are relatively small, but the height is high"
   },
   "testimonials.user3.usage": {
-    "message": "testimonials.user3.usage",
-    "description": "Durée d'utilisation du troisième utilisateur"
+    "message": "testimonials.user3.usage"
   },
   "No Root Required": {
     "message": "Aucun accès root requis"
@@ -163,16 +144,13 @@
     "message": "Why Choose IgMatrix?"
   },
   "Automatic account nurturing": {
-    "message": "Préparation automatique du compte",
-    "description": "The description of Automatic account nurturing"
+    "message": "Préparation automatique du compte"
   },
   "whitelabel.contactSupport": {
-    "message": "whitelabel.contactSupport",
-    "description": "Contactez le support client pour obtenir le code de déverrouillage White-Label"
+    "message": "whitelabel.contactSupport"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.",
-    "description": "The description of PhoneFarm Box"
+    "message": "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections."
   },
   "24h AI Assistant": {
     "message": "Assistant IA 24h"
@@ -181,23 +159,19 @@
     "message": "Human Technical Support"
   },
   "Unlimited process tasks": {
-    "message": "Unlimited process tasks",
-    "description": "The description of Unlimited process tasks"
+    "message": "Unlimited process tasks"
   },
   "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "One-click batch automatic registration of TikTok accounts, supports business email",
-    "description": "The description of Automatic registration"
+    "message": "One-click batch automatic registration of TikTok accounts, supports business email"
   },
   "advertising.back.home": {
     "message": "advertising.back.home"
   },
   "pricing.starter.name": {
-    "message": "pricing.starter.name",
-    "description": "Nom du plan Starter"
+    "message": "pricing.starter.name"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.",
-    "description": "The description of TikMatrix competitive advantage"
+    "message": "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety."
   },
   "tech.diagram.devices": {
     "message": "tech.diagram.devices"
@@ -215,8 +189,7 @@
     "message": "Fonctionnalités"
   },
   "download.requirements.storage": {
-    "message": "Stockage : 500 Mo d'espace disponible",
-    "description": "Exigences d'espace de stockage"
+    "message": "Stockage : 500 Mo d'espace disponible"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Built with safety mechanisms to protect your Instagram accounts from suspension"
@@ -228,8 +201,7 @@
     "message": "pricing.toggle.monthly"
   },
   "download.videomagic.title": {
-    "message": "download.videomagic.title",
-    "description": "Titre de la page de téléchargement VideoMagic"
+    "message": "download.videomagic.title"
   },
   "Comments, Messages, Follows": {
     "message": "Commentaires, Messages, Abonnements"
@@ -241,19 +213,16 @@
     "message": "Obtenir de l'aide"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "theme.docs.sidebar.toggleSidebarButtonAriaLabel",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
+    "message": "theme.docs.sidebar.toggleSidebarButtonAriaLabel"
   },
   "advertising.buy.hardware.title": {
     "message": "advertising.buy.hardware.title"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "theme.DocSidebarItem.expandCategoryAriaLabel",
-    "description": "The ARIA label to expand the sidebar category"
+    "message": "theme.DocSidebarItem.expandCategoryAriaLabel"
   },
   "pricing.subtitle": {
-    "message": "pricing.subtitle",
-    "description": "Sous-titre de la section Tarification"
+    "message": "pricing.subtitle"
   },
   "tech.diagram.tiktok": {
     "message": "tech.diagram.tiktok"
@@ -262,8 +231,7 @@
     "message": "tech.security.noiseCurve"
   },
   "download.igmatrix.requirements.memory": {
-    "message": "download.igmatrix.requirements.memory",
-    "description": "Exigences de mémoire pour IgMatrix"
+    "message": "download.igmatrix.requirements.memory"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
     "message": "Powerful Instagram automation tools designed for professional marketers and businesses"
@@ -272,46 +240,37 @@
     "message": "advertising.category.vps"
   },
   "pricing.free.community_support": {
-    "message": "pricing.free.community_support",
-    "description": "Méthode de support pour le plan gratuit"
+    "message": "pricing.free.community_support"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "theme.docs.sidebar.expandButtonAriaLabel",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "theme.docs.sidebar.expandButtonAriaLabel"
   },
   "download.igmatrix.linux.development": {
-    "message": "download.igmatrix.linux.development",
-    "description": "IgMatrix pour Linux en développement"
+    "message": "download.igmatrix.linux.development"
   },
   "Join Channel": {
-    "message": "Join Channel",
-    "description": "The join channel button label"
+    "message": "Join Channel"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.",
-    "description": "The description of Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
+    "message": "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
   },
   "theme.blog.post.readMore": {
-    "message": "theme.blog.post.readMore",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
+    "message": "theme.blog.post.readMore"
   },
   "tech.point.realTouch.b3": {
     "message": "tech.point.realTouch.b3"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+    "message": "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel"
   },
   "Comment boost": {
     "message": "Comment boost"
   },
   "download.videomagic.description": {
-    "message": "download.videomagic.description",
-    "description": "Description de la page de téléchargement VideoMagic"
+    "message": "download.videomagic.description"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.",
-    "description": "The description of TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
+    "message": "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
   },
   "Multi-language support (English, Chinese, Russian)": {
     "message": "Multi-language support (English, Chinese, Russian)"
@@ -320,20 +279,16 @@
     "message": "tech.point.localExec.b2"
   },
   "testimonials.user3.text": {
-    "message": "testimonials.user3.text",
-    "description": "Texte du troisième témoignage utilisateur"
+    "message": "testimonials.user3.text"
   },
   "theme.common.skipToMainContent": {
-    "message": "theme.common.skipToMainContent",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+    "message": "theme.common.skipToMainContent"
   },
   "download.igmatrix.requirements.processor": {
-    "message": "download.igmatrix.requirements.processor",
-    "description": "Exigences processeur pour IgMatrix"
+    "message": "download.igmatrix.requirements.processor"
   },
   "Email": {
-    "message": "Email",
-    "description": "The email label"
+    "message": "Email"
   },
   "advertising.vps.uuuvps.title": {
     "message": "advertising.vps.uuuvps.title"
@@ -345,8 +300,7 @@
     "message": "pricing.local_api.link_text"
   },
   "Automatic commenting": {
-    "message": "Commentaires automatiques",
-    "description": "The description of Automatic commenting"
+    "message": "Commentaires automatiques"
   },
   "tech.point.localExec.b3": {
     "message": "tech.point.localExec.b3"
@@ -355,30 +309,25 @@
     "message": "Telegram Support"
   },
   "whitelabel.appName": {
-    "message": "whitelabel.appName",
-    "description": "Nom de l'application"
+    "message": "whitelabel.appName"
   },
   "download.videomagic.subtitle": {
-    "message": "download.videomagic.subtitle",
-    "description": "Sous-titre de la page de téléchargement VideoMagic"
+    "message": "download.videomagic.subtitle"
   },
   "testimonials.subtitle": {
-    "message": "testimonials.subtitle",
-    "description": "Sous-titre de la section témoignages"
+    "message": "testimonials.subtitle"
   },
   "tech.security.proxyIsolation": {
     "message": "tech.security.proxyIsolation"
   },
   "pricing.unlimited_devices": {
-    "message": "pricing.unlimited_devices",
-    "description": "Texte pour connexion d'appareils illimités"
+    "message": "pricing.unlimited_devices"
   },
   "Video posting, Account nurturing": {
     "message": "Video posting, Account nurturing"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "theme.colorToggle.ariaLabel.mode.light",
-    "description": "The name for the light color mode"
+    "message": "theme.colorToggle.ariaLabel.mode.light"
   },
   "advertising.category.verification": {
     "message": "advertising.category.verification"
@@ -387,8 +336,7 @@
     "message": "advertising.buy.accounts.description"
   },
   "theme.ErrorPageContent.title": {
-    "message": "theme.ErrorPageContent.title",
-    "description": "The title of the fallback page when the page crashed"
+    "message": "theme.ErrorPageContent.title"
   },
   "Strong technical support team with open community ecosystem": {
     "message": "Strong technical support team with open community ecosystem"
@@ -412,19 +360,16 @@
     "message": "Control farm accounts to watch, like, and comment on target live streams"
   },
   "pricing.title": {
-    "message": "pricing.title",
-    "description": "Titre de la section Tarification"
+    "message": "pricing.title"
   },
   "download.windows.title": {
-    "message": "Windows",
-    "description": "Titre de la plateforme Windows"
+    "message": "Windows"
   },
   "advertising.proxy.proxycheap.description": {
     "message": "advertising.proxy.proxycheap.description"
   },
   "pricing.ticket_support": {
-    "message": "pricing.ticket_support",
-    "description": "Texte de support par ticket dédié"
+    "message": "pricing.ticket_support"
   },
   "tech.point.humanBehavior.b2": {
     "message": "tech.point.humanBehavior.b2"
@@ -439,26 +384,22 @@
     "message": "Computer-based Execution"
   },
   "download.igmatrix.title": {
-    "message": "download.igmatrix.title",
-    "description": "Titre de la page de téléchargement IgMatrix"
+    "message": "download.igmatrix.title"
   },
   "Different Script Logic": {
     "message": "Different Script Logic"
   },
   "Join Group": {
-    "message": "Join Group",
-    "description": "The join group button label"
+    "message": "Join Group"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
     "message": "Boost engagement on specific comments by liking and replying to them in bulk"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "theme.tags.tagsPageTitle",
-    "description": "The title of the tag list page"
+    "message": "theme.tags.tagsPageTitle"
   },
   "whitelabel.telegramUrl": {
-    "message": "whitelabel.telegramUrl",
-    "description": "Lien Telegram"
+    "message": "whitelabel.telegramUrl"
   },
   "Go to the \"Download\" page and download the latest version of TikMatrix.": {
     "message": "Go to the \"Download\" page and download the latest version of TikMatrix."
@@ -473,12 +414,10 @@
     "message": "Live stream boost"
   },
   "Contact to purchase": {
-    "message": "Contact to purchase",
-    "description": "The contact to purchase label"
+    "message": "Contact to purchase"
   },
   "pricing.business.description": {
-    "message": "pricing.business.description",
-    "description": "Description du plan Business"
+    "message": "pricing.business.description"
   },
   "Per Year": {
     "message": "Per Year"
@@ -487,30 +426,25 @@
     "message": "homepage.vs.card.cta"
   },
   "testimonials.title": {
-    "message": "testimonials.title",
-    "description": "Titre de la section témoignages"
+    "message": "testimonials.title"
   },
   "Generate unique videos from one source video": {
-    "message": "Generate unique videos from one source video",
-    "description": "The description of Video unique"
+    "message": "Generate unique videos from one source video"
   },
   "pricing.pro.concurrent_tasks": {
-    "message": "pricing.pro.concurrent_tasks",
-    "description": "Nombre de tâches simultanées (plan Pro)"
+    "message": "pricing.pro.concurrent_tasks"
   },
   "tech.point.realTouch.b2": {
     "message": "tech.point.realTouch.b2"
   },
   "Automatic matching": {
-    "message": "Correspondance automatique",
-    "description": "The description of Automatic matching"
+    "message": "Correspondance automatique"
   },
   "tech.diagram.noMemoryInjection": {
     "message": "tech.diagram.noMemoryInjection"
   },
   "Professional TikTok Account Management & Marketing Tool": {
-    "message": "Professional TikTok Account Management & Marketing Tool",
-    "description": "The description of Professional TikTok Account Management & Marketing Tool"
+    "message": "Professional TikTok Account Management & Marketing Tool"
   },
   "TikMatrix is a TikTok group control operation tool": {
     "message": "TikMatrix is a TikTok group control operation tool"
@@ -525,19 +459,16 @@
     "message": "Important Reminder"
   },
   "theme.docs.paginator.next": {
-    "message": "theme.docs.paginator.next",
-    "description": "The label used to navigate to the next doc"
+    "message": "theme.docs.paginator.next"
   },
   "tech.point.realTouch.b1": {
     "message": "tech.point.realTouch.b1"
   },
   "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark",
-    "description": "The description of Automatic account nurturing"
+    "message": "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark"
   },
   "download.igmatrix.requirements.title": {
-    "message": "download.igmatrix.requirements.title",
-    "description": "Titre des exigences système pour IgMatrix"
+    "message": "download.igmatrix.requirements.title"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform."
@@ -546,8 +477,7 @@
     "message": "No root permissions needed, ensuring device environment security"
   },
   "pricing.business.concurrent_tasks": {
-    "message": "pricing.business.concurrent_tasks",
-    "description": "Nombre de tâches simultanées (plan Business)"
+    "message": "pricing.business.concurrent_tasks"
   },
   "pricing.compare.devices": {
     "message": "pricing.compare.devices"
@@ -556,12 +486,10 @@
     "message": "tech.point.zeroApi.desc"
   },
   "pricing.free_label": {
-    "message": "pricing.free_label",
-    "description": "Free label"
+    "message": "pricing.free_label"
   },
   "theme.lastUpdated.atDate": {
-    "message": "theme.lastUpdated.atDate",
-    "description": "The words used to describe on which date a page has been last updated"
+    "message": "theme.lastUpdated.atDate"
   },
   "Text input mimics human typing patterns with character-by-character simulation": {
     "message": "Text input mimics human typing patterns with character-by-character simulation"
@@ -570,16 +498,13 @@
     "message": "advertising.tiktok.user.finder.description"
   },
   "download.igmatrix.windows.button": {
-    "message": "download.igmatrix.windows.button",
-    "description": "Texte du bouton de téléchargement IgMatrix (Windows)"
+    "message": "download.igmatrix.windows.button"
   },
   "Download IgMatrix": {
-    "message": "Download IgMatrix",
-    "description": "The description of Download IgMatrix"
+    "message": "Download IgMatrix"
   },
   "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Supports 200+ phones mirroring to a computer, with synchronized operation",
-    "description": "The description of Phone screen mirroring to a computer"
+    "message": "Supports 200+ phones mirroring to a computer, with synchronized operation"
   },
   "homepage.vs.card.nodev.desc": {
     "message": "Aucune compétence en développement requise"
@@ -588,19 +513,16 @@
     "message": "Super Marketing"
   },
   "download.igmatrix.mac.install_tip": {
-    "message": "download.igmatrix.mac.install_tip",
-    "description": "Instructions à exécuter après l'installation sur Mac"
+    "message": "download.igmatrix.mac.install_tip"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "theme.DocSidebarItem.collapseCategoryAriaLabel",
-    "description": "The ARIA label to collapse the sidebar category"
+    "message": "theme.DocSidebarItem.collapseCategoryAriaLabel"
   },
   "Pricing": {
     "message": "Pricing"
   },
   "theme.tags.tagsListLabel": {
-    "message": "theme.tags.tagsListLabel",
-    "description": "The label alongside a tag list"
+    "message": "theme.tags.tagsListLabel"
   },
   "Find answers to common questions about IgMatrix": {
     "message": "Find answers to common questions about IgMatrix"
@@ -609,8 +531,7 @@
     "message": "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust."
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "theme.docs.versions.latestVersionLinkLabel",
-    "description": "The label used for the latest version suggestion link label"
+    "message": "theme.docs.versions.latestVersionLinkLabel"
   },
   "Quick Setup Guide": {
     "message": "Quick Setup Guide"
@@ -631,8 +552,7 @@
     "message": "Save 50% compared to monthly plan"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "theme.BackToTopButton.buttonAriaLabel",
-    "description": "The ARIA label for the back to top button"
+    "message": "theme.BackToTopButton.buttonAriaLabel"
   },
   "Scrape TikTok usernames from followers lists or keyword searches": {
     "message": "Scrape TikTok usernames from followers lists or keyword searches"
@@ -653,27 +573,22 @@
     "message": "Configuration du compte"
   },
   "testimonials.user1.text": {
-    "message": "testimonials.user1.text",
-    "description": "Texte du premier témoignage utilisateur"
+    "message": "testimonials.user1.text"
   },
   "theme.tags.tagsPageLink": {
-    "message": "theme.tags.tagsPageLink",
-    "description": "The label of the link targeting the tag list page"
+    "message": "theme.tags.tagsPageLink"
   },
   "theme.admonition.tip": {
-    "message": "theme.admonition.tip",
-    "description": "The default label used for the Tip admonition (:::tip)"
+    "message": "theme.admonition.tip"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
     "message": "Can I run both IgMatrix and TikMatrix on the same computer?"
   },
   "pricing.starter.manage_phones": {
-    "message": "pricing.starter.manage_phones",
-    "description": "Fonctionnalités du plan Starter"
+    "message": "pricing.starter.manage_phones"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "theme.blog.paginator.newerEntries",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
+    "message": "theme.blog.paginator.newerEntries"
   },
   "Technical Advantages": {
     "message": "Technical Advantages"
@@ -688,22 +603,19 @@
     "message": "Post management"
   },
   "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "Streamline your TikTok phone farm with advanced batch control and marketing automation",
-    "description": "The description of Streamline your TikTok phone farm with advanced batch control and marketing automation"
+    "message": "Streamline your TikTok phone farm with advanced batch control and marketing automation"
   },
   "advertising.category.accounts": {
     "message": "advertising.category.accounts"
   },
   "download.requirements.internet": {
-    "message": "Connexion Internet stable",
-    "description": "Exigences de connexion Internet"
+    "message": "Connexion Internet stable"
   },
   "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
     "message": "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products."
   },
   "theme.CodeBlock.copied": {
-    "message": "theme.CodeBlock.copied",
-    "description": "The copied button label on code blocks"
+    "message": "theme.CodeBlock.copied"
   },
   "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
     "message": "Powerful technical team with real-time maintenance and updates ensuring script reliability"
@@ -718,41 +630,34 @@
     "message": "Toutes les fonctionnalités"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "theme.docs.sidebar.closeSidebarButtonAriaLabel",
-    "description": "The ARIA label for close button of mobile sidebar"
+    "message": "theme.docs.sidebar.closeSidebarButtonAriaLabel"
   },
   "One-click batch automatic direct messaging to multiple target users": {
-    "message": "One-click batch automatic direct messaging to multiple target users",
-    "description": "The description of Automatic direct messaging"
+    "message": "One-click batch automatic direct messaging to multiple target users"
   },
   "Video download": {
-    "message": "Video download",
-    "description": "The description of Video download"
+    "message": "Video download"
   },
   "Our Core Advantages": {
     "message": "Our Core Advantages"
   },
   "theme.CodeBlock.copy": {
-    "message": "theme.CodeBlock.copy",
-    "description": "The copy button label on code blocks"
+    "message": "theme.CodeBlock.copy"
   },
   "View TikMatrix Tutorial": {
     "message": "View TikMatrix Tutorial"
   },
   "download.linux.title": {
-    "message": "download.linux.title",
-    "description": "Titre de la plateforme Linux"
+    "message": "download.linux.title"
   },
   "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "One-click batch automatic commenting on multiple videos with specified scripts and random emojis",
-    "description": "The description of Automatic commenting"
+    "message": "One-click batch automatic commenting on multiple videos with specified scripts and random emojis"
   },
   "homepage.vs.card.automation.desc": {
     "message": "Automatisez toutes vos tâches de médias sociaux"
   },
   "whitelabel.annualRequiredDesc": {
-    "message": "whitelabel.annualRequiredDesc",
-    "description": "La fonctionnalité White-Label n'est disponible qu'avec un abonnement annuel"
+    "message": "whitelabel.annualRequiredDesc"
   },
   "pricing.local_api.title": {
     "message": "pricing.local_api.title"
@@ -773,8 +678,7 @@
     "message": "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk"
   },
   "theme.docs.paginator.previous": {
-    "message": "theme.docs.paginator.previous",
-    "description": "The label used to navigate to the previous doc"
+    "message": "theme.docs.paginator.previous"
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
     "message": "Automatisez la publication, le suivi, les commentaires et les activités d'engagement sur Instagram"
@@ -783,8 +687,7 @@
     "message": "homepage.vs.cta.text"
   },
   "Powerful TikTok Automation & Management Tools": {
-    "message": "Powerful TikTok Automation & Management Tools",
-    "description": "The description of Powerful TikTok Automation & Management Tools"
+    "message": "Powerful TikTok Automation & Management Tools"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "Comment on multiple TikTok posts in bulk with customizable content and emojis"
@@ -796,8 +699,7 @@
     "message": "tech.point.humanBehavior.b1"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "Mon - Fri: 9:00AM - 5:00PM(UTC+8)",
-    "description": "The working hours description"
+    "message": "Mon - Fri: 9:00AM - 5:00PM(UTC+8)"
   },
   "Content Management": {
     "message": "Content Management"
@@ -809,20 +711,16 @@
     "message": "advertising.category.hardware"
   },
   "Telegram": {
-    "message": "Telegram",
-    "description": "The telegram label"
+    "message": "Telegram"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "theme.blog.paginator.olderEntries",
-    "description": "The label used to navigate to the older blog posts page (next page)"
+    "message": "theme.blog.paginator.olderEntries"
   },
   "download.linux.coming_soon": {
-    "message": "download.linux.coming_soon",
-    "description": "Bientôt disponible pour Linux"
+    "message": "download.linux.coming_soon"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "theme.blog.post.paginator.olderPost",
-    "description": "The blog post button label to navigate to the older/next post"
+    "message": "theme.blog.post.paginator.olderPost"
   },
   "tech.subtitle": {
     "message": "tech.subtitle"
@@ -834,8 +732,7 @@
     "message": "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting"
   },
   "theme.admonition.caution": {
-    "message": "theme.admonition.caution",
-    "description": "The default label used for the Caution admonition (:::caution)"
+    "message": "theme.admonition.caution"
   },
   "Free": {
     "message": "Free"
@@ -847,8 +744,7 @@
     "message": "Yearly"
   },
   "Working Hours": {
-    "message": "Working Hours",
-    "description": "The working hours label"
+    "message": "Working Hours"
   },
   "advertising.page.title": {
     "message": "advertising.page.title"
@@ -860,12 +756,10 @@
     "message": "Supports work profile enterprise space for professional use"
   },
   "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - Batch Generating Unique Videos",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic - Batch Generating Unique Videos"
   },
   "theme.common.editThisPage": {
-    "message": "theme.common.editThisPage",
-    "description": "The link label to edit the current page"
+    "message": "theme.common.editThisPage"
   },
   "pricing.compare.hide": {
     "message": "pricing.compare.hide"
@@ -874,20 +768,16 @@
     "message": "tech.point.localExec.b1"
   },
   "theme.unlistedContent.title": {
-    "message": "theme.unlistedContent.title",
-    "description": "The unlisted content banner title"
+    "message": "theme.unlistedContent.title"
   },
   "pricing.free.all_free_features": {
-    "message": "pricing.free.all_free_features",
-    "description": "Description des fonctionnalités de base du plan gratuit"
+    "message": "pricing.free.all_free_features"
   },
   "Performance analytics": {
-    "message": "Performance analytics",
-    "description": "The description of Performance analytics"
+    "message": "Performance analytics"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "theme.docs.versions.unmaintainedVersionLabel",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+    "message": "theme.docs.versions.unmaintainedVersionLabel"
   },
   "pricing.toggle.yearly": {
     "message": "pricing.toggle.yearly"
@@ -896,12 +786,10 @@
     "message": "Plug-and-play, configuration rapide"
   },
   "download.igmatrix.mac.title": {
-    "message": "download.igmatrix.mac.title",
-    "description": "Titre de la plateforme IgMatrix (Mac)"
+    "message": "download.igmatrix.mac.title"
   },
   "Video Magic is a tool that can generate unique videos": {
-    "message": "Video Magic is a tool that can generate unique videos",
-    "description": "The description of Video Magic"
+    "message": "Video Magic is a tool that can generate unique videos"
   },
   "theme.footer.link.label.View All Advertising": {
     "message": "theme.footer.link.label.View All Advertising"
@@ -910,12 +798,10 @@
     "message": "How many TikTok accounts can each phone log into?"
   },
   "download.igmatrix.windows.description": {
-    "message": "download.igmatrix.windows.description",
-    "description": "Description de la plateforme IgMatrix (Windows)"
+    "message": "download.igmatrix.windows.description"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "The length and width are relatively big, but the height is low(2u size)",
-    "description": "The description of PhoneFarm Box"
+    "message": "The length and width are relatively big, but the height is low(2u size)"
   },
   "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely.": {
     "message": "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely."
@@ -924,32 +810,25 @@
     "message": "Open Source Client"
   },
   "Recognize subtitles": {
-    "message": "Recognize subtitles",
-    "description": "The description of Recognize subtitles"
+    "message": "Recognize subtitles"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "theme.docs.tagDocListPageTitle.nDocsTagged",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "theme.docs.tagDocListPageTitle.nDocsTagged"
   },
   "download.igmatrix.requirements.storage": {
-    "message": "download.igmatrix.requirements.storage",
-    "description": "Exigences d'espace de stockage pour IgMatrix"
+    "message": "download.igmatrix.requirements.storage"
   },
   "download.title": {
-    "message": "Télécharger TikMatrix",
-    "description": "Titre de la page de téléchargement"
+    "message": "Télécharger TikMatrix"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "theme.CodeBlock.wordWrapToggle",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
+    "message": "theme.CodeBlock.wordWrapToggle"
   },
   "theme.unlistedContent.message": {
-    "message": "theme.unlistedContent.message",
-    "description": "The unlisted content banner message"
+    "message": "theme.unlistedContent.message"
   },
   "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.",
-    "description": "The description of TikMatrix proprietary technology"
+    "message": "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate."
   },
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
     "message": "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information."
@@ -958,19 +837,16 @@
     "message": "Basic configuration"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "theme.docs.breadcrumbs.navAriaLabel",
-    "description": "The ARIA label for the breadcrumbs"
+    "message": "theme.docs.breadcrumbs.navAriaLabel"
   },
   "pricing.business.name": {
-    "message": "pricing.business.name",
-    "description": "Nom du plan Business"
+    "message": "pricing.business.name"
   },
   "tech.diagram.realTouch": {
     "message": "tech.diagram.realTouch"
   },
   "download.requirements.processor": {
-    "message": "Processeur : Intel Core i5 ou équivalent",
-    "description": "Exigences processeur"
+    "message": "Processeur : Intel Core i5 ou équivalent"
   },
   "Safe & Secure": {
     "message": "Safe & Secure"
@@ -997,30 +873,25 @@
     "message": "advertising.whatsapp.checker.description"
   },
   "download.linux.development": {
-    "message": "download.linux.development",
-    "description": "Linux en développement"
+    "message": "download.linux.development"
   },
   "Completely local private deployment ensuring user data security": {
     "message": "Completely local private deployment ensuring user data security"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "theme.docs.paginator.navAriaLabel",
-    "description": "The ARIA label for the docs pagination"
+    "message": "theme.docs.paginator.navAriaLabel"
   },
   "pricing.all_features": {
-    "message": "pricing.all_features",
-    "description": "Texte indiquant que toutes les fonctionnalités sont incluses"
+    "message": "pricing.all_features"
   },
   "Script engine simulates natural human clicking with randomized button offset": {
     "message": "Script engine simulates natural human clicking with randomized button offset"
   },
   "Buy hardware": {
-    "message": "Buy hardware",
-    "description": "The product label"
+    "message": "Buy hardware"
   },
   "download.requirements.memory": {
-    "message": "Mémoire : 8 Go RAM",
-    "description": "Exigences de mémoire"
+    "message": "Mémoire : 8 Go RAM"
   },
   "tech.point.fingerprint.b3": {
     "message": "tech.point.fingerprint.b3"
@@ -1029,37 +900,31 @@
     "message": "advertising.visit.button"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "theme.blog.post.readMoreLabel",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
+    "message": "theme.blog.post.readMoreLabel"
   },
   "Download TikMatrix": {
-    "message": "Download TikMatrix",
-    "description": "The description of Download TikMatrix"
+    "message": "Download TikMatrix"
   },
   "Control multiple Instagram accounts across different Android devices simultaneously": {
     "message": "Control multiple Instagram accounts across different Android devices simultaneously"
   },
   "download.igmatrix.description": {
-    "message": "download.igmatrix.description",
-    "description": "Description de la page de téléchargement IgMatrix"
+    "message": "download.igmatrix.description"
   },
   "tech.point.humanBehavior.desc": {
     "message": "tech.point.humanBehavior.desc"
   },
   "Automatically translate subtitles to any language": {
-    "message": "Automatically translate subtitles to any language",
-    "description": "The description of Translate subtitles"
+    "message": "Automatically translate subtitles to any language"
   },
   "IgMatrix": {
-    "message": "IgMatrix",
-    "description": "The description of IgMatrix"
+    "message": "IgMatrix"
   },
   "Instagram-optimized automation scripts": {
     "message": "Instagram-optimized automation scripts"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "theme.blog.paginator.navAriaLabel",
-    "description": "The ARIA label for the blog pagination"
+    "message": "theme.blog.paginator.navAriaLabel"
   },
   "tech.points.heading": {
     "message": "tech.points.heading"
@@ -1068,20 +933,16 @@
     "message": "Protocole API"
   },
   "pricing.team.description": {
-    "message": "pricing.team.description",
-    "description": "Description du plan Équipe"
+    "message": "pricing.team.description"
   },
   "whitelabel.description": {
-    "message": "whitelabel.description",
-    "description": "Description de la fonctionnalité White-Label"
+    "message": "whitelabel.description"
   },
   "pricing.get_started": {
-    "message": "Commencer",
-    "description": "Texte du bouton 'Commencer'"
+    "message": "Commencer"
   },
   "Automatic profile setup": {
-    "message": "Configuration automatique du profil",
-    "description": "The description of Automatic profile setup"
+    "message": "Configuration automatique du profil"
   },
   "Scheduled Tasks": {
     "message": "Scheduled Tasks"
@@ -1105,15 +966,13 @@
     "message": "Publication automatique de vidéos"
   },
   "download.requirements.os": {
-    "message": "Système d'exploitation : Windows 10/11, macOS 10.15+ ou Ubuntu 20.04+",
-    "description": "Exigences du système d'exploitation"
+    "message": "Système d'exploitation : Windows 10/11, macOS 10.15+ ou Ubuntu 20.04+"
   },
   "Automated Comment": {
     "message": "Commentaire automatisé"
   },
   "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "One-click automatic collection of target account fan lists, can be used for direct messaging",
-    "description": "The description of Fan collection"
+    "message": "One-click automatic collection of target account fan lists, can be used for direct messaging"
   },
   "tech.security.legendC": {
     "message": "tech.security.legendC"
@@ -1128,8 +987,7 @@
     "message": "S'abonner"
   },
   "pricing.starter.description": {
-    "message": "pricing.starter.description",
-    "description": "Description du plan Starter"
+    "message": "pricing.starter.description"
   },
   "advertising.whatsapp.checker.title": {
     "message": "advertising.whatsapp.checker.title"
@@ -1147,19 +1005,16 @@
     "message": "tech.diagram.engine"
   },
   "download.igmatrix.linux.title": {
-    "message": "download.igmatrix.linux.title",
-    "description": "Titre de la plateforme IgMatrix (Linux)"
+    "message": "download.igmatrix.linux.title"
   },
   "homepage.header.cta.secondary": {
     "message": "Voir les fonctionnalités"
   },
   "download.mac.description": {
-    "message": "download.mac.description",
-    "description": "Description de la plateforme Mac"
+    "message": "download.mac.description"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "theme.CodeBlock.copyButtonAriaLabel",
-    "description": "The ARIA label for copy code blocks button"
+    "message": "theme.CodeBlock.copyButtonAriaLabel"
   },
   "Automated Message": {
     "message": "Message automatisé"
@@ -1168,12 +1023,10 @@
     "message": "Script Parameter Randomization"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "theme.docs.sidebar.collapseButtonTitle",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "theme.docs.sidebar.collapseButtonTitle"
   },
   "theme.blog.archive.title": {
-    "message": "theme.blog.archive.title",
-    "description": "The page & hero title of the blog archive page"
+    "message": "theme.blog.archive.title"
   },
   "tech.point.fingerprint.desc": {
     "message": "tech.point.fingerprint.desc"
@@ -1185,12 +1038,10 @@
     "message": "User engagement boost"
   },
   "whitelabel.customization": {
-    "message": "whitelabel.customization",
-    "description": "Personnalisation de la marque"
+    "message": "whitelabel.customization"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "theme.docs.sidebar.navAriaLabel",
-    "description": "The ARIA label for the sidebar navigation"
+    "message": "theme.docs.sidebar.navAriaLabel"
   },
   "homepage.header.cta.download": {
     "message": "Télécharger maintenant"
@@ -1208,37 +1059,31 @@
     "message": "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration."
   },
   "pricing.free.automation_disabled": {
-    "message": "Automatisation désactivée",
-    "description": "Texte indiquant que l'automatisation n'est pas disponible pour le plan gratuit"
+    "message": "Automatisation désactivée"
   },
   "Download VideoMagic": {
-    "message": "Download VideoMagic",
-    "description": "The description of Download VideoMagic"
+    "message": "Download VideoMagic"
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app",
-    "description": "Réponse du support pour ordinateur"
+    "message": "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app"
   },
   "Simulates natural right-hand arc swipe trajectories like real human interaction": {
     "message": "Simulates natural right-hand arc swipe trajectories like real human interaction"
   },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
-    "message": "IgMatrix is a Instagram android phonefarm batch control tool",
-    "description": "The description of IgMatrix"
+    "message": "IgMatrix is a Instagram android phonefarm batch control tool"
   },
   "advertising.tiktok.user.finder.title": {
     "message": "advertising.tiktok.user.finder.title"
   },
   "whitelabel.annualRequired": {
-    "message": "whitelabel.annualRequired",
-    "description": "La fonctionnalité White-Label nécessite un abonnement annuel"
+    "message": "whitelabel.annualRequired"
   },
   "tech.diagram.noApi": {
     "message": "tech.diagram.noApi"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "theme.NavBar.navAriaLabel",
-    "description": "The ARIA label for the main navigation"
+    "message": "theme.NavBar.navAriaLabel"
   },
   "Schedule your Instagram activities with intelligent timing algorithms": {
     "message": "Schedule your Instagram activities with intelligent timing algorithms"
@@ -1250,32 +1095,25 @@
     "message": "Après l'installation, ouvrez IgMatrix pour voir la liste complète des scripts d'automatisation Instagram disponibles. La sélection de scripts peut différer de TikMatrix."
   },
   "Automatically recognize subtitles and append them to the video": {
-    "message": "Automatically recognize subtitles and append them to the video",
-    "description": "The description of Recognize subtitles"
+    "message": "Automatically recognize subtitles and append them to the video"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "theme.blog.post.readingTime.plurals",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "theme.blog.post.readingTime.plurals"
   },
   "download.igmatrix.requirements.internet": {
-    "message": "download.igmatrix.requirements.internet",
-    "description": "Exigences de connexion Internet pour IgMatrix"
+    "message": "download.igmatrix.requirements.internet"
   },
   "testimonials.user4.usage": {
-    "message": "testimonials.user4.usage",
-    "description": "Durée d'utilisation du quatrième utilisateur"
+    "message": "testimonials.user4.usage"
   },
   "theme.blog.post.plurals": {
-    "message": "theme.blog.post.plurals",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "theme.blog.post.plurals"
   },
   "theme.admonition.warning": {
-    "message": "theme.admonition.warning",
-    "description": "The default label used for the Warning admonition (:::warning)"
+    "message": "theme.admonition.warning"
   },
   "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "One-click batch automatic matching of logged-in accounts, no manual binding needed",
-    "description": "The description of Automatic matching"
+    "message": "One-click batch automatic matching of logged-in accounts, no manual binding needed"
   },
   "advertising.proxy.thordata.description": {
     "message": "advertising.proxy.thordata.description"
@@ -1284,8 +1122,7 @@
     "message": "tech.point.passiveCapture.b2"
   },
   "theme.blog.archive.description": {
-    "message": "theme.blog.archive.description",
-    "description": "The page & hero description of the blog archive page"
+    "message": "theme.blog.archive.description"
   },
   "advertising.buy.accounts.title": {
     "message": "advertising.buy.accounts.title"
@@ -1294,12 +1131,10 @@
     "message": "What is TikMatrix?"
   },
   "theme.NotFound.p1": {
-    "message": "theme.NotFound.p1",
-    "description": "The first paragraph of the 404 page"
+    "message": "theme.NotFound.p1"
   },
   "pricing.free.name": {
-    "message": "pricing.free.name",
-    "description": "Nom du plan Gratuit"
+    "message": "pricing.free.name"
   },
   "tech.security.humanModel": {
     "message": "tech.security.humanModel"
@@ -1308,8 +1143,7 @@
     "message": "Préparation automatisée du compte"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "theme.docs.versions.latestVersionSuggestionLabel",
-    "description": "The label used to tell the user to check the latest version"
+    "message": "theme.docs.versions.latestVersionSuggestionLabel"
   },
   "Unlimited devices": {
     "message": "Unlimited devices"
@@ -1333,19 +1167,16 @@
     "message": "tech.security.zeroApi"
   },
   "testimonials.user4.text": {
-    "message": "testimonials.user4.text",
-    "description": "Texte du quatrième témoignage utilisateur"
+    "message": "testimonials.user4.text"
   },
   "advertising.vps.uuuvps.description": {
     "message": "advertising.vps.uuuvps.description"
   },
   "What computer can I use?": {
-    "message": "What computer can I use?",
-    "description": "Questions de support pour ordinateur"
+    "message": "What computer can I use?"
   },
   "Contact": {
-    "message": "Contact",
-    "description": "The contact form title"
+    "message": "Contact"
   },
   "Download IgMatrix from our official website and follow the installation instructions.": {
     "message": "Download IgMatrix from our official website and follow the installation instructions."
@@ -1369,31 +1200,25 @@
     "message": "Batch login to TikTok accounts with account list management"
   },
   "theme.NotFound.p2": {
-    "message": "theme.NotFound.p2",
-    "description": "The 2nd paragraph of the 404 page"
+    "message": "theme.NotFound.p2"
   },
   "advertising.buy.accounts.leadsmm.title": {
     "message": "advertising.buy.accounts.leadsmm.title"
   },
   "Automatic posting": {
-    "message": "Publication automatique",
-    "description": "The description of Automatic posting"
+    "message": "Publication automatique"
   },
   "One-click download of videos from the entire network": {
-    "message": "One-click download of videos from the entire network",
-    "description": "The description of Video collection"
+    "message": "One-click download of videos from the entire network"
   },
   "download.linux.description": {
-    "message": "download.linux.description",
-    "description": "Description : Linux en cours de développement"
+    "message": "download.linux.description"
   },
   "Shipping worldwide": {
-    "message": "Shipping worldwide",
-    "description": "The shipping worldwide label"
+    "message": "Shipping worldwide"
   },
   "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "One-click batch automatic setup of avatars, nicknames, signatures, usernames",
-    "description": "The description of Automatic profile setup"
+    "message": "One-click batch automatic setup of avatars, nicknames, signatures, usernames"
   },
   "Here are some frequently asked questions.": {
     "message": "Here are some frequently asked questions."
@@ -1402,20 +1227,16 @@
     "message": "theme.navbar.item.label.Advertising"
   },
   "testimonials.user2.usage": {
-    "message": "testimonials.user2.usage",
-    "description": "Durée d'utilisation du deuxième utilisateur"
+    "message": "testimonials.user2.usage"
   },
   "Our Competitive Advantages": {
-    "message": "Our Competitive Advantages",
-    "description": "The description of Our Competitive Advantages"
+    "message": "Our Competitive Advantages"
   },
   "download.windows.button": {
-    "message": "download.windows.button",
-    "description": "Texte du bouton de téléchargement Windows"
+    "message": "download.windows.button"
   },
   "pricing.dedicated_support": {
-    "message": "pricing.dedicated_support",
-    "description": "Texte de support dédié"
+    "message": "pricing.dedicated_support"
   },
   "Automatic login": {
     "message": "Connexion automatique"
@@ -1424,15 +1245,13 @@
     "message": "Natural Swipe Gestures"
   },
   "theme.blog.tagTitle": {
-    "message": "theme.blog.tagTitle",
-    "description": "The title of the page for a blog tag"
+    "message": "theme.blog.tagTitle"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Vérifiez toujours les fonctionnalités réelles disponibles dans votre logiciel IgMatrix, car les fonctionnalités de script peuvent varier par rapport à TikMatrix. L'interface du logiciel vous montrera exactement quels scripts d'automatisation sont disponibles pour Instagram."
   },
   "download.mac.button": {
-    "message": "download.mac.button",
-    "description": "Texte du bouton de téléchargement Mac"
+    "message": "download.mac.button"
   },
   "Professional phone farm management": {
     "message": "Professional phone farm management"
@@ -1441,12 +1260,10 @@
     "message": "Custom Instagram workflows"
   },
   "Video unique": {
-    "message": "Video unique",
-    "description": "The description of Video unique"
+    "message": "Video unique"
   },
   "testimonials.user1.usage": {
-    "message": "testimonials.user1.usage",
-    "description": "Durée d'utilisation du premier utilisateur"
+    "message": "testimonials.user1.usage"
   },
   "tech.point.fingerprint.b2": {
     "message": "tech.point.fingerprint.b2"
@@ -1464,35 +1281,28 @@
     "message": "advertising.disclaimer.title"
   },
   "theme.admonition.info": {
-    "message": "theme.admonition.info",
-    "description": "The default label used for the Info admonition (:::info)"
+    "message": "theme.admonition.info"
   },
   "whitelabel.setup": {
-    "message": "whitelabel.setup",
-    "description": "Paramètres White-Label"
+    "message": "whitelabel.setup"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "theme.colorToggle.ariaLabel",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "message": "theme.colorToggle.ariaLabel"
   },
   "pricing.team.name": {
-    "message": "pricing.team.name",
-    "description": "Nom du plan Équipe"
+    "message": "pricing.team.name"
   },
   "Translate subtitles": {
-    "message": "Translate subtitles",
-    "description": "The description of Translate subtitles"
+    "message": "Translate subtitles"
   },
   "TikMatrix supports Android phones running Android 5.0 and above.": {
     "message": "TikMatrix supports Android phones running Android 5.0 and above."
   },
   "whitelabel.tutorialUrl": {
-    "message": "whitelabel.tutorialUrl",
-    "description": "Lien du tutoriel"
+    "message": "whitelabel.tutorialUrl"
   },
   "navbar.download": {
-    "message": "Télécharger",
-    "description": "Texte du lien de téléchargement dans la barre de navigation"
+    "message": "Télécharger"
   },
   "tech.point.humanBehavior.title": {
     "message": "tech.point.humanBehavior.title"
@@ -1501,8 +1311,7 @@
     "message": "tech.point.zeroApi.b1"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "theme.docs.sidebar.collapseButtonAriaLabel",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "theme.docs.sidebar.collapseButtonAriaLabel"
   },
   "Mass commenting": {
     "message": "Mass commenting"
@@ -1517,12 +1326,10 @@
     "message": "Trial"
   },
   "One-click batch automatic follow of target accounts": {
-    "message": "One-click batch automatic follow of target accounts",
-    "description": "The description of Automatic following"
+    "message": "One-click batch automatic follow of target accounts"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "theme.docs.versions.unreleasedVersionLabel",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+    "message": "theme.docs.versions.unreleasedVersionLabel"
   },
   "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
     "message": "Professional TikTok Account Management & Marketing Tool for Windows & Mac"
@@ -1531,20 +1338,16 @@
     "message": "Mécanismes de sécurité avancés"
   },
   "theme.NotFound.title": {
-    "message": "theme.NotFound.title",
-    "description": "The title of the 404 page"
+    "message": "theme.NotFound.title"
   },
   "pricing.pro.name": {
-    "message": "pricing.pro.name",
-    "description": "Nom du plan Pro"
+    "message": "pricing.pro.name"
   },
   "pricing.pro.description": {
-    "message": "pricing.pro.description",
-    "description": "Description du plan Pro"
+    "message": "pricing.pro.description"
   },
   "Instagram Phone Farm Batch Control Tool": {
-    "message": "Instagram Phone Farm Batch Control Tool",
-    "description": "The description of Instagram Phone Farm Batch Control Tool"
+    "message": "Instagram Phone Farm Batch Control Tool"
   },
   "Automated Follow": {
     "message": "Suivi automatisé"
@@ -1553,19 +1356,16 @@
     "message": "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software."
   },
   "Our Core Features": {
-    "message": "Our Core Features",
-    "description": "The description of Our Core Features"
+    "message": "Our Core Features"
   },
   "Do I need separate licenses for IgMatrix and TikMatrix?": {
     "message": "Do I need separate licenses for IgMatrix and TikMatrix?"
   },
   "theme.lastUpdated.byUser": {
-    "message": "theme.lastUpdated.byUser",
-    "description": "The words used to describe by who the page has been last updated"
+    "message": "theme.lastUpdated.byUser"
   },
   "testimonials.usage_label": {
-    "message": "testimonials.usage_label",
-    "description": "Étiquette de durée d'utilisation"
+    "message": "testimonials.usage_label"
   },
   "advertising.vps.lisahost.description": {
     "message": "advertising.vps.lisahost.description"
@@ -1583,15 +1383,13 @@
     "message": "Recognize and match TikTok accounts from phones to add to account list"
   },
   "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic is a Software for Batch Generating Unique Videos",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic is a Software for Batch Generating Unique Videos"
   },
   "Frequently Asked Questions": {
     "message": "Frequently Asked Questions"
   },
   "download.igmatrix.linux.description": {
-    "message": "download.igmatrix.linux.description",
-    "description": "Description : IgMatrix Linux en cours de développement"
+    "message": "download.igmatrix.linux.description"
   },
   "Character-by-Character Input": {
     "message": "Character-by-Character Input"
@@ -1600,19 +1398,16 @@
     "message": "Correspondance automatique de comptes"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "theme.ErrorPageContent.tryAgain",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+    "message": "theme.ErrorPageContent.tryAgain"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "theme.blog.sidebar.navAriaLabel",
-    "description": "The ARIA label for recent posts in the blog sidebar"
+    "message": "theme.blog.sidebar.navAriaLabel"
   },
   "homepage.vs.card.lowRisk.title": {
     "message": "Faible risque"
   },
   "Automatic following": {
-    "message": "Suivi automatique",
-    "description": "The description of Automatic following"
+    "message": "Suivi automatique"
   },
   "Download and Install": {
     "message": "Download and Install"
@@ -1621,23 +1416,19 @@
     "message": "Explorer les fonctionnalités"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "theme.colorToggle.ariaLabel.mode.dark",
-    "description": "The name for the dark color mode"
+    "message": "theme.colorToggle.ariaLabel.mode.dark"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Comprehensive automation combining multiple engagement strategies with AI-generated comments"
   },
   "whitelabel.logo": {
-    "message": "whitelabel.logo",
-    "description": "Logo"
+    "message": "whitelabel.logo"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "theme.AnnouncementBar.closeButtonAriaLabel",
-    "description": "The ARIA label for close button of announcement bar"
+    "message": "theme.AnnouncementBar.closeButtonAriaLabel"
   },
   "download.igmatrix.windows.title": {
-    "message": "download.igmatrix.windows.title",
-    "description": "Titre de la plateforme IgMatrix (Windows)"
+    "message": "download.igmatrix.windows.title"
   },
   "homepage.header.subtitle": {
     "message": "Exécutez des appareils à grande échelle, automatisez les tâches, planifiez des publications et gérez intelligemment les comptes — TikMatrix rend vos opérations TikTok 100% automatisées."
@@ -1646,8 +1437,7 @@
     "message": "Sécurité du compte"
   },
   "whitelabel.supportEmail": {
-    "message": "whitelabel.supportEmail",
-    "description": "Adresse e-mail du support"
+    "message": "whitelabel.supportEmail"
   },
   "homepage.vs.card.realDevices.desc": {
     "message": "Utilisez de vrais appareils Android pour une sécurité maximale"
@@ -1656,8 +1446,7 @@
     "message": "tech.point.localExec.desc"
   },
   "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts",
-    "description": "The description of Automatic login"
+    "message": "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts"
   },
   "For 7 Days": {
     "message": "For 7 Days"
@@ -1678,15 +1467,13 @@
     "message": "How many devices can I manage?"
   },
   "Phone screen mirroring to a computer": {
-    "message": "Phone screen mirroring to a computer",
-    "description": "The description of Phone screen mirroring to a computer"
+    "message": "Phone screen mirroring to a computer"
   },
   "homepage.header.cta.primary": {
     "message": "Commencer"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "theme.docs.DocCard.categoryDescription.plurals",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
+    "message": "theme.docs.DocCard.categoryDescription.plurals"
   },
   "Check Available Scripts": {
     "message": "Check Available Scripts"
@@ -1695,30 +1482,25 @@
     "message": "Streamline your Android TikTok phone farm with advanced batch control and marketing automation"
   },
   "download.igmatrix.mac.button": {
-    "message": "download.igmatrix.mac.button",
-    "description": "Texte du bouton de téléchargement IgMatrix (Mac)"
+    "message": "download.igmatrix.mac.button"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "theme.docs.sidebar.expandButtonTitle",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "theme.docs.sidebar.expandButtonTitle"
   },
   "Follow TikMatrix Tutorial": {
     "message": "Follow TikMatrix Tutorial"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "theme.blog.post.paginator.newerPost",
-    "description": "The blog post button label to navigate to the newer/previous post"
+    "message": "theme.blog.post.paginator.newerPost"
   },
   "Account warmup": {
     "message": "Préparation du compte"
   },
   "download.igmatrix.linux.coming_soon": {
-    "message": "download.igmatrix.linux.coming_soon",
-    "description": "Bientôt disponible pour IgMatrix Linux"
+    "message": "download.igmatrix.linux.coming_soon"
   },
   "pricing.starter.concurrent_tasks": {
-    "message": "pricing.starter.concurrent_tasks",
-    "description": "Nombre de tâches simultanées (plan Starter)"
+    "message": "pricing.starter.concurrent_tasks"
   },
   "tech.point.fingerprint.b1": {
     "message": "tech.point.fingerprint.b1"
@@ -1727,23 +1509,19 @@
     "message": "Why TikMatrix?"
   },
   "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency",
-    "description": "The description of Video Magic"
+    "message": "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency"
   },
   "download.requirements.title": {
-    "message": "Configuration requise",
-    "description": "Titre des exigences système"
+    "message": "Configuration requise"
   },
   "Monthly": {
     "message": "Monthly"
   },
   "whitelabel.title": {
-    "message": "whitelabel.title",
-    "description": "Titre de la fonctionnalité White-Label"
+    "message": "whitelabel.title"
   },
   "AI voiceover": {
-    "message": "Voix off IA",
-    "description": "The product label"
+    "message": "Voix off IA"
   },
   "Work Profile Support": {
     "message": "Work Profile Support"
@@ -1752,22 +1530,19 @@
     "message": "Still have questions?"
   },
   "theme.common.headingLinkTitle": {
-    "message": "theme.common.headingLinkTitle",
-    "description": "Title for link to heading"
+    "message": "theme.common.headingLinkTitle"
   },
   "tech.diagram.user": {
     "message": "tech.diagram.user"
   },
   "download.igmatrix.requirements.os": {
-    "message": "download.igmatrix.requirements.os",
-    "description": "Exigences du système d'exploitation pour IgMatrix"
+    "message": "download.igmatrix.requirements.os"
   },
   "theme.docs.versionBadge.label": {
     "message": "theme.docs.versionBadge.label"
   },
   "download.mac.title": {
-    "message": "Mac",
-    "description": "Titre de la plateforme Mac"
+    "message": "Mac"
   },
   "advertising.category.proxy": {
     "message": "advertising.category.proxy"
@@ -1776,12 +1551,10 @@
     "message": "TikMatrix is a professional marketing software designed for TikTok phone farms"
   },
   "Fan collection": {
-    "message": "Fan collection",
-    "description": "The description of Fan collection"
+    "message": "Fan collection"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "theme.navbar.mobileLanguageDropdown.label",
-    "description": "The label for the mobile language switcher dropdown"
+    "message": "theme.navbar.mobileLanguageDropdown.label"
   },
   "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
     "message": "De plus, notre système de matrice d'appareils réels peut parfaitement éviter les suspensions de comptes causées par les mesures de contrôle des risques de TikTok. Notre taux de suspension de compte est de 0%."
@@ -1790,8 +1563,7 @@
     "message": "advertising.category.analytics"
   },
   "download.igmatrix.subtitle": {
-    "message": "download.igmatrix.subtitle",
-    "description": "Sous-titre de la page de téléchargement IgMatrix"
+    "message": "download.igmatrix.subtitle"
   },
   "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
     "message": "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably."
@@ -1800,27 +1572,22 @@
     "message": "Commentaires générés par IA"
   },
   "Batch account management": {
-    "message": "Batch account management",
-    "description": "The description of Batch account management"
+    "message": "Batch account management"
   },
   "Platform-optimized features": {
     "message": "Platform-optimized features"
   },
   "download.igmatrix.mac.description": {
-    "message": "download.igmatrix.mac.description",
-    "description": "Description de la plateforme IgMatrix (Mac)"
+    "message": "download.igmatrix.mac.description"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Automatically generate AI voiceover for videos",
-    "description": "The description of AI voiceover"
+    "message": "Automatically generate AI voiceover for videos"
   },
   "pricing.pro.manage_phones": {
-    "message": "pricing.pro.manage_phones",
-    "description": "Fonctionnalités du plan Pro"
+    "message": "pricing.pro.manage_phones"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-    "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location",
-    "description": "The description of PhoneFarm Box"
+    "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
     "message": "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform."
@@ -1829,30 +1596,25 @@
     "message": "tech.point.passiveCapture.title"
   },
   "One-click download of videos from all video websites": {
-    "message": "One-click download of videos from all video websites",
-    "description": "The description of Video download"
+    "message": "One-click download of videos from all video websites"
   },
   "If you are interested in our service, please contact us to get price.": {
-    "message": "If you are interested in our service, please contact us to get price.",
-    "description": "The contact form description"
+    "message": "If you are interested in our service, please contact us to get price."
   },
   "What is the difference between IgMatrix and TikMatrix?": {
     "message": "What is the difference between IgMatrix and TikMatrix?"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "theme.docs.tagDocListPageTitle",
-    "description": "The title of the page for a docs tag"
+    "message": "theme.docs.tagDocListPageTitle"
   },
   "User scraping": {
     "message": "User scraping"
   },
   "download.windows.description": {
-    "message": "download.windows.description",
-    "description": "Description de la plateforme Windows"
+    "message": "download.windows.description"
   },
   "download.mac.install_tip": {
-    "message": "download.mac.install_tip",
-    "description": "Instructions à exécuter après l'installation sur Mac"
+    "message": "download.mac.install_tip"
   },
   "Our plans": {
     "message": "Our plans"
@@ -1864,12 +1626,10 @@
     "message": "Different script availability"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "theme.lastUpdated.lastUpdatedAtBy",
-    "description": "The sentence used to display when a page has been last updated, and by who"
+    "message": "theme.lastUpdated.lastUpdatedAtBy"
   },
   "pricing.business.manage_phones": {
-    "message": "pricing.business.manage_phones",
-    "description": "Fonctionnalités du plan Business"
+    "message": "pricing.business.manage_phones"
   },
   "Automation & Content Management": {
     "message": "Automation & Content Management"
@@ -1884,7 +1644,6 @@
     "message": "Get dedicated support from our expert team whenever you need help"
   },
   "pricing.team.manage_phones": {
-    "message": "pricing.team.manage_phones",
-    "description": "Fonctionnalités du plan Équipe"
+    "message": "pricing.team.manage_phones"
   }
 }

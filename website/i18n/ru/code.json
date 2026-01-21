@@ -6,8 +6,7 @@
     "message": "24-часовой ИИ-помощник"
   },
   "AI voiceover": {
-    "message": "AI озвучка",
-    "description": "The product label"
+    "message": "AI озвучка"
   },
   "AI-Generated Comments": {
     "message": "ИИ-генерированные комментарии"
@@ -76,35 +75,28 @@
     "message": "Автоматическое сопоставление аккаунтов"
   },
   "Automatic account nurturing": {
-    "message": "Автоматическое развитие аккаунта",
-    "description": "The description of Automatic account nurturing"
+    "message": "Автоматическое развитие аккаунта"
   },
   "Automatic commenting": {
-    "message": "Автоматические комментарии",
-    "description": "The description of Automatic commenting"
+    "message": "Автоматические комментарии"
   },
   "Automatic direct messaging": {
-    "message": "Автоматические личные сообщения",
-    "description": "The description of Automatic direct messaging"
+    "message": "Автоматические личные сообщения"
   },
   "Automatic following": {
-    "message": "Автоматическая подписка",
-    "description": "The description of Automatic following"
+    "message": "Автоматическая подписка"
   },
   "Automatic login": {
     "message": "Автоматический вход"
   },
   "Automatic matching": {
-    "message": "Автоматическое сопоставление",
-    "description": "The description of Automatic matching"
+    "message": "Автоматическое сопоставление"
   },
   "Automatic posting": {
-    "message": "Автоматическая публикация",
-    "description": "The description of Automatic posting"
+    "message": "Автоматическая публикация"
   },
   "Automatic profile setup": {
-    "message": "Автоматическая настройка профиля",
-    "description": "The description of Automatic profile setup"
+    "message": "Автоматическая настройка профиля"
   },
   "Automatic registration & login": {
     "message": "Автоматическая регистрация и вход"
@@ -113,16 +105,13 @@
     "message": "Автоматическая публикация"
   },
   "Automatically generate AI voiceover for videos": {
-    "message": "Автоматическая генерация AI озвучки для видео",
-    "description": "The description of AI voiceover"
+    "message": "Автоматическая генерация AI озвучки для видео"
   },
   "Automatically recognize subtitles and append them to the video": {
-    "message": "Автоматическое распознавание субтитров и добавление их к видео",
-    "description": "The description of Recognize subtitles"
+    "message": "Автоматическое распознавание субтитров и добавление их к видео"
   },
   "Automatically translate subtitles to any language": {
-    "message": "Автоматический перевод субтитров на любой язык",
-    "description": "The description of Translate subtitles"
+    "message": "Автоматический перевод субтитров на любой язык"
   },
   "Automation & Content Management": {
     "message": "Автоматизация и управление контентом"
@@ -134,12 +123,10 @@
     "message": "Базовая конфигурация"
   },
   "Batch Generating Unique Videos": {
-    "message": "Пакетная генерация уникальных видео",
-    "description": "The description of Batch Generating Unique Videos"
+    "message": "Пакетная генерация уникальных видео"
   },
   "Batch account management": {
-    "message": "Пакетное управление аккаунтами",
-    "description": "The description of Batch account management"
+    "message": "Пакетное управление аккаунтами"
   },
   "Batch login to TikTok accounts with account list management": {
     "message": "Пакетный вход в аккаунты TikTok с управлением списком аккаунтов"
@@ -151,8 +138,7 @@
     "message": "Создан с механизмами безопасности для защиты ваших аккаунтов Instagram от блокировки"
   },
   "Buy hardware": {
-    "message": "Купить оборудование",
-    "description": "The product label"
+    "message": "Купить оборудование"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
     "message": "Могу ли я запускать IgMatrix и TikMatrix на одном компьютере?"
@@ -188,15 +174,13 @@
     "message": "Выполнение на компьютере"
   },
   "Contact": {
-    "message": "Связаться с нами",
-    "description": "The contact form title"
+    "message": "Связаться с нами"
   },
   "Contact Support": {
     "message": "Связаться с поддержкой"
   },
   "Contact to purchase": {
-    "message": "Связаться для покупки",
-    "description": "The contact to purchase label"
+    "message": "Связаться для покупки"
   },
   "Content Management": {
     "message": "Управление контентом"
@@ -229,19 +213,16 @@
     "message": "Нужны ли мне отдельные лицензии для IgMatrix и TikMatrix?"
   },
   "Download IgMatrix": {
-    "message": "Скачать IgMatrix",
-    "description": "The description of Download IgMatrix"
+    "message": "Скачать IgMatrix"
   },
   "Download IgMatrix from our official website and follow the installation instructions.": {
     "message": "Скачайте IgMatrix с нашего официального сайта и следуйте инструкциям по установке."
   },
   "Download TikMatrix": {
-    "message": "Скачать TikMatrix",
-    "description": "The description of Download TikMatrix"
+    "message": "Скачать TikMatrix"
   },
   "Download VideoMagic": {
-    "message": "Скачать VideoMagic",
-    "description": "The description of Download VideoMagic"
+    "message": "Скачать VideoMagic"
   },
   "Download and Install": {
     "message": "Скачать и установить"
@@ -250,15 +231,13 @@
     "message": "Скачать для Windows"
   },
   "Email": {
-    "message": "Электронная почта",
-    "description": "The email label"
+    "message": "Электронная почта"
   },
   "Expert Technical Team": {
     "message": "Экспертная техническая команда"
   },
   "Fan collection": {
-    "message": "Сбор подписчиков",
-    "description": "The description of Fan collection"
+    "message": "Сбор подписчиков"
   },
   "Features": {
     "message": "Функции"
@@ -288,8 +267,7 @@
     "message": "Генерация умных и контекстных комментариев через интеграцию ChatGPT API"
   },
   "Generate unique videos from one source video": {
-    "message": "Генерация уникальных видео из одного исходного видео",
-    "description": "The description of Video unique"
+    "message": "Генерация уникальных видео из одного исходного видео"
   },
   "Get Started": {
     "message": "Начать"
@@ -322,15 +300,13 @@
     "message": "Симуляция кликов как у человека"
   },
   "If you are interested in our service, please contact us to get price.": {
-    "message": "Если вас интересует наш сервис, пожалуйста, свяжитесь с нами, чтобы узнать цену.",
-    "description": "The contact form description"
+    "message": "Если вас интересует наш сервис, пожалуйста, свяжитесь с нами, чтобы узнать цену."
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
     "message": "Если вам нужна помощь с функциями IgMatrix или вы столкнулись с проблемами, наша команда поддержки готова помочь вам."
   },
   "IgMatrix": {
-    "message": "IgMatrix",
-    "description": "The description of IgMatrix"
+    "message": "IgMatrix"
   },
   "IgMatrix Features": {
     "message": "Функции IgMatrix"
@@ -345,8 +321,7 @@
     "message": "IgMatrix следует аналогичной структуре ценообразования TikMatrix, но может иметь разные тарифы. Пожалуйста, проверьте нашу официальную страницу цен или свяжитесь с нашей командой поддержки для получения актуальной информации о ценах на IgMatrix."
   },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
-    "message": "IgMatrix - это инструмент пакетного управления Instagram Android фермой телефонов",
-    "description": "The description of IgMatrix"
+    "message": "IgMatrix - это инструмент пакетного управления Instagram Android фермой телефонов"
   },
   "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
     "message": "Руководство по настройке IgMatrix идентично TikMatrix. Единственное отличие - логика их скриптов, поэтому вы можете напрямую обращаться к документации TikMatrix."
@@ -367,8 +342,7 @@
     "message": "Автоматизация Instagram"
   },
   "Instagram Phone Farm Batch Control Tool": {
-    "message": "Инструмент пакетного управления Instagram фермой телефонов",
-    "description": "The description of Instagram Phone Farm Batch Control Tool"
+    "message": "Инструмент пакетного управления Instagram фермой телефонов"
   },
   "Instagram-optimized automation scripts": {
     "message": "Скрипты автоматизации, оптимизированные для Instagram"
@@ -380,12 +354,10 @@
     "message": "Такая ли цена, как у TikMatrix?"
   },
   "Join Channel": {
-    "message": "Присоединиться к каналу",
-    "description": "The join channel button label"
+    "message": "Присоединиться к каналу"
   },
   "Join Group": {
-    "message": "Присоединиться к группе",
-    "description": "The join group button label"
+    "message": "Присоединиться к группе"
   },
   "Key Differences from TikMatrix": {
     "message": "Ключевые отличия от TikMatrix"
@@ -400,8 +372,7 @@
     "message": "Массовые личные сообщения"
   },
   "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-    "message": "Пн - Пт: 9:00 - 17:00 (UTC+8)",
-    "description": "The working hours description"
+    "message": "Пн - Пт: 9:00 - 17:00 (UTC+8)"
   },
   "Monthly": {
     "message": "Ежемесячно"
@@ -425,52 +396,40 @@
     "message": "Не все скрипты TikMatrix доступны в IgMatrix, поскольку они специфичны для платформы. Точный список доступных скриптов можно найти в интерфейсе программного обеспечения IgMatrix после установки. Пожалуйста, ориентируйтесь на фактические функции, показанные в вашем программном обеспечении."
   },
   "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-    "message": "Автоматический сбор списков подписчиков целевых аккаунтов одним кликом, может использоваться для личных сообщений",
-    "description": "The description of Fan collection"
+    "message": "Автоматический сбор списков подписчиков целевых аккаунтов одним кликом, может использоваться для личных сообщений"
   },
   "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-    "message": "Автоматическое пакетное развитие аккаунтов одним кликом, поддерживает поиск по ключевым словам, случайную подписку, лайки, комментарии и закладки",
-    "description": "The description of Automatic account nurturing"
+    "message": "Автоматическое пакетное развитие аккаунтов одним кликом, поддерживает поиск по ключевым словам, случайную подписку, лайки, комментарии и закладки"
   },
   "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-    "message": "Автоматические пакетные комментарии на множестве видео с указанными сценариями и случайными эмодзи одним кликом",
-    "description": "The description of Automatic commenting"
+    "message": "Автоматические пакетные комментарии на множестве видео с указанными сценариями и случайными эмодзи одним кликом"
   },
   "One-click batch automatic direct messaging to multiple target users": {
-    "message": "Автоматическая пакетная отправка личных сообщений множеству целевых пользователей одним кликом",
-    "description": "The description of Automatic direct messaging"
+    "message": "Автоматическая пакетная отправка личных сообщений множеству целевых пользователей одним кликом"
   },
   "One-click batch automatic follow of target accounts": {
-    "message": "Автоматическая пакетная подписка на целевые аккаунты одним кликом",
-    "description": "The description of Automatic following"
+    "message": "Автоматическая пакетная подписка на целевые аккаунты одним кликом"
   },
   "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-    "message": "Автоматический пакетный вход в аккаунты TikTok одним кликом, поддерживает пакетный импорт/экспорт аккаунтов",
-    "description": "The description of Automatic login"
+    "message": "Автоматический пакетный вход в аккаунты TikTok одним кликом, поддерживает пакетный импорт/экспорт аккаунтов"
   },
   "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-    "message": "Автоматическое пакетное сопоставление вошедших в систему аккаунтов одним кликом, ручная привязка не требуется",
-    "description": "The description of Automatic matching"
+    "message": "Автоматическое пакетное сопоставление вошедших в систему аккаунтов одним кликом, ручная привязка не требуется"
   },
   "One-click batch automatic posting, supports adding product links": {
-    "message": "Автоматическая пакетная публикация одним кликом, поддерживает добавление ссылок на продукты",
-    "description": "The description of Automatic posting"
+    "message": "Автоматическая пакетная публикация одним кликом, поддерживает добавление ссылок на продукты"
   },
   "One-click batch automatic registration of TikTok accounts, supports business email": {
-    "message": "Автоматическая пакетная регистрация аккаунтов TikTok одним кликом, поддерживает корпоративную электронную почту",
-    "description": "The description of Automatic registration"
+    "message": "Автоматическая пакетная регистрация аккаунтов TikTok одним кликом, поддерживает корпоративную электронную почту"
   },
   "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-    "message": "Автоматическая пакетная настройка аватаров, никнеймов, подписей, имен пользователей одним кликом",
-    "description": "The description of Automatic profile setup"
+    "message": "Автоматическая пакетная настройка аватаров, никнеймов, подписей, имен пользователей одним кликом"
   },
   "One-click download of videos from all video websites": {
-    "message": "Скачивание видео со всех видео-сайтов одним кликом",
-    "description": "The description of Video download"
+    "message": "Скачивание видео со всех видео-сайтов одним кликом"
   },
   "One-click download of videos from the entire network": {
-    "message": "Скачивание видео со всей сети одним кликом",
-    "description": "The description of Video collection"
+    "message": "Скачивание видео со всей сети одним кликом"
   },
   "Open Source Client": {
     "message": "Клиент с открытым исходным кодом"
@@ -479,22 +438,19 @@
     "message": "Код клиента с открытым исходным кодом позволяет пользователям настраивать собственный клиент"
   },
   "Our Competitive Advantages": {
-    "message": "Наши конкурентные преимущества",
-    "description": "The description of Our Competitive Advantages"
+    "message": "Наши конкурентные преимущества"
   },
   "Our Core Advantages": {
     "message": "Наши основные преимущества"
   },
   "Our Core Features": {
-    "message": "Наши основные функции",
-    "description": "The description of Our Core Features"
+    "message": "Наши основные функции"
   },
   "Our plans": {
     "message": "Наши планы"
   },
   "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-    "message": "Наша собственная система матрицы реальных устройств идеально избегает мер контроля рисков TikTok, что приводит к чрезвычайно низкому уровню блокировки аккаунтов.",
-    "description": "The description of TikMatrix proprietary technology"
+    "message": "Наша собственная система матрицы реальных устройств идеально избегает мер контроля рисков TikTok, что приводит к чрезвычайно низкому уровню блокировки аккаунтов."
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "Наша команда поддержки здесь, чтобы помочь вам с любыми вопросами или проблемами, связанными с IgMatrix."
@@ -506,12 +462,10 @@
     "message": "В год"
   },
   "Performance analytics": {
-    "message": "Аналитика производительности",
-    "description": "The description of Performance analytics"
+    "message": "Аналитика производительности"
   },
   "Phone screen mirroring to a computer": {
-    "message": "Отображение экрана телефона на компьютер",
-    "description": "The description of Phone screen mirroring to a computer"
+    "message": "Отображение экрана телефона на компьютер"
   },
   "Platform-optimized features": {
     "message": "Функции, оптимизированные под платформу"
@@ -529,8 +483,7 @@
     "message": "Мощные инструменты автоматизации Instagram, предназначенные для профессиональных маркетологов и бизнеса"
   },
   "Powerful TikTok Automation & Management Tools": {
-    "message": "Мощные инструменты автоматизации и управления TikTok",
-    "description": "The description of Powerful TikTok Automation & Management Tools"
+    "message": "Мощные инструменты автоматизации и управления TikTok"
   },
   "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
     "message": "Мощная техническая команда с обслуживанием и обновлениями в реальном времени, обеспечивающая надежность скриптов"
@@ -545,15 +498,13 @@
     "message": "Частное локальное развертывание"
   },
   "Professional TikTok Account Management & Marketing Tool": {
-    "message": "Профессиональный инструмент управления аккаунтами TikTok и маркетинга",
-    "description": "The description of Professional TikTok Account Management & Marketing Tool"
+    "message": "Профессиональный инструмент управления аккаунтами TikTok и маркетинга"
   },
   "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
     "message": "Профессиональный инструмент управления аккаунтами TikTok и маркетинга для Windows и Mac"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "Профессиональный инструмент управления аккаунтами TikTok и маркетинга, предназначенный для Android ферм телефонов на Windows и Mac. Автоматизируйте публикации, подписки и увеличивайте свое присутствие в TikTok с нулевым уровнем блокировки аккаунтов.",
-    "description": "The description of Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
+    "message": "Профессиональный инструмент управления аккаунтами TikTok и маркетинга, предназначенный для Android ферм телефонов на Windows и Mac. Автоматизируйте публикации, подписки и увеличивайте свое присутствие в TikTok с нулевым уровнем блокировки аккаунтов."
   },
   "Professional phone farm management": {
     "message": "Профессиональное управление фермой телефонов"
@@ -571,8 +522,7 @@
     "message": "Распознавание и сопоставление аккаунтов TikTok с телефонов для добавления в список аккаунтов"
   },
   "Recognize subtitles": {
-    "message": "Распознавание субтитров",
-    "description": "The description of Recognize subtitles"
+    "message": "Распознавание субтитров"
   },
   "Remove posts based on their view count for content optimization": {
     "message": "Удаление публикаций на основе количества просмотров для оптимизации контента"
@@ -617,8 +567,7 @@
     "message": "Руководство по настройке"
   },
   "Shipping worldwide": {
-    "message": "Доставка по всему миру",
-    "description": "The shipping worldwide label"
+    "message": "Доставка по всему миру"
   },
   "Simulates natural right-hand arc swipe trajectories like real human interaction": {
     "message": "Имитирует естественные дугообразные траектории свайпа правой руки как настоящее человеческое взаимодействие"
@@ -639,12 +588,10 @@
     "message": "Оптимизируйте свою Android TikTok ферму телефонов с помощью продвинутого пакетного управления и автоматизации маркетинга"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-    "message": "Оптимизируйте свою Instagram ферму телефонов с помощью продвинутого пакетного управления и автоматизации маркетинга",
-    "description": "The description of Streamline your Instagram phone farm with advanced batch control and marketing automation"
+    "message": "Оптимизируйте свою Instagram ферму телефонов с помощью продвинутого пакетного управления и автоматизации маркетинга"
   },
   "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-    "message": "Оптимизируйте свою TikTok ферму телефонов с помощью продвинутого пакетного управления и автоматизации маркетинга",
-    "description": "The description of Streamline your TikTok phone farm with advanced batch control and marketing automation"
+    "message": "Оптимизируйте свою TikTok ферму телефонов с помощью продвинутого пакетного управления и автоматизации маркетинга"
   },
   "Strong technical support team with open community ecosystem": {
     "message": "Сильная команда технической поддержки с открытой экосистемой сообщества"
@@ -656,8 +603,7 @@
     "message": "Поддерживает отображение 100+ телефонов на компьютер с синхронизированной работой"
   },
   "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Поддерживает отображение 200+ телефонов на компьютер с синхронизированной работой",
-    "description": "The description of Phone screen mirroring to a computer"
+    "message": "Поддерживает отображение 200+ телефонов на компьютер с синхронизированной работой"
   },
   "Supports work profile enterprise space for professional use": {
     "message": "Поддерживает корпоративное пространство рабочего профиля для профессионального использования"
@@ -666,8 +612,7 @@
     "message": "Технические преимущества"
   },
   "Telegram": {
-    "message": "Telegram",
-    "description": "The telegram label"
+    "message": "Telegram"
   },
   "Telegram Support": {
     "message": "Поддержка в Telegram"
@@ -676,23 +621,19 @@
     "message": "Ввод текста имитирует паттерны человеческого набора с посимвольной симуляцией"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "Длина и ширина относительно большие, но высота низкая (размер 2u)",
-    "description": "The description of PhoneFarm Box"
+    "message": "Длина и ширина относительно большие, но высота низкая (размер 2u)"
   },
   "The length and width are relatively small, but the height is high": {
-    "message": "Длина и ширина относительно небольшие, но высота большая",
-    "description": "The description of PhoneFarm Box"
+    "message": "Длина и ширина относительно небольшие, но высота большая"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "Машина материнских плат состоит из 20 материнских плат телефонов Samsung. Она автоматически включается при подключении к электричеству, имеет единое питание, единую систему охлаждения с несколькими вентиляторами и единое USB-подключение. Также поддерживает проводные сетевые подключения OTG.",
-    "description": "The description of PhoneFarm Box"
+    "message": "Машина материнских плат состоит из 20 материнских плат телефонов Samsung. Она автоматически включается при подключении к электричеству, имеет единое питание, единую систему охлаждения с несколькими вентиляторами и единое USB-подключение. Также поддерживает проводные сетевые подключения OTG."
   },
   "TikMatrix": {
     "message": "TikMatrix Матрица реальных устройств"
   },
   "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-    "message": "TikMatrix обеспечивает как минимум на 30% более высокую вовлеченность по сравнению с аналогичными продуктами, с продвинутой технологией реальных устройств, которая обеспечивает полную безопасность аккаунтов.",
-    "description": "The description of TikMatrix competitive advantage"
+    "message": "TikMatrix обеспечивает как минимум на 30% более высокую вовлеченность по сравнению с аналогичными продуктами, с продвинутой технологией реальных устройств, которая обеспечивает полную безопасность аккаунтов."
   },
   "TikMatrix is a TikTok group control operation tool": {
     "message": "TikMatrix - это инструмент групповых операций для TikTok"
@@ -701,8 +642,7 @@
     "message": "TikMatrix - это профессиональное маркетинговое программное обеспечение для TikTok фермы телефонов"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-    "message": "TikMatrix - это профессиональное маркетинговое программное обеспечение, предназначенное для TikTok ферм телефонов. Управляйте множественными аккаунтами, автоматизируйте публикации и масштабируйте свой TikTok маркетинг с легкостью.",
-    "description": "The description of TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
+    "message": "TikMatrix - это профессиональное маркетинговое программное обеспечение, предназначенное для TikTok ферм телефонов. Управляйте множественными аккаунтами, автоматизируйте публикации и масштабируйте свой TikTok маркетинг с легкостью."
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
     "message": "TikMatrix поддерживает 8 аккаунтов TikTok на каждом телефоне"
@@ -711,15 +651,13 @@
     "message": "TikMatrix поддерживает телефоны Android с версией Android 5.0 и выше."
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "TikMatrix поддерживает Windows 10 и выше, а также macOS 10.15 или более поздние версии. Для пользователей Mac после установки необходимо выполнить следующую команду в Терминале, чтобы разрешить запуск приложения: xattr -cr /Applications/TikMatrix.app",
-    "description": "Ответ о поддержке компьютеров"
+    "message": "TikMatrix поддерживает Windows 10 и выше, а также macOS 10.15 или более поздние версии. Для пользователей Mac после установки необходимо выполнить следующую команду в Терминале, чтобы разрешить запуск приложения: xattr -cr /Applications/TikMatrix.app"
   },
   "TikMatrix supports up to 200+ devices.": {
     "message": "TikMatrix поддерживает до 200+ устройств."
   },
   "Translate subtitles": {
-    "message": "Перевод субтитров",
-    "description": "The description of Translate subtitles"
+    "message": "Перевод субтитров"
   },
   "Trial": {
     "message": "Пробная версия"
@@ -728,8 +666,7 @@
     "message": "Руководство"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-    "message": "Нативная неактивированная SIM-карта США, используется для приложения TikTok Android для определения местоположения SIM-карты",
-    "description": "The description of PhoneFarm Box"
+    "message": "Нативная неактивированная SIM-карта США, используется для приложения TikTok Android для определения местоположения SIM-карты"
   },
   "Unlimited devices": {
     "message": "Неограниченные устройства"
@@ -738,8 +675,7 @@
     "message": "Неограниченные устройства, поддержка клиентов"
   },
   "Unlimited process tasks": {
-    "message": "Неограниченные задачи обработки",
-    "description": "The description of Unlimited process tasks"
+    "message": "Неограниченные задачи обработки"
   },
   "User engagement boost": {
     "message": "Повышение пользовательской активности"
@@ -751,35 +687,28 @@
     "message": "Парсинг пользователей"
   },
   "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-    "message": "Video Magic - это профессиональное программное обеспечение для генерации видео, предназначенное для операторов. Оно может генерировать уникальные видео для вас, значительно повышая операционную эффективность.",
-    "description": "The description of Video Magic"
+    "message": "Video Magic - это профессиональное программное обеспечение для генерации видео, предназначенное для операторов. Оно может генерировать уникальные видео для вас, значительно повышая операционную эффективность."
   },
   "Video Magic is a tool that can generate unique videos": {
-    "message": "Video Magic - это инструмент, который может генерировать уникальные видео",
-    "description": "The description of Video Magic"
+    "message": "Video Magic - это инструмент, который может генерировать уникальные видео"
   },
   "Video collection": {
-    "message": "Сбор видео",
-    "description": "The description of Video collection"
+    "message": "Сбор видео"
   },
   "Video download": {
-    "message": "Скачивание видео",
-    "description": "The description of Video download"
+    "message": "Скачивание видео"
   },
   "Video posting, Account nurturing": {
     "message": "Публикация видео, развитие аккаунта"
   },
   "Video unique": {
-    "message": "Генерация видео",
-    "description": "The description of Video unique"
+    "message": "Генерация видео"
   },
   "VideoMagic - Batch Generating Unique Videos": {
-    "message": "VideoMagic - пакетная генерация уникальных видео",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic - пакетная генерация уникальных видео"
   },
   "VideoMagic is a Software for Batch Generating Unique Videos": {
-    "message": "VideoMagic - это программное обеспечение для пакетной генерации уникальных видео",
-    "description": "The description of Video Magic"
+    "message": "VideoMagic - это программное обеспечение для пакетной генерации уникальных видео"
   },
   "View TikMatrix Tutorial": {
     "message": "Просмотреть руководство TikMatrix"
@@ -788,8 +717,7 @@
     "message": "Прогрев аккаунтов через поиск по ключевым словам, просмотр видео, подписки, лайки, комментарии и добавление в избранное"
   },
   "What computer can I use?": {
-    "message": "Какой компьютер я могу использовать?",
-    "description": "Вопрос о поддержке компьютеров"
+    "message": "Какой компьютер я могу использовать?"
   },
   "What devices can I use?": {
     "message": "Какие устройства я могу использовать?"
@@ -813,8 +741,7 @@
     "message": "Поддержка рабочего профиля"
   },
   "Working Hours": {
-    "message": "Рабочие часы",
-    "description": "The working hours label"
+    "message": "Рабочие часы"
   },
   "Yearly": {
     "message": "Ежегодно"
@@ -919,176 +846,133 @@
     "message": "Проверка Номеров WhatsApp"
   },
   "download.description": {
-    "message": "Скачать TikMatrix для Windows, Mac и Linux",
-    "description": "Описание страницы скачивания"
+    "message": "Скачать TikMatrix для Windows, Mac и Linux"
   },
   "download.igmatrix.description": {
-    "message": "Скачать IgMatrix для Windows, Mac и Linux",
-    "description": "Описание страницы скачивания IgMatrix"
+    "message": "Скачать IgMatrix для Windows, Mac и Linux"
   },
   "download.igmatrix.linux.coming_soon": {
-    "message": "Скоро",
-    "description": "Подсказка о скором выходе IgMatrix для Linux"
+    "message": "Скоро"
   },
   "download.igmatrix.linux.description": {
-    "message": "Версия для Linux находится в разработке",
-    "description": "Описание разработки IgMatrix для Linux"
+    "message": "Версия для Linux находится в разработке"
   },
   "download.igmatrix.linux.development": {
-    "message": "В разработке",
-    "description": "Статус разработки IgMatrix для Linux"
+    "message": "В разработке"
   },
   "download.igmatrix.linux.title": {
-    "message": "Linux",
-    "description": "Заголовок платформы Linux для IgMatrix"
+    "message": "Linux"
   },
   "download.igmatrix.mac.button": {
-    "message": "Скачать для Mac",
-    "description": "Текст кнопки скачивания Mac для IgMatrix"
+    "message": "Скачать для Mac"
   },
   "download.igmatrix.mac.description": {
-    "message": "macOS 10.15 или выше",
-    "description": "Описание платформы Mac для IgMatrix"
+    "message": "macOS 10.15 или выше"
   },
   "download.igmatrix.mac.install_tip": {
-    "message": "После установки выполните следующую команду в терминале, чтобы разрешить запуск:",
-    "description": "Подсказка о команде, которую нужно выполнить после установки IgMatrix на Mac"
+    "message": "После установки выполните следующую команду в терминале, чтобы разрешить запуск:"
   },
   "download.igmatrix.mac.title": {
-    "message": "Mac",
-    "description": "Заголовок платформы Mac для IgMatrix"
+    "message": "Mac"
   },
   "download.igmatrix.requirements.internet": {
-    "message": "Интернет-соединение: Обязательно",
-    "description": "Требования к интернет-соединению для IgMatrix"
+    "message": "Интернет-соединение: Обязательно"
   },
   "download.igmatrix.requirements.memory": {
-    "message": "Память: 8 ГБ ОЗУ",
-    "description": "Требования к памяти для IgMatrix"
+    "message": "Память: 8 ГБ ОЗУ"
   },
   "download.igmatrix.requirements.os": {
-    "message": "Операционная система: Windows 10/11, macOS 10.15+ или Ubuntu 20.04+",
-    "description": "Требования к операционной системе для IgMatrix"
+    "message": "Операционная система: Windows 10/11, macOS 10.15+ или Ubuntu 20.04+"
   },
   "download.igmatrix.requirements.processor": {
-    "message": "Процессор: Intel Core i5 или эквивалент",
-    "description": "Требования к процессору для IgMatrix"
+    "message": "Процессор: Intel Core i5 или эквивалент"
   },
   "download.igmatrix.requirements.storage": {
-    "message": "Хранилище: 500 МБ свободного места",
-    "description": "Требования к хранилищу для IgMatrix"
+    "message": "Хранилище: 500 МБ свободного места"
   },
   "download.igmatrix.requirements.title": {
-    "message": "Системные требования",
-    "description": "Заголовок системных требований для IgMatrix"
+    "message": "Системные требования"
   },
   "download.igmatrix.subtitle": {
-    "message": "Выберите свою платформу для скачивания IgMatrix",
-    "description": "Подзаголовок страницы скачивания IgMatrix"
+    "message": "Выберите свою платформу для скачивания IgMatrix"
   },
   "download.igmatrix.title": {
-    "message": "Скачать IgMatrix",
-    "description": "Заголовок страницы скачивания IgMatrix"
+    "message": "Скачать IgMatrix"
   },
   "download.igmatrix.windows.button": {
-    "message": "Скачать для Windows",
-    "description": "Текст кнопки скачивания Windows для IgMatrix"
+    "message": "Скачать для Windows"
   },
   "download.igmatrix.windows.description": {
-    "message": "Windows 10/11 (64-bit)",
-    "description": "Описание платформы Windows для IgMatrix"
+    "message": "Windows 10/11 (64-bit)"
   },
   "download.igmatrix.windows.title": {
-    "message": "Windows",
-    "description": "Заголовок платформы Windows для IgMatrix"
+    "message": "Windows"
   },
   "download.linux.coming_soon": {
-    "message": "Скоро",
-    "description": "Подсказка о скором выходе Linux"
+    "message": "Скоро"
   },
   "download.linux.description": {
-    "message": "Версия для Linux находится в разработке",
-    "description": "Описание разработки Linux"
+    "message": "Версия для Linux находится в разработке"
   },
   "download.linux.development": {
-    "message": "В разработке",
-    "description": "Статус разработки Linux"
+    "message": "В разработке"
   },
   "download.linux.title": {
-    "message": "Linux",
-    "description": "Заголовок платформы Linux"
+    "message": "Linux"
   },
   "download.mac.button": {
-    "message": "Скачать для Mac",
-    "description": "Текст кнопки скачивания для Mac"
+    "message": "Скачать для Mac"
   },
   "download.mac.description": {
-    "message": "macOS 10.15 или выше",
-    "description": "Описание платформы Mac"
+    "message": "macOS 10.15 или выше"
   },
   "download.mac.install_tip": {
-    "message": "После установки выполните следующую команду в терминале, чтобы разрешить запуск:",
-    "description": "Подсказка о команде, которую нужно выполнить после установки на Mac"
+    "message": "После установки выполните следующую команду в терминале, чтобы разрешить запуск:"
   },
   "download.mac.title": {
-    "message": "Mac",
-    "description": "Заголовок платформы Mac"
+    "message": "Mac"
   },
   "download.requirements.internet": {
-    "message": "Интернет-соединение: Обязательно",
-    "description": "Требования к интернет-соединению"
+    "message": "Интернет-соединение: Обязательно"
   },
   "download.requirements.memory": {
-    "message": "Память: 8 ГБ ОЗУ",
-    "description": "Требования к памяти"
+    "message": "Память: 8 ГБ ОЗУ"
   },
   "download.requirements.os": {
-    "message": "Операционная система: Windows 10/11, macOS 10.15+ или Ubuntu 20.04+",
-    "description": "Требования к операционной системе"
+    "message": "Операционная система: Windows 10/11, macOS 10.15+ или Ubuntu 20.04+"
   },
   "download.requirements.processor": {
-    "message": "Процессор: Intel Core i5 или эквивалент",
-    "description": "Требования к процессору"
+    "message": "Процессор: Intel Core i5 или эквивалент"
   },
   "download.requirements.storage": {
-    "message": "Хранилище: 500 МБ свободного места",
-    "description": "Требования к хранилищу"
+    "message": "Хранилище: 500 МБ свободного места"
   },
   "download.requirements.title": {
-    "message": "Системные требования",
-    "description": "Заголовок системных требований"
+    "message": "Системные требования"
   },
   "download.subtitle": {
-    "message": "Выберите свою платформу для скачивания TikMatrix",
-    "description": "Подзаголовок страницы скачивания"
+    "message": "Выберите свою платформу для скачивания TikMatrix"
   },
   "download.title": {
-    "message": "Скачать TikMatrix",
-    "description": "Заголовок страницы скачивания"
+    "message": "Скачать TikMatrix"
   },
   "download.videomagic.description": {
-    "message": "Скачать VideoMagic для Windows, Mac и Linux",
-    "description": "Описание страницы скачивания VideoMagic"
+    "message": "Скачать VideoMagic для Windows, Mac и Linux"
   },
   "download.videomagic.subtitle": {
-    "message": "Выберите свою платформу для скачивания VideoMagic",
-    "description": "Подзаголовок страницы скачивания VideoMagic"
+    "message": "Выберите свою платформу для скачивания VideoMagic"
   },
   "download.videomagic.title": {
-    "message": "Скачать VideoMagic",
-    "description": "Заголовок страницы скачивания VideoMagic"
+    "message": "Скачать VideoMagic"
   },
   "download.windows.button": {
-    "message": "Скачать для Windows",
-    "description": "Текст кнопки скачивания для Windows"
+    "message": "Скачать для Windows"
   },
   "download.windows.description": {
-    "message": "Windows 10/11 (64-bit)",
-    "description": "Описание платформы Windows"
+    "message": "Windows 10/11 (64-bit)"
   },
   "download.windows.title": {
-    "message": "Windows",
-    "description": "Заголовок платформы Windows"
+    "message": "Windows"
   },
   "homepage.header.cta.download": {
     "message": "Скачать"
@@ -1166,31 +1050,25 @@
     "message": "Почему TikMatrix?"
   },
   "navbar.download": {
-    "message": "Скачать",
-    "description": "Текст ссылки скачивания в навбаре"
+    "message": "Скачать"
   },
   "pricing.all_features": {
-    "message": "Включает все функции",
-    "description": "Текст включения всех функций"
+    "message": "Включает все функции"
   },
   "pricing.badge.popular": {
     "message": "Популярно"
   },
   "pricing.business.concurrent_tasks": {
-    "message": "До 100 одновременных задач автоматизации",
-    "description": "Функция бизнес плана"
+    "message": "До 100 одновременных задач автоматизации"
   },
   "pricing.business.description": {
-    "message": "Подходит для крупных предприятий",
-    "description": "Описание бизнес плана"
+    "message": "Подходит для крупных предприятий"
   },
   "pricing.business.manage_phones": {
-    "message": "Управление до 100 телефонами",
-    "description": "Функция бизнес плана"
+    "message": "Управление до 100 телефонами"
   },
   "pricing.business.name": {
-    "message": "Бизнес",
-    "description": "Название бизнес плана"
+    "message": "Бизнес"
   },
   "pricing.compare.automation": {
     "message": "Автоматизация задач"
@@ -1211,36 +1089,28 @@
     "message": "Подписаться"
   },
   "pricing.dedicated_support": {
-    "message": "Выделенная поддержка и Telegram один на один",
-    "description": "Текст выделенной поддержки"
+    "message": "Выделенная поддержка и Telegram один на один"
   },
   "pricing.free.all_free_features": {
-    "message": "Все базовые функции (без автоматизации)",
-    "description": "Базовые функции для бесплатного плана"
+    "message": "Все базовые функции (без автоматизации)"
   },
   "pricing.free.automation_disabled": {
-    "message": "Автоматические задачи отключены",
-    "description": "Текст про отключенную автоматизацию"
+    "message": "Автоматические задачи отключены"
   },
   "pricing.free.community_support": {
-    "message": "Поддержка сообщества",
-    "description": "Поддержка для бесплатного плана"
+    "message": "Поддержка сообщества"
   },
   "pricing.free.description": {
-    "message": "Бесплатные пользователи могут подключать неограниченное количество устройств и пользоваться всеми базовыми функциями, кроме автоматизации",
-    "description": "Описание бесплатного плана"
+    "message": "Бесплатные пользователи могут подключать неограниченное количество устройств и пользоваться всеми базовыми функциями, кроме автоматизации"
   },
   "pricing.free.name": {
-    "message": "Бесплатно",
-    "description": "Название бесплатного плана"
+    "message": "Бесплатно"
   },
   "pricing.free_label": {
-    "message": "Бесплатно",
-    "description": "Free label"
+    "message": "Бесплатно"
   },
   "pricing.get_started": {
-    "message": "Начать",
-    "description": "Текст кнопки начать"
+    "message": "Начать"
   },
   "pricing.local_api.description": {
     "message": "Пользователи Pro, Team и Business могут использовать локальный RESTful API для управления задачами и автоматизации рабочих процессов. Смотрите документацию."
@@ -1258,71 +1128,55 @@
     "message": "В месяц"
   },
   "pricing.per_month_pc": {
-    "message": "в месяц/на компьютер",
-    "description": "Текст в месяц на компьютер"
+    "message": "в месяц/на компьютер"
   },
   "pricing.per_year": {
     "message": "В год (Экономия 30%)"
   },
   "pricing.pro.concurrent_tasks": {
-    "message": "До 20 одновременных задач автоматизации",
-    "description": "Функция профессионального плана"
+    "message": "До 20 одновременных задач автоматизации"
   },
   "pricing.pro.description": {
-    "message": "Подходит для профессионалов и малого бизнеса",
-    "description": "Описание профессионального плана"
+    "message": "Подходит для профессионалов и малого бизнеса"
   },
   "pricing.pro.manage_phones": {
-    "message": "Управление до 20 телефонами",
-    "description": "Функция профессионального плана"
+    "message": "Управление до 20 телефонами"
   },
   "pricing.pro.name": {
-    "message": "Профессиональный",
-    "description": "Название профессионального плана"
+    "message": "Профессиональный"
   },
   "pricing.starter.concurrent_tasks": {
-    "message": "До 5 одновременных задач автоматизации",
-    "description": "Функция начального плана"
+    "message": "До 5 одновременных задач автоматизации"
   },
   "pricing.starter.description": {
-    "message": "Подходит для частных лиц и небольших команд",
-    "description": "Описание стартового плана"
+    "message": "Подходит для частных лиц и небольших команд"
   },
   "pricing.starter.manage_phones": {
-    "message": "Управление до 5 телефонами",
-    "description": "Функция стартового плана"
+    "message": "Управление до 5 телефонами"
   },
   "pricing.starter.name": {
-    "message": "Стартовый",
-    "description": "Название стартового плана"
+    "message": "Стартовый"
   },
   "pricing.subtitle": {
-    "message": "Гибкие планы для всех. Скидка 30% при годовой оплате!",
-    "description": "Подзаголовок раздела цен"
+    "message": "Гибкие планы для всех. Скидка 30% при годовой оплате!"
   },
   "pricing.team.concurrent_tasks": {
-    "message": "До 50 одновременных задач автоматизации",
-    "description": "Функция командного плана"
+    "message": "До 50 одновременных задач автоматизации"
   },
   "pricing.team.description": {
-    "message": "Для растущих команд и компаний",
-    "description": "Описание командного плана"
+    "message": "Для растущих команд и компаний"
   },
   "pricing.team.manage_phones": {
-    "message": "Управление до 50 телефонами",
-    "description": "Функция командного плана"
+    "message": "Управление до 50 телефонами"
   },
   "pricing.team.name": {
-    "message": "Команда",
-    "description": "Название командного плана"
+    "message": "Команда"
   },
   "pricing.ticket_support": {
-    "message": "Выделенная поддержка через тикеты",
-    "description": "Текст поддержки через тикеты"
+    "message": "Выделенная поддержка через тикеты"
   },
   "pricing.title": {
-    "message": "Цены",
-    "description": "Заголовок раздела цен"
+    "message": "Цены"
   },
   "pricing.toggle.monthly": {
     "message": "Ежемесячно"
@@ -1331,8 +1185,7 @@
     "message": "Ежегодно (Экономия 30%)"
   },
   "pricing.unlimited_devices": {
-    "message": "Неограниченные подключения устройств",
-    "description": "Текст о неограниченных устройствах"
+    "message": "Неограниченные подключения устройств"
   },
   "pricing.unlimited_devices_short": {
     "message": "Безлимит"
@@ -1497,291 +1350,220 @@
     "message": "Технические преимущества"
   },
   "testimonials.subtitle": {
-    "message": "Что говорят пользователи TikMatrix",
-    "description": "Подзаголовок раздела отзывов пользователей"
+    "message": "Что говорят пользователи TikMatrix"
   },
   "testimonials.title": {
-    "message": "Отзывы реальных пользователей",
-    "description": "Заголовок раздела отзывов пользователей"
+    "message": "Отзывы реальных пользователей"
   },
   "testimonials.usage_label": {
-    "message": "Длительность использования",
-    "description": "Метка длительности использования"
+    "message": "Длительность использования"
   },
   "testimonials.user1.text": {
-    "message": "TikMatrix - спасение для нашей студии! Мы можем одновременно управлять таким количеством телефонов, функции автоматизации очень мощные. Публикация и развитие аккаунтов стали намного проще. Обнаружение TikTok действительно работает - наши посты получают более естественный трафик, чем раньше.",
-    "description": "Текст отзыва первого пользователя"
+    "message": "TikMatrix - спасение для нашей студии! Мы можем одновременно управлять таким количеством телефонов, функции автоматизации очень мощные. Публикация и развитие аккаунтов стали намного проще. Обнаружение TikTok действительно работает - наши посты получают более естественный трафик, чем раньше."
   },
   "testimonials.user1.usage": {
-    "message": "1 год",
-    "description": "Длительность использования первого пользователя"
+    "message": "1 год"
   },
   "testimonials.user2.text": {
-    "message": "После использования TikMatrix эффективность нашей рекламной команды резко возросла. Скрипты автоматизации экономят нам огромное количество ручной работы, аккаунты остаются безопасными - пока что никаких блокировок. Идеально подходит для таких агентств, как наше!",
-    "description": "Текст отзыва второго пользователя"
+    "message": "После использования TikMatrix эффективность нашей рекламной команды резко возросла. Скрипты автоматизации экономят нам огромное количество ручной работы, аккаунты остаются безопасными - пока что никаких блокировок. Идеально подходит для таких агентств, как наше!"
   },
   "testimonials.user2.usage": {
-    "message": "10 месяцев",
-    "description": "Длительность использования второго пользователя"
+    "message": "10 месяцев"
   },
   "testimonials.user3.text": {
-    "message": "Одновременное управление 100 телефонами - это игра-чейнджер. Пакетные операции очень удобны, наши посты в TikTok получают больше органического охвата. Отлично подходит для зарубежного маркетинга, цены тоже справедливые!",
-    "description": "Текст отзыва третьего пользователя"
+    "message": "Одновременное управление 100 телефонами - это игра-чейнджер. Пакетные операции очень удобны, наши посты в TikTok получают больше органического охвата. Отлично подходит для зарубежного маркетинга, цены тоже справедливые!"
   },
   "testimonials.user3.usage": {
-    "message": "6 месяцев",
-    "description": "Длительность использования третьего пользователя"
+    "message": "6 месяцев"
   },
   "testimonials.user4.text": {
-    "message": "Пробовал другие инструменты раньше, но TikMatrix самый беспроблемный. Автоматизация и защита от блокировок очень надежны. Отлично подходит для маркетинговых команд, которым нужны эффективные пакетные операции.",
-    "description": "Текст отзыва четвертого пользователя"
+    "message": "Пробовал другие инструменты раньше, но TikMatrix самый беспроблемный. Автоматизация и защита от блокировок очень надежны. Отлично подходит для маркетинговых команд, которым нужны эффективные пакетные операции."
   },
   "testimonials.user4.usage": {
-    "message": "8 месяцев",
-    "description": "Длительность использования четвертого пользователя"
+    "message": "8 месяцев"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Закрыть",
-    "description": "The ARIA label for close button of announcement bar"
+    "message": "Закрыть"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Прокрутить к началу",
-    "description": "The ARIA label for the back to top button"
+    "message": "Прокрутить к началу"
   },
   "theme.CodeBlock.copied": {
-    "message": "Скопировано",
-    "description": "The copied button label on code blocks"
+    "message": "Скопировано"
   },
   "theme.CodeBlock.copy": {
-    "message": "Копировать",
-    "description": "The copy button label on code blocks"
+    "message": "Копировать"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Скопировать код в буфер обмена",
-    "description": "The ARIA label for copy code blocks button"
+    "message": "Скопировать код в буфер обмена"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Переключить перенос слов",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
+    "message": "Переключить перенос слов"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Свернуть категорию боковой панели '{label}'",
-    "description": "The ARIA label to collapse the sidebar category"
+    "message": "Свернуть категорию боковой панели '{label}'"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Развернуть категорию боковой панели '{label}'",
-    "description": "The ARIA label to expand the sidebar category"
+    "message": "Развернуть категорию боковой панели '{label}'"
   },
   "theme.ErrorPageContent.title": {
-    "message": "Страница сломалась.",
-    "description": "The title of the fallback page when the page crashed"
+    "message": "Страница сломалась."
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Попробовать снова",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+    "message": "Попробовать снова"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Основная навигация",
-    "description": "The ARIA label for the main navigation"
+    "message": "Основная навигация"
   },
   "theme.NotFound.p1": {
-    "message": "Мы не смогли найти то, что вы ищете.",
-    "description": "The first paragraph of the 404 page"
+    "message": "Мы не смогли найти то, что вы ищете."
   },
   "theme.NotFound.p2": {
-    "message": "Пожалуйста, свяжитесь с владельцем сайта, который ссылается на исходный URL-адрес, и сообщите ему, что ссылка неработающая.",
-    "description": "The 2nd paragraph of the 404 page"
+    "message": "Пожалуйста, свяжитесь с владельцем сайта, который ссылается на исходный URL-адрес, и сообщите ему, что ссылка неработающая."
   },
   "theme.NotFound.title": {
-    "message": "Страница не найдена",
-    "description": "The title of the 404 page"
+    "message": "Страница не найдена"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "На этой странице",
-    "description": "The label used by the button on the collapsible TOC component"
+    "message": "На этой странице"
   },
   "theme.admonition.caution": {
-    "message": "Внимание",
-    "description": "The default label used for the Caution admonition (:::caution)"
+    "message": "Внимание"
   },
   "theme.admonition.danger": {
-    "message": "Опасность",
-    "description": "The default label used for the Danger admonition (:::danger)"
+    "message": "Опасность"
   },
   "theme.admonition.info": {
-    "message": "Информация",
-    "description": "The default label used for the Info admonition (:::info)"
+    "message": "Информация"
   },
   "theme.admonition.note": {
-    "message": "Заметка",
-    "description": "The default label used for the Note admonition (:::note)"
+    "message": "Заметка"
   },
   "theme.admonition.tip": {
-    "message": "Совет",
-    "description": "The default label used for the Tip admonition (:::tip)"
+    "message": "Совет"
   },
   "theme.admonition.warning": {
-    "message": "Предупреждение",
-    "description": "The default label used for the Warning admonition (:::warning)"
+    "message": "Предупреждение"
   },
   "theme.blog.archive.description": {
-    "message": "Архив блога",
-    "description": "The page & hero description of the blog archive page"
+    "message": "Архив блога"
   },
   "theme.blog.archive.title": {
-    "message": "Архив блога",
-    "description": "The page & hero title of the blog archive page"
+    "message": "Архив блога"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Навигация по постам блога",
-    "description": "The ARIA label for the blog pagination"
+    "message": "Навигация по постам блога"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Новые записи",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
+    "message": "Новые записи"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Старые записи",
-    "description": "The label used to navigate to the older blog posts page (next page)"
+    "message": "Старые записи"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Навигация по постам блога",
-    "description": "The ARIA label for the blog posts pagination"
+    "message": "Навигация по постам блога"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Новая запись",
-    "description": "The blog post button label to navigate to the newer/previous post"
+    "message": "Новая запись"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Старая запись",
-    "description": "The blog post button label to navigate to the older/next post"
+    "message": "Старая запись"
   },
   "theme.blog.post.plurals": {
-    "message": "{count} постов",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} постов"
   },
   "theme.blog.post.readMore": {
-    "message": "Читать далее",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
+    "message": "Читать далее"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Читать больше о {title}",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
+    "message": "Читать больше о {title}"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} мин чтения",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{readingTime} мин чтения"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Навигация по последним постам блога",
-    "description": "The ARIA label for recent posts in the blog sidebar"
+    "message": "Навигация по последним постам блога"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} с тегом «{tagName}»",
-    "description": "The title of the page for a blog tag"
+    "message": "{nPosts} с тегом «{tagName}»"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Переключить между светлой и темной темой (текущая тема: {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "message": "Переключить между светлой и темной темой (текущая тема: {mode})"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "темная тема",
-    "description": "The name for the dark color mode"
+    "message": "темная тема"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "светлая тема",
-    "description": "The name for the light color mode"
+    "message": "светлая тема"
   },
   "theme.common.editThisPage": {
-    "message": "Редактировать эту страницу",
-    "description": "The link label to edit the current page"
+    "message": "Редактировать эту страницу"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Прямая ссылка на {heading}",
-    "description": "Title for link to heading"
+    "message": "Прямая ссылка на {heading}"
   },
   "theme.common.skipToMainContent": {
-    "message": "Перейти к основному содержанию",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+    "message": "Перейти к основному содержанию"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} элементов",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
+    "message": "{count} элементов"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Главная страница",
-    "description": "The ARIA label for the home page in the breadcrumbs"
+    "message": "Главная страница"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Хлебные крошки",
-    "description": "The ARIA label for the breadcrumbs"
+    "message": "Хлебные крошки"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Навигация по документации",
-    "description": "The ARIA label for the docs pagination"
+    "message": "Навигация по документации"
   },
   "theme.docs.paginator.next": {
-    "message": "Следующая",
-    "description": "The label used to navigate to the next doc"
+    "message": "Следующая"
   },
   "theme.docs.paginator.previous": {
-    "message": "Предыдущая",
-    "description": "The label used to navigate to the previous doc"
+    "message": "Предыдущая"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Закрыть навигационную панель",
-    "description": "The ARIA label for close button of mobile sidebar"
+    "message": "Закрыть навигационную панель"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Свернуть боковую панель",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "Свернуть боковую панель"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Свернуть боковую панель",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "Свернуть боковую панель"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Развернуть боковую панель",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "Развернуть боковую панель"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Развернуть боковую панель",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "Развернуть боковую панель"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Боковая панель документов",
-    "description": "The ARIA label for the sidebar navigation"
+    "message": "Боковая панель документов"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Переключить навигационную панель",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
+    "message": "Переключить навигационную панель"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged}«{tagName}»",
-    "description": "The title of the page for a docs tag"
+    "message": "{nDocsTagged}«{tagName}»"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} документов с тегом",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} документов с тегом"
   },
   "theme.docs.versionBadge.label": {
     "message": "Версия: {versionLabel}"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "последняя версия",
-    "description": "The label used for the latest version suggestion link label"
+    "message": "последняя версия"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Для актуальной документации см. {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
+    "message": "Для актуальной документации см. {latestVersionLink} ({versionLabel})."
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Это документация для {siteTitle} {versionLabel}, которая больше не поддерживается активно.",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+    "message": "Это документация для {siteTitle} {versionLabel}, которая больше не поддерживается активно."
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Это документация для нереализованной версии {siteTitle} {versionLabel}.",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+    "message": "Это документация для нереализованной версии {siteTitle} {versionLabel}."
   },
   "theme.footer.link.label.View All Advertising": {
     "message": "Посмотреть Все Рекламные Инструменты"
@@ -1790,16 +1572,13 @@
     "message": "Посмотреть все инструменты"
   },
   "theme.lastUpdated.atDate": {
-    "message": "{date} ",
-    "description": "The words used to describe on which date a page has been last updated"
+    "message": "{date} "
   },
   "theme.lastUpdated.byUser": {
-    "message": "{user} ",
-    "description": "The words used to describe by who the page has been last updated"
+    "message": "{user} "
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Последнее обновление {atDate}{byUser}",
-    "description": "The sentence used to display when a page has been last updated, and by who"
+    "message": "Последнее обновление {atDate}{byUser}"
   },
   "theme.navbar.item.label.Advertising": {
     "message": "Реклама"
@@ -1808,83 +1587,63 @@
     "message": "Инструменты"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Языки",
-    "description": "The label for the mobile language switcher dropdown"
+    "message": "Языки"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Вернуться в главное меню",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+    "message": "← Вернуться в главное меню"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Версии",
-    "description": "The label for the navbar versions dropdown on mobile view"
+    "message": "Версии"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Теги:",
-    "description": "The label alongside a tag list"
+    "message": "Теги:"
   },
   "theme.tags.tagsPageLink": {
-    "message": "Посмотреть все теги",
-    "description": "The label of the link targeting the tag list page"
+    "message": "Посмотреть все теги"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Теги",
-    "description": "The title of the tag list page"
+    "message": "Теги"
   },
   "theme.unlistedContent.message": {
-    "message": "Эта страница не внесена в список. Поисковые системы не будут ее индексировать, и только пользователи, имеющие прямую ссылку, могут получить к ней доступ.",
-    "description": "The unlisted content banner message"
+    "message": "Эта страница не внесена в список. Поисковые системы не будут ее индексировать, и только пользователи, имеющие прямую ссылку, могут получить к ней доступ."
   },
   "theme.unlistedContent.title": {
-    "message": "Страница не внесена в список",
-    "description": "The unlisted content banner title"
+    "message": "Страница не внесена в список"
   },
   "whitelabel.annualRequired": {
-    "message": "Требуется годовая подписка",
-    "description": "Белая метка требует годовую подписку"
+    "message": "Требуется годовая подписка"
   },
   "whitelabel.annualRequiredDesc": {
-    "message": "Функциональность белой метки доступна исключительно для пользователей с годовой подпиской. Свяжитесь с нашей службой поддержки через Telegram, чтобы получить код разблокировки.",
-    "description": "Описание требования годовой подписки для белой метки"
+    "message": "Функциональность белой метки доступна исключительно для пользователей с годовой подпиской. Свяжитесь с нашей службой поддержки через Telegram, чтобы получить код разблокировки."
   },
   "whitelabel.appName": {
-    "message": "Название приложения",
-    "description": "Название приложения"
+    "message": "Название приложения"
   },
   "whitelabel.contactSupport": {
-    "message": "Связаться с поддержкой для получения кода разблокировки",
-    "description": "Связаться с поддержкой для получения кода разблокировки белой метки"
+    "message": "Связаться с поддержкой для получения кода разблокировки"
   },
   "whitelabel.customization": {
-    "message": "Настройка бренда",
-    "description": "Настройка бренда"
+    "message": "Настройка бренда"
   },
   "whitelabel.description": {
-    "message": "Настройте брендинг TikMatrix в соответствии с корпоративной идентичностью вашей компании",
-    "description": "Описание функции белой метки"
+    "message": "Настройте брендинг TikMatrix в соответствии с корпоративной идентичностью вашей компании"
   },
   "whitelabel.logo": {
-    "message": "Логотип",
-    "description": "Логотип"
+    "message": "Логотип"
   },
   "whitelabel.setup": {
-    "message": "Настройка белой метки",
-    "description": "Настройка белой метки"
+    "message": "Настройка белой метки"
   },
   "whitelabel.supportEmail": {
-    "message": "Email поддержки",
-    "description": "Email поддержки"
+    "message": "Email поддержки"
   },
   "whitelabel.telegramUrl": {
-    "message": "Ссылка на Telegram",
-    "description": "Ссылка на Telegram"
+    "message": "Ссылка на Telegram"
   },
   "whitelabel.title": {
-    "message": "Белая метка",
-    "description": "Заголовок функции белой метки"
+    "message": "Белая метка"
   },
   "whitelabel.tutorialUrl": {
-    "message": "Ссылка на обучение",
-    "description": "Ссылка на обучение"
+    "message": "Ссылка на обучение"
   }
 }

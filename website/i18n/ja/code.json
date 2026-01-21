@@ -1,1890 +1,1649 @@
 {
-    "24/7 Support": {
-        "message": "サポート 24/7"
-    },
-    "24h AI Assistant": {
-        "message": "24時間AIアシスタント"
-    },
-    "AI voiceover": {
-        "message": "AI音声ナレーション",
-        "description": "The product label"
-    },
-    "AI-Generated Comments": {
-        "message": "AI生成コメント"
-    },
-    "API Protocol": {
-        "message": "APIプロトコル"
-    },
-    "Account Safe": {
-        "message": "セキュリティ アカウント"
-    },
-    "Account Setup": {
-        "message": "アカウント設定"
-    },
-    "Account management": {
-        "message": "アカウント管理"
-    },
-    "Account warmup": {
-        "message": "ウォームアップ アカウント"
-    },
-    "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
-        "message": "さらに、当社の実機マトリックスプログラムシステムは、TIKのリスク管理措置によるアカウント停止を完全に回避できます。当社のアカウント停止率は0%です。"
-    },
-    "Advanced Technology for Superior Performance": {
-        "message": "卓越したパフォーマンスのための先進技術"
-    },
-    "Advanced safety mechanisms": {
-        "message": "高度な安全メカニズム"
-    },
-    "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-        "message": "インストール後、IgMatrixを開いて利用可能なInstagram自動化スクリプトの完全なリストを表示してください。スクリプトの選択はTikMatrixと異なる場合があります。"
-    },
-    "All Features": {
-        "message": "すべての機能"
-    },
-    "All Free Features": {
-        "message": "すべての無料機能"
-    },
-    "All Monthly Features": {
-        "message": "すべての月額機能"
-    },
-    "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-        "message": "IgMatrixソフトウェアで実際に利用可能な機能を常に確認してください。スクリプト機能はTikMatrixと異なる場合があります。ソフトウェアインターフェースには、Instagramで利用可能な自動化スクリプトが正確に表示されます。"
-    },
-    "Automate posting, following, commenting, and engagement activities on Instagram": {
-        "message": "Instagramでの投稿、フォロー、コメント、エンゲージメント活動を自動化"
-    },
-    "Automated Comment": {
-        "message": "自動コメント"
-    },
-    "Automated Follow": {
-        "message": "自動フォロー"
-    },
-    "Automated Message": {
-        "message": "自動メッセージ"
-    },
-    "Automated account nurturing": {
-        "message": "自動アカウント育成"
-    },
-    "Automated scheduling for unattended operation": {
-        "message": "無人操作のための自動スケジューリング"
-    },
-    "Automatic Capture": {
-        "message": "自動キャプチャ"
-    },
-    "Automatic account matching": {
-        "message": "自動アカウントマッチング"
-    },
-    "Automatic account nurturing": {
-        "message": "自動アカウント育成",
-        "description": "The description of Automatic account nurturing"
-    },
-    "Automatic commenting": {
-        "message": "自動コメント",
-        "description": "The description of Automatic commenting"
-    },
-    "Automatic direct messaging": {
-        "message": "自動ダイレクトメッセージ",
-        "description": "The description of Automatic direct messaging"
-    },
-    "Automatic following": {
-        "message": "自動フォロー",
-        "description": "The description of Automatic following"
-    },
-    "Automatic login": {
-        "message": "自動ログイン"
-    },
-    "Automatic matching": {
-        "message": "自動マッチング",
-        "description": "The description of Automatic matching"
-    },
-    "Automatic posting": {
-        "message": "自動的な投稿",
-        "description": "The description of Automatic posting"
-    },
-    "Automatic profile setup": {
-        "message": "自動プロフィール設定",
-        "description": "The description of Automatic profile setup"
-    },
-    "Automatic registration & login": {
-        "message": "自動登録とログイン"
-    },
-    "Automatic video posting": {
-        "message": "自動的な動画投稿"
-    },
-    "Automatically generate AI voiceover for videos": {
-        "message": "動画に自動的にAI音声を生成",
-        "description": "The description of AI voiceover"
-    },
-    "Automatically recognize subtitles and append them to the video": {
-        "message": "字幕を自動認識して動画に追加",
-        "description": "The description of Recognize subtitles"
-    },
-    "Automatically translate subtitles to any language": {
-        "message": "字幕を任意の言語に自動翻訳",
-        "description": "The description of Translate subtitles"
-    },
-    "Automation & Content Management": {
-        "message": "自動化とコンテンツ管理"
-    },
-    "Basic Automation": {
-        "message": "基本的な自動化"
-    },
-    "Basic configuration": {
-        "message": "基本的な設定"
-    },
-    "Batch Generating Unique Videos": {
-        "message": "ユニーク動画の一括生成",
-        "description": "The description of Batch Generating Unique Videos"
-    },
-    "Batch account management": {
-        "message": "アカウントの一括管理",
-        "description": "The description of Batch account management"
-    },
-    "Batch login to TikTok accounts with account list management": {
-        "message": "アカウントリスト管理を使用したTikTokアカウントへのバッチログイン"
-    },
-    "Boost engagement on specific comments by liking and replying to them in bulk": {
-        "message": "特定のコメントに一括でいいねと返信をしてエンゲージメントを高める"
-    },
-    "Built with safety mechanisms to protect your Instagram accounts from suspension": {
-        "message": "Instagramアカウントを停止から保護する安全メカニズムを搭載"
-    },
-    "Buy hardware": {
-        "message": "ハードウェアを購入する",
-        "description": "製品ラベル"
-    },
-    "Can I run both IgMatrix and TikMatrix on the same computer?": {
-        "message": "同じコンピュータでIgMatrixとTikMatrixの両方を実行できますか？"
-    },
-    "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-        "message": "IgMatrixとTikMatrixで同じチュートリアルを使えますか？"
-    },
-    "Character-by-Character Input": {
-        "message": "1文字ずつ入力"
-    },
-    "Check Available Scripts": {
-        "message": "利用可能なスクリプトを確認"
-    },
-    "Comment boost": {
-        "message": "コメントブースト"
-    },
-    "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-        "message": "カスタマイズ可能なコンテンツと絵文字で複数のTikTok投稿に一括コメント"
-    },
-    "Comments, Messages, Follows": {
-        "message": "コメント、メッセージ、フォロー"
-    },
-    "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
-        "message": "他社類似製品と比較して、当社のTIK製品を使用すると、他製品に比べて少なくとも30％のトラフィック増加が見られます。"
-    },
-    "Completely local private deployment ensuring user data security": {
-        "message": "ユーザーデータセキュリティを確保する完全なローカルプライベート展開"
-    },
-    "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
-        "message": "複数のエンゲージメント戦略とAI生成コメントを組み合わせた包括的な自動化"
-    },
-    "Computer-based Execution": {
-        "message": "コンピュータ上での実行"
-    },
-    "Contact": {
-        "message": "お問い合わせ",
-        "description": "お問い合わせフォームのタイトル"
-    },
-    "Contact Support": {
-        "message": "サポートに問い合わせる"
-    },
-    "Contact to purchase": {
-        "message": "購入についてお問い合わせください",
-        "description": "購入に関するお問い合わせラベル"
-    },
-    "Content Management": {
-        "message": "コンテンツ管理"
-    },
-    "Control farm accounts to watch, like, and comment on target live streams": {
-        "message": "ファームアカウントを制御してターゲットライブストリームを視聴、いいね、コメント"
-    },
-    "Control multiple Instagram accounts across different Android devices simultaneously": {
-        "message": "異なるAndroidデバイス上の複数のInstagramアカウントを同時に制御"
-    },
-    "Create new TikTok accounts with email registration and password setup": {
-        "message": "メール登録とパスワード設定で新しいTikTokアカウントを作成"
-    },
-    "Custom Instagram workflows": {
-        "message": "カスタムInstagramワークフロー"
-    },
-    "Customer support": {
-        "message": "カスタマーサポート"
-    },
-    "Device connection": {
-        "message": "デバイス接続"
-    },
-    "Different Script Logic": {
-        "message": "異なるスクリプトロジック"
-    },
-    "Different script availability": {
-        "message": "異なるスクリプトの利用可能性"
-    },
-    "Do I need separate licenses for IgMatrix and TikMatrix?": {
-        "message": "IgMatrixとTikMatrixに別々のライセンスが必要ですか？"
-    },
-    "Download IgMatrix": {
-        "message": "IgMatrixをダウンロード",
-        "description": "IgMatrixのダウンロードの説明"
-    },
-    "Download IgMatrix from our official website and follow the installation instructions.": {
-        "message": "公式サイトからIgMatrixをダウンロードし、インストール手順に従ってください。"
-    },
-    "Download TikMatrix": {
-        "message": "TikMatrixをダウンロード",
-        "description": "TikMatrixのダウンロードの説明"
-    },
-    "Download VideoMagic": {
-        "message": "VideoMagicをダウンロード",
-        "description": "VideoMagicのダウンロードの説明"
-    },
-    "Download and Install": {
-        "message": "ダウンロードとインストール"
-    },
-    "Download for Windows": {
-        "message": "Windows用ダウンロード"
-    },
-    "Email": {
-        "message": "メール",
-        "description": "メールラベル"
-    },
-    "Expert Technical Team": {
-        "message": "Equipo técnico experto"
-    },
-    "Fan collection": {
-        "message": "Recopilaciónseguidores",
-        "description": "The description of Fan collection"
-    },
-    "Features": {
-        "message": "Funciones"
-    },
-    "Find answers to common questions about IgMatrix": {
-        "message": "Encuentra respuestas a preguntas frecuentes sobre IgMatrix"
-    },
-    "Fingerprint Browser": {
-        "message": "Navegador con huella digital"
-    },
-    "Follow TikMatrix Tutorial": {
-        "message": "Seguir el tutorialTikMatrix"
-    },
-    "Follow these steps to get started with IgMatrix": {
-        "message": "Sigue estos pasos para comenzar con IgMatrix"
-    },
-    "For 7 Days": {
-        "message": "Por 7 días"
-    },
-    "Free": {
-        "message": "Gratis"
-    },
-    "Frequently Asked Questions": {
-        "message": "Preguntas frecuentes"
-    },
-    "Generate intelligent and contextual comments through ChatGPT API integration": {
-        "message": "ChatGPT API統合を通じてインテリジェントでコンテキストに応じたコメントを生成"
-    },
-    "Generate unique videos from one source video": {
-        "message": "Generar videos únicos desde un video fuente",
-        "description": "The description of Video unique"
-    },
-    "Get Started": {
-        "message": "Comenzar"
-    },
-    "Get Support": {
-        "message": "Obtener soporte"
-    },
-    "Get dedicated support from our expert team whenever you need help": {
-        "message": "Obtén soporte dedicado de nuestro equipo experto siempre que necesites ayuda"
-    },
-    "Go to the \"Download\" page and download the latest version of TikMatrix.": {
-        "message": "「ダウンロード」ページに移動して、TikMatrixの最新バージョンをダウンロードしてください。"
-    },
-    "Here are some frequently asked questions.": {
-        "message": "よくあるご質問はこちらです。"
-    },
-    "How many TikTok accounts can each phone log into?": {
-        "message": "各スマートフォンはいくつのTikTokアカウントにログインできますか？"
-    },
-    "How many devices can I manage?": {
-        "message": "何台のデバイスを管理できますか？"
-    },
-    "How to use?": {
-        "message": "使い方は？"
-    },
-    "Human Technical Support": {
-        "message": "有人テクニカルサポート"
-    },
-    "Human-like Click Simulation": {
-        "message": "Simulaciónclics similar a humanos"
-    },
-    "If you are interested in our service, please contact us to get price.": {
-        "message": "Si estás interesado en nuestro servicio, contáctanos para obtener el precio.",
-        "description": "The contact form description"
-    },
-    "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
-        "message": "Si necesitas ayuda con funciones específicas de IgMatrix o encuentras algún problema, nuestro equipo de soporte está listo para asistirte."
-    },
-    "IgMatrix": {
-        "message": "IgMatrix",
-        "description": "The description of IgMatrix"
-    },
-    "IgMatrix Features": {
-        "message": "Funciones de IgMatrix"
-    },
-    "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
-        "message": "IgMatrixとTikMatrixは同じセットアッププロセスとユーザーインターフェースを共有しています。主な違いは、IgMatrixがInstagram自動化専用に設計されているのに対し、TikMatrixはTikTok用であることです。スクリプトロジックと利用可能な機能は、それぞれのプラットフォームに最適化されています。"
-    },
-    "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely.": {
-        "message": "IgMatrix lleva las mismas potentes capacidades de automatización de TikMatrix a Instagram, ayudándote a escalar tus esfuerzos de marketing en Instagram de manera eficiente y segura."
-    },
-    "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
-        "message": "IgMatrix sigue una estructura de precios similar a TikMatrix, pero puede tener tarifas diferentes. Por favor, consulta nuestra página oficial de precios o contacta a nuestro equipo de soporte para información actual de precios de IgMatrix."
-    },
-    "IgMatrix is a Instagram android phonefarm batch control tool": {
-        "message": "IgMatrixはInstagram Androidファームバッチ制御ツールです",
-        "description": "The description of IgMatrix"
-    },
-    "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
-        "message": "IgMatrixのセットアップチュートリアルはTikMatrixと同じです。唯一の違いはスクリプトロジックなので、TikMatrixチュートリアルのドキュメントを直接参照できます。"
-    },
-    "Important Notice": {
-        "message": "Aviso importante"
-    },
-    "Important Reminder": {
-        "message": "Recordatorio importante"
-    },
-    "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
-        "message": "Aumentar el engagement en publicaciones dando me gusta, compartiendo, marcando como favoritos y viéndolas de forma masiva"
-    },
-    "Increase user engagement by following or unfollowing accounts in bulk": {
-        "message": "アカウントの一括フォロー/アンフォローでユーザーエンゲージメントを向上"
-    },
-    "Instagram Automation": {
-        "message": "Instagramの自動化"
-    },
-    "Instagram Phone Farm Batch Control Tool": {
-        "message": "Instagram手機農場バッチ制御ツール",
-        "description": "The description of Instagram Phone Farm Batch Control Tool"
-    },
-    "Instagram-optimized automation scripts": {
-        "message": "Instagram最適化自動化スクリプト"
-    },
-    "Instagram-specific automation": {
-        "message": "Instagram専用の自動化"
-    },
-    "Is the pricing the same as TikMatrix?": {
-        "message": "価格はTikMatrixと同じですか？"
-    },
-    "Join Channel": {
-        "message": "Unirse al canal",
-        "description": "The join channel button label"
-    },
-    "Join Group": {
-        "message": "Unirse al grupo",
-        "description": "The join group button label"
-    },
-    "Key Differences from TikMatrix": {
-        "message": "Diferencias clave respecto a TikMatrix"
-    },
-    "Live stream boost": {
-        "message": "Impulsar transmisiones en vivo"
-    },
-    "Mass commenting": {
-        "message": "コメント masivos"
-    },
-    "Mass direct messaging": {
-        "message": "一括ダイレクトメッセージ"
-    },
-    "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
-        "message": "Lun - Vie: 9:00AM - 5:00PM (UTC+8)",
-        "description": "The working hours description"
-    },
-    "Monthly": {
-        "message": "Mensual"
-    },
-    "Multi-Device Control": {
-        "message": "マルチデバイス制御"
-    },
-    "Multi-language support (English, Chinese, Russian)": {
-        "message": "サポート multiidioma (inglés, chino, ruso)"
-    },
-    "Natural Swipe Gestures": {
-        "message": "Gestosdeslizamiento naturales"
-    },
-    "No Root Required": {
-        "message": "No requiere root"
-    },
-    "No root permissions needed, ensuring device environment security": {
-        "message": "root権限不要、デバイス環境のセキュリティを確保"
-    },
-    "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
-        "message": "すべてのTikMatrixスクリプトがIgMatrixで利用可能なわけではありません。これらはプラットフォーム固有のためです。インストール後、IgMatrixソフトウェアインターフェース内で利用可能なスクリプトの正確なリストを見つけることができます。ソフトウェアに表示されている実際の機能を参照してください。"
-    },
-    "One-click automatic collection of target account fan lists, can be used for direct messaging": {
-        "message": "ワンクリックでターゲットアカウントのファンリストを自動収集、ダイレクトメッセージに使用可能",
-        "description": "The description of Fan collection"
-    },
-    "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
-        "message": "ワンクリックバッチ自動アカウント育成、キーワード検索、ランダムフォロー、いいね、コメント、ブックマークをサポート",
-        "description": "The description of Automatic account nurturing"
-    },
-    "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
-        "message": "ワンクリックバッチ自動コメント：指定されたスクリプトとランダム絵文字で複数の動画にコメント",
-        "description": "The description of Automatic commenting"
-    },
-    "One-click batch automatic direct messaging to multiple target users": {
-        "message": "ワンクリックバッチ自動ダイレクトメッセージ：複数のターゲットユーザーへ",
-        "description": "The description of Automatic direct messaging"
-    },
-    "One-click batch automatic follow of target accounts": {
-        "message": "ワンクリックバッチ自動フォロー：ターゲットアカウント",
-        "description": "The description of Automatic following"
-    },
-    "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
-        "message": "ワンクリックバッチ自動ログイン：TikTokアカウント、バッチインポート/エクスポートをサポート",
-        "description": "The description of Automatic login"
-    },
-    "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
-        "message": "ワンクリックバッチ自動マッチング：ログイン済みアカウント、手動バインディング不要",
-        "description": "The description of Automatic matching"
-    },
-    "One-click batch automatic posting, supports adding product links": {
-        "message": "ワンクリックバッチ自動投稿、商品リンクの追加をサポート",
-        "description": "The description of Automatic posting"
-    },
-    "One-click batch automatic registration of TikTok accounts, supports business email": {
-        "message": "ワンクリックバッチ自動登録：TikTokアカウント、ビジネスメールをサポート",
-        "description": "The description of Automatic registration"
-    },
-    "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
-        "message": "ワンクリックバッチ自動設定：アバター、ニックネーム、署名、ユーザー名",
-        "description": "The description of Automatic profile setup"
-    },
-    "One-click download of videos from all video websites": {
-        "message": "すべての動画ウェブサイトから動画をワンクリックでダウンロード",
-        "description": "The description of Video download"
-    },
-    "One-click download of videos from the entire network": {
-        "message": "ネットワーク全体から動画をワンクリックでダウンロード",
-        "description": "The description of Video collection"
-    },
-    "Open Source Client": {
-        "message": "Clientecódigo abierto"
-    },
-    "Open source client code allows users to customize their own client": {
-        "message": "オープンソースのクライアントコードにより、ユーザーは独自のクライアントをカスタマイズ可能"
-    },
-    "Our Competitive Advantages": {
-        "message": "Nuestras ventajas competitivas",
-        "description": "The description of Our Competitive Advantages"
-    },
-    "Our Core Advantages": {
-        "message": "Nuestras ventajas principales"
-    },
-    "Our Core Features": {
-        "message": "Nuestras funciones principales",
-        "description": "The description of Our Core Features"
-    },
-    "Our plans": {
-        "message": "Nuestros planes"
-    },
-    "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
-        "message": "当社独自の実機マトリックスシステムは、TikTokのリスク管理措置を完全に回避し、極めて低いアカウント停止率を実現します。",
-        "description": "The description of TikMatrix proprietary technology"
-    },
-    "Our support team is here to help you with any IgMatrix-related questions or issues.": {
-        "message": "Nuestro equipo de soporte está aquí para ayudarte con cualquier pregunta o problema relacionado con IgMatrix."
-    },
-    "Per Month": {
-        "message": "Por mes"
-    },
-    "Per Year": {
-        "message": "Por año"
-    },
-    "Performance analytics": {
-        "message": "Análisisrendimiento",
-        "description": "The description of Performance analytics"
-    },
-    "Phone screen mirroring to a computer": {
-        "message": "Reflejopantallateléfono a computadora",
-        "description": "The description of Phone screen mirroring to a computer"
-    },
-    "Platform-optimized features": {
-        "message": "Funciones optimizadas para la plataforma"
-    },
-    "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
-        "message": "スクリプトリストを直接表示するには、IgMatrixをダウンロードしてください。現在、すべてのTikMatrixスクリプトがIgMatrixで100%サポートされているわけではありません。ソフトウェアの実際の機能を参照してください。"
-    },
-    "Post engagement boost": {
-        "message": "Impulsar engagementpublicaciones"
-    },
-    "Post management": {
-        "message": "投稿の管理"
-    },
-    "Powerful Instagram automation tools designed for professional marketers and businesses": {
-        "message": "Potentes herramientas de automatización de Instagram diseñadas para profesionales del marketing y empresas"
-    },
-    "Powerful TikTok Automation & Management Tools": {
-        "message": "Potentes herramientas de automatización y gestión de TikTok",
-        "description": "The description of Powerful TikTok Automation & Management Tools"
-    },
-    "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
-        "message": "リアルタイムのメンテナンスとアップデートによりスクリプトの信頼性を確保する強力な技術チーム"
-    },
-    "Premium Benefits": {
-        "message": "Beneficios premium"
-    },
-    "Pricing": {
-        "message": "Precios"
-    },
-    "Private Local Deployment": {
-        "message": "Implementación local privada"
-    },
-    "Professional TikTok Account Management & Marketing Tool": {
-        "message": "Herramienta profesionalgestión y marketing アカウントsTikTok",
-        "description": "The description of Professional TikTok Account Management & Marketing Tool"
-    },
-    "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
-        "message": "Herramienta profesionalgestión y marketing アカウントsTikTok para Windows y Mac"
-    },
-    "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-        "message": "WindowsとMac上のAndroid手機農場向けに設計されたプロフェッショナルなTikTokアカウント管理およびマーケティングツール。投稿、フォローを自動化し、アカウント停止率ゼロでTikTokプレゼンスを成長させます。",
-        "description": "The description of Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
-    },
-    "Professional phone farm management": {
-        "message": "プロフェッショナルなフォンファーム管理"
-    },
-    "Publish videos or images to TikTok with batch posting capabilities": {
-        "message": "バッチ投稿機能でTikTokに動画や画像を公開"
-    },
-    "Quick Setup Guide": {
-        "message": "Guíaconfiguración rápida"
-    },
-    "Randomized script parameters to avoid behavior detection patterns": {
-        "message": "行動検出パターンを回避するためのランダム化されたスクリプトパラメータ"
-    },
-    "Recognize and match TikTok accounts from phones to add to account list": {
-        "message": "スマートフォンからTikTokアカウントを認識してマッチング、アカウントリストに追加"
-    },
-    "Recognize subtitles": {
-        "message": "Reconocer subtítulos",
-        "description": "The description of Recognize subtitles"
-    },
-    "Remove posts based on their view count for content optimization": {
-        "message": "Eliminar publicaciones según su númerovisualizaciones para optimizacióncontenido"
-    },
-    "Safe & Secure": {
-        "message": "Seguro y protegido"
-    },
-    "Same Setup Process": {
-        "message": "Mismo procesoconfiguración"
-    },
-    "Same reliable technology as TikMatrix": {
-        "message": "TikMatrixと同じ信頼性の高い技術"
-    },
-    "Save 50% compared to monthly plan": {
-        "message": "Ahorra un 50% en comparación con el plan mensual"
-    },
-    "Schedule your Instagram activities with intelligent timing algorithms": {
-        "message": "インテリジェントなタイミングアルゴリズムでInstagram活動をスケジュール"
-    },
-    "Scheduled Tasks": {
-        "message": "Tareas programadas"
-    },
-    "Scrape TikTok usernames from followers lists or keyword searches": {
-        "message": "Extraer nombres de usuario de TikTok de listas de seguidores o búsquedas por palabras clave"
-    },
-    "Script Parameter Randomization": {
-        "message": "Aleatorizaciónparámetrosscript"
-    },
-    "Script engine simulates natural human clicking with randomized button offset": {
-        "message": "スクリプトエンジンは、ランダム化されたボタンオフセットで自然な人間のクリックをシミュレート"
-    },
-    "Scripts run on computer to avoid mobile device detection": {
-        "message": "モバイルデバイス検出を回避するためコンピューター上でスクリプトを実行"
-    },
-    "Send messages to multiple TikTok accounts in bulk with personalized content": {
-        "message": "パーソナライズされたコンテンツで複数のTikTokアカウントに一括メッセージ送信"
-    },
-    "Set up account profiles including avatars, nicknames, signatures, and usernames": {
-        "message": "Configurar perfiles アカウント incluyendo avatares, apodos, firmas y nombresusuario"
-    },
-    "Setup Tutorial": {
-        "message": "Tutorialconfiguración"
-    },
-    "Shipping worldwide": {
-        "message": "Envíos a todo el mundo",
-        "description": "The shipping worldwide label"
-    },
-    "Simulates natural right-hand arc swipe trajectories like real human interaction": {
-        "message": "Simula trayectoriasdeslizamiento en arco con la mano derecha como la interacción humana real"
-    },
-    "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
-        "message": "セットアッププロセスは同一なので、デバイス接続、アカウント管理、スクリプト設定の詳細な手順については、包括的なTikMatrixドキュメントを参照してください。"
-    },
-    "Smart Scheduling": {
-        "message": "スマートスケジューリング"
-    },
-    "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
-        "message": "Comienza a automatizar tu marketing en Instagram hoy con IgMatrix y experimenta las mismas herramientas de nivel profesional en las que confían miles de profesionales del marketing."
-    },
-    "Still have questions?": {
-        "message": "ご不明点はありますか？"
-    },
-    "Streamline your Android TikTok phone farm with advanced batch control and marketing automation": {
-        "message": "高度なバッチ制御とマーケティング自動化でAndroid TikTok手機農場を合理化"
-    },
-    "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
-        "message": "高度なバッチ制御とマーケティング自動化でInstagram手機農場を合理化",
-        "description": "The description of Streamline your Instagram phone farm with advanced batch control and marketing automation"
-    },
-    "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
-        "message": "高度なバッチ制御とマーケティング自動化でTikTok手機農場を合理化",
-        "description": "The description of Streamline your TikTok phone farm with advanced batch control and marketing automation"
-    },
-    "Strong technical support team with open community ecosystem": {
-        "message": "Equipo de soporte técnico sólido con ecosistema comunitario abierto"
-    },
-    "Super Marketing": {
-        "message": "Super マーケティング"
-    },
-    "Supports 100+ phones mirroring to a computer, with synchronized operation": {
-        "message": "Soporta más de 100 teléfonos con reflejo a una computadora, con operación sincronizada"
-    },
-    "Supports 200+ phones mirroring to a computer, with synchronized operation": {
-        "message": "Soporta más de 200 teléfonos con reflejo a una computadora, con operación sincronizada",
-        "description": "The description of Phone screen mirroring to a computer"
-    },
-    "Supports work profile enterprise space for professional use": {
-        "message": "Soporta espacio empresarial de perfil de trabajo para uso profesional"
-    },
-    "Technical Advantages": {
-        "message": "Ventajas técnicas"
-    },
-    "Telegram": {
-        "message": "Telegram",
-        "description": "The telegram label"
-    },
-    "Telegram Support": {
-        "message": "サポート en Telegram"
-    },
-    "Text input mimics human typing patterns with character-by-character simulation": {
-        "message": "La entrada de texto imita patrones de escritura humana con simulación carácter por carácter"
-    },
-    "The length and width are relatively big, but the height is low(2u size)": {
-        "message": "La longitud y el ancho son relativamente grandes, pero la altura es baja (tamaño 2u)",
-        "description": "The description of PhoneFarm Box"
-    },
-    "The length and width are relatively small, but the height is high": {
-        "message": "La longitud y el ancho son relativamente pequeños, pero la altura es alta",
-        "description": "The description of PhoneFarm Box"
-    },
-    "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-        "message": "マザーボードマシンは20個のSamsungスマートフォンマザーボードで構成されています。電気に接続すると自動的に電源が入り、統一された電源、統一されたマルチファン冷却システム、統一されたUSB接続を共有します。OTG有線ネットワーク接続もサポートしています。",
-        "description": "The description of PhoneFarm Box"
-    },
-    "TikMatrix": {
-        "message": "TikMatrix"
-    },
-    "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
-        "message": "TikMatrixは、同様の製品と比較して少なくとも30%高いエンゲージメントを提供し、完全なアカウント安全性を確保する高度な実機技術を備えています。",
-        "description": "The description of TikMatrix competitive advantage"
-    },
-    "TikMatrix is a TikTok group control operation tool": {
-        "message": "TikMatrix es una herramienta de control grupal de TikTok"
-    },
-    "TikMatrix is a professional marketing software designed for TikTok phone farms": {
-        "message": "TikMatrix es un software de marketing profesional diseñado para granjas de teléfonos de TikTok"
-    },
-    "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
-        "message": "TikMatrixはTikTok手機農場向けに設計されたプロフェッショナルなマーケティングソフトウェアです。複数のアカウントを管理し、投稿を自動化し、TikTokマーケティングを簡単にスケールアップできます。",
-        "description": "The description of TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease."
-    },
-    "TikMatrix supports 8 TikTok accounts on each phone.": {
-        "message": "TikMatrixは各スマートフォンで8つのTikTokアカウントをサポートします。"
-    },
-    "TikMatrix supports Android phones running Android 5.0 and above.": {
-        "message": "TikMatrix admite teléfonos Android con Android 5.0 y versiones superiores."
-    },
-    "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-        "message": "TikMatrixはWindows 10以降、およびmacOS 10.15以降をサポートしています。Macユーザーの場合、インストール後、アプリを実行するためにターミナルで次のコマンドを実行する必要があります：xattr -cr /Applications/TikMatrix.app",
-        "description": "コンピュータサポート回答"
-    },
-    "TikMatrix supports up to 200+ devices.": {
-        "message": "TikMatrix admite hasta más de 200 dispositivos."
-    },
-    "Translate subtitles": {
-        "message": "Traducir subtítulos",
-        "description": "The description of Translate subtitles"
-    },
-    "Trial": {
-        "message": "Prueba"
-    },
-    "Tutorial": {
-        "message": "Tutorial"
-    },
-    "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-        "message": "Tarjeta SIM nativaEE.UU. sin activar, utilizada para que la aplicaciónTikTok para Android detecte la ubicaciónla tarjeta SIM",
-        "description": "The description of PhoneFarm Box"
-    },
-    "Unlimited devices": {
-        "message": "デバイス ilimitados"
-    },
-    "Unlimited devices, Customer support": {
-        "message": "デバイス ilimitados, サポート al cliente"
-    },
-    "Unlimited process tasks": {
-        "message": "Tareasproceso ilimitadas",
-        "description": "The description of Unlimited process tasks"
-    },
-    "User engagement boost": {
-        "message": "ユーザーエンゲージメントブースト"
-    },
-    "User interface": {
-        "message": "Interfazusuario"
-    },
-    "User scraping": {
-        "message": "ユーザースクレイピング"
-    },
-    "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
-        "message": "Video Magic es un software profesional de generación de videos diseñado para operadores. Puede generar videos únicos para ti, mejorando enormemente la eficiencia operativa",
-        "description": "The description of Video Magic"
-    },
-    "Video Magic is a tool that can generate unique videos": {
-        "message": "Video Magic es una herramienta que puede generar videos únicos",
-        "description": "The description of Video Magic"
-    },
-    "Video collection": {
-        "message": "Recopilaciónvideos",
-        "description": "The description of Video collection"
-    },
-    "Video download": {
-        "message": "Descargavideos",
-        "description": "The description of Video download"
-    },
-    "Video posting, Account nurturing": {
-        "message": "動画投稿、アカウント育成"
-    },
-    "Video unique": {
-        "message": "Video único",
-        "description": "The description of Video unique"
-    },
-    "VideoMagic - Batch Generating Unique Videos": {
-        "message": "VideoMagic - ユニーク動画の一括生成",
-        "description": "The description of Video Magic"
-    },
-    "VideoMagic is a Software for Batch Generating Unique Videos": {
-        "message": "VideoMagic es un software para generación masiva de videos únicos",
-        "description": "The description of Video Magic"
-    },
-    "View TikMatrix Tutorial": {
-        "message": "Ver tutorialTikMatrix"
-    },
-    "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
-        "message": "キーワード検索、動画視聴、フォロー、いいね、コメント、お気に入りでアカウントをウォームアップ"
-    },
-    "What computer can I use?": {
-        "message": "どのコンピュータを使用できますか？",
-        "description": "コンピュータサポート问题"
-    },
-    "What devices can I use?": {
-        "message": "どのデバイスが使用できますか？"
-    },
-    "What is TikMatrix?": {
-        "message": "TikMatrixとは何ですか？"
-    },
-    "What is the difference between IgMatrix and TikMatrix?": {
-        "message": "IgMatrixとTikMatrixの違いは何ですか？"
-    },
-    "Which scripts from TikMatrix are available in IgMatrix?": {
-        "message": "TikMatrixのどのスクリプトがIgMatrixで利用可能ですか？"
-    },
-    "Why Choose IgMatrix?": {
-        "message": "なぜIgMatrixを選ぶのか？"
-    },
-    "Why TikMatrix?": {
-        "message": "なぜTikMatrixを選ぶのか？"
-    },
-    "Work Profile Support": {
-        "message": "Soporte de perfil de trabajo"
-    },
-    "Working Hours": {
-        "message": "Horariotrabajo",
-        "description": "The working hours label"
-    },
-    "Yearly": {
-        "message": "Anual"
-    },
-    "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
-        "message": "はい！IgMatrixのセットアップチュートリアルはTikMatrixと同じです。インストール、デバイス接続、基本設定についてはTikMatrixドキュメントに従うことができます。自動化スクリプトのみがプラットフォームに基づいて異なります。"
-    },
-    "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
-        "message": "Sí, IgMatrix y TikMatrix requieren licencias separadas ya que son productos diferentes optimizados para diferentes plataformas de redes sociales. Cada licencia está vinculada a un software específico y no se puede usar indistintamente."
-    },
-    "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
-        "message": "Puedes instalar tanto IgMatrix como TikMatrix en la misma computadora, pero no pueden ejecutarse simultáneamente debido a conflictos de tiempo de ejecución. Solo puedes ejecutar un software a la vez: IgMatrix o TikMatrix."
-    },
-    "advertising.back.home": {
-        "message": "Volver al inicio"
-    },
-    "advertising.buy.accounts.description": {
-        "message": "Proveedores confiables アカウントsredes sociales para tus necesidadesmarketing"
-    },
-    "advertising.buy.accounts.leadsmm.description": {
-        "message": "高品質なソーシャルメディアアカウントと迅速な配信を提供するプロフェッショナルなSMMパネル"
-    },
-    "advertising.buy.accounts.leadsmm.title": {
-        "message": "LeadSMM - Panel SMM Premium"
-    },
-    "advertising.buy.accounts.title": {
-        "message": "ソーシャルメディアアカウントを購入"
-    },
-    "advertising.buy.hardware.description": {
-        "message": "Hardware especializado para granjasteléfonos y configuraciones a gran escala"
-    },
-    "advertising.buy.hardware.title": {
-        "message": "Hardware para granjateléfonos"
-    },
-    "advertising.category.accounts": {
-        "message": "アカウントs"
-    },
-    "advertising.category.analytics": {
-        "message": "Analíticas"
-    },
-    "advertising.category.hardware": {
-        "message": "Hardware"
-    },
-    "advertising.category.proxy": {
-        "message": "Proxy"
-    },
-    "advertising.category.verification": {
-        "message": "Verificación"
-    },
-    "advertising.category.vps": {
-        "message": "VPS"
-    },
-    "advertising.disclaimer.content": {
-        "message": "Estos son serviciosterceros. Realiza tu propia investigación antesrealizar cualquier compra."
-    },
-    "advertising.disclaimer.title": {
-        "message": "Aviso legal"
-    },
-    "advertising.page.subtitle": {
-        "message": "Servicios y herramientas recomendadas para mejorar tu experiencia con TikMatrix"
-    },
-    "advertising.page.title": {
-        "message": "Servicios recomendados"
-    },
-    "advertising.proxy.proxycheap.description": {
-        "message": "Proxies asequibles y confiables para la automatizaciónredes sociales"
-    },
-    "advertising.proxy.proxycheap.title": {
-        "message": "ProxyCheap - Proxies económicos"
-    },
-    "advertising.proxy.thordata.description": {
-        "message": "Proxies residenciales premium con alta tasa de éxito"
-    },
-    "advertising.proxy.thordata.title": {
-        "message": "ThorData - Proxies residenciales"
-    },
-    "advertising.tiktok.user.finder.description": {
-        "message": "TikTokユーザーを検索・分析するための高度なツール"
-    },
-    "advertising.tiktok.user.finder.title": {
-        "message": "TikTokユーザーファインダー"
-    },
-    "advertising.visit.button": {
-        "message": "Visitar sitio web"
-    },
-    "advertising.vps.lisahost.description": {
-        "message": "Servidores VPS confiables con soporte excepcional"
-    },
-    "advertising.vps.lisahost.title": {
-        "message": "LisaHost - Alojamiento VPS"
-    },
-    "advertising.vps.uuuvps.description": {
-        "message": "Soluciones VPS asequibles para todas tus necesidades"
-    },
-    "advertising.vps.uuuvps.title": {
-        "message": "UUUVPS - VPS económico"
-    },
-    "advertising.whatsapp.checker.description": {
-        "message": "WhatsApp番号を一括で確認および検証"
-    },
-    "advertising.whatsapp.checker.title": {
-        "message": "VerificadorWhatsApp"
-    },
-    "download.description": {
-        "message": "Descarga TikMatrix para Windows, Mac o Linux y comienza a automatizar tu marketingTikTok",
-        "description": "ダウンロード页面の説明"
-    },
-    "download.igmatrix.description": {
-        "message": "Descarga IgMatrix para Windows, Mac o Linux y comienza a automatizar tu marketingInstagram",
-        "description": "IgMatrixダウンロード页面の説明"
-    },
-    "download.igmatrix.linux.coming_soon": {
-        "message": "Próximamente",
-        "description": "IgMatrix Linuxまもなく提供のヒント"
-    },
-    "download.igmatrix.linux.description": {
-        "message": "La versiónLinuxIgMatrix está actualmente en desarrollo",
-        "description": "IgMatrix Linux开发中説明"
-    },
-    "download.igmatrix.linux.development": {
-        "message": "En desarrollo",
-        "description": "IgMatrix Linux開発状況"
-    },
-    "download.igmatrix.linux.title": {
-        "message": "IgMatrix para Linux",
-        "description": "IgMatrix Linux平台タイトル"
-    },
-    "download.igmatrix.mac.button": {
-        "message": "Mac用ダウンロード",
-        "description": "IgMatrix Macダウンロードボタンテキスト"
-    },
-    "download.igmatrix.mac.description": {
-        "message": "macOS 10.15（Catalina）以降に対応",
-        "description": "IgMatrix Macプラットフォーム説明"
-    },
-    "download.igmatrix.mac.install_tip": {
-        "message": "インストール後、次を実行してください： xattr -cr /Applications/IgMatrix.app",
-        "description": "IgMatrix Macインストール後に実行するコマンドの案内"
-    },
-    "download.igmatrix.mac.title": {
-        "message": "IgMatrix（Mac）",
-        "description": "IgMatrix Macプラットフォームタイトル"
-    },
-    "download.igmatrix.requirements.internet": {
-        "message": "安定したインターネット接続",
-        "description": "IgMatrix ネットワーク接続要件"
-    },
-    "download.igmatrix.requirements.memory": {
-        "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）",
-        "description": "IgMatrix内存必要"
-    },
-    "download.igmatrix.requirements.os": {
-        "message": "Windows 10/1164 bits o macOS 10.15+",
-        "description": "IgMatrix操作系统必要"
-    },
-    "download.igmatrix.requirements.processor": {
-        "message": "Procesador Intel Core i5 o equivalente",
-        "description": "IgMatrix处理器必要"
-    },
-    "download.igmatrix.requirements.storage": {
-        "message": "500 MBespacio disponible en disco",
-        "description": "IgMatrix存储空间必要"
-    },
-    "download.igmatrix.requirements.title": {
-        "message": "Requisitos del sistema",
-        "description": "IgMatrix系统必要タイトル"
-    },
-    "download.igmatrix.subtitle": {
-        "message": "WindowsおよびMac向けのInstagram自動化プロ用ツール",
-        "description": "IgMatrixダウンロードページの副タイトル"
-    },
-    "download.igmatrix.title": {
-        "message": "IgMatrixをダウンロード",
-        "description": "IgMatrixダウンロードページのタイトル"
-    },
-    "download.igmatrix.windows.button": {
-        "message": "Windows用ダウンロード",
-        "description": "IgMatrix Windowsダウンロードボタンテキスト"
-    },
-    "download.igmatrix.windows.description": {
-        "message": "Windows 10 および 11（64ビット）に対応",
-        "description": "IgMatrix Windowsプラットフォーム説明"
-    },
-    "download.igmatrix.windows.title": {
-        "message": "IgMatrix（Windows）",
-        "description": "IgMatrix Windowsプラットフォームタイトル"
-    },
-    "download.linux.coming_soon": {
-        "message": "Próximamente",
-        "description": "Linuxまもなく提供のヒント"
-    },
-    "download.linux.description": {
-        "message": "La versiónLinuxTikMatrix está actualmente en desarrollo",
-        "description": "Linux开发中説明"
-    },
-    "download.linux.development": {
-        "message": "En desarrollo",
-        "description": "Linux開発状況"
-    },
-    "download.linux.title": {
-        "message": "TikMatrix（Linux）",
-        "description": "Linuxプラットフォームタイトル"
-    },
-    "download.mac.button": {
-        "message": "Mac用ダウンロード",
-        "description": "Macダウンロードボタンテキスト"
-    },
-    "download.mac.description": {
-        "message": "macOS 10.15（Catalina）以降に対応",
-        "description": "Macプラットフォーム説明"
-    },
-    "download.mac.install_tip": {
-        "message": "インストール後、ターミナルで次のコマンドを実行してください：",
-        "description": "Macインストール後に実行するコマンドの案内"
-    },
-    "download.mac.title": {
-        "message": "TikMatrix（Mac）",
-        "description": "Macプラットフォームタイトル"
-    },
-    "download.requirements.internet": {
-        "message": "安定したインターネット接続",
-        "description": "ネットワーク接続要件"
-    },
-    "download.requirements.memory": {
-        "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）",
-        "description": "内存必要"
-    },
-    "download.requirements.os": {
-        "message": "Windows 10/1164 bits o macOS 10.15+",
-        "description": "操作系统必要"
-    },
-    "download.requirements.processor": {
-        "message": "Procesador Intel Core i5 o equivalente",
-        "description": "处理器必要"
-    },
-    "download.requirements.storage": {
-        "message": "500 MBespacio disponible en disco",
-        "description": "存储空间必要"
-    },
-    "download.requirements.title": {
-        "message": "Requisitos del sistema",
-        "description": "系统必要タイトル"
-    },
-    "download.subtitle": {
-        "message": "WindowsおよびMac向けのプロ向けTikTok自動化ツール",
-        "description": "ダウンロードページの副タイトル"
-    },
-    "download.title": {
-        "message": "TikMatrixをダウンロード",
-        "description": "ダウンロードページのタイトル"
-    },
-    "download.videomagic.description": {
-        "message": "Windows、Mac、Linux向けのVideoMagicをダウンロードして、独自の動画作成を始めましょう。",
-        "description": "VideoMagicダウンロードページの説明"
-    },
-    "download.videomagic.subtitle": {
-        "message": "オペレーター向けのプロ用ビデオ生成ソフトウェア",
-        "description": "VideoMagicダウンロードページの副タイトル"
-    },
-    "download.videomagic.title": {
-        "message": "VideoMagicをダウンロード",
-        "description": "VideoMagicダウンロードページのタイトル"
-    },
-    "download.windows.button": {
-        "message": "Windows用ダウンロード",
-        "description": "Windowsダウンロードボタンテキスト"
-    },
-    "download.windows.description": {
-        "message": "Windows 10 および 11（64ビット）に対応",
-        "description": "Windowsプラットフォーム説明"
-    },
-    "download.windows.title": {
-        "message": "TikMatrix（Windows）",
-        "description": "Windowsプラットフォームタイトル"
-    },
-    "homepage.header.cta.download": {
-        "message": "今すぐダウンロード"
-    },
-    "homepage.header.cta.features": {
-        "message": "機能を見る"
-    },
-    "homepage.header.cta.primary": {
-        "message": "はじめる"
-    },
-    "homepage.header.cta.secondary": {
-        "message": "詳細を見る"
-    },
-    "homepage.header.defaultSubtitle": {
-        "message": "複数のアカウントを管理し、投稿を自動化し、農場を簡単にスケールアップ"
-    },
-    "homepage.header.defaultTitle": {
-        "message": "ソーシャルメディア向けのプロ用マーケティングツール"
-    },
-    "homepage.header.subtitle": {
-        "message": "複数のTikTokアカウントを管理し、投稿を自動化し、マーケティングを簡単にスケールアップ"
-    },
-    "homepage.header.title": {
-        "message": "TikTok向けのプロ用マーケティングツール"
-    },
-    "homepage.vs.card.analytics.desc": {
-        "message": "詳細な分析でアカウントのパフォーマンスを追跡・分析"
-    },
-    "homepage.vs.card.analytics.title": {
-        "message": "強力な分析"
-    },
-    "homepage.vs.card.automation.desc": {
-        "message": "強力なスクリプト機能でソーシャルメディアの操作を自動化"
-    },
-    "homepage.vs.card.automation.title": {
-        "message": "強力な自動化"
-    },
-    "homepage.vs.card.cta": {
-        "message": "詳細を見る"
-    },
-    "homepage.vs.card.lowRisk.desc": {
-        "message": "実機技術により極めて低いアカウント停止率"
-    },
-    "homepage.vs.card.lowRisk.title": {
-        "message": "低リスク"
-    },
-    "homepage.vs.card.nodev.desc": {
-        "message": "root権限不要、デバイス環境のセキュリティを確保"
-    },
-    "homepage.vs.card.nodev.title": {
-        "message": "開発不要"
-    },
-    "homepage.vs.card.plug.desc": {
-        "message": "接続してすぐ使える、複雑な設定は不要"
-    },
-    "homepage.vs.card.plug.title": {
-        "message": "プラグアンドプレイ"
-    },
-    "homepage.vs.card.realDevices.desc": {
-        "message": "本物のAndroidデバイスを使用して本物の動作と最高のセキュリティを実現"
-    },
-    "homepage.vs.card.realDevices.title": {
-        "message": "実機デバイス"
-    },
-    "homepage.vs.cta.button": {
-        "message": "機能を比較"
-    },
-    "homepage.vs.cta.text": {
-        "message": "他社製品との比較をもっと見たいですか？"
-    },
-    "homepage.vs.subtitle": {
-        "message": "当社が他のソリューションとどう違うかをご覧ください"
-    },
-    "homepage.vs.title": {
-        "message": "なぜ当社を選ぶのか？"
-    },
-    "navbar.download": {
-        "message": "ダウンロード",
-        "description": "ナビゲーションバーのダウンロードリンクテキスト"
-    },
-    "pricing.all_features": {
-        "message": "すべての機能",
-        "description": "含むすべての機能テキスト"
-    },
-    "pricing.badge.popular": {
-        "message": "Popular"
-    },
-    "pricing.business.concurrent_tasks": {
-        "message": "無制限の同時タスク",
-        "description": "ビジネスプランの同時タスク数"
-    },
-    "pricing.business.description": {
-        "message": "チームおよび大規模企業向け",
-        "description": "ビジネスプランの説明"
-    },
-    "pricing.business.manage_phones": {
-        "message": "無制限のデバイス管理",
-        "description": "ビジネスプランの機能"
-    },
-    "pricing.business.name": {
-        "message": "ビジネス",
-        "description": "ビジネスプラン名"
-    },
-    "pricing.compare.automation": {
-        "message": "高度な自動化"
-    },
-    "pricing.compare.devices": {
-        "message": "対応デバイス"
-    },
-    "pricing.compare.hide": {
-        "message": "比較を非表示"
-    },
-    "pricing.compare.show": {
-        "message": "比較を表示"
-    },
-    "pricing.cta.free": {
-        "message": "無料で始める"
-    },
-    "pricing.cta.pay": {
-        "message": "申し込む"
-    },
-    "pricing.dedicated_support": {
-        "message": "専用サポート",
-        "description": "専用サポートテキスト"
-    },
-    "pricing.free.all_free_features": {
-        "message": "すべての無料機能",
-        "description": "無料プランの基本機能の説明"
-    },
-    "pricing.free.automation_disabled": {
-        "message": "自動化が無効",
-        "description": "免费计划自動化不できます用文本"
-    },
-    "pricing.free.community_support": {
-        "message": "サポート comunitario",
-        "description": "免费计划サポート方式"
-    },
-    "pricing.free.description": {
-        "message": "Perfecto para empezar",
-        "description": "免费计划説明"
-    },
-    "pricing.free.name": {
-        "message": "Gratuito",
-        "description": "無料プラン名"
-    },
-    "pricing.free_label": {
-        "message": "Gratis",
-        "description": "Free label"
-    },
-    "pricing.get_started": {
-        "message": "Comenzar",
-        "description": "スタート使用按钮文本"
-    },
-    "pricing.local_api.description": {
-        "message": "TikMatrixを独自のシステムと統合する必要がありますか？ローカルAPIでプログラム的にタスクを管理し、ワークフローを自動化できます。"
-    },
-    "pricing.local_api.link_text": {
-        "message": "Ver documentaciónla API"
-    },
-    "pricing.local_api.support": {
-        "message": "Disponible en todos los planespago"
-    },
-    "pricing.local_api.title": {
-        "message": "API local"
-    },
-    "pricing.per_month": {
-        "message": "por mes"
-    },
-    "pricing.per_month_pc": {
-        "message": "por mes por PC",
-        "description": "每月每台コンピュータ文本"
-    },
-    "pricing.per_year": {
-        "message": "por año"
-    },
-    "pricing.pro.concurrent_tasks": {
-        "message": "50 tareas concurrentes",
-        "description": "专业版し发タスク数"
-    },
-    "pricing.pro.description": {
-        "message": "Para profesionales y equipos pequeños",
-        "description": "专业版计划説明"
-    },
-    "pricing.pro.manage_phones": {
-        "message": "Gestionar hasta 50 dispositivos",
-        "description": "专业版计划機能"
-    },
-    "pricing.pro.name": {
-        "message": "Profesional",
-        "description": "プロプラン名"
-    },
-    "pricing.starter.concurrent_tasks": {
-        "message": "10 tareas concurrentes",
-        "description": "入门版し发タスク数"
-    },
-    "pricing.starter.description": {
-        "message": "Perfecto para empezar",
-        "description": "入门版计划説明"
-    },
-    "pricing.starter.manage_phones": {
-        "message": "Gestionar hasta 10 dispositivos",
-        "description": "入门版计划機能"
-    },
-    "pricing.starter.name": {
-        "message": "Inicial",
-        "description": "スタータープラン名"
-    },
-    "pricing.subtitle": {
-        "message": "Choose the plan that fits your needs",
-        "description": "定价一部副タイトル"
-    },
-    "pricing.team.concurrent_tasks": {
-        "message": "100 tareas concurrentes",
-        "description": "团队版し发タスク数"
-    },
-    "pricing.team.description": {
-        "message": "Para equipos en crecimiento",
-        "description": "团队版计划説明"
-    },
-    "pricing.team.manage_phones": {
-        "message": "Gestionar hasta 100 dispositivos",
-        "description": "团队版计划機能"
-    },
-    "pricing.team.name": {
-        "message": "Equipo",
-        "description": "チームプラン名"
-    },
-    "pricing.ticket_support": {
-        "message": "Soporte por tickets",
-        "description": "专属工单サポート文本"
-    },
-    "pricing.title": {
-        "message": "Pricing Plans",
-        "description": "定价一部タイトル"
-    },
-    "pricing.toggle.monthly": {
-        "message": "Monthly"
-    },
-    "pricing.toggle.yearly": {
-        "message": "Yearly (Save 30%)"
-    },
-    "pricing.unlimited_devices": {
-        "message": "デバイス ilimitados",
-        "description": "无限デバイス接続文本"
-    },
-    "pricing.unlimited_devices_short": {
-        "message": "Ilimitado"
-    },
-    "tech.diagram.devices": {
-        "message": "Real Android Devices"
-    },
-    "tech.diagram.engine": {
-        "message": "TikMatrix Engine"
-    },
-    "tech.diagram.fingerprintIsolation": {
-        "message": "Device Fingerprint Isolation"
-    },
-    "tech.diagram.localExecution": {
-        "message": "Local Execution"
-    },
-    "tech.diagram.noApi": {
-        "message": "No API Calls"
-    },
-    "tech.diagram.noMemoryInjection": {
-        "message": "No Memory Injection"
-    },
-    "tech.diagram.realTouch": {
-        "message": "Real Touch Injection"
-    },
-    "tech.diagram.tiktok": {
-        "message": "TikTok App"
-    },
-    "tech.diagram.user": {
-        "message": "User"
-    },
-    "tech.diagram.zeroCloud": {
-        "message": "Zero Cloud Dependency"
-    },
-    "tech.point.fingerprint.b1": {
-        "message": "Unique IMEI / Android ID per device"
-    },
-    "tech.point.fingerprint.b2": {
-        "message": "Isolated IP allocation via proxy"
-    },
-    "tech.point.fingerprint.b3": {
-        "message": "No shared cookies or tokens"
-    },
-    "tech.point.fingerprint.desc": {
-        "message": "Each device maintains unique hardware and software fingerprints with no cross-contamination."
-    },
-    "tech.point.fingerprint.title": {
-        "message": "Device Fingerprint Isolation"
-    },
-    "tech.point.humanBehavior.b1": {
-        "message": "Randomized time intervals"
-    },
-    "tech.point.humanBehavior.b2": {
-        "message": "Natural scrolling velocity curves"
-    },
-    "tech.point.humanBehavior.b3": {
-        "message": "Session duration modeling"
-    },
-    "tech.point.humanBehavior.desc": {
-        "message": "Behavior patterns derived from real user data, avoiding detectable automation features."
-    },
-    "tech.point.humanBehavior.title": {
-        "message": "Human Behavior Model"
-    },
-    "tech.point.localExec.b1": {
-        "message": "No remote execution dependency"
-    },
-    "tech.point.localExec.b2": {
-        "message": "Complete data privacy"
-    },
-    "tech.point.localExec.b3": {
-        "message": "Optional offline deployment"
-    },
-    "tech.point.localExec.desc": {
-        "message": "スクリプトはADB経由でローカルマシンで実行 - クラウドリレーなし、サードパーティサーバーなし"
-    },
-    "tech.point.localExec.title": {
-        "message": "Local Execution Sandbox"
-    },
-    "tech.point.passiveCapture.b1": {
-        "message": "Zero code injection into TikTok"
-    },
-    "tech.point.passiveCapture.b2": {
-        "message": "Read-only screen capture"
-    },
-    "tech.point.passiveCapture.b3": {
-        "message": "No modification of app binaries"
-    },
-    "tech.point.passiveCapture.desc": {
-        "message": "Extract screen data via OCR and computer vision - no in-app hooks or memory injection."
-    },
-    "tech.point.passiveCapture.title": {
-        "message": "Passive Capture Mode"
-    },
-    "tech.point.realTouch.b1": {
-        "message": "Hardware-level touch signal generation"
-    },
-    "tech.point.realTouch.b2": {
-        "message": "Pressure and velocity randomization"
-    },
-    "tech.point.realTouch.b3": {
-        "message": "Arc trajectory simulation"
-    },
-    "tech.point.realTouch.desc": {
-        "message": "Inject real touch events at the Android input layer, indistinguishable from human interaction behavior."
-    },
-    "tech.point.realTouch.title": {
-        "message": "Real Touch Injection"
-    },
-    "tech.point.zeroApi.b1": {
-        "message": "No API token exposure"
-    },
-    "tech.point.zeroApi.b2": {
-        "message": "No request signature forgery"
-    },
-    "tech.point.zeroApi.b3": {
-        "message": "Not affected by API rate limits"
-    },
-    "tech.point.zeroApi.desc": {
-        "message": "No TikTok API calls, no network request interception. All operations completed at the UI layer."
-    },
-    "tech.point.zeroApi.title": {
-        "message": "Zero API Automation"
-    },
-    "tech.points.heading": {
-        "message": "Core Technology Implementation"
-    },
-    "tech.security.heading": {
-        "message": "高度なセキュリティ機能"
-    },
-    "tech.security.humanModel": {
-        "message": "Modelo de comportamiento humano"
-    },
-    "tech.security.legendA": {
-        "message": "Riesgo alto"
-    },
-    "tech.security.legendB": {
-        "message": "Riesgo medio"
-    },
-    "tech.security.legendC": {
-        "message": "Riesgo bajo"
-    },
-    "tech.security.noHook": {
-        "message": "Sin hooks del sistema"
-    },
-    "tech.security.noiseCurve": {
-        "message": "Curvaruido aleatorio"
-    },
-    "tech.security.proxyIsolation": {
-        "message": "Aislamientoproxy"
-    },
-    "tech.security.realDevice": {
-        "message": "Entorno デバイス real"
-    },
-    "tech.security.zeroApi": {
-        "message": "Cero llamadas a API"
-    },
-    "tech.subtitle": {
-        "message": "Anti-detection Architecture Built on Real Device Automation"
-    },
-    "tech.title": {
-        "message": "Technology Advantages"
-    },
-    "testimonials.subtitle": {
-        "message": "Real feedback from TikMatrix users",
-        "description": "用户评价一部副タイトル"
-    },
-    "testimonials.title": {
-        "message": "What Our Users Say",
-        "description": "用户评价一部タイトル"
-    },
-    "testimonials.usage_label": {
-        "message": "Uso:",
-        "description": "使用期間ラベル"
-    },
-    "testimonials.user1.text": {
-        "message": "TikMatrix ha revolucionado nuestra operación de granja de teléfonos. La capacidad de gestionar 100+ dispositivos desde una sola PC es increíble.",
-        "description": "最初のユーザーレビューテキスト"
-    },
-    "testimonials.user1.usage": {
-        "message": "Gestión de 120 dispositivos",
-        "description": "最初のユーザーの使用期間"
-    },
-    "testimonials.user2.text": {
-        "message": "El sistema de automatización es potente y fácil de usar. Nuestro engagement ha aumentado un 40% desde que comenzamos a usar TikMatrix.",
-        "description": "2番目のユーザーレビューテキスト"
-    },
-    "testimonials.user2.usage": {
-        "message": "50のTikTokアカウント",
-        "description": "2番目のユーザーの使用期間"
-    },
-    "testimonials.user3.text": {
-        "message": "La mejor inversión para nuestro negocio de marketing en TikTok. El soporte técnico es excepcional y el software es muy estable.",
-        "description": "3番目のユーザーレビューテキスト"
-    },
-    "testimonials.user3.usage": {
-        "message": "Operación profesionalmarketing",
-        "description": "3番目のユーザーの使用期間"
-    },
-    "testimonials.user4.text": {
-        "message": "6か月の使用でアカウント停止率ゼロ。実機技術は本当に機能します！",
-        "description": "4番目のユーザーレビューテキスト"
-    },
-    "testimonials.user4.usage": {
-        "message": "80アカウント管理",
-        "description": "4番目のユーザーの使用期間"
-    },
-    "theme.AnnouncementBar.closeButtonAriaLabel": {
-        "message": "Cerrar",
-        "description": "The ARIA label for close button of announcement bar"
-    },
-    "theme.BackToTopButton.buttonAriaLabel": {
-        "message": "Volver arriba",
-        "description": "The ARIA label for the back to top button"
-    },
-    "theme.CodeBlock.copied": {
-        "message": "Copiado",
-        "description": "The copied button label on code blocks"
-    },
-    "theme.CodeBlock.copy": {
-        "message": "Copiar",
-        "description": "The copy button label on code blocks"
-    },
-    "theme.CodeBlock.copyButtonAriaLabel": {
-        "message": "Copiar código al portapapeles",
-        "description": "The ARIA label for copy code blocks button"
-    },
-    "theme.CodeBlock.wordWrapToggle": {
-        "message": "Alternar ajustelínea",
-        "description": "The title attribute for toggle word wrapping button of code block lines"
-    },
-    "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-        "message": "Colapsar categoríala barra lateral '{label}'",
-        "description": "The ARIA label to collapse the sidebar category"
-    },
-    "theme.DocSidebarItem.expandCategoryAriaLabel": {
-        "message": "Expandir categoríala barra lateral '{label}'",
-        "description": "The ARIA label to expand the sidebar category"
-    },
-    "theme.ErrorPageContent.title": {
-        "message": "Esta página se ha caído.",
-        "description": "The title of the fallback page when the page crashed"
-    },
-    "theme.ErrorPageContent.tryAgain": {
-        "message": "Intentarnuevo",
-        "description": "The label of the button to try again rendering when the React error boundary captures an error"
-    },
-    "theme.NavBar.navAriaLabel": {
-        "message": "Principal",
-        "description": "The ARIA label for the main navigation"
-    },
-    "theme.NotFound.p1": {
-        "message": "No pudimos encontrar lo que buscabas.",
-        "description": "The first paragraph of the 404 page"
-    },
-    "theme.NotFound.p2": {
-        "message": "Por favor, contacta al propietario del sitio que te vinculó a la URL original y hazle saber que el enlace está roto.",
-        "description": "The 2nd paragraph of the 404 page"
-    },
-    "theme.NotFound.title": {
-        "message": "Página no encontrada",
-        "description": "The title of the 404 page"
-    },
-    "theme.TOCCollapsible.toggleButtonLabel": {
-        "message": "En esta página",
-        "description": "The label used by the button on the collapsible TOC component"
-    },
-    "theme.admonition.caution": {
-        "message": "precaución",
-        "description": "The default label used for the Caution admonition (:::caution)"
-    },
-    "theme.admonition.danger": {
-        "message": "peligro",
-        "description": "The default label used for the Danger admonition (:::danger)"
-    },
-    "theme.admonition.info": {
-        "message": "información",
-        "description": "The default label used for the Info admonition (:::info)"
-    },
-    "theme.admonition.note": {
-        "message": "nota",
-        "description": "The default label used for the Note admonition (:::note)"
-    },
-    "theme.admonition.tip": {
-        "message": "consejo",
-        "description": "The default label used for the Tip admonition (:::tip)"
-    },
-    "theme.admonition.warning": {
-        "message": "advertencia",
-        "description": "The default label used for the Warning admonition (:::warning)"
-    },
-    "theme.blog.archive.description": {
-        "message": "Archivo",
-        "description": "The page & hero description of the blog archive page"
-    },
-    "theme.blog.archive.title": {
-        "message": "Archivo",
-        "description": "The page & hero title of the blog archive page"
-    },
-    "theme.blog.paginator.navAriaLabel": {
-        "message": "Navegación de la lista de publicaciones del blog",
-        "description": "The ARIA label for the blog pagination"
-    },
-    "theme.blog.paginator.newerEntries": {
-        "message": "Entradas más recientes",
-        "description": "The label used to navigate to the newer blog posts page (previous page)"
-    },
-    "theme.blog.paginator.olderEntries": {
-        "message": "Entradas más antiguas",
-        "description": "The label used to navigate to the older blog posts page (next page)"
-    },
-    "theme.blog.post.paginator.navAriaLabel": {
-        "message": "Navegación de publicaciones del blog",
-        "description": "The ARIA label for the blog posts pagination"
-    },
-    "theme.blog.post.paginator.newerPost": {
-        "message": "新しい投稿",
-        "description": "The blog post button label to navigate to the newer/previous post"
-    },
-    "theme.blog.post.paginator.olderPost": {
-        "message": "古い投稿",
-        "description": "The blog post button label to navigate to the older/next post"
-    },
-    "theme.blog.post.plurals": {
-        "message": "{count} posts",
-        "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-    },
-    "theme.blog.post.readMore": {
-        "message": "Leer más",
-        "description": "The label used in blog post item excerpts to link to full blog posts"
-    },
-    "theme.blog.post.readMoreLabel": {
-        "message": "Leer más sobre {title}",
-        "description": "The ARIA label for the link to full blog posts from excerpts"
-    },
-    "theme.blog.post.readingTime.plurals": {
-        "message": "{readingTime} min read",
-        "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-    },
-    "theme.blog.sidebar.navAriaLabel": {
-        "message": "Navegación de publicaciones recientes del blog",
-        "description": "The ARIA label for recent posts in the blog sidebar"
-    },
-    "theme.blog.tagTitle": {
-        "message": "{nPosts} etiquetadas con \"{tagName}\"",
-        "description": "The title of the page for a blog tag"
-    },
-    "theme.colorToggle.ariaLabel": {
-        "message": "Cambiar entre modo oscuro y claro (actualmente modo {mode})",
-        "description": "The ARIA label for the navbar color mode toggle"
-    },
-    "theme.colorToggle.ariaLabel.mode.dark": {
-        "message": "oscuro",
-        "description": "The name for the dark color mode"
-    },
-    "theme.colorToggle.ariaLabel.mode.light": {
-        "message": "claro",
-        "description": "The name for the light color mode"
-    },
-    "theme.common.editThisPage": {
-        "message": "Editar esta página",
-        "description": "The link label to edit the current page"
-    },
-    "theme.common.headingLinkTitle": {
-        "message": "Enlace directo al encabezado",
-        "description": "Title for link to heading"
-    },
-    "theme.common.skipToMainContent": {
-        "message": "Saltar al contenido principal",
-        "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
-    },
-    "theme.docs.DocCard.categoryDescription.plurals": {
-        "message": "1 elemento|{count} elementos",
-        "description": "The default description for a category card in the generated index about how many items this category includes"
-    },
-    "theme.docs.breadcrumbs.home": {
-        "message": "Páginainicio",
-        "description": "The ARIA label for the home page in the breadcrumbs"
-    },
-    "theme.docs.breadcrumbs.navAriaLabel": {
-        "message": "Migaspan",
-        "description": "The ARIA label for the breadcrumbs"
-    },
-    "theme.docs.paginator.navAriaLabel": {
-        "message": "Navegaciónpáginasdocumentos",
-        "description": "The ARIA label for the docs pagination"
-    },
-    "theme.docs.paginator.next": {
-        "message": "Siguiente",
-        "description": "The label used to navigate to the next doc"
-    },
-    "theme.docs.paginator.previous": {
-        "message": "Anterior",
-        "description": "The label used to navigate to the previous doc"
-    },
-    "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-        "message": "Cerrar barra lateralnavegación",
-        "description": "The ARIA label for close button of mobile sidebar"
-    },
-    "theme.docs.sidebar.collapseButtonAriaLabel": {
-        "message": "Colapsar barra lateral",
-        "description": "The title attribute for collapse button of doc sidebar"
-    },
-    "theme.docs.sidebar.collapseButtonTitle": {
-        "message": "Colapsar barra lateral",
-        "description": "The title attribute for collapse button of doc sidebar"
-    },
-    "theme.docs.sidebar.expandButtonAriaLabel": {
-        "message": "Expandir barra lateral",
-        "description": "The ARIA label and title attribute for expand button of doc sidebar"
-    },
-    "theme.docs.sidebar.expandButtonTitle": {
-        "message": "Expandir barra lateral",
-        "description": "The ARIA label and title attribute for expand button of doc sidebar"
-    },
-    "theme.docs.sidebar.navAriaLabel": {
-        "message": "Barra lateraldocumentos",
-        "description": "The ARIA label for the sidebar navigation"
-    },
-    "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-        "message": "Alternar barra lateralnavegación",
-        "description": "The ARIA label for hamburger menu button of mobile navigation"
-    },
-    "theme.docs.tagDocListPageTitle": {
-        "message": "{nDocsTagged} con \"{tagName}\"",
-        "description": "The title of the page for a docs tag"
-    },
-    "theme.docs.tagDocListPageTitle.nDocsTagged": {
-        "message": "Un documento etiquetado|{count} documentos etiquetados",
-        "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-    },
-    "theme.docs.versionBadge.label": {
-        "message": "Versión: {versionLabel}"
-    },
-    "theme.docs.versions.latestVersionLinkLabel": {
-        "message": "Última versión",
-        "description": "The label used for the latest version suggestion link label"
-    },
-    "theme.docs.versions.latestVersionSuggestionLabel": {
-        "message": "Para documentación actualizada, consulta la {latestVersionLink} ({versionLabel}).",
-        "description": "The label used to tell the user to check the latest version"
-    },
-    "theme.docs.versions.unmaintainedVersionLabel": {
-        "message": "Esta es la documentación{siteTitle} {versionLabel}, que ya no se mantiene activamente.",
-        "description": "The label used to tell the user that he's browsing an unmaintained doc version"
-    },
-    "theme.docs.versions.unreleasedVersionLabel": {
-        "message": "Esta es la documentación no publicada{siteTitle} {versionLabel}.",
-        "description": "The label used to tell the user that he's browsing an unreleased doc version"
-    },
-    "theme.footer.link.label.View All Advertising": {
-        "message": "Ver Toda la Publicidad"
-    },
-    "theme.footer.link.label.View All Tools": {
-        "message": "Ver Todas las Herramientas"
-    },
-    "theme.lastUpdated.atDate": {
-        "message": " el {date}",
-        "description": "The words used to describe on which date a page has been last updated"
-    },
-    "theme.lastUpdated.byUser": {
-        "message": " por {user}",
-        "description": "The words used to describe by who the page has been last updated"
-    },
-    "theme.lastUpdated.lastUpdatedAtBy": {
-        "message": "Última actualización{atDate}{byUser}",
-        "description": "The sentence used to display when a page has been last updated, and by who"
-    },
-    "theme.navbar.item.label.Advertising": {
-        "message": "Publicidad"
-    },
-    "theme.navbar.item.label.Tools": {
-        "message": "Herramientas"
-    },
-    "theme.navbar.mobileLanguageDropdown.label": {
-        "message": "Idiomas",
-        "description": "The label for the mobile language switcher dropdown"
-    },
-    "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-        "message": "← Volver al menú principal",
-        "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-    },
-    "theme.navbar.mobileVersionsDropdown.label": {
-        "message": "Versiones",
-        "description": "The label for the navbar versions dropdown on mobile view"
-    },
-    "theme.tags.tagsListLabel": {
-        "message": "Etiquetas:",
-        "description": "The label alongside a tag list"
-    },
-    "theme.tags.tagsPageLink": {
-        "message": "Ver todas las etiquetas",
-        "description": "The label of the link targeting the tag list page"
-    },
-    "theme.tags.tagsPageTitle": {
-        "message": "Etiquetas",
-        "description": "The title of the tag list page"
-    },
-    "theme.unlistedContent.message": {
-        "message": "このページはリストに載っていません。検索エンジンにインデックスされず、直接リンクを持つユーザーのみがアクセスできます。",
-        "description": "The unlisted content banner message"
-    },
-    "theme.unlistedContent.title": {
-        "message": "Página no listada",
-        "description": "The unlisted content banner title"
-    },
-    "whitelabel.annualRequired": {
-        "message": "Se requiere licencia anual",
-        "description": "白标機能需要年付订阅"
-    },
-    "whitelabel.annualRequiredDesc": {
-        "message": "ホワイトラベル機能は年額ライセンスのみで利用可能です。",
-        "description": "ホワイトラベル機能は年額ライセンスが必要です"
-    },
-    "whitelabel.appName": {
-        "message": "アプリ名",
-        "description": "アプリ名称"
-    },
-    "whitelabel.contactSupport": {
-        "message": "サポートにお問い合わせください",
-        "description": "ホワイトラベルアンロックコードについてはカスタマーサービスにお問い合わせください"
-    },
-    "whitelabel.customization": {
-        "message": "ホワイトラベルのカスタマイズ",
-        "description": "ブランドカスタマイズ"
-    },
-    "whitelabel.description": {
-        "message": "自社ブランドでアプリをカスタマイズできます",
-        "description": "ホワイトラベル機能の説明"
-    },
-    "whitelabel.logo": {
-        "message": "ロゴ",
-        "description": "ロゴ"
-    },
-    "whitelabel.setup": {
-        "message": "セットアップ",
-        "description": "ホワイトラベル設定"
-    },
-    "whitelabel.supportEmail": {
-        "message": "サポートのメールアドレス",
-        "description": "サポートメールアドレス"
-    },
-    "whitelabel.telegramUrl": {
-        "message": "TelegramのURL",
-        "description": "Telegramリンク"
-    },
-    "whitelabel.title": {
-        "message": "Marca blanca",
-        "description": "白标機能タイトル"
-    },
-    "whitelabel.tutorialUrl": {
-        "message": "URL del tutorial",
-        "description": "チュートリアルリンク"
-    }
+  "24/7 Support": {
+    "message": "サポート 24/7"
+  },
+  "24h AI Assistant": {
+    "message": "24時間AIアシスタント"
+  },
+  "AI voiceover": {
+    "message": "AI音声ナレーション"
+  },
+  "AI-Generated Comments": {
+    "message": "AI生成コメント"
+  },
+  "API Protocol": {
+    "message": "APIプロトコル"
+  },
+  "Account Safe": {
+    "message": "セキュリティ アカウント"
+  },
+  "Account Setup": {
+    "message": "アカウント設定"
+  },
+  "Account management": {
+    "message": "アカウント管理"
+  },
+  "Account warmup": {
+    "message": "ウォームアップ アカウント"
+  },
+  "Additionally, our real device matrix program system can perfectly avoid account suspensions caused by TIK's risk control measures. Our account suspension rate is 0%.": {
+    "message": "さらに、当社の実機マトリックスプログラムシステムは、TIKのリスク管理措置によるアカウント停止を完全に回避できます。当社のアカウント停止率は0%です。"
+  },
+  "Advanced Technology for Superior Performance": {
+    "message": "卓越したパフォーマンスのための先進技術"
+  },
+  "Advanced safety mechanisms": {
+    "message": "高度な安全メカニズム"
+  },
+  "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
+    "message": "インストール後、IgMatrixを開いて利用可能なInstagram自動化スクリプトの完全なリストを表示してください。スクリプトの選択はTikMatrixと異なる場合があります。"
+  },
+  "All Features": {
+    "message": "すべての機能"
+  },
+  "All Free Features": {
+    "message": "すべての無料機能"
+  },
+  "All Monthly Features": {
+    "message": "すべての月額機能"
+  },
+  "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
+    "message": "IgMatrixソフトウェアで実際に利用可能な機能を常に確認してください。スクリプト機能はTikMatrixと異なる場合があります。ソフトウェアインターフェースには、Instagramで利用可能な自動化スクリプトが正確に表示されます。"
+  },
+  "Automate posting, following, commenting, and engagement activities on Instagram": {
+    "message": "Instagramでの投稿、フォロー、コメント、エンゲージメント活動を自動化"
+  },
+  "Automated Comment": {
+    "message": "自動コメント"
+  },
+  "Automated Follow": {
+    "message": "自動フォロー"
+  },
+  "Automated Message": {
+    "message": "自動メッセージ"
+  },
+  "Automated account nurturing": {
+    "message": "自動アカウント育成"
+  },
+  "Automated scheduling for unattended operation": {
+    "message": "無人操作のための自動スケジューリング"
+  },
+  "Automatic Capture": {
+    "message": "自動キャプチャ"
+  },
+  "Automatic account matching": {
+    "message": "自動アカウントマッチング"
+  },
+  "Automatic account nurturing": {
+    "message": "自動アカウント育成"
+  },
+  "Automatic commenting": {
+    "message": "自動コメント"
+  },
+  "Automatic direct messaging": {
+    "message": "自動ダイレクトメッセージ"
+  },
+  "Automatic following": {
+    "message": "自動フォロー"
+  },
+  "Automatic login": {
+    "message": "自動ログイン"
+  },
+  "Automatic matching": {
+    "message": "自動マッチング"
+  },
+  "Automatic posting": {
+    "message": "自動的な投稿"
+  },
+  "Automatic profile setup": {
+    "message": "自動プロフィール設定"
+  },
+  "Automatic registration & login": {
+    "message": "自動登録とログイン"
+  },
+  "Automatic video posting": {
+    "message": "自動的な動画投稿"
+  },
+  "Automatically generate AI voiceover for videos": {
+    "message": "動画に自動的にAI音声を生成"
+  },
+  "Automatically recognize subtitles and append them to the video": {
+    "message": "字幕を自動認識して動画に追加"
+  },
+  "Automatically translate subtitles to any language": {
+    "message": "字幕を任意の言語に自動翻訳"
+  },
+  "Automation & Content Management": {
+    "message": "自動化とコンテンツ管理"
+  },
+  "Basic Automation": {
+    "message": "基本的な自動化"
+  },
+  "Basic configuration": {
+    "message": "基本的な設定"
+  },
+  "Batch Generating Unique Videos": {
+    "message": "ユニーク動画の一括生成"
+  },
+  "Batch account management": {
+    "message": "アカウントの一括管理"
+  },
+  "Batch login to TikTok accounts with account list management": {
+    "message": "アカウントリスト管理を使用したTikTokアカウントへのバッチログイン"
+  },
+  "Boost engagement on specific comments by liking and replying to them in bulk": {
+    "message": "特定のコメントに一括でいいねと返信をしてエンゲージメントを高める"
+  },
+  "Built with safety mechanisms to protect your Instagram accounts from suspension": {
+    "message": "Instagramアカウントを停止から保護する安全メカニズムを搭載"
+  },
+  "Buy hardware": {
+    "message": "ハードウェアを購入する"
+  },
+  "Can I run both IgMatrix and TikMatrix on the same computer?": {
+    "message": "同じコンピュータでIgMatrixとTikMatrixの両方を実行できますか？"
+  },
+  "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
+    "message": "IgMatrixとTikMatrixで同じチュートリアルを使えますか？"
+  },
+  "Character-by-Character Input": {
+    "message": "1文字ずつ入力"
+  },
+  "Check Available Scripts": {
+    "message": "利用可能なスクリプトを確認"
+  },
+  "Comment boost": {
+    "message": "コメントブースト"
+  },
+  "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
+    "message": "カスタマイズ可能なコンテンツと絵文字で複数のTikTok投稿に一括コメント"
+  },
+  "Comments, Messages, Follows": {
+    "message": "コメント、メッセージ、フォロー"
+  },
+  "Compared to similar products on the market, using our product TIK results in at least a 30% increase in traffic compared to other similar products.": {
+    "message": "他社類似製品と比較して、当社のTIK製品を使用すると、他製品に比べて少なくとも30％のトラフィック増加が見られます。"
+  },
+  "Completely local private deployment ensuring user data security": {
+    "message": "ユーザーデータセキュリティを確保する完全なローカルプライベート展開"
+  },
+  "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
+    "message": "複数のエンゲージメント戦略とAI生成コメントを組み合わせた包括的な自動化"
+  },
+  "Computer-based Execution": {
+    "message": "コンピュータ上での実行"
+  },
+  "Contact": {
+    "message": "お問い合わせ"
+  },
+  "Contact Support": {
+    "message": "サポートに問い合わせる"
+  },
+  "Contact to purchase": {
+    "message": "購入についてお問い合わせください"
+  },
+  "Content Management": {
+    "message": "コンテンツ管理"
+  },
+  "Control farm accounts to watch, like, and comment on target live streams": {
+    "message": "ファームアカウントを制御してターゲットライブストリームを視聴、いいね、コメント"
+  },
+  "Control multiple Instagram accounts across different Android devices simultaneously": {
+    "message": "異なるAndroidデバイス上の複数のInstagramアカウントを同時に制御"
+  },
+  "Create new TikTok accounts with email registration and password setup": {
+    "message": "メール登録とパスワード設定で新しいTikTokアカウントを作成"
+  },
+  "Custom Instagram workflows": {
+    "message": "カスタムInstagramワークフロー"
+  },
+  "Customer support": {
+    "message": "カスタマーサポート"
+  },
+  "Device connection": {
+    "message": "デバイス接続"
+  },
+  "Different Script Logic": {
+    "message": "異なるスクリプトロジック"
+  },
+  "Different script availability": {
+    "message": "異なるスクリプトの利用可能性"
+  },
+  "Do I need separate licenses for IgMatrix and TikMatrix?": {
+    "message": "IgMatrixとTikMatrixに別々のライセンスが必要ですか？"
+  },
+  "Download IgMatrix": {
+    "message": "IgMatrixをダウンロード"
+  },
+  "Download IgMatrix from our official website and follow the installation instructions.": {
+    "message": "公式サイトからIgMatrixをダウンロードし、インストール手順に従ってください。"
+  },
+  "Download TikMatrix": {
+    "message": "TikMatrixをダウンロード"
+  },
+  "Download VideoMagic": {
+    "message": "VideoMagicをダウンロード"
+  },
+  "Download and Install": {
+    "message": "ダウンロードとインストール"
+  },
+  "Download for Windows": {
+    "message": "Windows用ダウンロード"
+  },
+  "Email": {
+    "message": "メール"
+  },
+  "Expert Technical Team": {
+    "message": "Equipo técnico experto"
+  },
+  "Fan collection": {
+    "message": "Recopilaciónseguidores"
+  },
+  "Features": {
+    "message": "Funciones"
+  },
+  "Find answers to common questions about IgMatrix": {
+    "message": "Encuentra respuestas a preguntas frecuentes sobre IgMatrix"
+  },
+  "Fingerprint Browser": {
+    "message": "Navegador con huella digital"
+  },
+  "Follow TikMatrix Tutorial": {
+    "message": "Seguir el tutorialTikMatrix"
+  },
+  "Follow these steps to get started with IgMatrix": {
+    "message": "Sigue estos pasos para comenzar con IgMatrix"
+  },
+  "For 7 Days": {
+    "message": "Por 7 días"
+  },
+  "Free": {
+    "message": "Gratis"
+  },
+  "Frequently Asked Questions": {
+    "message": "Preguntas frecuentes"
+  },
+  "Generate intelligent and contextual comments through ChatGPT API integration": {
+    "message": "ChatGPT API統合を通じてインテリジェントでコンテキストに応じたコメントを生成"
+  },
+  "Generate unique videos from one source video": {
+    "message": "Generar videos únicos desde un video fuente"
+  },
+  "Get Started": {
+    "message": "Comenzar"
+  },
+  "Get Support": {
+    "message": "Obtener soporte"
+  },
+  "Get dedicated support from our expert team whenever you need help": {
+    "message": "Obtén soporte dedicado de nuestro equipo experto siempre que necesites ayuda"
+  },
+  "Go to the \"Download\" page and download the latest version of TikMatrix.": {
+    "message": "「ダウンロード」ページに移動して、TikMatrixの最新バージョンをダウンロードしてください。"
+  },
+  "Here are some frequently asked questions.": {
+    "message": "よくあるご質問はこちらです。"
+  },
+  "How many TikTok accounts can each phone log into?": {
+    "message": "各スマートフォンはいくつのTikTokアカウントにログインできますか？"
+  },
+  "How many devices can I manage?": {
+    "message": "何台のデバイスを管理できますか？"
+  },
+  "How to use?": {
+    "message": "使い方は？"
+  },
+  "Human Technical Support": {
+    "message": "有人テクニカルサポート"
+  },
+  "Human-like Click Simulation": {
+    "message": "Simulaciónclics similar a humanos"
+  },
+  "If you are interested in our service, please contact us to get price.": {
+    "message": "Si estás interesado en nuestro servicio, contáctanos para obtener el precio."
+  },
+  "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
+    "message": "Si necesitas ayuda con funciones específicas de IgMatrix o encuentras algún problema, nuestro equipo de soporte está listo para asistirte."
+  },
+  "IgMatrix": {
+    "message": "IgMatrix"
+  },
+  "IgMatrix Features": {
+    "message": "Funciones de IgMatrix"
+  },
+  "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
+    "message": "IgMatrixとTikMatrixは同じセットアッププロセスとユーザーインターフェースを共有しています。主な違いは、IgMatrixがInstagram自動化専用に設計されているのに対し、TikMatrixはTikTok用であることです。スクリプトロジックと利用可能な機能は、それぞれのプラットフォームに最適化されています。"
+  },
+  "IgMatrix brings the same powerful automation capabilities of TikMatrix to Instagram, helping you scale your Instagram marketing efforts efficiently and safely.": {
+    "message": "IgMatrix lleva las mismas potentes capacidades de automatización de TikMatrix a Instagram, ayudándote a escalar tus esfuerzos de marketing en Instagram de manera eficiente y segura."
+  },
+  "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
+    "message": "IgMatrix sigue una estructura de precios similar a TikMatrix, pero puede tener tarifas diferentes. Por favor, consulta nuestra página oficial de precios o contacta a nuestro equipo de soporte para información actual de precios de IgMatrix."
+  },
+  "IgMatrix is a Instagram android phonefarm batch control tool": {
+    "message": "IgMatrixはInstagram Androidファームバッチ制御ツールです"
+  },
+  "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
+    "message": "IgMatrixのセットアップチュートリアルはTikMatrixと同じです。唯一の違いはスクリプトロジックなので、TikMatrixチュートリアルのドキュメントを直接参照できます。"
+  },
+  "Important Notice": {
+    "message": "Aviso importante"
+  },
+  "Important Reminder": {
+    "message": "Recordatorio importante"
+  },
+  "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
+    "message": "Aumentar el engagement en publicaciones dando me gusta, compartiendo, marcando como favoritos y viéndolas de forma masiva"
+  },
+  "Increase user engagement by following or unfollowing accounts in bulk": {
+    "message": "アカウントの一括フォロー/アンフォローでユーザーエンゲージメントを向上"
+  },
+  "Instagram Automation": {
+    "message": "Instagramの自動化"
+  },
+  "Instagram Phone Farm Batch Control Tool": {
+    "message": "Instagram手機農場バッチ制御ツール"
+  },
+  "Instagram-optimized automation scripts": {
+    "message": "Instagram最適化自動化スクリプト"
+  },
+  "Instagram-specific automation": {
+    "message": "Instagram専用の自動化"
+  },
+  "Is the pricing the same as TikMatrix?": {
+    "message": "価格はTikMatrixと同じですか？"
+  },
+  "Join Channel": {
+    "message": "Unirse al canal"
+  },
+  "Join Group": {
+    "message": "Unirse al grupo"
+  },
+  "Key Differences from TikMatrix": {
+    "message": "Diferencias clave respecto a TikMatrix"
+  },
+  "Live stream boost": {
+    "message": "Impulsar transmisiones en vivo"
+  },
+  "Mass commenting": {
+    "message": "コメント masivos"
+  },
+  "Mass direct messaging": {
+    "message": "一括ダイレクトメッセージ"
+  },
+  "Mon - Fri: 9:00AM - 5:00PM(UTC+8)": {
+    "message": "Lun - Vie: 9:00AM - 5:00PM (UTC+8)"
+  },
+  "Monthly": {
+    "message": "Mensual"
+  },
+  "Multi-Device Control": {
+    "message": "マルチデバイス制御"
+  },
+  "Multi-language support (English, Chinese, Russian)": {
+    "message": "サポート multiidioma (inglés, chino, ruso)"
+  },
+  "Natural Swipe Gestures": {
+    "message": "Gestosdeslizamiento naturales"
+  },
+  "No Root Required": {
+    "message": "No requiere root"
+  },
+  "No root permissions needed, ensuring device environment security": {
+    "message": "root権限不要、デバイス環境のセキュリティを確保"
+  },
+  "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
+    "message": "すべてのTikMatrixスクリプトがIgMatrixで利用可能なわけではありません。これらはプラットフォーム固有のためです。インストール後、IgMatrixソフトウェアインターフェース内で利用可能なスクリプトの正確なリストを見つけることができます。ソフトウェアに表示されている実際の機能を参照してください。"
+  },
+  "One-click automatic collection of target account fan lists, can be used for direct messaging": {
+    "message": "ワンクリックでターゲットアカウントのファンリストを自動収集、ダイレクトメッセージに使用可能"
+  },
+  "One-click batch automatic account nurturing, supports keyword search, random follow, like, comment, and bookmark": {
+    "message": "ワンクリックバッチ自動アカウント育成、キーワード検索、ランダムフォロー、いいね、コメント、ブックマークをサポート"
+  },
+  "One-click batch automatic commenting on multiple videos with specified scripts and random emojis": {
+    "message": "ワンクリックバッチ自動コメント：指定されたスクリプトとランダム絵文字で複数の動画にコメント"
+  },
+  "One-click batch automatic direct messaging to multiple target users": {
+    "message": "ワンクリックバッチ自動ダイレクトメッセージ：複数のターゲットユーザーへ"
+  },
+  "One-click batch automatic follow of target accounts": {
+    "message": "ワンクリックバッチ自動フォロー：ターゲットアカウント"
+  },
+  "One-click batch automatic login to TikTok accounts, supports batch import/export of accounts": {
+    "message": "ワンクリックバッチ自動ログイン：TikTokアカウント、バッチインポート/エクスポートをサポート"
+  },
+  "One-click batch automatic matching of logged-in accounts, no manual binding needed": {
+    "message": "ワンクリックバッチ自動マッチング：ログイン済みアカウント、手動バインディング不要"
+  },
+  "One-click batch automatic posting, supports adding product links": {
+    "message": "ワンクリックバッチ自動投稿、商品リンクの追加をサポート"
+  },
+  "One-click batch automatic registration of TikTok accounts, supports business email": {
+    "message": "ワンクリックバッチ自動登録：TikTokアカウント、ビジネスメールをサポート"
+  },
+  "One-click batch automatic setup of avatars, nicknames, signatures, usernames": {
+    "message": "ワンクリックバッチ自動設定：アバター、ニックネーム、署名、ユーザー名"
+  },
+  "One-click download of videos from all video websites": {
+    "message": "すべての動画ウェブサイトから動画をワンクリックでダウンロード"
+  },
+  "One-click download of videos from the entire network": {
+    "message": "ネットワーク全体から動画をワンクリックでダウンロード"
+  },
+  "Open Source Client": {
+    "message": "Clientecódigo abierto"
+  },
+  "Open source client code allows users to customize their own client": {
+    "message": "オープンソースのクライアントコードにより、ユーザーは独自のクライアントをカスタマイズ可能"
+  },
+  "Our Competitive Advantages": {
+    "message": "Nuestras ventajas competitivas"
+  },
+  "Our Core Advantages": {
+    "message": "Nuestras ventajas principales"
+  },
+  "Our Core Features": {
+    "message": "Nuestras funciones principales"
+  },
+  "Our plans": {
+    "message": "Nuestros planes"
+  },
+  "Our proprietary real device matrix system perfectly avoids TikTok's risk control measures, resulting in an extremely low account suspension rate.": {
+    "message": "当社独自の実機マトリックスシステムは、TikTokのリスク管理措置を完全に回避し、極めて低いアカウント停止率を実現します。"
+  },
+  "Our support team is here to help you with any IgMatrix-related questions or issues.": {
+    "message": "Nuestro equipo de soporte está aquí para ayudarte con cualquier pregunta o problema relacionado con IgMatrix."
+  },
+  "Per Month": {
+    "message": "Por mes"
+  },
+  "Per Year": {
+    "message": "Por año"
+  },
+  "Performance analytics": {
+    "message": "Análisisrendimiento"
+  },
+  "Phone screen mirroring to a computer": {
+    "message": "Reflejopantallateléfono a computadora"
+  },
+  "Platform-optimized features": {
+    "message": "Funciones optimizadas para la plataforma"
+  },
+  "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
+    "message": "スクリプトリストを直接表示するには、IgMatrixをダウンロードしてください。現在、すべてのTikMatrixスクリプトがIgMatrixで100%サポートされているわけではありません。ソフトウェアの実際の機能を参照してください。"
+  },
+  "Post engagement boost": {
+    "message": "Impulsar engagementpublicaciones"
+  },
+  "Post management": {
+    "message": "投稿の管理"
+  },
+  "Powerful Instagram automation tools designed for professional marketers and businesses": {
+    "message": "Potentes herramientas de automatización de Instagram diseñadas para profesionales del marketing y empresas"
+  },
+  "Powerful TikTok Automation & Management Tools": {
+    "message": "Potentes herramientas de automatización y gestión de TikTok"
+  },
+  "Powerful technical team with real-time maintenance and updates ensuring script reliability": {
+    "message": "リアルタイムのメンテナンスとアップデートによりスクリプトの信頼性を確保する強力な技術チーム"
+  },
+  "Premium Benefits": {
+    "message": "Beneficios premium"
+  },
+  "Pricing": {
+    "message": "Precios"
+  },
+  "Private Local Deployment": {
+    "message": "Implementación local privada"
+  },
+  "Professional TikTok Account Management & Marketing Tool": {
+    "message": "Herramienta profesionalgestión y marketing アカウントsTikTok"
+  },
+  "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
+    "message": "Herramienta profesionalgestión y marketing アカウントsTikTok para Windows y Mac"
+  },
+  "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
+    "message": "WindowsとMac上のAndroid手機農場向けに設計されたプロフェッショナルなTikTokアカウント管理およびマーケティングツール。投稿、フォローを自動化し、アカウント停止率ゼロでTikTokプレゼンスを成長させます。"
+  },
+  "Professional phone farm management": {
+    "message": "プロフェッショナルなフォンファーム管理"
+  },
+  "Publish videos or images to TikTok with batch posting capabilities": {
+    "message": "バッチ投稿機能でTikTokに動画や画像を公開"
+  },
+  "Quick Setup Guide": {
+    "message": "Guíaconfiguración rápida"
+  },
+  "Randomized script parameters to avoid behavior detection patterns": {
+    "message": "行動検出パターンを回避するためのランダム化されたスクリプトパラメータ"
+  },
+  "Recognize and match TikTok accounts from phones to add to account list": {
+    "message": "スマートフォンからTikTokアカウントを認識してマッチング、アカウントリストに追加"
+  },
+  "Recognize subtitles": {
+    "message": "Reconocer subtítulos"
+  },
+  "Remove posts based on their view count for content optimization": {
+    "message": "Eliminar publicaciones según su númerovisualizaciones para optimizacióncontenido"
+  },
+  "Safe & Secure": {
+    "message": "Seguro y protegido"
+  },
+  "Same Setup Process": {
+    "message": "Mismo procesoconfiguración"
+  },
+  "Same reliable technology as TikMatrix": {
+    "message": "TikMatrixと同じ信頼性の高い技術"
+  },
+  "Save 50% compared to monthly plan": {
+    "message": "Ahorra un 50% en comparación con el plan mensual"
+  },
+  "Schedule your Instagram activities with intelligent timing algorithms": {
+    "message": "インテリジェントなタイミングアルゴリズムでInstagram活動をスケジュール"
+  },
+  "Scheduled Tasks": {
+    "message": "Tareas programadas"
+  },
+  "Scrape TikTok usernames from followers lists or keyword searches": {
+    "message": "Extraer nombres de usuario de TikTok de listas de seguidores o búsquedas por palabras clave"
+  },
+  "Script Parameter Randomization": {
+    "message": "Aleatorizaciónparámetrosscript"
+  },
+  "Script engine simulates natural human clicking with randomized button offset": {
+    "message": "スクリプトエンジンは、ランダム化されたボタンオフセットで自然な人間のクリックをシミュレート"
+  },
+  "Scripts run on computer to avoid mobile device detection": {
+    "message": "モバイルデバイス検出を回避するためコンピューター上でスクリプトを実行"
+  },
+  "Send messages to multiple TikTok accounts in bulk with personalized content": {
+    "message": "パーソナライズされたコンテンツで複数のTikTokアカウントに一括メッセージ送信"
+  },
+  "Set up account profiles including avatars, nicknames, signatures, and usernames": {
+    "message": "Configurar perfiles アカウント incluyendo avatares, apodos, firmas y nombresusuario"
+  },
+  "Setup Tutorial": {
+    "message": "Tutorialconfiguración"
+  },
+  "Shipping worldwide": {
+    "message": "Envíos a todo el mundo"
+  },
+  "Simulates natural right-hand arc swipe trajectories like real human interaction": {
+    "message": "Simula trayectoriasdeslizamiento en arco con la mano derecha como la interacción humana real"
+  },
+  "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
+    "message": "セットアッププロセスは同一なので、デバイス接続、アカウント管理、スクリプト設定の詳細な手順については、包括的なTikMatrixドキュメントを参照してください。"
+  },
+  "Smart Scheduling": {
+    "message": "スマートスケジューリング"
+  },
+  "Start automating your Instagram marketing today with IgMatrix and experience the same professional-grade tools that thousands of marketers trust.": {
+    "message": "Comienza a automatizar tu marketing en Instagram hoy con IgMatrix y experimenta las mismas herramientas de nivel profesional en las que confían miles de profesionales del marketing."
+  },
+  "Still have questions?": {
+    "message": "ご不明点はありますか？"
+  },
+  "Streamline your Android TikTok phone farm with advanced batch control and marketing automation": {
+    "message": "高度なバッチ制御とマーケティング自動化でAndroid TikTok手機農場を合理化"
+  },
+  "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
+    "message": "高度なバッチ制御とマーケティング自動化でInstagram手機農場を合理化"
+  },
+  "Streamline your TikTok phone farm with advanced batch control and marketing automation": {
+    "message": "高度なバッチ制御とマーケティング自動化でTikTok手機農場を合理化"
+  },
+  "Strong technical support team with open community ecosystem": {
+    "message": "Equipo de soporte técnico sólido con ecosistema comunitario abierto"
+  },
+  "Super Marketing": {
+    "message": "Super マーケティング"
+  },
+  "Supports 100+ phones mirroring to a computer, with synchronized operation": {
+    "message": "Soporta más de 100 teléfonos con reflejo a una computadora, con operación sincronizada"
+  },
+  "Supports 200+ phones mirroring to a computer, with synchronized operation": {
+    "message": "Soporta más de 200 teléfonos con reflejo a una computadora, con operación sincronizada"
+  },
+  "Supports work profile enterprise space for professional use": {
+    "message": "Soporta espacio empresarial de perfil de trabajo para uso profesional"
+  },
+  "Technical Advantages": {
+    "message": "Ventajas técnicas"
+  },
+  "Telegram": {
+    "message": "Telegram"
+  },
+  "Telegram Support": {
+    "message": "サポート en Telegram"
+  },
+  "Text input mimics human typing patterns with character-by-character simulation": {
+    "message": "La entrada de texto imita patrones de escritura humana con simulación carácter por carácter"
+  },
+  "The length and width are relatively big, but the height is low(2u size)": {
+    "message": "La longitud y el ancho son relativamente grandes, pero la altura es baja (tamaño 2u)"
+  },
+  "The length and width are relatively small, but the height is high": {
+    "message": "La longitud y el ancho son relativamente pequeños, pero la altura es alta"
+  },
+  "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
+    "message": "マザーボードマシンは20個のSamsungスマートフォンマザーボードで構成されています。電気に接続すると自動的に電源が入り、統一された電源、統一されたマルチファン冷却システム、統一されたUSB接続を共有します。OTG有線ネットワーク接続もサポートしています。"
+  },
+  "TikMatrix": {
+    "message": "TikMatrix"
+  },
+  "TikMatrix delivers at least 30% higher engagement compared to similar products, with advanced real-device technology that ensures complete account safety.": {
+    "message": "TikMatrixは、同様の製品と比較して少なくとも30%高いエンゲージメントを提供し、完全なアカウント安全性を確保する高度な実機技術を備えています。"
+  },
+  "TikMatrix is a TikTok group control operation tool": {
+    "message": "TikMatrix es una herramienta de control grupal de TikTok"
+  },
+  "TikMatrix is a professional marketing software designed for TikTok phone farms": {
+    "message": "TikMatrix es un software de marketing profesional diseñado para granjas de teléfonos de TikTok"
+  },
+  "TikMatrix is a professional marketing software designed for TikTok phone farms. Manage multiple accounts, automate posting, and scale your TikTok marketing with ease.": {
+    "message": "TikMatrixはTikTok手機農場向けに設計されたプロフェッショナルなマーケティングソフトウェアです。複数のアカウントを管理し、投稿を自動化し、TikTokマーケティングを簡単にスケールアップできます。"
+  },
+  "TikMatrix supports 8 TikTok accounts on each phone.": {
+    "message": "TikMatrixは各スマートフォンで8つのTikTokアカウントをサポートします。"
+  },
+  "TikMatrix supports Android phones running Android 5.0 and above.": {
+    "message": "TikMatrix admite teléfonos Android con Android 5.0 y versiones superiores."
+  },
+  "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
+    "message": "TikMatrixはWindows 10以降、およびmacOS 10.15以降をサポートしています。Macユーザーの場合、インストール後、アプリを実行するためにターミナルで次のコマンドを実行する必要があります：xattr -cr /Applications/TikMatrix.app"
+  },
+  "TikMatrix supports up to 200+ devices.": {
+    "message": "TikMatrix admite hasta más de 200 dispositivos."
+  },
+  "Translate subtitles": {
+    "message": "Traducir subtítulos"
+  },
+  "Trial": {
+    "message": "Prueba"
+  },
+  "Tutorial": {
+    "message": "Tutorial"
+  },
+  "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
+    "message": "Tarjeta SIM nativaEE.UU. sin activar, utilizada para que la aplicaciónTikTok para Android detecte la ubicaciónla tarjeta SIM"
+  },
+  "Unlimited devices": {
+    "message": "デバイス ilimitados"
+  },
+  "Unlimited devices, Customer support": {
+    "message": "デバイス ilimitados, サポート al cliente"
+  },
+  "Unlimited process tasks": {
+    "message": "Tareasproceso ilimitadas"
+  },
+  "User engagement boost": {
+    "message": "ユーザーエンゲージメントブースト"
+  },
+  "User interface": {
+    "message": "Interfazusuario"
+  },
+  "User scraping": {
+    "message": "ユーザースクレイピング"
+  },
+  "Video Magic is a professional video generation software designed for operators. It can generate unique videos for you, greatly enhancing operational efficiency": {
+    "message": "Video Magic es un software profesional de generación de videos diseñado para operadores. Puede generar videos únicos para ti, mejorando enormemente la eficiencia operativa"
+  },
+  "Video Magic is a tool that can generate unique videos": {
+    "message": "Video Magic es una herramienta que puede generar videos únicos"
+  },
+  "Video collection": {
+    "message": "Recopilaciónvideos"
+  },
+  "Video download": {
+    "message": "Descargavideos"
+  },
+  "Video posting, Account nurturing": {
+    "message": "動画投稿、アカウント育成"
+  },
+  "Video unique": {
+    "message": "Video único"
+  },
+  "VideoMagic - Batch Generating Unique Videos": {
+    "message": "VideoMagic - ユニーク動画の一括生成"
+  },
+  "VideoMagic is a Software for Batch Generating Unique Videos": {
+    "message": "VideoMagic es un software para generación masiva de videos únicos"
+  },
+  "View TikMatrix Tutorial": {
+    "message": "Ver tutorialTikMatrix"
+  },
+  "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
+    "message": "キーワード検索、動画視聴、フォロー、いいね、コメント、お気に入りでアカウントをウォームアップ"
+  },
+  "What computer can I use?": {
+    "message": "どのコンピュータを使用できますか？"
+  },
+  "What devices can I use?": {
+    "message": "どのデバイスが使用できますか？"
+  },
+  "What is TikMatrix?": {
+    "message": "TikMatrixとは何ですか？"
+  },
+  "What is the difference between IgMatrix and TikMatrix?": {
+    "message": "IgMatrixとTikMatrixの違いは何ですか？"
+  },
+  "Which scripts from TikMatrix are available in IgMatrix?": {
+    "message": "TikMatrixのどのスクリプトがIgMatrixで利用可能ですか？"
+  },
+  "Why Choose IgMatrix?": {
+    "message": "なぜIgMatrixを選ぶのか？"
+  },
+  "Why TikMatrix?": {
+    "message": "なぜTikMatrixを選ぶのか？"
+  },
+  "Work Profile Support": {
+    "message": "Soporte de perfil de trabajo"
+  },
+  "Working Hours": {
+    "message": "Horariotrabajo"
+  },
+  "Yearly": {
+    "message": "Anual"
+  },
+  "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
+    "message": "はい！IgMatrixのセットアップチュートリアルはTikMatrixと同じです。インストール、デバイス接続、基本設定についてはTikMatrixドキュメントに従うことができます。自動化スクリプトのみがプラットフォームに基づいて異なります。"
+  },
+  "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
+    "message": "Sí, IgMatrix y TikMatrix requieren licencias separadas ya que son productos diferentes optimizados para diferentes plataformas de redes sociales. Cada licencia está vinculada a un software específico y no se puede usar indistintamente."
+  },
+  "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
+    "message": "Puedes instalar tanto IgMatrix como TikMatrix en la misma computadora, pero no pueden ejecutarse simultáneamente debido a conflictos de tiempo de ejecución. Solo puedes ejecutar un software a la vez: IgMatrix o TikMatrix."
+  },
+  "advertising.back.home": {
+    "message": "Volver al inicio"
+  },
+  "advertising.buy.accounts.description": {
+    "message": "Proveedores confiables アカウントsredes sociales para tus necesidadesmarketing"
+  },
+  "advertising.buy.accounts.leadsmm.description": {
+    "message": "高品質なソーシャルメディアアカウントと迅速な配信を提供するプロフェッショナルなSMMパネル"
+  },
+  "advertising.buy.accounts.leadsmm.title": {
+    "message": "LeadSMM - Panel SMM Premium"
+  },
+  "advertising.buy.accounts.title": {
+    "message": "ソーシャルメディアアカウントを購入"
+  },
+  "advertising.buy.hardware.description": {
+    "message": "Hardware especializado para granjasteléfonos y configuraciones a gran escala"
+  },
+  "advertising.buy.hardware.title": {
+    "message": "Hardware para granjateléfonos"
+  },
+  "advertising.category.accounts": {
+    "message": "アカウントs"
+  },
+  "advertising.category.analytics": {
+    "message": "Analíticas"
+  },
+  "advertising.category.hardware": {
+    "message": "Hardware"
+  },
+  "advertising.category.proxy": {
+    "message": "Proxy"
+  },
+  "advertising.category.verification": {
+    "message": "Verificación"
+  },
+  "advertising.category.vps": {
+    "message": "VPS"
+  },
+  "advertising.disclaimer.content": {
+    "message": "Estos son serviciosterceros. Realiza tu propia investigación antesrealizar cualquier compra."
+  },
+  "advertising.disclaimer.title": {
+    "message": "Aviso legal"
+  },
+  "advertising.page.subtitle": {
+    "message": "Servicios y herramientas recomendadas para mejorar tu experiencia con TikMatrix"
+  },
+  "advertising.page.title": {
+    "message": "Servicios recomendados"
+  },
+  "advertising.proxy.proxycheap.description": {
+    "message": "Proxies asequibles y confiables para la automatizaciónredes sociales"
+  },
+  "advertising.proxy.proxycheap.title": {
+    "message": "ProxyCheap - Proxies económicos"
+  },
+  "advertising.proxy.thordata.description": {
+    "message": "Proxies residenciales premium con alta tasa de éxito"
+  },
+  "advertising.proxy.thordata.title": {
+    "message": "ThorData - Proxies residenciales"
+  },
+  "advertising.tiktok.user.finder.description": {
+    "message": "TikTokユーザーを検索・分析するための高度なツール"
+  },
+  "advertising.tiktok.user.finder.title": {
+    "message": "TikTokユーザーファインダー"
+  },
+  "advertising.visit.button": {
+    "message": "Visitar sitio web"
+  },
+  "advertising.vps.lisahost.description": {
+    "message": "Servidores VPS confiables con soporte excepcional"
+  },
+  "advertising.vps.lisahost.title": {
+    "message": "LisaHost - Alojamiento VPS"
+  },
+  "advertising.vps.uuuvps.description": {
+    "message": "Soluciones VPS asequibles para todas tus necesidades"
+  },
+  "advertising.vps.uuuvps.title": {
+    "message": "UUUVPS - VPS económico"
+  },
+  "advertising.whatsapp.checker.description": {
+    "message": "WhatsApp番号を一括で確認および検証"
+  },
+  "advertising.whatsapp.checker.title": {
+    "message": "VerificadorWhatsApp"
+  },
+  "download.description": {
+    "message": "Descarga TikMatrix para Windows, Mac o Linux y comienza a automatizar tu marketingTikTok"
+  },
+  "download.igmatrix.description": {
+    "message": "Descarga IgMatrix para Windows, Mac o Linux y comienza a automatizar tu marketingInstagram"
+  },
+  "download.igmatrix.linux.coming_soon": {
+    "message": "Próximamente"
+  },
+  "download.igmatrix.linux.description": {
+    "message": "La versiónLinuxIgMatrix está actualmente en desarrollo"
+  },
+  "download.igmatrix.linux.development": {
+    "message": "En desarrollo"
+  },
+  "download.igmatrix.linux.title": {
+    "message": "IgMatrix para Linux"
+  },
+  "download.igmatrix.mac.button": {
+    "message": "Mac用ダウンロード"
+  },
+  "download.igmatrix.mac.description": {
+    "message": "macOS 10.15（Catalina）以降に対応"
+  },
+  "download.igmatrix.mac.install_tip": {
+    "message": "インストール後、次を実行してください： xattr -cr /Applications/IgMatrix.app"
+  },
+  "download.igmatrix.mac.title": {
+    "message": "IgMatrix（Mac）"
+  },
+  "download.igmatrix.requirements.internet": {
+    "message": "安定したインターネット接続"
+  },
+  "download.igmatrix.requirements.memory": {
+    "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）"
+  },
+  "download.igmatrix.requirements.os": {
+    "message": "Windows 10/1164 bits o macOS 10.15+"
+  },
+  "download.igmatrix.requirements.processor": {
+    "message": "Procesador Intel Core i5 o equivalente"
+  },
+  "download.igmatrix.requirements.storage": {
+    "message": "500 MBespacio disponible en disco"
+  },
+  "download.igmatrix.requirements.title": {
+    "message": "Requisitos del sistema"
+  },
+  "download.igmatrix.subtitle": {
+    "message": "WindowsおよびMac向けのInstagram自動化プロ用ツール"
+  },
+  "download.igmatrix.title": {
+    "message": "IgMatrixをダウンロード"
+  },
+  "download.igmatrix.windows.button": {
+    "message": "Windows用ダウンロード"
+  },
+  "download.igmatrix.windows.description": {
+    "message": "Windows 10 および 11（64ビット）に対応"
+  },
+  "download.igmatrix.windows.title": {
+    "message": "IgMatrix（Windows）"
+  },
+  "download.linux.coming_soon": {
+    "message": "Próximamente"
+  },
+  "download.linux.description": {
+    "message": "La versiónLinuxTikMatrix está actualmente en desarrollo"
+  },
+  "download.linux.development": {
+    "message": "En desarrollo"
+  },
+  "download.linux.title": {
+    "message": "TikMatrix（Linux）"
+  },
+  "download.mac.button": {
+    "message": "Mac用ダウンロード"
+  },
+  "download.mac.description": {
+    "message": "macOS 10.15（Catalina）以降に対応"
+  },
+  "download.mac.install_tip": {
+    "message": "インストール後、ターミナルで次のコマンドを実行してください："
+  },
+  "download.mac.title": {
+    "message": "TikMatrix（Mac）"
+  },
+  "download.requirements.internet": {
+    "message": "安定したインターネット接続"
+  },
+  "download.requirements.memory": {
+    "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）"
+  },
+  "download.requirements.os": {
+    "message": "Windows 10/1164 bits o macOS 10.15+"
+  },
+  "download.requirements.processor": {
+    "message": "Procesador Intel Core i5 o equivalente"
+  },
+  "download.requirements.storage": {
+    "message": "500 MBespacio disponible en disco"
+  },
+  "download.requirements.title": {
+    "message": "Requisitos del sistema"
+  },
+  "download.subtitle": {
+    "message": "WindowsおよびMac向けのプロ向けTikTok自動化ツール"
+  },
+  "download.title": {
+    "message": "TikMatrixをダウンロード"
+  },
+  "download.videomagic.description": {
+    "message": "Windows、Mac、Linux向けのVideoMagicをダウンロードして、独自の動画作成を始めましょう。"
+  },
+  "download.videomagic.subtitle": {
+    "message": "オペレーター向けのプロ用ビデオ生成ソフトウェア"
+  },
+  "download.videomagic.title": {
+    "message": "VideoMagicをダウンロード"
+  },
+  "download.windows.button": {
+    "message": "Windows用ダウンロード"
+  },
+  "download.windows.description": {
+    "message": "Windows 10 および 11（64ビット）に対応"
+  },
+  "download.windows.title": {
+    "message": "TikMatrix（Windows）"
+  },
+  "homepage.header.cta.download": {
+    "message": "今すぐダウンロード"
+  },
+  "homepage.header.cta.features": {
+    "message": "機能を見る"
+  },
+  "homepage.header.cta.primary": {
+    "message": "はじめる"
+  },
+  "homepage.header.cta.secondary": {
+    "message": "詳細を見る"
+  },
+  "homepage.header.defaultSubtitle": {
+    "message": "複数のアカウントを管理し、投稿を自動化し、農場を簡単にスケールアップ"
+  },
+  "homepage.header.defaultTitle": {
+    "message": "ソーシャルメディア向けのプロ用マーケティングツール"
+  },
+  "homepage.header.subtitle": {
+    "message": "複数のTikTokアカウントを管理し、投稿を自動化し、マーケティングを簡単にスケールアップ"
+  },
+  "homepage.header.title": {
+    "message": "TikTok向けのプロ用マーケティングツール"
+  },
+  "homepage.vs.card.analytics.desc": {
+    "message": "詳細な分析でアカウントのパフォーマンスを追跡・分析"
+  },
+  "homepage.vs.card.analytics.title": {
+    "message": "強力な分析"
+  },
+  "homepage.vs.card.automation.desc": {
+    "message": "強力なスクリプト機能でソーシャルメディアの操作を自動化"
+  },
+  "homepage.vs.card.automation.title": {
+    "message": "強力な自動化"
+  },
+  "homepage.vs.card.cta": {
+    "message": "詳細を見る"
+  },
+  "homepage.vs.card.lowRisk.desc": {
+    "message": "実機技術により極めて低いアカウント停止率"
+  },
+  "homepage.vs.card.lowRisk.title": {
+    "message": "低リスク"
+  },
+  "homepage.vs.card.nodev.desc": {
+    "message": "root権限不要、デバイス環境のセキュリティを確保"
+  },
+  "homepage.vs.card.nodev.title": {
+    "message": "開発不要"
+  },
+  "homepage.vs.card.plug.desc": {
+    "message": "接続してすぐ使える、複雑な設定は不要"
+  },
+  "homepage.vs.card.plug.title": {
+    "message": "プラグアンドプレイ"
+  },
+  "homepage.vs.card.realDevices.desc": {
+    "message": "本物のAndroidデバイスを使用して本物の動作と最高のセキュリティを実現"
+  },
+  "homepage.vs.card.realDevices.title": {
+    "message": "実機デバイス"
+  },
+  "homepage.vs.cta.button": {
+    "message": "機能を比較"
+  },
+  "homepage.vs.cta.text": {
+    "message": "他社製品との比較をもっと見たいですか？"
+  },
+  "homepage.vs.subtitle": {
+    "message": "当社が他のソリューションとどう違うかをご覧ください"
+  },
+  "homepage.vs.title": {
+    "message": "なぜ当社を選ぶのか？"
+  },
+  "navbar.download": {
+    "message": "ダウンロード"
+  },
+  "pricing.all_features": {
+    "message": "すべての機能"
+  },
+  "pricing.badge.popular": {
+    "message": "Popular"
+  },
+  "pricing.business.concurrent_tasks": {
+    "message": "無制限の同時タスク"
+  },
+  "pricing.business.description": {
+    "message": "チームおよび大規模企業向け"
+  },
+  "pricing.business.manage_phones": {
+    "message": "無制限のデバイス管理"
+  },
+  "pricing.business.name": {
+    "message": "ビジネス"
+  },
+  "pricing.compare.automation": {
+    "message": "高度な自動化"
+  },
+  "pricing.compare.devices": {
+    "message": "対応デバイス"
+  },
+  "pricing.compare.hide": {
+    "message": "比較を非表示"
+  },
+  "pricing.compare.show": {
+    "message": "比較を表示"
+  },
+  "pricing.cta.free": {
+    "message": "無料で始める"
+  },
+  "pricing.cta.pay": {
+    "message": "申し込む"
+  },
+  "pricing.dedicated_support": {
+    "message": "専用サポート"
+  },
+  "pricing.free.all_free_features": {
+    "message": "すべての無料機能"
+  },
+  "pricing.free.automation_disabled": {
+    "message": "自動化が無効"
+  },
+  "pricing.free.community_support": {
+    "message": "サポート comunitario"
+  },
+  "pricing.free.description": {
+    "message": "Perfecto para empezar"
+  },
+  "pricing.free.name": {
+    "message": "Gratuito"
+  },
+  "pricing.free_label": {
+    "message": "Gratis"
+  },
+  "pricing.get_started": {
+    "message": "Comenzar"
+  },
+  "pricing.local_api.description": {
+    "message": "TikMatrixを独自のシステムと統合する必要がありますか？ローカルAPIでプログラム的にタスクを管理し、ワークフローを自動化できます。"
+  },
+  "pricing.local_api.link_text": {
+    "message": "Ver documentaciónla API"
+  },
+  "pricing.local_api.support": {
+    "message": "Disponible en todos los planespago"
+  },
+  "pricing.local_api.title": {
+    "message": "API local"
+  },
+  "pricing.per_month": {
+    "message": "por mes"
+  },
+  "pricing.per_month_pc": {
+    "message": "por mes por PC"
+  },
+  "pricing.per_year": {
+    "message": "por año"
+  },
+  "pricing.pro.concurrent_tasks": {
+    "message": "50 tareas concurrentes"
+  },
+  "pricing.pro.description": {
+    "message": "Para profesionales y equipos pequeños"
+  },
+  "pricing.pro.manage_phones": {
+    "message": "Gestionar hasta 50 dispositivos"
+  },
+  "pricing.pro.name": {
+    "message": "Profesional"
+  },
+  "pricing.starter.concurrent_tasks": {
+    "message": "10 tareas concurrentes"
+  },
+  "pricing.starter.description": {
+    "message": "Perfecto para empezar"
+  },
+  "pricing.starter.manage_phones": {
+    "message": "Gestionar hasta 10 dispositivos"
+  },
+  "pricing.starter.name": {
+    "message": "Inicial"
+  },
+  "pricing.subtitle": {
+    "message": "Choose the plan that fits your needs"
+  },
+  "pricing.team.concurrent_tasks": {
+    "message": "100 tareas concurrentes"
+  },
+  "pricing.team.description": {
+    "message": "Para equipos en crecimiento"
+  },
+  "pricing.team.manage_phones": {
+    "message": "Gestionar hasta 100 dispositivos"
+  },
+  "pricing.team.name": {
+    "message": "Equipo"
+  },
+  "pricing.ticket_support": {
+    "message": "Soporte por tickets"
+  },
+  "pricing.title": {
+    "message": "Pricing Plans"
+  },
+  "pricing.toggle.monthly": {
+    "message": "Monthly"
+  },
+  "pricing.toggle.yearly": {
+    "message": "Yearly (Save 30%)"
+  },
+  "pricing.unlimited_devices": {
+    "message": "デバイス ilimitados"
+  },
+  "pricing.unlimited_devices_short": {
+    "message": "Ilimitado"
+  },
+  "tech.diagram.devices": {
+    "message": "Real Android Devices"
+  },
+  "tech.diagram.engine": {
+    "message": "TikMatrix Engine"
+  },
+  "tech.diagram.fingerprintIsolation": {
+    "message": "Device Fingerprint Isolation"
+  },
+  "tech.diagram.localExecution": {
+    "message": "Local Execution"
+  },
+  "tech.diagram.noApi": {
+    "message": "No API Calls"
+  },
+  "tech.diagram.noMemoryInjection": {
+    "message": "No Memory Injection"
+  },
+  "tech.diagram.realTouch": {
+    "message": "Real Touch Injection"
+  },
+  "tech.diagram.tiktok": {
+    "message": "TikTok App"
+  },
+  "tech.diagram.user": {
+    "message": "User"
+  },
+  "tech.diagram.zeroCloud": {
+    "message": "Zero Cloud Dependency"
+  },
+  "tech.point.fingerprint.b1": {
+    "message": "Unique IMEI / Android ID per device"
+  },
+  "tech.point.fingerprint.b2": {
+    "message": "Isolated IP allocation via proxy"
+  },
+  "tech.point.fingerprint.b3": {
+    "message": "No shared cookies or tokens"
+  },
+  "tech.point.fingerprint.desc": {
+    "message": "Each device maintains unique hardware and software fingerprints with no cross-contamination."
+  },
+  "tech.point.fingerprint.title": {
+    "message": "Device Fingerprint Isolation"
+  },
+  "tech.point.humanBehavior.b1": {
+    "message": "Randomized time intervals"
+  },
+  "tech.point.humanBehavior.b2": {
+    "message": "Natural scrolling velocity curves"
+  },
+  "tech.point.humanBehavior.b3": {
+    "message": "Session duration modeling"
+  },
+  "tech.point.humanBehavior.desc": {
+    "message": "Behavior patterns derived from real user data, avoiding detectable automation features."
+  },
+  "tech.point.humanBehavior.title": {
+    "message": "Human Behavior Model"
+  },
+  "tech.point.localExec.b1": {
+    "message": "No remote execution dependency"
+  },
+  "tech.point.localExec.b2": {
+    "message": "Complete data privacy"
+  },
+  "tech.point.localExec.b3": {
+    "message": "Optional offline deployment"
+  },
+  "tech.point.localExec.desc": {
+    "message": "スクリプトはADB経由でローカルマシンで実行 - クラウドリレーなし、サードパーティサーバーなし"
+  },
+  "tech.point.localExec.title": {
+    "message": "Local Execution Sandbox"
+  },
+  "tech.point.passiveCapture.b1": {
+    "message": "Zero code injection into TikTok"
+  },
+  "tech.point.passiveCapture.b2": {
+    "message": "Read-only screen capture"
+  },
+  "tech.point.passiveCapture.b3": {
+    "message": "No modification of app binaries"
+  },
+  "tech.point.passiveCapture.desc": {
+    "message": "Extract screen data via OCR and computer vision - no in-app hooks or memory injection."
+  },
+  "tech.point.passiveCapture.title": {
+    "message": "Passive Capture Mode"
+  },
+  "tech.point.realTouch.b1": {
+    "message": "Hardware-level touch signal generation"
+  },
+  "tech.point.realTouch.b2": {
+    "message": "Pressure and velocity randomization"
+  },
+  "tech.point.realTouch.b3": {
+    "message": "Arc trajectory simulation"
+  },
+  "tech.point.realTouch.desc": {
+    "message": "Inject real touch events at the Android input layer, indistinguishable from human interaction behavior."
+  },
+  "tech.point.realTouch.title": {
+    "message": "Real Touch Injection"
+  },
+  "tech.point.zeroApi.b1": {
+    "message": "No API token exposure"
+  },
+  "tech.point.zeroApi.b2": {
+    "message": "No request signature forgery"
+  },
+  "tech.point.zeroApi.b3": {
+    "message": "Not affected by API rate limits"
+  },
+  "tech.point.zeroApi.desc": {
+    "message": "No TikTok API calls, no network request interception. All operations completed at the UI layer."
+  },
+  "tech.point.zeroApi.title": {
+    "message": "Zero API Automation"
+  },
+  "tech.points.heading": {
+    "message": "Core Technology Implementation"
+  },
+  "tech.security.heading": {
+    "message": "高度なセキュリティ機能"
+  },
+  "tech.security.humanModel": {
+    "message": "Modelo de comportamiento humano"
+  },
+  "tech.security.legendA": {
+    "message": "Riesgo alto"
+  },
+  "tech.security.legendB": {
+    "message": "Riesgo medio"
+  },
+  "tech.security.legendC": {
+    "message": "Riesgo bajo"
+  },
+  "tech.security.noHook": {
+    "message": "Sin hooks del sistema"
+  },
+  "tech.security.noiseCurve": {
+    "message": "Curvaruido aleatorio"
+  },
+  "tech.security.proxyIsolation": {
+    "message": "Aislamientoproxy"
+  },
+  "tech.security.realDevice": {
+    "message": "Entorno デバイス real"
+  },
+  "tech.security.zeroApi": {
+    "message": "Cero llamadas a API"
+  },
+  "tech.subtitle": {
+    "message": "Anti-detection Architecture Built on Real Device Automation"
+  },
+  "tech.title": {
+    "message": "Technology Advantages"
+  },
+  "testimonials.subtitle": {
+    "message": "Real feedback from TikMatrix users"
+  },
+  "testimonials.title": {
+    "message": "What Our Users Say"
+  },
+  "testimonials.usage_label": {
+    "message": "Uso:"
+  },
+  "testimonials.user1.text": {
+    "message": "TikMatrix ha revolucionado nuestra operación de granja de teléfonos. La capacidad de gestionar 100+ dispositivos desde una sola PC es increíble."
+  },
+  "testimonials.user1.usage": {
+    "message": "Gestión de 120 dispositivos"
+  },
+  "testimonials.user2.text": {
+    "message": "El sistema de automatización es potente y fácil de usar. Nuestro engagement ha aumentado un 40% desde que comenzamos a usar TikMatrix."
+  },
+  "testimonials.user2.usage": {
+    "message": "50のTikTokアカウント"
+  },
+  "testimonials.user3.text": {
+    "message": "La mejor inversión para nuestro negocio de marketing en TikTok. El soporte técnico es excepcional y el software es muy estable."
+  },
+  "testimonials.user3.usage": {
+    "message": "Operación profesionalmarketing"
+  },
+  "testimonials.user4.text": {
+    "message": "6か月の使用でアカウント停止率ゼロ。実機技術は本当に機能します！"
+  },
+  "testimonials.user4.usage": {
+    "message": "80アカウント管理"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Cerrar"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Volver arriba"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copiado"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copiar"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copiar código al portapapeles"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Alternar ajustelínea"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Colapsar categoríala barra lateral '{label}'"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expandir categoríala barra lateral '{label}'"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Esta página se ha caído."
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Intentarnuevo"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Principal"
+  },
+  "theme.NotFound.p1": {
+    "message": "No pudimos encontrar lo que buscabas."
+  },
+  "theme.NotFound.p2": {
+    "message": "Por favor, contacta al propietario del sitio que te vinculó a la URL original y hazle saber que el enlace está roto."
+  },
+  "theme.NotFound.title": {
+    "message": "Página no encontrada"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "En esta página"
+  },
+  "theme.admonition.caution": {
+    "message": "precaución"
+  },
+  "theme.admonition.danger": {
+    "message": "peligro"
+  },
+  "theme.admonition.info": {
+    "message": "información"
+  },
+  "theme.admonition.note": {
+    "message": "nota"
+  },
+  "theme.admonition.tip": {
+    "message": "consejo"
+  },
+  "theme.admonition.warning": {
+    "message": "advertencia"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archivo"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archivo"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navegación de la lista de publicaciones del blog"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Entradas más recientes"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Entradas más antiguas"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Navegación de publicaciones del blog"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "新しい投稿"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "古い投稿"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} posts"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Leer más"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Leer más sobre {title}"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} min read"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navegación de publicaciones recientes del blog"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} etiquetadas con \"{tagName}\""
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Cambiar entre modo oscuro y claro (actualmente modo {mode})"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "oscuro"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "claro"
+  },
+  "theme.common.editThisPage": {
+    "message": "Editar esta página"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Enlace directo al encabezado"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Saltar al contenido principal"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 elemento|{count} elementos"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Páginainicio"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Migaspan"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Navegaciónpáginasdocumentos"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Siguiente"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Anterior"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Cerrar barra lateralnavegación"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Colapsar barra lateral"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Colapsar barra lateral"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expandir barra lateral"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expandir barra lateral"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Barra lateraldocumentos"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Alternar barra lateralnavegación"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} con \"{tagName}\""
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Un documento etiquetado|{count} documentos etiquetados"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Versión: {versionLabel}"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "Última versión"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Para documentación actualizada, consulta la {latestVersionLink} ({versionLabel})."
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Esta es la documentación{siteTitle} {versionLabel}, que ya no se mantiene activamente."
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Esta es la documentación no publicada{siteTitle} {versionLabel}."
+  },
+  "theme.footer.link.label.View All Advertising": {
+    "message": "Ver Toda la Publicidad"
+  },
+  "theme.footer.link.label.View All Tools": {
+    "message": "Ver Todas las Herramientas"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " el {date}"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " por {user}"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Última actualización{atDate}{byUser}"
+  },
+  "theme.navbar.item.label.Advertising": {
+    "message": "Publicidad"
+  },
+  "theme.navbar.item.label.Tools": {
+    "message": "Herramientas"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Idiomas"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Volver al menú principal"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versiones"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Etiquetas:"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Ver todas las etiquetas"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Etiquetas"
+  },
+  "theme.unlistedContent.message": {
+    "message": "このページはリストに載っていません。検索エンジンにインデックスされず、直接リンクを持つユーザーのみがアクセスできます。"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Página no listada"
+  },
+  "whitelabel.annualRequired": {
+    "message": "Se requiere licencia anual"
+  },
+  "whitelabel.annualRequiredDesc": {
+    "message": "ホワイトラベル機能は年額ライセンスのみで利用可能です。"
+  },
+  "whitelabel.appName": {
+    "message": "アプリ名"
+  },
+  "whitelabel.contactSupport": {
+    "message": "サポートにお問い合わせください"
+  },
+  "whitelabel.customization": {
+    "message": "ホワイトラベルのカスタマイズ"
+  },
+  "whitelabel.description": {
+    "message": "自社ブランドでアプリをカスタマイズできます"
+  },
+  "whitelabel.logo": {
+    "message": "ロゴ"
+  },
+  "whitelabel.setup": {
+    "message": "セットアップ"
+  },
+  "whitelabel.supportEmail": {
+    "message": "サポートのメールアドレス"
+  },
+  "whitelabel.telegramUrl": {
+    "message": "TelegramのURL"
+  },
+  "whitelabel.title": {
+    "message": "Marca blanca"
+  },
+  "whitelabel.tutorialUrl": {
+    "message": "URL del tutorial"
+  }
 }
