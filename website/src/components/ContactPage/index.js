@@ -46,12 +46,7 @@ export default function FrequentlyAsked() {
                                 </p>
                             </div>
 
-                            <div className="col col--12 info">
 
-                                <p>
-                                    <iframe src="https://discordapp.com/widget?id=1428188531536171142&theme=dark" width="350" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-                                </p>
-                            </div>
                         </div>
                     </div>
 

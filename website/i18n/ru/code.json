@@ -14,6 +14,12 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "После установки откройте IgMatrix, чтобы просмотреть полный список доступных скриптов автоматизации Instagram. Выбор скриптов может отличаться от TikMatrix."
   },
+  "All basic features (automation excluded)": {
+    "message": "Все базовые функции (без автоматизации)"
+  },
+  "All features included": {
+    "message": "Включает все функции"
+  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Всегда проверяйте фактические функции, доступные в вашем программном обеспечении IgMatrix, поскольку функциональность скриптов может отличаться от TikMatrix. Интерфейс программы покажет вам точно, какие скрипты автоматизации доступны для Instagram."
   },
@@ -41,6 +47,12 @@
   "Automatic profile setup": {
     "message": "Автоматическая настройка профиля"
   },
+  "Automation tasks": {
+    "message": "Автоматизация задач"
+  },
+  "Automation tasks disabled": {
+    "message": "Автоматические задачи отключены"
+  },
   "Basic configuration": {
     "message": "Базовая конфигурация"
   },
@@ -59,6 +71,9 @@
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Создан с механизмами безопасности для защиты ваших аккаунтов Instagram от блокировки"
   },
+  "Business": {
+    "message": "Бизнес"
+  },
   "Buy hardware": {
     "message": "Купить оборудование"
   },
@@ -76,6 +91,12 @@
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "Комментирование множества публикаций TikTok с настраиваемым контентом и эмодзи"
+  },
+  "Community support": {
+    "message": "Поддержка сообщества"
+  },
+  "Compare features": {
+    "message": "Сравнить функции"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Комплексная автоматизация, объединяющая множественные стратегии взаимодействия с ИИ-генерируемыми комментариями"
@@ -98,8 +119,14 @@
   "Custom Instagram workflows": {
     "message": "Пользовательские рабочие процессы Instagram"
   },
+  "Dedicated ticket support": {
+    "message": "Выделенная поддержка через тикеты"
+  },
   "Device connection": {
     "message": "Подключение устройства"
+  },
+  "Device support": {
+    "message": "Поддержка устройств"
   },
   "Different Script Logic": {
     "message": "Другая логика скриптов"
@@ -134,14 +161,32 @@
   "Find answers to common questions about IgMatrix": {
     "message": "Найдите ответы на часто задаваемые вопросы об IgMatrix"
   },
+  "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
+    "message": "Гибкие планы для всех. Скидка 30% при годовой оплате!"
+  },
   "Follow TikMatrix Tutorial": {
     "message": "Следуйте руководству TikMatrix"
   },
   "Follow these steps to get started with IgMatrix": {
     "message": "Следуйте этим шагам, чтобы начать работу с IgMatrix"
   },
+  "For growing teams and companies": {
+    "message": "Для растущих команд и компаний"
+  },
+  "For individuals and small teams": {
+    "message": "Подходит для частных лиц и небольших команд"
+  },
+  "For large enterprises": {
+    "message": "Подходит для крупных предприятий"
+  },
+  "For professionals and small businesses": {
+    "message": "Подходит для профессионалов и малого бизнеса"
+  },
   "Free": {
     "message": "Бесплатно"
+  },
+  "Free users can connect unlimited devices and use all basic features except automation tasks": {
+    "message": "Бесплатные пользователи могут подключать неограниченное количество устройств и пользоваться всеми базовыми функциями, кроме автоматизации"
   },
   "Frequently Asked Questions": {
     "message": "Часто задаваемые вопросы"
@@ -157,6 +202,9 @@
   },
   "Here are some frequently asked questions.": {
     "message": "Вот некоторые часто задаваемые вопросы."
+  },
+  "Hide feature comparison": {
+    "message": "Скрыть сравнение"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "Сколько аккаунтов TikTok может войти на каждый телефон?"
@@ -224,11 +272,23 @@
   "Live stream boost": {
     "message": "Повышение активности прямых эфиров"
   },
+  "Local API": {
+    "message": "Локальное API"
+  },
+  "Local REST API access (Pro+)": {
+    "message": "Доступ к локальному REST API (Pro+)"
+  },
   "Mass commenting": {
     "message": "Массовое комментирование"
   },
   "Mass direct messaging": {
     "message": "Массовые личные сообщения"
+  },
+  "Monthly": {
+    "message": "Ежемесячно"
+  },
+  "Most popular": {
+    "message": "Популярно"
   },
   "Multi-Device Control": {
     "message": "Управление несколькими устройствами"
@@ -241,6 +301,12 @@
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "Наша команда поддержки здесь, чтобы помочь вам с любыми вопросами или проблемами, связанными с IgMatrix."
+  },
+  "Per Month": {
+    "message": "В месяц"
+  },
+  "Per Year (Save 30%)": {
+    "message": "В год (Экономия 30%)"
   },
   "Performance analytics": {
     "message": "Аналитика производительности"
@@ -269,6 +335,12 @@
   "Pricing": {
     "message": "Цены"
   },
+  "Pro": {
+    "message": "Профессиональный"
+  },
+  "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
+    "message": "Пользователи Pro, Team и Business могут использовать локальный RESTful API для управления задачами и автоматизации рабочих процессов. Смотрите документацию."
+  },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "Профессиональный инструмент управления аккаунтами TikTok и маркетинга, предназначенный для Android ферм телефонов на Windows и Mac. Автоматизируйте публикации, подписки и увеличивайте свое присутствие в TikTok с нулевым уровнем блокировки аккаунтов."
   },
@@ -280,6 +352,9 @@
   },
   "Quick Setup Guide": {
     "message": "Краткое руководство по настройке"
+  },
+  "Read Local API docs": {
+    "message": "Читать документацию по локальному API"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "Распознавание и сопоставление аккаунтов TikTok с телефонов для добавления в список аккаунтов"
@@ -323,17 +398,29 @@
   "Smart Scheduling": {
     "message": "Умное планирование"
   },
+  "Start for free": {
+    "message": "Начать бесплатно"
+  },
+  "Starter": {
+    "message": "Стартовый"
+  },
   "Still have questions?": {
     "message": "Остались вопросы?"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "Оптимизируйте свою Instagram ферму телефонов с помощью продвинутого пакетного управления и автоматизации маркетинга"
   },
+  "Subscribe": {
+    "message": "Подписаться"
+  },
   "Super Marketing": {
     "message": "Супер-маркетинг"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "Поддерживает отображение 100+ телефонов на компьютер с синхронизированной работой"
+  },
+  "Team": {
+    "message": "Команда"
   },
   "Technical Advantages": {
     "message": "Технические преимущества"
@@ -370,6 +457,24 @@
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "Нативная неактивированная SIM-карта США, используется для приложения TikTok Android для определения местоположения SIM-карты"
+  },
+  "Unlimited": {
+    "message": "Безлимит"
+  },
+  "Unlimited device connections": {
+    "message": "Неограниченные подключения устройств"
+  },
+  "Up to 100 concurrent automation tasks": {
+    "message": "До 100 одновременных задач автоматизации"
+  },
+  "Up to 20 concurrent automation tasks": {
+    "message": "До 20 одновременных задач автоматизации"
+  },
+  "Up to 5 concurrent automation tasks": {
+    "message": "До 5 одновременных задач автоматизации"
+  },
+  "Up to 50 concurrent automation tasks": {
+    "message": "До 50 одновременных задач автоматизации"
   },
   "User engagement boost": {
     "message": "Повышение пользовательской активности"
@@ -409,6 +514,9 @@
   },
   "Why Choose IgMatrix?": {
     "message": "Почему выбрать IgMatrix?"
+  },
+  "Yearly (Save 30%)": {
+    "message": "Ежегодно (Экономия 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Да! Руководство по настройке IgMatrix идентично TikMatrix. Вы можете следовать документации TikMatrix для установки, подключения устройств и базовой настройки. Только скрипты автоматизации будут отличаться в зависимости от платформы."
@@ -628,123 +736,6 @@
   },
   "homepage.vs.title": {
     "message": "Почему TikMatrix?"
-  },
-  "pricing.all_features": {
-    "message": "Включает все функции"
-  },
-  "pricing.badge.popular": {
-    "message": "Популярно"
-  },
-  "pricing.business.concurrent_tasks": {
-    "message": "До 100 одновременных задач автоматизации"
-  },
-  "pricing.business.description": {
-    "message": "Подходит для крупных предприятий"
-  },
-  "pricing.business.name": {
-    "message": "Бизнес"
-  },
-  "pricing.compare.automation": {
-    "message": "Автоматизация задач"
-  },
-  "pricing.compare.devices": {
-    "message": "Поддержка устройств"
-  },
-  "pricing.compare.hide": {
-    "message": "Скрыть сравнение"
-  },
-  "pricing.compare.show": {
-    "message": "Сравнить функции"
-  },
-  "pricing.cta.free": {
-    "message": "Начать бесплатно"
-  },
-  "pricing.cta.pay": {
-    "message": "Подписаться"
-  },
-  "pricing.free.all_free_features": {
-    "message": "Все базовые функции (без автоматизации)"
-  },
-  "pricing.free.automation_disabled": {
-    "message": "Автоматические задачи отключены"
-  },
-  "pricing.free.community_support": {
-    "message": "Поддержка сообщества"
-  },
-  "pricing.free.description": {
-    "message": "Бесплатные пользователи могут подключать неограниченное количество устройств и пользоваться всеми базовыми функциями, кроме автоматизации"
-  },
-  "pricing.free.name": {
-    "message": "Бесплатно"
-  },
-  "pricing.free_label": {
-    "message": "Бесплатно"
-  },
-  "pricing.local_api.description": {
-    "message": "Пользователи Pro, Team и Business могут использовать локальный RESTful API для управления задачами и автоматизации рабочих процессов. Смотрите документацию."
-  },
-  "pricing.local_api.link_text": {
-    "message": "Читать документацию по локальному API"
-  },
-  "pricing.local_api.support": {
-    "message": "Доступ к локальному REST API (Pro+)"
-  },
-  "pricing.local_api.title": {
-    "message": "Локальное API"
-  },
-  "pricing.per_month": {
-    "message": "В месяц"
-  },
-  "pricing.per_year": {
-    "message": "В год (Экономия 30%)"
-  },
-  "pricing.pro.concurrent_tasks": {
-    "message": "До 20 одновременных задач автоматизации"
-  },
-  "pricing.pro.description": {
-    "message": "Подходит для профессионалов и малого бизнеса"
-  },
-  "pricing.pro.name": {
-    "message": "Профессиональный"
-  },
-  "pricing.starter.concurrent_tasks": {
-    "message": "До 5 одновременных задач автоматизации"
-  },
-  "pricing.starter.description": {
-    "message": "Подходит для частных лиц и небольших команд"
-  },
-  "pricing.starter.name": {
-    "message": "Стартовый"
-  },
-  "pricing.subtitle": {
-    "message": "Гибкие планы для всех. Скидка 30% при годовой оплате!"
-  },
-  "pricing.team.concurrent_tasks": {
-    "message": "До 50 одновременных задач автоматизации"
-  },
-  "pricing.team.description": {
-    "message": "Для растущих команд и компаний"
-  },
-  "pricing.team.name": {
-    "message": "Команда"
-  },
-  "pricing.ticket_support": {
-    "message": "Выделенная поддержка через тикеты"
-  },
-  "pricing.title": {
-    "message": "Цены"
-  },
-  "pricing.toggle.monthly": {
-    "message": "Ежемесячно"
-  },
-  "pricing.toggle.yearly": {
-    "message": "Ежегодно (Экономия 30%)"
-  },
-  "pricing.unlimited_devices": {
-    "message": "Неограниченные подключения устройств"
-  },
-  "pricing.unlimited_devices_short": {
-    "message": "Безлимит"
   },
   "tech.diagram.devices": {
     "message": "Реальные Android-устройства"

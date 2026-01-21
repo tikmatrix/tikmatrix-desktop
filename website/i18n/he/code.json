@@ -14,6 +14,12 @@
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
     "message": "לאחר ההתקנה, פתח את IgMatrix כדי להציג את הרשימה המלאה של סקריפטי אוטומציה זמינים ל-Instagram. בחירת הסקריפטים עשויה להיות שונה מ-TikMatrix."
   },
+  "All basic features (automation excluded)": {
+    "message": "pricing.free.all_free_features"
+  },
+  "All features included": {
+    "message": "pricing.all_features"
+  },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "בדוק תמיד את התכונות הזמינות בפועל בתוכנת IgMatrix שלך, שכן פונקציונליות הסקריפטים עשויה להשתנות מ-TikMatrix. ממשק התוכנה יציג לך בדיוק אילו סקריפטי אוטומציה זמינים ל-Instagram."
   },
@@ -41,6 +47,12 @@
   "Automatic profile setup": {
     "message": "הגדרת פרופיל אוטומטית"
   },
+  "Automation tasks": {
+    "message": "pricing.compare.automation"
+  },
+  "Automation tasks disabled": {
+    "message": "אוטומציה מושבתת"
+  },
   "Basic configuration": {
     "message": "תצורה בסיסית"
   },
@@ -59,6 +71,9 @@
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "בנוי עם מנגנוני בטיחות להגנה על חשבונות Instagram שלך מהשעיה"
   },
+  "Business": {
+    "message": "pricing.business.name"
+  },
   "Buy hardware": {
     "message": "רכישת חומרה"
   },
@@ -76,6 +91,12 @@
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "תגובה על מספר פוסטים ב-TikTok באצווה עם תוכן ואימוג'ים הניתנים להתאמה אישית"
+  },
+  "Community support": {
+    "message": "pricing.free.community_support"
+  },
+  "Compare features": {
+    "message": "pricing.compare.show"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "אוטומציה מקיפה המשלבת אסטרטגיות אינטראקציה מרובות עם תגובות מופקות על ידי AI"
@@ -98,8 +119,14 @@
   "Custom Instagram workflows": {
     "message": "זרימות עבודה מותאמות אישית ל-Instagram"
   },
+  "Dedicated ticket support": {
+    "message": "pricing.ticket_support"
+  },
   "Device connection": {
     "message": "חיבור מכשיר"
+  },
+  "Device support": {
+    "message": "pricing.compare.devices"
   },
   "Different Script Logic": {
     "message": "לוגיקת סקריפט שונה"
@@ -134,14 +161,32 @@
   "Find answers to common questions about IgMatrix": {
     "message": "מצא תשובות לשאלות נפוצות אודות IgMatrix"
   },
+  "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
+    "message": "pricing.subtitle"
+  },
   "Follow TikMatrix Tutorial": {
     "message": "עקוב אחר מדריך TikMatrix"
   },
   "Follow these steps to get started with IgMatrix": {
     "message": "עקוב אחר השלבים הבאים כדי להתחיל עם IgMatrix"
   },
+  "For growing teams and companies": {
+    "message": "pricing.team.description"
+  },
+  "For individuals and small teams": {
+    "message": "pricing.starter.description"
+  },
+  "For large enterprises": {
+    "message": "pricing.business.description"
+  },
+  "For professionals and small businesses": {
+    "message": "pricing.pro.description"
+  },
   "Free": {
-    "message": "חינם"
+    "message": "pricing.free_label"
+  },
+  "Free users can connect unlimited devices and use all basic features except automation tasks": {
+    "message": "מושלם למתחילים"
   },
   "Frequently Asked Questions": {
     "message": "שאלות נפוצות"
@@ -157,6 +202,9 @@
   },
   "Here are some frequently asked questions.": {
     "message": "הנה כמה שאלות נפוצות."
+  },
+  "Hide feature comparison": {
+    "message": "pricing.compare.hide"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "לכמה חשבונות TikTok כל טלפון יכול להתחבר?"
@@ -224,11 +272,23 @@
   "Live stream boost": {
     "message": "שידור חי - הגברה"
   },
+  "Local API": {
+    "message": "pricing.local_api.title"
+  },
+  "Local REST API access (Pro+)": {
+    "message": "pricing.local_api.support"
+  },
   "Mass commenting": {
     "message": "תגובות המוניות"
   },
   "Mass direct messaging": {
     "message": "הודעות ישירות המוניות"
+  },
+  "Monthly": {
+    "message": "pricing.toggle.monthly"
+  },
+  "Most popular": {
+    "message": "pricing.badge.popular"
   },
   "Multi-Device Control": {
     "message": "בקרת מכשירים מרובים"
@@ -241,6 +301,12 @@
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "Our support team is here to help you with any IgMatrix-related questions or issues."
+  },
+  "Per Month": {
+    "message": "לחודש"
+  },
+  "Per Year (Save 30%)": {
+    "message": "לשנה"
   },
   "Performance analytics": {
     "message": "ניתוח ביצועים"
@@ -267,7 +333,13 @@
     "message": "כלי אוטומציה וניהול רבי עוצמה ל-TikTok"
   },
   "Pricing": {
-    "message": "תמחור"
+    "message": "pricing.title"
+  },
+  "Pro": {
+    "message": "pricing.pro.name"
+  },
+  "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
+    "message": "pricing.local_api.description"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
@@ -280,6 +352,9 @@
   },
   "Quick Setup Guide": {
     "message": "Quick Setup Guide"
+  },
+  "Read Local API docs": {
+    "message": "pricing.local_api.link_text"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "Recognize and match TikTok accounts from phones to add to account list"
@@ -323,17 +398,29 @@
   "Smart Scheduling": {
     "message": "Smart Scheduling"
   },
+  "Start for free": {
+    "message": "התחל בחינם"
+  },
+  "Starter": {
+    "message": "pricing.starter.name"
+  },
   "Still have questions?": {
     "message": "Still have questions?"
   },
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "Streamline your Instagram phone farm with advanced batch control and marketing automation"
   },
+  "Subscribe": {
+    "message": "הירשם"
+  },
   "Super Marketing": {
     "message": "Super Marketing"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "Supports 100+ phones mirroring to a computer, with synchronized operation"
+  },
+  "Team": {
+    "message": "pricing.team.name"
   },
   "Technical Advantages": {
     "message": "Technical Advantages"
@@ -370,6 +457,24 @@
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location"
+  },
+  "Unlimited": {
+    "message": "pricing.unlimited_devices_short"
+  },
+  "Unlimited device connections": {
+    "message": "pricing.unlimited_devices"
+  },
+  "Up to 100 concurrent automation tasks": {
+    "message": "pricing.business.concurrent_tasks"
+  },
+  "Up to 20 concurrent automation tasks": {
+    "message": "pricing.pro.concurrent_tasks"
+  },
+  "Up to 5 concurrent automation tasks": {
+    "message": "pricing.starter.concurrent_tasks"
+  },
+  "Up to 50 concurrent automation tasks": {
+    "message": "pricing.team.concurrent_tasks"
   },
   "User engagement boost": {
     "message": "User engagement boost"
@@ -409,6 +514,9 @@
   },
   "Why Choose IgMatrix?": {
     "message": "Why Choose IgMatrix?"
+  },
+  "Yearly (Save 30%)": {
+    "message": "pricing.toggle.yearly"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform."
@@ -628,123 +736,6 @@
   },
   "homepage.vs.title": {
     "message": "למה לבחור TikMatrix & IgMatrix?"
-  },
-  "pricing.all_features": {
-    "message": "pricing.all_features"
-  },
-  "pricing.badge.popular": {
-    "message": "pricing.badge.popular"
-  },
-  "pricing.business.concurrent_tasks": {
-    "message": "pricing.business.concurrent_tasks"
-  },
-  "pricing.business.description": {
-    "message": "pricing.business.description"
-  },
-  "pricing.business.name": {
-    "message": "pricing.business.name"
-  },
-  "pricing.compare.automation": {
-    "message": "pricing.compare.automation"
-  },
-  "pricing.compare.devices": {
-    "message": "pricing.compare.devices"
-  },
-  "pricing.compare.hide": {
-    "message": "pricing.compare.hide"
-  },
-  "pricing.compare.show": {
-    "message": "pricing.compare.show"
-  },
-  "pricing.cta.free": {
-    "message": "התחל בחינם"
-  },
-  "pricing.cta.pay": {
-    "message": "הירשם"
-  },
-  "pricing.free.all_free_features": {
-    "message": "pricing.free.all_free_features"
-  },
-  "pricing.free.automation_disabled": {
-    "message": "אוטומציה מושבתת"
-  },
-  "pricing.free.community_support": {
-    "message": "pricing.free.community_support"
-  },
-  "pricing.free.description": {
-    "message": "מושלם למתחילים"
-  },
-  "pricing.free.name": {
-    "message": "pricing.free.name"
-  },
-  "pricing.free_label": {
-    "message": "pricing.free_label"
-  },
-  "pricing.local_api.description": {
-    "message": "pricing.local_api.description"
-  },
-  "pricing.local_api.link_text": {
-    "message": "pricing.local_api.link_text"
-  },
-  "pricing.local_api.support": {
-    "message": "pricing.local_api.support"
-  },
-  "pricing.local_api.title": {
-    "message": "pricing.local_api.title"
-  },
-  "pricing.per_month": {
-    "message": "לחודש"
-  },
-  "pricing.per_year": {
-    "message": "לשנה"
-  },
-  "pricing.pro.concurrent_tasks": {
-    "message": "pricing.pro.concurrent_tasks"
-  },
-  "pricing.pro.description": {
-    "message": "pricing.pro.description"
-  },
-  "pricing.pro.name": {
-    "message": "pricing.pro.name"
-  },
-  "pricing.starter.concurrent_tasks": {
-    "message": "pricing.starter.concurrent_tasks"
-  },
-  "pricing.starter.description": {
-    "message": "pricing.starter.description"
-  },
-  "pricing.starter.name": {
-    "message": "pricing.starter.name"
-  },
-  "pricing.subtitle": {
-    "message": "pricing.subtitle"
-  },
-  "pricing.team.concurrent_tasks": {
-    "message": "pricing.team.concurrent_tasks"
-  },
-  "pricing.team.description": {
-    "message": "pricing.team.description"
-  },
-  "pricing.team.name": {
-    "message": "pricing.team.name"
-  },
-  "pricing.ticket_support": {
-    "message": "pricing.ticket_support"
-  },
-  "pricing.title": {
-    "message": "pricing.title"
-  },
-  "pricing.toggle.monthly": {
-    "message": "pricing.toggle.monthly"
-  },
-  "pricing.toggle.yearly": {
-    "message": "pricing.toggle.yearly"
-  },
-  "pricing.unlimited_devices": {
-    "message": "pricing.unlimited_devices"
-  },
-  "pricing.unlimited_devices_short": {
-    "message": "pricing.unlimited_devices_short"
   },
   "tech.diagram.devices": {
     "message": "tech.diagram.devices"
