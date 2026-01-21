@@ -1,12 +1,12 @@
 {
   "24/7 Support": {
-    "message": "Soporte 24/7"
+    "message": "24/7 सहायता"
   },
   "Account management": {
     "message": "खाता प्रबंधन"
   },
   "Account warmup": {
-    "message": "Calentamiento de cuenta"
+    "message": "खाता वॉर्मअप"
   },
   "Advanced safety mechanisms": {
     "message": "उन्नत सुरक्षा तंत्र"
@@ -15,10 +15,10 @@
     "message": "स्थापना के बाद, उपलब्ध Instagram स्वचालन स्क्रिप्ट की पूर्ण सूची देखने के लिए IgMatrix खोलें। स्क्रिप्ट चयन TikMatrix से भिन्न हो सकता है।"
   },
   "All basic features (automation excluded)": {
-    "message": "Todas las funciones gratuitas"
+    "message": "सभी बुनियादी सुविधाएं (स्वचालन को छोड़कर)"
   },
   "All features included": {
-    "message": "Todas las funciones"
+    "message": "सभी सुविधाएं शामिल"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "हमेशा अपने IgMatrix सॉफ़्टवेयर में उपलब्ध वास्तविक सुविधाओं की जांच करें, क्योंकि स्क्रिप्ट कार्यक्षमता TikMatrix से भिन्न हो सकती है। सॉफ़्टवेयर इंटरफ़ेस आपको बताएगा कि Instagram के लिए कौन सी स्वचालन स्क्रिप्ट उपलब्ध हैं।"
@@ -27,226 +27,226 @@
     "message": "Instagram पर पोस्टिंग, फॉलोइंग, टिप्पणी और एंगेजमेंट गतिविधियों को स्वचालित करें"
   },
   "Automatic account matching": {
-    "message": "Coincidencia automática de cuentas"
+    "message": "स्वचालित खाता मिलान"
   },
   "Automatic account nurturing": {
-    "message": "Calentamiento automático de cuenta"
+    "message": "स्वचालित खाता पोषण"
   },
   "Automatic commenting": {
-    "message": "Comentarios automáticos"
+    "message": "स्वचालित टिप्पणी"
   },
   "Automatic following": {
-    "message": "Seguimiento automático"
+    "message": "स्वचालित फॉलो करना"
   },
   "Automatic login": {
-    "message": "Inicio de sesión automático"
+    "message": "स्वचालित लॉगिन"
   },
   "Automatic posting": {
-    "message": "Publicación automática"
+    "message": "स्वचालित पोस्टिंग"
   },
   "Automatic profile setup": {
-    "message": "Configuración automática de perfil"
+    "message": "स्वचालित प्रोफाइल सेटअप"
   },
   "Automation tasks": {
-    "message": "Automatización avanzada"
+    "message": "स्वचालन कार्य"
   },
   "Automation tasks disabled": {
-    "message": "Automatización deshabilitada"
+    "message": "स्वचालन कार्य अक्षम"
   },
   "Basic configuration": {
-    "message": "Configuración básica"
+    "message": "बुनियादी कॉन्फ़िगरेशन"
   },
   "Batch Generating Unique Videos": {
-    "message": "Generación masiva de vídeos únicos"
+    "message": "बैच में अद्वितीय वीडियो जेनरेट करना"
   },
   "Batch account management": {
-    "message": "Gestión masiva de cuentas"
+    "message": "बैच खाता प्रबंधन"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "Inicio de sesión masivo en cuentas de TikTok con gestión de lista de cuentas"
+    "message": "खाता सूची प्रबंधन के साथ TikTok खातों में बैच लॉगिन"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Aumente la interacción en comentarios específicos dándoles me gusta y respondiendo masivamente"
+    "message": "विशिष्ट टिप्पणियों पर थोक में लाइक और उत्तर देकर जुड़ाव बढ़ाएं"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
-    "message": "Construido con mecanismos de seguridad para proteger sus cuentas de Instagram de la suspensión"
+    "message": "आपके Instagram खातों को निलंबन से बचाने के लिए सुरक्षा तंत्र के साथ निर्मित"
   },
   "Business": {
-    "message": "Empresarial"
+    "message": "व्यावसायिक"
   },
   "Buy hardware": {
-    "message": "Comprar hardware"
+    "message": "हार्डवेयर खरीदें"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
-    "message": "¿Puedo ejecutar IgMatrix y TikMatrix en la misma computadora?"
+    "message": "क्या मैं एक ही कंप्यूटर पर IgMatrix और TikMatrix दोनों चला सकता हूं?"
   },
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-    "message": "¿Puedo usar el mismo tutorial para IgMatrix y TikMatrix?"
+    "message": "क्या मैं IgMatrix और TikMatrix दोनों के लिए एक ही ट्यूटोरियल का उपयोग कर सकता हूं?"
   },
   "Check Available Scripts": {
-    "message": "Verificar scripts disponibles"
+    "message": "उपलब्ध स्क्रिप्ट जांचें"
   },
   "Comment boost": {
-    "message": "Impulsar comentarios"
+    "message": "टिप्पणी बूस्ट"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "Comentar múltiples publicaciones de TikTok de forma masiva con contenido y emojis personalizables"
+    "message": "अनुकूलन योग्य सामग्री और इमोजी के साथ कई TikTok पोस्ट पर थोक में टिप्पणी करें"
   },
   "Community support": {
-    "message": "Soporte comunitario"
+    "message": "सामुदायिक सहायता"
   },
   "Compare features": {
-    "message": "Mostrar comparación"
+    "message": "सुविधाओं की तुलना करें"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
-    "message": "Automatización integral que combina múltiples estrategias de engagement con comentarios generados por IA"
+    "message": "AI-जनित टिप्पणियों के साथ कई जुड़ाव रणनीतियों को मिलाकर व्यापक स्वचालन"
   },
   "Contact": {
-    "message": "Contacto"
+    "message": "संपर्क करें"
   },
   "Contact Support": {
-    "message": "Contactar con soporte"
+    "message": "सहायता से संपर्क करें"
   },
   "Contact to purchase": {
-    "message": "Contactar para comprar"
+    "message": "खरीदने के लिए संपर्क करें"
   },
   "Control farm accounts to watch, like, and comment on target live streams": {
-    "message": "Controlar cuentas de granja para ver, dar me gusta y comentar transmisiones en vivo objetivo"
+    "message": "लक्षित लाइव स्ट्रीम को देखने, लाइक करने और टिप्पणी करने के लिए फार्म खातों को नियंत्रित करें"
   },
   "Control multiple Instagram accounts across different Android devices simultaneously": {
-    "message": "Controlar múltiples cuentas de Instagram en diferentes dispositivos Android simultáneamente"
+    "message": "विभिन्न Android उपकरणों में एक साथ कई Instagram खातों को नियंत्रित करें"
   },
   "Custom Instagram workflows": {
-    "message": "Flujos de trabajo personalizados de Instagram"
+    "message": "कस्टम Instagram वर्कफ़्लो"
   },
   "Dedicated ticket support": {
-    "message": "Soporte por tickets"
+    "message": "समर्पित टिकट सहायता"
   },
   "Device connection": {
-    "message": "Conexión de dispositivos"
+    "message": "डिवाइस कनेक्शन"
   },
   "Device support": {
-    "message": "Dispositivos soportados"
+    "message": "डिवाइस समर्थन"
   },
   "Different Script Logic": {
-    "message": "Lógica de scripts diferente"
+    "message": "अलग स्क्रिप्ट तर्क"
   },
   "Different script availability": {
-    "message": "Disponibilidad de scripts diferente"
+    "message": "अलग स्क्रिप्ट उपलब्धता"
   },
   "Do I need separate licenses for IgMatrix and TikMatrix?": {
-    "message": "¿Necesito licencias separadas para IgMatrix y TikMatrix?"
+    "message": "क्या मुझे IgMatrix और TikMatrix के लिए अलग-अलग लाइसेंस चाहिए?"
   },
   "Download IgMatrix": {
-    "message": "Descargar IgMatrix"
+    "message": "IgMatrix डाउनलोड करें"
   },
   "Download IgMatrix from our official website and follow the installation instructions.": {
-    "message": "Descarga IgMatrix desde nuestro sitio web oficial y sigue las instrucciones de instalación."
+    "message": "हमारी आधिकारिक वेबसाइट से IgMatrix डाउनलोड करें और इंस्टॉलेशन निर्देशों का पालन करें।"
   },
   "Download TikMatrix": {
-    "message": "Descargar TikMatrix"
+    "message": "TikMatrix डाउनलोड करें"
   },
   "Download and Install": {
-    "message": "Descargar e instalar"
+    "message": "डाउनलोड और इंस्टॉल करें"
   },
   "Download for Windows": {
-    "message": "Descargar para Windows"
+    "message": "Windows के लिए डाउनलोड करें"
   },
   "Email": {
-    "message": "Correo electrónico"
+    "message": "ईमेल"
   },
   "Features": {
-    "message": "Funciones"
+    "message": "सुविधाएं"
   },
   "Find answers to common questions about IgMatrix": {
-    "message": "Encuentra respuestas a preguntas frecuentes sobre IgMatrix"
+    "message": "IgMatrix के बारे में सामान्य प्रश्नों के उत्तर खोजें"
   },
   "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
     "message": "Choose the plan that fits your needs"
   },
   "Follow TikMatrix Tutorial": {
-    "message": "Seguir el tutorial de TikMatrix"
+    "message": "TikMatrix ट्यूटोरियल का पालन करें"
   },
   "Follow these steps to get started with IgMatrix": {
-    "message": "Sigue estos pasos para comenzar con IgMatrix"
+    "message": "IgMatrix के साथ शुरुआत करने के लिए इन चरणों का पालन करें"
   },
   "For growing teams and companies": {
-    "message": "Para equipos en crecimiento"
+    "message": "बढ़ती टीमों और कंपनियों के लिए"
   },
   "For individuals and small teams": {
-    "message": "Perfecto para empezar"
+    "message": "व्यक्तियों और छोटी टीमों के लिए"
   },
   "For large enterprises": {
-    "message": "Para equipos y empresas grandes"
+    "message": "बड़े उद्यमों के लिए"
   },
   "For professionals and small businesses": {
-    "message": "Para profesionales y equipos pequeños"
+    "message": "पेशेवरों और छोटे व्यवसायों के लिए"
   },
   "Free": {
-    "message": "Gratis"
+    "message": "मुफ़्त"
   },
   "Free users can connect unlimited devices and use all basic features except automation tasks": {
-    "message": "Perfecto para empezar"
+    "message": "मुफ़्त उपयोगकर्ता असीमित उपकरणों को कनेक्ट कर सकते हैं और स्वचालन कार्यों को छोड़कर सभी बुनियादी सुविधाओं का उपयोग कर सकते हैं"
   },
   "Frequently Asked Questions": {
-    "message": "Preguntas frecuentes"
+    "message": "अक्सर पूछे जाने वाले प्रश्न"
   },
   "Get Support": {
-    "message": "Obtener soporte"
+    "message": "सहायता प्राप्त करें"
   },
   "Get dedicated support from our expert team whenever you need help": {
-    "message": "Obtén soporte dedicado de nuestro equipo experto siempre que necesites ayuda"
+    "message": "जब भी आपको सहायता की आवश्यकता हो, हमारी विशेषज्ञ टीम से समर्पित सहायता प्राप्त करें"
   },
   "Go to the \"Download\" page and download the latest version of TikMatrix.": {
-    "message": "Ve a la página de \"Descargas\" y descarga la última versión de TikMatrix."
+    "message": "\"डाउनलोड\" पृष्ठ पर जाएं और TikMatrix का नवीनतम संस्करण डाउनलोड करें।"
   },
   "Here are some frequently asked questions.": {
-    "message": "Aquí encontrarás algunas preguntas frecuentes."
+    "message": "यहां कुछ अक्सर पूछे जाने वाले प्रश्न हैं।"
   },
   "Hide feature comparison": {
-    "message": "Ocultar comparación"
+    "message": "सुविधा तुलना छिपाएं"
   },
   "How many TikTok accounts can each phone log into?": {
-    "message": "¿Cuántas cuentas de TikTok puede iniciar sesión cada teléfono?"
+    "message": "प्रत्येक फोन कितने TikTok खातों में लॉग इन कर सकता है?"
   },
   "How many devices can I manage?": {
-    "message": "¿Cuántos dispositivos puedo gestionar?"
+    "message": "मैं कितने उपकरणों को प्रबंधित कर सकता हूं?"
   },
   "How to use?": {
-    "message": "¿Cómo usar?"
+    "message": "उपयोग कैसे करें?"
   },
   "If you are interested in our service, please contact us to get price.": {
-    "message": "Si estás interesado en nuestro servicio, contáctanos para obtener el precio."
+    "message": "यदि आप हमारी सेवा में रुचि रखते हैं, तो कृपया मूल्य प्राप्त करने के लिए हमसे संपर्क करें।"
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
-    "message": "Si necesitas ayuda con funciones específicas de IgMatrix o encuentras algún problema, nuestro equipo de soporte está listo para asistirte."
+    "message": "यदि आपको IgMatrix-विशिष्ट सुविधाओं में सहायता की आवश्यकता है या कोई समस्या आती है, तो हमारी सहायता टीम आपकी सहायता के लिए तैयार है।"
   },
   "IgMatrix Features": {
-    "message": "Funciones de IgMatrix"
+    "message": "IgMatrix सुविधाएं"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
-    "message": "IgMatrix y TikMatrix comparten el mismo proceso de configuración e interfaz de usuario. La principal diferencia es que IgMatrix está diseñado específicamente para la automatización de Instagram, mientras que TikMatrix es para TikTok. La lógica de scripts y las funciones disponibles están optimizadas para cada plataforma respectiva."
+    "message": "IgMatrix और TikMatrix एक ही सेटअप प्रक्रिया और उपयोगकर्ता इंटरफ़ेस साझा करते हैं। मुख्य अंतर यह है कि IgMatrix विशेष रूप से Instagram स्वचालन के लिए डिज़ाइन किया गया है, जबकि TikMatrix TikTok के लिए है। स्क्रिप्ट तर्क और उपलब्ध सुविधाओं को प्रत्येक संबंधित प्लेटफ़ॉर्म के लिए अनुकूलित किया गया है।"
   },
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
-    "message": "IgMatrix sigue una estructura de precios similar a TikMatrix, pero puede tener tarifas diferentes. Por favor, consulta nuestra página oficial de precios o contacta a nuestro equipo de soporte para información actual de precios de IgMatrix."
+    "message": "IgMatrix TikMatrix के समान मूल्य निर्धारण संरचना का पालन करता है, लेकिन अलग दरें हो सकती हैं। कृपया वर्तमान IgMatrix मूल्य निर्धारण जानकारी के लिए हमारे आधिकारिक मूल्य निर्धारण पृष्ठ की जांच करें या हमारी सहायता टीम से संपर्क करें।"
   },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
-    "message": "IgMatrix es una herramienta de control por lotes de granja de teléfonos Android para Instagram"
+    "message": "IgMatrix एक Instagram Android फोन फार्म बैच नियंत्रण उपकरण है"
   },
   "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
-    "message": "El tutorial de configuración de IgMatrix es idéntico al de TikMatrix. La única diferencia es su lógica de scripts, por lo que puedes consultar directamente la documentación del tutorial de TikMatrix."
+    "message": "IgMatrix सेटअप ट्यूटोरियल TikMatrix के समान है। एकमात्र अंतर उनका स्क्रिप्ट तर्क है, इसलिए आप सीधे TikMatrix ट्यूटोरियल दस्तावेज़ का उल्लेख कर सकते हैं।"
   },
   "Important Notice": {
-    "message": "Aviso importante"
+    "message": "महत्वपूर्ण सूचना"
   },
   "Important Reminder": {
-    "message": "Recordatorio importante"
+    "message": "महत्वपूर्ण अनुस्मारक"
   },
   "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
-    "message": "Aumentar el engagement en publicaciones dando me gusta, compartiendo, marcando como favoritos y viéndolas de forma masiva"
+    "message": "पोस्ट पर लाइक करके, शेयर करके, पसंदीदा बनाकर और उन्हें थोक में देखकर जुड़ाव बढ़ाएं"
   },
   "Increase user engagement by following or unfollowing accounts in bulk": {
-    "message": "Aumentar el engagement de usuarios siguiendo o dejando de seguir cuentas de forma masiva"
+    "message": "थोक में खातों को फॉलो या अनफॉलो करके उपयोगकर्ता जुड़ाव बढ़ाएं"
   },
   "Instagram Automation": {
     "message": "Automatización de Instagram"
@@ -270,7 +270,7 @@
     "message": "Diferencias clave respecto a TikMatrix"
   },
   "Live stream boost": {
-    "message": "Impulsar transmisiones en vivo"
+    "message": "लाइव स्ट्रीम बूस्ट"
   },
   "Local API": {
     "message": "API local"
@@ -279,7 +279,7 @@
     "message": "Disponible en todos los planes de pago"
   },
   "Mass commenting": {
-    "message": "Comentarios masivos"
+    "message": "बड़े पैमाने पर टिप्पणी"
   },
   "Mass direct messaging": {
     "message": "Mensajería directa masiva"
@@ -294,7 +294,7 @@
     "message": "मल्टी-डिवाइस नियंत्रण"
   },
   "Multi-language support (English, Chinese, Russian)": {
-    "message": "Soporte multiidioma (inglés, chino, ruso)"
+    "message": "बहु-भाषा समर्थन (अंग्रेजी, चीनी, रूसी)"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "No todos los scripts de TikMatrix están disponibles en IgMatrix, ya que son específicos de cada plataforma. La lista exacta de scripts disponibles se puede encontrar en la interfaz del software IgMatrix después de la instalación. Por favor, consulta las funciones reales mostradas en tu software."
@@ -315,19 +315,19 @@
     "message": "Reflejo de pantalla de teléfono a computadora"
   },
   "Platform-optimized features": {
-    "message": "Funciones optimizadas para la plataforma"
+    "message": "प्लेटफ़ॉर्म-अनुकूलित सुविधाएं"
   },
   "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
-    "message": "Por favor, descarga IgMatrix para ver la lista de scripts directamente. Actualmente, no todos los scripts de TikMatrix son 100% compatibles con IgMatrix. Por favor, consulta las funciones reales en el software."
+    "message": "कृपया स्क्रिप्ट सूची सीधे देखने के लिए IgMatrix डाउनलोड करें। वर्तमान में, सभी TikMatrix स्क्रिप्ट IgMatrix में 100% समर्थित नहीं हैं। कृपया सॉफ़्टवेयर में वास्तविक सुविधाओं का संदर्भ लें।"
   },
   "Post engagement boost": {
     "message": "Impulsar engagement de publicaciones"
   },
   "Post management": {
-    "message": "Gestión de publicaciones"
+    "message": "पोस्ट प्रबंधन"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
-    "message": "Potentes herramientas de automatización de Instagram diseñadas para profesionales del marketing y empresas"
+    "message": "पेशेवर विपणक और व्यवसायों के लिए डिज़ाइन किए गए शक्तिशाली Instagram स्वचालन उपकरण"
   },
   "Powerful TikTok Automation & Management Tools": {
     "message": "Potentes herramientas de automatización y gestión de TikTok"
@@ -342,10 +342,10 @@
     "message": "¿Necesitas integrar TikMatrix con tus propios sistemas? Nuestra API local te permite controlar TikMatrix mediante programación."
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "Herramienta profesional de gestión y marketing de cuentas de TikTok diseñada para granjas de teléfonos Android en Windows y Mac. Automatiza publicaciones, seguimientos y haz crecer tu presencia en TikTok con una tasa de suspensión de cuentas de cero."
+    "message": "Windows और Mac पर Android फोन फार्म के लिए डिज़ाइन किया गया पेशेवर TikTok खाता प्रबंधन और विपणन उपकरण। पोस्टिंग, फॉलोइंग को स्वचालित करें और शून्य खाता निलंबन दर के साथ अपनी TikTok उपस्थिति बढ़ाएं।"
   },
   "Professional phone farm management": {
-    "message": "Gestión profesional de granja de teléfonos"
+    "message": "पेशेवर फोन फार्म प्रबंधन"
   },
   "Publish videos or images to TikTok with batch posting capabilities": {
     "message": "Publicar videos o imágenes en TikTok con capacidades de publicación por lotes"
@@ -435,22 +435,22 @@
     "message": "La longitud y el ancho son relativamente pequeños, pero la altura es alta"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
-    "message": "La máquina de placas base consta de 20 placas base de teléfonos Samsung. Se enciende automáticamente al conectarse a la electricidad, comparte una fuente de alimentación unificada, tiene un sistema de refrigeración de múltiples ventiladores unificado y conectividad USB unificada. También admite conexiones de red por cable OTG."
+    "message": "मदरबोर्ड मशीन में 20 Samsung फोन मदरबोर्ड होते हैं। यह बिजली से जुड़े होने पर स्वचालित रूप से चालू होता है, एक एकीकृत बिजली आपूर्ति साझा करता है, एक एकीकृत मल्टी-फैन कूलिंग सिस्टम है, और एकीकृत USB कनेक्टिविटी है। यह OTG वायर्ड नेटवर्क कनेक्शन का भी समर्थन करता है।"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms": {
     "message": "TikMatrix es un software de marketing profesional diseñado para granjas de teléfonos de TikTok"
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
-    "message": "TikMatrix admite 8 cuentas de TikTok en cada teléfono."
+    "message": "TikMatrix प्रत्येक फोन पर 8 TikTok खातों का समर्थन करता है।"
   },
   "TikMatrix supports Android phones running Android 5.0 and above.": {
-    "message": "TikMatrix admite teléfonos Android con Android 5.0 y versiones superiores."
+    "message": "TikMatrix Android 5.0 और उससे ऊपर चलने वाले Android फोन का समर्थन करता है।"
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "TikMatrix admite Windows 10 y versiones superiores, y macOS 10.15 o posterior. Para usuarios de Mac, después de la instalación, debes ejecutar el siguiente comando en Terminal para permitir que la aplicación se ejecute: xattr -cr /Applications/TikMatrix.app"
+    "message": "TikMatrix Windows 10 और उससे ऊपर, और macOS 10.15 या बाद के संस्करण का समर्थन करता है। Mac उपयोगकर्ताओं के लिए, स्थापना के बाद, ऐप को चलाने की अनुमति देने के लिए आपको टर्मिनल में निम्नलिखित कमांड चलाना होगा: xattr -cr /Applications/TikMatrix.app"
   },
   "TikMatrix supports up to 200+ devices.": {
-    "message": "TikMatrix admite hasta más de 200 dispositivos."
+    "message": "TikMatrix 200+ उपकरणों तक का समर्थन करता है।"
   },
   "Translate subtitles": {
     "message": "Traducir subtítulos"
@@ -477,16 +477,16 @@
     "message": "100 tareas concurrentes"
   },
   "User engagement boost": {
-    "message": "Impulso del engagement de usuarios"
+    "message": "उपयोगकर्ता जुड़ाव बूस्ट"
   },
   "User interface": {
     "message": "Interfaz de usuario"
   },
   "User scraping": {
-    "message": "Extracción de usuarios"
+    "message": "उपयोगकर्ता स्क्रैपिंग"
   },
   "Video download": {
-    "message": "Descarga de videos"
+    "message": "वीडियो डाउनलोड"
   },
   "Video unique": {
     "message": "Video único"
@@ -543,10 +543,10 @@
     "message": "Visitar sitio web"
   },
   "download.description": {
-    "message": "Descarga TikMatrix para Windows, Mac o Linux y comienza a automatizar tu marketing de TikTok"
+    "message": "Windows, Mac या Linux के लिए TikMatrix डाउनलोड करें और अपने TikTok विपणन को स्वचालित करना शुरू करें"
   },
   "download.igmatrix.description": {
-    "message": "Descarga IgMatrix para Windows, Mac o Linux y comienza a automatizar tu marketing de Instagram"
+    "message": "Windows, Mac या Linux के लिए IgMatrix डाउनलोड करें और अपने Instagram विपणन को स्वचालित करना शुरू करें"
   },
   "download.igmatrix.linux.coming_soon": {
     "message": "Próximamente"
@@ -561,13 +561,13 @@
     "message": "IgMatrix para Linux"
   },
   "download.igmatrix.mac.button": {
-    "message": "Descargar para Mac"
+    "message": "Mac के लिए डाउनलोड करें"
   },
   "download.igmatrix.mac.description": {
-    "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores"
+    "message": "macOS 10.15 (Catalina) और बाद के संस्करण का समर्थन करता है"
   },
   "download.igmatrix.mac.install_tip": {
-    "message": "Después de la instalación, ejecuta: xattr -cr /Applications/IgMatrix.app"
+    "message": "Mac उपयोगकर्ताओं के लिए, स्थापना के बाद, ऐप को चलाने की अनुमति देने के लिए आपको टर्मिनल में निम्नलिखित कमांड चलाना होगा: sudo xattr -cr /Applications/IgMatrix.app"
   },
   "download.igmatrix.mac.title": {
     "message": "IgMatrix para Mac"
@@ -594,10 +594,10 @@
     "message": "Herramienta profesional de automatización de Instagram para Windows y Mac"
   },
   "download.igmatrix.title": {
-    "message": "Descargar IgMatrix"
+    "message": "IgMatrix डाउनलोड करें"
   },
   "download.igmatrix.windows.button": {
-    "message": "Descargar para Windows"
+    "message": "Windows के लिए डाउनलोड करें"
   },
   "download.igmatrix.windows.description": {
     "message": "Compatible con Windows 10 y 11 (64 bits)"
@@ -618,13 +618,13 @@
     "message": "TikMatrix para Linux"
   },
   "download.mac.button": {
-    "message": "Descargar para Mac"
+    "message": "Mac के लिए डाउनलोड करें"
   },
   "download.mac.description": {
-    "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores"
+    "message": "macOS 10.15 (Catalina) और बाद के संस्करण का समर्थन करता है"
   },
   "download.mac.install_tip": {
-    "message": "Después de la instalación, ejecuta este comando en Terminal:"
+    "message": "Mac उपयोगकर्ताओं के लिए, स्थापना के बाद, ऐप को चलाने की अनुमति देने के लिए आपको टर्मिनल में निम्नलिखित कमांड चलाना होगा: sudo xattr -cr /Applications/TikMatrix.app"
   },
   "download.mac.title": {
     "message": "TikMatrix para Mac"
@@ -651,10 +651,10 @@
     "message": "Herramienta profesional de automatización de TikTok para Windows y Mac"
   },
   "download.title": {
-    "message": "Descargar TikMatrix"
+    "message": "TikMatrix डाउनलोड करें"
   },
   "download.windows.button": {
-    "message": "Descargar para Windows"
+    "message": "Windows के लिए डाउनलोड करें"
   },
   "download.windows.description": {
     "message": "Compatible con Windows 10 y 11 (64 bits)"
@@ -663,7 +663,7 @@
     "message": "TikMatrix para Windows"
   },
   "homepage.header.cta.download": {
-    "message": "Descargar ahora"
+    "message": "अभी डाउनलोड करें"
   },
   "homepage.header.cta.features": {
     "message": "Ver funciones"
@@ -729,13 +729,13 @@
     "message": "Comparar funciones"
   },
   "homepage.vs.cta.text": {
-    "message": "¿Quieres ver más comparaciones con productos similares?"
+    "message": "अभी डाउनलोड करें"
   },
   "homepage.vs.subtitle": {
     "message": "Mira cómo nos comparamos con otras soluciones del mercado"
   },
   "homepage.vs.title": {
-    "message": "¿Por qué elegirnos?"
+    "message": "तुलना करें"
   },
   "tech.diagram.devices": {
     "message": "Real Android Devices"
