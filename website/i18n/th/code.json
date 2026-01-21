@@ -848,7 +848,7 @@
     "message": "advertising.whatsapp.checker.title"
   },
   "download.description": {
-    "message": "download.description"
+    "message": "ดาวน์โหลด TikMatrix สำหรับ Windows, Mac และ Linux"
   },
   "download.igmatrix.description": {
     "message": "download.igmatrix.description"
@@ -932,31 +932,31 @@
     "message": "download.mac.install_tip"
   },
   "download.mac.title": {
-    "message": "download.mac.title"
+    "message": "Mac"
   },
   "download.requirements.internet": {
-    "message": "download.requirements.internet"
+    "message": "การเชื่อมต่ออินเทอร์เน็ตที่เสถียร"
   },
   "download.requirements.memory": {
-    "message": "download.requirements.memory"
+    "message": "หน่วยความจำ: 8 GB RAM"
   },
   "download.requirements.os": {
-    "message": "download.requirements.os"
+    "message": "ระบบปฏิบัติการ: Windows 10/11, macOS 10.15+ หรือ Ubuntu 20.04+"
   },
   "download.requirements.processor": {
-    "message": "download.requirements.processor"
+    "message": "โปรเซสเซอร์: Intel Core i5 หรือเทียบเท่า"
   },
   "download.requirements.storage": {
-    "message": "download.requirements.storage"
+    "message": "พื้นที่เก็บข้อมูล: 500 MB พื้นที่ว่าง"
   },
   "download.requirements.title": {
-    "message": "download.requirements.title"
+    "message": "ข้อกำหนดของระบบ"
   },
   "download.subtitle": {
-    "message": "download.subtitle"
+    "message": "เลือกแพลตฟอร์มของคุณเพื่อดาวน์โหลด TikMatrix"
   },
   "download.title": {
-    "message": "download.title"
+    "message": "ดาวน์โหลด TikMatrix"
   },
   "download.videomagic.description": {
     "message": "download.videomagic.description"
@@ -974,70 +974,70 @@
     "message": "download.windows.description"
   },
   "download.windows.title": {
-    "message": "download.windows.title"
+    "message": "Windows"
   },
   "homepage.header.cta.download": {
-    "message": "homepage.header.cta.download"
+    "message": "ดาวน์โหลดตอนนี้"
   },
   "homepage.header.cta.features": {
-    "message": "homepage.header.cta.features"
+    "message": "สำรวจคุณสมบัติ"
   },
   "homepage.header.cta.primary": {
-    "message": "homepage.header.cta.primary"
+    "message": "เริ่มต้น"
   },
   "homepage.header.cta.secondary": {
-    "message": "homepage.header.cta.secondary"
+    "message": "ดูคุณสมบัติ"
   },
   "homepage.header.defaultSubtitle": {
-    "message": "homepage.header.defaultSubtitle"
+    "message": "เครื่องมืออัตโนมัติที่ทรงพลังสำหรับ TikTok และ Instagram"
   },
   "homepage.header.defaultTitle": {
-    "message": "homepage.header.defaultTitle"
+    "message": "TikMatrix & IgMatrix"
   },
   "homepage.header.subtitle": {
-    "message": "homepage.header.subtitle"
+    "message": "เรียกใช้อุปกรณ์แบบเป็นกลุ่ม อัตโนมัติงาน กำหนดเวลาการโพสต์ และดูแลบัญชีอย่างชาญฉลาด — TikMatrix ทำให้การจัดการ TikTok ของคุณเป็นอัตโนมัติ 100%"
   },
   "homepage.header.title": {
     "message": "การทำงานอัตโนมัติของ TikTok เริ่มที่นี่"
   },
   "homepage.vs.card.analytics.desc": {
-    "message": "homepage.vs.card.analytics.desc"
+    "message": "ติดตามสถานะงานและประสิทธิภาพบัญชีแบบเรียลไทม์"
   },
   "homepage.vs.card.analytics.title": {
-    "message": "homepage.vs.card.analytics.title"
+    "message": "การวิเคราะห์ขั้นสูง"
   },
   "homepage.vs.card.automation.desc": {
-    "message": "homepage.vs.card.automation.desc"
+    "message": "อัตโนมัติทุกงานโซเชียลมีเดียของคุณ"
   },
   "homepage.vs.card.automation.title": {
-    "message": "homepage.vs.card.automation.title"
+    "message": "อัตโนมัติเต็มรูปแบบ"
   },
   "homepage.vs.card.cta": {
     "message": "homepage.vs.card.cta"
   },
   "homepage.vs.card.lowRisk.desc": {
-    "message": "homepage.vs.card.lowRisk.desc"
+    "message": "ระบบอุปกรณ์จริงช่วยให้บัญชีปลอดภัย"
   },
   "homepage.vs.card.lowRisk.title": {
-    "message": "homepage.vs.card.lowRisk.title"
+    "message": "ความเสี่ยงต่ำ"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "homepage.vs.card.nodev.desc"
+    "message": "ไม่ต้องมีทักษะโปรแกรมเมอร์"
   },
   "homepage.vs.card.nodev.title": {
-    "message": "homepage.vs.card.nodev.title"
+    "message": "ไม่ต้องเขียนโค้ด"
   },
   "homepage.vs.card.plug.desc": {
-    "message": "homepage.vs.card.plug.desc"
+    "message": "เสียบแล้วใช้งาน ติดตั้งง่าย"
   },
   "homepage.vs.card.plug.title": {
-    "message": "homepage.vs.card.plug.title"
+    "message": "ติดตั้งง่าย"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "homepage.vs.card.realDevices.desc"
+    "message": "ใช้เครื่อง Android จริงเพื่อความปลอดภัยสูงสุด"
   },
   "homepage.vs.card.realDevices.title": {
-    "message": "homepage.vs.card.realDevices.title"
+    "message": "อุปกรณ์จริง"
   },
   "homepage.vs.cta.button": {
     "message": "homepage.vs.cta.button"
@@ -1046,13 +1046,13 @@
     "message": "homepage.vs.cta.text"
   },
   "homepage.vs.subtitle": {
-    "message": "homepage.vs.subtitle"
+    "message": "โซลูชันอัตโนมัติที่ทรงพลังเพื่อขยายการเข้าถึงบนโซเชียล"
   },
   "homepage.vs.title": {
-    "message": "homepage.vs.title"
+    "message": "ทำไมต้องเลือก TikMatrix & IgMatrix?"
   },
   "navbar.download": {
-    "message": "navbar.download"
+    "message": "ดาวน์โหลด"
   },
   "pricing.all_features": {
     "message": "pricing.all_features"
@@ -1097,13 +1097,13 @@
     "message": "pricing.free.all_free_features"
   },
   "pricing.free.automation_disabled": {
-    "message": "pricing.free.automation_disabled"
+    "message": "ปิดใช้งานระบบอัตโนมัติ"
   },
   "pricing.free.community_support": {
     "message": "pricing.free.community_support"
   },
   "pricing.free.description": {
-    "message": "pricing.free.description"
+    "message": "เหมาะสำหรับผู้เริ่มต้น"
   },
   "pricing.free.name": {
     "message": "pricing.free.name"
@@ -1112,7 +1112,7 @@
     "message": "pricing.free_label"
   },
   "pricing.get_started": {
-    "message": "pricing.get_started"
+    "message": "เริ่มต้น"
   },
   "pricing.local_api.description": {
     "message": "pricing.local_api.description"
@@ -1127,13 +1127,13 @@
     "message": "pricing.local_api.title"
   },
   "pricing.per_month": {
-    "message": "pricing.per_month"
+    "message": "ต่อเดือน"
   },
   "pricing.per_month_pc": {
     "message": "pricing.per_month_pc"
   },
   "pricing.per_year": {
-    "message": "pricing.per_year"
+    "message": "ต่อปี"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "pricing.pro.concurrent_tasks"

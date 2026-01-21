@@ -848,7 +848,7 @@
     "message": "advertising.whatsapp.checker.title"
   },
   "download.description": {
-    "message": "download.description"
+    "message": "TikMatrix'i Windows, Mac ve Linux için indirin"
   },
   "download.igmatrix.description": {
     "message": "download.igmatrix.description"
@@ -932,31 +932,31 @@
     "message": "download.mac.install_tip"
   },
   "download.mac.title": {
-    "message": "download.mac.title"
+    "message": "Mac"
   },
   "download.requirements.internet": {
-    "message": "download.requirements.internet"
+    "message": "Kararlı internet bağlantısı"
   },
   "download.requirements.memory": {
-    "message": "download.requirements.memory"
+    "message": "Bellek: 8 GB RAM"
   },
   "download.requirements.os": {
-    "message": "download.requirements.os"
+    "message": "İşletim Sistemi: Windows 10/11, macOS 10.15+ veya Ubuntu 20.04+"
   },
   "download.requirements.processor": {
-    "message": "download.requirements.processor"
+    "message": "İşlemci: Intel Core i5 veya eşdeğeri"
   },
   "download.requirements.storage": {
-    "message": "download.requirements.storage"
+    "message": "Depolama: 500 MB boş alan"
   },
   "download.requirements.title": {
-    "message": "download.requirements.title"
+    "message": "Sistem Gereksinimleri"
   },
   "download.subtitle": {
-    "message": "download.subtitle"
+    "message": "TikMatrix indirmek için platformunuzu seçin"
   },
   "download.title": {
-    "message": "download.title"
+    "message": "TikMatrix indir"
   },
   "download.videomagic.description": {
     "message": "download.videomagic.description"
@@ -974,70 +974,70 @@
     "message": "download.windows.description"
   },
   "download.windows.title": {
-    "message": "download.windows.title"
+    "message": "Windows"
   },
   "homepage.header.cta.download": {
-    "message": "homepage.header.cta.download"
+    "message": "Şimdi indir"
   },
   "homepage.header.cta.features": {
-    "message": "homepage.header.cta.features"
+    "message": "Özellikleri keşfet"
   },
   "homepage.header.cta.primary": {
-    "message": "homepage.header.cta.primary"
+    "message": "Başlayın"
   },
   "homepage.header.cta.secondary": {
-    "message": "homepage.header.cta.secondary"
+    "message": "Özellikleri görüntüle"
   },
   "homepage.header.defaultSubtitle": {
-    "message": "homepage.header.defaultSubtitle"
+    "message": "TikTok ve Instagram için güçlü otomasyon araçları"
   },
   "homepage.header.defaultTitle": {
-    "message": "homepage.header.defaultTitle"
+    "message": "TikMatrix & IgMatrix"
   },
   "homepage.header.subtitle": {
-    "message": "homepage.header.subtitle"
+    "message": "Cihazları ölçekli çalıştırın, görevleri otomatikleştirin, gönderileri planlayın ve hesapları akıllıca büyütün — TikMatrix, TikTok operasyonlarınızı %100 otomatik hale getirir."
   },
   "homepage.header.title": {
     "message": "TikTok otomasyonu burada başlıyor"
   },
   "homepage.vs.card.analytics.desc": {
-    "message": "homepage.vs.card.analytics.desc"
+    "message": "Görev durumunu ve hesap performansını gerçek zamanlı izleyin"
   },
   "homepage.vs.card.analytics.title": {
-    "message": "homepage.vs.card.analytics.title"
+    "message": "Gelişmiş analiz"
   },
   "homepage.vs.card.automation.desc": {
-    "message": "homepage.vs.card.automation.desc"
+    "message": "Tüm sosyal medya görevlerinizi otomatikleştirin"
   },
   "homepage.vs.card.automation.title": {
-    "message": "homepage.vs.card.automation.title"
+    "message": "Tam otomasyon"
   },
   "homepage.vs.card.cta": {
     "message": "homepage.vs.card.cta"
   },
   "homepage.vs.card.lowRisk.desc": {
-    "message": "homepage.vs.card.lowRisk.desc"
+    "message": "Gerçek cihaz sistemi hesap güvenliğini sağlar"
   },
   "homepage.vs.card.lowRisk.title": {
-    "message": "homepage.vs.card.lowRisk.title"
+    "message": "Düşük risk"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "homepage.vs.card.nodev.desc"
+    "message": "Geliştirici becerisi gerekmez"
   },
   "homepage.vs.card.nodev.title": {
-    "message": "homepage.vs.card.nodev.title"
+    "message": "Kodlama gerekmez"
   },
   "homepage.vs.card.plug.desc": {
-    "message": "homepage.vs.card.plug.desc"
+    "message": "Tak-çalıştır, kolay yapılandırma"
   },
   "homepage.vs.card.plug.title": {
-    "message": "homepage.vs.card.plug.title"
+    "message": "Kolay kurulum"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "homepage.vs.card.realDevices.desc"
+    "message": "Tam hesap güvenliği için gerçek Android cihazlar kullanın"
   },
   "homepage.vs.card.realDevices.title": {
-    "message": "homepage.vs.card.realDevices.title"
+    "message": "Gerçek cihazlar"
   },
   "homepage.vs.cta.button": {
     "message": "homepage.vs.cta.button"
@@ -1046,13 +1046,13 @@
     "message": "homepage.vs.cta.text"
   },
   "homepage.vs.subtitle": {
-    "message": "homepage.vs.subtitle"
+    "message": "Sosyal varlığınızı ölçeklendirmenize yardımcı olan güçlü bir otomasyon çözümü"
   },
   "homepage.vs.title": {
-    "message": "homepage.vs.title"
+    "message": "Neden TikMatrix & IgMatrix?"
   },
   "navbar.download": {
-    "message": "navbar.download"
+    "message": "İndir"
   },
   "pricing.all_features": {
     "message": "pricing.all_features"
@@ -1097,13 +1097,13 @@
     "message": "pricing.free.all_free_features"
   },
   "pricing.free.automation_disabled": {
-    "message": "pricing.free.automation_disabled"
+    "message": "Otomasyon devre dışı"
   },
   "pricing.free.community_support": {
     "message": "pricing.free.community_support"
   },
   "pricing.free.description": {
-    "message": "pricing.free.description"
+    "message": "Yeni başlayanlar için ideal"
   },
   "pricing.free.name": {
     "message": "pricing.free.name"
@@ -1112,7 +1112,7 @@
     "message": "pricing.free_label"
   },
   "pricing.get_started": {
-    "message": "pricing.get_started"
+    "message": "Başlayın"
   },
   "pricing.local_api.description": {
     "message": "pricing.local_api.description"
@@ -1127,13 +1127,13 @@
     "message": "pricing.local_api.title"
   },
   "pricing.per_month": {
-    "message": "pricing.per_month"
+    "message": "aylık"
   },
   "pricing.per_month_pc": {
     "message": "pricing.per_month_pc"
   },
   "pricing.per_year": {
-    "message": "pricing.per_year"
+    "message": "yıllık"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "pricing.pro.concurrent_tasks"

@@ -1097,13 +1097,13 @@
     "message": "pricing.free.all_free_features"
   },
   "pricing.free.automation_disabled": {
-    "message": "pricing.free.automation_disabled"
+    "message": "Automatisering uitgeschakeld"
   },
   "pricing.free.community_support": {
     "message": "pricing.free.community_support"
   },
   "pricing.free.description": {
-    "message": "pricing.free.description"
+    "message": "Ideaal voor beginners"
   },
   "pricing.free.name": {
     "message": "pricing.free.name"
@@ -1112,7 +1112,7 @@
     "message": "pricing.free_label"
   },
   "pricing.get_started": {
-    "message": "pricing.get_started"
+    "message": "Begin"
   },
   "pricing.local_api.description": {
     "message": "pricing.local_api.description"
@@ -1127,13 +1127,13 @@
     "message": "pricing.local_api.title"
   },
   "pricing.per_month": {
-    "message": "pricing.per_month"
+    "message": "per maand"
   },
   "pricing.per_month_pc": {
     "message": "pricing.per_month_pc"
   },
   "pricing.per_year": {
-    "message": "pricing.per_year"
+    "message": "per jaar"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "pricing.pro.concurrent_tasks"

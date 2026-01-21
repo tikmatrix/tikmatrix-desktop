@@ -848,7 +848,7 @@
     "message": "advertising.whatsapp.checker.title"
   },
   "download.description": {
-    "message": "download.description"
+    "message": "Tải xuống TikMatrix cho Windows, Mac và Linux"
   },
   "download.igmatrix.description": {
     "message": "download.igmatrix.description"
@@ -932,31 +932,31 @@
     "message": "download.mac.install_tip"
   },
   "download.mac.title": {
-    "message": "download.mac.title"
+    "message": "Mac"
   },
   "download.requirements.internet": {
-    "message": "download.requirements.internet"
+    "message": "Kết nối Internet ổn định"
   },
   "download.requirements.memory": {
-    "message": "download.requirements.memory"
+    "message": "Bộ nhớ: 8 GB RAM"
   },
   "download.requirements.os": {
-    "message": "download.requirements.os"
+    "message": "Hệ điều hành: Windows 10/11, macOS 10.15+ hoặc Ubuntu 20.04+"
   },
   "download.requirements.processor": {
-    "message": "download.requirements.processor"
+    "message": "Bộ xử lý: Intel Core i5 hoặc tương đương"
   },
   "download.requirements.storage": {
-    "message": "download.requirements.storage"
+    "message": "Lưu trữ: 500 MB dung lượng trống"
   },
   "download.requirements.title": {
-    "message": "download.requirements.title"
+    "message": "Yêu cầu hệ thống"
   },
   "download.subtitle": {
-    "message": "download.subtitle"
+    "message": "Chọn nền tảng của bạn để tải xuống TikMatrix"
   },
   "download.title": {
-    "message": "download.title"
+    "message": "Tải xuống TikMatrix"
   },
   "download.videomagic.description": {
     "message": "download.videomagic.description"
@@ -974,70 +974,70 @@
     "message": "download.windows.description"
   },
   "download.windows.title": {
-    "message": "download.windows.title"
+    "message": "Windows"
   },
   "homepage.header.cta.download": {
-    "message": "homepage.header.cta.download"
+    "message": "Tải xuống ngay"
   },
   "homepage.header.cta.features": {
-    "message": "homepage.header.cta.features"
+    "message": "Khám phá tính năng"
   },
   "homepage.header.cta.primary": {
-    "message": "homepage.header.cta.primary"
+    "message": "Bắt đầu"
   },
   "homepage.header.cta.secondary": {
-    "message": "homepage.header.cta.secondary"
+    "message": "Xem tính năng"
   },
   "homepage.header.defaultSubtitle": {
-    "message": "homepage.header.defaultSubtitle"
+    "message": "Công cụ tự động mạnh mẽ cho TikTok và Instagram"
   },
   "homepage.header.defaultTitle": {
-    "message": "homepage.header.defaultTitle"
+    "message": "TikMatrix & IgMatrix"
   },
   "homepage.header.subtitle": {
-    "message": "homepage.header.subtitle"
+    "message": "Chạy thiết bị ở quy mô lớn, tự động hóa tác vụ, lên lịch bài đăng và nuôi dưỡng tài khoản thông minh — TikMatrix giúp hoạt động TikTok của bạn tự động 100%."
   },
   "homepage.header.title": {
     "message": "Tự động hóa TikTok bắt đầu từ đây"
   },
   "homepage.vs.card.analytics.desc": {
-    "message": "homepage.vs.card.analytics.desc"
+    "message": "Theo dõi trạng thái tác vụ và hiệu suất tài khoản theo thời gian thực"
   },
   "homepage.vs.card.analytics.title": {
-    "message": "homepage.vs.card.analytics.title"
+    "message": "Phân tích nâng cao"
   },
   "homepage.vs.card.automation.desc": {
-    "message": "homepage.vs.card.automation.desc"
+    "message": "Tự động hóa mọi nhiệm vụ mạng xã hội của bạn"
   },
   "homepage.vs.card.automation.title": {
-    "message": "homepage.vs.card.automation.title"
+    "message": "Tự động hoàn toàn"
   },
   "homepage.vs.card.cta": {
     "message": "homepage.vs.card.cta"
   },
   "homepage.vs.card.lowRisk.desc": {
-    "message": "homepage.vs.card.lowRisk.desc"
+    "message": "Hệ thống thiết bị thật đảm bảo an toàn tài khoản"
   },
   "homepage.vs.card.lowRisk.title": {
-    "message": "homepage.vs.card.lowRisk.title"
+    "message": "Rủi ro thấp"
   },
   "homepage.vs.card.nodev.desc": {
-    "message": "homepage.vs.card.nodev.desc"
+    "message": "Không yêu cầu kỹ năng lập trình"
   },
   "homepage.vs.card.nodev.title": {
-    "message": "homepage.vs.card.nodev.title"
+    "message": "Không cần lập trình"
   },
   "homepage.vs.card.plug.desc": {
-    "message": "homepage.vs.card.plug.desc"
+    "message": "Cắm là chạy, cấu hình dễ dàng"
   },
   "homepage.vs.card.plug.title": {
-    "message": "homepage.vs.card.plug.title"
+    "message": "Cài đặt dễ dàng"
   },
   "homepage.vs.card.realDevices.desc": {
-    "message": "homepage.vs.card.realDevices.desc"
+    "message": "Sử dụng thiết bị Android thật để đảm bảo an toàn tối đa"
   },
   "homepage.vs.card.realDevices.title": {
-    "message": "homepage.vs.card.realDevices.title"
+    "message": "Thiết bị thật"
   },
   "homepage.vs.cta.button": {
     "message": "homepage.vs.cta.button"
@@ -1046,13 +1046,13 @@
     "message": "homepage.vs.cta.text"
   },
   "homepage.vs.subtitle": {
-    "message": "homepage.vs.subtitle"
+    "message": "Giải pháp tự động mạnh mẽ để mở rộng hiện diện trên mạng xã hội"
   },
   "homepage.vs.title": {
-    "message": "homepage.vs.title"
+    "message": "Tại sao chọn TikMatrix & IgMatrix?"
   },
   "navbar.download": {
-    "message": "navbar.download"
+    "message": "Tải xuống"
   },
   "pricing.all_features": {
     "message": "pricing.all_features"
@@ -1097,13 +1097,13 @@
     "message": "pricing.free.all_free_features"
   },
   "pricing.free.automation_disabled": {
-    "message": "pricing.free.automation_disabled"
+    "message": "Tự động hóa bị tắt"
   },
   "pricing.free.community_support": {
     "message": "pricing.free.community_support"
   },
   "pricing.free.description": {
-    "message": "pricing.free.description"
+    "message": "Lý tưởng cho người mới bắt đầu"
   },
   "pricing.free.name": {
     "message": "pricing.free.name"
@@ -1112,7 +1112,7 @@
     "message": "pricing.free_label"
   },
   "pricing.get_started": {
-    "message": "pricing.get_started"
+    "message": "Bắt đầu"
   },
   "pricing.local_api.description": {
     "message": "pricing.local_api.description"
@@ -1127,13 +1127,13 @@
     "message": "pricing.local_api.title"
   },
   "pricing.per_month": {
-    "message": "pricing.per_month"
+    "message": "mỗi tháng"
   },
   "pricing.per_month_pc": {
     "message": "pricing.per_month_pc"
   },
   "pricing.per_year": {
-    "message": "pricing.per_year"
+    "message": "mỗi năm"
   },
   "pricing.pro.concurrent_tasks": {
     "message": "pricing.pro.concurrent_tasks"
