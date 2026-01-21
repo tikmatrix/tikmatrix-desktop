@@ -27,8 +27,12 @@ const config = {
   projectName: 'tikmatrix-desktop', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'ignore',
   onBrokenAnchors: 'ignore',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'ignore'
+    }
+  },
   trailingSlash: false,
 
   // Even if you don't use internationalization, you can use this field to set
@@ -73,7 +77,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          postsPerPage: 200
+          postsPerPage: 200,
+          onUntruncatedBlogPosts: 'ignore'
 
         },
         theme: {

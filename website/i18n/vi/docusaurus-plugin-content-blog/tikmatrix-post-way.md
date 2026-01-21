@@ -1,8 +1,13 @@
 ---
 slug: tikmatrix-post-way
-title: "Post Way" trong TikMatrix có nghĩa là gì?
-authors: tikMatrix
-tags: [TikTok Marketing, Tự động hóa, Đăng bài, TikMatrix]
+title: '"Post Way" trong TikMatrix có nghĩa là gì?'
+authors:
+  - "tikMatrix"
+tags:
+  - "TikTok Marketing"
+  - "Tự động hóa"
+  - "Đăng bài"
+  - "TikMatrix"
 ---
 
 > Đăng bài trên TikTok có thể được kích hoạt thông qua các lối vào khác nhau.

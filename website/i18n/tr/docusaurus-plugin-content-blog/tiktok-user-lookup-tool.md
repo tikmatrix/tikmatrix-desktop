@@ -1,8 +1,13 @@
 ---
 slug: tiktok-user-lookup-tool-zh
-title: Yeni Lansman: Ücretsiz TikTok Kullanıcı Arama Aracı (Ülke Gösterimi İle) — Giriş Gerekmez
-authors: tikMatrix
-tags: [Ürün Güncellemesi, TikTok Araçları, Veri Analizi, TikMatrix]
+title: 'Yeni Lansman: Ücretsiz TikTok Kullanıcı Arama Aracı (Ülke Gösterimi İle) — Giriş Gerekmez'
+authors:
+  - "tikMatrix"
+tags:
+  - "Ürün Güncellemesi"
+  - "TikTok Araçları"
+  - "Veri Analizi"
+  - "TikMatrix"
 ---
 
 > **Ücretsiz bir web aracı** yayınladık, TikTok kullanıcı bilgilerini tek tıkla sorgulayabilir, **ülke tanımlama** içerir.  

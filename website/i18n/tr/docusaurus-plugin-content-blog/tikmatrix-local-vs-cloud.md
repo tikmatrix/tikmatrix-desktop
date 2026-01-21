@@ -111,7 +111,7 @@ Bulutun "koltuk/trafik başına" fiyatlandırması başarıyı cezalandırır; b
 | Metrik | Bulut Aktarım | TikMatrix Yerel |
 |---|---|---|
 | Hareket gidiş-dönüş gecikmesi | 180–350 ms | **30–60 ms** |
-| 2 saatlik oturum düşme oranı | 8–12% | **<2%** |
+| 2 saatlik oturum düşme oranı | 8–12% | **&lt;2%** |
 | 20 cihaz toplu gönderi başarı oranı | 86–90% | **96–99%** |
 
 *Sadece temsili metrikler; gerçek, proxy kalitesi, USB güç ve cihaz durumuna bağlıdır.*

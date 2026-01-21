@@ -1,8 +1,13 @@
 ---
 slug: tikmatrix-post-way
-title: "Post Way" ใน TikMatrix หมายความว่าอย่างไร?
-authors: tikMatrix
-tags: [TikTok การตลาด, อัตโนมัติ, โพสต์, TikMatrix]
+title: '"Post Way" ใน TikMatrix หมายความว่าอย่างไร?'
+authors:
+  - "tikMatrix"
+tags:
+  - "TikTok การตลาด"
+  - "อัตโนมัติ"
+  - "โพสต์"
+  - "TikMatrix"
 ---
 
 > การโพสต์ใน TikTok สามารถเริ่มต้นจากทางเข้าต่างๆ ได้  

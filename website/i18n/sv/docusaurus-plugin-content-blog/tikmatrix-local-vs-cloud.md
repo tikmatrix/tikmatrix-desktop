@@ -114,7 +114,7 @@ Vi optimerar för **långsiktig tillgångsbyggande**, inte korta sprut.
 | Mått                         | Cloud-liknande relä | TikMatrix Lokal |
 | ------------------------------ | ---------------- | --------------- |
 | Gest rundtur              | 180–350 ms       | **30–60 ms**    |
-| 2-timmars sessions avbrott       | 8–12%            | **<2%**         |
+| 2-timmars sessions avbrott       | 8–12%            | **&lt;2%**         |
 | Bulkpost-framgång (20 enheter) | 86–90%           | **96–99%**      |
 
 *Indikativt endast; verkligt varierar efter proxykvalitet, USB-ström och enhetstillstånd.*

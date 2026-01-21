@@ -114,7 +114,7 @@ Optymalizujemy pod kątem **długoterminowego budowania zasobów**, nie krótkic
 | Metryka                         | Cloud-Like Relay | TikMatrix Local |
 | ------------------------------ | ---------------- | --------------- |
 | Objazdowa trasa gestu              | 180–350 ms       | **30–60 ms**    |
-| Wskaźnik porzuceń 2-godzinnej sesji       | 8–12%            | **<2%**         |
+| Wskaźnik porzuceń 2-godzinnej sesji       | 8–12%            | **&lt;2%**         |
 | Sukces masowego posta (20 urządzeń) | 86–90%           | **96–99%**      |
 
 *Tylko orientacyjnie; rzeczywisty świat różni się w zależności od jakości proxy, zasilania USB i stanu urządzenia.*

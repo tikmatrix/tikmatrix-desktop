@@ -1,10 +1,13 @@
 ---
 slug: tiktok-risk-control-guide
-title: Hur man säkert driver TikTok-konton — den ultimata riskkon
-
-trollguiden
-authors: tikMatrix
-tags: [TikTok Marketing, Risk Control, Automation, TikMatrix]
+title: 'Hur man säkert driver TikTok-konton — den ultimata riskkontrollguiden'
+authors:
+  - "tikMatrix"
+tags:
+  - "TikTok Marketing"
+  - "Risk Control"
+  - "Automation"
+  - "TikMatrix"
 ---
 
 > Kör flera TikTok-konton för marknadsföring men fortsätter få begränsad räckvidd eller bans?  

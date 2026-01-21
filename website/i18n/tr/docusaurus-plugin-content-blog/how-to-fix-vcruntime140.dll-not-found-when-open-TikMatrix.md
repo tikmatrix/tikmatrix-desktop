@@ -1,8 +1,12 @@
 ---
 slug: How-to-fix-vcruntime140.dll-not-found-when-open-TikMatrix
-title: "vcruntime140.dll Bulunamadı" Hatası Nasıl Düzeltilir
-authors: tikMatrix
-tags: [vcruntime140.ddl not found,fixed,tikmatrix]
+title: '"vcruntime140.dll Bulunamadı" Hatası Nasıl Düzeltilir'
+authors:
+  - "tikMatrix"
+tags:
+  - "vcruntime140.ddl not found"
+  - "fixed"
+  - "tikmatrix"
 ---
 "vcruntime140.dll bulunamadı" hatası genellikle Microsoft Visual C++ Yeniden Dağıtılabilir paketinin yüklenmemiş veya bozulmuş olmasından kaynaklanır. İşte bu sorunu düzeltmek için adımlar:
 <!--truncate-->
