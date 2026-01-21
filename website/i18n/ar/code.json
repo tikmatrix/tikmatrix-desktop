@@ -223,12 +223,12 @@
   },
   "Download VideoMagic": {
     "message": "تحميل VideoMagic"
-  },
+  }
   "Download and Install": {
     "message": "التحميل والتثبيت"
   },
   "Download for Windows": {
-    "message": "التحميل لـ Windows"
+    "message": "التنزيل لنظام ويندوز"
   },
   "Email": {
     "message": "البريد الإلكتروني"
@@ -501,10 +501,10 @@
     "message": "أداة إدارة وتسويق حسابات TikTok احترافية"
   },
   "Professional TikTok Account Management & Marketing Tool for Windows & Mac": {
-    "message": "أداة إدارة وتسويق حسابات TikTok احترافية لـ Windows و Mac"
+    "message": "أداة إدارة وتسويق حسابات TikTok احترافية لنظام ويندوز وماك"
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
-    "message": "أداة إدارة وتسويق حسابات TikTok احترافية مصممة لمزارع هواتف Android على Windows و Mac. أتمتة النشر والمتابعة وتنمية تواجدك على TikTok بمعدل تعليق حساب صفري."
+    "message": "أداة إدارة وتسويق حسابات TikTok احترافية مصممة لمزارع هواتف Android على نظام ويندوز وماك. أتمتة النشر والمتابعة وتنمية تواجدك على TikTok مع معدل تعليق حساب صفري."
   },
   "Professional phone farm management": {
     "message": "إدارة مزرعة الهواتف الاحترافية"
@@ -651,7 +651,7 @@
     "message": "يدعم TikMatrix هواتف Android التي تعمل بنظام Android 5.0 وما فوق."
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
-    "message": "يدعم TikMatrix Windows 10 وما فوق، و macOS 10.15 أو أحدث. لمستخدمي Mac، بعد التثبيت، تحتاج إلى تشغيل الأمر التالي في Terminal للسماح بتشغيل التطبيق: xattr -cr /Applications/TikMatrix.app"
+    "message": "يدعم TikMatrix نظام ويندوز 10 وما فوق، و macOS 10.15 أو أحدث. لمستخدمي ماك، بعد التثبيت، تحتاج إلى تشغيل الأمر التالي في Terminal للسماح بتشغيل التطبيق: xattr -cr /Applications/TikMatrix.app"
   },
   "TikMatrix supports up to 200+ devices.": {
     "message": "يدعم TikMatrix ما يصل إلى أكثر من 200 جهاز."
