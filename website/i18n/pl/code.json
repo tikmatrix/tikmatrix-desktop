@@ -937,5 +937,62 @@
   "theme.unlistedContent.message": {
     "message": "Ta strona jest niepubliczna. Wyszukiwarki nie będą jej indeksować i tylko użytkownicy posiadający bezpośredni link mogą uzyskać dostęp.",
     "description": "The unlisted content banner message"
+  },
+  "Important Notice": {
+    "message": "Ważna uwaga"
+  },
+  "Important Reminder": {
+    "message": "Ważne przypomnienie"
+  },
+  "IgMatrix Features": {
+    "message": "Funkcje IgMatrix"
+  },
+  "Live stream boost": {
+    "message": "Zwiększenie transmisji na żywo"
+  },
+  "Mass commenting": {
+    "message": "Masowe komentowanie"
+  },
+  "Multi-language support (English, Chinese, Russian)": {
+    "message": "Wsparcie wielojęzyczne (angielski, chiński, rosyjski)"
+  },
+  "Platform-optimized features": {
+    "message": "Funkcje zoptymalizowane pod platformę"
+  },
+  "Post engagement boost": {
+    "message": "Zwiększenie zaangażowania postów"
+  },
+  "Post management": {
+    "message": "Zarządzanie postami"
+  },
+  "Professional phone farm management": {
+    "message": "Profesjonalne zarządzanie farmą telefonów"
+  },
+  "Still have questions?": {
+    "message": "Nadal masz pytania?"
+  },
+  "User engagement boost": {
+    "message": "Zwiększenie zaangażowania użytkowników"
+  },
+  "User scraping": {
+    "message": "Wydobywanie użytkowników"
+  },
+  "Video download": {
+    "message": "Pobieranie wideo"
+  },
+  "What computer can I use?": {
+    "message": "Jakiego komputera mogę użyć?"
+  },
+  "What devices can I use?": {
+    "message": "Jakich urządzeń mogę użyć?"
+  },
+  "What is the difference between IgMatrix and TikMatrix?": {
+    "message": "Jaka jest różnica między IgMatrix a TikMatrix?"
+  },
+  "Which scripts from TikMatrix are available in IgMatrix?": {
+    "message": "Które skrypty z TikMatrix są dostępne w IgMatrix?"
+  },
+  "Why Choose IgMatrix?": {
+    "message": "Dlaczego wybrać IgMatrix?"
   }
 }
