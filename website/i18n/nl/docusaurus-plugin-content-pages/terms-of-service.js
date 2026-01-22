@@ -5,64 +5,64 @@ import styles from './terms-of-service.module.css';
 export default function TermsOfService() {
     return (
         <Layout
-            title="服务条款"
-            description="TikMatrix 服务条款 - 使用我们平台的规则和指南">
+            title="Servicevoorwaarden"
+            description="TikMatrix Servicevoorwaarden - Regels en richtlijnen voor het gebruik van ons platform">
             <div className="container">
                 <div className={styles.termsContent}>
-                    <h1>服务条款</h1>
-                    <p>最后更新日期: {new Date().toISOString().split('T')[0]}</p>
+                    <h1>Servicevoorwaarden</h1>
+                    <p>Laatst bijgewerkt: {new Date().toISOString().split('T')[0]}</p>
 
-                    <h2>1. 条款接受</h2>
-                    <p>通过访问或使用 TikMatrix 网站和服务，您同意受这些服务条款以及所有适用的法律法规的约束。如果您不同意这些条款中的任何一条，您将被禁止使用或访问本网站。</p>
+                    <h2>1. Acceptatie van Voorwaarden</h2>
+                    <p>Door toegang te krijgen tot of gebruik te maken van de website en diensten van TikMatrix, gaat u ermee akkoord gebonden te zijn aan deze Servicevoorwaarden en alle toepasselijke wetten en regelgeving. Als u het niet eens bent met een van deze voorwaarden, is het u verboden om deze site te gebruiken of te bezoeken.</p>
 
-                    <h2>2. 使用许可</h2>
-                    <p>允许临时下载 TikMatrix 网站上的材料（信息或软件）仅供个人、非商业性的临时浏览。这是授予许可，而非所有权转让，根据此许可，您不得：</p>
+                    <h2>2. Gebruikslicentie</h2>
+                    <p>Toestemming wordt verleend om tijdelijk één kopie van de materialen op de website van TikMatrix te downloaden voor persoonlijke, niet-commerciële tijdelijke weergave alleen. Dit is het verlenen van een licentie, geen overdracht van eigendom, en onder deze licentie mag u niet:</p>
                     <ul>
-                        <li>修改或复制材料</li>
-                        <li>将材料用于任何商业目的或公开展示</li>
-                        <li>尝试对 TikMatrix 网站包含的任何软件进行逆向工程</li>
-                        <li>从材料中删除任何版权或其他专有标记</li>
-                        <li>将材料转让给他人或在任何其他服务器上"镜像"材料</li>
+                        <li>De materialen wijzigen of kopiëren</li>
+                        <li>De materialen gebruiken voor commerciële doeleinden of voor openbare weergave</li>
+                        <li>Proberen software die op de website van TikMatrix staat te reverse-engineeren</li>
+                        <li>Eventuele copyright- of andere eigendomsvermeldingen uit de materialen verwijderen</li>
+                        <li>De materialen overdragen aan een andere persoon of de materialen op een andere server "spiegelen"</li>
                     </ul>
-                    <p>如果您违反任何这些限制，本许可将自动终止，并可能随时被 TikMatrix 终止。</p>
+                    <p>Deze licentie wordt automatisch beëindigd als u een van deze beperkingen schendt en kan op elk moment door TikMatrix worden beëindigd.</p>
 
-                    <h2>3. 服务和订阅</h2>
-                    <p>TikMatrix 提供用于 TikTok 账户管理和营销自动化的软件工具。访问这些服务可能需要订阅或一次性付款。通过订阅我们的服务，您同意：</p>
+                    <h2>3. Diensten en Abonnement</h2>
+                    <p>TikMatrix biedt softwaretools voor TikTok-accountbeheer en marketingautomatisering. Toegang tot deze diensten kan een abonnement of eenmalige betaling vereisen. Door u te abonneren op onze diensten, gaat u ermee akkoord:</p>
                     <ul>
-                        <li>试用期间可以随机取消订阅, 如果没有取消订阅将自动转为付费订阅</li>
-                        <li>提供准确和完整的账单信息</li>
-                        <li>支付产生费用时有效的所有费用</li>
-                        <li>不将服务用于任何非法目的或违反任何适用法律或法规</li>
-                    </ul>
-
-                    <h2>4. 用户行为</h2>
-                    <p>在使用我们的服务时，您同意不会：</p>
-                    <ul>
-                        <li>违反任何适用的法律或法规</li>
-                        <li>侵犯他人的权利</li>
-                        <li>分发恶意软件或从事其他有害活动</li>
-                        <li>尝试未经授权访问我们的系统或其他用户的账户</li>
-                        <li>以任何可能损害、禁用、使负担过重或损害我们服务的方式使用我们的服务</li>
+                        <li>Tijdens de proefperiode kunt u het abonnement op elk moment opzeggen. Als het abonnement niet wordt opgezegd, wordt het automatisch omgezet in een betaald abonnement.</li>
+                        <li>Nauwkeurige en volledige factureringsgegevens te verstrekken</li>
+                        <li>Alle kosten te betalen tegen de tarieven die van kracht zijn op het moment dat de kosten worden gemaakt</li>
+                        <li>De diensten niet te gebruiken voor illegale doeleinden of in strijd met toepasselijke wetten of regelgeving</li>
                     </ul>
 
-                    <h2>5. 知识产权</h2>
-                    <p>TikMatrix 名称、标志、软件和内容是 TikMatrix 及其许可方的专属财产。我们的服务和通过我们的服务包含或提供的所有内容均受知识产权法保护。</p>
+                    <h2>4. Gebruikersgedrag</h2>
+                    <p>Bij het gebruik van onze diensten gaat u ermee akkoord dat u het volgende niet zult doen:</p>
+                    <ul>
+                        <li>Toepasselijke wetten of regelgeving schenden</li>
+                        <li>De rechten van anderen schenden</li>
+                        <li>Malware verspreiden of deelnemen aan andere schadelijke activiteiten</li>
+                        <li>Proberen ongeautoriseerde toegang te krijgen tot onze systemen of accounts van andere gebruikers</li>
+                        <li>Onze diensten gebruiken op een manier die onze diensten kan beschadigen, uitschakelen, overbelasten of verstoren</li>
+                    </ul>
 
-                    <h2>6. 免责声明</h2>
-                    <p>TikMatrix 网站上的材料和提供的服务均按"原样"提供。TikMatrix 不做任何明示或暗示的保证，并特此否认所有其他保证，包括但不限于对特定用途的适销性或适用性的暗示保证。</p>
+                    <h2>5. Intellectueel Eigendom</h2>
+                    <p>De naam, het logo, de software en de inhoud van TikMatrix zijn exclusief eigendom van TikMatrix en haar licentiegevers. Onze diensten en alle inhoud die via onze diensten wordt opgenomen of beschikbaar gesteld, worden beschermd door wetten inzake intellectueel eigendom.</p>
 
-                    <h2>7. 责任限制</h2>
-                    <p>在任何情况下，TikMatrix 或其供应商均不对因使用或无法使用材料或服务而产生的任何损害负责，即使 TikMatrix 已被告知可能发生此类损害。</p>
+                    <h2>6. Disclaimer</h2>
+                    <p>De materialen op de website van TikMatrix en de geleverde diensten worden "as is" geleverd. TikMatrix geeft geen garanties, expliciet of impliciet, en wijst hierbij alle andere garanties af, inclusief zonder beperking impliciete garanties van verkoopbaarheid of geschiktheid voor een bepaald doel.</p>
 
-                    <h2>8. 适用法律</h2>
-                    <p>这些条款应受 TikMatrix 成立地管辖法律的管辖并按其解释，不考虑其法律冲突规定。</p>
+                    <h2>7. Beperking van Aansprakelijkheid</h2>
+                    <p>In geen geval zullen TikMatrix of haar leveranciers aansprakelijk zijn voor enige schade die voortvloeit uit het gebruik of het onvermogen om de materialen of diensten te gebruiken, zelfs als TikMatrix op de hoogte is gesteld van de mogelijkheid van dergelijke schade.</p>
 
-                    <h2>9. 条款变更</h2>
-                    <p>TikMatrix 保留随时修改这些条款的权利。我们将通过更新这些条款的"最后更新日期"来通知用户任何更改。您在任何更改后继续使用我们的网站和服务表示您接受修改后的条款。</p>
+                    <h2>8. Toepasselijk Recht</h2>
+                    <p>Deze Voorwaarden worden beheerst door en geïnterpreteerd in overeenstemming met de wetten van het rechtsgebied waarin TikMatrix is gevestigd, zonder rekening te houden met de bepalingen inzake wetsconflicten.</p>
 
-                    <h2>10. 联系我们</h2>
-                    <p>如果您对这些条款有任何疑问，请联系我们：</p>
-                    <p>电子邮件：support@tikmatrix.com</p>
+                    <h2>9. Wijzigingen in Voorwaarden</h2>
+                    <p>TikMatrix behoudt zich het recht voor om deze Voorwaarden op elk moment te wijzigen. We zullen gebruikers op de hoogte stellen van eventuele wijzigingen door de datum "Laatst bijgewerkt" van deze Voorwaarden bij te werken. Uw voortgezette gebruik van onze website en diensten na wijzigingen geeft uw acceptatie van de gewijzigde Voorwaarden aan.</p>
+
+                    <h2>10. Contact Opnemen</h2>
+                    <p>Als u vragen heeft over deze Voorwaarden, neem dan contact met ons op:</p>
+                    <p>E-mail: support@tikmatrix.com</p>
                 </div>
             </div>
         </Layout>
