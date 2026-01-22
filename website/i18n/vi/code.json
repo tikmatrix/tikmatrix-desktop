@@ -15,10 +15,10 @@
     "message": "Sau khi cài đặt, mở IgMatrix để xem danh sách đầy đủ các script tự động hóa Instagram có sẵn. Lựa chọn script có thể khác với TikMatrix."
   },
   "All basic features (automation excluded)": {
-    "message": "pricing.free.all_free_features"
+    "message": "Tất cả tính năng cơ bản (không bao gồm tự động hóa)"
   },
   "All features included": {
-    "message": "pricing.all_features"
+    "message": "Bao gồm tất cả tính năng"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Luôn kiểm tra các tính năng thực tế có sẵn trong phần mềm IgMatrix của bạn, vì chức năng script có thể khác với TikMatrix. Giao diện phần mềm sẽ hiển thị chính xác các script tự động hóa nào có sẵn cho Instagram."
@@ -48,7 +48,7 @@
     "message": "Thiết lập hồ sơ tự động"
   },
   "Automation tasks": {
-    "message": "pricing.compare.automation"
+    "message": "Nhiệm vụ tự động hóa"
   },
   "Automation tasks disabled": {
     "message": "Tự động hóa bị tắt"
@@ -72,7 +72,7 @@
     "message": "Được xây dựng với các cơ chế an toàn để bảo vệ tài khoản Instagram của bạn khỏi bị đình chỉ"
   },
   "Business": {
-    "message": "pricing.business.name"
+    "message": "Doanh nghiệp"
   },
   "Buy hardware": {
     "message": "Mua phần cứng"
@@ -93,10 +93,10 @@
     "message": "Bình luận trên nhiều bài đăng TikTok hàng loạt với nội dung và emoji tùy chỉnh"
   },
   "Community support": {
-    "message": "pricing.free.community_support"
+    "message": "Hỗ trợ cộng đồng"
   },
   "Compare features": {
-    "message": "pricing.compare.show"
+    "message": "So sánh tính năng"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Comprehensive automation combining multiple engagement strategies with AI-generated comments"
@@ -120,13 +120,13 @@
     "message": "Custom Instagram workflows"
   },
   "Dedicated ticket support": {
-    "message": "pricing.ticket_support"
+    "message": "Hỗ trợ ticket chuyên dụng"
   },
   "Device connection": {
     "message": "Device connection"
   },
   "Device support": {
-    "message": "pricing.compare.devices"
+    "message": "Hỗ trợ thiết bị"
   },
   "Different Script Logic": {
     "message": "Different Script Logic"
@@ -171,19 +171,19 @@
     "message": "Follow these steps to get started with IgMatrix"
   },
   "For growing teams and companies": {
-    "message": "pricing.team.description"
+    "message": "Dành cho các đội nhóm và công ty đang phát triển"
   },
   "For individuals and small teams": {
-    "message": "pricing.starter.description"
+    "message": "Dành cho cá nhân và đội nhóm nhỏ"
   },
   "For large enterprises": {
-    "message": "pricing.business.description"
+    "message": "Dành cho doanh nghiệp lớn"
   },
   "For professionals and small businesses": {
-    "message": "pricing.pro.description"
+    "message": "Dành cho chuyên gia và doanh nghiệp nhỏ"
   },
   "Free": {
-    "message": "pricing.free_label"
+    "message": "Miễn phí"
   },
   "Free users can connect unlimited devices and use all basic features except automation tasks": {
     "message": "Lý tưởng cho người mới bắt đầu"
@@ -204,7 +204,7 @@
     "message": "Here are some frequently asked questions."
   },
   "Hide feature comparison": {
-    "message": "pricing.compare.hide"
+    "message": "Ẩn so sánh tính năng"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "How many TikTok accounts can each phone log into?"
@@ -273,10 +273,10 @@
     "message": "Live stream boost"
   },
   "Local API": {
-    "message": "pricing.local_api.title"
+    "message": "API cục bộ"
   },
   "Local REST API access (Pro+)": {
-    "message": "pricing.local_api.support"
+    "message": "Truy cập REST API cục bộ (Pro+)"
   },
   "Mass commenting": {
     "message": "Mass commenting"
@@ -285,10 +285,10 @@
     "message": "Mass direct messaging"
   },
   "Monthly": {
-    "message": "Monthly"
+    "message": "Hàng tháng"
   },
   "Most popular": {
-    "message": "pricing.badge.popular"
+    "message": "Phổ biến nhất"
   },
   "Multi-Device Control": {
     "message": "Multi-Device Control"
@@ -333,13 +333,13 @@
     "message": "Powerful TikTok Automation & Management Tools"
   },
   "Pricing": {
-    "message": "Pricing Plans"
+    "message": "Bảng giá"
   },
   "Pro": {
-    "message": "pricing.pro.name"
+    "message": "Pro"
   },
   "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
-    "message": "pricing.local_api.description"
+    "message": "Người dùng Pro, Team và Business có thể sử dụng RESTful API cục bộ để quản lý nhiệm vụ theo chương trình và tự động hóa quy trình làm việc. Xem tài liệu để biết chi tiết."
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
@@ -354,7 +354,7 @@
     "message": "Quick Setup Guide"
   },
   "Read Local API docs": {
-    "message": "pricing.local_api.link_text"
+    "message": "Đọc tài liệu API cục bộ"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "Recognize and match TikTok accounts from phones to add to account list"
@@ -402,7 +402,7 @@
     "message": "Start for free"
   },
   "Starter": {
-    "message": "pricing.starter.name"
+    "message": "Khởi đầu"
   },
   "Still have questions?": {
     "message": "Still have questions?"
@@ -420,7 +420,7 @@
     "message": "Supports 100+ phones mirroring to a computer, with synchronized operation"
   },
   "Team": {
-    "message": "pricing.team.name"
+    "message": "Nhóm"
   },
   "Technical Advantages": {
     "message": "Technical Advantages"
@@ -459,22 +459,22 @@
     "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location"
   },
   "Unlimited": {
-    "message": "pricing.unlimited_devices_short"
+    "message": "Không giới hạn"
   },
   "Unlimited device connections": {
-    "message": "pricing.unlimited_devices"
+    "message": "Kết nối thiết bị không giới hạn"
   },
   "Up to 100 concurrent automation tasks": {
-    "message": "pricing.business.concurrent_tasks"
+    "message": "Tối đa 100 nhiệm vụ tự động hóa đồng thời"
   },
   "Up to 20 concurrent automation tasks": {
-    "message": "pricing.pro.concurrent_tasks"
+    "message": "Tối đa 20 nhiệm vụ tự động hóa đồng thời"
   },
   "Up to 5 concurrent automation tasks": {
-    "message": "pricing.starter.concurrent_tasks"
+    "message": "Tối đa 5 nhiệm vụ tự động hóa đồng thời"
   },
   "Up to 50 concurrent automation tasks": {
-    "message": "pricing.team.concurrent_tasks"
+    "message": "Tối đa 50 nhiệm vụ tự động hóa đồng thời"
   },
   "User engagement boost": {
     "message": "User engagement boost"
@@ -516,7 +516,7 @@
     "message": "Why Choose IgMatrix?"
   },
   "Yearly (Save 30%)": {
-    "message": "Yearly (Save 30%)"
+    "message": "Hàng năm (Tiết kiệm 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform."
