@@ -180,22 +180,22 @@
     "message": "チームおよび大規模企業向け"
   },
   "For professionals and small businesses": {
-    "message": "Para profesionales y equipos pequeños"
+    "message": "プロフェッショナルと小規模ビジネス向け"
   },
   "Free": {
-    "message": "Gratis"
+    "message": "無料"
   },
   "Free users can connect unlimited devices and use all basic features except automation tasks": {
-    "message": "Perfecto para empezar"
+    "message": "無料ユーザーは無制限のデバイスを接続でき、自動化タスク以外のすべての基本機能を使用できます"
   },
   "Frequently Asked Questions": {
-    "message": "Preguntas frecuentes"
+    "message": "よくある質問"
   },
   "Get Support": {
-    "message": "Obtener soporte"
+    "message": "サポートを受ける"
   },
   "Get dedicated support from our expert team whenever you need help": {
-    "message": "Obtén soporte dedicado de nuestro equipo experto siempre que necesites ayuda"
+    "message": "必要なときにいつでも専門チームから専用サポートを受けられます"
   },
   "Go to the \"Download\" page and download the latest version of TikMatrix.": {
     "message": "「ダウンロード」ページに移動して、TikMatrixの最新バージョンをダウンロードしてください。"
@@ -216,10 +216,10 @@
     "message": "使い方は？"
   },
   "If you are interested in our service, please contact us to get price.": {
-    "message": "Si estás interesado en nuestro servicio, contáctanos para obtener el precio."
+    "message": "サービスにご興味がございましたら、価格についてお問い合わせください。"
   },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
-    "message": "Si necesitas ayuda con funciones específicas de IgMatrix o encuentras algún problema, nuestro equipo de soporte está listo para asistirte."
+    "message": "IgMatrix固有の機能についてサポートが必要な場合や問題が発生した場合は、サポートチームがお手伝いいたします。"
   },
   "IgMatrix Features": {
     "message": "IgMatrix機能"
@@ -228,7 +228,7 @@
     "message": "IgMatrixとTikMatrixは同じセットアッププロセスとユーザーインターフェースを共有しています。主な違いは、IgMatrixがInstagram自動化専用に設計されているのに対し、TikMatrixはTikTok用であることです。スクリプトロジックと利用可能な機能は、それぞれのプラットフォームに最適化されています。"
   },
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
-    "message": "IgMatrix sigue una estructura de precios similar a TikMatrix, pero puede tener tarifas diferentes. Por favor, consulta nuestra página oficial de precios o contacta a nuestro equipo de soporte para información actual de precios de IgMatrix."
+    "message": "IgMatrixはTikMatrixと同様の価格体系ですが、料金が異なる場合があります。最新のIgMatrix価格情報については、公式価格ページをご確認いただくか、サポートチームにお問い合わせください。"
   },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
     "message": "IgMatrixはInstagram Androidファームバッチ制御ツールです"
@@ -237,13 +237,13 @@
     "message": "IgMatrixのセットアップチュートリアルはTikMatrixと同じです。唯一の違いはスクリプトロジックなので、TikMatrixチュートリアルのドキュメントを直接参照できます。"
   },
   "Important Notice": {
-    "message": "Aviso importante"
+    "message": "重要なお知らせ"
   },
   "Important Reminder": {
-    "message": "Recordatorio importante"
+    "message": "重要な注意事項"
   },
   "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
-    "message": "Aumentar el engagement en publicaciones dando me gusta, compartiendo, marcando como favoritos y viéndolas de forma masiva"
+    "message": "投稿へのいいね、シェア、お気に入り登録、閲覧を一括で行ってエンゲージメントを向上"
   },
   "Increase user engagement by following or unfollowing accounts in bulk": {
     "message": "アカウントの一括フォロー/アンフォローでユーザーエンゲージメントを向上"
@@ -264,22 +264,22 @@
     "message": "価格はTikMatrixと同じですか？"
   },
   "Join Group": {
-    "message": "Unirse al grupo"
+    "message": "グループに参加"
   },
   "Key Differences from TikMatrix": {
-    "message": "Diferencias clave respecto a TikMatrix"
+    "message": "TikMatrixとの主な違い"
   },
   "Live stream boost": {
-    "message": "Impulsar transmisiones en vivo"
+    "message": "ライブ配信ブースト"
   },
   "Local API": {
     "message": "API local"
   },
   "Local REST API access (Pro+)": {
-    "message": "Disponible en todos los planespago"
+    "message": "すべての有料プランで利用可能"
   },
   "Mass commenting": {
-    "message": "コメント masivos"
+    "message": "大量コメント"
   },
   "Mass direct messaging": {
     "message": "一括ダイレクトメッセージ"
@@ -288,31 +288,31 @@
     "message": "Monthly"
   },
   "Most popular": {
-    "message": "Popular"
+    "message": "最も人気"
   },
   "Multi-Device Control": {
     "message": "マルチデバイス制御"
   },
   "Multi-language support (English, Chinese, Russian)": {
-    "message": "サポート multiidioma (inglés, chino, ruso)"
+    "message": "多言語サポート（英語、中国語、ロシア語）"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "すべてのTikMatrixスクリプトがIgMatrixで利用可能なわけではありません。これらはプラットフォーム固有のためです。インストール後、IgMatrixソフトウェアインターフェース内で利用可能なスクリプトの正確なリストを見つけることができます。ソフトウェアに表示されている実際の機能を参照してください。"
   },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
-    "message": "Nuestro equipo de soporte está aquí para ayudarte con cualquier pregunta o problema relacionado con IgMatrix."
+    "message": "サポートチームは、IgMatrixに関するあらゆる質問や問題についてお手伝いいたします。"
   },
   "Per Month": {
-    "message": "por mes"
+    "message": "月額"
   },
   "Per Year (Save 30%)": {
-    "message": "por año"
+    "message": "年額（30％割引）"
   },
   "Performance analytics": {
-    "message": "Análisisrendimiento"
+    "message": "パフォーマンス分析"
   },
   "Phone screen mirroring to a computer": {
-    "message": "Reflejopantallateléfono a computadora"
+    "message": "携帯電話の画面をコンピューターにミラーリング"
   },
   "Platform-optimized features": {
     "message": "プラットフォーム最適化機能"
@@ -321,22 +321,22 @@
     "message": "スクリプトリストを直接表示するには、IgMatrixをダウンロードしてください。現在、すべてのTikMatrixスクリプトがIgMatrixで100%サポートされているわけではありません。ソフトウェアの実際の機能を参照してください。"
   },
   "Post engagement boost": {
-    "message": "Impulsar engagementpublicaciones"
+    "message": "投稿エンゲージメントブースト"
   },
   "Post management": {
     "message": "投稿の管理"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
-    "message": "Potentes herramientas de automatización de Instagram diseñadas para profesionales del marketing y empresas"
+    "message": "プロのマーケティング担当者やビジネス向けに設計された強力なInstagram自動化ツール"
   },
   "Powerful TikTok Automation & Management Tools": {
-    "message": "Potentes herramientas de automatización y gestión de TikTok"
+    "message": "強力なTikTok自動化および管理ツール"
   },
   "Pricing": {
     "message": "Pricing Plans"
   },
   "Pro": {
-    "message": "Profesional"
+    "message": "プロ"
   },
   "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
     "message": "TikMatrixを独自のシステムと統合する必要がありますか？ローカルAPIでプログラム的にタスクを管理し、ワークフローを自動化できます。"
@@ -351,25 +351,25 @@
     "message": "バッチ投稿機能でTikTokに動画や画像を公開"
   },
   "Quick Setup Guide": {
-    "message": "Guíaconfiguración rápida"
+    "message": "クイックセットアップガイド"
   },
   "Read Local API docs": {
-    "message": "Ver documentaciónla API"
+    "message": "ローカルAPIドキュメントを見る"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "スマートフォンからTikTokアカウントを認識してマッチング、アカウントリストに追加"
   },
   "Recognize subtitles": {
-    "message": "Reconocer subtítulos"
+    "message": "字幕を認識"
   },
   "Remove posts based on their view count for content optimization": {
-    "message": "Eliminar publicaciones según su númerovisualizaciones para optimizacióncontenido"
+    "message": "コンテンツ最適化のため、閲覧数に基づいて投稿を削除"
   },
   "Safe & Secure": {
-    "message": "Seguro y protegido"
+    "message": "安全でセキュア"
   },
   "Same Setup Process": {
-    "message": "Mismo procesoconfiguración"
+    "message": "同じセットアッププロセス"
   },
   "Same reliable technology as TikMatrix": {
     "message": "TikMatrixと同じ信頼性の高い技術"
@@ -378,19 +378,19 @@
     "message": "インテリジェントなタイミングアルゴリズムでInstagram活動をスケジュール"
   },
   "Scrape TikTok usernames from followers lists or keyword searches": {
-    "message": "Extraer nombres de usuario de TikTok de listas de seguidores o búsquedas por palabras clave"
+    "message": "フォロワーリストやキーワード検索からTikTokユーザー名を抽出"
   },
   "Send messages to multiple TikTok accounts in bulk with personalized content": {
     "message": "パーソナライズされたコンテンツで複数のTikTokアカウントに一括メッセージ送信"
   },
   "Set up account profiles including avatars, nicknames, signatures, and usernames": {
-    "message": "Configurar perfiles アカウント incluyendo avatares, apodos, firmas y nombresusuario"
+    "message": "アバター、ニックネーム、署名、ユーザー名を含むアカウントプロフィールを設定"
   },
   "Setup Tutorial": {
-    "message": "Tutorialconfiguración"
+    "message": "セットアップチュートリアル"
   },
   "Shipping worldwide": {
-    "message": "Envíos a todo el mundo"
+    "message": "世界中に配送"
   },
   "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
     "message": "セットアッププロセスは同一なので、デバイス接続、アカウント管理、スクリプト設定の詳細な手順については、包括的なTikMatrixドキュメントを参照してください。"
@@ -417,82 +417,82 @@
     "message": "Super マーケティング"
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
-    "message": "Soporta más de 100 teléfonos con reflejo a una computadora, con operación sincronizada"
+    "message": "100台以上のスマートフォンのコンピューターへのミラーリングをサポート、同期操作対応"
   },
   "Team": {
-    "message": "Equipo"
+    "message": "チーム"
   },
   "Technical Advantages": {
-    "message": "Ventajas técnicas"
+    "message": "技術的な利点"
   },
   "Telegram": {
     "message": "Telegram"
   },
   "The length and width are relatively big, but the height is low(2u size)": {
-    "message": "La longitud y el ancho son relativamente grandes, pero la altura es baja (tamaño 2u)"
+    "message": "長さと幅は比較的大きいが、高さは低い（2uサイズ）"
   },
   "The length and width are relatively small, but the height is high": {
-    "message": "La longitud y el ancho son relativamente pequeños, pero la altura es alta"
+    "message": "長さと幅は比較的小さいが、高さは高い"
   },
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
     "message": "マザーボードマシンは20個のSamsungスマートフォンマザーボードで構成されています。電気に接続すると自動的に電源が入り、統一された電源、統一されたマルチファン冷却システム、統一されたUSB接続を共有します。OTG有線ネットワーク接続もサポートしています。"
   },
   "TikMatrix is a professional marketing software designed for TikTok phone farms": {
-    "message": "TikMatrix es un software de marketing profesional diseñado para granjas de teléfonos de TikTok"
+    "message": "TikMatrixはTikTok手機農場向けに設計されたプロフェッショナルなマーケティングソフトウェアです"
   },
   "TikMatrix supports 8 TikTok accounts on each phone.": {
     "message": "TikMatrixは各スマートフォンで8つのTikTokアカウントをサポートします。"
   },
   "TikMatrix supports Android phones running Android 5.0 and above.": {
-    "message": "TikMatrix admite teléfonos Android con Android 5.0 y versiones superiores."
+    "message": "TikMatrixはAndroid 5.0以降を実行するAndroidスマートフォンをサポートします。"
   },
   "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
     "message": "TikMatrixはWindows 10以降、およびmacOS 10.15以降をサポートしています。Macユーザーの場合、インストール後、アプリを実行するためにターミナルで次のコマンドを実行する必要があります：xattr -cr /Applications/TikMatrix.app"
   },
   "TikMatrix supports up to 200+ devices.": {
-    "message": "TikMatrix admite hasta más de 200 dispositivos."
+    "message": "TikMatrixは200台以上のデバイスをサポートしています。"
   },
   "Translate subtitles": {
-    "message": "Traducir subtítulos"
+    "message": "字幕を翻訳"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
-    "message": "Tarjeta SIM nativaEE.UU. sin activar, utilizada para que la aplicaciónTikTok para Android detecte la ubicaciónla tarjeta SIM"
+    "message"米国ネイティブの非アクティブ化SIMカード、TikTok AndroidアプリがSIMカードの位置を検出するために使用"
   },
   "Unlimited": {
-    "message": "Ilimitado"
+    "message": "無制限"
   },
   "Unlimited device connections": {
-    "message": "デバイス ilimitados"
+    "message": "無制限のデバイス接続"
   },
   "Up to 100 concurrent automation tasks": {
     "message": "無制限の同時タスク"
   },
   "Up to 20 concurrent automation tasks": {
-    "message": "50 tareas concurrentes"
+    "message": "最大20個の同時自動化タスク"
   },
   "Up to 5 concurrent automation tasks": {
-    "message": "10 tareas concurrentes"
+    "message": "最大5個の同時自動化タスク"
   },
   "Up to 50 concurrent automation tasks": {
-    "message": "100 tareas concurrentes"
+    "message": "最大50個の同時自動化タスク"
   },
   "User engagement boost": {
     "message": "ユーザーエンゲージメントブースト"
   },
   "User interface": {
-    "message": "Interfazusuario"
+    "message": "ユーザーインターフェース"
   },
   "User scraping": {
     "message": "ユーザースクレイピング"
   },
   "Video download": {
-    "message": "Descargavideos"
+    "message": "動画ダウンロード"
   },
   "Video unique": {
-    "message": "Video único"
+    "message": "ユニーク動画"
   },
   "View TikMatrix Tutorial": {
-    "message": "Ver tutorialTikMatrix"
+    "message": "TikMatrixチュートリアルを見る"
   },
   "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
     "message": "キーワード検索、動画視聴、フォロー、いいね、コメント、お気に入りでアカウントをウォームアップ"
@@ -522,40 +522,40 @@
     "message": "はい！IgMatrixのセットアップチュートリアルはTikMatrixと同じです。インストール、デバイス接続、基本設定についてはTikMatrixドキュメントに従うことができます。自動化スクリプトのみがプラットフォームに基づいて異なります。"
   },
   "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
-    "message": "Sí, IgMatrix y TikMatrix requieren licencias separadas ya que son productos diferentes optimizados para diferentes plataformas de redes sociales. Cada licencia está vinculada a un software específico y no se puede usar indistintamente."
+    "message": "はい、IgMatrixとTikMatrixは異なるソーシャルメディアプラットフォーム向けに最適化された異なる製品であるため、個別のライセンスが必要です。各ライセンスは特定のソフトウェアに紐付けられており、互換性はありません。"
   },
   "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
-    "message": "Puedes instalar tanto IgMatrix como TikMatrix en la misma computadora, pero no pueden ejecutarse simultáneamente debido a conflictos de tiempo de ejecución. Solo puedes ejecutar un software a la vez: IgMatrix o TikMatrix."
+    "message": "IgMatrixとTikMatrixの両方を同じコンピューターにインストールできますが、ランタイムの競合により同時に実行することはできません。一度に実行できるのはIgMatrixまたはTikMatrixのいずれか1つだけです。"
   },
   "advertising.disclaimer.content": {
-    "message": "Estos son serviciosterceros. Realiza tu propia investigación antesrealizar cualquier compra."
+    "message": "これらはサードパーティのサービスです。購入前にご自身で調査してください。"
   },
   "advertising.disclaimer.title": {
-    "message": "Aviso legal"
+    "message": "免責事項"
   },
   "advertising.page.subtitle": {
-    "message": "Servicios y herramientas recomendadas para mejorar tu experiencia con TikMatrix"
+    "message": "TikMatrixエクスペリエンスを向上させるための推奨サービスとツール"
   },
   "advertising.page.title": {
-    "message": "Servicios recomendados"
+    "message": "推奨サービス"
   },
   "advertising.visit.button": {
-    "message": "Visitar sitio web"
+    "message": "ウェブサイトを訪問"
   },
   "download.description": {
-    "message": "Descarga TikMatrix para Windows, Mac o Linux y comienza a automatizar tu marketingTikTok"
+    "message": "Windows、Mac、LinuxでTikMatrixをダウンロードし、TikTokマーケティングの自動化を始めましょう"
   },
   "download.igmatrix.description": {
-    "message": "Descarga IgMatrix para Windows, Mac o Linux y comienza a automatizar tu marketingInstagram"
+    "message": "Windows、Mac、LinuxでIgMatrixをダウンロードし、Instagramマーケティングの自動化を始めましょう"
   },
   "download.igmatrix.linux.coming_soon": {
-    "message": "Próximamente"
+    "message": "近日公開"
   },
   "download.igmatrix.linux.description": {
-    "message": "La versiónLinuxIgMatrix está actualmente en desarrollo"
+    "message": "IgMatrixのLinux版は現在開発中です"
   },
   "download.igmatrix.linux.development": {
-    "message": "En desarrollo"
+    "message": "開発中"
   },
   "download.igmatrix.linux.title": {
     "message": "IgMatrix para Linux"
@@ -579,16 +579,16 @@
     "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）"
   },
   "download.igmatrix.requirements.os": {
-    "message": "Windows 10/1164 bits o macOS 10.15+"
+    "message": "オペレーティングシステム：Windows 10/11 64ビット または macOS 10.15+"
   },
   "download.igmatrix.requirements.processor": {
-    "message": "Procesador Intel Core i5 o equivalente"
+    "message": "プロセッサー：Intel Core i5または同等品"
   },
   "download.igmatrix.requirements.storage": {
-    "message": "500 MBespacio disponible en disco"
+    "message": "ストレージ：500 MBの空き容量"
   },
   "download.igmatrix.requirements.title": {
-    "message": "Requisitos del sistema"
+    "message": "システム要件"
   },
   "download.igmatrix.subtitle": {
     "message": "WindowsおよびMac向けのInstagram自動化プロ用ツール"
@@ -606,13 +606,13 @@
     "message": "IgMatrix（Windows）"
   },
   "download.linux.coming_soon": {
-    "message": "Próximamente"
+    "message": "近日公開"
   },
   "download.linux.description": {
-    "message": "La versiónLinuxTikMatrix está actualmente en desarrollo"
+    "message": "TikMatrixのLinux版は現在開発中です"
   },
   "download.linux.development": {
-    "message": "En desarrollo"
+    "message": "開発中"
   },
   "download.linux.title": {
     "message": "TikMatrix（Linux）"
@@ -636,16 +636,16 @@
     "message": "メモリ：8 GB RAM（複数デバイスには16 GB推奨）"
   },
   "download.requirements.os": {
-    "message": "Windows 10/1164 bits o macOS 10.15+"
+    "message": "オペレーティングシステム：Windows 10/11、macOS 10.15+ または Ubuntu 20.04+"
   },
   "download.requirements.processor": {
-    "message": "Procesador Intel Core i5 o equivalente"
+    "message": "プロセッサー：Intel Core i5または同等品"
   },
   "download.requirements.storage": {
-    "message": "500 MBespacio disponible en disco"
+    "message": "ストレージ：500 MBの空き容量"
   },
   "download.requirements.title": {
-    "message": "Requisitos del sistema"
+    "message": "システム要件"
   },
   "download.subtitle": {
     "message": "WindowsおよびMac向けのプロ向けTikTok自動化ツール"
@@ -906,22 +906,22 @@
     "message": "Uso:"
   },
   "testimonials.user1.text": {
-    "message": "TikMatrix ha revolucionado nuestra operación de granja de teléfonos. La capacidad de gestionar 100+ dispositivos desde una sola PC es increíble."
+    "message": "TikMatrixは私たちのスマートフォンファーム運営に革命をもたらしました。1台のPCから100台以上のデバイスを管理できる能力は驚異的です。"
   },
   "testimonials.user1.usage": {
-    "message": "Gestión de 120 dispositivos"
+    "message": "120台のデバイス管理"
   },
   "testimonials.user2.text": {
-    "message": "El sistema de automatización es potente y fácil de usar. Nuestro engagement ha aumentado un 40% desde que comenzamos a usar TikMatrix."
+    "message": "自動化システムは強力で使いやすいです。TikMatrixの使用を開始してから、私たちのエンゲージメントは40%増加しました。"
   },
   "testimonials.user2.usage": {
     "message": "50のTikTokアカウント"
   },
   "testimonials.user3.text": {
-    "message": "La mejor inversión para nuestro negocio de marketing en TikTok. El soporte técnico es excepcional y el software es muy estable."
+    "message": "TikTokマーケティングビジネスにとって最高の投資です。テクニカルサポートは素晴らしく、ソフトウェアは非常に安定しています。"
   },
   "testimonials.user3.usage": {
-    "message": "Operación profesionalmarketing"
+    "message": "プロフェッショナルなマーケティング運営"
   },
   "testimonials.user4.text": {
     "message": "6か月の使用でアカウント停止率ゼロ。実機技術は本当に機能します！"
