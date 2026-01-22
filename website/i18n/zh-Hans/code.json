@@ -197,8 +197,23 @@
   "Get dedicated support from our expert team whenever you need help": {
     "message": "随时从我们的专家团队获得专门支持"
   },
+  "Get started with basic features. All free features will remain available forever.": {
+    "message": "开始使用基础功能。所有免费功能将永久可用。"
+  },
+  "Getting Started with IgMatrix": {
+    "message": "开始使用 IgMatrix"
+  },
   "Go to the \"Download\" page and download the latest version of TikMatrix.": {
     "message": "前往\"下载\"页面并下载最新版本的 TikMatrix。"
+  },
+  "Grow": {
+    "message": "增长"
+  },
+  "Hardware Requirements": {
+    "message": "硬件要求"
+  },
+  "Have a question? Contact our support team.": {
+    "message": "有疑问？联系我们的支持团队。"
   },
   "Here are some frequently asked questions.": {
     "message": "以下是常见问题。"
@@ -206,11 +221,26 @@
   "Hide feature comparison": {
     "message": "隐藏功能对比"
   },
+  "How do I connect my Android devices?": {
+    "message": "如何连接我的 Android 设备？"
+  },
+  "How do I get started with TikMatrix?": {
+    "message": "如何开始使用 TikMatrix？"
+  },
+  "How is IgMatrix different from TikMatrix?": {
+    "message": "IgMatrix 与 TikMatrix 有何不同？"
+  },
+  "How many Android devices can I control?": {
+    "message": "我可以控制多少台 Android 设备？"
+  },
   "How many TikTok accounts can each phone log into?": {
     "message": "每个手机可以登录几个tiktok账号?"
   },
   "How many devices can I manage?": {
     "message": "我可以管理多少设备?"
+  },
+  "How to Connect Your Android Devices to the Desktop App": {
+    "message": "如何将 Android 设备连接到桌面应用"
   },
   "How to use?": {
     "message": "如何使用?"
@@ -218,8 +248,23 @@
   "If you are interested in our service, please contact us to get price.": {
     "message": "如果您想了解我们的服务，请联系我们获取价格。"
   },
+  "If you encounter any issues or have questions, please contact us through the app or via email.": {
+    "message": "如果您遇到任何问题或有疑问，请通过应用或电子邮件与我们联系。"
+  },
   "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
     "message": "如果您需要IgMatrix特定功能的帮助或遇到任何问题，我们的支持团队随时为您提供帮助。"
+  },
+  "If you're familiar with TikMatrix, IgMatrix will feel very similar. However, some key differences include:": {
+    "message": "如果您熟悉 TikMatrix，IgMatrix 会感觉非常相似。但一些关键差异包括："
+  },
+  "IgMatrix": {
+    "message": "IgMatrix"
+  },
+  "IgMatrix - Instagram Automation Matrix Management Software": {
+    "message": "IgMatrix - Instagram 自动化矩阵管理软件"
+  },
+  "IgMatrix FAQ": {
+    "message": "IgMatrix 常见问题"
   },
   "IgMatrix Features": {
     "message": "IgMatrix功能"
@@ -230,8 +275,14 @@
   "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
     "message": "IgMatrix遵循与TikMatrix类似的定价结构，但可能有不同的费率。请查看我们的官方定价页面或联系我们的支持团队了解当前的IgMatrix定价信息。"
   },
+  "IgMatrix is TikMatrix's sister product designed specifically for Instagram automation. It shares the same powerful multi-device control architecture but with Instagram-specific automation scripts and features.": {
+    "message": "IgMatrix 是 TikMatrix 的姊妹产品，专为 Instagram 自动化而设计。它拥有相同强大的多设备控制架构，但配备了 Instagram 专用的自动化脚本和功能。"
+  },
   "IgMatrix is a Instagram android phonefarm batch control tool": {
     "message": "IgMatrix 是一款Instagram安卓手机农场批量控制工具"
+  },
+  "IgMatrix mirrors TikMatrix's powerful device management capabilities but is tailored for Instagram automation.": {
+    "message": "IgMatrix 复制了 TikMatrix 强大的设备管理功能，但专为 Instagram 自动化而定制。"
   },
   "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
     "message": "IgMatrix的设置教程与TikMatrix相同。唯一的不同就是他们的脚本逻辑不同，所以您可以直接参考TikMatrix的教程文档。"
@@ -245,6 +296,9 @@
   "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
     "message": "通过批量点赞、分享、收藏和观看来提升帖子互动"
   },
+  "Increase live stream popularity": {
+    "message": "提高直播人气"
+  },
   "Increase user engagement by following or unfollowing accounts in bulk": {
     "message": "通过批量关注或取消关注账户来提升用户互动"
   },
@@ -253,6 +307,9 @@
   },
   "Instagram Phone Farm Batch Control Tool": {
     "message": "Instagram手机农场批量控制工具"
+  },
+  "Instagram-Specific Features": {
+    "message": "Instagram 专属功能"
   },
   "Instagram-optimized automation scripts": {
     "message": "Instagram优化的自动化脚本"
@@ -269,8 +326,23 @@
   "Key Differences from TikMatrix": {
     "message": "与TikMatrix的主要区别"
   },
+  "Key Features": {
+    "message": "核心功能"
+  },
+  "Learn how to install and set up TikMatrix": {
+    "message": "了解如何安装和设置 TikMatrix"
+  },
+  "Learn how to use TikMatrix Desktop": {
+    "message": "了解如何使用 TikMatrix 桌面版"
+  },
+  "Limited support": {
+    "message": "有限支持"
+  },
   "Live stream boost": {
     "message": "直播提升"
+  },
+  "Live streaming interaction": {
+    "message": "直播互动"
   },
   "Local API": {
     "message": "本地 API"
@@ -278,11 +350,29 @@
   "Local REST API access (Pro+)": {
     "message": "本地 REST API 访问（Pro+）"
   },
+  "Manage Accounts": {
+    "message": "管理账户"
+  },
+  "Manage Multiple Accounts": {
+    "message": "管理多个账户"
+  },
+  "Manage multiple TikTok accounts on one device with easy switching": {
+    "message": "在一台设备上管理多个 TikTok 账户，轻松切换"
+  },
+  "Manage up to 100 devices": {
+    "message": "管理最多 100 台设备"
+  },
   "Mass commenting": {
     "message": "批量评论"
   },
   "Mass direct messaging": {
     "message": "批量私信"
+  },
+  "Matrix Management": {
+    "message": "矩阵管理"
+  },
+  "Message": {
+    "message": "消息"
   },
   "Monthly": {
     "message": "月付"
@@ -293,20 +383,59 @@
   "Multi-Device Control": {
     "message": "多设备控制"
   },
+  "Multi-account Instagram automation": {
+    "message": "多账户 Instagram 自动化"
+  },
+  "Multi-device mirroring and control": {
+    "message": "多设备镜像和控制"
+  },
   "Multi-language support (English, Chinese, Russian)": {
     "message": "多语言支持（英语、中文、俄语）"
+  },
+  "Multiple accounts per device": {
+    "message": "每台设备多个账户"
+  },
+  "Name": {
+    "message": "姓名"
+  },
+  "No, IgMatrix and TikMatrix are separate products that require separate licenses. However, as sister products, they share the same powerful architecture and user experience.": {
+    "message": "不，IgMatrix 和 TikMatrix 是需要单独许可证的独立产品。但作为姊妹产品，它们共享相同强大的架构和用户体验。"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "由于脚本是平台特定的，并非所有TikMatrix脚本都在IgMatrix中可用。安装后可以在IgMatrix软件界面中找到可用脚本的确切列表。请参考软件中显示的实际功能。"
   },
+  "Once installed and running, IgMatrix will present you with a device connection interface. Follow the on-screen instructions to connect your Android devices via USB or Wi-Fi.": {
+    "message": "安装并运行后，IgMatrix 将显示设备连接界面。按照屏幕上的说明通过 USB 或 Wi-Fi 连接您的 Android 设备。"
+  },
+  "Our 24/7 support team is always ready to help you with any questions or issues": {
+    "message": "我们的 24/7 支持团队随时准备帮助您解决任何问题"
+  },
   "Our support team is here to help you with any IgMatrix-related questions or issues.": {
     "message": "我们的支持团队在这里帮助您解决任何与IgMatrix相关的问题或疑问。"
+  },
+  "PC performance": {
+    "message": "PC 性能"
+  },
+  "PC-Based Matrix Control": {
+    "message": "基于 PC 的矩阵控制"
   },
   "Per Month": {
     "message": "每月"
   },
+  "Per Month/Year": {
+    "message": "每月/每年"
+  },
+  "Per Year": {
+    "message": "每年"
+  },
   "Per Year (Save 30%)": {
     "message": "每年 (节省 30%)"
+  },
+  "Perfect for getting started": {
+    "message": "非常适合入门"
+  },
+  "Perform TikTok automation tasks": {
+    "message": "执行 TikTok 自动化任务"
   },
   "Performance analytics": {
     "message": "性能分析"
@@ -314,11 +443,17 @@
   "Phone screen mirroring to a computer": {
     "message": "手机投屏到电脑"
   },
+  "Platform-Specific Automation": {
+    "message": "平台专属自动化"
+  },
   "Platform-optimized features": {
     "message": "平台优化功能"
   },
   "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
     "message": "请直接下载IgMatrix查看脚本列表。目前TikMatrix的脚本没有100%被IgMatrix中支持，请以软件中的功能为准。"
+  },
+  "Popular": {
+    "message": "热门"
   },
   "Post engagement boost": {
     "message": "帖子互动提升"
@@ -332,8 +467,14 @@
   "Powerful TikTok Automation & Management Tools": {
     "message": "强大的TikTok自动化和管理工具"
   },
+  "Premium hardware bundle": {
+    "message": "高级硬件套装"
+  },
   "Pricing": {
     "message": "定价"
+  },
+  "Priority support": {
+    "message": "优先支持"
   },
   "Pro": {
     "message": "专业版"
@@ -341,11 +482,17 @@
   "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
     "message": "Pro、Team 和 Business 用户可使用本地 RESTful API 来以编程方式管理任务和自动化工作流。详见文档。"
   },
+  "Professional": {
+    "message": "专业版"
+  },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "专业TikTok账号管理与营销工具，专为Windows和Mac上的安卓手机农场设计。实现自动发布、关注等功能，促进TikTok影响力增长，确保零封号率。"
   },
   "Professional phone farm management": {
     "message": "专业手机农场管理"
+  },
+  "Proxy support": {
+    "message": "代理支持"
   },
   "Publish videos or images to TikTok with batch posting capabilities": {
     "message": "发布视频或图片到TikTok，支持批量发布功能"
@@ -356,17 +503,35 @@
   "Read Local API docs": {
     "message": "查看本地 API 文档"
   },
+  "Real-Time Control": {
+    "message": "实时控制"
+  },
+  "Real-time device control": {
+    "message": "实时设备控制"
+  },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "识别并匹配手机中的TikTok账户，添加到账户列表"
   },
   "Recognize subtitles": {
     "message": "识别字幕"
   },
+  "Recommended PC Specifications": {
+    "message": "推荐 PC 规格"
+  },
   "Remove posts based on their view count for content optimization": {
     "message": "根据观看次数删除帖子，优化内容"
   },
+  "Run TikMatrix": {
+    "message": "运行 TikMatrix"
+  },
   "Safe & Secure": {
     "message": "安全可靠"
+  },
+  "Safe and reliable": {
+    "message": "安全可靠"
+  },
+  "Same Core Technology": {
+    "message": "相同核心技术"
   },
   "Same Setup Process": {
     "message": "相同的设置过程"
@@ -374,20 +539,44 @@
   "Same reliable technology as TikMatrix": {
     "message": "与TikMatrix相同的可靠技术"
   },
+  "Scale": {
+    "message": "规模"
+  },
   "Schedule your Instagram activities with intelligent timing algorithms": {
     "message": "使用智能时间算法安排您的Instagram活动"
   },
   "Scrape TikTok usernames from followers lists or keyword searches": {
     "message": "从粉丝列表或关键词搜索中采集TikTok用户名"
   },
+  "See mirror and control all connected devices in real-time": {
+    "message": "实时查看和控制所有连接的设备"
+  },
+  "Select Plan": {
+    "message": "选择方案"
+  },
+  "Send Direct Messages": {
+    "message": "发送私信"
+  },
   "Send messages to multiple TikTok accounts in bulk with personalized content": {
     "message": "批量向多个TikTok账户发送个性化内容的消息"
+  },
+  "Set up": {
+    "message": "设置"
   },
   "Set up account profiles including avatars, nicknames, signatures, and usernames": {
     "message": "设置账户资料，包括头像、昵称、签名和用户名"
   },
+  "Set up accounts and automation": {
+    "message": "设置账户和自动化"
+  },
   "Setup Tutorial": {
     "message": "设置教程"
+  },
+  "Setup your accounts": {
+    "message": "设置您的账户"
+  },
+  "Share TikMatrix": {
+    "message": "分享 TikMatrix"
   },
   "Shipping worldwide": {
     "message": "全球发货"
@@ -398,8 +587,17 @@
   "Smart Scheduling": {
     "message": "智能调度"
   },
+  "Social media automation": {
+    "message": "社交媒体自动化"
+  },
+  "Start automating": {
+    "message": "开始自动化"
+  },
   "Start for free": {
     "message": "立即使用"
+  },
+  "Start with our Free plan and see what TikMatrix can do": {
+    "message": "从我们的免费方案开始，看看 TikMatrix 能做什么"
   },
   "Starter": {
     "message": "入门版"
@@ -410,6 +608,9 @@
   "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
     "message": "通过先进的批量控制和营销自动化，轻松管理您的Instagram手机农场。"
   },
+  "Submit": {
+    "message": "提交"
+  },
   "Subscribe": {
     "message": "立即订阅"
   },
@@ -418,6 +619,9 @@
   },
   "Supports 100+ phones mirroring to a computer, with synchronized operation": {
     "message": "支持100+手机投屏到电脑，同步操作"
+  },
+  "Synchronize multiple accounts": {
+    "message": "同步多个账户"
   },
   "Team": {
     "message": "团队版"
@@ -437,6 +641,18 @@
   "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
     "message": "手机主板机是20个三星手机主板。它是一台通电自启动的，统一电源供电，统一的多风扇散热，统一的 USB 连接，支持 OTG 有线网络连接。"
   },
+  "TikMatrix": {
+    "message": "TikMatrix"
+  },
+  "TikMatrix - TikTok Automation Matrix Management Software": {
+    "message": "TikMatrix - TikTok 自动化矩阵管理软件"
+  },
+  "TikMatrix Desktop Tutorial": {
+    "message": "TikMatrix 桌面教程"
+  },
+  "TikMatrix is a powerful social media automation tool that allows you to manage multiple TikTok accounts across different Android devices from your computer.": {
+    "message": "TikMatrix 是一款强大的社交媒体自动化工具，允许您从计算机管理不同 Android 设备上的多个 TikTok 账户。"
+  },
   "TikMatrix is a professional marketing software designed for TikTok phone farms": {
     "message": "TikMatrix 是一款专业的TikTok手机农场营销软件"
   },
@@ -452,8 +668,20 @@
   "TikMatrix supports up to 200+ devices.": {
     "message": "TikMatrix 支持 200+ 个设备。"
   },
+  "TikTok Matrix Management": {
+    "message": "TikTok 矩阵管理"
+  },
+  "To connect your Android devices, follow these steps:": {
+    "message": "要连接您的 Android 设备，请按照以下步骤操作："
+  },
   "Translate subtitles": {
     "message": "翻译字幕"
+  },
+  "Troubleshooting": {
+    "message": "故障排除"
+  },
+  "Tutorial": {
+    "message": "教程"
   },
   "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
     "message": "美国原生非激活的 SIM 卡，用于 tiktok Android 应用来检测 SIM 卡位置"
@@ -461,20 +689,41 @@
   "Unlimited": {
     "message": "无限"
   },
+  "Unlimited Devices": {
+    "message": "无限设备"
+  },
   "Unlimited device connections": {
     "message": "无限设备连接"
+  },
+  "Unlimited devices": {
+    "message": "无限设备"
   },
   "Up to 100 concurrent automation tasks": {
     "message": "最多100个并发自动化任务"
   },
+  "Up to 100 devices": {
+    "message": "最多 100 台设备"
+  },
   "Up to 20 concurrent automation tasks": {
     "message": "最多20个并发自动化任务"
+  },
+  "Up to 20 devices": {
+    "message": "最多 20 台设备"
   },
   "Up to 5 concurrent automation tasks": {
     "message": "最多5个并发自动化任务"
   },
+  "Up to 5 devices": {
+    "message": "最多 5 台设备"
+  },
   "Up to 50 concurrent automation tasks": {
     "message": "最多50个并发自动化任务"
+  },
+  "Use TikMatrix's tutorial as a reference for understanding the basic interface and device connection process. These fundamental concepts apply to both products.": {
+    "message": "使用 TikMatrix 的教程作为参考，了解基本界面和设备连接过程。这些基本概念适用于两个产品。"
+  },
+  "Use USB cables to connect your Android devices to your computer": {
+    "message": "使用 USB 线将 Android 设备连接到计算机"
   },
   "User engagement boost": {
     "message": "用户互动提升"
@@ -491,17 +740,35 @@
   "Video unique": {
     "message": "视频生成"
   },
+  "View Account Info": {
+    "message": "查看账户信息"
+  },
   "View TikMatrix Tutorial": {
     "message": "查看TikMatrix教程"
   },
+  "View profile information for logged-in accounts": {
+    "message": "查看已登录账户的个人资料信息"
+  },
+  "Visit our": {
+    "message": "访问我们的"
+  },
   "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
     "message": "通过搜索关键词、观看视频、关注、点赞、评论和收藏来养号"
+  },
+  "Watch and interact with live streams using multiple accounts": {
+    "message": "使用多个账户观看并与直播互动"
+  },
+  "We recommend a modern multi-core processor and sufficient RAM (8GB+) to handle multiple device connections smoothly. The more devices you control, the better your PC specs should be.": {
+    "message": "我们建议使用现代多核处理器和足够的内存（8GB+）以顺畅处理多个设备连接。您控制的设备越多，PC 规格应该越好。"
   },
   "What computer can I use?": {
     "message": "我可以使用哪些电脑?"
   },
   "What devices can I use?": {
     "message": "我可以使用哪些设备?"
+  },
+  "What is IgMatrix?": {
+    "message": "什么是 IgMatrix？"
   },
   "What is TikMatrix?": {
     "message": "什么是 TikMatrix?"
@@ -512,8 +779,17 @@
   "Which scripts from TikMatrix are available in IgMatrix?": {
     "message": "IgMatrix中有哪些来自TikMatrix的脚本可用？"
   },
+  "While both products share similar architecture, the automation scripts are different because Instagram and TikTok have different features and APIs. IgMatrix has scripts tailored for Instagram's unique features like Stories, Reels, and Instagram-specific engagement patterns.": {
+    "message": "虽然两个产品共享相似的架构，但自动化脚本不同，因为 Instagram 和 TikTok 具有不同的功能和 API。IgMatrix 拥有针对 Instagram 独特功能（如 Stories、Reels 和 Instagram 特定的互动模式）定制的脚本。"
+  },
   "Why Choose IgMatrix?": {
     "message": "为什么选择IgMatrix？"
+  },
+  "Why use IgMatrix?": {
+    "message": "为什么使用 IgMatrix？"
+  },
+  "With TikMatrix's Business plan, you can control up to 100 Android devices simultaneously from one computer. Free users can also connect unlimited devices for basic features.": {
+    "message": "使用 TikMatrix 的商业版方案，您可以从一台计算机同时控制最多 100 台 Android 设备。免费用户也可以连接无限设备使用基础功能。"
   },
   "Yearly (Save 30%)": {
     "message": "年付 (节省 30%)"
@@ -524,8 +800,17 @@
   "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
     "message": "是的，IgMatrix和TikMatrix需要单独的许可证，因为它们是针对不同社交媒体平台优化的不同产品。每个许可证都绑定到特定软件，不能互换使用。"
   },
+  "Yes, you can run both applications on the same computer. They are independent applications and won't interfere with each other.": {
+    "message": "是的，您可以在同一台计算机上运行两个应用程序。它们是独立的应用程序，不会相互干扰。"
+  },
   "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
     "message": "您可以在同一台计算机上安装IgMatrix和TikMatrix，但由于运行时冲突，它们不能同时运行。您一次只能运行其中一个软件 - IgMatrix或TikMatrix。"
+  },
+  "You can use USB cables or wireless ADB connection. We provide detailed setup guides in the app.": {
+    "message": "您可以使用 USB 线或无线 ADB 连接。我们在应用中提供详细的设置指南。"
+  },
+  "Your message has been sent successfully!": {
+    "message": "您的消息已成功发送！"
   },
   "advertising.disclaimer.content": {
     "message": "以下推荐和链接指向的是不属于或不由TikMatrix运营的外部网站和服务。我们提供这些链接仅为方便您使用。TikMatrix不认可、保证或承担这些第三方网站提供的任何信息、产品或服务的准确性、完整性或实用性的责任。在与外部服务交互时，请使用您自己的判断。"
@@ -541,6 +826,9 @@
   },
   "advertising.visit.button": {
     "message": "访问网站"
+  },
+  "documentation": {
+    "message": "文档"
   },
   "download.description": {
     "message": "下载 TikMatrix 的 Windows、Mac 和 Linux 版本"
@@ -662,6 +950,15 @@
   "download.windows.title": {
     "message": "Windows"
   },
+  "for detailed guides and troubleshooting.": {
+    "message": "获取详细指南和故障排除。"
+  },
+  "for more information.": {
+    "message": "获取更多信息。"
+  },
+  "homepage.download": {
+    "message": "下载 TikMatrix"
+  },
   "homepage.header.cta.download": {
     "message": "立即下载"
   },
@@ -685,6 +982,12 @@
   },
   "homepage.header.title": {
     "message": "TikTok 自动化，从这里开始"
+  },
+  "homepage.tagline": {
+    "message": "社交媒体自动化矩阵管理软件"
+  },
+  "homepage.title": {
+    "message": "欢迎使用 TikMatrix"
   },
   "homepage.vs.card.analytics.desc": {
     "message": "实时监控任务状态和账号表现，轻松掌握运营效果"
@@ -929,10 +1232,316 @@
   "testimonials.user4.usage": {
     "message": "8个月"
   },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "关闭"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "回到顶部"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "已复制"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "复制"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "复制代码到剪贴板"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "切换自动换行"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "切换侧边栏可折叠分类 '{label}'"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "此页面已崩溃。"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "主导航"
+  },
+  "theme.NotFound.p1": {
+    "message": "我们找不到您要找的内容。"
+  },
+  "theme.NotFound.p2": {
+    "message": "请联系链接到原始 URL 的网站所有者，告诉他们链接已损坏。"
+  },
+  "theme.NotFound.title": {
+    "message": "找不到页面"
+  },
+  "theme.PwaReloadPopup.closeButtonAriaLabel": {
+    "message": "关闭"
+  },
+  "theme.PwaReloadPopup.info": {
+    "message": "有新版本可用。"
+  },
+  "theme.PwaReloadPopup.refreshButtonText": {
+    "message": "刷新"
+  },
+  "theme.SearchBar.label": {
+    "message": "搜索"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "查看所有 {count} 个结果"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "您可能需要检查您的网络连接。"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "无法获取结果"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Escape 键"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "以关闭"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "向下箭头"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "以导航"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "向上箭头"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "搜索提供"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter 键"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "以选择"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "没有结果"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "告诉我们。"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "认为此查询应该返回结果？"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "尝试搜索"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "搜索文档"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "取消"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "清除查询"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "收藏"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "没有最近的搜索"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "最近搜索"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "从收藏中删除此搜索"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "从历史记录中删除此搜索"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "保存此搜索"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "通过 Algolia 搜索"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "在文档中搜索"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "\"{query}\" 的搜索结果"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "正在获取新结果..."
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "搜索"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "在此输入您的搜索"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "未找到结果"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "本页目录"
+  },
+  "theme.admonition.caution": {
+    "message": "警告"
+  },
+  "theme.admonition.danger": {
+    "message": "危险"
+  },
+  "theme.admonition.info": {
+    "message": "信息"
+  },
+  "theme.admonition.note": {
+    "message": "注意"
+  },
+  "theme.admonition.tip": {
+    "message": "提示"
+  },
+  "theme.blog.archive.description": {
+    "message": "归档"
+  },
+  "theme.blog.archive.title": {
+    "message": "归档"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "博客列表分页导航"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "较新的文章"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "较旧的文章"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "博客文章分页导航"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "较新的文章"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "较旧的文章"
+  },
   "theme.blog.post.plurals": {
     "message": "{count} 篇博文"
   },
+  "theme.blog.post.readMore": {
+    "message": "阅读更多"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "阅读更多关于 {title}"
+  },
+  "theme.blog.post.readingTime": {
+    "message": "阅读时间 {readingTime} 分钟"
+  },
   "theme.blog.post.readingTime.plurals": {
     "message": "阅读需 {readingTime} 分钟"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "最近博客文章导航"
+  },
+  "theme.blog.sidebar.titleAllPosts": {
+    "message": "所有文章"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} 篇标记为 \"{tagName}\""
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "切换深色和浅色模式（当前为 {mode}）"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "深色模式"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "浅色模式"
+  },
+  "theme.common.editThisPage": {
+    "message": "编辑此页"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "直接链接到 {heading}"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "跳转到主要内容"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} 项"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "面包屑"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "文档分页导航"
+  },
+  "theme.docs.paginator.next": {
+    "message": "下一页"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "上一页"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "关闭导航栏"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "收起侧边栏"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "收起侧边栏"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "展开侧边栏"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "展开侧边栏"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "文档侧边导航"
+  },
+  "theme.docs.sidebar.responsiveCategoryLabel": {
+    "message": "展开侧边栏分类 '{label}'"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "切换导航栏"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} 标记为 \"{tagName}\""
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "{count} 个文档已标记"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "版本：{versionLabel}"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "最新版本"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "要查看最新文档，请参阅 {latestVersionLink} ({versionLabel})。"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "这是 {siteTitle} {versionLabel} 的文档，已不再积极维护。"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "这是 {siteTitle} 版本 {versionLabel} 的未发布文档。"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": "于 {date}"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": "由 {user}"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "最后更新{atDate}{byUser}"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "版本"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "标签："
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "查看所有标签"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "标签"
+  },
+  "theme.unlistedContent.message": {
+    "message": "此页面未列出。搜索引擎不会索引它，只有拥有直接链接的用户才能访问。"
+  },
+  "theme.unlistedContent.title": {
+    "message": "未列出的页面"
   }
 }
