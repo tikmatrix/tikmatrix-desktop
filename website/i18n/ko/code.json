@@ -33,7 +33,7 @@
     "message": "워밍업 자동 계정"
   },
   "Automatic commenting": {
-    "message": "댓글 자동s"
+    "message": "자동 댓글"
   },
   "Automatic following": {
     "message": "자동 팔로우"
@@ -42,25 +42,25 @@
     "message": "자동 로그인"
   },
   "Automatic posting": {
-    "message": "게시 자동"
+    "message": "자동 게시"
   },
   "Automatic profile setup": {
-    "message": "설정 자동 perfil"
+    "message": "자동 프로필 설정"
   },
   "Automation tasks": {
-    "message": "자동화 avanzada"
+    "message": "자동화 작업"
   },
   "Automation tasks disabled": {
-    "message": "자동화 deshabilitada"
+    "message": "자동화 작업 비활성화"
   },
   "Basic configuration": {
-    "message": "설정 기본"
+    "message": "기본 설정"
   },
   "Batch Generating Unique Videos": {
     "message": "일괄 고유 동영상 생성"
   },
   "Batch account management": {
-    "message": "관리 일괄 계정s"
+    "message": "일괄 계정 관리"
   },
   "Batch login to TikTok accounts with account list management": {
     "message": "계정 목록 관리를 통한 TikTok 계정 일괄 로그인"
@@ -72,10 +72,10 @@
     "message": "Instagram 계정을 정지로부터 보호하는 안전 메커니즘으로 구축"
   },
   "Business": {
-    "message": "Empresarial"
+    "message": "비즈니스"
   },
   "Buy hardware": {
-    "message": "Comprar hardware"
+    "message": "하드웨어 구매"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
     "message": "같은 컴퓨터에서 IgMatrix와 TikMatrix를 모두 실행할 수 있나요?"
@@ -84,10 +84,10 @@
     "message": "IgMatrix와 TikMatrix 모두에 동일한 튜토리얼을 사용할 수 있나요?"
   },
   "Check Available Scripts": {
-    "message": "Verificar scripts disponibles"
+    "message": "사용 가능한 스크립트 확인"
   },
   "Comment boost": {
-    "message": "Impulsar comentarios"
+    "message": "댓글 부스트"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
     "message": "사용자 정의 콘텐츠와 이모티콘으로 여러 TikTok 게시물에 대량 댓글 작성"
@@ -105,13 +105,13 @@
     "message": "연락처"
   },
   "Contact Support": {
-    "message": "Contactar con soporte"
+    "message": "고객 지원 문의"
   },
   "Contact to purchase": {
     "message": "구매 문의"
   },
   "Control farm accounts to watch, like, and comment on target live streams": {
-    "message": "제어ar cuentas granja para ver, dar me gusta y comentar transmisiones en vivo objetivo"
+    "message": "팜 계정을 제어하여 타겟 라이브 스트림 시청, 좋아요 및 댓글 작성"
   },
   "Control multiple Instagram accounts across different Android devices simultaneously": {
     "message": "여러 Android 기기에서 동시에 여러 Instagram 계정 제어"
@@ -120,19 +120,19 @@
     "message": "사용자 정의 Instagram 워크플로"
   },
   "Dedicated ticket support": {
-    "message": "Soporte por tickets"
+    "message": "전용 티켓 지원"
   },
   "Device connection": {
     "message": "기기 연결"
   },
   "Device support": {
-    "message": "Dispositivos soportados"
+    "message": "지원 기기"
   },
   "Different Script Logic": {
     "message": "다른 스크립트 로직"
   },
   "Different script availability": {
-    "message": "Disponibilidad scripts diferente"
+    "message": "스크립트 가용성 차이"
   },
   "Do I need separate licenses for IgMatrix and TikMatrix?": {
     "message": "IgMatrix와 TikMatrix에 별도의 라이선스가 필요한가요?"
@@ -147,7 +147,7 @@
     "message": "TikMatrix 다운로드"
   },
   "Download and Install": {
-    "message": "Descargar e instalar"
+    "message": "다운로드 및 설치"
   },
   "Download for Windows": {
     "message": "Windows용 다운로드"
@@ -156,19 +156,19 @@
     "message": "이메일"
   },
   "Features": {
-    "message": "Funciones"
+    "message": "기능"
   },
   "Find answers to common questions about IgMatrix": {
-    "message": "Encuentra respuestas a preguntas frecuentes sobre IgMatrix"
+    "message": "IgMatrix에 대한 자주 묻는 질문에 대한 답변 찾기"
   },
   "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
-    "message": "Choose the plan that fits your needs"
+    "message": "모든 사람을 위한 유연한 요금제. 연간 결제 시 30% 할인!"
   },
   "Follow TikMatrix Tutorial": {
-    "message": "팔로우 el tutorial TikMatrix"
+    "message": "TikMatrix 튜토리얼 따르기"
   },
   "Follow these steps to get started with IgMatrix": {
-    "message": "Sigue estos pasos para comenzar con IgMatrix"
+    "message": "IgMatrix를 시작하려면 다음 단계를 따르세요"
   },
   "For growing teams and companies": {
     "message": "성장하는 팀과 기업을 위한"
@@ -186,13 +186,13 @@
     "message": "무료"
   },
   "Free users can connect unlimited devices and use all basic features except automation tasks": {
-    "message": "Perfecto para empezar"
+    "message": "무료 사용자는 무제한 기기를 연결하고 자동화 작업을 제외한 모든 기본 기능을 사용할 수 있습니다"
   },
   "Frequently Asked Questions": {
-    "message": "Preguntas frecuentes"
+    "message": "자주 묻는 질문"
   },
   "Get Support": {
-    "message": "Obtener soporte"
+    "message": "지원 받기"
   },
   "Get dedicated support from our expert team whenever you need help": {
     "message": "필요할 때마다 전문가 팀의 전담 지원을 받으세요"
@@ -222,7 +222,7 @@
     "message": "IgMatrix 특정 기능에 대한 도움이 필요하거나 문제가 발생하면 지원팀이 도와드릴 준비가 되어 있습니다."
   },
   "IgMatrix Features": {
-    "message": "Funciones de IgMatrix"
+    "message": "IgMatrix 기능"
   },
   "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
     "message": "IgMatrix와 TikMatrix는 동일한 설정 프로세스와 사용자 인터페이스를 공유합니다. 주요 차이점은 IgMatrix가 Instagram 자동화를 위해 특별히 설계된 반면 TikMatrix는 TikTok용이라는 것입니다. 스크립트 로직 및 사용 가능한 기능은 각 플랫폼에 최적화되어 있습니다."
@@ -237,10 +237,10 @@
     "message": "IgMatrix 설정 튜토리얼은 TikMatrix와 동일합니다. 유일한 차이점은 스크립트 로직이므로 TikMatrix 튜토리얼 문서를 직접 참조할 수 있습니다."
   },
   "Important Notice": {
-    "message": "Aviso importante"
+    "message": "중요 공지"
   },
   "Important Reminder": {
-    "message": "Recordatorio importante"
+    "message": "중요 알림"
   },
   "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
     "message": "게시물에 대량으로 좋아요, 공유, 즐겨찾기 및 조회하여 참여도 향상"
@@ -264,31 +264,31 @@
     "message": "가격이 TikMatrix와 동일한가요?"
   },
   "Join Group": {
-    "message": "Unirse al grupo"
+    "message": "그룹 가입"
   },
   "Key Differences from TikMatrix": {
-    "message": "Diferencias clave respecto a TikMatrix"
+    "message": "TikMatrix와의 주요 차이점"
   },
   "Live stream boost": {
-    "message": "Impulsar transmisiones en vivo"
+    "message": "라이브 스트림 부스트"
   },
   "Local API": {
     "message": "API local"
   },
   "Local REST API access (Pro+)": {
-    "message": "Disponible en todos los planes pago"
+    "message": "로컬 REST API 액세스 (Pro+)"
   },
   "Mass commenting": {
-    "message": "댓글 masivos"
+    "message": "대량 댓글 작성"
   },
   "Mass direct messaging": {
     "message": "대량 다이렉트 메시징"
   },
   "Monthly": {
-    "message": "Monthly"
+    "message": "월간"
   },
   "Most popular": {
-    "message": "Popular"
+    "message": "인기"
   },
   "Multi-Device Control": {
     "message": "다중 기기 제어"
@@ -303,7 +303,7 @@
     "message": "지원팀이 IgMatrix 관련 질문이나 문제를 도와드립니다."
   },
   "Per Month": {
-    "message": "por mes"
+    "message": "월"
   },
   "Per Year (Save 30%)": {
     "message": "연간 (30% 절약)"
@@ -315,16 +315,16 @@
     "message": "컴퓨터로 폰 화면 미러링"
   },
   "Platform-optimized features": {
-    "message": "Funciones optimizadas para la plataforma"
+    "message": "플랫폼 최적화 기능"
   },
   "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
-    "message": "Por favor, descarga IgMatrix para ver la lista de scripts directamente. Actualmente, no todos los scripts de TikMatrix son 100% compatibles con IgMatrix. Por favor, consulta las funciones reales en el software."
+    "message": "스크립트 목록을 직접 보려면 IgMatrix를 다운로드하세요. 현재 모든 TikMatrix 스크립트가 IgMatrix에서 100% 지원되는 것은 아닙니다. 소프트웨어의 실제 기능을 참조하세요."
   },
   "Post engagement boost": {
-    "message": "Impulsar engagement publicaciones"
+    "message": "게시물 참여도 부스트"
   },
   "Post management": {
-    "message": "관리 publicaciones"
+    "message": "게시물 관리"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
     "message": "전문 마케터와 기업을 위해 설계된 강력한 Instagram 자동화 도구"
@@ -333,10 +333,10 @@
     "message": "강력한 TikTok 자동화 및 관리 도구"
   },
   "Pricing": {
-    "message": "Pricing Plans"
+    "message": "가격"
   },
   "Pro": {
-    "message": "Profesional"
+    "message": "프로"
   },
   "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
     "message": "Pro, Team 및 Business 사용자는 로컬 RESTful API를 사용하여 프로그래밍 방식으로 작업을 관리하고 워크플로를 자동화할 수 있습니다. 자세한 내용은 문서를 참조하세요."
@@ -366,7 +366,7 @@
     "message": "콘텐츠 최적화를 위해 조회수에 따라 게시물 제거"
   },
   "Safe & Secure": {
-    "message": "Seguro y protegido"
+    "message": "안전하고 보안됨"
   },
   "Same Setup Process": {
     "message": "동일한 설정 프로세스"
@@ -399,7 +399,7 @@
     "message": "스마트 스케줄링"
   },
   "Start for free": {
-    "message": "Start for free"
+    "message": "무료로 시작"
   },
   "Starter": {
     "message": "스타터"
@@ -411,7 +411,7 @@
     "message": "고급 일괄 제어 및 마케팅 자동화로 Instagram 폰 팜 간소화"
   },
   "Subscribe": {
-    "message": "Subscribe"
+    "message": "구독"
   },
   "Super Marketing": {
     "message": "Super 마케팅"
@@ -459,28 +459,28 @@
     "message": "미국 네이티브 미활성화 SIM 카드, TikTok Android 앱이 SIM 카드 위치를 감지하는 데 사용됨"
   },
   "Unlimited": {
-    "message": "Ilimitado"
+    "message": "무제한"
   },
   "Unlimited device connections": {
-    "message": "기기 ilimitados"
+    "message": "무제한 기기 연결"
   },
   "Up to 100 concurrent automation tasks": {
-    "message": "Tareas concurrentes ilimitadas"
+    "message": "최대 100개 동시 자동화 작업"
   },
   "Up to 20 concurrent automation tasks": {
-    "message": "50 tareas concurrentes"
+    "message": "최대 20개 동시 자동화 작업"
   },
   "Up to 5 concurrent automation tasks": {
-    "message": "10 tareas concurrentes"
+    "message": "최대 5개 동시 자동화 작업"
   },
   "Up to 50 concurrent automation tasks": {
-    "message": "100 tareas concurrentes"
+    "message": "최대 50개 동시 자동화 작업"
   },
   "User engagement boost": {
-    "message": "Impulso del engagement de usuarios"
+    "message": "사용자 참여도 부스트"
   },
   "User interface": {
-    "message": "Interfaz usuario"
+    "message": "사용자 인터페이스"
   },
   "User scraping": {
     "message": "사용자 스크래핑"
@@ -495,7 +495,7 @@
     "message": "TikMatrix 튜토리얼 보기"
   },
   "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
-    "message": "Calentar cuentas buscando palabras clave, viendo videos, siguiendo, dando me gusta, comentando y marcando como favoritos"
+    "message": "키워드 검색, 비디오 시청, 팔로우, 좋아요, 댓글 및 즐겨찾기를 통한 계정 워밍업"
   },
   "What computer can I use?": {
     "message": "어떤 컴퓨터를 사용할 수 있나요?"
@@ -516,7 +516,7 @@
     "message": "왜 IgMatrix를 선택해야 하나요?"
   },
   "Yearly (Save 30%)": {
-    "message": "Yearly (Save 30%)"
+    "message": "연간 (30% 절약)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "예! IgMatrix의 설정 튜토리얼은 TikMatrix와 동일합니다. 설치, 기기 연결 및 기본 구성에 대해서는 TikMatrix 문서를 따를 수 있습니다. 자동화 스크립트만 플랫폼에 따라 다릅니다."
@@ -531,22 +531,22 @@
     "message": "이것은 타사 서비스입니다. 구매하기 전에 자체 조사를 수행하세요."
   },
   "advertising.disclaimer.title": {
-    "message": "Aviso legal"
+    "message": "법적 고지"
   },
   "advertising.page.subtitle": {
-    "message": "Servicios y herramientas recomendadas para mejorar tu experiencia con TikMatrix"
+    "message": "TikMatrix 경험을 향상시키는 권장 서비스 및 도구"
   },
   "advertising.page.title": {
-    "message": "Servicios recomendados"
+    "message": "추천 서비스"
   },
   "advertising.visit.button": {
-    "message": "Visitar sitio web"
+    "message": "웹사이트 방문"
   },
   "download.description": {
-    "message": "Descarga TikMatrix para Windows, Mac o Linux y comienza a automatizar tu marketing TikTok"
+    "message": "Windows, Mac 또는 Linux용 TikMatrix를 다운로드하고 TikTok 마케팅 자동화를 시작하세요"
   },
   "download.igmatrix.description": {
-    "message": "Descarga IgMatrix para Windows, Mac o Linux y comienza a automatizar tu marketing Instagram"
+    "message": "Windows, Mac 또는 Linux용 IgMatrix를 다운로드하고 Instagram 마케팅 자동화를 시작하세요"
   },
   "download.igmatrix.linux.coming_soon": {
     "message": "곧 출시"
@@ -555,22 +555,22 @@
     "message": "IgMatrix Linux 버전은 현재 개발 중입니다"
   },
   "download.igmatrix.linux.development": {
-    "message": "En desarrollo"
+    "message": "개발 중"
   },
   "download.igmatrix.linux.title": {
-    "message": "IgMatrix para Linux"
+    "message": "Linux용 IgMatrix"
   },
   "download.igmatrix.mac.button": {
-    "message": "Descargar para Mac"
+    "message": "Mac용 다운로드"
   },
   "download.igmatrix.mac.description": {
-    "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores"
+    "message": "macOS 10.15 (Catalina) 이상 지원"
   },
   "download.igmatrix.mac.install_tip": {
     "message": "설치 후 다음을 실행하세요: xattr -cr /Applications/IgMatrix.app"
   },
   "download.igmatrix.mac.title": {
-    "message": "IgMatrix para Mac"
+    "message": "Mac용 IgMatrix"
   },
   "download.igmatrix.requirements.internet": {
     "message": "안정적인 인터넷 연결"
@@ -582,13 +582,13 @@
     "message": "Windows 10/11 64비트 또는 macOS 10.15+"
   },
   "download.igmatrix.requirements.processor": {
-    "message": "Procesador Intel Core i5 o equivalente"
+    "message": "Intel Core i5 프로세서 또는 동급"
   },
   "download.igmatrix.requirements.storage": {
-    "message": "500 MB espacio disponible en disco"
+    "message": "500MB 사용 가능한 디스크 공간"
   },
   "download.igmatrix.requirements.title": {
-    "message": "Requisitos del sistema"
+    "message": "시스템 요구 사항"
   },
   "download.igmatrix.subtitle": {
     "message": "Windows 및 Mac용 전문 Instagram 자동화 도구"
@@ -597,13 +597,13 @@
     "message": "IgMatrix 다운로드"
   },
   "download.igmatrix.windows.button": {
-    "message": "Descargar para Windows"
+    "message": "Windows용 다운로드"
   },
   "download.igmatrix.windows.description": {
-    "message": "Compatible con Windows 10 y 11 (64 bits)"
+    "message": "Windows 10 및 11 (64비트) 지원"
   },
   "download.igmatrix.windows.title": {
-    "message": "IgMatrix para Windows"
+    "message": "Windows용 IgMatrix"
   },
   "download.linux.coming_soon": {
     "message": "곧 출시"
@@ -612,22 +612,22 @@
     "message": "TikMatrix Linux 버전은 현재 개발 중입니다"
   },
   "download.linux.development": {
-    "message": "En desarrollo"
+    "message": "개발 중"
   },
   "download.linux.title": {
-    "message": "TikMatrix para Linux"
+    "message": "Linux용 TikMatrix"
   },
   "download.mac.button": {
-    "message": "Descargar para Mac"
+    "message": "Mac용 다운로드"
   },
   "download.mac.description": {
-    "message": "Compatible con macOS 10.15 (Catalina) y versiones posteriores"
+    "message": "macOS 10.15 (Catalina) 이상 지원"
   },
   "download.mac.install_tip": {
     "message": "설치 후 터미널에서 다음 명령을 실행하세요:"
   },
   "download.mac.title": {
-    "message": "TikMatrix para Mac"
+    "message": "Mac용 TikMatrix"
   },
   "download.requirements.internet": {
     "message": "안정적인 인터넷 연결"
@@ -639,13 +639,13 @@
     "message": "Windows 10/11 64비트 또는 macOS 10.15+"
   },
   "download.requirements.processor": {
-    "message": "Procesador Intel Core i5 o equivalente"
+    "message": "Intel Core i5 프로세서 또는 동급"
   },
   "download.requirements.storage": {
-    "message": "500 MB espacio disponible en disco"
+    "message": "500MB 사용 가능한 디스크 공간"
   },
   "download.requirements.title": {
-    "message": "Requisitos del sistema"
+    "message": "시스템 요구 사항"
   },
   "download.subtitle": {
     "message": "Windows 및 Mac용 전문 TikTok 자동화 도구"
@@ -654,22 +654,22 @@
     "message": "TikMatrix 다운로드"
   },
   "download.windows.button": {
-    "message": "Descargar para Windows"
+    "message": "Windows용 다운로드"
   },
   "download.windows.description": {
-    "message": "Compatible con Windows 10 y 11 (64 bits)"
+    "message": "Windows 10 및 11 (64비트) 지원"
   },
   "download.windows.title": {
-    "message": "TikMatrix para Windows"
+    "message": "Windows용 TikMatrix"
   },
   "homepage.header.cta.download": {
-    "message": "Descargar ahora"
+    "message": "지금 다운로드"
   },
   "homepage.header.cta.features": {
-    "message": "Ver funciones"
+    "message": "기능 보기"
   },
   "homepage.header.cta.primary": {
-    "message": "Comenzar"
+    "message": "시작하기"
   },
   "homepage.header.cta.secondary": {
     "message": "자세히 알아보기"
@@ -693,10 +693,10 @@
     "message": "강력한 분석"
   },
   "homepage.vs.card.automation.desc": {
-    "message": "Automatiza todas tus actividades de redes sociales con potentes capacidades de scripting"
+    "message": "강력한 스크립팅 기능으로 모든 소셜 미디어 활동을 자동화"
   },
   "homepage.vs.card.automation.title": {
-    "message": "자동화 potente"
+    "message": "강력한 자동화"
   },
   "homepage.vs.card.cta": {
     "message": "자세히 알아보기"
@@ -705,28 +705,28 @@
     "message": "실제 기기 기술로 매우 낮은 계정 정지율"
   },
   "homepage.vs.card.lowRisk.title": {
-    "message": "Bajo riesgo"
+    "message": "낮은 위험"
   },
   "homepage.vs.card.nodev.desc": {
     "message": "root 권한 불필요, 기기 환경 보안 보장"
   },
   "homepage.vs.card.nodev.title": {
-    "message": "No requiere desarrollo"
+    "message": "개발 불필요"
   },
   "homepage.vs.card.plug.desc": {
     "message": "플러그 앤 플레이, 복잡한 구성 불필요"
   },
   "homepage.vs.card.plug.title": {
-    "message": "Plug and play"
+    "message": "플러그 앤 플레이"
   },
   "homepage.vs.card.realDevices.desc": {
     "message": "진정한 동작과 최대 보안을 위해 실제 Android 기기 사용"
   },
   "homepage.vs.card.realDevices.title": {
-    "message": "Dispositivos reales"
+    "message": "실제 기기"
   },
   "homepage.vs.cta.button": {
-    "message": "Comparar funciones"
+    "message": "기능 비교"
   },
   "homepage.vs.cta.text": {
     "message": "유사 제품과의 더 많은 비교를 보시겠습니까?"
