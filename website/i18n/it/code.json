@@ -1,12 +1,12 @@
 {
   "24/7 Support": {
-    "message": "Soporte 24/7"
+    "message": "Supporto 24/7"
   },
   "Account management": {
     "message": "Gestione account"
   },
   "Account warmup": {
-    "message": "Calentamiento de cuenta"
+    "message": "Riscaldamento account"
   },
   "Advanced safety mechanisms": {
     "message": "Meccanismi di sicurezza avanzati"
@@ -15,10 +15,10 @@
     "message": "Dopo l'installazione, apri IgMatrix per visualizzare l'elenco completo degli script di automazione Instagram disponibili. La selezione degli script potrebbe differire da TikMatrix."
   },
   "All basic features (automation excluded)": {
-    "message": "Todas las funciones gratuitas"
+    "message": "Tutte le funzionalità di base (automazione esclusa)"
   },
   "All features included": {
-    "message": "Todas las funciones"
+    "message": "Tutte le funzionalità incluse"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Controlla sempre le funzionalità effettive disponibili nel tuo software IgMatrix, poiché la funzionalità degli script potrebbe variare da TikMatrix. L'interfaccia del software ti mostrerà esattamente quali script di automazione sono disponibili per Instagram."
@@ -27,19 +27,19 @@
     "message": "Automatizza pubblicazione, seguiti, commenti e attività di coinvolgimento su Instagram"
   },
   "Automatic account matching": {
-    "message": "Coincidencia automática de cuentas"
+    "message": "Abbinamento automatico account"
   },
   "Automatic account nurturing": {
-    "message": "Calentamiento automático de cuenta"
+    "message": "Nutrizione automatica account"
   },
   "Automatic commenting": {
-    "message": "Comentarios automáticos"
+    "message": "Commenti automatici"
   },
   "Automatic following": {
-    "message": "Seguimiento automático"
+    "message": "Seguimento automatico"
   },
   "Automatic login": {
-    "message": "Inicio de sesión automático"
+    "message": "Accesso automatico"
   },
   "Automatic posting": {
     "message": "Publicación automática"
@@ -57,13 +57,13 @@
     "message": "Configuración básica"
   },
   "Batch Generating Unique Videos": {
-    "message": "Generación masiva de vídeos únicos"
+    "message": "Generazione batch di video unici"
   },
   "Batch account management": {
-    "message": "Gestión masiva de cuentas"
+    "message": "Gestione batch account"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "Inicio de sesión masivo en cuentas de TikTok con gestión de lista de cuentas"
+    "message": "Accesso batch agli account TikTok con gestione elenco account"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
     "message": "Aumente la interacción en comentarios específicos dándoles me gusta y respondiendo masivamente"
@@ -72,10 +72,10 @@
     "message": "Construido con mecanismos de seguridad para proteger sus cuentas de Instagram de la suspensión"
   },
   "Business": {
-    "message": "Empresarial"
+    "message": "Business"
   },
   "Buy hardware": {
-    "message": "Comprar hardware"
+    "message": "Acquista hardware"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
     "message": "¿Puedo ejecutar IgMatrix y TikMatrix en la misma computadora?"
@@ -93,10 +93,10 @@
     "message": "Comentar múltiples publicaciones de TikTok de forma masiva con contenido y emojis personalizables"
   },
   "Community support": {
-    "message": "Soporte comunitario"
+    "message": "Supporto della community"
   },
   "Compare features": {
-    "message": "Mostrar comparación"
+    "message": "Confronta funzionalità"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Automatización integral que combina múltiples estrategias de engagement con comentarios generados por IA"
@@ -120,7 +120,7 @@
     "message": "Flujos de trabajo personalizados de Instagram"
   },
   "Dedicated ticket support": {
-    "message": "Soporte por tickets"
+    "message": "Supporto dedicato tramite ticket"
   },
   "Device connection": {
     "message": "Conexión de dispositivos"
@@ -294,7 +294,7 @@
     "message": "Controllo multi-dispositivo"
   },
   "Multi-language support (English, Chinese, Russian)": {
-    "message": "Soporte multiidioma (inglés, chino, ruso)"
+    "message": "Supporto multilingue (inglese, cinese, russo)"
   },
   "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
     "message": "No todos los scripts de TikMatrix están disponibles en IgMatrix, ya que son específicos de cada plataforma. La lista exacta de scripts disponibles se puede encontrar en la interfaz del software IgMatrix después de la instalación. Por favor, consulta las funciones reales mostradas en tu software."
@@ -324,7 +324,7 @@
     "message": "Impulsar engagement de publicaciones"
   },
   "Post management": {
-    "message": "Gestión de publicaciones"
+    "message": "Gestione post"
   },
   "Powerful Instagram automation tools designed for professional marketers and businesses": {
     "message": "Potentes herramientas de automatización de Instagram diseñadas para profesionales del marketing y empresas"
@@ -345,7 +345,7 @@
     "message": "Herramienta profesional de gestión y marketing de cuentas de TikTok diseñada para granjas de teléfonos Android en Windows y Mac. Automatiza publicaciones, seguimientos y haz crecer tu presencia en TikTok con una tasa de suspensión de cuentas de cero."
   },
   "Professional phone farm management": {
-    "message": "Gestión profesional de granja de teléfonos"
+    "message": "Gestione professionale farm telefoni"
   },
   "Publish videos or images to TikTok with batch posting capabilities": {
     "message": "Publicar videos o imágenes en TikTok con capacidades de publicación por lotes"

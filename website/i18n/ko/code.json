@@ -15,10 +15,10 @@
     "message": "설치 후 IgMatrix를 열어 사용 가능한 Instagram 자동화 스크립트의 전체 목록을 확인하십시오. 스크립트 선택은 TikMatrix와 다를 수 있습니다."
   },
   "All basic features (automation excluded)": {
-    "message": "Todas las funciones gratuitas"
+    "message": "모든 기본 기능 (자동화 제외)"
   },
   "All features included": {
-    "message": "Todas las funciones"
+    "message": "모든 기능 포함"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "IgMatrix 소프트웨어에서 실제로 사용 가능한 기능을 항상 확인하십시오. 스크립트 기능은 TikMatrix와 다를 수 있습니다. 소프트웨어 인터페이스는 Instagram에서 사용 가능한 자동화 스크립트를 정확히 보여줍니다."
@@ -27,7 +27,7 @@
     "message": "Instagram에서 게시, 팔로우, 댓글 및 참여 활동 자동화"
   },
   "Automatic account matching": {
-    "message": "Coincidencia 자동 계정s"
+    "message": "자동 계정 매칭"
   },
   "Automatic account nurturing": {
     "message": "워밍업 자동 계정"
@@ -36,10 +36,10 @@
     "message": "댓글 자동s"
   },
   "Automatic following": {
-    "message": "Seguimiento 자동"
+    "message": "자동 팔로우"
   },
   "Automatic login": {
-    "message": "Inicio sesión 자동"
+    "message": "자동 로그인"
   },
   "Automatic posting": {
     "message": "게시 자동"
@@ -57,16 +57,16 @@
     "message": "설정 기본"
   },
   "Batch Generating Unique Videos": {
-    "message": "Generación 일괄 vídeos únicos"
+    "message": "일괄 고유 동영상 생성"
   },
   "Batch account management": {
     "message": "관리 일괄 계정s"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "Inicio sesión masivo en cuentas TikTok con gestión lista 계정s"
+    "message": "계정 목록 관리를 통한 TikTok 계정 일괄 로그인"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Aumente la interacción en comentarios específicos dándoles me gusta y respondiendo 일괄mente"
+    "message": "특정 댓글에 대량으로 좋아요 및 답글을 달아 참여도 향상"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
     "message": "Construido con mecanismos de seguridad para proteger sus cuentas de Instagram de la suspensión"

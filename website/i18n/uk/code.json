@@ -3,16 +3,16 @@
     "message": "24/7 Support"
   },
   "Account management": {
-    "message": "Account management"
+    "message": "Управління обліковим записом"
   },
   "Account warmup": {
-    "message": "Account warmup"
+    "message": "Прогрів облікового запису"
   },
   "Advanced safety mechanisms": {
-    "message": "Advanced safety mechanisms"
+    "message": "Розширені механізми безпеки"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix."
+    "message": "Після встановлення відкрийте IgMatrix, щоб переглянути повний список доступних скриптів автоматизації Instagram. Вибір скриптів може відрізнятися від TikMatrix."
   },
   "All basic features (automation excluded)": {
     "message": "pricing.free.all_free_features"
@@ -21,31 +21,31 @@
     "message": "pricing.all_features"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram."
+    "message": "Завжди перевіряйте фактичні функції, доступні у вашому програмному забезпеченні IgMatrix, оскільки функціональність скриптів може відрізнятися від TikMatrix. Інтерфейс програми покаже вам точно, які скрипти автоматизації доступні для Instagram."
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "Automate posting, following, commenting, and engagement activities on Instagram"
+    "message": "Автоматизуйте публікації, підписки, коментарі та діяльність взаємодії в Instagram"
   },
   "Automatic account matching": {
-    "message": "Automatic account matching"
+    "message": "Автоматичне зіставлення облікових записів"
   },
   "Automatic account nurturing": {
-    "message": "Automatic account nurturing"
+    "message": "Автоматичне розвиток облікового запису"
   },
   "Automatic commenting": {
-    "message": "Automatic commenting"
+    "message": "Автоматичні коментарі"
   },
   "Automatic following": {
-    "message": "Automatic following"
+    "message": "Автоматична підписка"
   },
   "Automatic login": {
-    "message": "Automatic login"
+    "message": "Автоматичний вхід"
   },
   "Automatic posting": {
-    "message": "Automatic posting"
+    "message": "Автоматична публікація"
   },
   "Automatic profile setup": {
-    "message": "Automatic profile setup"
+    "message": "Автоматичне налаштування профілю"
   },
   "Automation tasks": {
     "message": "pricing.compare.automation"
@@ -54,43 +54,43 @@
     "message": "Автоматизацію вимкнено"
   },
   "Basic configuration": {
-    "message": "Basic configuration"
+    "message": "Базова конфігурація"
   },
   "Batch Generating Unique Videos": {
-    "message": "Batch Generating Unique Videos"
+    "message": "Пакетна генерація унікальних відео"
   },
   "Batch account management": {
-    "message": "Batch account management"
+    "message": "Пакетне управління обліковими записами"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "Batch login to TikTok accounts with account list management"
+    "message": "Пакетний вхід в облікові записи TikTok з управлінням списком облікових записів"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Boost engagement on specific comments by liking and replying to them in bulk"
+    "message": "Збільште взаємодію з конкретними коментарями, ставлячи лайки та відповідаючи на них масово"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
-    "message": "Built with safety mechanisms to protect your Instagram accounts from suspension"
+    "message": "Створено з механізмами безпеки для захисту ваших облікових записів Instagram від блокування"
   },
   "Business": {
     "message": "pricing.business.name"
   },
   "Buy hardware": {
-    "message": "Buy hardware"
+    "message": "Придбати обладнання"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
-    "message": "Can I run both IgMatrix and TikMatrix on the same computer?"
+    "message": "Чи можу я запустити IgMatrix і TikMatrix на одному комп'ютері?"
   },
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-    "message": "Can I use the same tutorial for both IgMatrix and TikMatrix?"
+    "message": "Чи можу я використовувати той самий підручник для IgMatrix і TikMatrix?"
   },
   "Check Available Scripts": {
-    "message": "Check Available Scripts"
+    "message": "Перевірити доступні скрипти"
   },
   "Comment boost": {
-    "message": "Comment boost"
+    "message": "Збільшення коментарів"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "Comment on multiple TikTok posts in bulk with customizable content and emojis"
+    "message": "Коментуйте кілька публікацій TikTok масово з налаштованим вмістом і емодзі"
   },
   "Community support": {
     "message": "pricing.free.community_support"

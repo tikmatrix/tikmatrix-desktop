@@ -3,16 +3,16 @@
     "message": "24/7 Support"
   },
   "Account management": {
-    "message": "Account management"
+    "message": "Quản lý tài khoản"
   },
   "Account warmup": {
-    "message": "Account warmup"
+    "message": "Làm ấm tài khoản"
   },
   "Advanced safety mechanisms": {
-    "message": "Advanced safety mechanisms"
+    "message": "Cơ chế an toàn nâng cao"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix."
+    "message": "Sau khi cài đặt, mở IgMatrix để xem danh sách đầy đủ các script tự động hóa Instagram có sẵn. Lựa chọn script có thể khác với TikMatrix."
   },
   "All basic features (automation excluded)": {
     "message": "pricing.free.all_free_features"
@@ -21,31 +21,31 @@
     "message": "pricing.all_features"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram."
+    "message": "Luôn kiểm tra các tính năng thực tế có sẵn trong phần mềm IgMatrix của bạn, vì chức năng script có thể khác với TikMatrix. Giao diện phần mềm sẽ hiển thị chính xác các script tự động hóa nào có sẵn cho Instagram."
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "Automate posting, following, commenting, and engagement activities on Instagram"
+    "message": "Tự động hóa đăng bài, theo dõi, bình luận và các hoạt động tương tác trên Instagram"
   },
   "Automatic account matching": {
-    "message": "Automatic account matching"
+    "message": "Khớp tài khoản tự động"
   },
   "Automatic account nurturing": {
-    "message": "Automatic account nurturing"
+    "message": "Nuôi dưỡng tài khoản tự động"
   },
   "Automatic commenting": {
-    "message": "Automatic commenting"
+    "message": "Bình luận tự động"
   },
   "Automatic following": {
-    "message": "Automatic following"
+    "message": "Theo dõi tự động"
   },
   "Automatic login": {
-    "message": "Automatic login"
+    "message": "Đăng nhập tự động"
   },
   "Automatic posting": {
-    "message": "Automatic posting"
+    "message": "Đăng bài tự động"
   },
   "Automatic profile setup": {
-    "message": "Automatic profile setup"
+    "message": "Thiết lập hồ sơ tự động"
   },
   "Automation tasks": {
     "message": "pricing.compare.automation"
@@ -54,43 +54,43 @@
     "message": "Tự động hóa bị tắt"
   },
   "Basic configuration": {
-    "message": "Basic configuration"
+    "message": "Cấu hình cơ bản"
   },
   "Batch Generating Unique Videos": {
-    "message": "Batch Generating Unique Videos"
+    "message": "Tạo hàng loạt video độc đáo"
   },
   "Batch account management": {
-    "message": "Batch account management"
+    "message": "Quản lý tài khoản hàng loạt"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "Batch login to TikTok accounts with account list management"
+    "message": "Đăng nhập hàng loạt vào tài khoản TikTok với quản lý danh sách tài khoản"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Boost engagement on specific comments by liking and replying to them in bulk"
+    "message": "Tăng tương tác trên các bình luận cụ thể bằng cách thích và trả lời hàng loạt"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
-    "message": "Built with safety mechanisms to protect your Instagram accounts from suspension"
+    "message": "Được xây dựng với các cơ chế an toàn để bảo vệ tài khoản Instagram của bạn khỏi bị đình chỉ"
   },
   "Business": {
     "message": "pricing.business.name"
   },
   "Buy hardware": {
-    "message": "Buy hardware"
+    "message": "Mua phần cứng"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
-    "message": "Can I run both IgMatrix and TikMatrix on the same computer?"
+    "message": "Tôi có thể chạy cả IgMatrix và TikMatrix trên cùng một máy tính không?"
   },
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-    "message": "Can I use the same tutorial for both IgMatrix and TikMatrix?"
+    "message": "Tôi có thể sử dụng cùng một hướng dẫn cho cả IgMatrix và TikMatrix không?"
   },
   "Check Available Scripts": {
-    "message": "Check Available Scripts"
+    "message": "Kiểm tra các script có sẵn"
   },
   "Comment boost": {
-    "message": "Comment boost"
+    "message": "Tăng cường bình luận"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "Comment on multiple TikTok posts in bulk with customizable content and emojis"
+    "message": "Bình luận trên nhiều bài đăng TikTok hàng loạt với nội dung và emoji tùy chỉnh"
   },
   "Community support": {
     "message": "pricing.free.community_support"

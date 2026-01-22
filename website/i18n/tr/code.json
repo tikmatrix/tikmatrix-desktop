@@ -3,16 +3,16 @@
     "message": "24/7 Support"
   },
   "Account management": {
-    "message": "Account management"
+    "message": "Hesap yönetimi"
   },
   "Account warmup": {
-    "message": "Account warmup"
+    "message": "Hesap ısınma"
   },
   "Advanced safety mechanisms": {
-    "message": "Advanced safety mechanisms"
+    "message": "Gelişmiş güvenlik mekanizmaları"
   },
   "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix.": {
-    "message": "After installation, open IgMatrix to view the complete list of available Instagram automation scripts. The script selection may differ from TikMatrix."
+    "message": "Kurulumdan sonra, mevcut Instagram otomasyon betiklerinin tam listesini görüntülemek için IgMatrix'i açın. Betik seçimi TikMatrix'ten farklı olabilir."
   },
   "All basic features (automation excluded)": {
     "message": "pricing.free.all_free_features"
@@ -21,31 +21,31 @@
     "message": "pricing.all_features"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
-    "message": "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram."
+    "message": "IgMatrix yazılımınızda mevcut olan gerçek özellikleri her zaman kontrol edin, çünkü betik işlevselliği TikMatrix'ten farklı olabilir. Yazılım arayüzü size Instagram için hangi otomasyon betiklerinin mevcut olduğunu tam olarak gösterecektir."
   },
   "Automate posting, following, commenting, and engagement activities on Instagram": {
-    "message": "Automate posting, following, commenting, and engagement activities on Instagram"
+    "message": "Instagram'da paylaşım, takip etme, yorum yapma ve etkileşim etkinliklerini otomatikleştirin"
   },
   "Automatic account matching": {
-    "message": "Automatic account matching"
+    "message": "Otomatik hesap eşleştirme"
   },
   "Automatic account nurturing": {
-    "message": "Automatic account nurturing"
+    "message": "Otomatik hesap besleme"
   },
   "Automatic commenting": {
-    "message": "Automatic commenting"
+    "message": "Otomatik yorum yapma"
   },
   "Automatic following": {
-    "message": "Automatic following"
+    "message": "Otomatik takip etme"
   },
   "Automatic login": {
-    "message": "Automatic login"
+    "message": "Otomatik giriş"
   },
   "Automatic posting": {
-    "message": "Automatic posting"
+    "message": "Otomatik paylaşım"
   },
   "Automatic profile setup": {
-    "message": "Automatic profile setup"
+    "message": "Otomatik profil kurulumu"
   },
   "Automation tasks": {
     "message": "pricing.compare.automation"
@@ -54,43 +54,43 @@
     "message": "Otomasyon devre dışı"
   },
   "Basic configuration": {
-    "message": "Basic configuration"
+    "message": "Temel yapılandırma"
   },
   "Batch Generating Unique Videos": {
-    "message": "Batch Generating Unique Videos"
+    "message": "Toplu benzersiz video oluşturma"
   },
   "Batch account management": {
-    "message": "Batch account management"
+    "message": "Toplu hesap yönetimi"
   },
   "Batch login to TikTok accounts with account list management": {
-    "message": "Batch login to TikTok accounts with account list management"
+    "message": "Hesap listesi yönetimi ile TikTok hesaplarına toplu giriş"
   },
   "Boost engagement on specific comments by liking and replying to them in bulk": {
-    "message": "Boost engagement on specific comments by liking and replying to them in bulk"
+    "message": "Belirli yorumları toplu olarak beğenerek ve yanıtlayarak etkileşimi artırın"
   },
   "Built with safety mechanisms to protect your Instagram accounts from suspension": {
-    "message": "Built with safety mechanisms to protect your Instagram accounts from suspension"
+    "message": "Instagram hesaplarınızı askıya alınmaktan korumak için güvenlik mekanizmaları ile oluşturulmuştur"
   },
   "Business": {
     "message": "pricing.business.name"
   },
   "Buy hardware": {
-    "message": "Buy hardware"
+    "message": "Donanım satın al"
   },
   "Can I run both IgMatrix and TikMatrix on the same computer?": {
-    "message": "Can I run both IgMatrix and TikMatrix on the same computer?"
+    "message": "IgMatrix ve TikMatrix'i aynı bilgisayarda çalıştırabilir miyim?"
   },
   "Can I use the same tutorial for both IgMatrix and TikMatrix?": {
-    "message": "Can I use the same tutorial for both IgMatrix and TikMatrix?"
+    "message": "IgMatrix ve TikMatrix için aynı öğreticiyi kullanabilir miyim?"
   },
   "Check Available Scripts": {
-    "message": "Check Available Scripts"
+    "message": "Mevcut betikleri kontrol et"
   },
   "Comment boost": {
-    "message": "Comment boost"
+    "message": "Yorum artırma"
   },
   "Comment on multiple TikTok posts in bulk with customizable content and emojis": {
-    "message": "Comment on multiple TikTok posts in bulk with customizable content and emojis"
+    "message": "Özelleştirilebilir içerik ve emojilerle birden fazla TikTok gönderisine toplu olarak yorum yapın"
   },
   "Community support": {
     "message": "pricing.free.community_support"
