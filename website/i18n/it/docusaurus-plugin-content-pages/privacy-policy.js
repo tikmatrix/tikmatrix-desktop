@@ -5,64 +5,64 @@ import styles from './privacy-policy.module.css';
 export default function PrivacyPolicy() {
     return (
         <Layout
-            title="隐私政策"
-            description="TikMatrix 隐私政策 - 我们如何收集、使用和保护您的数据">
+            title="Informativa sulla Privacy"
+            description="Informativa sulla Privacy di TikMatrix - Come raccogliamo, utilizziamo e proteggiamo i tuoi dati">
             <div className="container">
                 <div className={styles.privacyContent}>
-                    <h1>隐私政策</h1>
-                    <p>最后更新日期: {new Date().toISOString().split('T')[0]}</p>
+                    <h1>Informativa sulla Privacy</h1>
+                    <p>Ultimo aggiornamento: {new Date().toISOString().split('T')[0]}</p>
 
-                    <h2>1. 引言</h2>
-                    <p>欢迎访问 TikMatrix（以下简称"我们"、"我们的"或"本公司"）。我们致力于保护您的个人信息和隐私权。本隐私政策解释了当您访问我们的网站或使用我们的服务时，我们如何收集、使用、披露和保护您的信息。</p>
+                    <h2>1. Introduzione</h2>
+                    <p>Benvenuto su TikMatrix ("noi", "nostro" o "la società"). Ci impegniamo a proteggere le tue informazioni personali e il tuo diritto alla privacy. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo, divulghiamo e proteggiamo le tue informazioni quando visiti il nostro sito web o utilizzi i nostri servizi.</p>
 
-                    <h2>2. 我们收集的信息</h2>
-                    <p>我们可能会收集网站和服务用户的几类信息，包括：</p>
+                    <h2>2. Informazioni che Raccogliamo</h2>
+                    <p>Possiamo raccogliere diversi tipi di informazioni da e sugli utenti del nostro sito web e servizi, tra cui:</p>
                     <ul>
-                        <li><strong>个人信息：</strong>当您注册我们的服务或与我们沟通时提供的姓名、电子邮件地址、电话号码和其他标识符。</li>
-                        <li><strong>技术信息：</strong>当您访问我们的网站时的 IP 地址、浏览器类型、操作系统和其他技术详情。</li>
-                        <li><strong>使用信息：</strong>您如何与我们的网站和服务互动，包括使用的功能和花费的时间。</li>
+                        <li><strong>Informazioni Personali:</strong> Nome, indirizzo email, numero di telefono e altri identificatori che fornisci quando ti registri ai nostri servizi o comunichi con noi.</li>
+                        <li><strong>Informazioni Tecniche:</strong> Indirizzo IP, tipo di browser, sistema operativo e altri dettagli tecnici quando visiti il nostro sito web.</li>
+                        <li><strong>Informazioni di Utilizzo:</strong> Come interagisci con il nostro sito web e servizi, incluse le funzionalità utilizzate e il tempo trascorso.</li>
                     </ul>
 
-                    <h2>3. 我们如何使用您的信息</h2>
-                    <p>我们可能将收集的信息用于各种目的，包括：</p>
+                    <h2>3. Come Utilizziamo le Tue Informazioni</h2>
+                    <p>Possiamo utilizzare le informazioni che raccogliamo per vari scopi, tra cui:</p>
                     <ul>
-                        <li>提供、运营和维护我们的服务</li>
-                        <li>改进和个性化您的体验</li>
-                        <li>就更新、支持和促销与您沟通</li>
-                        <li>分析使用模式以增强我们的服务</li>
-                        <li>防止欺诈并确保安全</li>
+                        <li>Fornire, gestire e mantenere i nostri servizi</li>
+                        <li>Migliorare e personalizzare la tua esperienza</li>
+                        <li>Comunicare con te riguardo aggiornamenti, supporto e promozioni</li>
+                        <li>Analizzare i modelli di utilizzo per migliorare i nostri servizi</li>
+                        <li>Prevenire frodi e garantire la sicurezza</li>
                     </ul>
 
-                    <h2>4. 信息共享和披露</h2>
-                    <p>我们可能在以下情况下共享您的信息：</p>
+                    <h2>4. Condivisione e Divulgazione delle Informazioni</h2>
+                    <p>Possiamo condividere le tue informazioni nelle seguenti situazioni:</p>
                     <ul>
-                        <li><strong>服务提供商：</strong>与帮助我们运营业务和提供服务的第三方。</li>
-                        <li><strong>法律要求：</strong>当法律要求或为保护我们的权利或用户安全时。</li>
-                        <li><strong>业务转让：</strong>与合并、收购或资产出售相关的情况。</li>
+                        <li><strong>Fornitori di Servizi:</strong> Con terze parti che ci aiutano a gestire la nostra attività e fornire servizi.</li>
+                        <li><strong>Requisiti Legali:</strong> Quando richiesto dalla legge o per proteggere i nostri diritti o la sicurezza degli utenti.</li>
+                        <li><strong>Trasferimenti Aziendali:</strong> In connessione con una fusione, acquisizione o vendita di beni.</li>
                     </ul>
 
-                    <h2>5. 数据安全</h2>
-                    <p>我们实施适当的安全措施来保护您的个人信息。但是，没有任何通过互联网传输或电子存储的方法是 100% 安全的，我们不能保证绝对的安全性。</p>
+                    <h2>5. Sicurezza dei Dati</h2>
+                    <p>Implementiamo misure di sicurezza appropriate per proteggere le tue informazioni personali. Tuttavia, nessun metodo di trasmissione su Internet o archiviazione elettronica è sicuro al 100%, e non possiamo garantire la sicurezza assoluta.</p>
 
-                    <h2>6. 您的权利</h2>
-                    <p>根据您所在的位置，您可能对您的个人信息拥有某些权利，包括：</p>
+                    <h2>6. I Tuoi Diritti</h2>
+                    <p>A seconda della tua posizione, potresti avere determinati diritti riguardo alle tue informazioni personali, tra cui:</p>
                     <ul>
-                        <li>访问您的个人信息</li>
-                        <li>更正不准确的个人信息</li>
-                        <li>删除您的个人信息</li>
-                        <li>反对某些处理活动</li>
-                        <li>数据可携带性</li>
+                        <li>Accedere alle tue informazioni personali</li>
+                        <li>Correggere informazioni personali imprecise</li>
+                        <li>Eliminare le tue informazioni personali</li>
+                        <li>Opporsi a determinate attività di elaborazione</li>
+                        <li>Portabilità dei dati</li>
                     </ul>
 
-                    <h2>7. 儿童隐私</h2>
-                    <p>我们的服务不面向 16 岁以下的个人。我们不会故意收集儿童的个人信息。</p>
+                    <h2>7. Privacy dei Bambini</h2>
+                    <p>I nostri servizi non sono destinati a persone di età inferiore ai 16 anni. Non raccogliamo consapevolmente informazioni personali da bambini.</p>
 
-                    <h2>8. 本隐私政策的变更</h2>
-                    <p>我们可能会不时更新我们的隐私政策。我们将通过在此页面上发布新的隐私政策并更新"最后更新日期"来通知您任何更改。</p>
+                    <h2>8. Modifiche a Questa Informativa sulla Privacy</h2>
+                    <p>Potremmo aggiornare la nostra Informativa sulla Privacy di tanto in tanto. Ti informeremo di eventuali modifiche pubblicando la nuova Informativa sulla Privacy su questa pagina e aggiornando la data "Ultimo aggiornamento".</p>
 
-                    <h2>9. 联系我们</h2>
-                    <p>如果您对本隐私政策有任何疑问，请联系我们：</p>
-                    <p>电子邮件：support@tikmatrix.com</p>
+                    <h2>9. Contattaci</h2>
+                    <p>Se hai domande su questa Informativa sulla Privacy, contattaci a:</p>
+                    <p>Email: support@tikmatrix.com</p>
                 </div>
             </div>
         </Layout>
