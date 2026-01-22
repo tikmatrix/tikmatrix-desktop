@@ -5,64 +5,64 @@ import styles from './terms-of-service.module.css';
 export default function TermsOfService() {
     return (
         <Layout
-            title="服务条款"
-            description="TikMatrix 服务条款 - 使用我们平台的规则和指南">
+            title="Termini di Servizio"
+            description="Termini di Servizio di TikMatrix - Regole e linee guida per l'utilizzo della nostra piattaforma">
             <div className="container">
                 <div className={styles.termsContent}>
-                    <h1>服务条款</h1>
-                    <p>最后更新日期: {new Date().toISOString().split('T')[0]}</p>
+                    <h1>Termini di Servizio</h1>
+                    <p>Ultimo aggiornamento: {new Date().toISOString().split('T')[0]}</p>
 
-                    <h2>1. 条款接受</h2>
-                    <p>通过访问或使用 TikMatrix 网站和服务，您同意受这些服务条款以及所有适用的法律法规的约束。如果您不同意这些条款中的任何一条，您将被禁止使用或访问本网站。</p>
+                    <h2>1. Accettazione dei Termini</h2>
+                    <p>Accedendo o utilizzando il sito web e i servizi di TikMatrix, accetti di essere vincolato da questi Termini di Servizio e da tutte le leggi e regolamenti applicabili. Se non accetti uno qualsiasi di questi termini, ti è vietato utilizzare o accedere a questo sito.</p>
 
-                    <h2>2. 使用许可</h2>
-                    <p>允许临时下载 TikMatrix 网站上的材料（信息或软件）仅供个人、非商业性的临时浏览。这是授予许可，而非所有权转让，根据此许可，您不得：</p>
+                    <h2>2. Licenza d'Uso</h2>
+                    <p>È concesso il permesso di scaricare temporaneamente una copia dei materiali sul sito web di TikMatrix solo per visualizzazione personale, non commerciale e temporanea. Questa è la concessione di una licenza, non un trasferimento di titolo, e sotto questa licenza non puoi:</p>
                     <ul>
-                        <li>修改或复制材料</li>
-                        <li>将材料用于任何商业目的或公开展示</li>
-                        <li>尝试对 TikMatrix 网站包含的任何软件进行逆向工程</li>
-                        <li>从材料中删除任何版权或其他专有标记</li>
-                        <li>将材料转让给他人或在任何其他服务器上"镜像"材料</li>
+                        <li>Modificare o copiare i materiali</li>
+                        <li>Utilizzare i materiali per scopi commerciali o per qualsiasi esposizione pubblica</li>
+                        <li>Tentare di decodificare qualsiasi software contenuto nel sito web di TikMatrix</li>
+                        <li>Rimuovere qualsiasi copyright o altra notazione proprietaria dai materiali</li>
+                        <li>Trasferire i materiali a un'altra persona o "specchiare" i materiali su qualsiasi altro server</li>
                     </ul>
-                    <p>如果您违反任何这些限制，本许可将自动终止，并可能随时被 TikMatrix 终止。</p>
+                    <p>Questa licenza terminerà automaticamente se violi una qualsiasi di queste restrizioni e può essere terminata da TikMatrix in qualsiasi momento.</p>
 
-                    <h2>3. 服务和订阅</h2>
-                    <p>TikMatrix 提供用于 TikTok 账户管理和营销自动化的软件工具。访问这些服务可能需要订阅或一次性付款。通过订阅我们的服务，您同意：</p>
+                    <h2>3. Servizi e Abbonamento</h2>
+                    <p>TikMatrix fornisce strumenti software per la gestione degli account TikTok e l'automazione del marketing. L'accesso a questi servizi può richiedere un abbonamento o un pagamento unico. Sottoscrivendo i nostri servizi, accetti di:</p>
                     <ul>
-                        <li>试用期间可以随机取消订阅, 如果没有取消订阅将自动转为付费订阅</li>
-                        <li>提供准确和完整的账单信息</li>
-                        <li>支付产生费用时有效的所有费用</li>
-                        <li>不将服务用于任何非法目的或违反任何适用法律或法规</li>
-                    </ul>
-
-                    <h2>4. 用户行为</h2>
-                    <p>在使用我们的服务时，您同意不会：</p>
-                    <ul>
-                        <li>违反任何适用的法律或法规</li>
-                        <li>侵犯他人的权利</li>
-                        <li>分发恶意软件或从事其他有害活动</li>
-                        <li>尝试未经授权访问我们的系统或其他用户的账户</li>
-                        <li>以任何可能损害、禁用、使负担过重或损害我们服务的方式使用我们的服务</li>
+                        <li>Durante il periodo di prova, puoi cancellare l'abbonamento in qualsiasi momento. Se l'abbonamento non viene cancellato, verrà automaticamente convertito in un abbonamento a pagamento.</li>
+                        <li>Fornire informazioni di fatturazione accurate e complete</li>
+                        <li>Pagare tutti gli addebiti alle tariffe in vigore quando gli addebiti vengono sostenuti</li>
+                        <li>Non utilizzare i servizi per scopi illegali o in violazione di leggi o regolamenti applicabili</li>
                     </ul>
 
-                    <h2>5. 知识产权</h2>
-                    <p>TikMatrix 名称、标志、软件和内容是 TikMatrix 及其许可方的专属财产。我们的服务和通过我们的服务包含或提供的所有内容均受知识产权法保护。</p>
+                    <h2>4. Condotta dell'Utente</h2>
+                    <p>Quando utilizzi i nostri servizi, accetti di non:</p>
+                    <ul>
+                        <li>Violare leggi o regolamenti applicabili</li>
+                        <li>Violare i diritti di altri</li>
+                        <li>Distribuire malware o impegnarsi in altre attività dannose</li>
+                        <li>Tentare di ottenere accesso non autorizzato ai nostri sistemi o agli account di altri utenti</li>
+                        <li>Utilizzare i nostri servizi in modo tale da danneggiare, disabilitare, sovraccaricare o compromettere i nostri servizi</li>
+                    </ul>
 
-                    <h2>6. 免责声明</h2>
-                    <p>TikMatrix 网站上的材料和提供的服务均按"原样"提供。TikMatrix 不做任何明示或暗示的保证，并特此否认所有其他保证，包括但不限于对特定用途的适销性或适用性的暗示保证。</p>
+                    <h2>5. Proprietà Intellettuale</h2>
+                    <p>Il nome, il logo, il software e il contenuto di TikMatrix sono di proprietà esclusiva di TikMatrix e dei suoi licenzianti. I nostri servizi e tutti i contenuti inclusi o resi disponibili attraverso i nostri servizi sono protetti dalle leggi sulla proprietà intellettuale.</p>
 
-                    <h2>7. 责任限制</h2>
-                    <p>在任何情况下，TikMatrix 或其供应商均不对因使用或无法使用材料或服务而产生的任何损害负责，即使 TikMatrix 已被告知可能发生此类损害。</p>
+                    <h2>6. Esclusione di Responsabilità</h2>
+                    <p>I materiali sul sito web di TikMatrix e i servizi forniti sono forniti "così come sono". TikMatrix non fornisce alcuna garanzia, espressa o implicita, e con la presente declina tutte le altre garanzie, incluse senza limitazioni, garanzie implicite di commerciabilità o idoneità per uno scopo particolare.</p>
 
-                    <h2>8. 适用法律</h2>
-                    <p>这些条款应受 TikMatrix 成立地管辖法律的管辖并按其解释，不考虑其法律冲突规定。</p>
+                    <h2>7. Limitazione di Responsabilità</h2>
+                    <p>In nessun caso TikMatrix o i suoi fornitori saranno responsabili per eventuali danni derivanti dall'uso o dall'impossibilità di utilizzare i materiali o i servizi, anche se TikMatrix è stata avvisata della possibilità di tali danni.</p>
 
-                    <h2>9. 条款变更</h2>
-                    <p>TikMatrix 保留随时修改这些条款的权利。我们将通过更新这些条款的"最后更新日期"来通知用户任何更改。您在任何更改后继续使用我们的网站和服务表示您接受修改后的条款。</p>
+                    <h2>8. Legge Applicabile</h2>
+                    <p>Questi Termini saranno regolati e interpretati in conformità con le leggi della giurisdizione in cui TikMatrix è stabilita, senza riguardo alle sue disposizioni sui conflitti di legge.</p>
 
-                    <h2>10. 联系我们</h2>
-                    <p>如果您对这些条款有任何疑问，请联系我们：</p>
-                    <p>电子邮件：support@tikmatrix.com</p>
+                    <h2>9. Modifiche ai Termini</h2>
+                    <p>TikMatrix si riserva il diritto di modificare questi Termini in qualsiasi momento. Informeremo gli utenti di eventuali modifiche aggiornando la data "Ultimo aggiornamento" di questi Termini. Il tuo uso continuato del nostro sito web e dei servizi dopo eventuali modifiche indica la tua accettazione dei Termini modificati.</p>
+
+                    <h2>10. Contattaci</h2>
+                    <p>Se hai domande su questi Termini, contattaci a:</p>
+                    <p>Email: support@tikmatrix.com</p>
                 </div>
             </div>
         </Layout>
