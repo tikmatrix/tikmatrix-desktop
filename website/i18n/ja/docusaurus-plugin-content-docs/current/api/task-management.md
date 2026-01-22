@@ -1,41 +1,42 @@
 ---
 sidebar_position: 2
 title: タスク管理 API
-description: タスク管理端点の完整参考
+description: タスク管理エンドポイントの完全な API リファレンス
 ---
 
-本页面记录管理 TikMatrix タスクの所有できます用 API 端点。
+このページでは、TikMatrix でタスクを管理するための利用可能なすべての API エンドポイントについて説明します。
 
-## 创建タスク
+## タスクの作成
 
-に一个または複数デバイスまたはユーザー名创建新タスク。
+1つまたは複数のデバイスまたはユーザー名用の新しいタスクを作成します。
 
-- **端点：** `POST /api/v1/task`
+- **エンドポイント：** `POST /api/v1/task`
 - **Content-Type：** `application/json`
 
-### 请求参数
+### リクエストパラメータ
 
-API サポート两种模式创建タスク：
+API はタスク作成の2つのモードをサポートしています：
 
-**模式 1：デバイス模式** - 使用 `serials` にデバイス创建タスク
-**模式 2：ユーザー名模式** - 使用 `usernames` 直接に特定アカウント创建タスク
+**モード 1：デバイスベース** - `serials` を使用してデバイス用のタスクを作成
+**モード 2：ユーザー名ベース** - `usernames` を使用して特定のアカウント用のタスクを直接作成
 
-| 参数 | 类型 | 必需 | 説明 |
-|------|------|------|------|
-| serials | string[] | 条件必需 | デバイス序列号数组（など果未提供 `usernames` 则必需） |
-| usernames | string[] | 条件必需 | ユーザー名数组（など果未提供 `serials` 则必需）。提供此参数时，直接に这些アカウント创建タスク。 |
-| script_name | string | 是 | 要実行の脚本名称 |
-| script_config | object | 是 | 脚本の配置参数（请参阅对应脚本文档） |
-| enable_multi_account | boolean | 否 | 是否启用多アカウント模式（默认：false）。仅在デバイス模式下生效。 |
-| start_time | string | 否 | 计划実行时间，形式に "HH:MM" |
+| パラメータ | 型 | 必須 | 説明 |
+|-----------|------|----------|-------------|
+| serials | string[] | 条件付き | デバイスシリアル番号の配列（`usernames` が提供されていない場合は必須） |
+| usernames | string[] | 条件付き | タスクを作成するユーザー名の配列（`serials` が提供されていない場合は必須）。提供された場合、これらのアカウント用にタスクが直接作成されます。 |
+| script_name | string | はい | 実行するスクリプトの名前 |
+| script_config | object | はい | スクリプトの設定パラメータ（スクリプト固有のドキュメントを参照） |
+| enable_multi_account | boolean | いいえ | マルチアカウントモードを有効にする（デフォルト：false）。デバイスベースモードでのみ適用。 |
+| start_time | string | いいえ | "HH:MM" 形式のスケジュールされた開始時刻 |
 
-### サポートの脚本
+### サポートされているスクリプト
 
-| 脚本名称 | 説明 | 文档 |
-|----------|------|------|
-| post | 发布動画または画像到 TikTok/Instagram | [Post 脚本配置](./post-script.md) |
+| スクリプト名 | 説明 | ドキュメント |
+|-------------|-------------|---------------|
+| post | TikTok/Instagram に動画または画像を公開 | [投稿スクリプト設定](./post-script.md) |
+| follow | ユーザーをフォローまたはアンフォロー | [フォロースクリプト設定](./follow-script.md) |
 
-### 示例
+### 例
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -45,16 +46,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "post",
     "script_config": {
       "content_type": 0,
-      "captions": "看看我的新视频！#热门 #推荐",
+      "captions": "新しい動画をチェック！#バイラル #fyp",
       "material_list": ["C:/Videos/video1.mp4"],
       "upload_wait_time": 60
     }
   }'
 ```
 
-有关 `script_config` の详细参数和更多示例，请参阅 [Post 脚本配置](./post-script.md)。
+詳細な `script_config` パラメータとその他の例については、[投稿スクリプト設定](./post-script.md) および [フォロースクリプト設定](./follow-script.md) を参照してください。
 
-### 响应
+### レスポンス
 
 ```json
 {
@@ -67,68 +68,68 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 列表タスク
+## タスクのリスト
 
-使用できます选过滤条件查询タスク。
+オプションのフィルタを使用してタスクをクエリします。
 
-- **端点：** `GET /api/v1/task`
+- **エンドポイント：** `GET /api/v1/task`
 
-| 参数 | 类型 | 必需 | 説明 |
-|------|------|------|------|
-| status | integer | 否 | 按状态过滤（0=pending, 1=running, 2=completed, 3=failed） |
-| serial | string | 否 | 按デバイス序列号过滤 |
-| script_name | string | 否 | 按脚本名称过滤 |
-| source | string | 否 | 按来源过滤（"ui" または "api"） |
-| page | integer | 否 | 页码（默认：1） |
-| page_size | integer | 否 | 每页条目数（默认：20，最大：100） |
+| パラメータ | 型 | 必須 | 説明 |
+|-----------|------|----------|-------------|
+| status | integer | いいえ | ステータスでフィルタ（0=pending、1=running、2=completed、3=failed） |
+| serial | string | いいえ | デバイスシリアルでフィルタ |
+| script_name | string | いいえ | スクリプト名でフィルタ |
+| source | string | いいえ | ソースでフィルタ（"ui" または "api"） |
+| page | integer | いいえ | ページ番号（デフォルト：1） |
+| page_size | integer | いいえ | ページあたりのアイテム数（デフォルト：20、最大：100） |
 
-## 获取タスク详情
+## タスクの詳細を取得
 
-获取指定されたタスクの详细信息。
+特定のタスクに関する詳細情報を取得します。
 
-- **端点：** `GET /api/v1/task/{task_id}`
+- **エンドポイント：** `GET /api/v1/task/{task_id}`
 
-## 删除タスク
+## タスクの削除
 
-删除タスク。など果タスク正在运行，会先尝试停止它。
+タスクを削除します。タスクが実行中の場合、最初に停止されます。
 
-- **端点：** `DELETE /api/v1/task/{task_id}`
+- **エンドポイント：** `DELETE /api/v1/task/{task_id}`
 
-## 一括删除タスク
+## タスクの一括削除
 
-一次删除複数タスク，正在运行のタスク会先被停止。
+複数のタスクを一度に削除します。実行中のタスクは最初に停止されます。
 
-- **端点：** `DELETE /api/v1/task/batch`
-- **请求体：** `{ "task_ids": [1, 2, 3] }`
+- **エンドポイント：** `DELETE /api/v1/task/batch`
+- **ボディ：** `{ "task_ids": [1, 2, 3] }`
 
-## 停止タスク
+## タスクの停止
 
-停止正在运行のタスク。
+実行中のタスクを停止します。
 
-- **端点：** `POST /api/v1/task/{task_id}/stop`
+- **エンドポイント：** `POST /api/v1/task/{task_id}/stop`
 
-## 再試行失败タスク
+## 失敗したタスクの再試行
 
-再試行单个失败タスク。
+失敗したタスクを再試行します。
 
-- **端点：** `POST /api/v1/task/{task_id}/retry`
+- **エンドポイント：** `POST /api/v1/task/{task_id}/retry`
 
-## 再試行所有失败タスク
+## すべての失敗したタスクの再試行
 
-一次性再試行所有失败のタスク。
+すべての失敗したタスクを一度に再試行します。
 
-- **端点：** `POST /api/v1/task/retry-all`
+- **エンドポイント：** `POST /api/v1/task/retry-all`
 
-## 获取タスク统计
+## タスク統計の取得
 
-获取タスク总体统计数据。
+すべてのタスクに関する統計を取得します。
 
-- **端点：** `GET /api/v1/task/stats`
-- **响应：** 返回 total、pending、running、completed、failed の计数。
+- **エンドポイント：** `GET /api/v1/task/stats`
+- **レスポンス：** total、pending、running、completed、failed のカウントを返します。
 
-## 检查 API 许できます
+## API ライセンスの確認
 
-检查你の许できます证是否サポート API 訪問。
+ライセンスが API アクセスをサポートしているか確認します。
 
-- **端点：** `GET /api/v1/license/check`
-- **注意：** Starter 计划会返回错误码 40301；Pro/Team/Business 计划できます訪問 API。
+- **エンドポイント：** `GET /api/v1/license/check`
+- **注意：** Starter プランはエラーコード 40301 を返します。Pro、Team、Business プランは API アクセスがあります。

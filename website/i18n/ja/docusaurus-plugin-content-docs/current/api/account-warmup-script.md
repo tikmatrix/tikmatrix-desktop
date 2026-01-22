@@ -1,72 +1,72 @@
 ---
 sidebar_position: 6
-title: アカウント预热脚本配置
-description: アカウント预热脚本の完整配置参考
+title: アカウントウォームアップスクリプト設定
+description: アカウントウォームアップスクリプトの完全な設定リファレンス
 ---
 
-本页面记录用于タスク创建の `account_warmup` 脚本の配置参数。
+このページでは、タスク作成に使用される `account_warmup` スクリプトの設定パラメータについて説明します。
 
-## 概述
+## 概要
 
-`account_warmup` 脚本用于通じてシミュレート自然用户動作来预热 TikTok または Instagram アカウント。它会观看動画，しに基づいて配置の概率ランダム进行いいね、フォロー、お気に入り和コメント。这有助于新アカウント建立互动历史し避免被检测に机器人。
+`account_warmup` スクリプトは、自然なユーザー動作をシミュレートして TikTok または Instagram アカウントをウォームアップするために使用されます。設定された確率に基づいて、動画を視聴し、ランダムにいいね、フォロー、お気に入り、コメントを行います。これにより、新しいアカウントがエンゲージメント履歴を構築し、ボット検出を回避するのに役立ちます。
 
-## 脚本配置 (`script_config`)
+## スクリプト設定 (`script_config`)
 
-`script_config` 对象含むアカウント预热脚本の参数。以下是できます用の参数：
+`script_config` オブジェクトには、アカウントウォームアップスクリプトのパラメータが含まれます。以下は利用可能なパラメータです：
 
-### 参数
+### パラメータ
 
-| 参数 | 类型 | 必填 | 默认值 | 说明 |
-|-----|------|------|-------|------|
-| task_duration | number | 否 | 600 | 预热タスクの总时长（秒） |
-| topic | string | 否 | "" | 検索主题キーワード（每行一个，ランダム选择） |
-| min_duration | number | 否 | 15 | 最小動画观看时长（秒） |
-| max_duration | number | 否 | 30 | 最大動画观看时长（秒） |
-| like_probable | number | 否 | 0 | いいね動画の概率（0-100） |
-| floow_probable | number | 否 | 0 | フォロー動画创作者の概率（0-100） |
-| collect_probable | number | 否 | 0 | お気に入り/书签動画の概率（0-100） |
-| comment_probable | number | 否 | 0 | コメント動画の概率（0-100） |
-| comment | string | 否 | "" | コメント模板（每行一个，ランダム选择） |
-| insert_emoji | boolean | 否 | false | 是否在コメント中插入ランダム表情 |
-| comment_order | string | 否 | "random" | コメント选择顺序：`random`（ランダム）または `sequential`（顺序） |
-| generate_by_chatgpt | boolean | 否 | false | 是否使用 ChatGPT 生成コメント |
-| chatgpt_settings | object | 否 | {} | ChatGPT 配置設定（见下文） |
+| パラメータ | 型 | 必須 | デフォルト | 説明 |
+|-----------|------|----------|---------|-------------|
+| task_duration | number | いいえ | 600 | ウォームアップタスクの総時間（秒） |
+| topic | string | いいえ | "" | 検索トピックキーワード（1行に1つ、ランダムに選択） |
+| min_duration | number | いいえ | 15 | 最小動画視聴時間（秒） |
+| max_duration | number | いいえ | 30 | 最大動画視聴時間（秒） |
+| like_probable | number | いいえ | 0 | 動画にいいねする確率（0-100） |
+| floow_probable | number | いいえ | 0 | 動画作成者をフォローする確率（0-100） |
+| collect_probable | number | いいえ | 0 | 動画をお気に入り/ブックマークする確率（0-100） |
+| comment_probable | number | いいえ | 0 | 動画にコメントする確率（0-100） |
+| comment | string | いいえ | "" | コメントテンプレート（1行に1つ、ランダムに選択） |
+| insert_emoji | boolean | いいえ | false | コメントにランダムな絵文字を挿入するかどうか |
+| comment_order | string | いいえ | "random" | コメント選択順序：`random` または `sequential` |
+| generate_by_chatgpt | boolean | いいえ | false | ChatGPT を使用してコメントを生成するかどうか |
+| chatgpt_settings | object | いいえ | {} | ChatGPT 設定（下記参照） |
 
-### ChatGPT 設定结构
+### ChatGPT 設定構造
 
-当 `generate_by_chatgpt` 設定に `true` 时，您できます以使用 `chatgpt_settings` 对象配置 ChatGPT コメント生成：
+`generate_by_chatgpt` が `true` に設定されている場合、`chatgpt_settings` オブジェクトで ChatGPT コメント生成を設定できます：
 
-| 参数 | 类型 | 必填 | 说明 |
-|-----|------|------|------|
-| api_key | string | 是 | 您の OpenAI API 密钥 |
-| model | string | 否 | 使用の模型（默认："gpt-3.5-turbo"）。选项："gpt-3.5-turbo"、"gpt-4"、"gpt-4-turbo" |
-| prompt | string | 否 | 生成コメントのカスタム提示词。默认生成友好、相关のコメント |
-| max_tokens | number | 否 | 响应の最大 token 数（默认：100） |
-| temperature | number | 否 | 创造性など级 0-2（默认：0.7）。数值越高 = 越有创意 |
-| base_url | string | 否 | カスタム API 端点 URL（用于 Azure OpenAI または兼容の API） |
+| パラメータ | 型 | 必須 | 説明 |
+|-----------|------|----------|-------------|
+| api_key | string | はい | OpenAI API キー |
+| model | string | いいえ | 使用するモデル（デフォルト："gpt-3.5-turbo"）。オプション："gpt-3.5-turbo"、"gpt-4"、"gpt-4-turbo" |
+| prompt | string | いいえ | コメント生成のカスタムプロンプト。デフォルトでは友好的で関連性のあるコメントを生成 |
+| max_tokens | number | いいえ | レスポンスの最大トークン数（デフォルト：100） |
+| temperature | number | いいえ | 創造性レベル 0-2（デフォルト：0.7）。高い値 = より創造的 |
+| base_url | string | いいえ | カスタム API エンドポイント URL（Azure OpenAI または互換 API 用） |
 
-`chatgpt_settings` 对象示例：
+`chatgpt_settings` オブジェクトの例：
 
 ```json
 {
   "api_key": "sk-your-openai-api-key",
   "model": "gpt-3.5-turbo",
-  "prompt": "针对这个视频生成一条简短友好的中文评论",
+  "prompt": "この動画について短くフレンドリーなコメントを日本語で生成してください",
   "max_tokens": 50,
   "temperature": 0.8,
   "base_url": "https://api.openai.com/v1"
 }
 ```
 
-:::tip 建议
-对于新アカウント，建议从低互动概率（5-15%）开始，然后随时间逐渐增加。这シミュレート自然用户動作。
+:::tip 推奨
+新しいアカウントの場合は、低いインタラクション確率（5-15%）から始めて、時間の経過とともに徐々に増やしてください。これは自然なユーザー動作を模倣します。
 :::
 
-## 示例
+## 例
 
-### 基本アカウント预热
+### 基本的なアカウントウォームアップ
 
-仅观看動画の简单预热：
+動画視聴のみのシンプルなウォームアップ：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -82,9 +82,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 带主题検索の预热
+### トピック検索を使用したウォームアップ
 
-通じて検索特定主题来预热アカウント：
+特定のトピックを検索してアカウントをウォームアップ：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -94,16 +94,16 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "account_warmup",
     "script_config": {
       "task_duration": 900,
-      "topic": "搞笑猫咪\n狗狗视频\n宠物合集",
+      "topic": "面白い猫\n犬の動画\nペット動画",
       "min_duration": 15,
       "max_duration": 45
     }
   }'
 ```
 
-### 带互动の预热
+### インタラクション付きウォームアップ
 
-完整预热，含むいいね、フォロー和コメント：
+いいね、フォロー、コメントを含む完全なウォームアップ：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -113,23 +113,23 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "account_warmup",
     "script_config": {
       "task_duration": 1200,
-      "topic": "美食\n食谱\n烹饪",
+      "topic": "料理\nレシピ\n食べ物",
       "min_duration": 20,
       "max_duration": 60,
       "like_probable": 30,
       "floow_probable": 10,
       "collect_probable": 5,
       "comment_probable": 15,
-      "comment": "太棒了！🔥\n喜欢这个内容！\n太好了！👏\n哇，太厉害了！",
+      "comment": "素晴らしい！🔥\nこのコンテンツが好き！\nとても良い！👏\nすごい、信じられない！",
       "insert_emoji": true,
       "comment_order": "random"
     }
   }'
 ```
 
-### 使用 ChatGPT コメントの预热
+### ChatGPT コメントを使用したウォームアップ
 
-使用 ChatGPT 生成智能コメント：
+ChatGPT を使用してインテリジェントなコメントを生成：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -139,7 +139,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "account_warmup",
     "script_config": {
       "task_duration": 1800,
-      "topic": "科技评测\n数码产品",
+      "topic": "テクノロジーレビュー\nガジェット",
       "min_duration": 30,
       "max_duration": 90,
       "like_probable": 25,
@@ -148,15 +148,15 @@ curl -X POST http://localhost:50809/api/v1/task \
       "chatgpt_settings": {
         "api_key": "your-api-key",
         "model": "gpt-3.5-turbo",
-        "prompt": "针对这个视频生成一条简短友好的评论"
+        "prompt": "この動画について短くフレンドリーなコメントを生成してください"
       }
     }
   }'
 ```
 
-### 多デバイス一括预热
+### 複数デバイスでの一括ウォームアップ
 
-在複数デバイス上で同時に运行预热：
+複数のデバイスで同時にウォームアップを実行：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -174,9 +174,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 定时预热タスク
+### スケジュールされたウォームアップタスク
 
-安排预热在特定时间运行：
+特定の時刻にウォームアップを実行するようにスケジュール：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -186,7 +186,7 @@ curl -X POST http://localhost:50809/api/v1/task \
     "script_name": "account_warmup",
     "script_config": {
       "task_duration": 1200,
-      "topic": "音乐\n舞蹈\n热门",
+      "topic": "音楽\nダンス\nトレンド",
       "min_duration": 20,
       "max_duration": 40,
       "like_probable": 15,
@@ -196,9 +196,9 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-### 按ユーザー名列表预热
+### ユーザー名リストによるウォームアップ
 
-に特定アカウント创建预热タスク：
+特定のアカウント用にウォームアップタスクを作成：
 
 ```bash
 curl -X POST http://localhost:50809/api/v1/task \
@@ -216,7 +216,7 @@ curl -X POST http://localhost:50809/api/v1/task \
   }'
 ```
 
-## 响应
+## レスポンス
 
 ```json
 {
@@ -229,23 +229,23 @@ curl -X POST http://localhost:50809/api/v1/task \
 }
 ```
 
-## 最適な实践
+## ベストプラクティス
 
-1. **从低概率开始**：对于新アカウント，使用低互动概率（5-15%），然后在几天/几周内逐渐增加。
+1. **低い確率から始める**：新しいアカウントの場合は、低いインタラクション確率（5-15%）を使用し、数日/数週間かけて徐々に増やします。
 
-2. **使用相关主题**：选择と您アカウント定位相关の主题，以建立相关の互动历史。
+2. **関連性のあるトピックを使用**：アカウントのニッチに合ったトピックを選択して、関連性のあるエンゲージメント履歴を構築します。
 
-3. **变化观看时长**：設定 min_duration 和 max_duration 之间の范围，以シミュレート自然の观看模式。
+3. **視聴時間を変動させる**：min_duration と max_duration の範囲を設定して、自然な視聴パターンをシミュレートします。
 
-4. **适度のタスク时长**：每天运行 2-3 次，每次 10-30 分の预热会话，而不是持续长时间の会话。
+4. **適度なタスク時間**：連続した長時間のセッションではなく、1日2〜3回、各10〜30分のウォームアップセッションを実行します。
 
-5. **使用多样化コメント**：提供複数コメント模板，以避免できます能触发垃圾检测の重复模式。
+5. **多様なコメントを使用**：複数のコメントテンプレートを提供して、スパム検出をトリガーする可能性のある繰り返しパターンを避けます。
 
-6. **明智地安排时间**：使用 `start_time` 在ターゲット受众时区の活跃时段运行预热タスク。
+6. **賢くスケジュール**：`start_time` を使用して、ターゲットオーディエンスのタイムゾーンでアクティブな時間帯にウォームアップタスクを実行します。
 
-## 另请参阅
+## 関連項目
 
-- [タスク管理 API](./task-management.md) - 创建、列出和管理タスク
-- [发布脚本配置](./post-script.md) - 配置发布脚本参数
-- [フォロー脚本配置](./follow-script.md) - 配置フォロー脚本参数
-- [取消フォロー脚本配置](./unfollow-script.md) - 配置取消フォロー脚本参数
+- [タスク管理 API](./task-management.md) - タスクの作成、リスト、管理
+- [投稿スクリプト設定](./post-script.md) - 投稿スクリプトパラメータの設定
+- [フォロースクリプト設定](./follow-script.md) - フォロースクリプトパラメータの設定
+- [アンフォロースクリプト設定](./unfollow-script.md) - アンフォロースクリプトパラメータの設定
