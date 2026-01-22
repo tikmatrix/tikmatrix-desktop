@@ -197,746 +197,44 @@
   "Get dedicated support from our expert team whenever you need help": {
     "message": "Uzyskaj dedykowane wsparcie od naszego zespołu ekspertów, kiedy tylko potrzebujesz pomocy"
   },
-  "Get started with basic features. All free features will remain available forever.": {
-    "message": "Zacznij z podstawowymi funkcjami. Wszystkie darmowe funkcje pozostaną dostępne na zawsze."
-  },
-  "Getting Started with IgMatrix": {
-    "message": "Rozpoczęcie pracy z IgMatrix"
-  },
   "Go to the \"Download\" page and download the latest version of TikMatrix.": {
     "message": "Przejdź do strony \"Pobieranie\" i pobierz najnowszą wersję TikMatrix."
   },
-  "Grow": {
-    "message": "Wzrost"
+  "Here are some frequently asked questions.": {
+    "message": "Oto niektóre często zadawane pytania."
   },
-  "Hardware Requirements": {
-    "message": "Wymagania sprzętowe"
+  "Hide feature comparison": {
+    "message": "Ukryj porównanie funkcji"
   },
-  "Have a question? Contact our support team.": {
-    "message": "Masz pytanie? Skontaktuj się z naszym zespołem wsparcia."
+  "How many TikTok accounts can each phone log into?": {
+    "message": "Na ile kont TikTok może zalogować się każdy telefon?"
   },
-  "How do I connect my Android devices?": {
-    "message": "Jak połączyć moje urządzenia Android?"
+  "How many devices can I manage?": {
+    "message": "Ile urządzeń mogę zarządzać?"
   },
-  "How do I get started with TikMatrix?": {
-    "message": "Jak rozpocząć pracę z TikMatrix?"
+  "How to use?": {
+    "message": "Jak używać?"
   },
-  "How is IgMatrix different from TikMatrix?": {
-    "message": "Czym IgMatrix różni się od TikMatrix?"
+  "If you are interested in our service, please contact us to get price.": {
+    "message": "Jeśli jesteś zainteresowany naszą usługą, skontaktuj się z nami, aby uzyskać cenę."
   },
-  "How many Android devices can I control?": {
-    "message": "Ile urządzeń Android mogę kontrolować?"
+  "If you need help with IgMatrix-specific features or encounter any issues, our support team is ready to assist you.": {
+    "message": "Jeśli potrzebujesz pomocy z funkcjami specyficznymi dla IgMatrix lub napotkasz jakiekolwiek problemy, nasz zespół wsparcia jest gotowy Ci pomóc."
   },
-  "How to Connect Your Android Devices to the Desktop App": {
-    "message": "Jak połączyć urządzenia Android z aplikacją komputerową"
+  "IgMatrix Features": {
+    "message": "Funkcje IgMatrix"
   },
-  "IgMatrix": {
-    "message": "IgMatrix"
+  "IgMatrix and TikMatrix share the same setup process and user interface. The main difference is that IgMatrix is specifically designed for Instagram automation, while TikMatrix is for TikTok. The script logic and available features are optimized for each respective platform.": {
+    "message": "IgMatrix i TikMatrix dzielą ten sam proces konfiguracji i interfejs użytkownika. Główna różnica polega na tym, że IgMatrix jest specjalnie zaprojektowany do automatyzacji Instagrama, podczas gdy TikMatrix jest dla TikToka. Logika skryptów i dostępne funkcje są zoptymalizowane dla każdej platformy."
   },
-  "IgMatrix - Instagram Automation Matrix Management Software": {
-    "message": "IgMatrix - Oprogramowanie do zarządzania matrycą automatyzacji Instagram"
+  "IgMatrix follows a similar pricing structure to TikMatrix, but may have different rates. Please check our official pricing page or contact our support team for current IgMatrix pricing information.": {
+    "message": "IgMatrix stosuje podobną strukturę cenową do TikMatrix, ale może mieć różne stawki. Sprawdź naszą oficjalną stronę cenową lub skontaktuj się z naszym zespołem wsparcia, aby uzyskać aktualne informacje o cenach IgMatrix."
   },
-  "IgMatrix FAQ": {
-    "message": "FAQ IgMatrix"
+  "IgMatrix is a Instagram android phonefarm batch control tool": {
+    "message": "IgMatrix to narzędzie do grupowego sterowania farmą telefonów Android Instagram"
   },
-  "IgMatrix is TikMatrix's sister product designed specifically for Instagram automation. It shares the same powerful multi-device control architecture but with Instagram-specific automation scripts and features.": {
-    "message": "IgMatrix to siostrzany produkt TikMatrix zaprojektowany specjalnie do automatyzacji Instagram. Dzieli tę samą potężną architekturę kontroli wielu urządzeń, ale ze skryptami automatyzacji i funkcjami specyficznymi dla Instagrama."
-  },
-  "IgMatrix mirrors TikMatrix's powerful device management capabilities but is tailored for Instagram automation.": {
-    "message": "IgMatrix odzwierciedla potężne możliwości zarządzania urządzeniami TikMatrix, ale jest dostosowany do automatyzacji Instagram."
-  },
-  "If you encounter any issues or have questions, please contact us through the app or via email.": {
-    "message": "Jeśli napotkasz jakiekolwiek problemy lub masz pytania, skontaktuj się z nami przez aplikację lub e-mail."
-  },
-  "If you're familiar with TikMatrix, IgMatrix will feel very similar. However, some key differences include:": {
-    "message": "Jeśli znasz TikMatrix, IgMatrix będzie bardzo podobny. Jednak niektóre kluczowe różnice obejmują:"
-  },
-  "Increase live stream popularity": {
-    "message": "Zwiększ popularność transmisji na żywo"
-  },
-  "Instagram-Specific Features": {
-    "message": "Funkcje specyficzne dla Instagrama"
-  },
-  "Key Features": {
-    "message": "Kluczowe funkcje"
-  },
-  "Learn how to install and set up TikMatrix": {
-    "message": "Dowiedz się, jak zainstalować i skonfigurować TikMatrix"
-  },
-  "Learn how to use TikMatrix Desktop": {
-    "message": "Dowiedz się, jak używać TikMatrix Desktop"
-  },
-  "Limited support": {
-    "message": "Ograniczone wsparcie"
-  },
-  "Live streaming interaction": {
-    "message": "Interakcja podczas transmisji na żywo"
-  },
-  "Manage Accounts": {
-    "message": "Zarządzaj kontami"
-  },
-  "Manage Multiple Accounts": {
-    "message": "Zarządzaj wieloma kontami"
-  },
-  "Manage multiple TikTok accounts on one device with easy switching": {
-    "message": "Zarządzaj wieloma kontami TikTok na jednym urządzeniu z łatwym przełączaniem"
-  },
-  "Manage up to 100 devices": {
-    "message": "Zarządzaj do 100 urządzeniami"
-  },
-  "Matrix Management": {
-    "message": "Zarządzanie matrycą"
-  },
-  "Message": {
-    "message": "Wiadomość"
-  },
-  "Multi-Device Control": {
-    "message": "Kontrola wielu urządzeń"
-  },
-  "Multi-account Instagram automation": {
-    "message": "Automatyzacja Instagram dla wielu kont"
-  },
-  "Multi-device mirroring and control": {
-    "message": "Odbijanie i kontrola wielu urządzeń"
-  },
-  "Multiple accounts per device": {
-    "message": "Wiele kont na urządzenie"
-  },
-  "Name": {
-    "message": "Imię"
-  },
-  "No, IgMatrix and TikMatrix are separate products that require separate licenses. However, as sister products, they share the same powerful architecture and user experience.": {
-    "message": "Nie, IgMatrix i TikMatrix to oddzielne produkty wymagające oddzielnych licencji. Jednak jako produkty siostrzane dzielą tę samą potężną architekturę i doświadczenie użytkownika."
-  },
-  "Once installed and running, IgMatrix will present you with a device connection interface. Follow the on-screen instructions to connect your Android devices via USB or Wi-Fi.": {
-    "message": "Po zainstalowaniu i uruchomieniu IgMatrix zaprezentuje interfejs połączenia urządzenia. Postępuj zgodnie z instrukcjami na ekranie, aby połączyć urządzenia Android przez USB lub Wi-Fi."
-  },
-  "Our 24/7 support team is always ready to help you with any questions or issues": {
-    "message": "Nasz zespół wsparcia 24/7 jest zawsze gotowy pomóc Ci w każdej sprawie"
-  },
-  "PC performance": {
-    "message": "Wydajność PC"
-  },
-  "PC-Based Matrix Control": {
-    "message": "Kontrola matrycy oparta na PC"
-  },
-  "Per Month": {
-    "message": "Na miesiąc"
-  },
-  "Per Year": {
-    "message": "Rocznie"
-  },
-  "Per Month/Year": {
-    "message": "Na miesiąc/rok"
-  },
-  "Perfect for getting started": {
-    "message": "Idealny na początek"
-  },
-  "Perform TikTok automation tasks": {
-    "message": "Wykonuj zadania automatyzacji TikTok"
-  },
-  "Platform-Specific Automation": {
-    "message": "Automatyzacja specyficzna dla platformy"
-  },
-  "Popular": {
-    "message": "Popularny"
-  },
-  "Premium hardware bundle": {
-    "message": "Pakiet premium sprzętu"
-  },
-  "Pricing": {
-    "message": "Cennik"
-  },
-  "Priority support": {
-    "message": "Wsparcie priorytetowe"
-  },
-  "Pro": {
-    "message": "Pro"
-  },
-  "Professional": {
-    "message": "Profesjonalny"
-  },
-  "Proxy support": {
-    "message": "Obsługa proxy"
-  },
-  "Real-Time Control": {
-    "message": "Kontrola w czasie rzeczywistym"
-  },
-  "Real-time device control": {
-    "message": "Kontrola urządzeń w czasie rzeczywistym"
-  },
-  "Recommended PC Specifications": {
-    "message": "Zalecane specyfikacje PC"
-  },
-  "Run TikMatrix": {
-    "message": "Uruchom TikMatrix"
-  },
-  "Safe and reliable": {
-    "message": "Bezpieczne i niezawodne"
-  },
-  "Same Core Technology": {
-    "message": "Ta sama technologia podstawowa"
-  },
-  "Scale": {
-    "message": "Skala"
-  },
-  "See mirror and control all connected devices in real-time": {
-    "message": "Zobacz odbicie i kontroluj wszystkie podłączone urządzenia w czasie rzeczywistym"
-  },
-  "Select Plan": {
-    "message": "Wybierz plan"
-  },
-  "Send Direct Messages": {
-    "message": "Wyślij wiadomości bezpośrednie"
-  },
-  "Set up": {
-    "message": "Skonfiguruj"
-  },
-  "Set up accounts and automation": {
-    "message": "Skonfiguruj konta i automatyzację"
-  },
-  "Setup your accounts": {
-    "message": "Skonfiguruj swoje konta"
-  },
-  "Share TikMatrix": {
-    "message": "Udostępnij TikMatrix"
-  },
-  "Social media automation": {
-    "message": "Automatyzacja mediów społecznościowych"
-  },
-  "Start automating": {
-    "message": "Rozpocznij automatyzację"
-  },
-  "Start with our Free plan and see what TikMatrix can do": {
-    "message": "Zacznij od naszego planu darmowego i zobacz, co TikMatrix może zrobić"
-  },
-  "Starter": {
-    "message": "Starter"
-  },
-  "Submit": {
-    "message": "Wyślij"
-  },
-  "Synchronize multiple accounts": {
-    "message": "Synchronizuj wiele kont"
-  },
-  "TikMatrix": {
-    "message": "TikMatrix"
-  },
-  "TikMatrix - TikTok Automation Matrix Management Software": {
-    "message": "TikMatrix - Oprogramowanie do zarządzania matrycą automatyzacji TikTok"
-  },
-  "TikMatrix Desktop Tutorial": {
-    "message": "Samouczek TikMatrix Desktop"
-  },
-  "TikMatrix is a powerful social media automation tool that allows you to manage multiple TikTok accounts across different Android devices from your computer.": {
-    "message": "TikMatrix to potężne narzędzie automatyzacji mediów społecznościowych, które pozwala zarządzać wieloma kontami TikTok na różnych urządzeniach Android z komputera."
-  },
-  "TikTok Matrix Management": {
-    "message": "Zarządzanie matrycą TikTok"
-  },
-  "To connect your Android devices, follow these steps:": {
-    "message": "Aby połączyć urządzenia Android, wykonaj następujące kroki:"
-  },
-  "Troubleshooting": {
-    "message": "Rozwiązywanie problemów"
-  },
-  "Tutorial": {
-    "message": "Samouczek"
-  },
-  "Unlimited Devices": {
-    "message": "Nieograniczona liczba urządzeń"
-  },
-  "Unlimited device connections": {
-    "message": "Nieograniczone połączenia urządzeń"
-  },
-  "Unlimited devices": {
-    "message": "Nieograniczona liczba urządzeń"
-  },
-  "Up to 100 devices": {
-    "message": "Do 100 urządzeń"
-  },
-  "Up to 20 devices": {
-    "message": "Do 20 urządzeń"
-  },
-  "Up to 5 devices": {
-    "message": "Do 5 urządzeń"
-  },
-  "Use TikMatrix's tutorial as a reference for understanding the basic interface and device connection process. These fundamental concepts apply to both products.": {
-    "message": "Użyj samouczka TikMatrix jako odniesienia do zrozumienia podstawowego interfejsu i procesu łączenia urządzeń. Te fundamentalne koncepcje stosują się do obu produktów."
-  },
-  "Use USB cables to connect your Android devices to your computer": {
-    "message": "Użyj kabli USB do połączenia urządzeń Android z komputerem"
-  },
-  "View Account Info": {
-    "message": "Wyświetl informacje o koncie"
-  },
-  "View profile information for logged-in accounts": {
-    "message": "Wyświetl informacje o profilu dla zalogowanych kont"
-  },
-  "Visit our": {
-    "message": "Odwiedź naszą"
-  },
-  "Watch and interact with live streams using multiple accounts": {
-    "message": "Oglądaj i wchodź w interakcje z transmisjami na żywo, używając wielu kont"
-  },
-  "We recommend a modern multi-core processor and sufficient RAM (8GB+) to handle multiple device connections smoothly. The more devices you control, the better your PC specs should be.": {
-    "message": "Zalecamy nowoczesny procesor wielordzeniowy i wystarczającą ilość pamięci RAM (8GB+), aby płynnie obsługiwać wiele połączeń urządzeń. Im więcej urządzeń kontrolujesz, tym lepsze powinny być specyfikacje Twojego PC."
-  },
-  "What is IgMatrix?": {
-    "message": "Co to jest IgMatrix?"
-  },
-  "What is TikMatrix?": {
-    "message": "Co to jest TikMatrix?"
-  },
-  "While both products share similar architecture, the automation scripts are different because Instagram and TikTok have different features and APIs. IgMatrix has scripts tailored for Instagram's unique features like Stories, Reels, and Instagram-specific engagement patterns.": {
-    "message": "Chociaż oba produkty dzielą podobną architekturę, skrypty automatyzacji są różne, ponieważ Instagram i TikTok mają różne funkcje i API. IgMatrix ma skrypty dostosowane do unikalnych funkcji Instagrama, takich jak Stories, Reels i wzorce zaangażowania specyficzne dla Instagrama."
-  },
-  "Why use IgMatrix?": {
-    "message": "Dlaczego używać IgMatrix?"
-  },
-  "With TikMatrix's Business plan, you can control up to 100 Android devices simultaneously from one computer. Free users can also connect unlimited devices for basic features.": {
-    "message": "Z planem biznesowym TikMatrix możesz kontrolować do 100 urządzeń Android jednocześnie z jednego komputera. Użytkownicy darmowi mogą również połączyć nieograniczoną liczbę urządzeń dla podstawowych funkcji."
-  },
-  "Yes, you can run both applications on the same computer. They are independent applications and won't interfere with each other.": {
-    "message": "Tak, możesz uruchomić obie aplikacje na tym samym komputerze. Są to niezależne aplikacje i nie będą ze sobą kolidować."
-  },
-  "You can use USB cables or wireless ADB connection. We provide detailed setup guides in the app.": {
-    "message": "Możesz użyć kabli USB lub bezprzewodowego połączenia ADB. Udostępniamy szczegółowe przewodniki konfiguracji w aplikacji."
-  },
-  "Your message has been sent successfully!": {
-    "message": "Twoja wiadomość została pomyślnie wysłana!"
-  },
-  "documentation": {
-    "message": "dokumentację"
-  },
-  "for detailed guides and troubleshooting.": {
-    "message": "po szczegółowe przewodniki i rozwiązywanie problemów."
-  },
-  "for more information.": {
-    "message": "po więcej informacji."
-  },
-  "homepage.download": {
-    "message": "Pobierz TikMatrix"
-  },
-  "homepage.tagline": {
-    "message": "Oprogramowanie do zarządzania matrycą automatyzacji mediów społecznościowych"
-  },
-  "homepage.title": {
-    "message": "Witamy w TikMatrix"
-  },
-  "theme.ErrorPageContent.title": {
-    "message": "Ta strona uległa awarii.",
-    "description": "The title of the fallback page when the page crashed"
-  },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Przewiń do góry",
-    "description": "The ARIA label for the back to top button"
-  },
-  "theme.blog.archive.title": {
-    "message": "Archiwum",
-    "description": "The page & hero title of the blog archive page"
-  },
-  "theme.blog.archive.description": {
-    "message": "Archiwum",
-    "description": "The page & hero description of the blog archive page"
-  },
-  "theme.blog.paginator.navAriaLabel": {
-    "message": "Nawigacja strony listy blogów",
-    "description": "The ARIA label for the blog pagination"
-  },
-  "theme.blog.paginator.newerEntries": {
-    "message": "Nowsze wpisy",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
-  },
-  "theme.blog.paginator.olderEntries": {
-    "message": "Starsze wpisy",
-    "description": "The label used to navigate to the older blog posts page (next page)"
-  },
-  "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Nawigacja strony wpisu na blogu",
-    "description": "The ARIA label for the blog posts pagination"
-  },
-  "theme.blog.post.paginator.newerPost": {
-    "message": "Nowszy wpis",
-    "description": "The blog post button label to navigate to the newer/previous post"
-  },
-  "theme.blog.post.paginator.olderPost": {
-    "message": "Starszy wpis",
-    "description": "The blog post button label to navigate to the older/next post"
-  },
-  "theme.blog.post.plurals": {
-    "message": "Jeden wpis|{count} wpisy|{count} wpisów",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "Jedna minuta czytania|{readingTime} minuty czytania|{readingTime} minut czytania",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.blog.post.readMore": {
-    "message": "Czytaj więcej",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
-  },
-  "theme.blog.post.readMoreLabel": {
-    "message": "Czytaj więcej o {title}",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
-  },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "Nawigacja ostatnich wpisów na blogu",
-    "description": "The ARIA label for recent posts in the blog sidebar"
-  },
-  "theme.blog.tagTitle": {
-    "message": "{nPosts} oznaczonych jako \"{tagName}\"",
-    "description": "The title of the page for a blog tag"
-  },
-  "theme.tags.tagsPageLink": {
-    "message": "Wyświetl wszystkie tagi",
-    "description": "The label of the link targeting the tag list page"
-  },
-  "theme.colorToggle.ariaLabel": {
-    "message": "Przełącz między trybem ciemnym a jasnym (obecnie {mode})",
-    "description": "The ARIA label for the navbar toggling (light/dark mode)"
-  },
-  "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "tryb ciemny",
-    "description": "The name for the dark color mode"
-  },
-  "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "tryb jasny",
-    "description": "The name for the light color mode"
-  },
-  "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} elementy|{count} elementy|{count} elementów",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Okruszki",
-    "description": "The ARIA label for the breadcrumbs"
-  },
-  "theme.docs.paginator.navAriaLabel": {
-    "message": "Nawigacja strony dokumentów",
-    "description": "The ARIA label for the docs pagination"
-  },
-  "theme.docs.paginator.previous": {
-    "message": "Poprzedni",
-    "description": "The label used to navigate to the previous doc"
-  },
-  "theme.docs.paginator.next": {
-    "message": "Następny",
-    "description": "The label used to navigate to the next doc"
-  },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Zwiń pasek boczny",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Zwiń pasek boczny",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Zamknij pasek nawigacyjny",
-    "description": "The ARIA label for close button of mobile sidebar"
-  },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "Nawigacja boczna dokumentów",
-    "description": "The ARIA label for the sidebar navigation"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Przełącz pasek nawigacyjny",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
-  },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Rozwiń pasek boczny",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Rozwiń pasek boczny",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Jeden dokument oznaczony|{count} dokumenty oznaczone|{count} dokumentów oznaczonych",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} z \"{tagName}\"",
-    "description": "The title of the page for a docs tag"
-  },
-  "theme.docs.versionBadge.label": {
-    "message": "Wersja: {versionLabel}"
-  },
-  "theme.common.editThisPage": {
-    "message": "Edytuj tę stronę",
-    "description": "The link label to edit the current page"
-  },
-  "theme.common.headingLinkTitle": {
-    "message": "Bezpośredni link do {heading}",
-    "description": "Title for link to heading"
-  },
-  "theme.lastUpdated.atDate": {
-    "message": " dnia {date}",
-    "description": "The words used to describe on which date a page has been last updated"
-  },
-  "theme.lastUpdated.byUser": {
-    "message": " przez {user}",
-    "description": "The words used to describe by who the page has been last updated"
-  },
-  "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Ostatnia aktualizacja{atDate}{byUser}",
-    "description": "The sentence used to display when a page has been last updated, and by who"
-  },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Wersje",
-    "description": "The label for the navbar versions dropdown on mobile view"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "Tagi:",
-    "description": "The label alongside a tag list"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Zamknij",
-    "description": "The ARIA label for close button of announcement bar"
-  },
-  "theme.blog.sidebar.titleAllPosts": {
-    "message": "Wszystkie wpisy",
-    "description": "The label for the left sidebar"
-  },
-  "theme.CodeBlock.copied": {
-    "message": "Skopiowano",
-    "description": "The copied button label on code blocks"
-  },
-  "theme.CodeBlock.copy": {
-    "message": "Kopiuj",
-    "description": "The copy button label on code blocks"
-  },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Skopiuj kod do schowka",
-    "description": "The ARIA label for copy code blocks button"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "Przełącz zawijanie słów",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
-  },
-  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Przełącz zwijaną kategorię '{label}' paska bocznego",
-    "description": "The ARIA label to toggle the collapsible sidebar category"
-  },
-  "theme.NavBar.navAriaLabel": {
-    "message": "Główna",
-    "description": "The ARIA label for the main navigation"
-  },
-  "theme.NotFound.title": {
-    "message": "Nie znaleziono strony",
-    "description": "The title of the 404 page"
-  },
-  "theme.NotFound.p1": {
-    "message": "Nie mogliśmy znaleźć tego, czego szukasz.",
-    "description": "The first paragraph of the 404 page"
-  },
-  "theme.NotFound.p2": {
-    "message": "Skontaktuj się z właścicielem strony, która link prowadził do oryginalnego adresu URL i poinformuj go, że ich link jest uszkodzony.",
-    "description": "The 2nd paragraph of the 404 page"
-  },
-  "theme.admonition.note": {
-    "message": "uwaga",
-    "description": "The default label used for the Note admonition (:::note)"
-  },
-  "theme.admonition.tip": {
-    "message": "wskazówka",
-    "description": "The default label used for the Tip admonition (:::tip)"
-  },
-  "theme.admonition.danger": {
-    "message": "niebezpieczeństwo",
-    "description": "The default label used for the Danger admonition (:::danger)"
-  },
-  "theme.admonition.info": {
-    "message": "info",
-    "description": "The default label used for the Info admonition (:::info)"
-  },
-  "theme.admonition.caution": {
-    "message": "ostrożność",
-    "description": "The default label used for the Caution admonition (:::caution)"
-  },
-  "theme.blog.post.readingTime": {
-    "message": "{readingTime} min czytania"
-  },
-  "theme.docs.sidebar.responsiveCategoryLabel": {
-    "message": "Rozwiń kategorię '{label}' paska bocznego",
-    "description": "The ARIA label to expand the sidebar category"
-  },
-  "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "To jest niewydana dokumentacja dla {siteTitle} wersji {versionLabel}.",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
-  },
-  "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "To jest dokumentacja dla {siteTitle} {versionLabel}, która nie jest już aktywnie utrzymywana.",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
-  },
-  "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Aby uzyskać aktualną dokumentację, zobacz {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
-  },
-  "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "najnowsza wersja",
-    "description": "The label used for the latest version suggestion link label"
-  },
-  "theme.common.skipToMainContent": {
-    "message": "Przejdź do treści głównej",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
-  },
-  "theme.tags.tagsPageTitle": {
-    "message": "Tagi",
-    "description": "The title of the tag list page"
-  },
-  "theme.SearchBar.label": {
-    "message": "Szukaj",
-    "description": "The ARIA label and placeholder for search button"
-  },
-  "theme.SearchBar.seeAll": {
-    "message": "Zobacz wszystkie wyniki {count}",
-    "description": "Label for button to see all search results"
-  },
-  "theme.SearchPage.existingResultsTitle": {
-    "message": "Wyniki wyszukiwania dla \"{query}\"",
-    "description": "The search page title for non-empty query"
-  },
-  "theme.SearchPage.emptyResultsTitle": {
-    "message": "Szukaj w dokumentacji",
-    "description": "The search page title for empty query"
-  },
-  "theme.SearchPage.inputPlaceholder": {
-    "message": "Wpisz tutaj swoje zapytanie",
-    "description": "The placeholder for search page input"
-  },
-  "theme.SearchPage.inputLabel": {
-    "message": "Szukaj",
-    "description": "The ARIA label for search page input"
-  },
-  "theme.SearchPage.algoliaLabel": {
-    "message": "Szukaj przez Algolia",
-    "description": "The ARIA label for Algolia mention"
-  },
-  "theme.SearchPage.noResultsText": {
-    "message": "Nie znaleziono wyników",
-    "description": "The paragraph for empty search result"
-  },
-  "theme.SearchPage.fetchingNewResults": {
-    "message": "Pobieranie nowych wyników...",
-    "description": "The paragraph for fetching new search results"
-  },
-  "theme.SearchModal.searchBox.resetButtonTitle": {
-    "message": "Wyczyść zapytanie",
-    "description": "The label and ARIA label for search box reset button"
-  },
-  "theme.SearchModal.searchBox.cancelButtonText": {
-    "message": "Anuluj",
-    "description": "The label and ARIA label for search box cancel button"
-  },
-  "theme.SearchModal.startScreen.recentSearchesTitle": {
-    "message": "Ostatnie",
-    "description": "The title for recent searches"
-  },
-  "theme.SearchModal.startScreen.noRecentSearchesText": {
-    "message": "Brak ostatnich wyszukiwań",
-    "description": "The text when no recent searches"
-  },
-  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
-    "message": "Zapisz to wyszukiwanie",
-    "description": "The label for save recent search button"
-  },
-  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
-    "message": "Usuń to wyszukiwanie z historii",
-    "description": "The label for remove recent search button"
-  },
-  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
-    "message": "Ulubione",
-    "description": "The title for favorite searches"
-  },
-  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
-    "message": "Usuń to wyszukiwanie z ulubionych",
-    "description": "The label for remove favorite search button"
-  },
-  "theme.SearchModal.errorScreen.titleText": {
-    "message": "Nie można pobrać wyników",
-    "description": "The title for error screen of search modal"
-  },
-  "theme.SearchModal.errorScreen.helpText": {
-    "message": "Możesz chcieć sprawdzić swoje połączenie sieciowe.",
-    "description": "The help text for error screen of search modal"
-  },
-  "theme.SearchModal.footer.selectText": {
-    "message": "aby wybrać",
-    "description": "The explanation for `Enter` key in the footer"
-  },
-  "theme.SearchModal.footer.selectKeyAriaLabel": {
-    "message": "Klawisz Enter",
-    "description": "The ARIA label for `Enter` key button that makes the selection"
-  },
-  "theme.SearchModal.footer.navigateText": {
-    "message": "aby nawigować",
-    "description": "The explanation for `Arrow up` and `Arrow down` keys in the footer"
-  },
-  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
-    "message": "Strzałka w górę",
-    "description": "The ARIA label for `Arrow up` key button that makes the navigation"
-  },
-  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
-    "message": "Strzałka w dół",
-    "description": "The ARIA label for `Arrow down` key button that makes the navigation"
-  },
-  "theme.SearchModal.footer.closeText": {
-    "message": "aby zamknąć",
-    "description": "The explanation for `Escape` key in the footer"
-  },
-  "theme.SearchModal.footer.closeKeyAriaLabel": {
-    "message": "Klawisz Escape",
-    "description": "The ARIA label for `Escape` key button that closes the modal"
-  },
-  "theme.SearchModal.footer.searchByText": {
-    "message": "Wyszukiwanie przez",
-    "description": "The text explain that the search is making by Algolia"
-  },
-  "theme.SearchModal.noResultsScreen.noResultsText": {
-    "message": "Brak wyników dla",
-    "description": "The text explains that there are no results for the following search"
-  },
-  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
-    "message": "Spróbuj wyszukać",
-    "description": "The text for the suggested query when no results are found for the following search"
-  },
-  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
-    "message": "Uważasz, że to zapytanie powinno zwrócić wyniki?",
-    "description": "The text for the question where the user thinks there are missing results"
-  },
-  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
-    "message": "Daj nam znać.",
-    "description": "The text for the link to report missing results"
-  },
-  "theme.SearchModal.placeholder": {
-    "message": "Wyszukaj dokumentację",
-    "description": "The placeholder of the input of the DocSearch pop-up modal"
-  },
-  "theme.PwaReloadPopup.info": {
-    "message": "Dostępna jest nowa wersja.",
-    "description": "The text for PWA reload popup"
-  },
-  "theme.PwaReloadPopup.refreshButtonText": {
-    "message": "Odśwież",
-    "description": "The text for PWA reload button"
-  },
-  "theme.PwaReloadPopup.closeButtonAriaLabel": {
-    "message": "Zamknij",
-    "description": "The ARIA label for close button of PWA reload popup"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "Na tej stronie",
-    "description": "The label used by the button on the collapsible TOC component"
-  },
-  "theme.unlistedContent.title": {
-    "message": "Niepubliczna strona",
-    "description": "The unlisted content banner title"
-  },
-  "theme.unlistedContent.message": {
-    "message": "Ta strona jest niepubliczna. Wyszukiwarki nie będą jej indeksować i tylko użytkownicy posiadający bezpośredni link mogą uzyskać dostęp.",
-    "description": "The unlisted content banner message"
+  "IgMatrix setup tutorial is identical to TikMatrix. The only difference is their script logic, so you can directly refer to the TikMatrix tutorial documentation.": {
+    "message": "Samouczek konfiguracji IgMatrix jest identyczny z TikMatrix. Jedyną różnicą jest logika skryptów, więc możesz bezpośrednio odwołać się do dokumentacji samouczka TikMatrix."
   },
   "Important Notice": {
     "message": "Ważna uwaga"
@@ -944,20 +242,83 @@
   "Important Reminder": {
     "message": "Ważne przypomnienie"
   },
-  "IgMatrix Features": {
-    "message": "Funkcje IgMatrix"
+  "Increase engagement on posts by liking, sharing, favoriting, and viewing them in bulk": {
+    "message": "Zwiększ zaangażowanie w posty poprzez lajkowanie, udostępnianie, dodawanie do ulubionych i masowe przeglądanie"
+  },
+  "Increase user engagement by following or unfollowing accounts in bulk": {
+    "message": "Zwiększ zaangażowanie użytkowników poprzez masowe obserwowanie lub przestawanie obserwować konta"
+  },
+  "Instagram Automation": {
+    "message": "Automatyzacja Instagrama"
+  },
+  "Instagram Phone Farm Batch Control Tool": {
+    "message": "Narzędzie do grupowego sterowania farmą telefonów Instagram"
+  },
+  "Instagram-optimized automation scripts": {
+    "message": "Skrypty automatyzacji zoptymalizowane dla Instagrama"
+  },
+  "Instagram-specific automation": {
+    "message": "Automatyzacja specyficzna dla Instagrama"
+  },
+  "Is the pricing the same as TikMatrix?": {
+    "message": "Czy ceny są takie same jak w TikMatrix?"
+  },
+  "Join Group": {
+    "message": "Dołącz do grupy"
+  },
+  "Key Differences from TikMatrix": {
+    "message": "Kluczowe różnice w stosunku do TikMatrix"
   },
   "Live stream boost": {
     "message": "Zwiększenie transmisji na żywo"
   },
+  "Local API": {
+    "message": "Lokalne API"
+  },
+  "Local REST API access (Pro+)": {
+    "message": "Dostęp do lokalnego REST API (Pro+)"
+  },
   "Mass commenting": {
     "message": "Masowe komentowanie"
+  },
+  "Mass direct messaging": {
+    "message": "Masowe wiadomości bezpośrednie"
+  },
+  "Monthly": {
+    "message": "Miesięcznie"
+  },
+  "Most popular": {
+    "message": "Najpopularniejszy"
+  },
+  "Multi-Device Control": {
+    "message": "Kontrola wielu urządzeń"
   },
   "Multi-language support (English, Chinese, Russian)": {
     "message": "Wsparcie wielojęzyczne (angielski, chiński, rosyjski)"
   },
+  "Not all TikMatrix scripts are available in IgMatrix, as they are platform-specific. The exact list of available scripts can be found within the IgMatrix software interface after installation. Please refer to the actual features shown in your software.": {
+    "message": "Nie wszystkie skrypty TikMatrix są dostępne w IgMatrix, ponieważ są specyficzne dla platformy. Dokładną listę dostępnych skryptów można znaleźć w interfejsie oprogramowania IgMatrix po instalacji. Sprawdź rzeczywiste funkcje wyświetlane w swoim oprogramowaniu."
+  },
+  "Our support team is here to help you with any IgMatrix-related questions or issues.": {
+    "message": "Nasz zespół wsparcia jest tutaj, aby pomóc Ci w każdym pytaniu lub problemie związanym z IgMatrix."
+  },
+  "Per Month": {
+    "message": "Na miesiąc"
+  },
+  "Per Year (Save 30%)": {
+    "message": "Rocznie (Oszczędź 30%)"
+  },
+  "Performance analytics": {
+    "message": "Analiza wydajności"
+  },
+  "Phone screen mirroring to a computer": {
+    "message": "Odbicie ekranu telefonu na komputerze"
+  },
   "Platform-optimized features": {
     "message": "Funkcje zoptymalizowane pod platformę"
+  },
+  "Please download IgMatrix to view the script list directly. Currently, not all TikMatrix scripts are 100% supported in IgMatrix. Please refer to the actual features in the software.": {
+    "message": "Pobierz IgMatrix, aby zobaczyć listę skryptów bezpośrednio. Obecnie nie wszystkie skrypty TikMatrix są w 100% obsługiwane w IgMatrix. Sprawdź rzeczywiste funkcje w oprogramowaniu."
   },
   "Post engagement boost": {
     "message": "Zwiększenie zaangażowania postów"
@@ -965,14 +326,161 @@
   "Post management": {
     "message": "Zarządzanie postami"
   },
+  "Powerful Instagram automation tools designed for professional marketers and businesses": {
+    "message": "Potężne narzędzia automatyzacji Instagram zaprojektowane dla profesjonalnych marketerów i firm"
+  },
+  "Powerful TikTok Automation & Management Tools": {
+    "message": "Potężne narzędzia automatyzacji i zarządzania TikTok"
+  },
+  "Pricing": {
+    "message": "Cennik"
+  },
+  "Pro": {
+    "message": "Pro"
+  },
+  "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
+    "message": "Użytkownicy Pro, Team i Business mogą używać lokalnego RESTful API do programowego zarządzania zadaniami i automatyzacji przepływów pracy. Zobacz dokumentację po szczegóły."
+  },
+  "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
+    "message": "Profesjonalne narzędzie do zarządzania kontami TikTok i marketingu zaprojektowane dla farm telefonów Android na Windows i Mac. Automatyzuj publikowanie, obserwowanie i rozwijaj swoją obecność na TikTok z zerowym wskaźnikiem zawieszenia konta."
+  },
   "Professional phone farm management": {
     "message": "Profesjonalne zarządzanie farmą telefonów"
+  },
+  "Publish videos or images to TikTok with batch posting capabilities": {
+    "message": "Publikuj filmy lub obrazy na TikTok z możliwością publikowania wsadowego"
+  },
+  "Quick Setup Guide": {
+    "message": "Szybki przewodnik konfiguracji"
+  },
+  "Read Local API docs": {
+    "message": "Przeczytaj dokumentację lokalnego API"
+  },
+  "Recognize and match TikTok accounts from phones to add to account list": {
+    "message": "Rozpoznaj i dopasuj konta TikTok z telefonów, aby dodać do listy kont"
+  },
+  "Recognize subtitles": {
+    "message": "Rozpoznaj napisy"
+  },
+  "Remove posts based on their view count for content optimization": {
+    "message": "Usuń posty na podstawie liczby wyświetleń w celu optymalizacji treści"
+  },
+  "Safe & Secure": {
+    "message": "Bezpieczne i pewne"
+  },
+  "Same Setup Process": {
+    "message": "Ten sam proces konfiguracji"
+  },
+  "Same reliable technology as TikMatrix": {
+    "message": "Ta sama niezawodna technologia co TikMatrix"
+  },
+  "Schedule your Instagram activities with intelligent timing algorithms": {
+    "message": "Zaplanuj swoje aktywności na Instagram za pomocą inteligentnych algorytmów czasowych"
+  },
+  "Scrape TikTok usernames from followers lists or keyword searches": {
+    "message": "Zbieraj nazwy użytkowników TikTok z list obserwujących lub wyszukiwań słów kluczowych"
+  },
+  "Send messages to multiple TikTok accounts in bulk with personalized content": {
+    "message": "Wysyłaj wiadomości do wielu kont TikTok masowo z spersonalizowaną treścią"
+  },
+  "Set up account profiles including avatars, nicknames, signatures, and usernames": {
+    "message": "Skonfiguruj profile kont, w tym awatary, pseudonimy, podpisy i nazwy użytkowników"
+  },
+  "Setup Tutorial": {
+    "message": "Samouczek konfiguracji"
+  },
+  "Shipping worldwide": {
+    "message": "Wysyłka na cały świat"
+  },
+  "Since the setup process is identical, please refer to our comprehensive TikMatrix documentation for detailed instructions on device connection, account management, and script configuration.": {
+    "message": "Ponieważ proces konfiguracji jest identyczny, zapoznaj się z naszą obszerną dokumentacją TikMatrix, aby uzyskać szczegółowe instrukcje dotyczące połączenia urządzenia, zarządzania kontami i konfiguracji skryptów."
+  },
+  "Smart Scheduling": {
+    "message": "Inteligentne planowanie"
+  },
+  "Start for free": {
+    "message": "Rozpocznij za darmo"
+  },
+  "Starter": {
+    "message": "Starter"
   },
   "Still have questions?": {
     "message": "Nadal masz pytania?"
   },
+  "Streamline your Instagram phone farm with advanced batch control and marketing automation": {
+    "message": "Usprawnij swoją farmę telefonów Instagram dzięki zaawansowanej kontroli wsadowej i automatyzacji marketingowej"
+  },
+  "Subscribe": {
+    "message": "Subskrybuj"
+  },
+  "Super Marketing": {
+    "message": "Super marketing"
+  },
+  "Supports 100+ phones mirroring to a computer, with synchronized operation": {
+    "message": "Obsługuje odbicie ponad 100 telefonów na komputer z synchronizowaną operacją"
+  },
+  "Team": {
+    "message": "Zespół"
+  },
+  "Technical Advantages": {
+    "message": "Zalety techniczne"
+  },
+  "Telegram": {
+    "message": "Telegram"
+  },
+  "The length and width are relatively big, but the height is low(2u size)": {
+    "message": "Długość i szerokość są stosunkowo duże, ale wysokość jest niska (rozmiar 2u)"
+  },
+  "The length and width are relatively small, but the height is high": {
+    "message": "Długość i szerokość są stosunkowo małe, ale wysokość jest duża"
+  },
+  "The motherboard machine consists of 20 Samsung phone motherboards. It powers on automatically when connected to electricity, shares a unified power supply, has a unified multi-fan cooling system, and unified USB connectivity. It also supports OTG wired network connections.": {
+    "message": "Maszyna płyty głównej składa się z 20 płyt głównych telefonów Samsung. Włącza się automatycznie po podłączeniu do prądu, dzieli zunifikowane zasilanie, posiada zunifikowany system chłodzenia wielowentylatorowego i zunifikowaną łączność USB. Obsługuje również przewodowe połączenia sieciowe OTG."
+  },
+  "TikMatrix is a professional marketing software designed for TikTok phone farms": {
+    "message": "TikMatrix to profesjonalne oprogramowanie marketingowe zaprojektowane dla farm telefonów TikTok"
+  },
+  "TikMatrix supports 8 TikTok accounts on each phone.": {
+    "message": "TikMatrix obsługuje 8 kont TikTok na każdym telefonie."
+  },
+  "TikMatrix supports Android phones running Android 5.0 and above.": {
+    "message": "TikMatrix obsługuje telefony Android z systemem Android 5.0 i nowszym."
+  },
+  "TikMatrix supports Windows 10 and above, and macOS 10.15 or later. For Mac users, after installation, you need to run the following command in Terminal to allow the app to run: xattr -cr /Applications/TikMatrix.app": {
+    "message": "TikMatrix obsługuje Windows 10 i nowsze oraz macOS 10.15 lub nowszy. Dla użytkowników Mac, po instalacji należy uruchomić następującą komendę w Terminalu, aby umożliwić uruchomienie aplikacji: xattr -cr /Applications/TikMatrix.app"
+  },
+  "TikMatrix supports up to 200+ devices.": {
+    "message": "TikMatrix obsługuje do 200+ urządzeń."
+  },
+  "Translate subtitles": {
+    "message": "Przetłumacz napisy"
+  },
+  "US native non-activated Sim card,Used for tiktok android app to detect sim card location": {
+    "message": "Natywna nieaktywowana karta SIM z USA, używana przez aplikację TikTok na Android do wykrywania lokalizacji karty SIM"
+  },
+  "Unlimited": {
+    "message": "Nieograniczony"
+  },
+  "Unlimited device connections": {
+    "message": "Nieograniczone połączenia urządzeń"
+  },
+  "Up to 100 concurrent automation tasks": {
+    "message": "Do 100 równoczesnych zadań automatyzacji"
+  },
+  "Up to 20 concurrent automation tasks": {
+    "message": "Do 20 równoczesnych zadań automatyzacji"
+  },
+  "Up to 5 concurrent automation tasks": {
+    "message": "Do 5 równoczesnych zadań automatyzacji"
+  },
+  "Up to 50 concurrent automation tasks": {
+    "message": "Do 50 równoczesnych zadań automatyzacji"
+  },
   "User engagement boost": {
     "message": "Zwiększenie zaangażowania użytkowników"
+  },
+  "User interface": {
+    "message": "Interfejs użytkownika"
   },
   "User scraping": {
     "message": "Wydobywanie użytkowników"
@@ -980,11 +488,23 @@
   "Video download": {
     "message": "Pobieranie wideo"
   },
+  "Video unique": {
+    "message": "Unikalne wideo"
+  },
+  "View TikMatrix Tutorial": {
+    "message": "Zobacz samouczek TikMatrix"
+  },
+  "Warm up accounts by searching keywords, watching videos, following, liking, commenting, and favoriting": {
+    "message": "Rozgrzej konta przez wyszukiwanie słów kluczowych, oglądanie filmów, obserwowanie, polubienia, komentowanie i dodawanie do ulubionych"
+  },
   "What computer can I use?": {
     "message": "Jakiego komputera mogę użyć?"
   },
   "What devices can I use?": {
     "message": "Jakich urządzeń mogę użyć?"
+  },
+  "What is TikMatrix?": {
+    "message": "Co to jest TikMatrix?"
   },
   "What is the difference between IgMatrix and TikMatrix?": {
     "message": "Jaka jest różnica między IgMatrix a TikMatrix?"
@@ -994,5 +514,427 @@
   },
   "Why Choose IgMatrix?": {
     "message": "Dlaczego wybrać IgMatrix?"
+  },
+  "Yearly (Save 30%)": {
+    "message": "Rocznie (Oszczędź 30%)"
+  },
+  "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
+    "message": "Tak! Samouczek konfiguracji dla IgMatrix jest identyczny z TikMatrix. Możesz postępować zgodnie z dokumentacją TikMatrix dotyczącą instalacji, połączenia urządzenia i podstawowej konfiguracji. Tylko skrypty automatyzacji będą się różnić w zależności od platformy."
+  },
+  "Yes, IgMatrix and TikMatrix require separate licenses as they are different products optimized for different social media platforms. Each license is tied to specific software and cannot be used interchangeably.": {
+    "message": "Tak, IgMatrix i TikMatrix wymagają osobnych licencji, ponieważ są to różne produkty zoptymalizowane dla różnych platform mediów społecznościowych. Każda licencja jest powiązana z konkretnym oprogramowaniem i nie może być używana zamiennie."
+  },
+  "You can install both IgMatrix and TikMatrix on the same computer, but they cannot run simultaneously due to runtime conflicts. You can only run one software at a time - either IgMatrix or TikMatrix.": {
+    "message": "Możesz zainstalować zarówno IgMatrix, jak i TikMatrix na tym samym komputerze, ale nie mogą one działać jednocześnie z powodu konfliktów środowiska uruchomieniowego. Możesz uruchomić tylko jedno oprogramowanie naraz - IgMatrix lub TikMatrix."
+  },
+  "advertising.disclaimer.content": {
+    "message": "Wszystkie produkty reklamowane na tej stronie są produktami stron trzecich. TikMatrix nie sprzedaje bezpośrednio tych produktów ani nie ponosi odpowiedzialności za ich jakość, dostawę lub obsługę posprzedażową."
+  },
+  "advertising.disclaimer.title": {
+    "message": "Zastrzeżenie reklamowe"
+  },
+  "advertising.page.subtitle": {
+    "message": "Znajdź zaufanych dostawców telefonów, kart SIM i innego sprzętu do swojej farmy telefonów"
+  },
+  "advertising.page.title": {
+    "message": "Zalecani dostawcy"
+  },
+  "advertising.visit.button": {
+    "message": "Odwiedź sklep"
+  },
+  "download.description": {
+    "message": "Pobierz TikMatrix dla swojego systemu operacyjnego i rozpocznij automatyzację TikTok już dziś"
+  },
+  "download.igmatrix.description": {
+    "message": "Pobierz IgMatrix dla swojego systemu operacyjnego i rozpocznij automatyzację Instagram już dziś"
+  },
+  "download.igmatrix.linux.coming_soon": {
+    "message": "Wkrótce"
+  },
+  "download.igmatrix.linux.description": {
+    "message": "Wersja Linux jest obecnie w fazie rozwoju"
+  },
+  "download.igmatrix.linux.development": {
+    "message": "W trakcie rozwoju"
+  },
+  "download.igmatrix.linux.title": {
+    "message": "Linux"
+  },
+  "download.igmatrix.mac.button": {
+    "message": "Pobierz dla Mac"
+  },
+  "download.igmatrix.mac.description": {
+    "message": "Dla macOS 10.15 lub nowszego"
+  },
+  "download.igmatrix.mac.install_tip": {
+    "message": "Po instalacji uruchom w Terminalu: xattr -cr /Applications/IgMatrix.app"
+  },
+  "download.igmatrix.mac.title": {
+    "message": "macOS"
+  },
+  "download.igmatrix.requirements.internet": {
+    "message": "Stabilne połączenie internetowe"
+  },
+  "download.igmatrix.requirements.memory": {
+    "message": "8GB RAM (zalecane 16GB)"
+  },
+  "download.igmatrix.requirements.os": {
+    "message": "Windows 10+ lub macOS 10.15+"
+  },
+  "download.igmatrix.requirements.processor": {
+    "message": "Procesor Intel lub AMD z 4 rdzeniami"
+  },
+  "download.igmatrix.requirements.storage": {
+    "message": "500MB wolnego miejsca"
+  },
+  "download.igmatrix.requirements.title": {
+    "message": "Wymagania systemowe"
+  },
+  "download.igmatrix.subtitle": {
+    "message": "Wybierz swoją platformę i rozpocznij"
+  },
+  "download.igmatrix.title": {
+    "message": "Pobierz IgMatrix"
+  },
+  "download.igmatrix.windows.button": {
+    "message": "Pobierz dla Windows"
+  },
+  "download.igmatrix.windows.description": {
+    "message": "Dla Windows 10 lub nowszego"
+  },
+  "download.igmatrix.windows.title": {
+    "message": "Windows"
+  },
+  "download.linux.coming_soon": {
+    "message": "Wkrótce"
+  },
+  "download.linux.description": {
+    "message": "Wersja Linux jest obecnie w fazie rozwoju"
+  },
+  "download.linux.development": {
+    "message": "W trakcie rozwoju"
+  },
+  "download.linux.title": {
+    "message": "Linux"
+  },
+  "download.mac.button": {
+    "message": "Pobierz dla Mac"
+  },
+  "download.mac.description": {
+    "message": "Dla macOS 10.15 lub nowszego"
+  },
+  "download.mac.install_tip": {
+    "message": "Po instalacji uruchom w Terminalu: xattr -cr /Applications/TikMatrix.app"
+  },
+  "download.mac.title": {
+    "message": "macOS"
+  },
+  "download.requirements.internet": {
+    "message": "Stabilne połączenie internetowe"
+  },
+  "download.requirements.memory": {
+    "message": "8GB RAM (zalecane 16GB)"
+  },
+  "download.requirements.os": {
+    "message": "Windows 10+ lub macOS 10.15+"
+  },
+  "download.requirements.processor": {
+    "message": "Procesor Intel lub AMD z 4 rdzeniami"
+  },
+  "download.requirements.storage": {
+    "message": "500MB wolnego miejsca"
+  },
+  "download.requirements.title": {
+    "message": "Wymagania systemowe"
+  },
+  "download.subtitle": {
+    "message": "Wybierz swoją platformę i rozpocznij"
+  },
+  "download.title": {
+    "message": "Pobierz TikMatrix"
+  },
+  "download.windows.button": {
+    "message": "Pobierz dla Windows"
+  },
+  "download.windows.description": {
+    "message": "Dla Windows 10 lub nowszego"
+  },
+  "download.windows.title": {
+    "message": "Windows"
+  },
+  "homepage.header.cta.download": {
+    "message": "Pobierz teraz"
+  },
+  "homepage.header.cta.features": {
+    "message": "Zobacz funkcje"
+  },
+  "homepage.header.cta.primary": {
+    "message": "Rozpocznij za darmo"
+  },
+  "homepage.header.cta.secondary": {
+    "message": "Zobacz dokumentację"
+  },
+  "homepage.header.defaultSubtitle": {
+    "message": "Zarządzaj wieloma urządzeniami Android, automatyzuj zadania i skaluj swoją obecność w mediach społecznościowych"
+  },
+  "homepage.header.defaultTitle": {
+    "message": "Profesjonalne narzędzie do automatyzacji i zarządzania mediami społecznościowymi"
+  },
+  "homepage.header.subtitle": {
+    "message": "Profesjonalne narzędzie do zarządzania kontami TikTok i marketingu zaprojektowane dla farm telefonów Android na Windows i Mac. Automatyzuj publikowanie, obserwowanie i rozwijaj swoją obecność na TikTok z zerowym wskaźnikiem zawieszenia konta."
+  },
+  "homepage.header.title": {
+    "message": "Potężne narzędzia automatyzacji i zarządzania TikTok"
+  },
+  "homepage.vs.card.analytics.desc": {
+    "message": "Monitoruj wydajność zadań, śledzę wskaźniki kont i optymalizuj swoje strategie marketingowe za pomocą szczegółowych raportów analitycznych"
+  },
+  "homepage.vs.card.analytics.title": {
+    "message": "Analiza wydajności"
+  },
+  "homepage.vs.card.automation.desc": {
+    "message": "Automatyzuj powtarzalne zadania z inteligentnym planowaniem i kolejkowaniem zadań. Oszczędzaj czas i zwiększaj produktywność dzięki potężnym skryptom automatyzacji"
+  },
+  "homepage.vs.card.automation.title": {
+    "message": "Zaawansowana automatyzacja"
+  },
+  "homepage.vs.card.cta": {
+    "message": "Dowiedz się więcej"
+  },
+  "homepage.vs.card.lowRisk.desc": {
+    "message": "Nasz silnik automatyzacji symuluje rzeczywiste ludzkie zachowanie, zapewniając bezpieczeństwo Twoich kont przy jednoczesnym wykonywaniu zautomatyzowanych zadań"
+  },
+  "homepage.vs.card.lowRisk.title": {
+    "message": "Niskie ryzyko, wysokie bezpieczeństwo"
+  },
+  "homepage.vs.card.nodev.desc": {
+    "message": "Gotowe do użycia rozwiązanie bez kodowania. Wystarczy podłączyć telefony, skonfigurować konta i rozpocząć automatyzację w kilka minut"
+  },
+  "homepage.vs.card.nodev.title": {
+    "message": "Zero kodowania wymagane"
+  },
+  "homepage.vs.card.plug.desc": {
+    "message": "Podłącz swoje urządzenia Android przez USB, a TikMatrix automatycznie je wykryje i skonfiguruje. Nie wymaga root ani specjalnej konfiguracji"
+  },
+  "homepage.vs.card.plug.title": {
+    "message": "Podłącz i użyj"
+  },
+  "homepage.vs.card.realDevices.desc": {
+    "message": "Działa na rzeczywistych urządzeniach Android, a nie emulatorach. Zapewnia najbardziej autentyczne zachowanie i najniższe ryzyko wykrycia"
+  },
+  "homepage.vs.card.realDevices.title": {
+    "message": "Rzeczywiste urządzenia, rzeczywiste wyniki"
+  },
+  "homepage.vs.cta.button": {
+    "message": "Rozpocznij darmowy okres próbny"
+  },
+  "homepage.vs.cta.text": {
+    "message": "Gotowy do transformacji swojego marketingu w mediach społecznościowych? Wypróbuj TikMatrix za darmo przez 7 dni."
+  },
+  "homepage.vs.subtitle": {
+    "message": "TikMatrix oferuje kompleksowe rozwiązanie do zarządzania wieloma kontami mediów społecznościowych i automatyzacji marketingu"
+  },
+  "homepage.vs.title": {
+    "message": "Dlaczego wybrać TikMatrix?"
+  },
+  "tech.diagram.devices": {
+    "message": "Urządzenia Android"
+  },
+  "tech.diagram.engine": {
+    "message": "Silnik automatyzacji"
+  },
+  "tech.diagram.fingerprintIsolation": {
+    "message": "Izolacja odcisku palca"
+  },
+  "tech.diagram.localExecution": {
+    "message": "Lokalne wykonanie"
+  },
+  "tech.diagram.noApi": {
+    "message": "Bez API"
+  },
+  "tech.diagram.noMemoryInjection": {
+    "message": "Bez wstrzykiwania pamięci"
+  },
+  "tech.diagram.realTouch": {
+    "message": "Rzeczywiste dotknięcia"
+  },
+  "tech.diagram.tiktok": {
+    "message": "TikTok"
+  },
+  "tech.diagram.user": {
+    "message": "Użytkownik"
+  },
+  "tech.diagram.zeroCloud": {
+    "message": "Zero chmury"
+  },
+  "tech.point.fingerprint.b1": {
+    "message": "Każde urządzenie ma unikalny odcisk palca"
+  },
+  "tech.point.fingerprint.b2": {
+    "message": "Naturalna izolacja między kontami"
+  },
+  "tech.point.fingerprint.b3": {
+    "message": "Brak wykrywalnych wzorców"
+  },
+  "tech.point.fingerprint.desc": {
+    "message": "Każde fizyczne urządzenie Android ma swój unikalny odcisk palca sprzętowy, zapewniając naturalną izolację między kontami bez potrzeby stosowania technik fałszowania odcisku palca."
+  },
+  "tech.point.fingerprint.title": {
+    "message": "Naturalna izolacja odcisku palca"
+  },
+  "tech.point.humanBehavior.b1": {
+    "message": "Randomizowane czasy działania"
+  },
+  "tech.point.humanBehavior.b2": {
+    "message": "Naturalne wzorce nawigacji"
+  },
+  "tech.point.humanBehavior.b3": {
+    "message": "Realistyczne interakcje"
+  },
+  "tech.point.humanBehavior.desc": {
+    "message": "Nasz silnik automatyzacji symuluje rzeczywiste ludzkie zachowanie z losowymi opóźnieniami, naturalnymi wzorcami przesuwania i realistycznymi interakcjami, dzięki czemu działania są nierozróżnialne od prawdziwych użytkowników."
+  },
+  "tech.point.humanBehavior.title": {
+    "message": "Symulacja ludzkiego zachowania"
+  },
+  "tech.point.localExec.b1": {
+    "message": "Wszystkie dane pozostają na Twoim komputerze"
+  },
+  "tech.point.localExec.b2": {
+    "message": "Brak przechowywania w chmurze"
+  },
+  "tech.point.localExec.b3": {
+    "message": "Pełna kontrola nad danymi"
+  },
+  "tech.point.localExec.desc": {
+    "message": "Wszystkie operacje są wykonywane lokalnie na Twoim komputerze. Żadne dane nie są wysyłane do naszych serwerów ani przechowywane w chmurze, zapewniając maksymalną prywatność i bezpieczeństwo."
+  },
+  "tech.point.localExec.title": {
+    "message": "Lokalne wykonanie"
+  },
+  "tech.point.passiveCapture.b1": {
+    "message": "Brak wstrzykiwania kodu"
+  },
+  "tech.point.passiveCapture.b2": {
+    "message": "Brak wykrywalnych haków"
+  },
+  "tech.point.passiveCapture.b3": {
+    "message": "Niemożliwe do wykrycia przez aplikacje"
+  },
+  "tech.point.passiveCapture.desc": {
+    "message": "W przeciwieństwie do emulatorów lub frameworków, które wstrzykują kod do aplikacji, TikMatrix przechwytuje ekran pasywnie przez protokół Android Debug Bridge, pozostawiając aplikacje w pełni nienaruszone."
+  },
+  "tech.point.passiveCapture.title": {
+    "message": "Pasywne przechwytywanie ekranu"
+  },
+  "tech.point.realTouch.b1": {
+    "message": "Natywne zdarzenia dotykowe Android"
+  },
+  "tech.point.realTouch.b2": {
+    "message": "Fizyczna symulacja gestów"
+  },
+  "tech.point.realTouch.b3": {
+    "message": "Brak sztucznych wzorców"
+  },
+  "tech.point.realTouch.desc": {
+    "message": "Wszystkie działania są wykonywane przez natywne zdarzenia dotykowe Android na rzeczywistych urządzeniach, tworząc autentyczne interakcje, które są nie do odróżnienia od prawdziwych ludzkich dotknięć."
+  },
+  "tech.point.realTouch.title": {
+    "message": "Rzeczywiste zdarzenia dotykowe"
+  },
+  "tech.point.zeroApi.b1": {
+    "message": "Brak wywołań API"
+  },
+  "tech.point.zeroApi.b2": {
+    "message": "Brak wykrywalnych śladów sieci"
+  },
+  "tech.point.zeroApi.b3": {
+    "message": "Organiczne zachowanie aplikacji"
+  },
+  "tech.point.zeroApi.desc": {
+    "message": "TikMatrix nie używa żadnych oficjalnych ani nieoficjalnych API. Wszystkie operacje są wykonywane przez natywne interakcje aplikacji, eliminując ryzyko wykrycia API lub ograniczania szybkości."
+  },
+  "tech.point.zeroApi.title": {
+    "message": "Zero wykorzystania API"
+  },
+  "tech.points.heading": {
+    "message": "Kluczowe zalety techniczne"
+  },
+  "tech.security.heading": {
+    "message": "Bezpieczeństwo i niezawodność"
+  },
+  "tech.security.humanModel": {
+    "message": "Model ludzki"
+  },
+  "tech.security.legendA": {
+    "message": "TikMatrix"
+  },
+  "tech.security.legendB": {
+    "message": "Emulatory/Frameworki"
+  },
+  "tech.security.legendC": {
+    "message": "Boty API"
+  },
+  "tech.security.noHook": {
+    "message": "Bez haków"
+  },
+  "tech.security.noiseCurve": {
+    "message": "Krzywa szumu"
+  },
+  "tech.security.proxyIsolation": {
+    "message": "Izolacja proxy"
+  },
+  "tech.security.realDevice": {
+    "message": "Rzeczywiste urządzenie"
+  },
+  "tech.security.zeroApi": {
+    "message": "Zero API"
+  },
+  "tech.subtitle": {
+    "message": "Zrozum, dlaczego TikMatrix jest najbezpieczniejszym i najbardziej niezawodnym rozwiązaniem do automatyzacji mediów społecznościowych"
+  },
+  "tech.title": {
+    "message": "Jak działa TikMatrix"
+  },
+  "testimonials.subtitle": {
+    "message": "Zobacz, co mówią nasi użytkownicy"
+  },
+  "testimonials.title": {
+    "message": "Zaufane przez marketerów na całym świecie"
+  },
+  "testimonials.usage_label": {
+    "message": "Używa do:"
+  },
+  "testimonials.user1.text": {
+    "message": "TikMatrix całkowicie przekształcił nasz przepływ pracy marketingowy. Zarządzamy teraz ponad 100 kontami TikTok bez wysiłku i widzieliśmy 300% wzrostu zaangażowania."
+  },
+  "testimonials.user1.usage": {
+    "message": "Zarządzanie 100+ kontami TikTok"
+  },
+  "testimonials.user2.text": {
+    "message": "Najlepsza inwestycja dla naszego biznesu e-commerce. Funkcje automatyzacji oszczędzają nam godziny każdego dnia, a wsparcie jest fantastyczne."
+  },
+  "testimonials.user2.usage": {
+    "message": "Automatyzacja marketingu e-commerce"
+  },
+  "testimonials.user3.text": {
+    "message": "Po przejściu z innych rozwiązań, TikMatrix jest zdecydowanie najbezpieczniejszy i najbardziej niezawodny. Zerowe problemy z zawieszeniem konta w ciągu 6 miesięcy."
+  },
+  "testimonials.user3.usage": {
+    "message": "Zarządzanie marką agencji"
+  },
+  "testimonials.user4.text": {
+    "message": "Stabilność i wydajność są niesamowite. Działa bezproblemowo na naszej farmie 50 telefonów bez żadnych problemów."
+  },
+  "testimonials.user4.usage": {
+    "message": "Zarządzanie farmą 50 telefonów"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Jeden wpis|{count} wpisy|{count} wpisów",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Jedna minuta czytania|{readingTime} minuty czytania|{readingTime} minut czytania",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   }
 }
