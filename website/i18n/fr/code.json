@@ -15,10 +15,10 @@
     "message": "Après l'installation, ouvrez IgMatrix pour voir la liste complète des scripts d'automatisation Instagram disponibles. La sélection de scripts peut différer de TikMatrix."
   },
   "All basic features (automation excluded)": {
-    "message": "pricing.free.all_free_features"
+    "message": "Toutes les fonctionnalités de base (automatisation exclue)"
   },
   "All features included": {
-    "message": "pricing.all_features"
+    "message": "Toutes les fonctionnalités incluses"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Vérifiez toujours les fonctionnalités réelles disponibles dans votre logiciel IgMatrix, car les fonctionnalités de script peuvent varier par rapport à TikMatrix. L'interface du logiciel vous montrera exactement quels scripts d'automatisation sont disponibles pour Instagram."
@@ -48,7 +48,7 @@
     "message": "Configuration automatique du profil"
   },
   "Automation tasks": {
-    "message": "pricing.compare.automation"
+    "message": "Tâches d'automatisation"
   },
   "Automation tasks disabled": {
     "message": "Automatisation désactivée"
@@ -72,7 +72,7 @@
     "message": "Construit avec des mécanismes de sécurité pour protéger vos comptes Instagram de la suspension"
   },
   "Business": {
-    "message": "pricing.business.name"
+    "message": "Entreprise"
   },
   "Buy hardware": {
     "message": "Acheter du matériel"
@@ -93,10 +93,10 @@
     "message": "Commenter plusieurs publications TikTok en masse avec du contenu et des emojis personnalisables"
   },
   "Community support": {
-    "message": "pricing.free.community_support"
+    "message": "Support communautaire"
   },
   "Compare features": {
-    "message": "pricing.compare.show"
+    "message": "Comparer les fonctionnalités"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Automatisation complète combinant plusieurs stratégies d'engagement avec des commentaires générés par IA"
@@ -120,13 +120,13 @@
     "message": "Flux de travail Instagram personnalisés"
   },
   "Dedicated ticket support": {
-    "message": "pricing.ticket_support"
+    "message": "Support par ticket dédié"
   },
   "Device connection": {
     "message": "Connexion de l'appareil"
   },
   "Device support": {
-    "message": "pricing.compare.devices"
+    "message": "Support d'appareils"
   },
   "Different Script Logic": {
     "message": "Logique de script différente"
@@ -162,7 +162,7 @@
     "message": "Trouvez des réponses aux questions courantes sur IgMatrix"
   },
   "Flexible plans for everyone. Enjoy 30% off with annual billing!": {
-    "message": "pricing.subtitle"
+    "message": "Des forfaits flexibles pour tous. Profitez de 30% de réduction avec la facturation annuelle!"
   },
   "Follow TikMatrix Tutorial": {
     "message": "Suivre le tutoriel TikMatrix"
@@ -171,19 +171,19 @@
     "message": "Suivez ces étapes pour commencer avec IgMatrix"
   },
   "For growing teams and companies": {
-    "message": "pricing.team.description"
+    "message": "Pour les équipes et entreprises en croissance"
   },
   "For individuals and small teams": {
-    "message": "pricing.starter.description"
+    "message": "Pour les particuliers et les petites équipes"
   },
   "For large enterprises": {
-    "message": "pricing.business.description"
+    "message": "Pour les grandes entreprises"
   },
   "For professionals and small businesses": {
-    "message": "pricing.pro.description"
+    "message": "Pour les professionnels et les petites entreprises"
   },
   "Free": {
-    "message": "pricing.free_label"
+    "message": "Gratuit"
   },
   "Free users can connect unlimited devices and use all basic features except automation tasks": {
     "message": "Idéal pour les débutants"
@@ -204,7 +204,7 @@
     "message": "Here are some frequently asked questions."
   },
   "Hide feature comparison": {
-    "message": "pricing.compare.hide"
+    "message": "Masquer la comparaison des fonctionnalités"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "Combien de comptes TikTok chaque téléphone peut-il utiliser ?"
@@ -273,10 +273,10 @@
     "message": "Augmentation des diffusions en direct"
   },
   "Local API": {
-    "message": "pricing.local_api.title"
+    "message": "API locale"
   },
   "Local REST API access (Pro+)": {
-    "message": "pricing.local_api.support"
+    "message": "Accès à l'API REST locale (Pro+)"
   },
   "Mass commenting": {
     "message": "Commentaires en masse"
@@ -285,10 +285,10 @@
     "message": "Mass direct messaging"
   },
   "Monthly": {
-    "message": "pricing.toggle.monthly"
+    "message": "Mensuel"
   },
   "Most popular": {
-    "message": "pricing.badge.popular"
+    "message": "Le plus populaire"
   },
   "Multi-Device Control": {
     "message": "Multi-Device Control"
@@ -333,13 +333,13 @@
     "message": "Powerful TikTok Automation & Management Tools"
   },
   "Pricing": {
-    "message": "pricing.title"
+    "message": "Tarifs"
   },
   "Pro": {
-    "message": "pricing.pro.name"
+    "message": "Pro"
   },
   "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
-    "message": "pricing.local_api.description"
+    "message": "Les utilisateurs Pro, Team et Business peuvent utiliser l'API RESTful locale pour gérer les tâches par programmation et automatiser les flux de travail. Consultez la documentation pour plus de détails."
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate."
@@ -354,7 +354,7 @@
     "message": "Quick Setup Guide"
   },
   "Read Local API docs": {
-    "message": "pricing.local_api.link_text"
+    "message": "Lire la documentation de l'API locale"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "Recognize and match TikTok accounts from phones to add to account list"
@@ -402,7 +402,7 @@
     "message": "Commencer gratuitement"
   },
   "Starter": {
-    "message": "pricing.starter.name"
+    "message": "Débutant"
   },
   "Still have questions?": {
     "message": "Vous avez encore des questions ?"
@@ -420,7 +420,7 @@
     "message": "Prend en charge la mise en miroir de plus de 100 téléphones vers un ordinateur, avec une opération synchronisée"
   },
   "Team": {
-    "message": "pricing.team.name"
+    "message": "Équipe"
   },
   "Technical Advantages": {
     "message": "Technical Advantages"
@@ -459,22 +459,22 @@
     "message": "US native non-activated Sim card,Used for tiktok android app to detect sim card location"
   },
   "Unlimited": {
-    "message": "pricing.unlimited_devices_short"
+    "message": "Illimité"
   },
   "Unlimited device connections": {
-    "message": "pricing.unlimited_devices"
+    "message": "Connexions d'appareils illimitées"
   },
   "Up to 100 concurrent automation tasks": {
-    "message": "pricing.business.concurrent_tasks"
+    "message": "Jusqu'à 100 tâches d'automatisation simultanées"
   },
   "Up to 20 concurrent automation tasks": {
-    "message": "pricing.pro.concurrent_tasks"
+    "message": "Jusqu'à 20 tâches d'automatisation simultanées"
   },
   "Up to 5 concurrent automation tasks": {
-    "message": "pricing.starter.concurrent_tasks"
+    "message": "Jusqu'à 5 tâches d'automatisation simultanées"
   },
   "Up to 50 concurrent automation tasks": {
-    "message": "pricing.team.concurrent_tasks"
+    "message": "Jusqu'à 50 tâches d'automatisation simultanées"
   },
   "User engagement boost": {
     "message": "Augmentation de l'engagement des utilisateurs"
@@ -516,7 +516,7 @@
     "message": "Pourquoi choisir IgMatrix ?"
   },
   "Yearly (Save 30%)": {
-    "message": "pricing.toggle.yearly"
+    "message": "Annuel (Économisez 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform."
