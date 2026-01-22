@@ -15,10 +15,10 @@
     "message": "Open na installatie IgMatrix om de volledige lijst met beschikbare Instagram-automatiseringsscripts te bekijken. De scriptselectie kan verschillen van TikMatrix."
   },
   "All basic features (automation excluded)": {
-    "message": "pricing.free.all_free_features"
+    "message": "Alle basisfuncties (automatisering uitgesloten)"
   },
   "All features included": {
-    "message": "pricing.all_features"
+    "message": "Alle functies inbegrepen"
   },
   "Always check the actual features available in your IgMatrix software, as the script functionality may vary from TikMatrix. The software interface will show you exactly which automation scripts are available for Instagram.": {
     "message": "Controleer altijd de daadwerkelijk beschikbare functies in uw IgMatrix-software, omdat de scriptfunctionaliteit kan verschillen van TikMatrix. De software-interface laat u precies zien welke automatiseringsscripts beschikbaar zijn voor Instagram."
@@ -48,7 +48,7 @@
     "message": "Automatische profielinstellingen"
   },
   "Automation tasks": {
-    "message": "pricing.compare.automation"
+    "message": "Automatiseringstaken"
   },
   "Automation tasks disabled": {
     "message": "Automatisering uitgeschakeld"
@@ -72,7 +72,7 @@
     "message": "Gebouwd met veiligheidsmechanismen om uw Instagram-accounts te beschermen tegen opschorting"
   },
   "Business": {
-    "message": "pricing.business.name"
+    "message": "Zakelijk"
   },
   "Buy hardware": {
     "message": "Hardware kopen"
@@ -93,10 +93,10 @@
     "message": "Reageer op meerdere TikTok-berichten in bulk met aanpasbare inhoud en emoji's"
   },
   "Community support": {
-    "message": "pricing.free.community_support"
+    "message": "Community ondersteuning"
   },
   "Compare features": {
-    "message": "pricing.compare.show"
+    "message": "Functies vergelijken"
   },
   "Comprehensive automation combining multiple engagement strategies with AI-generated comments": {
     "message": "Uitgebreide automatisering die meerdere betrokkenheidsstrategieën combineert met AI-gegenereerde reacties"
@@ -120,13 +120,13 @@
     "message": "Aangepaste Instagram-workflows"
   },
   "Dedicated ticket support": {
-    "message": "pricing.ticket_support"
+    "message": "Toegewijde ticket ondersteuning"
   },
   "Device connection": {
     "message": "Apparaatverbinding"
   },
   "Device support": {
-    "message": "pricing.compare.devices"
+    "message": "Apparaat ondersteuning"
   },
   "Different Script Logic": {
     "message": "Andere scriptlogica"
@@ -171,19 +171,19 @@
     "message": "Volg deze stappen om aan de slag te gaan met IgMatrix"
   },
   "For growing teams and companies": {
-    "message": "pricing.team.description"
+    "message": "Voor groeiende teams en bedrijven"
   },
   "For individuals and small teams": {
-    "message": "pricing.starter.description"
+    "message": "Voor individuen en kleine teams"
   },
   "For large enterprises": {
-    "message": "pricing.business.description"
+    "message": "Voor grote ondernemingen"
   },
   "For professionals and small businesses": {
-    "message": "pricing.pro.description"
+    "message": "Voor professionals en kleine bedrijven"
   },
   "Free": {
-    "message": "pricing.free_label"
+    "message": "Gratis"
   },
   "Free users can connect unlimited devices and use all basic features except automation tasks": {
     "message": "Ideaal voor beginners"
@@ -204,7 +204,7 @@
     "message": "Hier zijn enkele veelgestelde vragen."
   },
   "Hide feature comparison": {
-    "message": "pricing.compare.hide"
+    "message": "Functievergelijking verbergen"
   },
   "How many TikTok accounts can each phone log into?": {
     "message": "Op hoeveel TikTok-accounts kan elke telefoon inloggen?"
@@ -273,10 +273,10 @@
     "message": "Livestream-boost"
   },
   "Local API": {
-    "message": "pricing.local_api.title"
+    "message": "Lokale API"
   },
   "Local REST API access (Pro+)": {
-    "message": "pricing.local_api.support"
+    "message": "Lokale REST API toegang (Pro+)"
   },
   "Mass commenting": {
     "message": "Massa-opmerkingen"
@@ -285,10 +285,10 @@
     "message": "Massa-directe berichten"
   },
   "Monthly": {
-    "message": "Monthly"
+    "message": "Maandelijks"
   },
   "Most popular": {
-    "message": "pricing.badge.popular"
+    "message": "Meest populair"
   },
   "Multi-Device Control": {
     "message": "Multi-apparaatbesturing"
@@ -333,13 +333,13 @@
     "message": "Krachtige TikTok-automatiserings- en beheertools"
   },
   "Pricing": {
-    "message": "Pricing Plans"
+    "message": "Prijzen"
   },
   "Pro": {
-    "message": "pricing.pro.name"
+    "message": "Pro"
   },
   "Pro, Team and Business users can use the local RESTful API to programmatically manage tasks and automate workflows. See the docs for details.": {
-    "message": "pricing.local_api.description"
+    "message": "Pro, Team en Business gebruikers kunnen de lokale RESTful API gebruiken om taken programmatisch te beheren en workflows te automatiseren. Zie de documentatie voor details."
   },
   "Professional TikTok account management and marketing tool designed for Android phone farms on Windows and Mac. Automate posting, following, and grow your TikTok presence with zero account suspension rate.": {
     "message": "Professioneel TikTok-accountbeheer- en marketingtool ontworpen voor Android-telefoonboerderijen op Windows en Mac. Automatiseer het plaatsen, volgen en laat uw TikTok-aanwezigheid groeien met een nul accountopschortingspercentage."
@@ -354,7 +354,7 @@
     "message": "Snelle installatiegids"
   },
   "Read Local API docs": {
-    "message": "pricing.local_api.link_text"
+    "message": "Lees lokale API documentatie"
   },
   "Recognize and match TikTok accounts from phones to add to account list": {
     "message": "Herken en koppel TikTok-accounts van telefoons om toe te voegen aan accountlijst"
@@ -402,7 +402,7 @@
     "message": "Start for free"
   },
   "Starter": {
-    "message": "pricing.starter.name"
+    "message": "Starter"
   },
   "Still have questions?": {
     "message": "Nog vragen?"
@@ -420,7 +420,7 @@
     "message": "Ondersteunt 100+ telefoons spiegelen naar een computer, met gesynchroniseerde werking"
   },
   "Team": {
-    "message": "pricing.team.name"
+    "message": "Team"
   },
   "Technical Advantages": {
     "message": "Technische voordelen"
@@ -459,22 +459,22 @@
     "message": "Amerikaanse native niet-geactiveerde simkaart, gebruikt voor tiktok Android-app om simkaartlocatie te detecteren"
   },
   "Unlimited": {
-    "message": "pricing.unlimited_devices_short"
+    "message": "Onbeperkt"
   },
   "Unlimited device connections": {
-    "message": "pricing.unlimited_devices"
+    "message": "Onbeperkte apparaatverbindingen"
   },
   "Up to 100 concurrent automation tasks": {
-    "message": "pricing.business.concurrent_tasks"
+    "message": "Tot 100 gelijktijdige automatiseringstaken"
   },
   "Up to 20 concurrent automation tasks": {
-    "message": "pricing.pro.concurrent_tasks"
+    "message": "Tot 20 gelijktijdige automatiseringstaken"
   },
   "Up to 5 concurrent automation tasks": {
-    "message": "pricing.starter.concurrent_tasks"
+    "message": "Tot 5 gelijktijdige automatiseringstaken"
   },
   "Up to 50 concurrent automation tasks": {
-    "message": "pricing.team.concurrent_tasks"
+    "message": "Tot 50 gelijktijdige automatiseringstaken"
   },
   "User engagement boost": {
     "message": "Gebruikersbetrokkenheidboost"
@@ -516,7 +516,7 @@
     "message": "Waarom IgMatrix kiezen?"
   },
   "Yearly (Save 30%)": {
-    "message": "Yearly (Save 30%)"
+    "message": "Jaarlijks (Bespaar 30%)"
   },
   "Yes! The setup tutorial for IgMatrix is identical to TikMatrix. You can follow the TikMatrix documentation for installation, device connection, and basic configuration. Only the automation scripts will differ based on the platform.": {
     "message": "Ja! De installatietutorial voor IgMatrix is identiek aan TikMatrix. U kunt de TikMatrix-documentatie volgen voor installatie, apparaatverbinding en basisconfiguratie. Alleen de automatiseringsscripts zullen verschillen op basis van het platform."
