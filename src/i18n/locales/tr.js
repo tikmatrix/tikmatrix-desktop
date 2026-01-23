@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'Yearly Plans',
   youSave: 'Save {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'Zamanlama Şablonları',
   scheduleTemplates: 'Zamanlama Şablonları',
   scheduleTemplatesDesc: 'Belirtilen günlerde ve saatlerde çalışan otomatik görev zamanlamaları oluşturun ve yönetin.',
   addTemplate: 'Şablon Ekle',

@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'แผนรายปี',
   youSave: 'ประหยัด {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'เทมเพลตตารางเวลา',
   scheduleTemplates: 'เทมเพลตตารางเวลา',
   scheduleTemplatesDesc: 'สร้างและจัดการตารางงานอัตโนมัติที่ทำงานในวันและเวลาที่กำหนด',
   addTemplate: 'เพิ่มเทมเพลต',

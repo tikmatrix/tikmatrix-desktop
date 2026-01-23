@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'Yearly Plans',
   youSave: 'Save {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'Schedule Templates',
   scheduleTemplates: 'Schedule Templates',
   scheduleTemplatesDesc: 'Create and manage automated task schedules that run on specified days and times.',
   addTemplate: 'Add Template',

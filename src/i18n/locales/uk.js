@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'Щорічні плани',
   youSave: 'Ви заощаджуєте {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'Шаблони розкладу',
   scheduleTemplates: 'Шаблони розкладу',
   scheduleTemplatesDesc: 'Створюйте та керуйте автоматизованими розкладами завдань, які виконуються у вказані дні та час.',
   addTemplate: 'Додати шаблон',

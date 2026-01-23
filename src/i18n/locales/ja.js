@@ -1382,6 +1382,7 @@ export default {
   youSave: '節約 {amount}',
 
   // Schedule Template
+  'scheduleTemplates.title': 'スケジュールテンプレート',
   scheduleTemplates: 'スケジュールテンプレート',
   scheduleTemplatesDesc: '指定した曜日と時刻に実行される自動タスクスケジュールを作成・管理します。',
   addTemplate: 'テンプレートを追加',

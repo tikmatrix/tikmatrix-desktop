@@ -1382,6 +1382,7 @@ export default {
   youSave: 'Вы экономите {amount}',
 
   // Schedule Template
+  'scheduleTemplates.title': 'Шаблоны расписаний',
   scheduleTemplates: 'Шаблоны расписаний',
   scheduleTemplatesDesc: 'Создавайте и управляйте автоматическими расписаниями задач, которые выполняются в указанные дни и время.',
   addTemplate: 'Добавить шаблон',

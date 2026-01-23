@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'Jaarlijke plannen',
   youSave: 'U bespaart {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'Schema-sjablonen',
   scheduleTemplates: 'Schema-sjablonen',
   scheduleTemplatesDesc: 'Maak en beheer geautomatiseerde taakschema\'s die op specifieke dagen en tijden worden uitgevoerd.',
   addTemplate: 'Sjabloon toevoegen',

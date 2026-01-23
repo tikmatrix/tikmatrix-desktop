@@ -1382,6 +1382,7 @@ export default {
   youSave: 'Economize {amount}',
 
   // Schedule Template
+  'scheduleTemplates.title': 'Modelos de Agendamento',
   scheduleTemplates: 'Modelos de Agendamento',
   scheduleTemplatesDesc: 'Crie e gerencie agendamentos de tarefas automatizadas que são executadas em dias e horários especificados.',
   addTemplate: 'Adicionar Modelo',

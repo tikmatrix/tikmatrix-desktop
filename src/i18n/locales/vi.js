@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'Gói hàng năm',
   youSave: 'Tiết kiệm {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'Mẫu Lịch',
   scheduleTemplates: 'Mẫu Lịch',
   scheduleTemplatesDesc: 'Tạo và quản lý lịch công việc tự động chạy vào ngày và giờ được chỉ định.',
   addTemplate: 'Thêm Mẫu',

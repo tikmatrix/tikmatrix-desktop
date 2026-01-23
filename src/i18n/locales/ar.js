@@ -1382,6 +1382,7 @@ export default {
   youSave: 'توفر {amount}',
 
   // Schedule Template
+  'scheduleTemplates.title': 'قوالب الجدولة',
   scheduleTemplates: 'قوالب الجدولة',
   scheduleTemplatesDesc: 'إنشاء وإدارة جداول المهام الآلية التي تعمل في أيام وأوقات محددة.',
   addTemplate: 'إضافة قالب',

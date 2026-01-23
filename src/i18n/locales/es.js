@@ -1382,6 +1382,7 @@ export default {
   youSave: 'Ahorra {amount}',
 
   // Schedule Template
+  'scheduleTemplates.title': 'Plantillas de Programación',
   scheduleTemplates: 'Plantillas de Programación',
   scheduleTemplatesDesc: 'Crea y gestiona programaciones de tareas automatizadas que se ejecutan en días y horas especificados.',
   addTemplate: 'Agregar Plantilla',

@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'Paket Tahunan',
   youSave: 'Hemat {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'Template Jadwal',
   scheduleTemplates: 'Template Jadwal',
   scheduleTemplatesDesc: 'Buat dan kelola jadwal tugas otomatis yang berjalan pada hari dan jam tertentu.',
   addTemplate: 'Tambah Template',

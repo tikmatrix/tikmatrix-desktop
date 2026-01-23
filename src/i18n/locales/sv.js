@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'Årliga planer',
   youSave: 'Spara {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'Schemaläggningsmallar',
   scheduleTemplates: 'Schemaläggningsmallar',
   scheduleTemplatesDesc: 'Skapa och hantera automatiserade uppgiftsscheman som körs vid angivna dagar och tider.',
   addTemplate: 'Lägg till mall',

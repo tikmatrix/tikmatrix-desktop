@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'वार्षिक योजनाएँ',
   youSave: 'बचत {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'अनुसूची टेम्पलेट',
   scheduleTemplates: 'अनुसूची टेम्पलेट',
   scheduleTemplatesDesc: 'निश्चित दिनों और समय पर चलने वाले स्वचालित कार्य अनुसूचियों को बनाएं और प्रबंधित करें।',
   addTemplate: 'टेम्पलेट जोड़ें',

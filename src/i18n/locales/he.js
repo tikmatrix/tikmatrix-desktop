@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'תכניות שנתיות',
   youSave: 'חסכת {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'תבניות לוח זמנים',
   scheduleTemplates: 'תבניות לוח זמנים',
   scheduleTemplatesDesc: 'צור ונהל לוחות זמנים של משימות אוטומטיות המתבצעות בימים ובשעות שצוינו.',
   addTemplate: 'הוסף תבנית',

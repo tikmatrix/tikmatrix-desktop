@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: 'Piani annuali',
   youSave: 'Risparmi {amount}',
   // Schedule Template
+  'scheduleTemplates.title': 'Modelli di pianificazione',
   scheduleTemplates: 'Modelli di pianificazione',
   scheduleTemplatesDesc: 'Crea e gestisci pianificazioni di attività automatizzate che vengono eseguite in giorni e orari specificati.',
   addTemplate: 'Aggiungi Modello',

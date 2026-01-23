@@ -1381,6 +1381,7 @@ export default {
   yearlyPlans: '年度套餐',
   youSave: '节省 {amount}',
   // Schedule Template
+  'scheduleTemplates.title': '日程模板',
   scheduleTemplates: '日程模板',
   scheduleTemplatesDesc: '创建和管理在指定日期和时间自动运行的任务计划。',
   addTemplate: '添加模板',

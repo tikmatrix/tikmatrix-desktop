@@ -1382,6 +1382,7 @@ export default {
   youSave: '{amount} 절약',
 
   // Schedule Template
+  'scheduleTemplates.title': '일정 템플릿',
   scheduleTemplates: '일정 템플릿',
   scheduleTemplatesDesc: '지정된 요일과 시간에 실행되는 자동화된 작업 일정을 생성하고 관리합니다.',
   addTemplate: '템플릿 추가',

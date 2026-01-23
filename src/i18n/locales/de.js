@@ -1382,6 +1382,7 @@ export default {
   youSave: 'Sie sparen {amount}',
 
   // Schedule Template
+  'scheduleTemplates.title': 'Zeitplanvorlagen',
   scheduleTemplates: 'Zeitplanvorlagen',
   scheduleTemplatesDesc: 'Erstellen und verwalten Sie automatisierte Aufgabenzeitpläne, die an bestimmten Tagen und Uhrzeiten ausgeführt werden.',
   addTemplate: 'Vorlage hinzufügen',

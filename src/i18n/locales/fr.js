@@ -1382,6 +1382,7 @@ export default {
   youSave: 'Vous économisez {amount}',
 
   // Schedule Template
+  'scheduleTemplates.title': 'Modèles de planification',
   scheduleTemplates: 'Modèles de planification',
   scheduleTemplatesDesc: 'Créez et gérez des planifications de tâches automatisées qui s\'exécutent aux jours et heures spécifiés.',
   addTemplate: 'Ajouter un modèle',
