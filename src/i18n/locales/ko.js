@@ -938,7 +938,7 @@ export default {
   searchAccountPlaceholder: 'email, username 또는 device',
   searchKeywordTips: '검색 키워드를 입력하세요',
   searchMode: '사운드 검색',
-  searchTaskPlaceholder: 'id, device, scriptName',
+  searchTaskPlaceholder: '아이디, 기기, 스크립트명',
   searchUser: '사용자 검색',
   second: '초',
   seconds: '초',

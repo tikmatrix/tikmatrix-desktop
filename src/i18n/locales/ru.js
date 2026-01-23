@@ -1211,7 +1211,7 @@ export default {
   tags: 'Теги',
   targetCommentUrlTips: 'Введите URL целевых комментариев, по одному на строку. Длительное нажатие на комментарий позволяет скопировать ссылку на комментарий',
   targetCommentUrls: 'URL целевых комментариев',
-  targetLiveUrlTips: 'Target Live Url, one per line',
+  targetLiveUrlTips: 'URL целевой трансляции, по одному на строку',
   targetMachineId: 'ID целевой машины',
   targetMachineIdInvalid: 'Формат ID целевой машины недействителен',
   targetMachineIdTooShort: 'ID машины должен содержать не менее 10 символов',

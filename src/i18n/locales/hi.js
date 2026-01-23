@@ -938,7 +938,7 @@ export default {
   searchAccountPlaceholder: 'email, username या device',
   searchKeywordTips: 'कृपया खोज कीवर्ड दर्ज करें',
   searchMode: 'साउंड खोज',
-  searchTaskPlaceholder: 'id, device, scriptName',
+  searchTaskPlaceholder: 'आईडी, डिवाइस, स्क्रिप्ट नाम',
   searchUser: 'उपयोगकर्ता खोजें',
   second: 'सेकंड',
   seconds: 'सेकंड',

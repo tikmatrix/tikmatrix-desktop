@@ -1242,7 +1242,7 @@ export default {
   tasks: 'Завдання',
   tcp: 'TCP',
   telegram: 'Telegram',
-  telegramCustom: 'Telegram Custom',
+  telegramCustom: 'Власний Telegram',
   telegramSupport: 'Підтримка Telegram',
   termsOfService: 'Умови обслуговування',
   test: 'Тест',

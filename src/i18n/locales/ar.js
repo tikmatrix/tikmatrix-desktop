@@ -938,7 +938,7 @@ export default {
   searchAccountPlaceholder: 'البريد الإلكتروني، اسم المستخدم أو الجهاز',
   searchKeywordTips: 'يرجى إدخال كلمة البحث',
   searchMode: 'البحث عن الصوت',
-  searchTaskPlaceholder: 'id, device, scriptName',
+  searchTaskPlaceholder: 'المعرف، الجهاز، اسم السكريبت',
   searchUser: 'بحث عن مستخدم',
   second: 'ثانية',
   seconds: 'ثوان',
