@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: '대형 화면 모드가 업데이트되었습니다',
   bios: '바이오',
   biosTips: '서명을 입력하세요, 줄마다 하나의 서명',
+  linkUrl: '링크 URL',
+  linkUrlTips: '링크 URL을 입력하세요, 줄마다 하나의 URL',
   block: '차단',
   boostCommentInterval: '댓글 부스트 간격',
   boostComments: '댓글 부스트',

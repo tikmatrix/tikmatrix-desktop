@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'Tryb dużego ekranu zaktualizowany',
   bios: 'Bios',
   biosTips: 'Wprowadź podpis, jeden podpis na linię',
+  linkUrl: 'URL linku',
+  linkUrlTips: 'Wprowadź URL linku, jeden URL na linię',
   block: 'Zablokuj',
   boostCommentInterval: 'Interwał boostu komentarzy',
   boostComments: 'Boost komentarzy',

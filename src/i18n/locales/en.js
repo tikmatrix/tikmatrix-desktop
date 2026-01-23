@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'Big screen mode updated',
   bios: 'Bios',
   biosTips: 'Enter the signature, one signature per line',
+  linkUrl: 'Link URL',
+  linkUrlTips: 'Enter the link URL, one URL per line',
   block: 'Block',
   boostCommentInterval: 'Boost Comment Interval',
   boostComments: 'Boost Comments',

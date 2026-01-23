@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'อัปเดตโหมดหน้าจอใหญ่แล้ว',
   bios: 'ประวัติ',
   biosTips: 'ป้อนลายเซ็น บรรทัดละหนึ่งลายเซ็น',
+  linkUrl: 'URL ลิงก์',
+  linkUrlTips: 'ป้อน URL ลิงก์ บรรทัดละหนึ่ง URL',
   block: 'บล็อก',
   boostCommentInterval: 'ช่วงเวลาการเสริมคอมเมนต์',
   boostComments: 'เสริมคอมเมนต์',

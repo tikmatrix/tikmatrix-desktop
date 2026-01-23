@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'Режим большого экрана обновлён',
   bios: 'Биографии',
   biosTips: 'Введите подпись, одна подпись на строку',
+  linkUrl: 'URL-ссылка',
+  linkUrlTips: 'Введите URL-ссылку, одна ссылка на строку',
   block: 'Блокировать',
   boostCommentInterval: 'Интервал повышения комментариев',
   boostComments: 'Повышение комментариев',

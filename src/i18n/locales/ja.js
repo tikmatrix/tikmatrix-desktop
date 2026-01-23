@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: '大画面モードを更新しました',
   bios: '自己紹介',
   biosTips: '署名を入力してください。1行につき1つの署名',
+  linkUrl: 'リンクURL',
+  linkUrlTips: 'リンクURLを入力してください。1行につき1つのURL',
   block: 'ブロック',
   boostCommentInterval: 'コメント促進間隔',
   boostComments: 'コメント促進',

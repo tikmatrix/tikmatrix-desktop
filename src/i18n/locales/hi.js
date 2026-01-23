@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'बड़े स्क्रीन मोड अपडेट हो गया',
   bios: 'बायोस',
   biosTips: 'सिग्नेचर दर्ज करें, एक सिग्नेचर प्रति लाइन',
+  linkUrl: 'लिंक URL',
+  linkUrlTips: 'लिंक URL दर्ज करें, एक URL प्रति लाइन',
   block: 'ब्लॉक',
   boostCommentInterval: 'कमेंट बूस्ट अंतराल',
   boostComments: 'कमेंट बूस्ट',
