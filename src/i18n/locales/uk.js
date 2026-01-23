@@ -114,7 +114,7 @@ export default {
   bios: 'Біос',
   biosTips: 'Введіть підпис, один підпис на рядок',
   linkUrl: 'URL-посилання',
-  linkUrlTips: 'Введіть URL-посилання, одне посилання на рядок',
+  linkUrlTips: 'Введіть URL-посилання',
   block: 'Блокувати',
   boostCommentInterval: 'Інтервал підсилення коментаря',
   boostComments: 'Підсилення коментарів',

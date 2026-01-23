@@ -114,7 +114,7 @@ export default {
   bios: 'Tiểu sử',
   biosTips: 'Nhập chữ ký, mỗi dòng một chữ ký',
   linkUrl: 'URL liên kết',
-  linkUrlTips: 'Nhập URL liên kết, mỗi dòng một URL',
+  linkUrlTips: 'Nhập URL liên kết',
   block: 'Chặn',
   boostCommentInterval: 'Khoảng cách tăng tương tác bình luận',
   boostComments: 'Tăng bình luận',

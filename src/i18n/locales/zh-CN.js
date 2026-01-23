@@ -114,7 +114,7 @@ export default {
   bios: '签名',
   biosTips: '输入签名,一行一个签名',
   linkUrl: '链接网址',
-  linkUrlTips: '输入链接网址，一行一个网址',
+  linkUrlTips: '输入链接网址',
   block: '封禁',
   boostCommentInterval: '提升评论间隔',
   boostComments: '提升评论',

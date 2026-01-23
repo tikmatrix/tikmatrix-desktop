@@ -114,7 +114,7 @@ export default {
   bios: 'Bios',
   biosTips: 'Entrez la signature, une signature par ligne',
   linkUrl: 'URL du lien',
-  linkUrlTips: 'Entrez l\'URL du lien, une URL par ligne',
+  linkUrlTips: 'Entrez l\'URL du lien',
   block: 'Bloquer',
   boostCommentInterval: 'Intervalle de boost des commentaires',
   boostComments: 'Boost des commentaires',

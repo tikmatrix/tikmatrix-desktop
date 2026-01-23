@@ -114,7 +114,7 @@ export default {
   bios: 'Biografías',
   biosTips: 'Ingrese la firma, una por línea',
   linkUrl: 'URL del enlace',
-  linkUrlTips: 'Ingrese la URL del enlace, una por línea',
+  linkUrlTips: 'Ingrese la URL del enlace',
   block: 'Bloquear',
   boostCommentInterval: 'Intervalo de impulso de comentarios',
   boostComments: 'Impulsar comentarios',

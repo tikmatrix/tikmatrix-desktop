@@ -114,7 +114,7 @@ export default {
   bios: 'Bios',
   biosTips: 'Masukkan signature, satu signature per baris',
   linkUrl: 'URL tautan',
-  linkUrlTips: 'Masukkan URL tautan, satu URL per baris',
+  linkUrlTips: 'Masukkan URL tautan',
   block: 'Blokir',
   boostCommentInterval: 'Interval Boost Komentar',
   boostComments: 'Boost Komentar',

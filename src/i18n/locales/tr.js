@@ -114,7 +114,7 @@ export default {
   bios: 'Bios',
   biosTips: 'İmzayı girin, satır başına bir imza',
   linkUrl: 'Bağlantı URL',
-  linkUrlTips: 'Bağlantı URL\'sini girin, satır başına bir URL',
+  linkUrlTips: 'Bağlantı URL\'sini girin',
   block: 'Engelle',
   boostCommentInterval: 'Yorum Arttırma Aralığı',
   boostComments: 'Yorumları Arttır',

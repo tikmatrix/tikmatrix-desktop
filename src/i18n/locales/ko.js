@@ -114,7 +114,7 @@ export default {
   bios: '바이오',
   biosTips: '서명을 입력하세요, 줄마다 하나의 서명',
   linkUrl: '링크 URL',
-  linkUrlTips: '링크 URL을 입력하세요, 줄마다 하나의 URL',
+  linkUrlTips: '링크 URL을 입력하세요',
   block: '차단',
   boostCommentInterval: '댓글 부스트 간격',
   boostComments: '댓글 부스트',

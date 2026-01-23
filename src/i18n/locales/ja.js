@@ -114,7 +114,7 @@ export default {
   bios: '自己紹介',
   biosTips: '署名を入力してください。1行につき1つの署名',
   linkUrl: 'リンクURL',
-  linkUrlTips: 'リンクURLを入力してください。1行につき1つのURL',
+  linkUrlTips: 'リンクURLを入力してください',
   block: 'ブロック',
   boostCommentInterval: 'コメント促進間隔',
   boostComments: 'コメント促進',

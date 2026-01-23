@@ -114,7 +114,7 @@ export default {
   bios: 'ประวัติ',
   biosTips: 'ป้อนลายเซ็น บรรทัดละหนึ่งลายเซ็น',
   linkUrl: 'URL ลิงก์',
-  linkUrlTips: 'ป้อน URL ลิงก์ บรรทัดละหนึ่ง URL',
+  linkUrlTips: 'ป้อน URL ลิงก์',
   block: 'บล็อก',
   boostCommentInterval: 'ช่วงเวลาการเสริมคอมเมนต์',
   boostComments: 'เสริมคอมเมนต์',

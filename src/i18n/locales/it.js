@@ -114,7 +114,7 @@ export default {
   bios: 'Bio',
   biosTips: 'Inserisci la bio, una per riga',
   linkUrl: 'URL del link',
-  linkUrlTips: 'Inserisci l\'URL del link, una per riga',
+  linkUrlTips: 'Inserisci l\'URL del link',
   block: 'Blocca',
   boostCommentInterval: 'Intervallo Boost commenti',
   boostComments: 'Boost commenti',

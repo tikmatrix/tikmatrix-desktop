@@ -114,7 +114,7 @@ export default {
   bios: 'Bios',
   biosTips: 'Voer de handtekening in, één handtekening per regel',
   linkUrl: 'Link URL',
-  linkUrlTips: 'Voer de link URL in, één URL per regel',
+  linkUrlTips: 'Voer de link URL in',
   block: 'Blokkeren',
   boostCommentInterval: 'Boost reactie-interval',
   boostComments: 'Boost reacties',

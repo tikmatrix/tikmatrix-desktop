@@ -114,7 +114,7 @@ export default {
   bios: 'السير الذاتية',
   biosTips: 'أدخل التوقيع، توقيع واحد في كل سطر',
   linkUrl: 'رابط URL',
-  linkUrlTips: 'أدخل رابط URL، رابط واحد في كل سطر',
+  linkUrlTips: 'أدخل رابط URL',
   block: 'حظر',
   boostCommentInterval: 'فاصل تعزيز التعليقات',
   boostComments: 'تعزيز التعليقات',

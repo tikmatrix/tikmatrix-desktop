@@ -114,7 +114,7 @@ export default {
   bios: 'Биографии',
   biosTips: 'Введите подпись, одна подпись на строку',
   linkUrl: 'URL-ссылка',
-  linkUrlTips: 'Введите URL-ссылку, одна ссылка на строку',
+  linkUrlTips: 'Введите URL-ссылку',
   block: 'Блокировать',
   boostCommentInterval: 'Интервал повышения комментариев',
   boostComments: 'Повышение комментариев',

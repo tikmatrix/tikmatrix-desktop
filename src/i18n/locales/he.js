@@ -114,7 +114,7 @@ export default {
   bios: 'ביו',
   biosTips: 'הכנס חתימה, כל חתימה בשורה נפרדת',
   linkUrl: 'URL קישור',
-  linkUrlTips: 'הכנס URL קישור, כל URL בשורה נפרדת',
+  linkUrlTips: 'הכנס URL קישור',
   block: 'חסום',
   boostCommentInterval: 'מרווח חיזוק תגובות',
   boostComments: 'חיזוק תגובות',

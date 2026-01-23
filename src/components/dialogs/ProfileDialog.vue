@@ -41,8 +41,8 @@
   </div>
   <div class="flex items-center flex-row gap-2 max-w-full w-full mt-2">
     <span class="font-bold">{{ $t('linkUrl') }}: </span>
-    <textarea class="textarea textarea-success grow  h-16 leading-tight" :placeholder="$t('linkUrlTips')"
-      autocomplete="off" v-model="link_url"> </textarea>
+    <input type="text" :placeholder="$t('linkUrlTips')" autocomplete="off" v-model="link_url"
+      class="input input-md grow input-bordered" />
 
   </div>
   <div class="flex items-center flex-row gap-2 max-w-full w-full mt-2">

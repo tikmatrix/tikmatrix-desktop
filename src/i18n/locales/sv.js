@@ -114,7 +114,7 @@ export default {
   bios: 'Bios',
   biosTips: 'Ange signaturen, en signatur per rad',
   linkUrl: 'Länk URL',
-  linkUrlTips: 'Ange länk URL, en URL per rad',
+  linkUrlTips: 'Ange länk URL',
   block: 'Blockera',
   boostCommentInterval: 'Intervall för kommentarboost',
   boostComments: 'Boost-kommentarer',
