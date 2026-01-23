@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'Storskärmsläge uppdaterat',
   bios: 'Bios',
   biosTips: 'Ange signaturen, en signatur per rad',
+  linkUrl: 'Länk URL',
+  linkUrlTips: 'Ange länk URL, en URL per rad',
   block: 'Blockera',
   boostCommentInterval: 'Intervall för kommentarboost',
   boostComments: 'Boost-kommentarer',

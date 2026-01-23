@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'Modo de tela grande atualizado',
   bios: 'Biografias',
   biosTips: 'Insira a assinatura, uma assinatura por linha',
+  linkUrl: 'URL do link',
+  linkUrlTips: 'Insira a URL do link, uma URL por linha',
   block: 'Bloquear',
   boostCommentInterval: 'Intervalo de Impulso de Comentário',
   boostComments: 'Impulsionar Comentários',

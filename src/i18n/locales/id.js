@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'Mode layar besar diperbarui',
   bios: 'Bios',
   biosTips: 'Masukkan signature, satu signature per baris',
+  linkUrl: 'URL tautan',
+  linkUrlTips: 'Masukkan URL tautan, satu URL per baris',
   block: 'Blokir',
   boostCommentInterval: 'Interval Boost Komentar',
   boostComments: 'Boost Komentar',

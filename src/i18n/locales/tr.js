@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'Büyük ekran modu güncellendi',
   bios: 'Bios',
   biosTips: 'İmzayı girin, satır başına bir imza',
+  linkUrl: 'Bağlantı URL',
+  linkUrlTips: 'Bağlantı URL\'sini girin, satır başına bir URL',
   block: 'Engelle',
   boostCommentInterval: 'Yorum Arttırma Aralığı',
   boostComments: 'Yorumları Arttır',

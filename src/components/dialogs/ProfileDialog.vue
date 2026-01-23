@@ -40,6 +40,12 @@
 
   </div>
   <div class="flex items-center flex-row gap-2 max-w-full w-full mt-2">
+    <span class="font-bold">{{ $t('linkUrl') }}: </span>
+    <textarea class="textarea textarea-success grow  h-16 leading-tight" :placeholder="$t('linkUrlTips')"
+      autocomplete="off" v-model="link_url"> </textarea>
+
+  </div>
+  <div class="flex items-center flex-row gap-2 max-w-full w-full mt-2">
     <span class="font-bold">{{ $t('avatarsPath') }}: </span>
     <input type="text" placeholder="example: C:/Users/Administrator/Desktop/avatars"
       class="input input-md grow input-bordered" v-model="avatars_path" />
@@ -59,9 +65,10 @@ export default {
         nicknames: '',
         usernames: '',
         bios: '',
+        link_url: '',
         avatars_path: '',
       }, // 默认设置
-      ['profile_order', 'nicknames', 'usernames', 'bios', 'avatars_path'] // 需要监听的属性
+      ['profile_order', 'nicknames', 'usernames', 'bios', 'link_url', 'avatars_path'] // 需要监听的属性
     )
   ],
   data() {
@@ -70,6 +77,7 @@ export default {
       nicknames: '',
       usernames: '',
       bios: '',
+      link_url: '',
       avatars_path: '',
     }
   },

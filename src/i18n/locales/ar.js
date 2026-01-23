@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'تم تحديث وضع الشاشة الكبيرة',
   bios: 'السير الذاتية',
   biosTips: 'أدخل التوقيع، توقيع واحد في كل سطر',
+  linkUrl: 'رابط URL',
+  linkUrlTips: 'أدخل رابط URL، رابط واحد في كل سطر',
   block: 'حظر',
   boostCommentInterval: 'فاصل تعزيز التعليقات',
   boostComments: 'تعزيز التعليقات',

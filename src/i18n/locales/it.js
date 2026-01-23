@@ -113,6 +113,8 @@ export default {
   bigScreenUpdated: 'Modalità schermo grande aggiornata',
   bios: 'Bio',
   biosTips: 'Inserisci la bio, una per riga',
+  linkUrl: 'URL del link',
+  linkUrlTips: 'Inserisci l\'URL del link, una per riga',
   block: 'Blocca',
   boostCommentInterval: 'Intervallo Boost commenti',
   boostComments: 'Boost commenti',
