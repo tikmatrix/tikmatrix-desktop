@@ -83,6 +83,7 @@
 import Pagination from '../Pagination.vue';
 import EditScheduleTemplate from './EditScheduleTemplate.vue';
 import TimeSlotsDialog from './TimeSlotsDialog.vue';
+import { ask } from '@tauri-apps/api/dialog';
 
 export default {
   name: 'ManageScheduleTemplates',
@@ -167,11 +168,11 @@ export default {
       }
     },
     async deleteTemplate(template) {
-      const confirmed = await this.$emiter('confirm', {
-        title: this.$t('deleteTemplate'),
-        message: this.$t('deleteTemplateConfirm', { name: template.name })
-      });
-      if (!confirmed) return;
+      const yes = await ask(
+        this.$t('deleteTemplateConfirm', { name: template.name }),
+        this.$t('deleteTemplate')
+      );
+      if (!yes) return;
 
       try {
         await this.$service.delete_schedule_template({ id: template.id });

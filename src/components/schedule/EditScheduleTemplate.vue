@@ -72,9 +72,7 @@
               <thead>
                 <tr>
                   <th>{{ $t('startTime') }}</th>
-                  <th>{{ $t('endTime') }}</th>
                   <th>{{ $t('scriptName') }}</th>
-                  <th>{{ $t('duration') }} ({{ $t('minutes') }})</th>
                   <th>{{ $t('actions') }}</th>
                 </tr>
               </thead>
@@ -84,18 +82,11 @@
                     <input type="time" class="input input-bordered input-sm w-28" v-model="slot.start_time" />
                   </td>
                   <td>
-                    <input type="time" class="input input-bordered input-sm w-28" v-model="slot.end_time" />
-                  </td>
-                  <td>
-                    <select class="select select-bordered select-sm w-40" v-model="slot.script_name">
+                    <select class="select select-bordered select-sm w-48" v-model="slot.script_name">
                       <option v-for="script in availableScripts" :key="script.value" :value="script.value">
                         {{ $t(script.label) }}
                       </option>
                     </select>
-                  </td>
-                  <td>
-                    <input type="number" class="input input-bordered input-sm w-20" v-model.number="slot.duration_minutes"
-                      min="1" max="480" />
                   </td>
                   <td>
                     <button class="btn btn-xs btn-error" @click="removeTimeSlot(index)">
@@ -169,14 +160,12 @@ export default {
       ],
       availableScripts: [
         { value: 'account_warmup', label: 'accountWarmup' },
-        { value: 'super_marketing', label: 'superMarketing' },
         { value: 'post', label: 'post' },
         { value: 'comment_boost', label: 'commentBoost' },
-        { value: 'live_boost', label: 'liveBoost' },
+        { value: 'scrape', label: 'scrape' },
         { value: 'follow', label: 'follow' },
         { value: 'unFollow', label: 'unfollow' },
-        { value: 'like', label: 'like' },
-        { value: 'scrape', label: 'scrape' }
+        { value: 'super_marketing', label: 'superMarketing' }
       ]
     }
   },
@@ -208,10 +197,7 @@ export default {
       try {
         const res = await this.$service.get_schedule_template({ id: templateId });
         if (res.data && res.data.time_slots) {
-          this.timeSlots = res.data.time_slots.map(slot => ({
-            ...slot,
-            end_time: slot.end_time || ''
-          }));
+          this.timeSlots = res.data.time_slots;
         }
       } catch (error) {
         console.error('Failed to load time slots:', error);
@@ -232,9 +218,7 @@ export default {
     addTimeSlot() {
       this.timeSlots.push({
         start_time: '09:00',
-        end_time: '',
         script_name: 'account_warmup',
-        duration_minutes: 30,
         sort_order: this.timeSlots.length
       });
     },
@@ -256,10 +240,8 @@ export default {
       const timeSlotsData = this.timeSlots.map((slot, index) => ({
         template_id: this.templateId || 0,
         start_time: slot.start_time,
-        end_time: slot.end_time || null,
         script_name: slot.script_name,
         script_args: slot.script_args || null,
-        duration_minutes: slot.duration_minutes || null,
         sort_order: index
       }));
 

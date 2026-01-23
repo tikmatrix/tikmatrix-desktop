@@ -11,9 +11,7 @@
             <tr>
               <th>#</th>
               <th>{{ $t('startTime') }}</th>
-              <th>{{ $t('endTime') }}</th>
               <th>{{ $t('scriptName') }}</th>
-              <th>{{ $t('duration') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -23,19 +21,11 @@
                 <span class="badge badge-primary">{{ slot.start_time }}</span>
               </td>
               <td>
-                <span class="badge badge-ghost" v-if="slot.end_time">{{ slot.end_time }}</span>
-                <span class="text-base-content/50" v-else>-</span>
-              </td>
-              <td>
                 <span class="badge badge-info">{{ $t(slot.script_name) }}</span>
-              </td>
-              <td>
-                <span v-if="slot.duration_minutes">{{ slot.duration_minutes }} {{ $t('minutes') }}</span>
-                <span class="text-base-content/50" v-else>-</span>
               </td>
             </tr>
             <tr v-if="timeSlots.length === 0">
-              <td colspan="5" class="text-center text-base-content/50 py-8">
+              <td colspan="3" class="text-center text-base-content/50 py-8">
                 {{ $t('noTimeSlots') }}
               </td>
             </tr>
@@ -68,7 +58,7 @@ export default {
     async show(template) {
       this.template = template;
       this.timeSlots = [];
-      
+
       try {
         const res = await this.$service.get_schedule_template({ id: template.id });
         if (res.data && res.data.time_slots) {
