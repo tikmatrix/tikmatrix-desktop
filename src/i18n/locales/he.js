@@ -935,7 +935,7 @@ export default {
   scriptName: 'שם תסריט',
   scripts: 'תסריטים',
   search: 'חפש',
-  searchAccountPlaceholder: 'email, username or device',
+  searchAccountPlaceholder: 'אימייל, שם משתמש או מכשיר',
   searchKeywordTips: 'אנא הזן מילת חיפוש',
   searchMode: 'חפש סאונד',
   searchTaskPlaceholder: 'id, device, scriptName',

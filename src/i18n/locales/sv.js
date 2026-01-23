@@ -616,7 +616,7 @@ export default {
   manageSubscriptionErrorMessage: 'Misslyckades hämta prenumerationsportal-URL. Försök igen senare.',
   manageTags: 'Hantera taggar',
   massComment: 'Masskommentar',
-  massCommentTips: 'Om det finns 1000 målkonton och 100 konton i den valda enheten, kommer varje konto DM:a 10 målkonton, så uppgifterna fördelas jämnt.',
+  massCommentTips: 'Om det finns 1000 målkonton och 100 konton i den valda enheten, kommer varje konto kommentera 10 målkonton, så uppgifterna fördelas jämnt.',
   massCommentWarning: 'Masskommentar-funktionen låter dig styra storskaliga konton att posta unika kommentarer på målposter. Systemet fördelar uppgifter jämnt baserat på totalt antal konton och målposter.',
   massDM: 'Mass-DM',
   massDMTips: 'Samma fördelningsprincip som masskommentar men för privata meddelanden.',

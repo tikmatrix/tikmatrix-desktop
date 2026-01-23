@@ -935,7 +935,7 @@ export default {
   scriptName: 'اسم السكربت',
   scripts: 'السكربتات',
   search: 'بحث',
-  searchAccountPlaceholder: 'email, username or device',
+  searchAccountPlaceholder: 'البريد الإلكتروني، اسم المستخدم أو الجهاز',
   searchKeywordTips: 'يرجى إدخال كلمة البحث',
   searchMode: 'البحث عن الصوت',
   searchTaskPlaceholder: 'id, device, scriptName',
