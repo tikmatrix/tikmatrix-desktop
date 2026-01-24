@@ -15,7 +15,8 @@
         :settings="settings" v-if="selectedItem.name === 'beforeRunScriptDialog' && $refs.page_dialog.open" />
       <SupportCenter :devices="devices" :seleced-devices="selecedDevices"
         v-if="selectedItem.name === 'support' && $refs.page_dialog.open" />
-      <ManageScheduleTemplates v-if="selectedItem.name === 'scheduleTemplates' && $refs.page_dialog.open" />
+      <ManageScheduleTemplates :devices="devices"
+        v-if="selectedItem.name === 'scheduleTemplates' && $refs.page_dialog.open" />
 
     </div>
     <form method="dialog" class="modal-backdrop">

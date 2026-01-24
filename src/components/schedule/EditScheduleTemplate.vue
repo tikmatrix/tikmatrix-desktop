@@ -57,6 +57,37 @@
           </div>
         </div>
 
+        <!-- Target Devices Selection -->
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-semibold">{{ $t('targetDevices') }} *</span>
+            <div class="flex gap-2">
+              <button class="btn btn-xs btn-ghost" @click="selectAllDevices">{{ $t('selectAll') }}</button>
+              <button class="btn btn-xs btn-ghost" @click="deselectAllDevices">{{ $t('deselectAll') }}</button>
+            </div>
+          </label>
+          <div class="border rounded-lg p-2 max-h-48 overflow-y-auto">
+            <div class="flex flex-wrap gap-2">
+              <label v-for="device in filteredDevices" :key="device.serial"
+                class="label cursor-pointer gap-2 border rounded-lg px-3 py-2"
+                :class="{ 'border-primary bg-primary/10': selectedDevices.includes(device.serial) }">
+                <input type="checkbox" class="checkbox checkbox-primary checkbox-sm" :value="device.serial"
+                  v-model="selectedDevices" />
+                <span class="label-text">
+                  <span class="font-medium">{{ device.name || device.serial }}</span>
+                  <span class="text-xs text-base-content/50 ml-1">({{ device.serial }})</span>
+                </span>
+              </label>
+            </div>
+            <div v-if="filteredDevices.length === 0" class="text-center text-base-content/50 py-4">
+              {{ $t('noDevicesAvailable') }}
+            </div>
+          </div>
+          <label class="label">
+            <span class="label-text-alt">{{ $t('selectedDevicesCount', { count: selectedDevices.length }) }}</span>
+          </label>
+        </div>
+
         <!-- Time Slots -->
         <div class="form-control">
           <label class="label">
@@ -135,6 +166,10 @@ export default {
     groups: {
       type: Array,
       default: () => []
+    },
+    devices: {
+      type: Array,
+      default: () => []
     }
   },
   data() {
@@ -148,6 +183,7 @@ export default {
       },
       selectedWeekdays: [1, 2, 3, 4, 5], // Mon-Fri by default
       selectedGroups: [],
+      selectedDevices: [],
       timeSlots: [],
       weekdayOptions: [
         { value: 1, label: 'monday' },
@@ -171,7 +207,29 @@ export default {
   },
   computed: {
     isValid() {
-      return this.form.name.trim() && this.selectedWeekdays.length > 0;
+      return this.form.name.trim() && this.selectedWeekdays.length > 0 && this.selectedDevices.length > 0;
+    },
+    filteredDevices() {
+      // If groups are selected, filter devices by those groups
+      if (this.selectedGroups.length > 0) {
+        return this.devices.filter(device => this.selectedGroups.includes(device.group_id));
+      }
+      return this.devices;
+    }
+  },
+  watch: {
+    // When groups change, update device selection
+    selectedGroups: {
+      handler(newGroups) {
+        if (newGroups.length > 0) {
+          // Remove devices that are not in selected groups
+          this.selectedDevices = this.selectedDevices.filter(serial => {
+            const device = this.devices.find(d => d.serial === serial);
+            return device && newGroups.includes(device.group_id);
+          });
+        }
+      },
+      deep: true
     }
   },
   methods: {
@@ -188,6 +246,9 @@ export default {
           : [];
         this.selectedGroups = template.group_ids
           ? template.group_ids.split(',').map(s => parseInt(s.trim())).filter(n => !isNaN(n))
+          : [];
+        this.selectedDevices = template.device_serials
+          ? template.device_serials.split(',').map(s => s.trim()).filter(s => s.length > 0)
           : [];
         this.loadTimeSlots(template.id);
       }
@@ -213,7 +274,14 @@ export default {
       };
       this.selectedWeekdays = [1, 2, 3, 4, 5];
       this.selectedGroups = [];
+      this.selectedDevices = [];
       this.timeSlots = [];
+    },
+    selectAllDevices() {
+      this.selectedDevices = this.filteredDevices.map(d => d.serial);
+    },
+    deselectAllDevices() {
+      this.selectedDevices = [];
     },
     addTimeSlot() {
       this.timeSlots.push({
@@ -234,6 +302,7 @@ export default {
         description: this.form.description.trim() || null,
         weekdays: this.selectedWeekdays.sort((a, b) => a - b).join(','),
         group_ids: this.selectedGroups.length > 0 ? this.selectedGroups.join(',') : null,
+        device_serials: this.selectedDevices.length > 0 ? this.selectedDevices.join(',') : null,
         enabled: this.form.enabled ? 1 : 0
       };
 

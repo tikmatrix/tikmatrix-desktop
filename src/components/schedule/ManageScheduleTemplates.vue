@@ -17,6 +17,7 @@
                 <th>{{ $t('description') }}</th>
                 <th>{{ $t('weekdays') }}</th>
                 <th>{{ $t('targetGroups') }}</th>
+                <th>{{ $t('targetDevices') }}</th>
                 <th>{{ $t('timeSlots') }}</th>
                 <th>{{ $t('status') }}</th>
                 <th>{{ $t('actions') }}</th>
@@ -42,6 +43,11 @@
                 <td>
                   <span class="badge badge-ghost badge-md">
                     {{ getGroupNames(template.group_ids) }}
+                  </span>
+                </td>
+                <td>
+                  <span class="badge badge-info badge-md">
+                    {{ getDeviceCount(template.device_serials) }}
                   </span>
                 </td>
                 <td>
@@ -74,7 +80,7 @@
       </template>
     </Pagination>
 
-    <EditScheduleTemplate ref="editDialog" :groups="groups" @saved="loadTemplates" />
+    <EditScheduleTemplate ref="editDialog" :groups="groups" :devices="devices" @saved="loadTemplates" />
     <TimeSlotsDialog ref="timeSlotsDialog" />
   </div>
 </template>
@@ -94,6 +100,10 @@ export default {
   },
   props: {
     groups: {
+      type: Array,
+      default: () => []
+    },
+    devices: {
       type: Array,
       default: () => []
     }
@@ -142,6 +152,11 @@ export default {
         return group ? group.name : `#${id}`;
       });
       return names.join(', ') || this.$t('allGroups');
+    },
+    getDeviceCount(deviceSerialsStr) {
+      if (!deviceSerialsStr) return '0';
+      const serials = deviceSerialsStr.split(',').map(s => s.trim()).filter(s => s.length > 0);
+      return serials.length.toString();
     },
     showEditDialog(template = null) {
       this.$refs.editDialog.show(template);
