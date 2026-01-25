@@ -1411,6 +1411,7 @@ export default {
   loadTemplatesFailed: 'Échec du chargement des modèles',
   templateStatusUpdated: 'Statut du modèle mis à jour',
   toggleTemplateFailed: 'Échec du changement de statut du modèle',
+  scheduleTemplateScriptParamsNotice: 'Remarque : Les paramètres de script utilisés dans les modèles de planification doivent être configurés dans l\'onglet Scripts. Assurez-vous d\'avoir exécuté manuellement les scripts pertinents dans l\'onglet Scripts avant d\'exécuter ce modèle de planification pour vérifier qu\'ils fonctionnent correctement.',
   viewSlots: 'Voir les créneaux',
   searchTemplatePlaceholder: 'Rechercher des modèles...',
   monday: 'Lun',

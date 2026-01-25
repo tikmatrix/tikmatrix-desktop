@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: 'Kunde inte ladda mallar',
   templateStatusUpdated: 'Mallstatus uppdaterad',
   toggleTemplateFailed: 'Kunde inte växla mallstatus',
+  scheduleTemplateScriptParamsNotice: 'Anmärkning: Skriptparametrar som används i schemamallar bör konfigureras på fliken Skript. Kontrollera att du manuellt har kört relevanta skript på fliken Skript innan du kör denna schemamall för att verifiera att de fungerar korrekt.',
   viewSlots: 'Visa tidsluckor',
   searchTemplatePlaceholder: 'Sök mallar...',
   monday: 'Mån',

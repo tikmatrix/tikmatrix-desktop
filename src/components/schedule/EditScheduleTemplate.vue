@@ -5,6 +5,14 @@
         {{ isEdit ? $t('editTemplate') : $t('addTemplate') }}
       </h3>
 
+      <!-- Important Notice -->
+      <div class="alert alert-info mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span class="text-sm">{{ $t('scheduleTemplateScriptParamsNotice') }}</span>
+      </div>
+
       <div class="space-y-4">
         <!-- Template Name -->
         <div class="form-control">
@@ -74,8 +82,7 @@
                 <input type="checkbox" class="checkbox checkbox-primary checkbox-sm" :value="device.serial"
                   v-model="selectedDevices" />
                 <span class="label-text">
-                  <span class="font-medium">{{ device.name || device.serial }}</span>
-                  <span class="text-xs text-base-content/50 ml-1">({{ device.serial }})</span>
+                  <span class="font-medium">{{ device.key }}</span>
                 </span>
               </label>
             </div>
@@ -200,7 +207,8 @@ export default {
         { value: 'comment_boost', label: 'commentBoost' },
         { value: 'scrape', label: 'scrape' },
         { value: 'follow', label: 'follow' },
-        { value: 'unFollow', label: 'unfollow' },
+        { value: 'followBack', label: 'followBack' },
+        { value: 'unFollowAll', label: 'unFollowAll' },
         { value: 'super_marketing', label: 'superMarketing' }
       ]
     }

@@ -1411,6 +1411,7 @@ export default {
   loadTemplatesFailed: 'Error al cargar plantillas',
   templateStatusUpdated: 'Estado de plantilla actualizado',
   toggleTemplateFailed: 'Error al cambiar estado de plantilla',
+  scheduleTemplateScriptParamsNotice: 'Nota: Los parámetros de script utilizados en plantillas de horarios deben configurarse en la pestaña Scripts. Asegúrese de haber ejecutado manualmente los scripts relevantes en la pestaña Scripts antes de ejecutar esta plantilla de horario para verificar que funcionen correctamente.',
   viewSlots: 'Ver Horarios',
   searchTemplatePlaceholder: 'Buscar plantillas...',
   monday: 'Lun',

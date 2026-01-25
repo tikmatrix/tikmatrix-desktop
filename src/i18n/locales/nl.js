@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: 'Fout bij het laden van sjablonen',
   templateStatusUpdated: 'Sjabloonstatus bijgewerkt',
   toggleTemplateFailed: 'Kon sjabloonstatus niet wijzigen',
+  scheduleTemplateScriptParamsNotice: 'Opmerking: Scriptparameters die in planningssjablonen worden gebruikt, moeten worden geconfigureerd in het tabblad Scripts. Zorg ervoor dat u de relevante scripts handmatig hebt uitgevoerd op het tabblad Scripts voordat u deze planningssjabloon uitvoert om te controleren of deze correct werken.',
   viewSlots: 'Bekijk tijdsblokken',
   searchTemplatePlaceholder: 'Zoek sjablonen...',
   monday: 'Ma',

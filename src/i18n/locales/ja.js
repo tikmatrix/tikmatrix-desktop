@@ -1411,6 +1411,7 @@ export default {
   loadTemplatesFailed: 'テンプレートの読み込みに失敗しました',
   templateStatusUpdated: 'テンプレートのステータスを更新しました',
   toggleTemplateFailed: 'テンプレートのステータス切り替えに失敗しました',
+  scheduleTemplateScriptParamsNotice: '注意：スケジュール テンプレートで使用されるスクリプト パラメータは、[スクリプト] タブで構成する必要があります。このスケジュール テンプレートを実行する前に、[スクリプト] タブで関連するスクリプトを手動で実行して、正しく機能していることを確認してください。',
   viewSlots: 'スロットを表示',
   searchTemplatePlaceholder: 'テンプレートを検索...',
   monday: '月',

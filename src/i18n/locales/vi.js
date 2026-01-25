@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: 'Tải mẫu thất bại',
   templateStatusUpdated: 'Trạng thái mẫu đã cập nhật',
   toggleTemplateFailed: 'Chuyển trạng thái mẫu thất bại',
+  scheduleTemplateScriptParamsNotice: 'Lưu ý: Các tham số tập lệnh được sử dụng trong các mẫu lịch biểu phải được cấu hình trong tab Tập lệnh. Vui lòng đảm bảo rằng bạn đã thực thi thủ công các tập lệnh có liên quan trong tab Tập lệnh trước khi chạy mẫu lịch biểu này để xác minh rằng chúng hoạt động chính xác.',
   viewSlots: 'Xem khoảng thời gian',
   searchTemplatePlaceholder: 'Tìm kiếm mẫu...',
   monday: 'Th',

@@ -1411,6 +1411,7 @@ export default {
   loadTemplatesFailed: 'Falha ao carregar modelos',
   templateStatusUpdated: 'Status do modelo atualizado',
   toggleTemplateFailed: 'Falha ao alternar status do modelo',
+  scheduleTemplateScriptParamsNotice: 'Nota: Os parâmetros de script usados em modelos de agendamento devem ser configurados na guia Scripts. Certifique-se de que executou manualmente os scripts relevantes na guia Scripts antes de executar este modelo de agendamento para verificar se funcionam corretamente.',
   viewSlots: 'Ver Horários',
   searchTemplatePlaceholder: 'Pesquisar modelos...',
   monday: 'Seg',
