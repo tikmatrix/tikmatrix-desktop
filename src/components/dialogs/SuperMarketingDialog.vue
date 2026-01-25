@@ -93,9 +93,9 @@
                             <div class="flex flex-wrap gap-2">
                                 <span>{{ $t('datasetInserted', { count: activeDatasetSummary.inserted }) }}</span>
                                 <span>{{ $t('datasetDuplicates', { count: activeDatasetSummary.duplicates })
-                                    }}</span>
+                                }}</span>
                                 <span>{{ $t('datasetSkipped', { count: activeDatasetSummary.skipped_empty })
-                                    }}</span>
+                                }}</span>
                                 <span>{{ $t('datasetRemoved', { count: activeDatasetSummary.removed }) }}</span>
                                 <span>{{ $t('datasetTruncated', { count: activeDatasetSummary.truncated }) }}</span>
                             </div>
@@ -519,29 +519,25 @@
                             <label class="cursor-pointer flex items-center gap-2"
                                 :class="{ 'opacity-50 cursor-not-allowed': !features.boostPosts }">
                                 <input type="checkbox" class="checkbox checkbox-md checkbox-primary"
-                                    v-model="postSettings.enable_like"
-                                    :disabled="!features.boostPosts" />
+                                    v-model="postSettings.enable_like" :disabled="!features.boostPosts" />
                                 <span class="text-md">{{ $t('like') }}</span>
                             </label>
                             <label class="cursor-pointer flex items-center gap-2"
                                 :class="{ 'opacity-50 cursor-not-allowed': !features.boostPosts }">
                                 <input type="checkbox" class="checkbox checkbox-md checkbox-primary"
-                                    v-model="postSettings.enable_favorite"
-                                    :disabled="!features.boostPosts" />
+                                    v-model="postSettings.enable_favorite" :disabled="!features.boostPosts" />
                                 <span class="text-md">{{ $t('favorite') }}</span>
                             </label>
                             <label class="cursor-pointer flex items-center gap-2"
                                 :class="{ 'opacity-50 cursor-not-allowed': !features.boostPosts }">
                                 <input type="checkbox" class="checkbox checkbox-md checkbox-primary"
-                                    v-model="postSettings.enable_repost"
-                                    :disabled="!features.boostPosts" />
+                                    v-model="postSettings.enable_repost" :disabled="!features.boostPosts" />
                                 <span class="text-md">{{ $t('repost') }}</span>
                             </label>
                             <label class="cursor-pointer flex items-center gap-2"
                                 :class="{ 'opacity-50 cursor-not-allowed': !features.boostPosts }">
                                 <input type="checkbox" class="checkbox checkbox-md checkbox-primary"
-                                    v-model="postSettings.enable_share"
-                                    :disabled="!features.boostPosts" />
+                                    v-model="postSettings.enable_share" :disabled="!features.boostPosts" />
                                 <span class="text-md">{{ $t('share') }}</span>
                             </label>
                         </div>
@@ -622,7 +618,7 @@
 
                             <div class="flex items-center gap-2">
                                 <button class="btn btn-md btn-primary" @click="testChatGPT">{{ $t('testChatGPT')
-                                    }}</button>
+                                }}</button>
                                 <span :class="testResultStyle" class="text-md">{{ testResult }}</span>
                             </div>
                         </div>
@@ -716,6 +712,26 @@
                         }" />
                         <div class="text-sm text-base-content/70">
                             {{ $t('taskInterval') }}: {{ task_interval[0] }} - {{ task_interval[1] }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-base-200 rounded-lg p-4 bg-base-50 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <font-awesome-icon icon="fa-solid fa-hourglass-end" class="text-primary" />
+                        <span class="font-semibold text-md">{{ $t('taskFinishWaitTime') }}</span>
+                    </div>
+                    <p class="text-sm text-base-content/70">
+                        {{ $t('taskFinishWaitTimeTip') }}
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <VueSlider v-model="task_finish_wait_time" :width="500" :min="10" :max="300" :marks="{
+                            10: '10s',
+                            150: '150s',
+                            300: '300s'
+                        }" />
+                        <div class="text-sm text-base-content/70">
+                            {{ $t('waitTime') }}: {{ task_finish_wait_time }} {{ $t('second') }}
                         </div>
                     </div>
                 </div>
@@ -814,7 +830,8 @@ export default {
                         system_prompt: 'Generate a casual, relevant comment for this TikTok post. Keep it under 50 characters, use emojis, and make it sound natural and engaging.'
                     }
                 },
-                task_interval: [0, 0]
+                task_interval: [0, 0],
+                task_finish_wait_time: 30
             },
             [
                 'dataSourceType',
@@ -828,7 +845,8 @@ export default {
                 'merge_same_username_tasks',
                 'postSettings',
                 'commentSettings',
-                'task_interval'
+                'task_interval',
+                'task_finish_wait_time'
             ]
         )
     ],
