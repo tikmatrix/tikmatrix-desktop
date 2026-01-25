@@ -202,14 +202,13 @@ export default {
         { value: 7, label: 'sunday' }
       ],
       availableScripts: [
-        { value: 'account_warmup', label: 'accountWarmup' },
+        { value: 'accountWarmup', label: 'accountWarmup' },
         { value: 'post', label: 'post' },
-        { value: 'comment_boost', label: 'commentBoost' },
-        { value: 'scrape', label: 'scrape' },
-        { value: 'follow', label: 'follow' },
+        { value: 'boostComments', label: 'boostComments' },
+        { value: 'scrapeUsers', label: 'scrapeUsers' },
         { value: 'followBack', label: 'followBack' },
         { value: 'unFollowAll', label: 'unFollowAll' },
-        { value: 'super_marketing', label: 'superMarketing' }
+        { value: 'superMarketing', label: 'superMarketing' }
       ]
     }
   },
@@ -294,7 +293,7 @@ export default {
     addTimeSlot() {
       this.timeSlots.push({
         start_time: '09:00',
-        script_name: 'account_warmup',
+        script_name: 'accountWarmup',
         sort_order: this.timeSlots.length
       });
     },
