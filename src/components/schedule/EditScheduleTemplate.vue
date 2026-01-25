@@ -82,7 +82,7 @@
                 <input type="checkbox" class="checkbox checkbox-primary checkbox-sm" :value="device.serial"
                   v-model="selectedDevices" />
                 <span class="label-text">
-                  <span class="font-medium">{{ device.key }}</span>
+                  <span class="font-medium">{{ device.key || device.name || device.serial }}</span>
                 </span>
               </label>
             </div>
