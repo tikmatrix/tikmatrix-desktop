@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: 'Failed to load templates',
   templateStatusUpdated: 'Template status updated',
   toggleTemplateFailed: 'Failed to toggle template status',
+  scheduleTemplateScriptParamsNotice: 'Note: Script parameters used in schedule templates should be configured in the Scripts tab. Please ensure you have manually executed the relevant scripts in the Scripts tab before running this schedule template to verify they work correctly.',
   viewSlots: 'View Slots',
   searchTemplatePlaceholder: 'Search templates...',
   monday: 'Mon',

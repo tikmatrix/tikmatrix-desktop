@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: 'Şablonlar yüklenemedi',
   templateStatusUpdated: 'Şablon durumu güncellendi',
   toggleTemplateFailed: 'Şablon durumu değiştirilemedi',
+  scheduleTemplateScriptParamsNotice: 'Not: Zamanlama şablonlarında kullanılan betik parametreleri Betikler sekmesinde yapılandırılmalıdır. Bu zamanlama şablonunu çalıştırmadan önce, doğru şekilde çalıştığını doğrulamak için ilgili betikleri Betikler sekmesinde el ile çalıştırdığınızdan emin olun.',
   viewSlots: 'Dilimleri Görüntüle',
   searchTemplatePlaceholder: 'Şablonları ara...',
   monday: 'Pzt',

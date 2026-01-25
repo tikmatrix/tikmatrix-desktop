@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: 'Gagal memuat template',
   templateStatusUpdated: 'Status template diperbarui',
   toggleTemplateFailed: 'Gagal mengubah status template',
+  scheduleTemplateScriptParamsNotice: 'Catatan: Parameter skrip yang digunakan dalam templat jadwal harus dikonfigurasi di tab Skrip. Pastikan Anda telah menjalankan skrip yang relevan secara manual di tab Skrip sebelum menjalankan templat jadwal ini untuk memverifikasi bahwa mereka berfungsi dengan benar.',
   viewSlots: 'Lihat Slot',
   searchTemplatePlaceholder: 'Cari template...',
   monday: 'Sen',

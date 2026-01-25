@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: 'טעינת התבניות נכשלה',
   templateStatusUpdated: 'סטטוס התבנית עודכן',
   toggleTemplateFailed: 'החלפת סטטוס התבנית נכשלה',
+  scheduleTemplateScriptParamsNotice: 'הערה: פרמטרי סקריפט המשמשים בתבניות לוח הזמנים חייבים להיות מוגדרים בכרטיסיית Scripts. אנא ודא שהפעלת באופן ידני את הסקריפטים הרלוונטיים בכרטיסיית Scripts לפני הפעלת תבנית לוח הזמנים זה כדי לאמת שהם עובדים כראוי.',
   viewSlots: 'הצג חלונות זמן',
   searchTemplatePlaceholder: 'חפש תבניות...',
   monday: 'שני',

@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: 'Caricamento modelli non riuscito',
   templateStatusUpdated: 'Stato del modello aggiornato',
   toggleTemplateFailed: 'Impossibile modificare lo stato del modello',
+  scheduleTemplateScriptParamsNotice: 'Nota: I parametri di script utilizzati nei modelli di pianificazione devono essere configurati nella scheda Script. Assicurati di aver eseguito manualmente gli script pertinenti nella scheda Script prima di eseguire questo modello di pianificazione per verificare che funzionino correttamente.',
   viewSlots: 'Visualizza fasce',
   searchTemplatePlaceholder: 'Cerca modelli...',
   monday: 'Lun',

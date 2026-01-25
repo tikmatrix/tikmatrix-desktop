@@ -1411,6 +1411,7 @@ export default {
   loadTemplatesFailed: 'Fehler beim Laden der Vorlagen',
   templateStatusUpdated: 'Vorlagenstatus aktualisiert',
   toggleTemplateFailed: 'Fehler beim Umschalten des Vorlagenstatus',
+  scheduleTemplateScriptParamsNotice: 'Hinweis: Skriptparameter, die in Zeitplanvorlagen verwendet werden, sollten auf der Registerkarte Skripte konfiguriert werden. Bitte stellen Sie sicher, dass Sie die relevanten Skripte auf der Registerkarte Skripte manuell ausgeführt haben, bevor Sie diese Zeitplanvorlage ausführen, um zu überprüfen, ob sie ordnungsgemäß funktioniert.',
   viewSlots: 'Zeitfenster anzeigen',
   searchTemplatePlaceholder: 'Vorlagen suchen...',
   monday: 'Mo',

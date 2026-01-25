@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: 'Nie udało się załadować szablonów',
   templateStatusUpdated: 'Stan szablonu zaktualizowany',
   toggleTemplateFailed: 'Nie udało się zmienić statusu szablonu',
+  scheduleTemplateScriptParamsNotice: 'Uwaga: Parametry skryptu używane w szablonach harmonogramu powinny być skonfigurowane w karcie Skrypty. Upewnij się, że ręcznie uruchomiłeś odpowiednie skrypty w karcie Skrypty przed uruchomieniem tego szablonu harmonogramu, aby sprawdzić, czy działają poprawnie.',
   viewSlots: 'Pokaż okna',
   searchTemplatePlaceholder: 'Szukaj szablonów...',
   monday: 'Pon',

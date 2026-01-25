@@ -1411,6 +1411,7 @@ export default {
   loadTemplatesFailed: '템플릿 로드 실패',
   templateStatusUpdated: '템플릿 상태가 업데이트되었습니다',
   toggleTemplateFailed: '템플릿 상태 전환 실패',
+  scheduleTemplateScriptParamsNotice: '참고: 일정 템플릿에서 사용되는 스크립트 매개변수는 스크립트 탭에서 구성해야 합니다. 이 일정 템플릿을 실행하기 전에 스크립트 탭에서 관련 스크립트를 수동으로 실행하여 올바르게 작동하는지 확인해야 합니다.',
   viewSlots: '슬롯 보기',
   searchTemplatePlaceholder: '템플릿 검색...',
   monday: '월',

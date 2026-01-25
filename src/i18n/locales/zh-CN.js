@@ -1410,6 +1410,7 @@ export default {
   loadTemplatesFailed: '加载模板失败',
   templateStatusUpdated: '模板状态已更新',
   toggleTemplateFailed: '切换模板状态失败',
+  scheduleTemplateScriptParamsNotice: '提示：日程模板中使用的脚本参数请在"脚本"标签页中设置。请确保在执行日程模板前，已在"脚本"标签页中手动执行过相关脚本，以确保脚本能够正常运行。',
   viewSlots: '查看时间段',
   searchTemplatePlaceholder: '搜索模板...',
   monday: '周一',
