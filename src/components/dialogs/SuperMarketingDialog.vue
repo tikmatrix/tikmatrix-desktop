@@ -725,8 +725,8 @@
                         {{ $t('taskFinishWaitTimeTip') }}
                     </p>
                     <div class="flex flex-col gap-4">
-                        <VueSlider v-model="task_finish_wait_time" :width="500" :min="10" :max="300" :marks="{
-                            10: '10s',
+                        <VueSlider v-model="task_finish_wait_time" :width="500" :min="0" :max="300" :marks="{
+                            0: '0s',
                             150: '150s',
                             300: '300s'
                         }" />
