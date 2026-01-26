@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: '{count} पोस्ट लिंक लोड किए गए',
   postLinksFileTips: 'प्रति पंक्ति एक पोस्ट लिंक वाली TXT फ़ाइल चुनें',
   saveDirectoryTips: 'स्क्रैप किए गए डेटा को सहेजने के लिए एक निर्देशिका चुनें',
+  saveDirectory: 'निर्देशिका सहेजें',
+  fileLoadedSuccess: 'फ़ाइल सफलतापूर्वक लोड की गई',
+  fileLoadedError: 'फ़ाइल लोड करने में विफल',
+  directorySelectedSuccess: 'निर्देशिका सफलतापूर्वक चयनित',
+  directorySelectedError: 'निर्देशिका चयन करने में विफल',
+  directoryOpenError: 'निर्देशिका खोलने में विफल',
+  pleaseCompleteAllParameters: 'कृपया सभी पैरामीटर पूरे करें',
+  taskStartedSuccess: 'कार्य सफलतापूर्वक शुरू हुआ',
+  taskStartedError: 'कार्य शुरू करने में विफल',
 };

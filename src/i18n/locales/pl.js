@@ -1437,4 +1437,13 @@ export default {
   postLinksLoaded: 'Załadowano {count} linków do postów',
   postLinksFileTips: 'Wybierz plik TXT z jednym linkiem do posta w każdej linii',
   saveDirectoryTips: 'Wybierz katalog do zapisania wyodrębnionych danych',
+  saveDirectory: 'Zapisz katalog',
+  fileLoadedSuccess: 'Plik został pomyślnie załadowany',
+  fileLoadedError: 'Nie udało się załadować pliku',
+  directorySelectedSuccess: 'Katalog został pomyślnie wybrany',
+  directorySelectedError: 'Nie udało się wybrać katalogu',
+  directoryOpenError: 'Nie udało się otworzyć katalogu',
+  pleaseCompleteAllParameters: 'Proszę uzupełnić wszystkie parametry',
+  taskStartedSuccess: 'Zadanie zostało pomyślnie uruchomione',
+  taskStartedError: 'Nie udało się uruchomić zadania',
 };

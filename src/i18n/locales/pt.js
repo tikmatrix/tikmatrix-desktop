@@ -1439,4 +1439,13 @@ export default {
   postLinksLoaded: '{count} links de postagens carregados',
   postLinksFileTips: 'Selecione um arquivo TXT com um link de postagem por linha',
   saveDirectoryTips: 'Selecione um diretório para salvar os dados coletados',
+  saveDirectory: 'Salvar diretório',
+  fileLoadedSuccess: 'Arquivo carregado com sucesso',
+  fileLoadedError: 'Falha ao carregar o arquivo',
+  directorySelectedSuccess: 'Diretório selecionado com sucesso',
+  directorySelectedError: 'Falha ao selecionar o diretório',
+  directoryOpenError: 'Falha ao abrir o diretório',
+  pleaseCompleteAllParameters: 'Por favor, preencha todos os parâmetros',
+  taskStartedSuccess: 'Tarefa iniciada com sucesso',
+  taskStartedError: 'Falha ao iniciar a tarefa',
 };

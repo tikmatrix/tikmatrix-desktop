@@ -1439,4 +1439,13 @@ export default {
   postLinksLoaded: '{count}件の投稿リンクを読み込みました',
   postLinksFileTips: '1行に1つの投稿リンクを含むTXTファイルを選択してください',
   saveDirectoryTips: '取得したデータを保存するディレクトリを選択してください',
+  saveDirectory: '保存ディレクトリ',
+  fileLoadedSuccess: 'ファイルの読み込みに成功しました',
+  fileLoadedError: 'ファイルの読み込みに失敗しました',
+  directorySelectedSuccess: 'ディレクトリの選択に成功しました',
+  directorySelectedError: 'ディレクトリの選択に失敗しました',
+  directoryOpenError: 'ディレクトリを開けませんでした',
+  pleaseCompleteAllParameters: 'すべてのパラメータを入力してください',
+  taskStartedSuccess: 'タスクの開始に成功しました',
+  taskStartedError: 'タスクの開始に失敗しました',
 };

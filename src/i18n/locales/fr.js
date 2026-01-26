@@ -1439,4 +1439,13 @@ export default {
   postLinksLoaded: '{count} liens de publications chargés',
   postLinksFileTips: 'Sélectionnez un fichier TXT avec un lien de publication par ligne',
   saveDirectoryTips: 'Sélectionnez un répertoire pour enregistrer les données extraites',
+  saveDirectory: 'Enregistrer le répertoire',
+  fileLoadedSuccess: 'Fichier chargé avec succès',
+  fileLoadedError: 'Échec du chargement du fichier',
+  directorySelectedSuccess: 'Répertoire sélectionné avec succès',
+  directorySelectedError: 'Échec de la sélection du répertoire',
+  directoryOpenError: 'Échec de l\'ouverture du répertoire',
+  pleaseCompleteAllParameters: 'Veuillez remplir tous les paramètres',
+  taskStartedSuccess: 'Tâche démarrée avec succès',
+  taskStartedError: 'Échec du démarrage de la tâche',
 };

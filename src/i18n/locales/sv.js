@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: 'Laddade {count} inläggslänkar',
   postLinksFileTips: 'Välj en TXT-fil med en inläggslänk per rad',
   saveDirectoryTips: 'Välj en katalog för att spara extraherad data',
+  saveDirectory: 'Spara katalog',
+  fileLoadedSuccess: 'Fil laddades framgångsrikt',
+  fileLoadedError: 'Misslyckades att ladda fil',
+  directorySelectedSuccess: 'Katalog vald framgångsrikt',
+  directorySelectedError: 'Misslyckades att välja katalog',
+  directoryOpenError: 'Misslyckades att öppna katalog',
+  pleaseCompleteAllParameters: 'Vänligen fyll i alla parametrar',
+  taskStartedSuccess: 'Uppgift startad framgångsrikt',
+  taskStartedError: 'Misslyckades att starta uppgift',
 };

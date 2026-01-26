@@ -1439,4 +1439,13 @@ export default {
   postLinksLoaded: '{count} Beitragslinks geladen',
   postLinksFileTips: 'Wählen Sie eine TXT-Datei mit einem Beitragslink pro Zeile',
   saveDirectoryTips: 'Wählen Sie ein Verzeichnis zum Speichern der gesammelten Daten',
+  saveDirectory: 'Verzeichnis speichern',
+  fileLoadedSuccess: 'Datei erfolgreich geladen',
+  fileLoadedError: 'Datei konnte nicht geladen werden',
+  directorySelectedSuccess: 'Verzeichnis erfolgreich ausgewählt',
+  directorySelectedError: 'Verzeichnis konnte nicht ausgewählt werden',
+  directoryOpenError: 'Verzeichnis konnte nicht geöffnet werden',
+  pleaseCompleteAllParameters: 'Bitte füllen Sie alle Parameter aus',
+  taskStartedSuccess: 'Aufgabe erfolgreich gestartet',
+  taskStartedError: 'Aufgabe konnte nicht gestartet werden',
 };

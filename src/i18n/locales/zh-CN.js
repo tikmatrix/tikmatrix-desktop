@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: '已加载 {count} 个帖子链接',
   postLinksFileTips: '选择一个TXT文件，每行一个帖子链接',
   saveDirectoryTips: '选择一个目录来保存采集的数据',
+  saveDirectory: '保存目录',
+  fileLoadedSuccess: '文件加载成功',
+  fileLoadedError: '文件加载失败',
+  directorySelectedSuccess: '目录选择成功',
+  directorySelectedError: '目录选择失败',
+  directoryOpenError: '打开目录失败',
+  pleaseCompleteAllParameters: '请完成所有参数',
+  taskStartedSuccess: '任务启动成功',
+  taskStartedError: '任务启动失败',
 };

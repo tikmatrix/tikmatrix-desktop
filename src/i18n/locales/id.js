@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: 'Memuat {count} tautan postingan',
   postLinksFileTips: 'Pilih file TXT dengan satu tautan postingan per baris',
   saveDirectoryTips: 'Pilih direktori untuk menyimpan data yang diekstrak',
+  saveDirectory: 'Simpan Direktori',
+  fileLoadedSuccess: 'File berhasil dimuat',
+  fileLoadedError: 'Gagal memuat file',
+  directorySelectedSuccess: 'Direktori berhasil dipilih',
+  directorySelectedError: 'Gagal memilih direktori',
+  directoryOpenError: 'Gagal membuka direktori',
+  pleaseCompleteAllParameters: 'Harap lengkapi semua parameter',
+  taskStartedSuccess: 'Tugas berhasil dimulai',
+  taskStartedError: 'Gagal memulai tugas',
 };

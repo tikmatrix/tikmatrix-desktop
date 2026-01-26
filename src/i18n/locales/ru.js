@@ -1439,4 +1439,13 @@ export default {
   postLinksLoaded: 'Загружено ссылок: {count}',
   postLinksFileTips: 'Выберите TXT-файл с одной ссылкой на пост в каждой строке',
   saveDirectoryTips: 'Выберите папку для сохранения собранных данных',
+  saveDirectory: 'Сохранить каталог',
+  fileLoadedSuccess: 'Файл успешно загружен',
+  fileLoadedError: 'Не удалось загрузить файл',
+  directorySelectedSuccess: 'Каталог успешно выбран',
+  directorySelectedError: 'Не удалось выбрать каталог',
+  directoryOpenError: 'Не удалось открыть каталог',
+  pleaseCompleteAllParameters: 'Пожалуйста, заполните все параметры',
+  taskStartedSuccess: 'Задача успешно запущена',
+  taskStartedError: 'Не удалось запустить задачу',
 };

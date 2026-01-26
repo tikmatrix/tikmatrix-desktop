@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: 'Loaded {count} post links',
   postLinksFileTips: 'Select a TXT file with one post link per line',
   saveDirectoryTips: 'Select a directory to save the scraped data',
+  saveDirectory: 'Save Directory',
+  fileLoadedSuccess: 'File loaded successfully',
+  fileLoadedError: 'Failed to load file',
+  directorySelectedSuccess: 'Directory selected successfully',
+  directorySelectedError: 'Failed to select directory',
+  directoryOpenError: 'Failed to open directory',
+  pleaseCompleteAllParameters: 'Please complete all parameters',
+  taskStartedSuccess: 'Task started successfully',
+  taskStartedError: 'Failed to start task',
 };

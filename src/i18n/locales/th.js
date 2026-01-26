@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: 'โหลดลิงก์โพสต์ {count} รายการ',
   postLinksFileTips: 'เลือกไฟล์ TXT ที่มีลิงก์โพสต์หนึ่งรายการต่อบรรทัด',
   saveDirectoryTips: 'เลือกไดเรกทอรีสำหรับบันทึกข้อมูลที่ดึงมา',
+  saveDirectory: 'บันทึกไดเรกทอรี',
+  fileLoadedSuccess: 'โหลดไฟล์สำเร็จ',
+  fileLoadedError: 'โหลดไฟล์ไม่สำเร็จ',
+  directorySelectedSuccess: 'เลือกไดเรกทอรีสำเร็จ',
+  directorySelectedError: 'เลือกไดเรกทอรีไม่สำเร็จ',
+  directoryOpenError: 'เปิดไดเรกทอรีไม่สำเร็จ',
+  pleaseCompleteAllParameters: 'กรุณากรอกพารามิเตอร์ทั้งหมด',
+  taskStartedSuccess: 'เริ่มงานสำเร็จ',
+  taskStartedError: 'เริ่มงานไม่สำเร็จ',
 };

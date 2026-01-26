@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: '{count} postlinks geladen',
   postLinksFileTips: 'Selecteer een TXT-bestand met één postlink per regel',
   saveDirectoryTips: 'Selecteer een map om de geëxtraheerde gegevens op te slaan',
+  saveDirectory: 'Map opslaan',
+  fileLoadedSuccess: 'Bestand succesvol geladen',
+  fileLoadedError: 'Laden van bestand mislukt',
+  directorySelectedSuccess: 'Map succesvol geselecteerd',
+  directorySelectedError: 'Selecteren van map mislukt',
+  directoryOpenError: 'Openen van map mislukt',
+  pleaseCompleteAllParameters: 'Vul alle parameters in',
+  taskStartedSuccess: 'Taak succesvol gestart',
+  taskStartedError: 'Starten van taak mislukt',
 };

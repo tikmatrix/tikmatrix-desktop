@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: '{count} gönderi bağlantısı yüklendi',
   postLinksFileTips: 'Her satırda bir gönderi bağlantısı olan bir TXT dosyası seçin',
   saveDirectoryTips: 'Çıkarılan verileri kaydetmek için bir dizin seçin',
+  saveDirectory: 'Dizini kaydet',
+  fileLoadedSuccess: 'Dosya başarıyla yüklendi',
+  fileLoadedError: 'Dosya yüklenemedi',
+  directorySelectedSuccess: 'Dizin başarıyla seçildi',
+  directorySelectedError: 'Dizin seçilemedi',
+  directoryOpenError: 'Dizin açılamadı',
+  pleaseCompleteAllParameters: 'Lütfen tüm parametreleri doldurun',
+  taskStartedSuccess: 'Görev başarıyla başlatıldı',
+  taskStartedError: 'Görev başlatılamadı',
 };

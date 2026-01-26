@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: 'Đã tải {count} liên kết bài đăng',
   postLinksFileTips: 'Chọn tệp TXT với một liên kết bài đăng trên mỗi dòng',
   saveDirectoryTips: 'Chọn thư mục để lưu dữ liệu đã trích xuất',
+  saveDirectory: 'Lưu thư mục',
+  fileLoadedSuccess: 'Tải tệp thành công',
+  fileLoadedError: 'Tải tệp thất bại',
+  directorySelectedSuccess: 'Chọn thư mục thành công',
+  directorySelectedError: 'Chọn thư mục thất bại',
+  directoryOpenError: 'Mở thư mục thất bại',
+  pleaseCompleteAllParameters: 'Vui lòng hoàn thành tất cả các tham số',
+  taskStartedSuccess: 'Khởi động tác vụ thành công',
+  taskStartedError: 'Khởi động tác vụ thất bại',
 };

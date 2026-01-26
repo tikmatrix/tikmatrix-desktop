@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: 'Завантажено {count} посилань на публікації',
   postLinksFileTips: 'Виберіть файл TXT з одним посиланням на публікацію на рядок',
   saveDirectoryTips: 'Виберіть каталог для збереження витягнутих даних',
+  saveDirectory: 'Зберегти каталог',
+  fileLoadedSuccess: 'Файл успішно завантажено',
+  fileLoadedError: 'Не вдалося завантажити файл',
+  directorySelectedSuccess: 'Каталог успішно вибрано',
+  directorySelectedError: 'Не вдалося вибрати каталог',
+  directoryOpenError: 'Не вдалося відкрити каталог',
+  pleaseCompleteAllParameters: 'Будь ласка, заповніть усі параметри',
+  taskStartedSuccess: 'Завдання успішно запущено',
+  taskStartedError: 'Не вдалося запустити завдання',
 };

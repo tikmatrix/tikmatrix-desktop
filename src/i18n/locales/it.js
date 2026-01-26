@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: '{count} link post caricati',
   postLinksFileTips: 'Seleziona un file TXT con un link post per riga',
   saveDirectoryTips: 'Seleziona una directory per salvare i dati estratti',
+  saveDirectory: 'Salva directory',
+  fileLoadedSuccess: 'File caricato con successo',
+  fileLoadedError: 'Impossibile caricare il file',
+  directorySelectedSuccess: 'Directory selezionata con successo',
+  directorySelectedError: 'Impossibile selezionare la directory',
+  directoryOpenError: 'Impossibile aprire la directory',
+  pleaseCompleteAllParameters: 'Si prega di completare tutti i parametri',
+  taskStartedSuccess: 'Attività avviata con successo',
+  taskStartedError: 'Impossibile avviare l\'attività',
 };

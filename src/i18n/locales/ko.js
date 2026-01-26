@@ -1439,4 +1439,13 @@ export default {
   postLinksLoaded: '{count}개의 게시물 링크를 불러왔습니다',
   postLinksFileTips: '한 줄에 하나의 게시물 링크가 포함된 TXT 파일을 선택하세요',
   saveDirectoryTips: '수집된 데이터를 저장할 디렉토리를 선택하세요',
+  saveDirectory: '저장 디렉터리',
+  fileLoadedSuccess: '파일을 성공적으로 로드했습니다',
+  fileLoadedError: '파일 로드에 실패했습니다',
+  directorySelectedSuccess: '디렉터리를 성공적으로 선택했습니다',
+  directorySelectedError: '디렉터리 선택에 실패했습니다',
+  directoryOpenError: '디렉터리를 열지 못했습니다',
+  pleaseCompleteAllParameters: '모든 매개변수를 완료해주세요',
+  taskStartedSuccess: '작업을 성공적으로 시작했습니다',
+  taskStartedError: '작업 시작에 실패했습니다',
 };

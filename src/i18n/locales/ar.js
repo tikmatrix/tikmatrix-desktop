@@ -1439,4 +1439,13 @@ export default {
   postLinksLoaded: 'تم تحميل {count} رابط منشور',
   postLinksFileTips: 'حدد ملف TXT يحتوي على رابط منشور واحد في كل سطر',
   saveDirectoryTips: 'حدد دليل لحفظ البيانات المستخرجة',
+  saveDirectory: 'حفظ الدليل',
+  fileLoadedSuccess: 'تم تحميل الملف بنجاح',
+  fileLoadedError: 'فشل تحميل الملف',
+  directorySelectedSuccess: 'تم تحديد الدليل بنجاح',
+  directorySelectedError: 'فشل تحديد الدليل',
+  directoryOpenError: 'فشل فتح الدليل',
+  pleaseCompleteAllParameters: 'يرجى إكمال جميع المعلمات',
+  taskStartedSuccess: 'تم بدء المهمة بنجاح',
+  taskStartedError: 'فشل بدء المهمة',
 };

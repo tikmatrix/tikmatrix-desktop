@@ -1438,4 +1438,13 @@ export default {
   postLinksLoaded: 'נטענו {count} קישורי פוסטים',
   postLinksFileTips: 'בחר קובץ TXT עם קישור פוסט אחד בכל שורה',
   saveDirectoryTips: 'בחר תיקייה לשמירת הנתונים שחולצו',
+  saveDirectory: 'שמור תיקייה',
+  fileLoadedSuccess: 'הקובץ נטען בהצלחה',
+  fileLoadedError: 'נכשל בטעינת הקובץ',
+  directorySelectedSuccess: 'התיקייה נבחרה בהצלחה',
+  directorySelectedError: 'נכשל בבחירת התיקייה',
+  directoryOpenError: 'נכשל בפתיחת התיקייה',
+  pleaseCompleteAllParameters: 'אנא השלם את כל הפרמטרים',
+  taskStartedSuccess: 'המשימה החלה בהצלחה',
+  taskStartedError: 'נכשל בהתחלת המשימה',
 };
