@@ -8,7 +8,8 @@
       <!-- Important Notice -->
       <div class="alert alert-info mb-4">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
         <span class="text-sm">{{ $t('scheduleTemplateScriptParamsNotice') }}</span>
       </div>
@@ -202,13 +203,13 @@ export default {
         { value: 7, label: 'sunday' }
       ],
       availableScripts: [
-        { value: 'accountWarmup', label: 'accountWarmup' },
+        { value: 'account_warmup', label: 'accountWarmup' },
         { value: 'post', label: 'post' },
-        { value: 'boostComments', label: 'boostComments' },
-        { value: 'scrapeUsers', label: 'scrapeUsers' },
-        { value: 'followBack', label: 'followBack' },
+        // { value: 'boost_comments', label: 'boostComments' },
+        // { value: 'scrape_users', label: 'scrapeUsers' },
+        { value: 'follow_back', label: 'followBack' },
         { value: 'unFollowAll', label: 'unFollowAll' },
-        { value: 'superMarketing', label: 'superMarketing' }
+        // { value: 'super_marketing', label: 'superMarketing' }
       ]
     }
   },
