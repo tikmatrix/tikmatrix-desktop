@@ -99,7 +99,8 @@
         </div>
 
         <!-- API文档 -->
-        <div v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite" class="flex items-center justify-between py-3">
+        <div v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite"
+          class="flex items-center justify-between py-3">
           <div class="flex-1">
             <label class="text-md font-medium text-base-content">{{ $t('apiDocumentation') }}</label>
             <p class="text-md text-base-content/60 mt-1">{{ $t('apiDocumentationTips') }}</p>
@@ -194,7 +195,6 @@ export default {
         'cGxhbl9rZXk=': 'followPlan', // 'plan_key' base64
         'd2hpdGVsYWJlbA==': 'whiteLabel', // 'whitelabel' base64
         'cmVnaXN0ZXJfa2V5': 'registerScript', // 'register_key' base64
-        'dGVzdF9zY3JpcHQ=': 'testScript', // 'test_script' base64
         'YWlfYWdlbnQ=': 'aiAgent', // 'ai_agent' base64
         // 未来可添加更多激活码
       };
