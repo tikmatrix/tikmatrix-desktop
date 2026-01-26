@@ -1155,3 +1155,11 @@ export function toggle_schedule_template({ id }) {
     url: `${api.schedule_template}/${id}/toggle`
   })
 }
+
+export function scrape_ads_code_run_now(data) {
+  return request({
+    method: 'post',
+    url: api.scrape_ads_code_run_now,
+    data
+  })
+}

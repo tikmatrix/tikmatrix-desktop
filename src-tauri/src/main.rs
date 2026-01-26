@@ -172,6 +172,7 @@ fn main() -> std::io::Result<()> {
             file_utils::grant_permission,
             kill_process,
             file_utils::open_dir,
+            file_utils::open_path,
             file_utils::download_file,
             file_utils::download_file_with_version,
             file_utils::unzip_file,
