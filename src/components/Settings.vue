@@ -196,6 +196,7 @@ export default {
         'd2hpdGVsYWJlbA==': 'whiteLabel', // 'whitelabel' base64
         'cmVnaXN0ZXJfa2V5': 'registerScript', // 'register_key' base64
         'YWlfYWdlbnQ=': 'aiAgent', // 'ai_agent' base64
+        'c2NyYXBlX2Fkc19jb2Rl': 'scrapeAdsCode', // 'scrape_ads_code' base64
         // 未来可添加更多激活码
       };
       const code = this.featureCode.trim();

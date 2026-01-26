@@ -1425,4 +1425,11 @@ export default {
   commentBoost: 'Kommentar-Boost',
   liveBoost: 'Live-Boost',
   scrape: 'Sammeln',
+  // Scrape Ads Code feature
+  scrapeAdsCode: 'Werbe-Codes Sammeln',
+  scrapeAdsCodeWarning: 'Diese Funktion sammelt Werbe-Codes aus Beitragslinks. Wählen Sie eine Textdatei mit Beitragslinks (einer pro Zeile) und ein Verzeichnis zum Speichern der gesammelten Daten.',
+  postLinksFile: 'Beitragslinks-Datei',
+  postLinksLoaded: '{count} Beitragslinks geladen',
+  postLinksFileTips: 'Wählen Sie eine TXT-Datei mit einem Beitragslink pro Zeile',
+  saveDirectoryTips: 'Wählen Sie ein Verzeichnis zum Speichern der gesammelten Daten',
 };

@@ -1424,4 +1424,11 @@ export default {
   commentBoost: 'Peningkatan Komentar',
   liveBoost: 'Peningkatan Live',
   scrape: 'Scrape',
+  // Scrape Ads Code feature
+  scrapeAdsCode: 'Scrape Ads Code',
+  scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',
+  postLinksFile: 'Post Links File',
+  postLinksLoaded: 'Loaded {count} post links',
+  postLinksFileTips: 'Select a TXT file with one post link per line',
+  saveDirectoryTips: 'Select a directory to save the scraped data',
 };

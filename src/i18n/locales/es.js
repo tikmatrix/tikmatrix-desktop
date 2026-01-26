@@ -1425,4 +1425,11 @@ export default {
   commentBoost: 'Impulso de Comentarios',
   liveBoost: 'Impulso de Transmisión',
   scrape: 'Extraer',
+  // Scrape Ads Code feature
+  scrapeAdsCode: 'Extraer Códigos de Anuncios',
+  scrapeAdsCodeWarning: 'Esta función extrae códigos de anuncios de enlaces de publicaciones. Seleccione un archivo de texto que contenga enlaces de publicaciones (uno por línea) y un directorio para guardar los datos extraídos.',
+  postLinksFile: 'Archivo de Enlaces de Publicaciones',
+  postLinksLoaded: 'Se cargaron {count} enlaces de publicaciones',
+  postLinksFileTips: 'Seleccione un archivo TXT con un enlace de publicación por línea',
+  saveDirectoryTips: 'Seleccione un directorio para guardar los datos extraídos',
 };

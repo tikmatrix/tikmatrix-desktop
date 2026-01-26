@@ -1424,4 +1424,11 @@ export default {
   commentBoost: '评论助推',
   liveBoost: '直播助推',
   scrape: '采集',
+  // Scrape Ads Code feature
+  scrapeAdsCode: '采集广告代码',
+  scrapeAdsCodeWarning: '此功能从帖子链接中采集广告代码。选择一个包含帖子链接的文本文件（每行一个链接）和一个保存采集数据的目录。',
+  postLinksFile: '帖子链接文件',
+  postLinksLoaded: '已加载 {count} 个帖子链接',
+  postLinksFileTips: '选择一个TXT文件，每行一个帖子链接',
+  saveDirectoryTips: '选择一个目录来保存采集的数据',
 };

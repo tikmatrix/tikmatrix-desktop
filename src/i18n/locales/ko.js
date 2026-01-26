@@ -1425,4 +1425,11 @@ export default {
   commentBoost: '댓글 부스트',
   liveBoost: '라이브 부스트',
   scrape: '스크랩',
+  // Scrape Ads Code feature
+  scrapeAdsCode: '광고 코드 수집',
+  scrapeAdsCodeWarning: '이 기능은 게시물 링크에서 광고 코드를 수집합니다. 게시물 링크가 포함된 텍스트 파일(한 줄에 하나씩)과 수집된 데이터를 저장할 디렉토리를 선택하세요.',
+  postLinksFile: '게시물 링크 파일',
+  postLinksLoaded: '{count}개의 게시물 링크를 불러왔습니다',
+  postLinksFileTips: '한 줄에 하나의 게시물 링크가 포함된 TXT 파일을 선택하세요',
+  saveDirectoryTips: '수집된 데이터를 저장할 디렉토리를 선택하세요',
 };

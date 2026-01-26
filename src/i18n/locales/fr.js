@@ -1425,4 +1425,11 @@ export default {
   commentBoost: 'Boost de commentaires',
   liveBoost: 'Boost de live',
   scrape: 'Extraire',
+  // Scrape Ads Code feature
+  scrapeAdsCode: 'Extraire les Codes Publicitaires',
+  scrapeAdsCodeWarning: 'Cette fonctionnalité extrait les codes publicitaires des liens de publications. Sélectionnez un fichier texte contenant les liens de publications (un par ligne) et un répertoire pour enregistrer les données extraites.',
+  postLinksFile: 'Fichier de Liens de Publications',
+  postLinksLoaded: '{count} liens de publications chargés',
+  postLinksFileTips: 'Sélectionnez un fichier TXT avec un lien de publication par ligne',
+  saveDirectoryTips: 'Sélectionnez un répertoire pour enregistrer les données extraites',
 };

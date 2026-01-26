@@ -1425,4 +1425,11 @@ export default {
   commentBoost: 'コメントブースト',
   liveBoost: 'ライブブースト',
   scrape: 'スクレイプ',
+  // Scrape Ads Code feature
+  scrapeAdsCode: '広告コードの取得',
+  scrapeAdsCodeWarning: 'この機能は投稿リンクから広告コードを取得します。投稿リンクを含むテキストファイル（1行に1つ）と、取得したデータを保存するディレクトリを選択してください。',
+  postLinksFile: '投稿リンクファイル',
+  postLinksLoaded: '{count}件の投稿リンクを読み込みました',
+  postLinksFileTips: '1行に1つの投稿リンクを含むTXTファイルを選択してください',
+  saveDirectoryTips: '取得したデータを保存するディレクトリを選択してください',
 };

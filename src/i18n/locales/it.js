@@ -1424,4 +1424,11 @@ export default {
   commentBoost: 'Potenzia commenti',
   liveBoost: 'Potenzia live',
   scrape: 'Estrai',
+  // Scrape Ads Code feature
+  scrapeAdsCode: 'Estrai Codici Pubblicitari',
+  scrapeAdsCodeWarning: 'Questa funzione estrae i codici pubblicitari dai link dei post. Seleziona un file di testo contenente i link dei post (uno per riga) e una directory per salvare i dati estratti.',
+  postLinksFile: 'File Link Post',
+  postLinksLoaded: '{count} link post caricati',
+  postLinksFileTips: 'Seleziona un file TXT con un link post per riga',
+  saveDirectoryTips: 'Seleziona una directory per salvare i dati estratti',
 };

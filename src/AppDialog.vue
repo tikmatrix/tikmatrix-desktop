@@ -17,6 +17,8 @@
         v-if="selectedItem.name === 'support' && $refs.page_dialog.open" />
       <ManageScheduleTemplates :devices="devices"
         v-if="selectedItem.name === 'scheduleTemplates' && $refs.page_dialog.open" />
+      <ScrapeAdsCodeDialog :settings="settings"
+        v-if="selectedItem.name === 'scrapeAdsCode' && $refs.page_dialog.open" />
 
     </div>
     <form method="dialog" class="modal-backdrop">
@@ -39,6 +41,7 @@ import BeforeRunScriptDialog from './components/dialogs/BeforeRunScriptDialog.vu
 import AccountWarmupSettings from './components/groups/AccountWarmupSettings.vue'
 import SupportCenter from './components/support/SupportCenter.vue'
 import ManageScheduleTemplates from './components/schedule/ManageScheduleTemplates.vue'
+import ScrapeAdsCodeDialog from './components/dialogs/ScrapeAdsCodeDialog.vue'
 export default {
   name: 'appDialog',
   props: {
@@ -66,7 +69,8 @@ export default {
     AccountWarmupSettings,
     PostSettings,
     SupportCenter,
-    ManageScheduleTemplates
+    ManageScheduleTemplates,
+    ScrapeAdsCodeDialog
   },
   data() {
     return {

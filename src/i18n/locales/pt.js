@@ -1425,4 +1425,11 @@ export default {
   commentBoost: 'Impulso de Comentários',
   liveBoost: 'Impulso de Live',
   scrape: 'Coletar',
+  // Scrape Ads Code feature
+  scrapeAdsCode: 'Coletar Códigos de Anúncios',
+  scrapeAdsCodeWarning: 'Este recurso coleta códigos de anúncios de links de postagens. Selecione um arquivo de texto contendo links de postagens (um por linha) e um diretório para salvar os dados coletados.',
+  postLinksFile: 'Arquivo de Links de Postagens',
+  postLinksLoaded: '{count} links de postagens carregados',
+  postLinksFileTips: 'Selecione um arquivo TXT com um link de postagem por linha',
+  saveDirectoryTips: 'Selecione um diretório para salvar os dados coletados',
 };
