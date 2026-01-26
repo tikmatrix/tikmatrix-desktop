@@ -192,6 +192,11 @@ pub fn open_dir(name: String, app: tauri::AppHandle) {
     log::info!("open_dir: {}", path);
     let _ = open::that(path);
 }
+#[tauri::command]
+pub fn open_path(path: String) {
+    log::info!("open_path: {}", path);
+    let _ = open::that(path);
+}
 
 #[tauri::command]
 pub fn open_adb_terminal(dir: String) {

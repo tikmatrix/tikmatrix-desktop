@@ -15,7 +15,7 @@
           <font-awesome-icon icon="fa-solid fa-file-lines" class="mr-2" />
           {{ $t('postLinksFile') }}
         </h3>
-        
+
         <div class="flex flex-col gap-3">
           <div class="flex items-center gap-3">
             <button class="btn btn-primary btn-md" @click="selectPostLinksFile">
@@ -29,12 +29,12 @@
               {{ $t('noFileSelected') }}
             </span>
           </div>
-          
+
           <div v-if="postLinksCount > 0" class="alert alert-success">
             <font-awesome-icon icon="fa-solid fa-check-circle" class="mr-2" />
             <span>{{ $t('postLinksLoaded', { count: postLinksCount }) }}</span>
           </div>
-          
+
           <div class="text-sm text-base-content/60">
             {{ $t('postLinksFileTips') }}
           </div>
@@ -49,29 +49,26 @@
           <font-awesome-icon icon="fa-solid fa-folder-open" class="mr-2" />
           {{ $t('saveDirectory') }}
         </h3>
-        
+
         <div class="flex flex-col gap-3">
           <div class="flex items-center gap-3">
             <button class="btn btn-secondary btn-md" @click="selectSaveDirectory">
               <font-awesome-icon icon="fa-solid fa-folder" class="mr-2" />
               {{ $t('selectDirectory') }}
             </button>
-            <button 
-              class="btn btn-outline btn-info btn-md" 
-              @click="openSaveDirectory"
-              :disabled="!saveDirectoryPath">
+            <button class="btn btn-outline btn-info btn-md" @click="openSaveDirectory" :disabled="!saveDirectoryPath">
               <font-awesome-icon icon="fa-solid fa-folder-open" class="mr-2" />
               {{ $t('openDirectory') }}
             </button>
           </div>
-          
+
           <div v-if="saveDirectoryPath" class="p-3 bg-base-200 rounded-lg">
             <div class="text-sm font-mono break-all">{{ saveDirectoryPath }}</div>
           </div>
           <div v-else class="text-sm text-base-content/50">
             {{ $t('noDirectorySelected') }}
           </div>
-          
+
           <div class="text-sm text-base-content/60">
             {{ $t('saveDirectoryTips') }}
           </div>
@@ -81,10 +78,7 @@
 
     <!-- Run button -->
     <div class="flex items-center justify-end gap-3 pt-4 border-t border-base-200">
-      <button 
-        class="btn btn-success btn-lg" 
-        @click="runScript"
-        :disabled="isRunning || !canRun">
+      <button class="btn btn-success btn-lg" @click="runScript" :disabled="isRunning || !canRun">
         <span v-if="isRunning" class="loading loading-spinner loading-sm mr-2"></span>
         <font-awesome-icon v-else icon="fa-solid fa-play" class="mr-2" />
         {{ isRunning ? $t('running') : $t('runNow') }}
@@ -96,7 +90,7 @@
 <script>
 import { open as openDialog } from '@tauri-apps/api/dialog';
 import { readTextFile } from '@tauri-apps/api/fs';
-import { open as openPath } from '@tauri-apps/api/shell';
+import { invoke } from '@tauri-apps/api/tauri';
 import { SettingsManager } from '@/utils/settingsManager';
 
 const scrapeAdsCodeSettings = new SettingsManager('scrape_ads_code_settings.json');
@@ -134,16 +128,16 @@ export default {
           directory: false,
           filters: [{ name: 'Text Files', extensions: ['txt'] }]
         });
-        
+
         if (!filePath) return;
-        
+
         // Read file content to count lines
         const content = await readTextFile(filePath);
         const lines = content.split('\n').filter(line => line.trim() !== '');
-        
+
         this.postLinksFilePath = filePath;
         this.postLinksCount = lines.length;
-        
+
         await this.$emiter('NOTIFY', {
           type: 'success',
           message: this.$t('fileLoadedSuccess'),
@@ -158,18 +152,18 @@ export default {
         });
       }
     },
-    
+
     async selectSaveDirectory() {
       try {
         const dirPath = await openDialog({
           multiple: false,
           directory: true,
         });
-        
+
         if (!dirPath) return;
-        
+
         this.saveDirectoryPath = dirPath;
-        
+
         await this.$emiter('NOTIFY', {
           type: 'success',
           message: this.$t('directorySelectedSuccess'),
@@ -184,12 +178,14 @@ export default {
         });
       }
     },
-    
+
     async openSaveDirectory() {
       if (!this.saveDirectoryPath) return;
-      
+
       try {
-        await openPath(this.saveDirectoryPath);
+        invoke("open_path", {
+          path: this.saveDirectoryPath
+        });
       } catch (error) {
         console.error('Failed to open directory:', error);
         await this.$emiter('NOTIFY', {
@@ -199,7 +195,7 @@ export default {
         });
       }
     },
-    
+
     async runScript() {
       if (!this.canRun) {
         await this.$emiter('NOTIFY', {
@@ -209,15 +205,15 @@ export default {
         });
         return;
       }
-      
+
       this.isRunning = true;
-      
+
       try {
         const res = await this.$service.scrape_ads_code_run_now({
           post_links_file: this.postLinksFilePath,
           save_directory: this.saveDirectoryPath,
         });
-        
+
         if (res && res.code === 0) {
           await this.$emiter('NOTIFY', {
             type: 'success',
