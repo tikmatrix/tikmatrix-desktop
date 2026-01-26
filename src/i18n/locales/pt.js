@@ -898,7 +898,7 @@ export default {
   rewards: 'Recompensas',
   right: 'Direita',
   rotateProxy: 'Rotacionar proxy',
-  running: 'Em execução',
+  running: 'Em execução...',
   runningTasks: 'Tarefas em execução',
   save: 'Salvar',
   saveConfigError: 'Falha ao salvar arquivo de configuração',
@@ -1425,6 +1425,13 @@ export default {
   commentBoost: 'Impulso de Comentários',
   liveBoost: 'Impulso de Live',
   scrape: 'Coletar',
+  // Common file and directory selection
+  selectFile: 'Selecionar Arquivo',
+  selectDirectory: 'Selecionar Diretório',
+  openDirectory: 'Abrir Diretório',
+  noFileSelected: 'Nenhum arquivo selecionado',
+  noDirectorySelected: 'Nenhum diretório selecionado',
+  runNow: 'Executar Agora',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Coletar Códigos de Anúncios',
   scrapeAdsCodeWarning: 'Este recurso coleta códigos de anúncios de links de postagens. Selecione um arquivo de texto contendo links de postagens (um por linha) e um diretório para salvar os dados coletados.',

@@ -898,7 +898,7 @@ export default {
   rewards: 'תגמולים',
   right: 'ימין',
   rotateProxy: 'סובב פרוקסי',
-  running: 'רץ',
+  running: 'רץ...',
   runningTasks: 'משימות רצות',
   save: 'שמור',
   saveConfigError: 'שמירת קובץ תצורה נכשלה',
@@ -1424,6 +1424,13 @@ export default {
   commentBoost: 'הגברת תגובות',
   liveBoost: 'הגברת שידור חי',
   scrape: 'שליפה',
+  // Common file and directory selection
+  selectFile: 'Select File',
+  selectDirectory: 'Select Directory',
+  openDirectory: 'Open Directory',
+  noFileSelected: 'No file selected',
+  noDirectorySelected: 'No directory selected',
+  runNow: 'Run Now',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Scrape Ads Code',
   scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',

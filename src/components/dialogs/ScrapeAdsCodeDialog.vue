@@ -94,9 +94,9 @@
 </template>
 
 <script>
-import { open } from '@tauri-apps/api/dialog';
+import { open as openDialog } from '@tauri-apps/api/dialog';
 import { readTextFile } from '@tauri-apps/api/fs';
-import { invoke } from "@tauri-apps/api/tauri";
+import { open as openPath } from '@tauri-apps/api/shell';
 import { SettingsManager } from '@/utils/settingsManager';
 
 const scrapeAdsCodeSettings = new SettingsManager('scrape_ads_code_settings.json');
@@ -129,7 +129,7 @@ export default {
   methods: {
     async selectPostLinksFile() {
       try {
-        const filePath = await open({
+        const filePath = await openDialog({
           multiple: false,
           directory: false,
           filters: [{ name: 'Text Files', extensions: ['txt'] }]
@@ -161,7 +161,7 @@ export default {
     
     async selectSaveDirectory() {
       try {
-        const dirPath = await open({
+        const dirPath = await openDialog({
           multiple: false,
           directory: true,
         });
@@ -189,7 +189,7 @@ export default {
       if (!this.saveDirectoryPath) return;
       
       try {
-        await invoke('open_path', { path: this.saveDirectoryPath });
+        await openPath(this.saveDirectoryPath);
       } catch (error) {
         console.error('Failed to open directory:', error);
         await this.$emiter('NOTIFY', {

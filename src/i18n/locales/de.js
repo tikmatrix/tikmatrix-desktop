@@ -898,7 +898,7 @@ export default {
   rewards: 'Belohnungen',
   right: 'Rechts',
   rotateProxy: 'Proxy rotieren',
-  running: 'Läuft',
+  running: 'Läuft...',
   runningTasks: 'Laufende Aufgaben',
   save: 'Speichern',
   saveConfigError: 'Fehler beim Speichern der Konfigurationsdatei',
@@ -1425,6 +1425,13 @@ export default {
   commentBoost: 'Kommentar-Boost',
   liveBoost: 'Live-Boost',
   scrape: 'Sammeln',
+  // Common file and directory selection
+  selectFile: 'Datei Auswählen',
+  selectDirectory: 'Verzeichnis Auswählen',
+  openDirectory: 'Verzeichnis Öffnen',
+  noFileSelected: 'Keine Datei ausgewählt',
+  noDirectorySelected: 'Kein Verzeichnis ausgewählt',
+  runNow: 'Jetzt Ausführen',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Werbe-Codes Sammeln',
   scrapeAdsCodeWarning: 'Diese Funktion sammelt Werbe-Codes aus Beitragslinks. Wählen Sie eine Textdatei mit Beitragslinks (einer pro Zeile) und ein Verzeichnis zum Speichern der gesammelten Daten.',

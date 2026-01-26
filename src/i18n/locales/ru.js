@@ -898,7 +898,7 @@ export default {
   rewards: 'Награды',
   right: 'Вправо',
   rotateProxy: 'Ротировать прокси',
-  running: 'Выполняется',
+  running: 'Выполняется...',
   runningTasks: 'Выполняющиеся задачи',
   save: 'Сохранить',
   saveConfigError: 'Не удалось сохранить файл конфигурации',
@@ -1425,6 +1425,13 @@ export default {
   commentBoost: 'Буст комментариев',
   liveBoost: 'Буст трансляций',
   scrape: 'Сбор данных',
+  // Common file and directory selection
+  selectFile: 'Выбрать файл',
+  selectDirectory: 'Выбрать папку',
+  openDirectory: 'Открыть папку',
+  noFileSelected: 'Файл не выбран',
+  noDirectorySelected: 'Папка не выбрана',
+  runNow: 'Запустить сейчас',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Парсинг кодов рекламы',
   scrapeAdsCodeWarning: 'Эта функция извлекает рекламные коды из ссылок на посты. Выберите текстовый файл со ссылками на посты (по одной на строку) и папку для сохранения собранных данных.',

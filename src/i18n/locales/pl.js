@@ -898,7 +898,7 @@ export default {
   rewards: 'Nagrody',
   right: 'Prawo',
   rotateProxy: 'Rotuj proxy',
-  running: 'Działa',
+  running: 'Działa...',
   runningTasks: 'Uruchomione zadania',
   save: 'Zapisz',
   saveConfigError: 'Nie udało się zapisać pliku konfiguracji',
@@ -1423,6 +1423,13 @@ export default {
   commentBoost: 'Wzmocnienie komentarzy',
   liveBoost: 'Wzmocnienie transmisji',
   scrape: 'Zbieranie',
+  // Common file and directory selection
+  selectFile: 'Select File',
+  selectDirectory: 'Select Directory',
+  openDirectory: 'Open Directory',
+  noFileSelected: 'No file selected',
+  noDirectorySelected: 'No directory selected',
+  runNow: 'Run Now',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Scrape Ads Code',
   scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',

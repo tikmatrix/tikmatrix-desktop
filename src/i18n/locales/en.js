@@ -894,7 +894,7 @@ export default {
   rewards: 'Rewards',
   right: 'Right',
   rotateProxy: 'Rotate proxy',
-  running: 'Running',
+  running: 'Running...',
   runningTasks: 'Running Tasks',
   save: 'Save',
   saveConfigError: 'Failed to save configuration file',
@@ -1424,6 +1424,13 @@ export default {
   commentBoost: 'Comment Boost',
   liveBoost: 'Live Boost',
   scrape: 'Scrape',
+  // Common file and directory selection
+  selectFile: 'Select File',
+  selectDirectory: 'Select Directory',
+  openDirectory: 'Open Directory',
+  noFileSelected: 'No file selected',
+  noDirectorySelected: 'No directory selected',
+  runNow: 'Run Now',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Scrape Ads Code',
   scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',

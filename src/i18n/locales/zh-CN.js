@@ -894,7 +894,7 @@ export default {
   rewards: '奖励',
   right: '右滑',
   rotateProxy: '轮换代理 IP',
-  running: '运行中',
+  running: '运行中...',
   runningTasks: '运行中任务',
   save: '保存',
   saveConfigError: '保存配置文件失败',
@@ -1424,6 +1424,13 @@ export default {
   commentBoost: '评论助推',
   liveBoost: '直播助推',
   scrape: '采集',
+  // Common file and directory selection
+  selectFile: '选择文件',
+  selectDirectory: '选择目录',
+  openDirectory: '打开目录',
+  noFileSelected: '未选择文件',
+  noDirectorySelected: '未选择目录',
+  runNow: '立即运行',
   // Scrape Ads Code feature
   scrapeAdsCode: '采集广告代码',
   scrapeAdsCodeWarning: '此功能从帖子链接中采集广告代码。选择一个包含帖子链接的文本文件（每行一个链接）和一个保存采集数据的目录。',

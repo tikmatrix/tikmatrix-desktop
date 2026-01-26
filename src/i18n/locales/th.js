@@ -898,7 +898,7 @@ export default {
   rewards: 'รางวัล',
   right: 'ขวา',
   rotateProxy: 'หมุนพร็อกซี่',
-  running: 'กำลังรัน',
+  running: 'กำลังรัน...',
   runningTasks: 'งานที่กำลังรัน',
   save: 'บันทึก',
   saveConfigError: 'บันทึกไฟล์การตั้งค่าล้มเหลว',
@@ -1424,6 +1424,13 @@ export default {
   commentBoost: 'เพิ่มความเห็น',
   liveBoost: 'เพิ่มไลฟ์',
   scrape: 'เก็บข้อมูล',
+  // Common file and directory selection
+  selectFile: 'Select File',
+  selectDirectory: 'Select Directory',
+  openDirectory: 'Open Directory',
+  noFileSelected: 'No file selected',
+  noDirectorySelected: 'No directory selected',
+  runNow: 'Run Now',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Scrape Ads Code',
   scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',

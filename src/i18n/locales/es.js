@@ -898,7 +898,7 @@ export default {
   rewards: 'Recompensas',
   right: 'Derecha',
   rotateProxy: 'Rotar proxy',
-  running: 'En ejecución',
+  running: 'En ejecución...',
   runningTasks: 'Tareas en ejecución',
   save: 'Guardar',
   saveConfigError: 'Fallo al guardar archivo de configuración',
@@ -1425,6 +1425,13 @@ export default {
   commentBoost: 'Impulso de Comentarios',
   liveBoost: 'Impulso de Transmisión',
   scrape: 'Extraer',
+  // Common file and directory selection
+  selectFile: 'Seleccionar Archivo',
+  selectDirectory: 'Seleccionar Directorio',
+  openDirectory: 'Abrir Directorio',
+  noFileSelected: 'Ningún archivo seleccionado',
+  noDirectorySelected: 'Ningún directorio seleccionado',
+  runNow: 'Ejecutar Ahora',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Extraer Códigos de Anuncios',
   scrapeAdsCodeWarning: 'Esta función extrae códigos de anuncios de enlaces de publicaciones. Seleccione un archivo de texto que contenga enlaces de publicaciones (uno por línea) y un directorio para guardar los datos extraídos.',

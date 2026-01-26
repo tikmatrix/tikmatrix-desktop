@@ -898,7 +898,7 @@ export default {
   rewards: 'Phần thưởng',
   right: 'Phải',
   rotateProxy: 'Xoay proxy',
-  running: 'Đang chạy',
+  running: 'Đang chạy...',
   runningTasks: 'Tác vụ đang chạy',
   save: 'Lưu',
   saveConfigError: 'Lưu tệp cấu hình thất bại',
@@ -1424,6 +1424,13 @@ export default {
   commentBoost: 'Tăng bình luận',
   liveBoost: 'Tăng live',
   scrape: 'Thu thập',
+  // Common file and directory selection
+  selectFile: 'Select File',
+  selectDirectory: 'Select Directory',
+  openDirectory: 'Open Directory',
+  noFileSelected: 'No file selected',
+  noDirectorySelected: 'No directory selected',
+  runNow: 'Run Now',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Scrape Ads Code',
   scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',

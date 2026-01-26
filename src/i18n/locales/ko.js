@@ -898,7 +898,7 @@ export default {
   rewards: '보상',
   right: '오른쪽',
   rotateProxy: '프록시 회전',
-  running: '실행 중',
+  running: '실행 중...',
   runningTasks: '실행 중인 작업들',
   save: '저장',
   saveConfigError: '구성 파일 저장 실패',
@@ -1425,6 +1425,13 @@ export default {
   commentBoost: '댓글 부스트',
   liveBoost: '라이브 부스트',
   scrape: '스크랩',
+  // Common file and directory selection
+  selectFile: '파일 선택',
+  selectDirectory: '디렉토리 선택',
+  openDirectory: '디렉토리 열기',
+  noFileSelected: '파일이 선택되지 않음',
+  noDirectorySelected: '디렉토리가 선택되지 않음',
+  runNow: '지금 실행',
   // Scrape Ads Code feature
   scrapeAdsCode: '광고 코드 수집',
   scrapeAdsCodeWarning: '이 기능은 게시물 링크에서 광고 코드를 수집합니다. 게시물 링크가 포함된 텍스트 파일(한 줄에 하나씩)과 수집된 데이터를 저장할 디렉토리를 선택하세요.',

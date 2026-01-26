@@ -898,7 +898,7 @@ export default {
   rewards: 'इनाम',
   right: 'दायाँ',
   rotateProxy: 'प्रॉक्सी रोटेट करें',
-  running: 'चल रहा है',
+  running: 'चल रहा है...',
   runningTasks: 'चल रहे टास्क',
   save: 'सहेजें',
   saveConfigError: 'कॉन्फ़िगरेशन फ़ाइल सहेजने में विफल',
@@ -1424,6 +1424,13 @@ export default {
   commentBoost: 'टिप्पणी बूस्ट',
   liveBoost: 'लाइव बूस्ट',
   scrape: 'स्क्रैप',
+  // Common file and directory selection
+  selectFile: 'Select File',
+  selectDirectory: 'Select Directory',
+  openDirectory: 'Open Directory',
+  noFileSelected: 'No file selected',
+  noDirectorySelected: 'No directory selected',
+  runNow: 'Run Now',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Scrape Ads Code',
   scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',

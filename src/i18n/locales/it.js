@@ -898,7 +898,7 @@ export default {
   rewards: 'Ricompense',
   right: 'Destra',
   rotateProxy: 'Ruota proxy',
-  running: 'In esecuzione',
+  running: 'In esecuzione...',
   runningTasks: 'Task in esecuzione',
   save: 'Salva',
   saveConfigError: 'Salvataggio file configurazione fallito',
@@ -1424,6 +1424,13 @@ export default {
   commentBoost: 'Potenzia commenti',
   liveBoost: 'Potenzia live',
   scrape: 'Estrai',
+  // Common file and directory selection
+  selectFile: 'Seleziona File',
+  selectDirectory: 'Seleziona Directory',
+  openDirectory: 'Apri Directory',
+  noFileSelected: 'Nessun file selezionato',
+  noDirectorySelected: 'Nessuna directory selezionata',
+  runNow: 'Esegui Ora',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Estrai Codici Pubblicitari',
   scrapeAdsCodeWarning: 'Questa funzione estrae i codici pubblicitari dai link dei post. Seleziona un file di testo contenente i link dei post (uno per riga) e una directory per salvare i dati estratti.',

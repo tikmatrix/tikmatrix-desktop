@@ -898,7 +898,7 @@ export default {
   rewards: 'المكافآت',
   right: 'يمين',
   rotateProxy: 'تدوير البروكسي',
-  running: 'قيد التشغيل',
+  running: 'قيد التشغيل...',
   runningTasks: 'المهام الجارية',
   save: 'حفظ',
   saveConfigError: 'فشل حفظ ملف التكوين',
@@ -1425,6 +1425,13 @@ export default {
   commentBoost: 'تعزيز التعليقات',
   liveBoost: 'تعزيز البث المباشر',
   scrape: 'استخراج',
+  // Common file and directory selection
+  selectFile: 'Select File',
+  selectDirectory: 'Select Directory',
+  openDirectory: 'Open Directory',
+  noFileSelected: 'No file selected',
+  noDirectorySelected: 'No directory selected',
+  runNow: 'Run Now',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Scrape Ads Code',
   scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',

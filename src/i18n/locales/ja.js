@@ -898,7 +898,7 @@ export default {
   rewards: '報酬',
   right: '右',
   rotateProxy: 'プロキシを回転',
-  running: '実行中',
+  running: '実行中...',
   runningTasks: '実行中のタスク',
   save: '保存',
   saveConfigError: '設定ファイルの保存に失敗しました',
@@ -1425,6 +1425,13 @@ export default {
   commentBoost: 'コメントブースト',
   liveBoost: 'ライブブースト',
   scrape: 'スクレイプ',
+  // Common file and directory selection
+  selectFile: 'ファイルを選択',
+  selectDirectory: 'ディレクトリを選択',
+  openDirectory: 'ディレクトリを開く',
+  noFileSelected: 'ファイルが選択されていません',
+  noDirectorySelected: 'ディレクトリが選択されていません',
+  runNow: '今すぐ実行',
   // Scrape Ads Code feature
   scrapeAdsCode: '広告コードの取得',
   scrapeAdsCodeWarning: 'この機能は投稿リンクから広告コードを取得します。投稿リンクを含むテキストファイル（1行に1つ）と、取得したデータを保存するディレクトリを選択してください。',

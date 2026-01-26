@@ -898,7 +898,7 @@ export default {
   rewards: 'Нагороди',
   right: 'Праворуч',
   rotateProxy: 'Обернути проксі',
-  running: 'Працює',
+  running: 'Працює...',
   runningTasks: 'Завдання, що працюють',
   save: 'Зберегти',
   saveConfigError: 'Не вдалося зберегти файл конфігурації',
@@ -1424,6 +1424,13 @@ export default {
   commentBoost: 'Підсилення коментарів',
   liveBoost: 'Підсилення трансляцій',
   scrape: 'Збір даних',
+  // Common file and directory selection
+  selectFile: 'Select File',
+  selectDirectory: 'Select Directory',
+  openDirectory: 'Open Directory',
+  noFileSelected: 'No file selected',
+  noDirectorySelected: 'No directory selected',
+  runNow: 'Run Now',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Scrape Ads Code',
   scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',

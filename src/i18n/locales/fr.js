@@ -898,7 +898,7 @@ export default {
   rewards: 'Récompenses',
   right: 'Droite',
   rotateProxy: 'Tourner le proxy',
-  running: 'En cours',
+  running: 'En cours...',
   runningTasks: 'Tâches en cours',
   save: 'Sauvegarder',
   saveConfigError: 'Échec de sauvegarde du fichier de configuration',
@@ -1425,6 +1425,13 @@ export default {
   commentBoost: 'Boost de commentaires',
   liveBoost: 'Boost de live',
   scrape: 'Extraire',
+  // Common file and directory selection
+  selectFile: 'Sélectionner un Fichier',
+  selectDirectory: 'Sélectionner un Répertoire',
+  openDirectory: 'Ouvrir le Répertoire',
+  noFileSelected: 'Aucun fichier sélectionné',
+  noDirectorySelected: 'Aucun répertoire sélectionné',
+  runNow: 'Exécuter Maintenant',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Extraire les Codes Publicitaires',
   scrapeAdsCodeWarning: 'Cette fonctionnalité extrait les codes publicitaires des liens de publications. Sélectionnez un fichier texte contenant les liens de publications (un par ligne) et un répertoire pour enregistrer les données extraites.',

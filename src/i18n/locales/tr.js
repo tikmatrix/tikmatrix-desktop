@@ -898,7 +898,7 @@ export default {
   rewards: 'Ödüller',
   right: 'Sağ',
   rotateProxy: 'Proxy\'yi döndür',
-  running: 'Çalışıyor',
+  running: 'Çalışıyor...',
   runningTasks: 'Çalışan Görevler',
   save: 'Kaydet',
   saveConfigError: 'Yapılandırma dosyası kaydetme başarısız',
@@ -1424,6 +1424,13 @@ export default {
   commentBoost: 'Yorum Güçlendirme',
   liveBoost: 'Canlı Güçlendirme',
   scrape: 'Topla',
+  // Common file and directory selection
+  selectFile: 'Select File',
+  selectDirectory: 'Select Directory',
+  openDirectory: 'Open Directory',
+  noFileSelected: 'No file selected',
+  noDirectorySelected: 'No directory selected',
+  runNow: 'Run Now',
   // Scrape Ads Code feature
   scrapeAdsCode: 'Scrape Ads Code',
   scrapeAdsCodeWarning: 'This feature scrapes ad codes from post links. Select a text file containing post links (one per line) and a directory to save the scraped data.',
