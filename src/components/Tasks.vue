@@ -70,7 +70,6 @@ export default {
             whitelabelConfig: cloneDefaultWhiteLabelConfig(),
             taskCounts: {},
             autoRetry: false,
-            isCountingTasks: false,
             requestCounter: 0
         }
     },
@@ -95,12 +94,7 @@ export default {
             // Increment request counter to track the latest request
             this.requestCounter++;
             const currentRequest = this.requestCounter;
-            
-            if (this.isCountingTasks) {
-                console.log('countTasks is already running, newer request will override...');
-            }
 
-            this.isCountingTasks = true;
             this.$service.count_task_by_status().then((res) => {
                 // Only apply the result if this is still the latest request
                 if (currentRequest === this.requestCounter) {
@@ -109,15 +103,13 @@ export default {
                         counts[item.status] = item.count;
                     }
                     this.taskCounts = counts;
-                    this.isCountingTasks = false;
                 } else {
                     console.log('countTasks request discarded, newer request exists');
                 }
             }).catch((error) => {
-                // Only handle error if this is still the latest request
+                // Only log error if this is still the latest request
                 if (currentRequest === this.requestCounter) {
                     console.error('countTasks error:', error);
-                    this.isCountingTasks = false;
                 }
             });
         }
