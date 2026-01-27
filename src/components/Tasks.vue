@@ -70,7 +70,7 @@ export default {
             whitelabelConfig: cloneDefaultWhiteLabelConfig(),
             taskCounts: {},
             autoRetry: false,
-            isCountingTasks: false
+            requestCounter: 0
         }
     },
     async created() {
@@ -91,23 +91,26 @@ export default {
             this.$refs.taskSettings.showDialog();
         },
         countTasks() {
-            // 如果正在执行,则忽略新的请求
-            if (this.isCountingTasks) {
-                console.log('countTasks is already running, skipping...');
-                return;
-            }
+            // Increment request counter to track the latest request
+            this.requestCounter++;
+            const currentRequest = this.requestCounter;
 
-            this.isCountingTasks = true;
             this.$service.count_task_by_status().then((res) => {
-                const counts = {};
-                for (let item of res.data) {
-                    counts[item.status] = item.count;
+                // Only apply the result if this is still the latest request
+                if (currentRequest === this.requestCounter) {
+                    const counts = {};
+                    for (let item of res.data) {
+                        counts[item.status] = item.count;
+                    }
+                    this.taskCounts = counts;
+                } else {
+                    console.log('countTasks request discarded, newer request exists');
                 }
-                this.taskCounts = counts;
-                this.isCountingTasks = false;
             }).catch((error) => {
-                console.error('countTasks error:', error);
-                this.isCountingTasks = false;
+                // Only log error if this is still the latest request
+                if (currentRequest === this.requestCounter) {
+                    console.error('countTasks error:', error);
+                }
             });
         }
     },
