@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Máx de raspagens',
   maxSteps: 'Máx de Etapas',
   maxStepsHint: 'Máximo de operações antes de parar (previne loops infinitos)',
+  skipPostsCount: 'Número de postagens a pular',
+  skipPostsDesc: 'Quantidade de postagens para pular antes de processar (0-8)',
   maxViews: 'Máx de Visualizações',
   maximize: 'Maximizar',
   mergeSameUsernameTasks: 'Mesclar tarefas para o mesmo nome de usuário',

@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: '최대 스크랩 수',
   maxSteps: '최대 단계 수',
   maxStepsHint: '중단 전 최대 연산 수 (무한 루프 방지)',
+  skipPostsCount: '건너뛸 게시물 수',
+  skipPostsDesc: '처리 전 건너뛸 게시물 수 (0-8)',
   maxViews: '최대 조회수',
   maximize: '최대화',
   mergeSameUsernameTasks: '동일 사용자명 작업 병합',

@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Max antal skrapningar',
   maxSteps: 'Max steg',
   maxStepsHint: 'Maximalt antal operationer innan stopp (förhindrar oändliga loopar)',
+  skipPostsCount: 'Antal inlägg att hoppa över',
+  skipPostsDesc: 'Antal inlägg att hoppa över innan bearbetning (0-8)',
   maxViews: 'Max visningar',
   maximize: 'Maximera',
   mergeSameUsernameTasks: 'Slå ihop uppgifter för samma användarnamn',

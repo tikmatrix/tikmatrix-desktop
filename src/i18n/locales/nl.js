@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Max scrape aantal',
   maxSteps: 'Max stappen',
   maxStepsHint: 'Maximum operaties voordat stoppen (voorkomt oneindige lussen)',
+  skipPostsCount: 'Aantal over te slaan berichten',
+  skipPostsDesc: 'Aantal berichten om over te slaan voor verwerking (0-8)',
   maxViews: 'Max weergaven',
   maximize: 'Maximaliseer',
   mergeSameUsernameTasks: 'Taken samenvoegen voor dezelfde gebruikersnaam',

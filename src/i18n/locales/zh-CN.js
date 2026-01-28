@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: '最大采集数量',
   maxSteps: '最大步数',
   maxStepsHint: '停止前的最大操作次数（防止无限循环）',
+  skipPostsCount: '跳过帖子数',
+  skipPostsDesc: '在开始处理前跳过的帖子数量（0-8）',
   maxViews: '最大观看数',
   maximize: '最大化',
   mergeSameUsernameTasks: '合并同一用户名的任务',

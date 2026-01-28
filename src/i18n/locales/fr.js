@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Nombre max d\'extraction',
   maxSteps: 'Étapes max',
   maxStepsHint: 'Opérations maximum avant d\'arrêter (empêche les boucles infinies)',
+  skipPostsCount: 'Nombre de publications à ignorer',
+  skipPostsDesc: 'Nombre de publications à ignorer avant traitement (0-8)',
   maxViews: 'Vues max',
   maximize: 'Maximiser',
   mergeSameUsernameTasks: 'Fusionner les tâches pour le même nom d\'utilisateur',

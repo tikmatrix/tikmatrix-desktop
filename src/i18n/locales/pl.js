@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Maks. liczba skrobania',
   maxSteps: 'Maks. kroków',
   maxStepsHint: 'Maksymalna liczba operacji przed zatrzymaniem (zapobiega nieskończonym pętlom)',
+  skipPostsCount: 'Liczba postów do pominięcia',
+  skipPostsDesc: 'Liczba postów do pominięcia przed przetwarzaniem (0-8)',
   maxViews: 'Maks. wyświetleń',
   maximize: 'Maksymalizuj',
   mergeSameUsernameTasks: 'Scal zadania dla tej samej nazwy użytkownika',

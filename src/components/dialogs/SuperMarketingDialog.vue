@@ -450,6 +450,20 @@
             <div :class="['border border-base-200 rounded-lg p-3 transition-all', 'bg-base-50']" class="mb-4">
                 <div class="space-y-3 flex flex-row flex-wrap gap-4">
                     <div class="flex items-center gap-4" v-if="isUsernameSource">
+                        <span class="text-md font-bold">{{ $t('skipPostsCount') }}:</span>
+                        <input type="number" class="input input-md input-bordered w-20"
+                            v-model.number="postSettings.skip_posts_count" min="0" max="8" />
+                        <span class="text-md">{{ $t('posts') }}</span>
+                        <div class="alert alert-info py-2 px-3 mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="stroke-current shrink-0 w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-md">{{ $t('skipPostsDesc') }}</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4" v-if="isUsernameSource">
                         <span class="text-md font-bold">{{ $t('maxPostsToProcess') }}:</span>
                         <input type="number" class="input input-md input-bordered w-20"
                             v-model.number="postSettings.max_posts_count" min="1" max="50" />
@@ -810,6 +824,7 @@ export default {
                 },
                 merge_same_username_tasks: false,
                 postSettings: {
+                    skip_posts_count: 0,
                     max_posts_count: 1,
                     enable_like: false,
                     enable_favorite: false,
@@ -922,6 +937,7 @@ export default {
             // 控制 API Key 明文显示
             dmApiKeyVisible: false,
             postSettings: {
+                skip_posts_count: 0,
                 max_posts_count: 1,
                 enable_like: false,
                 enable_favorite: false,
@@ -1735,6 +1751,7 @@ export default {
                         }
                     },
                     postSettings: {
+                        skip_posts_count: 0,
                         max_posts_count: 1,
                         enable_like: false,
                         enable_favorite: false,

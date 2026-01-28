@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'מקסימום דגימות',
   maxSteps: 'מקסימום צעדים',
   maxStepsHint: 'מקסימום פעולות לפני עצירה (מונע לולאות אינסופיות)',
+  skipPostsCount: 'מספר פוסטים לדילוג',
+  skipPostsDesc: 'מספר הפוסטים לדלג עליהם לפני עיבוד (0-8)',
   maxViews: 'מקסימום צפיות',
   maximize: 'מקסם',
   mergeSameUsernameTasks: 'מזג משימות לאותו שם משתמש',
