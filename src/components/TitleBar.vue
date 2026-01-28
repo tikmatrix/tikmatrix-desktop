@@ -317,6 +317,7 @@ import { getItem, setItem } from '@/utils/storage.js';
 import LicenseLifecycle from './LicenseLifecycle.vue';
 import { useUpdateManager } from '../composables/useUpdateManager.js';
 import { computed } from 'vue';
+import { changeLanguage } from '../i18n/index.js';
 
 export default {
   name: 'TitleBar',
@@ -371,7 +372,7 @@ export default {
     },
     async currentLocale(val) {
       await setItem('locale', val);
-      this.$i18n.locale = val;
+      await changeLanguage(val);
     }
   },
   computed: {
@@ -429,7 +430,7 @@ export default {
     if (storedLocale) {
       const sanitizedLocale = String(storedLocale).replace(/"/g, '').trim();
       this.currentLocale = sanitizedLocale || 'en';
-      this.$i18n.locale = this.currentLocale;
+      await changeLanguage(this.currentLocale);
     }
 
     if (config) {
@@ -458,8 +459,8 @@ export default {
       const yes = await ask(this.$t('exitConfirm'), this.$t('confirm'));
       await this.closeApp(yes);
     },
-    changeLocale() {
-      this.$i18n.locale = this.currentLocale;
+    async changeLocale() {
+      await changeLanguage(this.currentLocale);
     },
     async closeApp(result) {
       if (result === true) {
@@ -761,7 +762,7 @@ export default {
     this.name = await getName();
 
     // Language
-    this.$i18n.locale = this.currentLocale;
+    await changeLanguage(this.currentLocale);
     console.log('currentLocale:', this.currentLocale);
 
     // Check whitelabel feature
