@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'الحد الأقصى لعدد السحب',
   maxSteps: 'الحد الأقصى للخطوات',
   maxStepsHint: 'أقصى عدد من العمليات قبل الإيقاف (يمنع الحلقات اللانهائية)',
+  skipPostsCount: 'عدد المنشورات المراد تخطيها',
+  skipPostsDesc: 'عدد المنشورات التي سيتم تخطيها قبل المعالجة (0-8)',
   maxViews: 'أقصى مشاهدات',
   maximize: 'تكبير',
   mergeSameUsernameTasks: 'دمج المهام لنفس اسم المستخدم',

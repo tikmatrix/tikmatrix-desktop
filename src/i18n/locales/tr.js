@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Maks kazıma sayısı',
   maxSteps: 'Maks Adım',
   maxStepsHint: 'Durdurulmadan önceki maksimum işlem (sonsuz döngüleri önler)',
+  skipPostsCount: 'Atlanacak Gönderi Sayısı',
+  skipPostsDesc: 'İşlemeden önce atlanacak gönderi sayısı (0-8)',
   maxViews: 'Maks Görüntüleme',
   maximize: 'Maksimize Et',
   mergeSameUsernameTasks: 'Aynı kullanıcı adı için görevleri birleştir',

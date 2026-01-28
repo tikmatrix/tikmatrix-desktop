@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Máx scrapear',
   maxSteps: 'Máx pasos',
   maxStepsHint: 'Máximo de operaciones antes de detenerse (evita bucles infinitos)',
+  skipPostsCount: 'Número de publicaciones a omitir',
+  skipPostsDesc: 'Cantidad de publicaciones a omitir antes de procesar (0-8)',
   maxViews: 'Vistas máximas',
   maximize: 'Maximizar',
   mergeSameUsernameTasks: 'Unir tareas con mismo nombre de usuario',

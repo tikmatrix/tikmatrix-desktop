@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Max scrape count',
   maxSteps: 'Max Steps',
   maxStepsHint: 'Maximum operations before stopping (prevents infinite loops)',
+  skipPostsCount: 'Skip Posts Count',
+  skipPostsDesc: 'Number of posts to skip before processing (0-8)',
   maxViews: 'Max Views',
   maximize: 'Maximize',
   mergeSameUsernameTasks: 'Merge tasks for the same username',

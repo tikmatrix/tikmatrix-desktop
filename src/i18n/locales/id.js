@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Maks scrape',
   maxSteps: 'Langkah Maks',
   maxStepsHint: 'Operasi maksimal sebelum berhenti (mencegah loop tak berujung)',
+  skipPostsCount: 'Jumlah Postingan yang Dilewati',
+  skipPostsDesc: 'Jumlah postingan yang akan dilewati sebelum diproses (0-8)',
   maxViews: 'Max Views',
   maximize: 'Perbesar',
   mergeSameUsernameTasks: 'Gabungkan tugas dengan username sama',

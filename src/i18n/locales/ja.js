@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: '最大スクレイプ数',
   maxSteps: '最大ステップ数',
   maxStepsHint: '停止前の最大操作数（無限ループ防止）',
+  skipPostsCount: 'スキップする投稿数',
+  skipPostsDesc: '処理前にスキップする投稿数（0-8）',
   maxViews: '最大閲覧数',
   maximize: '最大化',
   mergeSameUsernameTasks: '同一ユーザー名タスクをマージ',

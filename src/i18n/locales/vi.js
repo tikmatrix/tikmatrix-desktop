@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'Số lượng thu thập tối đa',
   maxSteps: 'Số bước tối đa',
   maxStepsHint: 'Số thao tác tối đa trước khi dừng (ngăn vòng lặp vô hạn)',
+  skipPostsCount: 'Số bài đăng bỏ qua',
+  skipPostsDesc: 'Số lượng bài đăng bỏ qua trước khi xử lý (0-8)',
   maxViews: 'Số lượt xem tối đa',
   maximize: 'Phóng to',
   mergeSameUsernameTasks: 'Gộp tác vụ cùng tên người dùng',

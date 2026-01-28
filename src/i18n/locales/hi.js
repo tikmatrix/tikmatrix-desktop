@@ -478,6 +478,8 @@ export default {
   maxScrapeCount: 'अधिकतम स्क्रैप संख्या',
   maxSteps: 'अधिकतम चरण',
   maxStepsHint: 'रोकने से पहले अधिकतम ऑपरेशन्स (अनंत लूप से बचाने के लिए)',
+  skipPostsCount: 'छोड़ने के लिए पोस्ट की संख्या',
+  skipPostsDesc: 'प्रोसेसिंग से पहले छोड़ने के लिए पोस्ट की संख्या (0-8)',
   maxViews: 'अधिकतम दृश्य',
   maximize: 'पूर्ण स्क्रीन',
   mergeSameUsernameTasks: 'एक ही उपयोगकर्ता नाम के टास्क मर्ज करें',
