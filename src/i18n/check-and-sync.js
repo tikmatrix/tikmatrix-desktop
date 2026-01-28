@@ -14,6 +14,8 @@ const options = {
   skipQualityCheck: args.includes('--skip-quality-check'),
   showAll: args.includes('--show-all'),
   help: args.includes('--help') || args.includes('-h'),
+  findUnused: args.includes('--find-unused'),
+  removeUnused: args.includes('--remove-unused'),
   languages: null
 };
 
@@ -38,12 +40,16 @@ if (options.help) {
   --lang=<codes>             仅检查指定的语言（用逗号分隔）
                              示例: --lang=zh-CN,ja,ko
   --show-all                 显示所有问题，不限制输出数量
+  --find-unused              扫描代码并检测未使用的翻译 key
+  --remove-unused            删除未使用的翻译 key（会先显示列表并要求确认）
   --help, -h                 显示此帮助信息
 
 示例:
   node check-and-sync.js --check-only
   node check-and-sync.js --lang=zh-CN,ja
   node check-and-sync.js --check-only --show-all
+  node check-and-sync.js --find-unused
+  node check-and-sync.js --remove-unused
 
 支持的语言代码:
   en, zh-CN, ru, ja, ko, es, pt, fr, de, it, ar, hi, id, th, vi, tr, pl, nl, sv, he, uk
@@ -511,6 +517,209 @@ if (!options.skipQualityCheck) {
 if (options.checkOnly) {
   console.log('\n✅ 检查完成！（使用了 --check-only 选项，未修改任何文件）');
   console.log('提示：移除 --check-only 选项以执行文件同步和更新。');
+  process.exit(0);
+}
+
+// ====== Scan for unused keys ======
+// Scan source code to find which i18n keys are actually used
+async function scanUsedKeys() {
+  console.log('\n====== 扫描代码中使用的翻译 key ======\n');
+  
+  const usedKeys = new Set();
+  const srcDir = path.join(__dirname, '..');
+  
+  // Patterns to match i18n key usage in code
+  // Matches: $t('key'), $t("key"), t('key'), t("key"), i18n.t('key'), etc.
+  const keyPatterns = [
+    /\$t\s*\(\s*['"]([^'"]+)['"]/g,        // $t('key') or $t("key")
+    /[^a-zA-Z]t\s*\(\s*['"]([^'"]+)['"]/g, // t('key') or t("key") (not part of other word)
+    /i18n\.t\s*\(\s*['"]([^'"]+)['"]/g,    // i18n.t('key')
+    /i18n\.global\.t\s*\(\s*['"]([^'"]+)['"]/g  // i18n.global.t('key')
+  ];
+  
+  // Recursively scan directory for Vue, JS, and TS files
+  function scanDirectory(dir) {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      
+      // Skip node_modules, dist, and other build directories
+      if (entry.isDirectory()) {
+        if (['node_modules', 'dist', 'build', '.git', 'backups'].includes(entry.name)) {
+          continue;
+        }
+        scanDirectory(fullPath);
+      } else if (entry.isFile()) {
+        // Only scan Vue, JS, and TS files
+        if (!/\.(vue|js|ts)$/.test(entry.name)) {
+          continue;
+        }
+        
+        try {
+          const content = fs.readFileSync(fullPath, 'utf8');
+          
+          // Apply all patterns to find keys
+          for (const pattern of keyPatterns) {
+            let match;
+            while ((match = pattern.exec(content)) !== null) {
+              usedKeys.add(match[1]);
+            }
+          }
+        } catch (error) {
+          console.warn(`⚠️  警告: 无法读取文件 ${fullPath}: ${error.message}`);
+        }
+      }
+    }
+  }
+  
+  scanDirectory(srcDir);
+  return usedKeys;
+}
+
+// Find unused keys
+async function findUnusedKeys() {
+  const usedKeys = await scanUsedKeys();
+  const allKeys = Array.from(sortedKeys);
+  const unusedKeys = allKeys.filter(key => !usedKeys.has(key));
+  
+  console.log(`\n📊 统计信息:`);
+  console.log(`  - 定义的总 key 数: ${allKeys.length}`);
+  console.log(`  - 代码中使用的 key 数: ${usedKeys.size}`);
+  console.log(`  - 未使用的 key 数: ${unusedKeys.length}`);
+  
+  if (unusedKeys.length > 0) {
+    console.log(`\n⚠️  以下 key 在代码中未被使用 (${unusedKeys.length} 个):\n`);
+    unusedKeys.forEach(key => {
+      console.log(`  - ${key}`);
+    });
+    console.log(`\n💡 提示: 此检测基于静态代码扫描。如果某些 key 通过动态方式引用（如变量、字符串拼接等），`);
+    console.log(`   可能会被误判为未使用。删除前请仔细确认！`);
+  } else {
+    console.log('\n✅ 所有定义的 key 都在代码中被使用！');
+  }
+  
+  return unusedKeys;
+}
+
+// Remove unused keys from all language files
+async function removeUnusedKeys(keysToRemove) {
+  if (keysToRemove.length === 0) {
+    console.log('\n✅ 没有未使用的 key 需要删除。');
+    return;
+  }
+  
+  console.log(`\n====== 准备删除 ${keysToRemove.length} 个未使用的 key ======\n`);
+  
+  // Create backup first
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+  const backupDir = path.join(__dirname, 'backups', timestamp);
+  
+  if (!fs.existsSync(path.join(__dirname, 'backups'))) {
+    fs.mkdirSync(path.join(__dirname, 'backups'));
+  }
+  fs.mkdirSync(backupDir);
+  
+  console.log('正在备份所有语言文件...');
+  let backedUpCount = 0;
+  ALL_LANGUAGES.forEach(lang => {
+    const filePath = path.join(__dirname, 'locales', lang.file);
+    if (fs.existsSync(filePath)) {
+      fs.copyFileSync(filePath, path.join(backupDir, lang.file));
+      backedUpCount++;
+    }
+  });
+  
+  console.log(`✅ 已备份 ${backedUpCount} 个语言文件到: backups/${timestamp}/\n`);
+  
+  // Remove unused keys from all languages
+  const keysToRemoveSet = new Set(keysToRemove);
+  const updatedTranslations = {};
+  
+  for (const lang of ALL_LANGUAGES) {
+    const trans = translations[lang.code] || {};
+    const filtered = {};
+    
+    for (const key of Object.keys(trans)) {
+      if (!keysToRemoveSet.has(key)) {
+        filtered[key] = trans[key];
+      }
+    }
+    
+    updatedTranslations[lang.code] = filtered;
+  }
+  
+  // Write updated files
+  console.log('正在更新所有语言文件...');
+  let updatedCount = 0;
+  
+  for (const lang of ALL_LANGUAGES) {
+    const trans = updatedTranslations[lang.code];
+    const sortedKeys = Object.keys(trans).sort();
+    
+    let output = 'export default {\n';
+    for (const key of sortedKeys) {
+      const value = trans[key] || '';
+      const escapedValue = value
+        .replace(/\\/g, '\\\\')
+        .replace(/'/g, "\\'")
+        .replace(/\n/g, '\\n')
+        .replace(/\r/g, '\\r')
+        .replace(/\t/g, '\\t')
+        .replace(/\f/g, '\\f')
+        .replace(/\v/g, '\\v');
+      output += `  ${key}: '${escapedValue}',\n`;
+    }
+    output += '};\n';
+    
+    writeFile(`locales/${lang.file}`, output);
+    updatedCount++;
+  }
+  
+  console.log(`✅ 已更新 ${updatedCount} 个语言文件`);
+  console.log(`✅ 成功删除 ${keysToRemove.length} 个未使用的 key`);
+}
+
+// Handle --find-unused option
+if (options.findUnused) {
+  await findUnusedKeys();
+  console.log('\n' + '='.repeat(60));
+  process.exit(0);
+}
+
+// Handle --remove-unused option
+if (options.removeUnused) {
+  const unusedKeys = await findUnusedKeys();
+  
+  if (unusedKeys.length === 0) {
+    console.log('\n' + '='.repeat(60));
+    process.exit(0);
+  }
+  
+  // Ask for confirmation using readline
+  console.log('\n⚠️  警告: 此操作将永久删除这些 key！');
+  console.log('提示: 已自动备份所有语言文件到 backups/ 目录\n');
+  
+  const readline = await import('readline');
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+  
+  const answer = await new Promise(resolve => {
+    rl.question('确认删除这些未使用的 key? (yes/no): ', resolve);
+  });
+  
+  rl.close();
+  
+  if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
+    await removeUnusedKeys(unusedKeys);
+    console.log('\n' + '='.repeat(60));
+  } else {
+    console.log('\n❌ 操作已取消。');
+    console.log('\n' + '='.repeat(60));
+  }
+  
   process.exit(0);
 }
 
