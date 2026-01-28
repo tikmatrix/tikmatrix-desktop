@@ -25,6 +25,13 @@ if (langArg) {
   options.languages = langArg.split('=')[1].split(',').map(l => l.trim());
 }
 
+// Validate option combinations
+if ((options.findUnused || options.removeUnused) && options.languages) {
+  console.error('❌ 错误: --find-unused 和 --remove-unused 选项不能与 --lang 选项一起使用');
+  console.error('   原因: 检测未使用的 key 需要扫描所有语言文件以确保准确性');
+  process.exit(1);
+}
+
 // 显示帮助信息
 if (options.help) {
   console.log(`
@@ -528,15 +535,6 @@ async function scanUsedKeys() {
   const usedKeys = new Set();
   const srcDir = path.join(__dirname, '..');
   
-  // Patterns to match i18n key usage in code
-  // Matches: $t('key'), $t("key"), t('key'), t("key"), i18n.t('key'), etc.
-  const keyPatterns = [
-    /\$t\s*\(\s*['"`]([^'"`]+)['"`]/g,        // $t('key'), $t("key"), or $t(`key`)
-    /[^a-zA-Z]t\s*\(\s*['"`]([^'"`]+)['"`]/g, // t('key'), t("key"), or t(`key`) (not part of other word)
-    /i18n\.t\s*\(\s*['"`]([^'"`]+)['"`]/g,    // i18n.t('key'), i18n.t("key"), or i18n.t(`key`)
-    /i18n\.global\.t\s*\(\s*['"`]([^'"`]+)['"`]/g  // i18n.global.t('key'), etc.
-  ];
-  
   // Recursively scan directory for Vue, JS, and TS files
   function scanDirectory(dir) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -558,6 +556,15 @@ async function scanUsedKeys() {
         
         try {
           const content = fs.readFileSync(fullPath, 'utf8');
+          
+          // Patterns to match i18n key usage in code
+          // Recreate patterns for each file to avoid lastIndex issues with global flag
+          const keyPatterns = [
+            /\$t\s*\(\s*['"`]([^'"`]+)['"`]/g,        // $t('key'), $t("key"), or $t(`key`)
+            /(?<![a-zA-Z])t\s*\(\s*['"`]([^'"`]+)['"`]/g, // t('key'), t("key"), or t(`key`) (not part of other word)
+            /i18n\.t\s*\(\s*['"`]([^'"`]+)['"`]/g,    // i18n.t('key'), i18n.t("key"), or i18n.t(`key`)
+            /i18n\.global\.t\s*\(\s*['"`]([^'"`]+)['"`]/g  // i18n.global.t('key'), etc.
+          ];
           
           // Apply all patterns to find keys
           for (const pattern of keyPatterns) {
@@ -611,6 +618,22 @@ async function removeUnusedKeys(keysToRemove) {
   
   console.log(`\n====== 准备删除 ${keysToRemove.length} 个未使用的 key ======\n`);
   
+  // Load all language translations if not already loaded
+  const allTranslations = {};
+  for (const lang of ALL_LANGUAGES) {
+    if (translations[lang.code]) {
+      allTranslations[lang.code] = translations[lang.code];
+    } else {
+      try {
+        const module = await import(`./locales/${lang.file}`);
+        allTranslations[lang.code] = module.default;
+      } catch (error) {
+        console.warn(`⚠️  警告: 无法加载 ${lang.name}: ${error.message}`);
+        allTranslations[lang.code] = {};
+      }
+    }
+  }
+  
   // Create backup first
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
   const backupDir = path.join(__dirname, 'backups', timestamp);
@@ -637,7 +660,7 @@ async function removeUnusedKeys(keysToRemove) {
   const updatedTranslations = {};
   
   for (const lang of ALL_LANGUAGES) {
-    const trans = translations[lang.code] || {};
+    const trans = allTranslations[lang.code] || {};
     const filtered = {};
     
     for (const key of Object.keys(trans)) {
@@ -655,10 +678,10 @@ async function removeUnusedKeys(keysToRemove) {
   
   for (const lang of ALL_LANGUAGES) {
     const trans = updatedTranslations[lang.code];
-    const sortedKeys = Object.keys(trans).sort();
+    const keysForThisLang = Object.keys(trans).sort();
     
     let output = 'export default {\n';
-    for (const key of sortedKeys) {
+    for (const key of keysForThisLang) {
       const value = trans[key] || '';
       const escapedValue = value
         .replace(/\\/g, '\\\\')
@@ -698,7 +721,7 @@ if (options.removeUnused) {
   
   // Ask for confirmation using readline
   console.log('\n⚠️  警告: 此操作将永久删除这些 key！');
-  console.log('提示: 已自动备份所有语言文件到 backups/ 目录\n');
+  console.log('提示: 操作前会自动备份所有语言文件到 backups/ 目录\n');
   
   const readline = await import('readline');
   const rl = readline.createInterface({
