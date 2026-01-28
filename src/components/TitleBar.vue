@@ -370,9 +370,21 @@ export default {
     async darkMode(val) {
       await setItem('isDark', val ? 'true' : 'false');
     },
-    async currentLocale(val) {
-      await setItem('locale', val);
-      await changeLanguage(val);
+    currentLocale(val) {
+      // Non-blocking language change with error handling
+      setItem('locale', val).catch(err => {
+        console.error('Failed to save locale:', err);
+      });
+      
+      changeLanguage(val).catch(err => {
+        console.error('Failed to change language:', err);
+        // Notify user of the error
+        this.$emiter('NOTIFY', {
+          type: 'error',
+          message: this.$t('languageChangeFailed') || 'Failed to change language',
+          timeout: 3000
+        });
+      });
     }
   },
   computed: {
@@ -430,7 +442,10 @@ export default {
     if (storedLocale) {
       const sanitizedLocale = String(storedLocale).replace(/"/g, '').trim();
       this.currentLocale = sanitizedLocale || 'en';
-      await changeLanguage(this.currentLocale);
+      // Non-blocking language change
+      changeLanguage(this.currentLocale).catch(err => {
+        console.error('Failed to load initial language:', err);
+      });
     }
 
     if (config) {
@@ -460,7 +475,16 @@ export default {
       await this.closeApp(yes);
     },
     async changeLocale() {
-      await changeLanguage(this.currentLocale);
+      try {
+        await changeLanguage(this.currentLocale);
+      } catch (err) {
+        console.error('Failed to change locale:', err);
+        this.$emiter('NOTIFY', {
+          type: 'error',
+          message: this.$t('languageChangeFailed') || 'Failed to change language',
+          timeout: 3000
+        });
+      }
     },
     async closeApp(result) {
       if (result === true) {
@@ -761,8 +785,10 @@ export default {
     this.version = await getVersion();
     this.name = await getName();
 
-    // Language
-    await changeLanguage(this.currentLocale);
+    // Language - Non-blocking initialization
+    changeLanguage(this.currentLocale).catch(err => {
+      console.error('Failed to load language in mounted:', err);
+    });
     console.log('currentLocale:', this.currentLocale);
 
     // Check whitelabel feature

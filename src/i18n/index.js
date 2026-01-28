@@ -37,8 +37,9 @@ export const i18n = createI18n({
   messages: {}
 })
 
-// Cache for loaded locales
+// Cache for loaded locales and in-flight loading promises
 const loadedLanguages = new Set()
+const loadingPromises = new Map()
 
 /**
  * Load locale messages dynamically
@@ -51,19 +52,28 @@ async function loadLocaleMessages(locale) {
     return Promise.resolve()
   }
 
-  // Load locale messages with dynamic import
-  try {
-    const messages = await import(`./locales/${locale}.js`)
-    
-    // Set locale and locale message
-    i18n.global.setLocaleMessage(locale, messages.default)
-    loadedLanguages.add(locale)
-    
-    return messages.default
-  } catch (error) {
-    console.error(`Failed to load locale messages for ${locale}:`, error)
-    throw error
+  // If the language is currently being loaded, return the existing promise
+  if (loadingPromises.has(locale)) {
+    return loadingPromises.get(locale)
   }
+
+  // Load locale messages with dynamic import
+  const loadPromise = import(`./locales/${locale}.js`)
+    .then(messages => {
+      // Set locale and locale message
+      i18n.global.setLocaleMessage(locale, messages.default)
+      loadedLanguages.add(locale)
+      loadingPromises.delete(locale)
+      return messages.default
+    })
+    .catch(error => {
+      console.error(`Failed to load locale messages for ${locale}:`, error)
+      loadingPromises.delete(locale)
+      throw error
+    })
+
+  loadingPromises.set(locale, loadPromise)
+  return loadPromise
 }
 
 /**
@@ -93,13 +103,36 @@ export async function changeLanguage(locale) {
     locale = DEFAULT_LOCALE
   }
 
-  // Load locale messages if not loaded
-  if (!loadedLanguages.has(locale)) {
-    await loadLocaleMessages(locale)
-  }
+  try {
+    // Load locale messages if not loaded
+    if (!loadedLanguages.has(locale)) {
+      await loadLocaleMessages(locale)
+    }
 
-  return setI18nLanguage(locale)
+    return setI18nLanguage(locale)
+  } catch (error) {
+    // If loading fails, try to fallback to default locale
+    console.error(`Failed to change language to ${locale}, falling back to ${DEFAULT_LOCALE}`)
+    
+    if (locale !== DEFAULT_LOCALE && !loadedLanguages.has(DEFAULT_LOCALE)) {
+      await loadLocaleMessages(DEFAULT_LOCALE)
+    }
+    
+    return setI18nLanguage(DEFAULT_LOCALE)
+  }
 }
 
-// Load default locale immediately
-loadLocaleMessages(DEFAULT_LOCALE) 
+/**
+ * Initialize i18n with default locale
+ * This should be called and awaited before mounting the app
+ * @returns {Promise<void>}
+ */
+export async function initI18n() {
+  await loadLocaleMessages(DEFAULT_LOCALE)
+}
+
+// Load default locale immediately for backward compatibility
+// Note: For proper initialization, await initI18n() before mounting the app
+loadLocaleMessages(DEFAULT_LOCALE).catch(err => {
+  console.error('Failed to load default locale:', err)
+}) 
