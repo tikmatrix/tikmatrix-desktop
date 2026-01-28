@@ -22,8 +22,25 @@ export class SettingsManager {
             });
             const settings = JSON.parse(settingsJson);
 
-            // 合并默认设置和文件设置
-            return { ...defaultSettings, ...settings };
+            // 深度合并默认设置和文件设置，保留默认对象中的缺失字段
+            const isPlainObject = obj => obj && typeof obj === 'object' && !Array.isArray(obj);
+
+            const deepMerge = (base, override) => {
+                if (!isPlainObject(base)) return override === undefined ? base : override;
+                const result = { ...base };
+                if (!isPlainObject(override)) return result;
+                Object.keys(override).forEach(key => {
+                    const v = override[key];
+                    if (isPlainObject(v) && isPlainObject(result[key])) {
+                        result[key] = deepMerge(result[key], v);
+                    } else {
+                        result[key] = v;
+                    }
+                });
+                return result;
+            };
+
+            return deepMerge(defaultSettings, settings);
         } catch (error) {
             console.error(`Failed to load settings from ${this.filename}:`, error);
             return defaultSettings;
