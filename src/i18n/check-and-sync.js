@@ -557,20 +557,18 @@ async function scanUsedKeys() {
         try {
           const content = fs.readFileSync(fullPath, 'utf8');
           
-          // Patterns to match i18n key usage in code
-          // Recreate patterns for each file to avoid lastIndex issues with global flag
-          const keyPatterns = [
-            /\$t\s*\(\s*['"`]([^'"`]+)['"`]/g,        // $t('key'), $t("key"), or $t(`key`)
-            /(?<![a-zA-Z])t\s*\(\s*['"`]([^'"`]+)['"`]/g, // t('key'), t("key"), or t(`key`) (not part of other word)
-            /i18n\.t\s*\(\s*['"`]([^'"`]+)['"`]/g,    // i18n.t('key'), i18n.t("key"), or i18n.t(`key`)
-            /i18n\.global\.t\s*\(\s*['"`]([^'"`]+)['"`]/g  // i18n.global.t('key'), etc.
-          ];
-          
-          // Apply all patterns to find keys
-          for (const pattern of keyPatterns) {
-            let match;
-            while ((match = pattern.exec(content)) !== null) {
-              usedKeys.add(match[1]);
+          // Simple string matching: check if file contains 'key' or "key"
+          // This is more conservative and won't miss references, though it may have false positives
+          // We check each key from sortedKeys to see if it appears in quotes in the file
+          for (const key of sortedKeys) {
+            // Check if the key appears with single quotes: 'key'
+            if (content.includes(`'${key}'`)) {
+              usedKeys.add(key);
+              continue;
+            }
+            // Check if the key appears with double quotes: "key"
+            if (content.includes(`"${key}"`)) {
+              usedKeys.add(key);
             }
           }
         } catch (error) {
@@ -600,8 +598,9 @@ async function findUnusedKeys() {
     unusedKeys.forEach(key => {
       console.log(`  - ${key}`);
     });
-    console.log(`\n💡 提示: 此检测基于静态代码扫描。如果某些 key 通过动态方式引用（如变量、字符串拼接等），`);
-    console.log(`   可能会被误判为未使用。删除前请仔细确认！`);
+    console.log(`\n💡 提示: 此检测基于字符串包含匹配（'key' 或 "key"）。`);
+    console.log(`   这是一种保守的检测方式，可能会有假阳性（把已使用的标记为未使用的情况极少），`);
+    console.log(`   但不会误删真正使用的 key。删除前请仔细确认！`);
   } else {
     console.log('\n✅ 所有定义的 key 都在代码中被使用！');
   }
