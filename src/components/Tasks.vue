@@ -38,7 +38,7 @@
         </button>
 
         <!-- <button class="btn btn-md btn-outline btn-secondary mt-1 ml-1 mb-1" @click="$emiter('showDialog', { name: 'scheduleTemplates' })">
-            <font-awesome-icon icon="calendar-alt" class="h-3 w-3" />{{ $t('scheduleTemplates.title') }}
+            <font-awesome-icon icon="calendar-alt" class="h-3 w-3" />{{ $t('scheduleTemplatesTitle') }}
         </button> -->
 
         <a v-if="whitelabelConfig.showOfficialWebsite && whitelabelConfig.officialWebsite"

@@ -5,7 +5,9 @@
   "description": "Tools for managing i18n translation files",
   "main": "index.js",
   "scripts": {
-    "sync": "node check-and-sync.js"
+    "sync": "node check-and-sync.js",
+    "find-unused": "node check-and-sync.js --find-unused",
+    "remove-unused": "node check-and-sync.js --remove-unused"
   },
   "dependencies": {
     "i18n-tools": "file:"
