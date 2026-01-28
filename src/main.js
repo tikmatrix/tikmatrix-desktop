@@ -11,12 +11,12 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 /* add icons to the library */
 library.add(fas, fab);
-import { i18n } from './i18n/index';
+import { i18n, loadLocaleAsync } from './i18n/index';
 import VueDragSelect from '@coleqiu/vue-drag-select';
 import VueDraggableResizable from 'vue-draggable-resizable';
 import { emit, listen } from '@tauri-apps/api/event';
 import { initWhiteLabel } from './utils/whiteLabelHelpers.js';
-import { initStorage } from './utils/storage.js';
+import { initStorage, getItem } from './utils/storage.js';
 
 async function bootstrap() {
     try {
@@ -46,7 +46,18 @@ async function bootstrap() {
         app.config.globalProperties.$whitelabel = whitelabelConfig;
         app.component('font-awesome-icon', FontAwesomeIcon);
         app.component('vue-draggable-resizable', VueDraggableResizable);
+        
+        // Mount app immediately without waiting for locale
         app.mount('#app');
+
+        // Load saved locale asynchronously after mount (non-blocking)
+        const storedLocale = await getItem('locale');
+        if (storedLocale) {
+            const sanitizedLocale = String(storedLocale).replace(/"/g, '').trim();
+            if (sanitizedLocale && sanitizedLocale !== 'en') {
+                loadLocaleAsync(sanitizedLocale);
+            }
+        }
 
         // 捕获未被Vue捕获的全局JS错误
         window.onerror = function (message, source, lineno, colno, error) {
