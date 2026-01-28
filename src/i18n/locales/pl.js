@@ -4,6 +4,7 @@ export default {
   account_warmup: 'Rozgrzewka konta',
   accounts: 'Konta',
   action: 'Akcja',
+  actions: 'Actions',
   activate: 'Aktywuj',
   activateNow: 'Aktywuj teraz',
   activateSuccess: 'Gratulacje, aktywacja zakończona pomyślnie!',
