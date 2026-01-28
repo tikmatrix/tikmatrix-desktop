@@ -531,10 +531,10 @@ async function scanUsedKeys() {
   // Patterns to match i18n key usage in code
   // Matches: $t('key'), $t("key"), t('key'), t("key"), i18n.t('key'), etc.
   const keyPatterns = [
-    /\$t\s*\(\s*['"]([^'"]+)['"]/g,        // $t('key') or $t("key")
-    /[^a-zA-Z]t\s*\(\s*['"]([^'"]+)['"]/g, // t('key') or t("key") (not part of other word)
-    /i18n\.t\s*\(\s*['"]([^'"]+)['"]/g,    // i18n.t('key')
-    /i18n\.global\.t\s*\(\s*['"]([^'"]+)['"]/g  // i18n.global.t('key')
+    /\$t\s*\(\s*['"`]([^'"`]+)['"`]/g,        // $t('key'), $t("key"), or $t(`key`)
+    /[^a-zA-Z]t\s*\(\s*['"`]([^'"`]+)['"`]/g, // t('key'), t("key"), or t(`key`) (not part of other word)
+    /i18n\.t\s*\(\s*['"`]([^'"`]+)['"`]/g,    // i18n.t('key'), i18n.t("key"), or i18n.t(`key`)
+    /i18n\.global\.t\s*\(\s*['"`]([^'"`]+)['"`]/g  // i18n.global.t('key'), etc.
   ];
   
   // Recursively scan directory for Vue, JS, and TS files

@@ -65,6 +65,14 @@ i18n/
 - 用英文填充缺失的翻译
 - 生成标准格式的代码
 
+#### ✅ 未使用 Key 检测和清理
+
+- **扫描代码**：自动扫描所有源代码文件（Vue、JS、TS）
+- **检测未使用的 key**：识别在代码中未被引用的翻译 key
+- **安全删除**：交互式确认，自动备份，防止误删除
+- **智能识别**：支持多种 i18n 使用模式（$t(), t(), i18n.t(), i18n.global.t()）
+- **静态扫描警告**：提示动态 key 引用可能会被误判
+
 ### 使用方法
 
 #### 基本用法
@@ -72,6 +80,23 @@ i18n/
 ```bash
 cd src/i18n
 npm run sync
+```
+
+#### 未使用 Key 管理
+
+```bash
+# 扫描并查看未使用的 key
+cd src/i18n
+npm run find-unused
+
+# 或者直接使用命令
+node check-and-sync.js --find-unused
+
+# 删除未使用的 key（会先显示列表并要求确认）
+npm run remove-unused
+
+# 或者直接使用命令
+node check-and-sync.js --remove-unused
 ```
 
 #### 命令行选项
@@ -89,6 +114,12 @@ node check-and-sync.js --lang=zh-CN,ja,ko
 # 显示所有问题（不限制输出数量）
 node check-and-sync.js --show-all
 
+# 扫描并检测未使用的 key
+node check-and-sync.js --find-unused
+
+# 删除未使用的 key（交互式确认）
+node check-and-sync.js --remove-unused
+
 # 组合使用
 node check-and-sync.js --check-only --show-all
 ```
@@ -99,6 +130,8 @@ node check-and-sync.js --check-only --show-all
 - `--skip-quality-check` - 跳过翻译质量检查，仅检查键的完整性
 - `--lang=<codes>` - 仅检查指定的语言（用逗号分隔）
 - `--show-all` - 显示所有问题，不限制输出数量
+- `--find-unused` - 扫描代码并检测未使用的翻译 key
+- `--remove-unused` - 删除未使用的翻译 key（会先显示列表并要求确认）
 - `--help` - 显示帮助信息
 
 ### 工作流程
@@ -157,13 +190,16 @@ backups/
 3. **专有名词**：品牌名称（如 "TikTok", "Alipay"）通常不需要翻译
 4. **占位符文本**：包含 `{}` 或 URL 的文本会被跳过检查
 5. **备份清理**：备份文件不会自动清理，可定期手动删除旧备份
+6. **未使用 Key 检测**：基于静态代码扫描，动态引用的 key（如通过变量或模板字符串）可能会被误判为未使用，删除前请仔细确认
 
 ## 最佳实践
 
 - 使用 `npm run sync` 定期检查翻译文件的一致性
+- 使用 `npm run find-unused` 定期检查和清理未使用的 key，保持代码库整洁
 - 使用有意义的键名（如 `confirmDelete` 而不是 `message1`）
 - 对于缺少翻译的键，暂时使用英文作为默认值
 - 在大规模翻译更新前，先运行 `--check-only` 查看问题
+- 在删除未使用的 key 前，务必仔细检查列表，确认这些 key 确实不再需要
 - 查看详细报告确定需要翻译的具体字段
 
 ## 支持的语言（21种）
