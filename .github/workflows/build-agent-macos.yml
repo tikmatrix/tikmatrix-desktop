@@ -27,13 +27,13 @@ jobs:
     runs-on: macos-14
 
     steps:
-      - name: Checkout tikmatrix-agent private repository
+      - name: Checkout tikmatrix-pro private repository
         uses: actions/checkout@v3
         with:
-          repository: tikmatrix/tikmatrix-agent
+          repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
           ref: ${{ inputs.branch }}
-          path: tikmatrix-agent
+          path: tikmatrix-pro
 
       - name: Cache Rust dependencies
         uses: actions/cache@v3
@@ -41,8 +41,8 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            tikmatrix-agent/target
-          key: ${{ runner.os }}-agent-cargo-universal-${{ hashFiles('tikmatrix-agent/**/Cargo.lock') }}
+            tikmatrix-pro/agent/target
+          key: ${{ runner.os }}-agent-cargo-universal-${{ hashFiles('tikmatrix-pro/agent/**/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-agent-cargo-universal-
 
@@ -56,32 +56,32 @@ jobs:
 
       - name: Build ARM64 - all
         if: ${{ inputs.build_target == 'all' }}
-        working-directory: tikmatrix-agent
+        working-directory: tikmatrix-pro/agent
         run: cargo build --release --target aarch64-apple-darwin
 
       - name: Build ARM64 - agent only
         if: ${{ inputs.build_target == 'agent' }}
-        working-directory: tikmatrix-agent
+        working-directory: tikmatrix-pro/agent
         run: cargo build --release --target aarch64-apple-darwin --bin agent
 
       - name: Build ARM64 - script only
         if: ${{ inputs.build_target == 'script' }}
-        working-directory: tikmatrix-agent
+        working-directory: tikmatrix-pro/agent
         run: cargo build --release --target aarch64-apple-darwin --bin script
 
       - name: Build x86_64 - all
         if: ${{ inputs.build_target == 'all' }}
-        working-directory: tikmatrix-agent
+        working-directory: tikmatrix-pro/agent
         run: cargo build --release --target x86_64-apple-darwin
 
       - name: Build x86_64 - agent only
         if: ${{ inputs.build_target == 'agent' }}
-        working-directory: tikmatrix-agent
+        working-directory: tikmatrix-pro/agent
         run: cargo build --release --target x86_64-apple-darwin --bin agent
 
       - name: Build x86_64 - script only
         if: ${{ inputs.build_target == 'script' }}
-        working-directory: tikmatrix-agent
+        working-directory: tikmatrix-pro/agent
         run: cargo build --release --target x86_64-apple-darwin --bin script
 
       - name: Prepare bin directories
@@ -89,36 +89,36 @@ jobs:
           BUILD_TARGET="${{ inputs.build_target }}"
 
           # Prepare ARM64 binaries
-          mkdir -p ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin
+          mkdir -p ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin
           # Ensure bin folder is clean to avoid uploading stale binaries
-          if [ -d ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin ]; then
-            rm -f ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin/* || true
+          if [ -d ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin ]; then
+            rm -f ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin/* || true
           fi
           if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "agent" ]]; then
-            if [ -f "./tikmatrix-agent/target/aarch64-apple-darwin/release/agent" ]; then
-              cp ./tikmatrix-agent/target/aarch64-apple-darwin/release/agent ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin/
+            if [ -f "./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/agent" ]; then
+              cp ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/agent ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin/
             fi
           fi
           if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "script" ]]; then
-            if [ -f "./tikmatrix-agent/target/aarch64-apple-darwin/release/script" ]; then
-              cp ./tikmatrix-agent/target/aarch64-apple-darwin/release/script ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin/
+            if [ -f "./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/script" ]; then
+              cp ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/script ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin/
             fi
           fi
 
           # Prepare x86_64 binaries
-          mkdir -p ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin
+          mkdir -p ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin
           # Ensure bin folder is clean to avoid uploading stale binaries
-          if [ -d ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin ]; then
-            rm -f ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin/* || true
+          if [ -d ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin ]; then
+            rm -f ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin/* || true
           fi
           if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "agent" ]]; then
-            if [ -f "./tikmatrix-agent/target/x86_64-apple-darwin/release/agent" ]; then
-              cp ./tikmatrix-agent/target/x86_64-apple-darwin/release/agent ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin/
+            if [ -f "./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/agent" ]; then
+              cp ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/agent ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin/
             fi
           fi
           if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "script" ]]; then
-            if [ -f "./tikmatrix-agent/target/x86_64-apple-darwin/release/script" ]; then
-              cp ./tikmatrix-agent/target/x86_64-apple-darwin/release/script ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin/
+            if [ -f "./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/script" ]; then
+              cp ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/script ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin/
             fi
           fi
 
@@ -129,7 +129,7 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-agent/target/aarch64-apple-darwin/release/bin
+          source-dir: ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin
           destination-dir: aarch64-apple-darwin
 
       - name: Upload x86_64 to R2
@@ -139,7 +139,7 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-agent/target/x86_64-apple-darwin/release/bin
+          source-dir: ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin
           destination-dir: x86_64-apple-darwin
 
       - name: Update Library Versions
@@ -156,7 +156,7 @@ jobs:
 
             # Calculate MD5 for the binary
             local MD5=""
-            local BIN_PATH="./tikmatrix-agent/target/$TARGET/release/bin/$NAME"
+            local BIN_PATH="./tikmatrix-pro/agent/target/$TARGET/release/bin/$NAME"
             if [ -f "$BIN_PATH" ]; then
               MD5=$(md5 -q "$BIN_PATH" 2>/dev/null || md5sum "$BIN_PATH" | cut -d' ' -f1)
               echo "$NAME MD5 ($PLATFORM): $MD5"

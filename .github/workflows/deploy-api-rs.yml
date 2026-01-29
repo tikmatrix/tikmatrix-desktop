@@ -62,13 +62,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout tikmatrix-admin-pro repository
+      - name: Checkout tikmatrix-pro repository
         uses: actions/checkout@v3
         with:
-          repository: tikmatrix/tikmatrix-admin-pro
+          repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
           ref: ${{ inputs.branch }}
-          path: tikmatrix-admin-pro
+          path: tikmatrix-pro
 
       - name: Install Rust toolchain
         run: |
@@ -84,20 +84,20 @@ jobs:
           key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Build release
-        run: cd tikmatrix-admin-pro/src-rs && cargo build --release
+        run: cd tikmatrix-pro/server/src-rs && cargo build --release
 
       - name: Upload binary
         uses: actions/upload-artifact@v4
         with:
           name: tikmatrix-binary
-          path: tikmatrix-admin-pro/src-rs/target/release/tikmatrix-api-rs
+          path: tikmatrix-pro/server/src-rs/target/release/tikmatrix-api-rs
 
       - name: Upload GeoLite2 database
         if: ${{ inputs.deploy_geolite }}
         uses: actions/upload-artifact@v4
         with:
           name: geolite2-db
-          path: tikmatrix-admin-pro/src-rs/data/GeoLite2-Country.mmdb
+          path: tikmatrix-pro/server/src-rs/data/GeoLite2-Country.mmdb
 
   deploy:
     needs: [prepare, build]
@@ -166,7 +166,7 @@ jobs:
 
           # Deploy and setup service
           log_info "Setting up service on server"
-          
+
           # Create .env file from secret and upload
           log_info "Creating .env file from secret"
           echo "$ENV_PROD_CONTENT" > .env.tmp
@@ -174,7 +174,7 @@ jobs:
           scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
             ".env.tmp" ".env.tmp"
           rm -f .env.tmp
-          
+
           ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \

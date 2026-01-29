@@ -25,13 +25,13 @@ jobs:
         with:
           path: tikmatrix-desktop
 
-      - name: Checkout tikmatrix-android repository
+      - name: Checkout tikmatrix-pro repository
         uses: actions/checkout@v3
         with:
-          repository: tikmatrix/tikmatrix-android
+          repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
           ref: ${{ inputs.branch }}
-          path: tikmatrix-android
+          path: tikmatrix-pro
 
       - name: Setup Node.js (for whitelabel scripts)
         uses: actions/setup-node@v4
@@ -47,7 +47,7 @@ jobs:
       - name: Make gradlew executable
         run: |
           chmod +x ./gradlew || true
-        working-directory: tikmatrix-android
+        working-directory: tikmatrix-pro/android
 
       - name: Build Official TikMatrix APKs
         run: |
@@ -56,7 +56,7 @@ jobs:
           mkdir -p app/build/apk
           mv app/build/outputs/apk/debug/app-debug.apk app/build/apk/com.github.tikmatrix.apk || true
           mv app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk app/build/apk/com.github.tikmatrix.test.apk || true
-        working-directory: tikmatrix-android
+        working-directory: tikmatrix-pro/android
 
       - name: Upload APK to R2
         uses: ryand56/r2-upload-action@v1.4
@@ -65,7 +65,7 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: tikmatrix-android/app/build/apk/
+          source-dir: tikmatrix-pro/android/app/build/apk/
           destination-dir: ./
 
       - name: Update Library Version
