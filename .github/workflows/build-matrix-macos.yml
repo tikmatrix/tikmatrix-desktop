@@ -28,7 +28,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
           ref: ${{ inputs.branch }}
+          path: tikmatrix-pro
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -46,19 +49,21 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            src-tauri/target
+            ./tikmatrix-pro/src-tauri/target
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-
 
       - name: Install dependencies
         run: npm install
+        working-directory: tikmatrix-pro
 
       - name: Build official package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
           chmod +x ./build.sh
           ./build.sh
+        working-directory: tikmatrix-pro
 
       - name: Upload official package to R2
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
@@ -68,19 +73,19 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./src-tauri/target/universal-apple-darwin/release/bundle/dmg
+          source-dir: ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg
           destination-dir: ./
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
-          rm -rf ./src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
+          rm -rf ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
 
       # IgMatrix whitelabel build and upload steps
       - name: Build IgMatrix whitelabel package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
-          node scripts/build-whitelabel.js IgMatrix
+          node tikmatrix-pro/scripts/build-whitelabel.js IgMatrix
 
       - name: Upload IgMatrix package to R2
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
@@ -90,13 +95,13 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./src-tauri/target/universal-apple-darwin/release/bundle/dmg
+          source-dir: ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg
           destination-dir: ./
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
-          rm -rf ./src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
+          rm -rf ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
 
       - name: Update IgMatrix download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
@@ -104,12 +109,12 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=igmatrix --app-name=IgMatrix
+          node tikmatrix-pro/scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=igmatrix --app-name=IgMatrix
 
       # TikZenX whitelabel build and upload steps
       # - name: Build TikZenX whitelabel package
       #   run: |
-      #     node scripts/build-whitelabel.js TikZenX
+      #     node tikmatrix-pro/scripts/build-whitelabel.js TikZenX
 
       # - name: Upload TikZenX package to R2
       #   uses: ryand56/r2-upload-action@v1.4
@@ -118,24 +123,24 @@ jobs:
       #     r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
       #     r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
       #     r2-bucket: matrix
-      #     source-dir: ./src-tauri/target/universal-apple-darwin/release/bundle/dmg
+      #     source-dir: ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg
       #     destination-dir: ./
 
       # - name: Clear uploaded files
       #   run: |
-      #     rm -rf ./src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
+      #     rm -rf ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
 
       # - name: Update TikZenX download url
       #   env:
       #     TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
       #     API_KEY: ${{ secrets.API_KEY }}
       #   run: |
-      #     node scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=tikzenx --app-name=TikZenX
+      #     node tikmatrix-pro/scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=tikzenx --app-name=TikZenX
 
       # Build and upload distributor packages
       - name: Build distributor packages
         run: |
-          node scripts/build-distributor-packages-mac.js
+          node tikmatrix-pro/scripts/build-distributor-packages-mac.js
 
       - name: Upload distributor packages to R2
         uses: ryand56/r2-upload-action@v1.4
@@ -144,16 +149,16 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./dist-distributors
+          source-dir: ./tikmatrix-pro/dist-distributors
           destination-dir: ./distributors
 
       - name: Clear uploaded files
         run: |
-          rm -rf ./dist-distributors/*
+          rm -rf ./tikmatrix-pro/dist-distributors/*
 
       - name: Update distributor download urls
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node scripts/update-download-url.js --platform=mac --all-distributors
+          node tikmatrix-pro/scripts/update-download-url.js --platform=mac --all-distributors

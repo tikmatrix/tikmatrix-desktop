@@ -41,6 +41,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
           ref: ${{ inputs.branch }}
 
       - name: Create and push tag

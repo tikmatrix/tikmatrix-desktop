@@ -28,7 +28,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
           ref: ${{ inputs.branch }}
+          path: tikmatrix-pro
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -44,17 +47,19 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            src-tauri/target
+            tikmatrix-pro/src-tauri/target
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-
 
       - name: Install dependencies
         run: npm install
+        working-directory: tikmatrix-pro
 
       - name: Build official package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: .\build.ps1
+        working-directory: tikmatrix-pro
 
       - name: Upload official package to R2
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
@@ -64,7 +69,7 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./src-tauri/target/release/bundle/msi
+          source-dir: ./tikmatrix-pro/src-tauri/target/release/bundle/msi
           destination-dir: ./
 
       - name: Update version
@@ -73,18 +78,18 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node scripts/update-version.js
+          node tikmatrix-pro/scripts/update-version.js
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
-          Remove-Item -Path .\src-tauri\target\release\bundle\msi\* -Force -Recurse
+          Remove-Item -Path .\tikmatrix-pro\src-tauri\target\release\bundle\msi\* -Force -Recurse
 
       # IgMatrix whitelabel build and upload steps
       - name: Build IgMatrix whitelabel package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
-          node scripts/build-whitelabel.js IgMatrix
+          node tikmatrix-pro/scripts/build-whitelabel.js IgMatrix
 
       - name: Upload IgMatrix package to R2
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
@@ -94,7 +99,7 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./src-tauri/target/release/bundle/msi
+          source-dir: ./tikmatrix-pro/src-tauri/target/release/bundle/msi
           destination-dir: ./
 
       - name: Update IgMatrix version
@@ -103,12 +108,12 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node scripts/update-version.js --app=igmatrix --app-name=IgMatrix
+          node tikmatrix-pro/scripts/update-version.js --app=igmatrix --app-name=IgMatrix
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
-          Remove-Item -Path .\src-tauri\target\release\bundle\msi\* -Force -Recurse
+          Remove-Item -Path .\tikmatrix-pro\src-tauri\target\release\bundle\msi\* -Force -Recurse
 
       - name: Update IgMatrix download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
@@ -116,12 +121,12 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=igmatrix --app-name=IgMatrix
+          node tikmatrix-pro/scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=igmatrix --app-name=IgMatrix
 
       # TikZenX whitelabel build and upload steps
       # - name: Build TikZenX whitelabel package
       #   run: |
-      #     node scripts/build-whitelabel.js TikZenX
+      #     node tikmatrix-pro/scripts/build-whitelabel.js TikZenX
 
       # - name: Upload TikZenX package to R2
       #   uses: ryand56/r2-upload-action@v1.4
@@ -130,7 +135,7 @@ jobs:
       #     r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
       #     r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
       #     r2-bucket: matrix
-      #     source-dir: ./src-tauri/target/release/bundle/msi
+      #     source-dir: ./tikmatrix-pro/src-tauri/target/release/bundle/msi
       #     destination-dir: ./
 
       # - name: Update TikZenX version
@@ -138,23 +143,23 @@ jobs:
       #     TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
       #     API_KEY: ${{ secrets.API_KEY }}
       #   run: |
-      #     node scripts/update-version.js --app=tikzenx --app-name=TikZenX
+      #     node tikmatrix-pro/scripts/update-version.js --app=tikzenx --app-name=TikZenX
 
       # - name: Clear uploaded files
       #   run: |
-      #     Remove-Item -Path .\src-tauri\target\release\bundle\msi\* -Force -Recurse
+      #     Remove-Item -Path .\tikmatrix-pro\src-tauri\target\release\bundle\msi\* -Force -Recurse
 
       # - name: Update TikZenX download url
       #   env:
       #     TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
       #     API_KEY: ${{ secrets.API_KEY }}
       #   run: |
-      #     node scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=tikzenx --app-name=TikZenX
+      #     node tikmatrix-pro/scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=tikzenx --app-name=TikZenX
 
       # Build and upload distributor packages
       - name: Build distributor packages
         run: |
-          node scripts/build-distributor-packages-windows.js
+          node tikmatrix-pro/scripts/build-distributor-packages-windows.js
 
       - name: Upload distributor packages to R2
         uses: ryand56/r2-upload-action@v1.4
@@ -163,16 +168,16 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./dist-distributors
+          source-dir: ./tikmatrix-pro/dist-distributors
           destination-dir: ./distributors
 
       - name: Clear uploaded files
         run: |
-          Remove-Item -Path .\dist-distributors\* -Force -Recurse
+          Remove-Item -Path .\tikmatrix-pro\dist-distributors\* -Force -Recurse
 
       - name: Update distributor download urls
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node scripts/update-download-url.js --platform=windows --all-distributors
+          node tikmatrix-pro/scripts/update-download-url.js --platform=windows --all-distributors
