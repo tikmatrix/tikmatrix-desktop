@@ -41,15 +41,44 @@ function readSignature(filePath) {
     return fs.readFileSync(filePath, 'utf-8')
 }
 
+function findSignatureFile(bundleDir, version) {
+    // Look for signature files matching the pattern *_{version}_x64_en-US.msi.zip.sig
+    // This handles productNames with spaces (e.g., "TikMatrix Pro")
+    if (!fs.existsSync(bundleDir)) {
+        throw new Error(`Bundle directory not found: ${bundleDir}`)
+    }
+    
+    const files = fs.readdirSync(bundleDir)
+    const pattern = `_${version}_x64_en-US.msi.zip.sig`
+    const sigFiles = files.filter(f => f.endsWith(pattern))
+    
+    if (sigFiles.length === 0) {
+        throw new Error(`No signature file found in ${bundleDir} matching pattern: *${pattern}`)
+    }
+    
+    if (sigFiles.length > 1) {
+        console.warn(`Warning: Multiple signature files found, using first one: ${sigFiles[0]}`)
+    }
+    
+    return path.join(bundleDir, sigFiles[0])
+}
+
 const params = parseArgs()
 const configPath = resolvePath('src-tauri', 'tauri.conf.json')
 const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'))
 const version = config.package.version
-const signaturePath = resolvePath('src-tauri', 'target', 'release', 'bundle', 'msi', `${params.appName}_${version}_x64_en-US.msi.zip.sig`)
+const bundleDir = resolvePath('src-tauri', 'target', 'release', 'bundle', 'msi')
+const signaturePath = findSignatureFile(bundleDir, version)
 const signature = readSignature(signaturePath)
+
+// Extract the actual product name from the signature file name
+// e.g., "TikMatrix Pro_2.12.5_x64_en-US.msi.zip.sig" -> "TikMatrix Pro"
+const signatureFileName = path.basename(signaturePath)
+const productName = signatureFileName.replace(`_${version}_x64_en-US.msi.zip.sig`, '')
 
 console.log(`App: ${params.app}`)
 console.log(`App Name: ${params.appName}`)
+console.log(`Product Name (from bundle): ${productName}`)
 console.log(`Version: v${version}`)
 
 let body = JSON.stringify({
@@ -59,7 +88,7 @@ let body = JSON.stringify({
     "platforms": {
         "windows-x86_64": {
             "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_x64_en-US.msi.zip`
+            "url": `https://r2.niostack.com/${productName}_${version}_x64_en-US.msi.zip`
         },
         "darwin-x86_64": {
             "signature": signature,
