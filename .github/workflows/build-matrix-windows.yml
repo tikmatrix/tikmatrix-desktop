@@ -108,7 +108,8 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node tikmatrix-pro/scripts/update-version.js --app=tikmatrix --app-name=TikMatrix
+          cd tikmatrix-pro
+          node ./scripts/update-version.js --app=tikmatrix --app-name=TikMatrix
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
@@ -148,7 +149,8 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node tikmatrix-pro/scripts/update-version.js --app=igmatrix --app-name=IgMatrix
+          cd tikmatrix-pro
+          node ./scripts/update-version.js --app=igmatrix --app-name=IgMatrix
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
