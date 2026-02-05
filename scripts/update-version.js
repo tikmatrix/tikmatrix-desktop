@@ -63,6 +63,29 @@ function findSignatureFile(bundleDir, version) {
     return path.join(bundleDir, sigFiles[0])
 }
 
+function findMacSignatureFile(bundleDir, version) {
+    // Look for macOS signature files matching the pattern *_{version}_universal.dmg.tar.gz.sig
+    // This handles productNames with spaces (e.g., "TikMatrix Pro")
+    if (!fs.existsSync(bundleDir)) {
+        // If the macOS bundle directory doesn't exist, return null (not an error for Windows-only builds)
+        return null
+    }
+    
+    const files = fs.readdirSync(bundleDir)
+    const pattern = `_${version}_universal.dmg.tar.gz.sig`
+    const sigFiles = files.filter(f => f.endsWith(pattern))
+    
+    if (sigFiles.length === 0) {
+        return null
+    }
+    
+    if (sigFiles.length > 1) {
+        console.warn(`Warning: Multiple macOS signature files found, using first one: ${sigFiles[0]}`)
+    }
+    
+    return path.join(bundleDir, sigFiles[0])
+}
+
 const params = parseArgs()
 const configPath = resolvePath('src-tauri', 'tauri.conf.json')
 const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'))
@@ -75,6 +98,22 @@ const signature = readSignature(signaturePath)
 // e.g., "TikMatrix Pro_2.12.5_x64_en-US.msi.zip.sig" -> "TikMatrix Pro"
 const signatureFileName = path.basename(signaturePath)
 const productName = signatureFileName.replace(`_${version}_x64_en-US.msi.zip.sig`, '')
+
+// Try to find macOS signature file and extract product name
+const macBundleDir = resolvePath('src-tauri', 'target', 'universal-apple-darwin', 'release', 'bundle', 'dmg')
+const macSignaturePath = findMacSignatureFile(macBundleDir, version)
+let macProductName = params.appName // fallback to appName
+let macSignature = signature // fallback to Windows signature
+
+if (macSignaturePath) {
+    try {
+        macSignature = readSignature(macSignaturePath)
+        const macSignatureFileName = path.basename(macSignaturePath)
+        macProductName = macSignatureFileName.replace(`_${version}_universal.dmg.tar.gz.sig`, '')
+    } catch (error) {
+        console.warn(`Warning: Could not read macOS signature file: ${error.message}`)
+    }
+}
 
 console.log(`App: ${params.app}`)
 console.log(`App Name: ${params.appName}`)
@@ -91,16 +130,16 @@ let body = JSON.stringify({
             "url": `https://r2.niostack.com/${productName}_${version}_x64_en-US.msi.zip`
         },
         "darwin-x86_64": {
-            "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_universal.dmg`
+            "signature": macSignature,
+            "url": `https://r2.niostack.com/${macProductName}_${version}_universal.dmg`
         },
         "darwin-arm64": {
-            "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_universal.dmg`
+            "signature": macSignature,
+            "url": `https://r2.niostack.com/${macProductName}_${version}_universal.dmg`
         },
         "darwin-aarch64": {
-            "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_universal.dmg`
+            "signature": macSignature,
+            "url": `https://r2.niostack.com/${macProductName}_${version}_universal.dmg`
         }
     }
 }, null, 2)
