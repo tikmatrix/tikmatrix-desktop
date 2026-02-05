@@ -88,11 +88,18 @@ function findMacSignatureFile(bundleDir, version) {
 
 function validateProductName(productName, platform) {
     // Validate that product name only contains safe characters
-    // Allow alphanumeric, spaces, hyphens, underscores, and dots
-    const validPattern = /^[a-zA-Z0-9\s._-]+$/
+    // Allow alphanumeric, spaces, hyphens, and underscores
+    // Note: Dots are excluded to prevent path traversal attacks
+    const validPattern = /^[a-zA-Z0-9\s_-]+$/
     if (!validPattern.test(productName)) {
         throw new Error(`Invalid product name for ${platform}: ${productName}. Contains unsafe characters.`)
     }
+    
+    // Additional check: prevent path traversal patterns
+    if (productName.includes('..') || productName.includes('./') || productName.includes('.\\')) {
+        throw new Error(`Invalid product name for ${platform}: ${productName}. Contains path traversal patterns.`)
+    }
+    
     return productName
 }
 
@@ -160,15 +167,11 @@ const platforms = {
 // Only include macOS platforms if we have a valid macOS signature
 if (macSignature && macProductName) {
     const macUrl = `https://r2.niostack.com/${macProductName}_${version}_universal.dmg`
-    const macPlatformConfig = {
-        "signature": macSignature,
-        "url": macUrl
-    }
     
     // Add all macOS platform variants with the same configuration
-    platforms["darwin-x86_64"] = macPlatformConfig
-    platforms["darwin-arm64"] = macPlatformConfig
-    platforms["darwin-aarch64"] = macPlatformConfig
+    platforms["darwin-x86_64"] = { "signature": macSignature, "url": macUrl }
+    platforms["darwin-arm64"] = { "signature": macSignature, "url": macUrl }
+    platforms["darwin-aarch64"] = { "signature": macSignature, "url": macUrl }
 }
 
 let body = JSON.stringify({
