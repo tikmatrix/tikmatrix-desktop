@@ -85,7 +85,8 @@ jobs:
       - name: Build IgMatrix whitelabel package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
-          node tikmatrix-pro/scripts/build-whitelabel.js IgMatrix
+          cd tikmatrix-pro
+          node ./scripts/build-whitelabel.js IgMatrix
 
       - name: Upload IgMatrix package to R2
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
@@ -109,12 +110,14 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node tikmatrix-pro/scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=igmatrix --app-name=IgMatrix
+          cd tikmatrix-pro
+          node ./scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=igmatrix --app-name=IgMatrix
 
       # TikZenX whitelabel build and upload steps
       # - name: Build TikZenX whitelabel package
       #   run: |
-      #     node tikmatrix-pro/scripts/build-whitelabel.js TikZenX
+      #     cd tikmatrix-pro
+      #     node ./scripts/build-whitelabel.js TikZenX
 
       # - name: Upload TikZenX package to R2
       #   uses: ryand56/r2-upload-action@v1.4
@@ -135,12 +138,14 @@ jobs:
       #     TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
       #     API_KEY: ${{ secrets.API_KEY }}
       #   run: |
-      #     node tikmatrix-pro/scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=tikzenx --app-name=TikZenX
+      #     cd tikmatrix-pro
+      #     node ./scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=tikzenx --app-name=TikZenX
 
       # Build and upload distributor packages
       - name: Build distributor packages
         run: |
-          node tikmatrix-pro/scripts/build-distributor-packages-mac.js
+          cd tikmatrix-pro
+          node ./scripts/build-distributor-packages-mac.js
 
       - name: Upload distributor packages to R2
         uses: ryand56/r2-upload-action@v1.4
@@ -161,4 +166,5 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          node tikmatrix-pro/scripts/update-download-url.js --platform=mac --all-distributors
+          cd tikmatrix-pro
+          node ./scripts/update-download-url.js --platform=mac --all-distributors
