@@ -152,17 +152,19 @@ if (macProductName) {
 console.log(`Version: v${version}`)
 
 // Build platforms configuration
+// Note: Product names need URL encoding for spaces
 const platforms = {
     "windows-x86_64": {
         "signature": signature,
-        "url": `https://r2.niostack.com/${productName}_${version}_x64_en-US.msi.zip`
+        "url": `https://r2.niostack.com/${encodeURIComponent(productName + '_' + version + '_x64_en-US.msi.zip')}`
     }
 }
 
 // Only include macOS platforms if we have a valid macOS signature
 if (macSignature && macProductName) {
     // Tauri updater expects .tar.gz for macOS (not .dmg directly)
-    const macUrl = `https://r2.niostack.com/${macProductName}_${version}_universal.dmg.tar.gz`
+    const macFileName = `${macProductName}_${version}_universal.dmg.tar.gz`
+    const macUrl = `https://r2.niostack.com/${encodeURIComponent(macFileName)}`
     
     // Add all macOS platform variants with the same configuration
     // Note: Using universal binary signature for all darwin platforms
