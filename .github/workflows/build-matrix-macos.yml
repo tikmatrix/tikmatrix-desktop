@@ -58,14 +58,36 @@ jobs:
         run: npm install
         working-directory: tikmatrix-pro
 
-      - name: Build official package
+      # - name: Build official package
+      #   if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+      #   run: |
+      #     chmod +x ./build.sh
+      #     ./build.sh
+      #   working-directory: tikmatrix-pro
+
+      # - name: Upload official package to R2
+      #   if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+      #   uses: ryand56/r2-upload-action@v1.4
+      #   with:
+      #     r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+      #     r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+      #     r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+      #     r2-bucket: matrix
+      #     source-dir: ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg
+      #     destination-dir: ./
+
+      # - name: Clear uploaded files
+      #   if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+      #   run: |
+      #     rm -rf ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
+      # TikMatrix whitelabel build and upload steps
+      - name: Build TikMatrix whitelabel package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
-          chmod +x ./build.sh
-          ./build.sh
-        working-directory: tikmatrix-pro
+          cd tikmatrix-pro
+          node ./scripts/build-whitelabel.js TikMatrix
 
-      - name: Upload official package to R2
+      - name: Upload TikMatrix package to R2
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
@@ -81,6 +103,14 @@ jobs:
         run: |
           rm -rf ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
 
+      - name: Update TikMatrix download url
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+        env:
+          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd tikmatrix-pro
+          node ./scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=tikmatrix --app-name=TikMatrix
       # IgMatrix whitelabel build and upload steps
       - name: Build IgMatrix whitelabel package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
@@ -142,29 +172,29 @@ jobs:
       #     node ./scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=tikzenx --app-name=TikZenX
 
       # Build and upload distributor packages
-      - name: Build distributor packages
-        run: |
-          cd tikmatrix-pro
-          node ./scripts/build-distributor-packages-mac.js
+      # - name: Build distributor packages
+      #   run: |
+      #     cd tikmatrix-pro
+      #     node ./scripts/build-distributor-packages-mac.js
 
-      - name: Upload distributor packages to R2
-        uses: ryand56/r2-upload-action@v1.4
-        with:
-          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
-          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
-          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
-          r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/dist-distributors
-          destination-dir: ./distributors
+      # - name: Upload distributor packages to R2
+      #   uses: ryand56/r2-upload-action@v1.4
+      #   with:
+      #     r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+      #     r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+      #     r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+      #     r2-bucket: matrix
+      #     source-dir: ./tikmatrix-pro/dist-distributors
+      #     destination-dir: ./distributors
 
-      - name: Clear uploaded files
-        run: |
-          rm -rf ./tikmatrix-pro/dist-distributors/*
+      # - name: Clear uploaded files
+      #   run: |
+      #     rm -rf ./tikmatrix-pro/dist-distributors/*
 
-      - name: Update distributor download urls
-        env:
-          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
-          API_KEY: ${{ secrets.API_KEY }}
-        run: |
-          cd tikmatrix-pro
-          node ./scripts/update-download-url.js --platform=mac --all-distributors
+      # - name: Update distributor download urls
+      #   env:
+      #     TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+      #     API_KEY: ${{ secrets.API_KEY }}
+      #   run: |
+      #     cd tikmatrix-pro
+      #     node ./scripts/update-download-url.js --platform=mac --all-distributors
