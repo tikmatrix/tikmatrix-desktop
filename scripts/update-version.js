@@ -95,11 +95,6 @@ function validateProductName(productName, platform) {
         throw new Error(`Invalid product name for ${platform}: ${productName}. Contains unsafe characters.`)
     }
     
-    // Additional check: prevent path traversal patterns
-    if (productName.includes('..') || productName.includes('./') || productName.includes('.\\')) {
-        throw new Error(`Invalid product name for ${platform}: ${productName}. Contains path traversal patterns.`)
-    }
-    
     return productName
 }
 
@@ -166,9 +161,11 @@ const platforms = {
 
 // Only include macOS platforms if we have a valid macOS signature
 if (macSignature && macProductName) {
-    const macUrl = `https://r2.niostack.com/${macProductName}_${version}_universal.dmg`
+    // Tauri updater expects .tar.gz for macOS (not .dmg directly)
+    const macUrl = `https://r2.niostack.com/${macProductName}_${version}_universal.dmg.tar.gz`
     
     // Add all macOS platform variants with the same configuration
+    // Note: Using universal binary signature for all darwin platforms
     platforms["darwin-x86_64"] = { "signature": macSignature, "url": macUrl }
     platforms["darwin-arm64"] = { "signature": macSignature, "url": macUrl }
     platforms["darwin-aarch64"] = { "signature": macSignature, "url": macUrl }
