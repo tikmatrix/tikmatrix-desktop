@@ -86,6 +86,16 @@ function findMacSignatureFile(bundleDir, version) {
     return path.join(bundleDir, sigFiles[0])
 }
 
+function validateProductName(productName, platform) {
+    // Validate that product name only contains safe characters
+    // Allow alphanumeric, spaces, hyphens, underscores, and dots
+    const validPattern = /^[a-zA-Z0-9\s._-]+$/
+    if (!validPattern.test(productName)) {
+        throw new Error(`Invalid product name for ${platform}: ${productName}. Contains unsafe characters.`)
+    }
+    return productName
+}
+
 const params = parseArgs()
 const configPath = resolvePath('src-tauri', 'tauri.conf.json')
 const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'))
@@ -102,7 +112,10 @@ const suffix = `_${version}_x64_en-US.msi.zip.sig`
 if (!signatureFileName.endsWith(suffix)) {
     throw new Error(`Unexpected signature file format: ${signatureFileName}`)
 }
-const productName = signatureFileName.slice(0, -suffix.length)
+const productName = validateProductName(
+    signatureFileName.slice(0, -suffix.length),
+    'Windows'
+)
 
 // Try to find macOS signature file and extract product name
 const macBundleDir = resolvePath('src-tauri', 'target', 'universal-apple-darwin', 'release', 'bundle', 'dmg')
@@ -118,7 +131,10 @@ if (macSignaturePath) {
         if (!macSignatureFileName.endsWith(macSuffix)) {
             console.warn(`Warning: Unexpected macOS signature file format: ${macSignatureFileName}`)
         } else {
-            macProductName = macSignatureFileName.slice(0, -macSuffix.length)
+            macProductName = validateProductName(
+                macSignatureFileName.slice(0, -macSuffix.length),
+                'macOS'
+            )
         }
     } catch (error) {
         console.warn(`Warning: Could not read macOS signature file: ${error.message}`)
@@ -143,18 +159,16 @@ const platforms = {
 
 // Only include macOS platforms if we have a valid macOS signature
 if (macSignature && macProductName) {
-    platforms["darwin-x86_64"] = {
+    const macUrl = `https://r2.niostack.com/${macProductName}_${version}_universal.dmg`
+    const macPlatformConfig = {
         "signature": macSignature,
-        "url": `https://r2.niostack.com/${macProductName}_${version}_universal.dmg`
+        "url": macUrl
     }
-    platforms["darwin-arm64"] = {
-        "signature": macSignature,
-        "url": `https://r2.niostack.com/${macProductName}_${version}_universal.dmg`
-    }
-    platforms["darwin-aarch64"] = {
-        "signature": macSignature,
-        "url": `https://r2.niostack.com/${macProductName}_${version}_universal.dmg`
-    }
+    
+    // Add all macOS platform variants with the same configuration
+    platforms["darwin-x86_64"] = macPlatformConfig
+    platforms["darwin-arm64"] = macPlatformConfig
+    platforms["darwin-aarch64"] = macPlatformConfig
 }
 
 let body = JSON.stringify({
