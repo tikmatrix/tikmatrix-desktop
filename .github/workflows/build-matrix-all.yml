@@ -29,6 +29,7 @@ on:
         options:
           - all
           - tikmatrix
+          - tikmatrix.pro
           - igmatrix
 
 permissions:

@@ -56,35 +56,35 @@ jobs:
         run: npm install
         working-directory: tikmatrix-pro
 
-      # - name: Build official package
-      #   if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
-      #   run: .\build.ps1
-      #   working-directory: tikmatrix-pro
+      - name: Build TikMatrix Pro package
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        run: .\build.ps1
+        working-directory: tikmatrix-pro
 
-      # - name: Upload official package to R2
-      #   if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
-      #   uses: ryand56/r2-upload-action@v1.4
-      #   with:
-      #     r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
-      #     r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
-      #     r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
-      #     r2-bucket: matrix
-      #     source-dir: ./tikmatrix-pro/src-tauri/target/release/bundle/msi
-      #     destination-dir: ./
+      - name: Upload official package to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./tikmatrix-pro/src-tauri/target/release/bundle/msi
+          destination-dir: ./
 
-      # - name: Update version
-      #   if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
-      #   env:
-      #     TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
-      #     API_KEY: ${{ secrets.API_KEY }}
-      #   run: |
-      #     cd tikmatrix-pro
-      #     node ./scripts/update-version.js
+      - name: Update version
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        env:
+          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd tikmatrix-pro
+          node ./scripts/update-version.js --app=tikmatrix.pro --app-name='TikMatrix Pro'
 
-      # - name: Clear uploaded files
-      #   if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
-      #   run: |
-      #     Remove-Item -Path .\tikmatrix-pro\src-tauri\target\release\bundle\msi\* -Force -Recurse
+      - name: Clear uploaded files
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        run: |
+          Remove-Item -Path .\tikmatrix-pro\src-tauri\target\release\bundle\msi\* -Force -Recurse
       # TikMatrix whitelabel build and upload steps
       - name: Build TikMatrix whitelabel package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
