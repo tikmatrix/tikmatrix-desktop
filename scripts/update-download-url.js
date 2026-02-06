@@ -90,7 +90,7 @@ async function updateDownloadUrl(platform, app, distributorCode, downloadUrl) {
     console.log(`Updating ${distributorCode} (${platform}): ${downloadUrl}`)
 
     try {
-        const response = await fetch('https://api.niostack.com/ci/update_download_url', {
+        const response = await fetch('https://api.tikmatrix.com/ci/update_download_url', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'text/plain',
@@ -102,20 +102,7 @@ async function updateDownloadUrl(platform, app, distributorCode, downloadUrl) {
             },
             body: downloadUrl
         })
-        //new tikmatrix api call
-        const response_rust = await fetch('https://api.tikmatrix.com/ci/update_download_url', {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'text/plain',
-                'Content-Length': downloadUrl.length.toString(),
-                'Authorization': 'Bearer ' + process.env.API_KEY,
-                'X-Platform': platform,
-                'X-App': app,
-                'X-Distributor': distributorCode
-            },
-            body: downloadUrl
-        })
-        console.log(`tikmatrix response: ${response_rust.status} ${response_rust.statusText}`)
+        console.log(`tikmatrix response: ${response.status} ${response.statusText}`)
 
         if (response.ok) {
             console.log(`✅ ${distributorCode}: ${response.status} ${response.statusText}`)

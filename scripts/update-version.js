@@ -76,7 +76,7 @@ let body = JSON.stringify({
     }
 }, null, 2)
 
-let response = await fetch('https://api.niostack.com/ci/update_version_info', {
+let response = await fetch('https://api.tikmatrix.com/ci/update_version_info', {
     method: 'PUT',
     headers: {
         'Content-Type': 'text/plain',
@@ -87,15 +87,3 @@ let response = await fetch('https://api.niostack.com/ci/update_version_info', {
     body: body
 })
 console.log(`update_version_info: ${response.status} ${response.statusText}`)
-// For Rust version info update
-let response_rust = await fetch('https://api.tikmatrix.com/ci/update_version_info', {
-    method: 'PUT',
-    headers: {
-        'Content-Type': 'text/plain',
-        'Content-Length': Buffer.byteLength(body).toString(),
-        'Authorization': 'Bearer ' + process.env.API_KEY,
-        'X-App': params.app
-    },
-    body: body
-})
-console.log(`update_version_info: ${response_rust.status} ${response_rust.statusText}`)

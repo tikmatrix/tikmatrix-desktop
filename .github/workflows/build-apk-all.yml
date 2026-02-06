@@ -90,17 +90,7 @@ jobs:
           )
 
           echo "Updating apk library..."
-          HTTP_CODE=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer ${API_KEY}" \
-            -d "${APK_PAYLOAD}") || true
 
-          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
-            echo "apk library updated successfully (HTTP $HTTP_CODE)"
-          else
-            echo "Failed to update apk library (HTTP $HTTP_CODE)"
-            exit 1
-          fi
           curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${API_KEY}" \
@@ -121,17 +111,7 @@ jobs:
           )
 
           echo "Updating test-apk library..."
-          HTTP_CODE2=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer ${API_KEY}" \
-            -d "${TEST_PAYLOAD}") || true
 
-          if [ "$HTTP_CODE2" -ge 200 ] && [ "$HTTP_CODE2" -lt 300 ]; then
-            echo "test-apk library updated successfully (HTTP $HTTP_CODE2)"
-          else
-            echo "Failed to update test-apk library (HTTP $HTTP_CODE2)"
-            exit 1
-          fi
           curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${API_KEY}" \
@@ -178,17 +158,7 @@ jobs:
           )
 
           echo "Updating AGATikTok apk library..."
-          HTTP_CODE=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer ${API_KEY}" \
-            -d "${APK_PAYLOAD}") || true
 
-          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
-            echo "AGATikTok apk library updated successfully (HTTP $HTTP_CODE)"
-          else
-            echo "Failed to update AGATikTok apk library (HTTP $HTTP_CODE)"
-            exit 1
-          fi
           curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${API_KEY}" \
@@ -209,17 +179,7 @@ jobs:
           )
 
           echo "Updating AGATikTok test-apk library..."
-          HTTP_CODE2=$(curl -s -o /dev/stderr -w "%{http_code}" -X POST "https://api.niostack.com/ci/update_lib" \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer ${API_KEY}" \
-            -d "${TEST_PAYLOAD}") || true
 
-          if [ "$HTTP_CODE2" -ge 200 ] && [ "$HTTP_CODE2" -lt 300 ]; then
-            echo "AGATikTok test-apk library updated successfully (HTTP $HTTP_CODE2)"
-          else
-            echo "Failed to update AGATikTok test-apk library (HTTP $HTTP_CODE2)"
-            exit 1
-          fi
           curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${API_KEY}" \

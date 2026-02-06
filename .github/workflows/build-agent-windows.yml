@@ -140,8 +140,6 @@ jobs:
                 "Content-Type" = "application/json"
                 "Authorization" = "Bearer ${{ secrets.API_KEY }}"
               }
-              Invoke-RestMethod -Uri "https://api.niostack.com/ci/update_lib" -Method Post -Headers $agentHeaders -Body $AGENT_UPDATE_DATA
-              Write-Host "Agent library updated successfully"
               Invoke-RestMethod -Uri "https://api.tikmatrix.com/ci/update_lib" -Method Post -Headers $agentHeaders -Body $AGENT_UPDATE_DATA
               Write-Host "Agent library updated successfully on api.tikmatrix.com"
             } catch {
@@ -177,8 +175,6 @@ jobs:
                 "Content-Type" = "application/json"
                 "Authorization" = "Bearer ${{ secrets.API_KEY }}"
               }
-              Invoke-RestMethod -Uri "https://api.niostack.com/ci/update_lib" -Method Post -Headers $scriptHeaders -Body $SCRIPT_UPDATE_DATA
-              Write-Host "Script library updated successfully"
               Invoke-RestMethod -Uri "https://api.tikmatrix.com/ci/update_lib" -Method Post -Headers $scriptHeaders -Body $SCRIPT_UPDATE_DATA
               Write-Host "Script library updated successfully on api.tikmatrix.com"
             } catch {
