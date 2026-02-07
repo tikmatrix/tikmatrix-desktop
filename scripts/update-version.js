@@ -41,39 +41,143 @@ function readSignature(filePath) {
     return fs.readFileSync(filePath, 'utf-8')
 }
 
+function findSignatureFile(bundleDir, version) {
+    // Look for signature files matching the pattern *_{version}_x64_en-US.msi.zip.sig
+    // This handles productNames with spaces (e.g., "TikMatrix Pro")
+    if (!fs.existsSync(bundleDir)) {
+        throw new Error(`Bundle directory not found: ${bundleDir}`)
+    }
+    
+    const files = fs.readdirSync(bundleDir)
+    const pattern = `_${version}_x64_en-US.msi.zip.sig`
+    const sigFiles = files.filter(f => f.endsWith(pattern))
+    
+    if (sigFiles.length === 0) {
+        throw new Error(`No signature file found in ${bundleDir} matching pattern: *${pattern}`)
+    }
+    
+    if (sigFiles.length > 1) {
+        console.warn(`Warning: Multiple signature files found, using first one: ${sigFiles[0]}`)
+    }
+    
+    return path.join(bundleDir, sigFiles[0])
+}
+
+function findMacSignatureFile(bundleDir, version) {
+    // Look for macOS signature files matching the pattern *_{version}_universal.dmg.tar.gz.sig
+    // This handles productNames with spaces (e.g., "TikMatrix Pro")
+    if (!fs.existsSync(bundleDir)) {
+        // If the macOS bundle directory doesn't exist, return null (not an error for Windows-only builds)
+        return null
+    }
+    
+    const files = fs.readdirSync(bundleDir)
+    const pattern = `_${version}_universal.dmg.tar.gz.sig`
+    const sigFiles = files.filter(f => f.endsWith(pattern))
+    
+    if (sigFiles.length === 0) {
+        return null
+    }
+    
+    if (sigFiles.length > 1) {
+        console.warn(`Warning: Multiple macOS signature files found, using first one: ${sigFiles[0]}`)
+    }
+    
+    return path.join(bundleDir, sigFiles[0])
+}
+
+function validateProductName(productName, platform) {
+    // Validate that product name only contains safe characters
+    // Allow alphanumeric, spaces, hyphens, and underscores
+    // Note: Dots are excluded to prevent path traversal attacks
+    const validPattern = /^[a-zA-Z0-9\s_-]+$/
+    if (!validPattern.test(productName)) {
+        throw new Error(`Invalid product name for ${platform}: ${productName}. Contains unsafe characters.`)
+    }
+    
+    return productName
+}
+
 const params = parseArgs()
 const configPath = resolvePath('src-tauri', 'tauri.conf.json')
 const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'))
 const version = config.package.version
-const signaturePath = resolvePath('src-tauri', 'target', 'release', 'bundle', 'msi', `${params.appName}_${version}_x64_en-US.msi.zip.sig`)
+const bundleDir = resolvePath('src-tauri', 'target', 'release', 'bundle', 'msi')
+const signaturePath = findSignatureFile(bundleDir, version)
 const signature = readSignature(signaturePath)
+
+// Extract the actual product name from the signature file name
+// e.g., "TikMatrix Pro_2.12.5_x64_en-US.msi.zip.sig" -> "TikMatrix Pro"
+// Use a more robust extraction that splits on the version pattern
+const signatureFileName = path.basename(signaturePath)
+const suffix = `_${version}_x64_en-US.msi.zip.sig`
+if (!signatureFileName.endsWith(suffix)) {
+    throw new Error(`Unexpected signature file format: ${signatureFileName}`)
+}
+const productName = validateProductName(
+    signatureFileName.slice(0, -suffix.length),
+    'Windows'
+)
+
+// Try to find macOS signature file and extract product name
+const macBundleDir = resolvePath('src-tauri', 'target', 'universal-apple-darwin', 'release', 'bundle', 'dmg')
+const macSignaturePath = findMacSignatureFile(macBundleDir, version)
+let macProductName = null
+let macSignature = null
+
+if (macSignaturePath) {
+    try {
+        macSignature = readSignature(macSignaturePath)
+        const macSignatureFileName = path.basename(macSignaturePath)
+        const macSuffix = `_${version}_universal.dmg.tar.gz.sig`
+        if (!macSignatureFileName.endsWith(macSuffix)) {
+            console.warn(`Warning: Unexpected macOS signature file format: ${macSignatureFileName}`)
+        } else {
+            macProductName = validateProductName(
+                macSignatureFileName.slice(0, -macSuffix.length),
+                'macOS'
+            )
+        }
+    } catch (error) {
+        console.warn(`Warning: Could not read macOS signature file: ${error.message}`)
+    }
+}
 
 console.log(`App: ${params.app}`)
 console.log(`App Name: ${params.appName}`)
+console.log(`Product Name (from bundle): ${productName}`)
+if (macProductName) {
+    console.log(`Mac Product Name (from bundle): ${macProductName}`)
+}
 console.log(`Version: v${version}`)
+
+// Build platforms configuration
+// Note: Product names need URL encoding for spaces
+const platforms = {
+    "windows-x86_64": {
+        "signature": signature,
+        "url": `https://r2.niostack.com/${encodeURIComponent(productName + '_' + version + '_x64_en-US.msi.zip')}`
+    }
+}
+
+// Only include macOS platforms if we have a valid macOS signature
+if (macSignature && macProductName) {
+    // Tauri updater expects .tar.gz for macOS (not .dmg directly)
+    const macFileName = `${macProductName}_${version}_universal.dmg.tar.gz`
+    const macUrl = `https://r2.niostack.com/${encodeURIComponent(macFileName)}`
+    
+    // Add all macOS platform variants with the same configuration
+    // Note: Using universal binary signature for all darwin platforms
+    platforms["darwin-x86_64"] = { "signature": macSignature, "url": macUrl }
+    platforms["darwin-arm64"] = { "signature": macSignature, "url": macUrl }
+    platforms["darwin-aarch64"] = { "signature": macSignature, "url": macUrl }
+}
 
 let body = JSON.stringify({
     "version": `v${version}`,
     "notes": `v${version} is released! Please update to the new version.`,
     "pub_date": new Date().toISOString(),
-    "platforms": {
-        "windows-x86_64": {
-            "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_x64_en-US.msi.zip`
-        },
-        "darwin-x86_64": {
-            "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_universal.dmg`
-        },
-        "darwin-arm64": {
-            "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_universal.dmg`
-        },
-        "darwin-aarch64": {
-            "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_universal.dmg`
-        }
-    }
+    "platforms": platforms
 }, null, 2)
 
 let response = await fetch('https://api.tikmatrix.com/ci/update_version_info', {
