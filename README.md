@@ -1,3 +1,5 @@
+[![Service Health Check](https://github.com/tikmatrix/tikmatrix-desktop/actions/workflows/service-health-check.yml/badge.svg)](https://github.com/tikmatrix/tikmatrix-desktop/actions/workflows/service-health-check.yml)
+
 # TikMatrix
 
 📱 TikMatrix- is a PC desktop software for automating TikTok on Android phones.
