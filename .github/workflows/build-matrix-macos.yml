@@ -80,6 +80,15 @@ jobs:
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: |
           rm -rf ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
+      - name: Update TikMatrix Pro download url
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        env:
+          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd tikmatrix-pro
+          node ./scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=tikmatrix.pro --app-name='TikMatrix Pro'
+
       # TikMatrix whitelabel build and upload steps
       - name: Build TikMatrix whitelabel package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}

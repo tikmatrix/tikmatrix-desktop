@@ -85,6 +85,15 @@ jobs:
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: |
           Remove-Item -Path .\tikmatrix-pro\src-tauri\target\release\bundle\msi\* -Force -Recurse
+      - name: Update TikMatrix Pro download url
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        env:
+          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd tikmatrix-pro
+          node ./scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=tikmatrix.pro --app-name='TikMatrix Pro'
+
       # TikMatrix whitelabel build and upload steps
       - name: Build TikMatrix whitelabel package
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
