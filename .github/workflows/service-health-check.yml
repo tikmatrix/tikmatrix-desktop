@@ -1,0 +1,148 @@
+name: Service Health Check
+run-name: Checking service health on VPS servers 🏥
+
+'on':
+  # Run every 10 minutes
+  schedule:
+    - cron: '*/10 * * * *'
+  
+  # Allow manual trigger for testing
+  workflow_dispatch:
+    inputs:
+      server:
+        description: "Target server (leave empty for all servers)"
+        required: false
+        type: choice
+        options:
+          - ""
+          - server-us
+          - server-dublin
+          - server-sgp
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      servers: ${{ steps.get-servers.outputs.servers }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Determine target servers
+        id: get-servers
+        run: |
+          CONFIG=$(cat deploy-config.json)
+          SELECTED_SERVER="${{ github.event.inputs.server }}"
+          
+          if [[ -n "$SELECTED_SERVER" ]]; then
+            # Use specific server
+            SERVERS=$(echo "$CONFIG" | jq -c --arg target "$SELECTED_SERVER" '[.servers[] | select(.id == $target)]')
+          else
+            # Use all servers
+            SERVERS=$(echo "$CONFIG" | jq -c '.servers')
+          fi
+          
+          # Validate servers is not empty
+          if [[ -z "$SERVERS" || "$SERVERS" == "[]" || "$SERVERS" == "null" ]]; then
+            echo "Error: No servers found"
+            exit 1
+          fi
+          
+          echo "servers=$SERVERS" >> $GITHUB_OUTPUT
+          echo "Target servers: $SERVERS"
+
+  health-check:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Check and restart services on ${{ matrix.server.id }}
+        env:
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          SERVER_ID="${{ matrix.server.id }}"
+          SERVER_HOST="${{ matrix.server.host }}"
+          SERVER_PORT="${{ matrix.server.port }}"
+          SERVER_USER="${{ matrix.server.user }}"
+          
+          echo "🔍 Checking services on $SERVER_ID ($SERVER_HOST)"
+          
+          # SSH to server and check/restart services
+          ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            -o ConnectTimeout=10 \
+            "$SERVER_USER@$SERVER_HOST" bash -s << 'EOF'
+          set -euo pipefail
+          
+          echo "========================================"
+          echo "Service Health Check Report"
+          echo "Server: $(hostname)"
+          echo "Time: $(date)"
+          echo "========================================"
+          
+          # Function to check and restart service
+          check_and_restart_service() {
+            local service_name=$1
+            local display_name=$2
+            
+            echo ""
+            echo "Checking $display_name..."
+            
+            if sudo systemctl is-active --quiet "$service_name"; then
+              echo "✅ $display_name is running"
+              return 0
+            else
+              echo "❌ $display_name is NOT running"
+              echo "🔧 Attempting to restart $display_name..."
+              
+              if sudo systemctl restart "$service_name"; then
+                sleep 2
+                if sudo systemctl is-active --quiet "$service_name"; then
+                  echo "✅ $display_name restarted successfully"
+                  return 0
+                else
+                  echo "⚠️  $display_name failed to start after restart"
+                  sudo systemctl status "$service_name" --no-pager || true
+                  return 1
+                fi
+              else
+                echo "❌ Failed to restart $display_name"
+                sudo systemctl status "$service_name" --no-pager || true
+                return 1
+              fi
+            fi
+          }
+          
+          # Check nginx service
+          check_and_restart_service "nginx" "Nginx Service"
+          
+          # Check tikmatrix-api-rs service
+          check_and_restart_service "tikmatrix-api-rs.service" "TikMatrix API Rust Service"
+          
+          echo ""
+          echo "========================================"
+          echo "Health check completed"
+          echo "========================================"
+          EOF
+          
+          echo "✅ Service health check completed on $SERVER_ID"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
