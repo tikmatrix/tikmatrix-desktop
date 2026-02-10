@@ -21,22 +21,53 @@ on:
           - all
           - windows
           - macos
-      build_apps:
-        description: "Apps to build"
+      app:
+        description: "App to build"
         required: true
-        default: "all"
+        default: "All"
         type: choice
         options:
-          - all
-          - tikmatrix
-          - tikmatrix.pro
-          - igmatrix
+          - All
+          - TikMatrix
+          - TikMatrix Pro
+          - IgMatrix
 
 permissions:
   contents: write
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      build_apps: ${{ steps.map-app.outputs.build_apps }}
+    steps:
+      - name: Map app name to internal value
+        id: map-app
+        env:
+          APP_INPUT: ${{ inputs.app }}
+        run: |
+          case "$APP_INPUT" in
+            "All")
+              echo "build_apps=all" >> $GITHUB_OUTPUT
+              ;;
+            "TikMatrix")
+              echo "build_apps=tikmatrix" >> $GITHUB_OUTPUT
+              ;;
+            "TikMatrix Pro")
+              echo "build_apps=tikmatrix.pro" >> $GITHUB_OUTPUT
+              ;;
+            "IgMatrix")
+              echo "build_apps=igmatrix" >> $GITHUB_OUTPUT
+              ;;
+            *)
+              # Fallback to all (should never reach here due to choice validation)
+              echo "::warning::Unknown app input: $APP_INPUT, falling back to 'all'"
+              echo "build_apps=all" >> $GITHUB_OUTPUT
+              ;;
+          esac
+
   create-tag:
+    needs: prepare
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -61,21 +92,21 @@ jobs:
           fi
 
   build-matrix-windows:
-    needs: create-tag
+    needs: [prepare, create-tag]
     if: ${{ inputs.platforms == 'all' || inputs.platforms == 'windows' }}
     uses: ./.github/workflows/build-matrix-windows.yml
     with:
       version: ${{ inputs.version }}
       branch: ${{ inputs.branch }}
-      build_apps: ${{ inputs.build_apps }}
+      build_apps: ${{ needs.prepare.outputs.build_apps }}
     secrets: inherit
 
   build-matrix-macos:
-    needs: create-tag
+    needs: [prepare, create-tag]
     if: ${{ inputs.platforms == 'all' || inputs.platforms == 'macos' }}
     uses: ./.github/workflows/build-matrix-macos.yml
     with:
       version: ${{ inputs.version }}
       branch: ${{ inputs.branch }}
-      build_apps: ${{ inputs.build_apps }}
+      build_apps: ${{ needs.prepare.outputs.build_apps }}
     secrets: inherit
