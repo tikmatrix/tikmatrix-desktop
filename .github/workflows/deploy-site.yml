@@ -154,7 +154,7 @@ jobs:
           
           if [[ -n "$REPOSITORY" ]]; then
             echo "Using external repository: $REPOSITORY"
-            echo "CHECKOUT_PATH=site-source" >> $GITHUB_ENV
+            echo "CHECKOUT_PATH=site-source/website" >> $GITHUB_ENV
             echo "EXTERNAL_REPO=$REPOSITORY" >> $GITHUB_ENV
           else
             echo "Using default repository (website directory)"
@@ -181,13 +181,12 @@ jobs:
         run: cd ${{ env.CHECKOUT_PATH }} && npm ci
 
       - name: Run brand replacement if needed
-        if: env.EXTERNAL_REPO == ''
         run: |
-          cd website
           BRAND_REPLACE=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.brandReplace')
 
           if [[ "$BRAND_REPLACE" == "true" ]]; then
             echo "Running brand replacement..."
+            cd ${{ env.CHECKOUT_PATH }}
             node ../scripts/replace-brand.js
           else
             echo "Brand replacement not needed for this site"

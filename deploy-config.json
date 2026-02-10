@@ -25,6 +25,8 @@
             "domain": "tikmatrix.com",
             "branch": "main",
             "brandReplace": false,
+            "repository": "tikmatrix/tikmatrix-pro",
+            "buildOutputDir": "build",
             "deployTo": [
                 "server-us",
                 "server-dublin",
@@ -36,6 +38,8 @@
             "domain": "ytmatrix.com",
             "branch": "main",
             "brandReplace": false,
+            "repository": "tikmatrix/tikmatrix-pro",
+            "buildOutputDir": "build",
             "deployTo": [
                 "server-us",
                 "server-dublin",
@@ -46,7 +50,9 @@
             "name": "igmatrix",
             "domain": "igmatrix.com",
             "branch": "main",
-            "brandReplace": true,
+            "brandReplace": false,
+            "repository": "tikmatrix/tikmatrix-pro",
+            "buildOutputDir": "build",
             "deployTo": [
                 "server-us",
                 "server-dublin",
