@@ -170,7 +170,7 @@ jobs:
             echo "EXTERNAL_REPO=$REPOSITORY" >> $GITHUB_ENV
           else
             echo "Using default repository (website directory)"
-            echo "CHECKOUT_PATH=website" >> $GITHUB_ENV
+            echo "CHECKOUT_PATH=tikmatrix-pro/website" >> $GITHUB_ENV
             echo "EXTERNAL_REPO=" >> $GITHUB_ENV
           fi
 
@@ -194,6 +194,7 @@ jobs:
 
       - name: Run brand replacement if needed
         if: env.EXTERNAL_REPO == ''
+        working-directory: tikmatrix-pro
         run: |
           cd website
           BRAND_REPLACE=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.brandReplace')
