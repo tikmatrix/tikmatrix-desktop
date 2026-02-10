@@ -282,7 +282,7 @@ jobs:
       - name: Deploy to ${{ matrix.deployment.server.id }}
         env:
           SITE: ${{ matrix.deployment.site_name }}
-          CONFIG_FILE: deploy-config.json
+          CONFIG_FILE: ./tikmatrix-pro/deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
           echo "🚀 Deploying $SITE to ${{ matrix.deployment.server.id }} (${{ matrix.deployment.server.host }})"
