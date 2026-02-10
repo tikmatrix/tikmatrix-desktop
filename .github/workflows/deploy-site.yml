@@ -36,9 +36,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: main
+          path: tikmatrix-pro
 
       - name: Determine target sites and deployments
         id: get-sites
+        working-directory: tikmatrix-pro
         run: |
           CONFIG=$(cat deploy-config.json)
           SELECTED_SITE="${{ github.event.inputs.site }}"
@@ -147,11 +153,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: main
+          path: tikmatrix-pro
 
       - name: Determine repository and checkout
+        working-directory: tikmatrix-pro
         run: |
           REPOSITORY=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.repository // empty')
-          
+
           if [[ -n "$REPOSITORY" ]]; then
             echo "Using external repository: $REPOSITORY"
             echo "CHECKOUT_PATH=site-source" >> $GITHUB_ENV
@@ -196,16 +208,16 @@ jobs:
       - name: Build project
         run: |
           cd ${{ env.CHECKOUT_PATH }}
-          
+
           BUILD_COMMAND=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.buildCommand // "npm run build"')
           echo "Running build command: $BUILD_COMMAND"
-          
+
           # Validate build command - only allow npm/yarn commands
           if [[ ! "$BUILD_COMMAND" =~ ^(npm|yarn|pnpm)($|[[:space:]]) ]]; then
             echo "Error: Invalid build command. Only npm, yarn, or pnpm commands are allowed."
             exit 1
           fi
-          
+
           $BUILD_COMMAND
 
       - name: Create deployment archive
@@ -213,15 +225,15 @@ jobs:
           WORKSPACE="${{ github.workspace }}"
           CHECKOUT_PATH="${{ env.CHECKOUT_PATH }}"
           BUILD_OUTPUT_DIR=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.buildOutputDir // "build"')
-          
+
           echo "Using build output directory: $BUILD_OUTPUT_DIR"
           echo "Workspace: $WORKSPACE"
           echo "Checkout path: $CHECKOUT_PATH"
-          
+
           # Create archive from the build output directory
           cd "$WORKSPACE/$CHECKOUT_PATH/$BUILD_OUTPUT_DIR"
           tar -czf "$WORKSPACE/build-${{ matrix.site.name }}.tar.gz" .
-          
+
           # Verify archive was created
           ls -lh "$WORKSPACE/build-${{ matrix.site.name }}.tar.gz"
 
@@ -242,6 +254,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: main
+          path: tikmatrix-pro
 
       - name: Checkout LinuxConfig repository
         uses: actions/checkout@v4
