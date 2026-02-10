@@ -43,21 +43,9 @@ jobs:
     steps:
       - name: Map app name to internal value
         id: map-app
+        env:
+          APP_INPUT: ${{ inputs.app }}
         run: |
-          APP_INPUT="${{ inputs.app }}"
-          
-          # Validate input
-          case "$APP_INPUT" in
-            "All"|"TikMatrix"|"TikMatrix Pro"|"IgMatrix")
-              # Valid input, proceed with mapping
-              ;;
-            *)
-              echo "Error: Invalid app input: $APP_INPUT"
-              exit 1
-              ;;
-          esac
-          
-          # Map to internal value
           case "$APP_INPUT" in
             "All")
               echo "build_apps=all" >> $GITHUB_OUTPUT
@@ -70,6 +58,10 @@ jobs:
               ;;
             "IgMatrix")
               echo "build_apps=igmatrix" >> $GITHUB_OUTPUT
+              ;;
+            *)
+              # Fallback to all (should never reach here due to choice validation)
+              echo "build_apps=all" >> $GITHUB_OUTPUT
               ;;
           esac
 
