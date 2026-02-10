@@ -61,6 +61,7 @@ jobs:
               ;;
             *)
               # Fallback to all (should never reach here due to choice validation)
+              echo "::warning::Unknown app input: $APP_INPUT, falling back to 'all'"
               echo "build_apps=all" >> $GITHUB_OUTPUT
               ;;
           esac
