@@ -133,7 +133,7 @@ jobs:
           check_and_restart_service "nginx" "Nginx Service"
           
           # Check tikmatrix-api-rs service
-          check_and_restart_service "tikmatrix-api-rs.service" "TikMatrix API Rust Service"
+          check_and_restart_service "tikmatrix-api-rs" "TikMatrix API Rust Service"
           
           echo ""
           echo "========================================"
