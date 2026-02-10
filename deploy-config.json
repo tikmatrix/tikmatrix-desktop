@@ -26,6 +26,7 @@
             "branch": "main",
             "brandReplace": false,
             "repository": "tikmatrix/tikmatrix-pro",
+            "checkoutSubdir": "website",
             "buildOutputDir": "build",
             "deployTo": [
                 "server-us",
@@ -39,6 +40,7 @@
             "branch": "main",
             "brandReplace": false,
             "repository": "tikmatrix/tikmatrix-pro",
+            "checkoutSubdir": "website",
             "buildOutputDir": "build",
             "deployTo": [
                 "server-us",
@@ -52,6 +54,7 @@
             "branch": "main",
             "brandReplace": false,
             "repository": "tikmatrix/tikmatrix-pro",
+            "checkoutSubdir": "website",
             "buildOutputDir": "build",
             "deployTo": [
                 "server-us",

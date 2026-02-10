@@ -151,10 +151,15 @@ jobs:
       - name: Determine repository and checkout
         run: |
           REPOSITORY=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.repository // empty')
+          CHECKOUT_SUBDIR=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.checkoutSubdir // empty')
           
           if [[ -n "$REPOSITORY" ]]; then
             echo "Using external repository: $REPOSITORY"
-            echo "CHECKOUT_PATH=site-source/website" >> $GITHUB_ENV
+            if [[ -n "$CHECKOUT_SUBDIR" ]]; then
+              echo "CHECKOUT_PATH=site-source/$CHECKOUT_SUBDIR" >> $GITHUB_ENV
+            else
+              echo "CHECKOUT_PATH=site-source" >> $GITHUB_ENV
+            fi
             echo "EXTERNAL_REPO=$REPOSITORY" >> $GITHUB_ENV
           else
             echo "Using default repository (website directory)"
