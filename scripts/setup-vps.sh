@@ -25,16 +25,6 @@ ENABLE_SSL="n"
 AWS_KEY_ID=""
 AWS_SECRET=""
 GITHUB_PUBKEY=""
-SETUP_MODE="full"  # full or add-site
-SITE_TYPE="static"  # static or proxy
-PROXY_PASS=""       # Backend URL for reverse proxy (e.g., http://127.0.0.1:3000)
-
-# Predefined site configurations
-declare -A SITE_CONFIGS
-SITE_CONFIGS["tikmatrix"]="tikmatrix.com"
-SITE_CONFIGS["igmatrix"]="igmatrix.com"
-SITE_CONFIGS["ytmatrix"]="ytmatrix.com"
-SITE_CONFIGS["tikzenx"]="tikzenx.com"
 
 # Colors for output
 RED='\033[0;31m'
@@ -128,29 +118,6 @@ interactive_config() {
     echo -e "${CYAN}═══════════════════════════════════════════════════════════════${NC}"
     echo ""
     
-    # Check if this is first run or adding a site
-    if [[ -f /etc/nginx/nginx.conf ]] && id "$DEPLOY_USER" &>/dev/null; then
-        echo -e "${YELLOW}Detected existing TikMatrix installation.${NC}"
-        echo ""
-        echo "  1) Full setup (reinstall everything)"
-        echo "  2) Add new site only (recommended)"
-        echo ""
-        read -p "Enter choice [1-2, default: 2]: " mode_choice
-        mode_choice="${mode_choice:-2}"
-        
-        if [[ "$mode_choice" == "1" ]]; then
-            SETUP_MODE="full"
-            log_info "Running full setup mode..."
-        else
-            SETUP_MODE="add-site"
-            log_info "Running add-site mode (only configuring new site)..."
-        fi
-        echo ""
-    else
-        SETUP_MODE="full"
-        log_info "First time setup detected, running full installation..."
-    fi
-    
     # Site selection
     echo -e "${YELLOW}Select site to deploy:${NC}"
     echo "  1) tikmatrix.com (TikMatrix)"
@@ -208,53 +175,6 @@ interactive_config() {
     log_info "Web root: $WEB_ROOT"
     echo ""
     
-    # Site type selection
-    echo -e "${YELLOW}Select site type:${NC}"
-    echo "  1) Static website (HTML/CSS/JS files)"
-    echo "  2) Reverse proxy (proxy to backend service)"
-    echo ""
-    
-    while true; do
-        read -p "Enter choice [1-2, default: 1]: " type_choice
-        type_choice="${type_choice:-1}"
-        case $type_choice in
-            1)
-                SITE_TYPE="static"
-                log_info "Site type: Static website"
-                break
-                ;;
-            2)
-                SITE_TYPE="proxy"
-                echo ""
-                echo -e "${YELLOW}Backend URL Configuration:${NC}"
-                echo "  Enter the backend service URL to proxy requests to."
-                echo "  Examples:"
-                echo "    - http://127.0.0.1:3000"
-                echo "    - http://localhost:8080"
-                echo "    - http://192.168.1.100:5000"
-                echo ""
-                while true; do
-                    read -p "Backend URL: " PROXY_PASS
-                    if [[ -z "$PROXY_PASS" ]]; then
-                        log_error "Backend URL cannot be empty for reverse proxy"
-                        continue
-                    fi
-                    if [[ ! "$PROXY_PASS" =~ ^https?:// ]]; then
-                        log_error "Backend URL must start with http:// or https://"
-                        continue
-                    fi
-                    break
-                done
-                log_info "Site type: Reverse proxy -> $PROXY_PASS"
-                break
-                ;;
-            *)
-                echo "Invalid choice. Please enter 1 or 2."
-                ;;
-        esac
-    done
-    echo ""
-    
     # Check if site already exists
     if [[ -f "$NGINX_CONF" ]]; then
         echo -e "${YELLOW}⚠️  Warning: Site $DOMAIN already configured!${NC}"
@@ -266,16 +186,9 @@ interactive_config() {
         fi
     fi
     
-    # SSH Port (only for full setup)
-    if [[ "$SETUP_MODE" == "full" ]]; then
-        read -p "SSH port [default: 22]: " input_port
-        SSH_PORT="${input_port:-22}"
-    else
-        # Get current SSH port from UFW or default
-        SSH_PORT=$(ufw status | grep -oP '^\d+(?=/tcp.*ALLOW)' | head -1)
-        SSH_PORT="${SSH_PORT:-22}"
-        log_info "Using existing SSH port: $SSH_PORT"
-    fi
+    # SSH Port
+    read -p "SSH port [default: 22]: " input_port
+    SSH_PORT="${input_port:-22}"
     
     # GitHub Deploy Key
     echo ""
@@ -319,15 +232,9 @@ interactive_config() {
     if [[ -n "$WWW_DOMAIN" ]]; then
         echo "  WWW Domain:      $WWW_DOMAIN"
     fi
-    echo "  Site Type:       $SITE_TYPE"
-    if [[ "$SITE_TYPE" == "proxy" ]]; then
-        echo "  Backend URL:     $PROXY_PASS"
-    else
-        echo "  Web Root:        $WEB_ROOT"
-    fi
+    echo "  Web Root:        $WEB_ROOT"
     echo "  Deploy User:     $DEPLOY_USER"
     echo "  SSH Port:        $SSH_PORT"
-    echo "  Setup Mode:      $SETUP_MODE"
     echo "  SSL Setup:       $ENABLE_SSL"
     if [[ -n "$GITHUB_PUBKEY" ]]; then
         echo "  GitHub Key:      Provided"
@@ -717,183 +624,6 @@ setup_ssl() {
 }
 
 # =============================================================================
-# Nginx Reverse Proxy Configuration
-# =============================================================================
-setup_nginx_proxy() {
-    log_info "Installing Nginx..."
-    apt install nginx -y
-    
-    log_info "Configuring Nginx reverse proxy for $DOMAIN -> $PROXY_PASS..."
-    
-    # Build server_name with optional www domain
-    local SERVER_NAMES="$DOMAIN"
-    if [[ -n "$WWW_DOMAIN" ]]; then
-        SERVER_NAMES="$DOMAIN $WWW_DOMAIN"
-    fi
-    
-    # Extract backend host for SSL SNI (Server Name Indication)
-    local BACKEND_HOST
-    BACKEND_HOST=$(echo "$PROXY_PASS" | sed -E 's|^https?://([^/:]+).*|\1|')
-    
-    # Check if backend is HTTPS
-    local IS_HTTPS_BACKEND=false
-    if [[ "$PROXY_PASS" =~ ^https:// ]]; then
-        IS_HTTPS_BACKEND=true
-        log_info "HTTPS backend detected, enabling SSL SNI for: $BACKEND_HOST"
-    fi
-    
-    # Create Nginx reverse proxy configuration
-    cat > "$NGINX_CONF" << EOF
-# $DOMAIN Nginx Reverse Proxy Configuration
-# Rate limiting zone
-limit_req_zone \$binary_remote_addr zone=${DOMAIN//./_}_limit:10m rate=10r/s;
-
-# Upstream backend
-upstream ${DOMAIN//./_}_backend {
-    server ${PROXY_PASS#*://};
-    keepalive 64;
-}
-
-server {
-    listen 80;
-    listen [::]:80;
-    server_name $SERVER_NAMES;
-
-    access_log /var/log/nginx/${DOMAIN}.access.log;
-    error_log  /var/log/nginx/${DOMAIN}.error.log warn;
-
-    # Security - hide sensitive files
-    location ~ /\.(?!well-known) {
-        deny all;
-        access_log off;
-        log_not_found off;
-    }
-
-    # Main location with reverse proxy
-    location / {
-        limit_req zone=${DOMAIN//./_}_limit burst=20 nodelay;
-        
-        proxy_pass $PROXY_PASS;
-        proxy_http_version 1.1;
-EOF
-
-    # Add SSL SNI configuration for HTTPS backends
-    if [[ "$IS_HTTPS_BACKEND" == "true" ]]; then
-        cat >> "$NGINX_CONF" << EOF
-        
-        # SSL SNI (Server Name Indication) for HTTPS backend
-        proxy_ssl_server_name on;
-        proxy_ssl_name $BACKEND_HOST;
-EOF
-    fi
-
-    cat >> "$NGINX_CONF" << EOF
-        
-    # Proxy headers
-    # Use backend host as Host header to present requests as coming directly to the backend
-    proxy_set_header Host $BACKEND_HOST;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto \$scheme;
-        proxy_set_header X-Forwarded-Host \$host;
-        proxy_set_header X-Forwarded-Port \$server_port;
-        
-        # WebSocket support
-        proxy_set_header Upgrade \$http_upgrade;
-        proxy_set_header Connection "upgrade";
-        
-        # Timeout settings
-        proxy_connect_timeout 60s;
-        proxy_send_timeout 60s;
-        proxy_read_timeout 60s;
-        
-        # Buffer settings
-        proxy_buffering on;
-        proxy_buffer_size 4k;
-        proxy_buffers 8 4k;
-        proxy_busy_buffers_size 8k;
-        
-        # Security headers
-        add_header X-Content-Type-Options nosniff always;
-        add_header X-Frame-Options "SAMEORIGIN" always;
-        add_header X-XSS-Protection "1; mode=block" always;
-        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
-        add_header Permissions-Policy "geolocation=(), microphone=(), camera=()" always;
-    }
-
-    # Static assets with caching (if backend serves static files)
-    location ~* \.(?:css|js|json|map|xml|svg|png|jpe?g|gif|ico|webp|avif|ttf|woff2?|eot)\$ {
-        limit_req zone=${DOMAIN//./_}_limit burst=50 nodelay;
-        
-        proxy_pass $PROXY_PASS;
-        proxy_http_version 1.1;
-EOF
-
-    # Add SSL SNI configuration for HTTPS backends (static assets)
-    if [[ "$IS_HTTPS_BACKEND" == "true" ]]; then
-        cat >> "$NGINX_CONF" << EOF
-        
-        # SSL SNI (Server Name Indication) for HTTPS backend
-        proxy_ssl_server_name on;
-        proxy_ssl_name $BACKEND_HOST;
-EOF
-    fi
-
-    cat >> "$NGINX_CONF" << EOF
-        
-    # Use backend host as Host header for static asset proxying too
-    proxy_set_header Host $BACKEND_HOST;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto \$scheme;
-        
-        access_log off;
-        expires 7d;
-        add_header Cache-Control "public, max-age=604800";
-        add_header Pragma public;
-    }
-
-    # Health check endpoint (optional)
-    location /health {
-        access_log off;
-        return 200 "OK";
-        add_header Content-Type text/plain;
-    }
-
-    autoindex off;
-
-    # Gzip compression
-    gzip on;
-    gzip_vary on;
-    gzip_proxied any;
-    gzip_comp_level 6;
-    gzip_min_length 256;
-    gzip_types
-        text/plain text/css text/xml text/javascript
-        application/json application/javascript application/x-javascript
-        application/xml application/xml+rss
-        application/vnd.ms-fontobject application/x-font-ttf
-        font/opentype image/svg+xml image/x-icon;
-}
-EOF
-    
-    # Remove default nginx site
-    rm -f /etc/nginx/sites-enabled/default 2>/dev/null || true
-    
-    # Hide nginx version globally
-    sed -i 's/# server_tokens off;/server_tokens off;/' /etc/nginx/nginx.conf 2>/dev/null || \
-    grep -q "server_tokens off" /etc/nginx/nginx.conf || \
-    sed -i '/http {/a\    server_tokens off;' /etc/nginx/nginx.conf
-    
-    # Test and start nginx
-    nginx -t
-    systemctl enable nginx
-    systemctl restart nginx
-    
-    log_success "Nginx reverse proxy installed and configured."
-}
-
-# =============================================================================
 # Create Deploy Script
 # =============================================================================
 setup_deploy_script() {
@@ -1047,16 +777,9 @@ print_summary() {
     echo -e "${GREEN}              TikMatrix VPS Setup Complete!                    ${NC}"
     echo -e "${CYAN}═══════════════════════════════════════════════════════════════${NC}"
     echo ""
-    echo -e "${YELLOW}Setup Mode: ${NC}$SETUP_MODE"
-    echo ""
     echo -e "${YELLOW}Configuration Summary:${NC}"
     echo "  Domain:          $DOMAIN"
-    echo "  Site Type:       $SITE_TYPE"
-    if [[ "$SITE_TYPE" == "proxy" ]]; then
-        echo "  Backend URL:     $PROXY_PASS"
-    else
-        echo "  Web Root:        $WEB_ROOT"
-    fi
+    echo "  Web Root:        $WEB_ROOT"
     echo "  Nginx Config:    $NGINX_CONF"
     echo "  Deploy User:     $DEPLOY_USER"
     echo "  SSH Port:        $SSH_PORT"
@@ -1084,27 +807,8 @@ print_summary() {
     echo "  Check Firewall:   ufw status"
     echo "  Check Fail2Ban:   fail2ban-client status"
     echo ""
-    if [[ "$SETUP_MODE" == "full" && "$SITE_TYPE" == "static" ]]; then
-        echo -e "${YELLOW}Deploy Script:${NC}"
-        echo "  /home/$DEPLOY_USER/deploy.sh <archive> <target_dir>"
-        echo ""
-    fi
-    
-    if [[ "$SITE_TYPE" == "proxy" ]]; then
-        echo -e "${YELLOW}Reverse Proxy Info:${NC}"
-        echo "  Backend URL:     $PROXY_PASS"
-        echo "  Make sure your backend service is running!"
-        echo ""
-    fi
-    echo -e "${YELLOW}All Configured Sites:${NC}"
-    for conf in /etc/nginx/conf.d/www.*.conf; do
-        if [[ -f "$conf" ]]; then
-            site_domain=$(basename "$conf" .conf | sed 's/^www\.//')
-            echo "  - $site_domain"
-        fi
-    done
-    echo ""
-    echo -e "${YELLOW}To add another site, run this script again and choose 'Add new site only'${NC}"
+    echo -e "${YELLOW}Deploy Script:${NC}"
+    echo "  /home/$DEPLOY_USER/deploy.sh <archive> <target_dir>"
     echo ""
     echo "  Setup log: $LOG_FILE"
     echo ""
@@ -1128,46 +832,18 @@ main() {
     # Interactive configuration
     interactive_config
     
-    log_info "Starting TikMatrix VPS setup (mode: $SETUP_MODE)..."
+    log_info "Starting TikMatrix VPS setup..."
     
-    if [[ "$SETUP_MODE" == "full" ]]; then
-        # Full setup - execute all steps
-        setup_system
-        setup_deploy_user
-        setup_firewall
-        setup_fail2ban
-        if [[ "$SITE_TYPE" == "proxy" ]]; then
-            setup_nginx_proxy
-        else
-            setup_nginx
-        fi
-        setup_optimization
-        setup_security
-        setup_ssl
-        if [[ "$SITE_TYPE" == "static" ]]; then
-            setup_deploy_script
-        fi
-    else
-        # Add-site mode - only configure nginx and SSL for new site
-        log_info "Adding new site: $DOMAIN"
-        
-        # Update deploy user SSH key if provided
-        if [[ -n "$GITHUB_PUBKEY" ]]; then
-            if ! grep -qF "$GITHUB_PUBKEY" /home/$DEPLOY_USER/.ssh/authorized_keys 2>/dev/null; then
-                echo "$GITHUB_PUBKEY" >> /home/$DEPLOY_USER/.ssh/authorized_keys
-                log_success "GitHub deploy key added to authorized_keys"
-            else
-                log_warning "GitHub deploy key already exists in authorized_keys"
-            fi
-        fi
-        
-        if [[ "$SITE_TYPE" == "proxy" ]]; then
-            setup_nginx_proxy
-        else
-            setup_nginx
-        fi
-        setup_ssl
-    fi
+    # Execute all setup steps
+    setup_system
+    setup_deploy_user
+    setup_firewall
+    setup_fail2ban
+    setup_nginx
+    setup_optimization
+    setup_security
+    setup_ssl
+    setup_deploy_script
     
     # Final nginx restart
     systemctl restart nginx
