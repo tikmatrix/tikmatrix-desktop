@@ -15,12 +15,10 @@ on:
           - deploy-site.sh
           - fix-deploy-permissions.sh
           - health-check.sh
-          - init-vps.sh
           - install_alloy.service.sh
           - nginx-config.sh
           - push-files.sh
           - setup-hy2.sh
-          - setup-vps.sh
           - ssl-renew.sh
 
       script_args:
