@@ -93,11 +93,12 @@ jobs:
           path: tikmatrix-pro/server/src-rs/target/release/tikmatrix-api-rs
 
       - name: Upload GeoLite2 database
-        if: ${{ inputs.deploy_geolite }}
+        if: ${{ inputs.deploy_geolite == true }}
         uses: actions/upload-artifact@v4
         with:
           name: geolite2-db
           path: tikmatrix-pro/server/src-rs/data/GeoLite2-Country.mmdb
+          if-no-files-found: error
 
   deploy:
     needs: [prepare, build]
@@ -123,7 +124,7 @@ jobs:
           name: tikmatrix-binary
 
       - name: Download GeoLite2 database
-        if: ${{ inputs.deploy_geolite }}
+        if: ${{ inputs.deploy_geolite == true }}
         uses: actions/download-artifact@v4
         with:
           name: geolite2-db
