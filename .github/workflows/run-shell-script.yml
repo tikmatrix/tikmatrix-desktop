@@ -165,9 +165,9 @@ jobs:
           # Execute the script with properly quoted arguments
           if [[ -n "$SCRIPT_ARGS" ]]; then
             # Using eval with proper quoting to handle arguments safely
-            eval "./script_to_run.sh $SCRIPT_ARGS"
+            eval "sudo ./script_to_run.sh $SCRIPT_ARGS"
           else
-            ./script_to_run.sh
+            sudo ./script_to_run.sh
           fi
 
           # Cleanup
