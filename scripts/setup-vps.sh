@@ -21,9 +21,6 @@ NGINX_CONF=""
 DEPLOY_USER="deploy"
 LOG_FILE="/var/log/tikmatrix-setup.log"
 SSH_PORT="22"
-ENABLE_SSL="n"
-AWS_KEY_ID=""
-AWS_SECRET=""
 GITHUB_PUBKEY=""
 
 # Colors for output
@@ -200,28 +197,6 @@ interactive_config() {
     echo ""
     read -p "GitHub deploy public key: " GITHUB_PUBKEY
     
-    # SSL Configuration
-    echo ""
-    echo -e "${YELLOW}SSL Certificate Configuration:${NC}"
-    read -p "Setup SSL certificate now? (y/n) [default: n]: " ENABLE_SSL
-    ENABLE_SSL="${ENABLE_SSL:-n}"
-    
-    if [[ "$ENABLE_SSL" =~ ^[Yy]$ ]]; then
-        echo ""
-        echo "SSL validation method:"
-        echo "  1) HTTP validation (requires DNS already pointing to this server)"
-        echo "  2) Route 53 DNS validation (requires AWS credentials)"
-        echo ""
-        read -p "Enter choice [1-2]: " ssl_method
-        
-        if [[ "$ssl_method" == "2" ]]; then
-            echo ""
-            read -p "AWS Access Key ID: " AWS_KEY_ID
-            read -s -p "AWS Secret Access Key: " AWS_SECRET
-            echo ""
-        fi
-    fi
-    
     # Confirmation
     echo ""
     echo -e "${CYAN}═══════════════════════════════════════════════════════════════${NC}"
@@ -235,7 +210,6 @@ interactive_config() {
     echo "  Web Root:        $WEB_ROOT"
     echo "  Deploy User:     $DEPLOY_USER"
     echo "  SSH Port:        $SSH_PORT"
-    echo "  SSL Setup:       $ENABLE_SSL"
     if [[ -n "$GITHUB_PUBKEY" ]]; then
         echo "  GitHub Key:      Provided"
     else
@@ -560,67 +534,13 @@ EOF
 # SSL/TLS Configuration with Certbot
 # =============================================================================
 setup_ssl() {
-    log_info "Installing Certbot..."
-    apt install certbot python3-certbot-nginx python3-certbot-dns-route53 -y
+    log_info "Installing Certbot and SSL dependencies..."
+    apt install -y certbot python3-certbot-nginx python3-certbot-dns-route53 || {
+        log_error "Failed to install certbot packages."
+        return 1
+    }
     
-    # Build domain args for certbot
-    local CERTBOT_DOMAINS="-d $DOMAIN"
-    if [[ -n "$WWW_DOMAIN" ]]; then
-        CERTBOT_DOMAINS="$CERTBOT_DOMAINS -d $WWW_DOMAIN"
-    fi
-    
-    if [[ "$ENABLE_SSL" =~ ^[Yy]$ ]]; then
-        log_info "Obtaining SSL certificate..."
-        
-        if [[ -n "$AWS_KEY_ID" && -n "$AWS_SECRET" ]]; then
-            # Route 53 DNS validation
-            export AWS_ACCESS_KEY_ID="$AWS_KEY_ID"
-            export AWS_SECRET_ACCESS_KEY="$AWS_SECRET"
-            
-            certbot run -a dns-route53 -i nginx \
-                $CERTBOT_DOMAINS \
-                --agree-tos \
-                --no-eff-email \
-                --non-interactive \
-                --email "admin@$DOMAIN" || {
-                    log_warning "SSL setup with Route 53 failed. You may need to configure it manually."
-                }
-        else
-            # HTTP validation
-            certbot --nginx \
-                $CERTBOT_DOMAINS \
-                --agree-tos \
-                --no-eff-email \
-                --non-interactive \
-                --email "admin@$DOMAIN" || {
-                    log_warning "SSL setup failed. Make sure DNS is pointing to this server."
-                }
-        fi
-    else
-        log_info "SSL setup skipped. Run manually when ready:"
-        echo ""
-        echo "  Option 1 (HTTP validation - DNS must point here):"
-        if [[ -n "$WWW_DOMAIN" ]]; then
-            echo "    sudo certbot --nginx -d $DOMAIN -d $WWW_DOMAIN --agree-tos --no-eff-email"
-        else
-            echo "    sudo certbot --nginx -d $DOMAIN --agree-tos --no-eff-email"
-        fi
-        echo ""
-        echo "  Option 2 (Route 53 DNS validation):"
-        echo "    export AWS_ACCESS_KEY_ID='your_key_id'"
-        echo "    export AWS_SECRET_ACCESS_KEY='your_secret'"
-        if [[ -n "$WWW_DOMAIN" ]]; then
-            echo "    sudo certbot run -a dns-route53 -i nginx -d $DOMAIN -d $WWW_DOMAIN --agree-tos --no-eff-email"
-        else
-            echo "    sudo certbot run -a dns-route53 -i nginx -d $DOMAIN --agree-tos --no-eff-email"
-        fi
-        echo ""
-    fi
-    
-    # Setup auto-renewal cron job
-    (crontab -l 2>/dev/null | grep -v certbot; echo "0 3 * * * /usr/bin/certbot renew --quiet --post-hook 'systemctl reload nginx'") | crontab -
-    
-    log_success "Certbot installed and auto-renewal configured."
+    log_success "Certbot installed. Run 'certbot --help' or see https://certbot.eff.org for certificate generation options."
 }
 
 # =============================================================================
