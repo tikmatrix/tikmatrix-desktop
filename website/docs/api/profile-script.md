@@ -21,7 +21,7 @@ The `script_config` object contains the parameters for the profile script. Below
 | profile_order | string | No | "random" | Content selection order: `random` or `sequential` |
 | nicknames | string | No | "" | Nicknames to set, one per line (separated by newlines `\n`) |
 | usernames | string | No | "" | Usernames to set, one per line (separated by newlines `\n`) |
-| bios | string | No | "" | Bios to set, one per line (separated by newlines `\n`). Use `\\n` within a bio for line breaks |
+| bios | string | No | "" | Bios to set, one per line (separated by newlines `\n`). To add line breaks within a single bio, use `\\n` in the text |
 | link_url | string | No | "" | Link URL to set on profile |
 | avatars_path | string | No | "" | Absolute path to the folder containing avatar images |
 
@@ -163,7 +163,7 @@ curl -X POST http://localhost:50809/api/v1/task \
 
 3. **Clear gallery before setting avatar**: The script uses the first photo in the gallery as the avatar. It is recommended to clear the gallery before running the profile script.
 
-4. **Bio line breaks**: Use `\n` within a single bio entry to create line breaks. For example: `First line\nSecond line`.
+4. **Bio line breaks**: To add line breaks within a single bio entry, use `\\n` in the JSON string. For example: `"First line\\nSecond line"`.
 
 ## See Also
 
