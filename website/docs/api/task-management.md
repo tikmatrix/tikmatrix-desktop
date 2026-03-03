@@ -35,6 +35,12 @@ The API supports two modes for creating tasks:
 |-------------|-------------|---------------|
 | post | Publish videos or images to TikTok/Instagram | [Post Script Configuration](./post-script.md) |
 | follow | Follow or unfollow users | [Follow Script Configuration](./follow-script.md) |
+| unfollow | Unfollow users | [Unfollow Script Configuration](./unfollow-script.md) |
+| account_warmup | Warm up accounts | [Account Warmup Script Configuration](./account-warmup-script.md) |
+| comment | Comment on posts | [Comment Script Configuration](./comment-script.md) |
+| login | Log in to accounts | [Login Script Configuration](./login-script.md) |
+| profile | Update account profile | [Profile Script Configuration](./profile-script.md) |
+| match_accounts | Match accounts from device | [Match Accounts Script Configuration](./match-accounts-script.md) |
 
 ### Example
 

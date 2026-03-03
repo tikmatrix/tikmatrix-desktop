@@ -107,10 +107,12 @@ The `script_name` parameter accepts the following values:
 | `unfollow` | Unfollow users | ✅ Supported |
 | `account_warmup` | Warm up accounts | ✅ Supported |
 | `comment` | Comment on posts | ✅ Supported |
+| `login` | Log in to accounts | ✅ Supported |
+| `profile` | Update profile | ✅ Supported |
+| `match_accounts` | Match accounts from device | ✅ Supported |
 | `like` | Like posts | 🔜 Coming Soon |
 | `message` | Send direct messages | 🔜 Coming Soon |
 | `super_marketing` | Super marketing campaign | 🔜 Coming Soon |
-| `profile` | Update profile | 🔜 Coming Soon |
 | `scrape_user` | Scrape user data | 🔜 Coming Soon |
 
 ## Task Status
@@ -130,4 +132,7 @@ The `script_name` parameter accepts the following values:
 - [Unfollow Script Configuration](./unfollow-script) - Configure unfollow script parameters
 - [Account Warmup Script Configuration](./account-warmup-script) - Configure account warmup script parameters
 - [Comment Script Configuration](./comment-script) - Configure comment script parameters
+- [Login Script Configuration](./login-script) - Configure login script parameters
+- [Profile Script Configuration](./profile-script) - Configure profile script parameters
+- [Match Accounts Script Configuration](./match-accounts-script) - Configure match accounts script parameters
 - [API Examples](./examples) - Code examples in different languages
