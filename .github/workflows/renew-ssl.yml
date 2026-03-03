@@ -1,9 +1,12 @@
-# Server Configuration Workflow
-# Nginx configuration management
-name: Server Configuration
-run-name: ${{ github.actor }} is configuring Nginx ⚙️
+# SSL Certificate Renewal Workflow
+# Automatically renews SSL certificates on all servers every month using Route53
+name: Renew SSL Certificates
+run-name: ${{ github.actor }} is renewing SSL certificates 🔐
 
 on:
+  schedule:
+    # Run at 02:00 UTC on the 1st of every month
+    - cron: "0 2 1 * *"
   workflow_dispatch:
     inputs:
       server:
@@ -16,44 +19,11 @@ on:
           - server-dublin
           - server-sgp
 
-      # Nginx configuration options
-      domain:
-        description: "Domain for nginx configuration"
-        required: false
-        type: string
-
-      site_type:
-        description: "Site type (static or proxy)"
-        required: false
-        type: choice
-        options:
-          - static
-          - proxy
-        default: static
-
-      proxy_backend:
-        description: "Backend URL for reverse proxy (e.g., http://127.0.0.1:3000)"
-        required: false
-        type: string
-
-      enable_ssl:
-        description: "Enable SSL certificate setup"
-        required: false
-        type: boolean
-        default: false
-
-      ssl_method:
-        description: "SSL validation method"
-        required: false
-        type: choice
-        options:
-          - http
-          - route53
-        default: http
-
 jobs:
   prepare:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
       servers: ${{ steps.get-servers.outputs.servers }}
     steps:
@@ -63,9 +33,14 @@ jobs:
       - name: Determine target servers
         id: get-servers
         run: |
+          if [[ ! -f deploy-config.json ]]; then
+            echo "Error: deploy-config.json not found"
+            exit 1
+          fi
+
           CONFIG=$(cat deploy-config.json)
           SELECTED_SERVER="${{ github.event.inputs.server }}"
-          
+
           if [[ -n "$SELECTED_SERVER" ]]; then
             # Use specific server
             SERVERS=$(echo "$CONFIG" | jq -c --arg target "$SELECTED_SERVER" '[.servers[] | select(.id == $target)]')
@@ -73,19 +48,25 @@ jobs:
             # Use all servers
             SERVERS=$(echo "$CONFIG" | jq -c '.servers')
           fi
-          
+
           # Validate servers is not empty
           if [[ -z "$SERVERS" || "$SERVERS" == "[]" || "$SERVERS" == "null" ]]; then
-            echo "Error: No servers found"
+            if [[ -n "$SELECTED_SERVER" ]]; then
+              echo "Error: No servers found for target: $SELECTED_SERVER"
+            else
+              echo "Error: No servers configured in deploy-config.json"
+            fi
             exit 1
           fi
-          
+
           echo "servers=$SERVERS" >> $GITHUB_OUTPUT
           echo "Target servers: $SERVERS"
 
-  configure-nginx:
+  renew-ssl:
     needs: prepare
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
         server: ${{ fromJson(needs.prepare.outputs.servers) }}
@@ -101,39 +82,22 @@ jobs:
           token: ${{ secrets.REPO_TOKEN }}
           path: LinuxConfig
 
-      - name: Validate inputs
-        run: |
-          if [[ -z "${{ github.event.inputs.domain }}" ]]; then
-            echo "Error: domain is required for configure-nginx operation"
-            exit 1
-          fi
-          
-          if [[ "${{ github.event.inputs.site_type }}" == "proxy" ]] && [[ -z "${{ github.event.inputs.proxy_backend }}" ]]; then
-            echo "Error: proxy_backend is required for proxy site type"
-            exit 1
-          fi
-
       - name: Setup SSH Key
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
 
-      - name: Configure Nginx on ${{ matrix.server.id }}
+      - name: Renew SSL certificates on ${{ matrix.server.id }}
         env:
           CONFIG_FILE: deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SSL_METHOD: route53
         run: |
-          chmod +x ./LinuxConfig/shell/nginx-config.sh
-          ./LinuxConfig/shell/nginx-config.sh \
-            "${{ matrix.server.id }}" \
-            "${{ github.event.inputs.domain }}" \
-            "${{ github.event.inputs.site_type }}" \
-            "${{ github.event.inputs.proxy_backend }}" \
-            "${{ github.event.inputs.enable_ssl }}" \
-            "${{ github.event.inputs.ssl_method }}"
+          chmod +x ./LinuxConfig/shell/ssl-renew.sh
+          ./LinuxConfig/shell/ssl-renew.sh "${{ matrix.server.id }}"
 
       - name: Cleanup SSH Key
         if: always()
