@@ -47,6 +47,13 @@ export function get_material_count({ used, group_id }) {
   })
 }
 
+export function get_material_count_by_group() {
+  return request({
+    method: 'get',
+    url: api.material_count_by_group,
+  })
+}
+
 
 export function upload_videos(data) {
   return request({

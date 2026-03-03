@@ -113,6 +113,9 @@
                 @click="$emiter('showDialog', { name: 'materials', group: item })">
                 <font-awesome-icon icon="fa-solid fa-film" class="h-2.5 w-2.5" />
                 {{ $t('materials') }}
+                <span v-if="groupMaterialCounts[item.id] !== undefined" class="badge badge-sm badge-accent">
+                  {{ groupMaterialCounts[item.id] }}
+                </span>
               </button>
             </div>
 
@@ -186,6 +189,8 @@ export default {
       adLink: '',
       adTitle: '',
       isRefreshingSelections: false,
+      groupMaterialCounts: {},
+      materialCountTimer: null,
     }
   },
 
@@ -209,6 +214,29 @@ export default {
     },
   },
   methods: {
+    async fetchGroupMaterialCounts() {
+      try {
+        const res = await this.$service.get_material_count_by_group()
+        if (res && res.data) {
+          this.groupMaterialCounts = res.data
+        }
+      } catch (e) {
+        console.warn('fetchGroupMaterialCounts error:', e)
+      }
+    },
+    startMaterialCountPolling() {
+      const MATERIAL_COUNT_POLL_INTERVAL = 5000
+      this.fetchGroupMaterialCounts()
+      this.materialCountTimer = setInterval(() => {
+        this.fetchGroupMaterialCounts()
+      }, MATERIAL_COUNT_POLL_INTERVAL)
+    },
+    stopMaterialCountPolling() {
+      if (this.materialCountTimer) {
+        clearInterval(this.materialCountTimer)
+        this.materialCountTimer = null
+      }
+    },
     setActiveTab(tab) {
       this.selectedTab = tab
     },
@@ -774,6 +802,7 @@ export default {
   },
   async mounted() {
     this.refreshSelections()
+    this.startMaterialCountPolling()
     this.listeners.push(await this.$listen('openDevice', async (e) => {
       console.log("receive openDevice: ", e.payload)
       // this.selection = [...this.selection.filter(serial => serial !== e.payload.real_serial), e.payload.real_serial]
@@ -856,6 +885,7 @@ export default {
 
   },
   unmounted() {
+    this.stopMaterialCountPolling()
     this.listeners.forEach(listener => {
       if (listener) {
         listener()
