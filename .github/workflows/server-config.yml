@@ -1,19 +1,11 @@
 # Server Configuration Workflow
-# Nginx and SSL configuration management
+# Nginx configuration management
 name: Server Configuration
-run-name: ${{ github.actor }} is running ${{ github.event.inputs.operation }} ⚙️
+run-name: ${{ github.actor }} is configuring Nginx ⚙️
 
 on:
   workflow_dispatch:
     inputs:
-      operation:
-        description: "Operation to perform"
-        required: true
-        type: choice
-        options:
-          - configure-nginx
-          - renew-ssl
-
       server:
         description: "Target server (leave empty for all servers)"
         required: false
@@ -93,7 +85,6 @@ jobs:
 
   configure-nginx:
     needs: prepare
-    if: github.event.inputs.operation == 'configure-nginx'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -143,45 +134,6 @@ jobs:
             "${{ github.event.inputs.proxy_backend }}" \
             "${{ github.event.inputs.enable_ssl }}" \
             "${{ github.event.inputs.ssl_method }}"
-
-      - name: Cleanup SSH Key
-        if: always()
-        run: rm -f ~/.ssh/deploy_key
-
-  renew-ssl:
-    needs: prepare
-    if: github.event.inputs.operation == 'renew-ssl'
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        server: ${{ fromJson(needs.prepare.outputs.servers) }}
-      fail-fast: false
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Checkout LinuxConfig repository
-        uses: actions/checkout@v4
-        with:
-          repository: tikmatrix/LinuxConfig
-          token: ${{ secrets.REPO_TOKEN }}
-          path: LinuxConfig
-
-      - name: Setup SSH Key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-
-      - name: Renew SSL certificates on ${{ matrix.server.id }}
-        env:
-          CONFIG_FILE: deploy-config.json
-          SSH_KEY_FILE: ~/.ssh/deploy_key
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: |
-          chmod +x ./LinuxConfig/shell/ssl-renew.sh
-          ./LinuxConfig/shell/ssl-renew.sh "${{ matrix.server.id }}"
 
       - name: Cleanup SSH Key
         if: always()
