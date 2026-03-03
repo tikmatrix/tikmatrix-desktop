@@ -967,6 +967,7 @@ export default {
   unlogined: 'ยังไม่เข้าสู่ระบบ',
   unset: 'ยังไม่ได้ตั้ง',
   unused: 'ไม่ได้ใช้',
+  unusedMaterials: 'ไม่ได้ใช้',
   up: 'ขึ้น',
   update: 'อัปเดต',
   updateAvailableTitle: 'มีการอัปเดต',

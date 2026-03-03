@@ -967,6 +967,7 @@ export default {
   unlogined: 'غير مسجل الدخول',
   unset: 'غير مضبوط',
   unused: 'غير مستخدم',
+  unusedMaterials: 'غير مستخدم',
   up: 'أعلى',
   update: 'تحديث',
   updateAvailableTitle: 'تحديث متاح',

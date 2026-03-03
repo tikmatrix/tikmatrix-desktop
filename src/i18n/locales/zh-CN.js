@@ -967,6 +967,7 @@ export default {
   unlogined: '未登录',
   unset: '未设置',
   unused: '未使用',
+  unusedMaterials: '未使用',
   up: '上滑',
   update: '更新',
   updateAvailableTitle: '发现新版本',

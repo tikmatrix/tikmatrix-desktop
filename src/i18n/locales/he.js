@@ -967,6 +967,7 @@ export default {
   unlogined: 'לא מחובר',
   unset: 'לא מוגדר',
   unused: 'לא בשימוש',
+  unusedMaterials: 'לא בשימוש',
   up: 'מעלה',
   update: 'עדכן',
   updateAvailableTitle: 'עדכון זמין',

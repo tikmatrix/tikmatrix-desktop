@@ -39,12 +39,61 @@ export function get_materials({ group_id }) {
     params: { group_id }
   })
 }
+// Cache for in-flight material count requests to prevent duplicate concurrent calls
+const _materialCountInflight = new Map()
+// Cache for completed material count results with TTL
+const _materialCountCache = new Map()
+const MATERIAL_COUNT_CACHE_TTL = 5000 // 5 seconds
+
 export function get_material_count({ used, group_id }) {
-  return request({
+  const cacheKey = `${used ?? ''}_${group_id ?? ''}`
+
+  // Return cached result if still fresh
+  const cached = _materialCountCache.get(cacheKey)
+  if (cached && Date.now() - cached.ts < MATERIAL_COUNT_CACHE_TTL) {
+    return Promise.resolve(cached.value)
+  }
+
+  // Deduplicate in-flight requests for the same params
+  if (_materialCountInflight.has(cacheKey)) {
+    return _materialCountInflight.get(cacheKey)
+  }
+
+  const promise = request({
     method: 'get',
     url: api.material_count,
     params: { used, group_id }
+  }).then(res => {
+    _materialCountCache.set(cacheKey, { value: res, ts: Date.now() })
+    _materialCountInflight.delete(cacheKey)
+    return res
+  }).catch(err => {
+    _materialCountInflight.delete(cacheKey)
+    throw err
   })
+
+  _materialCountInflight.set(cacheKey, promise)
+  return promise
+}
+
+/**
+ * Fetch unused material counts for multiple groups sequentially.
+ * Avoids flooding WebView2 with concurrent HTTP requests when there are many groups.
+ * Returns a map of group_id -> count (null group_id represents ungrouped total).
+ */
+export async function get_material_counts_for_groups({ used, group_ids }) {
+  const results = {}
+  for (const group_id of group_ids) {
+    try {
+      const res = await get_material_count({ used, group_id })
+      results[group_id] = res?.data ?? 0
+    } catch (err) {
+        // Default to 0 on error so the sidebar still renders correctly
+        console.warn(`Failed to fetch material count for group ${group_id}:`, err)
+        results[group_id] = 0
+      }
+  }
+  return results
 }
 
 

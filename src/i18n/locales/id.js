@@ -967,6 +967,7 @@ export default {
   unlogined: 'Belum Masuk',
   unset: 'Tidak disetel',
   unused: 'Tidak terpakai',
+  unusedMaterials: 'Tidak terpakai',
   up: 'Atas',
   update: 'Perbarui',
   updateAvailableTitle: 'Pembaruan Tersedia',

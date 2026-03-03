@@ -967,6 +967,7 @@ export default {
   unlogined: 'अनलॉगिन्ड',
   unset: 'अनसेट',
   unused: 'अनुपयोग',
+  unusedMaterials: 'अनुपयोग',
   up: 'ऊपर',
   update: 'अपडेट',
   updateAvailableTitle: 'अपडेट उपलब्ध',

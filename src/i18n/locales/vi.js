@@ -967,6 +967,7 @@ export default {
   unlogined: 'Chưa đăng nhập',
   unset: 'Chưa đặt',
   unused: 'Chưa dùng',
+  unusedMaterials: 'Chưa dùng',
   up: 'Lên',
   update: 'Cập nhật',
   updateAvailableTitle: 'Có bản cập nhật',

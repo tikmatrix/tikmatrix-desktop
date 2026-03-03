@@ -967,6 +967,7 @@ export default {
   unlogined: 'Unlogined',
   unset: 'Unset',
   unused: 'Unused',
+  unusedMaterials: 'Unused',
   up: 'Up',
   update: 'Update',
   updateAvailableTitle: 'Update Available',

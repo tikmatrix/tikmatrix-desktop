@@ -967,6 +967,7 @@ export default {
   unlogined: 'Ej inloggad',
   unset: 'Ej satt',
   unused: 'Oanvänd',
+  unusedMaterials: 'Oanvänd',
   up: 'Upp',
   update: 'Uppdatera',
   updateAvailableTitle: 'Uppdatering tillgänglig',

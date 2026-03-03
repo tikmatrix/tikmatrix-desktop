@@ -967,6 +967,7 @@ export default {
   unlogined: '로그인 안됨',
   unset: '미설정',
   unused: '미사용',
+  unusedMaterials: '미사용',
   up: '위로',
   update: '업데이트',
   updateAvailableTitle: '업데이트 사용 가능',

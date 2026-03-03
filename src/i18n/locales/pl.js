@@ -967,6 +967,7 @@ export default {
   unlogined: 'Nie zalogowany',
   unset: 'Nie ustawiono',
   unused: 'Nie używane',
+  unusedMaterials: 'Nie używane',
   up: 'W górę',
   update: 'Aktualizuj',
   updateAvailableTitle: 'Dostępna aktualizacja',

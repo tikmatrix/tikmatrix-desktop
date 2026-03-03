@@ -967,6 +967,7 @@ export default {
   unlogined: 'Не увійшов',
   unset: 'Не встановлено',
   unused: 'Не використовується',
+  unusedMaterials: 'Не використовується',
   up: 'Вгору',
   update: 'Оновити',
   updateAvailableTitle: 'Оновлення доступне',

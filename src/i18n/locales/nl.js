@@ -967,6 +967,7 @@ export default {
   unlogined: 'Niet ingelogd',
   unset: 'Niet ingesteld',
   unused: 'Ongebruikt',
+  unusedMaterials: 'Ongebruikt',
   up: 'Omhoog',
   update: 'Bijwerken',
   updateAvailableTitle: 'Update beschikbaar',

@@ -83,6 +83,9 @@
                 <input type="checkbox" class="checkbox checkbox-md ring-1" @change="selectAll(item.id)"
                   :checked="isSelectAll(item.id)" />
                 <span class="whitespace-nowrap">{{ item.name }} ({{ groupDeviceCount(item.id) }})</span>
+                <span class="badge badge-success badge-sm ml-1 whitespace-nowrap" v-if="groupMaterialCounts[item.id] != null">
+                  {{ $t('unusedMaterials') }}: {{ groupMaterialCounts[item.id] }}
+                </span>
               </label>
 
               <div class="flex items-center gap-2 ml-auto">
@@ -186,6 +189,8 @@ export default {
       adLink: '',
       adTitle: '',
       isRefreshingSelections: false,
+      groupMaterialCounts: {},
+      materialCountTimer: null,
     }
   },
 
@@ -198,6 +203,7 @@ export default {
     groups: {
       handler: function () {
         this.refreshSelections()
+        this.scheduleMaterialCountRefresh()
       },
       deep: true
     },
@@ -209,6 +215,27 @@ export default {
     },
   },
   methods: {
+    // Debounce material count refresh to avoid concurrent request floods
+    scheduleMaterialCountRefresh() {
+      if (this.materialCountTimer) {
+        clearTimeout(this.materialCountTimer)
+      }
+      this.materialCountTimer = setTimeout(() => {
+        this.materialCountTimer = null
+        this.refreshMaterialCounts()
+      }, 300)
+    },
+    async refreshMaterialCounts() {
+      const groupIds = (this.groups || []).map(g => g.id)
+      if (groupIds.length === 0) return
+      try {
+        // Use the batched service function that fetches sequentially to avoid flooding WebView2
+        const counts = await this.$service.get_material_counts_for_groups({ used: 0, group_ids: groupIds })
+        this.groupMaterialCounts = counts
+      } catch (err) {
+        console.error('Failed to refresh material counts:', err)
+      }
+    },
     setActiveTab(tab) {
       this.selectedTab = tab
     },
@@ -774,6 +801,10 @@ export default {
   },
   async mounted() {
     this.refreshSelections()
+    this.scheduleMaterialCountRefresh()
+    this.listeners.push(await this.$listen('reload_tasks', () => {
+      this.scheduleMaterialCountRefresh()
+    }))
     this.listeners.push(await this.$listen('openDevice', async (e) => {
       console.log("receive openDevice: ", e.payload)
       // this.selection = [...this.selection.filter(serial => serial !== e.payload.real_serial), e.payload.real_serial]
@@ -856,6 +887,10 @@ export default {
 
   },
   unmounted() {
+    if (this.materialCountTimer) {
+      clearTimeout(this.materialCountTimer)
+      this.materialCountTimer = null
+    }
     this.listeners.forEach(listener => {
       if (listener) {
         listener()
