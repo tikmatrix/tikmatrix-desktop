@@ -4,6 +4,10 @@ run-name: ${{ github.actor }} is deploying TikMatrix API Rust Service 🚀
 on:
   workflow_dispatch:
     inputs:
+      version:
+        description: "Version tag (e.g., v1.0.0)"
+        required: true
+        type: string
       branch:
         description: "Branch to build from in tikmatrix-api-rs"
         required: false
@@ -28,6 +32,30 @@ permissions:
   contents: write
 
 jobs:
+  create-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tikmatrix-pro private repository
+        uses: actions/checkout@v3
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+
+      - name: Create and push tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Check if tag already exists on remote
+          if git ls-remote --tags origin | grep -q "refs/tags/${{ inputs.version }}$"; then
+            echo "Tag ${{ inputs.version }} already exists on remote, skipping tag creation"
+          else
+            git tag -a "${{ inputs.version }}" -m "Release ${{ inputs.version }}"
+            git push origin "${{ inputs.version }}"
+            echo "Tag ${{ inputs.version }} created and pushed successfully"
+          fi
+
   prepare:
     runs-on: ubuntu-latest
     outputs:
@@ -60,6 +88,7 @@ jobs:
           echo "Target servers: $SERVERS"
 
   build:
+    needs: create-tag
     runs-on: ubuntu-latest
     steps:
       - name: Checkout tikmatrix-pro repository
