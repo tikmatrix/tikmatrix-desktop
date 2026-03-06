@@ -1,21 +1,20 @@
 # Deploy Site Workflow
 # Deploys a site to VPS servers
 name: Deploy Site
-run-name: ${{ github.actor }} is deploying ${{ github.event.inputs.site || 'all sites' }} 🚀
+run-name: ${{ github.actor }} is deploying ${{ github.event.inputs.group || 'all sites' }} 🚀
 
 on:
   workflow_dispatch:
     inputs:
-      site:
-        description: "Site to deploy (leave empty to deploy all sites)"
+      # TikMatrix = tikmatrix + igmatrix + ytmatrix; VideoMagic = videomagic only; empty = all
+      group:
+        description: "Site group to deploy (leave empty to deploy all sites)"
         required: false
         type: choice
         options:
           - ""
-          - tikmatrix
-          - igmatrix
-          - ytmatrix
-          - videomagic
+          - TikMatrix
+          - VideoMagic
 
       server:
         description: "Target server (leave empty to deploy to all configured servers for this site)"
@@ -47,84 +46,53 @@ jobs:
         working-directory: tikmatrix-pro
         run: |
           CONFIG=$(cat deploy-config.json)
-          SELECTED_SITE="${{ github.event.inputs.site }}"
+          SELECTED_GROUP="${{ github.event.inputs.group }}"
           SELECTED_SERVER="${{ github.event.inputs.server }}"
 
-          # Build list of sites to deploy
-          if [[ -z "$SELECTED_SITE" ]]; then
-            # Deploy all sites
-            SITES=$(echo "$CONFIG" | jq -c '[.sites[] | {name: .name, config: .}]')
+          # Map group to site name filter (JSON array, or null for all sites).
+          # Site names must match the 'name' field in deploy-config.json.
+          if [[ "$SELECTED_GROUP" == "TikMatrix" ]]; then
+            SITE_FILTER='["tikmatrix", "igmatrix", "ytmatrix"]'
+          elif [[ "$SELECTED_GROUP" == "VideoMagic" ]]; then
+            SITE_FILTER='["videomagic"]'
           else
-            # Deploy single site
-            SITE_CONFIG=$(echo "$CONFIG" | jq -c --arg site "$SELECTED_SITE" '.sites[] | select(.name == $site)')
-            
-            if [[ -z "$SITE_CONFIG" || "$SITE_CONFIG" == "null" ]]; then
-              echo "Error: Site '$SELECTED_SITE' not found in config"
-              exit 1
-            fi
-            
-            SITES=$(jq -n -c --arg name "$SELECTED_SITE" --argjson config "$SITE_CONFIG" '[{name: $name, config: $config}]')
+            SITE_FILTER='null'
           fi
 
+          # Build list of sites to deploy
+          SITES=$(echo "$CONFIG" | jq -c \
+            --argjson filter "$SITE_FILTER" \
+            '[.sites[] | select($filter == null or (.name as $n | $filter | index($n) != null)) | {name: .name, config: .}]')
+
           # Build deployment matrix
-          if [[ -z "$SELECTED_SITE" ]]; then
-            # All sites
-            if [[ -n "$SELECTED_SERVER" ]]; then
-              # All sites to specific server
-              DEPLOYMENTS=$(echo "$CONFIG" | jq -c \
-                --arg server "$SELECTED_SERVER" \
-                '. as $root | [
-                  .sites[] | . as $site |
-                  ($root.servers[] | select(.id == $server)) as $srv |
-                  {
-                    site_name: $site.name,
-                    site_config: $site,
-                    server: $srv
-                  }
-                ]')
-            else
-              # All sites to their configured servers
-              DEPLOYMENTS=$(echo "$CONFIG" | jq -c \
-                '. as $root | [
-                  .sites[] | . as $site |
-                  .deployTo as $deployTo |
-                  ($root.servers[] | select(.id as $id | $deployTo | index($id))) as $srv |
-                  {
-                    site_name: $site.name,
-                    site_config: $site,
-                    server: $srv
-                  }
-                ]')
-            fi
+          if [[ -n "$SELECTED_SERVER" ]]; then
+            # Deploy to specific server
+            DEPLOYMENTS=$(echo "$CONFIG" | jq -c \
+              --argjson filter "$SITE_FILTER" \
+              --arg server "$SELECTED_SERVER" \
+              '. as $root | [
+                .sites[] | select($filter == null or (.name as $n | $filter | index($n) != null)) | . as $site |
+                ($root.servers[] | select(.id == $server)) as $srv |
+                {
+                  site_name: $site.name,
+                  site_config: $site,
+                  server: $srv
+                }
+              ]')
           else
-            # Single site - reuse SITE_CONFIG from above
-            if [[ -n "$SELECTED_SERVER" ]]; then
-              # Single site to specific server
-              DEPLOYMENTS=$(echo "$CONFIG" | jq -c \
-                --arg site "$SELECTED_SITE" \
-                --arg server "$SELECTED_SERVER" \
-                --argjson site_config "$SITE_CONFIG" \
-                '[
-                  .servers[] | select(.id == $server) | {
-                    site_name: $site,
-                    site_config: $site_config,
-                    server: .
-                  }
-                ]')
-            else
-              # Single site to its configured servers
-              DEPLOYMENTS=$(echo "$CONFIG" | jq -c \
-                --arg site "$SELECTED_SITE" \
-                --argjson site_config "$SITE_CONFIG" \
-                --argjson deployTo "$(echo "$SITE_CONFIG" | jq -c '.deployTo')" \
-                '[
-                  .servers[] | select(.id as $id | $deployTo | index($id)) | {
-                    site_name: $site,
-                    site_config: $site_config,
-                    server: .
-                  }
-                ]')
-            fi
+            # Deploy to each site's configured servers
+            DEPLOYMENTS=$(echo "$CONFIG" | jq -c \
+              --argjson filter "$SITE_FILTER" \
+              '. as $root | [
+                .sites[] | select($filter == null or (.name as $n | $filter | index($n) != null)) | . as $site |
+                .deployTo as $deployTo |
+                ($root.servers[] | select(.id as $id | $deployTo | index($id))) as $srv |
+                {
+                  site_name: $site.name,
+                  site_config: $site,
+                  server: $srv
+                }
+              ]')
           fi
 
           # Validate not empty
