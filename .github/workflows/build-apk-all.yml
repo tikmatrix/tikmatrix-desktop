@@ -81,7 +81,6 @@ jobs:
           {
             "name": "apk",
             "platform": "generic",
-            "name": "apk",
             "downloadUrl": "https://r2.niostack.com/com.github.tikmatrix.apk",
             "version": "${VERSION}",
             "app": "TikMatrix"
@@ -100,7 +99,6 @@ jobs:
           # Update test-apk
           TEST_PAYLOAD=$(cat <<EOF
           {
-            "name": "test-apk",
             "name": "test-apk",
             "downloadUrl": "https://r2.niostack.com/com.github.tikmatrix.test.apk",
             "platform": "generic",
