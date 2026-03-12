@@ -166,7 +166,7 @@ jobs:
           {
             "name": "$NAME",
             "platform": "$PLATFORM",
-            "downloadUrl": "https://r2.niostack.com/$TARGET/$NAME",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/$TARGET/$NAME",
             "version": "$VERSION",
             "app": "TikMatrix",
             "md5": "$MD5"

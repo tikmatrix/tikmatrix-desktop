@@ -126,7 +126,7 @@ jobs:
             {
               "name": "agent",
               "platform": "$PLATFORM",
-              "downloadUrl": "https://r2.niostack.com/${{ matrix.target }}/agent.exe",
+              "downloadUrl": "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}/agent.exe",
               "version": "$VERSION",
               "app": "TikMatrix",
               "md5": "$AGENT_MD5"
@@ -161,7 +161,7 @@ jobs:
             {
               "name": "script",
               "platform": "$PLATFORM",
-              "downloadUrl": "https://r2.niostack.com/${{ matrix.target }}/script.exe",
+              "downloadUrl": "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}/script.exe",
               "version": "$VERSION",
               "app": "TikMatrix",
               "md5": "$SCRIPT_MD5"

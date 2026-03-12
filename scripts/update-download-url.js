@@ -79,8 +79,8 @@ function buildDownloadUrl(platform, version, distributorCode, appName) {
     }
 
     basePath = distributorCode === 'OFFICIAL'
-        ? 'https://r2.niostack.com'
-        : 'https://r2.niostack.com/distributors'
+        ? 'https://api.tikmatrix.com/front-api/release'
+        : 'https://api.tikmatrix.com/front-api/release/distributors'
 
     return `${basePath}/${fileName}`
 }

@@ -82,7 +82,7 @@ jobs:
             "name": "apk",
             "platform": "generic",
             "name": "apk",
-            "downloadUrl": "https://r2.niostack.com/com.github.tikmatrix.apk",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/com.github.tikmatrix.apk",
             "version": "${VERSION}",
             "app": "TikMatrix"
           }
@@ -102,7 +102,7 @@ jobs:
           {
             "name": "test-apk",
             "name": "test-apk",
-            "downloadUrl": "https://r2.niostack.com/com.github.tikmatrix.test.apk",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/com.github.tikmatrix.test.apk",
             "platform": "generic",
             "version": "${VERSION}",
             "app": "TikMatrix"
@@ -150,7 +150,7 @@ jobs:
             "name": "apk",
             "platform": "generic",
             "name": "apk",
-            "downloadUrl": "https://r2.niostack.com/com.github.agatiktok.apk",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/com.github.agatiktok.apk",
             "version": "${VERSION}",
             "app": "AGATikTok"
           }
@@ -170,7 +170,7 @@ jobs:
           {
             "name": "test-apk",
             "platform": "generic",
-            "downloadUrl": "https://r2.niostack.com/com.github.agatiktok.test.apk",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/com.github.agatiktok.test.apk",
             "platform": "generic",
             "version": "${VERSION}",
             "app": "AGATikTok"

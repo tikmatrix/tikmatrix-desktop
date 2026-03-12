@@ -59,19 +59,19 @@ let body = JSON.stringify({
     "platforms": {
         "windows-x86_64": {
             "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_x64_en-US.msi.zip`
+            "url": `https://api.tikmatrix.com/front-api/release/${params.appName}_${version}_x64_en-US.msi.zip`
         },
         "darwin-x86_64": {
             "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_universal.dmg`
+            "url": `https://api.tikmatrix.com/front-api/release/${params.appName}_${version}_universal.dmg`
         },
         "darwin-arm64": {
             "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_universal.dmg`
+            "url": `https://api.tikmatrix.com/front-api/release/${params.appName}_${version}_universal.dmg`
         },
         "darwin-aarch64": {
             "signature": signature,
-            "url": `https://r2.niostack.com/${params.appName}_${version}_universal.dmg`
+            "url": `https://api.tikmatrix.com/front-api/release/${params.appName}_${version}_universal.dmg`
         }
     }
 }, null, 2)
