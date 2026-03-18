@@ -121,6 +121,13 @@ jobs:
           name: tikmatrix-binary
           path: tikmatrix-pro/server/src-rs/target/release/tikmatrix-api-rs
 
+      - name: Upload static directory
+        uses: actions/upload-artifact@v4
+        with:
+          name: tikmatrix-static
+          path: tikmatrix-pro/server/src-rs/static/
+          if-no-files-found: warn
+
       - name: Upload GeoLite2 database
         if: ${{ inputs.deploy_geolite == true }}
         uses: actions/upload-artifact@v4
@@ -151,6 +158,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: tikmatrix-binary
+
+      - name: Download static directory
+        uses: actions/download-artifact@v4
+        with:
+          name: tikmatrix-static
+          path: static/
 
       - name: Download GeoLite2 database
         if: ${{ inputs.deploy_geolite == true }}
@@ -187,6 +200,17 @@ jobs:
           scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
             "tikmatrix-api-rs" "tikmatrix-api-rs.tmp"
 
+          # Upload static directory if it exists
+          if [[ -d "static" && -n "$(ls -A static 2>/dev/null)" ]]; then
+            log_info "Uploading static directory to server"
+            tar -czf static.tar.gz -C static .
+            scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+              "static.tar.gz" "static.tar.gz.tmp"
+            rm -f static.tar.gz
+          else
+            log_info "No static directory found, skipping"
+          fi
+
           # Upload GeoLite2 database if enabled
           if [[ "$DEPLOY_GEOLITE" == "true" ]]; then
             log_info "Uploading GeoLite2-Country.mmdb to server"
@@ -220,6 +244,15 @@ jobs:
           mkdir -p "$REMOTE_DIR"
           mv ~/tikmatrix-api-rs.tmp "$REMOTE_DIR/tikmatrix-api-rs"
           chmod +x "$REMOTE_DIR/tikmatrix-api-rs"
+
+          # Extract static directory if uploaded
+          if [[ -f ~/static.tar.gz.tmp ]]; then
+            echo "Extracting static directory to $REMOTE_DIR/static/"
+            mkdir -p "$REMOTE_DIR/static"
+            tar -xzf ~/static.tar.gz.tmp -C "$REMOTE_DIR/static"
+            rm -f ~/static.tar.gz.tmp
+            echo "Static directory deployed successfully"
+          fi
 
           # Move GeoLite2 database if enabled
           if [[ "$DEPLOY_GEOLITE" == "true" ]]; then
