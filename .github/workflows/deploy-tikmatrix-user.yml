@@ -1,0 +1,103 @@
+name: Deploy tikmatrix-user to Cloudflare Workers
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: '部署环境'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+
+# 并发控制：同一分支只保留最新的部署，取消进行中的旧部署
+concurrency:
+  group: deploy-tikmatrix-user-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build tikmatrix-user
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tikmatrix-user
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/tikmatrix-user
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: main
+          path: tikmatrix-user
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: tikmatrix-user/package-lock.json
+
+      - name: Install dependencies
+        run: cd tikmatrix-user && npm ci
+
+      - name: Build
+        run: cd tikmatrix-user && npm run build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: tikmatrix-user/dist/
+          retention-days: 1
+
+  deploy:
+    name: Deploy → ${{ matrix.account_name }}
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - account_name: Account-1
+            token_secret: CF_ACCOUNT_1_TOKEN
+            account_id_secret: CF_ACCOUNT_1_ID
+          - account_name: Account-2
+            token_secret: CF_ACCOUNT_2_TOKEN
+            account_id_secret: CF_ACCOUNT_2_ID
+
+    steps:
+      - name: Checkout tikmatrix-user
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/tikmatrix-user
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: main
+          path: tikmatrix-user
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: tikmatrix-user/package-lock.json
+
+      - name: Install dependencies
+        run: cd tikmatrix-user && npm ci
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+      - name: Deploy to ${{ matrix.account_name }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets[matrix.token_secret] }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets[matrix.account_id_secret] }}
+          ENVIRONMENT: ${{ github.event.inputs.environment || 'production' }}
+        run: |
+          if [ "$ENVIRONMENT" = "staging" ]; then
+            npx wrangler deploy dist/index.js --env staging
+          else
+            npx wrangler deploy dist/index.js --env production
+          fi
