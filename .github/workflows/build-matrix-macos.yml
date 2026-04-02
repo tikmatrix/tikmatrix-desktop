@@ -49,7 +49,7 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            ./tikmatrix-pro/src-tauri/target
+            ./tikmatrix-pro/target
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-
@@ -73,13 +73,13 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg
+          source-dir: ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/dmg
           destination-dir: ./
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: |
-          rm -rf ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
+          rm -rf ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/dmg/*
       - name: Update TikMatrix Pro download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         env:
@@ -104,13 +104,13 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg
+          source-dir: ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/dmg
           destination-dir: ./
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
-          rm -rf ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
+          rm -rf ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/dmg/*
 
       - name: Update TikMatrix download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
@@ -135,13 +135,13 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg
+          source-dir: ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/dmg
           destination-dir: ./
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
-          rm -rf ./tikmatrix-pro/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
+          rm -rf ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/dmg/*
 
       - name: Update IgMatrix download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
