@@ -1,5 +1,5 @@
-name: Build Agent - All Platforms
-run-name: ${{ github.actor }} is building Agent (All Platforms) 🚀
+name: Build Script - All Platforms
+run-name: ${{ github.actor }} is building Script (All Platforms) 🚀
 on:
   workflow_dispatch:
     inputs:
@@ -21,15 +21,6 @@ on:
           - all
           - windows
           - macos
-      build_target:
-        description: "Build target"
-        required: true
-        default: "all"
-        type: choice
-        options:
-          - all
-          - agent
-          - script
 
 permissions:
   contents: write
@@ -59,22 +50,22 @@ jobs:
             echo "Tag ${{ inputs.version }} created and pushed successfully"
           fi
 
-  build-agent-windows:
+  build-script-windows:
     needs: create-tag
     if: ${{ inputs.platforms == 'all' || inputs.platforms == 'windows' }}
     uses: ./.github/workflows/build-agent-windows.yml
     with:
       version: ${{ inputs.version }}
       branch: ${{ inputs.branch }}
-      build_target: ${{ inputs.build_target }}
+      build_target: script
     secrets: inherit
 
-  build-agent-macos:
+  build-script-macos:
     needs: create-tag
     if: ${{ inputs.platforms == 'all' || inputs.platforms == 'macos' }}
     uses: ./.github/workflows/build-agent-macos.yml
     with:
       version: ${{ inputs.version }}
       branch: ${{ inputs.branch }}
-      build_target: ${{ inputs.build_target }}
+      build_target: script
     secrets: inherit

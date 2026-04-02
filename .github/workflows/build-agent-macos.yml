@@ -1,5 +1,5 @@
-name: Build Agent - macOS
-run-name: ${{ github.actor }} is building Agent (macOS) 🚀
+name: Build Script - macOS
+run-name: ${{ github.actor }} is building Script (macOS) 🚀
 on:
   workflow_call:
     inputs:
@@ -15,14 +15,14 @@ on:
       build_target:
         description: "Build target"
         required: false
-        default: "all"
+        default: "script"
         type: string
 
 permissions:
   contents: write
 
 jobs:
-  build-agent-macos:
+  build-script-macos:
     # Use ARM runner (macos-14) - cheaper and faster than Intel runner
     runs-on: macos-14
 
@@ -41,10 +41,10 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            tikmatrix-pro/agent/target
-          key: ${{ runner.os }}-agent-cargo-universal-${{ hashFiles('tikmatrix-pro/agent/**/Cargo.lock') }}
+            tikmatrix-pro/target
+          key: ${{ runner.os }}-script-cargo-universal-${{ hashFiles('tikmatrix-pro/Cargo.lock') }}
           restore-keys: |
-            ${{ runner.os }}-agent-cargo-universal-
+            ${{ runner.os }}-script-cargo-universal-
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
@@ -54,72 +54,28 @@ jobs:
           rustup target add x86_64-apple-darwin
           rustup target add aarch64-apple-darwin
 
-      - name: Build ARM64 - all
-        if: ${{ inputs.build_target == 'all' }}
-        working-directory: tikmatrix-pro/agent
-        run: cargo build --release --target aarch64-apple-darwin
+      - name: Build ARM64
+        working-directory: tikmatrix-pro
+        run: cargo build -p script --release --target aarch64-apple-darwin
 
-      - name: Build ARM64 - agent only
-        if: ${{ inputs.build_target == 'agent' }}
-        working-directory: tikmatrix-pro/agent
-        run: cargo build --release --target aarch64-apple-darwin --bin agent
-
-      - name: Build ARM64 - script only
-        if: ${{ inputs.build_target == 'script' }}
-        working-directory: tikmatrix-pro/agent
-        run: cargo build --release --target aarch64-apple-darwin --bin script
-
-      - name: Build x86_64 - all
-        if: ${{ inputs.build_target == 'all' }}
-        working-directory: tikmatrix-pro/agent
-        run: cargo build --release --target x86_64-apple-darwin
-
-      - name: Build x86_64 - agent only
-        if: ${{ inputs.build_target == 'agent' }}
-        working-directory: tikmatrix-pro/agent
-        run: cargo build --release --target x86_64-apple-darwin --bin agent
-
-      - name: Build x86_64 - script only
-        if: ${{ inputs.build_target == 'script' }}
-        working-directory: tikmatrix-pro/agent
-        run: cargo build --release --target x86_64-apple-darwin --bin script
+      - name: Build x86_64
+        working-directory: tikmatrix-pro
+        run: cargo build -p script --release --target x86_64-apple-darwin
 
       - name: Prepare bin directories
         run: |
-          BUILD_TARGET="${{ inputs.build_target }}"
-
           # Prepare ARM64 binaries
-          mkdir -p ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin
-          # Ensure bin folder is clean to avoid uploading stale binaries
-          if [ -d ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin ]; then
-            rm -f ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin/* || true
-          fi
-          if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "agent" ]]; then
-            if [ -f "./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/agent" ]; then
-              cp ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/agent ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin/
-            fi
-          fi
-          if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "script" ]]; then
-            if [ -f "./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/script" ]; then
-              cp ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/script ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin/
-            fi
+          mkdir -p ./tikmatrix-pro/target/aarch64-apple-darwin/release/bin
+          rm -f ./tikmatrix-pro/target/aarch64-apple-darwin/release/bin/* || true
+          if [ -f "./tikmatrix-pro/target/aarch64-apple-darwin/release/script" ]; then
+            cp ./tikmatrix-pro/target/aarch64-apple-darwin/release/script ./tikmatrix-pro/target/aarch64-apple-darwin/release/bin/
           fi
 
           # Prepare x86_64 binaries
-          mkdir -p ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin
-          # Ensure bin folder is clean to avoid uploading stale binaries
-          if [ -d ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin ]; then
-            rm -f ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin/* || true
-          fi
-          if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "agent" ]]; then
-            if [ -f "./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/agent" ]; then
-              cp ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/agent ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin/
-            fi
-          fi
-          if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "script" ]]; then
-            if [ -f "./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/script" ]; then
-              cp ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/script ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin/
-            fi
+          mkdir -p ./tikmatrix-pro/target/x86_64-apple-darwin/release/bin
+          rm -f ./tikmatrix-pro/target/x86_64-apple-darwin/release/bin/* || true
+          if [ -f "./tikmatrix-pro/target/x86_64-apple-darwin/release/script" ]; then
+            cp ./tikmatrix-pro/target/x86_64-apple-darwin/release/script ./tikmatrix-pro/target/x86_64-apple-darwin/release/bin/
           fi
 
       - name: Upload ARM64 to R2
@@ -129,7 +85,7 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/agent/target/aarch64-apple-darwin/release/bin
+          source-dir: ./tikmatrix-pro/target/aarch64-apple-darwin/release/bin
           destination-dir: aarch64-apple-darwin
 
       - name: Upload x86_64 to R2
@@ -139,24 +95,20 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/agent/target/x86_64-apple-darwin/release/bin
+          source-dir: ./tikmatrix-pro/target/x86_64-apple-darwin/release/bin
           destination-dir: x86_64-apple-darwin
 
       - name: Update Library Versions
         run: |
-          # Extract version from input
           VERSION="${{ inputs.version }}"
-          BUILD_TARGET="${{ inputs.build_target }}"
 
-          # Update function
           update_lib() {
             local NAME=$1
             local PLATFORM=$2
             local TARGET=$3
 
-            # Calculate MD5 for the binary
             local MD5=""
-            local BIN_PATH="./tikmatrix-pro/agent/target/$TARGET/release/bin/$NAME"
+            local BIN_PATH="./tikmatrix-pro/target/$TARGET/release/bin/$NAME"
             if [ -f "$BIN_PATH" ]; then
               MD5=$(md5 -q "$BIN_PATH" 2>/dev/null || md5sum "$BIN_PATH" | cut -d' ' -f1)
               echo "$NAME MD5 ($PLATFORM): $MD5"
@@ -182,15 +134,7 @@ jobs:
               "https://api.tikmatrix.com/ci/update_lib"
           }
 
-          # Update libraries based on build target
-          if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "agent" ]]; then
-            update_lib "agent" "mac-arm" "aarch64-apple-darwin"
-            update_lib "agent" "mac-intel" "x86_64-apple-darwin"
-          fi
+          update_lib "script" "mac-arm" "aarch64-apple-darwin"
+          update_lib "script" "mac-intel" "x86_64-apple-darwin"
 
-          if [[ "$BUILD_TARGET" == "all" || "$BUILD_TARGET" == "script" ]]; then
-            update_lib "script" "mac-arm" "aarch64-apple-darwin"
-            update_lib "script" "mac-intel" "x86_64-apple-darwin"
-          fi
-
-          echo "Updated library versions to $VERSION (target: $BUILD_TARGET)"
+          echo "Updated script library versions to $VERSION"

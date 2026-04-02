@@ -1,5 +1,5 @@
-name: Build Agent - Windows
-run-name: ${{ github.actor }} is building Agent (Windows) 🚀
+name: Build Script - Windows
+run-name: ${{ github.actor }} is building Script (Windows) 🚀
 on:
   workflow_call:
     inputs:
@@ -15,14 +15,14 @@ on:
       build_target:
         description: "Build target"
         required: false
-        default: "all"
+        default: "script"
         type: string
 
 permissions:
   contents: write
 
 jobs:
-  build-agent-windows:
+  build-script-windows:
     runs-on: windows-latest
     strategy:
       fail-fast: true
@@ -44,10 +44,10 @@ jobs:
           path: |
             ~\.cargo\registry
             ~\.cargo\git
-            tikmatrix-pro/agent/target\${{ matrix.target }}
-          key: ${{ runner.os }}-agent-cargo-${{ matrix.target }}-${{ hashFiles('tikmatrix-pro/agent/**/Cargo.lock') }}
+            tikmatrix-pro\target\${{ matrix.target }}
+          key: ${{ runner.os }}-script-cargo-${{ matrix.target }}-${{ hashFiles('tikmatrix-pro/Cargo.lock') }}
           restore-keys: |
-            ${{ runner.os }}-agent-cargo-${{ matrix.target }}-
+            ${{ runner.os }}-script-cargo-${{ matrix.target }}-
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
@@ -55,42 +55,21 @@ jobs:
       - name: Install target platform
         run: rustup target add ${{ matrix.target }}
 
-      - name: Build all
-        if: ${{ inputs.build_target == 'all' }}
-        working-directory: tikmatrix-pro/agent
-        run: cargo build --release --target ${{ matrix.target }}
-
-      - name: Build agent only
-        if: ${{ inputs.build_target == 'agent' }}
-        working-directory: tikmatrix-pro/agent
-        run: cargo build --release --target ${{ matrix.target }} --bin agent
-
-      - name: Build script only
-        if: ${{ inputs.build_target == 'script' }}
-        working-directory: tikmatrix-pro/agent
-        run: cargo build --release --target ${{ matrix.target }} --bin script
+      - name: Build script
+        working-directory: tikmatrix-pro
+        run: cargo build -p script --release --target ${{ matrix.target }}
 
       - name: Prepare bin directory
         run: |
-          New-Item -ItemType Directory -Force -Path ./tikmatrix-pro/agent/target/${{ matrix.target }}/release/bin
-
-          $buildTarget = "${{ inputs.build_target }}"
+          New-Item -ItemType Directory -Force -Path ./tikmatrix-pro/target/${{ matrix.target }}/release/bin
 
           # Ensure bin folder is clean to avoid uploading stale binaries
-          if (Test-Path "./tikmatrix-pro/agent/target/${{ matrix.target }}/release/bin/*") {
-            Remove-Item -Force -Recurse ./tikmatrix-pro/agent/target/${{ matrix.target }}/release/bin/*
+          if (Test-Path "./tikmatrix-pro/target/${{ matrix.target }}/release/bin/*") {
+            Remove-Item -Force -Recurse ./tikmatrix-pro/target/${{ matrix.target }}/release/bin/*
           }
 
-          if ($buildTarget -eq "all" -or $buildTarget -eq "agent") {
-            if (Test-Path "./tikmatrix-pro/agent/target/${{ matrix.target }}/release/agent.exe") {
-              Copy-Item ./tikmatrix-pro/agent/target/${{ matrix.target }}/release/agent.exe ./tikmatrix-pro/agent/target/${{ matrix.target }}/release/bin/
-            }
-          }
-
-          if ($buildTarget -eq "all" -or $buildTarget -eq "script") {
-            if (Test-Path "./tikmatrix-pro/agent/target/${{ matrix.target }}/release/script.exe") {
-              Copy-Item ./tikmatrix-pro/agent/target/${{ matrix.target }}/release/script.exe ./tikmatrix-pro/agent/target/${{ matrix.target }}/release/bin/
-            }
+          if (Test-Path "./tikmatrix-pro/target/${{ matrix.target }}/release/script.exe") {
+            Copy-Item ./tikmatrix-pro/target/${{ matrix.target }}/release/script.exe ./tikmatrix-pro/target/${{ matrix.target }}/release/bin/
           }
         shell: pwsh
 
@@ -101,87 +80,44 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: .\tikmatrix-pro\agent\target\${{ matrix.target }}\release\bin
+          source-dir: .\tikmatrix-pro\target\${{ matrix.target }}\release\bin
           destination-dir: ${{ matrix.target }}
 
       - name: Update Library Version
         run: |
-          # Extract version from input
           $VERSION = "${{ inputs.version }}"
-          $BUILD_TARGET = "${{ inputs.build_target }}"
-
-          # Determine platform
           $PLATFORM = "windows"
 
-          # Update agent library
-          if ($BUILD_TARGET -eq "all" -or $BUILD_TARGET -eq "agent") {
-            # Calculate MD5 for agent
-            $AGENT_MD5 = ""
-            if (Test-Path "./tikmatrix-pro/agent/target/${{ matrix.target }}/release/bin/agent.exe") {
-              $AGENT_MD5 = (Get-FileHash -Path "./tikmatrix-pro/agent/target/${{ matrix.target }}/release/bin/agent.exe" -Algorithm MD5).Hash.ToLower()
-              Write-Host "Agent MD5: $AGENT_MD5"
-            }
-
-            $AGENT_UPDATE_DATA = @"
-            {
-              "name": "agent",
-              "platform": "$PLATFORM",
-              "downloadUrl": "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}/agent.exe",
-              "version": "$VERSION",
-              "app": "TikMatrix",
-              "md5": "$AGENT_MD5"
-            }
-          "@
-
-            # Call update API for agent
-            Write-Host "Updating agent library..."
-            try {
-              $agentHeaders = @{
-                "Content-Type" = "application/json"
-                "Authorization" = "Bearer ${{ secrets.API_KEY }}"
-              }
-              Invoke-RestMethod -Uri "https://api.tikmatrix.com/ci/update_lib" -Method Post -Headers $agentHeaders -Body $AGENT_UPDATE_DATA
-              Write-Host "Agent library updated successfully on api.tikmatrix.com"
-            } catch {
-              Write-Host "Error updating agent library: $_"
-              exit 1
-            }
+          # Calculate MD5 for script
+          $SCRIPT_MD5 = ""
+          if (Test-Path "./tikmatrix-pro/target/${{ matrix.target }}/release/bin/script.exe") {
+            $SCRIPT_MD5 = (Get-FileHash -Path "./tikmatrix-pro/target/${{ matrix.target }}/release/bin/script.exe" -Algorithm MD5).Hash.ToLower()
+            Write-Host "Script MD5: $SCRIPT_MD5"
           }
 
-          # Update script library
-          if ($BUILD_TARGET -eq "all" -or $BUILD_TARGET -eq "script") {
-            # Calculate MD5 for script
-            $SCRIPT_MD5 = ""
-            if (Test-Path "./tikmatrix-pro/agent/target/${{ matrix.target }}/release/bin/script.exe") {
-              $SCRIPT_MD5 = (Get-FileHash -Path "./tikmatrix-pro/agent/target/${{ matrix.target }}/release/bin/script.exe" -Algorithm MD5).Hash.ToLower()
-              Write-Host "Script MD5: $SCRIPT_MD5"
-            }
+          $SCRIPT_UPDATE_DATA = @"
+          {
+            "name": "script",
+            "platform": "$PLATFORM",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}/script.exe",
+            "version": "$VERSION",
+            "app": "TikMatrix",
+            "md5": "$SCRIPT_MD5"
+          }
+"@
 
-            $SCRIPT_UPDATE_DATA = @"
-            {
-              "name": "script",
-              "platform": "$PLATFORM",
-              "downloadUrl": "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}/script.exe",
-              "version": "$VERSION",
-              "app": "TikMatrix",
-              "md5": "$SCRIPT_MD5"
+          Write-Host "Updating script library..."
+          try {
+            $headers = @{
+              "Content-Type" = "application/json"
+              "Authorization" = "Bearer ${{ secrets.API_KEY }}"
             }
-          "@
-
-            # Call update API for script
-            Write-Host "Updating script library..."
-            try {
-              $scriptHeaders = @{
-                "Content-Type" = "application/json"
-                "Authorization" = "Bearer ${{ secrets.API_KEY }}"
-              }
-              Invoke-RestMethod -Uri "https://api.tikmatrix.com/ci/update_lib" -Method Post -Headers $scriptHeaders -Body $SCRIPT_UPDATE_DATA
-              Write-Host "Script library updated successfully on api.tikmatrix.com"
-            } catch {
-              Write-Host "Error updating script library: $_"
-              exit 1
-            }
+            Invoke-RestMethod -Uri "https://api.tikmatrix.com/ci/update_lib" -Method Post -Headers $headers -Body $SCRIPT_UPDATE_DATA
+            Write-Host "Script library updated successfully"
+          } catch {
+            Write-Host "Error updating script library: $_"
+            exit 1
           }
 
-          Write-Host "Updated library versions for $PLATFORM to $VERSION (target: $BUILD_TARGET)"
+          Write-Host "Updated script library for $PLATFORM to $VERSION"
         shell: pwsh
