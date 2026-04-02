@@ -110,7 +110,7 @@ jobs:
               "Content-Type" = "application/json"
               "Authorization" = "Bearer ${{ secrets.API_KEY }}"
             }
-            Invoke-RestMethod -Uri "https://api.tikmatrix.com/ci/update_lib" -Method Post -Headers $headers -Body $SCRIPT_UPDATE_DATA
+            Invoke-RestMethod -Uri "https://api.tikmatrix.com/ci/update_lib_v2" -Method Post -Headers $headers -Body $SCRIPT_UPDATE_DATA
             Write-Host "Script library updated successfully"
           } catch {
             Write-Host "Error updating script library: $_"

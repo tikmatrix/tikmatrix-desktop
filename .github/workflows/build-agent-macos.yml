@@ -131,7 +131,7 @@ jobs:
               -H "Content-Type: application/json" \
               -H "Authorization: Bearer ${{ secrets.API_KEY }}" \
               -d "$UPDATE_DATA" \
-              "https://api.tikmatrix.com/ci/update_lib"
+              "https://api.tikmatrix.com/ci/update_lib_v2"
           }
 
           update_lib "script" "mac-arm" "aarch64-apple-darwin"
