@@ -95,16 +95,14 @@ jobs:
             Write-Host "Script MD5: $SCRIPT_MD5"
           }
 
-          $SCRIPT_UPDATE_DATA = @"
-          {
-            "name": "script",
-            "platform": "$PLATFORM",
-            "downloadUrl": "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}/script.exe",
-            "version": "$VERSION",
-            "app": "TikMatrix",
-            "md5": "$SCRIPT_MD5"
-          }
-"@
+          $SCRIPT_UPDATE_DATA = [PSCustomObject]@{
+            name        = "script"
+            platform    = $PLATFORM
+            downloadUrl = "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}/script.exe"
+            version     = $VERSION
+            app         = "TikMatrix"
+            md5         = $SCRIPT_MD5
+          } | ConvertTo-Json -Compress
 
           Write-Host "Updating script library..."
           try {
