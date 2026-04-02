@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout tikmatrix-pro private repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
@@ -92,7 +92,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout tikmatrix-pro repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
@@ -110,16 +110,17 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-          key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
+            tikmatrix-pro/target
+          key: ${{ runner.os }}-cargo-api-rs-${{ hashFiles('tikmatrix-pro/Cargo.lock') }}
 
       - name: Build release
-        run: cd tikmatrix-pro/server/src-rs && cargo build --release
+        run: cd tikmatrix-pro && cargo build -p tikmatrix-api-rs --release
 
       - name: Upload binary
         uses: actions/upload-artifact@v4
         with:
           name: tikmatrix-binary
-          path: tikmatrix-pro/server/src-rs/target/release/tikmatrix-api-rs
+          path: tikmatrix-pro/target/release/tikmatrix-api-rs
 
       - name: Upload static directory
         uses: actions/upload-artifact@v4
