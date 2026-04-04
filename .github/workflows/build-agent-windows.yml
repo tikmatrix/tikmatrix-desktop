@@ -81,7 +81,7 @@ jobs:
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
           source-dir: .\tikmatrix-pro\target\${{ matrix.target }}\release\bin
-          destination-dir: ${{ matrix.target }}
+          destination-dir: ${{ matrix.target }}_v2
 
       - name: Update Library Version
         run: |
@@ -98,7 +98,7 @@ jobs:
           $SCRIPT_UPDATE_DATA = [PSCustomObject]@{
             name        = "script"
             platform    = $PLATFORM
-            downloadUrl = "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}/script.exe"
+            downloadUrl = "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}_v2/script.exe"
             version     = $VERSION
             app         = "TikMatrix"
             md5         = $SCRIPT_MD5

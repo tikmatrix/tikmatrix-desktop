@@ -86,7 +86,7 @@ jobs:
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
           source-dir: ./tikmatrix-pro/target/aarch64-apple-darwin/release/bin
-          destination-dir: aarch64-apple-darwin
+          destination-dir: aarch64-apple-darwin_v2
 
       - name: Upload x86_64 to R2
         uses: ryand56/r2-upload-action@v1.4
@@ -96,7 +96,7 @@ jobs:
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
           source-dir: ./tikmatrix-pro/target/x86_64-apple-darwin/release/bin
-          destination-dir: x86_64-apple-darwin
+          destination-dir: x86_64-apple-darwin_v2
 
       - name: Update Library Versions
         run: |
@@ -134,7 +134,7 @@ jobs:
               "https://api.tikmatrix.com/ci/update_lib_v2"
           }
 
-          update_lib "script" "mac-arm" "aarch64-apple-darwin"
-          update_lib "script" "mac-intel" "x86_64-apple-darwin"
+          update_lib "script" "mac-arm" "aarch64-apple-darwin_v2"
+          update_lib "script" "mac-intel" "x86_64-apple-darwin_v2"
 
           echo "Updated script library versions to $VERSION"
