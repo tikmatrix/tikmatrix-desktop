@@ -17,6 +17,16 @@ on:
         required: false
         default: "all"
         type: string
+      notes:
+        description: "Release notes (English)"
+        required: false
+        default: ""
+        type: string
+      gray_percentage:
+        description: "Gray release percentage (0-100)"
+        required: false
+        default: "10"
+        type: string
 
 permissions:
   contents: write

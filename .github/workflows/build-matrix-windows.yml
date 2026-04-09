@@ -17,6 +17,16 @@ on:
         required: false
         default: "all"
         type: string
+      notes:
+        description: "Release notes (English)"
+        required: false
+        default: ""
+        type: string
+      gray_percentage:
+        description: "Gray release percentage (0-100)"
+        required: false
+        default: "10"
+        type: string
 
 permissions:
   contents: write
@@ -79,7 +89,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd tikmatrix-pro
-          node ./scripts/update-version.js --app=tikmatrix.pro --app-name='TikMatrix Pro'
+          node ./scripts/update-version.js --app=tikmatrix.pro "--app-name=TikMatrix Pro" "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
@@ -118,7 +128,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd tikmatrix-pro
-          node ./scripts/update-version.js --app=tikmatrix --app-name=TikMatrix
+          node ./scripts/update-version.js --app=tikmatrix --app-name=TikMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
@@ -159,7 +169,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd tikmatrix-pro
-          node ./scripts/update-version.js --app=igmatrix --app-name=IgMatrix
+          node ./scripts/update-version.js --app=igmatrix --app-name=IgMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
