@@ -31,10 +31,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
       - name: Determine target servers
         id: get-servers
         run: |
-          CONFIG=$(cat deploy-config.json)
+          CONFIG=$(cat LinuxConfig/deploy-config.json)
           SELECTED_SERVER="${{ github.event.inputs.server }}"
           
           if [[ -n "$SELECTED_SERVER" ]]; then

@@ -65,10 +65,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
       - name: Determine target servers
         id: get-servers
         run: |
-          CONFIG=$(cat deploy-config.json)
+          CONFIG=$(cat LinuxConfig/deploy-config.json)
           SELECTED_SERVER="${{ github.event.inputs.server }}"
           
           if [[ -n "$SELECTED_SERVER" ]]; then
@@ -115,7 +122,7 @@ jobs:
 
       - name: Health check on ${{ matrix.server.id }}
         env:
-          CONFIG_FILE: deploy-config.json
+          CONFIG_FILE: LinuxConfig/deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
           chmod +x ./LinuxConfig/shell/health-check.sh
@@ -159,7 +166,7 @@ jobs:
 
       - name: Push files to ${{ matrix.server.id }}
         env:
-          CONFIG_FILE: deploy-config.json
+          CONFIG_FILE: LinuxConfig/deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
           chmod +x ./LinuxConfig/shell/push-files.sh
@@ -207,7 +214,7 @@ jobs:
 
       - name: Manage backups on ${{ matrix.server.id }}
         env:
-          CONFIG_FILE: deploy-config.json
+          CONFIG_FILE: LinuxConfig/deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
           chmod +x ./LinuxConfig/shell/backup-manage.sh

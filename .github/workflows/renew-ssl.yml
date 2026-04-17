@@ -30,15 +30,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
       - name: Determine target servers
         id: get-servers
         run: |
-          if [[ ! -f deploy-config.json ]]; then
-            echo "Error: deploy-config.json not found"
+          if [[ ! -f LinuxConfig/deploy-config.json ]]; then
+            echo "Error: LinuxConfig/deploy-config.json not found"
             exit 1
           fi
 
-          CONFIG=$(cat deploy-config.json)
+          CONFIG=$(cat LinuxConfig/deploy-config.json)
           SELECTED_SERVER="${{ github.event.inputs.server }}"
 
           if [[ -n "$SELECTED_SERVER" ]]; then
@@ -90,7 +97,7 @@ jobs:
 
       - name: Renew SSL certificates on ${{ matrix.server.id }}
         env:
-          CONFIG_FILE: deploy-config.json
+          CONFIG_FILE: LinuxConfig/deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
