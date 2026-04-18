@@ -53,7 +53,7 @@ jobs:
   build-script-windows:
     needs: create-tag
     if: ${{ inputs.platforms == 'all' || inputs.platforms == 'windows' }}
-    uses: ./.github/workflows/build-agent-windows.yml
+    uses: ./.github/workflows/build-script-windows.yml
     with:
       version: ${{ inputs.version }}
       branch: ${{ inputs.branch }}
@@ -63,7 +63,7 @@ jobs:
   build-script-macos:
     needs: create-tag
     if: ${{ inputs.platforms == 'all' || inputs.platforms == 'macos' }}
-    uses: ./.github/workflows/build-agent-macos.yml
+    uses: ./.github/workflows/build-script-macos.yml
     with:
       version: ${{ inputs.version }}
       branch: ${{ inputs.branch }}
