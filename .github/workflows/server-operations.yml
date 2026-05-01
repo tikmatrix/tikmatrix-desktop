@@ -65,13 +65,22 @@ on:
         default: false
 
       ssl_method:
-        description: "SSL validation method (nginx-configure / renew-ssl)"
+        description: "SSL validation method for nginx-configure"
         required: false
         type: choice
         options:
           - http
           - route53
         default: http
+
+      renew_ssl_method:
+        description: "SSL validation method for renew-ssl (defaults to route53)"
+        required: false
+        type: choice
+        options:
+          - route53
+          - http
+        default: route53
 
       # ── push-files ────────────────────────────────────────────────────────
       local_path:
@@ -749,7 +758,7 @@ EOF
           SSH_KEY_FILE: ~/.ssh/deploy_key
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          SSL_METHOD: ${{ github.event.inputs.ssl_method || 'route53' }}
+          SSL_METHOD: ${{ github.event.inputs.renew_ssl_method || 'route53' }}
         run: |
           chmod +x ./LinuxConfig/shell/ssl-renew.sh
           ./LinuxConfig/shell/ssl-renew.sh "${{ matrix.server.id }}"
