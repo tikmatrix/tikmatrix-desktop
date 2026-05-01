@@ -71,7 +71,7 @@ on:
         options:
           - http
           - route53
-        default: route53
+        default: http
 
       # ── push-files ────────────────────────────────────────────────────────
       local_path:
@@ -699,7 +699,8 @@ EOF
           cd ~
 
           if [[ -n "$SCRIPT_ARGS" ]]; then
-            eval "sudo ./script_to_run.sh $SCRIPT_ARGS"
+            read -ra ARGS <<< "$SCRIPT_ARGS"
+            sudo ./script_to_run.sh "${ARGS[@]}"
           else
             sudo ./script_to_run.sh
           fi
