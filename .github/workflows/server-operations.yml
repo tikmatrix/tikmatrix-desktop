@@ -1,5 +1,5 @@
 # Server Operations Workflow
-# Health checks, file push, and backup management
+# Health checks, file push, backup management, and firewall IP blocking
 name: Server Operations
 run-name: ${{ github.actor }} is running ${{ github.event.inputs.operation }} 🛠️
 
@@ -14,6 +14,7 @@ on:
           - health-check
           - push-files
           - manage-backup
+          - block-ips
 
       server:
         description: "Target server (leave empty for all servers)"
@@ -53,6 +54,12 @@ on:
 
       backup_site:
         description: "Site domain to backup (e.g., tikmatrix.com)"
+        required: false
+        type: string
+
+      # Firewall block options
+      block_ips:
+        description: "IPs to block (comma-separated, e.g., 1.2.3.4,5.6.7.8 or 10.0.0.0/8)"
         required: false
         type: string
 
@@ -222,6 +229,116 @@ jobs:
             "${{ matrix.server.id }}" \
             "${{ github.event.inputs.backup_action }}" \
             "${{ github.event.inputs.backup_site }}"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  block-ips:
+    needs: prepare
+    if: github.event.inputs.operation == 'block-ips'
+    runs-on: ubuntu-latest
+    permissions: {}
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
+      - name: Validate inputs
+        run: |
+          if [[ -z "${{ github.event.inputs.block_ips }}" ]]; then
+            echo "Error: block_ips is required for block-ips operation"
+            exit 1
+          fi
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Block IPs on ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: LinuxConfig/deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          SERVER_ID="${{ matrix.server.id }}"
+          BLOCK_IPS="${{ github.event.inputs.block_ips }}"
+
+          CONFIG=$(cat "$CONFIG_FILE")
+          SERVER_HOST=$(echo "$CONFIG" | jq -r ".servers[] | select(.id == \"$SERVER_ID\") | .host")
+          SERVER_USER=$(echo "$CONFIG" | jq -r ".servers[] | select(.id == \"$SERVER_ID\") | .user")
+          SERVER_PORT=$(echo "$CONFIG" | jq -r ".servers[] | select(.id == \"$SERVER_ID\") | .port // \"22\"")
+
+          echo "Connecting to $SERVER_ID ($SERVER_USER@$SERVER_HOST:$SERVER_PORT)"
+
+          # Write the remote script with BLOCK_IPS embedded at generation time
+          cat > /tmp/block_ips_remote.sh << SCRIPT
+          #!/bin/bash
+          set -euo pipefail
+
+          BLOCK_IPS="$BLOCK_IPS"
+          HISTORY_FILE="/etc/firewall_blocked_ips.txt"
+
+          sudo touch "\$HISTORY_FILE"
+          sudo chmod 644 "\$HISTORY_FILE"
+
+          echo "=== Blocking IPs on \$(hostname) ==="
+          IFS=',' read -ra RAW_LIST <<< "\$BLOCK_IPS"
+          for RAW_IP in "\${RAW_LIST[@]}"; do
+            IP=\$(echo "\$RAW_IP" | tr -d ' ')
+            [[ -z "\$IP" ]] && continue
+
+            # Validate IPv4 or IPv4 CIDR with octet range check (0-255, prefix 0-32)
+            if ! echo "\$IP" | grep -qE '^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(/([0-9]|[12][0-9]|3[0-2]))?$'; then
+              echo "SKIP (invalid format): \$IP"
+              continue
+            fi
+
+            echo "Blocking: \$IP"
+            if sudo iptables -C INPUT -s "\$IP" -j DROP 2>/dev/null; then
+              echo "  INPUT  DROP rule already exists"
+            else
+              sudo iptables -I INPUT -s "\$IP" -j DROP && echo "  INPUT  DROP added" || echo "  WARNING: failed to add INPUT DROP rule"
+            fi
+            if sudo iptables -C OUTPUT -d "\$IP" -j DROP 2>/dev/null; then
+              echo "  OUTPUT DROP rule already exists"
+            else
+              sudo iptables -I OUTPUT -d "\$IP" -j DROP && echo "  OUTPUT DROP added" || echo "  WARNING: failed to add OUTPUT DROP rule"
+            fi
+
+            # Append to history file only if not already recorded (flock for atomicity)
+            sudo flock "\$HISTORY_FILE" -c "grep -qxF '\$IP' '\$HISTORY_FILE' || echo '\$IP' >> '\$HISTORY_FILE'"
+          done
+
+          # Persist iptables rules so they survive reboots
+          if command -v netfilter-persistent &>/dev/null; then
+            sudo netfilter-persistent save
+          elif command -v iptables-save &>/dev/null; then
+            sudo mkdir -p /etc/iptables
+            sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null
+            echo "iptables rules saved to /etc/iptables/rules.v4"
+          fi
+
+          echo ""
+          echo "=== All Blocked IPs on \$(hostname) (history: \$HISTORY_FILE) ==="
+          cat "\$HISTORY_FILE"
+          echo "=== Total: \$(wc -l < "\$HISTORY_FILE") blocked IP(s) ==="
+          SCRIPT
+
+          ssh -i "$SSH_KEY_FILE" \
+            -o StrictHostKeyChecking=no \
+            -o ConnectTimeout=30 \
+            -p "$SERVER_PORT" \
+            "$SERVER_USER@$SERVER_HOST" \
+            "bash -s" < /tmp/block_ips_remote.sh
 
       - name: Cleanup SSH Key
         if: always()
