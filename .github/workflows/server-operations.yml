@@ -554,7 +554,7 @@ jobs:
 
           sudo rm -f /tmp/"${NGINX_CONFIG}.backup" /tmp/"${NGINX_CONFIG}.new"
           echo "✅ $NGINX_CONFIG deployed successfully!"
-EOF
+          EOF
 
             log_success "$NGINX_CONFIG deployed to $SERVER_ID"
           done
@@ -716,7 +716,7 @@ EOF
 
           rm -f ~/script_to_run.sh ~/lib-common.sh
           echo "✅ Script execution completed!"
-EOF
+          EOF
 
           log_success "Script execution on $SERVER_ID completed successfully!"
 
