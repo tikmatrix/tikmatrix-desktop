@@ -142,6 +142,10 @@ on:
         type: string
         default: ""
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.schedule || github.run_id }}
+  cancel-in-progress: false
+
 permissions:
   contents: read
 
@@ -152,9 +156,6 @@ jobs:
     outputs:
       servers: ${{ steps.get-servers.outputs.servers }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Checkout LinuxConfig repository
         uses: actions/checkout@v4
         with:
@@ -203,16 +204,6 @@ jobs:
         server: ${{ fromJson(needs.prepare.outputs.servers) }}
       fail-fast: false
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Checkout LinuxConfig repository
-        uses: actions/checkout@v4
-        with:
-          repository: tikmatrix/LinuxConfig
-          token: ${{ secrets.REPO_TOKEN }}
-          path: LinuxConfig
-
       - name: Setup SSH Key
         run: |
           mkdir -p ~/.ssh
@@ -354,9 +345,6 @@ jobs:
         server: ${{ fromJson(needs.prepare.outputs.servers) }}
       fail-fast: false
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Checkout LinuxConfig repository
         uses: actions/checkout@v4
         with:
@@ -403,13 +391,6 @@ jobs:
         server: ${{ fromJson(needs.prepare.outputs.servers) }}
       fail-fast: false
     steps:
-      - name: Checkout LinuxConfig repository
-        uses: actions/checkout@v4
-        with:
-          repository: tikmatrix/LinuxConfig
-          token: ${{ secrets.REPO_TOKEN }}
-          path: LinuxConfig
-
       - name: Validate inputs
         run: |
           if [[ -z "${{ github.event.inputs.block_ips }}" ]]; then
@@ -425,56 +406,54 @@ jobs:
 
       - name: Block IPs on ${{ matrix.server.id }}
         env:
-          CONFIG_FILE: LinuxConfig/deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
           SERVER_ID="${{ matrix.server.id }}"
+          SERVER_HOST="${{ matrix.server.host }}"
+          SERVER_PORT="${{ matrix.server.port }}"
+          SERVER_USER="${{ matrix.server.user }}"
           BLOCK_IPS="${{ github.event.inputs.block_ips }}"
-
-          CONFIG=$(cat "$CONFIG_FILE")
-          SERVER_HOST=$(echo "$CONFIG" | jq -r ".servers[] | select(.id == \"$SERVER_ID\") | .host")
-          SERVER_USER=$(echo "$CONFIG" | jq -r ".servers[] | select(.id == \"$SERVER_ID\") | .user")
-          SERVER_PORT=$(echo "$CONFIG" | jq -r ".servers[] | select(.id == \"$SERVER_ID\") | .port // \"22\"")
 
           echo "Connecting to $SERVER_ID ($SERVER_USER@$SERVER_HOST:$SERVER_PORT)"
 
-          # Write the remote script with BLOCK_IPS embedded at generation time
-          cat > /tmp/block_ips_remote.sh << SCRIPT
+          # Write the remote script using a quoted heredoc so BLOCK_IPS is
+          # never expanded client-side; pass it as a positional argument instead.
+          cat > /tmp/block_ips_remote.sh << 'SCRIPT'
           #!/bin/bash
           set -euo pipefail
 
-          BLOCK_IPS="$BLOCK_IPS"
+          BLOCK_IPS="${1:-}"
           HISTORY_FILE="/etc/firewall_blocked_ips.txt"
 
-          sudo touch "\$HISTORY_FILE"
-          sudo chmod 644 "\$HISTORY_FILE"
+          sudo touch "$HISTORY_FILE"
+          sudo chmod 644 "$HISTORY_FILE"
 
-          echo "=== Blocking IPs on \$(hostname) ==="
-          IFS=',' read -ra RAW_LIST <<< "\$BLOCK_IPS"
-          for RAW_IP in "\${RAW_LIST[@]}"; do
-            IP=\$(echo "\$RAW_IP" | tr -d ' ')
-            [[ -z "\$IP" ]] && continue
+          echo "=== Blocking IPs on $(hostname) ==="
+          IFS=',' read -ra RAW_LIST <<< "$BLOCK_IPS"
+          for RAW_IP in "${RAW_LIST[@]}"; do
+            IP=$(echo "$RAW_IP" | tr -d ' ')
+            [[ -z "$IP" ]] && continue
 
             # Validate IPv4 or IPv4 CIDR with octet range check (0-255, prefix 0-32)
-            if ! echo "\$IP" | grep -qE '^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(/([0-9]|[12][0-9]|3[0-2]))?$'; then
-              echo "SKIP (invalid format): \$IP"
+            if ! echo "$IP" | grep -qE '^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(/([0-9]|[12][0-9]|3[0-2]))?$'; then
+              echo "SKIP (invalid format): $IP"
               continue
             fi
 
-            echo "Blocking: \$IP"
-            if sudo iptables -C INPUT -s "\$IP" -j DROP 2>/dev/null; then
+            echo "Blocking: $IP"
+            if sudo iptables -C INPUT -s "$IP" -j DROP 2>/dev/null; then
               echo "  INPUT  DROP rule already exists"
             else
-              sudo iptables -I INPUT -s "\$IP" -j DROP && echo "  INPUT  DROP added" || echo "  WARNING: failed to add INPUT DROP rule"
+              sudo iptables -I INPUT -s "$IP" -j DROP && echo "  INPUT  DROP added" || echo "  WARNING: failed to add INPUT DROP rule"
             fi
-            if sudo iptables -C OUTPUT -d "\$IP" -j DROP 2>/dev/null; then
+            if sudo iptables -C OUTPUT -d "$IP" -j DROP 2>/dev/null; then
               echo "  OUTPUT DROP rule already exists"
             else
-              sudo iptables -I OUTPUT -d "\$IP" -j DROP && echo "  OUTPUT DROP added" || echo "  WARNING: failed to add OUTPUT DROP rule"
+              sudo iptables -I OUTPUT -d "$IP" -j DROP && echo "  OUTPUT DROP added" || echo "  WARNING: failed to add OUTPUT DROP rule"
             fi
 
             # Append to history file only if not already recorded (flock for atomicity)
-            sudo flock "\$HISTORY_FILE" -c "grep -qxF '\$IP' '\$HISTORY_FILE' || echo '\$IP' >> '\$HISTORY_FILE'"
+            sudo flock "$HISTORY_FILE" -c "grep -qxF '$IP' '$HISTORY_FILE' || echo '$IP' >> '$HISTORY_FILE'"
           done
 
           # Persist iptables rules so they survive reboots
@@ -487,17 +466,18 @@ jobs:
           fi
 
           echo ""
-          echo "=== All Blocked IPs on \$(hostname) (history: \$HISTORY_FILE) ==="
-          cat "\$HISTORY_FILE"
-          echo "=== Total: \$(wc -l < "\$HISTORY_FILE") blocked IP(s) ==="
+          echo "=== All Blocked IPs on $(hostname) (history: $HISTORY_FILE) ==="
+          cat "$HISTORY_FILE"
+          echo "=== Total: $(wc -l < "$HISTORY_FILE") blocked IP(s) ==="
           SCRIPT
 
           ssh -i "$SSH_KEY_FILE" \
             -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
             -o ConnectTimeout=30 \
             -p "$SERVER_PORT" \
             "$SERVER_USER@$SERVER_HOST" \
-            "bash -s" < /tmp/block_ips_remote.sh
+            bash -s -- "$BLOCK_IPS" < /tmp/block_ips_remote.sh
 
       - name: Cleanup SSH Key
         if: always()
@@ -513,9 +493,6 @@ jobs:
         server: ${{ fromJson(needs.prepare.outputs.servers) }}
       fail-fast: false
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Checkout LinuxConfig repository
         uses: actions/checkout@v4
         with:
@@ -637,9 +614,6 @@ jobs:
         server: ${{ fromJson(needs.prepare.outputs.servers) }}
       fail-fast: false
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Checkout LinuxConfig repository
         uses: actions/checkout@v4
         with:
@@ -695,9 +669,6 @@ jobs:
         server: ${{ fromJson(needs.prepare.outputs.servers) }}
       fail-fast: false
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Checkout LinuxConfig repository
         uses: actions/checkout@v4
         with:
@@ -800,9 +771,6 @@ jobs:
         server: ${{ fromJson(needs.prepare.outputs.servers) }}
       fail-fast: false
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Checkout LinuxConfig repository
         uses: actions/checkout@v4
         with:
