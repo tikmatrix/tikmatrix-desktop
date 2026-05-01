@@ -1,9 +1,17 @@
 # Server Operations Workflow
-# Health checks, file push, backup management, and firewall IP blocking
+# Consolidates: service health checks, nginx config deployment, nginx setup,
+# SSL renewal, shell script execution, file push, backup management,
+# and firewall IP blocking.
 name: Server Operations
-run-name: ${{ github.actor }} is running ${{ github.event.inputs.operation }} 🛠️
+run-name: >-
+  ${{ github.event_name == 'schedule'
+      && format('Scheduled ({0})', github.event.schedule)
+      || format('{0} is running {1}', github.actor, github.event.inputs.operation) }} 🛠️
 
 on:
+  schedule:
+    - cron: "*/10 * * * *"  # Automated service health check every 10 minutes
+    - cron: "0 2 1 * *"     # Automated SSL renewal on the 1st of every month
   workflow_dispatch:
     inputs:
       operation:
@@ -15,6 +23,10 @@ on:
           - push-files
           - manage-backup
           - block-ips
+          - nginx-deploy-config
+          - nginx-configure
+          - run-script
+          - renew-ssl
 
       server:
         description: "Target server (leave empty for all servers)"
@@ -26,25 +38,60 @@ on:
           - server-dublin
           - server-sgp
 
-      # File push options
+      # ── nginx-deploy-config / nginx-configure ────────────────────────────
+      domain:
+        description: "Domain (nginx-deploy-config: config to deploy; nginx-configure: domain to set up)"
+        required: false
+        type: string
+
+      site_type:
+        description: "Site type for nginx-configure (static or proxy)"
+        required: false
+        type: choice
+        options:
+          - static
+          - proxy
+        default: static
+
+      proxy_backend:
+        description: "Backend URL for reverse proxy, e.g. http://127.0.0.1:3000"
+        required: false
+        type: string
+
+      enable_ssl:
+        description: "Enable SSL certificate setup (nginx-configure)"
+        required: false
+        type: boolean
+        default: false
+
+      ssl_method:
+        description: "SSL validation method (nginx-configure / renew-ssl)"
+        required: false
+        type: choice
+        options:
+          - http
+          - route53
+        default: route53
+
+      # ── push-files ────────────────────────────────────────────────────────
       local_path:
-        description: "Local path for file operations (e.g., ./build)"
+        description: "Local path for file push (e.g. ./build)"
         required: false
         type: string
 
       remote_path:
-        description: "Remote path for file operations (e.g., /var/www/tikmatrix.com)"
+        description: "Remote path for file push (e.g. /var/www/tikmatrix.com)"
         required: false
         type: string
 
       post_upload_commands:
-        description: 'Commands to run after upload (e.g., "sudo nginx -t && sudo nginx -s reload")'
+        description: 'Commands to run after upload (e.g. "sudo nginx -t && sudo nginx -s reload")'
         required: false
         type: string
 
-      # Backup options
+      # ── manage-backup ─────────────────────────────────────────────────────
       backup_action:
-        description: "Backup action (create or list)"
+        description: "Backup action (list or create)"
         required: false
         type: choice
         options:
@@ -53,17 +100,44 @@ on:
         default: list
 
       backup_site:
-        description: "Site domain to backup (e.g., tikmatrix.com)"
+        description: "Site domain to back up (e.g. tikmatrix.com)"
         required: false
         type: string
 
-      # Firewall block options
+      # ── block-ips ─────────────────────────────────────────────────────────
       block_ips:
-        description: "IPs to block (comma-separated, e.g., 1.2.3.4,5.6.7.8 or 10.0.0.0/8)"
+        description: "IPs to block, comma-separated (e.g. 1.2.3.4,5.6.7.8 or 10.0.0.0/8)"
         required: false
         type: string
+
+      # ── run-script ────────────────────────────────────────────────────────
+      script_name:
+        description: "Script to execute (run-script operation)"
+        required: false
+        type: choice
+        options:
+          - ""
+          - backup-manage.sh
+          - deploy-site.sh
+          - fix-deploy-permissions.sh
+          - health-check.sh
+          - install_alloy.service.sh
+          - nginx-config.sh
+          - push-files.sh
+          - setup-hy2.sh
+          - ssl-renew.sh
+
+      script_args:
+        description: "Arguments to pass to the script (run-script)"
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: read
 
 jobs:
+  # ── Shared setup: resolve target servers ──────────────────────────────────
   prepare:
     runs-on: ubuntu-latest
     outputs:
@@ -82,29 +156,38 @@ jobs:
       - name: Determine target servers
         id: get-servers
         run: |
-          CONFIG=$(cat LinuxConfig/deploy-config.json)
-          SELECTED_SERVER="${{ github.event.inputs.server }}"
-          
-          if [[ -n "$SELECTED_SERVER" ]]; then
-            # Use specific server
-            SERVERS=$(echo "$CONFIG" | jq -c --arg target "$SELECTED_SERVER" '[.servers[] | select(.id == $target)]')
-          else
-            # Use all servers
-            SERVERS=$(echo "$CONFIG" | jq -c '.servers')
-          fi
-          
-          # Validate servers is not empty
-          if [[ -z "$SERVERS" || "$SERVERS" == "[]" || "$SERVERS" == "null" ]]; then
-            echo "Error: No servers found"
+          if [[ ! -f LinuxConfig/deploy-config.json ]]; then
+            echo "Error: LinuxConfig/deploy-config.json not found"
             exit 1
           fi
-          
+
+          CONFIG=$(cat LinuxConfig/deploy-config.json)
+          SELECTED_SERVER="${{ github.event.inputs.server }}"
+
+          if [[ -n "$SELECTED_SERVER" ]]; then
+            SERVERS=$(echo "$CONFIG" | jq -c --arg target "$SELECTED_SERVER" '[.servers[] | select(.id == $target)]')
+          else
+            SERVERS=$(echo "$CONFIG" | jq -c '.servers')
+          fi
+
+          if [[ -z "$SERVERS" || "$SERVERS" == "[]" || "$SERVERS" == "null" ]]; then
+            if [[ -n "$SELECTED_SERVER" ]]; then
+              echo "Error: No servers found for target: $SELECTED_SERVER"
+            else
+              echo "Error: No servers configured in deploy-config.json"
+            fi
+            exit 1
+          fi
+
           echo "servers=$SERVERS" >> $GITHUB_OUTPUT
           echo "Target servers: $SERVERS"
 
+  # ── Health Check (scheduled every 10 min + manual) ────────────────────────
   health-check:
     needs: prepare
-    if: github.event.inputs.operation == 'health-check'
+    if: |
+      github.event.inputs.operation == 'health-check' ||
+      github.event.schedule == '*/10 * * * *'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -139,6 +222,7 @@ jobs:
         if: always()
         run: rm -f ~/.ssh/deploy_key
 
+  # ── Push Files ────────────────────────────────────────────────────────────
   push-files:
     needs: prepare
     if: github.event.inputs.operation == 'push-files'
@@ -187,6 +271,7 @@ jobs:
         if: always()
         run: rm -f ~/.ssh/deploy_key
 
+  # ── Manage Backup ─────────────────────────────────────────────────────────
   manage-backup:
     needs: prepare
     if: github.event.inputs.operation == 'manage-backup'
@@ -234,6 +319,7 @@ jobs:
         if: always()
         run: rm -f ~/.ssh/deploy_key
 
+  # ── Block IPs ─────────────────────────────────────────────────────────────
   block-ips:
     needs: prepare
     if: github.event.inputs.operation == 'block-ips'
@@ -339,6 +425,333 @@ jobs:
             -p "$SERVER_PORT" \
             "$SERVER_USER@$SERVER_HOST" \
             "bash -s" < /tmp/block_ips_remote.sh
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  # ── Nginx Deploy Config ───────────────────────────────────────────────────
+  nginx-deploy-config:
+    needs: prepare
+    if: github.event.inputs.operation == 'nginx-deploy-config'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Deploy nginx configs to ${{ matrix.server.id }}
+        env:
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          SERVER_ID="${{ matrix.server.id }}"
+          SERVER_HOST="${{ matrix.server.host }}"
+          SERVER_PORT="${{ matrix.server.port }}"
+          SERVER_USER="${{ matrix.server.user }}"
+          SELECTED_DOMAIN="${{ github.event.inputs.domain }}"
+
+          source ./LinuxConfig/shell/lib-common.sh
+
+          # Determine which configs to deploy
+          if [[ -n "$SELECTED_DOMAIN" ]]; then
+            CONFIG_FILE="LinuxConfig/nginx/${SELECTED_DOMAIN}.conf"
+            if [[ ! -f "$CONFIG_FILE" ]]; then
+              echo "Error: Configuration file $CONFIG_FILE not found"
+              exit 1
+            fi
+            CONFIGS=("${SELECTED_DOMAIN}.conf")
+          else
+            mapfile -t CONFIGS < <(find LinuxConfig/nginx -name "*.conf" -type f -exec basename {} \; | sort)
+          fi
+
+          if [[ ${#CONFIGS[@]} -eq 0 ]]; then
+            echo "Error: No nginx configuration files found in LinuxConfig/nginx/"
+            exit 1
+          fi
+
+          echo "🚀 Deploying ${#CONFIGS[@]} config(s) to $SERVER_ID ($SERVER_HOST)"
+
+          for NGINX_CONFIG in "${CONFIGS[@]}"; do
+            log_info "Deploying $NGINX_CONFIG to $SERVER_ID"
+
+            scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+              "LinuxConfig/nginx/$NGINX_CONFIG" "${NGINX_CONFIG}.tmp"
+
+            ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
+              -o StrictHostKeyChecking=no \
+              -o UserKnownHostsFile=/dev/null \
+              -o ConnectTimeout=10 \
+              "$SERVER_USER@$SERVER_HOST" bash -s -- "$NGINX_CONFIG" << 'EOF'
+          set -euo pipefail
+
+          NGINX_CONFIG="$1"
+
+          if [[ ! "$NGINX_CONFIG" =~ ^[a-zA-Z0-9._-]+\.conf$ ]]; then
+            echo "❌ Invalid nginx configuration filename: $NGINX_CONFIG"
+            exit 1
+          fi
+
+          echo "Deploying nginx configuration: $NGINX_CONFIG"
+
+          mv ~/"${NGINX_CONFIG}.tmp" /tmp/"${NGINX_CONFIG}.new"
+          chmod 644 /tmp/"${NGINX_CONFIG}.new"
+
+          BACKUP_EXISTS=false
+          if [[ -f /etc/nginx/conf.d/"$NGINX_CONFIG" ]]; then
+            if sudo cp /etc/nginx/conf.d/"$NGINX_CONFIG" /tmp/"${NGINX_CONFIG}.backup"; then
+              BACKUP_EXISTS=true
+              echo "✅ Backup created"
+            else
+              echo "❌ Failed to create backup"
+              sudo rm -f /tmp/"${NGINX_CONFIG}.new"
+              exit 1
+            fi
+          fi
+
+          sudo cp /tmp/"${NGINX_CONFIG}.new" /etc/nginx/conf.d/"$NGINX_CONFIG"
+
+          if sudo nginx -t; then
+            echo "✅ Nginx config test passed"
+            sudo systemctl reload nginx
+            echo "✅ Nginx reloaded"
+          else
+            echo "❌ Nginx config test failed, rolling back..."
+            if [[ "$BACKUP_EXISTS" == "true" ]]; then
+              sudo mv /tmp/"${NGINX_CONFIG}.backup" /etc/nginx/conf.d/"$NGINX_CONFIG"
+              echo "✅ Previous configuration restored"
+            else
+              sudo rm -f /etc/nginx/conf.d/"$NGINX_CONFIG"
+              echo "⚠️  No previous configuration found, removed invalid config"
+            fi
+            sudo rm -f /tmp/"${NGINX_CONFIG}.new"
+            exit 1
+          fi
+
+          sudo rm -f /tmp/"${NGINX_CONFIG}.backup" /tmp/"${NGINX_CONFIG}.new"
+          echo "✅ $NGINX_CONFIG deployed successfully!"
+EOF
+
+            log_success "$NGINX_CONFIG deployed to $SERVER_ID"
+          done
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  # ── Nginx Configure (domain setup + optional SSL) ─────────────────────────
+  nginx-configure:
+    needs: prepare
+    if: github.event.inputs.operation == 'nginx-configure'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
+      - name: Validate inputs
+        run: |
+          if [[ -z "${{ github.event.inputs.domain }}" ]]; then
+            echo "Error: domain is required for nginx-configure operation"
+            exit 1
+          fi
+
+          if [[ "${{ github.event.inputs.site_type }}" == "proxy" ]] && [[ -z "${{ github.event.inputs.proxy_backend }}" ]]; then
+            echo "Error: proxy_backend is required for proxy site type"
+            exit 1
+          fi
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Configure Nginx on ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: LinuxConfig/deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          chmod +x ./LinuxConfig/shell/nginx-config.sh
+          ./LinuxConfig/shell/nginx-config.sh \
+            "${{ matrix.server.id }}" \
+            "${{ github.event.inputs.domain }}" \
+            "${{ github.event.inputs.site_type }}" \
+            "${{ github.event.inputs.proxy_backend }}" \
+            "${{ github.event.inputs.enable_ssl }}" \
+            "${{ github.event.inputs.ssl_method }}"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  # ── Run Shell Script ──────────────────────────────────────────────────────
+  run-script:
+    needs: prepare
+    if: github.event.inputs.operation == 'run-script'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
+      - name: Validate inputs
+        run: |
+          SCRIPT_NAME="${{ github.event.inputs.script_name }}"
+          if [[ -z "$SCRIPT_NAME" ]]; then
+            echo "Error: script_name is required for run-script operation"
+            exit 1
+          fi
+
+          SCRIPT_PATH="LinuxConfig/shell/$SCRIPT_NAME"
+          if [[ ! -f "$SCRIPT_PATH" ]]; then
+            echo "Error: Script $SCRIPT_NAME not found in LinuxConfig/shell/"
+            exit 1
+          fi
+
+          echo "✅ Script $SCRIPT_NAME found"
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Run ${{ github.event.inputs.script_name }} on ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: LinuxConfig/deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          SERVER_ID="${{ matrix.server.id }}"
+          SERVER_HOST="${{ matrix.server.host }}"
+          SERVER_PORT="${{ matrix.server.port }}"
+          SERVER_USER="${{ matrix.server.user }}"
+          SCRIPT_NAME="${{ github.event.inputs.script_name }}"
+          SCRIPT_ARGS="${{ github.event.inputs.script_args }}"
+
+          echo "🚀 Running $SCRIPT_NAME on $SERVER_ID ($SERVER_HOST)"
+
+          source ./LinuxConfig/shell/lib-common.sh
+
+          log_info "Uploading script to server"
+          scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+            "LinuxConfig/shell/$SCRIPT_NAME" "script_to_run.sh"
+
+          if [[ -f "LinuxConfig/shell/lib-common.sh" ]]; then
+            log_info "Uploading lib-common.sh to server"
+            scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
+              "LinuxConfig/shell/lib-common.sh" "lib-common.sh"
+          fi
+
+          log_info "Executing script on server"
+          ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            -o ConnectTimeout=10 \
+            "$SERVER_USER@$SERVER_HOST" bash -s -- "$SCRIPT_ARGS" << 'EOF'
+          set -euo pipefail
+
+          SCRIPT_ARGS="${1:-}"
+
+          chmod +x ~/script_to_run.sh
+          if [[ -f ~/lib-common.sh ]]; then
+            chmod +x ~/lib-common.sh
+          fi
+
+          echo "Running script with args: $SCRIPT_ARGS"
+          cd ~
+
+          if [[ -n "$SCRIPT_ARGS" ]]; then
+            eval "sudo ./script_to_run.sh $SCRIPT_ARGS"
+          else
+            sudo ./script_to_run.sh
+          fi
+
+          rm -f ~/script_to_run.sh ~/lib-common.sh
+          echo "✅ Script execution completed!"
+EOF
+
+          log_success "Script execution on $SERVER_ID completed successfully!"
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  # ── Renew SSL Certificates (scheduled monthly + manual) ───────────────────
+  renew-ssl:
+    needs: prepare
+    if: |
+      github.event.inputs.operation == 'renew-ssl' ||
+      github.event.schedule == '0 2 1 * *'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Checkout LinuxConfig repository
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/LinuxConfig
+          token: ${{ secrets.REPO_TOKEN }}
+          path: LinuxConfig
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Renew SSL certificates on ${{ matrix.server.id }}
+        env:
+          CONFIG_FILE: LinuxConfig/deploy-config.json
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SSL_METHOD: ${{ github.event.inputs.ssl_method || 'route53' }}
+        run: |
+          chmod +x ./LinuxConfig/shell/ssl-renew.sh
+          ./LinuxConfig/shell/ssl-renew.sh "${{ matrix.server.id }}"
 
       - name: Cleanup SSH Key
         if: always()
