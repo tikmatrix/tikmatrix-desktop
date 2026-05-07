@@ -54,7 +54,7 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            video-magic/src-tauri/target
+            video-magic/target
           key: ${{ runner.os }}-cargo-videomagic-${{ hashFiles('video-magic/**/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-videomagic-
@@ -73,12 +73,12 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./video-magic/src-tauri/target/universal-apple-darwin/release/bundle/dmg
+          source-dir: ./video-magic/target/universal-apple-darwin/release/bundle/dmg
           destination-dir: ./
 
       - name: Clear uploaded files
         run: |
-          rm -rf ./video-magic/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*
+          rm -rf ./video-magic/target/universal-apple-darwin/release/bundle/dmg/*
 
       - name: Update VideoMagic download url
         env:
