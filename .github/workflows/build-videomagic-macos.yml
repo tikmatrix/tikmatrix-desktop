@@ -28,11 +28,6 @@ jobs:
           path: video-magic
           token: ${{ secrets.REPO_TOKEN }}
 
-      - name: Checkout TikMatrix Desktop (for scripts)
-        uses: actions/checkout@v3
-        with:
-          path: tikmatrix-desktop
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -80,7 +75,5 @@ jobs:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          # Copy tauri.conf.json for update-download-url.js to read version
-          cp ./video-magic/src-tauri/tauri.conf.json ./tikmatrix-desktop/src-tauri/tauri.conf.json
-          cd tikmatrix-desktop
+          cd video-magic
           node scripts/update-download-url.js --platform=mac --distributor=OFFICIAL --app=videomagic --app-name=VideoMagic
