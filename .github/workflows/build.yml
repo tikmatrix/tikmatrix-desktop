@@ -44,12 +44,12 @@ on:
           - TikMatrix Pro
           - IgMatrix
       notes:
-        description: "[TikMatrix only] Release notes (English)"
+        description: "[TikMatrix/VideoMagic] Release notes (English)"
         required: false
         default: ""
         type: string
       gray_percentage:
-        description: "[TikMatrix only] Gray release percentage (0-100)"
+        description: "[TikMatrix/VideoMagic] Gray release percentage (0-100)"
         required: false
         default: "10"
         type: string
@@ -171,6 +171,8 @@ jobs:
     with:
       version: ${{ needs.resolve.outputs.version }}
       branch: ${{ inputs.branch }}
+      notes: ${{ inputs.notes }}
+      gray_percentage: ${{ inputs.gray_percentage }}
     secrets: inherit
 
   videomagic-macos:
@@ -180,6 +182,8 @@ jobs:
     with:
       version: ${{ needs.resolve.outputs.version }}
       branch: ${{ inputs.branch }}
+      notes: ${{ inputs.notes }}
+      gray_percentage: ${{ inputs.gray_percentage }}
     secrets: inherit
 
   apk:
