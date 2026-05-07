@@ -12,6 +12,16 @@ on:
         required: false
         default: "main"
         type: string
+      notes:
+        description: "Release notes (English). Used as fallback for all languages."
+        required: false
+        default: ""
+        type: string
+      gray_percentage:
+        description: "Gray release percentage (0-100). Default 10 = roll out to 10% of devices first."
+        required: false
+        default: "10"
+        type: string
 
 permissions:
   contents: write
@@ -69,7 +79,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd video-magic
-          node scripts/update-version.js --app=videomagic --app-name=VideoMagic
+          node scripts/update-version.js --app=videomagic --app-name=VideoMagic "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
       - name: Clear uploaded files
         run: |

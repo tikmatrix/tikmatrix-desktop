@@ -12,6 +12,16 @@ on:
         required: false
         default: "main"
         type: string
+      notes:
+        description: "Release notes (English). Used as fallback for all languages."
+        required: false
+        default: ""
+        type: string
+      gray_percentage:
+        description: "Gray release percentage (0-100). Default 10 = roll out to 10% of devices first."
+        required: false
+        default: "10"
+        type: string
 
 permissions:
   contents: write
