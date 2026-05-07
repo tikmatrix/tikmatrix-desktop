@@ -800,7 +800,7 @@ jobs:
         run: rm -f ~/.ssh/deploy_key
   notify:
     needs: [prepare, health-check, push-files, manage-backup, block-ips, nginx-deploy-config, nginx-configure, run-script, renew-ssl]
-    if: always()
+    if: always() && github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Send Telegram notification
