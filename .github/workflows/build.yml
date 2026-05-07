@@ -1,0 +1,215 @@
+name: Build
+run-name: "Build ${{ inputs.product }} (${{ inputs.platforms }}) v${{ inputs.version || 'auto' }} by ${{ github.actor }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      product:
+        description: "Product to build"
+        required: true
+        default: "TikMatrix"
+        type: choice
+        options:
+          - TikMatrix
+          - VideoMagic
+          - Script
+          - APK
+      platforms:
+        description: "[TikMatrix/VideoMagic/Script] Platforms to build"
+        required: false
+        default: "all"
+        type: choice
+        options:
+          - all
+          - windows
+          - macos
+      version:
+        description: "Version tag (e.g., v1.0.0), or 'auto' to use date+run"
+        required: false
+        default: "auto"
+        type: string
+      branch:
+        description: "Branch to build from"
+        required: false
+        default: "main"
+        type: string
+      app:
+        description: "[TikMatrix only] App variant to build"
+        required: false
+        default: "All"
+        type: choice
+        options:
+          - All
+          - TikMatrix
+          - TikMatrix Pro
+          - IgMatrix
+      notes:
+        description: "[TikMatrix only] Release notes (English)"
+        required: false
+        default: ""
+        type: string
+      gray_percentage:
+        description: "[TikMatrix only] Gray release percentage (0-100)"
+        required: false
+        default: "10"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.resolve-version.outputs.version }}
+      build_apps: ${{ steps.map-app.outputs.build_apps }}
+    steps:
+      - name: Resolve version
+        id: resolve-version
+        run: |
+          if [[ "${{ inputs.version }}" == "auto" || -z "${{ inputs.version }}" ]]; then
+            VERSION="v$(date +%Y.%m.%d)-r${{ github.run_number }}"
+          else
+            VERSION="${{ inputs.version }}"
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Resolved version: $VERSION"
+
+      - name: Map app to build_apps
+        id: map-app
+        env:
+          APP_INPUT: ${{ inputs.app }}
+        run: |
+          case "$APP_INPUT" in
+            "TikMatrix") echo "build_apps=tikmatrix" >> $GITHUB_OUTPUT ;;
+            "TikMatrix Pro") echo "build_apps=tikmatrix.pro" >> $GITHUB_OUTPUT ;;
+            "IgMatrix") echo "build_apps=igmatrix" >> $GITHUB_OUTPUT ;;
+            *) echo "build_apps=all" >> $GITHUB_OUTPUT ;;
+          esac
+
+  create-tag:
+    needs: resolve
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tikmatrix-pro
+        if: inputs.product != 'VideoMagic'
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+
+      - name: Checkout video-magic
+        if: inputs.product == 'VideoMagic'
+        uses: actions/checkout@v4
+        with:
+          repository: tikmatrix/video-magic
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+
+      - name: Create and push tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          VERSION="${{ needs.resolve.outputs.version }}"
+          if git ls-remote --tags origin | grep -q "refs/tags/${VERSION}$"; then
+            echo "Tag ${VERSION} already exists, skipping"
+          else
+            git tag -a "${VERSION}" -m "Release ${VERSION}"
+            git push origin "${VERSION}"
+            echo "Tag ${VERSION} created"
+          fi
+
+  matrix-windows:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'TikMatrix' && (inputs.platforms == 'all' || inputs.platforms == 'windows')
+    uses: ./.github/workflows/build-matrix-windows.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+      build_apps: ${{ needs.resolve.outputs.build_apps }}
+      notes: ${{ inputs.notes }}
+      gray_percentage: ${{ inputs.gray_percentage }}
+    secrets: inherit
+
+  matrix-macos:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'TikMatrix' && (inputs.platforms == 'all' || inputs.platforms == 'macos')
+    uses: ./.github/workflows/build-matrix-macos.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+      build_apps: ${{ needs.resolve.outputs.build_apps }}
+      notes: ${{ inputs.notes }}
+      gray_percentage: ${{ inputs.gray_percentage }}
+    secrets: inherit
+
+  script-windows:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'Script' && (inputs.platforms == 'all' || inputs.platforms == 'windows')
+    uses: ./.github/workflows/build-script-windows.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+      build_target: script
+    secrets: inherit
+
+  script-macos:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'Script' && (inputs.platforms == 'all' || inputs.platforms == 'macos')
+    uses: ./.github/workflows/build-script-macos.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+      build_target: script
+    secrets: inherit
+
+  videomagic-windows:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'VideoMagic' && (inputs.platforms == 'all' || inputs.platforms == 'windows')
+    uses: ./.github/workflows/build-videomagic-windows.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+    secrets: inherit
+
+  videomagic-macos:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'VideoMagic' && (inputs.platforms == 'all' || inputs.platforms == 'macos')
+    uses: ./.github/workflows/build-videomagic-macos.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+    secrets: inherit
+
+  apk:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'APK'
+    uses: ./.github/workflows/build-apk-all.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+    secrets: inherit
+
+  notify:
+    needs: [resolve, matrix-windows, matrix-macos, script-windows, script-macos, videomagic-windows, videomagic-macos, apk]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram notification
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          RESULTS='${{ toJson(needs) }}'
+          if echo "$RESULTS" | grep -q '"failure"'; then ICON="❌"; \
+          elif echo "$RESULTS" | grep -q '"cancelled"'; then ICON="⚠️"; \
+          else ICON="✅"; fi
+          RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          MSG=$(printf '%s\n%s\n%s' \
+            "${ICON} ${{ github.workflow }}" \
+            "Product: ${{ inputs.product }} | Platforms: ${{ inputs.platforms }} | Version: ${{ needs.resolve.outputs.version }}" \
+            "Run: ${RUN_URL}")
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${CHAT_ID}" \
+            --data-urlencode "text=${MSG}"

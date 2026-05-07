@@ -13,6 +13,18 @@ on:
         required: false
         default: "main"
         type: string
+  workflow_call:
+    inputs:
+      version:
+        description: "Version tag (e.g., v1.0.0), or 'auto' to use date+sha"
+        required: false
+        default: "auto"
+        type: string
+      branch:
+        description: "Branch to build from"
+        required: false
+        default: "main"
+        type: string
 
 permissions:
   contents: write
@@ -132,7 +144,7 @@ jobs:
           echo "Updated test-apk library on api.tikmatrix.com"
   notify:
     needs: [build-apk]
-    if: always()
+    if: always() && github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Send Telegram notification
