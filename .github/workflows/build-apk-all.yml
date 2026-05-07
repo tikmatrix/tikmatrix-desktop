@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Version tag (e.g., v1.0.0)"
-        required: true
+        description: "Version tag (e.g., v1.0.0), or 'auto' to use date+sha"
+        required: false
+        default: "auto"
         type: string
       branch:
         description: "Branch to build from in tikmatrix-android"
@@ -19,6 +20,8 @@ permissions:
 jobs:
   build-apk:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.resolve-version.outputs.version }}
     steps:
       - name: Checkout tikmatrix-desktop repository (for whitelabel configs)
         uses: actions/checkout@v3
@@ -32,6 +35,17 @@ jobs:
           token: ${{ secrets.REPO_TOKEN }}
           ref: ${{ inputs.branch }}
           path: tikmatrix-pro
+
+      - name: Resolve version
+        id: resolve-version
+        run: |
+          if [[ "${{ inputs.version }}" == "auto" || -z "${{ inputs.version }}" ]]; then
+            VERSION="v$(date +%Y.%m.%d)-$(git -C tikmatrix-pro rev-parse --short HEAD)"
+          else
+            VERSION="${{ inputs.version }}"
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Resolved version: $VERSION"
 
       - name: Setup Node.js (for whitelabel scripts)
         uses: actions/setup-node@v4
@@ -72,7 +86,7 @@ jobs:
         shell: bash
         env:
           API_KEY: ${{ secrets.API_KEY }}
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ steps.resolve-version.outputs.version }}
         run: |
           set -e
 
@@ -133,7 +147,7 @@ jobs:
           RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           MSG=$(printf '%s\n%s\n%s' \
             "${ICON} ${{ github.workflow }}" \
-            "Version: ${{ inputs.version }} | Branch: ${{ inputs.branch }}" \
+            "Version: ${{ needs.build-apk.outputs.version }} | Branch: ${{ inputs.branch }}" \
             "Run: ${RUN_URL}")
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
             -d "chat_id=${CHAT_ID}" \

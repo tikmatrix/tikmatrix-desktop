@@ -1,4 +1,5 @@
 name: Deploy tikmatrix-user to Cloudflare Workers
+run-name: Deploy tikmatrix-user → ${{ inputs.environment || 'production' }} by ${{ github.actor }}
 
 on:
   workflow_dispatch:

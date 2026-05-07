@@ -40,12 +40,12 @@ on:
 
       # ── nginx-deploy-config / nginx-configure ────────────────────────────
       domain:
-        description: "Domain (nginx-deploy-config: config to deploy; nginx-configure: domain to set up)"
+        description: "[nginx-deploy-config/nginx-configure 必填] nginx-deploy-config: 配置文件名; nginx-configure: 要配置的域名"
         required: false
         type: string
 
       site_type:
-        description: "Site type for nginx-configure (static or proxy)"
+        description: "[nginx-configure 必填] 站点类型: static 静态 或 proxy 反代"
         required: false
         type: choice
         options:
@@ -54,18 +54,18 @@ on:
         default: static
 
       proxy_backend:
-        description: "Backend URL for reverse proxy, e.g. http://127.0.0.1:3000"
+        description: "[nginx-configure proxy 必填] 反代后端地址，如 http://127.0.0.1:3000"
         required: false
         type: string
 
       enable_ssl:
-        description: "Enable SSL certificate setup (nginx-configure)"
+        description: "[nginx-configure] 是否申请 SSL 证书"
         required: false
         type: boolean
         default: false
 
       ssl_method:
-        description: "SSL validation method for nginx-configure"
+        description: "[nginx-configure] SSL 验证方式: http 或 route53"
         required: false
         type: choice
         options:
@@ -74,7 +74,7 @@ on:
         default: http
 
       renew_ssl_method:
-        description: "SSL validation method for renew-ssl (defaults to route53)"
+        description: "[renew-ssl] SSL 续签验证方式，默认 route53"
         required: false
         type: choice
         options:
@@ -84,23 +84,23 @@ on:
 
       # ── push-files ────────────────────────────────────────────────────────
       local_path:
-        description: "Local path for file push (e.g. ./build)"
+        description: "[push-files 必填] 本地文件路径，如 ./build"
         required: false
         type: string
 
       remote_path:
-        description: "Remote path for file push (e.g. /var/www/tikmatrix.com)"
+        description: "[push-files 必填] 远端目标路径，如 /var/www/tikmatrix.com"
         required: false
         type: string
 
       post_upload_commands:
-        description: 'Commands to run after upload (e.g. "sudo nginx -t && sudo nginx -s reload")'
+        description: '[push-files] 上传后执行的命令，如 "sudo nginx -t && sudo nginx -s reload"'
         required: false
         type: string
 
       # ── manage-backup ─────────────────────────────────────────────────────
       backup_action:
-        description: "Backup action (list or create)"
+        description: "[manage-backup] 操作类型: list 列出 或 create 创建"
         required: false
         type: choice
         options:
@@ -109,19 +109,19 @@ on:
         default: list
 
       backup_site:
-        description: "Site domain to back up (e.g. tikmatrix.com)"
+        description: "[manage-backup create 必填] 要备份的站点域名，如 tikmatrix.com"
         required: false
         type: string
 
       # ── block-ips ─────────────────────────────────────────────────────────
       block_ips:
-        description: "IPs to block, comma-separated (e.g. 1.2.3.4,5.6.7.8 or 10.0.0.0/8)"
+        description: "[block-ips 必填] 要封锁的 IP，逗号分隔，如 1.2.3.4,5.6.7.8 或 10.0.0.0/8"
         required: false
         type: string
 
       # ── run-script ────────────────────────────────────────────────────────
       script_name:
-        description: "Script to execute (run-script operation)"
+        description: "[run-script 必填] 要执行的脚本名"
         required: false
         type: choice
         options:
@@ -137,7 +137,7 @@ on:
           - ssl-renew.sh
 
       script_args:
-        description: "Arguments to pass to the script (run-script)"
+        description: "[run-script] 传给脚本的参数"
         required: false
         type: string
         default: ""
