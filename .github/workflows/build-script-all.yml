@@ -69,3 +69,25 @@ jobs:
       branch: ${{ inputs.branch }}
       build_target: script
     secrets: inherit
+  notify:
+    needs: [create-tag, build-script-windows, build-script-macos]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram notification
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          RESULTS='${{ toJson(needs) }}'
+          if echo "$RESULTS" | grep -q '"failure"'; then ICON="❌"; \
+          elif echo "$RESULTS" | grep -q '"cancelled"'; then ICON="⚠️"; \
+          else ICON="✅"; fi
+          RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          MSG=$(printf '%s\n%s\n%s' \
+            "${ICON} ${{ github.workflow }}" \
+            "Version: ${{ inputs.version }} | Branch: ${{ inputs.branch }}" \
+            "Run: ${RUN_URL}")
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${CHAT_ID}" \
+            --data-urlencode "text=${MSG}"
