@@ -177,6 +177,16 @@ jobs:
       build_target: script
     secrets: inherit
 
+  script-linux:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'Script' && (inputs.platforms == 'all' || inputs.platforms == 'linux')
+    uses: ./.github/workflows/build-script-linux.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+      build_target: script
+    secrets: inherit
+
   videomagic-windows:
     needs: [resolve, create-tag]
     if: inputs.product == 'VideoMagic' && (inputs.platforms == 'all' || inputs.platforms == 'windows')
@@ -199,6 +209,17 @@ jobs:
       gray_percentage: ${{ inputs.gray_percentage }}
     secrets: inherit
 
+  videomagic-linux:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'VideoMagic' && (inputs.platforms == 'all' || inputs.platforms == 'linux')
+    uses: ./.github/workflows/build-videomagic-linux.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+      notes: ${{ inputs.notes }}
+      gray_percentage: ${{ inputs.gray_percentage }}
+    secrets: inherit
+
   apk:
     needs: [resolve, create-tag]
     if: inputs.product == 'APK'
@@ -209,7 +230,7 @@ jobs:
     secrets: inherit
 
   notify:
-    needs: [resolve, matrix-windows, matrix-macos, matrix-linux, script-windows, script-macos, videomagic-windows, videomagic-macos, apk]
+    needs: [resolve, matrix-windows, matrix-macos, matrix-linux, script-windows, script-macos, script-linux, videomagic-windows, videomagic-macos, videomagic-linux, apk]
     if: always()
     runs-on: ubuntu-latest
     steps:

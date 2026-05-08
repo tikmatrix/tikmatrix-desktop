@@ -1,0 +1,99 @@
+name: Build VideoMagic - Linux
+run-name: ${{ github.actor }} is building VideoMagic (Linux) 🚀
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: "Version tag (e.g., v1.0.0)"
+        required: true
+        type: string
+      branch:
+        description: "Branch to build from"
+        required: false
+        default: "main"
+        type: string
+      notes:
+        description: "Release notes (English). Used as fallback for all languages."
+        required: false
+        default: ""
+        type: string
+      gray_percentage:
+        description: "Gray release percentage (0-100). Default 10 = roll out to 10% of devices first."
+        required: false
+        default: "10"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  build-videomagic-linux:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout VideoMagic repository
+        uses: actions/checkout@v3
+        with:
+          repository: tikmatrix/video-magic
+          ref: ${{ inputs.branch }}
+          path: video-magic
+          token: ${{ secrets.REPO_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install Linux dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            libappindicator3-dev \
+            librsvg2-dev \
+            patchelf \
+            libssl-dev \
+            libgtk-3-dev \
+            libayatana-appindicator3-dev
+
+      - name: Rust Cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            video-magic/target
+          key: ${{ runner.os }}-cargo-videomagic-${{ hashFiles('video-magic/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-videomagic-
+
+      - name: Build VideoMagic package
+        run: |
+          cd video-magic
+          npm install
+          chmod +x ./build-linux.sh
+          ./build-linux.sh
+
+      - name: Upload VideoMagic package to R2
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./video-magic/target/release/bundle/appimage
+          destination-dir: ./
+
+      - name: Clear uploaded files
+        run: |
+          rm -rf ./video-magic/target/release/bundle/appimage/*
+
+      - name: Update VideoMagic download url
+        env:
+          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd video-magic
+          node scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=videomagic --app-name=VideoMagic

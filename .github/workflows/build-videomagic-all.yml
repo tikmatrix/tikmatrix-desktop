@@ -32,6 +32,7 @@ on:
           - all
           - windows
           - macos
+          - linux
 
 permissions:
   contents: write
@@ -95,8 +96,20 @@ jobs:
       notes: ${{ inputs.notes }}
       gray_percentage: ${{ inputs.gray_percentage }}
     secrets: inherit
+
+  build-videomagic-linux:
+    needs: create-tag
+    if: ${{ inputs.platforms == 'all' || inputs.platforms == 'linux' }}
+    uses: ./.github/workflows/build-videomagic-linux.yml
+    with:
+      version: ${{ needs.create-tag.outputs.version }}
+      branch: ${{ inputs.branch }}
+      notes: ${{ inputs.notes }}
+      gray_percentage: ${{ inputs.gray_percentage }}
+    secrets: inherit
+
   notify:
-    needs: [create-tag, build-videomagic-windows, build-videomagic-macos]
+    needs: [create-tag, build-videomagic-windows, build-videomagic-macos, build-videomagic-linux]
     if: always()
     runs-on: ubuntu-latest
     steps:
