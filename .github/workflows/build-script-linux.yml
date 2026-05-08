@@ -44,7 +44,6 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            tikmatrix-pro/target/${{ matrix.target }}
           key: ${{ runner.os }}-script-cargo-${{ matrix.target }}-${{ hashFiles('tikmatrix-pro/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-script-cargo-${{ matrix.target }}-

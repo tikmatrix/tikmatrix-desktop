@@ -64,7 +64,6 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            video-magic/target
           key: ${{ runner.os }}-cargo-videomagic-${{ hashFiles('video-magic/**/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-videomagic-
