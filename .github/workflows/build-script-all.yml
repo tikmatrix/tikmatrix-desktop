@@ -22,6 +22,7 @@ on:
           - all
           - windows
           - macos
+          - linux
 
 permissions:
   contents: write
@@ -83,8 +84,19 @@ jobs:
       branch: ${{ inputs.branch }}
       build_target: script
     secrets: inherit
+
+  build-script-linux:
+    needs: create-tag
+    if: ${{ inputs.platforms == 'all' || inputs.platforms == 'linux' }}
+    uses: ./.github/workflows/build-script-linux.yml
+    with:
+      version: ${{ needs.create-tag.outputs.version }}
+      branch: ${{ inputs.branch }}
+      build_target: script
+    secrets: inherit
+
   notify:
-    needs: [create-tag, build-script-windows, build-script-macos]
+    needs: [create-tag, build-script-windows, build-script-macos, build-script-linux]
     if: always()
     runs-on: ubuntu-latest
     steps:

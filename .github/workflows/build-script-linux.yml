@@ -1,0 +1,119 @@
+name: Build Script - Linux
+run-name: ${{ github.actor }} is building Script (Linux) 🚀
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: "Version tag (e.g., v1.0.0)"
+        required: true
+        type: string
+      branch:
+        description: "Branch to build from"
+        required: false
+        default: "main"
+        type: string
+      build_target:
+        description: "Build target"
+        required: false
+        default: "script"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  build-script-linux:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: true
+      matrix:
+        target: [x86_64-unknown-linux-gnu]
+
+    steps:
+      - name: Checkout tikmatrix-pro private repository
+        uses: actions/checkout@v3
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+          path: tikmatrix-pro
+
+      - name: Cache Rust dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            tikmatrix-pro/target/${{ matrix.target }}
+          key: ${{ runner.os }}-script-cargo-${{ matrix.target }}-${{ hashFiles('tikmatrix-pro/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-script-cargo-${{ matrix.target }}-
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install target platform
+        run: rustup target add ${{ matrix.target }}
+
+      - name: Install Linux dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libssl-dev pkg-config
+
+      - name: Build script
+        working-directory: tikmatrix-pro
+        run: cargo build -p script --release --target ${{ matrix.target }}
+        env:
+          RUSTFLAGS: "-A warnings"
+
+      - name: Prepare bin directory
+        run: |
+          mkdir -p ./tikmatrix-pro/target/${{ matrix.target }}/release/bin
+          rm -f ./tikmatrix-pro/target/${{ matrix.target }}/release/bin/* || true
+          if [ -f "./tikmatrix-pro/target/${{ matrix.target }}/release/script" ]; then
+            cp ./tikmatrix-pro/target/${{ matrix.target }}/release/script \
+               ./tikmatrix-pro/target/${{ matrix.target }}/release/bin/
+          fi
+
+      - name: Upload to R2
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./tikmatrix-pro/target/${{ matrix.target }}/release/bin
+          destination-dir: ${{ matrix.target }}_v2
+
+      - name: Update Library Version
+        run: |
+          VERSION="${{ inputs.version }}"
+          TARGET="${{ matrix.target }}"
+          BIN_PATH="./tikmatrix-pro/target/${TARGET}/release/bin/script"
+
+          SCRIPT_MD5=""
+          if [ -f "$BIN_PATH" ]; then
+            SCRIPT_MD5=$(md5sum "$BIN_PATH" | cut -d' ' -f1)
+            echo "Script MD5: $SCRIPT_MD5"
+          fi
+
+          UPDATE_DATA=$(cat <<EOF
+          {
+            "name": "script",
+            "platform": "linux",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/${TARGET}_v2/script",
+            "version": "$VERSION",
+            "app": "TikMatrix",
+            "md5": "$SCRIPT_MD5"
+          }
+          EOF
+          )
+
+          echo "Updating script library for linux..."
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.API_KEY }}" \
+            -d "$UPDATE_DATA" \
+            "https://api.tikmatrix.com/ci/update_lib_v2"
+
+          echo "Updated script library for linux to $VERSION"
