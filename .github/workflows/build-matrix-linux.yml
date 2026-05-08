@@ -87,6 +87,18 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
 
+      - name: Prepare official package upload
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        run: |
+          UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/appimage-upload
+          rm -rf "$UPLOAD_DIR"
+          mkdir -p "$UPLOAD_DIR"
+          find ./tikmatrix-pro/target/release/bundle/appimage -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
+          if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
+            echo "No top-level AppImage artifacts found for upload"
+            exit 1
+          fi
+
       - name: Upload official package to R2
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         uses: ryand56/r2-upload-action@v1.4
@@ -95,13 +107,14 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/target/release/bundle/appimage
+          source-dir: ./tikmatrix-pro/target/release/bundle/appimage-upload
           destination-dir: ./
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: |
           rm -rf ./tikmatrix-pro/target/release/bundle/appimage/*
+          rm -rf ./tikmatrix-pro/target/release/bundle/appimage-upload
 
       - name: Update TikMatrix Pro download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
@@ -123,6 +136,18 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
 
+      - name: Prepare TikMatrix package upload
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+        run: |
+          UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/appimage-upload
+          rm -rf "$UPLOAD_DIR"
+          mkdir -p "$UPLOAD_DIR"
+          find ./tikmatrix-pro/target/release/bundle/appimage -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
+          if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
+            echo "No top-level AppImage artifacts found for upload"
+            exit 1
+          fi
+
       - name: Upload TikMatrix package to R2
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
@@ -131,13 +156,14 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/target/release/bundle/appimage
+          source-dir: ./tikmatrix-pro/target/release/bundle/appimage-upload
           destination-dir: ./
 
       - name: Clear TikMatrix uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
           rm -rf ./tikmatrix-pro/target/release/bundle/appimage/*
+          rm -rf ./tikmatrix-pro/target/release/bundle/appimage-upload
 
       - name: Update TikMatrix download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
@@ -159,6 +185,18 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
 
+      - name: Prepare IgMatrix package upload
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
+        run: |
+          UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/appimage-upload
+          rm -rf "$UPLOAD_DIR"
+          mkdir -p "$UPLOAD_DIR"
+          find ./tikmatrix-pro/target/release/bundle/appimage -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
+          if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
+            echo "No top-level AppImage artifacts found for upload"
+            exit 1
+          fi
+
       - name: Upload IgMatrix package to R2
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
@@ -167,13 +205,14 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/target/release/bundle/appimage
+          source-dir: ./tikmatrix-pro/target/release/bundle/appimage-upload
           destination-dir: ./
 
       - name: Clear IgMatrix uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
           rm -rf ./tikmatrix-pro/target/release/bundle/appimage/*
+          rm -rf ./tikmatrix-pro/target/release/bundle/appimage-upload
 
       - name: Update IgMatrix download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}

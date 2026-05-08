@@ -75,6 +75,17 @@ jobs:
           chmod +x ./build-linux.sh
           ./build-linux.sh
 
+      - name: Prepare VideoMagic package upload
+        run: |
+          UPLOAD_DIR=./video-magic/target/release/bundle/appimage-upload
+          rm -rf "$UPLOAD_DIR"
+          mkdir -p "$UPLOAD_DIR"
+          find ./video-magic/target/release/bundle/appimage -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
+          if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
+            echo "No top-level AppImage artifacts found for upload"
+            exit 1
+          fi
+
       - name: Upload VideoMagic package to R2
         uses: ryand56/r2-upload-action@v1.4
         with:
@@ -82,12 +93,13 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./video-magic/target/release/bundle/appimage
+          source-dir: ./video-magic/target/release/bundle/appimage-upload
           destination-dir: ./
 
       - name: Clear uploaded files
         run: |
           rm -rf ./video-magic/target/release/bundle/appimage/*
+          rm -rf ./video-magic/target/release/bundle/appimage-upload
 
       - name: Update VideoMagic download url
         env:
