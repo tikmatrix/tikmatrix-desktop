@@ -98,6 +98,16 @@ fn kill_process(name: String) {
             .expect("failed to kill processes");
         log::info!("kill process:{} success", name);
     }
+
+    #[cfg(target_os = "linux")]
+    {
+        let mut command = Command::new("pkill");
+        command
+            .args(&["-f", name.as_str()])
+            .status()
+            .expect("failed to kill processes");
+        log::info!("kill process:{} success", name);
+    }
 }
 
 // ============ Update Manager Commands ============

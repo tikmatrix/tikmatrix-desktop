@@ -296,7 +296,7 @@
 
   <!-- 更新对话框 -->
   <UpdateDialog ref="updateDialog" :current-version="version" :new-version="tauriUpdateInfo?.version || ''"
-    :update-body="tauriUpdateInfo?.body || ''" :is-mac="isMac" @confirm="handleUpdateConfirm"
+    :update-body="tauriUpdateInfo?.body || ''" :is-mac="isMac || isLinux" @confirm="handleUpdateConfirm"
     @cancel="handleUpdateCancel" />
 </template>
 
@@ -412,6 +412,9 @@ export default {
     },
     isMac() {
       return this.platform === 'mac-arm' || this.platform === 'mac-intel';
+    },
+    isLinux() {
+      return this.platform === 'linux';
     }
   },
   async created() {
@@ -676,6 +679,8 @@ export default {
         } else {
           platform = 'mac-intel';
         }
+      } else if (osType === 'Linux') {
+        platform = 'linux';
       }
       return platform;
     },
@@ -684,7 +689,7 @@ export default {
      * Handle update confirmation from dialog
      */
     handleUpdateConfirm() {
-      if (this.isMac) {
+      if (this.isMac || this.isLinux) {
         this.performMacUpdate();
       } else {
         this.performWindowsUpdate();

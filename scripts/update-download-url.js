@@ -78,6 +78,10 @@ function buildDownloadUrl(platform, version, distributorCode, appName) {
         fileName = distributorCode === 'OFFICIAL'
             ? `${appName}_${version}_universal.dmg`
             : `${appName}_${version}_universal_${distributorCode}.dmg`
+    } else if (platform === 'linux') {
+        fileName = distributorCode === 'OFFICIAL'
+            ? `${appName}_${version}_amd64.AppImage`
+            : `${appName}_${version}_amd64_${distributorCode}.AppImage`
     } else {
         throw new Error(`Unknown platform: ${platform}`)
     }
@@ -127,18 +131,20 @@ async function main() {
 
     // 验证参数
     if (!params.platform) {
-        console.error('Error: --platform is required (windows or mac)')
+        console.error('Error: --platform is required (windows, mac, or linux)')
         console.log('\nUsage:')
         console.log('  node update-download-url.js --platform=windows --distributor=OFFICIAL')
         console.log('  node update-download-url.js --platform=mac --distributor=TEST001')
+        console.log('  node update-download-url.js --platform=linux --distributor=OFFICIAL')
         console.log('  node update-download-url.js --platform=windows --all-distributors')
         console.log('  node update-download-url.js --platform=mac --all-distributors')
+        console.log('  node update-download-url.js --platform=linux --all-distributors')
         console.log('  node update-download-url.js --platform=windows --distributor=OFFICIAL --app-name=CustomApp')
         process.exit(1)
     }
 
-    if (!['windows', 'mac'].includes(params.platform)) {
-        console.error('Error: --platform must be "windows" or "mac"')
+    if (!['windows', 'mac', 'linux'].includes(params.platform)) {
+        console.error('Error: --platform must be "windows", "mac", or "linux"')
         process.exit(1)
     }
 

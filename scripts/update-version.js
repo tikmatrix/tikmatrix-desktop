@@ -118,9 +118,11 @@ const version = config.package?.version || config.version
 // V1 format: .msi.zip + .msi.zip.sig (served to clients <= 2.17.5)
 const v2SigPath = resolvePath('target', 'release', 'bundle', 'msi', `${params.appName}_${version}_x64_en-US.msi.sig`)
 const v1SigPath = resolvePath('target', 'release', 'bundle', 'msi', `${params.appName}_${version}_x64_en-US.msi.zip.sig`)
+const linuxSigPath = resolvePath('target', 'release', 'bundle', 'appimage', `${params.appName}_${version}_amd64.AppImage.sig`)
 
 const v2Signature = readSignature(v2SigPath)
 const v1Signature = readSignature(v1SigPath)
+const linuxSignature = fs.existsSync(linuxSigPath) ? readSignature(linuxSigPath) : v2Signature
 
 const notes = readNotes(params)
 const notesI18n = readNotesI18n(params, notes)
@@ -141,6 +143,7 @@ console.log(`API base:        ${apiBase}`)
 const macUrl = `${releaseBase}/front-api/release/${params.appName}_${version}_universal.dmg`
 const windowsV2Url = `${releaseBase}/front-api/release/${params.appName}_${version}_x64_en-US.msi`
 const windowsV1Url = `${releaseBase}/front-api/release/${params.appName}_${version}_x64_en-US.msi.zip`
+const linuxUrl = `${releaseBase}/front-api/release/${params.appName}_${version}_amd64.AppImage`
 
 let body = JSON.stringify({
     version: `v${version}`,
@@ -155,6 +158,7 @@ let body = JSON.stringify({
         'darwin-x86_64':  { signature: v2Signature, url: macUrl },
         'darwin-arm64':   { signature: v2Signature, url: macUrl },
         'darwin-aarch64': { signature: v2Signature, url: macUrl },
+        'linux-x86_64':   { signature: linuxSignature, url: linuxUrl },
     },
     // V1 clients (<= 2.17.5): Tauri V1 updater requires .msi.zip wrapper
     platforms_v1: {
@@ -162,6 +166,7 @@ let body = JSON.stringify({
         'darwin-x86_64':  { signature: v1Signature, url: macUrl },
         'darwin-arm64':   { signature: v1Signature, url: macUrl },
         'darwin-aarch64': { signature: v1Signature, url: macUrl },
+        'linux-x86_64':   { signature: linuxSignature, url: linuxUrl },
     },
 }, null, 2)
 

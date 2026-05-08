@@ -240,6 +240,26 @@ fn get_process_using_port(port: u16) -> String {
         }
         String::new()
     }
+
+    #[cfg(target_os = "linux")]
+    {
+        use std::process::Command;
+
+        let mut command = Command::new("lsof");
+        command.args(&["-i", &format!(":{}", port)]);
+
+        if let Ok(output) = command.output() {
+            if output.status.success() {
+                let output_str = String::from_utf8_lossy(&output.stdout);
+                if let Some(line) = output_str.lines().nth(1) {
+                    let process_name = line.split_whitespace().next().unwrap_or("unknown");
+                    log::debug!("Process using port {}: {}", port, process_name);
+                    return process_name.to_string();
+                }
+            }
+        }
+        String::new()
+    }
 }
 
 // Start agent process
@@ -278,7 +298,7 @@ pub fn start_agent_process(app_handle: &AppHandle) -> Result<AgentStartResult, S
     #[cfg(target_os = "windows")]
     let agent_filename = "agent.exe";
 
-    #[cfg(target_os = "macos")]
+    #[cfg(any(target_os = "macos", target_os = "linux"))]
     let agent_filename = "agent";
 
     let agent_path = app_data_dir.join("bin").join(agent_filename);
@@ -373,7 +393,7 @@ pub fn start_agent_process(app_handle: &AppHandle) -> Result<AgentStartResult, S
         }
     }
 
-    #[cfg(target_os = "macos")]
+    #[cfg(any(target_os = "macos", target_os = "linux"))]
     {
         match Command::new(&agent_path)
             .stdout(Stdio::null())
@@ -471,7 +491,7 @@ pub fn shutdown_processes(app_handle: &AppHandle) {
         }
     }
 
-    #[cfg(target_os = "macos")]
+    #[cfg(any(target_os = "macos", target_os = "linux"))]
     {
         // Kill agent
         let mut command = Command::new("pkill");
@@ -722,7 +742,12 @@ fn get_platform() -> String {
         "mac-intel".to_string()
     }
 
-    #[cfg(not(any(target_os = "windows", target_os = "macos")))]
+    #[cfg(target_os = "linux")]
+    {
+        "linux".to_string()
+    }
+
+    #[cfg(not(any(target_os = "windows", target_os = "macos", target_os = "linux")))]
     {
         "unknown".to_string()
     }

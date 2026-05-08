@@ -239,16 +239,17 @@ pub fn check_lib_file_exists(app_handle: &AppHandle, lib: &LibInfo) -> Result<bo
     let app_data_dir = app_handle.path_resolver().app_data_dir().unwrap();
     let os_type = std::env::consts::OS;
 
+    let is_windows = os_type == "windows";
     let file_path = match lib.name.as_str() {
         "platform-tools" => {
-            let filename = if os_type == "macos" { "adb" } else { "adb.exe" };
+            let filename = if is_windows { "adb.exe" } else { "adb" };
             app_data_dir.join("platform-tools").join(filename)
         }
         "PaddleOCR" => {
-            let filename = if os_type == "macos" {
-                "PaddleOCR-json"
-            } else {
+            let filename = if is_windows {
                 "PaddleOCR-json.exe"
+            } else {
+                "PaddleOCR-json"
             };
             app_data_dir.join("PaddleOCR-json").join(filename)
         }
@@ -257,10 +258,10 @@ pub fn check_lib_file_exists(app_handle: &AppHandle, lib: &LibInfo) -> Result<bo
             app_data_dir.join("bin").join(url_name)
         }
         "script" | "agent" => {
-            let filename = if os_type == "macos" {
-                lib.name.clone()
-            } else {
+            let filename = if is_windows {
                 format!("{}.exe", lib.name)
+            } else {
+                lib.name.clone()
             };
             app_data_dir.join("bin").join(filename)
         }
@@ -330,8 +331,8 @@ pub async fn install_lib_file(
                 app_data_dir.to_str().unwrap().to_string(),
             )?;
 
-            // Grant permission on macOS
-            #[cfg(target_os = "macos")]
+            // Grant permission on macOS and Linux
+            #[cfg(any(target_os = "macos", target_os = "linux"))]
             file_utils::grant_permission(app_handle.clone(), "platform-tools/adb".to_string());
 
             log::info!("Installed platform-tools");
@@ -387,8 +388,8 @@ pub async fn install_lib_file(
                     e.to_string()
                 })?;
 
-            // Grant permission on macOS
-            #[cfg(target_os = "macos")]
+            // Grant permission on macOS and Linux
+            #[cfg(any(target_os = "macos", target_os = "linux"))]
             file_utils::grant_permission(app_handle.clone(), format!("bin/{}", lib.name));
 
             log::info!("Installed {} to {:?}", lib.name, dest_file);

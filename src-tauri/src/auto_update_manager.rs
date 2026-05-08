@@ -173,7 +173,25 @@ pub fn is_script_running() -> bool {
         }
     }
 
-    #[cfg(not(any(target_os = "windows", target_os = "macos")))]
+    #[cfg(target_os = "linux")]
+    {
+        let mut command = Command::new("pgrep");
+        command.args(&["-x", "script"]);
+
+        match command.status() {
+            Ok(status) => {
+                let is_running = status.success();
+                log::debug!("Script process check: is_running={}", is_running);
+                return is_running;
+            }
+            Err(e) => {
+                log::warn!("Failed to check script process: {}", e);
+                return false;
+            }
+        }
+    }
+
+    #[cfg(not(any(target_os = "windows", target_os = "macos", target_os = "linux")))]
     {
         false
     }

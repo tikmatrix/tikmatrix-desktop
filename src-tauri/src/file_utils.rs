@@ -168,6 +168,18 @@ pub fn grant_permission(app: tauri::AppHandle, path: String) {
             .expect("failed to chmod");
         log::info!("grant_permission: {}", path);
     }
+    #[cfg(target_os = "linux")]
+    {
+        let work_dir = app.path_resolver().app_data_dir().unwrap();
+        let work_dir = work_dir.to_str().unwrap();
+        let path = format!("{}/{}", work_dir, path);
+        let mut command = Command::new("chmod");
+        command
+            .args(&["+x", &path])
+            .status()
+            .expect("failed to chmod");
+        log::info!("grant_permission: {}", path);
+    }
     #[cfg(target_os = "windows")]
     {
         let work_dir = app.path_resolver().app_data_dir().unwrap();
@@ -225,6 +237,22 @@ pub fn open_adb_terminal(dir: String) {
         let mut command = Command::new("osascript");
         command.args(&["-e", &script]);
         command.spawn().expect("failed to open Terminal");
+    }
+    #[cfg(target_os = "linux")]
+    {
+        // Try common Linux terminal emulators in order of preference
+        let dir_escaped = dir.replace("'", "'\\''");
+        let terminals = [
+            ("gnome-terminal", vec!["--", "bash", "-c", &format!("cd '{}'; exec bash", dir_escaped)]),
+            ("xterm", vec!["-e", &format!("bash -c \"cd '{}'; exec bash\"", dir_escaped)]),
+            ("konsole", vec!["--noclose", "-e", "bash", "-c", &format!("cd '{}'; exec bash", dir_escaped)]),
+            ("xfce4-terminal", vec!["--hold", "--command", &format!("bash -c \"cd '{}'; exec bash\"", dir_escaped)]),
+        ];
+        for (term, args) in &terminals {
+            if Command::new(term).args(args).spawn().is_ok() {
+                break;
+            }
+        }
     }
 }
 
