@@ -22,6 +22,7 @@ on:
           - all
           - windows
           - macos
+          - linux
       app:
         description: "App to build"
         required: true
@@ -138,8 +139,21 @@ jobs:
       notes: ${{ inputs.notes }}
       gray_percentage: ${{ inputs.gray_percentage }}
     secrets: inherit
+
+  build-matrix-linux:
+    needs: [prepare, create-tag]
+    if: ${{ inputs.platforms == 'all' || inputs.platforms == 'linux' }}
+    uses: ./.github/workflows/build-matrix-linux.yml
+    with:
+      version: ${{ needs.create-tag.outputs.version }}
+      branch: ${{ inputs.branch }}
+      build_apps: ${{ needs.prepare.outputs.build_apps }}
+      notes: ${{ inputs.notes }}
+      gray_percentage: ${{ inputs.gray_percentage }}
+    secrets: inherit
+
   notify:
-    needs: [build-matrix-windows, build-matrix-macos, create-tag]
+    needs: [build-matrix-windows, build-matrix-macos, build-matrix-linux, create-tag]
     if: always()
     runs-on: ubuntu-latest
     steps:
