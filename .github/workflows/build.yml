@@ -23,6 +23,7 @@ on:
           - all
           - windows
           - macos
+          - linux
       version:
         description: "Version tag (e.g., v1.0.0), or 'auto' to use date+run"
         required: false
@@ -144,6 +145,18 @@ jobs:
       gray_percentage: ${{ inputs.gray_percentage }}
     secrets: inherit
 
+  matrix-linux:
+    needs: [resolve, create-tag]
+    if: inputs.product == 'TikMatrix' && (inputs.platforms == 'all' || inputs.platforms == 'linux')
+    uses: ./.github/workflows/build-matrix-linux.yml
+    with:
+      version: ${{ needs.resolve.outputs.version }}
+      branch: ${{ inputs.branch }}
+      build_apps: ${{ needs.resolve.outputs.build_apps }}
+      notes: ${{ inputs.notes }}
+      gray_percentage: ${{ inputs.gray_percentage }}
+    secrets: inherit
+
   script-windows:
     needs: [resolve, create-tag]
     if: inputs.product == 'Script' && (inputs.platforms == 'all' || inputs.platforms == 'windows')
@@ -196,7 +209,7 @@ jobs:
     secrets: inherit
 
   notify:
-    needs: [resolve, matrix-windows, matrix-macos, script-windows, script-macos, videomagic-windows, videomagic-macos, apk]
+    needs: [resolve, matrix-windows, matrix-macos, matrix-linux, script-windows, script-macos, videomagic-windows, videomagic-macos, apk]
     if: always()
     runs-on: ubuntu-latest
     steps:

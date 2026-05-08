@@ -1,0 +1,151 @@
+name: Build Matrix - Linux
+run-name: ${{ github.actor }} is building Matrix (Linux) 🚀
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: "Version tag (e.g., v1.0.0)"
+        required: true
+        type: string
+      branch:
+        description: "Branch to build from"
+        required: false
+        default: "main"
+        type: string
+      build_apps:
+        description: "Apps to build"
+        required: false
+        default: "all"
+        type: string
+      notes:
+        description: "Release notes (English)"
+        required: false
+        default: ""
+        type: string
+      gray_percentage:
+        description: "Gray release percentage (0-100)"
+        required: false
+        default: "10"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  build-matrix-linux:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+          path: tikmatrix-pro
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install Linux dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            libappindicator3-dev \
+            librsvg2-dev \
+            patchelf \
+            libssl-dev \
+            libgtk-3-dev \
+            libayatana-appindicator3-dev
+
+      - name: Rust Cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            tikmatrix-pro/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: tikmatrix-pro
+
+      - name: Build TikMatrix Pro package
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        run: |
+          chmod +x ./build-linux.sh
+          ./build-linux.sh
+        working-directory: tikmatrix-pro
+        env:
+          RUSTFLAGS: "-A warnings"
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+
+      - name: Upload official package to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./tikmatrix-pro/target/release/bundle/appimage
+          destination-dir: ./
+
+      - name: Clear uploaded files
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        run: |
+          rm -rf ./tikmatrix-pro/target/release/bundle/appimage/*
+
+      - name: Update TikMatrix Pro download url
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        env:
+          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd tikmatrix-pro
+          node ./scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=tikmatrix.pro --app-name='TikMatrix Pro'
+
+      - name: Build TikMatrix package
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+        run: |
+          chmod +x ./build-linux.sh
+          ./build-linux.sh tikmatrix
+        working-directory: tikmatrix-pro
+        env:
+          RUSTFLAGS: "-A warnings"
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+
+      - name: Upload TikMatrix package to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./tikmatrix-pro/target/release/bundle/appimage
+          destination-dir: ./
+
+      - name: Clear TikMatrix uploaded files
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+        run: |
+          rm -rf ./tikmatrix-pro/target/release/bundle/appimage/*
+
+      - name: Update TikMatrix download url
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+        env:
+          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd tikmatrix-pro
+          node ./scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=tikmatrix --app-name='TikMatrix'
