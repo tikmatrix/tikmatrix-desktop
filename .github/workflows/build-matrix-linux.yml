@@ -149,3 +149,39 @@ jobs:
         run: |
           cd tikmatrix-pro
           node ./scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=tikmatrix --app-name='TikMatrix'
+
+      - name: Build IgMatrix package
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
+        run: |
+          chmod +x ./build-linux.sh
+          ./build-linux.sh igmatrix
+        working-directory: tikmatrix-pro
+        env:
+          RUSTFLAGS: "-A warnings"
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+
+      - name: Upload IgMatrix package to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./tikmatrix-pro/target/release/bundle/appimage
+          destination-dir: ./
+
+      - name: Clear IgMatrix uploaded files
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
+        run: |
+          rm -rf ./tikmatrix-pro/target/release/bundle/appimage/*
+
+      - name: Update IgMatrix download url
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
+        env:
+          TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd tikmatrix-pro
+          node ./scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=igmatrix --app-name=IgMatrix
