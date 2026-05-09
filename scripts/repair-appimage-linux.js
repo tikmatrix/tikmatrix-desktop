@@ -137,20 +137,41 @@ function patchGtkHook(appDir) {
     return false
   }
 
-  const original = fs.readFileSync(hookPath, 'utf8')
-  const targetLine = 'export GDK_BACKEND=x11 # Crash with Wayland backend on Wayland - We tested it without it and ended up with this: https://github.com/tauri-apps/tauri/issues/8541'
+  let content = fs.readFileSync(hookPath, 'utf8')
+  let changed = false
 
-  if (!original.includes(targetLine)) {
+  // Fix GDK_BACKEND: don't unconditionally force x11 on Wayland sessions.
+  // Match broadly so minor upstream comment changes don't break the pattern.
+  const gdkBackendLine = /^export GDK_BACKEND=x11.*$/m
+  if (gdkBackendLine.test(content)) {
+    content = content.replace(gdkBackendLine, [
+      'if [ -z "${GDK_BACKEND:-}" ] && [ -n "${DISPLAY:-}" ]; then',
+      '    export GDK_BACKEND=x11 # Fallback to X11 only when a display is available.',
+      'fi'
+    ].join('\n'))
+    changed = true
+  }
+
+  // Remove GIO_EXTRA_MODULES: the hook sets this to the AppImage's own GIO
+  // modules dir, which contains libs compiled against the build-time GLib.
+  // On systems with a newer GLib the bundled GIO modules (e.g. libgvfsdbus)
+  // cannot satisfy newer symbol requirements, producing fatal dlopen errors.
+  // Setting GIO_MODULE_DIR to an empty directory already prevents the default
+  // system scan; clearing GIO_EXTRA_MODULES prevents the AppImage scan too.
+  const gioExtraLine = /^export GIO_EXTRA_MODULES=.*$/m
+  if (gioExtraLine.test(content)) {
+    content = content.replace(
+      gioExtraLine,
+      '# GIO_EXTRA_MODULES suppressed – prevents GLib version mismatch when loading bundled GIO modules.'
+    )
+    changed = true
+  }
+
+  if (!changed) {
     return false
   }
 
-  const replacement = [
-    'if [ -z "${GDK_BACKEND:-}" ] && [ -n "${DISPLAY:-}" ]; then',
-    '    export GDK_BACKEND=x11 # Match the upstream fallback without breaking pure Wayland sessions.',
-    'fi'
-  ].join('\n')
-
-  fs.writeFileSync(hookPath, original.replace(targetLine, replacement), 'utf8')
+  fs.writeFileSync(hookPath, content, 'utf8')
   makeExecutable(hookPath)
   return true
 }
@@ -173,7 +194,6 @@ function writeAppRunWrapper(appDir) {
 set -euo pipefail
 
 APPDIR="$(cd "$(dirname "\${BASH_SOURCE[0]}")" && pwd)"
-mkdir -p "\${APPDIR}/usr/lib/gio/modules-empty"
 
 find_wayland_client_preload() {
   local candidate
@@ -208,6 +228,11 @@ export GIO_USE_VFS="\${GIO_USE_VFS:-local}"
 export GIO_MODULE_DIR="\${GIO_MODULE_DIR:-\${APPDIR}/usr/lib/gio/modules-empty}"
 export WEBKIT_DISABLE_DMABUF_RENDERER="\${WEBKIT_DISABLE_DMABUF_RENDERER:-1}"
 export WEBKIT_DISABLE_COMPOSITING_MODE="\${WEBKIT_DISABLE_COMPOSITING_MODE:-1}"
+# Disable the WebKit Linux-namespace sandbox. Some VM/container environments
+# (VMware, Docker, restricted kernels) block the user-namespace calls that the
+# WebKit sandbox relies on, causing the renderer process to crash and leaving
+# only a white window.  Power users who need the sandbox can override this.
+export WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS="\${WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS:-1}"
 
 if wayland_client_preload="$(find_wayland_client_preload)"; then
   case " \${LD_PRELOAD:-} " in
