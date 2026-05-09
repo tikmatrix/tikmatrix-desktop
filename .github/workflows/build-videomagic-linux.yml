@@ -30,6 +30,11 @@ jobs:
   build-videomagic-linux:
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout workflow repository
+        uses: actions/checkout@v3
+        with:
+          path: ci-tools
+
       - name: Checkout VideoMagic repository
         uses: actions/checkout@v3
         with:
@@ -74,7 +79,7 @@ jobs:
           npm install
           chmod +x ./build-linux.sh
           ./build-linux.sh
-          node ../scripts/repair-appimage-linux.js .
+          node ../ci-tools/scripts/repair-appimage-linux.js .
 
       - name: Prepare VideoMagic package upload
         run: |

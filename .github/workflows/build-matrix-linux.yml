@@ -35,6 +35,11 @@ jobs:
   build-matrix-linux:
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout workflow repository
+        uses: actions/checkout@v3
+        with:
+          path: ci-tools
+
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
@@ -81,7 +86,7 @@ jobs:
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh
-          node ../scripts/repair-appimage-linux.js .
+          node ../ci-tools/scripts/repair-appimage-linux.js .
         working-directory: tikmatrix-pro
         env:
           RUSTFLAGS: "-A warnings"
@@ -131,7 +136,7 @@ jobs:
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh tikmatrix
-          node ../scripts/repair-appimage-linux.js .
+          node ../ci-tools/scripts/repair-appimage-linux.js .
         working-directory: tikmatrix-pro
         env:
           RUSTFLAGS: "-A warnings"
@@ -181,7 +186,7 @@ jobs:
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh igmatrix
-          node ../scripts/repair-appimage-linux.js .
+          node ../ci-tools/scripts/repair-appimage-linux.js .
         working-directory: tikmatrix-pro
         env:
           RUSTFLAGS: "-A warnings"
