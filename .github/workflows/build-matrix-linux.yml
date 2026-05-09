@@ -86,7 +86,6 @@ jobs:
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh
-          node ../ci-tools/scripts/repair-appimage-linux.js .
         working-directory: tikmatrix-pro
         env:
           RUSTFLAGS: "-A warnings"
@@ -96,12 +95,12 @@ jobs:
       - name: Prepare official package upload
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: |
-          UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/appimage-upload
+          UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/deb-upload
           rm -rf "$UPLOAD_DIR"
           mkdir -p "$UPLOAD_DIR"
-          find ./tikmatrix-pro/target/release/bundle/appimage -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
+          find ./tikmatrix-pro/target/release/bundle/deb -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
           if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
-            echo "No top-level AppImage artifacts found for upload"
+            echo "No top-level deb artifacts found for upload"
             exit 1
           fi
 
@@ -113,14 +112,14 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/target/release/bundle/appimage-upload
+          source-dir: ./tikmatrix-pro/target/release/bundle/deb-upload
           destination-dir: ./
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: |
-          rm -rf ./tikmatrix-pro/target/release/bundle/appimage/*
-          rm -rf ./tikmatrix-pro/target/release/bundle/appimage-upload
+          rm -rf ./tikmatrix-pro/target/release/bundle/deb/*
+          rm -rf ./tikmatrix-pro/target/release/bundle/deb-upload
 
       - name: Update TikMatrix Pro download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
@@ -136,7 +135,6 @@ jobs:
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh tikmatrix
-          node ../ci-tools/scripts/repair-appimage-linux.js .
         working-directory: tikmatrix-pro
         env:
           RUSTFLAGS: "-A warnings"
@@ -146,12 +144,12 @@ jobs:
       - name: Prepare TikMatrix package upload
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
-          UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/appimage-upload
+          UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/deb-upload
           rm -rf "$UPLOAD_DIR"
           mkdir -p "$UPLOAD_DIR"
-          find ./tikmatrix-pro/target/release/bundle/appimage -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
+          find ./tikmatrix-pro/target/release/bundle/deb -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
           if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
-            echo "No top-level AppImage artifacts found for upload"
+            echo "No top-level deb artifacts found for upload"
             exit 1
           fi
 
@@ -163,14 +161,14 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/target/release/bundle/appimage-upload
+          source-dir: ./tikmatrix-pro/target/release/bundle/deb-upload
           destination-dir: ./
 
       - name: Clear TikMatrix uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
-          rm -rf ./tikmatrix-pro/target/release/bundle/appimage/*
-          rm -rf ./tikmatrix-pro/target/release/bundle/appimage-upload
+          rm -rf ./tikmatrix-pro/target/release/bundle/deb/*
+          rm -rf ./tikmatrix-pro/target/release/bundle/deb-upload
 
       - name: Update TikMatrix download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
@@ -186,7 +184,6 @@ jobs:
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh igmatrix
-          node ../ci-tools/scripts/repair-appimage-linux.js .
         working-directory: tikmatrix-pro
         env:
           RUSTFLAGS: "-A warnings"
@@ -196,12 +193,12 @@ jobs:
       - name: Prepare IgMatrix package upload
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
-          UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/appimage-upload
+          UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/deb-upload
           rm -rf "$UPLOAD_DIR"
           mkdir -p "$UPLOAD_DIR"
-          find ./tikmatrix-pro/target/release/bundle/appimage -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
+          find ./tikmatrix-pro/target/release/bundle/deb -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
           if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
-            echo "No top-level AppImage artifacts found for upload"
+            echo "No top-level deb artifacts found for upload"
             exit 1
           fi
 
@@ -213,14 +210,14 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
-          source-dir: ./tikmatrix-pro/target/release/bundle/appimage-upload
+          source-dir: ./tikmatrix-pro/target/release/bundle/deb-upload
           destination-dir: ./
 
       - name: Clear IgMatrix uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
-          rm -rf ./tikmatrix-pro/target/release/bundle/appimage/*
-          rm -rf ./tikmatrix-pro/target/release/bundle/appimage-upload
+          rm -rf ./tikmatrix-pro/target/release/bundle/deb/*
+          rm -rf ./tikmatrix-pro/target/release/bundle/deb-upload
 
       - name: Update IgMatrix download url
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}

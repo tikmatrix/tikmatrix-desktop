@@ -80,8 +80,8 @@ function buildDownloadUrl(platform, version, distributorCode, appName) {
             : `${appName}_${version}_universal_${distributorCode}.dmg`
     } else if (platform === 'linux') {
         fileName = distributorCode === 'OFFICIAL'
-            ? `${appName}_${version}_amd64.AppImage`
-            : `${appName}_${version}_amd64_${distributorCode}.AppImage`
+            ? `${appName}_${version}_amd64.deb`
+            : `${appName}_${version}_amd64_${distributorCode}.deb`
     } else {
         throw new Error(`Unknown platform: ${platform}`)
     }

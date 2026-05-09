@@ -118,7 +118,7 @@ const version = config.package?.version || config.version
 // V1 format: .msi.zip + .msi.zip.sig (served to clients <= 2.17.5)
 const v2SigPath = resolvePath('target', 'release', 'bundle', 'msi', `${params.appName}_${version}_x64_en-US.msi.sig`)
 const v1SigPath = resolvePath('target', 'release', 'bundle', 'msi', `${params.appName}_${version}_x64_en-US.msi.zip.sig`)
-const linuxSigPath = resolvePath('target', 'release', 'bundle', 'appimage', `${params.appName}_${version}_amd64.AppImage.sig`)
+const linuxSigPath = resolvePath('target', 'release', 'bundle', 'deb', `${params.appName}_${version}_amd64.deb.sig`)
 
 const v2Signature = readSignature(v2SigPath)
 const v1Signature = readSignature(v1SigPath)
@@ -143,7 +143,7 @@ console.log(`API base:        ${apiBase}`)
 const macUrl = `${releaseBase}/front-api/release/${params.appName}_${version}_universal.dmg`
 const windowsV2Url = `${releaseBase}/front-api/release/${params.appName}_${version}_x64_en-US.msi`
 const windowsV1Url = `${releaseBase}/front-api/release/${params.appName}_${version}_x64_en-US.msi.zip`
-const linuxUrl = `${releaseBase}/front-api/release/${params.appName}_${version}_amd64.AppImage`
+const linuxUrl = `${releaseBase}/front-api/release/${params.appName}_${version}_amd64.deb`
 
 let body = JSON.stringify({
     version: `v${version}`,
