@@ -81,6 +81,7 @@ jobs:
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh
+          node ../scripts/repair-appimage-linux.js .
         working-directory: tikmatrix-pro
         env:
           RUSTFLAGS: "-A warnings"
@@ -130,6 +131,7 @@ jobs:
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh tikmatrix
+          node ../scripts/repair-appimage-linux.js .
         working-directory: tikmatrix-pro
         env:
           RUSTFLAGS: "-A warnings"
@@ -179,6 +181,7 @@ jobs:
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh igmatrix
+          node ../scripts/repair-appimage-linux.js .
         working-directory: tikmatrix-pro
         env:
           RUSTFLAGS: "-A warnings"

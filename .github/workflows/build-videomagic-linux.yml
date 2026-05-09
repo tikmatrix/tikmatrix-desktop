@@ -74,6 +74,7 @@ jobs:
           npm install
           chmod +x ./build-linux.sh
           ./build-linux.sh
+          node ../scripts/repair-appimage-linux.js .
 
       - name: Prepare VideoMagic package upload
         run: |
