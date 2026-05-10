@@ -115,14 +115,6 @@ jobs:
           source-dir: ./tikmatrix-pro/target/release/bundle/deb-upload
           destination-dir: ./
 
-      - name: Update TikMatrix Pro version (Linux)
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
-        run: |
-          cd tikmatrix-pro
-          node ./scripts/update-version.js --platform=linux --app=tikmatrix.pro "--app-name=TikMatrix Pro" "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
-
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: |
@@ -172,14 +164,6 @@ jobs:
           source-dir: ./tikmatrix-pro/target/release/bundle/deb-upload
           destination-dir: ./
 
-      - name: Update TikMatrix version (Linux)
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
-        run: |
-          cd tikmatrix-pro
-          node ./scripts/update-version.js --platform=linux --app=tikmatrix --app-name=TikMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
-
       - name: Clear TikMatrix uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
@@ -228,14 +212,6 @@ jobs:
           r2-bucket: matrix
           source-dir: ./tikmatrix-pro/target/release/bundle/deb-upload
           destination-dir: ./
-
-      - name: Update IgMatrix version (Linux)
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
-        run: |
-          cd tikmatrix-pro
-          node ./scripts/update-version.js --platform=linux --app=igmatrix --app-name=IgMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
       - name: Clear IgMatrix uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}

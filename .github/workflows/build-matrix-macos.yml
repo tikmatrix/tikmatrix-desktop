@@ -86,6 +86,29 @@ jobs:
           source-dir: ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/dmg
           destination-dir: ./
 
+      - name: Prepare TikMatrix Pro macOS updater upload
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        run: |
+          VERSION=$(node -e "console.log(require('./tikmatrix-pro/src-tauri/tauri.conf.json').version)")
+          SRC_DIR="./tikmatrix-pro/target/universal-apple-darwin/release/bundle/macos"
+          UPLOAD_DIR="./tikmatrix-pro/target/universal-apple-darwin/release/bundle/macos-upload"
+          APP_NAME="TikMatrix Pro"
+          rm -rf "$UPLOAD_DIR"
+          mkdir -p "$UPLOAD_DIR"
+          cp "$SRC_DIR/${APP_NAME}.app.tar.gz" "$UPLOAD_DIR/${APP_NAME}_${VERSION}_universal.app.tar.gz"
+          cp "$SRC_DIR/${APP_NAME}.app.tar.gz.sig" "$UPLOAD_DIR/${APP_NAME}_${VERSION}_universal.app.tar.gz.sig"
+
+      - name: Upload TikMatrix Pro macOS updater to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/macos-upload
+          destination-dir: ./
+
       - name: Update TikMatrix Pro version (macOS)
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         env:
@@ -125,6 +148,29 @@ jobs:
           source-dir: ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/dmg
           destination-dir: ./
 
+      - name: Prepare TikMatrix macOS updater upload
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+        run: |
+          VERSION=$(node -e "console.log(require('./tikmatrix-pro/src-tauri/tauri.conf.json').version)")
+          SRC_DIR="./tikmatrix-pro/target/universal-apple-darwin/release/bundle/macos"
+          UPLOAD_DIR="./tikmatrix-pro/target/universal-apple-darwin/release/bundle/macos-upload"
+          APP_NAME="TikMatrix"
+          rm -rf "$UPLOAD_DIR"
+          mkdir -p "$UPLOAD_DIR"
+          cp "$SRC_DIR/${APP_NAME}.app.tar.gz" "$UPLOAD_DIR/${APP_NAME}_${VERSION}_universal.app.tar.gz"
+          cp "$SRC_DIR/${APP_NAME}.app.tar.gz.sig" "$UPLOAD_DIR/${APP_NAME}_${VERSION}_universal.app.tar.gz.sig"
+
+      - name: Upload TikMatrix macOS updater to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/macos-upload
+          destination-dir: ./
+
       - name: Update TikMatrix version (macOS)
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         env:
@@ -162,6 +208,29 @@ jobs:
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
           source-dir: ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/dmg
+          destination-dir: ./
+
+      - name: Prepare IgMatrix macOS updater upload
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
+        run: |
+          VERSION=$(node -e "console.log(require('./tikmatrix-pro/src-tauri/tauri.conf.json').version)")
+          SRC_DIR="./tikmatrix-pro/target/universal-apple-darwin/release/bundle/macos"
+          UPLOAD_DIR="./tikmatrix-pro/target/universal-apple-darwin/release/bundle/macos-upload"
+          APP_NAME="IgMatrix"
+          rm -rf "$UPLOAD_DIR"
+          mkdir -p "$UPLOAD_DIR"
+          cp "$SRC_DIR/${APP_NAME}.app.tar.gz" "$UPLOAD_DIR/${APP_NAME}_${VERSION}_universal.app.tar.gz"
+          cp "$SRC_DIR/${APP_NAME}.app.tar.gz.sig" "$UPLOAD_DIR/${APP_NAME}_${VERSION}_universal.app.tar.gz.sig"
+
+      - name: Upload IgMatrix macOS updater to R2
+        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
+        uses: ryand56/r2-upload-action@v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./tikmatrix-pro/target/universal-apple-darwin/release/bundle/macos-upload
           destination-dir: ./
 
       - name: Update IgMatrix version (macOS)
