@@ -32,7 +32,8 @@ permissions:
   contents: write
 
 jobs:
-  build-matrix-linux:
+  build-tikmatrix-pro:
+    if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout workflow repository
@@ -52,6 +53,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
+          cache: npm
+          cache-dependency-path: tikmatrix-pro/package-lock.json
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
@@ -73,8 +76,10 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+            ./tikmatrix-pro/target
+          key: ${{ runner.os }}-cargo-tikmatrix-pro-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: |
+            ${{ runner.os }}-cargo-tikmatrix-pro-
             ${{ runner.os }}-cargo-
 
       - name: Install dependencies
@@ -82,7 +87,6 @@ jobs:
         working-directory: tikmatrix-pro
 
       - name: Build TikMatrix Pro package
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh
@@ -93,10 +97,8 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
 
       - name: Prepare official package upload
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: |
           UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/deb-upload
-          rm -rf "$UPLOAD_DIR"
           mkdir -p "$UPLOAD_DIR"
           find ./tikmatrix-pro/target/release/bundle/deb -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
           if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
@@ -105,7 +107,6 @@ jobs:
           fi
 
       - name: Upload official package to R2
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -115,14 +116,7 @@ jobs:
           source-dir: ./tikmatrix-pro/target/release/bundle/deb-upload
           destination-dir: ./
 
-      - name: Clear uploaded files
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
-        run: |
-          rm -rf ./tikmatrix-pro/target/release/bundle/deb/*
-          rm -rf ./tikmatrix-pro/target/release/bundle/deb-upload
-
       - name: Update TikMatrix Pro download url
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -130,8 +124,61 @@ jobs:
           cd tikmatrix-pro
           node ./scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=tikmatrix.pro --app-name='TikMatrix Pro'
 
+  build-tikmatrix:
+    if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout workflow repository
+        uses: actions/checkout@v3
+        with:
+          path: ci-tools
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+          path: tikmatrix-pro
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: tikmatrix-pro/package-lock.json
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install Linux dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            librsvg2-dev \
+            patchelf \
+            libssl-dev \
+            libgtk-3-dev \
+            libayatana-appindicator3-dev
+
+      - name: Rust Cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ./tikmatrix-pro/target
+          key: ${{ runner.os }}-cargo-tikmatrix-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-tikmatrix-
+            ${{ runner.os }}-cargo-
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: tikmatrix-pro
+
       - name: Build TikMatrix package
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh tikmatrix
@@ -142,10 +189,8 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
 
       - name: Prepare TikMatrix package upload
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
           UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/deb-upload
-          rm -rf "$UPLOAD_DIR"
           mkdir -p "$UPLOAD_DIR"
           find ./tikmatrix-pro/target/release/bundle/deb -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
           if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
@@ -154,7 +199,6 @@ jobs:
           fi
 
       - name: Upload TikMatrix package to R2
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -164,14 +208,7 @@ jobs:
           source-dir: ./tikmatrix-pro/target/release/bundle/deb-upload
           destination-dir: ./
 
-      - name: Clear TikMatrix uploaded files
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
-        run: |
-          rm -rf ./tikmatrix-pro/target/release/bundle/deb/*
-          rm -rf ./tikmatrix-pro/target/release/bundle/deb-upload
-
       - name: Update TikMatrix download url
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -179,8 +216,61 @@ jobs:
           cd tikmatrix-pro
           node ./scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=tikmatrix --app-name='TikMatrix'
 
+  build-igmatrix:
+    if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout workflow repository
+        uses: actions/checkout@v3
+        with:
+          path: ci-tools
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+          path: tikmatrix-pro
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: tikmatrix-pro/package-lock.json
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install Linux dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            librsvg2-dev \
+            patchelf \
+            libssl-dev \
+            libgtk-3-dev \
+            libayatana-appindicator3-dev
+
+      - name: Rust Cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ./tikmatrix-pro/target
+          key: ${{ runner.os }}-cargo-igmatrix-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-igmatrix-
+            ${{ runner.os }}-cargo-
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: tikmatrix-pro
+
       - name: Build IgMatrix package
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
           chmod +x ./build-linux.sh
           ./build-linux.sh igmatrix
@@ -191,10 +281,8 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
 
       - name: Prepare IgMatrix package upload
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
           UPLOAD_DIR=./tikmatrix-pro/target/release/bundle/deb-upload
-          rm -rf "$UPLOAD_DIR"
           mkdir -p "$UPLOAD_DIR"
           find ./tikmatrix-pro/target/release/bundle/deb -maxdepth 1 -type f -exec cp -t "$UPLOAD_DIR" -- {} +
           if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -print -quit | grep -q .; then
@@ -203,7 +291,6 @@ jobs:
           fi
 
       - name: Upload IgMatrix package to R2
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -213,14 +300,7 @@ jobs:
           source-dir: ./tikmatrix-pro/target/release/bundle/deb-upload
           destination-dir: ./
 
-      - name: Clear IgMatrix uploaded files
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
-        run: |
-          rm -rf ./tikmatrix-pro/target/release/bundle/deb/*
-          rm -rf ./tikmatrix-pro/target/release/bundle/deb-upload
-
       - name: Update IgMatrix download url
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}

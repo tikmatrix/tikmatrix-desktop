@@ -32,7 +32,8 @@ permissions:
   contents: write
 
 jobs:
-  build-matrix-windows:
+  build-tikmatrix-pro:
+    if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
     runs-on: windows-latest
     steps:
       - name: Checkout repository
@@ -47,6 +48,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
+          cache: npm
+          cache-dependency-path: tikmatrix-pro/package-lock.json
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
@@ -58,8 +61,9 @@ jobs:
             ~/.cargo/registry
             ~/.cargo/git
             tikmatrix-pro/target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          key: ${{ runner.os }}-cargo-tikmatrix-pro-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: |
+            ${{ runner.os }}-cargo-tikmatrix-pro-
             ${{ runner.os }}-cargo-
 
       - name: Install dependencies
@@ -67,12 +71,10 @@ jobs:
         working-directory: tikmatrix-pro
 
       - name: Build TikMatrix Pro package
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         run: .\build.ps1
         working-directory: tikmatrix-pro
 
       - name: Upload official package to R2
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -83,7 +85,6 @@ jobs:
           destination-dir: ./
 
       - name: Update version
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -91,12 +92,7 @@ jobs:
           cd tikmatrix-pro
           node ./scripts/update-version.js --platform=windows --app=tikmatrix.pro "--app-name=TikMatrix Pro" "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
-      - name: Clear uploaded files
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
-        run: |
-          Remove-Item -Path .\tikmatrix-pro\target\release\bundle\msi\* -Force -Recurse
       - name: Update TikMatrix Pro download url
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -104,14 +100,50 @@ jobs:
           cd tikmatrix-pro
           node ./scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=tikmatrix.pro --app-name='TikMatrix Pro'
 
-      # TikMatrix whitelabel build and upload steps
+  build-tikmatrix:
+    if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+          path: tikmatrix-pro
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: tikmatrix-pro/package-lock.json
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Rust Cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            tikmatrix-pro/target
+          key: ${{ runner.os }}-cargo-tikmatrix-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-tikmatrix-
+            ${{ runner.os }}-cargo-
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: tikmatrix-pro
+
       - name: Build TikMatrix whitelabel package
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         run: |
           cd tikmatrix-pro
           node ./scripts/build-whitelabel.js TikMatrix
+
       - name: Upload TikMatrix package to R2
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -122,7 +154,6 @@ jobs:
           destination-dir: ./
 
       - name: Update TikMatrix version
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -130,13 +161,7 @@ jobs:
           cd tikmatrix-pro
           node ./scripts/update-version.js --platform=windows --app=tikmatrix --app-name=TikMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
-      - name: Clear uploaded files
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
-        run: |
-          Remove-Item -Path .\tikmatrix-pro\target\release\bundle\msi\* -Force -Recurse
-
       - name: Update TikMatrix download url
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -144,15 +169,50 @@ jobs:
           cd tikmatrix-pro
           node ./scripts/update-download-url.js --platform=windows --distributor=OFFICIAL --app=tikmatrix --app-name=TikMatrix
 
-      # IgMatrix whitelabel build and upload steps
+  build-igmatrix:
+    if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+          path: tikmatrix-pro
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: tikmatrix-pro/package-lock.json
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Rust Cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            tikmatrix-pro/target
+          key: ${{ runner.os }}-cargo-igmatrix-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-igmatrix-
+            ${{ runner.os }}-cargo-
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: tikmatrix-pro
+
       - name: Build IgMatrix whitelabel package
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         run: |
           cd tikmatrix-pro
           node ./scripts/build-whitelabel.js IgMatrix
 
       - name: Upload IgMatrix package to R2
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         uses: ryand56/r2-upload-action@v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
@@ -163,7 +223,6 @@ jobs:
           destination-dir: ./
 
       - name: Update IgMatrix version
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
@@ -171,13 +230,7 @@ jobs:
           cd tikmatrix-pro
           node ./scripts/update-version.js --platform=windows --app=igmatrix --app-name=IgMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
-      - name: Clear uploaded files
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
-        run: |
-          Remove-Item -Path .\tikmatrix-pro\target\release\bundle\msi\* -Force -Recurse
-
       - name: Update IgMatrix download url
-        if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
