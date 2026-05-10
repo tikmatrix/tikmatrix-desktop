@@ -89,7 +89,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd tikmatrix-pro
-          node ./scripts/update-version.js --app=tikmatrix.pro "--app-name=TikMatrix Pro" "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
+          node ./scripts/update-version.js --platform=windows --app=tikmatrix.pro "--app-name=TikMatrix Pro" "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix.pro' }}
@@ -128,7 +128,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd tikmatrix-pro
-          node ./scripts/update-version.js --app=tikmatrix --app-name=TikMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
+          node ./scripts/update-version.js --platform=windows --app=tikmatrix --app-name=TikMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
@@ -169,7 +169,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd tikmatrix-pro
-          node ./scripts/update-version.js --app=igmatrix --app-name=IgMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
+          node ./scripts/update-version.js --platform=windows --app=igmatrix --app-name=IgMatrix "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
 
       - name: Clear uploaded files
         if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
