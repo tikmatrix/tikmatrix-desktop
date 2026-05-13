@@ -39,9 +39,9 @@ on:
         default: ""
         type: string
       gray_percentage:
-        description: "Gray release percentage (0-100). Default 10 = roll out to 10% of devices first."
+        description: "Gray release percentage (0-100). Default 0 = roll out to 0% of devices first."
         required: false
-        default: "10"
+        default: "0"
         type: string
 
 permissions:

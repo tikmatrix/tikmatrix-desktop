@@ -21,7 +21,7 @@ on:
       gray_percentage:
         description: "Gray release percentage (0-100). Default 10 = roll out to 10% of devices first."
         required: false
-        default: "10"
+        default: "0"
         type: string
       platforms:
         description: "Platforms to build"

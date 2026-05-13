@@ -52,7 +52,7 @@ on:
       gray_percentage:
         description: "[TikMatrix/VideoMagic] Gray release percentage (0-100)"
         required: false
-        default: "10"
+        default: "0"
         type: string
 
 permissions:
