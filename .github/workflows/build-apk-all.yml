@@ -40,12 +40,12 @@ jobs:
       version: ${{ steps.resolve-version.outputs.version }}
     steps:
       - name: Checkout tikmatrix-desktop repository (for whitelabel configs)
-        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           path: tikmatrix-desktop
 
       - name: Checkout tikmatrix-pro repository
-        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
