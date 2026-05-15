@@ -55,8 +55,12 @@ on:
         default: "0"
         type: string
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   resolve:
@@ -94,7 +98,7 @@ jobs:
     steps:
       - name: Checkout tikmatrix-pro
         if: inputs.product != 'VideoMagic'
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
@@ -102,7 +106,7 @@ jobs:
 
       - name: Checkout video-magic
         if: inputs.product == 'VideoMagic'
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           repository: tikmatrix/video-magic
           token: ${{ secrets.REPO_TOKEN }}

@@ -19,7 +19,7 @@ on:
         type: string
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build-script-windows:
@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Checkout tikmatrix-pro private repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
         with:
           repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
@@ -39,7 +39,7 @@ jobs:
           path: tikmatrix-pro
 
       - name: Cache Rust dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@6f8efc29b200d32929f49075959781ed54ec270c # v3
         with:
           path: |
             ~\.cargo\registry
@@ -50,7 +50,7 @@ jobs:
             ${{ runner.os }}-script-cargo-${{ matrix.target }}-
 
       - name: Setup Rust
-        uses: dtolnay/rust-toolchain@stable
+        uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8 # stable
 
       - name: Install target platform
         run: rustup target add ${{ matrix.target }}
@@ -74,7 +74,7 @@ jobs:
         shell: pwsh
 
       - name: Upload to R2
-        uses: ryand56/r2-upload-action@v1.4
+        uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
