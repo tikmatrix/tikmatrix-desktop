@@ -73,6 +73,10 @@ jobs:
             cp ./tikmatrix-pro/target/${{ matrix.target }}/release/script \
                ./tikmatrix-pro/target/${{ matrix.target }}/release/bin/
           fi
+          # Compute version directory (strip leading 'v' for clean R2 paths)
+          VERSION_DIR="${{ inputs.version }}"
+          VERSION_DIR="${VERSION_DIR#v}"
+          echo "VERSION_DIR=${VERSION_DIR}" >> $GITHUB_ENV
 
       - name: Upload to R2
         uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
@@ -82,11 +86,12 @@ jobs:
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
           source-dir: ./tikmatrix-pro/target/${{ matrix.target }}/release/bin
-          destination-dir: ${{ matrix.target }}_v2
+          destination-dir: ${{ matrix.target }}_v2/${{ env.VERSION_DIR }}
 
       - name: Update Library Version
         run: |
           VERSION="${{ inputs.version }}"
+          VERSION_DIR="${VERSION#v}"
           TARGET="${{ matrix.target }}"
           BIN_PATH="./tikmatrix-pro/target/${TARGET}/release/bin/script"
 
@@ -100,8 +105,8 @@ jobs:
           {
             "name": "script",
             "platform": "linux",
-            "downloadUrl": "https://api.tikmatrix.com/front-api/release/${TARGET}_v2/script",
-            "version": "$VERSION",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/${TARGET}_v2/${VERSION_DIR}/script",
+            "version": "${VERSION_DIR}",
             "app": "TikMatrix",
             "md5": "$SCRIPT_MD5"
           }
@@ -115,4 +120,4 @@ jobs:
             -d "$UPDATE_DATA" \
             "https://api.tikmatrix.com/ci/update_lib_v2"
 
-          echo "Updated script library for linux to $VERSION"
+          echo "Updated script library for linux to ${VERSION_DIR}"

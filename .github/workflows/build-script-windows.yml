@@ -71,6 +71,10 @@ jobs:
           if (Test-Path "./tikmatrix-pro/target/${{ matrix.target }}/release/script.exe") {
             Copy-Item ./tikmatrix-pro/target/${{ matrix.target }}/release/script.exe ./tikmatrix-pro/target/${{ matrix.target }}/release/bin/
           }
+
+          # Compute version directory (strip leading 'v' for clean R2 paths)
+          $VERSION_DIR = "${{ inputs.version }}".TrimStart('v')
+          echo "VERSION_DIR=$VERSION_DIR" >> $env:GITHUB_ENV
         shell: pwsh
 
       - name: Upload to R2
@@ -81,11 +85,12 @@ jobs:
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
           source-dir: .\tikmatrix-pro\target\${{ matrix.target }}\release\bin
-          destination-dir: ${{ matrix.target }}_v2
+          destination-dir: ${{ matrix.target }}_v2/${{ env.VERSION_DIR }}
 
       - name: Update Library Version
         run: |
           $VERSION = "${{ inputs.version }}"
+          $VERSION_DIR = $env:VERSION_DIR
           $PLATFORM = "windows"
 
           # Calculate MD5 for script
@@ -98,8 +103,8 @@ jobs:
           $SCRIPT_UPDATE_DATA = [PSCustomObject]@{
             name        = "script"
             platform    = $PLATFORM
-            downloadUrl = "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}_v2/script.exe"
-            version     = $VERSION
+            downloadUrl = "https://api.tikmatrix.com/front-api/release/${{ matrix.target }}_v2/$VERSION_DIR/script.exe"
+            version     = $VERSION_DIR
             app         = "TikMatrix"
             md5         = $SCRIPT_MD5
           } | ConvertTo-Json -Compress
@@ -117,5 +122,5 @@ jobs:
             exit 1
           }
 
-          Write-Host "Updated script library for $PLATFORM to $VERSION"
+          Write-Host "Updated script library for $PLATFORM to $VERSION_DIR"
         shell: pwsh

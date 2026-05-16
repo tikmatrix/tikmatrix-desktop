@@ -78,6 +78,11 @@ jobs:
             cp ./tikmatrix-pro/target/x86_64-apple-darwin/release/script ./tikmatrix-pro/target/x86_64-apple-darwin/release/bin/
           fi
 
+          # Compute version directory (strip leading 'v' for clean R2 paths)
+          VERSION_DIR="${{ inputs.version }}"
+          VERSION_DIR="${VERSION_DIR#v}"
+          echo "VERSION_DIR=${VERSION_DIR}" >> $GITHUB_ENV
+
       - name: Upload ARM64 to R2
         uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
         with:
@@ -86,7 +91,7 @@ jobs:
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
           source-dir: ./tikmatrix-pro/target/aarch64-apple-darwin/release/bin
-          destination-dir: aarch64-apple-darwin_v2
+          destination-dir: aarch64-apple-darwin_v2/${{ env.VERSION_DIR }}
 
       - name: Upload x86_64 to R2
         uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
@@ -96,11 +101,12 @@ jobs:
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
           source-dir: ./tikmatrix-pro/target/x86_64-apple-darwin/release/bin
-          destination-dir: x86_64-apple-darwin_v2
+          destination-dir: x86_64-apple-darwin_v2/${{ env.VERSION_DIR }}
 
       - name: Update Library Versions
         run: |
           VERSION="${{ inputs.version }}"
+          VERSION_DIR="${VERSION#v}"
 
           update_lib() {
             local NAME=$1
@@ -118,8 +124,8 @@ jobs:
           {
             "name": "$NAME",
             "platform": "$PLATFORM",
-            "downloadUrl": "https://api.tikmatrix.com/front-api/release/$TARGET/$NAME",
-            "version": "$VERSION",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/$TARGET/$VERSION_DIR/$NAME",
+            "version": "$VERSION_DIR",
             "app": "TikMatrix",
             "md5": "$MD5"
           }
@@ -137,4 +143,4 @@ jobs:
           update_lib "script" "mac-arm" "aarch64-apple-darwin_v2"
           update_lib "script" "mac-intel" "x86_64-apple-darwin_v2"
 
-          echo "Updated script library versions to $VERSION"
+          echo "Updated script library versions to ${VERSION_DIR}"
