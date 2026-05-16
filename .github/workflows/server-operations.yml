@@ -29,7 +29,7 @@ on:
           - renew-ssl
 
       server:
-        description: "Target server (leave empty for all servers)"
+        description: "Target server (empty = all)"
         required: false
         type: choice
         options:
@@ -38,14 +38,20 @@ on:
           - server-dublin
           - server-sgp
 
-      # ── nginx-deploy-config / nginx-configure ────────────────────────────
+      # ── nginx-deploy-config ───────────────────────────────────────────────
+      nginx_config:
+        description: "[nginx-deploy-config] Config filename (e.g. example.com.conf); empty = deploy all"
+        required: false
+        type: string
+
+      # ── nginx-configure ───────────────────────────────────────────────────
       domain:
-        description: "[nginx-deploy-config/nginx-configure 必填] nginx-deploy-config: 配置文件名; nginx-configure: 要配置的域名"
+        description: "[nginx-configure] Domain to configure (e.g. example.com)"
         required: false
         type: string
 
       site_type:
-        description: "[nginx-configure 必填] 站点类型: static 静态 或 proxy 反代"
+        description: "[nginx-configure] Site type: static or proxy"
         required: false
         type: choice
         options:
@@ -54,18 +60,18 @@ on:
         default: static
 
       proxy_backend:
-        description: "[nginx-configure proxy 必填] 反代后端地址，如 http://127.0.0.1:3000"
+        description: "[nginx-configure / proxy] Backend URL (e.g. http://127.0.0.1:3000)"
         required: false
         type: string
 
       enable_ssl:
-        description: "[nginx-configure] 是否申请 SSL 证书"
+        description: "[nginx-configure] Request SSL certificate"
         required: false
         type: boolean
         default: false
 
       ssl_method:
-        description: "[nginx-configure] SSL 验证方式: http 或 route53"
+        description: "[nginx-configure] SSL validation method"
         required: false
         type: choice
         options:
@@ -73,34 +79,25 @@ on:
           - route53
         default: http
 
-      renew_ssl_method:
-        description: "[renew-ssl] SSL 续签验证方式，默认 route53"
-        required: false
-        type: choice
-        options:
-          - route53
-          - http
-        default: route53
-
       # ── push-files ────────────────────────────────────────────────────────
       local_path:
-        description: "[push-files 必填] 本地文件路径，如 ./build"
+        description: "[push-files] Local source path (e.g. ./build)"
         required: false
         type: string
 
       remote_path:
-        description: "[push-files 必填] 远端目标路径，如 /var/www/tikmatrix.com"
+        description: "[push-files] Remote destination path (e.g. /var/www/example.com)"
         required: false
         type: string
 
       post_upload_commands:
-        description: '[push-files] 上传后执行的命令，如 "sudo nginx -t && sudo nginx -s reload"'
+        description: '[push-files] Commands to run after upload (e.g. "sudo nginx -s reload")'
         required: false
         type: string
 
       # ── manage-backup ─────────────────────────────────────────────────────
       backup_action:
-        description: "[manage-backup] 操作类型: list 列出 或 create 创建"
+        description: "[manage-backup] Action: list or create"
         required: false
         type: choice
         options:
@@ -109,19 +106,19 @@ on:
         default: list
 
       backup_site:
-        description: "[manage-backup create 必填] 要备份的站点域名，如 tikmatrix.com"
+        description: "[manage-backup / create] Site domain to back up (e.g. example.com)"
         required: false
         type: string
 
       # ── block-ips ─────────────────────────────────────────────────────────
       block_ips:
-        description: "[block-ips 必填] 要封锁的 IP，逗号分隔，如 1.2.3.4,5.6.7.8 或 10.0.0.0/8"
+        description: "[block-ips] Comma-separated IPs/CIDRs (e.g. 1.2.3.4,10.0.0.0/8)"
         required: false
         type: string
 
       # ── run-script ────────────────────────────────────────────────────────
       script_name:
-        description: "[run-script 必填] 要执行的脚本名"
+        description: "[run-script] Script to execute"
         required: false
         type: choice
         options:
@@ -137,10 +134,19 @@ on:
           - ssl-renew.sh
 
       script_args:
-        description: "[run-script] 传给脚本的参数"
+        description: "[run-script] Arguments passed to the script"
         required: false
         type: string
-        default: ""
+
+      # ── renew-ssl ─────────────────────────────────────────────────────────
+      renew_ssl_method:
+        description: "[renew-ssl] SSL validation method"
+        required: false
+        type: choice
+        options:
+          - route53
+          - http
+        default: route53
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.schedule || github.run_id }}
@@ -514,18 +520,18 @@ jobs:
           SERVER_HOST="${{ matrix.server.host }}"
           SERVER_PORT="${{ matrix.server.port }}"
           SERVER_USER="${{ matrix.server.user }}"
-          SELECTED_DOMAIN="${{ github.event.inputs.domain }}"
+          SELECTED_CONFIG="${{ github.event.inputs.nginx_config }}"
 
           source ./LinuxConfig/shell/lib-common.sh
 
           # Determine which configs to deploy
-          if [[ -n "$SELECTED_DOMAIN" ]]; then
-            CONFIG_FILE="LinuxConfig/nginx/${SELECTED_DOMAIN}.conf"
+          if [[ -n "$SELECTED_CONFIG" ]]; then
+            CONFIG_FILE="LinuxConfig/nginx/${SELECTED_CONFIG}"
             if [[ ! -f "$CONFIG_FILE" ]]; then
               echo "Error: Configuration file $CONFIG_FILE not found"
               exit 1
             fi
-            CONFIGS=("${SELECTED_DOMAIN}.conf")
+            CONFIGS=("${SELECTED_CONFIG}")
           else
             mapfile -t CONFIGS < <(find LinuxConfig/nginx -name "*.conf" -type f -exec basename {} \; | sort)
           fi
