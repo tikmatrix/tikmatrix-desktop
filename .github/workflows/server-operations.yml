@@ -333,7 +333,7 @@ jobs:
                 split(client_part[2], rest, ",")
                 ip = rest[1]
                 gsub(/^[[:space:]]+|[[:space:]]+$/, "", ip)
-                if (ip ~ /^([0-9]{1,3}\.){3}[0-9]{1,3}$/) {
+                if (ip != "") {
                   count[ip]++
                 }
               }
@@ -391,8 +391,8 @@ jobs:
 
           echo ""
           echo "=== Current blocked IP history ==="
-          cat "$HISTORY_FILE"
-          echo "=== Total: $(wc -l < "$HISTORY_FILE") blocked IP(s) ==="
+          sudo cat "$HISTORY_FILE"
+          echo "=== Total: $(sudo wc -l < "$HISTORY_FILE") blocked IP(s) ==="
           EOF
 
           echo "✅ Nginx request-limit monitor completed on $SERVER_ID"
