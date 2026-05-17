@@ -291,6 +291,8 @@ jobs:
       - name: Block request-limited IPs from nginx log on ${{ matrix.server.id }}
         env:
           SSH_KEY_FILE: ~/.ssh/deploy_key
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           SERVER_ID="${{ matrix.server.id }}"
           SERVER_HOST="${{ matrix.server.host }}"
@@ -299,7 +301,7 @@ jobs:
 
           echo "🔍 Checking nginx request-limit logs on $SERVER_ID ($SERVER_HOST)"
 
-          ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
+          SSH_OUTPUT=$(ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
             -o ConnectTimeout=10 \
@@ -311,6 +313,8 @@ jobs:
           LOCK_FILE="/var/lock/firewall_blocked_ips.lock"
           TAIL_LINES=2000
           LIMIT_THRESHOLD=3
+          WHITELIST_IPS=("23.95.253.245" "172.245.97.215" "45.77.240.59")
+          NEW_BLOCKED_IPS=()
 
           echo "========================================"
           echo "Nginx Request-Limit Monitor"
@@ -369,19 +373,41 @@ jobs:
               continue
             fi
 
-            if sudo iptables -C INPUT -s "$IP" -j DROP 2>/dev/null; then
-              echo "INPUT DROP already exists for $IP"
-            else
-              sudo iptables -I INPUT -s "$IP" -j DROP && echo "INPUT DROP added for $IP"
+            if printf '%s\n' "${WHITELIST_IPS[@]}" | grep -qx "$IP"; then
+              echo "SKIP (whitelisted): $IP"
+              continue
             fi
 
-            if sudo iptables -C OUTPUT -d "$IP" -j DROP 2>/dev/null; then
-              echo "OUTPUT DROP already exists for $IP"
-            else
-              sudo iptables -I OUTPUT -d "$IP" -j DROP && echo "OUTPUT DROP added for $IP"
-            fi
+            LOCK_OUTPUT=$(sudo flock "$LOCK_FILE" bash -c '
+              set -euo pipefail
+              IP="$1"
+              HISTORY_FILE="$2"
+              NEW_BLOCKED=0
 
-            sudo flock "$LOCK_FILE" -c "grep -qxF '$IP' '$HISTORY_FILE' || echo '$IP' >> '$HISTORY_FILE'"
+              if ! grep -qxF "$IP" "$HISTORY_FILE"; then
+                echo "$IP" >> "$HISTORY_FILE"
+                NEW_BLOCKED=1
+              fi
+
+              if iptables -C INPUT -s "$IP" -j DROP 2>/dev/null; then
+                echo "INPUT DROP already exists for $IP"
+              else
+                iptables -A INPUT -s "$IP" -j DROP && echo "INPUT DROP added for $IP"
+              fi
+
+              if iptables -C OUTPUT -d "$IP" -j DROP 2>/dev/null; then
+                echo "OUTPUT DROP already exists for $IP"
+              else
+                iptables -A OUTPUT -d "$IP" -j DROP && echo "OUTPUT DROP added for $IP"
+              fi
+
+              echo "NEW_BLOCKED=$NEW_BLOCKED"
+            ' _ "$IP" "$HISTORY_FILE")
+            echo "$LOCK_OUTPUT"
+
+            if echo "$LOCK_OUTPUT" | grep -q '^NEW_BLOCKED=1$'; then
+              NEW_BLOCKED_IPS+=("$IP")
+            fi
           done
 
           if command -v netfilter-persistent &>/dev/null; then
@@ -398,7 +424,38 @@ jobs:
           echo "=== Current blocked IP history ==="
           sudo cat "$HISTORY_FILE"
           echo "=== Total: $(sudo wc -l < "$HISTORY_FILE") blocked IP(s) ==="
+
+          if [[ "${#NEW_BLOCKED_IPS[@]}" -gt 0 ]]; then
+            echo "NEW_BLOCKED_IPS=$(IFS=,; echo "${NEW_BLOCKED_IPS[*]}")"
+          else
+            echo "NEW_BLOCKED_IPS="
+          fi
           EOF
+          )
+
+          echo "$SSH_OUTPUT"
+
+          NEW_BLOCKED_LINE=$(echo "$SSH_OUTPUT" | grep '^NEW_BLOCKED_IPS=' | tail -n1 || true)
+          NEW_BLOCKED_LIST="${NEW_BLOCKED_LINE#NEW_BLOCKED_IPS=}"
+
+          if [[ -n "$NEW_BLOCKED_LIST" ]]; then
+            if [[ -n "${BOT_TOKEN:-}" && -n "${CHAT_ID:-}" ]]; then
+              RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+              MSG=$(printf '%s\n%s\n%s\n%s' \
+                "🚫 Nginx Auto-Block Triggered" \
+                "Server: ${SERVER_ID}" \
+                "Blocked IPs: ${NEW_BLOCKED_LIST}" \
+                "Run: ${RUN_URL}")
+              curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+                -d "chat_id=${CHAT_ID}" \
+                --data-urlencode "text=${MSG}" >/dev/null
+              echo "✅ Telegram notification sent for new blocked IPs"
+            else
+              echo "⚠️ Telegram notification skipped: TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID is empty"
+            fi
+          else
+            echo "ℹ️ No newly blocked IPs, Telegram notification skipped"
+          fi
 
           echo "✅ Nginx request-limit monitor completed on $SERVER_ID"
 
