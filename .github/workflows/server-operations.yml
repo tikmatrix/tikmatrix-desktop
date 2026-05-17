@@ -308,6 +308,7 @@ jobs:
 
           LOG_FILE="/var/log/nginx/user.tikmatrix.com.error.log"
           HISTORY_FILE="/etc/firewall_blocked_ips.txt"
+          LOCK_FILE="/var/lock/firewall_blocked_ips.lock"
           TAIL_LINES=2000
           LIMIT_THRESHOLD=3
 
@@ -356,6 +357,8 @@ jobs:
 
           sudo touch "$HISTORY_FILE"
           sudo chmod 644 "$HISTORY_FILE"
+          sudo touch "$LOCK_FILE"
+          sudo chmod 644 "$LOCK_FILE"
 
           echo "🚫 IPs exceeding threshold:"
           printf ' - %s\n' "${BLOCK_IPS[@]}"
@@ -378,7 +381,7 @@ jobs:
               sudo iptables -I OUTPUT -d "$IP" -j DROP && echo "OUTPUT DROP added for $IP"
             fi
 
-            sudo flock "$HISTORY_FILE" -c "grep -qxF '$IP' '$HISTORY_FILE' || echo '$IP' >> '$HISTORY_FILE'"
+            sudo flock "$LOCK_FILE" -c "grep -qxF '$IP' '$HISTORY_FILE' || echo '$IP' >> '$HISTORY_FILE'"
           done
 
           if command -v netfilter-persistent &>/dev/null; then
@@ -387,6 +390,8 @@ jobs:
             sudo mkdir -p /etc/iptables
             sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null
             echo "iptables rules saved to /etc/iptables/rules.v4"
+          else
+            echo "⚠️ WARNING: netfilter-persistent and iptables-save are unavailable; rules may not persist after reboot"
           fi
 
           echo ""
