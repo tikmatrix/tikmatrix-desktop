@@ -220,6 +220,8 @@ jobs:
         env:
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
+          set -euo pipefail
+
           SERVER_ID="${{ matrix.server.id }}"
           SERVER_HOST="${{ matrix.server.host }}"
           SERVER_PORT="${{ matrix.server.port }}"
@@ -313,6 +315,8 @@ jobs:
           LOCK_FILE="/var/lock/firewall_blocked_ips.lock"
           TAIL_LINES=2000
           LIMIT_THRESHOLD=3
+          # Trusted source IPs that must never be auto-blocked by nginx rate-limit detection.
+          # 23.95.253.245 / 172.245.97.215 / 45.77.240.59 are internal trusted infrastructure IPs.
           WHITELIST_IPS=("23.95.253.245" "172.245.97.215" "45.77.240.59")
           NEW_BLOCKED_IPS=()
 
@@ -373,39 +377,65 @@ jobs:
               continue
             fi
 
-            if printf '%s\n' "${WHITELIST_IPS[@]}" | grep -qx "$IP"; then
+            IS_WHITELISTED=0
+            for WHITELISTED_IP in "${WHITELIST_IPS[@]}"; do
+              if [[ "$IP" == "$WHITELISTED_IP" ]]; then
+                IS_WHITELISTED=1
+                break
+              fi
+            done
+            if [[ "$IS_WHITELISTED" -eq 1 ]]; then
               echo "SKIP (whitelisted): $IP"
               continue
             fi
 
-            LOCK_OUTPUT=$(sudo flock "$LOCK_FILE" bash -c '
+            if ! LOCK_OUTPUT=$(sudo flock "$LOCK_FILE" bash -c '
               set -euo pipefail
               IP="$1"
               HISTORY_FILE="$2"
               NEW_BLOCKED=0
-
-              if ! grep -qxF "$IP" "$HISTORY_FILE"; then
-                echo "$IP" >> "$HISTORY_FILE"
-                NEW_BLOCKED=1
-              fi
+              INPUT_READY=0
+              OUTPUT_READY=0
 
               if iptables -C INPUT -s "$IP" -j DROP 2>/dev/null; then
                 echo "INPUT DROP already exists for $IP"
+                INPUT_READY=1
               else
-                iptables -A INPUT -s "$IP" -j DROP && echo "INPUT DROP added for $IP"
+                if iptables -I INPUT -s "$IP" -j DROP; then
+                  echo "INPUT DROP added for $IP"
+                  INPUT_READY=1
+                else
+                  echo "WARNING: failed to add INPUT DROP for $IP"
+                fi
               fi
 
               if iptables -C OUTPUT -d "$IP" -j DROP 2>/dev/null; then
                 echo "OUTPUT DROP already exists for $IP"
+                OUTPUT_READY=1
               else
-                iptables -A OUTPUT -d "$IP" -j DROP && echo "OUTPUT DROP added for $IP"
+                if iptables -I OUTPUT -d "$IP" -j DROP; then
+                  echo "OUTPUT DROP added for $IP"
+                  OUTPUT_READY=1
+                else
+                  echo "WARNING: failed to add OUTPUT DROP for $IP"
+                fi
+              fi
+
+              if [[ "$INPUT_READY" -eq 1 && "$OUTPUT_READY" -eq 1 ]]; then
+                if ! grep -qxF "$IP" "$HISTORY_FILE"; then
+                  echo "$IP" >> "$HISTORY_FILE"
+                  NEW_BLOCKED=1
+                fi
               fi
 
               echo "NEW_BLOCKED=$NEW_BLOCKED"
-            ' _ "$IP" "$HISTORY_FILE")
+            ' _ "$IP" "$HISTORY_FILE"); then
+              echo "WARNING: failed to apply lock-protected block operation for $IP"
+              continue
+            fi
             echo "$LOCK_OUTPUT"
 
-            if echo "$LOCK_OUTPUT" | grep -q '^NEW_BLOCKED=1$'; then
+            if echo "$LOCK_OUTPUT" | grep -m1 -q '^NEW_BLOCKED=1$'; then
               NEW_BLOCKED_IPS+=("$IP")
             fi
           done
@@ -426,17 +456,17 @@ jobs:
           echo "=== Total: $(sudo wc -l < "$HISTORY_FILE") blocked IP(s) ==="
 
           if [[ "${#NEW_BLOCKED_IPS[@]}" -gt 0 ]]; then
-            echo "NEW_BLOCKED_IPS=$(IFS=,; echo "${NEW_BLOCKED_IPS[*]}")"
+            echo "NOTIFICATION_NEW_BLOCKED_IPS=$(IFS=,; echo "${NEW_BLOCKED_IPS[*]}")"
           else
-            echo "NEW_BLOCKED_IPS="
+            echo "NOTIFICATION_NEW_BLOCKED_IPS="
           fi
           EOF
           )
 
           echo "$SSH_OUTPUT"
 
-          NEW_BLOCKED_LINE=$(echo "$SSH_OUTPUT" | grep '^NEW_BLOCKED_IPS=' | tail -n1 || true)
-          NEW_BLOCKED_LIST="${NEW_BLOCKED_LINE#NEW_BLOCKED_IPS=}"
+          NEW_BLOCKED_LINE=$(echo "$SSH_OUTPUT" | grep -m1 '^NOTIFICATION_NEW_BLOCKED_IPS=' || true)
+          NEW_BLOCKED_LIST="${NEW_BLOCKED_LINE#NOTIFICATION_NEW_BLOCKED_IPS=}"
 
           if [[ -n "$NEW_BLOCKED_LIST" ]]; then
             if [[ -n "${BOT_TOKEN:-}" && -n "${CHAT_ID:-}" ]]; then
@@ -446,10 +476,13 @@ jobs:
                 "Server: ${SERVER_ID}" \
                 "Blocked IPs: ${NEW_BLOCKED_LIST}" \
                 "Run: ${RUN_URL}")
-              curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+              if curl -s --connect-timeout 10 --max-time 20 -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
                 -d "chat_id=${CHAT_ID}" \
-                --data-urlencode "text=${MSG}" >/dev/null
-              echo "✅ Telegram notification sent for new blocked IPs"
+                --data-urlencode "text=${MSG}" >/dev/null; then
+                echo "✅ Telegram notification sent for new blocked IPs"
+              else
+                echo "⚠️ Telegram notification request failed"
+              fi
             else
               echo "⚠️ Telegram notification skipped: TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID is empty"
             fi
