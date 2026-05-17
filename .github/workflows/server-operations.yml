@@ -288,6 +288,115 @@ jobs:
           
           echo "✅ Service health check completed on $SERVER_ID"
 
+      - name: Block request-limited IPs from nginx log on ${{ matrix.server.id }}
+        env:
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          SERVER_ID="${{ matrix.server.id }}"
+          SERVER_HOST="${{ matrix.server.host }}"
+          SERVER_PORT="${{ matrix.server.port }}"
+          SERVER_USER="${{ matrix.server.user }}"
+
+          echo "🔍 Checking nginx request-limit logs on $SERVER_ID ($SERVER_HOST)"
+
+          ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            -o ConnectTimeout=10 \
+            "$SERVER_USER@$SERVER_HOST" bash -s << 'EOF'
+          set -euo pipefail
+
+          LOG_FILE="/var/log/nginx/user.tikmatrix.com.error.log"
+          HISTORY_FILE="/etc/firewall_blocked_ips.txt"
+          TAIL_LINES=2000
+          LIMIT_THRESHOLD=3
+
+          echo "========================================"
+          echo "Nginx Request-Limit Monitor"
+          echo "Server: $(hostname)"
+          echo "Time: $(date)"
+          echo "Log: $LOG_FILE (tail -n $TAIL_LINES)"
+          echo "========================================"
+
+          if ! sudo test -f "$LOG_FILE"; then
+            echo "ℹ️ Log file not found, skipping: $LOG_FILE"
+            exit 0
+          fi
+
+          TMP_LOG=$(mktemp)
+          sudo tail -n "$TAIL_LINES" "$LOG_FILE" > "$TMP_LOG"
+
+          mapfile -t BLOCK_IPS < <(
+            awk -v threshold="$LIMIT_THRESHOLD" '
+              /limiting requests/ && /client: / {
+                split($0, client_part, "client: ")
+                split(client_part[2], rest, ",")
+                ip = rest[1]
+                gsub(/^[[:space:]]+|[[:space:]]+$/, "", ip)
+                if (ip ~ /^([0-9]{1,3}\.){3}[0-9]{1,3}$/) {
+                  count[ip]++
+                }
+              }
+              END {
+                for (ip in count) {
+                  if (count[ip] > threshold) {
+                    print ip
+                  }
+                }
+              }
+            ' "$TMP_LOG" | sort -u
+          )
+
+          rm -f "$TMP_LOG"
+
+          if [[ "${#BLOCK_IPS[@]}" -eq 0 ]]; then
+            echo "✅ No IP exceeded request-limit threshold (>$LIMIT_THRESHOLD) in latest $TAIL_LINES lines"
+            exit 0
+          fi
+
+          sudo touch "$HISTORY_FILE"
+          sudo chmod 644 "$HISTORY_FILE"
+
+          echo "🚫 IPs exceeding threshold:"
+          printf ' - %s\n' "${BLOCK_IPS[@]}"
+
+          for IP in "${BLOCK_IPS[@]}"; do
+            if ! echo "$IP" | grep -qE '^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$'; then
+              echo "SKIP (invalid IPv4): $IP"
+              continue
+            fi
+
+            if sudo iptables -C INPUT -s "$IP" -j DROP 2>/dev/null; then
+              echo "INPUT DROP already exists for $IP"
+            else
+              sudo iptables -I INPUT -s "$IP" -j DROP && echo "INPUT DROP added for $IP"
+            fi
+
+            if sudo iptables -C OUTPUT -d "$IP" -j DROP 2>/dev/null; then
+              echo "OUTPUT DROP already exists for $IP"
+            else
+              sudo iptables -I OUTPUT -d "$IP" -j DROP && echo "OUTPUT DROP added for $IP"
+            fi
+
+            sudo flock "$HISTORY_FILE" -c "grep -qxF '$IP' '$HISTORY_FILE' || echo '$IP' >> '$HISTORY_FILE'"
+          done
+
+          if command -v netfilter-persistent &>/dev/null; then
+            sudo netfilter-persistent save
+          elif command -v iptables-save &>/dev/null; then
+            sudo mkdir -p /etc/iptables
+            sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null
+            echo "iptables rules saved to /etc/iptables/rules.v4"
+          fi
+
+          echo ""
+          echo "=== Current blocked IP history ==="
+          cat "$HISTORY_FILE"
+          echo "=== Total: $(wc -l < "$HISTORY_FILE") blocked IP(s) ==="
+          EOF
+
+          echo "✅ Nginx request-limit monitor completed on $SERVER_ID"
+
       - name: Cleanup SSH Key
         if: always()
         run: rm -f ~/.ssh/deploy_key
