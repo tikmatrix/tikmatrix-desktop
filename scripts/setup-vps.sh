@@ -9,7 +9,9 @@
 # - See docs/vps-management.md for the full automation workflow
 # =============================================================================
 
-set -e  # Exit on error
+# Error handling: trap errors but don't exit on non-critical failures
+set -uo pipefail
+trap 'log_error "Unexpected error on line $LINENO. Check $LOG_FILE for details."' ERR
 
 # =============================================================================
 # Configuration Variables (Will be set interactively)
@@ -48,6 +50,44 @@ log_warning() {
 log_error() {
     echo -e "${RED}[ERROR]${NC} $1"
     echo "[ERROR] $(date '+%Y-%m-%d %H:%M:%S') $1" >> "$LOG_FILE"
+}
+
+# Safely install packages one by one — skip missing ones instead of failing
+apt_install_safe() {
+    local failed=()
+    for pkg in "$@"; do
+        if apt install -y "$pkg" 2>/dev/null; then
+            log_info "Installed: $pkg"
+        else
+            log_warning "Skipped (unavailable or failed): $pkg"
+            failed+=("$pkg")
+        fi
+    done
+    [[ ${#failed[@]} -gt 0 ]] && log_warning "Skipped ${#failed[@]} package(s): ${failed[*]}"
+    return 0  # never fail the caller
+}
+
+# Retry apt operations on transient failures (network issues, locks)
+apt_retry() {
+    local max_attempts=3
+    local attempt=1
+    local cmd="$1"
+    shift
+    while [[ $attempt -le $max_attempts ]]; do
+        if "$cmd" "$@"; then
+            return 0
+        fi
+        log_warning "apt command failed (attempt $attempt/$max_attempts), retrying in 5s..."
+        sleep 5
+        ((attempt++))
+    done
+    log_error "apt command failed after $max_attempts attempts: $cmd $*"
+    return 1
+}
+
+# Check if a command exists on the system
+command_exists() {
+    command -v "$1" &>/dev/null
 }
 
 print_banner() {
@@ -138,25 +178,25 @@ interactive_config() {
 # =============================================================================
 setup_system() {
     log_info "Updating system packages..."
-    apt update && apt upgrade -y
-    
+    apt_retry apt update || {
+        log_error "apt update failed. Check network and try again."
+        exit 1
+    }
+    apt upgrade -y || log_warning "apt upgrade had non-critical failures, continuing..."
+
     log_info "Installing essential packages..."
-    apt install -y \
-        curl \
-        wget \
-        git \
-        vim \
-        htop \
-        unzip \
-        software-properties-common \
-        ca-certificates \
-        gnupg \
-        lsb-release \
-        ufw \
-        fail2ban \
-        acl \
-        rsync
-    
+    # Core packages grouped by criticality — each installed independently
+    # Critical: script cannot function without these
+    local critical=(curl wget ca-certificates gnupg)
+    # Essential but non-fatal if some are missing on newer distros
+    local essential=(git vim htop unzip lsb-release ufw fail2ban rsync)
+    # Optional: may not exist on all Ubuntu versions
+    local optional=(acl software-properties-common)
+
+    apt_install_safe "${critical[@]}"
+    apt_install_safe "${essential[@]}"
+    apt_install_safe "${optional[@]}"
+
     log_success "System packages updated and essentials installed."
 }
 
@@ -164,25 +204,29 @@ setup_system() {
 # Firewall Configuration
 # =============================================================================
 setup_firewall() {
+    if ! command_exists ufw; then
+        log_error "UFW not installed, skipping firewall configuration."
+        return 1
+    fi
     log_info "Configuring UFW firewall..."
-    
-    # Reset UFW to default
-    ufw --force reset
-    
+
+    # Reset UFW to default (ignore errors if not yet configured)
+    ufw --force reset 2>/dev/null || true
+
     # Default policies
     ufw default deny incoming
     ufw default allow outgoing
-    
+
     # Allow SSH
     ufw allow $SSH_PORT/tcp
-    
+
     # Allow HTTP and HTTPS
     ufw allow 80/tcp
     ufw allow 443/tcp
-    
+
     # Enable UFW
     ufw --force enable
-    
+
     log_success "Firewall configured and enabled."
 }
 
@@ -190,8 +234,12 @@ setup_firewall() {
 # Fail2Ban Configuration
 # =============================================================================
 setup_fail2ban() {
+    if ! command_exists fail2ban-client; then
+        log_warning "Fail2Ban not installed, skipping configuration."
+        return 0
+    fi
     log_info "Configuring Fail2Ban..."
-    
+
     cat > /etc/fail2ban/jail.local << EOF
 [DEFAULT]
 bantime = 3600
@@ -242,8 +290,13 @@ setup_deploy_user() {
         log_warning "User $DEPLOY_USER already exists, updating configuration."
     fi
     
-    # Add deploy user to www-data group
-    usermod -aG www-data "$DEPLOY_USER"
+    # Add deploy user to www-data group (group may not exist yet if nginx isn't installed)
+    if getent group www-data &>/dev/null; then
+        usermod -aG www-data "$DEPLOY_USER" 2>/dev/null || true
+        log_info "Added $DEPLOY_USER to www-data group."
+    else
+        log_info "www-data group not found, skipping (will be created when nginx is installed)."
+    fi
     
     # Setup SSH directory
     sudo mkdir -p /home/$DEPLOY_USER/.ssh
@@ -281,7 +334,10 @@ EOF
 # =============================================================================
 setup_nginx() {
     log_info "Installing Nginx..."
-    apt install nginx -y
+    if ! apt install nginx -y; then
+        log_error "Failed to install Nginx."
+        return 1
+    fi
 
     # Remove default nginx site
     rm -f /etc/nginx/sites-enabled/default 2>/dev/null || true
@@ -292,11 +348,14 @@ setup_nginx() {
     sed -i '/http {/a\    server_tokens off;' /etc/nginx/nginx.conf
 
     # Test and start nginx
-    nginx -t
-    systemctl enable nginx
-    systemctl restart nginx
-
-    log_success "Nginx installed and started."
+    if nginx -t; then
+        systemctl enable nginx
+        systemctl restart nginx
+        log_success "Nginx installed and started."
+    else
+        log_error "Nginx configuration test failed. Check /etc/nginx/nginx.conf"
+        return 1
+    fi
 }
 
 # =============================================================================
@@ -304,12 +363,18 @@ setup_nginx() {
 # =============================================================================
 setup_ssl() {
     log_info "Installing Certbot and SSL dependencies..."
-    apt install -y certbot python3-certbot-nginx python3-certbot-dns-route53 || {
-        log_error "Failed to install certbot packages."
-        return 1
-    }
-    
-    log_success "Certbot installed. Run 'certbot --help' or see https://certbot.eff.org for certificate generation options."
+    if apt install -y certbot python3-certbot-nginx 2>/dev/null; then
+        log_success "Certbot installed."
+    else
+        log_warning "Certbot not available on this system. Install manually: https://certbot.eff.org"
+        return 0
+    fi
+
+    # Optional: Route53 plugin may not be available on all distros
+    apt install -y python3-certbot-dns-route53 2>/dev/null || \
+        log_info "Route53 DNS plugin not available (only needed for AWS DNS challenges)"
+
+    log_success "SSL tools ready. Run 'certbot --help' or see https://certbot.eff.org for certificate generation."
 }
 
 # =============================================================================
@@ -352,13 +417,22 @@ EOF
 # =============================================================================
 setup_optimization() {
     log_info "Applying system optimizations..."
-    
-    # Optimize nginx worker processes
-    CORES=$(nproc)
-    sed -i "s/worker_processes auto;/worker_processes $CORES;/" /etc/nginx/nginx.conf 2>/dev/null || true
-    
+
+    # Nginx optimizations — only apply if nginx is installed
+    if command_exists nginx; then
+        CORES=$(nproc)
+        sed -i "s/worker_processes auto;/worker_processes $CORES;/" /etc/nginx/nginx.conf 2>/dev/null || true
+
+        if ! grep -q "worker_rlimit_nofile" /etc/nginx/nginx.conf 2>/dev/null; then
+            sed -i '/worker_processes/a worker_rlimit_nofile 65535;' /etc/nginx/nginx.conf 2>/dev/null || true
+        fi
+        log_info "Nginx worker optimizations applied."
+    else
+        log_info "Nginx not installed, skipping nginx optimizations."
+    fi
+
     # Increase file descriptors limit
-    if ! grep -q "# Nginx optimization" /etc/security/limits.conf; then
+    if ! grep -q "# Nginx optimization" /etc/security/limits.conf 2>/dev/null; then
         cat >> /etc/security/limits.conf << 'EOF'
 
 # Nginx optimization
@@ -368,12 +442,7 @@ deploy soft nofile 65535
 deploy hard nofile 65535
 EOF
     fi
-    
-    # Optimize nginx for high performance
-    if ! grep -q "worker_rlimit_nofile" /etc/nginx/nginx.conf; then
-        sed -i '/worker_processes/a worker_rlimit_nofile 65535;' /etc/nginx/nginx.conf
-    fi
-    
+
     log_success "System optimizations applied."
 }
 
@@ -440,19 +509,34 @@ main() {
     
     log_info "Starting TikMatrix VPS setup..."
     
-    # Execute all setup steps
-    setup_system
-    setup_deploy_user
-    setup_firewall
-    setup_fail2ban
-    setup_nginx
-    setup_optimization
-    setup_security
-    setup_ssl
-    
-    # Final nginx restart
-    systemctl restart nginx
-    
+    # Execute all setup steps — non-critical failures are logged but don't block
+    local failed_steps=()
+
+    setup_system || failed_steps+=("setup_system")
+    setup_deploy_user || failed_steps+=("setup_deploy_user")
+    setup_firewall || failed_steps+=("setup_firewall")
+    setup_fail2ban || failed_steps+=("setup_fail2ban")
+    setup_nginx || failed_steps+=("setup_nginx")
+    setup_optimization || failed_steps+=("setup_optimization")
+    setup_security || failed_steps+=("setup_security")
+    setup_ssl || failed_steps+=("setup_ssl")
+
+    # Final nginx restart (only if installed)
+    if command_exists nginx; then
+        systemctl restart nginx 2>/dev/null || true
+    fi
+
+    # Report any failed steps
+    if [[ ${#failed_steps[@]} -gt 0 ]]; then
+        echo ""
+        echo -e "${YELLOW}⚠️  Some steps encountered issues (details above):${NC}"
+        for step in "${failed_steps[@]}"; do
+            echo "  - $step"
+        done
+        echo ""
+        log_warning "Failed steps: ${failed_steps[*]}"
+    fi
+
     # Print summary
     print_summary
 }
