@@ -14,10 +14,6 @@ set -e  # Exit on error
 # =============================================================================
 # Configuration Variables (Will be set interactively)
 # =============================================================================
-DOMAIN=""
-WWW_DOMAIN=""
-WEB_ROOT=""
-NGINX_CONF=""
 DEPLOY_USER="deploy"
 LOG_FILE="/var/log/tikmatrix-setup.log"
 SSH_PORT="22"
@@ -91,20 +87,6 @@ check_os() {
     log_info "Detected OS: $PRETTY_NAME"
 }
 
-# Check if domain is a root domain (e.g., example.com vs sub.example.com)
-is_root_domain() {
-    local domain="$1"
-    # Count the number of dots in the domain
-    local dot_count=$(echo "$domain" | tr -cd '.' | wc -c)
-    # Root domain has exactly 1 dot (e.g., example.com)
-    # Subdomain has 2+ dots (e.g., sub.example.com, api.example.com)
-    if [[ $dot_count -eq 1 ]]; then
-        return 0  # true, is root domain
-    else
-        return 1  # false, is subdomain
-    fi
-}
-
 # =============================================================================
 # Interactive Configuration
 # =============================================================================
@@ -114,79 +96,11 @@ interactive_config() {
     echo -e "${CYAN}                    Configuration Setup                         ${NC}"
     echo -e "${CYAN}═══════════════════════════════════════════════════════════════${NC}"
     echo ""
-    
-    # Site selection
-    echo -e "${YELLOW}Select site to deploy:${NC}"
-    echo "  1) tikmatrix.com (TikMatrix)"
-    echo "  2) igmatrix.com (IgMatrix)"
-    echo "  3) ytmatrix.com (YTMatrix)"
-    echo "  4) tikzenx.com (TikZenX)"
-    echo "  5) Custom domain"
-    echo ""
-    
-    while true; do
-        read -p "Enter choice [1-5]: " site_choice
-        case $site_choice in
-            1)
-                DOMAIN="tikmatrix.com"
-                break
-                ;;
-            2)
-                DOMAIN="igmatrix.com"
-                break
-                ;;
-            3)
-                DOMAIN="ytmatrix.com"
-                break
-                ;;
-            4)
-                DOMAIN="tikzenx.com"
-                break
-                ;;
-            5)
-                read -p "Enter your domain (e.g., example.com): " DOMAIN
-                if [[ -z "$DOMAIN" ]]; then
-                    log_error "Domain cannot be empty"
-                    continue
-                fi
-                break
-                ;;
-            *)
-                echo "Invalid choice. Please enter 1-5."
-                ;;
-        esac
-    done
-    
-    # Only add www domain if the domain is a root domain (e.g., example.com)
-    if is_root_domain "$DOMAIN"; then
-        WWW_DOMAIN="www.$DOMAIN"
-    else
-        WWW_DOMAIN=""
-        log_info "Subdomain detected, skipping www domain"
-    fi
-    WEB_ROOT="/var/www/$DOMAIN"
-    NGINX_CONF="/etc/nginx/conf.d/$DOMAIN.conf"
-    
-    echo ""
-    log_info "Domain: $DOMAIN"
-    log_info "Web root: $WEB_ROOT"
-    echo ""
-    
-    # Check if site already exists
-    if [[ -f "$NGINX_CONF" ]]; then
-        echo -e "${YELLOW}⚠️  Warning: Site $DOMAIN already configured!${NC}"
-        echo "  Nginx config: $NGINX_CONF"
-        read -p "Overwrite existing configuration? (y/n) [default: n]: " overwrite
-        if [[ ! "$overwrite" =~ ^[Yy]$ ]]; then
-            log_info "Setup cancelled. Site already exists."
-            exit 0
-        fi
-    fi
-    
+
     # SSH Port
     read -p "SSH port [default: 22]: " input_port
     SSH_PORT="${input_port:-22}"
-    
+
     # GitHub Deploy Key
     echo ""
     echo -e "${YELLOW}GitHub Actions SSH Public Key:${NC}"
@@ -196,18 +110,13 @@ interactive_config() {
     echo "  Leave empty to skip (you can add it later)."
     echo ""
     read -p "GitHub deploy public key: " GITHUB_PUBKEY
-    
+
     # Confirmation
     echo ""
     echo -e "${CYAN}═══════════════════════════════════════════════════════════════${NC}"
     echo -e "${CYAN}                    Configuration Summary                       ${NC}"
     echo -e "${CYAN}═══════════════════════════════════════════════════════════════${NC}"
     echo ""
-    echo "  Domain:          $DOMAIN"
-    if [[ -n "$WWW_DOMAIN" ]]; then
-        echo "  WWW Domain:      $WWW_DOMAIN"
-    fi
-    echo "  Web Root:        $WEB_ROOT"
     echo "  Deploy User:     $DEPLOY_USER"
     echo "  SSH Port:        $SSH_PORT"
     if [[ -n "$GITHUB_PUBKEY" ]]; then
@@ -216,7 +125,7 @@ interactive_config() {
         echo "  GitHub Key:      Not provided (add later)"
     fi
     echo ""
-    
+
     read -p "Proceed with these settings? (y/n): " confirm
     if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
         log_info "Setup cancelled by user."
@@ -373,161 +282,21 @@ EOF
 setup_nginx() {
     log_info "Installing Nginx..."
     apt install nginx -y
-    
-    log_info "Configuring Nginx for $DOMAIN..."
-    
-    # Create web root directory
-    sudo mkdir -p "$WEB_ROOT"
-    
-    # Create placeholder index.html
-    cat > "$WEB_ROOT/index.html" << EOF
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$DOMAIN - Coming Soon</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        .container { text-align: center; }
-        h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-        p { font-size: 1.2rem; opacity: 0.9; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>$DOMAIN</h1>
-        <p>Site is being deployed. Check back soon!</p>
-    </div>
-</body>
-</html>
-EOF
-    
-    # Set ownership - deploy user owns the files, www-data group for reading
-    chown -R $DEPLOY_USER:www-data "$WEB_ROOT"
-    chmod -R 755 "$WEB_ROOT"
-    
-    # Set ACL for deploy user
-    setfacl -R -m u:$DEPLOY_USER:rwx "$WEB_ROOT" 2>/dev/null || true
-    setfacl -R -d -m u:$DEPLOY_USER:rwx "$WEB_ROOT" 2>/dev/null || true
-    
-    # Build server_name with optional www domain
-    local SERVER_NAMES="$DOMAIN"
-    if [[ -n "$WWW_DOMAIN" ]]; then
-        SERVER_NAMES="$DOMAIN $WWW_DOMAIN"
-    fi
-    
-    # Create Nginx configuration
-    cat > "$NGINX_CONF" << EOF
-# $DOMAIN Nginx Configuration
-# Rate limiting zone
-limit_req_zone \$binary_remote_addr zone=${DOMAIN//./_}_limit:10m rate=10r/s;
 
-server {
-    listen 80;
-    listen [::]:80;
-    server_name $SERVER_NAMES;
-
-    root $WEB_ROOT;
-    index index.html;
-
-    access_log /var/log/nginx/${DOMAIN}.access.log;
-    error_log  /var/log/nginx/${DOMAIN}.error.log warn;
-
-    # Performance tuning
-    sendfile        on;
-    tcp_nopush      on;
-    tcp_nodelay     on;
-    keepalive_timeout 65;
-    types_hash_max_size 2048;
-
-    include /etc/nginx/mime.types;
-    default_type application/octet-stream;
-
-    # Security - hide sensitive files
-    location ~ /\.(?!well-known) {
-        deny all;
-        access_log off;
-        log_not_found off;
-    }
-
-    # Block common attack patterns
-    location ~* (\.php|\.asp|\.aspx|\.jsp|\.cgi)\$ {
-        deny all;
-        access_log off;
-        log_not_found off;
-    }
-
-    # Main location with rate limiting
-    # Docusaurus generates static HTML files, so we need to try .html extension
-    location / {
-        limit_req zone=${DOMAIN//./_}_limit burst=20 nodelay;
-        try_files \$uri \$uri.html \$uri/ /index.html;
-        
-        add_header Cache-Control "no-cache, must-revalidate, max-age=0";
-        add_header X-Content-Type-Options nosniff always;
-        add_header X-Frame-Options "SAMEORIGIN" always;
-        add_header X-XSS-Protection "1; mode=block" always;
-        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
-        add_header Permissions-Policy "geolocation=(), microphone=(), camera=()" always;
-    }
-
-    # Static assets with long cache
-    location ~* \.(?:css|js|json|map|xml|svg|png|jpe?g|gif|ico|webp|avif|ttf|woff2?|eot)\$ {
-        try_files \$uri =404;
-        access_log off;
-        expires 365d;
-        add_header Cache-Control "public, max-age=31536000, immutable";
-        add_header Pragma public;
-    }
-
-    location = /robots.txt { try_files \$uri =404; access_log off; }
-    location = /sitemap.xml { try_files \$uri =404; access_log off; }
-    location = /favicon.ico { try_files \$uri =404; access_log off; }
-
-    autoindex off;
-    error_page 404 /index.html;
-    error_page 500 502 503 504 /50x.html;
-    location = /50x.html { root /usr/share/nginx/html; }
-
-    # Gzip compression
-    gzip on;
-    gzip_vary on;
-    gzip_proxied any;
-    gzip_comp_level 6;
-    gzip_min_length 256;
-    gzip_types
-        text/plain text/css text/xml text/javascript
-        application/json application/javascript application/x-javascript
-        application/xml application/xml+rss
-        application/vnd.ms-fontobject application/x-font-ttf
-        font/opentype image/svg+xml image/x-icon;
-}
-EOF
-    
     # Remove default nginx site
     rm -f /etc/nginx/sites-enabled/default 2>/dev/null || true
-    
+
     # Hide nginx version globally
     sed -i 's/# server_tokens off;/server_tokens off;/' /etc/nginx/nginx.conf 2>/dev/null || \
     grep -q "server_tokens off" /etc/nginx/nginx.conf || \
     sed -i '/http {/a\    server_tokens off;' /etc/nginx/nginx.conf
-    
+
     # Test and start nginx
     nginx -t
     systemctl enable nginx
     systemctl restart nginx
-    
-    log_success "Nginx installed and configured."
+
+    log_success "Nginx installed and started."
 }
 
 # =============================================================================
@@ -541,83 +310,6 @@ setup_ssl() {
     }
     
     log_success "Certbot installed. Run 'certbot --help' or see https://certbot.eff.org for certificate generation options."
-}
-
-# =============================================================================
-# Create Deploy Script
-# =============================================================================
-setup_deploy_script() {
-    log_info "Creating deployment script..."
-    
-    cat > /home/$DEPLOY_USER/deploy.sh << 'DEPLOY_SCRIPT'
-#!/bin/bash
-# Deployment script for GitHub Actions
-# Usage: ./deploy.sh <archive_path> <target_dir>
-
-set -e
-
-ARCHIVE="$1"
-TARGET_DIR="$2"
-
-if [[ -z "$ARCHIVE" || -z "$TARGET_DIR" ]]; then
-    echo "Usage: $0 <archive_path> <target_dir>"
-    echo "Example: $0 /tmp/build-tikmatrix.tar.gz /var/www.tikmatrix.com"
-    exit 1
-fi
-
-if [[ ! -f "$ARCHIVE" ]]; then
-    echo "Error: Archive not found: $ARCHIVE"
-    exit 1
-fi
-
-echo "🚀 Deploying $ARCHIVE -> $TARGET_DIR"
-
-# Create target directory if not exists
-sudo mkdir -p "$TARGET_DIR"
-
-# Backup current deployment (keep last 3)
-BACKUP_DIR="/var/backups/www"
-sudo mkdir -p "$BACKUP_DIR"
-BACKUP_NAME="$(basename $TARGET_DIR)-$(date +%Y%m%d_%H%M%S).tar.gz"
-
-if [[ -d "$TARGET_DIR" && "$(ls -A $TARGET_DIR 2>/dev/null)" ]]; then
-    echo "📦 Backing up current deployment..."
-    tar -czf "$BACKUP_DIR/$BACKUP_NAME" -C "$TARGET_DIR" . 2>/dev/null || true
-    
-    # Keep only last 3 backups
-    ls -t "$BACKUP_DIR/$(basename $TARGET_DIR)-"* 2>/dev/null | tail -n +4 | xargs -r rm -f
-fi
-
-# Clear target directory
-echo "🗑️ Clearing target directory..."
-rm -rf "$TARGET_DIR"/*
-
-# Extract new deployment
-echo "📦 Extracting new deployment..."
-tar -xzf "$ARCHIVE" -C "$TARGET_DIR"
-
-# Set permissions (deploy owns, www-data group can read)
-echo "🔐 Setting permissions..."
-sudo chown -R $DEPLOY_USER:www-data "$TARGET_DIR"
-sudo chmod -R 775 "$TARGET_DIR"
-
-# Cleanup
-echo "🧹 Cleaning up..."
-rm -f "$ARCHIVE"
-
-echo "✅ Deployment completed successfully!"
-echo "   Target: $TARGET_DIR"
-echo "   Backup: $BACKUP_DIR/$BACKUP_NAME"
-DEPLOY_SCRIPT
-    
-    chmod +x /home/$DEPLOY_USER/deploy.sh
-    chown $DEPLOY_USER:$DEPLOY_USER /home/$DEPLOY_USER/deploy.sh
-    
-    # Create backup directory
-    sudo mkdir -p /var/backups/www
-    chown $DEPLOY_USER:$DEPLOY_USER /var/backups/www
-    
-    log_success "Deployment script created at /home/$DEPLOY_USER/deploy.sh"
 }
 
 # =============================================================================
@@ -691,16 +383,13 @@ EOF
 print_summary() {
     # Get server IP
     SERVER_IP=$(curl -s --connect-timeout 5 ifconfig.me 2>/dev/null || curl -s --connect-timeout 5 icanhazip.com 2>/dev/null || echo 'YOUR_SERVER_IP')
-    
+
     echo ""
     echo -e "${CYAN}═══════════════════════════════════════════════════════════════${NC}"
     echo -e "${GREEN}              TikMatrix VPS Setup Complete!                    ${NC}"
     echo -e "${CYAN}═══════════════════════════════════════════════════════════════${NC}"
     echo ""
     echo -e "${YELLOW}Configuration Summary:${NC}"
-    echo "  Domain:          $DOMAIN"
-    echo "  Web Root:        $WEB_ROOT"
-    echo "  Nginx Config:    $NGINX_CONF"
     echo "  Deploy User:     $DEPLOY_USER"
     echo "  SSH Port:        $SSH_PORT"
     echo "  Server IP:       $SERVER_IP"
@@ -723,12 +412,9 @@ print_summary() {
     echo "  Check Nginx:      systemctl status nginx"
     echo "  Test Config:      nginx -t"
     echo "  Reload Nginx:     systemctl reload nginx"
-    echo "  View Logs:        tail -f /var/log/nginx/${DOMAIN}.access.log"
+    echo "  View Logs:        tail -f /var/log/nginx/access.log"
     echo "  Check Firewall:   ufw status"
     echo "  Check Fail2Ban:   fail2ban-client status"
-    echo ""
-    echo -e "${YELLOW}Deploy Script:${NC}"
-    echo "  /home/$DEPLOY_USER/deploy.sh <archive> <target_dir>"
     echo ""
     echo "  Setup log: $LOG_FILE"
     echo ""
@@ -763,7 +449,6 @@ main() {
     setup_optimization
     setup_security
     setup_ssl
-    setup_deploy_script
     
     # Final nginx restart
     systemctl restart nginx
