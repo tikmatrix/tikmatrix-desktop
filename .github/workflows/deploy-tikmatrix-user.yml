@@ -106,6 +106,22 @@ jobs:
           else
             npx wrangler deploy dist/index.js --env production
           fi
+
+      # country-oracle 的访问密钥以 Worker secret 注入（幂等；每个账号都需设置）。
+      # 在仓库 Settings → Secrets 配置 COUNTRY_ORACLE_KEY，值 = oracle 服务器 .env 里的 ORACLE_KEY。
+      - name: Set COUNTRY_ORACLE_KEY secret on ${{ matrix.account_name }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets[matrix.token_secret] }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets[matrix.account_id_secret] }}
+          ENVIRONMENT: ${{ github.event.inputs.environment || 'production' }}
+          COUNTRY_ORACLE_KEY: ${{ secrets.COUNTRY_ORACLE_KEY }}
+        run: |
+          cd tikmatrix-user
+          if [ -z "$COUNTRY_ORACLE_KEY" ]; then
+            echo "::warning::COUNTRY_ORACLE_KEY 未配置，跳过（国家码功能将不可用）"
+            exit 0
+          fi
+          printf '%s' "$COUNTRY_ORACLE_KEY" | npx wrangler secret put COUNTRY_ORACLE_KEY --env "$ENVIRONMENT"
   notify:
     needs: [build, deploy]
     if: always()
