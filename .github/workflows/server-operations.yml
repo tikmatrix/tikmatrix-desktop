@@ -23,6 +23,7 @@ on:
           - push-files
           - manage-backup
           - block-ips
+          - unblock-ips
           - nginx-deploy-config
           - nginx-configure
           - run-script
@@ -113,6 +114,12 @@ on:
       # ── block-ips ─────────────────────────────────────────────────────────
       block_ips:
         description: "[block-ips] Comma-separated IPs/CIDRs (e.g. 1.2.3.4,10.0.0.0/8)"
+        required: false
+        type: string
+
+      # ── unblock-ips ───────────────────────────────────────────────────────
+      unblock_ips:
+        description: "[unblock-ips] Comma-separated IPs/CIDRs to unblock (e.g. 1.2.3.4,10.0.0.0/8)"
         required: false
         type: string
 
@@ -693,6 +700,116 @@ jobs:
         if: always()
         run: rm -f ~/.ssh/deploy_key
 
+  # ── Unblock IPs ───────────────────────────────────────────────────────────
+  unblock-ips:
+    needs: prepare
+    if: github.event.inputs.operation == 'unblock-ips'
+    runs-on: ubuntu-latest
+    permissions: {}
+    strategy:
+      matrix:
+        server: ${{ fromJson(needs.prepare.outputs.servers) }}
+      fail-fast: false
+    steps:
+      - name: Validate inputs
+        run: |
+          if [[ -z "${{ github.event.inputs.unblock_ips }}" ]]; then
+            echo "Error: unblock_ips is required for unblock-ips operation"
+            exit 1
+          fi
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Unblock IPs on ${{ matrix.server.id }}
+        env:
+          SSH_KEY_FILE: ~/.ssh/deploy_key
+        run: |
+          SERVER_ID="${{ matrix.server.id }}"
+          SERVER_HOST="${{ matrix.server.host }}"
+          SERVER_PORT="${{ matrix.server.port }}"
+          SERVER_USER="${{ matrix.server.user }}"
+          UNBLOCK_IPS="${{ github.event.inputs.unblock_ips }}"
+
+          echo "Connecting to $SERVER_ID ($SERVER_USER@$SERVER_HOST:$SERVER_PORT)"
+
+          # Write the remote script using a quoted heredoc so UNBLOCK_IPS is
+          # never expanded client-side; pass it as a positional argument instead.
+          cat > /tmp/unblock_ips_remote.sh << 'SCRIPT'
+          #!/bin/bash
+          set -euo pipefail
+
+          UNBLOCK_IPS="${1:-}"
+          HISTORY_FILE="/etc/firewall_blocked_ips.txt"
+
+          sudo touch "$HISTORY_FILE"
+          sudo chmod 644 "$HISTORY_FILE"
+
+          echo "=== Unblocking IPs on $(hostname) ==="
+          IFS=',' read -ra RAW_LIST <<< "$UNBLOCK_IPS"
+          for RAW_IP in "${RAW_LIST[@]}"; do
+            IP=$(echo "$RAW_IP" | tr -d ' ')
+            [[ -z "$IP" ]] && continue
+
+            # Validate IPv4 or IPv4 CIDR with octet range check (0-255, prefix 0-32)
+            if ! echo "$IP" | grep -qE '^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(/([0-9]|[12][0-9]|3[0-2]))?$'; then
+              echo "SKIP (invalid format): $IP"
+              continue
+            fi
+
+            echo "Unblocking: $IP"
+
+            # Remove INPUT DROP rule
+            if sudo iptables -C INPUT -s "$IP" -j DROP 2>/dev/null; then
+              sudo iptables -D INPUT -s "$IP" -j DROP && echo "  INPUT  DROP removed" || echo "  WARNING: failed to remove INPUT DROP rule"
+            else
+              echo "  INPUT  DROP rule not found (already removed)"
+            fi
+
+            # Remove OUTPUT DROP rule
+            if sudo iptables -C OUTPUT -d "$IP" -j DROP 2>/dev/null; then
+              sudo iptables -D OUTPUT -d "$IP" -j DROP && echo "  OUTPUT DROP removed" || echo "  WARNING: failed to remove OUTPUT DROP rule"
+            else
+              echo "  OUTPUT DROP rule not found (already removed)"
+            fi
+
+            # Remove from history file (flock for atomicity)
+            # Use | as sed delimiter to handle IPs with CIDR notation (e.g. 1.2.3.0/24)
+            sudo flock "$HISTORY_FILE" -c "sed -i '\|^${IP//./\\.}$|d' '$HISTORY_FILE'" 2>/dev/null && \
+              echo "  Removed from history file" || \
+              echo "  Not found in history file or already removed"
+          done
+
+          # Persist iptables rules so changes survive reboots
+          if command -v netfilter-persistent &>/dev/null; then
+            sudo netfilter-persistent save
+          elif command -v iptables-save &>/dev/null; then
+            sudo mkdir -p /etc/iptables
+            sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null
+            echo "iptables rules saved to /etc/iptables/rules.v4"
+          fi
+
+          echo ""
+          echo "=== Remaining Blocked IPs on $(hostname) (history: $HISTORY_FILE) ==="
+          cat "$HISTORY_FILE"
+          echo "=== Total: $(wc -l < "$HISTORY_FILE") blocked IP(s) ==="
+          SCRIPT
+
+          ssh -i "$SSH_KEY_FILE" \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            -o ConnectTimeout=30 \
+            -p "$SERVER_PORT" \
+            "$SERVER_USER@$SERVER_HOST" \
+            bash -s -- "$UNBLOCK_IPS" < /tmp/unblock_ips_remote.sh
+
+      - name: Cleanup SSH Key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
   # ── Nginx Deploy Config ───────────────────────────────────────────────────
   nginx-deploy-config:
     needs: prepare
@@ -1009,7 +1126,7 @@ jobs:
         if: always()
         run: rm -f ~/.ssh/deploy_key
   notify:
-    needs: [prepare, health-check, push-files, manage-backup, block-ips, nginx-deploy-config, nginx-configure, run-script, renew-ssl]
+    needs: [prepare, health-check, push-files, manage-backup, block-ips, unblock-ips, nginx-deploy-config, nginx-configure, run-script, renew-ssl]
     if: always() && github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
