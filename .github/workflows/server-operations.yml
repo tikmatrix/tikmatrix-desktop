@@ -435,6 +435,13 @@ jobs:
                 fi
               fi
 
+              # Keep only the most recent MAX_HISTORY entries (FIFO eviction)
+              MAX_HISTORY=100
+              if [[ "$(wc -l < "$HISTORY_FILE")" -gt "$MAX_HISTORY" ]]; then
+                tail -n "$MAX_HISTORY" "$HISTORY_FILE" > "${HISTORY_FILE}.tmp"
+                mv "${HISTORY_FILE}.tmp" "$HISTORY_FILE"
+              fi
+
               echo "NEW_BLOCKED=$NEW_BLOCKED"
             ' _ "$IP" "$HISTORY_FILE"); then
               echo "WARNING: failed to apply lock-protected block operation for $IP"
