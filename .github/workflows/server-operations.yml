@@ -170,7 +170,7 @@ jobs:
       servers: ${{ steps.get-servers.outputs.servers }}
     steps:
       - name: Checkout LinuxConfig repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           repository: tikmatrix/LinuxConfig
           token: ${{ secrets.REPO_TOKEN }}
@@ -521,10 +521,10 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout code
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Checkout LinuxConfig repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           repository: tikmatrix/LinuxConfig
           token: ${{ secrets.REPO_TOKEN }}
@@ -570,7 +570,7 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout LinuxConfig repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           repository: tikmatrix/LinuxConfig
           token: ${{ secrets.REPO_TOKEN }}
@@ -828,7 +828,7 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout LinuxConfig repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           repository: tikmatrix/LinuxConfig
           token: ${{ secrets.REPO_TOKEN }}
@@ -949,7 +949,7 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout LinuxConfig repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           repository: tikmatrix/LinuxConfig
           token: ${{ secrets.REPO_TOKEN }}
@@ -1004,7 +1004,7 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout LinuxConfig repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           repository: tikmatrix/LinuxConfig
           token: ${{ secrets.REPO_TOKEN }}
@@ -1106,7 +1106,7 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout LinuxConfig repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           repository: tikmatrix/LinuxConfig
           token: ${{ secrets.REPO_TOKEN }}
