@@ -104,4 +104,4 @@ xattr -cr /Applications/TikMatrix.app
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tikmatrix/tikmatrix-desktop&type=Date)](https://star-history.com/#tikmatrix/tikmatrix-desktop&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=tikmatrix/tikmatrix-desktop&type=Date)](https://star-history.dera.page/#tikmatrix/tikmatrix-desktop&Date)
