@@ -88,6 +88,12 @@ jobs:
           mv app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk app/build/apk/com.github.tikmatrix.test.apk || true
         working-directory: tikmatrix-pro/android
 
+      - name: Compute version directory
+        run: |
+          # Strip leading 'v' for clean R2 paths
+          VERSION="${{ steps.resolve-version.outputs.version }}"
+          echo "VERSION_DIR=${VERSION#v}" >> $GITHUB_ENV
+
       - name: Upload APK to R2
         uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
         with:
@@ -96,56 +102,51 @@ jobs:
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
           r2-bucket: matrix
           source-dir: tikmatrix-pro/android/app/build/apk/
-          destination-dir: ./
+          destination-dir: apk_v2/${{ env.VERSION_DIR }}
 
       - name: Update Library Version
         shell: bash
         env:
           API_KEY: ${{ secrets.API_KEY }}
-          VERSION: ${{ steps.resolve-version.outputs.version }}
         run: |
           set -e
 
-          # Update APK
-          APK_PAYLOAD=$(cat <<EOF
+          APK_DIR="tikmatrix-pro/android/app/build/apk"
+
+          update_lib() {
+            local NAME=$1
+            local FILE=$2
+
+            local MD5=""
+            if [ -f "${APK_DIR}/${FILE}" ]; then
+              MD5=$(md5sum "${APK_DIR}/${FILE}" | cut -d' ' -f1)
+              echo "$NAME MD5: $MD5"
+            fi
+
+            local UPDATE_DATA=$(cat <<EOF
           {
-            "name": "apk",
+            "name": "$NAME",
             "platform": "generic",
-            "downloadUrl": "https://api.tikmatrix.com/front-api/release/com.github.tikmatrix.apk",
-            "version": "${VERSION}",
-            "app": "TikMatrix"
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/apk_v2/${VERSION_DIR}/${FILE}",
+            "version": "${VERSION_DIR}",
+            "app": "TikMatrix",
+            "md5": "$MD5"
           }
           EOF
-          )
+            )
 
-          echo "Updating apk library..."
-
-          curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer ${API_KEY}" \
-            -d "${APK_PAYLOAD}"
-          echo "Updated apk library on api.tikmatrix.com"
-
-          # Update test-apk
-          TEST_PAYLOAD=$(cat <<EOF
-          {
-            "name": "test-apk",
-            "downloadUrl": "https://api.tikmatrix.com/front-api/release/com.github.tikmatrix.test.apk",
-            "platform": "generic",
-            "version": "${VERSION}",
-            "app": "TikMatrix"
+            echo "Updating $NAME library..."
+            curl -X POST \
+              -H "Content-Type: application/json" \
+              -H "Authorization: Bearer ${API_KEY}" \
+              -d "$UPDATE_DATA" \
+              "https://api.tikmatrix.com/ci/update_lib_v2"
           }
-          EOF
-          )
 
-          echo "Updating test-apk library..."
+          update_lib "apk" "com.github.tikmatrix.apk"
+          update_lib "test-apk" "com.github.tikmatrix.test.apk"
 
-          curl -X POST "https://api.tikmatrix.com/ci/update_lib" \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer ${API_KEY}" \
-            -d "${TEST_PAYLOAD}"
-
-          echo "Updated test-apk library on api.tikmatrix.com"
+          echo "Updated apk/test-apk library versions to ${VERSION_DIR}"
   notify:
     needs: [build-apk]
     if: always() && github.event_name == 'workflow_dispatch'
