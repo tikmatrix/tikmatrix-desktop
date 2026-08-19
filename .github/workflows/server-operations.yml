@@ -168,6 +168,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       servers: ${{ steps.get-servers.outputs.servers }}
+      all_hosts: ${{ steps.get-servers.outputs.all_hosts }}
     steps:
       - name: Checkout LinuxConfig repository
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
@@ -202,8 +203,15 @@ jobs:
             exit 1
           fi
 
+          # Every configured host, regardless of the selected target. Consumers that
+          # need the whole fleet (e.g. the auto-block whitelist) must use this, not
+          # the filtered list above.
+          ALL_HOSTS=$(echo "$CONFIG" | jq -r '[.servers[].host] | join(" ")')
+
           echo "servers=$SERVERS" >> $GITHUB_OUTPUT
+          echo "all_hosts=$ALL_HOSTS" >> $GITHUB_OUTPUT
           echo "Target servers: $SERVERS"
+          echo "All configured hosts: $ALL_HOSTS"
 
   # ── Health Check (scheduled every 10 min + manual) ────────────────────────
   health-check:
@@ -307,14 +315,16 @@ jobs:
           SERVER_HOST="${{ matrix.server.host }}"
           SERVER_PORT="${{ matrix.server.port }}"
           SERVER_USER="${{ matrix.server.user }}"
+          ALL_HOSTS="${{ needs.prepare.outputs.all_hosts }}"
 
           echo "🔍 Checking nginx request-limit logs on $SERVER_ID ($SERVER_HOST)"
+          echo "🛡️  Whitelisted (own fleet): $ALL_HOSTS"
 
           SSH_OUTPUT=$(ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
             -o ConnectTimeout=10 \
-            "$SERVER_USER@$SERVER_HOST" bash -s << 'EOF'
+            "$SERVER_USER@$SERVER_HOST" bash -s "$ALL_HOSTS" << 'EOF'
           set -euo pipefail
 
           LOG_FILE="/var/log/nginx/user.tikmatrix.com.error.log"
@@ -322,9 +332,11 @@ jobs:
           LOCK_FILE="/var/lock/firewall_blocked_ips.lock"
           TAIL_LINES=2000
           LIMIT_THRESHOLD=3
-          # Trusted source IPs that must never be auto-blocked by nginx rate-limit detection.
-          # 23.95.253.245 / 172.245.97.215 / 45.77.240.59 are internal trusted infrastructure IPs.
-          WHITELIST_IPS=("23.95.253.245" "172.245.97.215" "45.77.240.59")
+          # Trusted source IPs that must never be auto-blocked by nginx rate-limit
+          # detection: our own fleet, passed in from LinuxConfig/deploy-config.json
+          # `.servers[].host` so a newly added server is whitelisted automatically.
+          # Space-separated (ssh flattens the argv, so accept it either way).
+          WHITELIST_IPS="$*"
           NEW_BLOCKED_IPS=()
 
           echo "========================================"
@@ -384,14 +396,7 @@ jobs:
               continue
             fi
 
-            IS_WHITELISTED=0
-            for WHITELISTED_IP in "${WHITELIST_IPS[@]}"; do
-              if [[ "$IP" == "$WHITELISTED_IP" ]]; then
-                IS_WHITELISTED=1
-                break
-              fi
-            done
-            if [[ "$IS_WHITELISTED" -eq 1 ]]; then
+            if [[ " $WHITELIST_IPS " == *" $IP "* ]]; then
               echo "SKIP (whitelisted): $IP"
               continue
             fi

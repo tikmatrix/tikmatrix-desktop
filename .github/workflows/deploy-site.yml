@@ -16,6 +16,10 @@ on:
           - TikMatrix
           - VideoMagic
 
+      # GitHub Actions cannot populate choice options dynamically, so this list is a
+      # convenience mirror of LinuxConfig/deploy-config.json `.servers[].id`. The
+      # deployment targets themselves are always resolved from that file at run time,
+      # and an id missing from it fails the prepare job with the valid list.
       server:
         description: "Target server (leave empty to deploy to all configured servers for this site)"
         required: false
@@ -40,21 +44,37 @@ jobs:
       sites: ${{ steps.get-sites.outputs.sites }}
       deployments: ${{ steps.get-sites.outputs.deployments }}
     steps:
-      - name: Checkout code
+      # LinuxConfig/deploy-config.json is the single source of truth for both the
+      # server inventory and the site list. Never duplicate server definitions here.
+      - name: Checkout LinuxConfig repository
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
-          repository: tikmatrix/tikmatrix-pro
+          repository: tikmatrix/LinuxConfig
           token: ${{ secrets.REPO_TOKEN }}
-          ref: main
-          path: tikmatrix-pro
+          path: LinuxConfig
 
       - name: Determine target sites and deployments
         id: get-sites
-        working-directory: tikmatrix-pro
         run: |
-          CONFIG=$(cat deploy-config.json)
+          if [[ ! -f LinuxConfig/deploy-config.json ]]; then
+            echo "Error: LinuxConfig/deploy-config.json not found"
+            exit 1
+          fi
+
+          CONFIG=$(cat LinuxConfig/deploy-config.json)
           SELECTED_GROUP="${{ github.event.inputs.group }}"
           SELECTED_SERVER="${{ github.event.inputs.server }}"
+
+          KNOWN_SERVERS=$(echo "$CONFIG" | jq -r '[.servers[].id] | join(", ")')
+          echo "Servers defined in LinuxConfig/deploy-config.json: $KNOWN_SERVERS"
+
+          # A server picked from the dropdown must actually exist in the config.
+          if [[ -n "$SELECTED_SERVER" ]] \
+            && ! echo "$CONFIG" | jq -e --arg id "$SELECTED_SERVER" '.servers[] | select(.id == $id)' >/dev/null; then
+            echo "Error: server '$SELECTED_SERVER' is not defined in LinuxConfig/deploy-config.json"
+            echo "Available servers: $KNOWN_SERVERS"
+            exit 1
+          fi
 
           # Map group to site name filter (JSON array, or null for all sites).
           # Site names must match the 'name' field in deploy-config.json.
@@ -71,36 +91,43 @@ jobs:
             --argjson filter "$SITE_FILTER" \
             '[.sites[] | select($filter == null or (.name as $n | $filter | index($n) != null)) | {name: .name, config: .}]')
 
-          # Build deployment matrix
-          if [[ -n "$SELECTED_SERVER" ]]; then
-            # Deploy to specific server
-            DEPLOYMENTS=$(echo "$CONFIG" | jq -c \
-              --argjson filter "$SITE_FILTER" \
-              --arg server "$SELECTED_SERVER" \
-              '. as $root | [
-                .sites[] | select($filter == null or (.name as $n | $filter | index($n) != null)) | . as $site |
-                ($root.servers[] | select(.id == $server)) as $srv |
-                {
+          # Warn about deployTo entries that reference servers no longer in the config
+          echo "$CONFIG" | jq -r \
+            --argjson filter "$SITE_FILTER" \
+            '. as $root | [$root.servers[].id] as $ids
+             | .sites[]
+             | select($filter == null or (.name as $n | $filter | index($n) != null))
+             | . as $site
+             | (($site.deployTo // [])[] | select(. as $id | $ids | index($id) | not))
+             | "::warning::site \($site.name) deployTo references unknown server: \(.)"'
+
+          # Build deployment matrix. Target resolution, in order:
+          #   1. explicit `server` input  -> that server only
+          #   2. site.deployTo            -> the servers it lists (resolved from the config)
+          #   3. no deployTo              -> every server in the config
+          DEPLOYMENTS=$(echo "$CONFIG" | jq -c \
+            --argjson filter "$SITE_FILTER" \
+            --arg server "$SELECTED_SERVER" \
+            '. as $root | [
+              .sites[]
+              | select($filter == null or (.name as $n | $filter | index($n) != null))
+              | . as $site
+              | (
+                  if $server != "" then
+                    [$root.servers[] | select(.id == $server)]
+                  elif (($site.deployTo // []) | length) > 0 then
+                    [$root.servers[] | select(.id as $id | $site.deployTo | index($id))]
+                  else
+                    $root.servers
+                  end
+                ) as $targets
+              | $targets[]
+              | {
                   site_name: $site.name,
                   site_config: $site,
-                  server: $srv
+                  server: .
                 }
-              ]')
-          else
-            # Deploy to each site's configured servers
-            DEPLOYMENTS=$(echo "$CONFIG" | jq -c \
-              --argjson filter "$SITE_FILTER" \
-              '. as $root | [
-                .sites[] | select($filter == null or (.name as $n | $filter | index($n) != null)) | . as $site |
-                .deployTo as $deployTo |
-                ($root.servers[] | select(.id as $id | $deployTo | index($id))) as $srv |
-                {
-                  site_name: $site.name,
-                  site_config: $site,
-                  server: $srv
-                }
-              ]')
-          fi
+            ]')
 
           # Validate not empty
           if [[ -z "$SITES" || "$SITES" == "[]" || "$SITES" == "null" ]]; then
@@ -228,14 +255,6 @@ jobs:
         deployment: ${{ fromJson(needs.prepare.outputs.deployments) }}
       fail-fast: false
     steps:
-      - name: Checkout code
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
-        with:
-          repository: tikmatrix/tikmatrix-pro
-          token: ${{ secrets.REPO_TOKEN }}
-          ref: main
-          path: tikmatrix-pro
-
       - name: Checkout LinuxConfig repository
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
@@ -257,7 +276,7 @@ jobs:
       - name: Deploy to ${{ matrix.deployment.server.id }}
         env:
           SITE: ${{ matrix.deployment.site_name }}
-          CONFIG_FILE: ./tikmatrix-pro/deploy-config.json
+          CONFIG_FILE: ./LinuxConfig/deploy-config.json
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
           echo "🚀 Deploying $SITE to ${{ matrix.deployment.server.id }} (${{ matrix.deployment.server.host }})"
