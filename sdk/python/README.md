@@ -60,7 +60,7 @@ The environment a managed script is started with:
 | `TIKMATRIX_SESSION_ID` | Lease id (managed scripts only) |
 | `TIKMATRIX_SERIAL` | Device this task was dispatched to |
 | `TIKMATRIX_PACKAGE` | Resolved app package |
-| `TIKMATRIX_PLATFORM` | `tiktok`, `instagram`, or `generic` |
+| `TIKMATRIX_PLATFORM` | `tiktok`, `instagram`, `threads`, or `generic` |
 
 ## Device leases
 
@@ -141,11 +141,15 @@ A registered script declares which platform it targets:
 
 - **generic** — the device is handed over untouched. No app is started, no
   account switching, no IME check, and nothing is stopped afterwards. Use this
-  to automate anything that is not TikTok or Instagram.
-- **tiktok / instagram** — the app is opened and the account switched before
-  your program starts, and the app is closed afterwards, exactly as for built-in
-  scripts. `TIKMATRIX_PACKAGE` tells you which package was resolved. Use this to
-  add a step the built-in scripts do not cover.
+  to automate an app TikMatrix does not drive itself.
+- **tiktok / instagram / threads** — the app is opened and the right account
+  made current before your program starts, and the app is closed afterwards,
+  exactly as for built-in scripts. `TIKMATRIX_PACKAGE` tells you which package
+  was resolved. Use this to add a step the built-in scripts do not cover.
+
+On **threads** the account is verified rather than switched: Threads has no
+account switching yet, so a task naming an account other than the one signed in
+on the device fails instead of running as whoever happens to be active.
 
 ## Notes
 
