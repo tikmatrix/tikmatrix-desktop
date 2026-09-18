@@ -147,9 +147,10 @@ A registered script declares which platform it targets:
   exactly as for built-in scripts. `TIKMATRIX_PACKAGE` tells you which package
   was resolved. Use this to add a step the built-in scripts do not cover.
 
-On **threads** the account is verified rather than switched: Threads has no
-account switching yet, so a task naming an account other than the one signed in
-on the device fails instead of running as whoever happens to be active.
+On **threads** the switch goes through the app's own **Settings → Switch
+accounts** sheet, and the handle on the profile page is read back afterwards. A
+task naming an account that is not signed in on that device fails, rather than
+running as whoever happens to be active.
 
 ## Notes
 
