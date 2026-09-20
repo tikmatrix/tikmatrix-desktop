@@ -25,7 +25,7 @@ on:
           - macos
           - linux
       version:
-        description: "Version tag (e.g., v1.0.0), or 'auto' to use date+run"
+        description: "Version tag (custom values stay unchanged); 'auto' adds a product prefix"
         required: false
         default: "auto"
         type: string
@@ -67,6 +67,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.resolve-version.outputs.version }}
+      tag: ${{ steps.resolve-version.outputs.tag }}
       build_apps: ${{ steps.map-app.outputs.build_apps }}
     steps:
       - name: Resolve version
@@ -74,11 +75,22 @@ jobs:
         run: |
           if [[ "${{ inputs.version }}" == "auto" || -z "${{ inputs.version }}" ]]; then
             VERSION="v$(date +%Y.%m.%d)-r${{ github.run_number }}"
+            case "${{ inputs.product }}" in
+              "TikMatrix") PREFIX="matrix" ;;
+              "VideoMagic") PREFIX="videomagic" ;;
+              "Script") PREFIX="script" ;;
+              "APK") PREFIX="apk" ;;
+              *) echo "::error::Unknown product: ${{ inputs.product }}"; exit 1 ;;
+            esac
+            TAG="${PREFIX}-${VERSION}"
           else
             VERSION="${{ inputs.version }}"
+            TAG="$VERSION"
           fi
           echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
           echo "Resolved version: $VERSION"
+          echo "Resolved tag: $TAG"
 
       - name: Map app to build_apps
         id: map-app
@@ -116,13 +128,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          VERSION="${{ needs.resolve.outputs.version }}"
-          if git ls-remote --tags origin | grep -q "refs/tags/${VERSION}$"; then
-            echo "Tag ${VERSION} already exists, skipping"
+          TAG="${{ needs.resolve.outputs.tag }}"
+          if git ls-remote --tags origin | grep -q "refs/tags/${TAG}$"; then
+            echo "Tag ${TAG} already exists, skipping"
           else
-            git tag -a "${VERSION}" -m "Release ${VERSION}"
-            git push origin "${VERSION}"
-            echo "Tag ${VERSION} created"
+            git tag -a "${TAG}" -m "Release ${TAG}"
+            git push origin "${TAG}"
+            echo "Tag ${TAG} created"
           fi
 
   matrix-windows:

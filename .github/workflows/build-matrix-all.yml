@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Version tag (e.g., v1.0.0), or 'auto' to use date+sha"
+        description: "Version tag (custom values stay unchanged); 'auto' creates matrix-v<date>-<sha>"
         required: false
         default: "auto"
         type: string
@@ -87,6 +87,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.resolve-version.outputs.version }}
+      tag: ${{ steps.resolve-version.outputs.tag }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
@@ -100,24 +101,28 @@ jobs:
         run: |
           if [[ "${{ inputs.version }}" == "auto" || -z "${{ inputs.version }}" ]]; then
             VERSION="v$(date +%Y.%m.%d)-$(git rev-parse --short HEAD)"
+            TAG="matrix-${VERSION}"
           else
             VERSION="${{ inputs.version }}"
+            TAG="$VERSION"
           fi
           echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
           echo "Resolved version: $VERSION"
+          echo "Resolved tag: $TAG"
 
       - name: Create and push tag
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          VERSION="${{ steps.resolve-version.outputs.version }}"
+          TAG="${{ steps.resolve-version.outputs.tag }}"
 
-          if git ls-remote --tags origin | grep -q "refs/tags/${VERSION}$"; then
-            echo "Tag ${VERSION} already exists on remote, skipping tag creation"
+          if git ls-remote --tags origin | grep -q "refs/tags/${TAG}$"; then
+            echo "Tag ${TAG} already exists on remote, skipping tag creation"
           else
-            git tag -a "${VERSION}" -m "Release ${VERSION}"
-            git push origin "${VERSION}"
-            echo "Tag ${VERSION} created and pushed successfully"
+            git tag -a "${TAG}" -m "Release ${TAG}"
+            git push origin "${TAG}"
+            echo "Tag ${TAG} created and pushed successfully"
           fi
 
   build-matrix-windows:
