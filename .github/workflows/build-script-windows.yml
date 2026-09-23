@@ -83,7 +83,7 @@ jobs:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
-          r2-bucket: matrix
+          r2-bucket: matrix-script-private
           source-dir: .\tikmatrix-pro\target\${{ matrix.target }}\release\bin
           destination-dir: script/${{ matrix.target }}/${{ env.VERSION_DIR }}
 
