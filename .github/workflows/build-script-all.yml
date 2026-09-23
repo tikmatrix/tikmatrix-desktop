@@ -28,6 +28,11 @@ on:
         required: false
         default: false
         type: boolean
+      publish_manifest:
+        description: "Publish the built script to the live client manifest (disable for a private bucket build check)"
+        required: false
+        default: true
+        type: boolean
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -55,7 +60,11 @@ jobs:
         id: resolve-version
         run: |
           if [[ "${{ inputs.version }}" == "auto" || -z "${{ inputs.version }}" ]]; then
-            VERSION="v$(date +%Y.%m.%d)-$(git rev-parse --short HEAD)"
+            if [[ "${{ inputs.publish_manifest }}" == "false" ]]; then
+              VERSION="vverify-${GITHUB_RUN_ID}"
+            else
+              VERSION="v$(date +%Y.%m.%d)-$(git rev-parse --short HEAD)"
+            fi
             TAG="script-${VERSION}"
           else
             VERSION="${{ inputs.version }}"
@@ -67,6 +76,7 @@ jobs:
           echo "Resolved tag: $TAG"
 
       - name: Create and push tag
+        if: ${{ inputs.publish_manifest }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -88,6 +98,7 @@ jobs:
       version: ${{ needs.create-tag.outputs.version }}
       branch: ${{ inputs.branch }}
       build_target: script
+      publish_manifest: ${{ inputs.publish_manifest }}
     secrets: inherit
 
   build-script-macos:
@@ -98,6 +109,7 @@ jobs:
       version: ${{ needs.create-tag.outputs.version }}
       branch: ${{ inputs.branch }}
       build_target: script
+      publish_manifest: ${{ inputs.publish_manifest }}
     secrets: inherit
 
   build-script-linux:
@@ -108,6 +120,7 @@ jobs:
       version: ${{ needs.create-tag.outputs.version }}
       branch: ${{ inputs.branch }}
       build_target: script
+      publish_manifest: ${{ inputs.publish_manifest }}
     secrets: inherit
 
   private-r2-preflight:
