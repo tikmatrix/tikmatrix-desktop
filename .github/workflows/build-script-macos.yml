@@ -89,7 +89,7 @@ jobs:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
-          r2-bucket: matrix
+          r2-bucket: matrix-script-private
           source-dir: ./tikmatrix-pro/target/aarch64-apple-darwin/release/bin
           destination-dir: script/aarch64-apple-darwin/${{ env.VERSION_DIR }}
 
@@ -99,7 +99,7 @@ jobs:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
-          r2-bucket: matrix
+          r2-bucket: matrix-script-private
           source-dir: ./tikmatrix-pro/target/x86_64-apple-darwin/release/bin
           destination-dir: script/x86_64-apple-darwin/${{ env.VERSION_DIR }}
 
