@@ -17,6 +17,11 @@ on:
         required: false
         default: "script"
         type: string
+      publish_manifest:
+        description: "Publish the new script version to the live client manifest"
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: read
@@ -73,7 +78,10 @@ jobs:
           }
 
           # Compute version directory (strip leading 'v' for clean R2 paths)
-          $VERSION_DIR = "${{ inputs.version }}".TrimStart('v')
+          $VERSION_DIR = "${{ inputs.version }}"
+          if ($VERSION_DIR.StartsWith('v')) {
+            $VERSION_DIR = $VERSION_DIR.Substring(1)
+          }
           echo "VERSION_DIR=$VERSION_DIR" >> $env:GITHUB_ENV
         shell: pwsh
 
@@ -88,6 +96,7 @@ jobs:
           destination-dir: script/${{ matrix.target }}/${{ env.VERSION_DIR }}
 
       - name: Update Library Version
+        if: ${{ inputs.publish_manifest }}
         run: |
           $VERSION = "${{ inputs.version }}"
           $VERSION_DIR = $env:VERSION_DIR

@@ -17,6 +17,11 @@ on:
         required: false
         default: "script"
         type: string
+      publish_manifest:
+        description: "Publish the new script version to the live client manifest"
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: read
@@ -89,6 +94,7 @@ jobs:
           destination-dir: script/${{ matrix.target }}/${{ env.VERSION_DIR }}
 
       - name: Update Library Version
+        if: ${{ inputs.publish_manifest }}
         run: |
           VERSION="${{ inputs.version }}"
           VERSION_DIR="${VERSION#v}"
