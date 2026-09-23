@@ -23,6 +23,11 @@ on:
           - windows
           - macos
           - linux
+      preflight_only:
+        description: "Check private R2 upload credentials without building or updating the manifest"
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -33,6 +38,7 @@ permissions:
 
 jobs:
   create-tag:
+    if: ${{ !inputs.preflight_only }}
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.resolve-version.outputs.version }}
@@ -76,7 +82,7 @@ jobs:
 
   build-script-windows:
     needs: create-tag
-    if: ${{ inputs.platforms == 'all' || inputs.platforms == 'windows' }}
+    if: ${{ !inputs.preflight_only && (inputs.platforms == 'all' || inputs.platforms == 'windows') }}
     uses: ./.github/workflows/build-script-windows.yml
     with:
       version: ${{ needs.create-tag.outputs.version }}
@@ -86,7 +92,7 @@ jobs:
 
   build-script-macos:
     needs: create-tag
-    if: ${{ inputs.platforms == 'all' || inputs.platforms == 'macos' }}
+    if: ${{ !inputs.preflight_only && (inputs.platforms == 'all' || inputs.platforms == 'macos') }}
     uses: ./.github/workflows/build-script-macos.yml
     with:
       version: ${{ needs.create-tag.outputs.version }}
@@ -96,7 +102,7 @@ jobs:
 
   build-script-linux:
     needs: create-tag
-    if: ${{ inputs.platforms == 'all' || inputs.platforms == 'linux' }}
+    if: ${{ !inputs.preflight_only && (inputs.platforms == 'all' || inputs.platforms == 'linux') }}
     uses: ./.github/workflows/build-script-linux.yml
     with:
       version: ${{ needs.create-tag.outputs.version }}
@@ -104,9 +110,28 @@ jobs:
       build_target: script
     secrets: inherit
 
+  private-r2-preflight:
+    if: ${{ inputs.preflight_only }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare probe
+        run: |
+          mkdir -p r2-preflight
+          printf 'TikMatrix private R2 preflight %s\n' "$GITHUB_RUN_ID" > r2-preflight/probe.txt
+
+      - name: Check script bucket upload credentials
+        uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix-script-private
+          source-dir: r2-preflight
+          destination-dir: script/_ci_preflight/${{ github.run_id }}
+
   notify:
     needs: [create-tag, build-script-windows, build-script-macos, build-script-linux]
-    if: always()
+    if: always() && !inputs.preflight_only
     runs-on: ubuntu-latest
     steps:
       - name: Send Telegram notification
