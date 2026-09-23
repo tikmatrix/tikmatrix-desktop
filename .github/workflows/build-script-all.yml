@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Version tag (custom values stay unchanged); 'auto' creates script-v<date>-<sha>"
+        description: "Version tag; 'auto' uses a release version when publishing or a unique verification version otherwise"
         required: false
         default: "auto"
         type: string
