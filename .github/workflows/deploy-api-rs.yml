@@ -281,6 +281,10 @@ jobs:
           fi
           log_info "Uploading .env from $ENV_PROD_FILE"
           install -m 600 "$ENV_PROD_FILE" .env.tmp
+          # Every node receives the same .env; its name is the one line that
+          # differs. The API writes it into users.last_node and the x-tm-node
+          # response header (tikmatrix-pro#388): server-sgp -> NODE_ID=sgp.
+          printf '\nNODE_ID=%s\n' "${SERVER_ID#server-}" >> .env.tmp
           scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
             ".env.tmp" ".env.tmp"
           rm -f .env.tmp
