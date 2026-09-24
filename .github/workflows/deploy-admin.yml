@@ -50,6 +50,12 @@ jobs:
         with:
           node-version: "20"
 
+      # wrangler deploy 会把 vars 连同值打印到日志里，而本仓库是公开的，
+      # 日志谁都能看。wrangler.jsonc 里出现形似密钥的值就直接失败，不部署
+      # （tikmatrix/tikmatrix-pro#389）。
+      - name: Refuse secrets in wrangler.jsonc
+        run: node scripts/check-wrangler-secrets.mjs
+
       # server/package-lock.json 被 server/.gitignore 排除，仓库里没有该文件，
       # 所以既不能用 npm ci，也不能用 setup-node 的 cache（它要 lockfile）。
       - name: Cache npm downloads
