@@ -126,7 +126,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd tikmatrix-pro
-          node ./scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=tikmatrix.pro --app-name='TikMatrix Pro'
+          node ./scripts/update-download-url.js --platform=linux --app=tikmatrix.pro --app-name='TikMatrix Pro'
 
   build-tikmatrix:
     if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'tikmatrix' }}
@@ -222,7 +222,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd tikmatrix-pro
-          node ./scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=tikmatrix --app-name='TikMatrix'
+          node ./scripts/update-download-url.js --platform=linux --app=tikmatrix --app-name='TikMatrix'
 
   build-igmatrix:
     if: ${{ inputs.build_apps == 'all' || inputs.build_apps == 'igmatrix' }}
@@ -318,4 +318,4 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           cd tikmatrix-pro
-          node ./scripts/update-download-url.js --platform=linux --distributor=OFFICIAL --app=igmatrix --app-name=IgMatrix
+          node ./scripts/update-download-url.js --platform=linux --app=igmatrix --app-name=IgMatrix
