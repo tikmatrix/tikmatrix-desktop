@@ -86,6 +86,34 @@ jobs:
         run: |
           rm -rf ./video-magic/target/universal-apple-darwin/release/bundle/dmg/*
 
+      - name: Prepare VideoMagic macOS updater upload
+        run: |
+          VERSION=$(node -e "console.log(require('./video-magic/src-tauri/tauri.conf.json').version)")
+          SRC_DIR="./video-magic/target/universal-apple-darwin/release/bundle/macos"
+          UPLOAD_DIR="./video-magic/target/universal-apple-darwin/release/bundle/macos-upload"
+          mkdir -p "$UPLOAD_DIR"
+          cp "$SRC_DIR/VideoMagic.app.tar.gz" "$UPLOAD_DIR/VideoMagic_${VERSION}_universal.app.tar.gz"
+          cp "$SRC_DIR/VideoMagic.app.tar.gz.sig" "$UPLOAD_DIR/VideoMagic_${VERSION}_universal.app.tar.gz.sig"
+
+      - name: Upload VideoMagic macOS updater to R2
+        uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./video-magic/target/universal-apple-darwin/release/bundle/macos-upload
+          destination-dir: ${{ env.R2_RELEASE_DIR }}
+
+      # The Mac client does not install updates itself (it opens the download
+      # page), but the updater check still needs a darwin entry for this version.
+      - name: Update VideoMagic version (macOS)
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          cd video-magic
+          node scripts/update-version.js --platform=mac --app=videomagic --app-name=VideoMagic "--notes=${{ inputs.notes }}" --gray-percentage=${{ inputs.gray_percentage }}
+
       - name: Update VideoMagic download url
         env:
           TIKMATRIX_API_KEY: ${{ secrets.TIKMATRIX_API_KEY }}
