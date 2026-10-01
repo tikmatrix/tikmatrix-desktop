@@ -229,79 +229,155 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
 
-      - name: Check and restart services on ${{ matrix.server.id }}
+      # Every problem the remote script finds is printed as an `ALERT:` line and
+      # makes the step fail; the next step sends those lines to Telegram.
+      - name: Check services and error rates on ${{ matrix.server.id }}
         env:
           SSH_KEY_FILE: ~/.ssh/deploy_key
         run: |
-          set -euo pipefail
+          set -uo pipefail
 
           SERVER_ID="${{ matrix.server.id }}"
           SERVER_HOST="${{ matrix.server.host }}"
           SERVER_PORT="${{ matrix.server.port }}"
           SERVER_USER="${{ matrix.server.user }}"
-          
+
           echo "🔍 Checking services on $SERVER_ID ($SERVER_HOST)"
-          
-          # SSH to server and check/restart services
+
           ssh -i "$SSH_KEY_FILE" -p "$SERVER_PORT" \
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
             -o ConnectTimeout=10 \
-            "$SERVER_USER@$SERVER_HOST" bash -s << 'EOF'
-          set -euo pipefail
-          
+            "$SERVER_USER@$SERVER_HOST" bash -s << 'EOF' | tee health-report.txt
+          set -uo pipefail
+
+          # Thresholds over the last WINDOW_MIN minutes. Measured 2026-10-01 over
+          # a week of logs: api-rs never exceeded 8 ERROR lines in 10 minutes
+          # (most windows have none), and api 5xx peaked at 8 (502s during an
+          # nginx reload).
+          WINDOW_MIN=10
+          API_ERROR_THRESHOLD=20
+          API_5XX_THRESHOLD=20
+
+          API_LOG=/var/log/tikmatrix-api-rs/output.log
+          API_PANIC_LOG=/var/log/tikmatrix-api-rs/error.log
+          API_ACCESS_LOG=/var/log/nginx/api.tikmatrix.com.access.log
+
+          ALERTS=0
+          alert() {
+            echo "ALERT: $*"
+            ALERTS=$((ALERTS + 1))
+          }
+
           echo "========================================"
           echo "Service Health Check Report"
           echo "Server: $(hostname)"
-          echo "Time: $(date)"
+          echo "Time: $(date -u)"
           echo "========================================"
-          
-          # Function to check and restart service
+
+          # A service that is down is restarted, and still reported: it was down.
           check_and_restart_service() {
             local service_name=$1
-            local display_name=$2
-            
-            echo ""
-            echo "Checking $display_name..."
-            
+
             if sudo systemctl is-active --quiet "$service_name"; then
-              echo "✅ $display_name is running"
-              return 0
+              echo "✅ $service_name is running"
+              return
+            fi
+
+            echo "❌ $service_name is NOT running, restarting..."
+            if sudo systemctl restart "$service_name" && sleep 2 \
+              && sudo systemctl is-active --quiet "$service_name"; then
+              alert "$service_name was down and has been restarted"
             else
-              echo "❌ $display_name is NOT running"
-              echo "🔧 Attempting to restart $display_name..."
-              
-              if sudo systemctl restart "$service_name"; then
-                sleep 2
-                if sudo systemctl is-active --quiet "$service_name"; then
-                  echo "✅ $display_name restarted successfully"
-                  return 0
-                else
-                  echo "⚠️  $display_name failed to start after restart"
-                  sudo systemctl status "$service_name" --no-pager || true
-                  return 1
-                fi
-              else
-                echo "❌ Failed to restart $display_name"
-                sudo systemctl status "$service_name" --no-pager || true
-                return 1
-              fi
+              sudo systemctl status "$service_name" --no-pager || true
+              alert "$service_name is down and failed to restart"
             fi
           }
-          
-          # Check nginx service
-          check_and_restart_service "nginx" "Nginx Service"
-          
-          # Check tikmatrix-api-rs service
-          check_and_restart_service "tikmatrix-api-rs" "TikMatrix API Rust Service"
-          
+
+          check_and_restart_service nginx
+          check_and_restart_service tikmatrix-api-rs
+
+          # A live process is not a serving one. /health is answered by nginx
+          # itself, so probe api-rs directly: any HTTP status (404 at /) means
+          # it is handling requests.
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 10 http://127.0.0.1:3000/ || true)
+          if [[ "$code" == "000" || "$code" == 5* ]]; then
+            alert "api-rs does not answer on 127.0.0.1:3000 (HTTP ${code:-000})"
+          else
+            echo "✅ api-rs answers on 127.0.0.1:3000 (HTTP $code)"
+          fi
+
+          # ERROR lines in api-rs output.log. tracing writes ANSI colour codes,
+          # which must go before comparing the leading RFC 3339 timestamp.
+          since=$(date -u -d "-${WINDOW_MIN} min" +%Y-%m-%dT%H:%M:%S)
+          recent_errors=$(tail -c 5000000 "$API_LOG" 2>/dev/null \
+            | sed 's/\x1b\[[0-9;]*m//g' \
+            | awk -v since="$since" '$1 ~ /^20[0-9][0-9]-/ && $1 >= since && $2 == "ERROR"')
+          error_count=$(printf '%s' "$recent_errors" | grep -c . || true)
+          echo "api-rs ERROR lines in the last ${WINDOW_MIN} min: $error_count"
+          if (( error_count >= API_ERROR_THRESHOLD )); then
+            top=$(printf '%s\n' "$recent_errors" | awk '{print $3}' | sort | uniq -c | sort -rn | head -3 \
+              | awk '{printf "%s%s x%s", (NR > 1 ? ", " : ""), $2, $1}')
+            alert "api-rs logged $error_count ERROR lines in ${WINDOW_MIN} min ($top)"
+            printf '%s\n' "$recent_errors" | tail -n 3 | cut -c1-300
+          fi
+
+          # error.log only receives panics; copytruncate empties it daily, so a
+          # non-empty file written inside the window is a fresh panic.
+          if [[ -s "$API_PANIC_LOG" && -n "$(find "$API_PANIC_LOG" -mmin -"$WINDOW_MIN")" ]]; then
+            alert "api-rs wrote to error.log (panic) in the last ${WINDOW_MIN} min: $(tail -n 1 "$API_PANIC_LOG" | cut -c1-200)"
+          fi
+
+          # 5xx served for api.tikmatrix.com, matched by the minute prefix of
+          # the [dd/Mon/yyyy:HH:MM:SS] field.
+          minutes=$(for i in $(seq 0 $((WINDOW_MIN - 1))); do
+            LC_ALL=C date -u -d "-$i min" +%d/%b/%Y:%H:%M
+          done | paste -sd' ')
+          read -r req_count http5xx_count < <(sudo tail -c 5000000 "$API_ACCESS_LOG" 2>/dev/null \
+            | awk -v minutes="$minutes" '
+                BEGIN { n = split(minutes, m, " "); for (i = 1; i <= n; i++) win[m[i]] = 1 }
+                substr($4, 2, 17) in win {
+                  total++
+                  if (match($0, /" [1-5][0-9][0-9] /) && substr($0, RSTART + 2, 1) == "5") errors++
+                }
+                END { print total + 0, errors + 0 }')
+          echo "api.tikmatrix.com 5xx in the last ${WINDOW_MIN} min: ${http5xx_count:-0} of ${req_count:-0} requests"
+          if (( ${http5xx_count:-0} >= API_5XX_THRESHOLD )); then
+            alert "nginx served ${http5xx_count} 5xx of ${req_count} api.tikmatrix.com requests in ${WINDOW_MIN} min"
+          fi
+
           echo ""
           echo "========================================"
-          echo "Health check completed"
+          echo "Health check completed: $ALERTS alert(s)"
           echo "========================================"
+          (( ALERTS == 0 ))
           EOF
-          
+          rc=${PIPESTATUS[0]}
+
+          if [[ $rc -ne 0 ]]; then
+            if ! grep -q '^ALERT:' health-report.txt; then
+              echo "ALERT: health check could not run on the node (ssh exit $rc)" | tee -a health-report.txt
+            fi
+            exit 1
+          fi
           echo "✅ Service health check completed on $SERVER_ID"
+
+      - name: Alert Telegram on ${{ matrix.server.id }}
+        if: failure() && github.event_name == 'schedule'
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          ALERTS=$(grep '^ALERT:' health-report.txt 2>/dev/null | sed 's/^ALERT: /• /')
+          [[ -n "$ALERTS" ]] || ALERTS="• health check step failed before reporting"
+          RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          MSG=$(printf '%s\n%s\n%s' \
+            "🚨 Health check: ${{ matrix.server.id }} (${{ matrix.server.host }})" \
+            "$ALERTS" \
+            "Run: ${RUN_URL}")
+          curl -s -o /dev/null -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${CHAT_ID}" \
+            --data-urlencode "text=${MSG}"
 
       - name: Cleanup SSH Key
         if: always()
