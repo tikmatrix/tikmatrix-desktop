@@ -6,7 +6,8 @@ run-name: ${{ github.actor }} is deploying ${{ github.event.inputs.group || 'all
 on:
   workflow_dispatch:
     inputs:
-      # TikMatrix = tikmatrix + igmatrix + ytmatrix; VideoMagic = videomagic only; empty = all
+      # TikMatrix = tikmatrix + igmatrix + ytmatrix; VideoMagic = videomagic only;
+      # TikMatrixUser = tikmatrix-user (user.tikmatrix.com) only; empty = all
       group:
         description: "Site group to deploy (leave empty to deploy all sites)"
         required: false
@@ -15,6 +16,7 @@ on:
           - ""
           - TikMatrix
           - VideoMagic
+          - TikMatrixUser
 
       # GitHub Actions cannot populate choice options dynamically, so this list is a
       # convenience mirror of LinuxConfig/deploy-config.json `.servers[].id`. The
@@ -82,6 +84,8 @@ jobs:
             SITE_FILTER='["tikmatrix", "igmatrix", "ytmatrix"]'
           elif [[ "$SELECTED_GROUP" == "VideoMagic" ]]; then
             SITE_FILTER='["videomagic"]'
+          elif [[ "$SELECTED_GROUP" == "TikMatrixUser" ]]; then
+            SITE_FILTER='["tikmatrix-user"]'
           else
             SITE_FILTER='null'
           fi

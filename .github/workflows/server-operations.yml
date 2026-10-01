@@ -144,6 +144,7 @@ on:
           - server-provision.sh
           - setup-hy2.sh
           - ssl-renew.sh
+          - tikmatrix-user-service.sh
 
       script_args:
         description: "[run-script] Arguments passed to the script"
