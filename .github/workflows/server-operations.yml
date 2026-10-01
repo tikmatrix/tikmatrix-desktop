@@ -11,7 +11,10 @@ run-name: >-
 on:
   schedule:
     - cron: "*/10 * * * *"  # Automated service health check every 10 minutes
-    - cron: "0 2 1 * *"     # Automated SSL renewal on the 1st of every month
+    # Automated SSL renewal every Monday. certbot only renews inside the last
+    # 30 days, so a monthly run that GitHub drops lets a certificate expire;
+    # weekly leaves room for several missed runs. Not-yet-due runs are no-ops.
+    - cron: "0 2 * * 1"
   workflow_dispatch:
     inputs:
       operation:
@@ -1100,12 +1103,12 @@ jobs:
         if: always()
         run: rm -f ~/.ssh/deploy_key
 
-  # ── Renew SSL Certificates (scheduled monthly + manual) ───────────────────
+  # ── Renew SSL Certificates (scheduled weekly + manual) ────────────────────
   renew-ssl:
     needs: prepare
     if: |
       github.event.inputs.operation == 'renew-ssl' ||
-      github.event.schedule == '0 2 1 * *'
+      github.event.schedule == '0 2 * * 1'
     runs-on: ubuntu-latest
     strategy:
       matrix:
