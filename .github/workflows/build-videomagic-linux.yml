@@ -74,6 +74,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-videomagic-
 
+      - name: Drop installers restored from cache
+        # Uploads take every file in the bundle folders, and the Rust cache can
+        # restore a previous release's installers into them: a path exclusion
+        # only applies when an entry is saved, and an exact key hit is never
+        # re-saved, so an older entry keeps coming back.
+        shell: bash
+        run: |
+          if [ -d ./video-magic/target ]; then
+            find ./video-magic/target -maxdepth 3 -type d -name bundle -prune -exec rm -rf {} +
+          fi
+
       - name: Build VideoMagic package
         run: |
           cd video-magic

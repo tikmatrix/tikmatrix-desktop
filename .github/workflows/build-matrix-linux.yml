@@ -82,6 +82,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-tikmatrix-pro-v2-
 
+      - name: Drop installers restored from cache
+        # Uploads take every file in the bundle folders, and the Rust cache can
+        # restore a previous release's installers into them: a path exclusion
+        # only applies when an entry is saved, and an exact key hit is never
+        # re-saved, so an older entry keeps coming back.
+        shell: bash
+        run: |
+          if [ -d ./tikmatrix-pro/target ]; then
+            find ./tikmatrix-pro/target -maxdepth 3 -type d -name bundle -prune -exec rm -rf {} +
+          fi
+
       - name: Install dependencies
         run: npm install
         working-directory: tikmatrix-pro
@@ -178,6 +189,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-tikmatrix-v2-
 
+      - name: Drop installers restored from cache
+        # Uploads take every file in the bundle folders, and the Rust cache can
+        # restore a previous release's installers into them: a path exclusion
+        # only applies when an entry is saved, and an exact key hit is never
+        # re-saved, so an older entry keeps coming back.
+        shell: bash
+        run: |
+          if [ -d ./tikmatrix-pro/target ]; then
+            find ./tikmatrix-pro/target -maxdepth 3 -type d -name bundle -prune -exec rm -rf {} +
+          fi
+
       - name: Install dependencies
         run: npm install
         working-directory: tikmatrix-pro
@@ -273,6 +295,17 @@ jobs:
           key: ${{ runner.os }}-cargo-igmatrix-v2-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-igmatrix-v2-
+
+      - name: Drop installers restored from cache
+        # Uploads take every file in the bundle folders, and the Rust cache can
+        # restore a previous release's installers into them: a path exclusion
+        # only applies when an entry is saved, and an exact key hit is never
+        # re-saved, so an older entry keeps coming back.
+        shell: bash
+        run: |
+          if [ -d ./tikmatrix-pro/target ]; then
+            find ./tikmatrix-pro/target -maxdepth 3 -type d -name bundle -prune -exec rm -rf {} +
+          fi
 
       - name: Install dependencies
         run: npm install
