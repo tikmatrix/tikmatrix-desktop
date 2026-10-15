@@ -72,14 +72,16 @@ function clientMessage() {
 
 function scriptMessage() {
   // The label after x.y.z is an internal build name; only the prefix means
-  // anything to users — it is the oldest app version that receives the script.
+  // anything to users — the client refuses a script whose prefix is above its
+  // own version. It is not "every later version": a higher prefix, once
+  // published, takes over the newer clients.
   const m = env('VERSION').replace(/^v/, '').match(/^(\d+\.\d+\.\d+)\./)
   if (!m) throw new Error(`script VERSION must look like x.y.z.<label>, got "${env('VERSION')}"`)
   const date = new Date().toISOString().slice(0, 10)
 
   return [
     `🔧 <b>Automation script update</b> · ${date}`,
-    `For app version ${m[1]} and later`,
+    `Requires app version ${m[1]} or later`,
     ...platformLine(env('PLATFORMS')),
     ...changes(env('NOTES')),
     '',
