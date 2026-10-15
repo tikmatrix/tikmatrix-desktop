@@ -33,6 +33,11 @@ on:
         required: false
         default: true
         type: boolean
+      notes:
+        description: "What changed, in English, for the public community announcement (one change per line)"
+        required: false
+        default: ""
+        type: string
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -147,19 +152,39 @@ jobs:
     if: always() && !inputs.preflight_only
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout announcement script
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          sparse-checkout: .github/scripts
+
+      # Public, customer-facing post; only for a published script whose builds all succeeded.
+      - name: Announce in the community group
+        id: community
+        if: ${{ inputs.publish_manifest && needs.create-tag.result == 'success' && !contains(needs.*.result, 'failure') && !contains(needs.*.result, 'cancelled') }}
+        continue-on-error: true
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          KIND: script
+          VERSION: ${{ needs.create-tag.outputs.version }}
+          PLATFORMS: ${{ inputs.platforms }}
+          NOTES: ${{ inputs.notes }}
+        run: node .github/scripts/community-announce.mjs
+
       - name: Send Telegram notification
         env:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          COMMUNITY: ${{ steps.community.outcome }}
         run: |
           RESULTS='${{ toJson(needs) }}'
           if echo "$RESULTS" | grep -q '"failure"'; then ICON="❌"; \
           elif echo "$RESULTS" | grep -q '"cancelled"'; then ICON="⚠️"; \
           else ICON="✅"; fi
           RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          MSG=$(printf '%s\n%s\n%s' \
+          MSG=$(printf '%s\n%s\n%s\n%s' \
             "${ICON} ${{ github.workflow }}" \
             "Version: ${{ needs.create-tag.outputs.version }} | Branch: ${{ inputs.branch }}" \
+            "Community post: ${COMMUNITY:-skipped}" \
             "Run: ${RUN_URL}")
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
             -d "chat_id=${CHAT_ID}" \

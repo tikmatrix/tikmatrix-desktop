@@ -88,6 +88,7 @@ jobs:
     outputs:
       version: ${{ steps.resolve-version.outputs.version }}
       tag: ${{ steps.resolve-version.outputs.tag }}
+      app_version: ${{ steps.resolve-version.outputs.app_version }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
@@ -106,10 +107,14 @@ jobs:
             VERSION="${{ inputs.version }}"
             TAG="$VERSION"
           fi
+          # The version users see is tauri.conf.json's, not the tag name.
+          APP_VERSION=$(node -p "require('./src-tauri/tauri.conf.json').version")
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "app_version=$APP_VERSION" >> $GITHUB_OUTPUT
           echo "Resolved version: $VERSION"
           echo "Resolved tag: $TAG"
+          echo "App version: $APP_VERSION"
 
       - name: Create and push tag
         run: |
@@ -166,19 +171,41 @@ jobs:
     if: always()
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout announcement script
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          sparse-checkout: .github/scripts
+
+      # Public, customer-facing post; only when every build job succeeded.
+      - name: Announce in the community group
+        id: community
+        if: ${{ needs.create-tag.result == 'success' && !contains(needs.*.result, 'failure') && !contains(needs.*.result, 'cancelled') }}
+        continue-on-error: true
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          KIND: client
+          VERSION: ${{ needs.create-tag.outputs.app_version }}
+          APP: ${{ inputs.app }}
+          PLATFORMS: ${{ inputs.platforms }}
+          GRAY_PERCENTAGE: ${{ inputs.gray_percentage }}
+          NOTES: ${{ inputs.notes }}
+        run: node .github/scripts/community-announce.mjs
+
       - name: Send Telegram notification
         env:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          COMMUNITY: ${{ steps.community.outcome }}
         run: |
           RESULTS='${{ toJson(needs) }}'
           if echo "$RESULTS" | grep -q '"failure"'; then ICON="❌"; \
           elif echo "$RESULTS" | grep -q '"cancelled"'; then ICON="⚠️"; \
           else ICON="✅"; fi
           RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          MSG=$(printf '%s\n%s\n%s' \
+          MSG=$(printf '%s\n%s\n%s\n%s' \
             "${ICON} ${{ github.workflow }}" \
             "Version: ${{ needs.create-tag.outputs.version }} | App: ${{ inputs.app }} | Platforms: ${{ inputs.platforms }}" \
+            "Community post: ${COMMUNITY:-skipped}" \
             "Run: ${RUN_URL}")
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
             -d "chat_id=${CHAT_ID}" \
