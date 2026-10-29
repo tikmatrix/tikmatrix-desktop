@@ -37,12 +37,12 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout workflow repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           path: ci-tools
 
       - name: Checkout repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
@@ -50,7 +50,7 @@ jobs:
           path: tikmatrix-pro
 
       - name: Setup Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: lts/*
           cache: npm
@@ -71,7 +71,7 @@ jobs:
             libayatana-appindicator3-dev
 
       - name: Rust Cache
-        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: |
             ~/.cargo/registry
@@ -122,7 +122,7 @@ jobs:
         working-directory: tikmatrix-pro
 
       - name: Upload official package to R2
-        uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
+        uses: ryand56/r2-upload-action@33ebb7a494b3a8a3c5ed2ea6bbdc72e707090317 # v1.5
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
@@ -144,12 +144,12 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout workflow repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           path: ci-tools
 
       - name: Checkout repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
@@ -157,7 +157,7 @@ jobs:
           path: tikmatrix-pro
 
       - name: Setup Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: lts/*
           cache: npm
@@ -178,7 +178,7 @@ jobs:
             libayatana-appindicator3-dev
 
       - name: Rust Cache
-        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: |
             ~/.cargo/registry
@@ -229,7 +229,7 @@ jobs:
         working-directory: tikmatrix-pro
 
       - name: Upload TikMatrix package to R2
-        uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
+        uses: ryand56/r2-upload-action@33ebb7a494b3a8a3c5ed2ea6bbdc72e707090317 # v1.5
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
@@ -251,12 +251,12 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout workflow repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           path: ci-tools
 
       - name: Checkout repository
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: tikmatrix/tikmatrix-pro
           token: ${{ secrets.REPO_TOKEN }}
@@ -264,7 +264,7 @@ jobs:
           path: tikmatrix-pro
 
       - name: Setup Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: lts/*
           cache: npm
@@ -285,7 +285,7 @@ jobs:
             libayatana-appindicator3-dev
 
       - name: Rust Cache
-        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: |
             ~/.cargo/registry
@@ -336,7 +336,7 @@ jobs:
         working-directory: tikmatrix-pro
 
       - name: Upload IgMatrix package to R2
-        uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
+        uses: ryand56/r2-upload-action@33ebb7a494b3a8a3c5ed2ea6bbdc72e707090317 # v1.5
         with:
           r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
