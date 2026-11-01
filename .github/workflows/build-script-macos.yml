@@ -28,8 +28,9 @@ permissions:
 
 jobs:
   build-script-macos:
-    # Use ARM runner (macos-14) - cheaper and faster than Intel runner
-    runs-on: macos-14
+    # ARM runner: cheaper and faster than Intel. macos-14 is retired on
+    # 2026-11-02 and its brownouts already fail the job.
+    runs-on: macos-15
 
     steps:
       - name: Checkout tikmatrix-pro private repository
