@@ -1,0 +1,79 @@
+# Deploy the self-hosted support-ticket agent (support-agent/) to the sociflux VPS.
+#
+# The VPS owns the checkout: this workflow pulls tikmatrix-pro@main there, runs
+# the service tests, refreshes the DSH profile and systemd unit, restarts and
+# verifies /healthz. Nothing is built or uploaded from the runner, so what runs
+# is whatever is pushed to main — a local commit is invisible to the run.
+name: Deploy Support Agent
+run-name: ${{ github.actor }} is deploying the support-ticket agent 🤖
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # The update script waits up to 10 min for an in-flight ticket run to finish.
+    timeout-minutes: 20
+    steps:
+      - name: Install the deploy key
+        env:
+          SSH_KEY: ${{ secrets.SUPPORT_AGENT_SSH_KEY }}
+        run: |
+          if [ -z "$SSH_KEY" ]; then
+            echo "::error::secret SUPPORT_AGENT_SSH_KEY is not set"
+            exit 1
+          fi
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      - name: Update, test and restart
+        run: |
+          ssh -i ~/.ssh/deploy_key \
+            -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+            -o ConnectTimeout=20 \
+            root@173.254.245.208 'bash -s' <<'REMOTE'
+          set -euo pipefail
+          REPO_DIR=/opt/tikmatrix-support/repo
+          # Pull once here so update.sh itself is current; it then repeats a
+          # no-op fetch and does the dirty check, tests, idle wait, restart and
+          # health check.
+          sudo -u support-agent git -C "$REPO_DIR" fetch --quiet origin main
+          sudo -u support-agent git -C "$REPO_DIR" merge --ff-only FETCH_HEAD
+          bash "$REPO_DIR/support-agent/deploy/update.sh"
+          echo "deployed commit: $(sudo -u support-agent git -C "$REPO_DIR" rev-parse --short HEAD)"
+          systemctl is-active tikmatrix-support-agent
+          journalctl -u tikmatrix-support-agent -n 10 --no-pager
+          REMOTE
+
+  notify:
+    needs: [deploy]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram notification
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          RESULTS='${{ toJson(needs) }}'
+          if echo "$RESULTS" | grep -q '"failure"'; then ICON="❌"; \
+          elif echo "$RESULTS" | grep -q '"cancelled"'; then ICON="⚠️"; \
+          else ICON="✅"; fi
+          RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          MSG=$(printf '%s\n%s\n%s' \
+            "${ICON} ${{ github.workflow }}" \
+            "Host: sociflux | Service: tikmatrix-support-agent" \
+            "Run: ${RUN_URL}")
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${CHAT_ID}" \
+            --data-urlencode 'link_preview_options={"is_disabled":true}' \
+            --data-urlencode "text=${MSG}"
