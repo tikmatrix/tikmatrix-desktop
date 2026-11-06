@@ -238,6 +238,8 @@ jobs:
           DEPLOY_GEOLITE: ${{ inputs.deploy_geolite }}
           ENV_PROD_FILE: tikmatrix-pro/server/src-rs/.env.prod
           SUPPORT_SENDER_TOKEN: ${{ secrets.SUPPORT_SENDER_TOKEN }}
+          SUPPORT_CONTROL_BOT_TOKEN: ${{ secrets.SUPPORT_CONTROL_BOT_TOKEN }}
+          SUPPORT_CONTROL_OWNER_ID: ${{ secrets.SUPPORT_CONTROL_OWNER_ID }}
         run: |
           SERVER_ID="${{ matrix.server.id }}"
           SERVER_HOST="${{ matrix.server.host }}"
@@ -291,6 +293,11 @@ jobs:
             [[ "$SUPPORT_SENDER_TOKEN" =~ ^[0-9a-f]{64}$ ]] || { echo 'Invalid sender token format' >&2; exit 1; }
             printf '\nSUPPORT_SENDER_TOKEN=%s\n' "$SUPPORT_SENDER_TOKEN" >> .env.tmp
           fi
+            # Only automated support-reply notices use this private bot.
+            if [[ -n "$SUPPORT_CONTROL_BOT_TOKEN" || -n "$SUPPORT_CONTROL_OWNER_ID" ]]; then
+              [[ "$SUPPORT_CONTROL_BOT_TOKEN" =~ ^[0-9]+:[A-Za-z0-9_-]+$ && "$SUPPORT_CONTROL_OWNER_ID" =~ ^[1-9][0-9]*$ ]] || { echo 'Invalid support control notification configuration' >&2; exit 1; }
+              printf '\nSUPPORT_CONTROL_BOT_TOKEN=%s\nSUPPORT_CONTROL_OWNER_ID=%s\n' "$SUPPORT_CONTROL_BOT_TOKEN" "$SUPPORT_CONTROL_OWNER_ID" >> .env.tmp
+            fi
           scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
             ".env.tmp" ".env.tmp"
           rm -f .env.tmp
