@@ -237,6 +237,7 @@ jobs:
           REMOTE_DIR: /home/deploy/apps/tikmatrix-api-rs
           DEPLOY_GEOLITE: ${{ inputs.deploy_geolite }}
           ENV_PROD_FILE: tikmatrix-pro/server/src-rs/.env.prod
+          SUPPORT_SENDER_TOKEN: ${{ secrets.SUPPORT_SENDER_TOKEN }}
         run: |
           SERVER_ID="${{ matrix.server.id }}"
           SERVER_HOST="${{ matrix.server.host }}"
@@ -285,6 +286,11 @@ jobs:
           # differs. The API writes it into users.last_node and the x-tm-node
           # response header (tikmatrix-pro#388): server-sgp -> NODE_ID=sgp.
           printf '\nNODE_ID=%s\n' "${SERVER_ID#server-}" >> .env.tmp
+          # Dedicated sender credential is never committed or uploaded as an artifact.
+          if [[ -n "$SUPPORT_SENDER_TOKEN" ]]; then
+            [[ "$SUPPORT_SENDER_TOKEN" =~ ^[0-9a-f]{64}$ ]] || { echo 'Invalid sender token format' >&2; exit 1; }
+            printf '\nSUPPORT_SENDER_TOKEN=%s\n' "$SUPPORT_SENDER_TOKEN" >> .env.tmp
+          fi
           scp_upload "$SERVER_HOST" "$SERVER_PORT" "$SERVER_USER" "$SSH_KEY_FILE" \
             ".env.tmp" ".env.tmp"
           rm -f .env.tmp

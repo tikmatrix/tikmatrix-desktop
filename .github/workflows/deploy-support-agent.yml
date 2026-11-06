@@ -31,7 +31,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     # The update script waits up to 10 min for an in-flight ticket run to finish.
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - name: Install the deploy key
         env:
@@ -49,10 +49,18 @@ jobs:
         env:
           AGENT_ACTION: ${{ inputs.action }}
           SOURCE_REF: ${{ inputs.source_ref }}
+          SUPPORT_SENDER_TOKEN: ${{ secrets.SUPPORT_SENDER_TOKEN }}
         run: |
           [[ "$AGENT_ACTION" == deploy || "$AGENT_ACTION" == drain ]] || exit 1
           [[ "$SOURCE_REF" == main || "$SOURCE_REF" =~ ^[0-9a-fA-F]{40}$ ]] || exit 1
           [[ "$AGENT_ACTION" == drain || "$SOURCE_REF" == main ]] || exit 1
+          if [[ "$AGENT_ACTION" == deploy ]]; then
+            [[ "$SUPPORT_SENDER_TOKEN" =~ ^[0-9a-f]{64}$ ]] || { echo 'Missing or invalid SUPPORT_SENDER_TOKEN secret' >&2; exit 1; }
+            # stdin, not command arguments or logs, carries the restricted key.
+            printf 'SUPPORT_SENDER_DB=/var/lib/tikmatrix-support-queue/queue.db\nSUPPORT_SENDER_API_URL=https://api.tikmatrix.com\nSUPPORT_SENDER_ENABLED=0\nSUPPORT_SENDER_TOKEN=%s\n' "$SUPPORT_SENDER_TOKEN" |
+              ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20 \
+                root@173.254.245.208 'umask 077; cat > /etc/tikmatrix-support-sender.env'
+          fi
           ssh -i ~/.ssh/deploy_key \
             -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
             -o ConnectTimeout=20 \
