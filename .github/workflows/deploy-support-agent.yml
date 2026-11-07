@@ -35,25 +35,27 @@ jobs:
     steps:
       - name: Verify engineering issue credentials
         env:
-          ISSUE_TOKEN: ${{ secrets.AGENT_REPO_TOKEN }}
+          ISSUE_TOKEN: ${{ secrets.SUPPORT_ISSUE_GITHUB_TOKEN || secrets.AGENT_REPO_TOKEN }}
         run: |
           if [[ -z "$ISSUE_TOKEN" ]]; then
-            echo 'AGENT_REPO_TOKEN is unset; engineering issue delivery stays disabled'
+            echo 'Issue credential is unset; engineering issue delivery stays disabled'
             exit 0
           fi
-          [[ "$ISSUE_TOKEN" =~ ^[A-Za-z0-9_]{20,255}$ ]] || { echo 'Invalid AGENT_REPO_TOKEN format' >&2; exit 1; }
+          [[ "$ISSUE_TOKEN" =~ ^[A-Za-z0-9_]{20,255}$ ]] || { echo 'Invalid engineering issue credential format' >&2; exit 1; }
           github() {
             printf 'header = "Authorization: Bearer %s"\n' "$ISSUE_TOKEN" |
               curl --config - --silent --show-error --max-time 15 \
                 --header 'Accept: application/vnd.github+json' --header 'X-GitHub-Api-Version: 2022-11-28' "$@"
           }
           REPO_URL=https://api.github.com/repos/tikmatrix/tikmatrix-pro
-          github --fail "$REPO_URL" | jq -e '.private == true and .has_issues == true' >/dev/null
+          repo=$(github --fail "$REPO_URL") || { echo 'Issue credential could not access tikmatrix/tikmatrix-pro' >&2; exit 1; }
+          jq -e '.private == true and .has_issues == true' <<< "$repo" >/dev/null ||
+            { echo 'Expected a private repository with Issues enabled' >&2; exit 1; }
           # Missing the required title deliberately. GitHub must reject the
           # payload as invalid after accepting the issue credential.
           status=$(github --output /dev/null --write-out '%{http_code}' \
             --header 'Content-Type: application/json' --data '{}' "$REPO_URL/issues")
-          [[ "$status" == 422 ]] || { echo "AGENT_REPO_TOKEN could not write Issues (HTTP $status)" >&2; exit 1; }
+          [[ "$status" == 422 ]] || { echo "Engineering credential could not write Issues (HTTP $status)" >&2; exit 1; }
           echo 'Engineering issue credential verified'
 
       - name: Install the deploy key
@@ -73,7 +75,7 @@ jobs:
           AGENT_ACTION: ${{ inputs.action }}
           SOURCE_REF: ${{ inputs.source_ref }}
           SUPPORT_SENDER_TOKEN: ${{ secrets.SUPPORT_SENDER_TOKEN }}
-          ISSUE_TOKEN: ${{ secrets.AGENT_REPO_TOKEN }}
+          ISSUE_TOKEN: ${{ secrets.SUPPORT_ISSUE_GITHUB_TOKEN || secrets.AGENT_REPO_TOKEN }}
         run: |
           [[ "$AGENT_ACTION" == deploy || "$AGENT_ACTION" == drain ]] || exit 1
           [[ "$SOURCE_REF" == main || "$SOURCE_REF" =~ ^[0-9a-fA-F]{40}$ ]] || exit 1
