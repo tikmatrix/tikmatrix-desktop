@@ -83,21 +83,15 @@ jobs:
           if [[ "$AGENT_ACTION" == deploy ]]; then
             [[ "$SUPPORT_SENDER_TOKEN" =~ ^[0-9a-f]{64}$ ]] || { echo 'Missing or invalid SUPPORT_SENDER_TOKEN secret' >&2; exit 1; }
             # stdin, not command arguments or logs, carries the restricted key.
-            # SUPPORT_SENDER_ENABLED is the operator's switch, not deploy
-            # config: keep the value already on the host (0 only on a host
-            # that has none). Writing a fixed 0 here silently stopped every
-            # customer reply after each routine deploy. The file is rewritten
-            # in place so its owner and mode stay as provisioned.
+            # Whether the sender may reach customers is not deploy config: it
+            # is the API's support_sender_dispatch switch, changed from the
+            # admin console or Telegram (/sendon, /sendoff). The old
+            # SUPPORT_SENDER_ENABLED line is dropped by this rewrite.
             {
               printf 'SUPPORT_SENDER_DB=/var/lib/tikmatrix-support-queue/queue.db\nSUPPORT_SENDER_API_URL=https://api.tikmatrix.com\nSUPPORT_SENDER_TOKEN=%s\n' "$SUPPORT_SENDER_TOKEN"
               printf 'SUPPORT_ISSUE_GITHUB_TOKEN=%s\n' "$ISSUE_TOKEN"
             } | ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20 \
-                root@173.254.245.208 'set -eu; umask 077; f=/etc/tikmatrix-support-sender.env
-                  keep=$(grep -E "^SUPPORT_SENDER_ENABLED=[01]$" "$f" 2>/dev/null | tail -n 1 || true)
-                  t=$(mktemp); trap "rm -f -- \"\$t\"" EXIT
-                  cat > "$t"; printf "%s\n" "${keep:-SUPPORT_SENDER_ENABLED=0}" >> "$t"
-                  cat "$t" > "$f"
-                  echo "sender dispatch flag kept: ${keep:-SUPPORT_SENDER_ENABLED=0 (none on host)}"'
+                root@173.254.245.208 'umask 077; cat > /etc/tikmatrix-support-sender.env'
           fi
           ssh -i ~/.ssh/deploy_key \
             -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
