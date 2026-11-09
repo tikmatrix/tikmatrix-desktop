@@ -164,6 +164,9 @@ jobs:
           token: ${{ secrets.REPO_TOKEN }}
           ref: main
           path: tikmatrix-pro
+          # Full history: the sitemap's <lastmod> is each file's last git
+          # commit. A shallow clone gives every page the build date.
+          fetch-depth: 0
 
       - name: Determine repository and checkout
         working-directory: tikmatrix-pro
