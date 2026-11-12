@@ -31,7 +31,7 @@ on:
           - macos
           - linux
       publish_manifest:
-        description: "Upload to R2 and update the libs_v2 row (off: build check only, the archives are kept as run artifacts)"
+        description: "Upload to R2 and update the libs_v2 row (off: build check only, the archives are kept as run artifacts for a day)"
         required: false
         default: true
         type: boolean
@@ -79,7 +79,10 @@ jobs:
 
           WINDOWS='{"platform":"windows","os":"windows-latest","target":"x86_64-pc-windows-msvc"}'
           MAC_ARM='{"platform":"mac-arm","os":"macos-15","target":"aarch64-apple-darwin"}'
-          LINUX='{"platform":"linux","os":"ubuntu-22.04","target":"x86_64-unknown-linux-gnu"}'
+          # ort's prebuilt Linux ONNX Runtime links against glibc 2.38+
+          # (__isoc23_strtol), which 22.04 lacks; the sidecar therefore needs
+          # glibc 2.38+ on the user's machine too.
+          LINUX='{"platform":"linux","os":"ubuntu-24.04","target":"x86_64-unknown-linux-gnu"}'
           case "$PLATFORMS" in
             windows) LIST="$WINDOWS" ;;
             # No mac-intel: ort ships no prebuilt ONNX Runtime for
@@ -155,7 +158,8 @@ jobs:
         with:
           name: ocr-${{ matrix.platform }}
           path: upload/
-          retention-days: 14
+          # The repository caps artifact retention at one day.
+          retention-days: 1
 
       # Public bucket: the archive holds no licensed code, only the sidecar and
       # Apache-2.0 models. Served by api-rs at /front-api/release/<key>.
