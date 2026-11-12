@@ -1,0 +1,236 @@
+name: Build OCR Sidecar - All Platforms
+run-name: ${{ github.actor }} is building the OCR sidecar 🚀
+# The optional local OCR component (tikmatrix-pro `ocr-server/`): one archive
+# per platform that unpacks to `ocr/{ocr-server, models/*.onnx}` under the
+# client's work dir. Built by tikmatrix-pro's own `scripts/build-ocr.js
+# --package`, so CI and a local package use the same pinned models and layout.
+#
+# Clients receive the `ocr` row only when they ask for it (`X-Optional-Libs`,
+# filtered in api-rs check_libs_v2), and refuse to install it without an md5.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version; 'auto' uses <date>-<short sha> (any change of value makes clients that have it installed update)"
+        required: false
+        default: "auto"
+        type: string
+      branch:
+        description: "tikmatrix-pro branch to build from"
+        required: false
+        default: "main"
+        type: string
+      platforms:
+        description: "Platforms to build"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - all
+          - windows
+          - macos
+          - linux
+      publish_manifest:
+        description: "Upload to R2 and update the libs_v2 row (off: build check only, the archives are kept as run artifacts)"
+        required: false
+        default: true
+        type: boolean
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  resolve-version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.resolve.outputs.version }}
+      sha: ${{ steps.resolve.outputs.sha }}
+      matrix: ${{ steps.resolve.outputs.matrix }}
+    steps:
+      - name: Checkout tikmatrix-pro private repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+
+      - name: Resolve version and platforms
+        id: resolve
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+          PLATFORMS: ${{ inputs.platforms }}
+        run: |
+          if [[ "$INPUT_VERSION" == "auto" || -z "$INPUT_VERSION" ]]; then
+            VERSION="$(date +%Y.%m.%d)-$(git rev-parse --short HEAD)"
+          else
+            VERSION="${INPUT_VERSION#v}"
+          fi
+          if [[ ! "$VERSION" =~ ^[A-Za-z0-9._-]+$ ]]; then
+            echo "::error::version '$VERSION' may only contain letters, digits, '.', '_' and '-'"
+            exit 1
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          # Every platform builds this exact commit, whatever lands on the branch meanwhile.
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+          WINDOWS='{"platform":"windows","os":"windows-latest","target":"x86_64-pc-windows-msvc"}'
+          MAC_ARM='{"platform":"mac-arm","os":"macos-15","target":"aarch64-apple-darwin"}'
+          LINUX='{"platform":"linux","os":"ubuntu-22.04","target":"x86_64-unknown-linux-gnu"}'
+          case "$PLATFORMS" in
+            windows) LIST="$WINDOWS" ;;
+            # No mac-intel: ort ships no prebuilt ONNX Runtime for
+            # x86_64-apple-darwin. Without a row those clients are told the
+            # component is not available on their platform.
+            macos) LIST="$MAC_ARM" ;;
+            linux) LIST="$LINUX" ;;
+            *) LIST="$WINDOWS,$MAC_ARM,$LINUX" ;;
+          esac
+          echo "matrix={\"include\":[$LIST]}" >> "$GITHUB_OUTPUT"
+          echo "Resolved version: $VERSION ($PLATFORMS)"
+
+  build:
+    needs: resolve-version
+    name: build (${{ matrix.platform }})
+    strategy:
+      # Each platform's row is independent: one failing does not hold back the others.
+      fail-fast: false
+      matrix: ${{ fromJson(needs.resolve-version.outputs.matrix) }}
+    runs-on: ${{ matrix.os }}
+    env:
+      VERSION: ${{ needs.resolve-version.outputs.version }}
+      PLATFORM: ${{ matrix.platform }}
+    steps:
+      - name: Checkout tikmatrix-pro private repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: tikmatrix/tikmatrix-pro
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ needs.resolve-version.outputs.sha }}
+          path: tikmatrix-pro
+
+      - name: Cache Rust dependencies
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            tikmatrix-pro/target
+          key: ${{ runner.os }}-ocr-cargo-${{ matrix.target }}-${{ hashFiles('tikmatrix-pro/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-ocr-cargo-${{ matrix.target }}-
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8 # stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: lts/*
+
+      - name: Build and package
+        working-directory: tikmatrix-pro
+        shell: bash
+        run: node scripts/build-ocr.js --package --target "${{ matrix.target }}"
+
+      - name: Stage archive
+        shell: bash
+        run: |
+          ZIP="tikmatrix-pro/dist-ocr/ocr-${PLATFORM}.zip"
+          test -f "$ZIP" || { echo "::error::$ZIP was not produced"; exit 1; }
+          MD5=$(cat "${ZIP}.md5")
+          [[ "$MD5" =~ ^[0-9a-f]{32}$ ]] || { echo "::error::bad md5 '$MD5'"; exit 1; }
+          mkdir -p upload
+          cp "$ZIP" upload/
+          echo "MD5=$MD5" >> "$GITHUB_ENV"
+          echo "ocr-${PLATFORM}.zip $(wc -c < "$ZIP") bytes, md5 $MD5"
+
+      - name: Keep archive as run artifact
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: ocr-${{ matrix.platform }}
+          path: upload/
+          retention-days: 14
+
+      # Public bucket: the archive holds no licensed code, only the sidecar and
+      # Apache-2.0 models. Served by api-rs at /front-api/release/<key>.
+      - name: Upload to R2
+        if: ${{ inputs.publish_manifest }}
+        uses: ryand56/r2-upload-action@33ebb7a494b3a8a3c5ed2ea6bbdc72e707090317 # v1.5
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: upload
+          destination-dir: ocr/${{ matrix.platform }}/${{ needs.resolve-version.outputs.version }}
+
+      - name: Check the uploaded archive
+        if: ${{ inputs.publish_manifest }}
+        shell: bash
+        run: |
+          URL="https://api.tikmatrix.com/front-api/release/ocr/${PLATFORM}/${VERSION}/ocr-${PLATFORM}.zip"
+          curl -fsSL --retry 3 -o served.zip "$URL"
+          SERVED=$(node -e "process.stdout.write(require('crypto').createHash('md5').update(require('fs').readFileSync('served.zip')).digest('hex'))")
+          if [[ "$SERVED" != "$MD5" ]]; then
+            echo "::error::$URL serves md5 $SERVED, expected $MD5 — the manifest is not updated"
+            exit 1
+          fi
+          echo "$URL serves the built archive"
+
+      - name: Update the libs_v2 row
+        if: ${{ inputs.publish_manifest }}
+        shell: bash
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          # `app` is TikMatrix for every brand: check_libs_v2 rewrites the
+          # requesting brand to TikMatrix before matching rows.
+          DATA=$(cat <<EOF
+          {
+            "name": "ocr",
+            "platform": "${PLATFORM}",
+            "downloadUrl": "https://api.tikmatrix.com/front-api/release/ocr/${PLATFORM}/${VERSION}/ocr-${PLATFORM}.zip",
+            "version": "${VERSION}",
+            "app": "TikMatrix",
+            "md5": "${MD5}"
+          }
+          EOF
+          )
+          curl -fsS -X POST \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${API_KEY}" \
+            -d "$DATA" \
+            "https://api.tikmatrix.com/ci/update_lib_v2"
+          echo
+          echo "ocr ${PLATFORM} → ${VERSION}"
+
+  notify:
+    needs: [resolve-version, build]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram notification
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          RESULTS='${{ toJson(needs) }}'
+          if echo "$RESULTS" | grep -q '"failure"'; then ICON="❌"; \
+          elif echo "$RESULTS" | grep -q '"cancelled"'; then ICON="⚠️"; \
+          else ICON="✅"; fi
+          RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          MSG=$(printf '%s\n%s\n%s\n%s' \
+            "${ICON} ${{ github.workflow }}" \
+            "Version: ${{ needs.resolve-version.outputs.version }} | Platforms: ${{ inputs.platforms }} | Branch: ${{ inputs.branch }}" \
+            "Manifest: ${{ inputs.publish_manifest && 'published' || 'not touched (build check)' }}" \
+            "Run: ${RUN_URL}")
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${CHAT_ID}" \
+            --data-urlencode 'link_preview_options={"is_disabled":true}' \
+            --data-urlencode "text=${MSG}"

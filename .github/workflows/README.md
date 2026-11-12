@@ -8,6 +8,7 @@ Every workflow here that publishes a binary uploads it to the `matrix` bucket, w
 | `desktop/<app>/<version>/` | `build-matrix-*.yml`, `build-videomagic-*.yml` | Installers (`.msi`, `.dmg`, `.deb`), updater bundles (`.msi.zip`, `.app.tar.gz`) and their `.sig` files — every platform of one release in one prefix |
 | `script/<rust-target>/<version>/` | `build-script-*.yml` | The `script` automation binary |
 | `apk/<version>/` | `build-apk-all.yml` | The agent APK and its test APK |
+| `ocr/<platform>/<version>/` | `build-ocr-all.yml` | The optional OCR sidecar archive `ocr-<platform>.zip` (`<platform>` is the manifest's: `windows`, `mac-arm`, `linux`; no `mac-intel` build) |
 
 `<app>` is the identifier the backend stores — `tikmatrix.pro`, `tikmatrix`, `igmatrix`,
 `videomagic` — and `<version>` is the bare version (no leading `v`). One release is one
