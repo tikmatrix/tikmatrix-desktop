@@ -76,12 +76,16 @@ jobs:
           SOURCE_REF: ${{ inputs.source_ref }}
           SUPPORT_SENDER_TOKEN: ${{ secrets.SUPPORT_SENDER_TOKEN }}
           ISSUE_TOKEN: ${{ secrets.SUPPORT_ISSUE_GITHUB_TOKEN || secrets.AGENT_REPO_TOKEN }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           [[ "$AGENT_ACTION" == deploy || "$AGENT_ACTION" == drain ]] || exit 1
           [[ "$SOURCE_REF" == main || "$SOURCE_REF" =~ ^[0-9a-fA-F]{40}$ ]] || exit 1
           [[ "$AGENT_ACTION" == drain || "$SOURCE_REF" == main ]] || exit 1
           if [[ "$AGENT_ACTION" == deploy ]]; then
             [[ "$SUPPORT_SENDER_TOKEN" =~ ^[0-9a-f]{64}$ ]] || { echo 'Missing or invalid SUPPORT_SENDER_TOKEN secret' >&2; exit 1; }
+            [[ -z "$DEEPSEEK_API_KEY" || "$DEEPSEEK_API_KEY" =~ ^[^[:space:]]+$ ]] || { echo 'Invalid DEEPSEEK_API_KEY secret format' >&2; exit 1; }
+            [[ -z "$GEMINI_API_KEY" || "$GEMINI_API_KEY" =~ ^[^[:space:]]+$ ]] || { echo 'Invalid GEMINI_API_KEY secret format' >&2; exit 1; }
             # stdin, not command arguments or logs, carries the restricted key.
             # Whether the sender may reach customers is not deploy config: it
             # is the API's support_sender_dispatch switch, changed from the
@@ -91,7 +95,14 @@ jobs:
               printf 'SUPPORT_SENDER_DB=/var/lib/tikmatrix-support-queue/queue.db\nSUPPORT_SENDER_API_URL=https://api.tikmatrix.com\nSUPPORT_SENDER_TOKEN=%s\n' "$SUPPORT_SENDER_TOKEN"
               printf 'SUPPORT_ISSUE_GITHUB_TOKEN=%s\n' "$ISSUE_TOKEN"
             } | ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20 \
-                root@173.254.245.208 'umask 077; cat > /etc/tikmatrix-support-sender.env'
+                root@173.254.245.208 'umask 077; rm -f -- /etc/.tikmatrix-support-agent.env.patch; cat > /etc/tikmatrix-support-sender.env'
+            if [[ -n "$DEEPSEEK_API_KEY" || -n "$GEMINI_API_KEY" ]]; then
+              {
+                if [[ -n "$DEEPSEEK_API_KEY" ]]; then printf 'DEEPSEEK_API_KEY=%s\n' "$DEEPSEEK_API_KEY"; fi
+                if [[ -n "$GEMINI_API_KEY" ]]; then printf 'GEMINI_API_KEY=%s\n' "$GEMINI_API_KEY"; fi
+              } | ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20 \
+                  root@173.254.245.208 'umask 077; cat > /etc/.tikmatrix-support-agent.env.patch'
+            fi
           fi
           ssh -i ~/.ssh/deploy_key \
             -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
@@ -101,13 +112,14 @@ jobs:
           AGENT_ACTION="$1"
           SOURCE_REF="$2"
           REPO_DIR=/opt/tikmatrix-support/repo
+          DEPLOY_TMP=""
+          trap 'rm -f -- /etc/.tikmatrix-support-agent.env.patch "${DEPLOY_TMP:+${DEPLOY_TMP}/update.sh}" "${DEPLOY_TMP:+${DEPLOY_TMP}/drain.mjs}" "${DEPLOY_TMP:+${DEPLOY_TMP}/merge-agent-env.sh}"; [ -n "${DEPLOY_TMP:-}" ] && rmdir -- "$DEPLOY_TMP" 2>/dev/null || true' EXIT
           # Fetch changes no working files. Extract the new deploy tools into
           # a temporary directory; they drain/stop BEFORE updating the checkout.
           # The running old service also uses FETCH_HEAD for its sync. Never
           # overwrite it with a staging SHA while preparing a drain.
           sudo -u support-agent git -C "$REPO_DIR" fetch --quiet --no-write-fetch-head origin "+$SOURCE_REF:refs/support-deploy/helpers"
           DEPLOY_TMP=$(mktemp -d /tmp/support-deploy.XXXXXX)
-          trap 'rm -f -- "$DEPLOY_TMP/update.sh" "$DEPLOY_TMP/drain.mjs"; rmdir -- "$DEPLOY_TMP"' EXIT
           for file in update.sh drain.mjs; do
             sudo -u support-agent git -C "$REPO_DIR" show "refs/support-deploy/helpers:support-agent/deploy/$file" > "$DEPLOY_TMP/$file"
           done
@@ -119,6 +131,11 @@ jobs:
             fi
             echo 'support agent drained and stopped; checkout unchanged'
             exit 0
+          fi
+          if [ -s /etc/.tikmatrix-support-agent.env.patch ]; then
+            sudo -u support-agent git -C "$REPO_DIR" show "refs/support-deploy/helpers:support-agent/deploy/merge-agent-env.sh" > "$DEPLOY_TMP/merge-agent-env.sh"
+            bash "$DEPLOY_TMP/merge-agent-env.sh" /etc/tikmatrix-support-agent.env < /etc/.tikmatrix-support-agent.env.patch
+            rm -f -- /etc/.tikmatrix-support-agent.env.patch
           fi
           REPO_DIR="$REPO_DIR" bash "$DEPLOY_TMP/update.sh"
           echo "deployed commit: $(sudo -u support-agent git -C "$REPO_DIR" rev-parse --short HEAD)"
