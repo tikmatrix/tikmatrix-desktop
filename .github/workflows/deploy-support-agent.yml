@@ -95,11 +95,11 @@ jobs:
               printf 'SUPPORT_SENDER_DB=/var/lib/tikmatrix-support-queue/queue.db\nSUPPORT_SENDER_API_URL=https://api.tikmatrix.com\nSUPPORT_SENDER_TOKEN=%s\n' "$SUPPORT_SENDER_TOKEN"
               printf 'SUPPORT_ISSUE_GITHUB_TOKEN=%s\n' "$ISSUE_TOKEN"
             } | ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20 \
-                root@173.254.245.208 'umask 077; cat > /etc/tikmatrix-support-sender.env'
+                root@173.254.245.208 'umask 077; rm -f -- /etc/.tikmatrix-support-agent.env.patch; cat > /etc/tikmatrix-support-sender.env'
             if [[ -n "$DEEPSEEK_API_KEY" || -n "$GEMINI_API_KEY" ]]; then
               {
-                [[ -n "$DEEPSEEK_API_KEY" ]] && printf 'DEEPSEEK_API_KEY=%s\n' "$DEEPSEEK_API_KEY"
-                [[ -n "$GEMINI_API_KEY" ]] && printf 'GEMINI_API_KEY=%s\n' "$GEMINI_API_KEY"
+                if [[ -n "$DEEPSEEK_API_KEY" ]]; then printf 'DEEPSEEK_API_KEY=%s\n' "$DEEPSEEK_API_KEY"; fi
+                if [[ -n "$GEMINI_API_KEY" ]]; then printf 'GEMINI_API_KEY=%s\n' "$GEMINI_API_KEY"; fi
               } | ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20 \
                   root@173.254.245.208 'umask 077; cat > /etc/.tikmatrix-support-agent.env.patch'
             fi
@@ -120,7 +120,7 @@ jobs:
           # overwrite it with a staging SHA while preparing a drain.
           sudo -u support-agent git -C "$REPO_DIR" fetch --quiet --no-write-fetch-head origin "+$SOURCE_REF:refs/support-deploy/helpers"
           DEPLOY_TMP=$(mktemp -d /tmp/support-deploy.XXXXXX)
-          for file in update.sh drain.mjs merge-agent-env.sh; do
+          for file in update.sh drain.mjs; do
             sudo -u support-agent git -C "$REPO_DIR" show "refs/support-deploy/helpers:support-agent/deploy/$file" > "$DEPLOY_TMP/$file"
           done
           if [ "$AGENT_ACTION" = drain ]; then
@@ -133,6 +133,7 @@ jobs:
             exit 0
           fi
           if [ -s /etc/.tikmatrix-support-agent.env.patch ]; then
+            sudo -u support-agent git -C "$REPO_DIR" show "refs/support-deploy/helpers:support-agent/deploy/merge-agent-env.sh" > "$DEPLOY_TMP/merge-agent-env.sh"
             bash "$DEPLOY_TMP/merge-agent-env.sh" /etc/tikmatrix-support-agent.env < /etc/.tikmatrix-support-agent.env.patch
             rm -f -- /etc/.tikmatrix-support-agent.env.patch
           fi
