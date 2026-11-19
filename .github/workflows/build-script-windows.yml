@@ -62,6 +62,8 @@ jobs:
 
       - name: Build script
         working-directory: tikmatrix-pro
+        env:
+          RUSTFLAGS: "-C target-feature=+crt-static"
         run: cargo build -p script --release --target ${{ matrix.target }}
 
       - name: Prepare bin directory
