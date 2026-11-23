@@ -7,7 +7,8 @@ on:
   workflow_dispatch:
     inputs:
       # TikMatrix = tikmatrix + igmatrix + ytmatrix; VideoMagic = videomagic only;
-      # TikMatrixUser = tikmatrix-user (user.tikmatrix.com) only; empty = all
+      # TikMatrixUser = tikmatrix-user (user.tikmatrix.com) only;
+      # TikMatrixFinder = tikmatrix-finder (finder.tikmatrix.com) only; empty = all
       group:
         description: "Site group to deploy (leave empty to deploy all sites)"
         required: false
@@ -17,6 +18,7 @@ on:
           - TikMatrix
           - VideoMagic
           - TikMatrixUser
+          - TikMatrixFinder
 
       # GitHub Actions cannot populate choice options dynamically, so this list is a
       # convenience mirror of LinuxConfig/deploy-config.json `.servers[].id`. The
@@ -86,6 +88,8 @@ jobs:
             SITE_FILTER='["videomagic"]'
           elif [[ "$SELECTED_GROUP" == "TikMatrixUser" ]]; then
             SITE_FILTER='["tikmatrix-user"]'
+          elif [[ "$SELECTED_GROUP" == "TikMatrixFinder" ]]; then
+            SITE_FILTER='["tikmatrix-finder"]'
           else
             SITE_FILTER='null'
           fi
@@ -172,10 +176,18 @@ jobs:
         working-directory: tikmatrix-pro
         run: |
           REPOSITORY=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.repository // empty')
+          BUILD_DIR=$(echo '${{ toJson(matrix.site.config) }}' | jq -r '.buildDir // empty')
+          BUILD_DIR="${BUILD_DIR#/}"
+          BUILD_DIR="${BUILD_DIR%/}"
 
           if [[ -n "$REPOSITORY" ]]; then
             echo "Using external repository: $REPOSITORY"
-            echo "CHECKOUT_PATH=site-source" >> $GITHUB_ENV
+            if [[ -n "$BUILD_DIR" ]]; then
+              echo "Using build subdirectory: $BUILD_DIR"
+              echo "CHECKOUT_PATH=site-source/$BUILD_DIR" >> $GITHUB_ENV
+            else
+              echo "CHECKOUT_PATH=site-source" >> $GITHUB_ENV
+            fi
             echo "EXTERNAL_REPO=$REPOSITORY" >> $GITHUB_ENV
           else
             echo "Using default repository (website directory)"
