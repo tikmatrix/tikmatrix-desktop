@@ -81,6 +81,7 @@ on:
         type: choice
         options:
           - http
+          - bunny
           - route53
         default: http
 
@@ -156,6 +157,7 @@ on:
         required: false
         type: choice
         options:
+          - bunny
           - route53
           - http
         default: route53
@@ -852,6 +854,7 @@ jobs:
           SSH_KEY_FILE: ~/.ssh/deploy_key
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
         run: |
           chmod +x ./LinuxConfig/shell/nginx-config.sh
           ./LinuxConfig/shell/nginx-config.sh \
@@ -997,6 +1000,7 @@ jobs:
           SSH_KEY_FILE: ~/.ssh/deploy_key
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
           SSL_METHOD: ${{ github.event.inputs.renew_ssl_method || 'route53' }}
         run: |
           chmod +x ./LinuxConfig/shell/ssl-renew.sh
