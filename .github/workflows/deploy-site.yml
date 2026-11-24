@@ -6,7 +6,7 @@ run-name: ${{ github.actor }} is deploying ${{ github.event.inputs.group || 'all
 on:
   workflow_dispatch:
     inputs:
-      # TikMatrix = tikmatrix + igmatrix + ytmatrix; VideoMagic = videomagic only;
+      # TikMatrix = tikmatrix + igmatrix; VideoMagic = videomagic only;
       # TikMatrixUser = tikmatrix-user (user.tikmatrix.com) only;
       # TikMatrixFinder = tikmatrix-finder (finder.tikmatrix.com) only;
       # Sociflux = sociflux (sociflux.com) only; empty = all
@@ -85,7 +85,7 @@ jobs:
           # Map group to site name filter (JSON array, or null for all sites).
           # Site names must match the 'name' field in deploy-config.json.
           if [[ "$SELECTED_GROUP" == "TikMatrix" ]]; then
-            SITE_FILTER='["tikmatrix", "igmatrix", "ytmatrix"]'
+            SITE_FILTER='["tikmatrix", "igmatrix"]'
           elif [[ "$SELECTED_GROUP" == "VideoMagic" ]]; then
             SITE_FILTER='["videomagic"]'
           elif [[ "$SELECTED_GROUP" == "TikMatrixUser" ]]; then
