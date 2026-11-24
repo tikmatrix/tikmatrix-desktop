@@ -27,6 +27,11 @@ concurrency:
 permissions:
   contents: read
 
+env:
+  VPS_HOST: ${{ vars.VPS_HOST || '104.168.221.115' }}
+  VPS_USER: ${{ vars.VPS_USER || 'deploy' }}
+  VPS_SSH_PORT: ${{ vars.VPS_SSH_PORT || '22' }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -60,13 +65,13 @@ jobs:
 
       - name: Install the deploy key
         env:
-          SSH_KEY: ${{ secrets.SUPPORT_AGENT_SSH_KEY }}
+          SSH_KEY: ${{ secrets.VPS_SSH_KEY || secrets.SUPPORT_AGENT_SSH_KEY }}
         run: |
           if [ -z "$SSH_KEY" ]; then
-            echo "::error::secret SUPPORT_AGENT_SSH_KEY is not set"
+            echo "::error::secret VPS_SSH_KEY (or SUPPORT_AGENT_SSH_KEY) is not set"
             exit 1
           fi
-          mkdir -p ~/.ssh
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
           printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
 
@@ -82,6 +87,8 @@ jobs:
           [[ "$AGENT_ACTION" == deploy || "$AGENT_ACTION" == drain ]] || exit 1
           [[ "$SOURCE_REF" == main || "$SOURCE_REF" =~ ^[0-9a-fA-F]{40}$ ]] || exit 1
           [[ "$AGENT_ACTION" == drain || "$SOURCE_REF" == main ]] || exit 1
+          SSH_OPTS=(-i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20 -p "$VPS_SSH_PORT")
+          SSH_TARGET="${VPS_USER}@${VPS_HOST}"
           if [[ "$AGENT_ACTION" == deploy ]]; then
             [[ "$SUPPORT_SENDER_TOKEN" =~ ^[0-9a-f]{64}$ ]] || { echo 'Missing or invalid SUPPORT_SENDER_TOKEN secret' >&2; exit 1; }
             [[ -z "$DEEPSEEK_API_KEY" || "$DEEPSEEK_API_KEY" =~ ^[^[:space:]]+$ ]] || { echo 'Invalid DEEPSEEK_API_KEY secret format' >&2; exit 1; }
@@ -94,24 +101,23 @@ jobs:
             {
               printf 'SUPPORT_SENDER_DB=/var/lib/tikmatrix-support-queue/queue.db\nSUPPORT_SENDER_API_URL=https://api.tikmatrix.com\nSUPPORT_SENDER_TOKEN=%s\n' "$SUPPORT_SENDER_TOKEN"
               printf 'SUPPORT_ISSUE_GITHUB_TOKEN=%s\n' "$ISSUE_TOKEN"
-            } | ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20 \
-                root@104.168.221.115 'umask 077; rm -f -- /etc/.tikmatrix-support-agent.env.patch; cat > /etc/tikmatrix-support-sender.env'
+            } | ssh "${SSH_OPTS[@]}" \
+                "$SSH_TARGET" "sudo sh -c 'umask 077; rm -f -- /etc/.tikmatrix-support-agent.env.patch; cat > /etc/tikmatrix-support-sender.env'"
             if [[ -n "$DEEPSEEK_API_KEY" || -n "$GEMINI_API_KEY" ]]; then
               {
                 if [[ -n "$DEEPSEEK_API_KEY" ]]; then printf 'DEEPSEEK_API_KEY=%s\n' "$DEEPSEEK_API_KEY"; fi
                 if [[ -n "$GEMINI_API_KEY" ]]; then printf 'GEMINI_API_KEY=%s\n' "$GEMINI_API_KEY"; fi
-              } | ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20 \
-                  root@104.168.221.115 'umask 077; cat > /etc/.tikmatrix-support-agent.env.patch'
+              } | ssh "${SSH_OPTS[@]}" \
+                  "$SSH_TARGET" "sudo sh -c 'umask 077; cat > /etc/.tikmatrix-support-agent.env.patch'"
             fi
           fi
-          ssh -i ~/.ssh/deploy_key \
-            -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
-            -o ConnectTimeout=20 \
-            root@104.168.221.115 "bash -s -- '$AGENT_ACTION' '$SOURCE_REF'" <<'REMOTE'
+          ssh "${SSH_OPTS[@]}" \
+            "$SSH_TARGET" "sudo bash -s -- '$AGENT_ACTION' '$SOURCE_REF'" <<'REMOTE'
           set -euo pipefail
           AGENT_ACTION="$1"
           SOURCE_REF="$2"
           REPO_DIR=/opt/tikmatrix-support/repo
+          cd "$REPO_DIR"
           DEPLOY_TMP=""
           trap 'rm -f -- /etc/.tikmatrix-support-agent.env.patch "${DEPLOY_TMP:+${DEPLOY_TMP}/update.sh}" "${DEPLOY_TMP:+${DEPLOY_TMP}/drain.mjs}" "${DEPLOY_TMP:+${DEPLOY_TMP}/merge-agent-env.sh}"; [ -n "${DEPLOY_TMP:-}" ] && rmdir -- "$DEPLOY_TMP" 2>/dev/null || true' EXIT
           # Fetch changes no working files. Extract the new deploy tools into
