@@ -9,7 +9,8 @@ on:
       # TikMatrix = tikmatrix + igmatrix; VideoMagic = videomagic only;
       # TikMatrixUser = tikmatrix-user (user.tikmatrix.com) only;
       # TikMatrixFinder = tikmatrix-finder (finder.tikmatrix.com) only;
-      # Sociflux = sociflux (sociflux.com) only; empty = all
+      # Sociflux = sociflux (sociflux.com) only;
+      # MaskMatrix = maskmatrix (mask.tikmatrix.com) only; empty = all
       group:
         description: "Site group to deploy (leave empty to deploy all sites)"
         required: false
@@ -21,6 +22,7 @@ on:
           - TikMatrixUser
           - TikMatrixFinder
           - Sociflux
+          - MaskMatrix
 
       # GitHub Actions cannot populate choice options dynamically, so this list is a
       # convenience mirror of LinuxConfig/deploy-config.json `.servers[].id`. The
@@ -94,6 +96,8 @@ jobs:
             SITE_FILTER='["tikmatrix-finder"]'
           elif [[ "$SELECTED_GROUP" == "Sociflux" ]]; then
             SITE_FILTER='["sociflux"]'
+          elif [[ "$SELECTED_GROUP" == "MaskMatrix" ]]; then
+            SITE_FILTER='["maskmatrix"]'
           else
             SITE_FILTER='null'
           fi
