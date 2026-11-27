@@ -1,0 +1,151 @@
+name: Build TikMatrix Browser - macOS
+run-name: ${{ github.actor }} is building TikMatrix Browser (macOS) 🚀
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: "Release version label"
+        required: true
+        type: string
+      branch:
+        description: "Branch to build from"
+        required: false
+        default: "main"
+        type: string
+      mode:
+        description: "release or verify-only"
+        required: false
+        default: "release"
+        type: string
+      publish_r2:
+        description: "Upload release artifacts to R2"
+        required: false
+        default: true
+        type: boolean
+      notes:
+        description: "Release notes (English)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  build-browser-macos:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: tikmatrix/tikmatrix-browser
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+          path: tikmatrix-browser
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tikmatrix-browser/apps/desktop/package-lock.json
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8 # stable
+        with:
+          targets: aarch64-apple-darwin,x86_64-apple-darwin
+          components: clippy
+
+      - name: Rust Cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            tikmatrix-browser/target
+            tikmatrix-browser/apps/desktop/src-tauri/target
+            !tikmatrix-browser/target/**/bundle/**
+            !tikmatrix-browser/apps/desktop/src-tauri/target/**/bundle/**
+          key: ${{ runner.os }}-cargo-tikmatrix-browser-${{ hashFiles('tikmatrix-browser/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-tikmatrix-browser-
+
+      - name: Drop installers restored from cache
+        shell: bash
+        run: |
+          for dir in ./tikmatrix-browser/target ./tikmatrix-browser/apps/desktop/src-tauri/target; do
+            if [ -d "$dir" ]; then
+              find "$dir" -maxdepth 4 -type d -name bundle -prune -exec rm -rf {} +
+            fi
+          done
+
+      - name: Build frontend & run T12 security scan
+        working-directory: tikmatrix-browser/apps/desktop
+        shell: bash
+        run: |
+          npm ci
+          npm run build
+          node ../../scripts/check-bundle-secrets.mjs
+
+      - name: Clippy & Workspace Tests
+        working-directory: tikmatrix-browser
+        shell: bash
+        run: |
+          cargo clippy --workspace --all-targets -- -D warnings
+          cargo clippy --manifest-path apps/desktop/src-tauri/Cargo.toml --all-targets -- -D warnings
+          cargo test --workspace --quiet
+          node --test harness/probe-server.test.mjs
+
+      - name: Build TikMatrix Browser universal macOS bundle
+        if: ${{ inputs.mode == 'release' }}
+        working-directory: tikmatrix-browser/apps/desktop
+        shell: bash
+        env:
+          APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        run: npx --yes @tauri-apps/cli@^2 build --target universal-apple-darwin
+
+      - name: Stage macOS installers & checksums
+        if: ${{ inputs.mode == 'release' }}
+        working-directory: tikmatrix-browser
+        shell: bash
+        run: |
+          UPLOAD_DIR="./dist-upload/macos"
+          DMG_DIR="./apps/desktop/src-tauri/target/universal-apple-darwin/release/bundle/dmg"
+          mkdir -p "$UPLOAD_DIR"
+          find "$DMG_DIR" -maxdepth 1 -type f -name "*.dmg" -exec cp {} "$UPLOAD_DIR"/ \;
+          if ! find "$UPLOAD_DIR" -maxdepth 1 -type f -name "*.dmg" -print -quit | grep -q .; then
+            echo "No macOS .dmg installer found in $DMG_DIR"
+            exit 1
+          fi
+          (cd "$UPLOAD_DIR" && shasum -a 256 *.dmg > SHA256SUMS-macos.txt)
+          ls -lh "$UPLOAD_DIR"
+
+      - name: Compute R2 release dir
+        if: ${{ inputs.mode == 'release' && inputs.publish_r2 }}
+        working-directory: tikmatrix-browser
+        shell: bash
+        run: echo "R2_RELEASE_DIR=$(node ./scripts/release-paths.mjs --app=tikmatrix.browser)" >> "$GITHUB_ENV"
+
+      - name: Upload macOS package to R2
+        if: ${{ inputs.mode == 'release' && inputs.publish_r2 }}
+        uses: ryand56/r2-upload-action@33ebb7a494b3a8a3c5ed2ea6bbdc72e707090317 # v1.5
+        with:
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID_NIO }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID_NIO }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY_NIO }}
+          r2-bucket: matrix
+          source-dir: ./tikmatrix-browser/dist-upload/macos
+          destination-dir: ${{ env.R2_RELEASE_DIR }}
+
+      - name: Cleanup private checkout
+        if: always()
+        shell: bash
+        run: rm -rf tikmatrix-browser

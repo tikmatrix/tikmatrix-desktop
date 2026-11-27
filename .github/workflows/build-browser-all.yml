@@ -1,0 +1,156 @@
+name: Build TikMatrix Browser - All Platforms
+run-name: ${{ github.actor }} is building TikMatrix Browser (${{ inputs.mode }}) 🚀
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version tag (custom values stay unchanged); 'auto' creates browser-v<date>-<sha>"
+        required: false
+        default: "auto"
+        type: string
+      branch:
+        description: "Branch to build from"
+        required: false
+        default: "main"
+        type: string
+      platforms:
+        description: "Platforms to build"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - all
+          - macos
+          - windows
+      mode:
+        description: "Execution mode: 'release' tags and builds installers, 'verify-only' runs CI checks"
+        required: true
+        default: "release"
+        type: choice
+        options:
+          - release
+          - verify-only
+      publish_r2:
+        description: "Upload release bundles to R2 (used when mode is 'release')"
+        required: false
+        default: true
+        type: boolean
+      notes:
+        description: "Release notes (English)"
+        required: false
+        default: ""
+        type: string
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  create-tag:
+    if: ${{ inputs.mode == 'release' }}
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.resolve-version.outputs.version }}
+      tag: ${{ steps.resolve-version.outputs.tag }}
+      app_version: ${{ steps.resolve-version.outputs.app_version }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: tikmatrix/tikmatrix-browser
+          token: ${{ secrets.REPO_TOKEN }}
+          ref: ${{ inputs.branch }}
+          path: tikmatrix-browser
+
+      - name: Resolve version
+        id: resolve-version
+        working-directory: tikmatrix-browser
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          if [[ "${INPUT_VERSION}" == "auto" || -z "${INPUT_VERSION}" ]]; then
+            VERSION="v$(date -u +%Y.%m.%d)-$(git rev-parse --short HEAD)"
+            TAG="browser-${VERSION}"
+          else
+            VERSION="${INPUT_VERSION}"
+            TAG="${INPUT_VERSION}"
+          fi
+          APP_VERSION=$(node -p "require('./apps/desktop/src-tauri/tauri.conf.json').version")
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "app_version=${APP_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "Resolved release version=${VERSION}, app_version=${APP_VERSION}"
+
+      - name: Create and push tag
+        working-directory: tikmatrix-browser
+        env:
+          TAG: ${{ steps.resolve-version.outputs.tag }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --tags origin | grep -q "refs/tags/${TAG}$"; then
+            echo "Tag ${TAG} already exists, skipping tag creation"
+          else
+            git tag -a "${TAG}" -m "Release ${TAG}"
+            git push origin "${TAG}"
+            echo "Tag ${TAG} created"
+          fi
+
+      - name: Cleanup workspace
+        if: always()
+        run: rm -rf tikmatrix-browser
+
+  build-browser-macos:
+    needs: [create-tag]
+    if: ${{ always() && (needs.create-tag.result == 'success' || needs.create-tag.result == 'skipped') && (inputs.platforms == 'all' || inputs.platforms == 'macos') }}
+    uses: ./.github/workflows/build-browser-macos.yml
+    with:
+      version: ${{ needs.create-tag.outputs.version || inputs.version }}
+      branch: ${{ inputs.branch }}
+      mode: ${{ inputs.mode }}
+      publish_r2: ${{ inputs.publish_r2 }}
+      notes: ${{ inputs.notes }}
+    secrets: inherit
+
+  build-browser-windows:
+    needs: [create-tag]
+    if: ${{ always() && (needs.create-tag.result == 'success' || needs.create-tag.result == 'skipped') && (inputs.platforms == 'all' || inputs.platforms == 'windows') }}
+    uses: ./.github/workflows/build-browser-windows.yml
+    with:
+      version: ${{ needs.create-tag.outputs.version || inputs.version }}
+      branch: ${{ inputs.branch }}
+      mode: ${{ inputs.mode }}
+      publish_r2: ${{ inputs.publish_r2 }}
+      notes: ${{ inputs.notes }}
+    secrets: inherit
+
+  notify:
+    needs: [create-tag, build-browser-macos, build-browser-windows]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram notification
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "${BOT_TOKEN}" ] || [ -z "${CHAT_ID}" ]; then
+            echo "Telegram notification secrets not configured, skipping."
+            exit 0
+          fi
+          RESULTS='${{ toJson(needs) }}'
+          if echo "$RESULTS" | grep -q '"failure"'; then ICON="❌"; \
+          elif echo "$RESULTS" | grep -q '"cancelled"'; then ICON="⚠️"; \
+          else ICON="✅"; fi
+          RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          MSG=$(printf '%s\n%s\n%s' \
+            "${ICON} ${{ github.workflow }}" \
+            "Mode: ${{ inputs.mode }} | Version: ${{ needs.create-tag.outputs.app_version || inputs.version }} | Platforms: ${{ inputs.platforms }}" \
+            "Run: ${RUN_URL}")
+          curl -sS --fail -o /dev/null -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${CHAT_ID}" \
+            --data-urlencode 'link_preview_options={"is_disabled":true}' \
+            --data-urlencode "text=${MSG}"
