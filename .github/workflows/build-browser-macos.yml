@@ -1,5 +1,5 @@
-name: Build TikMatrix Browser - macOS
-run-name: ${{ github.actor }} is building TikMatrix Browser (macOS) 🚀
+name: Build MaskMatrix - macOS
+run-name: ${{ github.actor }} is building MaskMatrix (macOS) 🚀
 on:
   workflow_call:
     inputs:
@@ -97,7 +97,7 @@ jobs:
           cargo test --workspace --quiet
           node --test harness/probe-server.test.mjs
 
-      - name: Build TikMatrix Browser universal macOS bundle
+      - name: Build MaskMatrix universal macOS bundle
         if: ${{ inputs.mode == 'release' }}
         working-directory: tikmatrix-browser/apps/desktop
         shell: bash
@@ -132,7 +132,7 @@ jobs:
         if: ${{ inputs.mode == 'release' && inputs.publish_r2 }}
         working-directory: tikmatrix-browser
         shell: bash
-        run: echo "R2_RELEASE_DIR=$(node ./scripts/release-paths.mjs --app=tikmatrix.browser)" >> "$GITHUB_ENV"
+        run: echo "R2_RELEASE_DIR=$(node ./scripts/release-paths.mjs --app=maskmatrix)" >> "$GITHUB_ENV"
 
       - name: Upload macOS package to R2
         if: ${{ inputs.mode == 'release' && inputs.publish_r2 }}

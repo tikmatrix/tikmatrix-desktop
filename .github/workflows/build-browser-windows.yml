@@ -1,5 +1,5 @@
-name: Build TikMatrix Browser - Windows
-run-name: ${{ github.actor }} is building TikMatrix Browser (Windows) 🚀
+name: Build MaskMatrix - Windows
+run-name: ${{ github.actor }} is building MaskMatrix (Windows) 🚀
 on:
   workflow_call:
     inputs:
@@ -96,7 +96,7 @@ jobs:
           cargo test --workspace --quiet
           node --test harness/probe-server.test.mjs
 
-      - name: Build TikMatrix Browser Windows bundle
+      - name: Build MaskMatrix Windows bundle
         if: ${{ inputs.mode == 'release' }}
         working-directory: tikmatrix-browser/apps/desktop
         shell: pwsh
@@ -135,7 +135,7 @@ jobs:
         working-directory: tikmatrix-browser
         shell: pwsh
         run: |
-          $DIR = node ./scripts/release-paths.mjs --app=tikmatrix.browser
+          $DIR = node ./scripts/release-paths.mjs --app=maskmatrix
           echo "R2_RELEASE_DIR=$DIR" >> $env:GITHUB_ENV
 
       - name: Upload Windows package to R2

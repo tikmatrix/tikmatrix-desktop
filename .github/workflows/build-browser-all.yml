@@ -1,5 +1,5 @@
-name: Build TikMatrix Browser - All Platforms
-run-name: ${{ github.actor }} is building TikMatrix Browser (${{ inputs.mode }}) 🚀
+name: Build MaskMatrix - All Platforms
+run-name: ${{ github.actor }} is building MaskMatrix (${{ inputs.mode }}) 🚀
 on:
   workflow_dispatch:
     inputs:
